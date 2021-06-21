@@ -146,14 +146,13 @@ public:
           spaceGroup = spaceGroupAttribute.value();
       }
 
-      auto* cell = new UnitCell;
+      auto cell = std::make_unique<UnitCell>();
       cell->setCellParameters(a, b, c, alpha, beta, gamma);
       if (!cell->isRegular()) {
         error += "<crystal> does not give linear independent lattice vectors";
-        delete cell;
         return false;
       }
-      molecule->setUnitCell(cell);
+      molecule->setUnitCell(cell.get());
       // look for the space group in the space group table; if several
       // settings may fit, the table number is kept for later
       Core::SpaceGroups::setSpaceGroup(*molecule, spaceGroup);
