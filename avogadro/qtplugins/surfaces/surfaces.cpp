@@ -960,7 +960,7 @@ void Surfaces::movieFrame()
 
   if (d->gifWriter) {
     int pixelCount = exportImage.width() * exportImage.height();
-    auto* imageData = new uint8_t[pixelCount * 4];
+    std::vector<uint8_t> imageData(pixelCount * 4);
     int imageIndex = 0;
     for (int j = 0; j < exportImage.height(); ++j) {
       for (int k = 0; k < exportImage.width(); ++k) {
@@ -972,8 +972,7 @@ void Surfaces::movieFrame()
         imageIndex += 4;
       }
     }
-    GifWriteFrame(d->gifWriter, imageData, 800, 600, 100 / 4);
-    delete[] imageData;
+    GifWriteFrame(d->gifWriter, imageData.data(), 800, 600, 100 / 4);
   } else if (d->gwaviWriter) {
     QByteArray ba;
     QBuffer buffer(&ba);
