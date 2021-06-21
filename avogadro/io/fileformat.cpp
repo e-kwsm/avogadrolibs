@@ -19,10 +19,6 @@ using std::ofstream;
 FileFormat::FileFormat() : m_mode(None), m_in(nullptr), m_out(nullptr) {}
 
 FileFormat::~FileFormat()
-{
-  delete m_in;
-  delete m_out;
-}
 
 bool FileFormat::validateFileName(const std::string& fileName)
 {
@@ -93,14 +89,8 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
 
 void FileFormat::close()
 {
-  if (m_in) {
-    delete m_in;
-    m_in = nullptr;
-  }
-  if (m_out) {
-    delete m_out;
-    m_out = nullptr;
-  }
+  m_in.reset();
+  m_out.reset();
   m_mode = None;
 }
 
