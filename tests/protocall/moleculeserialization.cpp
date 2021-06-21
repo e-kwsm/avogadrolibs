@@ -68,18 +68,16 @@ TEST_F(MoleculeSerializationTest, roundTrip)
 
   size_t size = serializer.size();
 
-  uint8* data = new uint8[size];
+  std::vector<uint8> data(size);
 
-  bool success = serializer.serialize(data, size);
+  bool success = serializer.serialize(data.data(), size);
   EXPECT_TRUE(success);
 
   Molecule after;
 
   MoleculeDeserializer deserializer(&after);
-  success = deserializer.deserialize(data, size);
+  success = deserializer.deserialize(data.data(), size);
   EXPECT_TRUE(success);
-
-  delete[] data;
 
   EXPECT_EQ(this->ethane.atomicNumbers(), after.atomicNumbers());
 

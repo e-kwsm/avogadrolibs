@@ -44,19 +44,18 @@ public:
 
 private:
   size_t m_size;
-  size_t* m_values;
+  std::vector<size_t> m_values;
 };
 
 DistanceMatrix::DistanceMatrix(size_t size)
 {
   m_size = size;
-  m_values = new size_t[size * size];
-  memset(m_values, 0, size * size * sizeof(size_t));
+  m_values.resize(size * size);
+  std::fill(m_values.begin(), m_values.end(), 0);
 }
 
 DistanceMatrix::~DistanceMatrix()
 {
-  delete[] m_values;
 }
 
 size_t DistanceMatrix::operator()(size_t i, size_t j) const
