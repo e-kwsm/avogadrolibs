@@ -74,13 +74,13 @@ bool MMTFFormat::read(std::istream& file, Molecule& molecule)
     Real beta = static_cast<Real>(structure.unitCell[4]) * DEG_TO_RAD;
     Real gamma = static_cast<Real>(structure.unitCell[5]) * DEG_TO_RAD;
 
-    auto* unitCellObject = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+    auto unitCellObject =
+      std::make_unique<Core::UnitCell>(a, b, c, alpha, beta, gamma);
     if (!unitCellObject->isRegular()) {
       appendError("cell matrix is singular");
-      delete unitCellObject;
       return false;
     }
-    molecule.setUnitCell(unitCellObject);
+    molecule.setUnitCell(unitCellObject.release());
   }
   // spaceGroup
   if (structure.spaceGroup.size() > 0) {
