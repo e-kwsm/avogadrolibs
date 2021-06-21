@@ -18,11 +18,7 @@ using std::ofstream;
 
 FileFormat::FileFormat() : m_mode(None), m_in(nullptr), m_out(nullptr) {}
 
-FileFormat::~FileFormat()
-{
-  delete m_in;
-  delete m_out;
-}
+FileFormat::~FileFormat() = default;
 
 bool FileFormat::validateFileName(const std::string& fileName)
 {
@@ -67,9 +63,10 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
     // Imbue the standard C locale.
     locale cLocale("C");
     if (m_mode & Read) {
-      auto* file = new ifstream(m_fileName.c_str(), std::ifstream::binary);
-      m_in = file;
+      auto file =
+        std::make_unique<ifstream>(m_fileName.c_str(), std::ifstream::binary);
       if (file->is_open()) {
+        m_in = std::move(file);
         m_in->imbue(cLocale);
         return true;
       } else {
@@ -77,9 +74,10 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
         return false;
       }
     } else if (m_mode & Write) {
-      auto* file = new ofstream(m_fileName.c_str(), std::ofstream::binary);
-      m_out = file;
+      auto file =
+        std::make_unique<ofstream>(m_fileName.c_str(), std::ofstream::binary);
       if (file->is_open()) {
+        m_out = std::move(file);
         m_out->imbue(cLocale);
         return true;
       } else {
@@ -93,14 +91,8 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
 
 void FileFormat::close()
 {
-  if (m_in) {
-    delete m_in;
-    m_in = nullptr;
-  }
-  if (m_out) {
-    delete m_out;
-    m_out = nullptr;
-  }
+  m_in.reset();
+  m_out.reset();
   m_mode = None;
 }
 
