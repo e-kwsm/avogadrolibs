@@ -84,11 +84,7 @@ FileFormat::FileFormat()
 {
 }
 
-FileFormat::~FileFormat()
-{
-  delete m_in;
-  delete m_out;
-}
+FileFormat::~FileFormat() = default;
 
 bool FileFormat::validateFileName(const std::string& fileName)
 {
@@ -206,14 +202,8 @@ void FileFormat::close()
   }
   m_decompressor = nullptr;
   m_compressor = nullptr;
-  if (m_in) {
-    delete m_in;
-    m_in = nullptr;
-  }
-  if (m_out) {
-    delete m_out;
-    m_out = nullptr;
-  }
+  m_in.reset();
+  m_out.reset();
   m_mode = None;
 }
 
