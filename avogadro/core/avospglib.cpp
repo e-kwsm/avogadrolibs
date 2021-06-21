@@ -38,7 +38,7 @@ unsigned short AvoSpglib::getHallNumber(Molecule& mol, double cartTol)
 
   Index numAtoms = mol.atomCount();
   auto* positions = new double[numAtoms][3];
-  int* types = new int[numAtoms];
+  std::vector<int> types(numAtoms);
 
   const Array<unsigned char>& atomicNums = mol.atomicNumbers();
   const Array<Vector3>& pos = mol.atomPositions3d();
@@ -53,12 +53,11 @@ unsigned short AvoSpglib::getHallNumber(Molecule& mol, double cartTol)
   }
 
   SpglibDataset* data =
-    spg_get_dataset(lattice, positions, types, numAtoms, cartTol);
+    spg_get_dataset(lattice, positions, types.data(), numAtoms, cartTol);
 
   if (!data) {
     std::cerr << "Cannot determine spacegroup.\n";
     delete[] positions;
-    delete[] types;
     return 0;
   }
 
@@ -67,7 +66,6 @@ unsigned short AvoSpglib::getHallNumber(Molecule& mol, double cartTol)
   // Cleanup time
   spg_free_dataset(data);
   delete[] positions;
-  delete[] types;
 
   mol.setHallNumber(hallNumber);
   return hallNumber;
@@ -113,7 +111,7 @@ bool AvoSpglib::standardizeCell(Molecule& mol, double cartTol, bool toPrimitive,
   // See http://atztogo.github.io/spglib/api.html#spg-standardize-cell
   int numAtomsMultiplier = toPrimitive ? 1 : 4;
   auto* positions = new double[numAtoms * numAtomsMultiplier][3];
-  int* types = new int[numAtoms * numAtomsMultiplier];
+  std::vector<int> types(numAtoms * numAtomsMultiplier);
 
   const Array<unsigned char>& atomicNums = mol.atomicNumbers();
   const Array<Vector3>& pos = mol.atomPositions3d();
@@ -128,13 +126,13 @@ bool AvoSpglib::standardizeCell(Molecule& mol, double cartTol, bool toPrimitive,
   }
 
   // Run the spglib algorithm
-  Index newNumAtoms = spg_standardize_cell(lattice, positions, types, numAtoms,
-                                           toPrimitive, !idealize, cartTol);
+  Index newNumAtoms =
+    spg_standardize_cell(lattice, positions, types.data(), numAtoms,
+                         toPrimitive, !idealize, cartTol);
 
   // If 0 is returned, the algorithm failed.
   if (newNumAtoms == 0) {
     delete[] positions;
-    delete[] types;
     return false;
   }
 
@@ -161,7 +159,6 @@ bool AvoSpglib::standardizeCell(Molecule& mol, double cartTol, bool toPrimitive,
   }
 
   delete[] positions;
-  delete[] types;
 
   // Set the new molecule
   mol = newMol;

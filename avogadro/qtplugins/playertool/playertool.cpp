@@ -340,7 +340,7 @@ void PlayerTool::recordMovie()
       int frameHeight = exportImage.height();
       int numbPixels = frameWidth * frameHeight;
 
-      auto* imageData = new uint8_t[numbPixels * 4];
+      std::vector<uint8_t> imageData(numbPixels * 4);
       int imageIndex = 0;
       for (int j = 0; j < frameHeight; ++j) {
         for (int k = 0; k < frameWidth; ++k) {
@@ -352,9 +352,8 @@ void PlayerTool::recordMovie()
           imageIndex += 4;
         }
       }
-      GifWriteFrame(&writer, imageData, EXPORT_WIDTH, EXPORT_HEIGHT,
+      GifWriteFrame(&writer, imageData.data(), EXPORT_WIDTH, EXPORT_HEIGHT,
                     100 / std::min(m_animationFPS->value(), 100));
-      delete[] imageData;
     }
     GifEnd(&writer);
   } else if (selfFilter == tr("Movie (*.avi)")) {
