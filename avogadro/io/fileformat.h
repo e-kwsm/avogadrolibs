@@ -11,6 +11,7 @@
 
 #include <istream>
 #include <ostream>
+#include <memory>
 #include <string>
 #include <vector>
 
@@ -313,8 +314,8 @@ private:
 
   // Streams for reading/writing data, especially streaming data in/out.
   Operation m_mode;
-  std::istream* m_in;
-  std::ostream* m_out;
+  std::unique_ptr<std::istream> m_in;
+  std::unique_ptr<std::ostream> m_out;
 
   // Non-owning aliases of m_in/m_out when those streams were wrapped for
   // compression; never delete these separately from m_in/m_out.
