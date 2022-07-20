@@ -34,7 +34,7 @@ sys.exit()
 """
 
 # These are cached hall symbols we use for Avogadro2
-hallSymbols = [ \
+hallSymbols = [
   '',
   'P 1',
   '-P 1',
