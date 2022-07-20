@@ -109,12 +109,12 @@ def charges():
     for filename in os.listdir(tempdir):
         try:
             os.remove(tempdir + "/" + filename)
-        except:
+        except OSError:
             continue
     # and try to cleanup the directory
     try:
         os.rmdir(tempdir)
-    except:
+    except OSError:
         pass
 
     # write the charges to stdout
