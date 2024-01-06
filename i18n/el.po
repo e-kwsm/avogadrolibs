@@ -10776,15 +10776,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:174
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
 msgid "Peak Width:"
-msgstr "Πλάτος:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:204
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
 msgid "Peak Threshold:"
-msgstr "Κατώφλι:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:214
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
@@ -10816,9 +10814,8 @@ msgstr "Εισαγμένα φάσματα:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:278
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
 msgid "10"
-msgstr "10"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:283
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -11750,11 +11747,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ "Μεσαίο πλήκτρο: Πάτημα και σύρσιμο για μεγέθυνση ή σμίκρυνση.\n"
 #~ "Δεξί πλήκτρο: Πάτημα και σύρσιμο για τη μετακίνηση της προβολής.\n"
 #~ "Διπλό πάτημα: Επαναφορά της προβολής."
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Κινούμενη απεικόνιση"
 
 #, fuzzy
 #~| msgid ""
