@@ -1523,10 +1523,8 @@ msgid "Align to Axis"
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:308
-#, fuzzy
-#| msgid "Renders the x, y, and z axes at the origin"
 msgid "Center the atom at the origin."
-msgstr "يجعل خطوط x ، y و z على الأصل"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:311
 msgid "Rotate the molecule to align the atom to the specified axis."
@@ -1860,10 +1858,8 @@ msgstr "تلوين حسب لون الرواسب"
 
 #: qtplugins/applycolors/applycolors.cpp:216
 #: qtplugins/applycolors/applycolors.cpp:314
-#, fuzzy
-#| msgid "Select Background Color"
 msgid "Select Colormap"
-msgstr "اختر لون الخلفية"
+msgstr ""
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, colormapLabel)
@@ -3132,10 +3128,8 @@ msgid "&Insert"
 msgstr "&إدراج"
 
 #: qtplugins/insertdna/insertdna.cpp:79
-#, fuzzy
-#| msgid "&Insert"
 msgid "Insert DNA/RNA…"
-msgstr "&إدراج"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:159
 msgctxt "uracil"
@@ -3171,10 +3165,8 @@ msgid "Generating 3D molecule…"
 msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:33
-#, fuzzy
-#| msgid "&Insert"
 msgid "InsertDNA"
-msgstr "&إدراج"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:63
 msgid "Insert DNA / RNA fragments through a dialog."
@@ -4888,10 +4880,8 @@ msgid "Density of States"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:255
-#, fuzzy
-#| msgid "Select Foreground Color"
 msgid "Select Background Color"
-msgstr "حدد اللون الأمامي"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:268
 msgid "Select Foreground Color"
@@ -4902,10 +4892,8 @@ msgid "Select Calculated Spectra Color"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:293
-#, fuzzy
-#| msgid "Select Foreground Color"
 msgid "Select Imported Spectra Color"
-msgstr "حدد اللون الأمامي"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:341
 #, fuzzy
@@ -7583,10 +7571,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, push_loadSpectra)
-#, fuzzy
-#| msgid "No data"
 msgid "&Load data..."
-msgstr "لاتوجد بيانات"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, push_exportData)
@@ -7606,10 +7592,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr "الحد الأدنى:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7628,17 +7612,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr "الحد الأدنى:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "العرض:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
@@ -7676,10 +7656,8 @@ msgstr "استيراد"
 #. i18n: ectx: property (text), widget (QPushButton, push_colorCalculated)
 #. i18n: file: qtplugins/spectra/spectradialog.ui:388
 #. i18n: ectx: property (text), widget (QPushButton, push_colorBackground)
-#, fuzzy
-#| msgid "Select Background Color"
 msgid "Set Color..."
-msgstr "اختر لون الخلفية"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:288
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -8350,11 +8328,6 @@ msgstr ""
 "avogadro-devel@lists.sourceforge.net,hh.alshawaf@gmail.com,nizarus@nizarus."
 "tn,,mohamedgamal8090@gmail.com,,,,avogadro-devel@lists.sourceforge.net,hh."
 "alshawaf@gmail.com,nizarus@nizarus.tn,,mohamedgamal8090@gmail.com,"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "تأثيرات متحركة"
 
 #, fuzzy
 #~ msgid "By Distance"

@@ -2754,8 +2754,6 @@ msgid "Tools for crystal-specific editing/analysis."
 msgstr "Tools for crystal-specific editing/analysis."
 
 #: qtplugins/crystal/crystalscene.cpp:178
-#, fuzzy
-#| msgid "Colors:"
 msgid "Color axes:"
 msgstr "Colour axes:"
 
@@ -3848,6 +3846,21 @@ msgstr "Generating Conformers (Open Babel)"
 #: qtplugins/openbabel/openbabel.cpp:711
 msgid "Generate Conformers"
 msgstr "Generate Conformers"
+=======
+msgstr ""
+
+#: qtplugins/openbabel/openbabel.cpp:586
+msgid "Cannot generate conformers with Open Babel."
+msgstr ""
+
+#: qtplugins/openbabel/openbabel.cpp:619
+msgid "Generating Conformers (Open Babel)"
+msgstr ""
+
+#: qtplugins/openbabel/openbabel.cpp:711
+msgid "Generate Conformers"
+msgstr ""
+>>>>>>> 3b832899475d (fix: remove inaccurate fuzzy entries)
 
 #: qtplugins/openbabel/openbabel.cpp:720
 msgid "Cannot open file with Open Babel."
@@ -4903,8 +4916,6 @@ msgid "Select Imported Spectra Color"
 msgstr "Select Imported Spectra Colour"
 
 #: qtplugins/spectra/spectradialog.cpp:341
-#, fuzzy
-#| msgid "Vibrational Modes"
 msgid "Vibrational Spectra"
 msgstr "Vibrational Spectra"
 
@@ -7646,8 +7657,6 @@ msgstr "Scale Factor:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
 msgstr "X-Axis Minimum:"
 
@@ -7668,8 +7677,6 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
 msgstr "Y-Axis Minimum:"
 
@@ -7733,8 +7740,6 @@ msgstr "Background:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:375
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
 msgstr "Calculated Spectra:"
 
