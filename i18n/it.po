@@ -9551,9 +9551,8 @@ msgstr "Spettri importati:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:248
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
 msgid "10"
-msgstr "10"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:253
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -10375,11 +10374,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Carica Parziale"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animazione"
 
 #, fuzzy
 #~ msgid "Geometry"
