@@ -4928,10 +4928,8 @@ msgid "Vibrations"
 msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:37
-#, fuzzy
-#| msgid "Display visual cues"
 msgid "Display vibrational modes."
-msgstr "दृश्य cues प्रदर्शित करें"
+msgstr ""
 
 #: qtplugins/vrml/vrml.cpp:29
 msgid "VRML Render…"
