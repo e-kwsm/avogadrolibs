@@ -4732,9 +4732,8 @@ msgid "Invert Selection"
 msgstr ""
 
 #: qtplugins/select/select.cpp:53
-#, fuzzy
 msgid "Select by Element…"
-msgstr "Χρώμα κατά στοιχείο"
+msgstr ""
 
 #: qtplugins/select/select.cpp:58
 msgid "Select by Atom Index…"
@@ -7838,15 +7837,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
 msgid "Peak Width:"
-msgstr "Πλάτος:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
 msgid "Peak Threshold:"
-msgstr "Κατώφλι:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
@@ -7914,10 +7911,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:387
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:392
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8087,10 +8082,8 @@ msgstr "Τιμή ισοεπιφάνειας:"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
-#, fuzzy
-#| msgid " K"
 msgid " "
-msgstr " K"
+msgstr " "
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8705,11 +8698,6 @@ msgstr ""
 #~ "Μεσαίο πλήκτρο: Πάτημα και σύρσιμο για μεγέθυνση ή σμίκρυνση.\n"
 #~ "Δεξί πλήκτρο: Πάτημα και σύρσιμο για τη μετακίνηση της προβολής.\n"
 #~ "Διπλό πάτημα: Επαναφορά της προβολής."
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Κινούμενη απεικόνιση"
 
 #, fuzzy
 #~| msgid ""
