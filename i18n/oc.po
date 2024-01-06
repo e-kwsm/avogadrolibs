@@ -1529,10 +1529,8 @@ msgid "Align to Axis"
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:312
-#, fuzzy
-#| msgid "Renders the x, y, and z axes at the origin"
 msgid "Center the atom at the origin."
-msgstr "Afichar los axes x, y e z a l'origina"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:315
 msgid "Rotate the molecule to align the atom to the specified axis."
