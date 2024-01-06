@@ -8513,9 +8513,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
 msgid "Peak Width:"
-msgstr "العرض:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
@@ -9244,11 +9243,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Partial Charge"
 #~ msgstr "لون عن طريق الشحن الجزئي"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "تأثيرات متحركة"
 
 #, fuzzy
 #~ msgid "By Distance"

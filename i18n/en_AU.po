@@ -3057,7 +3057,6 @@ msgid "Tools for crystal-specific editing/analysis."
 msgstr "Tools for crystal-specific editing/analysis."
 
 #: qtplugins/crystal/crystalscene.cpp:178
-#, fuzzy
 msgid "Color axes:"
 msgstr "Colour axes:"
 
@@ -8665,7 +8664,6 @@ msgstr "Scale Factor:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
 msgid "X-Axis Minimum:"
 msgstr "X-Axis Minimum:"
 
@@ -8686,7 +8684,6 @@ msgstr "Y-Axis Maximum:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:123
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
 msgid "Y-Axis Minimum:"
 msgstr "Y-Axis Minimum:"
 

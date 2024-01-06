@@ -8704,15 +8704,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
 msgid "Peak Width:"
-msgstr "Πλάτος:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
 msgid "Peak Threshold:"
-msgstr "Κατώφλι:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
@@ -8744,9 +8742,8 @@ msgstr "Εισαγμένα φάσματα:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:248
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
 msgid "10"
-msgstr "10"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:253
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8959,9 +8956,8 @@ msgstr "Τιμή ισοεπιφάνειας:"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
-#, fuzzy
 msgid " "
-msgstr " "
+msgstr ""
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -9569,11 +9565,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ "Μεσαίο πλήκτρο: Πάτημα και σύρσιμο για μεγέθυνση ή σμίκρυνση.\n"
 #~ "Δεξί πλήκτρο: Πάτημα και σύρσιμο για τη μετακίνηση της προβολής.\n"
 #~ "Διπλό πάτημα: Επαναφορά της προβολής."
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Κινούμενη απεικόνιση"
 
 #, fuzzy
 #~| msgid ""
