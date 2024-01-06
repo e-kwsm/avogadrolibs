@@ -3754,7 +3754,6 @@ msgstr "コンフォーマー生成 (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:711
 #, fuzzy
-#| msgid "Conformer"
 msgid "Generate Conformers"
 msgstr "配座異性体"
 
@@ -8308,7 +8307,6 @@ msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
 msgid "Number of Dimensions:"
 msgstr "次元数:"
 
@@ -8363,10 +8361,8 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "フラグメント…"
 
-#, fuzzy
-#~| msgid "Functional"
 #~ msgid "Functional Groups"
-#~ msgstr "汎関数"
+#~ msgstr "官能基"
 
 #~ msgid "Help..."
 #~ msgstr "ヘルプ..."
@@ -8457,8 +8453,6 @@ msgstr ""
 #~ msgid "Layer"
 #~ msgstr "レイヤー"
 
-#, fuzzy
-#~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "分子を挿入..."
 
@@ -8474,21 +8468,18 @@ msgstr ""
 #~ msgid "Edit Unit Cell..."
 #~ msgstr "ユニットセルの編集"
 
-#, fuzzy
 #~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
+#~ msgstr "&GAMESS..."
 
 #~ msgid "Fragment..."
 #~ msgstr "フラグメント..."
 
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "結晶..."
 
 #~ msgid "SMILES..."
 #~ msgstr "SMILES..."
 
-#, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "pHを指定して水素を付加..."
 
@@ -8506,14 +8497,13 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Residue Properties..."
-#~ msgstr "分子の性質..."
+#~ msgstr "残基の性質..."
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "サーフェスを作成..."
 
-#, fuzzy
 #~ msgid "Symmetry..."
-#~ msgstr "対称性"
+#~ msgstr "対称性..."
 
 #~ msgid "Ctrl+E"
 #~ msgstr "Ctrl+E"
@@ -8609,15 +8599,13 @@ msgstr ""
 #~ msgid "Symmetry Properties..."
 #~ msgstr "対称性の性質..."
 
-#, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&ジオメトリ最適化"
+#~ msgstr "構造最適化"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
 #~ msgstr "構造最適化"
 
-#, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "水素を追加"
 

@@ -1455,10 +1455,8 @@ msgid "Reduce Cell to Asymmetric Unit"
 msgstr ""
 
 #: qtgui/rwmolecule.h:214
-#, fuzzy
-#| msgid "Change selections"
 msgid "Change Atom Positions"
-msgstr "Cambia selezioni"
+msgstr ""
 
 #: qtgui/rwmolecule.h:224
 #, fuzzy
@@ -1486,10 +1484,9 @@ msgid "Settings"
 msgstr "Impostazioni"
 
 #: qtgui/scriptloader.cpp:41
-#, fuzzy, qt-format
-#| msgid "Cannot save file %1."
+#, qt-format
 msgid "Cannot load script %1"
-msgstr "Impossibile salvare il file %1."
+msgstr ""
 
 #: qtgui/scriptloader.cpp:68
 #, qt-format
@@ -2138,10 +2135,8 @@ msgstr " Å"
 
 #: qtplugins/closecontacts/closecontacts.cpp:232
 #: qtplugins/noncovalent/noncovalent.cpp:369
-#, fuzzy
-#| msgid "Minimum Distance:"
 msgid "Maximum distance:"
-msgstr "Distanza minima:"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.cpp:233
 #: qtplugins/crystal/crystalscene.cpp:174
@@ -2151,10 +2146,8 @@ msgid "Line width:"
 msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:37
-#, fuzzy
-#| msgid "Renders force displacements on atoms"
 msgid "Render close contacts between atoms."
-msgstr "Visualizza la forza di spostamento atomico"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:55
 msgid "Contact"
@@ -2169,10 +2162,8 @@ msgid "Repulsive"
 msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:66
-#, fuzzy
-#| msgid "ColorOpacityMap"
 msgid "Edit Color Opacity Map…"
-msgstr "ColorOpacityMap"
+msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:84
 #: qtplugins/commandscripts/command.cpp:64
@@ -2325,16 +2316,12 @@ msgid "Element symbol."
 msgstr "Simbolo dell'elemento."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:397
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atom label."
-msgstr "Numero atomico non valido."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:415
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atomic index."
-msgstr "Numero atomico non valido."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:417
 #, fuzzy
@@ -2379,10 +2366,8 @@ msgid "'b' lattice coordinate."
 msgstr "Coordinata reticolare 'b'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
-#, fuzzy
-#| msgid "'a' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "Coordinata reticolare 'a'."
+msgstr "Coordinata reticolare 'c'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
@@ -2758,11 +2743,8 @@ msgid "Niggli Reduce Crystal"
 msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:216
-#, fuzzy
 msgid "The unit cell is already reduced."
 msgstr ""
-"Questa cellula di unità è già riprodotta alla sua rappresentazione canonica "
-"Niggli."
 
 #: qtplugins/crystal/crystal.h:25
 msgid "Crystal"
@@ -2773,10 +2755,8 @@ msgid "Tools for crystal-specific editing/analysis."
 msgstr ""
 
 #: qtplugins/crystal/crystalscene.cpp:178
-#, fuzzy
-#| msgid "Colors:"
 msgid "Color axes:"
-msgstr "Colori:"
+msgstr ""
 
 #: qtplugins/crystal/crystalscene.cpp:184
 #, fuzzy
@@ -2941,10 +2921,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Selezione"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3330,10 +3308,8 @@ msgid "Element"
 msgstr "Elemento"
 
 #: qtplugins/label/label.cpp:163
-#, fuzzy
-#| msgid "Element name."
 msgid "Element & Number"
-msgstr "Nome elemento."
+msgstr ""
 
 #: qtplugins/label/label.cpp:165
 msgid "Element & ID"
@@ -3624,10 +3600,8 @@ msgid "Zoom the scene."
 msgstr ""
 
 #: qtplugins/navigator/navigator.cpp:63
-#, fuzzy
-#| msgid "&Translate Atoms..."
 msgid "Translate the scene."
-msgstr "&Trasforma gli atomi..."
+msgstr ""
 
 #: qtplugins/navigator/navigator.cpp:104
 msgid "Reverse Direction of Zoom on Scroll"
@@ -3756,10 +3730,8 @@ msgid "Optimizing Geometry (Open Babel)"
 msgstr "&Ottimizza la geometria"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
-#, fuzzy
-#| msgid "Error generating Open Babel input."
 msgid "Generating…"
-msgstr "Errore nel generare l'input Open Babel."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:486 qtplugins/openbabel/openbabel.cpp:637
 msgid ""
@@ -3841,10 +3813,8 @@ msgid "Error generating XYZ string."
 msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:751
-#, fuzzy, qt-format
-#| msgid "Error generating Open Babel input."
 msgid "Converting XYZ to Open Babel with %1…"
-msgstr "Errore nel generare l'input Open Babel."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:761
 #, fuzzy
@@ -3861,10 +3831,8 @@ msgid "Adding Hydrogens (Open Babel)"
 msgstr "Aggiungi idrogeni"
 
 #: qtplugins/openbabel/openbabel.cpp:819
-#, fuzzy
-#| msgid "Error generating Open Babel input."
 msgid "Generating Open Babel input…"
-msgstr "Errore nel generare l'input Open Babel."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:827 qtplugins/openbabel/openbabel.cpp:877
 msgid "Error generating Open Babel input."
@@ -3887,10 +3855,8 @@ msgid "pH:"
 msgstr "pH:"
 
 #: qtplugins/openbabel/openbabel.cpp:869 qtplugins/openbabel/openbabel.cpp:911
-#, fuzzy
-#| msgid "Error generating Open Babel input."
 msgid "Generating obabel input…"
-msgstr "Errore nel generare l'input Open Babel."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:905
 msgid "Cannot remove hydrogens with Open Babel."
@@ -4016,10 +3982,8 @@ msgid "Player"
 msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:48
-#, fuzzy
-#| msgid "Animation"
 msgid "Animation Tool"
-msgstr "Animazione"
+msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:73
 msgid "Play"
@@ -4261,10 +4225,8 @@ msgid "PLY"
 msgstr ""
 
 #: qtplugins/ply/ply.h:29
-#, fuzzy
-#| msgid "Render the scene using VRML."
 msgid "Render the scene using PLY."
-msgstr "Renderizzare la scena usando VRML."
+msgstr ""
 
 #: qtplugins/povray/povray.cpp:29
 #, fuzzy
@@ -4392,10 +4354,8 @@ msgid "Atom 4"
 msgstr "Atomo"
 
 #: qtplugins/propertytables/propertymodel.cpp:687
-#, fuzzy
-#| msgid "Insert Fragment"
 msgid "Adjust Fragment"
-msgstr "Inserisci Frammento"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:813
 #, fuzzy
@@ -4513,16 +4473,12 @@ msgid "Molecule Properties"
 msgstr "Proprietà della molecola"
 
 #: qtplugins/propertytables/propertyview.cpp:231
-#, fuzzy
-#| msgid "&Export"
 msgid "Export CSV"
-msgstr "&Esporta"
+msgstr ""
 
 #: qtplugins/propertytables/propertyview.cpp:232
-#, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "File WFN (*.wfn);;Tutti i file (*.*)"
+msgstr ""
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
@@ -4531,10 +4487,8 @@ msgid "Could not open the file for writing."
 msgstr "Non è stato possibile aprire il file '%1' in scrittura"
 
 #: qtplugins/propertytables/propertyview.cpp:276
-#, fuzzy
-#| msgid "Error reading structure file (%1)."
 msgid "Error writing to the file."
-msgstr "Errore durante la lettura del file di struttura (%1)."
+msgstr ""
 
 #: qtplugins/propertytables/propertyview.cpp:288
 #, fuzzy
@@ -4608,10 +4562,8 @@ msgid "Manipulate the view camera."
 msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:32
-#, fuzzy
-#| msgid "Charge:"
 msgid "Script Charge Models"
-msgstr "Carica:"
+msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:36
 msgid "Load electrostatic models from external scripts."
@@ -4638,10 +4590,8 @@ msgid "Invert Selection"
 msgstr ""
 
 #: qtplugins/select/select.cpp:53
-#, fuzzy
-#| msgid "Color by Element"
 msgid "Select by Element…"
-msgstr "Colore per Elemento"
+msgstr ""
 
 #: qtplugins/select/select.cpp:58
 #, fuzzy
@@ -4670,16 +4620,12 @@ msgid "Select Water…"
 msgstr "Indici Atomici"
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Enlarge Selection"
-msgstr "Ignora la selezione"
+msgstr ""
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Selezione"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4694,10 +4640,8 @@ msgid "&Select"
 msgstr "&Seleziona"
 
 #: qtplugins/select/select.cpp:180
-#, fuzzy
-#| msgid "Color by Element"
 msgid "Select Element"
-msgstr "Colore per Elemento"
+msgstr ""
 
 #: qtplugins/select/select.cpp:217
 #, fuzzy
@@ -4723,10 +4667,8 @@ msgid "Atoms to Select:"
 msgstr ""
 
 #: qtplugins/select/select.cpp:446
-#, fuzzy
-#| msgid "Delete Atom"
 msgid "Select Atom"
-msgstr "Cancella Atomo"
+msgstr ""
 
 #: qtplugins/select/select.cpp:485
 msgid "Select Atoms by Residue"
@@ -4775,10 +4717,8 @@ msgid "Selection tool"
 msgstr ""
 
 #: qtplugins/selectiontool/selectiontoolwidget.cpp:35
-#, fuzzy
-#| msgid "New Label:"
 msgid "New Layer"
-msgstr "Nuova etichetta:"
+msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
@@ -4918,10 +4858,8 @@ msgid "Spectra"
 msgstr "Spettri"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display spectra plots."
-msgstr "Visualizza gli spettri e le modalità vibrazionali."
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
@@ -4949,10 +4887,8 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:219
 #: qtplugins/spectra/spectradialog.cpp:410
-#, fuzzy
-#| msgid "&Density Of States Settings"
 msgid "Density of States"
-msgstr "Impostazioni della &densità degli stati"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:256
 msgid "Select Background Color"
@@ -4971,10 +4907,8 @@ msgid "Select Imported Spectra Color"
 msgstr "Seleziona il colore degli spettri importati"
 
 #: qtplugins/spectra/spectradialog.cpp:342
-#, fuzzy
-#| msgid "Vibrational modes..."
 msgid "Vibrational Spectra"
-msgstr "Modalità vibrazionali..."
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
@@ -5001,10 +4935,8 @@ msgid "Intensity"
 msgstr "Intensità"
 
 #: qtplugins/spectra/spectradialog.cpp:369
-#, fuzzy
-#| msgid "Spectra"
 msgid "NMR Spectra"
-msgstr "Spettri"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:370
 #, fuzzy
@@ -5013,10 +4945,8 @@ msgid "Chemical Shift (ppm)"
 msgstr "Shift (ppm)"
 
 #: qtplugins/spectra/spectradialog.cpp:382
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
-msgstr "Densità elettronica"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:383
 #: qtplugins/spectra/spectradialog.cpp:411
@@ -5095,16 +5025,12 @@ msgid "Render the van der Waals molecular surface."
 msgstr "Renderizza la molecola come un wireframe."
 
 #: qtplugins/surfaces/surfaces.cpp:115
-#, fuzzy
-#| msgid "Render the molecule as a wireframe."
 msgid "Render the solvent-accessible molecular surface."
-msgstr "Renderizza la molecola come un wireframe."
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:117
-#, fuzzy
-#| msgid "Render the molecule as a wireframe."
 msgid "Render the solvent-excluded molecular surface."
-msgstr "Renderizza la molecola come un wireframe."
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:118 qtplugins/surfaces/surfaces.cpp:119
 #, fuzzy
@@ -5117,10 +5043,8 @@ msgid "Render the electron density."
 msgstr "Sto calcolando la densità elettronica"
 
 #: qtplugins/surfaces/surfaces.cpp:122
-#, fuzzy
-#| msgid "Render the scene using VRML."
 msgid "Render the spin density."
-msgstr "Renderizzare la scena usando VRML."
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:124
 msgid "Render a cube supplied with the file."
@@ -5232,16 +5156,12 @@ msgid ""
 msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:309
-#, fuzzy
-#| msgid "Insert Peptide"
 msgid "Insert Template"
-msgstr "Inserisci un peptide"
+msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:567
-#, fuzzy
-#| msgid "Insert Peptide"
 msgid "Insert Ligand"
-msgstr "Inserisci un peptide"
+msgstr ""
 
 #: qtplugins/templatetool/templatetool.h:35
 #: qtplugins/templatetool/templatetool.h:36
@@ -5268,10 +5188,8 @@ msgid "Show the vibrational modes dialog."
 msgstr ""
 
 #: qtplugins/vibrations/vibrations.cpp:91
-#, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Set the vibrational mode."
-msgstr "Visualizza gli spettri e le modalità vibrazionali."
+msgstr ""
 
 #: qtplugins/vibrations/vibrations.cpp:93
 msgid "Set the vibrational amplitude."
@@ -5319,10 +5237,8 @@ msgid "Render the molecule as a wireframe."
 msgstr "Renderizza la molecola come un wireframe."
 
 #: qtplugins/yaehmop/yaehmop.cpp:91
-#, fuzzy
-#| msgid "Calculated Spectra:"
 msgid "Calculate Band Structure…"
-msgstr "Spettri calcolati:"
+msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:112
 msgid "&Yaehmop"
@@ -5363,10 +5279,9 @@ msgid "Cannot find Yaehmop"
 msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:545
-#, fuzzy, qt-format
-#| msgid "G03 failed to start."
+#, qt-format
 msgid "Error: %1 failed to start"
-msgstr "L'esecuzione di G03 è fallita."
+msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:596
 msgid "Yaehmop Input"
@@ -5666,10 +5581,8 @@ msgstr "Carica Parziale"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
-#, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr "Carica:"
+msgstr ""
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -6188,10 +6101,8 @@ msgstr " passi"
 
 #. i18n: file: qtplugins/forcefield/forcefielddialog.ui:97
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#, fuzzy
-#| msgid "\"Energy\" convergence:"
 msgid "Gradient convergence:"
-msgstr "Convergenza \"energetica\":"
+msgstr ""
 
 #. i18n: file: qtplugins/forcefield/forcefielddialog.ui:126
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -7087,9 +6998,8 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:157
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "\"Energy\" convergence:"
 msgid "Convergence:"
-msgstr "Convergenza \"energetica\":"
+msgstr "Convergenza:"
 
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:180
 #. i18n: ectx: property (text), widget (QLabel, label_5)
@@ -7732,10 +7642,8 @@ msgstr "&Fattore di scala:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr "Minimo:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7754,24 +7662,18 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr "Minimo:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "Larghezza:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Soglia:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:224
 #. i18n: ectx: attribute (title), widget (QWidget, tab_appearance)
@@ -7823,10 +7725,8 @@ msgstr "Sfondo:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:375
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
-msgstr "Esporta lo spettro calcolato"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:395
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -7835,10 +7735,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:411
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -7963,10 +7861,8 @@ msgstr "Valore dell'&isosuperficie:"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
-#, fuzzy
-#| msgid " K"
 msgid " "
-msgstr " K"
+msgstr " "
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8452,10 +8348,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Number of Bonds:"
 msgid "Number of Dimensions:"
-msgstr "Numero di legami:"
+msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:220
 #. i18n: ectx: property (text), widget (QCheckBox, cb_displayYaehmopInput)
