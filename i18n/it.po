@@ -2187,10 +2187,8 @@ msgid "Repulsive"
 msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:66
-#, fuzzy
-#| msgid "ColorOpacityMap"
 msgid "Edit Color Opacity Map…"
-msgstr "ColorOpacityMap"
+msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:84
 #: qtplugins/commandscripts/command.cpp:64
@@ -2394,7 +2392,7 @@ msgstr "Coordinata reticolare 'b'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:500
 msgid "'c' lattice coordinate."
-msgstr "Coordinata reticolare 'a'."
+msgstr "Coordinata reticolare 'c'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:584
 msgid "Error applying geometry"
@@ -5033,7 +5031,6 @@ msgstr "Spettri"
 
 #: qtplugins/spectra/spectra.h:38
 #, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display spectra plots."
 msgstr "Visualizza gli spettri."
 
@@ -7214,7 +7211,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:157
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "\"Energy\" convergence:"
 msgid "Convergence:"
 msgstr "Convergenza:"
 
@@ -7863,17 +7859,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "Larghezza:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Soglia:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
@@ -7931,7 +7923,6 @@ msgstr "Sfondo:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:356
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
 msgstr "Spettro calcolato:"
 
@@ -7942,10 +7933,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:387
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:392
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8110,10 +8099,8 @@ msgstr "Valore dell'isosuperficie:"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
-#, fuzzy
-#| msgid " K"
 msgid " "
-msgstr " K"
+msgstr " "
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8716,11 +8703,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Carica Parziale"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animazione"
 
 #, fuzzy
 #~ msgctxt "ambient occlusion"
