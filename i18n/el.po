@@ -1553,10 +1553,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:29
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "Στοίχιση"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:32
 msgid "Align molecules to a Cartesian axis"
@@ -2158,10 +2156,8 @@ msgid "Line width:"
 msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:36
-#, fuzzy
-#| msgid "Renders force displacements on atoms"
 msgid "Render close contacts between atoms."
-msgstr "Αποδίδει αναγκαστικά τις μετατοπίσεις στα άτομα"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:54
 msgid "Contact"
@@ -2759,11 +2755,8 @@ msgid "Niggli Reduce Crystal"
 msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:216
-#, fuzzy
 msgid "The unit cell is already reduced."
 msgstr ""
-"Αυτή η μοναδιαία κυψελίδα έχει ήδη αναχθεί στην κανονική της απεικόνιση "
-"Niggli."
 
 #: qtplugins/crystal/crystal.h:25
 #, fuzzy
@@ -2954,10 +2947,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Επιλογή"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3038,10 +3029,8 @@ msgid "Forcefield optimization"
 msgstr "Βελτιστοποίηση δυναμικού πεδίου"
 
 #: qtplugins/forcefield/forcefield.h:50
-#, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr "Βελτιστοποίηση δυναμικού πεδίου"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
@@ -3648,7 +3637,6 @@ msgstr ""
 
 #: qtplugins/molecularproperties/molecularproperties.cpp:27
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "&Molecular…"
 msgstr "Μοριακό…"
 
@@ -4522,10 +4510,8 @@ msgid "Energy (kcal/mol)"
 msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:791
-#, fuzzy
-#| msgid "Insert Fragment"
 msgid "Adjust Fragment"
-msgstr "Εισαγωγή τμήματος"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:917
 #, fuzzy
@@ -4712,7 +4698,7 @@ msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:32
 #, fuzzy
-#| msgid "Charge:"
+#| msgid "Charge"
 msgid "Script Charge Models"
 msgstr "Φορτίο"
 
@@ -4741,10 +4727,8 @@ msgid "Invert Selection"
 msgstr ""
 
 #: qtplugins/select/select.cpp:53
-#, fuzzy
-#| msgid "Color by Element"
 msgid "Select by Element…"
-msgstr "Χρώμα κατά στοιχείο"
+msgstr ""
 
 #: qtplugins/select/select.cpp:58
 #, fuzzy
@@ -4774,10 +4758,8 @@ msgid "Enlarge Selection"
 msgstr ""
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Επιλογή"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4792,10 +4774,8 @@ msgid "&Select"
 msgstr "&Επιλογή"
 
 #: qtplugins/select/select.cpp:180
-#, fuzzy
-#| msgid "Color by Element"
 msgid "Select Element"
-msgstr "Χρώμα κατά στοιχείο"
+msgstr ""
 
 #: qtplugins/select/select.cpp:269
 msgid "Select Backbone"
@@ -5043,7 +5023,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:218
 #: qtplugins/spectra/spectradialog.cpp:409
 #, fuzzy
-#| msgid "&Density Of States Settings"
 msgid "Density of States"
 msgstr "Πυκνότητα καταστάσεων"
 
@@ -5444,7 +5423,6 @@ msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:544
 #, fuzzy, qt-format
-#| msgid "G03 failed to start."
 msgid "Error: %1 failed to start"
 msgstr "Το %1 απέτυχε να ξεκινήσει"
 
@@ -6876,7 +6854,6 @@ msgstr "Αλλαγή της τεχνοτροπίας ορίου Χ"
 #. i18n: file: qtplugins/lammpsinput/lammpsinputdialog.ui:566
 #. i18n: ectx: property (toolTip), widget (QLabel, label_boundary)
 #, fuzzy
-#| msgid "Select bondary Styles in X, Y and Z directions."
 msgid "Select boundary Styles in X, Y and Z directions."
 msgstr "Επιλογή τεχνοτροπιών ορίου στις κατευθύνσεις Χ, Υ και Ζ."
 
@@ -7827,16 +7804,13 @@ msgstr "&Κλείσιμο"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:91
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #, fuzzy
-#| msgid "Frequency Scale Factor:"
 msgid "Scale Factor:"
 msgstr "Συντελεστής κλίμακας:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr "Ελάχιστο:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7855,24 +7829,18 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr "Ελάχιστο:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "Πλάτος:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Κατώφλι:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:224
 #. i18n: ectx: attribute (title), widget (QWidget, tab_appearance)
@@ -7925,7 +7893,6 @@ msgstr "Φόντο:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:375
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
 msgstr "υπολογιζόμενου φάσματος"
 
@@ -7936,10 +7903,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:411
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8069,10 +8034,8 @@ msgstr "Τιμή ισοεπιφάνειας:"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
-#, fuzzy
-#| msgid " K"
 msgid " "
-msgstr " K"
+msgstr " "
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8714,11 +8677,6 @@ msgstr ""
 #~ "Μεσαίο πλήκτρο: Πάτημα και σύρσιμο για μεγέθυνση ή σμίκρυνση.\n"
 #~ "Δεξί πλήκτρο: Πάτημα και σύρσιμο για τη μετακίνηση της προβολής.\n"
 #~ "Διπλό πάτημα: Επαναφορά της προβολής."
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Κινούμενη απεικόνιση"
 
 #, fuzzy
 #~| msgid ""
