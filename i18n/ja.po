@@ -8754,10 +8754,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&ジオメトリ最適化"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
 #~ msgstr "構造最適化"
 
 #, fuzzy
@@ -8776,7 +8772,7 @@ msgstr ""
 #~ msgstr "インデックスによるカラー"
 
 #~ msgid "Color by Index (red, orange, yellow, green, blue, violet)."
-#~ msgstr "インデックスによるカラー ( 赤, 橙, 黄, 緑, 青, 紫 )"
+#~ msgstr "インデックスによるカラー（赤, 橙, 黄, 緑, 青, 紫 )"
 
 #~ msgid "Color by Partial Charge"
 #~ msgstr "部分電荷によるカラー"
@@ -8800,10 +8796,10 @@ msgstr ""
 #~ msgstr "元素による色付け"
 
 #~ msgid "Color by Element (carbon = grey, oxygen = red, ...)."
-#~ msgstr "元素による色付け ( 炭素 = グレー, 酸素 = 赤, ... )"
+#~ msgstr "元素による色付け（炭素 = グレー, 酸素 = 赤, ... )"
 
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
-#~ msgstr "残基による色付け ( アミノ酸タイプ, 疎水性, ... )"
+#~ msgstr "残基による色付け（アミノ酸タイプ, 疎水性, ... )"
 
 #~ msgid "SMARTS Pattern:"
 #~ msgstr "SMARTSパターン:"
@@ -8839,7 +8835,7 @@ msgstr ""
 #~ msgstr "原点に x, y, z 軸を表示"
 
 #~ msgid "Renders primitives using Balls (atoms) and Sticks (bonds)"
-#~ msgstr "ボール ( 原子 ) とスティック ( 結合 ) で基本要素を表示"
+#~ msgstr "ボール（原子）とスティック（結合）で基本要素を表示"
 
 #~ msgid "Dipole"
 #~ msgstr "双極子"
@@ -8878,7 +8874,7 @@ msgstr ""
 #~ msgstr "シンプル・ワイヤフレーム"
 
 #~ msgid "Renders bonds as wires (lines), ideal for large molecules"
-#~ msgstr "結合をワイヤ ( 直線 ) で表示, 巨大分子に最適"
+#~ msgstr "結合をワイヤ（直線）で表示, 巨大分子に最適"
 
 #~ msgid "Van der Waals Spheres"
 #~ msgstr "ファンデルワールス球"
@@ -8895,7 +8891,7 @@ msgstr ""
 #~ msgstr "%1, 等値面 = %L2"
 
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
-#~ msgstr "結合をワイヤ ( 直線 ) で表示, 巨大 ( 生体 ) 分子に最適"
+#~ msgstr "結合をワイヤ（直線）で表示, 巨大（生体）分子に最適"
 
 #~ msgid "Trajectory files"
 #~ msgstr "トラジェクトリファイル"
@@ -8944,7 +8940,7 @@ msgstr ""
 #~ msgstr "トラジェクトリ, 反応, 振動をアニメーションで表示"
 
 #~ msgid "Cartesian Editor"
-#~ msgstr "カルテシアン座標エディタ"
+#~ msgstr "デカルト座標エディタ"
 
 #~ msgid ""
 #~ "No unit cell defined for molecule -- cannot use fractional coordinates."
@@ -8953,10 +8949,10 @@ msgstr ""
 #~ "せん。"
 
 #~ msgid "Cartesian Editor..."
-#~ msgstr "カルテシアンエディタ..."
+#~ msgstr "デカルト座標エディタ..."
 
 #~ msgid "Cartesian editor"
-#~ msgstr "カルテシアンエディタ"
+#~ msgstr "デカルト座標エディタ"
 
 #~ msgid "Number of atoms: %1"
 #~ msgstr "原子数 : %1"
