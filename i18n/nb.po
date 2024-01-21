@@ -11420,11 +11420,6 @@ msgstr ""
 #~ msgstr "Partiell ladning"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animasjon"
-
-#, fuzzy
 #~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
 #~ msgstr "Optimiser geometri"
