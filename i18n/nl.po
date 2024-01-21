@@ -1593,10 +1593,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:29
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "Uitlijnen"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:32
 msgid "Align molecules to a Cartesian axis"
@@ -2339,10 +2337,8 @@ msgid "Invalid atomic index."
 msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:422
-#, fuzzy
-#| msgid "By Atomic Index"
 msgid "Atomic index."
-msgstr "Op atoomindex"
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:432
 msgid "Invalid atomic number."
@@ -4735,10 +4731,8 @@ msgid "Enlarge Selection"
 msgstr "Selectie"
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Selectie"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -5691,10 +5685,8 @@ msgstr "gedeeltelijke verandering"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
-#, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr "Lading:"
+msgstr ""
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -7718,10 +7710,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr "Minimum:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:82
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7740,24 +7730,18 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:123
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr "Minimum:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "Breedte:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Snap-to Threshold: "
 msgid "Peak Threshold:"
-msgstr "Aanhaakdrempel "
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
@@ -7819,17 +7803,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:376
 #. i18n: ectx: property (text), widget (QLabel, label)
-#, fuzzy
-#| msgid "Font:"
 msgid "Font Size:"
-msgstr "Font:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:387
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:392
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8504,11 +8484,6 @@ msgstr ""
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "gedeeltelijke verandering"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
 
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
