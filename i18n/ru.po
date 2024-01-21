@@ -5658,10 +5658,8 @@ msgstr "Частичный заряд"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
-#, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr "Заряд:"
+msgstr ""
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -6306,10 +6304,8 @@ msgstr "РНК"
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#, fuzzy
-#| msgid "Nucleus:"
 msgid "Nucleic Acids:"
-msgstr "Ядро:"
+msgstr ""
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:49
 #. i18n: ectx: property (toolTip), widget (QToolButton, toolButton_A)
@@ -7712,10 +7708,8 @@ msgstr "Коэффициент масштабирования частот:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr "Минимум:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7734,24 +7728,18 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr "Минимум:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "Толщина:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Порог:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:224
 #. i18n: ectx: attribute (title), widget (QWidget, tab_appearance)
@@ -7805,10 +7793,8 @@ msgstr "Фон:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:375
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
-msgstr "Экспорт рассчитанного спектра"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:395
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -7817,10 +7803,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:411
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
