@@ -9544,11 +9544,6 @@ msgstr ""
 #~ "Dwi-Klik: \tTetap semula pandangan."
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animasi"
-
-#, fuzzy
 #~| msgid ""
 #~| "Selection Tool (F11)\n"
 #~| "\n"
