@@ -2920,10 +2920,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr "从 Protein Data Bank 下载 PDB 模型"
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "选择"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -2992,10 +2990,8 @@ msgid "Forcefield optimization"
 msgstr "力场优化"
 
 #: qtplugins/forcefield/forcefield.h:50
-#, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr "力场优化"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
@@ -3511,10 +3507,8 @@ msgstr "没有分子集合"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:217
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:228:1136
-#, fuzzy
-#| msgid "Molecule Charge:"
 msgid "Molecule Name:"
-msgstr "分子电荷:"
+msgstr ""
 
 #. i18n: file: qtplugins/molecularproperties/molecularpropertiesdialog.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -3949,10 +3943,8 @@ msgid "Player"
 msgstr "播放器"
 
 #: qtplugins/playertool/playertool.cpp:48
-#, fuzzy
-#| msgid "Animation"
 msgid "Animation Tool"
-msgstr "动画"
+msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:73
 msgid "Play"
@@ -4194,9 +4186,8 @@ msgstr "PLY"
 
 #: qtplugins/ply/ply.h:29
 #, fuzzy
-#| msgid "Render the scene using VRML."
 msgid "Render the scene using PLY."
-msgstr "使用 VRML 渲染场景。"
+msgstr "使用 PLY 渲染场景。"
 
 #: qtplugins/povray/povray.cpp:29
 msgid "POV-Ray Render…"
@@ -4322,10 +4313,8 @@ msgid "Atom 4"
 msgstr "原子"
 
 #: qtplugins/propertytables/propertymodel.cpp:687
-#, fuzzy
-#| msgid "Insert Fragment"
 msgid "Adjust Fragment"
-msgstr "插入片段"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:813
 #, fuzzy
@@ -4516,10 +4505,8 @@ msgid "Manipulate the view camera."
 msgstr "操作视图相机。"
 
 #: qtplugins/scriptcharges/scriptcharges.h:32
-#, fuzzy
-#| msgid "Charge:"
 msgid "Script Charge Models"
-msgstr "脚本电荷模型"
+msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:36
 msgid "Load electrostatic models from external scripts."
@@ -4570,16 +4557,12 @@ msgid "Select Water…"
 msgstr "选择水…"
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Enlarge Selection"
-msgstr "忽略选择"
+msgstr ""
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "选择"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4594,10 +4577,8 @@ msgid "&Select"
 msgstr "选择(&S)"
 
 #: qtplugins/select/select.cpp:180
-#, fuzzy
-#| msgid "Symmetry Elements"
 msgid "Select Element"
-msgstr "对称元素"
+msgstr ""
 
 #: qtplugins/select/select.cpp:217
 #, fuzzy
@@ -4623,10 +4604,8 @@ msgid "Atoms to Select:"
 msgstr "要选择的原子："
 
 #: qtplugins/select/select.cpp:446
-#, fuzzy
-#| msgid "Delete Atom"
 msgid "Select Atom"
-msgstr "删除原子"
+msgstr ""
 
 #: qtplugins/select/select.cpp:485
 msgid "Select Atoms by Residue"
@@ -5119,9 +5098,8 @@ msgstr ""
 
 #: qtplugins/templatetool/templatetool.h:35
 #: qtplugins/templatetool/templatetool.h:36
-#, fuzzy
 msgid "Template tool"
-msgstr "测量"
+msgstr ""
 
 #: qtplugins/vanderwaals/vanderwaals.h:33
 msgid "Simple display of VdW spheres."
@@ -7574,10 +7552,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr "最小值："
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7596,10 +7572,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr "最小值："
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
@@ -8378,11 +8352,6 @@ msgstr ""
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "插入分子..."
-
-#, fuzzy
-#~| msgid "Error Pasting Molecule"
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "错误粘贴分子"
 
 #, fuzzy
 #~ msgid "&GAMESS..."
