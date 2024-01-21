@@ -10712,9 +10712,8 @@ msgstr "Geïmorteerde Spectra:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:278
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
 msgid "10"
-msgstr "10"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:283
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -11457,11 +11456,6 @@ msgstr ""
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "gedeeltelijke verandering"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
 
 #, fuzzy
 #~ msgid "Geometry"
