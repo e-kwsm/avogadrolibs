@@ -388,10 +388,8 @@ msgid "Configure Job"
 msgstr ""
 
 #: molequeue/molequeuedialog.cpp:57
-#, fuzzy
-#| msgid "Hide job in MoleQueue:"
 msgid "Submitting job to MoleQueue…"
-msgstr "Skjul jobb i MoleQueue:"
+msgstr ""
 
 #: molequeue/molequeuedialog.cpp:66
 msgid "Job Submission Timeout"
@@ -1464,7 +1462,6 @@ msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
 #, fuzzy
-#| msgid "&UV Settings"
 msgid "Settings"
 msgstr "Innstillinger"
 
@@ -2942,7 +2939,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate Energy"
 msgid "&Calculate"
 msgstr "Beregn"
 
@@ -3790,7 +3786,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generating…"
 msgstr "Genererer …"
 
@@ -3931,10 +3926,8 @@ msgid "Removing Hydrogens (Open Babel)"
 msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:919
-#, fuzzy
-#| msgid "Error reading clipboard data."
 msgid "Error generating Open Babel data."
-msgstr "Klarte ikke å lese utklippstavledata."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:942
 msgid "Reading obabel output…"
@@ -4291,7 +4284,6 @@ msgstr "Last ned programtillegg fra GitHub-pakkebrønner."
 
 #: qtplugins/ply/ply.cpp:29
 #, fuzzy
-#| msgid "VRML Render"
 msgid "PLY Render…"
 msgstr "PLY-opptegner"
 
@@ -4303,7 +4295,6 @@ msgstr "Lagre fil"
 
 #: qtplugins/ply/ply.cpp:71
 #, fuzzy
-#| msgid "VRML (*.wrl);;Text file (*.txt)"
 msgid "PLY (*.ply);;Text file (*.txt)"
 msgstr "PLY (*.ply);;Tekstfil (*.txt)"
 
@@ -4313,13 +4304,10 @@ msgstr ""
 
 #: qtplugins/ply/ply.h:29
 #, fuzzy
-#| msgid "Render the scene using VRML."
 msgid "Render the scene using PLY."
 msgstr "Tegn scenen ved bruk av PLY."
 
 #: qtplugins/povray/povray.cpp:29
-#, fuzzy
-#| msgid "VRML Render"
 msgid "POV-Ray Render…"
 msgstr "POV-Ray-opptegner"
 
@@ -4443,10 +4431,8 @@ msgid "Atom 4"
 msgstr "Atom 4"
 
 #: qtplugins/propertytables/propertymodel.cpp:687
-#, fuzzy
-#| msgid "Insert Fragment"
 msgid "Adjust Fragment"
-msgstr "Sett inn fragment"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:813
 #, fuzzy
@@ -4615,7 +4601,7 @@ msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:32
 #, fuzzy
-#| msgid "Charge:"
+#| msgid "Charge"
 msgid "Script Charge Models"
 msgstr "Ladning"
 
@@ -4669,16 +4655,12 @@ msgid "Select Water"
 msgstr ""
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
-#, fuzzy
-#| msgid "Selection"
 msgid "Enlarge Selection"
-msgstr "Utvalg"
+msgstr ""
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Utvalg"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4917,7 +4899,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:207
 #, fuzzy
 #| msgctxt "NMR spectra option"
-#| msgid "NMR"
 msgid "NMR"
 msgstr "NMR"
 
@@ -4976,7 +4957,6 @@ msgstr "Spektra"
 #: qtplugins/spectra/spectradialog.cpp:398
 #: qtplugins/spectra/spectradialog.cpp:411
 #, fuzzy
-#| msgid "No intensities"
 msgid "Intensity"
 msgstr "Intensiteter"
 
@@ -5403,10 +5383,8 @@ msgstr "Send inn %1-beregning"
 
 #. i18n: file: molequeue/inputgeneratorwidget.ui:123
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
-#, fuzzy
-#| msgid "Save APBS Input File"
 msgid "Save Input…"
-msgstr "Lagre APBS-inndatafil"
+msgstr ""
 
 #. i18n: file: molequeue/molequeuewidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -5627,10 +5605,8 @@ msgstr "Partiell ladning"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
-#, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr "Ladning:"
+msgstr ""
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -6279,7 +6255,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:52
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_A)
 #, fuzzy
-#| msgid "A:"
 msgctxt "adenine (A)"
 msgid "A"
 msgstr "A"
@@ -6292,7 +6267,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:62
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_C)
 #, fuzzy
-#| msgid "C:"
 msgctxt "cytosine (C)"
 msgid "C"
 msgstr "C"
@@ -6328,17 +6302,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:127
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
-#, fuzzy
-#| msgid "A:"
 msgid "A"
-msgstr "A:"
+msgstr ""
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:132
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
-#, fuzzy
-#| msgid "B:"
 msgid "B"
-msgstr "B:"
+msgstr ""
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:137
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
@@ -6882,10 +6852,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:1012
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
-#, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generate…"
-msgstr "Genererer 3D-molekyl …"
+msgstr ""
 
 #. i18n: file: qtplugins/lineformatinput/lineformatinputdialog.ui:41
 #. i18n: ectx: property (text), widget (QLabel, label_2)
@@ -6915,7 +6883,6 @@ msgstr ""
 #. i18n: file: qtplugins/manipulator/manipulatewidget.ui:122
 #. i18n: ectx: property (text), item, widget (QComboBox, rotateComboBox)
 #, fuzzy
-#| msgid "Origin:"
 msgid "Origin"
 msgstr "Origo"
 
@@ -7681,10 +7648,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr "Minimum:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7703,10 +7668,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr "Minimum:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
@@ -7780,10 +7743,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:395
 #. i18n: ectx: property (text), widget (QLabel, label)
-#, fuzzy
-#| msgid "Font:"
 msgid "Font Size:"
-msgstr "Skrift:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -7911,10 +7872,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
-#, fuzzy
-#| msgid " K"
 msgid " "
-msgstr " K"
+msgstr ""
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8411,11 +8370,6 @@ msgid "Your emails"
 msgstr ""
 "epost@anotheragency.no, anders.oftedal@gmail.com, simen@simenh.com, "
 "simenheg@gmail.com, sol-moe@online.no"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animasjon"
 
 #, fuzzy
 #~ msgctxt "ambient occlusion"
