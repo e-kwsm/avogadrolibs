@@ -8714,9 +8714,8 @@ msgstr "Spektrum Terimport:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:248
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
 msgid "10"
-msgstr "10"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:253
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8929,9 +8928,8 @@ msgstr "Nilai permukaan-Iso:"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
-#, fuzzy
 msgid " "
-msgstr " "
+msgstr ""
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
