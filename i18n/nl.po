@@ -7980,10 +7980,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:387
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
-#, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:392
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8659,11 +8657,6 @@ msgstr ""
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "gedeeltelijke verandering"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
 
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
