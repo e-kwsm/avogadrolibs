@@ -3805,10 +3805,8 @@ msgid "Player"
 msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:48
-#, fuzzy
-#| msgid "Animation..."
 msgid "Animation Tool"
-msgstr "Animim..."
+msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:73
 msgid "Play"
