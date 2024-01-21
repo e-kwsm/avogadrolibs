@@ -5554,7 +5554,6 @@ msgstr ""
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:288
 #. i18n: ectx: property (text), widget (QPushButton, computeButton)
 #, fuzzy
-#| msgid "Submit CP2K Calculation"
 msgid "Submit Calculation…"
 msgstr "Отправить расчет…"
 
@@ -8694,11 +8693,6 @@ msgstr ""
 #~ "Зажатием левой кнопки мыши вы можете вращать молекулу\n"
 #~ "Прокруткой (или зажимая Shift) вы можете масштабировать молекулу\n"
 #~ "Правой кнопкой мыши вы можете перемещать молекулу.\n"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Анимация"
 
 #~ msgid ""
 #~ "Selection Tool\n"
