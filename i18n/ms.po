@@ -1465,10 +1465,8 @@ msgid "Change Atom Label"
 msgstr "Ubah Tertib Ikatan"
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Change Selection"
-msgstr "Abaikan Pemilihan"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
@@ -1560,10 +1558,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "Jajar"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
@@ -2162,10 +2158,8 @@ msgstr " Å"
 
 #: qtplugins/closecontacts/closecontacts.cpp:232
 #: qtplugins/noncovalent/noncovalent.cpp:369
-#, fuzzy
-#| msgid "Maximum Force"
 msgid "Maximum distance:"
-msgstr "Daya Maksimum"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.cpp:233
 #: qtplugins/crystal/crystalscene.cpp:174
@@ -2175,10 +2169,8 @@ msgid "Line width:"
 msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:37
-#, fuzzy
-#| msgid "Renders force displacements on atoms"
 msgid "Render close contacts between atoms."
-msgstr "Terap sesaran daya atom"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:55
 msgid "Contact"
@@ -3267,10 +3259,8 @@ msgstr "Tiamina"
 #: qtplugins/insertdna/insertdna.cpp:201
 #: qtplugins/lineformatinput/lineformatinput.cpp:108
 #: qtplugins/lineformatinput/lineformatinput.cpp:123:1046
-#, fuzzy
-#| msgid "Molecule"
 msgid "Insert Molecule…"
-msgstr "Molekul"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:202
 #: qtplugins/lineformatinput/lineformatinput.cpp:124
@@ -3397,10 +3387,8 @@ msgid "Display labels on ball and stick style."
 msgstr ""
 
 #: qtplugins/label/labeleditor.cpp:31
-#, fuzzy
-#| msgid "Bond Labels"
 msgid "Edit Labels"
-msgstr "Label Ikatan"
+msgstr ""
 
 #: qtplugins/label/labeleditor.cpp:33
 msgid ""
@@ -3690,10 +3678,8 @@ msgid "Zoom the scene."
 msgstr ""
 
 #: qtplugins/navigator/navigator.cpp:63
-#, fuzzy
-#| msgid "&Translate Atoms..."
 msgid "Translate the scene."
-msgstr "&Terjemah Atom..."
+msgstr "&"
 
 #: qtplugins/navigator/navigator.cpp:104
 msgid "Reverse Direction of Zoom on Scroll"
@@ -3727,10 +3713,8 @@ msgid " °"
 msgstr " °"
 
 #: qtplugins/noncovalent/noncovalent.cpp:368
-#, fuzzy
-#| msgid "SCF tolerance type:"
 msgid "Angle tolerance:"
-msgstr "Jenis toleransi SCF:"
+msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.h:34
 msgid "Render a few non-covalent interactions."
@@ -3881,10 +3865,8 @@ msgid "Generating Conformers (Open Babel)"
 msgstr "&Optimumkan Geometri"
 
 #: qtplugins/openbabel/openbabel.cpp:711
-#, fuzzy
-#| msgid "Conformer"
 msgid "Generate Conformers"
-msgstr "Konformer"
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:720
 msgid "Cannot open file with Open Babel."
@@ -4075,10 +4057,8 @@ msgid "Player"
 msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:48
-#, fuzzy
-#| msgid "Animation"
 msgid "Animation Tool"
-msgstr "Animasi"
+msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:73
 msgid "Play"
@@ -4449,10 +4429,8 @@ msgid "Atom 4"
 msgstr "Atom"
 
 #: qtplugins/propertytables/propertymodel.cpp:687
-#, fuzzy
-#| msgid "Insert Fragment"
 msgid "Adjust Fragment"
-msgstr "Sisip Cebisan"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:813
 #, fuzzy
@@ -4664,10 +4642,8 @@ msgid "Manipulate the view camera."
 msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:32
-#, fuzzy
-#| msgid "Charge:"
 msgid "Script Charge Models"
-msgstr "Cas:"
+msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:36
 msgid "Load electrostatic models from external scripts."
@@ -4694,10 +4670,8 @@ msgid "Invert Selection"
 msgstr ""
 
 #: qtplugins/select/select.cpp:53
-#, fuzzy
-#| msgid "Color by Element"
 msgid "Select by Element…"
-msgstr "Warna mengikut Unsur"
+msgstr ""
 
 #: qtplugins/select/select.cpp:58
 #, fuzzy
@@ -4726,16 +4700,12 @@ msgid "Select Water…"
 msgstr "Indeks Atom"
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Enlarge Selection"
-msgstr "Abaikan Pemilihan"
+msgstr ""
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Pemilihan"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4750,10 +4720,8 @@ msgid "&Select"
 msgstr "&Pilih"
 
 #: qtplugins/select/select.cpp:180
-#, fuzzy
-#| msgid "Color by Element"
 msgid "Select Element"
-msgstr "Warna mengikut Unsur"
+msgstr ""
 
 #: qtplugins/select/select.cpp:217
 #, fuzzy
@@ -4779,10 +4747,8 @@ msgid "Atoms to Select:"
 msgstr ""
 
 #: qtplugins/select/select.cpp:446
-#, fuzzy
-#| msgid "Delete Atom"
 msgid "Select Atom"
-msgstr "Padam Atom"
+msgstr ""
 
 #: qtplugins/select/select.cpp:485
 msgid "Select Atoms by Residue"
@@ -4848,10 +4814,8 @@ msgid "Selection tool"
 msgstr ""
 
 #: qtplugins/selectiontool/selectiontoolwidget.cpp:35
-#, fuzzy
-#| msgid "New Label:"
 msgid "New Layer"
-msgstr "Label Baru:"
+msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
@@ -4994,10 +4958,8 @@ msgid "Spectra"
 msgstr "Spektrum"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
-#| msgid "Display as &row vectors"
 msgid "Display spectra plots."
-msgstr "Papar vektor &baris"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
@@ -5025,10 +4987,8 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:219
 #: qtplugins/spectra/spectradialog.cpp:410
-#, fuzzy
-#| msgid "&Density Of States Settings"
 msgid "Density of States"
-msgstr "&Ketumpatan Tetapan Keadaan"
+msgstr "&"
 
 #: qtplugins/spectra/spectradialog.cpp:256
 msgid "Select Background Color"
@@ -5076,10 +5036,8 @@ msgid "Intensity"
 msgstr "Keamatan"
 
 #: qtplugins/spectra/spectradialog.cpp:369
-#, fuzzy
-#| msgid "Spectra"
 msgid "NMR Spectra"
-msgstr "Spektrum"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:370
 #, fuzzy
@@ -5088,10 +5046,8 @@ msgid "Chemical Shift (ppm)"
 msgstr "Shift (ppm)"
 
 #: qtplugins/spectra/spectradialog.cpp:382
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
-msgstr "Ketumpatan Elektron"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:383
 #: qtplugins/spectra/spectradialog.cpp:411
@@ -5301,16 +5257,12 @@ msgid ""
 msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:309
-#, fuzzy
-#| msgid "Insert Peptide"
 msgid "Insert Template"
-msgstr "Sisip Peptid"
+msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:567
-#, fuzzy
-#| msgid "Insert Peptide"
 msgid "Insert Ligand"
-msgstr "Sisip Peptid"
+msgstr ""
 
 #: qtplugins/templatetool/templatetool.h:35
 #: qtplugins/templatetool/templatetool.h:36
@@ -5336,10 +5288,8 @@ msgid "Show the vibrational modes dialog."
 msgstr ""
 
 #: qtplugins/vibrations/vibrations.cpp:91
-#, fuzzy
-#| msgid "Set Fractional Coordinates"
 msgid "Set the vibrational mode."
-msgstr "Tetapkan Koordinat Pecahan"
+msgstr ""
 
 #: qtplugins/vibrations/vibrations.cpp:93
 msgid "Set the vibrational amplitude."
@@ -5360,10 +5310,8 @@ msgid "Vibrations"
 msgstr "Getaran"
 
 #: qtplugins/vibrations/vibrations.h:37
-#, fuzzy
-#| msgid "Set Fractional Coordinates"
 msgid "Display vibrational modes."
-msgstr "Tetapkan Koordinat Pecahan"
+msgstr ""
 
 #: qtplugins/vrml/vrml.cpp:29
 #, fuzzy
@@ -5387,10 +5335,8 @@ msgid "Render the molecule as a wireframe."
 msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:91
-#, fuzzy
-#| msgid "Calculated Spectra:"
 msgid "Calculate Band Structure…"
-msgstr "Spektrum Terkira:"
+msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:112
 msgid "&Yaehmop"
@@ -5431,10 +5377,9 @@ msgid "Cannot find Yaehmop"
 msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:545
-#, fuzzy, qt-format
-#| msgid "G03 failed to start."
+#, qt-format
 msgid "Error: %1 failed to start"
-msgstr "G03 gagal dimulakan."
+msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:596
 msgid "Yaehmop Input"
