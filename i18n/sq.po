@@ -8224,11 +8224,6 @@ msgstr ""
 "vilsongjeci@gmail.com"
 
 #, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Animim..."
-
-#, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Skedari"
 
