@@ -9523,11 +9523,6 @@ msgstr ""
 #~ "Прокруткой (или зажимая Shift) вы можете масштабировать молекулу\n"
 #~ "Правой кнопкой мыши вы можете перемещать молекулу.\n"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Анимация"
-
 #~ msgid ""
 #~ "Selection Tool\n"
 #~ "\n"
