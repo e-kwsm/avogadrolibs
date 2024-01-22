@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: avogadro\n"
 "Report-Msgid-Bugs-To: avogadro-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2024-01-04 01:57+0000\n"
+"POT-Creation-Date: 2024-01-22 19:38+0900\n"
 "PO-Revision-Date: 2024-01-05 17:07+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/avogadro/"
@@ -1391,7 +1391,7 @@ msgstr "Añadir Información de la Capa"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: qtgui/rwlayermanager.cpp:220 qtgui/rwlayermanager.cpp:223
 #: qtplugins/select/select.cpp:560
-#: qtplugins/selectiontool/selectiontool.cpp:254:1661
+#: qtplugins/selectiontool/selectiontool.cpp:262:1661
 msgid "Change Layer"
 msgstr "Cambiar Capa"
 
@@ -1400,7 +1400,7 @@ msgid "Add Atom"
 msgstr "Añadir Átomo"
 
 #: qtgui/rwmolecule.cpp:70 qtgui/rwmolecule.cpp:85
-#: qtplugins/editor/editor.cpp:123
+#: qtplugins/editor/editor.cpp:131
 msgid "Remove Atom"
 msgstr "Eliminar Átomo"
 
@@ -1576,11 +1576,11 @@ msgstr "&Exportar"
 msgid "ThreeDMol"
 msgstr "ThreeDMol"
 
-#: qtplugins/aligntool/aligntool.cpp:53 qtplugins/aligntool/aligntool.cpp:88
+#: qtplugins/aligntool/aligntool.cpp:53 qtplugins/aligntool/aligntool.cpp:96
 msgid "Align"
 msgstr "Alinear"
 
-#: qtplugins/aligntool/aligntool.cpp:56
+#: qtplugins/aligntool/aligntool.cpp:55
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1600,23 +1600,23 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:281
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: qtplugins/aligntool/aligntool.cpp:75:1718
+#: qtplugins/aligntool/aligntool.cpp:83:1718
 msgid "Axis:"
 msgstr "Eje:"
 
-#: qtplugins/aligntool/aligntool.cpp:152
+#: qtplugins/aligntool/aligntool.cpp:160
 msgid "Align at Origin"
 msgstr "Alinear en el Origen"
 
-#: qtplugins/aligntool/aligntool.cpp:188
+#: qtplugins/aligntool/aligntool.cpp:196
 msgid "Align to Axis"
 msgstr "Alinear con el Eje"
 
-#: qtplugins/aligntool/aligntool.cpp:304
+#: qtplugins/aligntool/aligntool.cpp:312
 msgid "Center the atom at the origin."
 msgstr "Centrar el átomo en el origen."
 
-#: qtplugins/aligntool/aligntool.cpp:307
+#: qtplugins/aligntool/aligntool.cpp:315
 msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr "Rotar la molécula para alinear el átomo con el eje especificado."
 
@@ -1979,7 +1979,7 @@ msgstr "Representar átomos como esferas y enlaces como cilindros."
 msgid "Bond-Centric Manipulation"
 msgstr "Manipulación Centrada en Enlaces"
 
-#: qtplugins/bondcentrictool/bondcentrictool.cpp:124
+#: qtplugins/bondcentrictool/bondcentrictool.cpp:123
 msgid ""
 "Bond Centric Manipulation Tool\n"
 "\n"
@@ -2005,28 +2005,28 @@ msgstr ""
 "ángulo\n"
 "Clic derecho y Arrastrar uno de los Átomos del Enlace de cambiar la longitud"
 
-#: qtplugins/bondcentrictool/bondcentrictool.cpp:776
-#: qtplugins/bondcentrictool/bondcentrictool.cpp:864
-#: qtplugins/measuretool/measuretool.cpp:203
+#: qtplugins/bondcentrictool/bondcentrictool.cpp:784
+#: qtplugins/bondcentrictool/bondcentrictool.cpp:872
 #: qtplugins/measuretool/measuretool.cpp:211
-#: qtplugins/measuretool/measuretool.cpp:212
+#: qtplugins/measuretool/measuretool.cpp:219
+#: qtplugins/measuretool/measuretool.cpp:220
 #, qt-format
 msgid "%L1°"
 msgstr "%L1º"
 
-#: qtplugins/bondcentrictool/bondcentrictool.cpp:798
-#: qtplugins/editor/editor.cpp:260 qtplugins/measuretool/measuretool.cpp:219
-#: qtplugins/measuretool/measuretool.cpp:220
-#: qtplugins/measuretool/measuretool.cpp:222
+#: qtplugins/bondcentrictool/bondcentrictool.cpp:806
+#: qtplugins/editor/editor.cpp:268 qtplugins/measuretool/measuretool.cpp:227
+#: qtplugins/measuretool/measuretool.cpp:228
+#: qtplugins/measuretool/measuretool.cpp:230
 #, qt-format
 msgid "%L1 Å"
 msgstr "%L1 Å"
 
-#: qtplugins/bondcentrictool/bondcentrictool.h:168
+#: qtplugins/bondcentrictool/bondcentrictool.h:169
 msgid "Bond centric manipulation tool."
 msgstr "Herramienta de manipulación centrada en enlaces."
 
-#: qtplugins/bondcentrictool/bondcentrictool.h:173
+#: qtplugins/bondcentrictool/bondcentrictool.h:174
 msgid ""
 "Tool used to edit molecular geometry by changing bond lengths and angles."
 msgstr ""
@@ -2822,11 +2822,11 @@ msgstr "Manipular los tipos de elementos personalizados en la molécula actual."
 msgid "Custom Elements"
 msgstr "Elementos Personalizados"
 
-#: qtplugins/editor/editor.cpp:71 qtplugins/editor/editor.cpp:110
+#: qtplugins/editor/editor.cpp:71 qtplugins/editor/editor.cpp:118
 msgid "Draw"
 msgstr "Dibujar"
 
-#: qtplugins/editor/editor.cpp:74
+#: qtplugins/editor/editor.cpp:73
 msgid ""
 "Draw Tool\n"
 "\n"
@@ -2839,24 +2839,24 @@ msgstr ""
 "Enlaces\n"
 "Botón Derecho del Ratón: \tBorrar Átomo"
 
-#: qtplugins/editor/editor.cpp:104
+#: qtplugins/editor/editor.cpp:112
 msgid "Draw Atom"
 msgstr "Dibujar Átomo"
 
-#: qtplugins/editor/editor.cpp:114
+#: qtplugins/editor/editor.cpp:122
 msgid "Change Bond Type"
 msgstr "Cambiar Tipo de Enlace"
 
-#: qtplugins/editor/editor.cpp:127
+#: qtplugins/editor/editor.cpp:135
 msgid "Remove Bond"
 msgstr "Eliminar Enlace"
 
-#: qtplugins/editor/editor.cpp:255 qtplugins/measuretool/measuretool.cpp:193
-#: qtplugins/measuretool/measuretool.cpp:218
+#: qtplugins/editor/editor.cpp:263 qtplugins/measuretool/measuretool.cpp:201
+#: qtplugins/measuretool/measuretool.cpp:226
 msgid "Distance:"
 msgstr "Distancia:"
 
-#: qtplugins/editor/editor.cpp:258
+#: qtplugins/editor/editor.cpp:266
 #, qt-format
 msgid "%1 %L2"
 msgstr "%1 %L2"
@@ -2993,8 +2993,8 @@ msgid "%1 Energy = %L2"
 msgstr "%1 Energía = %L2"
 
 #: qtplugins/forcefield/forcefield.cpp:345
-#: qtplugins/playertool/playertool.cpp:343
-#: qtplugins/playertool/playertool.cpp:375 qtplugins/surfaces/surfaces.cpp:912
+#: qtplugins/playertool/playertool.cpp:347
+#: qtplugins/playertool/playertool.cpp:379 qtplugins/surfaces/surfaces.cpp:912
 #: qtplugins/surfaces/surfaces.cpp:956 qtplugins/surfaces/surfaces.cpp:968
 #: qtplugins/yaehmop/yaehmop.cpp:534
 msgid "Avogadro"
@@ -3326,7 +3326,7 @@ msgstr "Mostrar etiquetas en el estilo «bolas y palos»."
 msgid "Edit Labels"
 msgstr "Editar Etiquetas"
 
-#: qtplugins/label/labeleditor.cpp:32
+#: qtplugins/label/labeleditor.cpp:31
 msgid ""
 "Atom Label Tool\n"
 "\n"
@@ -3337,7 +3337,7 @@ msgstr ""
 "Botón Izquierdo del Ratón:\tPresionar sobre los Átomos para añadir Etiquetas "
 "Personalizadas"
 
-#: qtplugins/label/labeleditor.cpp:67
+#: qtplugins/label/labeleditor.cpp:75
 msgid "Create Label"
 msgstr "Crear Etiqueta"
 
@@ -3403,7 +3403,7 @@ msgstr ""
 msgid "Manipulate"
 msgstr "Manipular"
 
-#: qtplugins/manipulator/manipulator.cpp:52
+#: qtplugins/manipulator/manipulator.cpp:51
 msgid ""
 "Manipulation Tool\n"
 "\n"
@@ -3425,7 +3425,7 @@ msgstr "Herramienta de Manipulación"
 msgid "Measure"
 msgstr "Medir"
 
-#: qtplugins/measuretool/measuretool.cpp:57
+#: qtplugins/measuretool/measuretool.cpp:56
 msgid ""
 "Measure Tool\n"
 "\n"
@@ -3443,16 +3443,16 @@ msgstr ""
 "\tEl ángulo diedro se mide entre 1-2-3-4\n"
 "Botón Derecho del Ratón: \tReinicia las mediciones."
 
-#: qtplugins/measuretool/measuretool.cpp:191
-#: qtplugins/measuretool/measuretool.cpp:202
+#: qtplugins/measuretool/measuretool.cpp:199
+#: qtplugins/measuretool/measuretool.cpp:210
 msgid "Dihedral:"
 msgstr "Ángulo Diedro:"
 
-#: qtplugins/measuretool/measuretool.cpp:192
+#: qtplugins/measuretool/measuretool.cpp:200
 msgid "Angle:"
 msgstr "Ángulo:"
 
-#: qtplugins/measuretool/measuretool.cpp:210
+#: qtplugins/measuretool/measuretool.cpp:218
 msgid "Angles:"
 msgstr "Ángulos:"
 
@@ -3554,7 +3554,7 @@ msgstr "Número de Enlaces:"
 msgid "Navigate"
 msgstr "Navegar"
 
-#: qtplugins/navigator/navigator.cpp:42
+#: qtplugins/navigator/navigator.cpp:41
 msgid ""
 "Navigation Tool\n"
 "\n"
@@ -3568,23 +3568,23 @@ msgstr ""
 "Botón Central del Ratón:\tPresionar y arrastrar para acercar o alejar.\n"
 "Botón Derecho del Ratón:\tPresionar y arrastrar para mover la vista.\n"
 
-#: qtplugins/navigator/navigator.cpp:54
+#: qtplugins/navigator/navigator.cpp:61
 msgid "Rotate the scene along the x, y, or z axes."
 msgstr "Rotar la escena a lo largo de los ejes x, y o z."
 
-#: qtplugins/navigator/navigator.cpp:55
+#: qtplugins/navigator/navigator.cpp:62
 msgid "Zoom the scene."
 msgstr "Ampliar la escena."
 
-#: qtplugins/navigator/navigator.cpp:56
+#: qtplugins/navigator/navigator.cpp:63
 msgid "Translate the scene."
 msgstr "Mover la escena."
 
-#: qtplugins/navigator/navigator.cpp:97
+#: qtplugins/navigator/navigator.cpp:104
 msgid "Reverse Direction of Zoom on Scroll"
 msgstr "Invertir el Sentido al Acercar/Alejar"
 
-#: qtplugins/navigator/navigator.cpp:99
+#: qtplugins/navigator/navigator.cpp:106
 msgid ""
 "Default:\t Scroll down to shrink, scroll up to zoom\n"
 "Reversed:\t Scroll up to shrink, scroll down to zoom"
@@ -3950,88 +3950,88 @@ msgstr "Superposición de Ejes de Referencia"
 msgid "Render reference axes in the corner of the display."
 msgstr "Representar ejes de referencia en la esquina de la pantalla."
 
-#: qtplugins/playertool/playertool.cpp:52
+#: qtplugins/playertool/playertool.cpp:47
 msgid "Player"
 msgstr "Reproductor"
 
-#: qtplugins/playertool/playertool.cpp:54
+#: qtplugins/playertool/playertool.cpp:48
 msgid "Animation Tool"
 msgstr "Herramienta de Animación"
 
-#: qtplugins/playertool/playertool.cpp:69
+#: qtplugins/playertool/playertool.cpp:73
 msgid "Play"
 msgstr "Reproducir"
 
-#: qtplugins/playertool/playertool.cpp:72
+#: qtplugins/playertool/playertool.cpp:76
 msgid "Stop"
 msgstr "Parar"
 
-#: qtplugins/playertool/playertool.cpp:83
+#: qtplugins/playertool/playertool.cpp:87
 msgid "Frame rate:"
 msgstr "Fotogramas por segundo:"
 
-#: qtplugins/playertool/playertool.cpp:89
+#: qtplugins/playertool/playertool.cpp:93
 msgctxt "frames per second"
 msgid " FPS"
 msgstr " FPS"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:432
 #. i18n: ectx: property (text), widget (QLabel, frameLabel)
-#: qtplugins/playertool/playertool.cpp:113:1878
+#: qtplugins/playertool/playertool.cpp:117:1878
 msgid "Frame:"
 msgstr "Fotograma:"
 
-#: qtplugins/playertool/playertool.cpp:120
-#: qtplugins/playertool/playertool.cpp:411
+#: qtplugins/playertool/playertool.cpp:124
+#: qtplugins/playertool/playertool.cpp:415
 #: qtplugins/surfaces/surfacedialog.cpp:230
 #, qt-format
 msgid " of %0"
 msgstr " of %0"
 
-#: qtplugins/playertool/playertool.cpp:131
+#: qtplugins/playertool/playertool.cpp:135
 msgid "Dynamic bonding?"
 msgstr "¿Enlaces dinámicos?"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:528
 #. i18n: ectx: property (text), widget (QPushButton, recordButton)
-#: qtplugins/playertool/playertool.cpp:139:1884
+#: qtplugins/playertool/playertool.cpp:143:1884
 msgid "Record Movie…"
 msgstr "Grabar Película…"
 
-#: qtplugins/playertool/playertool.cpp:243
-#: qtplugins/playertool/playertool.cpp:348
+#: qtplugins/playertool/playertool.cpp:247
+#: qtplugins/playertool/playertool.cpp:352
 msgid "Movie (*.mp4)"
 msgstr "Película (*.mp4)"
 
-#: qtplugins/playertool/playertool.cpp:245
+#: qtplugins/playertool/playertool.cpp:249
 msgid "Export Bitmap Graphics"
 msgstr "Exportar Gráficos en Mapa de Bits"
 
-#: qtplugins/playertool/playertool.cpp:246
+#: qtplugins/playertool/playertool.cpp:250
 msgid "Movie (*.mp4);;Movie (*.avi);;GIF (*.gif)"
 msgstr "Película (*.mp4);;Película (*.avi);;GIF (*.gif)"
 
-#: qtplugins/playertool/playertool.cpp:260 qtplugins/surfaces/surfaces.cpp:884
+#: qtplugins/playertool/playertool.cpp:264 qtplugins/surfaces/surfaces.cpp:884
 msgid "GIF (*.gif)"
 msgstr "GIF (*.gif)"
 
-#: qtplugins/playertool/playertool.cpp:266
+#: qtplugins/playertool/playertool.cpp:270
 msgid "GIF FPS support warning"
 msgstr "Advertencia de soporte de GIF FPS"
 
-#: qtplugins/playertool/playertool.cpp:267
+#: qtplugins/playertool/playertool.cpp:271
 msgid "The GIF file format does not support frame rates over 100 FPS."
 msgstr "El formato de archivos GIF no soporta más de 100 FPS."
 
-#: qtplugins/playertool/playertool.cpp:312
+#: qtplugins/playertool/playertool.cpp:316
 msgid "Movie (*.avi)"
 msgstr "Película (*.avi)"
 
-#: qtplugins/playertool/playertool.cpp:344 qtplugins/surfaces/surfaces.cpp:957
+#: qtplugins/playertool/playertool.cpp:348 qtplugins/surfaces/surfaces.cpp:957
 msgid "Error: cannot add frame to video."
 msgstr "Error: No se pudo añadir el fotograma al vídeo."
 
-#: qtplugins/playertool/playertool.cpp:376 qtplugins/surfaces/surfaces.cpp:969
+#: qtplugins/playertool/playertool.cpp:380 qtplugins/surfaces/surfaces.cpp:969
 #, qt-format
 msgid "Cannot save file %1."
 msgstr "No se puede guardar el archivo %1."
@@ -4615,7 +4615,7 @@ msgstr "Seleccionar"
 msgid "Selection"
 msgstr "Selección"
 
-#: qtplugins/selectiontool/selectiontool.cpp:53
+#: qtplugins/selectiontool/selectiontool.cpp:52
 msgid ""
 "Selection Tool\n"
 "\n"
@@ -4636,7 +4636,7 @@ msgstr ""
 "selección.\n"
 "Doble Clic: \tSeleccionar un fragmento completo."
 
-#: qtplugins/selectiontool/selectiontool.cpp:238
+#: qtplugins/selectiontool/selectiontool.cpp:246
 msgid "Paint Atoms"
 msgstr "Pintar Átomos"
 
@@ -5038,7 +5038,7 @@ msgstr "%1 %2"
 msgid "Template"
 msgstr "Plantilla"
 
-#: qtplugins/templatetool/templatetool.cpp:84
+#: qtplugins/templatetool/templatetool.cpp:83
 msgid ""
 "Template Tool\n"
 "\n"
@@ -5057,11 +5057,11 @@ msgstr ""
 "Seleccionar un ligando o grupo funcional y presionar sobe un átomo de "
 "hidrógeno para unirlo."
 
-#: qtplugins/templatetool/templatetool.cpp:302
+#: qtplugins/templatetool/templatetool.cpp:309
 msgid "Insert Template"
 msgstr "Insertar Plantilla"
 
-#: qtplugins/templatetool/templatetool.cpp:560
+#: qtplugins/templatetool/templatetool.cpp:567
 msgid "Insert Ligand"
 msgstr "Insertar Ligando"
 
