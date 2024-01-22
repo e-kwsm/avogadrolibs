@@ -4982,7 +4982,6 @@ msgid "Spectra"
 msgstr "光谱"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
 msgid "Display spectra plots."
 msgstr "显示光谱。"
 
@@ -5360,7 +5359,6 @@ msgstr "停止振动动画演示。"
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "振动"
 
@@ -5732,7 +5730,6 @@ msgstr "加载多维数据集文件"
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, ChargeDialog)
 #, fuzzy
-#| msgid "Partial charge"
 msgid "Partial Charges"
 msgstr "部分电荷"
 
@@ -7789,10 +7786,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "宽度："
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)

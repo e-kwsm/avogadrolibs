@@ -1463,10 +1463,8 @@ msgid "Modify Molecule"
 msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:101
-#, fuzzy
-#| msgid "UV Settings"
 msgid "Settings"
-msgstr "إعدادات الأشعة فوق البنفسجية"
+msgstr ""
 
 #: qtgui/scriptloader.cpp:33
 #, qt-format
