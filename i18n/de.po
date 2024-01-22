@@ -7742,7 +7742,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, SpectraDialog)
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra Visualization"
 msgstr "Spektrenvisualisierung"
 
@@ -7755,7 +7754,6 @@ msgstr "Skalierungsfaktor:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
 msgstr "X-Achse Minimum:"
 
@@ -7787,10 +7785,8 @@ msgstr "Peakbreite:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Schwellwert:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
