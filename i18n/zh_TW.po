@@ -1461,10 +1461,8 @@ msgid "Change Atom Label"
 msgstr "改變鍵級"
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Change Selection"
-msgstr "忽略選項"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
