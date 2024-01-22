@@ -9420,11 +9420,6 @@ msgstr ""
 #~ msgstr "Alle bestanden"
 
 #, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Dihedrale hoek:"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molecule"
