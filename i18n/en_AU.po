@@ -8601,40 +8601,12 @@ msgstr ""
 #~ "Select the Python interpreter used to run input generator scripts.\n"
 #~ "Avogadro must be restarted for any changes to take effect."
 
-#~ msgid "Set Python Path…"
-#~ msgstr "Set Python Path…"
-
-#~ msgid "Fragment…"
-#~ msgstr "Fragment…"
-
-#~ msgid "Functional Groups"
-#~ msgstr "Functional Groups"
-
-#~ msgid "Help..."
-#~ msgstr "Help..."
-
-#~ msgid "Submit Calculation..."
-#~ msgstr "Submit Calculation..."
-
-#~ msgid "Save File..."
-#~ msgstr "Save File..."
-
-#~ msgid "Download Plugins..."
-#~ msgstr "Download Plugins..."
-
-#~ msgid "Record Movie..."
-#~ msgstr "Record Movie..."
-
 #~ msgid ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
 #~ msgstr ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Load File"
 
 #, fuzzy
 #~ msgid "Surface Dialog"
