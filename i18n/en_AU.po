@@ -8999,10 +8999,6 @@ msgstr ""
 #~ "Avogadro must be restarted for any changes to take effect."
 
 #, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Stop"
-
-#, fuzzy
 #~ msgid "Surface Dialog"
 #~ msgstr "Surfaces"
 
