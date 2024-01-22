@@ -8663,11 +8663,6 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Cebisan..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Kefungsian DFT:"
-
 #~ msgid "Other..."
 #~ msgstr "Lain-lain..."
 
