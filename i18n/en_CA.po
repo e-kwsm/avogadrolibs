@@ -4851,10 +4851,8 @@ msgid "Wavenumbers (cm⁻¹)"
 msgstr "Wavenumber (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
-#, fuzzy
-#| msgid "Transition State"
 msgid "Transmission"
-msgstr "Transition State"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:356
 #, fuzzy
