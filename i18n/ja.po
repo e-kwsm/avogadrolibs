@@ -5208,7 +5208,7 @@ msgstr "選択 (&S)"
 
 #: qtplugins/select/select.cpp:180
 msgid "Select Element"
-msgstr "元素を選択"
+msgstr "元素による選択"
 
 #: qtplugins/select/select.cpp:269
 #, fuzzy
