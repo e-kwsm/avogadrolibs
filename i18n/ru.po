@@ -8812,12 +8812,6 @@ msgstr ""
 #~ msgstr "Все файлы (*);;"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Ромбоэдрическая"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Молекула"
