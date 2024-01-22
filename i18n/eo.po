@@ -9827,11 +9827,6 @@ msgstr "phlostically@example.com"
 #~ msgid "Error: could not find yaehmop executable!"
 #~ msgstr "Eraro: ne troviĝis ruleblaĵo Yaehmop!"
 
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Duedra:"
-
 #~ msgid "Layer"
 #~ msgstr "Tavolo"
 

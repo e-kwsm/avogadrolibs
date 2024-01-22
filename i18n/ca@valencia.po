@@ -9441,11 +9441,6 @@ msgstr ""
 #~ msgstr "Tots els fitxers"
 
 #, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Diedre:"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molècula"
