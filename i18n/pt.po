@@ -1539,7 +1539,6 @@ msgstr ""
 
 #: qtgui/rwmolecule.h:266
 #, fuzzy
-#| msgid "Change selections"
 msgid "Change Selection"
 msgstr "Mudar seleções"
 
@@ -1665,13 +1664,11 @@ msgstr "Alinhar moléculas com o eixo Cartesiano"
 
 #: qtplugins/apbs/apbs.cpp:32
 #, fuzzy
-#| msgid "Run APBS"
 msgid "Run APBS…"
 msgstr "Executar APBS…"
 
 #: qtplugins/apbs/apbs.cpp:37
 #, fuzzy
-#| msgid "Open Output File"
 msgid "Open Output File…"
 msgstr "Abrir Ficheiro de Saída…"
 
@@ -8577,7 +8574,6 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
 msgstr "Tipo:"
 
