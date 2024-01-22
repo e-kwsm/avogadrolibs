@@ -10016,12 +10016,6 @@ msgstr "Ваші електронні листи"
 #~ msgstr "Усі файли"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "ромбоедрична"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Молекула"

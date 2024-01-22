@@ -9529,12 +9529,6 @@ msgstr ""
 #~ msgstr "Tutti i file(*);;"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboidale"
-
-#, fuzzy
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "Inserisci molecola..."
