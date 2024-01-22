@@ -10073,12 +10073,6 @@ msgstr ""
 #~ msgstr "Greška: nije moguće pronaći izvršnu datoteku yaehmop-a!"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Ромбоедарска"
-
-#, fuzzy
 #~ msgid "Layer"
 #~ msgstr "Plejer"
 

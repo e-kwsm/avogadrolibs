@@ -10266,12 +10266,6 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "Todos los archivos (*);;"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Rombohedral"
-
 #~ msgid "Layer"
 #~ msgstr "Capa"
 

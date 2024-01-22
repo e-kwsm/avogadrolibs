@@ -9587,12 +9587,6 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "Fitxategi guztiak"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboedrikoa"
-
 #~ msgid "Layer"
 #~ msgstr "Geruza"
 

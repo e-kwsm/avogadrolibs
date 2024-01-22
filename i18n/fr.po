@@ -10076,12 +10076,6 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "Tous les fichiers (*);;"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Rhomboédrique"
-
 #~ msgid "Layer"
 #~ msgstr "Calque"
 

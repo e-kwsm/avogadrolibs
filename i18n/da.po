@@ -9351,13 +9351,6 @@ msgstr ""
 #~ msgstr "Alle filer"
 
 #, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Intet molekylesæt"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES,,,"
-
-#, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Tilføj H til pH"
 
