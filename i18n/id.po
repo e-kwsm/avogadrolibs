@@ -10150,11 +10150,6 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Fragmen..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "DFT Fungsional:"
-
 #~ msgid "Other..."
 #~ msgstr "Lainnya..."
 
