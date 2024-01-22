@@ -1521,16 +1521,12 @@ msgid "Reduce Cell to Asymmetric Unit"
 msgstr "Reduzir a Unidade Assimétrica"
 
 #: qtgui/rwmolecule.h:214
-#, fuzzy
-#| msgid "Change Atom Hybridization"
 msgid "Change Atom Positions"
-msgstr "Alterar Hibridização do Átomo"
+msgstr ""
 
 #: qtgui/rwmolecule.h:224
-#, fuzzy
-#| msgid "Change Atom Color"
 msgid "Change Atom Position"
-msgstr "Mudar Cor do Átomo"
+msgstr ""
 
 #: qtgui/rwmolecule.h:228
 #, fuzzy
@@ -1539,7 +1535,6 @@ msgstr "Modificar a Ordem de Ligação"
 
 #: qtgui/rwmolecule.h:234
 #, fuzzy
-#| msgid "Change selections"
 msgid "Change Selection"
 msgstr "Mudar seleções"
 
@@ -1553,10 +1548,9 @@ msgid "Settings"
 msgstr "Configurações"
 
 #: qtgui/scriptloader.cpp:41
-#, fuzzy, qt-format
-#| msgid "Cannot save file %1."
+#, qt-format
 msgid "Cannot load script %1"
-msgstr "Não foi possível gravar o ficheiro %1."
+msgstr ""
 
 #: qtgui/scriptloader.cpp:68
 #, qt-format
@@ -1630,10 +1624,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Selection tool"
 msgid "Align tool"
-msgstr "Ferramenta de Seleção"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
@@ -1641,15 +1633,13 @@ msgstr "Alinhar moléculas com o eixo Cartesiano"
 
 #: qtplugins/apbs/apbs.cpp:31
 #, fuzzy
-#| msgid "Run APBS"
 msgid "Run APBS…"
-msgstr "Executar APBS"
+msgstr "Executar APBS…"
 
 #: qtplugins/apbs/apbs.cpp:36
 #, fuzzy
-#| msgid "Open Output File"
 msgid "Open Output File…"
-msgstr "Abrir Ficheiro de Saída"
+msgstr "Abrir Ficheiro de Saída…"
 
 #: qtplugins/apbs/apbs.cpp:49 qtplugins/cp2kinput/cp2kinput.cpp:49
 #: qtplugins/gamessinput/gamessinput.cpp:52
@@ -8424,9 +8414,8 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
-msgstr "Tipo"
+msgstr "Tipo:"
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:331
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
@@ -8683,10 +8672,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Number of Bonds:"
 msgid "Number of Dimensions:"
-msgstr "Número de Ligações:"
+msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:220
 #. i18n: ectx: property (text), widget (QCheckBox, cb_displayYaehmopInput)
