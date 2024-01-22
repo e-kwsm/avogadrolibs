@@ -9376,11 +9376,6 @@ msgstr ""
 #~ msgstr "Tên nguyên tố"
 
 #, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Góc nhị diện:"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Phân tử"
