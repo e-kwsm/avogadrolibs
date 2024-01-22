@@ -9070,11 +9070,6 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Τμήμα..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Συναρτησιακό DFT:"
-
 #~ msgid "Other..."
 #~ msgstr "Άλλο..."
 
