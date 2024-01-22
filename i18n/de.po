@@ -2779,10 +2779,8 @@ msgid "Tools for crystal-specific editing/analysis."
 msgstr "Werkzeuge für Kristall-spezifische Bearbeitung und Analyse."
 
 #: qtplugins/crystal/crystalscene.cpp:178
-#, fuzzy
-#| msgid "Colors:"
 msgid "Color axes:"
-msgstr "Farben:"
+msgstr ""
 
 #: qtplugins/crystal/crystalscene.cpp:184
 msgid "Line color:"
@@ -2954,10 +2952,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr "PDB Modelle von der Protein Data Bank laden"
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Auswahl"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -2999,7 +2995,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Berechnen"
 
@@ -3032,10 +3027,8 @@ msgid "Forcefield optimization"
 msgstr "Kraftfeld-Optimierung"
 
 #: qtplugins/forcefield/forcefield.h:50
-#, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr "Kraftfeld-Optimierung"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
@@ -3255,7 +3248,7 @@ msgstr "DNA- / RNA-Fragmente über einen Dialog einfügen."
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 msgid "Molecule…"
-msgstr "&Molekül …"
+msgstr "Molekül …"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 msgid "Crystal…"
@@ -3829,8 +3822,6 @@ msgid "Optimizing Geometry (Open Babel)"
 msgstr "Geometrie wird optimiert (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
-#, fuzzy
-#| msgid "Generating MDL…"
 msgid "Generating…"
 msgstr "generiert…"
 
@@ -3879,7 +3870,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:568
 #, fuzzy
-#| msgid "Molecule invalid. Cannot optimize geometry."
 msgid "Molecule invalid. Cannot generate conformers."
 msgstr "Molekül ungültig."
 
@@ -4911,14 +4901,11 @@ msgstr "Spektren zeichnen …"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1655
 #, fuzzy
-#| msgctxt "colormap"
 #| msgid "Spectral"
 msgid "Spectra"
 msgstr "Spektral"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display spectra plots."
 msgstr "Spektren anzeigen."
 
@@ -4937,7 +4924,6 @@ msgstr "NMR"
 
 #: qtplugins/spectra/spectradialog.cpp:210
 #, fuzzy
-#| msgid "electron"
 msgid "Electronic"
 msgstr "Elektronisch"
 
@@ -4948,7 +4934,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:218
 #: qtplugins/spectra/spectradialog.cpp:409
 #, fuzzy
-#| msgid "&Density Of States Settings"
 msgid "Density of States"
 msgstr "Zustandsdichte"
 
@@ -4998,7 +4983,6 @@ msgstr "Intensität"
 
 #: qtplugins/spectra/spectradialog.cpp:368
 #, fuzzy
-#| msgctxt "colormap"
 #| msgid "Spectral"
 msgid "NMR Spectra"
 msgstr "Spektral"
@@ -5257,13 +5241,11 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "Vibration"
 
 #: qtplugins/vibrations/vibrations.h:37
 #, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display vibrational modes."
 msgstr "Schwingungsmoden anzeigen."
 
@@ -6871,8 +6853,6 @@ msgstr "Benutze Form"
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:1012
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
-#, fuzzy
-#| msgid "Generating MDL…"
 msgid "Generate…"
 msgstr "generiert…"
 
@@ -7001,7 +6981,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #, fuzzy
-#| msgid "Children"
 msgid "Children:"
 msgstr "Kinder:"
 
@@ -7015,7 +6994,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:131
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Mutability"
 msgid "Mutability:"
 msgstr "Austauschbarkeit:"
 
@@ -7034,7 +7012,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:180
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #, fuzzy
-#| msgid "Scoring method"
 msgid "Scoring method:"
 msgstr "Methode der Auswahl:"
 
@@ -7644,8 +7621,6 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, SpectraDialog)
-#, fuzzy
-#| msgid "Spectra and Vibrations"
 msgid "Spectra Visualization"
 msgstr "Spektren"
 
@@ -7667,14 +7642,12 @@ msgstr "&Schließen"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:91
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #, fuzzy
-#| msgid "&Scaling Factor:"
 msgid "Scale Factor:"
 msgstr "Skalierungsfaktor:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
 msgstr "X-Achse Minimum:"
 
@@ -7696,7 +7669,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #, fuzzy
-#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
 msgstr "Y-Achse Minimum:"
 
@@ -7707,10 +7679,8 @@ msgstr "Peakbreite:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Schwellwert:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:224
 #. i18n: ectx: attribute (title), widget (QWidget, tab_appearance)
@@ -8568,7 +8538,6 @@ msgstr ""
 #~ msgstr "Einfache Darstellung von VdW-Sphären mit ambienter Verdeckung."
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
 #~ msgstr "Geometrie"
 

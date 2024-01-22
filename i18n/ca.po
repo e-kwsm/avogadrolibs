@@ -2028,9 +2028,8 @@ msgid "Create bonds between all or selected atoms."
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:75
-#, fuzzy
 msgid "Perceive bond orders."
-msgstr "Voleu detectar els enllaços?"
+msgstr ""
 
 #: qtplugins/bonding/bonding.h:30
 msgid "Bonding"
@@ -5136,9 +5135,8 @@ msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:83
 #, fuzzy
-#| msgid "Create Surfaces"
 msgid "Create Surfaces…"
-msgstr "Crea Superfície"
+msgstr "Crea Superfície…"
 
 #: qtplugins/surfaces/surfaces.cpp:111
 #, fuzzy
@@ -5236,9 +5234,8 @@ msgstr ""
 
 #: qtplugins/symmetry/symmetry.cpp:41
 #, fuzzy
-#| msgid "Symmetry"
 msgid "Symmetry…"
-msgstr "Simetria"
+msgstr "Simetria…"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Avogadro::QtPlugins::SymmetryWidget)
@@ -5296,13 +5293,13 @@ msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:404
 #, fuzzy
-#| msgid "Insert Peptide"
+#| msgid "Insert"
 msgid "Insert Template"
 msgstr "Insereix"
 
 #: qtplugins/templatetool/templatetool.cpp:679
 #, fuzzy
-#| msgid "Insert Peptide"
+#| msgid "Insert"
 msgid "Insert Ligand"
 msgstr "Insereix"
 
@@ -5344,7 +5341,6 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "Vibració"
 
@@ -5568,9 +5564,8 @@ msgstr ""
 #. i18n: file: qtgui/insertfragmentdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::QtGui::InsertFragmentDialog)
 #, fuzzy
-#| msgid "Insert Fragment"
 msgid "Insert Fragment…"
-msgstr "Insereix un fragment"
+msgstr "Insereix un fragment…"
 
 #. i18n: file: qtgui/insertfragmentdialog.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -5712,16 +5707,13 @@ msgstr "Carrega fitxer..."
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, ChargeDialog)
 #, fuzzy
-#| msgid "Partial charge"
 msgid "Partial Charges"
 msgstr "Carrega parcial"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
-#, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr "Càrrega:"
+msgstr ""
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -6360,7 +6352,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #, fuzzy
-#| msgid "Nucleus:"
 msgid "Nucleic Acids:"
 msgstr "Àcids nucleics:"
 
@@ -6846,7 +6837,6 @@ msgstr "Canvia l'estil del límit X."
 #. i18n: file: qtplugins/lammpsinput/lammpsinputdialog.ui:566
 #. i18n: ectx: property (toolTip), widget (QLabel, label_boundary)
 #, fuzzy
-#| msgid "Select bondary Styles in X, Y and Z directions."
 msgid "Select boundary Styles in X, Y and Z directions."
 msgstr "Selecciona l'estil del límit en les direccions X, Y i Z."
 
@@ -7088,7 +7078,6 @@ msgstr "Mètode"
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
 #, fuzzy
-#| msgid "Number of conformers"
 msgid "Number of conformers:"
 msgstr "Nombre d'estereoisòmers:"
 
@@ -7890,10 +7879,8 @@ msgstr "Fons:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:375
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
-msgstr "Exporta l'espectre calculat"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:395
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -8256,9 +8243,8 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
-msgstr "Tipus"
+msgstr "Tipus:"
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:331
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)

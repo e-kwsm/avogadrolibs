@@ -4921,8 +4921,6 @@ msgid "Spectra"
 msgstr "光谱"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display spectra plots."
 msgstr "显示光谱。"
 
@@ -4941,7 +4939,6 @@ msgstr "NMR"
 
 #: qtplugins/spectra/spectradialog.cpp:210
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic"
 msgstr "电子"
 
@@ -5014,7 +5011,6 @@ msgstr "位移 (ppm)"
 
 #: qtplugins/spectra/spectradialog.cpp:381
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
 msgstr "电子光谱"
 
@@ -5049,8 +5045,6 @@ msgid "Electron Density"
 msgstr "电子密度"
 
 #: qtplugins/surfaces/surfacedialog.cpp:173
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Spin Density"
 msgstr "密度"
 
@@ -5085,22 +5079,16 @@ msgid "Render the van der Waals surface."
 msgstr "按 van der Waals 界面渲染原子。"
 
 #: qtplugins/surfaces/surfaces.cpp:113
-#, fuzzy
-#| msgid "Render the molecule as a wireframe."
 msgid "Render the van der Waals molecular surface."
-msgstr "将分子渲染为线框。"
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:115
-#, fuzzy
-#| msgid "Render the molecule as a wireframe."
 msgid "Render the solvent-accessible molecular surface."
-msgstr "将分子渲染为线框。"
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:117
-#, fuzzy
-#| msgid "Render the molecule as a wireframe."
 msgid "Render the solvent-excluded molecular surface."
-msgstr "将分子渲染为线框。"
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:118 qtplugins/surfaces/surfaces.cpp:119
 msgid "Render a molecular orbital."
@@ -5258,8 +5246,6 @@ msgid "Show the vibrational modes dialog."
 msgstr "显示振动模式对话框。"
 
 #: qtplugins/vibrations/vibrations.cpp:91
-#, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Set the vibrational mode."
 msgstr "振动模式。"
 
@@ -5277,7 +5263,6 @@ msgstr "停止振动动画演示。"
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "振动"
 
@@ -5648,16 +5633,13 @@ msgstr "加载多维数据集文件"
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, ChargeDialog)
 #, fuzzy
-#| msgid "Partial charge"
 msgid "Partial Charges"
 msgstr "部分电荷"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
-#, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr "电荷:"
+msgstr ""
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -7731,10 +7713,8 @@ msgstr "最小值："
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "宽度："
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
