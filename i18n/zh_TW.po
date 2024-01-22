@@ -9369,11 +9369,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Fragment…"
 #~ msgstr "片斷..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "DFT Functional:"
-
 #~ msgid "Other..."
 #~ msgstr "其他..."
 
