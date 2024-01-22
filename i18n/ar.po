@@ -1456,10 +1456,8 @@ msgid "Modify Molecule"
 msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
-#, fuzzy
-#| msgid "&UV Settings"
 msgid "Settings"
-msgstr "&إعدادات الأشعة فوق البنفسجية"
+msgstr ""
 
 #: qtgui/scriptloader.cpp:41
 #, qt-format
@@ -8173,10 +8171,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Number of atoms: %1"
 msgid "Number of Dimensions:"
-msgstr "عدد الذرات: %1"
+msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:220
 #. i18n: ectx: property (text), widget (QCheckBox, cb_displayYaehmopInput)
