@@ -2810,10 +2810,8 @@ msgid "Tools for crystal-specific editing/analysis."
 msgstr "Werkzeuge für Kristall-spezifische Bearbeitung und Analyse."
 
 #: qtplugins/crystal/crystalscene.cpp:178
-#, fuzzy
-#| msgid "Colors:"
 msgid "Color axes:"
-msgstr "Farben:"
+msgstr ""
 
 #: qtplugins/crystal/crystalscene.cpp:184
 msgid "Line color:"
@@ -2985,10 +2983,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr "PDB Modelle von der Protein Data Bank laden"
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Auswahl"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3880,7 +3876,6 @@ msgid "Optimizing Geometry (Open Babel)"
 msgstr "Geometrie wird optimiert (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
-#, fuzzy
 msgid "Generating…"
 msgstr "generiert…"
 
@@ -4986,7 +4981,13 @@ msgid "Spectra"
 msgstr "Spektren"
 
 #: qtplugins/spectra/spectra.h:38
+<<<<<<< HEAD
 #, fuzzy
+||||||| parent of e94e0aeaae58 (i18n/ar.po)
+#, fuzzy
+#| msgid "Display spectra and vibrational modes."
+=======
+>>>>>>> e94e0aeaae58 (i18n/ar.po)
 msgid "Display spectra plots."
 msgstr "Spektren anzeigen."
 
@@ -6976,7 +6977,13 @@ msgstr "Benutze Form"
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:1012
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
+<<<<<<< HEAD
 #, fuzzy
+||||||| parent of e94e0aeaae58 (i18n/ar.po)
+#, fuzzy
+#| msgid "Generating MDL…"
+=======
+>>>>>>> e94e0aeaae58 (i18n/ar.po)
 msgid "Generate…"
 msgstr "generiert…"
 
@@ -7748,8 +7755,14 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, SpectraDialog)
+<<<<<<< HEAD
 #, fuzzy
 #| msgid "Spectra"
+||||||| parent of e94e0aeaae58 (i18n/ar.po)
+#, fuzzy
+#| msgid "Spectra and Vibrations"
+=======
+>>>>>>> e94e0aeaae58 (i18n/ar.po)
 msgid "Spectra Visualization"
 msgstr "Spektrenvisualisierung"
 
@@ -7762,7 +7775,6 @@ msgstr "Skalierungsfaktor:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
 msgstr "X-Achse Minimum:"
 
@@ -7794,10 +7806,8 @@ msgstr "Peakbreite:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Schwellwert:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
