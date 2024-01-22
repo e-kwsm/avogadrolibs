@@ -1533,7 +1533,6 @@ msgstr ""
 
 #: qtgui/rwmolecule.h:266
 #, fuzzy
-#| msgid "Change selections"
 msgid "Change Selection"
 msgstr "Mudar seleções"
 
