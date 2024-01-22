@@ -9614,11 +9614,6 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Фрагмент..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Функционал плотности:"
-
 #~ msgid "Other..."
 #~ msgstr "Другой..."
 
