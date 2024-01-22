@@ -8728,11 +8728,6 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Fragment..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Funció DFT:"
-
 #~ msgid "Other..."
 #~ msgstr "Altre..."
 
