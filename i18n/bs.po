@@ -2023,9 +2023,8 @@ msgid "Create bonds between all or selected atoms."
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:75
-#, fuzzy
 msgid "Perceive bond orders."
-msgstr "Opažene veze?"
+msgstr ""
 
 #: qtplugins/bonding/bonding.h:30
 msgid "Bonding"
