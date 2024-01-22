@@ -2749,9 +2749,8 @@ msgstr "Tools for crystal-specific editing/analysis."
 
 #: qtplugins/crystal/crystalscene.cpp:178
 #, fuzzy
-#| msgid "Colors:"
 msgid "Color axes:"
-msgstr "Colours:"
+msgstr "Colour axes:"
 
 #: qtplugins/crystal/crystalscene.cpp:184
 msgid "Line color:"
@@ -3202,9 +3201,8 @@ msgstr "Insert DNA / RNA fragments through a dialog."
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 #, fuzzy
-#| msgid "Molecule"
 msgid "Molecule…"
-msgstr "Molecule"
+msgstr "Molecule…"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 msgid "Crystal…"
@@ -3610,9 +3608,8 @@ msgstr "Configure Force Field…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search"
 msgid "Conformer Search…"
-msgstr "Conformer Search"
+msgstr "Conformer Search…"
 
 #: qtplugins/openbabel/openbabel.cpp:65
 msgid "Perceive Bonds"
@@ -3684,9 +3681,8 @@ msgstr "Optimizing Geometry (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
-#| msgid "Generating MDL…"
 msgid "Generating…"
-msgstr "Generating MDL…"
+msgstr "Generating…"
 
 #: qtplugins/openbabel/openbabel.cpp:486 qtplugins/openbabel/openbabel.cpp:637
 msgid ""
@@ -3734,28 +3730,20 @@ msgstr ""
 "the original molecule (%2)."
 
 #: qtplugins/openbabel/openbabel.cpp:568
-#, fuzzy
-#| msgid "Molecule invalid. Cannot optimize geometry."
 msgid "Molecule invalid. Cannot generate conformers."
-msgstr "Molecule invalid. Cannot optimize geometry."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:586
-#, fuzzy
-#| msgid "Cannot open file with Open Babel."
 msgid "Cannot generate conformers with Open Babel."
-msgstr "Cannot open file with Open Babel."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:619
-#, fuzzy
-#| msgid "Perceiving Bonds (Open Babel)"
 msgid "Generating Conformers (Open Babel)"
-msgstr "Perceiving Bonds (Open Babel)"
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:711
-#, fuzzy
-#| msgid "Conformer"
 msgid "Generate Conformers"
-msgstr "Conformer"
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:720
 msgid "Cannot open file with Open Babel."
@@ -4397,9 +4385,8 @@ msgstr "Molecule Properties"
 
 #: qtplugins/propertytables/propertyview.cpp:231
 #, fuzzy
-#| msgid "&Export"
 msgid "Export CSV"
-msgstr "&Export"
+msgstr "Export CSV"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
@@ -4408,21 +4395,17 @@ msgstr "CSV files (*.csv);;All files (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
-#| msgid "Could not open file '%1' for writing."
 msgid "Could not open the file for writing."
 msgstr "Could not open file '%1' for writing."
 
 #: qtplugins/propertytables/propertyview.cpp:276
-#, fuzzy
-#| msgid "Error reading structure file (%1)."
 msgid "Error writing to the file."
-msgstr "Error reading structure file (%1)."
+msgstr ""
 
 #: qtplugins/propertytables/propertyview.cpp:288
 #, fuzzy
-#| msgid "&Export"
 msgid "Export…"
-msgstr "&Export"
+msgstr "Export…"
 
 #: qtplugins/qtaim/qtaimengine.h:26 qtplugins/qtaim/qtaimextension.cpp:77
 #: qtplugins/qtaim/qtaimextension.h:23
@@ -4773,16 +4756,12 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1676
 #, fuzzy
-#| msgctxt "colormap"
-#| msgid "Spectral"
 msgid "Spectra"
 msgstr "Spectral"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display spectra plots."
-msgstr "Display spectra and vibrational modes."
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy

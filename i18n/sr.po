@@ -8504,9 +8504,8 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
-msgstr "Vrsta"
+msgstr "Vrsta:"
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:331
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
@@ -8540,10 +8539,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:361
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#, fuzzy
-#| msgid "&Copy to Clipboard"
 msgid "From Clipboard"
-msgstr "&Kopiraj u međuspremnik"
+msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:384
 #. i18n: ectx: property (text), widget (QLabel, ligandLabel)
