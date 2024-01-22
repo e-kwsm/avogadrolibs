@@ -9823,12 +9823,6 @@ msgstr ""
 #~ msgid "Error: %1 crashed!"
 #~ msgstr "Fehler: %1 ist abgestürzt!"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Rhomboedrisch"
-
 #~ msgid "Layer"
 #~ msgstr "Schicht"
 

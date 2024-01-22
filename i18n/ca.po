@@ -9513,12 +9513,6 @@ msgstr ""
 #~ msgstr "Tots els fitxers"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboèdric"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molècula"

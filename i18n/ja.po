@@ -9807,12 +9807,6 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "すべてのファイル (*);;"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "菱面体晶"
-
 #~ msgid "Layer"
 #~ msgstr "レイヤー"
 

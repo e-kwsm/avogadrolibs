@@ -9827,12 +9827,6 @@ msgstr "Seus e-mails"
 #~ msgstr "Todos os arquivos (*);;"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboédrico"
-
-#, fuzzy
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "Inserir Molécula..."
