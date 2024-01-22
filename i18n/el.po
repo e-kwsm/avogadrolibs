@@ -9693,11 +9693,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Fragment…"
 #~ msgstr "Τμήμα..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Συναρτησιακό DFT:"
-
 #~ msgid "Other..."
 #~ msgstr "Άλλο..."
 

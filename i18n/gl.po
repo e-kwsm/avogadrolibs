@@ -9424,11 +9424,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Fragment…"
 #~ msgstr "Fragmento..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "DFT funcional:"
-
 #~ msgid "Other..."
 #~ msgstr "Outro..."
 
