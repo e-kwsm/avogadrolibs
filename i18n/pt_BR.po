@@ -5124,10 +5124,8 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:219
 #: qtplugins/spectra/spectradialog.cpp:410
-#, fuzzy
-#| msgid "Transition State"
 msgid "Density of States"
-msgstr "Estado de Transição"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:256
 #, fuzzy
@@ -5167,10 +5165,8 @@ msgid "Wavenumbers (cm⁻¹)"
 msgstr "Número de onda (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
-#, fuzzy
-#| msgid "Transition State"
 msgid "Transmission"
-msgstr "Estado de Transição"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:356
 #, fuzzy
@@ -8504,24 +8500,18 @@ msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:341
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#, fuzzy
-#| msgid "Transition State"
 msgid "Tridentate"
-msgstr "Estado de Transição"
+msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:346
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#, fuzzy
-#| msgid "Transition State"
 msgid "Tetradentate"
-msgstr "Estado de Transição"
+msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:351
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#, fuzzy
-#| msgid "Transition State"
 msgid "Hexadentate"
-msgstr "Estado de Transição"
+msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:356
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
