@@ -8874,12 +8874,6 @@ msgstr ""
 #~ msgstr "Όλα τα αρχεία"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Ρομβοεδρικό"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Μόριο"
