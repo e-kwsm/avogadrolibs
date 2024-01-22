@@ -11509,11 +11509,6 @@ msgstr ""
 #~ msgstr "Ime elementa"
 
 #, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Diedarski:"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molekul"
