@@ -1535,7 +1535,6 @@ msgstr "Modificar a Ordem de Ligação"
 
 #: qtgui/rwmolecule.h:234
 #, fuzzy
-#| msgid "Change selections"
 msgid "Change Selection"
 msgstr "Mudar seleções"
 
@@ -1624,10 +1623,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:29
-#, fuzzy
-#| msgid "Selection tool"
 msgid "Align tool"
-msgstr "Ferramenta de Seleção"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:32
 msgid "Align molecules to a Cartesian axis"
@@ -1635,15 +1632,13 @@ msgstr "Alinhar moléculas com o eixo Cartesiano"
 
 #: qtplugins/apbs/apbs.cpp:32
 #, fuzzy
-#| msgid "Run APBS"
 msgid "Run APBS…"
 msgstr "Executar APBS…"
 
 #: qtplugins/apbs/apbs.cpp:37
 #, fuzzy
-#| msgid "Open Output File"
 msgid "Open Output File…"
-msgstr "Abrir Ficheiro de Saída"
+msgstr "Abrir Ficheiro de Saída…"
 
 #: qtplugins/apbs/apbs.cpp:50 qtplugins/cp2kinput/cp2kinput.cpp:49
 #: qtplugins/gamessinput/gamessinput.cpp:50
@@ -8530,9 +8525,8 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
-msgstr "Tipo"
+msgstr "Tipo:"
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:331
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
@@ -8789,10 +8783,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Number of Bonds:"
 msgid "Number of Dimensions:"
-msgstr "Número de Ligações:"
+msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:220
 #. i18n: ectx: property (text), widget (QCheckBox, cb_displayYaehmopInput)
