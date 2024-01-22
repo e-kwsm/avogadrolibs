@@ -2035,7 +2035,6 @@ msgid "Bond Atoms"
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:29
-#, fuzzy
 msgid "Perceive Bond Orders"
 msgstr "Rozpoznat vazby"
 
