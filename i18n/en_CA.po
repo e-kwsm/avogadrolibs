@@ -12664,10 +12664,6 @@ msgstr ""
 #~ msgstr "All files"
 
 #, fuzzy
-#~ msgid "octahedral"
-#~ msgstr "Rhombohedral"
-
-#, fuzzy
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molecule"
 
