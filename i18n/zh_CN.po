@@ -8474,11 +8474,6 @@ msgstr ""
 #~ msgstr "所有文件 (*);;"
 
 #, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "二面体："
-
-#, fuzzy
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "插入分子..."
