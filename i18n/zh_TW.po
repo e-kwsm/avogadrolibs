@@ -8495,12 +8495,6 @@ msgstr ""
 #~ msgstr "所有檔案"
 
 #, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "菱形晶系"
-
-#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "分子"
