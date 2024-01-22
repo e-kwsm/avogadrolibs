@@ -7955,17 +7955,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:192
 #. i18n: ectx: property (text), item, widget (QComboBox, coordinationComboBox)
-#, fuzzy
-#| msgid "Linear"
 msgid "1: Linear"
-msgstr "線性"
+msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:197
 #. i18n: ectx: property (text), item, widget (QComboBox, coordinationComboBox)
-#, fuzzy
-#| msgid "Linear"
 msgid "2: Linear"
-msgstr "線性"
+msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:202
 #. i18n: ectx: property (text), item, widget (QComboBox, coordinationComboBox)
@@ -8015,9 +8011,8 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
-msgstr "種類"
+msgstr "種類:"
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:331
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
