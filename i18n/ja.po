@@ -4399,7 +4399,7 @@ msgstr "CSVをエクスポート"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "CSVファイル (*.csv);;全てのファイル (*.*)"
+msgstr "CSVファイル (*.csv);;全てのファイル (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
