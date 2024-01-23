@@ -451,7 +451,6 @@ msgstr "Konfigurišite posao"
 
 #: molequeue/molequeuedialog.cpp:57
 #, fuzzy
-#| msgid "Submitting job to MoleQueue..."
 msgid "Submitting job to MoleQueue…"
 msgstr "Slanje posla u MoleQueue..."
 
@@ -476,7 +475,6 @@ msgstr "Prestani čekati"
 
 #: molequeue/molequeuedialog.cpp:105
 #, fuzzy
-#| msgid "Fetching completed job information..."
 msgid "Fetching completed job information…"
 msgstr "Preuzimanje završenih informacija o poslu..."
 
@@ -495,7 +493,6 @@ msgstr "Greška pri predaji posla"
 
 #: molequeue/molequeuedialog.cpp:128
 #, fuzzy, qt-format
-#| msgid "The job has been rejected by MoleQueue: %1"
 msgctxt "%1 = error"
 msgid "The job has been rejected by MoleQueue: %1"
 msgstr "MoleQueue je odbio posao: %1"
