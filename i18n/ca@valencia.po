@@ -3012,7 +3012,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.h:46
 #, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield optimization"
 msgstr "Optimització del camp de forces"
 
