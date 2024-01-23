@@ -1978,10 +1978,8 @@ msgid "Configure Bonding…"
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:32
-#, fuzzy
-#| msgid "Import Selected Atoms"
 msgid "Bond Selected Atoms"
-msgstr "Importuj zaznaczone atomy"
+msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:63 qtplugins/centroid/centroid.cpp:46
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:34
