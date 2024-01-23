@@ -4978,7 +4978,7 @@ msgstr "振動光譜"
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "波數 (cm<sup>-1</sup>)"
+msgstr "波數 (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:588
 msgid "Transmission"
@@ -6950,7 +6950,6 @@ msgstr ""
 #. i18n: file: qtplugins/manipulator/manipulatewidget.ui:122
 #. i18n: ectx: property (text), item, widget (QComboBox, rotateComboBox)
 #, fuzzy
-#| msgid "Origin:"
 msgid "Origin"
 msgstr "原點"
 
@@ -7788,7 +7787,6 @@ msgstr "背景:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:356
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
 msgstr "計算出來的光譜"
 
