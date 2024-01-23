@@ -5220,9 +5220,8 @@ msgstr "Režimi vibracija"
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
 #, fuzzy
-#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Таласни број (cm<sup>-1</sup>)"
+msgstr "Таласни број (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
 #, fuzzy

@@ -4977,9 +4977,8 @@ msgstr "Vibracións"
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
 #, fuzzy
-#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Número de onda (cm<sup>-1</sup>)"
+msgstr "Número de onda (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
 #, fuzzy
