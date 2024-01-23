@@ -5109,7 +5109,6 @@ msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:84
 #, fuzzy
-#| msgid "Create Surfaces..."
 msgid "Create Surfaces…"
 msgstr "Generar las surfàcias…"
 
@@ -5286,7 +5285,6 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "Vibracion"
 
@@ -5509,7 +5507,6 @@ msgstr ""
 #. i18n: file: qtgui/insertfragmentdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::QtGui::InsertFragmentDialog)
 #, fuzzy
-#| msgid "Insert Fragment"
 msgid "Insert Fragment…"
 msgstr "Inserir un fragment…"
 
@@ -6937,7 +6934,6 @@ msgstr ""
 #. i18n: file: qtplugins/manipulator/manipulatewidget.ui:122
 #. i18n: ectx: property (text), item, widget (QComboBox, rotateComboBox)
 #, fuzzy
-#| msgid "Origin:"
 msgid "Origin"
 msgstr "Origina"
 
@@ -8163,7 +8159,6 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
 msgstr "Tipe :"
 
