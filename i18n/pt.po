@@ -1082,9 +1082,8 @@ msgstr "Todos os Ficheiros"
 
 #: qtgui/fileformatdialog.cpp:282
 #, fuzzy
-#| msgid "All supported formats (%1);;"
 msgid "All supported formats"
-msgstr "Todos os formatos suportados (%1);;"
+msgstr "Todos os formatos suportados"
 
 #: qtgui/interfacescript.cpp:227
 #, qt-format
