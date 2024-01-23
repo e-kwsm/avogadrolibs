@@ -9518,23 +9518,6 @@ msgstr ""
 #~ msgstr "eV"
 
 #, fuzzy
-#~ msgid "Partial Charge"
-#~ msgstr "Coloriar segon la carga parciala"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animacion"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Numèro de l'atòm"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Distància"
-
-#, fuzzy
 #~ msgid "Select Water…"
 #~ msgstr "Numèro de l'atòm"
 
