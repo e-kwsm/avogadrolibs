@@ -3017,15 +3017,13 @@ msgstr "Nastavitev polja sil ..."
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Uvozi izbrane atome"
+msgstr "Popravi izbrane atome"
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Popravi izbrane atome"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy

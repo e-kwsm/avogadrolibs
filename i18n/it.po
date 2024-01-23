@@ -2986,15 +2986,13 @@ msgstr "Configura unione…"
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Importa gli atomi selezionati"
+msgstr "Fissa gli atomi selezionati"
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Fissa gli atomi selezionati"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
