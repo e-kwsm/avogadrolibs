@@ -1633,10 +1633,8 @@ msgid "Axis:"
 msgstr "Оса:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "Подешавања поравнања"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
 #, fuzzy

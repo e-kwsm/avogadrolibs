@@ -1547,16 +1547,12 @@ msgid "Axis:"
 msgstr "Paksi:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "Tetapan Jajar"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align to Axis"
-msgstr "Tetapan Jajar"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:312
 #, fuzzy

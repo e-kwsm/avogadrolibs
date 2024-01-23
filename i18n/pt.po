@@ -1619,10 +1619,8 @@ msgid "Axis:"
 msgstr "Eixo:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "Definições de alinhamento"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
 #, fuzzy

@@ -1528,16 +1528,12 @@ msgid "Axis:"
 msgstr "Trục:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "Cài đặt về dóng hàng"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align to Axis"
-msgstr "Cài đặt về dóng hàng"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:312
 #, fuzzy
