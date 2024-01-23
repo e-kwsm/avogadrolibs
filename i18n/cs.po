@@ -4587,8 +4587,9 @@ msgstr "&Exportovat"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
+#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Soubory CSV (*.csv);;Všechny soubory (*)"
+msgstr "Soubory WFN (*.wfn);;Všechny soubory (*.*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
@@ -5069,8 +5070,9 @@ msgstr "Vibrace"
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Vlnové číslo (cm⁻¹)"
+msgstr "Vlnové číslo (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
 msgid "Transmission"
@@ -7939,8 +7941,9 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
 #, fuzzy
+#| msgid "10e-"
 msgid "10"
-msgstr "10"
+msgstr "10e-"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:411
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8073,8 +8076,9 @@ msgstr "&Hodnota isopovrchu:"
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
 #, fuzzy
+#| msgid " K"
 msgid " "
-msgstr " "
+msgstr " K"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
