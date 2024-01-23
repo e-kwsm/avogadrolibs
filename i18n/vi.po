@@ -1456,20 +1456,16 @@ msgid "Change Atom Label"
 msgstr "Thay đổi thứ tự liên kết"
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Change Selection"
-msgstr "Bỏ qua lựa chọn"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
 msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
-#, fuzzy
-#| msgid "&UV Settings"
 msgid "Settings"
-msgstr "Cài đặt &UV"
+msgstr ""
 
 #: qtgui/scriptloader.cpp:41
 #, qt-format
@@ -1544,10 +1540,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "Dóng hàng"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
