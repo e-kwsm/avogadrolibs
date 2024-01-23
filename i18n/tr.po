@@ -2173,10 +2173,8 @@ msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.cpp:232
 #: qtplugins/noncovalent/noncovalent.cpp:369
-#, fuzzy
-#| msgid "Distance:"
 msgid "Maximum distance:"
-msgstr "Mesafe:"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.cpp:233
 #: qtplugins/crystal/crystalscene.cpp:174
@@ -2510,7 +2508,6 @@ msgstr "Temizle"
 
 #: qtplugins/copypaste/copypaste.cpp:35
 #, fuzzy
-#| msgid "Paste"
 msgid "&Paste"
 msgstr "Yapıştır"
 
@@ -2959,10 +2956,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Seçim"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3211,10 +3206,8 @@ msgid "&Insert"
 msgstr "&Ekle"
 
 #: qtplugins/insertdna/insertdna.cpp:79
-#, fuzzy
-#| msgid "&Insert"
 msgid "Insert DNA/RNA…"
-msgstr "&Ekle"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:160
 msgctxt "uracil"
@@ -3250,10 +3243,8 @@ msgid "Generating 3D molecule…"
 msgstr "3D molekül üretiliyor…"
 
 #: qtplugins/insertdna/insertdna.h:33
-#, fuzzy
-#| msgid "&Insert"
 msgid "InsertDNA"
-msgstr "&Ekle"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:63
 msgid "Insert DNA / RNA fragments through a dialog."
@@ -3327,10 +3318,8 @@ msgid "Element"
 msgstr "Element"
 
 #: qtplugins/label/label.cpp:163
-#, fuzzy
-#| msgid "Element name."
 msgid "Element & Number"
-msgstr "Element adı."
+msgstr ""
 
 #: qtplugins/label/label.cpp:165
 msgid "Element & ID"
@@ -3535,18 +3524,15 @@ msgstr "Kopyala"
 
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:88
 #, fuzzy
-#| msgid "Bonding"
 msgctxt "asking server for molecule name"
 msgid "(pending)"
-msgstr "Bağ oluşturma"
+msgstr ""
 
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:116
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:124
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:140
-#, fuzzy
-#| msgid "[no molecule]"
 msgid "unknown molecule"
-msgstr "[molekül yok]"
+msgstr ""
 
 #. i18n: file: qtplugins/molecularproperties/molecularpropertiesdialog.ui:91
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -3660,7 +3646,6 @@ msgstr "Kuvvet Alanını Yapılandır…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search..."
 msgid "Conformer Search…"
 msgstr "Uyumlu Arama..."
 
@@ -3690,10 +3675,8 @@ msgid "The Open Babel file formats are not ready to be added."
 msgstr "Open Babel dosya biçimleri eklenmeye hazır değil."
 
 #: qtplugins/openbabel/openbabel.cpp:203
-#, fuzzy
-#| msgid "Loading molecule from CML…"
 msgid "Loading molecule from Open Babel…"
-msgstr "CML'den molekül yükleniyor…"
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:209
 msgid ""
