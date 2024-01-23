@@ -1468,10 +1468,8 @@ msgid "Change Atom Label"
 msgstr "Змінити порядок зв’язку"
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Change Selection"
-msgstr "Ігнорувати позначене"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
