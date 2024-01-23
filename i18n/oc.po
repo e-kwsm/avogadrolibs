@@ -1808,11 +1808,9 @@ msgstr ""
 #: qtplugins/applycolors/applycolors.cpp:210
 #: qtplugins/applycolors/applycolors.cpp:302
 #: qtplugins/surfaces/surfaces.cpp:776:183 rc.cpp:1815
-#, fuzzy
-#| msgid "Neutral"
 msgctxt "colormap"
 msgid "Spectral"
-msgstr "Mejan"
+msgstr ""
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:45
 #. i18n: ectx: property (text), item, widget (QComboBox, colorMapCombo)
@@ -4808,18 +4806,14 @@ msgid "Space group features for crystals."
 msgstr ""
 
 #: qtplugins/spectra/spectra.cpp:29
-#, fuzzy
-#| msgid "Neutral"
 msgid "Plot Spectra…"
-msgstr "Mejan"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1676
-#, fuzzy
-#| msgid "Neutral"
 msgid "Spectra"
-msgstr "Mejan"
+msgstr ""
 
 #: qtplugins/spectra/spectra.h:38
 msgid "Display spectra plots."
@@ -4895,10 +4889,8 @@ msgid "Transmission"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:356
-#, fuzzy
-#| msgid "Neutral"
 msgid "Raman Spectra"
-msgstr "Mejan"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:358
 #: qtplugins/spectra/spectradialog.cpp:371
@@ -4911,10 +4903,8 @@ msgid "Intensity"
 msgstr "Fondut d'intensitat"
 
 #: qtplugins/spectra/spectradialog.cpp:369
-#, fuzzy
-#| msgid "Neutral"
 msgid "NMR Spectra"
-msgstr "Mejan"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:370
 msgid "Chemical Shift (ppm)"
