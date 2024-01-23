@@ -4509,7 +4509,6 @@ msgstr "ビューを軸にそろえる"
 
 #: qtplugins/resetview/resetview.cpp:52
 #, fuzzy
-#| msgid "Align Settings"
 msgid "Align view to axes."
 msgstr "ビューを軸にそろえる。"
 
