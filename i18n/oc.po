@@ -4935,7 +4935,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
 #, fuzzy
-#| msgid "ν (cm⁻¹)"
 msgid "Wavenumbers (cm⁻¹)"
 msgstr "ν (cm⁻¹)"
 
@@ -4952,7 +4951,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:629
 #: qtplugins/spectra/spectradialog.cpp:642
 #, fuzzy
-#| msgid "Intensity"
 msgid "Intensity"
 msgstr "Fondut d'intensitat"
 
@@ -5257,7 +5255,6 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "Vibracion"
 
@@ -7666,17 +7663,13 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
-msgstr "Largor :"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
-#, fuzzy
-#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr "Sulhet :"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
