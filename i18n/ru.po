@@ -7930,9 +7930,8 @@ msgstr "Постоянный размер"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
 #, fuzzy
-#| msgid "10e-"
 msgid "10"
-msgstr "10e-"
+msgstr "10"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:411
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
