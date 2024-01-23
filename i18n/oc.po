@@ -4921,10 +4921,8 @@ msgid "NMR Spectra"
 msgstr "Mejan"
 
 #: qtplugins/spectra/spectradialog.cpp:370
-#, fuzzy
-#| msgid "Chemical files (*.parm7)"
 msgid "Chemical Shift (ppm)"
-msgstr "Fichièrs de quimia (*.parm7)"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:382
 #, fuzzy
