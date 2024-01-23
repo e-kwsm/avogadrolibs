@@ -4823,10 +4823,8 @@ msgid "Spectra"
 msgstr "Neutrálny"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
-#| msgid "Display standard molecular properties."
 msgid "Display spectra plots."
-msgstr "Zobraziť štandardné vlastnosti molekuly."
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
