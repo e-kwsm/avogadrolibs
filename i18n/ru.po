@@ -3264,11 +3264,9 @@ msgstr "Вставить ДНК/РНК"
 
 #: qtplugins/insertdna/insertdna.cpp:160
 #, fuzzy
-#| msgctxt "Ultra-Violet spectrum"
-#| msgid "UV"
 msgctxt "uracil"
 msgid "U"
-msgstr "УФ"
+msgstr "U"
 
 #: qtplugins/insertdna/insertdna.cpp:161
 msgid "Uracil"
