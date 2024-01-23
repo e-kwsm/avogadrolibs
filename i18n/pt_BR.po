@@ -1580,8 +1580,9 @@ msgstr ""
 
 #: qtplugins/3dmol/3dmol.cpp:41
 #, fuzzy
+#| msgid "ThreeDMol HTML Block."
 msgid "3DMol HTML Block."
-msgstr "Bloco HTML 3DMol."
+msgstr "Bloco HTML ThreeDMol."
 
 #: qtplugins/3dmol/3dmol.cpp:51 qtplugins/fetchpdb/fetchpdb.cpp:41
 #: qtplugins/importpqr/importpqr.cpp:43
@@ -2476,8 +2477,10 @@ msgid "'b' lattice coordinate."
 msgstr "coordenada de rede 'b'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
+#, fuzzy
+#| msgid "'a' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "coordenada de rede 'c'."
+msgstr "coordenada de rede 'a'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
@@ -4657,8 +4660,9 @@ msgstr "&Exportar"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
+#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Arquivos CSV (*.csv);;Todos os arquivos (*)"
+msgstr "Arquivos WFN (*.wfn);;Todos os arquivos (*.*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
@@ -5141,8 +5145,9 @@ msgstr "Modos Vibracionais"
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Número de onda (cm⁻¹)"
+msgstr "Número de onda (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
 msgid "Transmission"
@@ -8221,8 +8226,9 @@ msgstr "Valor da Isosuperfície:"
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
 #, fuzzy
+#| msgid " K"
 msgid " "
-msgstr " "
+msgstr " K"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
