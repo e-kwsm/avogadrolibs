@@ -4844,10 +4844,8 @@ msgid "Spectra"
 msgstr "Spectraal"
 
 #: qtplugins/spectra/spectra.h:38
-#, fuzzy
-#| msgid "Display standard molecular properties."
 msgid "Display spectra plots."
-msgstr "Toon standaard moleculaire eigenschappen."
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
