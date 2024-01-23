@@ -1476,9 +1476,8 @@ msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
 #, fuzzy
-#| msgid "&Settings"
 msgid "Settings"
-msgstr "設定(&S)"
+msgstr "設定"
 
 #: qtgui/scriptloader.cpp:41
 #, qt-format
