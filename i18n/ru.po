@@ -5074,7 +5074,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Spectra"
 msgid "Plot Spectra…"
-msgstr "спектров"
+msgstr "Спектров"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:39
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
@@ -5156,7 +5156,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Spectra"
 msgid "Raman Spectra"
-msgstr "спектров"
+msgstr "Спектров"
 
 #: qtplugins/spectra/spectradialog.cpp:602
 #: qtplugins/spectra/spectradialog.cpp:615
