@@ -1458,10 +1458,8 @@ msgid "Modify Molecule"
 msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
-#, fuzzy
-#| msgid "Draw Settings"
 msgid "Settings"
-msgstr "Postavke"
+msgstr ""
 
 #: qtgui/scriptloader.cpp:33
 #, qt-format
