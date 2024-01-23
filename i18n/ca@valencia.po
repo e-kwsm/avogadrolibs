@@ -1536,16 +1536,12 @@ msgid "Axis:"
 msgstr "Eix:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "Configuració de l'alineació"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align to Axis"
-msgstr "Configuració de l'alineació"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:312
 #, fuzzy

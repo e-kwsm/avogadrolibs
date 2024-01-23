@@ -1564,16 +1564,12 @@ msgid "Axis:"
 msgstr "Ardatza:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "Lerrokatu Ezarpenak"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align to Axis"
-msgstr "Lerrokatu Ezarpenak"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:312
 #, fuzzy
