@@ -2358,16 +2358,12 @@ msgid "Element symbol."
 msgstr "Element simgesi."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:397
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atom label."
-msgstr "Geçersiz atom numarası."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:415
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atomic index."
-msgstr "Geçersiz atom numarası."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:417
 #, fuzzy
