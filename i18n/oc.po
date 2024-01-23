@@ -5280,7 +5280,6 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "Vibracion"
 
