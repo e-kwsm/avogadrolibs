@@ -8207,10 +8207,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:496
 #. i18n: ectx: property (text), item, widget (QComboBox, groupComboBox)
-#, fuzzy
-#| msgid "Nitrogen"
 msgid "nitro"
-msgstr "Kvælstof"
+msgstr ""
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:501
 #. i18n: ectx: property (text), item, widget (QComboBox, groupComboBox)
