@@ -1577,8 +1577,9 @@ msgstr ""
 
 #: qtplugins/3dmol/3dmol.cpp:41
 #, fuzzy
+#| msgid "ThreeDMol HTML Block."
 msgid "3DMol HTML Block."
-msgstr "3DMol HTML Blok."
+msgstr "ThreeDMol HTML Blok."
 
 #: qtplugins/3dmol/3dmol.cpp:51 qtplugins/fetchpdb/fetchpdb.cpp:41
 #: qtplugins/importpqr/importpqr.cpp:43
@@ -2499,8 +2500,10 @@ msgid "'b' lattice coordinate."
 msgstr "'b' koordinata rešetke."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
+#, fuzzy
+#| msgid "'a' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "'c' koordinata rešetke."
+msgstr "'a' koordinata rešetke."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
@@ -4722,8 +4725,9 @@ msgstr "&Izvezi"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
+#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "csv Datoteke (*.csv);;Sve Datoteke (*)"
+msgstr "WFN Datoteke (*.wfn);;Sve Datoteke (*.*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
@@ -5204,8 +5208,9 @@ msgstr "Režimi vibracija"
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Таласни број (cm⁻¹)"
+msgstr "Таласни број (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
 msgid "Transmission"
@@ -8299,8 +8304,9 @@ msgstr "Vrednost &Isopovršine:"
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
 #, fuzzy
+#| msgid " K"
 msgid " "
-msgstr " "
+msgstr " K"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
