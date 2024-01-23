@@ -5124,8 +5124,9 @@ msgstr "Vibrace"
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Vlnové číslo (cm⁻¹)"
+msgstr "Vlnové číslo (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:588
 msgid "Transmission"
@@ -8001,8 +8002,9 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:387
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
 #, fuzzy
+#| msgid "10e-"
 msgid "10"
-msgstr "10"
+msgstr "10e-"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:392
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8173,8 +8175,9 @@ msgstr "Hodnota isopovrchu:"
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
 #, fuzzy
+#| msgid " K"
 msgid " "
-msgstr " "
+msgstr " K"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)

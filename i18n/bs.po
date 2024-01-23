@@ -2991,7 +2991,6 @@ msgid "Freeze Selected Atoms"
 msgstr "Učvrsti odabrane atome"
 
 #: qtplugins/forcefield/forcefield.cpp:115
-#, fuzzy
 msgid "Unfreeze Selected Atoms"
 msgstr ""
 
@@ -5083,8 +5082,9 @@ msgstr "Analize vibracija"
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Valni broj (cm⁻¹)"
+msgstr "Valni broj (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:588
 msgid "Transmission"
@@ -7934,8 +7934,9 @@ msgstr "Vrsta slova:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:387
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
 #, fuzzy
+#| msgid "10e-"
 msgid "10"
-msgstr "10"
+msgstr "10e-"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:392
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
