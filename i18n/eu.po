@@ -3712,7 +3712,7 @@ msgstr ""
 #: qtplugins/propertytables/propertyview.cpp:250
 #, fuzzy
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "CSV fitxategiak (.*csv);;Fitxategi guztiak (*)"
+msgstr "CSV fitxategiak (*.csv);;Fitxategi guztiak (*)"
 
 #: qtplugins/molecularproperties/molecularview.cpp:159
 #: qtplugins/propertytables/propertyview.cpp:262
