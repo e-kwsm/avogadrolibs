@@ -1260,10 +1260,8 @@ msgid "Meshes"
 msgstr "Malhas"
 
 #: qtgui/layermodel.cpp:151 qtplugins/noncovalent/noncovalent.h:30
-#, fuzzy
-#| msgid "Covalent"
 msgid "Non-Covalent"
-msgstr "Covalente"
+msgstr ""
 
 #: qtgui/layermodel.cpp:153
 msgctxt "quantum theory of atoms in molecules"
