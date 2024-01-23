@@ -1015,7 +1015,6 @@ msgstr ""
 
 #: qtgui/fileformatdialog.cpp:279
 #, fuzzy
-#| msgid "All Files"
 msgid "All files"
 msgstr "Tots els fitxers"
 
@@ -2295,7 +2294,6 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2070
 #, fuzzy
-#| msgid "Other"
 msgid "Other…"
 msgstr "Altra"
 
@@ -5022,7 +5020,6 @@ msgstr "Espectre"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1646
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "Espectre"
 
@@ -6483,7 +6480,6 @@ msgstr "Z"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:142
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "Other"
 msgid "Other"
 msgstr "Altra"
 
