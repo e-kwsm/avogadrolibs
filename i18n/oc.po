@@ -2937,16 +2937,12 @@ msgid "Configure…"
 msgstr "Configurar lo camp de fòrça..."
 
 #: qtplugins/forcefield/forcefield.cpp:125
-#, fuzzy
-#| msgid "Delete Atom"
 msgid "Freeze Selected Atoms"
-msgstr "Suprimir un atòm"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Delete Atom"
 msgid "Unfreeze Selected Atoms"
-msgstr "Suprimir un atòm"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
