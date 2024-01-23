@@ -9287,7 +9287,6 @@ msgstr ""
 #~ msgstr "Анимација"
 
 #, fuzzy
-#~| msgid "Van der Waals (AO)"
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van Der Vals (AO)"
