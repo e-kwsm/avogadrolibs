@@ -1999,10 +1999,8 @@ msgid "Configure Bonding…"
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:32
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Bond Selected Atoms"
-msgstr "Cố định các nguyên tử được chọn"
+msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:61 qtplugins/centroid/centroid.cpp:44
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:34
