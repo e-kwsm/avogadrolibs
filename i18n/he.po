@@ -2893,16 +2893,12 @@ msgid "Configure…"
 msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:108
-#, fuzzy
-#| msgid "Select Atom Labels Color"
 msgid "Freeze Selected Atoms"
-msgstr "בחר צבע לתוויות אטומים"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:115
-#, fuzzy
-#| msgid "Select Atom Labels Color"
 msgid "Unfreeze Selected Atoms"
-msgstr "בחר צבע לתוויות אטומים"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 msgid "&Calculate"
