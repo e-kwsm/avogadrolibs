@@ -2929,13 +2929,13 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Selected Atoms"
 msgid "Freeze Selected Atoms"
 msgstr "valitud aatomid"
 
 #: qtplugins/forcefield/forcefield.cpp:115
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Selected Atoms"
 msgid "Unfreeze Selected Atoms"
 msgstr "valitud aatomid"
 
