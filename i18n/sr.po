@@ -2499,10 +2499,8 @@ msgid "'b' lattice coordinate."
 msgstr "'b' koordinata rešetke."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
-#, fuzzy
-#| msgid "'a' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "'a' koordinata rešetke."
+msgstr "'c' koordinata rešetke."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
