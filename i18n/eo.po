@@ -4593,9 +4593,8 @@ msgstr "&Eksporti"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "WFN-dosieroj (*.wfn);;Ĉiuj dosieroj (*.*)"
+msgstr "CSV-dosieroj (*.csv);;Ĉiuj dosieroj (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 msgid "Could not open the file for writing."
