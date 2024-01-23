@@ -8081,7 +8081,6 @@ msgstr "リガンド"
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
-#| msgid "Type"
 msgid "Type:"
 msgstr "タイプ:"
 
