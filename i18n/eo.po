@@ -9525,7 +9525,6 @@ msgstr "phlostically@example.com"
 #~ msgstr "Haltigi Moviĝon"
 
 #, fuzzy
-#~| msgid "Van der Waals (AO)"
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals (ĉirkaŭa lumbaro)"
