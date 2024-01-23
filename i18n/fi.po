@@ -2938,10 +2938,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Valinta"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3023,10 +3021,8 @@ msgid "%1 Force Norm = %L2"
 msgstr ""
 
 #: qtplugins/forcefield/forcefield.h:46
-#, fuzzy
-#| msgid "Global Optimization"
 msgid "Forcefield optimization"
-msgstr "Globaali optimisaatio"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.h:50
 msgid "Forcefield minimization, including scripts"
@@ -4720,16 +4716,12 @@ msgid "Select Water"
 msgstr "Järjestysluku"
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
-#, fuzzy
-#| msgid "Selection"
 msgid "Enlarge Selection"
-msgstr "Valinta"
+msgstr ""
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Valinta"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -8486,11 +8478,6 @@ msgstr ""
 #~| msgid "Partial Charge"
 #~ msgid "Partial Charge"
 #~ msgstr "Osittaisvaraus"
-
-#, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Animaatio"
 
 #, fuzzy
 #~ msgctxt "ambient occlusion"
