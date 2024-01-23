@@ -2935,13 +2935,11 @@ msgstr "力場の設定…"
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
-#| msgid "Import Selected Atoms"
 msgid "Freeze Selected Atoms"
 msgstr "選択した原子を固定"
 
 #: qtplugins/forcefield/forcefield.cpp:132
 #, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
 msgstr "選択した原子の固定を解除"
 
