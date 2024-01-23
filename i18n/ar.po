@@ -1012,7 +1012,6 @@ msgstr ""
 
 #: qtgui/fileformatdialog.cpp:279
 #, fuzzy
-#| msgid "All Files"
 msgid "All files"
 msgstr "كل الملفّات"
 
@@ -4876,7 +4875,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1646
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "طيف"
 
