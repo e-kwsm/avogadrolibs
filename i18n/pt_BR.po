@@ -2234,7 +2234,6 @@ msgstr " Å"
 #: qtplugins/closecontacts/closecontacts.cpp:229
 #: qtplugins/noncovalent/noncovalent.cpp:369
 #, fuzzy
-#| msgid "Minimum Distance:"
 msgid "Maximum distance:"
 msgstr "Distância Máxima:"
 
@@ -2376,7 +2375,6 @@ msgstr "Outro…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
-#| msgid "Atomic &Coordinate Editor..."
 msgid "Atomic &Coordinate Editor…"
 msgstr "Editor de &Coordenadas Atômicas…"
 
@@ -2574,7 +2572,6 @@ msgstr "Limpar"
 
 #: qtplugins/copypaste/copypaste.cpp:35
 #, fuzzy
-#| msgid "Paste"
 msgid "&Paste"
 msgstr "Colar"
 
@@ -2781,7 +2778,6 @@ msgstr "Enviar cálculo CP2K"
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
 msgstr "Importar Cristal da Área de Transferência…"
 
@@ -2791,7 +2787,6 @@ msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:52
 #, fuzzy
-#| msgid "Edit Unit Cell"
 msgid "Edit Unit Cell…"
 msgstr "Editar Célula Unitária…"
 
@@ -2805,13 +2800,11 @@ msgstr "Girar para &Orientação Padrão"
 
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
-#| msgid "Scale Cell &Volume"
 msgid "Scale Cell &Volume…"
 msgstr "Redimensionar &Volume da Célula…"
 
 #: qtplugins/crystal/crystal.cpp:74
 #, fuzzy
-#| msgid "Build &Supercell"
 msgid "Build &Supercell…"
 msgstr "Construir &Supercélula…"
 
@@ -3078,7 +3071,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:96
 #, fuzzy
-#| msgid "Configure Bonding…"
 msgid "Configure…"
 msgstr "Configurar…"
 
@@ -3094,7 +3086,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:154
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "&Calcular"
 
