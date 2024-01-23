@@ -1191,10 +1191,8 @@ msgid "Meshes"
 msgstr ""
 
 #: qtgui/layermodel.cpp:154 qtplugins/noncovalent/noncovalent.h:30
-#, fuzzy
-#| msgid "Covalent"
 msgid "Non-Covalent"
-msgstr "Ομοιοπολικός"
+msgstr ""
 
 #: qtgui/layermodel.cpp:156
 #, fuzzy
