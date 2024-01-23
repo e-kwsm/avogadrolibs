@@ -1504,10 +1504,8 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:281
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: qtplugins/aligntool/aligntool.cpp:83:1718
-#, fuzzy
-#| msgid "X Axis"
 msgid "Axis:"
-msgstr "X-telg"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:160
 msgid "Align at Origin"
@@ -8127,10 +8125,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Number of Bonds:"
 msgid "Number of Dimensions:"
-msgstr "Sidemete arv:"
+msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:220
 #. i18n: ectx: property (text), widget (QCheckBox, cb_displayYaehmopInput)
