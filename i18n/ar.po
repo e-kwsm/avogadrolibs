@@ -1511,10 +1511,8 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:281
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: qtplugins/aligntool/aligntool.cpp:83:1718
-#, fuzzy
-#| msgid "X Axis"
 msgid "Axis:"
-msgstr "محورX"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:160
 msgid "Align at Origin"
@@ -1535,10 +1533,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "حاذي"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
