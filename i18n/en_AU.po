@@ -4792,15 +4792,11 @@ msgstr "Display spectra and vibrational modes."
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Infrared"
 
 #: qtplugins/spectra/spectradialog.cpp:205
 #, fuzzy
-#| msgctxt "Raman spectrum"
-#| msgid "Raman"
 msgid "Raman"
 msgstr "Raman"
 

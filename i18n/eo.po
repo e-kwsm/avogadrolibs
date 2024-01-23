@@ -1244,7 +1244,6 @@ msgstr "Teksta Etikedo"
 
 #: qtgui/layermodel.cpp:147 qtplugins/licorice/licorice.h:29
 #, fuzzy
-#| msgid "Licorice"
 msgctxt "stick / licorice rendering"
 msgid "Licorice"
 msgstr "Glicirizo"
@@ -1260,7 +1259,6 @@ msgstr ""
 
 #: qtgui/layermodel.cpp:153
 #, fuzzy
-#| msgid "QTAIM"
 msgctxt "quantum theory of atoms in molecules"
 msgid "QTAIM"
 msgstr "QTAIM"
@@ -1276,7 +1274,6 @@ msgstr "Van der Waals"
 
 #: qtgui/layermodel.cpp:159 qtplugins/vanderwaalsao/vanderwaalsao.h:29
 #, fuzzy
-#| msgid "Van der Waals (AO)"
 msgctxt "ambient occlusion"
 msgid "Van der Waals (AO)"
 msgstr "Van der Waals (ĉirkaŭa lumbaro)"
@@ -6076,7 +6073,6 @@ msgstr "Alfa de Poisson EWALD"
 #. i18n: file: qtplugins/cp2kinput/cp2kinputdialog.ui:399
 #. i18n: ectx: property (text), widget (QLabel, label_23)
 #, fuzzy
-#| msgid "Poiosson EWALD GMAX"
 msgid "Poisson EWALD GMAX"
 msgstr "GMAX de Poisson EWALD"
 
@@ -6567,7 +6563,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:190
 #. i18n: ectx: property (text), widget (QRadioButton, singleStrandRadio)
 #, fuzzy
-#| msgid "Single"
 msgctxt "single-strand DNA"
 msgid "Single"
 msgstr "Unuobla"
@@ -6575,7 +6570,6 @@ msgstr "Unuobla"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:197
 #. i18n: ectx: property (text), widget (QRadioButton, doubleStrandRadio)
 #, fuzzy
-#| msgid "Double"
 msgctxt "double-strand DNA"
 msgid "Double"
 msgstr "Duobla"
@@ -8572,7 +8566,6 @@ msgstr "Ĉu nulo ĉe Fermi?"
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:81
 #. i18n: ectx: property (text), widget (QLabel, label)
 #, fuzzy
-#| msgid "Num k-points connecting special k-points:"
 msgid "# of k-points connecting special k-points:"
 msgstr "Nombro de k-punktoj ligantaj specialajn k-punktojn:"
 
