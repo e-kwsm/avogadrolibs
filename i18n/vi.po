@@ -1834,7 +1834,6 @@ msgstr ""
 #: qtplugins/applycolors/applycolors.cpp:311
 #: qtplugins/surfaces/surfaces.cpp:780:183 rc.cpp:1830
 #, fuzzy
-#| msgid "Spectra"
 msgctxt "colormap"
 msgid "Spectral"
 msgstr "Phổ"
