@@ -1529,10 +1529,8 @@ msgid "Align at Origin"
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:192
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align to Axis"
-msgstr "Cài đặt về dóng hàng"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:308
 msgid "Center the atom at the origin."
