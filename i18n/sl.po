@@ -3178,9 +3178,8 @@ msgid "Forcefield optimization"
 msgstr "Prilagajanje polja sil"
 
 #: qtplugins/forcefield/forcefield.h:51
-#, fuzzy
 msgid "Forcefield minimization, including scripts"
-msgstr "Prilagajanje polja sil"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
