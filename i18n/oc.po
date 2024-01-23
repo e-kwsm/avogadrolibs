@@ -1134,9 +1134,8 @@ msgstr ""
 
 #: qtgui/jsonwidget.cpp:852 qtplugins/cp2kinput/cp2kinputdialog.cpp:455
 #: qtplugins/gamessinput/gamessinputdialog.cpp:395
-#, fuzzy
 msgid "[no molecule]"
-msgstr "Molecula"
+msgstr ""
 
 #: qtgui/layermodel.cpp:85
 #, qt-format
