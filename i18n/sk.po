@@ -1535,10 +1535,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:29
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "Zarovnať"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:32
 msgid "Align molecules to a Cartesian axis"
@@ -2127,10 +2125,8 @@ msgid "Line width:"
 msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:36
-#, fuzzy
-#| msgid "Renders force displacements on atoms"
 msgid "Render close contacts between atoms."
-msgstr "Vykreslí silu posunu na atómy"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.h:54
 msgid "Contact"
@@ -2247,9 +2243,8 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2067
 #, fuzzy
-#| msgid "Other..."
 msgid "Other…"
-msgstr "Ďaľšie..."
+msgstr "Ďaľšie…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 msgid "Atomic &Coordinate Editor…"
@@ -2897,10 +2892,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Výber"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -2945,7 +2938,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Vypočítať"
 
@@ -2979,10 +2971,8 @@ msgid "Forcefield optimization"
 msgstr "Optimalizácia silového poľa"
 
 #: qtplugins/forcefield/forcefield.h:50
-#, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr "Optimalizácia silového poľa"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
@@ -3188,10 +3178,8 @@ msgstr ""
 #: qtplugins/insertdna/insertdna.cpp:200
 #: qtplugins/lineformatinput/lineformatinput.cpp:108
 #: qtplugins/lineformatinput/lineformatinput.cpp:123:1046
-#, fuzzy
-#| msgid "Molecule"
 msgid "Insert Molecule…"
-msgstr "Molekula"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:201
 #: qtplugins/lineformatinput/lineformatinput.cpp:124
@@ -3208,9 +3196,8 @@ msgstr ""
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 #, fuzzy
-#| msgid "Molecule"
 msgid "Molecule…"
-msgstr "Molekula"
+msgstr "Molekula…"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 msgid "Crystal…"
@@ -4444,10 +4431,8 @@ msgid "Energy (kcal/mol)"
 msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:754
-#, fuzzy
-#| msgid "Insert Fragment"
 msgid "Adjust Fragment"
-msgstr "Vložiť fragment"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:880
 msgctxt "pi helix"
@@ -4493,13 +4478,13 @@ msgstr ""
 #, fuzzy
 #| msgid "Atom Properties"
 msgid "Atom Properties…"
-msgstr "Vlastnosti atómu"
+msgstr "Vlastnosti atómu…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
 #| msgid "Bond Properties"
 msgid "Bond Properties…"
-msgstr "Vlastnosti väzby"
+msgstr "Vlastnosti väzby…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
@@ -4650,10 +4635,8 @@ msgid "Invert Selection"
 msgstr ""
 
 #: qtplugins/select/select.cpp:53
-#, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Element…"
-msgstr "Vybrať podľa Zvyšku..."
+msgstr ""
 
 #: qtplugins/select/select.cpp:58
 #, fuzzy
