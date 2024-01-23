@@ -1540,10 +1540,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Navigate tool"
 msgid "Align tool"
-msgstr "Навигация"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
@@ -2907,9 +2905,8 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
-#| msgid "Calculate Energy"
 msgid "&Calculate"
-msgstr "Изчисляване на енергията"
+msgstr "Изчисляване"
 
 #: qtplugins/forcefield/forcefield.cpp:245
 #: qtplugins/forcefield/forcefield.cpp:375
@@ -3114,10 +3111,8 @@ msgid "&Insert"
 msgstr "&Вмъкване"
 
 #: qtplugins/insertdna/insertdna.cpp:79
-#, fuzzy
-#| msgid "&Insert"
 msgid "Insert DNA/RNA…"
-msgstr "&Вмъкване"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:160
 msgctxt "uracil"
@@ -3153,10 +3148,8 @@ msgid "Generating 3D molecule…"
 msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:33
-#, fuzzy
-#| msgid "&Insert"
 msgid "InsertDNA"
-msgstr "&Вмъкване"
+msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:63
 msgid "Insert DNA / RNA fragments through a dialog."
@@ -3429,7 +3422,6 @@ msgstr "Молекулярни свойства"
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:35
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:206
 #, fuzzy
-#| msgid "Copy"
 msgid "&Copy"
 msgstr "Копирай"
 
@@ -3536,10 +3528,8 @@ msgid " °"
 msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.cpp:368
-#, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle tolerance:"
-msgstr "Свойства на ъгъла"
+msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.h:34
 msgid "Render a few non-covalent interactions."
@@ -3871,10 +3861,8 @@ msgid "Player"
 msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:48
-#, fuzzy
-#| msgid "Animation..."
 msgid "Animation Tool"
-msgstr "Анимация..."
+msgstr ""
 
 #: qtplugins/playertool/playertool.cpp:73
 msgid "Play"
@@ -4290,19 +4278,16 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:27
 #, fuzzy
-#| msgid "Atom Properties"
 msgid "Atom Properties…"
 msgstr "Свойства на атома"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Свойства на връзката"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Свойства на ъгъла"
 
@@ -4755,10 +4740,8 @@ msgid "NMR"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:211
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic"
-msgstr "Плътност на електроните"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:215
 msgid "Circular Dichroism"
@@ -4779,10 +4762,8 @@ msgid "Select Foreground Color"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:282
-#, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Select Calculated Spectra Color"
-msgstr "Изнасяне на изчислен спектър"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:294
 msgid "Select Imported Spectra Color"
@@ -4814,20 +4795,16 @@ msgid "Intensity"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:369
-#, fuzzy
-#| msgid "Spectra"
 msgid "NMR Spectra"
-msgstr "Спектри"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:370
 msgid "Chemical Shift (ppm)"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:382
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
-msgstr "Плътност на електроните"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:383
 #: qtplugins/spectra/spectradialog.cpp:411
@@ -4860,10 +4837,8 @@ msgid "Electron Density"
 msgstr "Плътност на електроните"
 
 #: qtplugins/surfaces/surfacedialog.cpp:173
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Spin Density"
-msgstr "Плътност на електроните"
+msgstr ""
 
 #: qtplugins/surfaces/surfacedialog.cpp:185
 #, fuzzy, qt-format
@@ -5043,10 +5018,8 @@ msgstr "&Вмъкване"
 
 #: qtplugins/templatetool/templatetool.h:35
 #: qtplugins/templatetool/templatetool.h:36
-#, fuzzy
-#| msgid "Navigate tool"
 msgid "Template tool"
-msgstr "Навигация"
+msgstr ""
 
 #: qtplugins/vanderwaals/vanderwaals.h:33
 msgid "Simple display of VdW spheres."
@@ -7456,10 +7429,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, push_loadSpectra)
-#, fuzzy
-#| msgid "No data"
 msgid "&Load data..."
-msgstr "Липсват данни"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, push_exportData)
@@ -7549,7 +7520,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:288
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Imported Spectra:"
 msgstr "Внасяне на спектър"
 
