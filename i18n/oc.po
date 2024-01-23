@@ -4919,7 +4919,15 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
+<<<<<<< HEAD
 #: qtplugins/spectra/spectra.h:36:1655
+||||||| parent of 357300cfc1aa (Spectral-variants from Neutral)
+#: qtplugins/spectra/spectra.h:36:1643
+#, fuzzy
+#| msgid "Neutral"
+=======
+#: qtplugins/spectra/spectra.h:36:1643
+>>>>>>> 357300cfc1aa (Spectral-variants from Neutral)
 msgid "Spectra"
 msgstr ""
 
@@ -4996,7 +5004,15 @@ msgstr "ν (cm⁻¹)"
 msgid "Transmission"
 msgstr ""
 
+<<<<<<< HEAD
 #: qtplugins/spectra/spectradialog.cpp:355
+||||||| parent of 357300cfc1aa (Spectral-variants from Neutral)
+#: qtplugins/spectra/spectradialog.cpp:356
+#, fuzzy
+#| msgid "Neutral"
+=======
+#: qtplugins/spectra/spectradialog.cpp:356
+>>>>>>> 357300cfc1aa (Spectral-variants from Neutral)
 msgid "Raman Spectra"
 msgstr ""
 
@@ -5010,7 +5026,15 @@ msgstr ""
 msgid "Intensity"
 msgstr "Fondut d'intensitat"
 
+<<<<<<< HEAD
 #: qtplugins/spectra/spectradialog.cpp:368
+||||||| parent of 357300cfc1aa (Spectral-variants from Neutral)
+#: qtplugins/spectra/spectradialog.cpp:369
+#, fuzzy
+#| msgid "Neutral"
+=======
+#: qtplugins/spectra/spectradialog.cpp:369
+>>>>>>> 357300cfc1aa (Spectral-variants from Neutral)
 msgid "NMR Spectra"
 msgstr ""
 
