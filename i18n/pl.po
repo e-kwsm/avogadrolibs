@@ -2944,15 +2944,15 @@ msgstr "Pole sił:"
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Importuj zaznaczone atomy"
+msgstr "zaznaczone atomy"
 
 #: qtplugins/forcefield/forcefield.cpp:115
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Importuj zaznaczone atomy"
+msgstr "zaznaczone atomy"
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
