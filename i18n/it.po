@@ -5044,7 +5044,6 @@ msgstr "Spettri"
 
 #: qtplugins/spectra/spectra.h:38
 #, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display spectra plots."
 msgstr "Visualizza gli spettri."
 
