@@ -3042,16 +3042,12 @@ msgid "Configure…"
 msgstr "Agordi Ligadon…"
 
 #: qtplugins/forcefield/forcefield.cpp:125
-#, fuzzy
-#| msgid "Select All"
 msgid "Freeze Selected Atoms"
-msgstr "Elekti Ĉion"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Select All"
 msgid "Unfreeze Selected Atoms"
-msgstr "Elekti Ĉion"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
