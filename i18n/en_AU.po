@@ -4861,15 +4861,11 @@ msgstr "Display spectra plots."
 
 #: qtplugins/spectra/spectradialog.cpp:200
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Infrared"
 
 #: qtplugins/spectra/spectradialog.cpp:204
 #, fuzzy
-#| msgctxt "Raman spectrum"
-#| msgid "Raman"
 msgid "Raman"
 msgstr "Raman"
 
