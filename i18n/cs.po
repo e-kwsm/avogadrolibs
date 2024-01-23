@@ -1549,16 +1549,12 @@ msgid "Axis:"
 msgstr "Osa:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "Nastavení zarovnání"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align to Axis"
-msgstr "Nastavení zarovnání"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:312
 #, fuzzy
