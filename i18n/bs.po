@@ -1465,10 +1465,8 @@ msgid "Modify Molecule"
 msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
-#, fuzzy
-#| msgid "Draw Settings"
 msgid "Settings"
-msgstr "Postavke crtanja"
+msgstr ""
 
 #: qtgui/scriptloader.cpp:33
 #, qt-format
@@ -2918,10 +2916,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Izbor"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
