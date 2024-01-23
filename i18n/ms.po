@@ -3889,6 +3889,7 @@ msgstr "Sifat Molekul"
 #: qtplugins/molecularproperties/molecularview.cpp:146
 #: qtplugins/propertytables/propertyview.cpp:345
 #, fuzzy
+#| msgid "Export"
 msgid "Export CSV"
 msgstr "Eksport CSV"
 
