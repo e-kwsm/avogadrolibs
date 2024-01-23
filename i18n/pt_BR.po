@@ -9921,11 +9921,6 @@ msgstr "Seus e-mails"
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animação"
-
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Exibição simples de esferas VdW com oclusão ambiental."
 

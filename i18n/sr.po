@@ -10053,11 +10053,6 @@ msgstr ""
 #~ "Двоструки: \tВраћа преглед."
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Анимација"
-
-#, fuzzy
 #~| msgid ""
 #~| "Manipulation Tool (F10)\n"
 #~| "\n"
