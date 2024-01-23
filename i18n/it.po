@@ -1482,9 +1482,8 @@ msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
 #, fuzzy
-#| msgid "&Settings"
 msgid "Settings"
-msgstr "&Impostazioni"
+msgstr "Impostazioni"
 
 #: qtgui/scriptloader.cpp:41
 #, fuzzy, qt-format
