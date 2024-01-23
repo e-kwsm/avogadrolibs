@@ -4905,8 +4905,6 @@ msgid "Space group features for crystals."
 msgstr "Space group features for crystals."
 
 #: qtplugins/spectra/spectra.cpp:29
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Plot Spectra…"
 msgstr "Plot Spectra…"
 
@@ -4991,7 +4989,6 @@ msgstr "Transmission"
 
 #: qtplugins/spectra/spectradialog.cpp:600
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Raman Spectra"
 msgstr "Raman Spectra"
 
