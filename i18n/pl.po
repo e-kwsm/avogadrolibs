@@ -2941,16 +2941,12 @@ msgid "Configure…"
 msgstr "Pole sił:"
 
 #: qtplugins/forcefield/forcefield.cpp:108
-#, fuzzy
-#| msgid "Import Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Importuj zaznaczone atomy"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:115
-#, fuzzy
-#| msgid "Import Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Importuj zaznaczone atomy"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
