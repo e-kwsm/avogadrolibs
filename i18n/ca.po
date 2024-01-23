@@ -5024,10 +5024,8 @@ msgid "Space group features for crystals."
 msgstr ""
 
 #: qtplugins/spectra/spectra.cpp:29
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Plot Spectra…"
-msgstr "Importa espectre"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:39
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
@@ -5113,9 +5111,9 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:600
 #, fuzzy
-#| msgid "Import Spectra"
+#| msgid "Spectra"
 msgid "Raman Spectra"
-msgstr "espectre"
+msgstr "Espectre"
 
 #: qtplugins/spectra/spectradialog.cpp:602
 #: qtplugins/spectra/spectradialog.cpp:615
