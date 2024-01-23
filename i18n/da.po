@@ -2951,15 +2951,13 @@ msgstr "Indstil kraftfelt"
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Importer valgte atomer"
+msgstr "Ret valgte atomer"
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Ret valgte atomer"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy

@@ -3070,15 +3070,13 @@ msgstr "Configurar Ligações…"
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Importar Átomos Seleccionados"
+msgstr "Corrigir átomos seleccionados"
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Corrigir átomos seleccionados"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
