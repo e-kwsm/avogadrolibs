@@ -4599,9 +4599,8 @@ msgstr "Εξαγωγή"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Αρχεία WFN (*.wfn);;Όλα τα αρχεία (*.*)"
+msgstr "Αρχεία CSV (*.csv);;Όλα τα αρχεία (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy

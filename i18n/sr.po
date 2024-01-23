@@ -4741,9 +4741,8 @@ msgstr "&Izvezi"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "WFN Datoteke (*.wfn);;Sve Datoteke (*.*)"
+msgstr "csv Datoteke (*.csv);;Sve Datoteke (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
