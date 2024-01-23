@@ -2426,10 +2426,8 @@ msgid "'b' lattice coordinate."
 msgstr "'b' çapraz koordinatı."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
-#, fuzzy
-#| msgid "'b' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "'b' çapraz koordinatı."
+msgstr "'c' çapraz koordinatı."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
