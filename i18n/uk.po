@@ -4577,9 +4577,8 @@ msgstr "&Експорт"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Файли WFN (*.wfn);;Всі файли (*.*)"
+msgstr "Файли CSV (*.csv);;Всі файли (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
