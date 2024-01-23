@@ -4831,7 +4831,6 @@ msgstr "結晶の空間群特性"
 
 #: qtplugins/spectra/spectra.cpp:29
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Plot Spectra…"
 msgstr "スペクトルをプロット"
 

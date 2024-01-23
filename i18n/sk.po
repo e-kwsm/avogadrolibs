@@ -4805,10 +4805,8 @@ msgid "Space group features for crystals."
 msgstr ""
 
 #: qtplugins/spectra/spectra.cpp:29
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Plot Spectra…"
-msgstr "Importovať Spectra"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
@@ -4868,10 +4866,8 @@ msgid "Select Calculated Spectra Color"
 msgstr "Export vypočítaného spektra"
 
 #: qtplugins/spectra/spectradialog.cpp:294
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Select Imported Spectra Color"
-msgstr "Importovať Spectra"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:342
 #, fuzzy
@@ -4889,10 +4885,8 @@ msgid "Transmission"
 msgstr "Krútenie %1"
 
 #: qtplugins/spectra/spectradialog.cpp:356
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Raman Spectra"
-msgstr "Importovať Spectra"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:358
 #: qtplugins/spectra/spectradialog.cpp:371
@@ -7674,10 +7668,8 @@ msgstr "Vybrané Farby"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:288
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Imported Spectra:"
-msgstr "Importovať Spectra"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:336
 #. i18n: ectx: property (text), widget (QPushButton, push_export)
