@@ -5412,7 +5412,6 @@ msgid "Space group features for crystals."
 msgstr "Space group features for crystals."
 
 #: qtplugins/spectra/spectra.cpp:29
-#, fuzzy
 msgid "Plot Spectra…"
 msgstr "Plot Spectra…"
 
