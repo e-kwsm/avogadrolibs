@@ -3623,10 +3623,8 @@ msgid "Render a few non-covalent interactions."
 msgstr "渲染一些非共价相互作用。"
 
 #: qtplugins/noncovalent/noncovalent.h:54
-#, fuzzy
-#| msgid "Hydrogen"
 msgid "Halogen"
-msgstr "氢"
+msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.h:55
 msgid "Chalcogen"
