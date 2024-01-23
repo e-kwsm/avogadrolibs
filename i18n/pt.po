@@ -2087,10 +2087,8 @@ msgid "Configure Bonding…"
 msgstr "Configurar Ligações…"
 
 #: qtplugins/bonding/bonding.cpp:32
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Bond Selected Atoms"
-msgstr "Corrigir átomos seleccionados"
+msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:63 qtplugins/centroid/centroid.cpp:46
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:34
