@@ -7835,6 +7835,7 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:387
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
+#, fuzzy
 msgid "10"
 msgstr "10"
 
