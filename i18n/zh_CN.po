@@ -2988,16 +2988,12 @@ msgid "Configure…"
 msgstr "建立力场…"
 
 #: qtplugins/forcefield/forcefield.cpp:125
-#, fuzzy
-#| msgid "Import Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "导入选择的原子"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "修正所选择的原子"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 msgid "&Calculate"
