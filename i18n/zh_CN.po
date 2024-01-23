@@ -1579,10 +1579,8 @@ msgid "Axis:"
 msgstr "轴："
 
 #: qtplugins/aligntool/aligntool.cpp:160
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
-msgstr "对齐设置"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.cpp:196
 msgid "Align to Axis"

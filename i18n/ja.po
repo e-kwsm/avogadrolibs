@@ -1514,13 +1514,11 @@ msgstr "座標軸:"
 
 #: qtplugins/aligntool/aligntool.cpp:160
 #, fuzzy
-#| msgid "Align Settings"
 msgid "Align at Origin"
 msgstr "原点にアラインする"
 
 #: qtplugins/aligntool/aligntool.cpp:196
 #, fuzzy
-#| msgid "Align Settings"
 msgid "Align to Axis"
 msgstr "軸にアラインする"
 
