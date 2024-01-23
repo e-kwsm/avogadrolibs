@@ -4826,8 +4826,6 @@ msgid "Space group features for crystals."
 msgstr ""
 
 #: qtplugins/spectra/spectra.cpp:29
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Plot Spectra…"
 msgstr "спектър"
 
@@ -4886,10 +4884,8 @@ msgid "Select Calculated Spectra Color"
 msgstr "Изнасяне на изчислен спектър"
 
 #: qtplugins/spectra/spectradialog.cpp:293
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Select Imported Spectra Color"
-msgstr "Внасяне на спектър"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:341
 msgid "Vibrational Spectra"
@@ -4906,9 +4902,9 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:355
 #, fuzzy
-#| msgid "Import Spectra"
+#| msgid "Spectra"
 msgid "Raman Spectra"
-msgstr "спектър"
+msgstr "Спектър"
 
 #: qtplugins/spectra/spectradialog.cpp:357
 #: qtplugins/spectra/spectradialog.cpp:370
