@@ -2786,9 +2786,8 @@ msgstr "Kristali Panodan İçe Aktar"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
-#| msgid "&Wrap Atoms to Unit Cell"
 msgid "Wrap atoms into the unit cell."
-msgstr "&Atomları Birim Hücreye Sar"
+msgstr "Atomları Birim Hücreye Sar"
 
 #: qtplugins/crystal/crystal.cpp:177
 #, fuzzy
