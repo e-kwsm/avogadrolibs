@@ -1559,9 +1559,8 @@ msgstr "Modificar Molécula"
 
 #: qtgui/scenepluginmodel.cpp:92
 #, fuzzy
-#| msgid "&Settings"
 msgid "Settings"
-msgstr "&Definições"
+msgstr "Definições"
 
 #: qtgui/scriptloader.cpp:41
 #, fuzzy, qt-format
