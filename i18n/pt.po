@@ -1565,9 +1565,8 @@ msgstr ""
 
 #: qtplugins/3dmol/3dmol.cpp:37
 #, fuzzy
-#| msgid "ThreeDMol HTML Block."
 msgid "3DMol HTML Block."
-msgstr "Bloco HTML ThreeDMol."
+msgstr "Bloco HTML 3DMol."
 
 #: qtplugins/3dmol/3dmol.cpp:47 qtplugins/fetchpdb/fetchpdb.cpp:41
 #: qtplugins/importpqr/importpqr.cpp:59
