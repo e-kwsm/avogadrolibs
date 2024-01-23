@@ -9833,18 +9833,12 @@ msgstr "phlostically@example.com"
 #~ msgid "Partial Charge"
 #~ msgstr "Parta Ŝargo"
 
-#, fuzzy
-#~| msgid "Stop Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Haltigi Moviĝon"
-
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Simpla montrado de sferoj de Van der Waals per ĉirkaŭa lumbaro."
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
-#~ msgstr "Optimumigi Geometrion"
+#~ msgstr "Geometrion"
 
 #~ msgid "Add Unit Cell"
 #~ msgstr "Aldoni Unitan Ĉelon"
