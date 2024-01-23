@@ -4970,7 +4970,7 @@ msgstr "振動光譜"
 #: qtplugins/spectra/spectradialog.cpp:342
 #: qtplugins/spectra/spectradialog.cpp:356
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "波數 (cm<sup>-1</sup>)"
+msgstr "波數 (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:343
 msgid "Transmission"
@@ -5003,7 +5003,6 @@ msgstr "化學位移 (ppm)"
 
 #: qtplugins/spectra/spectradialog.cpp:381
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
 msgstr "電子光譜"
 
@@ -5340,7 +5339,6 @@ msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:544
 #, fuzzy, qt-format
-#| msgid "MOPAC failed to start."
 msgid "Error: %1 failed to start"
 msgstr "無法啟動 %1"
 
@@ -6282,7 +6280,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #, fuzzy
-#| msgid "Nucleus:"
 msgid "Nucleic Acids:"
 msgstr "核酸:"
 
@@ -6925,7 +6922,6 @@ msgstr ""
 #. i18n: file: qtplugins/manipulator/manipulatewidget.ui:122
 #. i18n: ectx: property (text), item, widget (QComboBox, rotateComboBox)
 #, fuzzy
-#| msgid "Origin:"
 msgid "Origin"
 msgstr "原點"
 
@@ -7782,7 +7778,6 @@ msgstr "背景:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:375
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
 msgstr "計算出來的光譜"
 
@@ -8030,7 +8025,6 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:99
 #. i18n: ectx: property (text), widget (QLabel, formalChargeLabel)
 #, fuzzy
-#| msgid "Partial Charge"
 msgid "Formal Charge:"
 msgstr "形式電荷"
 
