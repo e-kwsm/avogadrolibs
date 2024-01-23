@@ -3187,8 +3187,6 @@ msgstr "Chèn"
 
 #: qtplugins/insertdna/insertdna.cpp:159
 #, fuzzy
-#| msgctxt "Ultra-Violet spectrum"
-#| msgid "UV"
 msgctxt "uracil"
 msgid "U"
 msgstr "U"
