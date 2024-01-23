@@ -1767,9 +1767,8 @@ msgstr "Ficheiro de entrada gravado em %1"
 #: qtplugins/applycolors/applycolors.cpp:43
 #: qtplugins/applycolors/applycolors.cpp:64
 #, fuzzy
-#| msgid "By Custom Color..."
 msgid "By Custom Color…"
-msgstr "Por Cor Personalizada..."
+msgstr "Por Cor Personalizada…"
 
 #: qtplugins/applycolors/applycolors.cpp:48
 #, fuzzy
@@ -2202,10 +2201,8 @@ msgstr " Å"
 
 #: qtplugins/closecontacts/closecontacts.cpp:232
 #: qtplugins/noncovalent/noncovalent.cpp:369
-#, fuzzy
-#| msgid "Minimum Distance:"
 msgid "Maximum distance:"
-msgstr "Distância Mínima:"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.cpp:233
 #: qtplugins/crystal/crystalscene.cpp:174
@@ -2341,15 +2338,13 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:361
 #: qtplugins/templatetool/templatetoolwidget.cpp:424:2088
 #, fuzzy
-#| msgid "Other..."
 msgid "Other…"
-msgstr "Outro..."
+msgstr "Outro…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
-#| msgid "Atomic &Coordinate Editor..."
 msgid "Atomic &Coordinate Editor…"
-msgstr "Editor de &Coordenadas Atômicas..."
+msgstr "Editor de &Coordenadas Atômicas…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.h:28
 msgid "Coordinate editor"
@@ -2394,16 +2389,12 @@ msgid "Element symbol."
 msgstr "Símbolo do Elemento."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:397
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atom label."
-msgstr "Número atômico inválido."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:415
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atomic index."
-msgstr "Número atômico inválido."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:417
 #, fuzzy
@@ -2623,9 +2614,8 @@ msgstr "Interagir com área de transferência."
 
 #: qtplugins/cp2kinput/cp2kinput.cpp:33
 #, fuzzy
-#| msgid "&CP2K"
 msgid "&CP2K…"
-msgstr "&CP2K"
+msgstr "&CP2K…"
 
 #: qtplugins/cp2kinput/cp2kinput.h:34
 msgid "CP2K input"
@@ -2761,9 +2751,8 @@ msgstr "Enviar cálculo CP2K"
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
-msgstr "I&mportar Cristal da Área de Transferência"
+msgstr "I&mportar Cristal da Área de Transferência…"
 
 #: qtplugins/crystal/crystal.cpp:47
 msgid "Toggle Unit Cell"
@@ -2771,9 +2760,8 @@ msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:52
 #, fuzzy
-#| msgid "Edit Unit Cell"
 msgid "Edit Unit Cell…"
-msgstr "Editar Célula Unitária"
+msgstr "Editar Célula Unitária…"
 
 #: qtplugins/crystal/crystal.cpp:57
 msgid "&Wrap Atoms to Unit Cell"
@@ -2785,15 +2773,13 @@ msgstr "Girar para &Orientação Padrão"
 
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
-#| msgid "Scale Cell &Volume"
 msgid "Scale Cell &Volume…"
-msgstr "Redimensionar &Volume da Célula"
+msgstr "Redimensionar &Volume da Célula…"
 
 #: qtplugins/crystal/crystal.cpp:74
 #, fuzzy
-#| msgid "Build &Supercell"
 msgid "Build &Supercell…"
-msgstr "Construir &Supercélula"
+msgstr "Construir &Supercélula…"
 
 #: qtplugins/crystal/crystal.cpp:79
 msgid "Reduce Cell (&Niggli)"
@@ -2873,9 +2859,8 @@ msgstr "Nenhuma célula unitária presente."
 
 #: qtplugins/customelements/customelements.cpp:19
 #, fuzzy
-#| msgid "Reassign &Custom Elements..."
 msgid "Reassign &Custom Elements…"
-msgstr "Reatribuir Elementos &Personalizados..."
+msgstr "Reatribuir Elementos &Personalizados…"
 
 #: qtplugins/customelements/customelements.cpp:32
 msgid "Manipulate custom element types in the current molecule."
@@ -3014,10 +2999,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Selecção"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3047,9 +3030,8 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:113
 #, fuzzy
-#| msgid "Configure Bonding…"
 msgid "Configure…"
-msgstr "Configurar Ligações…"
+msgstr "Configurar…"
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
@@ -3063,9 +3045,8 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
-msgstr "Calcular"
+msgstr "&Calcular"
 
 #: qtplugins/forcefield/forcefield.cpp:245
 #: qtplugins/forcefield/forcefield.cpp:375
@@ -3098,10 +3079,8 @@ msgid "Forcefield optimization"
 msgstr "Optimização do Campo de Força"
 
 #: qtplugins/forcefield/forcefield.h:50
-#, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr "Optimização do Campo de Força"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
@@ -3142,9 +3121,8 @@ msgstr ""
 
 #: qtplugins/gamessinput/gamessinput.cpp:34
 #, fuzzy
-#| msgid "&GAMESS"
 msgid "&GAMESS…"
-msgstr "&GAMESS"
+msgstr "&GAMESS…"
 
 #: qtplugins/gamessinput/gamessinput.h:34
 msgid "GAMESS input"
@@ -3251,10 +3229,8 @@ msgid "Hydrogens"
 msgstr "Hidrogénios"
 
 #: qtplugins/importpqr/importpqr.cpp:24
-#, fuzzy
-#| msgid "Search"
 msgid "&Search PQR…"
-msgstr "Buscar"
+msgstr ""
 
 #: qtplugins/importpqr/importpqr.h:34
 msgid "Import From PQR"
@@ -3266,9 +3242,8 @@ msgstr "Descarregar uma molécula de PQR."
 
 #: qtplugins/insertdna/insertdna.cpp:43
 #, fuzzy
-#| msgid "DNA/RNA..."
 msgid "DNA/RNA…"
-msgstr "DNA/RNA..."
+msgstr "DNA/RNA…"
 
 #: qtplugins/insertdna/insertdna.cpp:62
 #: qtplugins/insertfragment/insertfragment.cpp:60
@@ -3277,10 +3252,8 @@ msgid "&Insert"
 msgstr "&Inserir"
 
 #: qtplugins/insertdna/insertdna.cpp:79
-#, fuzzy
-#| msgid "Insert DNA/RNA"
 msgid "Insert DNA/RNA…"
-msgstr "Inserir ADN/ARN"
+msgstr "Inserir ADN/ARN…"
 
 #: qtplugins/insertdna/insertdna.cpp:160
 msgctxt "uracil"
@@ -3308,16 +3281,14 @@ msgstr "Timina"
 #: qtplugins/lineformatinput/lineformatinput.cpp:108
 #: qtplugins/lineformatinput/lineformatinput.cpp:123:1046
 #, fuzzy
-#| msgid "Insert Molecule..."
 msgid "Insert Molecule…"
-msgstr "Inserir Molécula..."
+msgstr "Inserir Molécula…"
 
 #: qtplugins/insertdna/insertdna.cpp:202
 #: qtplugins/lineformatinput/lineformatinput.cpp:124
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generating 3D molecule…"
-msgstr "A criar molécula 3D..."
+msgstr "A criar molécula 3D…"
 
 #: qtplugins/insertdna/insertdna.h:33
 #, fuzzy
@@ -3331,15 +3302,13 @@ msgstr ""
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 #, fuzzy
-#| msgid "Molecule"
 msgid "Molecule…"
-msgstr "Molécula"
+msgstr "Molécula…"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 #, fuzzy
-#| msgid "Crystal"
 msgid "Crystal…"
-msgstr "Cristal"
+msgstr "Cristal…"
 
 #: qtplugins/insertfragment/insertfragment.cpp:108
 #, qt-format
@@ -3402,10 +3371,8 @@ msgid "Element"
 msgstr "Elemento"
 
 #: qtplugins/label/label.cpp:163
-#, fuzzy
-#| msgid "Element name."
 msgid "Element & Number"
-msgstr "Nome do Elemento."
+msgstr ""
 
 #: qtplugins/label/label.cpp:165
 msgid "Element & ID"
@@ -3463,9 +3430,8 @@ msgstr ""
 
 #: qtplugins/lammpsinput/lammpsinput.cpp:30
 #, fuzzy
-#| msgid "&LAMMPS..."
 msgid "&LAMMPS…"
-msgstr "&LAMMPS..."
+msgstr "&LAMMPS…"
 
 #: qtplugins/lammpsinput/lammpsinput.h:31
 msgid "LAMMPS input"
@@ -3491,15 +3457,13 @@ msgstr "Renderizar átomos como palito/bastão."
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:31
 #, fuzzy
-#| msgid "SMILES"
 msgid "SMILES…"
-msgstr "SMILES"
+msgstr "SMILES…"
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:37
 #, fuzzy
-#| msgid "InChI"
 msgid "InChI…"
-msgstr "InChI"
+msgstr "InChI…"
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:88
 #: qtplugins/lineformatinput/lineformatinput.cpp:112
@@ -3582,16 +3546,13 @@ msgid "Opacity:"
 msgstr "Opacidade:"
 
 #: qtplugins/meshes/meshes.h:31
-#, fuzzy
-#| msgid "Render triangle meshes."
 msgid "Render polygon meshes."
-msgstr "Desenha malhas triangulares."
+msgstr ""
 
 #: qtplugins/molecularproperties/molecularproperties.cpp:21
 #, fuzzy
-#| msgid "Molecule"
 msgid "&Molecular…"
-msgstr "Molécula"
+msgstr "&Molécula…"
 
 #: qtplugins/molecularproperties/molecularproperties.cpp:33
 msgid "View general properties of a molecule."
@@ -3620,9 +3581,8 @@ msgstr "Propriedades Moleculares"
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:35
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:206
 #, fuzzy
-#| msgid "Copy"
 msgid "&Copy"
-msgstr "Copiar"
+msgstr "&Copiar"
 
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:88
 msgctxt "asking server for molecule name"
@@ -3632,19 +3592,15 @@ msgstr "(pendente)"
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:116
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:124
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:140
-#, fuzzy
-#| msgid "[no molecule]"
 msgid "unknown molecule"
-msgstr "[sem molécula]"
+msgstr ""
 
 #. i18n: file: qtplugins/molecularproperties/molecularpropertiesdialog.ui:91
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:217
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:228:1136
-#, fuzzy
-#| msgid "Molecule Charge:"
 msgid "Molecule Name:"
-msgstr "Carga Molecular:"
+msgstr ""
 
 #. i18n: file: qtplugins/molecularproperties/molecularpropertiesdialog.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -3695,11 +3651,19 @@ msgstr ""
 msgid "Zoom the scene."
 msgstr ""
 
+<<<<<<< HEAD
 #: qtplugins/navigator/navigator.cpp:63
 #, fuzzy
 #| msgid "&Translate Atoms..."
+||||||| parent of c6cca5f47d3e (i18n/pt.po)
+#: qtplugins/navigator/navigator.cpp:56
+#, fuzzy
+#| msgid "&Translate Atoms..."
+=======
+#: qtplugins/navigator/navigator.cpp:56
+>>>>>>> c6cca5f47d3e (i18n/pt.po)
 msgid "Translate the scene."
-msgstr "&Traduzir Átomos..."
+msgstr ""
 
 #: qtplugins/navigator/navigator.cpp:104
 msgid "Reverse Direction of Zoom on Scroll"
@@ -3755,13 +3719,12 @@ msgstr ""
 #, fuzzy
 #| msgid "Configure Force Field..."
 msgid "Configure Force Field…"
-msgstr "Configurar Campo de Força..."
+msgstr "Configurar Campo de Força…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search..."
 msgid "Conformer Search…"
-msgstr "Procurar conformação..."
+msgstr "Procurar conformação…"
 
 #: qtplugins/openbabel/openbabel.cpp:65
 msgid "Perceive Bonds"
