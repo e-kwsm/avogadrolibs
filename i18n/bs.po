@@ -2960,15 +2960,13 @@ msgstr "Podesi polje sile..."
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Uvezi označene atome"
+msgstr "Učvrsti odabrane atome"
 
 #: qtplugins/forcefield/forcefield.cpp:115
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Učvrsti odabrane atome"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
