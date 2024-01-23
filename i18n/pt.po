@@ -1582,8 +1582,9 @@ msgstr ""
 
 #: qtplugins/3dmol/3dmol.cpp:37
 #, fuzzy
+#| msgid "ThreeDMol HTML Block."
 msgid "3DMol HTML Block."
-msgstr "Bloco HTML 3DMol."
+msgstr "Bloco HTML ThreeDMol."
 
 #: qtplugins/3dmol/3dmol.cpp:47 qtplugins/fetchpdb/fetchpdb.cpp:41
 #: qtplugins/importpqr/importpqr.cpp:59
@@ -2635,7 +2636,7 @@ msgstr "coordenada de rede 'b'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:500
 msgid "'c' lattice coordinate."
-msgstr "coordenada de rede 'c'."
+msgstr "coordenada de rede 'a'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:584
 msgid "Error applying geometry"
@@ -5410,8 +5411,9 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:612
 #: qtplugins/spectra/spectradialog.cpp:626
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Frequência (cm⁻¹)"
+msgstr "Frequência (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:613
 msgid "Transmission"

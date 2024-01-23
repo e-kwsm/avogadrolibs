@@ -5284,8 +5284,9 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:612
 #: qtplugins/spectra/spectradialog.cpp:626
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Bølgenummer (cm⁻¹)"
+msgstr "Bølgenummer (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:613
 msgid "Transmission"
