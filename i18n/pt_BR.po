@@ -2476,10 +2476,8 @@ msgid "'b' lattice coordinate."
 msgstr "coordenada de rede 'b'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
-#, fuzzy
-#| msgid "'a' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "coordenada de rede 'a'."
+msgstr "coordenada de rede 'c'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
