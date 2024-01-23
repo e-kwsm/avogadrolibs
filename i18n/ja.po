@@ -4472,7 +4472,6 @@ msgstr ""
 
 #: qtplugins/resetview/resetview.cpp:52
 #, fuzzy
-#| msgid "Align Settings"
 msgid "Align view to axes."
 msgstr "ビューを軸にアライン"
 
