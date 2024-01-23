@@ -3646,17 +3646,7 @@ msgstr ""
 msgid "Zoom the scene."
 msgstr ""
 
-<<<<<<< HEAD
 #: qtplugins/navigator/navigator.cpp:63
-#, fuzzy
-#| msgid "&Translate Atoms..."
-||||||| parent of c6cca5f47d3e (i18n/pt.po)
-#: qtplugins/navigator/navigator.cpp:56
-#, fuzzy
-#| msgid "&Translate Atoms..."
-=======
-#: qtplugins/navigator/navigator.cpp:56
->>>>>>> c6cca5f47d3e (i18n/pt.po)
 msgid "Translate the scene."
 msgstr ""
 
@@ -3751,10 +3741,8 @@ msgstr ""
 "adicionados."
 
 #: qtplugins/openbabel/openbabel.cpp:203
-#, fuzzy
-#| msgid "Loading molecule from CML..."
 msgid "Loading molecule from Open Babel…"
-msgstr "Carregando molécula de CML..."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:209
 msgid ""
