@@ -5071,9 +5071,8 @@ msgstr "mode getar"
 #: qtplugins/spectra/spectradialog.cpp:342
 #: qtplugins/spectra/spectradialog.cpp:356
 #, fuzzy
-#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Nomor gelombang (cm<sup>-1</sup>)"
+msgstr "Nomor gelombang (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:343
 msgid "Transmission"
