@@ -3803,7 +3803,6 @@ msgstr "Izvezi"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "CSV Datoteke (*.csv);;Sve Datoteke (*)"
 

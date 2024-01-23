@@ -3717,9 +3717,8 @@ msgstr "Esportatu"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "CSV fitxategiak (.*csv);;Fitxategi guztiak (*)"
+msgstr "CSV fitxategiak (*.csv);;Fitxategi guztiak (*)"
 
 #: qtplugins/molecularproperties/molecularview.cpp:159
 #: qtplugins/propertytables/propertyview.cpp:244
@@ -4690,7 +4689,7 @@ msgstr "Open WFN Fitxategia"
 
 #: qtplugins/qtaim/qtaimextension.cpp:94
 msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "WFN fitxategiak (.*wfn);;Fitxategi guztiak (*.*)"
+msgstr "WFN fitxategiak (*.wfn);;Fitxategi guztiak (*.*)"
 
 #: qtplugins/qtaim/qtaimextension.h:23
 msgid "QTAIM extension"
