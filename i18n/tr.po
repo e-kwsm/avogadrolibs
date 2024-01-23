@@ -2986,10 +2986,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Seçim"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3252,7 +3250,7 @@ msgstr "&Ekle"
 
 #: qtplugins/insertdna/insertdna.cpp:79
 #, fuzzy
-#| msgid "&Insert"
+#| msgid "Insert"
 msgid "Insert DNA/RNA…"
 msgstr "Ekle"
 
@@ -3291,7 +3289,7 @@ msgstr "3D molekül üretiliyor…"
 
 #: qtplugins/insertdna/insertdna.h:33
 #, fuzzy
-#| msgid "&Insert"
+#| msgid "Insert"
 msgid "InsertDNA"
 msgstr "Ekle"
 
@@ -3846,10 +3844,8 @@ msgid "The Open Babel file formats are not ready to be added."
 msgstr "Open Babel dosya biçimleri eklenmeye hazır değil."
 
 #: qtplugins/openbabel/openbabel.cpp:203
-#, fuzzy
-#| msgid "Loading molecule from CML…"
 msgid "Loading molecule from Open Babel…"
-msgstr "CML'den molekül yükleniyor…"
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:209
 msgid ""
