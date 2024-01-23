@@ -3929,7 +3929,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:203
 #, fuzzy
-#| msgid "Loading molecule from CML..."
 msgid "Loading molecule from Open Babel…"
 msgstr "Carregando molécula de Open Babel…"
 
