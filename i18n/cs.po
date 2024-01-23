@@ -5091,8 +5091,10 @@ msgid "Transmission"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:355
+#, fuzzy
+#| msgid "Spectra"
 msgid "Raman Spectra"
-msgstr ""
+msgstr "Spektra"
 
 #: qtplugins/spectra/spectradialog.cpp:357
 #: qtplugins/spectra/spectradialog.cpp:370
