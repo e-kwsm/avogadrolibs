@@ -5396,7 +5396,6 @@ msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:82
 #, fuzzy
-#| msgid "Temperature"
 msgid "Template"
 msgstr "Шаблоны"
 
