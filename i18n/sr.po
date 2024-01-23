@@ -1575,8 +1575,9 @@ msgstr ""
 
 #: qtplugins/3dmol/3dmol.cpp:37
 #, fuzzy
+#| msgid "ThreeDMol HTML Block."
 msgid "3DMol HTML Block."
-msgstr "3DMol HTML Blok."
+msgstr "ThreeDMol HTML Blok."
 
 #: qtplugins/3dmol/3dmol.cpp:47 qtplugins/fetchpdb/fetchpdb.cpp:41
 #: qtplugins/importpqr/importpqr.cpp:43
@@ -5237,8 +5238,9 @@ msgstr "Režimi vibracija"
 #: qtplugins/spectra/spectradialog.cpp:342
 #: qtplugins/spectra/spectradialog.cpp:356
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Таласни број (cm⁻¹)"
+msgstr "Таласни број (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:343
 msgid "Transmission"
@@ -8336,8 +8338,9 @@ msgstr "Vrednost &Isopovršine:"
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
 #, fuzzy
+#| msgid " K"
 msgid " "
-msgstr " "
+msgstr " K"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
