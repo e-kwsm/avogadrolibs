@@ -4926,9 +4926,8 @@ msgstr "Rung động"
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
 #, fuzzy
-#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Số sóng (cm<sup>-1</sup>)"
+msgstr "Số sóng (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
 #, fuzzy
