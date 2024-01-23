@@ -1250,7 +1250,6 @@ msgstr "Kovalent Olmayan"
 
 #: qtgui/layermodel.cpp:153
 #, fuzzy
-#| msgid "QTAIM"
 msgctxt "quantum theory of atoms in molecules"
 msgid "QTAIM"
 msgstr "QTAIM (MAKT)"
@@ -4968,8 +4967,6 @@ msgstr "Göster &satır vektörleri olarak"
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Kızılötesi"
 
@@ -6451,7 +6448,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:190
 #. i18n: ectx: property (text), widget (QRadioButton, singleStrandRadio)
 #, fuzzy
-#| msgid "Single"
 msgctxt "single-strand DNA"
 msgid "Single"
 msgstr "Tek"
@@ -6459,7 +6455,6 @@ msgstr "Tek"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:197
 #. i18n: ectx: property (text), widget (QRadioButton, doubleStrandRadio)
 #, fuzzy
-#| msgid "Double"
 msgctxt "double-strand DNA"
 msgid "Double"
 msgstr "Çift"

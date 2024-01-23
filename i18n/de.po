@@ -4904,8 +4904,6 @@ msgstr "Spektren anzeigen."
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Infrarot"
 
@@ -6338,7 +6336,6 @@ msgstr "Stränge:"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:190
 #. i18n: ectx: property (text), widget (QRadioButton, singleStrandRadio)
 #, fuzzy
-#| msgid "Single"
 msgctxt "single-strand DNA"
 msgid "Single"
 msgstr "Einfach"

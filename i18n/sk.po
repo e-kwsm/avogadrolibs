@@ -1010,7 +1010,6 @@ msgstr ""
 
 #: qtgui/fileformatdialog.cpp:279
 #, fuzzy
-#| msgid "All Files"
 msgid "All files"
 msgstr "Všetky súbory"
 
@@ -3161,7 +3160,6 @@ msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:167
 #, fuzzy
-#| msgid "T"
 msgctxt "thymine"
 msgid "T"
 msgstr "T"
@@ -4852,8 +4850,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Infračervený"
 
@@ -6216,7 +6212,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:52
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_A)
 #, fuzzy
-#| msgid "A"
 msgctxt "adenine (A)"
 msgid "A"
 msgstr "A"
@@ -6248,7 +6243,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:82
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_TU)
 #, fuzzy
-#| msgid "T"
 msgctxt "thymine (T)"
 msgid "T"
 msgstr "T"
@@ -6302,7 +6296,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:190
 #. i18n: ectx: property (text), widget (QRadioButton, singleStrandRadio)
 #, fuzzy
-#| msgid "Single"
 msgctxt "single-strand DNA"
 msgid "Single"
 msgstr "Jednoduchý"
@@ -6310,7 +6303,6 @@ msgstr "Jednoduchý"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:197
 #. i18n: ectx: property (text), widget (QRadioButton, doubleStrandRadio)
 #, fuzzy
-#| msgid "Double"
 msgctxt "double-strand DNA"
 msgid "Double"
 msgstr "Dvojitý"

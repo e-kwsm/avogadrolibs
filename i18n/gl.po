@@ -1012,7 +1012,6 @@ msgstr ""
 
 #: qtgui/fileformatdialog.cpp:279
 #, fuzzy
-#| msgid "All Files"
 msgid "All files"
 msgstr "Todos os ficheiros"
 
@@ -1193,7 +1192,6 @@ msgstr "Covalente"
 
 #: qtgui/layermodel.cpp:153
 #, fuzzy
-#| msgid "QTAIM"
 msgctxt "quantum theory of atoms in molecules"
 msgid "QTAIM"
 msgstr "QTAIM"
@@ -2265,7 +2263,6 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:361
 #: qtplugins/templatetool/templatetoolwidget.cpp:424:2055
 #, fuzzy
-#| msgid "Other"
 msgid "Other…"
 msgstr "Outro"
 
@@ -3214,7 +3211,6 @@ msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:167
 #, fuzzy
-#| msgid "T"
 msgctxt "thymine"
 msgid "T"
 msgstr "T"
@@ -4918,7 +4914,6 @@ msgstr "Importar un espectro"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1643
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "Espectros"
 
@@ -4928,15 +4923,11 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Infravermellos"
 
 #: qtplugins/spectra/spectradialog.cpp:205
 #, fuzzy
-#| msgctxt "Raman spectrum"
-#| msgid "Raman"
 msgid "Raman"
 msgstr "Raman"
 
@@ -6308,7 +6299,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:52
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_A)
 #, fuzzy
-#| msgid "A"
 msgctxt "adenine (A)"
 msgid "A"
 msgstr "A"
@@ -6321,7 +6311,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:62
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_C)
 #, fuzzy
-#| msgid "C"
 msgctxt "cytosine (C)"
 msgid "C"
 msgstr "C"
@@ -6334,7 +6323,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:72
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_G)
 #, fuzzy
-#| msgid "G"
 msgctxt "guanine (G)"
 msgid "G"
 msgstr "G"
@@ -6342,7 +6330,6 @@ msgstr "G"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:82
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_TU)
 #, fuzzy
-#| msgid "T"
 msgctxt "thymine (T)"
 msgid "T"
 msgstr "T"
@@ -6379,7 +6366,6 @@ msgstr "Z"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:142
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "Other"
 msgid "Other"
 msgstr "Outro"
 
@@ -6396,7 +6382,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:190
 #. i18n: ectx: property (text), widget (QRadioButton, singleStrandRadio)
 #, fuzzy
-#| msgid "Single"
 msgctxt "single-strand DNA"
 msgid "Single"
 msgstr "Simple"
@@ -6404,7 +6389,6 @@ msgstr "Simple"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:197
 #. i18n: ectx: property (text), widget (QRadioButton, doubleStrandRadio)
 #, fuzzy
-#| msgid "Double"
 msgctxt "double-strand DNA"
 msgid "Double"
 msgstr "Duplo"
@@ -7889,8 +7873,6 @@ msgstr "Cor segundo:"
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:113
 #. i18n: ectx: property (text), item, widget (QComboBox, propertyCombo)
 #, fuzzy
-#| msgctxt "Electrostatic potential surface type"
-#| msgid "Electrostatic Potential"
 msgid "Electrostatic Potential"
 msgstr "Potencial electrostático"
 
