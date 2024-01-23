@@ -2377,9 +2377,8 @@ msgid "'b' lattice coordinate."
 msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
-#, fuzzy
 msgid "'c' lattice coordinate."
-msgstr "笛卡兒坐標/直角坐標"
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
