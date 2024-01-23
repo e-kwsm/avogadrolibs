@@ -9944,11 +9944,6 @@ msgstr "Ваші електронні листи"
 #~ msgstr "Копіювати все"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Назва молекули у IUPAC:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Молекулярна вага (г/моль):"
 
