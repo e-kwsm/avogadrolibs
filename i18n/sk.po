@@ -9273,11 +9273,6 @@ msgstr ""
 #~ msgstr "Farba podľa čiastkového náboja"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animácia"
-
-#, fuzzy
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waalsove gule"
