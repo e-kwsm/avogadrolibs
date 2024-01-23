@@ -4275,10 +4275,8 @@ msgid "PLY (*.ply);;Text file (*.txt)"
 msgstr "POV-Ray (*.pov);; Berkas teks (*.txt)"
 
 #: qtplugins/ply/ply.h:25
-#, fuzzy
-#| msgid "B2PLYP"
 msgid "PLY"
-msgstr "B2PLYP"
+msgstr ""
 
 #: qtplugins/ply/ply.h:29
 #, fuzzy
