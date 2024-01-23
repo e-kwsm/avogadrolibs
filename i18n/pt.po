@@ -1897,7 +1897,6 @@ msgstr "Cividis"
 #: qtplugins/applycolors/applycolors.cpp:302
 #: qtplugins/surfaces/surfaces.cpp:776:183 rc.cpp:1815
 #, fuzzy
-#| msgid "Spectra"
 msgctxt "colormap"
 msgid "Spectral"
 msgstr "Espectro"
