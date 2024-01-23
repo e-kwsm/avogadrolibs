@@ -2101,10 +2101,8 @@ msgid "Display of biomolecule ribbons / cartoons."
 msgstr "展示生物大分子色带/漫画。"
 
 #: qtplugins/centroid/centroid.cpp:20
-#, fuzzy
-#| msgid "Add Constraints"
 msgid "Add Centroid"
-msgstr "添加限制"
+msgstr ""
 
 #: qtplugins/centroid/centroid.cpp:21
 msgid "Add Center of Mass"
