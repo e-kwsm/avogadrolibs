@@ -5029,7 +5029,7 @@ msgstr "Rung động"
 #: qtplugins/spectra/spectradialog.cpp:342
 #: qtplugins/spectra/spectradialog.cpp:356
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Số sóng (cm⁻¹)"
+msgstr "Số sóng (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:343
 #, fuzzy
@@ -7872,8 +7872,9 @@ msgstr "Phông chữ:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
 #, fuzzy
+#| msgid "10e-"
 msgid "10"
-msgstr "10"
+msgstr "10e-"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:411
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
