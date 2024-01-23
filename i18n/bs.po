@@ -1461,20 +1461,16 @@ msgid "Change Atom Label"
 msgstr "Promijeni smijer veze"
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Change Selection"
-msgstr "Ignoriši izbor"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
 msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:92
-#, fuzzy
-#| msgid "Draw Settings"
 msgid "Settings"
-msgstr "Postavke crtanja"
+msgstr ""
 
 #: qtgui/scriptloader.cpp:41
 #, qt-format
@@ -1550,10 +1546,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "Poravnanje"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
@@ -2903,10 +2897,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Izbor"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
