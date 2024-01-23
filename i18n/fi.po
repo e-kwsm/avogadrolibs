@@ -1454,10 +1454,8 @@ msgid "Change Atom Label"
 msgstr "Vaihda sidosten järjestystä"
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Selection"
 msgid "Change Selection"
-msgstr "Valinta"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
@@ -1538,10 +1536,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Align"
 msgid "Align tool"
-msgstr "Kohdista"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
@@ -8211,10 +8207,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#, fuzzy
-#| msgid "Number of steps"
 msgid "Number of Dimensions:"
-msgstr "Askelten lukumäärä"
+msgstr ""
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:220
 #. i18n: ectx: property (text), widget (QCheckBox, cb_displayYaehmopInput)
