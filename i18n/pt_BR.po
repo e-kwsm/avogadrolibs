@@ -450,7 +450,6 @@ msgstr "Configurar Trabalho"
 
 #: molequeue/molequeuedialog.cpp:57
 #, fuzzy
-#| msgid "Submitting job to MoleQueue..."
 msgid "Submitting job to MoleQueue…"
 msgstr "Enviar trabalho para MoleQueue…"
 
