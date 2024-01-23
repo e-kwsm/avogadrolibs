@@ -1089,9 +1089,8 @@ msgstr "Све датотеке"
 
 #: qtgui/fileformatdialog.cpp:282
 #, fuzzy
-#| msgid "All supported formats (%1);;"
 msgid "All supported formats"
-msgstr "Svi podržani formati (%1) ;;"
+msgstr "Svi podržani formati"
 
 #: qtgui/interfacescript.cpp:227
 #, qt-format
