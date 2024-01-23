@@ -7726,11 +7726,8 @@ msgstr " ("
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#, fuzzy
-#| msgctxt "A cube type of nothing - empty cube"
-#| msgid "Nothing"
 msgid "Smoothing:"
-msgstr "لا شيء"
+msgstr ""
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:363
 #. i18n: ectx: property (currentText), widget (QComboBox, smoothingCombo)
