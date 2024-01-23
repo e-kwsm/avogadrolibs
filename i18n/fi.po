@@ -8432,11 +8432,6 @@ msgstr ""
 #~ msgstr "Osittaisvaraus"
 
 #, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Animaatio"
-
-#, fuzzy
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals -pallot"
