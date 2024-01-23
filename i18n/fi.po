@@ -2931,7 +2931,7 @@ msgstr "Kiinnitä valitut atomit paikoilleen"
 #, fuzzy
 #| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Kiinnitä valitut atomit paikoilleen"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
