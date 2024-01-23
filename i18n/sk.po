@@ -4705,16 +4705,12 @@ msgid "Select Water"
 msgstr ""
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Enlarge Selection"
 msgstr "výber"
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Výber"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4729,10 +4725,8 @@ msgid "&Select"
 msgstr "&Výber"
 
 #: qtplugins/select/select.cpp:180
-#, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Element"
-msgstr "Vybrať podľa Zvyšku..."
+msgstr ""
 
 #: qtplugins/select/select.cpp:269
 msgid "Select Backbone"
