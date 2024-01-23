@@ -1509,32 +1509,24 @@ msgid "Change Atom Positions"
 msgstr "Atom Konumlarını Değiştirme"
 
 #: qtgui/rwmolecule.h:224
-#, fuzzy
-#| msgid "Change Atom Color"
 msgid "Change Atom Position"
-msgstr "Atom Rengini Değiştir"
+msgstr ""
 
 #: qtgui/rwmolecule.h:228
-#, fuzzy
-#| msgid "Change Atom Layer"
 msgid "Change Atom Label"
-msgstr "Atom Katmanını Değiştir"
+msgstr ""
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Change Selection"
-msgstr "Seçilenleri İhmal Et"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
 msgstr "Molekülü Değiştir"
 
 #: qtgui/scenepluginmodel.cpp:92
-#, fuzzy
-#| msgid "Stop waiting"
 msgid "Settings"
-msgstr "Beklemeyi durdur"
+msgstr ""
 
 #: qtgui/scriptloader.cpp:41
 #, fuzzy, qt-format
@@ -1932,10 +1924,8 @@ msgstr "Kalıntıları Renklendir"
 
 #: qtplugins/applycolors/applycolors.cpp:213
 #: qtplugins/applycolors/applycolors.cpp:305
-#, fuzzy
-#| msgid "Select All"
 msgid "Select Colormap"
-msgstr "Tümünü Seç"
+msgstr ""
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, colormapLabel)
@@ -2130,10 +2120,8 @@ msgid "Display of biomolecule ribbons / cartoons."
 msgstr "Biyomolekül şeritlerinin / karikatürlerinin gösterimi."
 
 #: qtplugins/centroid/centroid.cpp:20
-#, fuzzy
-#| msgid "Add constraint"
 msgid "Add Centroid"
-msgstr "Kısıtlama ekle"
+msgstr ""
 
 #: qtplugins/centroid/centroid.cpp:21
 msgid "Add Center of Mass"
