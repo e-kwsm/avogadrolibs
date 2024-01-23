@@ -9815,11 +9815,6 @@ msgstr "Sähköpostisi"
 #~ msgstr "Osittaisvaraus"
 
 #, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Animaatio"
-
-#, fuzzy
 #~ msgid "Add Unit Cell"
 #~ msgstr "Täytä yksikkökoppi"
 
