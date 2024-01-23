@@ -3272,8 +3272,10 @@ msgid "Configure…"
 msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:108
+#, fuzzy
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr ""
+msgstr "Učvrsti odabrane atome"
 
 #: qtplugins/forcefield/forcefield.cpp:116
 msgctxt "freeze x-axis of selected atoms"
