@@ -4526,9 +4526,8 @@ msgstr "&Esporta"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "File WFN (*.wfn);;Tutti i file (*.*)"
+msgstr "File CSV (*.csv);;Tutti i file (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
