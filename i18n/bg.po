@@ -2935,7 +2935,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:154
 #, fuzzy
-#| msgid "Calculate Energy"
 msgid "&Calculate"
 msgstr "Изчисляване"
 
@@ -4453,19 +4452,16 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:27
 #, fuzzy
-#| msgid "Atom Properties"
 msgid "Atom Properties…"
 msgstr "Свойства на атома…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Свойства на връзката…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Свойства на ъгъла…"
 
@@ -7671,7 +7667,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:269
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Imported Spectra:"
 msgstr "Внасяне на спектър:"
 
