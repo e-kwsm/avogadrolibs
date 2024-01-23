@@ -1634,10 +1634,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Selection tool"
 msgid "Align tool"
-msgstr "Ferramenta de Seleção"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
@@ -2219,7 +2217,6 @@ msgstr " Å"
 #: qtplugins/closecontacts/closecontacts.cpp:232
 #: qtplugins/noncovalent/noncovalent.cpp:369
 #, fuzzy
-#| msgid "Minimum Distance:"
 msgid "Maximum distance:"
 msgstr "Distância Mínima:"
 
@@ -2363,7 +2360,6 @@ msgstr "Outro"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
-#| msgid "Atomic &Coordinate Editor..."
 msgid "Atomic &Coordinate Editor…"
 msgstr "Editor de &Coordenadas Atômicas..."
 
@@ -2410,16 +2406,12 @@ msgid "Element symbol."
 msgstr "Símbolo do Elemento."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:397
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atom label."
-msgstr "Número atômico inválido."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:415
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atomic index."
-msgstr "Número atômico inválido."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:417
 #, fuzzy
@@ -2566,7 +2558,6 @@ msgstr "Limpar"
 
 #: qtplugins/copypaste/copypaste.cpp:35
 #, fuzzy
-#| msgid "Paste"
 msgid "&Paste"
 msgstr "Colar"
 
@@ -2775,7 +2766,6 @@ msgstr "Enviar cálculo CP2K"
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
 msgstr "I&mportar Cristal da Área de Transferência"
 
@@ -2785,7 +2775,6 @@ msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:52
 #, fuzzy
-#| msgid "Edit Unit Cell"
 msgid "Edit Unit Cell…"
 msgstr "Editar Célula Unitária"
 
@@ -2799,13 +2788,11 @@ msgstr "Girar para &Orientação Padrão"
 
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
-#| msgid "Scale Cell &Volume"
 msgid "Scale Cell &Volume…"
 msgstr "Redimensionar &Volume da Célula"
 
 #: qtplugins/crystal/crystal.cpp:74
 #, fuzzy
-#| msgid "Build &Supercell"
 msgid "Build &Supercell…"
 msgstr "Construir &Supercélula"
 
@@ -3028,10 +3015,8 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
-#, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
-msgstr "Seleção"
+msgstr ""
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3061,9 +3046,8 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:113
 #, fuzzy
-#| msgid "Configure Bonding…"
 msgid "Configure…"
-msgstr "Configurar Ligações…"
+msgstr "Configurar…"
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
@@ -3077,7 +3061,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Calcular"
 
