@@ -1560,8 +1560,9 @@ msgstr ""
 
 #: qtplugins/3dmol/3dmol.cpp:37
 #, fuzzy
+#| msgid "ThreeDMol HTML Block."
 msgid "3DMol HTML Block."
-msgstr "Bloco HTML 3DMol."
+msgstr "Bloco HTML ThreeDMol."
 
 #: qtplugins/3dmol/3dmol.cpp:47 qtplugins/fetchpdb/fetchpdb.cpp:41
 #: qtplugins/importpqr/importpqr.cpp:59
@@ -5150,8 +5151,9 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Frequência (cm⁻¹)"
+msgstr "Frequência (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:588
 msgid "Transmission"
