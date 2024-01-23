@@ -5121,7 +5121,6 @@ msgstr "Bibrazioak"
 #: qtplugins/spectra/spectradialog.cpp:342
 #: qtplugins/spectra/spectradialog.cpp:356
 #, fuzzy
-#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
 msgstr "Uhin-zenbakia (cm⁻¹)"
 
