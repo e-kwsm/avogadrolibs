@@ -3050,15 +3050,13 @@ msgstr "Pengaturan Bidang Gaya..."
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Impor Atom Terpilih"
+msgstr "Menetapkan Pilihan Atom"
 
 #: qtplugins/forcefield/forcefield.cpp:115
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Menetapkan Pilihan Atom"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:152
 #, fuzzy
