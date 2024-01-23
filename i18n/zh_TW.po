@@ -4915,7 +4915,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectra.cpp:29
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Plot Spectra…"
 msgstr "光譜"
 
@@ -4998,7 +4997,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:355
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Raman Spectra"
 msgstr "拉曼光譜"
 
