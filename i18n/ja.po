@@ -2018,8 +2018,6 @@ msgid "Configure Bonding…"
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:32
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Bond Selected Atoms"
 msgstr "選択した原子を結合"
 
