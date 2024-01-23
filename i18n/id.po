@@ -4523,9 +4523,8 @@ msgstr "&Ekspor"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Berkas WFN (*.wfn);;Semua berkas (*.*)"
+msgstr "Berkas CSV (*.csv);;Semua berkas (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy

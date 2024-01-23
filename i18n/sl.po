@@ -4600,9 +4600,8 @@ msgstr "Izvozi"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Datoteke WFN (*.wfn);;Vse datoteke (*.*)"
+msgstr "Datoteke CSV (*.csv);;Vse datoteke (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
