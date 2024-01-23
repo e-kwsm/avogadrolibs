@@ -2901,14 +2901,12 @@ msgid "Configure…"
 msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:125
-#, fuzzy
 msgid "Freeze Selected Atoms"
-msgstr "&Избиране"
+msgstr ""
 
-#: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
+#: qtplugins/forcefield/forcefield.cpp:133
 msgid "Unfreeze Selected Atoms"
-msgstr "&Избиране"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
