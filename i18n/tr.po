@@ -2426,8 +2426,10 @@ msgid "'b' lattice coordinate."
 msgstr "'b' çapraz koordinatı."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
+#, fuzzy
+#| msgid "'b' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "'c' çapraz koordinatı."
+msgstr "'b' çapraz koordinatı."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
@@ -4492,8 +4494,9 @@ msgstr "&Dışa Aktar"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
+#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "CSV dosyaları (*.csv);; Tüm dosyalar (*)"
+msgstr "WFN dosyaları (*.wfn);; Tüm dosyalar (*.*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 msgid "Could not open the file for writing."

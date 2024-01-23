@@ -4580,8 +4580,9 @@ msgstr "Εξαγωγή"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
+#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Αρχεία CSV (*.csv);;Όλα τα αρχεία (*)"
+msgstr "Αρχεία WFN (*.wfn);;Όλα τα αρχεία (*.*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
@@ -7940,8 +7941,9 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:406
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
 #, fuzzy
+#| msgid "10e-"
 msgid "10"
-msgstr "10"
+msgstr "10e-"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:411
 #. i18n: ectx: property (text), item, widget (QComboBox, fontSizeCombo)
@@ -8073,8 +8075,9 @@ msgstr "Τιμή &ισοεπιφάνειας:"
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:311
 #. i18n: ectx: property (prefix), widget (QDoubleSpinBox, isosurfaceDoubleSpinBox)
 #, fuzzy
+#| msgid " K"
 msgid " "
-msgstr " "
+msgstr " K"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:348
 #. i18n: ectx: property (text), widget (QLabel, label_6)
