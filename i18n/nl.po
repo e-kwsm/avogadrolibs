@@ -2372,11 +2372,11 @@ msgstr "Z-coördinaat."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:478
 msgid "'a' lattice coordinate."
-msgstr "'a' roostercoördinaat."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:489
 msgid "'b' lattice coordinate."
-msgstr "'b' roostercoördinaat."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:500
 msgid "'c' lattice coordinate."
@@ -4992,8 +4992,9 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
 #, fuzzy
+#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Golfnummer (cm⁻¹)"
+msgstr "Golfnummer (cm<sup>-1</sup>)"
 
 #: qtplugins/spectra/spectradialog.cpp:588
 msgid "Transmission"
