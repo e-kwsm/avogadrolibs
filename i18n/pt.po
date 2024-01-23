@@ -3101,10 +3101,8 @@ msgid "Forcefield optimization"
 msgstr "Optimização do Campo de Força"
 
 #: qtplugins/forcefield/forcefield.h:50
-#, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr "Optimização do Campo de Força"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
