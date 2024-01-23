@@ -2796,9 +2796,8 @@ msgstr "Импорт кристаллов из буфера обмена"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
-#| msgid "&Wrap Atoms to Unit Cell"
 msgid "Wrap atoms into the unit cell."
-msgstr "&Вернуть атомы в элементарную ячейку"
+msgstr "Вернуть атомы в элементарную ячейку"
 
 #: qtplugins/crystal/crystal.cpp:177
 msgid "Rotate the unit cell to the standard orientation."
