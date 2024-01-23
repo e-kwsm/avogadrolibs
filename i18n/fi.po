@@ -5431,10 +5431,8 @@ msgstr "Osittaisvaraus"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
-#, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr "Varaus:"
+msgstr ""
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -6138,16 +6136,14 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:127
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "A:"
 msgid "A"
-msgstr "A:"
+msgstr "A"
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:132
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "B:"
 msgid "B"
-msgstr "B:"
+msgstr "B"
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:137
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
