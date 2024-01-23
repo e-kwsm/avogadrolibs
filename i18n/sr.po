@@ -2122,10 +2122,8 @@ msgid "Configure Bonding…"
 msgstr "Konfigurišite Vezivanje…"
 
 #: qtplugins/bonding/bonding.cpp:32
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Bond Selected Atoms"
-msgstr "Поправи изабране атоме"
+msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:63 qtplugins/centroid/centroid.cpp:46
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:34
