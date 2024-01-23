@@ -2997,7 +2997,6 @@ msgstr ""
 
 #: qtplugins/gamessinput/gamessinput.cpp:34
 #, fuzzy
-#| msgid "GAMESS"
 msgid "&GAMESS…"
 msgstr "&GAMESS…"
 
@@ -4324,25 +4323,21 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:27
 #, fuzzy
-#| msgid "Atom Properties"
 msgid "Atom Properties…"
 msgstr "Vlastnosti atómu…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Vlastnosti väzby…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Vlastnosti uhla"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
-#| msgid "Torsion Properties"
 msgid "Torsion Properties…"
 msgstr "Vlastnosti krútenia"
 
@@ -4786,10 +4781,8 @@ msgid "NMR"
 msgstr "NMR"
 
 #: qtplugins/spectra/spectradialog.cpp:211
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic"
-msgstr "Elektrónová hustota"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:215
 msgid "Circular Dichroism"
@@ -4806,10 +4799,8 @@ msgid "Select Background Color"
 msgstr "Atómové číslo"
 
 #: qtplugins/spectra/spectradialog.cpp:269
-#, fuzzy
-#| msgid "Selected Colors"
 msgid "Select Foreground Color"
-msgstr "Vybrané Farby"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:282
 #, fuzzy
