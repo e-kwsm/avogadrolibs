@@ -3110,9 +3110,8 @@ msgid "Forcefield optimization"
 msgstr "Optimalizácia silového poľa"
 
 #: qtplugins/forcefield/forcefield.h:51
-#, fuzzy
 msgid "Forcefield minimization, including scripts"
-msgstr "Optimalizácia silového poľa"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
@@ -8567,11 +8566,6 @@ msgstr ""
 #~| msgid "Color by Partial Charge"
 #~ msgid "Partial Charge"
 #~ msgstr "Farba podľa čiastkového náboja"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animácia"
 
 #, fuzzy
 #~ msgctxt "ambient occlusion"
