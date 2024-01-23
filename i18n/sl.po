@@ -4502,10 +4502,8 @@ msgid "Atom 4"
 msgstr "Atom 4"
 
 #: qtplugins/propertytables/propertymodel.cpp:687
-#, fuzzy
-#| msgid "Insert Fragment"
 msgid "Adjust Fragment"
-msgstr "Vstavi molekulski delec"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:813
 #, fuzzy
@@ -4553,25 +4551,21 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:27
 #, fuzzy
-#| msgid "Atom Properties"
 msgid "Atom Properties…"
 msgstr "Lastnosti atomov"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Lastnosti vezi"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Lastnosti kotov"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
-#| msgid "Torsion Properties"
 msgid "Torsion Properties…"
 msgstr "Lastnosti torzije"
 
@@ -4637,7 +4631,6 @@ msgstr ""
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
 msgstr "Atomski nabo ..."
 
@@ -4684,7 +4677,7 @@ msgstr ""
 
 #: qtplugins/scriptcharges/scriptcharges.h:32
 #, fuzzy
-#| msgid "Charge:"
+#| msgid "Charge"
 msgid "Script Charge Models"
 msgstr "Naboj"
 
@@ -4714,7 +4707,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:53
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select by Element…"
 msgstr "Izbor po elementu ..."
 
@@ -4725,7 +4717,6 @@ msgstr "Atomski indeksi"
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Izbor po ostanku ..."
 
@@ -4745,16 +4736,12 @@ msgid "Select Water"
 msgstr "Atomski indeksi"
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Enlarge Selection"
-msgstr "Prezri izbor"
+msgstr ""
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
-#, fuzzy
-#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Izbor"
+msgstr ""
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4849,10 +4836,8 @@ msgid "Selection tool"
 msgstr ""
 
 #: qtplugins/selectiontool/selectiontoolwidget.cpp:35
-#, fuzzy
-#| msgid "New Label:"
 msgid "New Layer"
-msgstr "Nova oznaka:"
+msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
@@ -4867,7 +4852,6 @@ msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:73
 #, fuzzy
-#| msgid "Fill Unit Cell"
 msgid "Fill Unit Cell…"
 msgstr "Zapolni osnovno celico"
 
@@ -5025,7 +5009,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:218
 #: qtplugins/spectra/spectradialog.cpp:409
 #, fuzzy
-#| msgid "&Density Of States Settings"
 msgid "Density of States"
 msgstr "Nastavitve gostote stanj (DOS)"
 
@@ -8635,11 +8618,6 @@ msgstr ""
 #~ "oddalji.\n"
 #~ "Desni gumb miške: \tS klikom je mogoče povleči in premakniti pogled.\n"
 #~ "Dvojni klik: \tPonastavi pogled."
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animacija"
 
 # Orodje za krmarjenje (F9)\n
 # \n
