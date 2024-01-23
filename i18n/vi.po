@@ -3069,8 +3069,9 @@ msgstr "Thiết lập…"
 
 #: qtplugins/forcefield/forcefield.cpp:110
 #, fuzzy
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Nhập các nguyên tử được chọn"
+msgstr "Cố định các nguyên tử được chọn"
 
 #: qtplugins/forcefield/forcefield.cpp:118
 msgid "Unfreeze Selected Atoms"
