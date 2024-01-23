@@ -5158,9 +5158,9 @@ msgstr "Recursos do grupo espacial para cristais."
 
 #: qtplugins/spectra/spectra.cpp:29
 #, fuzzy
-#| msgid "Import Spectra"
+#| msgid "Spectra"
 msgid "Plot Spectra…"
-msgstr "espectro"
+msgstr "Espectro"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
@@ -5252,7 +5252,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:355
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Raman Spectra"
 msgstr "Raman espectro"
 
