@@ -2942,10 +2942,8 @@ msgid "Freeze Selected Atoms"
 msgstr "Fixovať vybrané atómy"
 
 #: qtplugins/forcefield/forcefield.cpp:115
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Fixovať vybrané atómy"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
