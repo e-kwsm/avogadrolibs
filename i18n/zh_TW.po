@@ -4333,7 +4333,6 @@ msgstr "價"
 
 #: qtplugins/propertytables/propertymodel.cpp:499
 #, fuzzy
-#| msgid "Partial Charge"
 msgid "Formal Charge"
 msgstr "形式電荷"
 
@@ -4607,6 +4606,7 @@ msgid "Align View to Axes"
 msgstr ""
 
 #: qtplugins/resetview/resetview.cpp:52
+#, fuzzy
 msgid "Align view to axes."
 msgstr "排列"
 
@@ -4722,7 +4722,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:446
 #, fuzzy
-#| msgid "Delete Atom"
 msgid "Select Atom"
 msgstr "選擇原子"
 
@@ -4933,7 +4932,6 @@ msgstr "NMR"
 
 #: qtplugins/spectra/spectradialog.cpp:210
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic"
 msgstr "電子"
 
@@ -4944,7 +4942,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:218
 #: qtplugins/spectra/spectradialog.cpp:409
 #, fuzzy
-#| msgid "&Density Of States Settings"
 msgid "Density of States"
 msgstr "態密度"
 
