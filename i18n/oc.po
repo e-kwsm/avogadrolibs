@@ -2953,7 +2953,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:152
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "&Calcular"
 
@@ -3249,7 +3248,6 @@ msgstr ""
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 #, fuzzy
-#| msgid "Molecule"
 msgid "Molecule…"
 msgstr "Molecula…"
 
@@ -4508,25 +4506,21 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:27
 #, fuzzy
-#| msgid "Atom Properties"
 msgid "Atom Properties…"
 msgstr "Proprietats dels atòms…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Proprietats de las ligasons…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Proprietats dels angles…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
-#| msgid "Torsion Properties"
 msgid "Torsion Properties…"
 msgstr "Proprietats dels angles de torsion…"
 
