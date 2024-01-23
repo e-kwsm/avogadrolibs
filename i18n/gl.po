@@ -1462,10 +1462,8 @@ msgid "Change Atom Label"
 msgstr "Modificar a orde de enlace"
 
 #: qtgui/rwmolecule.h:234
-#, fuzzy
-#| msgid "Ignore Selection"
 msgid "Change Selection"
-msgstr "Ignorar a selección"
+msgstr ""
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
