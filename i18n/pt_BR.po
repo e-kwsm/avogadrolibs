@@ -450,9 +450,8 @@ msgstr "Configurar Trabalho"
 
 #: molequeue/molequeuedialog.cpp:57
 #, fuzzy
-#| msgid "Submitting job to MoleQueue..."
 msgid "Submitting job to MoleQueue…"
-msgstr "Enviar trabalho para MoleQueue..."
+msgstr "Enviar trabalho para MoleQueue…"
 
 #: molequeue/molequeuedialog.cpp:66
 msgid "Job Submission Timeout"
@@ -477,7 +476,7 @@ msgstr "Parar de esperar"
 #, fuzzy
 #| msgid "Fetching completed job information..."
 msgid "Fetching completed job information…"
-msgstr "Buscando informações do trabalho concluído..."
+msgstr "Buscando informações do trabalho concluído…"
 
 #: molequeue/molequeuedialog.cpp:117
 msgid "Job Retrieval Timeout"
