@@ -4434,9 +4434,8 @@ msgstr "&匯出"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "WFN 檔 (*.wfn);;所有檔案 (*.*)"
+msgstr "CSV 檔 (*.csv);;所有檔案 (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy

@@ -4499,9 +4499,8 @@ msgstr "&Dışa Aktar"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "WFN dosyaları (*.wfn);; Tüm dosyalar (*.*)"
+msgstr "CSV dosyaları (*.csv);; Tüm dosyalar (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 msgid "Could not open the file for writing."

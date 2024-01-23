@@ -4496,9 +4496,8 @@ msgstr "Exportar"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Ficheiros WFN (*.wfn);;Todos os ficheiros (*.*)"
+msgstr "Ficheiros CSV (*.csv);;Todos os ficheiros (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
