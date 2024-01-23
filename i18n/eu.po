@@ -9524,11 +9524,6 @@ msgstr ""
 #~ msgstr "Kopiatu Guztia"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "IUPAC-en bidezko Molekularen Izena:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Pisu Molekularra (g/mol)"
 
