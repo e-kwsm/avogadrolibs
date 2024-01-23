@@ -3020,15 +3020,13 @@ msgstr "Nastavit silové pole..."
 
 #: qtplugins/forcefield/forcefield.cpp:125
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr "Importovat vybrané atomy"
+msgstr "Upevnit vybrané atomy"
 
 #: qtplugins/forcefield/forcefield.cpp:132
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr "Upevnit vybrané atomy"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
