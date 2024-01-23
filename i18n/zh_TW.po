@@ -5300,7 +5300,7 @@ msgstr "振動光譜"
 #: qtplugins/spectra/spectradialog.cpp:612
 #: qtplugins/spectra/spectradialog.cpp:626
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "波數 (cm<sup>-1</sup>)"
+msgstr "波數 (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:613
 msgid "Transmission"
