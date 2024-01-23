@@ -3487,10 +3487,8 @@ msgid "Render a few non-covalent interactions."
 msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.h:54
-#, fuzzy
-#| msgid "Hydrogen"
 msgid "Halogen"
-msgstr "ಹೈಡ್ರೋಜನ್"
+msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.h:55
 msgid "Chalcogen"
