@@ -9520,12 +9520,6 @@ msgstr "phlostically@example.com"
 #~ msgstr "Parta Ŝargo"
 
 #, fuzzy
-#~| msgid "Stop Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Haltigi Moviĝon"
-
-#, fuzzy
-#~| msgid "Van der Waals (AO)"
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals (ĉirkaŭa lumbaro)"

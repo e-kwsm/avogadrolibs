@@ -9554,12 +9554,6 @@ msgstr ""
 #~ msgstr "Carga Parcial"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animação"
-
-#, fuzzy
-#~| msgid "Van der Waals (AO)"
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals (OA)"
