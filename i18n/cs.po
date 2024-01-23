@@ -4667,10 +4667,8 @@ msgid "Align View to Axes"
 msgstr ""
 
 #: qtplugins/resetview/resetview.cpp:52
-#, fuzzy
-#| msgid "Align Settings"
 msgid "Align view to axes."
-msgstr "Nastavení zarovnání"
+msgstr ""
 
 #: qtplugins/resetview/resetview.h:26
 #, fuzzy
