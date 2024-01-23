@@ -2924,7 +2924,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate Energy"
 msgid "&Calculate"
 msgstr "Изчисляване"
 
@@ -3131,8 +3130,6 @@ msgid "&Insert"
 msgstr "&Вмъкване"
 
 #: qtplugins/insertdna/insertdna.cpp:79
-#, fuzzy
-#| msgid "&Insert"
 msgid "Insert DNA/RNA…"
 msgstr "Вмъкване"
 
@@ -3170,8 +3167,6 @@ msgid "Generating 3D molecule…"
 msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:33
-#, fuzzy
-#| msgid "&Insert"
 msgid "InsertDNA"
 msgstr "Вмъкване"
 
@@ -4428,19 +4423,16 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:27
 #, fuzzy
-#| msgid "Atom Properties"
 msgid "Atom Properties…"
 msgstr "Свойства на атома"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Свойства на връзката"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Свойства на ъгъла"
 
@@ -7640,7 +7632,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:288
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Imported Spectra:"
 msgstr "Внасяне на спектър"
 
@@ -8298,11 +8289,6 @@ msgstr ""
 "svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo."
 "com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,"
 "svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com"
-
-#, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Анимация"
 
 #, fuzzy
 #~ msgctxt "ambient occlusion"
