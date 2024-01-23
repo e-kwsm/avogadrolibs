@@ -1252,7 +1252,6 @@ msgstr "Rótulos"
 
 #: qtgui/layermodel.cpp:150 qtplugins/licorice/licorice.h:31
 #, fuzzy
-#| msgid "Licorice"
 msgctxt "stick / licorice rendering"
 msgid "Licorice"
 msgstr "Bastão"
@@ -2379,7 +2378,6 @@ msgstr "Configurar ambientes do Python."
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2097
 #, fuzzy
-#| msgid "Other"
 msgid "Other…"
 msgstr "Outro…"
 
@@ -5154,7 +5152,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1646
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "Espectro"
 
@@ -6692,7 +6689,6 @@ msgstr "Z"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:142
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "Other"
 msgid "Other"
 msgstr "Outro"
 
@@ -8805,7 +8801,6 @@ msgstr "Seus e-mails"
 #~ msgstr "Animação"
 
 #, fuzzy
-#~| msgid "Van der Waals (AO)"
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals (OA)"
