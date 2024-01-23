@@ -3319,6 +3319,7 @@ msgstr "Konfiguratu…"
 
 #: qtplugins/forcefield/forcefield.cpp:112
 #, fuzzy
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
 msgstr "Atomo Hautatuak Konpondu"
 
