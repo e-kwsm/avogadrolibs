@@ -2032,7 +2032,6 @@ msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:32
 #, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Bond Selected Atoms"
 msgstr "鍵所選的原子"
 
