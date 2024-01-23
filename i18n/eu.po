@@ -1505,9 +1505,8 @@ msgstr "Molekula Aldatu"
 
 #: qtgui/scenepluginmodel.cpp:92
 #, fuzzy
-#| msgid "&Settings"
 msgid "Settings"
-msgstr "Ezar&penak"
+msgstr "Ezarpenak"
 
 #: qtgui/scriptloader.cpp:41
 #, qt-format
