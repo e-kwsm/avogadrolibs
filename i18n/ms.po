@@ -3839,6 +3839,7 @@ msgstr "Sediakan…"
 
 #: qtplugins/forcefield/forcefield.cpp:132
 #, fuzzy
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
 msgstr "Baiki Atom Terpilih"
 
