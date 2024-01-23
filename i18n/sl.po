@@ -2998,7 +2998,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:154
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Izračunaj"
 
@@ -3039,10 +3038,8 @@ msgid "Forcefield optimization"
 msgstr "Prilagajanje polja sil"
 
 #: qtplugins/forcefield/forcefield.h:50
-#, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr "Prilagajanje polja sil"
+msgstr ""
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
