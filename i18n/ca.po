@@ -3003,7 +3003,7 @@ msgstr "Configura el camp de força…"
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
 msgstr "Fixa els àtoms seleccionats"
 
