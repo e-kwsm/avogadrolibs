@@ -2992,7 +2992,6 @@ msgstr "%1 力的范数 = %L2"
 
 #: qtplugins/forcefield/forcefield.h:46
 #, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield optimization"
 msgstr "力场优化"
 
