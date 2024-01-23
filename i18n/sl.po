@@ -3698,12 +3698,6 @@ msgstr "Lastnosti molekule"
 msgid "Molecule Properties"
 msgstr "Lastnosti molekule"
 
-#: qtplugins/molecularproperties/molecularview.cpp:146
-#: qtplugins/propertytables/propertyview.cpp:231
-#, fuzzy
-msgid "Export CSV"
-msgstr "Izvozi"
-
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy

@@ -3669,12 +3669,6 @@ msgstr "Propietats de la molècula"
 msgid "Molecule Properties"
 msgstr "Propietats de la molècula"
 
-#: qtplugins/molecularproperties/molecularview.cpp:146
-#: qtplugins/propertytables/propertyview.cpp:231
-#, fuzzy
-msgid "Export CSV"
-msgstr "Exporta"
-
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
