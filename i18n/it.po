@@ -2394,10 +2394,8 @@ msgid "'b' lattice coordinate."
 msgstr "Coordinata reticolare 'b'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:495
-#, fuzzy
-#| msgid "'a' lattice coordinate."
 msgid "'c' lattice coordinate."
-msgstr "Coordinata reticolare 'a'."
+msgstr "Coordinata reticolare 'c'."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:579
 msgid "Error applying geometry"
