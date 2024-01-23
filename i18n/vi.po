@@ -7791,10 +7791,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:434
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#, fuzzy
-#| msgid "Jump Size:"
 msgid "Line Size:"
-msgstr "Bước nhảy:"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:507
 #. i18n: ectx: property (text), widget (QTableWidget, dataTable)
