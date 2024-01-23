@@ -1266,10 +1266,8 @@ msgid "Meshes"
 msgstr "Mreže"
 
 #: qtgui/layermodel.cpp:151 qtplugins/noncovalent/noncovalent.h:30
-#, fuzzy
-#| msgid "Covalent"
 msgid "Non-Covalent"
-msgstr "Kovalentna"
+msgstr ""
 
 #: qtgui/layermodel.cpp:153
 #, fuzzy
