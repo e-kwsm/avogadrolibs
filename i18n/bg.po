@@ -4938,10 +4938,8 @@ msgid "Select Calculated Spectra Color"
 msgstr "Изнасяне на изчислен спектър"
 
 #: qtplugins/spectra/spectradialog.cpp:534
-#, fuzzy
-#| msgid "Import Spectra"
 msgid "Select Imported Spectra Color"
-msgstr "Внасяне на спектър"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:580
 msgid "Wavelength (nm)"
