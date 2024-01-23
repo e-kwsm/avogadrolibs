@@ -2254,7 +2254,6 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2103
 #, fuzzy
-#| msgid "Other"
 msgid "Other…"
 msgstr "باشقا"
 
@@ -6315,7 +6314,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:142
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "Other"
 msgid "Other"
 msgstr "باشقا"
 
