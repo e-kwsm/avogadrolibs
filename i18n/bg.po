@@ -1011,7 +1011,6 @@ msgstr ""
 
 #: qtgui/fileformatdialog.cpp:279
 #, fuzzy
-#| msgid "All Files"
 msgid "All files"
 msgstr "Всички файлове"
 
@@ -4737,7 +4736,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1676
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "Спектри"
 
@@ -4747,8 +4745,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Инфрачервен"
 

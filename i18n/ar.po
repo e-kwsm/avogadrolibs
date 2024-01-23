@@ -1011,7 +1011,6 @@ msgstr ""
 
 #: qtgui/fileformatdialog.cpp:279
 #, fuzzy
-#| msgid "All Files"
 msgid "All files"
 msgstr "كل الملفّات"
 
@@ -4731,7 +4730,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1676
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "طيف"
 
@@ -4741,8 +4739,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:201
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "الأشعة تحت الحمراء"
 
@@ -6174,7 +6170,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:190
 #. i18n: ectx: property (text), widget (QRadioButton, singleStrandRadio)
 #, fuzzy
-#| msgid "Single"
 msgctxt "single-strand DNA"
 msgid "Single"
 msgstr "مفرد"
@@ -6182,7 +6177,6 @@ msgstr "مفرد"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:197
 #. i18n: ectx: property (text), widget (QRadioButton, doubleStrandRadio)
 #, fuzzy
-#| msgid "Double"
 msgctxt "double-strand DNA"
 msgid "Double"
 msgstr "مضاعف"
