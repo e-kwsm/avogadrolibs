@@ -4969,7 +4969,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectra.cpp:29
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Plot Spectra…"
 msgstr "spektrum"
 
