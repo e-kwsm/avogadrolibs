@@ -1803,11 +1803,9 @@ msgstr ""
 #: qtplugins/applycolors/applycolors.cpp:210
 #: qtplugins/applycolors/applycolors.cpp:302
 #: qtplugins/surfaces/surfaces.cpp:776:183 rc.cpp:1815
-#, fuzzy
-#| msgid "Neutral"
 msgctxt "colormap"
 msgid "Spectral"
-msgstr "Neutrálny"
+msgstr ""
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:45
 #. i18n: ectx: property (text), item, widget (QComboBox, colorMapCombo)
@@ -4817,10 +4815,8 @@ msgstr "Importovať Spectra"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1676
-#, fuzzy
-#| msgid "Neutral"
 msgid "Spectra"
-msgstr "Neutrálny"
+msgstr ""
 
 #: qtplugins/spectra/spectra.h:38
 msgid "Display spectra plots."
@@ -4909,10 +4905,8 @@ msgid "Intensity"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:369
-#, fuzzy
-#| msgid "Neutral"
 msgid "NMR Spectra"
-msgstr "Neutrálny"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:370
 msgid "Chemical Shift (ppm)"
