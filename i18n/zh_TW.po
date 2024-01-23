@@ -5280,9 +5280,8 @@ msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:545
 #, fuzzy, qt-format
-#| msgid "MOPAC failed to start."
 msgid "Error: %1 failed to start"
-msgstr "無法啟動 MOPAC"
+msgstr "無法啟動 %1"
 
 #: qtplugins/yaehmop/yaehmop.cpp:596
 msgid "Yaehmop Input"
