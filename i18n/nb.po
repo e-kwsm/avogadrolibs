@@ -1255,11 +1255,9 @@ msgid ""
 msgstr ""
 
 #: qtgui/pythonscript.cpp:145
-#, fuzzy, qt-format
-#| msgctxt "arg is an executable file."
-#| msgid "Starting %1..."
+#, qt-format
 msgid "Warning '%1'"
-msgstr "Starter %1 …"
+msgstr ""
 
 #: qtgui/pythonscript.cpp:267
 msgid "Script failed to start."
