@@ -3627,10 +3627,8 @@ msgstr "Ni nastavljene molekule"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:217
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:228:1136
-#, fuzzy
-#| msgid "IUPAC Molecule Name:"
 msgid "Molecule Name:"
-msgstr "Ime po IUPAC-u:"
+msgstr ""
 
 #. i18n: file: qtplugins/molecularproperties/molecularpropertiesdialog.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)

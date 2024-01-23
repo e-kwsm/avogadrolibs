@@ -3516,9 +3516,8 @@ msgstr "沒有設定分子"
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:217
 #: qtplugins/molecularproperties/molecularpropertiesdialog.cpp:228:1136
 #, fuzzy
-#| msgid "IUPAC Molecule Name:"
 msgid "Molecule Name:"
-msgstr "IUPAC 分子名稱:"
+msgstr "分子名稱:"
 
 #. i18n: file: qtplugins/molecularproperties/molecularpropertiesdialog.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_4)
