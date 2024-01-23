@@ -4907,9 +4907,8 @@ msgstr "Analize vibracija"
 #: qtplugins/spectra/spectradialog.cpp:343
 #: qtplugins/spectra/spectradialog.cpp:357
 #, fuzzy
-#| msgid "Wavenumber (cm<sup>-1</sup>)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "Valni broj (cm<sup>-1</sup>)"
+msgstr "Valni broj (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:344
 msgid "Transmission"
