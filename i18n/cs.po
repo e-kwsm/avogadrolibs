@@ -3022,7 +3022,7 @@ msgstr "Nastavit…"
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
-#| msgid "Import Selected Atoms"
+#| msgid "Fix Selected Atoms"
 msgid "Freeze Selected Atoms"
 msgstr "Upevnit vybrané atomy"
 
