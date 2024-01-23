@@ -5321,10 +5321,8 @@ msgid "%1 %2"
 msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:81
-#, fuzzy
-#| msgid "Temperature"
 msgid "Template"
-msgstr "Suhu"
+msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:83
 msgid ""
