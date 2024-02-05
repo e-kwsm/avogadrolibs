@@ -107,7 +107,7 @@ void QTAIMExtension::triggered()
   } else {
     fileName = QFileDialog::getOpenFileName(
       new QWidget, tr("Open WFN File"), QDir::homePath(),
-      tr("WFN files (*.wfn);;All files (*.*)"));
+      tr("WFN files (*.wfn);;All files (*)"));
 
     if (fileName.isNull()) {
       qDebug() << "No such file.";
