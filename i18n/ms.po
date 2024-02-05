@@ -4601,9 +4601,8 @@ msgstr "Eksport"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "Fail WFN (*.wfn);;Semua fail (*.*)"
+msgstr "Fail CSV (*.csv);;Semua fail (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
@@ -4652,8 +4651,8 @@ msgid "Open WFN File"
 msgstr "Buka Fail WFN"
 
 #: qtplugins/qtaim/qtaimextension.cpp:110
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "Fail WFN (*.wfn);;Semua fail (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "Fail WFN (*.wfn);;Semua fail (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:24
 msgid "QTAIM extension"

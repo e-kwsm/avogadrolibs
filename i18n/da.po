@@ -4476,9 +4476,8 @@ msgstr "Eksportér"
 
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
-msgstr "WFN-filer (*.wfn);;Alle filer (*.*)"
+msgstr "CSV-filer (*.csv);;Alle filer (*)"
 
 #: qtplugins/propertytables/propertyview.cpp:244
 #, fuzzy
@@ -4523,8 +4522,8 @@ msgid "Open WFN File"
 msgstr "Åbn WFN-fil"
 
 #: qtplugins/qtaim/qtaimextension.cpp:110
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "WFN-filer (*.wfn);;Alle filer (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "WFN-filer (*.wfn);;Alle filer (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:24
 msgid "QTAIM extension"
