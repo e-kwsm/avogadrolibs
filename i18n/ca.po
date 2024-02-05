@@ -1089,7 +1089,7 @@ msgstr ""
 #: qtgui/jsonwidget.cpp:204
 #, fuzzy
 msgid "Theory"
-msgstr "Teoria:"
+msgstr "Teoria"
 
 #: qtgui/jsonwidget.cpp:204
 msgid "Basis"
