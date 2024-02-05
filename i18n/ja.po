@@ -3558,9 +3558,8 @@ msgstr ""
 
 #: qtplugins/navigator/navigator.cpp:63
 #, fuzzy
-#| msgid "&Translate Atoms..."
 msgid "Translate the scene."
-msgstr "原子を平行移動..."
+msgstr "シーンを平行移動。"
 
 #: qtplugins/navigator/navigator.cpp:104
 msgid "Reverse Direction of Zoom on Scroll"
