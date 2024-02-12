@@ -4963,10 +4963,8 @@ msgid "Select Calculated Spectra Color"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:534
-#, fuzzy
-#| msgid "Select Foreground Color"
 msgid "Select Imported Spectra Color"
-msgstr "حدد اللون الأمامي"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:580
 msgid "Wavelength (nm)"
