@@ -387,10 +387,8 @@ msgid "Configure Job"
 msgstr ""
 
 #: molequeue/molequeuedialog.cpp:57
-#, fuzzy
-#| msgid "Hide job in MoleQueue:"
 msgid "Submitting job to MoleQueue…"
-msgstr "Skjul jobb i MoleQueue:"
+msgstr ""
 
 #: molequeue/molequeuedialog.cpp:66
 msgid "Job Submission Timeout"
@@ -1543,10 +1541,8 @@ msgid "Rotate the molecule to align the atom to the specified axis."
 msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:30
-#, fuzzy
-#| msgid "Navigate tool"
 msgid "Align tool"
-msgstr "Navigasjonsverktøy"
+msgstr ""
 
 #: qtplugins/aligntool/aligntool.h:33
 msgid "Align molecules to a Cartesian axis"
@@ -1679,7 +1675,7 @@ msgstr ""
 #: qtplugins/apbs/apbsdialog.cpp:178:156
 #, fuzzy
 msgid "Success"
-msgstr "Suksess!"
+msgstr "Suksess"
 
 #: qtplugins/apbs/apbsdialog.cpp:179
 #, qt-format
