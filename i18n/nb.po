@@ -388,10 +388,8 @@ msgid "Configure Job"
 msgstr ""
 
 #: molequeue/molequeuedialog.cpp:57
-#, fuzzy
-#| msgid "Hide job in MoleQueue:"
 msgid "Submitting job to MoleQueue…"
-msgstr "Skjul jobb i MoleQueue:"
+msgstr ""
 
 #: molequeue/molequeuedialog.cpp:66
 msgid "Job Submission Timeout"
