@@ -1720,7 +1720,7 @@ msgstr ""
 #: qtplugins/apbs/apbsdialog.cpp:178:156
 #, fuzzy
 msgid "Success"
-msgstr "Sukses!"
+msgstr "Sukses"
 
 #: qtplugins/apbs/apbsdialog.cpp:179
 #, qt-format
