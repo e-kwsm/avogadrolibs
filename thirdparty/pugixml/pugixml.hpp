@@ -367,7 +367,7 @@ namespace pugi
 	private:
 		xml_attribute_struct* _attr;
 
-                typedef void (*unspecified_bool_type)(xml_attribute***);
+                using unspecified_bool_type = void (*)(xml_attribute***);
 
 	public:
 		// Default constructor. Constructs an empty attribute.
@@ -476,7 +476,7 @@ namespace pugi
 	protected:
 		xml_node_struct* _root;
 
-		typedef void (*unspecified_bool_type)(xml_node***);
+                using unspecified_bool_type = void (*)(xml_node***);
 
 	public:
 		// Default constructor. Constructs an empty node.
@@ -695,7 +695,7 @@ namespace pugi
 	#endif
 
 		// Child nodes iterators
-		typedef xml_node_iterator iterator;
+                using iterator = xml_node_iterator;
 
 		iterator begin() const;
 		iterator end() const;
