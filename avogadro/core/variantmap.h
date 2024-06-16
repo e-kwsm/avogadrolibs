@@ -26,8 +26,8 @@ namespace Core {
 class AVOGADROCORE_EXPORT VariantMap
 {
 public:
-  typedef std::map<std::string, Variant>::iterator iterator;
-  typedef std::map<std::string, Variant>::const_iterator const_iterator;
+  using iterator = std::map<std::string, Variant>::iterator;
+  using const_iterator = std::map<std::string, Variant>::const_iterator;
 
   /** Creates a new variant map object. */
   VariantMap();

@@ -44,16 +44,16 @@ class AVOGADROCORE_EXPORT Molecule
 {
 public:
   /** Typedef for Atom class. */
-  typedef Atom AtomType;
+  using AtomType = Atom;
 
   /** Typedef for Bond class. */
-  typedef Bond BondType;
+  using BondType = Bond;
   /** Type for custom element map. */
-  typedef std::map<unsigned char, std::string> CustomElementMap;
+  using CustomElementMap = std::map<unsigned char, std::string>;
 
   /** Type for element masks (e.g., does this molecule contain certain elements)
    */
-  typedef std::bitset<element_count> ElementMask;
+  using ElementMask = std::bitset<element_count>;
 
   /** Creates a new, empty molecule. */
   Molecule();

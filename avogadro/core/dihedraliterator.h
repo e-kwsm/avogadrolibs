@@ -18,7 +18,7 @@ namespace Core {
 
 class Molecule;
 
-typedef std::tuple<Index, Index, Index, Index> Dihedral;
+using Dihedral = std::tuple<Index, Index, Index, Index>;
 
 class AVOGADROCORE_EXPORT DihedralIterator
 {

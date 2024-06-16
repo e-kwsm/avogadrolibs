@@ -32,7 +32,7 @@ class AVOGADROCORE_EXPORT Residue
 {
 public:
   /** Type for atom name map. */
-  typedef std::map<std::string, Atom> AtomNameMap;
+  using AtomNameMap = std::map<std::string, Atom>;
 
   // using codes from MMTF specification
   // https://github.com/rcsb/mmtf/blob/master/spec.md#secstructlist

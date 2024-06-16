@@ -23,8 +23,8 @@ template <class Molecule_T>
 class BondTemplate
 {
 public:
-  typedef Molecule_T MoleculeType;
-  typedef typename Molecule_T::AtomType AtomType;
+  using MoleculeType = Molecule_T;
+  using AtomType = typename Molecule_T::AtomType;
 
   /** Creates a new, invalid bond object. */
   BondTemplate();

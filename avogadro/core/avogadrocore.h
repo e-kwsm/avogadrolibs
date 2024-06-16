@@ -31,10 +31,10 @@
 namespace Avogadro {
 
 /** Typedef for a real number. */
-typedef double Real;
+using Real = double;
 
 /** Typedef for indices and sizes. */
-typedef size_t Index;
+using Index = size_t;
 constexpr Index MaxIndex = std::numeric_limits<Index>::max();
 
 /** Used to represent an invalid atomic number. */

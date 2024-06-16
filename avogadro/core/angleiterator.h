@@ -18,7 +18,7 @@ namespace Core {
 
 class Molecule;
 
-typedef std::tuple<Index, Index, Index> Angle;
+using Angle = std::tuple<Index, Index, Index>;
 
 class AVOGADROCORE_EXPORT AngleIterator
 {

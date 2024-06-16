@@ -22,7 +22,7 @@ template <typename OutputType>
 class AtomTyper
 {
 public:
-  typedef OutputType ValueType;
+  using ValueType = OutputType;
 
   explicit AtomTyper(const Molecule* mol = nullptr);
   virtual ~AtomTyper();

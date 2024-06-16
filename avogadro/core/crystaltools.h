@@ -37,7 +37,7 @@ public:
     /** Transform atoms along with the unit cell. */
     TransformAtoms = 0x1
   };
-  typedef int Options;
+  using Options = int;
 
   /**
    * Adjust the atomic positions in @a molecule so that the fractional (lattice)

@@ -47,7 +47,7 @@ template <class Molecule_T>
 class AtomTemplate
 {
 public:
-  typedef Molecule_T MoleculeType;
+  using MoleculeType = Molecule_T;
 
   /** Creates a new, invalid atom object. */
   AtomTemplate();
