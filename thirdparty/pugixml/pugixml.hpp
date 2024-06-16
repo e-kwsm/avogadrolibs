@@ -136,7 +136,7 @@ namespace pugi
 
 #ifndef PUGIXML_NO_STL
 	// String type used for operations that work with STL string; depends on PUGIXML_WCHAR_MODE
-	typedef std::basic_string<PUGIXML_CHAR, std::char_traits<PUGIXML_CHAR>, std::allocator<PUGIXML_CHAR> > string_t;
+       using string_t = std::basic_string<PUGIXML_CHAR, std::char_traits<PUGIXML_CHAR>, std::allocator<PUGIXML_CHAR>>;
 #endif
 }
 
@@ -302,8 +302,8 @@ namespace pugi
 	template <typename It> class xml_object_range
 	{
 	public:
-		typedef It const_iterator;
-		typedef It iterator;
+          using const_iterator = It;
+          using iterator = Ittor = It;
 
 		xml_object_range(It b, It e): _begin(b), _end(e)
 		{

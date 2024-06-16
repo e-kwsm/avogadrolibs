@@ -205,7 +205,7 @@ PUGI__NS_BEGIN
 	template <typename T> allocation_function xml_memory_management_function_storage<T>::allocate = default_allocate;
 	template <typename T> deallocation_function xml_memory_management_function_storage<T>::deallocate = default_deallocate;
 
-	typedef xml_memory_management_function_storage<int> xml_memory;
+       using xml_memory = xml_memory_management_function_storage<int>;
 PUGI__NS_END
 
 // String utilities
@@ -263,7 +263,7 @@ PUGI__NS_END
 PUGI__NS_BEGIN
 	template <typename T> struct auto_deleter
 	{
-		typedef void (*D)(T*);
+		using D = void (*)(T*);
 
 		T* data;
 		D deleter;
@@ -1450,7 +1450,7 @@ PUGI__NS_BEGIN
 
 	struct utf8_counter
 	{
-		typedef size_t value_type;
+		using value_type = size_t;
 
 		static value_type low(value_type result, uint32_t ch)
 		{
@@ -1471,7 +1471,7 @@ PUGI__NS_BEGIN
 
 	struct utf8_writer
 	{
-		typedef uint8_t* value_type;
+		using value_type = uint8_t*;
 
 		static value_type low(value_type result, uint32_t ch)
 		{
@@ -1516,7 +1516,7 @@ PUGI__NS_BEGIN
 
 	struct utf16_counter
 	{
-		typedef size_t value_type;
+		using value_type = size_t;
 
 		static value_type low(value_type result, uint32_t)
 		{
@@ -1531,7 +1531,7 @@ PUGI__NS_BEGIN
 
 	struct utf16_writer
 	{
-		typedef uint16_t* value_type;
+		using value_type = uint16_t*;
 
 		static value_type low(value_type result, uint32_t ch)
 		{
@@ -1559,7 +1559,7 @@ PUGI__NS_BEGIN
 
 	struct utf32_counter
 	{
-		typedef size_t value_type;
+		using value_type = size_t;
 
 		static value_type low(value_type result, uint32_t)
 		{
@@ -1574,7 +1574,7 @@ PUGI__NS_BEGIN
 
 	struct utf32_writer
 	{
-		typedef uint32_t* value_type;
+		using value_type = uint32_t*;
 
 		static value_type low(value_type result, uint32_t ch)
 		{
@@ -1600,7 +1600,7 @@ PUGI__NS_BEGIN
 
 	struct latin1_writer
 	{
-		typedef uint8_t* value_type;
+		using value_type = uint8_t*;
 
 		static value_type low(value_type result, uint32_t ch)
 		{
