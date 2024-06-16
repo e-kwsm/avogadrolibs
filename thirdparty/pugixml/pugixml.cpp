@@ -1621,7 +1621,7 @@ PUGI__NS_BEGIN
 
 	struct utf8_decoder
 	{
-		typedef uint8_t type;
+		using type= uint8_t;
 
 		template <typename Traits> static inline typename Traits::value_type process(const uint8_t* data, size_t size, typename Traits::value_type result, Traits)
 		{
