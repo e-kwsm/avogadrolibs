@@ -1688,7 +1688,7 @@ PUGI__NS_BEGIN
 
 	template <typename opt_swap> struct utf16_decoder
 	{
-		typedef uint16_t type;
+          using type = uint16_t;
 
 		template <typename Traits> static inline typename Traits::value_type process(const uint16_t* data, size_t size, typename Traits::value_type result, Traits)
 		{
@@ -1740,7 +1740,7 @@ PUGI__NS_BEGIN
 
 	template <typename opt_swap> struct utf32_decoder
 	{
-		typedef uint32_t type;
+          using type = uint32_t;
 
 		template <typename Traits> static inline typename Traits::value_type process(const uint32_t* data, size_t size, typename Traits::value_type result, Traits)
 		{
@@ -1770,7 +1770,7 @@ PUGI__NS_BEGIN
 
 	struct latin1_decoder
 	{
-		typedef uint8_t type;
+          using type = uint8_t;
 
 		template <typename Traits> static inline typename Traits::value_type process(const uint8_t* data, size_t size, typename Traits::value_type result, Traits)
 		{
@@ -1797,18 +1797,18 @@ PUGI__NS_BEGIN
 
 	template <> struct wchar_selector<4>
 	{
-		typedef uint32_t type;
-		typedef utf32_counter counter;
-		typedef utf32_writer writer;
-		typedef utf32_decoder<opt_false> decoder;
-	};
+          using type = uint32_t;
+          using counter = utf32_counter;
+          using writer = utf32_writer;
+          using decoder = utf32_decoder<opt_false>;
+        };
 
-	typedef wchar_selector<sizeof(wchar_t)>::counter wchar_counter;
-	typedef wchar_selector<sizeof(wchar_t)>::writer wchar_writer;
+        using wchar_counter = wchar_selector<sizeof(wchar_t)>::counter;
+        using wchar_writer = wchar_selector<sizeof(wchar_t)>::writer;
 
 	struct wchar_decoder
 	{
-		typedef wchar_t type;
+          using type = wchar_t;
 
 		template <typename Traits> static inline typename Traits::value_type process(const wchar_t* data, size_t size, typename Traits::value_type result, Traits traits)
 		{
@@ -2655,7 +2655,7 @@ PUGI__NS_BEGIN
 		}
 	}
 
-	typedef char_t* (*strconv_pcdata_t)(char_t*);
+        using strconv_pcdata_t = char_t* (*)(char_t*);
 
 	template <typename opt_trim, typename opt_eol, typename opt_escape> struct strconv_pcdata_impl
 	{
@@ -2726,7 +2726,7 @@ PUGI__NS_BEGIN
 		}
 	}
 
-	typedef char_t* (*strconv_attribute_t)(char_t*, char_t);
+        using strconv_attribute_t = char_t* (*)(char_t*, char_t);
 
 	template <typename opt_escape> struct strconv_attribute_impl
 	{
