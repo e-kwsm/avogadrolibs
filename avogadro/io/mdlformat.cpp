@@ -34,7 +34,7 @@ using std::string;
 
 namespace Avogadro::Io {
 
-typedef std::pair<size_t, signed int> chargePair;
+using chargePair = std::pair<size_t, int>;
 
 MdlFormat::MdlFormat() {}
 
