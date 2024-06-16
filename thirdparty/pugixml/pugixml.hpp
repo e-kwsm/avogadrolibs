@@ -701,7 +701,7 @@ namespace pugi
 		iterator end() const;
 
 		// Attribute iterators
-		typedef xml_attribute_iterator attribute_iterator;
+                using attribute_iterator = xml_attribute_iterator;
 
 		attribute_iterator attributes_begin() const;
 		attribute_iterator attributes_end() const;
@@ -734,7 +734,7 @@ namespace pugi
 
 		xml_node_struct* _root;
 
-		typedef void (*unspecified_bool_type)(xml_text***);
+                using unspecified_bool_type = void (*)(xml_text***);
 
 		explicit xml_text(xml_node_struct* root);
 
@@ -831,13 +831,13 @@ namespace pugi
 
 	public:
 		// Iterator traits
-		typedef ptrdiff_t difference_type;
-		typedef xml_node value_type;
-		typedef xml_node* pointer;
-		typedef xml_node& reference;
+          using difference_type = ptrdiff_t;
+          using value_type = xml_node;
+          using pointer = xml_node*;
+          using reference = xml_node&;
 
 	#ifndef PUGIXML_NO_STL
-		typedef std::bidirectional_iterator_tag iterator_category;
+          using iterator_category = std::bidirectional_iterator_tag;
 	#endif
 
 		// Default constructor
@@ -873,13 +873,13 @@ namespace pugi
 
 	public:
 		// Iterator traits
-		typedef ptrdiff_t difference_type;
-		typedef xml_attribute value_type;
-		typedef xml_attribute* pointer;
-		typedef xml_attribute& reference;
+          using difference_type = ptrdiff_t;
+          using value_type = xml_attribute;
+          using pointer = xml_attribute*;
+          using reference = xml_attribute&;
 
 	#ifndef PUGIXML_NO_STL
-		typedef std::bidirectional_iterator_tag iterator_category;
+          using iterator_category = std::bidirectional_iterator_tag;
 	#endif
 
 		// Default constructor
@@ -909,13 +909,13 @@ namespace pugi
 
 	public:
 		// Iterator traits
-		typedef ptrdiff_t difference_type;
-		typedef xml_node value_type;
-		typedef xml_node* pointer;
-		typedef xml_node& reference;
+          using difference_type = ptrdiff_t;
+          using value_type = xml_node;
+          using pointer = xml_node*;
+          using reference = xml_node&;
 
 	#ifndef PUGIXML_NO_STL
-		typedef std::bidirectional_iterator_tag iterator_category;
+          using iterator_category = std::bidirectional_iterator_tag;
 	#endif
 
 		// Default constructor
@@ -1214,7 +1214,7 @@ namespace pugi
 		void* _impl;
 		xpath_parse_result _result;
 
-		typedef void (*unspecified_bool_type)(xpath_query***);
+                using unspecified_bool_type = void (*)(xpath_query***);
 
 		// Non-copyable semantics
 		xpath_query(const xpath_query&);
