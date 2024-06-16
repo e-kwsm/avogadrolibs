@@ -303,7 +303,7 @@ namespace pugi
 	{
 	public:
           using const_iterator = It;
-          using iterator = Ittor = It;
+          using iterator = It;
 
 		xml_object_range(It b, It e): _begin(b), _end(e)
 		{
