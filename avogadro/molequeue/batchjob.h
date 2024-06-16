@@ -58,20 +58,20 @@ public:
   /**
    * Type used to identify a job within this batch. Unique to this object.
    */
-  typedef int BatchId;
+  using BatchId = int;
   static const BatchId InvalidBatchId;
 
   /**
    * Type used to identify requests sent to the MoleQueue server.
    */
-  typedef int RequestId;
+  using RequestId = int;
   static const RequestId InvalidRequestId;
 
   /**
    * Type used by MoleQueue to identify jobs. Unique across the connected
    * MoleQueue server.
    */
-  typedef unsigned int ServerId;
+  using ServerId = unsigned int;
   static const ServerId InvalidServerId;
 
   /**
