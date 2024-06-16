@@ -14,7 +14,7 @@ namespace Avogadro {
 namespace QtPlugins {
 
 struct BackboneResidue;
-typedef std::list<BackboneResidue> AtomsPairList;
+using AtomsPairList = std::list<BackboneResidue>;
 
 class Cartoons : public QtGui::ScenePlugin
 {
