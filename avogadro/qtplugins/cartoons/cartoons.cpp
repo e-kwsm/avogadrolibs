@@ -54,7 +54,7 @@ struct LayerCartoon : Core::LayerData
   bool showCartoon;
   bool showRope;
 
-  typedef void (Cartoons::*JumpTable)(bool);
+  using JumpTable = void (Cartoons::*)(bool);
   JumpTable jumpTable[7];
 
   std::string serialize() final
@@ -159,7 +159,7 @@ struct BackboneResidue
   Residue::SecondaryStructure secondaryStructure;
 };
 
-typedef list<BackboneResidue> AtomsPairList;
+using AtomsPairList = list<BackboneResidue>;
 
 Cartoons::Cartoons(QObject* parent) : ScenePlugin(parent), m_group(nullptr)
 {
