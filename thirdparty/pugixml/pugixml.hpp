@@ -132,7 +132,7 @@
 namespace pugi
 {
 	// Character type used for all internal storage and operations; depends on PUGIXML_WCHAR_MODE
-	using char_t = char;
+	using char_t = PUGIXML_CHAR;
 
 #ifndef PUGIXML_NO_STL
 	// String type used for operations that work with STL string; depends on PUGIXML_WCHAR_MODE
