@@ -1316,7 +1316,7 @@ namespace pugi
 		xml_node _node;
 		xml_attribute _attribute;
 
-		typedef void (*unspecified_bool_type)(xpath_node***);
+                using unspecified_bool_type = void (*)(xpath_node***);
 
 	public:
 		// Default constructor; constructs empty XPath node
@@ -1363,10 +1363,10 @@ namespace pugi
 		};
 
 		// Constant iterator type
-		typedef const xpath_node* const_iterator;
+                using const_iterator = const xpath_node*;
 
 		// We define non-constant iterator to be the same as constant iterator so that various generic algorithms (i.e. boost foreach) work
-		typedef const xpath_node* iterator;
+                using iterator = const xpath_node*;
 
 		// Default constructor. Constructs empty set.
 		xpath_node_set();
@@ -1433,10 +1433,10 @@ namespace pugi
 #endif
 
 	// Memory allocation function interface; returns pointer to allocated memory or NULL on failure
-	typedef void* (*allocation_function)(size_t size);
+        using allocation_function = void* (*)(size_t);
 
 	// Memory deallocation function interface
-	typedef void (*deallocation_function)(void* ptr);
+        using deallocation_function = void (*)(void*);
 
 	// Override default memory management functions. All subsequent allocations/deallocations will be performed via supplied functions.
 	void PUGIXML_FUNCTION set_memory_management_functions(allocation_function allocate, deallocation_function deallocate);
