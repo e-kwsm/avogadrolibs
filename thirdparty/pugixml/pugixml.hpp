@@ -367,7 +367,7 @@ namespace pugi
 	private:
 		xml_attribute_struct* _attr;
 
-		typedef void (*unspecified_bool_type)(xml_attribute***);
+  using unspecified_bool_type = void (*)(xml_attribute ***)l_attribute***);
 
 	public:
 		// Default constructor. Constructs an empty attribute.

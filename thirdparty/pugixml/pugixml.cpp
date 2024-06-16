@@ -1789,11 +1789,11 @@ PUGI__NS_BEGIN
 
 	template <> struct wchar_selector<2>
 	{
-		typedef uint16_t type;
-		typedef utf16_counter counter;
-		typedef utf16_writer writer;
-		typedef utf16_decoder<opt_false> decoder;
-	};
+          using type = uint16_t;
+          using counter = utf16_counter;
+          using writer = utf16_writer;
+          using decoder = utf16_decoder<opt_false>;
+        };
 
 	template <> struct wchar_selector<4>
 	{
