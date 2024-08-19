@@ -96,12 +96,12 @@ void Molecule::readProperties(const Molecule& other)
   m_spectra = other.m_spectra;
 
   // copy orbital information
-  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
+  auto* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
   if (slaterSet != nullptr) {
     m_basisSet = slaterSet->clone();
     m_basisSet->setMolecule(this);
   }
-  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
+  auto* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
   if (gaussianSet != nullptr) {
     m_basisSet = gaussianSet->clone();
     m_basisSet->setMolecule(this);

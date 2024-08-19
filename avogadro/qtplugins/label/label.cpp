@@ -444,8 +444,8 @@ void Label::processBond(const Core::Molecule& molecule,
     Vector3ub color = interface1->color;
     unsigned char atomicNumber1 = atom1.atomicNumber();
     unsigned char atomicNumber2 = atom2.atomicNumber();
-    float radiusVDW1 = static_cast<float>(Elements::radiusVDW(atomicNumber1));
-    float radiusVDW2 = static_cast<float>(Elements::radiusVDW(atomicNumber2));
+    auto radiusVDW1 = static_cast<float>(Elements::radiusVDW(atomicNumber1));
+    auto radiusVDW2 = static_cast<float>(Elements::radiusVDW(atomicNumber2));
     float radius = (radiusVDW1 + radiusVDW2) * interface1->radiusScalar / 2.0f;
 
     std::stringstream text;
