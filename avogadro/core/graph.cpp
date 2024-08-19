@@ -284,8 +284,7 @@ void Graph::removeEdge(size_t a, size_t b)
   std::vector<size_t>& neighborsA = m_adjacencyList[a];
   std::vector<size_t>& neighborsB = m_adjacencyList[b];
 
-  std::vector<size_t>::iterator iter =
-    std::find(neighborsA.begin(), neighborsA.end(), b);
+  auto iter = std::find(neighborsA.begin(), neighborsA.end(), b);
 
   if (iter == neighborsA.end())
     return;

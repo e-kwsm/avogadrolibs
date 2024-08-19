@@ -98,12 +98,12 @@ void Molecule::readProperties(const Molecule& other)
   m_spectra = other.m_spectra;
 
   // copy orbital information
-  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
+  auto* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
   if (slaterSet != nullptr) {
     m_basisSet = slaterSet->clone();
     m_basisSet->setMolecule(this);
   }
-  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
+  auto* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
   if (gaussianSet != nullptr) {
     m_basisSet = gaussianSet->clone();
     m_basisSet->setMolecule(this);
@@ -697,7 +697,7 @@ Molecule::BondType Molecule::addBond(const AtomType& a, const AtomType& b,
 size_t calcNlogN(size_t n)
 {
   size_t aproxLog = 1;
-  float aux = static_cast<float>(n);
+  auto aux = static_cast<float>(n);
   while (aux > 2.0f) {
     aux /= 2.0f;
     ++aproxLog;
