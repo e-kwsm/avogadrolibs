@@ -32,8 +32,7 @@ std::string formula(const MoleculeType& mol)
   // Adapted from chemkit:
   // A map of atomic symbols to their quantity.
   std::map<unsigned char, size_t> composition;
-  for (Array<unsigned char>::const_iterator it = mol.atomicNumbers().begin(),
-                                            itEnd = mol.atomicNumbers().end();
+  for (auto it = mol.atomicNumbers().begin(), itEnd = mol.atomicNumbers().end();
        it != itEnd; ++it) {
     composition[*it]++;
   }
@@ -397,8 +396,7 @@ TEST(RWMoleculeTest, setAtomPositions3d)
   // Test merging for interactive edits:
   mol.setInteractive(true);
   mol.setAtomPositions3d(pos);
-  for (Array<Vector3>::iterator it = pos.begin(), itEnd = pos.end();
-       it != itEnd; ++it) {
+  for (auto it = pos.begin(), itEnd = pos.end(); it != itEnd; ++it) {
     it->x() += static_cast<Real>(pos.size());
     it->y() += static_cast<Real>(pos.size());
     it->z() += static_cast<Real>(pos.size());
@@ -598,8 +596,7 @@ TEST(RWMoleculeTest, setBondOrders)
 
   Array<unsigned char> old(mol.bondOrders());
   Array<unsigned char> rep(old);
-  for (Array<unsigned char>::iterator it = rep.begin(), itEnd = rep.end();
-       it != itEnd; ++it) {
+  for (auto it = rep.begin(), itEnd = rep.end(); it != itEnd; ++it) {
     *it += rep.size();
   }
 
@@ -686,8 +683,7 @@ TEST(RWMoleculeTest, setBondPairs)
   typedef std::pair<Index, Index> BondPair;
   Array<BondPair> old(mol.bondPairs());
   Array<BondPair> rep(old);
-  for (Array<BondPair>::iterator it = rep.begin(), itEnd = rep.end();
-       it != itEnd; ++it) {
+  for (auto it = rep.begin(), itEnd = rep.end(); it != itEnd; ++it) {
     ++it->second;
   }
 

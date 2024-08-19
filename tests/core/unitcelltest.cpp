@@ -323,9 +323,7 @@ TEST(UnitCellTest, wrapAtomsToUnitCell)
   EXPECT_TRUE(CrystalTools::wrapAtomsToUnitCell(mol));
   fcoords.clear();
   EXPECT_TRUE(CrystalTools::fractionalCoordinates(mol, fcoords));
-  for (std::vector<Vector3>::const_iterator it = fcoords.begin(),
-                                            itEnd = fcoords.end();
-       it != itEnd; ++it) {
+  for (auto it = fcoords.begin(), itEnd = fcoords.end(); it != itEnd; ++it) {
     EXPECT_GT(
       it->x(),
       static_cast<Real>(
