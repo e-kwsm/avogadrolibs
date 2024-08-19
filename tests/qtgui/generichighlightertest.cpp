@@ -42,7 +42,7 @@ public:
     // Create a new document from all the selected text document.
     QTextCursor cursor(document());
     cursor.select(QTextCursor::Document);
-    QTextDocument* tempDocument(new QTextDocument);
+    auto* tempDocument(new QTextDocument);
     Q_ASSERT(tempDocument);
     QTextCursor tempCursor(tempDocument);
 
