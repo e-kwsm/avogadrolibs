@@ -76,7 +76,7 @@ void Dipole::updateFinished()
 
 void Dipole::updateDipole()
 {
-  QtGui::Molecule* molecule = qobject_cast<QtGui::Molecule*>(sender());
+  auto* molecule = qobject_cast<QtGui::Molecule*>(sender());
   if (molecule == nullptr || molecule->isInteractive())
     return;
 
