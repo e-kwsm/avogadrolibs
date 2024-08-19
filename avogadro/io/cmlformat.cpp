@@ -627,9 +627,8 @@ bool CmlFormat::write(std::ostream& out, const Core::Molecule& mol)
 
   xml_node dataMapNode = moleculeNode.append_child("dataMap");
   VariantMap dataMap = mol.dataMap();
-  for (VariantMap::const_iterator it = dataMap.constBegin(),
-                                  itEnd = dataMap.constEnd();
-       it != itEnd; ++it) {
+  for (auto it = dataMap.constBegin(), itEnd = dataMap.constEnd(); it != itEnd;
+       ++it) {
     const std::string& name_ = (*it).first;
 
     // Skip names that are handled elsewhere:

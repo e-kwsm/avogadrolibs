@@ -206,7 +206,7 @@ void CurveGeometry::update(int index)
       const auto tubeStart =
         static_cast<unsigned int>(vertices.size() - radials.size());
       for (size_t j = 0; j < resolution; ++j) {
-        unsigned int r1 = static_cast<unsigned int>(j * 2);
+        auto r1 = static_cast<unsigned int>(j * 2);
         unsigned int r2 =
           j != 0 ? r1 - 2 : static_cast<unsigned int>(radials.size() - 2);
         indices.push_back(tubeStart + r1);

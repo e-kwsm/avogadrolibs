@@ -287,8 +287,8 @@ QByteArray ScriptEnergy::writeCoordinatesBinary(const Eigen::VectorXd& x,
     return QByteArray();
 
   const quint16 flags = requestFlags;
-  const quint32 atomCount = static_cast<quint32>(x.size() / 3);
-  const quint32 payloadBytes = static_cast<quint32>(x.size() * sizeof(double));
+  const auto atomCount = static_cast<quint32>(x.size() / 3);
+  const auto payloadBytes = static_cast<quint32>(x.size() * sizeof(double));
 
   QByteArray input;
   input.reserve(BINARY_HEADER_SIZE + static_cast<int>(payloadBytes));
@@ -330,10 +330,10 @@ bool ScriptEnergy::parseResponseBinary(const QByteArray& response,
     return false;
 
   const auto* header = reinterpret_cast<const uchar*>(raw);
-  const quint16 version = qFromLittleEndian<quint16>(header + 4);
-  const quint16 flags = qFromLittleEndian<quint16>(header + 6);
-  const quint32 atomCount = qFromLittleEndian<quint32>(header + 8);
-  const quint32 payloadBytes = qFromLittleEndian<quint32>(header + 12);
+  const auto version = qFromLittleEndian<quint16>(header + 4);
+  const auto flags = qFromLittleEndian<quint16>(header + 6);
+  const auto atomCount = qFromLittleEndian<quint32>(header + 8);
+  const auto payloadBytes = qFromLittleEndian<quint32>(header + 12);
   if (version != BINARY_VERSION)
     return false;
 
@@ -371,8 +371,7 @@ bool ScriptEnergy::parseResponseBinary(const QByteArray& response,
   // Hessian response: (3N)^2 doubles, row-major on wire
   if ((requestFlags & FLAG_REQUEST_HESSIAN) != 0 && hess != nullptr) {
     const Eigen::Index dim = static_cast<Eigen::Index>(atomCount) * 3;
-    const quint32 expectedBytes =
-      static_cast<quint32>(dim * dim * sizeof(double));
+    const auto expectedBytes = static_cast<quint32>(dim * dim * sizeof(double));
     if (payloadBytes != expectedBytes)
       return false;
     if (QSysInfo::ByteOrder == QSysInfo::LittleEndian) {
@@ -396,8 +395,7 @@ bool ScriptEnergy::parseResponseBinary(const QByteArray& response,
   if ((requestFlags & FLAG_REQUEST_ENERGY_AND_GRADIENT) != 0) {
     if (grad == nullptr || energy == nullptr)
       return false;
-    const quint32 gradBytes =
-      static_cast<quint32>(grad->size() * sizeof(double));
+    const auto gradBytes = static_cast<quint32>(grad->size() * sizeof(double));
     if (payloadBytes != sizeof(double) + gradBytes)
       return false;
     if (!readDoubles(payload, payloadEnd, energy, 1))
@@ -463,8 +461,8 @@ bool ScriptEnergy::readBinaryFrame(const QByteArray& input, QByteArray& frame)
     return false;
   }
 
-  const quint16 version = qFromLittleEndian<quint16>(header + 4);
-  const quint32 payloadBytes = qFromLittleEndian<quint32>(header + 12);
+  const auto version = qFromLittleEndian<quint16>(header + 4);
+  const auto payloadBytes = qFromLittleEndian<quint32>(header + 12);
   if (version != BINARY_VERSION) {
     appendError("Unsupported binary response version.");
     return false;

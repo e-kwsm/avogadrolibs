@@ -48,7 +48,7 @@ bool hasMinimumRemainingBytes(std::istream& in, size_t minBytes)
   if (end == std::streampos(-1))
     return true;
 
-  const size_t remaining = static_cast<size_t>(end - pos);
+  const auto remaining = static_cast<size_t>(end - pos);
   return remaining >= minBytes;
 }
 } // namespace
@@ -341,7 +341,7 @@ void GaussianFchk::load(GaussianSet* basis)
       cout << "GaussianFchk: invalid shell-to-atom map.\n";
       return;
     }
-    const size_t shellNumU = static_cast<size_t>(shellNum);
+    const auto shellNumU = static_cast<size_t>(shellNum);
     if (totalPrimitives > maxSize - shellNumU) {
       cout << "GaussianFchk: shell primitive count overflow.\n";
       return;
@@ -499,7 +499,7 @@ vector<int> GaussianFchk::readArrayI(std::istream& in, unsigned int n)
     appendError("Array data exceeds supported size.");
     return tmp;
   }
-  const size_t nSize = static_cast<size_t>(n);
+  const auto nSize = static_cast<size_t>(n);
   if (!hasMinimumRemainingBytes(in, nSize)) {
     appendError("Invalid array data.");
     return tmp;
@@ -544,7 +544,7 @@ vector<double> GaussianFchk::readArrayD(std::istream& in, unsigned int n,
     appendError("Array data exceeds supported size.");
     return tmp;
   }
-  const size_t nSize = static_cast<size_t>(n);
+  const auto nSize = static_cast<size_t>(n);
   const size_t maxSize = std::numeric_limits<size_t>::max();
   const size_t minBytesPerEntry = width > 0 ? static_cast<size_t>(width) : 1ull;
   if (minBytesPerEntry > 0 && nSize > maxSize / minBytesPerEntry) {
@@ -619,7 +619,7 @@ bool GaussianFchk::readDensityMatrix(std::istream& in, unsigned int n,
     appendError("Invalid basis function count.");
     return false;
   }
-  const size_t basis = static_cast<size_t>(m_numBasisFunctions);
+  const auto basis = static_cast<size_t>(m_numBasisFunctions);
   const size_t maxSize = std::numeric_limits<size_t>::max();
   if (basis > 0 && basis > maxSize / basis) {
     appendError("Density matrix exceeds supported size.");
@@ -738,7 +738,7 @@ bool GaussianFchk::readSpinDensityMatrix(std::istream& in, unsigned int n,
     appendError("Invalid basis function count.");
     return false;
   }
-  const size_t basis = static_cast<size_t>(m_numBasisFunctions);
+  const auto basis = static_cast<size_t>(m_numBasisFunctions);
   const size_t maxSize = std::numeric_limits<size_t>::max();
   if (basis > 0 && basis > maxSize / basis) {
     appendError("Spin density matrix exceeds supported size.");

@@ -109,12 +109,12 @@ void Molecule::readProperties(const Molecule& other)
   m_conformerProperties = other.m_conformerProperties;
 
   // copy orbital information
-  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
+  auto* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
   if (slaterSet != nullptr) {
     m_basisSet = slaterSet->clone();
     m_basisSet->setMolecule(this);
   }
-  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
+  auto* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
   if (gaussianSet != nullptr) {
     m_basisSet = gaussianSet->clone();
     m_basisSet->setMolecule(this);
@@ -1767,7 +1767,7 @@ std::map<unsigned char, size_t> Molecule::composition() const
   // Convert to size_t by rounding to nearest integer
   std::map<unsigned char, size_t> composition;
   for (const auto& pair : compositionDouble) {
-    size_t roundedCount = static_cast<size_t>(std::round(pair.second));
+    auto roundedCount = static_cast<size_t>(std::round(pair.second));
     if (roundedCount > 0) {
       composition[pair.first] = roundedCount;
     }
@@ -1835,7 +1835,7 @@ std::map<std::string, size_t> Molecule::formulaComposition() const
   // Convert to size_t by rounding to nearest integer
   std::map<std::string, size_t> composition;
   for (const auto& pair : compositionDouble) {
-    size_t roundedCount = static_cast<size_t>(std::round(pair.second));
+    auto roundedCount = static_cast<size_t>(std::round(pair.second));
     if (roundedCount > 0) {
       composition[pair.first] = roundedCount;
     }

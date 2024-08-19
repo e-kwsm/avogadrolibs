@@ -32,7 +32,7 @@ TEST(SpaceGroupTest, getSpaceGroup)
   mat.col(1) = Vector3(0.00000, 4.59373, 0.00000); // B
   mat.col(2) = Vector3(0.00000, 0.00000, 4.59373); // C
 
-  UnitCell* uc = new UnitCell(mat);
+  auto* uc = new UnitCell(mat);
 
   mol.setUnitCell(uc);
 
@@ -71,7 +71,7 @@ TEST(SpaceGroupTest, reduceToPrimitive)
   primMat.col(1) = Vector3(2.92081932, 4.21707249, 0.00000000); // B
   primMat.col(2) = Vector3(2.92081932, 1.52998182, 3.92973995); // C
 
-  UnitCell* primUC = new UnitCell(primMat);
+  auto* primUC = new UnitCell(primMat);
   primMol.setUnitCell(primUC);
 
   primMol.addAtom(8).setPosition3d(
@@ -102,7 +102,7 @@ TEST(SpaceGroupTest, reduceToPrimitive)
   convMat.col(1) = Vector3(-2.3803000, 4.12280054, 0.00000000);  // B
   convMat.col(2) = Vector3(0.00000000, 0.00000000, 12.99400000); // C
 
-  UnitCell* convUC = new UnitCell(convMat);
+  auto* convUC = new UnitCell(convMat);
   convMol.setUnitCell(convUC);
 
   convMol.addAtom(8).setPosition3d(
@@ -188,7 +188,7 @@ TEST(SpaceGroupTest, conventionalizeCell)
   primMat.col(1) = Vector3(2.92081932, 4.21707249, 0.00000000); // B
   primMat.col(2) = Vector3(2.92081932, 1.52998182, 3.92973995); // C
 
-  UnitCell* primUC = new UnitCell(primMat);
+  auto* primUC = new UnitCell(primMat);
   primMol.setUnitCell(primUC);
 
   primMol.addAtom(8).setPosition3d(
@@ -219,7 +219,7 @@ TEST(SpaceGroupTest, conventionalizeCell)
   convMat.col(1) = Vector3(-2.3803000, 4.12280054, 0.00000000);  // B
   convMat.col(2) = Vector3(0.00000000, 0.00000000, 12.99400000); // C
 
-  UnitCell* convUC = new UnitCell(convMat);
+  auto* convUC = new UnitCell(convMat);
   convMol.setUnitCell(convUC);
 
   convMol.addAtom(8).setPosition3d(
@@ -307,7 +307,7 @@ TEST(SpaceGroupTest, fillUnitCell)
   mat1.col(1) = Vector3(0.000, 8.042, 0.000); // B
   mat1.col(2) = Vector3(0.000, 0.000, 6.093); // C
 
-  UnitCell* uc1 = new UnitCell(mat1);
+  auto* uc1 = new UnitCell(mat1);
   mol1.setUnitCell(uc1);
 
   mol1.addAtom(12).setPosition3d(
@@ -338,7 +338,7 @@ TEST(SpaceGroupTest, fillUnitCell)
   mat2.col(1) = Vector3(-2.404, 4.16385, 0.000); // B
   mat2.col(2) = Vector3(0.000, 0.00000, 16.022); // C
 
-  UnitCell* uc2 = new UnitCell(mat2);
+  auto* uc2 = new UnitCell(mat2);
   mol2.setUnitCell(uc2);
 
   mol2.addAtom(20).setPosition3d(
@@ -372,7 +372,7 @@ TEST(SpaceGroupTest, fillUnitCell)
   mat3.col(1) = Vector3(-1.69967, 7.12014, 0.00000);  // B
   mat3.col(2) = Vector3(-0.64243, -0.16033, 7.03420); // C
 
-  UnitCell* uc3 = new UnitCell(mat3);
+  auto* uc3 = new UnitCell(mat3);
   mol3.setUnitCell(uc3);
 
   mol3.addAtom(20).setPosition3d(
@@ -431,7 +431,7 @@ TEST(SpaceGroupTest, reduceToAsymmetricUnit)
   mat1.col(1) = Vector3(0.00000, 4.59373, 0.00000); // B
   mat1.col(2) = Vector3(0.00000, 0.00000, 4.59373); // C
 
-  UnitCell* uc1 = new UnitCell(mat1);
+  auto* uc1 = new UnitCell(mat1);
 
   mol1.setUnitCell(uc1);
 
@@ -465,7 +465,7 @@ TEST(SpaceGroupTest, reduceToAsymmetricUnit)
   mat2.col(1) = Vector3(-2.404, 4.16385, 0.000); // B
   mat2.col(2) = Vector3(0.000, 0.00000, 16.022); // C
 
-  UnitCell* uc2 = new UnitCell(mat2);
+  auto* uc2 = new UnitCell(mat2);
   mol2.setUnitCell(uc2);
 
   mol2.addAtom(20).setPosition3d(

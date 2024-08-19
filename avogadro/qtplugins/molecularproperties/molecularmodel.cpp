@@ -348,7 +348,7 @@ void MolecularModel::updateTable(unsigned int flags)
 
   // TODO check for homo, lumo, or somo energies
   const auto* basis = m_molecule->basisSet();
-  const GaussianSet* gaussianSet = dynamic_cast<const GaussianSet*>(basis);
+  const auto* gaussianSet = dynamic_cast<const GaussianSet*>(basis);
   if (gaussianSet != nullptr && gaussianSet->scfType() == Core::Rhf) {
     unsigned int homo = gaussianSet->homo();
     unsigned int lumo = gaussianSet->lumo();

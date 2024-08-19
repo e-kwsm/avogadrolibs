@@ -512,7 +512,7 @@ TEST(GaussianSetToolsTest, waterMOOrthogonality)
               a2b * a2b * a2b;
 
   // Evaluate MO 0 and MO 1 on the grid
-  unsigned int totalPts = static_cast<unsigned int>(nx * ny * nz);
+  auto totalPts = static_cast<unsigned int>(nx * ny * nz);
   std::vector<double> mo0(totalPts), mo1(totalPts);
   for (unsigned int i = 0; i < totalPts; ++i) {
     Vector3 pos = cube.position(i);
@@ -568,7 +568,7 @@ TEST(GaussianSetToolsTest, waterDensityIntegration)
   double a2b = Avogadro::ANGSTROM_TO_BOHR_D;
   double dV = cube.spacing().x() * cube.spacing().y() * cube.spacing().z() *
               a2b * a2b * a2b;
-  unsigned int totalPts = static_cast<unsigned int>(nx * ny * nz);
+  auto totalPts = static_cast<unsigned int>(nx * ny * nz);
 
   double integral = 0.0;
   for (unsigned int i = 0; i < totalPts; ++i) {
