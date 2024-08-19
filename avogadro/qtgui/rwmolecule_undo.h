@@ -274,8 +274,7 @@ public:
 
   bool mergeWith(const QUndoCommand* other) override
   {
-    const SetPositions3dCommand* o =
-      dynamic_cast<const SetPositions3dCommand*>(other);
+    const auto* o = dynamic_cast<const SetPositions3dCommand*>(other);
     if (o) {
       m_newPositions3d = o->m_newPositions3d;
       return true;
@@ -315,8 +314,7 @@ public:
 
   bool mergeWith(const QUndoCommand* o) override
   {
-    const SetPosition3dCommand* other =
-      dynamic_cast<const SetPosition3dCommand*>(o);
+    const auto* other = dynamic_cast<const SetPosition3dCommand*>(o);
     if (!other)
       return false;
 
@@ -331,9 +329,9 @@ public:
       const Vector3& oldPos = other->m_oldPosition3ds[i];
       const Vector3& newPos = other->m_newPosition3ds[i];
 
-      Array<Index>::const_iterator idsBegin = m_atomIds.begin();
-      Array<Index>::const_iterator idsEnd = m_atomIds.end();
-      Array<Index>::const_iterator match = std::find(idsBegin, idsEnd, atomId);
+      auto idsBegin = m_atomIds.begin();
+      auto idsEnd = m_atomIds.end();
+      auto match = std::find(idsBegin, idsEnd, atomId);
 
       if (match == idsEnd) {
         // Append a new atom:
@@ -586,8 +584,7 @@ public:
 
   bool mergeWith(const QUndoCommand* other) override
   {
-    const SetBondOrderCommand* o =
-      dynamic_cast<const SetBondOrderCommand*>(other);
+    const auto* o = dynamic_cast<const SetBondOrderCommand*>(other);
     // Only merge when the bondIds match.
     if (o && o->m_bondId == this->m_bondId) {
       this->m_newBondOrder = o->m_newBondOrder;
@@ -729,8 +726,7 @@ public:
 
   bool mergeWith(const QUndoCommand* o) override
   {
-    const SetForceVectorCommand* other =
-      dynamic_cast<const SetForceVectorCommand*>(o);
+    const auto* other = dynamic_cast<const SetForceVectorCommand*>(o);
     if (!other)
       return false;
 
@@ -745,9 +741,9 @@ public:
       const Vector3& oldPos = other->m_oldForceVectors[i];
       const Vector3& newPos = other->m_newForceVectors[i];
 
-      Array<Index>::const_iterator idsBegin = m_atomIds.begin();
-      Array<Index>::const_iterator idsEnd = m_atomIds.end();
-      Array<Index>::const_iterator match = std::find(idsBegin, idsEnd, atomId);
+      auto idsBegin = m_atomIds.begin();
+      auto idsEnd = m_atomIds.end();
+      auto match = std::find(idsBegin, idsEnd, atomId);
 
       if (match == idsEnd) {
         // Append a new atom:
@@ -850,8 +846,7 @@ public:
 
   bool mergeWith(const QUndoCommand* other) override
   {
-    const ModifySelectionCommand* o =
-      dynamic_cast<const ModifySelectionCommand*>(other);
+    const auto* o = dynamic_cast<const ModifySelectionCommand*>(other);
     if (!o)
       return false;
 
