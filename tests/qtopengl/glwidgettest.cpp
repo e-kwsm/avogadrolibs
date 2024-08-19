@@ -36,8 +36,8 @@ int glwidgettest(int argc, char* argv[])
   widget.setGeometry(10, 10, 250, 250);
   widget.show();
 
-  GeometryNode* geometry = new GeometryNode;
-  SphereGeometry* spheres = new SphereGeometry;
+  auto* geometry = new GeometryNode;
+  auto* spheres = new SphereGeometry;
   geometry->addDrawable(spheres);
   spheres->addSphere(Vector3f(0, 0, 0), Vector3ub(255, 0, 0), 0.5);
   spheres->addSphere(Vector3f(2, 0, 0), Vector3ub(0, 255, 0), 1.5);
