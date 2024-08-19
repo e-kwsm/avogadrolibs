@@ -420,7 +420,7 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
           }
           // e.g. 0 O :   -0.714286
           int atomIndex = Core::lexicalCast<int>(list[0]);
-          double charge = Core::lexicalCast<double>(list[3]);
+          auto charge = Core::lexicalCast<double>(list[3]);
           charges(atomIndex, 0) = charge;
 
           getline(in, key);
@@ -439,9 +439,9 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
         while (key[0] == 'B') {
           // @todo .. parse the bonds based on character position
           // e.g. B(  0-Ru,  1-C ) :   0.4881 B(  0-Ru,  4-C ) :   0.6050
-          Index firstAtom = Core::lexicalCast<Index>(key.substr(2, 3));
-          Index secondAtom = Core::lexicalCast<Index>(key.substr(9, 3));
-          double bondOrder = Core::lexicalCast<double>(key.substr(18, 9));
+          auto firstAtom = Core::lexicalCast<Index>(key.substr(2, 3));
+          auto secondAtom = Core::lexicalCast<Index>(key.substr(9, 3));
+          auto bondOrder = Core::lexicalCast<double>(key.substr(18, 9));
 
           if (bondOrder > 1.6) {
             std::vector<int> bond;
@@ -500,7 +500,7 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
           }
 
           // energy in Hartree
-          double energy = Core::lexicalCast<double>(list[2]);
+          auto energy = Core::lexicalCast<double>(list[2]);
           if (!m_readBeta)
             m_orbitalEnergy.push_back(energy);
           else
@@ -527,7 +527,7 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
             break;
           }
           // e.g. 0:         0.00 cm**-1
-          double freq = Core::lexicalCast<double>(list[1]);
+          auto freq = Core::lexicalCast<double>(list[1]);
           m_frequencies.push_back(freq);
 
           getline(in, key);
@@ -610,7 +610,7 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
           if (index >= m_frequencies.size())
             break;
 
-          double intensity = Core::lexicalCast<double>(list[3]);
+          auto intensity = Core::lexicalCast<double>(list[3]);
           m_IRintensities[index] = intensity;
 
           getline(in, key);
@@ -642,7 +642,7 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
             }
           }
           // index, frequency, activity, depolarization
-          double activity = Core::lexicalCast<double>(list[2]);
+          auto activity = Core::lexicalCast<double>(list[2]);
           m_RamanIntensities.push_back(activity);
 
           getline(in, key);
