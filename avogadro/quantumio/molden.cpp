@@ -587,7 +587,7 @@ bool MoldenFile::coefficientsIncludeRadialNormalization() const
     if (count < 0 || nGTO + static_cast<size_t>(count) > m_a.size() ||
         nGTO + static_cast<size_t>(count) > m_c.size())
       return false;
-    const size_t n = static_cast<size_t>(count);
+    const auto n = static_cast<size_t>(count);
     for (size_t j = nGTO; j < nGTO + n; ++j)
       if (!(m_a[j] > 0.0) || !std::isfinite(m_c[j]))
         return false;

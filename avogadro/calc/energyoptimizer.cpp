@@ -338,8 +338,8 @@ size_t adaptChunkIterations(size_t currentChunk, double measuredMs,
   const double ratio = targetMs / measuredMs;
   const double scale = std::pow(ratio, std::min(smoothing, 1.0));
   double proposed = static_cast<double>(currentChunk) * scale;
-  const double lo = static_cast<double>(minChunk);
-  const double hi = static_cast<double>(maxChunk);
+  const auto lo = static_cast<double>(minChunk);
+  const auto hi = static_cast<double>(maxChunk);
   if (!(proposed > lo))
     proposed = lo;
   if (proposed > hi)

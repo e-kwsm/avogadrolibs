@@ -339,7 +339,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     // addBond(), which made it a quadruple bond; add it as a single-bond
     // placeholder instead and let kekulize() assign its real order below.
     // Query types 5-8 are left exactly as they were: out of scope here.
-    unsigned char bondOrder = static_cast<unsigned char>(order);
+    auto bondOrder = static_cast<unsigned char>(order);
     bool aromatic = false;
     if (order == 4) {
       aromatic = true;
@@ -947,7 +947,7 @@ bool MdlFormat::readV3000(std::istream& in, Core::Molecule& mol)
     }
     // Order 4 is aromatic here exactly as it is in V2000: add a single bond
     // as a placeholder and let kekulize() below assign the real order.
-    unsigned char bondOrder = static_cast<unsigned char>(order);
+    auto bondOrder = static_cast<unsigned char>(order);
     bool aromatic = false;
     if (order == 4) {
       aromatic = true;

@@ -22,8 +22,8 @@ using Avogadro::Rendering::SphereGeometry;
 TEST(SphereGeometryTest, children)
 {
   GeometryNode root;
-  SphereGeometry* child1 = new SphereGeometry;
-  SphereGeometry* child2 = new SphereGeometry;
+  auto* child1 = new SphereGeometry;
+  auto* child2 = new SphereGeometry;
   root.addDrawable(child1);
   root.addDrawable(child2);
 
@@ -36,8 +36,8 @@ TEST(SphereGeometryTest, children)
 TEST(SphereGeometryTest, removeChild)
 {
   GeometryNode root;
-  SphereGeometry* child1 = new SphereGeometry;
-  SphereGeometry* child2 = new SphereGeometry;
+  auto* child1 = new SphereGeometry;
+  auto* child2 = new SphereGeometry;
   root.addDrawable(child1);
   root.addDrawable(child2);
 

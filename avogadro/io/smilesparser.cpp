@@ -235,7 +235,7 @@ bool Parser::readDigits(size_t& i, unsigned long maxValue, unsigned long& value)
   bool any = false;
   while (i < m_input.size() && isAsciiDigit(m_input[i])) {
     any = true;
-    const unsigned long digit = static_cast<unsigned long>(m_input[i] - '0');
+    const auto digit = static_cast<unsigned long>(m_input[i] - '0');
     if (value > (maxValue - digit) / 10) {
       // Consume the rest of the run so the caller's position tracking still
       // lands past the offending number, then report the overflow.
@@ -782,7 +782,7 @@ bool Parser::parseStructure()
 
 bool Parser::buildMolecule(Molecule& molecule, std::vector<size_t>& atomMaps)
 {
-  const Index writtenCount = static_cast<Index>(m_atoms.size());
+  const auto writtenCount = static_cast<Index>(m_atoms.size());
 
   for (const ParsedAtom& atom : m_atoms) {
     const Molecule::AtomType added = molecule.addAtom(atom.atomicNumber);

@@ -1851,7 +1851,7 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellCorner)
   Molecule molecule;
 
   // Create a simple cubic unit cell (10 Angstrom sides)
-  UnitCell* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
+  auto* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
   molecule.setUnitCell(cell);
 
   // Add 8 corner atoms (each at a corner of the unit cell)
@@ -1876,7 +1876,7 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellEdge)
   Molecule molecule;
 
   // Create a simple cubic unit cell (10 Angstrom sides)
-  UnitCell* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
+  auto* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
   molecule.setUnitCell(cell);
 
   // Add 4 edge atoms (each on an edge of the unit cell, 2 coords at 0 or 1)
@@ -1903,7 +1903,7 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellFace)
   Molecule molecule;
 
   // Create a simple cubic unit cell (10 Angstrom sides)
-  UnitCell* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
+  auto* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
   molecule.setUnitCell(cell);
 
   // Add 2 face atoms (each on a face of the unit cell, 1 coord at 0 or 1)
@@ -1928,7 +1928,7 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellInterior)
   Molecule molecule;
 
   // Create a simple cubic unit cell (10 Angstrom sides)
-  UnitCell* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
+  auto* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
   molecule.setUnitCell(cell);
 
   // Add an interior atom (no coords at 0 or 1)
@@ -1945,7 +1945,7 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellMixed)
   Molecule molecule;
 
   // Create a simple cubic unit cell (10 Angstrom sides)
-  UnitCell* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
+  auto* cell = new UnitCell(10.0, 10.0, 10.0, M_PI / 2, M_PI / 2, M_PI / 2);
   molecule.setUnitCell(cell);
 
   // NaCl rock salt structure simulation:
