@@ -35,7 +35,7 @@ bool hasMinimumRemainingBytes(std::istream& in, size_t minBytes)
   if (end == std::streampos(-1))
     return true;
 
-  const size_t remaining = static_cast<size_t>(end - pos);
+  const auto remaining = static_cast<size_t>(end - pos);
   return remaining >= minBytes;
 }
 } // namespace
@@ -132,9 +132,9 @@ bool GaussianCube::read(std::istream& in, Core::Molecule& molecule)
     }
   }
 
-  const size_t d0 = static_cast<size_t>(dim(0));
-  const size_t d1 = static_cast<size_t>(dim(1));
-  const size_t d2 = static_cast<size_t>(dim(2));
+  const auto d0 = static_cast<size_t>(dim(0));
+  const auto d1 = static_cast<size_t>(dim(1));
+  const auto d2 = static_cast<size_t>(dim(2));
   const size_t maxSize = std::numeric_limits<size_t>::max();
   if (d0 == 0 || d1 == 0 || d2 == 0 || d0 > maxSize / d1 ||
       d0 * d1 > maxSize / d2) {
@@ -210,7 +210,7 @@ bool GaussianCube::read(std::istream& in, Core::Molecule& molecule)
   min *= BOHR_TO_ANGSTROM;
   spacing *= BOHR_TO_ANGSTROM;
 
-  const size_t cubeCount = static_cast<size_t>(nCubes);
+  const auto cubeCount = static_cast<size_t>(nCubes);
   if (valueCount > 0 && cubeCount > maxSize / valueCount) {
     appendError("Cube data exceeds supported size.");
     return false;

@@ -51,11 +51,11 @@ int qttextlabeltest(int argc, char* argv[])
   widget.show();
 
   // Create scene
-  GeometryNode* geometry = new GeometryNode;
+  auto* geometry = new GeometryNode;
   widget.renderer().scene().rootNode().addChild(geometry);
 
   // Add a small sphere at the origin for reference:
-  SphereGeometry* spheres = new SphereGeometry;
+  auto* spheres = new SphereGeometry;
   spheres->addSphere(Vector3f::Zero(), Vector3ub(128, 128, 128), 0.1f);
   geometry->addDrawable(spheres);
 
