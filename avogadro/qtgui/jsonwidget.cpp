@@ -327,7 +327,7 @@ void JsonWidget::combinedOptionRow(const QString& label1, const QString& label2,
       m_widgets.insert(label1, widget1);
     }
     if (bothLabels) {
-      QLabel* label = new QLabel(tr2 + ":");
+      auto* label = new QLabel(tr2 + ":");
       hbox->addWidget(label);
     }
     if (option2) {
