@@ -408,7 +408,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     // convert the idx to an atom index
     // and set the label
     std::string idx = mol.data("idx").toString();
-    size_t atomIdx = lexicalCast<size_t>(idx);
+    auto atomIdx = lexicalCast<size_t>(idx);
     mol.setAtomLabel(atomIdx, pka);
   }
 
