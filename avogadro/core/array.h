@@ -362,7 +362,7 @@ template <typename T>
 inline void Array<T>::detachWithCopy()
 {
   if (d && d->ref() != 1) {
-    Container* o = new Container(*d);
+    auto* o = new Container(*d);
     d->deref();
     d = o;
   }

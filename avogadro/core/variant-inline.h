@@ -30,7 +30,7 @@ inline Variant::Variant(const char* v) : m_type(String)
 template <>
 inline Variant::Variant(const MatrixXf& v) : m_type(Matrix)
 {
-  MatrixX* m = new MatrixX(v.rows(), v.cols());
+  auto* m = new MatrixX(v.rows(), v.cols());
   *m = v.cast<double>();
   m_value.matrix = m;
 }
