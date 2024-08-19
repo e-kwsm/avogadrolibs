@@ -83,7 +83,7 @@ Forcefield::Forcefield(QObject* parent_)
   Calc::EnergyManager::registerModel(new OBMMEnergy("GAFF"));
 #endif
 
-  QAction* action = new QAction(this);
+  auto* action = new QAction(this);
   action->setEnabled(true);
   action->setText(tr("Optimize Geometry"));
   action->setShortcut(QKeySequence("Ctrl+Alt+O"));
