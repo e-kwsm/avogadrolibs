@@ -204,7 +204,7 @@ std::optional<std::vector<T>> toIntegerArray(const json& arr)
 float toClampedFloat(const json& value)
 {
   const double d = value.get<double>();
-  constexpr double floatMax =
+  constexpr auto floatMax =
     static_cast<double>(std::numeric_limits<float>::max());
   if (d > floatMax)
     return std::numeric_limits<float>::max();
@@ -506,7 +506,7 @@ std::string sanitizeUtf8(const std::string& s)
 {
   std::string result;
   result.reserve(s.size());
-  const unsigned char* bytes = reinterpret_cast<const unsigned char*>(s.data());
+  const auto* bytes = reinterpret_cast<const unsigned char*>(s.data());
   size_t len = s.size();
 
   for (size_t i = 0; i < len; ++i) {
@@ -1596,7 +1596,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
     // (x * y alone cannot, each factor being below 2^31): three dimensions of
     // up to INT_MAX multiply to ~2^93, and a product taken modulo 2^64 could
     // land on a small number that a short scalars array happens to match.
-    constexpr std::uint64_t maxPoints =
+    constexpr auto maxPoints =
       static_cast<std::uint64_t>(std::numeric_limits<int>::max());
     bool scalarsOk = dimsOk;
     if (dimsOk) {

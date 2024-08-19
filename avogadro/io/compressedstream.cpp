@@ -528,7 +528,7 @@ DecompressingStreamBuf::pos_type DecompressingStreamBuf::seekoff(
   if (target < 0)
     return pos_type(off_type(-1));
 
-  std::uint64_t utarget = static_cast<std::uint64_t>(target);
+  auto utarget = static_cast<std::uint64_t>(target);
   if (utarget > d->decodedSize) {
     while (d->decodedSize < utarget && d->decodeNextChunk()) {}
     if (utarget > d->decodedSize)
@@ -547,8 +547,8 @@ DecompressingStreamBuf::pos_type DecompressingStreamBuf::seekoff(
       d->currentChunkIndex = lastIndex;
     }
   } else {
-    std::size_t index = static_cast<std::size_t>(utarget / kChunk);
-    std::size_t offset = static_cast<std::size_t>(utarget % kChunk);
+    auto index = static_cast<std::size_t>(utarget / kChunk);
+    auto offset = static_cast<std::size_t>(utarget % kChunk);
     char* base = d->chunks[index].get();
     std::size_t len = d->chunkLength(index);
     setg(base, base + offset, base + len);

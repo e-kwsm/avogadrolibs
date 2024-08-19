@@ -400,7 +400,7 @@ std::array<float, 3> Cube::gradientAt(int i, int j, int k) const
   if (m_axisAligned) {
     // Same arithmetic as ever: the difference over the distance in space.
     for (int d = 0; d < 3; ++d) {
-      const float distance = static_cast<float>(run[d] * m_spacing(d));
+      const auto distance = static_cast<float>(run[d] * m_spacing(d));
       ret[d] = (run[d] > 0.0f && distance != 0.0f) ? diff[d] / distance : 0.0f;
     }
     return ret;
