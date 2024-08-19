@@ -302,7 +302,7 @@ bool OrbitalTableModel::setOrbitals(const Core::BasisSet* basis)
 
     // Create alpha orbitals
     for (unsigned int i = 0; i < alphaCount; i++) {
-      Orbital* orb = new Orbital;
+      auto* orb = new Orbital;
       orb->energy = (i < alphaEnergies.size()) ? alphaEnergies[i] : 0.0;
       orb->index = i;
       orb->electronType = Core::BasisSet::Alpha;
@@ -321,7 +321,7 @@ bool OrbitalTableModel::setOrbitals(const Core::BasisSet* basis)
 
     // Create beta orbitals
     for (unsigned int i = 0; i < betaCount; i++) {
-      Orbital* orb = new Orbital;
+      auto* orb = new Orbital;
       orb->energy = (i < betaEnergies.size()) ? betaEnergies[i] : 0.0;
       orb->index = i;
       orb->electronType = Core::BasisSet::Beta;
@@ -351,7 +351,7 @@ bool OrbitalTableModel::setOrbitals(const Core::BasisSet* basis)
     auto moOccupancy = basis->moOccupancy(Core::BasisSet::Paired);
 
     for (unsigned int i = 0; i < basis->molecularOrbitalCount(); i++) {
-      Orbital* orb = new Orbital;
+      auto* orb = new Orbital;
       orb->energy = (i < moEnergies.size()) ? moEnergies[i] : 0.0;
       orb->index = i;
       orb->electronType = Core::BasisSet::Paired;
