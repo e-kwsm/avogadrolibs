@@ -70,7 +70,7 @@ Forcefield::Forcefield(QObject* parent_)
   m_modelUserOptions = settings.value("modelUserOptions").toMap();
   settings.endGroup();
 
-  QAction* action = new QAction(this);
+  auto* action = new QAction(this);
   action->setEnabled(true);
   action->setText(tr("Optimize Geometry"));
   action->setShortcut(QKeySequence("Ctrl+Alt+O"));

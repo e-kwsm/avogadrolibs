@@ -63,7 +63,7 @@ public:
     if (object_info->type != H5O_TYPE_DATASET)
       return 0;
 
-    ListDatasetsVisitor* self = reinterpret_cast<ListDatasetsVisitor*>(op_data);
+    auto* self = reinterpret_cast<ListDatasetsVisitor*>(op_data);
     self->datasets.push_back(std::string(name));
     return 0;
   }
@@ -307,7 +307,7 @@ std::vector<int> Hdf5DataFormat::datasetDimensions(
   }
 
   // Get actual dimensions.
-  hsize_t* hdims = new hsize_t[ndims];
+  auto* hdims = new hsize_t[ndims];
   int checkDims = H5Sget_simple_extent_dims(dataspace_id, hdims, nullptr);
 
   // Copy dimensions if successful.
@@ -338,7 +338,7 @@ bool Hdf5DataFormat::writeRawDataset(const std::string& path,
   }
 
   // Get dimensions of data.
-  hsize_t* hdims = new hsize_t[ndims];
+  auto* hdims = new hsize_t[ndims];
   for (int i = 0; i < ndims; ++i) {
     hdims[i] = static_cast<hsize_t>(dims[i]);
   }
@@ -435,7 +435,7 @@ std::vector<int> Hdf5DataFormat::readRawDataset(
   }
 
   // Get actual dimensions.
-  hsize_t* hdims = new hsize_t[ndims];
+  auto* hdims = new hsize_t[ndims];
   if (H5Sget_simple_extent_dims(dataspace_id, hdims, nullptr) != ndims) {
     delete[] hdims;
     H5Sclose(dataspace_id);
