@@ -186,7 +186,7 @@ bool OrbitalTableModel::setOrbitals(const Core::BasisSet* basis)
                      .arg((leqHOMO) ? tr("HOMO", "Highest Occupied MO") + num
                                     : tr("LUMO", "Lowest Unoccupied MO") + num);
 
-    Orbital* orb = new Orbital;
+    auto* orb = new Orbital;
     // Get the energy from the molecule property list, if available
     if (static_cast<unsigned int>(alphaEnergies.size()) > i)
       orb->energy = alphaEnergies[i].toDouble();
