@@ -190,9 +190,9 @@ void Mesh::smooth(int iterationCount)
   // Build vertex adjacency information from triangles (1-ring)
   std::vector<std::vector<size_t>> adjacencyList(m_vertices.size());
   for (const auto& tri : m_triangles) {
-    size_t i = static_cast<size_t>(tri.x());
-    size_t j = static_cast<size_t>(tri.y());
-    size_t k = static_cast<size_t>(tri.z());
+    auto i = static_cast<size_t>(tri.x());
+    auto j = static_cast<size_t>(tri.y());
+    auto k = static_cast<size_t>(tri.z());
 
     adjacencyList[i].push_back(j);
     adjacencyList[i].push_back(k);
@@ -232,9 +232,9 @@ void Mesh::smooth(int iterationCount)
   m_normals.resize(m_vertices.size(), Vector3f(0.0f, 0.0f, 0.0f));
 
   for (const auto& tri : m_triangles) {
-    size_t i = static_cast<size_t>(tri.x());
-    size_t j = static_cast<size_t>(tri.y());
-    size_t k = static_cast<size_t>(tri.z());
+    auto i = static_cast<size_t>(tri.x());
+    auto j = static_cast<size_t>(tri.y());
+    auto k = static_cast<size_t>(tri.z());
 
     Vector3f a = m_vertices[i];
     Vector3f b = m_vertices[j];

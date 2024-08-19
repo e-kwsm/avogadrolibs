@@ -60,9 +60,7 @@ void MeshTest::assertEquals(const Mesh& m1, const Mesh& m2)
   EXPECT_EQ(colors1.size(), colors2.size());
 
   int i = 0;
-  for (Array<Color3f>::const_iterator it = colors1.begin(),
-                                      itEnd = colors1.end();
-       it != itEnd; ++it) {
+  for (auto it = colors1.begin(), itEnd = colors1.end(); it != itEnd; ++it) {
     EXPECT_EQ(it->red(), colors2[i].red());
     EXPECT_EQ(it->green(), colors2[i].green());
     EXPECT_EQ(it->blue(), colors2[i].blue());

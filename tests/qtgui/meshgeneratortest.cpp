@@ -30,7 +30,7 @@ void fillSphereFunction(Cube& cube)
       for (int k = 0; k < dim.z(); ++k) {
         unsigned int idx = i * dim.y() * dim.z() + j * dim.z() + k;
         Vector3 pos = cube.position(idx);
-        float val = static_cast<float>(pos.norm());
+        auto val = static_cast<float>(pos.norm());
         cube.setValue(i, j, k, val);
       }
 }

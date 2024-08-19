@@ -17,7 +17,7 @@ namespace Avogadro {
 namespace QtPlugins {
 ConstraintsExtension::ConstraintsExtension(QObject* p) : ExtensionPlugin(p)
 {
-  QAction* action = new QAction(this);
+  auto* action = new QAction(this);
   action->setEnabled(true);
   action->setText(tr("Constraints…"));
   connect(action, SIGNAL(triggered()), SLOT(openDialog()));
