@@ -263,7 +263,7 @@ void WideLineGeometry::addDashedLine(const Vector3f& start, const Vector3f& end,
   // lineParam goes from 0 at start to dashCount*2 at end.
   // The fragment shader discards when mod(lineParam, 2.0) > 1.0,
   // producing exactly dashCount dashes with gaps between them.
-  float paramEnd = static_cast<float>(dashCount * 2);
+  auto paramEnd = static_cast<float>(dashCount * 2);
 
   // Use a small epsilon so the very start is not discarded
   m_vertices.emplace_back(start, end, rgba, -halfWidth, 0.01f);

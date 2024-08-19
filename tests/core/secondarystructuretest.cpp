@@ -60,7 +60,7 @@ TEST(SecondaryStructureTest, noBackboneAtoms)
   // Create residues without N or O atoms (no backbone)
   for (int i = 0; i < 5; ++i) {
     std::string name = "UNK";
-    Index num = static_cast<Index>(i);
+    auto num = static_cast<Index>(i);
     char chain = 'A';
     Residue& res = mol.addResidue(name, num, chain);
 
@@ -91,7 +91,7 @@ TEST(SecondaryStructureTest, alphaHelixMinimal)
 
   for (int i = 0; i < numResidues; ++i) {
     std::string resName = "ALA";
-    Index resNum = static_cast<Index>(i);
+    auto resNum = static_cast<Index>(i);
     char chain = 'A';
     Residue& res = mol.addResidue(resName, resNum, chain);
 
