@@ -426,7 +426,7 @@ void DownloaderWidget::unzipPlugin()
                         << "-c"
                         << "conda-forge"
                         << "--file" << requirementsFile << "-n" << condaEnv;
-              QProcess* process = new QProcess(this);
+              auto* process = new QProcess(this);
               process->start(condaPath, arguments);
               process->waitForFinished();
               QString output(process->readAllStandardOutput());
@@ -442,7 +442,7 @@ void DownloaderWidget::unzipPlugin()
                         << "pip"
                         << "install"
                         << "-r" << requirementsFile;
-              QProcess* process = new QProcess(this);
+              auto* process = new QProcess(this);
               QString pythonPath =
                 settings.value("interpreters/python", "python").toString();
               process->start(pythonPath, arguments);
