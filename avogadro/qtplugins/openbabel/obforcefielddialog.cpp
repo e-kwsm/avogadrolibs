@@ -16,7 +16,7 @@
 namespace Avogadro::QtPlugins {
 
 // Order matches the items in the "algorithm" combo box
-enum OptimizationAlgorithm
+enum class OptimizationAlgorithm
 {
   LBFGS = 0,
   ConjugateGradient,
