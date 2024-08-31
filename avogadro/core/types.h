@@ -9,7 +9,7 @@
 namespace Avogadro {
 
 /** Symbolic constants representing various built-in C++ types. */
-enum Type
+enum class Type
 {
   UnknownType = -1,
   CharType,
