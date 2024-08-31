@@ -28,7 +28,7 @@ AtomHybridization AtomUtilities::perceiveHybridization(const Atom& atom)
   const NeighborListType bonds(atom.molecule()->bonds(atom));
   const unsigned int numberOfBonds(countExistingBonds(bonds)); // bond order sum
 
-  AtomHybridization hybridization = SP3; // default to sp3
+  AtomHybridization hybridization = AtomHybridization::SP3; // default to sp3
 
   // TODO: Handle hypervalent species, SO3, SO4, lone pairs, etc.
 
@@ -48,12 +48,12 @@ AtomHybridization AtomUtilities::perceiveHybridization(const Atom& atom)
     }
 
     if (numTripleBonds > 0 || numDoubleBonds > 1)
-      hybridization = SP; // sp
+      hybridization = AtomHybridization::SP; // sp
     else if (numDoubleBonds > 0)
-      hybridization = SP2; // sp2
+      hybridization = AtomHybridization::SP2; // sp2
 
     // special case for nitrogen in an amide
-    if (atom.atomicNumber() == 7 && hybridization == SP3) {
+    if (atom.atomicNumber() == 7 && hybridization == AtomHybridization::SP3) {
       // look through the neighbors for a C=O
       for (auto bond : bonds) {
         Atom a1 = bond.getOtherAtom(atom);
@@ -65,7 +65,7 @@ AtomHybridization AtomUtilities::perceiveHybridization(const Atom& atom)
               continue; // we want a *new* atom, not the nitrogen
 
             if (a2.atomicNumber() == 8 && nbrBond.order() == 2) {
-              hybridization = SP2;
+              hybridization = AtomHybridization::SP2;
               break;
             }
           }
@@ -145,18 +145,18 @@ Vector3 AtomUtilities::generateNewBondVector(
     v2.normalize();
 
     switch (hybridization) {
-      case SP:
-      case SquarePlanar:
-      case TrigonalBipyramidal:
+      case AtomHybridization::SP:
+      case AtomHybridization::SquarePlanar:
+      case AtomHybridization::TrigonalBipyramidal:
         newPos = bond1; // 180 degrees away from the current neighbor
         break;
-      case SP2: // sp2
+      case AtomHybridization::SP2: // sp2
         newPos = bond1 - v2 * tan(DEG_TO_RAD * 120.0);
         break;
-      case Octahedral: // octahedral
+      case AtomHybridization::Octahedral: // octahedral
         newPos = bond1 - v2 * tan(DEG_TO_RAD * 90.0);
         break;
-      case SP3:
+      case AtomHybridization::SP3:
       default:
         newPos = (bond1 - v2 * tan(DEG_TO_RAD * M_TETRAHED));
         break;
@@ -173,11 +173,12 @@ Vector3 AtomUtilities::generateNewBondVector(
     v1.normalize();
 
     switch (hybridization) {
-      case SP: // shouldn't happen, but maybe with metal atoms?
-      case SP2:
+      case AtomHybridization::SP:
+      // shouldn't happen, but maybe with metal atoms?
+      case AtomHybridization::SP2:
         newPos = v1; // point away from the two existing bonds
         break;
-      case SP3:
+      case AtomHybridization::SP3:
       default:
         Vector3 v2 = bond1.cross(bond2); // find the perpendicular
         v2.normalize();
