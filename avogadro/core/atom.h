@@ -12,7 +12,7 @@
 namespace Avogadro {
 namespace Core {
 
-enum AtomHybridization
+enum class AtomHybridization
 {
   PerceivedOctaheadral = -6,
   PerceivedTrigonalBipyramidal = -5,
@@ -29,7 +29,7 @@ enum AtomHybridization
   Octahedral = 6
 };
 
-enum AtomicNumber : unsigned char
+enum class AtomicNumber : unsigned char
 {
   Hydrogen = 1,
   Carbon = 6,
