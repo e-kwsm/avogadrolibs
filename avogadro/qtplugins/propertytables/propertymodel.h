@@ -23,7 +23,7 @@ namespace QtGui {
 class Molecule;
 }
 
-enum PropertyType
+enum class PropertyType
 {
   Other = 0,
   AtomType,
