@@ -37,7 +37,7 @@ using Avogadro::MoleQueue::MoleQueueManager;
 
 namespace Avogadro::QtPlugins {
 
-enum FunctionalOption
+enum class FunctionalOption
 {
   FunctionalBLYP = 0,
   FunctionalBP,
@@ -48,7 +48,7 @@ enum FunctionalOption
   FunctionalCount
 };
 
-enum MethodOption
+enum class MethodOption
 {
   DFT = 0,
   MolecularMechanics,
@@ -58,7 +58,7 @@ enum MethodOption
 };
 
 // MM tab
-enum EWALDTypeOption
+enum class EWALDTypeOption
 {
   EWALD = 0,
   ewaldNONE,
@@ -68,7 +68,7 @@ enum EWALDTypeOption
   EWALDTypeCount
 };
 // QM tab
-enum SCFGuessOption
+enum class SCFGuessOption
 {
   ATOMIC = 0,
   CORE,
@@ -83,7 +83,7 @@ enum SCFGuessOption
   SCFGuessCount
 };
 
-enum OTMinimizerOption
+enum class OTMinimizerOption
 {
   CG = 0,
   BROYDEN,
