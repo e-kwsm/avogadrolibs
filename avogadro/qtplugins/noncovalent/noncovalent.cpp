@@ -83,7 +83,7 @@ NonCovalent::NonCovalent(QObject* p) : ScenePlugin(p)
 
 NonCovalent::~NonCovalent() {}
 
-enum InteractionTypes
+enum class InteractionTypes
 {
   NONE = -1,
   HYDROGEN_BOND = 0,
