@@ -60,13 +60,13 @@ unsigned short SpaceGroups::hallNumber(const std::string& spaceGroup)
 CrystalSystem SpaceGroups::crystalSystem(unsigned short hallNumber)
 {
   if (hallNumber == 1 || hallNumber == 2)
-    return Triclinic;
+    return CrystalSystem::Triclinic;
   if (hallNumber >= 3 && hallNumber <= 107)
-    return Monoclinic;
+    return CrystalSystem::Monoclinic;
   if (hallNumber >= 108 && hallNumber <= 348)
-    return Orthorhombic;
+    return CrystalSystem::Orthorhombic;
   if (hallNumber >= 349 && hallNumber <= 429)
-    return Tetragonal;
+    return CrystalSystem::Tetragonal;
   if (hallNumber >= 430 && hallNumber <= 461) {
     // 14 of these are rhombohedral and the rest are trigonal
     switch (hallNumber) {
@@ -84,17 +84,17 @@ CrystalSystem SpaceGroups::crystalSystem(unsigned short hallNumber)
       case 459:
       case 460:
       case 461:
-        return Rhombohedral;
+        return CrystalSystem::Rhombohedral;
       default:
-        return Trigonal;
+        return CrystalSystem::Trigonal;
     }
   }
   if (hallNumber >= 462 && hallNumber <= 488)
-    return Hexagonal;
+    return CrystalSystem::Hexagonal;
   if (hallNumber >= 489 && hallNumber <= 530)
-    return Cubic;
+    return CrystalSystem::Cubic;
   // hallNumber must be 0 or > 531
-  return None;
+  return CrystalSystem::None;
   // for (unsigned short i = 0; i < hallNumberCount; ++i)
 }
 
