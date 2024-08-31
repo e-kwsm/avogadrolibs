@@ -34,7 +34,7 @@ using Avogadro::MoleQueue::JobObject;
 
 namespace Avogadro::QtPlugins {
 
-enum CalculateOption
+enum class CalculateOption
 {
   CalculateSinglePoint = 0,
   CalculateEquilibriumGeometry,
@@ -44,7 +44,7 @@ enum CalculateOption
   CalculateCount
 };
 
-enum TheoryOption
+enum class TheoryOption
 {
   TheoryAM1 = 0,
   TheoryPM3,
@@ -56,7 +56,7 @@ enum TheoryOption
   TheoryCount
 };
 
-enum BasisOption
+enum class BasisOption
 {
   BasisSTO3G = 0,
   BasisMINI,
@@ -71,7 +71,7 @@ enum BasisOption
   BasisCount
 };
 
-enum StateOption
+enum class StateOption
 {
   StateGas = 0,
   StateWater,
@@ -79,7 +79,7 @@ enum StateOption
   StateCount
 };
 
-enum MultiplicityOption
+enum class MultiplicityOption
 {
   MultiplicitySinglet = 0,
   MultiplicityDoublet,
@@ -88,7 +88,7 @@ enum MultiplicityOption
   MultiplicityCount
 };
 
-enum ChargeOption
+enum class ChargeOption
 {
   ChargeDication = 0,
   ChargeCation,

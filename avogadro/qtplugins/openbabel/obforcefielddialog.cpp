@@ -15,13 +15,13 @@
 
 namespace Avogadro::QtPlugins {
 
-enum OptimizationAlgorithm
+enum class OptimizationAlgorithm
 {
   SteepestDescent = 0,
   ConjugateGradient
 };
 
-enum LineSearchMethod
+enum class LineSearchMethod
 {
   Simple = 0,
   Newton

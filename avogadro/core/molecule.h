@@ -874,7 +874,7 @@ public:
 
 inline AtomHybridization Molecule::hybridization(Index atomId) const
 {
-  AtomHybridization hyb = HybridizationUnknown;
+  AtomHybridization hyb = AtomHybridization::HybridizationUnknown;
   if (atomId < m_hybridizations.size())
     return m_hybridizations[atomId];
 
@@ -895,7 +895,8 @@ inline bool Molecule::setHybridization(Index atomId, AtomHybridization hyb)
 {
   if (atomId < atomCount()) {
     if (atomId >= m_hybridizations.size())
-      m_hybridizations.resize(atomCount(), HybridizationUnknown);
+      m_hybridizations.resize(atomCount(),
+                              AtomHybridization::HybridizationUnknown);
     m_hybridizations[atomId] = hyb;
     return true;
   }
