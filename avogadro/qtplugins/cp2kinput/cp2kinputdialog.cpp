@@ -37,7 +37,7 @@ using Avogadro::MoleQueue::JobObject;
 
 namespace Avogadro::QtPlugins {
 
-enum CalculateOption
+enum class CalculateOption
 {
   CalculateEnergy = 0,
   CalculateEnergyAndForces,
@@ -47,7 +47,7 @@ enum CalculateOption
   CalculateCount
 };
 
-enum FunctionalOption
+enum class FunctionalOption
 {
   FunctionalBLYP = 0,
   FunctionalBP,
@@ -58,7 +58,7 @@ enum FunctionalOption
   FunctionalCount
 };
 
-enum BasisOption
+enum class BasisOption
 {
   BasisSZVGTH = 0,
   BasisDZVGTH,
@@ -69,7 +69,7 @@ enum BasisOption
   BasisCount
 };
 
-enum MethodOption
+enum class MethodOption
 {
   DFT = 0,
   MolecularMechanics,
@@ -79,7 +79,7 @@ enum MethodOption
 };
 
 // MM tab
-enum EWALDTypeOption
+enum class EWALDTypeOption
 {
   EWALD = 0,
   ewaldNONE,
@@ -89,7 +89,7 @@ enum EWALDTypeOption
   EWALDTypeCount
 };
 // QM tab
-enum SCFGuessOption
+enum class SCFGuessOption
 {
   ATOMIC = 0,
   CORE,
@@ -104,7 +104,7 @@ enum SCFGuessOption
   SCFGuessCount
 };
 
-enum OTMinimizerOption
+enum class OTMinimizerOption
 {
   CG = 0,
   BROYDEN,
