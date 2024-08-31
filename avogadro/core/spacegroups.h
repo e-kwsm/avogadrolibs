@@ -14,7 +14,7 @@ namespace Core {
 /**
  * Enumeration of the crystal system.
  */
-enum CrystalSystem
+enum class CrystalSystem
 {
   None,
   Triclinic,
