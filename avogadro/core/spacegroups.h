@@ -21,7 +21,7 @@ class Molecule;
 /**
  * Enumeration of the crystal system.
  */
-enum CrystalSystem
+enum class CrystalSystem
 {
   None,
   Triclinic,

@@ -16,7 +16,7 @@
 namespace Avogadro {
 namespace Rendering {
 
-enum Projection
+enum class Projection
 {
   Perspective,
   Orthographic
