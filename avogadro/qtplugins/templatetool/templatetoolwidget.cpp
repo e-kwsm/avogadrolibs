@@ -27,14 +27,14 @@ const int ELEMENT_SELECTOR_TAG = 255;
 namespace Avogadro {
 namespace QtPlugins {
 
-enum TabType
+enum class TabType
 {
   Elements = 0,
   Ligands = 1,
   FunctionalGroups = 2
 };
 
-enum LigandType
+enum class LigandType
 {
   Monodentate = 0,
   Bidentate = 1,
