@@ -20,7 +20,7 @@ namespace Avogadro::Core {
 /**
  * Enumeration of the SCF type.
  */
-enum ScfType
+enum class ScfType
 {
   Rhf,
   Uhf,
