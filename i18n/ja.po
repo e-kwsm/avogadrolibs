@@ -9827,11 +9827,6 @@ msgstr ""
 #~ msgstr "レイヤー"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "分子を挿入..."
-
-#, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "3D分子を生成中..."
 
@@ -9842,10 +9837,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Edit Unit Cell..."
 #~ msgstr "ユニットセルの編集"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #~ msgid "Fragment..."
 #~ msgstr "フラグメント..."
@@ -9872,10 +9863,6 @@ msgstr ""
 
 #~ msgid "Torsion Properties..."
 #~ msgstr "二面角のプロパティ..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "分子の性質..."
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "サーフェスを作成..."
