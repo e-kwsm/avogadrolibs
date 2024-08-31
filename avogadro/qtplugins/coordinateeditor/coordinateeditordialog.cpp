@@ -62,7 +62,7 @@ enum
 };
 
 // Distance unit indices -- keep in sync with the .ui file.
-enum DistanceUnitIndex
+enum class DistanceUnitIndex
 {
   Angstrom = 0,
   Bohr
