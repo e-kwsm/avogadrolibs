@@ -213,7 +213,7 @@ void HydrogenTools::generateNewHydrogenPositions(
 
   // Get the hybridization
   Core::AtomHybridization hybridization = atom.hybridization();
-  if (hybridization == Core::HybridizationUnknown) {
+  if (hybridization == Core::AtomHybridization::HybridizationUnknown) {
     // Perceive it
     hybridization = Core::AtomUtilities::perceiveHybridization(
       Core::Atom(dynamic_cast<Core::Molecule*>(&atom.molecule()->molecule()),
