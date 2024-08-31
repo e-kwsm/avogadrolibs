@@ -26,7 +26,7 @@ using namespace Eigen;
 
 namespace Avogadro::QtPlugins {
 
-enum QTAIMExtensionIndex
+enum class QTAIMExtensionIndex
 {
   FirstAction = 0,
   SecondAction,
