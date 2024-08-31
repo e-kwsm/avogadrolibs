@@ -12,7 +12,7 @@ namespace Avogadro::Rendering {
  * @brief The RenderPass enum is used to identify different stages in
  * multipass rendering.
  */
-enum RenderPass
+enum class RenderPass
 {
   /**
    * Default value -- no rendering is currently happening.
