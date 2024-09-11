@@ -42,7 +42,7 @@ using Rendering::GeometryNode;
 using Rendering::GroupNode;
 using std::map;
 
-typedef Array<Molecule::BondType> NeighborListType;
+using NeighborListType = Array<Molecule::BondType>;
 
 namespace {
 TextLabel3D* createLabel(const std::string& text, const Vector3f& pos,
