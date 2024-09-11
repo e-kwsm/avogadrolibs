@@ -31,7 +31,7 @@ TEST(AtomTyper, singleAtomTyping)
     Array<double>& typesRef() { return m_types; }
 
   protected:
-    double type(const Atom& atom)
+    double type(const Atom& atom) override
     {
       return Elements::mass(atom.atomicNumber());
     }
