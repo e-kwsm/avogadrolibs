@@ -19,7 +19,7 @@ class vtkTable;
 
 namespace Avogadro::VTK {
 
-typedef std::array<unsigned char, 4> color4ub;
+using color4ub = std::array<unsigned char, 4>;
 
 class QVTKWidget;
 
