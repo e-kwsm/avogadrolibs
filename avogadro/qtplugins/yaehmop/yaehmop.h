@@ -34,15 +34,15 @@ class Yaehmop : public Avogadro::QtGui::ExtensionPlugin
   Q_OBJECT
 public:
   explicit Yaehmop(QObject* parent_ = nullptr);
-  ~Yaehmop();
+  ~Yaehmop() override;
 
-  QString name() const { return tr("Yaehmop"); }
-  QString description() const;
-  QList<QAction*> actions() const;
-  QStringList menuPath(QAction*) const;
+  QString name() const override { return tr("Yaehmop"); }
+  QString description() const override;
+  QList<QAction*> actions() const override;
+  QStringList menuPath(QAction*) const override;
 
 public slots:
-  void setMolecule(QtGui::Molecule* mol);
+  void setMolecule(QtGui::Molecule* mol) override;
 
   void moleculeChanged(unsigned int changes);
 
