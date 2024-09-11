@@ -223,11 +223,11 @@ PUGI_IMPL_NS_BEGIN
 	template <typename T> allocation_function xml_memory_management_function_storage<T>::allocate = default_allocate;
 	template <typename T> deallocation_function xml_memory_management_function_storage<T>::deallocate = default_deallocate;
 
-	typedef xml_memory_management_function_storage<int> xml_memory;
-PUGI_IMPL_NS_END
+        using xml_memory = xml_memory_management_function_storage<int>;
+        PUGI_IMPL_NS_END
 
-// String utilities
-PUGI_IMPL_NS_BEGIN
+        // String utilities
+        PUGI_IMPL_NS_BEGIN
 	// Get string length
 	PUGI_IMPL_FN size_t strlength(const char_t* s)
 	{
@@ -299,18 +299,17 @@ PUGI_IMPL_NS_END
 PUGI_IMPL_NS_BEGIN
 	template <typename T> struct auto_deleter
 	{
-		typedef void (*D)(T*);
+          using D = void (*)(T*);
 
-		T* data;
-		D deleter;
+          T* data;
+          D deleter;
 
-		auto_deleter(T* data_, D deleter_): data(data_), deleter(deleter_)
-		{
-		}
+          auto_deleter(T* data_, D deleter_) : data(data_), deleter(deleter_) {}
 
-		~auto_deleter()
-		{
-			if (data) deleter(data);
+          ~auto_deleter()
+          {
+            if (data)
+              deleter(data);
 		}
 
 		T* release()
@@ -1500,16 +1499,19 @@ PUGI_IMPL_NS_BEGIN
 
 	struct utf8_counter
 	{
-		typedef size_t value_type;
+          using value_type = size_t;
 
-		static value_type low(value_type result, uint32_t ch)
-		{
-			// U+0000..U+007F
-			if (ch < 0x80) return result + 1;
-			// U+0080..U+07FF
-			else if (ch < 0x800) return result + 2;
-			// U+0800..U+FFFF
-			else return result + 3;
+          static value_type low(value_type result, uint32_t ch)
+          {
+            // U+0000..U+007F
+            if (ch < 0x80)
+              return result + 1;
+            // U+0080..U+07FF
+            else if (ch < 0x800)
+              return result + 2;
+            // U+0800..U+FFFF
+            else
+              return result + 3;
 		}
 
 		static value_type high(value_type result, uint32_t)
@@ -1521,31 +1523,28 @@ PUGI_IMPL_NS_BEGIN
 
 	struct utf8_writer
 	{
-		typedef uint8_t* value_type;
+          using value_type = uint8_t*;
 
-		static value_type low(value_type result, uint32_t ch)
-		{
-			// U+0000..U+007F
-			if (ch < 0x80)
-			{
-				*result = static_cast<uint8_t>(ch);
-				return result + 1;
-			}
-			// U+0080..U+07FF
-			else if (ch < 0x800)
-			{
-				result[0] = static_cast<uint8_t>(0xC0 | (ch >> 6));
-				result[1] = static_cast<uint8_t>(0x80 | (ch & 0x3F));
-				return result + 2;
-			}
-			// U+0800..U+FFFF
-			else
-			{
-				result[0] = static_cast<uint8_t>(0xE0 | (ch >> 12));
-				result[1] = static_cast<uint8_t>(0x80 | ((ch >> 6) & 0x3F));
-				result[2] = static_cast<uint8_t>(0x80 | (ch & 0x3F));
-				return result + 3;
-			}
+          static value_type low(value_type result, uint32_t ch)
+          {
+            // U+0000..U+007F
+            if (ch < 0x80) {
+              *result = static_cast<uint8_t>(ch);
+              return result + 1;
+            }
+            // U+0080..U+07FF
+            else if (ch < 0x800) {
+              result[0] = static_cast<uint8_t>(0xC0 | (ch >> 6));
+              result[1] = static_cast<uint8_t>(0x80 | (ch & 0x3F));
+              return result + 2;
+            }
+            // U+0800..U+FFFF
+            else {
+              result[0] = static_cast<uint8_t>(0xE0 | (ch >> 12));
+              result[1] = static_cast<uint8_t>(0x80 | ((ch >> 6) & 0x3F));
+              result[2] = static_cast<uint8_t>(0x80 | (ch & 0x3F));
+              return result + 3;
+            }
 		}
 
 		static value_type high(value_type result, uint32_t ch)
@@ -1566,11 +1565,11 @@ PUGI_IMPL_NS_BEGIN
 
 	struct utf16_counter
 	{
-		typedef size_t value_type;
+          using value_type = size_t;
 
-		static value_type low(value_type result, uint32_t)
-		{
-			return result + 1;
+          static value_type low(value_type result, uint32_t)
+          {
+            return result + 1;
 		}
 
 		static value_type high(value_type result, uint32_t)
@@ -1581,13 +1580,13 @@ PUGI_IMPL_NS_BEGIN
 
 	struct utf16_writer
 	{
-		typedef uint16_t* value_type;
+          using value_type = uint16_t*;
 
-		static value_type low(value_type result, uint32_t ch)
-		{
-			*result = static_cast<uint16_t>(ch);
+          static value_type low(value_type result, uint32_t ch)
+          {
+            *result = static_cast<uint16_t>(ch);
 
-			return result + 1;
+            return result + 1;
 		}
 
 		static value_type high(value_type result, uint32_t ch)
@@ -1609,11 +1608,11 @@ PUGI_IMPL_NS_BEGIN
 
 	struct utf32_counter
 	{
-		typedef size_t value_type;
+          using value_type = size_t;
 
-		static value_type low(value_type result, uint32_t)
-		{
-			return result + 1;
+          static value_type low(value_type result, uint32_t)
+          {
+            return result + 1;
 		}
 
 		static value_type high(value_type result, uint32_t)
@@ -1624,13 +1623,13 @@ PUGI_IMPL_NS_BEGIN
 
 	struct utf32_writer
 	{
-		typedef uint32_t* value_type;
+          using value_type = uint32_t*;
 
-		static value_type low(value_type result, uint32_t ch)
-		{
-			*result = ch;
+          static value_type low(value_type result, uint32_t ch)
+          {
+            *result = ch;
 
-			return result + 1;
+            return result + 1;
 		}
 
 		static value_type high(value_type result, uint32_t ch)
@@ -1650,13 +1649,13 @@ PUGI_IMPL_NS_BEGIN
 
 	struct latin1_writer
 	{
-		typedef uint8_t* value_type;
+          using value_type = uint8_t*;
 
-		static value_type low(value_type result, uint32_t ch)
-		{
-			*result = static_cast<uint8_t>(ch > 255 ? '?' : ch);
+          static value_type low(value_type result, uint32_t ch)
+          {
+            *result = static_cast<uint8_t>(ch > 255 ? '?' : ch);
 
-			return result + 1;
+            return result + 1;
 		}
 
 		static value_type high(value_type result, uint32_t ch)
@@ -1671,167 +1670,177 @@ PUGI_IMPL_NS_BEGIN
 
 	struct utf8_decoder
 	{
-		typedef uint8_t type;
+          using type = uint8_t;
 
-		template <typename Traits> static inline typename Traits::value_type process(const uint8_t* data, size_t size, typename Traits::value_type result, Traits)
-		{
-			const uint8_t utf8_byte_mask = 0x3f;
+          template <typename Traits>
+          static inline typename Traits::value_type process(
+            const uint8_t* data, size_t size,
+            typename Traits::value_type result, Traits)
+          {
+            const uint8_t utf8_byte_mask = 0x3f;
 
-			while (size)
-			{
-				uint8_t lead = *data;
+            while (size) {
+              uint8_t lead = *data;
 
-				// 0xxxxxxx -> U+0000..U+007F
-				if (lead < 0x80)
-				{
-					result = Traits::low(result, lead);
-					data += 1;
-					size -= 1;
+              // 0xxxxxxx -> U+0000..U+007F
+              if (lead < 0x80) {
+                result = Traits::low(result, lead);
+                data += 1;
+                size -= 1;
 
-					// process aligned single-byte (ascii) blocks
-					if ((reinterpret_cast<uintptr_t>(data) & 3) == 0)
-					{
-						// round-trip through void* to silence 'cast increases required alignment of target type' warnings
-						while (size >= 4 && (*static_cast<const uint32_t*>(static_cast<const void*>(data)) & 0x80808080) == 0)
-						{
-							result = Traits::low(result, data[0]);
-							result = Traits::low(result, data[1]);
-							result = Traits::low(result, data[2]);
-							result = Traits::low(result, data[3]);
-							data += 4;
-							size -= 4;
-						}
-					}
-				}
-				// 110xxxxx -> U+0080..U+07FF
-				else if (static_cast<unsigned int>(lead - 0xC0) < 0x20 && size >= 2 && (data[1] & 0xc0) == 0x80)
-				{
-					result = Traits::low(result, ((lead & ~0xC0) << 6) | (data[1] & utf8_byte_mask));
-					data += 2;
-					size -= 2;
-				}
-				// 1110xxxx -> U+0800-U+FFFF
-				else if (static_cast<unsigned int>(lead - 0xE0) < 0x10 && size >= 3 && (data[1] & 0xc0) == 0x80 && (data[2] & 0xc0) == 0x80)
-				{
-					result = Traits::low(result, ((lead & ~0xE0) << 12) | ((data[1] & utf8_byte_mask) << 6) | (data[2] & utf8_byte_mask));
-					data += 3;
-					size -= 3;
-				}
-				// 11110xxx -> U+10000..U+10FFFF
-				else if (static_cast<unsigned int>(lead - 0xF0) < 0x08 && size >= 4 && (data[1] & 0xc0) == 0x80 && (data[2] & 0xc0) == 0x80 && (data[3] & 0xc0) == 0x80)
-				{
-					result = Traits::high(result, ((lead & ~0xF0) << 18) | ((data[1] & utf8_byte_mask) << 12) | ((data[2] & utf8_byte_mask) << 6) | (data[3] & utf8_byte_mask));
-					data += 4;
-					size -= 4;
-				}
-				// 10xxxxxx or 11111xxx -> invalid
-				else
-				{
-					data += 1;
-					size -= 1;
-				}
-			}
+                // process aligned single-byte (ascii) blocks
+                if ((reinterpret_cast<uintptr_t>(data) & 3) == 0) {
+                  // round-trip through void* to silence 'cast increases
+                  // required alignment of target type' warnings
+                  while (size >= 4 && (*static_cast<const uint32_t*>(
+                                         static_cast<const void*>(data)) &
+                                       0x80808080) == 0) {
+                    result = Traits::low(result, data[0]);
+                    result = Traits::low(result, data[1]);
+                    result = Traits::low(result, data[2]);
+                    result = Traits::low(result, data[3]);
+                    data += 4;
+                    size -= 4;
+                  }
+                }
+              }
+              // 110xxxxx -> U+0080..U+07FF
+              else if (static_cast<unsigned int>(lead - 0xC0) < 0x20 &&
+                       size >= 2 && (data[1] & 0xc0) == 0x80) {
+                result = Traits::low(result, ((lead & ~0xC0) << 6) |
+                                               (data[1] & utf8_byte_mask));
+                data += 2;
+                size -= 2;
+              }
+              // 1110xxxx -> U+0800-U+FFFF
+              else if (static_cast<unsigned int>(lead - 0xE0) < 0x10 &&
+                       size >= 3 && (data[1] & 0xc0) == 0x80 &&
+                       (data[2] & 0xc0) == 0x80) {
+                result =
+                  Traits::low(result, ((lead & ~0xE0) << 12) |
+                                        ((data[1] & utf8_byte_mask) << 6) |
+                                        (data[2] & utf8_byte_mask));
+                data += 3;
+                size -= 3;
+              }
+              // 11110xxx -> U+10000..U+10FFFF
+              else if (static_cast<unsigned int>(lead - 0xF0) < 0x08 &&
+                       size >= 4 && (data[1] & 0xc0) == 0x80 &&
+                       (data[2] & 0xc0) == 0x80 && (data[3] & 0xc0) == 0x80) {
+                result =
+                  Traits::high(result, ((lead & ~0xF0) << 18) |
+                                         ((data[1] & utf8_byte_mask) << 12) |
+                                         ((data[2] & utf8_byte_mask) << 6) |
+                                         (data[3] & utf8_byte_mask));
+                data += 4;
+                size -= 4;
+              }
+              // 10xxxxxx or 11111xxx -> invalid
+              else {
+                data += 1;
+                size -= 1;
+              }
+            }
 
-			return result;
+            return result;
 		}
 	};
 
 	template <typename opt_swap> struct utf16_decoder
 	{
-		typedef uint16_t type;
+          using type = uint16_t;
 
-		template <typename Traits> static inline typename Traits::value_type process(const uint16_t* data, size_t size, typename Traits::value_type result, Traits)
-		{
-			while (size)
-			{
-				uint16_t lead = opt_swap::value ? endian_swap(*data) : *data;
+          template <typename Traits>
+          static inline typename Traits::value_type process(
+            const uint16_t* data, size_t size,
+            typename Traits::value_type result, Traits)
+          {
+            while (size) {
+              uint16_t lead = opt_swap::value ? endian_swap(*data) : *data;
 
-				// U+0000..U+D7FF
-				if (lead < 0xD800)
-				{
-					result = Traits::low(result, lead);
-					data += 1;
-					size -= 1;
-				}
-				// U+E000..U+FFFF
-				else if (static_cast<unsigned int>(lead - 0xE000) < 0x2000)
-				{
-					result = Traits::low(result, lead);
-					data += 1;
-					size -= 1;
-				}
-				// surrogate pair lead
-				else if (static_cast<unsigned int>(lead - 0xD800) < 0x400 && size >= 2)
-				{
-					uint16_t next = opt_swap::value ? endian_swap(data[1]) : data[1];
+              // U+0000..U+D7FF
+              if (lead < 0xD800) {
+                result = Traits::low(result, lead);
+                data += 1;
+                size -= 1;
+              }
+              // U+E000..U+FFFF
+              else if (static_cast<unsigned int>(lead - 0xE000) < 0x2000) {
+                result = Traits::low(result, lead);
+                data += 1;
+                size -= 1;
+              }
+              // surrogate pair lead
+              else if (static_cast<unsigned int>(lead - 0xD800) < 0x400 &&
+                       size >= 2) {
+                uint16_t next =
+                  opt_swap::value ? endian_swap(data[1]) : data[1];
 
-					if (static_cast<unsigned int>(next - 0xDC00) < 0x400)
-					{
-						result = Traits::high(result, 0x10000 + ((lead & 0x3ff) << 10) + (next & 0x3ff));
-						data += 2;
-						size -= 2;
-					}
-					else
-					{
-						data += 1;
-						size -= 1;
-					}
-				}
-				else
-				{
-					data += 1;
-					size -= 1;
-				}
-			}
+                if (static_cast<unsigned int>(next - 0xDC00) < 0x400) {
+                  result = Traits::high(
+                    result, 0x10000 + ((lead & 0x3ff) << 10) + (next & 0x3ff));
+                  data += 2;
+                  size -= 2;
+                } else {
+                  data += 1;
+                  size -= 1;
+                }
+              } else {
+                data += 1;
+                size -= 1;
+              }
+            }
 
-			return result;
+            return result;
 		}
 	};
 
 	template <typename opt_swap> struct utf32_decoder
 	{
-		typedef uint32_t type;
+          using type = uint32_t;
 
-		template <typename Traits> static inline typename Traits::value_type process(const uint32_t* data, size_t size, typename Traits::value_type result, Traits)
-		{
-			while (size)
-			{
-				uint32_t lead = opt_swap::value ? endian_swap(*data) : *data;
+          template <typename Traits>
+          static inline typename Traits::value_type process(
+            const uint32_t* data, size_t size,
+            typename Traits::value_type result, Traits)
+          {
+            while (size) {
+              uint32_t lead = opt_swap::value ? endian_swap(*data) : *data;
 
-				// U+0000..U+FFFF
-				if (lead < 0x10000)
-				{
-					result = Traits::low(result, lead);
-					data += 1;
-					size -= 1;
-				}
-				// U+10000..U+10FFFF
-				else
-				{
-					result = Traits::high(result, lead);
-					data += 1;
-					size -= 1;
-				}
-			}
+              // U+0000..U+FFFF
+              if (lead < 0x10000) {
+                result = Traits::low(result, lead);
+                data += 1;
+                size -= 1;
+              }
+              // U+10000..U+10FFFF
+              else {
+                result = Traits::high(result, lead);
+                data += 1;
+                size -= 1;
+              }
+            }
 
-			return result;
+            return result;
 		}
 	};
 
 	struct latin1_decoder
 	{
-		typedef uint8_t type;
+          using type = uint8_t;
 
-		template <typename Traits> static inline typename Traits::value_type process(const uint8_t* data, size_t size, typename Traits::value_type result, Traits)
-		{
-			while (size)
-			{
-				result = Traits::low(result, *data);
-				data += 1;
-				size -= 1;
-			}
+          template <typename Traits>
+          static inline typename Traits::value_type process(
+            const uint8_t* data, size_t size,
+            typename Traits::value_type result, Traits)
+          {
+            while (size) {
+              result = Traits::low(result, *data);
+              data += 1;
+              size -= 1;
+            }
 
-			return result;
+            return result;
 		}
 	};
 
@@ -1839,32 +1848,37 @@ PUGI_IMPL_NS_BEGIN
 
 	template <> struct wchar_selector<2>
 	{
-		typedef uint16_t type;
-		typedef utf16_counter counter;
-		typedef utf16_writer writer;
-		typedef utf16_decoder<opt_false> decoder;
-	};
+          using type = uint16_t;
+          using counter = utf16_counter;
+          using writer = utf16_writer;
+          using decoder = utf16_decoder<opt_false>;
+        };
 
 	template <> struct wchar_selector<4>
 	{
-		typedef uint32_t type;
-		typedef utf32_counter counter;
-		typedef utf32_writer writer;
-		typedef utf32_decoder<opt_false> decoder;
-	};
+          using type = uint32_t;
+          using counter = utf32_counter;
+          using writer = utf32_writer;
+          using decoder = utf32_decoder<opt_false>;
+        };
 
-	typedef wchar_selector<sizeof(wchar_t)>::counter wchar_counter;
-	typedef wchar_selector<sizeof(wchar_t)>::writer wchar_writer;
+        using wchar_counter = wchar_selector<sizeof(wchar_t)>::counter;
+        using wchar_writer = wchar_selector<sizeof(wchar_t)>::writer;
 
-	struct wchar_decoder
+        struct wchar_decoder
 	{
-		typedef wchar_t type;
+          using type = wchar_t;
 
-		template <typename Traits> static inline typename Traits::value_type process(const wchar_t* data, size_t size, typename Traits::value_type result, Traits traits)
-		{
-			typedef wchar_selector<sizeof(wchar_t)>::decoder decoder;
+          template <typename Traits>
+          static inline typename Traits::value_type process(
+            const wchar_t* data, size_t size,
+            typename Traits::value_type result, Traits traits)
+          {
+            using decoder = wchar_selector<sizeof(wchar_t)>::decoder;
 
-			return decoder::process(reinterpret_cast<const typename decoder::type*>(data), size, result, traits);
+            return decoder::process(
+              reinterpret_cast<const typename decoder::type*>(data), size,
+              result, traits);
 		}
 	};
 
@@ -2707,9 +2721,9 @@ PUGI_IMPL_NS_BEGIN
 		}
 	}
 
-	typedef char_t* (*strconv_pcdata_t)(char_t*);
+        using strconv_pcdata_t = char_t* (*)(char_t*);
 
-	template <typename opt_trim, typename opt_eol, typename opt_escape> struct strconv_pcdata_impl
+        template <typename opt_trim, typename opt_eol, typename opt_escape> struct strconv_pcdata_impl
 	{
 		static char_t* parse(char_t* s)
 		{
@@ -2778,9 +2792,9 @@ PUGI_IMPL_NS_BEGIN
 		}
 	}
 
-	typedef char_t* (*strconv_attribute_t)(char_t*, char_t);
+        using strconv_attribute_t = char_t* (*)(char_t*, char_t);
 
-	template <typename opt_escape> struct strconv_attribute_impl
+        template <typename opt_escape> struct strconv_attribute_impl
 	{
 		static char_t* parse_wnorm(char_t* s, char_t end_quote)
 		{
@@ -8722,8 +8736,8 @@ PUGI_IMPL_NS_BEGIN
 	{
 	#if defined(__STDC_IEC_559__) || ((FLT_RADIX - 0 == 2) && (FLT_MAX_EXP - 0 == 128) && (FLT_MANT_DIG - 0 == 24))
 		PUGI_IMPL_STATIC_ASSERT(sizeof(float) == sizeof(uint32_t));
-		typedef uint32_t UI; // BCC5 workaround
-		union { float f; UI i; } u;
+                using UI = uint32_t; // BCC5 workaround
+                union { float f; UI i; } u;
 		u.i = 0x7fc00000;
 		return double(u.f);
 	#else
