@@ -17,8 +17,8 @@
 
 #include <string>
 
-typedef Avogadro::QtOpenGL::QtTextRenderStrategy Strategy;
-typedef Avogadro::Rendering::TextRenderStrategy Interface;
+using Strategy = Avogadro::QtOpenGL::QtTextRenderStrategy;
+using Interface = Avogadro::Rendering::TextRenderStrategy;
 using Avogadro::Vector2i;
 using Avogadro::Rendering::TextProperties;
 
