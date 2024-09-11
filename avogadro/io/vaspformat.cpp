@@ -347,7 +347,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
   Vector3 ax1, ax2, ax3;
   bool ax1Set = false, ax2Set = false, ax3Set = false;
 
-  typedef map<string, unsigned char> AtomTypeMap;
+  using AtomTypeMap = map<string, unsigned char>;
   AtomTypeMap atomTypes;
   unsigned char customElementCounter = CustomElementMin;
 

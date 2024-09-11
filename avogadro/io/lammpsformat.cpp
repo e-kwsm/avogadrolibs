@@ -124,7 +124,7 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
   }
 
-  typedef map<string, unsigned char> AtomTypeMap;
+  using AtomTypeMap = map<string, unsigned char>;
   AtomTypeMap atomTypes;
   unsigned char customElementCounter = CustomElementMin;
 
