@@ -382,7 +382,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
   struct_unpack(buff.data(), fmt, &formatint[5]);
 
-  typedef map<string, unsigned char> AtomTypeMap;
+  using AtomTypeMap = map<string, unsigned char>;
   AtomTypeMap atomTypes;
   unsigned char customElementCounter = CustomElementMin;
 
