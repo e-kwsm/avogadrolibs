@@ -3451,9 +3451,8 @@ msgid "Atom Label:"
 msgstr "Etiqueta do Grupo:"
 
 #: qtplugins/label/label.cpp:191 qtplugins/propertytables/propertymodel.cpp:454
-#, fuzzy
 msgid "ID"
-msgstr "MIDI"
+msgstr ""
 
 #: qtplugins/label/label.cpp:195
 #: qtplugins/plugindownloader/downloaderwidget.cpp:63

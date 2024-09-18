@@ -11115,10 +11115,6 @@ msgstr ""
 #~ msgid "KS-DFT"
 #~ msgstr "KS-DFT"
 
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
-
->>>>>>> e3a378321f8b (i18n/bs.po)
 #~ msgid "Pople-style"
 #~ msgstr "Τεχνοτροπία Pople"
 

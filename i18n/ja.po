@@ -11101,9 +11101,6 @@ msgstr ""
 #~ msgid "Diffuse functions"
 #~ msgstr "Diffuse 関数"
 
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G*"
-
 #~ msgid "Direct"
 #~ msgstr "直接計算"
 
@@ -11615,20 +11612,11 @@ msgstr ""
 #~ msgid "NWChem Input"
 #~ msgstr "NWChem インプット"
 
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP5"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem インプット"
 
 #~ msgid "TeraChem Input"
 #~ msgstr "TeraChem インプット"
-
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP5"
 
 #~ msgid "Unrestricted"
 #~ msgstr "非制限"
