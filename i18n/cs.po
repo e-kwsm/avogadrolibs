@@ -4342,10 +4342,8 @@ msgid "PLY (*.ply);;Text file (*.txt)"
 msgstr ""
 
 #: qtplugins/ply/ply.h:25
-#, fuzzy
-#| msgid "B2PLYP"
 msgid "PLY"
-msgstr "B2PLYP"
+msgstr ""
 
 #: qtplugins/ply/ply.h:29
 msgid "Render the scene using PLY."
@@ -11685,9 +11683,6 @@ msgstr ""
 
 #~ msgid "MOLPRO Input"
 #~ msgstr "Vstup MOLPRO"
-
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31G(d)"
 
 #~ msgid "Molpro Version:"
 #~ msgstr "Verze Molpro:"
