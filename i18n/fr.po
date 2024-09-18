@@ -11137,9 +11137,6 @@ msgstr ""
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Corrélations consistantes de Dunning"
 
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ \tDeveloper note:"
-
 #~ msgid "Core correlating functions"
 #~ msgstr "Fonctions de corrélation de cœur"
 

@@ -10812,9 +10812,6 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Lese"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC Basisset"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "S-Hülle auf schweren Atomen diffusieren"
 
