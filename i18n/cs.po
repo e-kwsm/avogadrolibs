@@ -12044,9 +12044,6 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "Vstup MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31G(d)"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Verze Molpro:"
 
