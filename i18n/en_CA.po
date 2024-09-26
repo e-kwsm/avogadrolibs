@@ -8433,24 +8433,6 @@ msgstr ""
 #~ msgid "Line Size:"
 #~ msgstr "Line width:"
 
-#~ msgid "Optimize"
-#~ msgstr "Optimize"
-
-#~ msgid "In."
-#~ msgstr "In."
-
-#~ msgid "El."
-#~ msgstr "El."
-
-#~ msgid "El.&No."
-#~ msgstr "El.&No."
-
-#~ msgid ", "
-#~ msgstr ", "
-
-#~ msgid "ABPS Input (*.in)"
-#~ msgstr "ABPS Input (*.in)"
-
 #~ msgid ""
 #~ "Select the python interpreter used to run input generator scripts.\n"
 #~ "Avogadro must be restarted for any changes to take effect."
@@ -8458,30 +8440,6 @@ msgstr ""
 #~ "Select the Python interpreter used to run input generator scripts.\n"
 #~ "Avogadro must be restarted for any changes to take effect."
 
-#~ msgid "Set Python Path…"
-#~ msgstr "Set Python Path…"
-
-#~ msgid "Fragment…"
-#~ msgstr "Fragment…"
-
-#~ msgid "Functional Groups"
-#~ msgstr "Functional Groups"
-
-#~ msgid "Help..."
-#~ msgstr "Help..."
-
-#~ msgid "Submit Calculation..."
-#~ msgstr "Submit Calculation..."
-
-#~ msgid "Save File..."
-#~ msgstr "Save File..."
-
-#~ msgid "Download Plugins..."
-#~ msgstr "Download Plugins..."
-
-#~ msgid "Record Movie..."
-#~ msgstr "Record Movie..."
-
 #~ msgid ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
@@ -8489,18 +8447,9 @@ msgstr ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
 
-#~ msgid "Other..."
-#~ msgstr "Other..."
-
-#~ msgid "Connection failed"
-#~ msgstr "Connection failed"
-
 #, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Filename:"
-
-#~ msgid "Energy (eV)"
-#~ msgstr "Energy (eV)"
 
 #, fuzzy
 #~ msgid "YAeHMOP Band Structure"
@@ -8513,12 +8462,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Navigate Forward"
 #~ msgstr "Navigate"
-
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel"
 
 #, fuzzy
 #~ msgid "Element & Ordinal"
@@ -8547,55 +8490,18 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS-UK..."
 
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Crystal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Add Hydrogens for pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Atom Properties..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Bond Properties..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Angle Properties..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Torsion Properties..."
 
 #, fuzzy
 #~ msgid "Residue Properties..."
 #~ msgstr "Molecule Properties..."
 
-#~ msgid "Create Surfaces..."
-#~ msgstr "Create Surfaces..."
-
 #, fuzzy
 #~ msgid "Symmetry..."
 #~ msgstr "Symmetry"
 
-#~ msgid "Insert Fragment..."
-#~ msgstr "Insert Fragment..."
-
-#~ msgid "Theory:"
-#~ msgstr "Theory:"
-
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
 #~ msgstr "Distance (1->2): %L1 %2"
-
-#~ msgid "Rotatable"
-#~ msgstr "Rotatable"
 
 #~ msgctxt "in Angstrom"
 #~ msgid ""
@@ -8614,35 +8520,12 @@ msgstr ""
 #~ "Angle %2"
 
 #~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
-#~ msgid "Angle"
-#~ msgstr "Angle"
-
-#~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
 #~ msgstr ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
-
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energy (kJ/mol)"
-
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
 
 #, fuzzy
 #~ msgid "Input Generators"
