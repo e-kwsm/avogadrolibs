@@ -10601,9 +10601,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Вредности раздвојене зарезом"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Увоз спектра"
 
@@ -10678,9 +10675,6 @@ msgstr ""
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Прикажите податке спектра из квантних хемијских прорачуна"
 
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Вибрациона анализа"
 
@@ -10751,9 +10745,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Израчунавам МО %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr "Површине електростатичког потенцијала још увек нису подржане."
@@ -11105,22 +11096,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Двострани угао: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Растојање:"
 
@@ -11242,15 +11217,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Облик"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Понављање"
 
@@ -11304,15 +11270,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Измени словни лик"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Помак натписа:"
@@ -11371,9 +11328,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Оживотворена трајекторија"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Понављање"
@@ -11389,9 +11343,6 @@ msgstr ""
 
 #~ msgid "Fractional"
 #~ msgstr "Разломачки"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYZ, само координате"
@@ -11520,15 +11471,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Вектор превођења:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "&Векторске јединице:"
 
@@ -11562,18 +11504,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "Подразумевани приказ"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Милеров показатељ"
 
@@ -11594,9 +11524,6 @@ msgstr ""
 
 #~ msgid "Algorithm"
 #~ msgstr "Алгоритам"
-
-#~ msgid "10e-"
-#~ msgstr "10e-"
 
 #~ msgid "Alanine"
 #~ msgstr "Аланин"
@@ -11732,18 +11659,6 @@ msgstr ""
 #~ msgid "C Terminus:"
 #~ msgstr "C свршетак:"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 # #-#-#-#-#  dia.po (dia)  #-#-#-#-#
 #  Translators: Menu item Verb/Support/Secure
 #~ msgid "Structure:"
@@ -11773,12 +11688,6 @@ msgstr ""
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Број ланца за нови пептид"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Број остатака:"
 
@@ -11800,17 +11709,8 @@ msgstr ""
 #~ msgid "Frequency"
 #~ msgstr "Учесталост"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
 #~ msgid "DFT"
 #~ msgstr "ДФТ"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Format"
 #~ msgstr "Запис"
@@ -11830,32 +11730,14 @@ msgstr ""
 #~ msgid "Control"
 #~ msgstr "Управљање"
 
-#~ msgid "SCF"
-#~ msgstr "SCF"
-
-#~ msgid "RijCosX"
-#~ msgstr "RijCosX"
-
 #~ msgid "Relativistic"
 #~ msgstr "Релативистички"
-
-#~ msgid "ZORA"
-#~ msgstr "ZORA"
-
-#~ msgid "IORA"
-#~ msgstr "IORA"
-
-#~ msgid "DKH"
-#~ msgstr "DKH"
 
 #~ msgid "Order"
 #~ msgstr "Поредак"
 
 #~ msgid "Run type"
 #~ msgstr "Врста покретања"
-
-#~ msgid "MOs"
-#~ msgstr "MOs"
 
 #~ msgid "Basis Sets"
 #~ msgstr "Подешавања основе"
@@ -11885,9 +11767,6 @@ msgstr ""
 #~ msgid "Accuracy"
 #~ msgstr "Тачност"
 
-#~ msgid "KDIIS"
-#~ msgstr "KDIIS"
-
 #~ msgid "Levelshift "
 #~ msgstr "Помак нивоа "
 
@@ -11896,9 +11775,6 @@ msgstr ""
 
 #~ msgid "2nd Order"
 #~ msgstr "2° реда"
-
-#~ msgid "SOSCF"
-#~ msgstr "SOSCF"
 
 #~ msgid "NRSCF"
 #~ msgstr "НРСЦФ"
@@ -11975,9 +11851,6 @@ msgstr ""
 #~ msgid "Abinit Input"
 #~ msgstr "Абинитов улаз"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "Декартов (Ангстром)"
 
@@ -11987,17 +11860,11 @@ msgstr ""
 #~ msgid "Plane Wave cutoff (Ha):"
 #~ msgstr "Одсецање таласа равни (Ha):"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
 #~ msgid "Tolerance on forces(Ha/bohr):"
 #~ msgstr "Толеранција на силама(Ha/bohr):"
 
 #~ msgid "Max lattice expansion:"
 #~ msgstr "Највећа раширеност решетке:"
-
-#~ msgid "1.05"
-#~ msgstr "1.05"
 
 #~ msgid "k-point shift:"
 #~ msgstr "помак к-тачке:"
@@ -12013,9 +11880,6 @@ msgstr ""
 
 #~ msgid "Double grid PW cutoff (Ha):"
 #~ msgstr "ПВ одсецање двоструке мреже (Ha):"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Occupation scheme:"
 #~ msgstr "Шема заузећа:"
@@ -12050,9 +11914,6 @@ msgstr ""
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Ширина расплињавања (Ha):"
 
-#~ msgid "0.01"
-#~ msgstr "0.01"
-
 #~ msgid "0 - no moving ions "
 #~ msgstr "0 — без покретних јона "
 
@@ -12068,14 +11929,8 @@ msgstr ""
 #~ msgid "# Geometrical time steps:"
 #~ msgstr "Број корака геометријског времена"
 
-#~ msgid "1.e-10"
-#~ msgstr "1.e-10"
-
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "Ублажавање кинетичке енергије (Ha):"
-
-#~ msgid "0.5"
-#~ msgstr "0.5"
 
 #~ msgid "Compute..."
 #~ msgstr "Израчунај..."
@@ -12093,32 +11948,8 @@ msgstr ""
 #~ "Додајте оно што уписујете у насловном реду улазне датотеке зарад ваше\n"
 #~ "личне обавештености."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
 #~ msgid "Basis Set:"
 #~ msgstr "Подешавања основе:"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
 
 #~ msgid "Pople-style"
 #~ msgstr "Поплов стил"
@@ -12128,45 +11959,6 @@ msgstr ""
 
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Одржљивост Данинговог међуодноса"
-
-#~ msgid "aug-cc-pVDZ"
-#~ msgstr "aug-cc-pVDZ"
-
-#~ msgid "aug-cc-pVTZ"
-#~ msgstr "aug-cc-pVTZ"
-
-#~ msgid "aug-cc-pVQZ"
-#~ msgstr "aug-cc-pVQZ"
-
-#~ msgid "aug-cc-pV5Z"
-#~ msgstr "aug-cc-pV5Z"
-
-#~ msgid "aug-cc-pV6Z"
-#~ msgstr "aug-cc-pV6Z"
-
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ"
-
-#~ msgid "cc-pCVTZ"
-#~ msgstr "cc-pCVTZ"
-
-#~ msgid "cc-pCVQZ"
-#~ msgstr "cc-pCVQZ"
-
-#~ msgid "cc-pCV5Z"
-#~ msgstr "cc-pCV5Z"
-
-#~ msgid "cc-pwCVDZ"
-#~ msgstr "cc-pwCVDZ"
-
-#~ msgid "cc-pwCVTZ"
-#~ msgstr "cc-pwCVTZ"
-
-#~ msgid "cc-pwCVQZ"
-#~ msgstr "cc-pwCVQZ"
-
-#~ msgid "cc-pwCV5Z"
-#~ msgstr "cc-pwCV5Z"
 
 #~ msgid "Core correlating functions"
 #~ msgstr "Функције међуодноса језгра"
