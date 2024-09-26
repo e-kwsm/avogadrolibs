@@ -8462,10 +8462,6 @@ msgstr ""
 #~ msgstr "能量 (eV)"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "結構"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "導覽"
 

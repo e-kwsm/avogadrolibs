@@ -9004,10 +9004,6 @@ msgstr ""
 #~ msgid "Energy (eV)"
 #~ msgstr "Енергија (eV)"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Učitaj strukturu datoteke"
-
 #~ msgid "Server settings"
 #~ msgstr "Podešavanja servera"
 

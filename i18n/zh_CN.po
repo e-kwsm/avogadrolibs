@@ -8454,10 +8454,6 @@ msgstr ""
 #~ msgstr "能量"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "加载结构文件"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "导航"
 
