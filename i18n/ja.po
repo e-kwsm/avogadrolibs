@@ -9564,21 +9564,6 @@ msgstr ""
 #~ "Gaussianは適切に実行しませんでした。おそらく、適切にインストールされていま"
 #~ "せん。"
 
-#~ msgid "&Dalton..."
-#~ msgstr "Dalton(&D)..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "Gaussian(&G)..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "MOLPRO(&M)..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "NSChem(&N)..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "Q-Chem*&Q)..."
-
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "LAMMPSインプットジェネレータからの警告"
 
