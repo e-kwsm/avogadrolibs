@@ -8559,10 +8559,6 @@ msgstr "Email anda"
 #~ msgid "Other..."
 #~ msgstr "Lainnya..."
 
-#, qt-format
-#~ msgid "clientServer/%1:%2/lastOpenDir"
-#~ msgstr "clientServer/%1:%2/lastOpenDir"
-
 #, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Nama berkas:"
@@ -8587,9 +8583,6 @@ msgstr "Email anda"
 
 #~ msgid "Cancel"
 #~ msgstr "Batalkan"
-
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
 
 #~ msgid "API Key:"
 #~ msgstr "Kunci API:"
@@ -8635,9 +8628,6 @@ msgstr "Email anda"
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "Tidak ada atur molekul"
 
-#~ msgid "Z Å)"
-#~ msgstr "Z Å)"
-
 #, qt-format
 #~ msgid "%1: File exists and is not writable."
 #~ msgstr "%1: File ada dan tidak bisa ditulis."
@@ -8649,9 +8639,6 @@ msgstr "Email anda"
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Kristal"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8679,9 +8666,6 @@ msgstr "Email anda"
 #, fuzzy
 #~ msgid "Symmetry..."
 #~ msgstr "Simetri"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Sisipkan Fragmen..."
@@ -8831,15 +8815,6 @@ msgstr "Email anda"
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Sorot fitur tertentu yang sesuai dengan pola SMARTS"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoktium"
 
@@ -8921,9 +8896,6 @@ msgstr "Email anda"
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Berkas Trayektori Terbuka"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Menambah ekstensi .avi"
@@ -9064,10 +9036,6 @@ msgstr "Email anda"
 #~ msgstr "Ortorombik"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Hexagonal"
 #~ msgstr "Heksagonal"
 
@@ -9116,17 +9084,11 @@ msgstr "Email anda"
 #~ msgid "&Bohr"
 #~ msgstr "Bohr"
 
-#~ msgid "&Nanometer"
-#~ msgstr "&Nanometer"
-
 #~ msgid "&Picometer"
 #~ msgstr "&Pikometer"
 
 #~ msgid "&Degree"
 #~ msgstr "&Derajat"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Display &cartesian coordinates"
 #~ msgstr "Tampilkan koordinat kartesian"
@@ -9307,9 +9269,6 @@ msgstr "Email anda"
 #~ msgid "Common vector image formats"
 #~ msgstr "Format gambar vektor yang umum"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Ekspor Vector Graphics"
 
@@ -9318,9 +9277,6 @@ msgstr "Email anda"
 
 #~ msgid "H to Methyl"
 #~ msgstr "H ke Metil"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Transformasi hidrogen ke grup metil"
@@ -9331,17 +9287,11 @@ msgstr "Email anda"
 #~ msgid "Insert DNA/RNA chains"
 #~ msgstr "Masukkan rantai DNA/RNA"
 
-#~ msgid "Peptide..."
-#~ msgstr "Peptide..."
-
 #~ msgid "Insert oligopeptide sequences"
 #~ msgstr "Sisipkan urutan oligopeptide"
 
 #~ msgid "Invert Chirality"
 #~ msgstr "Inverskan Chirality"
-
-#~ msgid "InvertChiral"
-#~ msgstr "InvertChiral"
 
 #~ msgid "Invert chiral centers"
 #~ msgstr "Balik sumbu chiral"
@@ -9367,9 +9317,6 @@ msgstr "Email anda"
 
 #~ msgid "PDB entry to download."
 #~ msgstr "Entri PDB untuk muaturun."
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL molekul untuk muaturun."
@@ -9397,9 +9344,6 @@ msgstr "Email anda"
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Berkas gambar (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Nama berkas yang diberikan tidak sahih."
@@ -9445,9 +9389,6 @@ msgstr "Email anda"
 
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal Python"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Terminal interaktif untuk skrip python"
@@ -9522,18 +9463,6 @@ msgstr "Email anda"
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Konversi Format SMILES Tidak Tersedia!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Membuat berkas masukan untuk program kimia kuantum GAMESS"
@@ -9620,21 +9549,6 @@ msgstr "Email anda"
 
 #~ msgid "&Abinit..."
 #~ msgstr "Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Peringatan Pembuat Berkas Masukan Molpro"
@@ -9812,21 +9726,6 @@ msgstr "Email anda"
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Pengaturak Spektra &Inframerah"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
-#~ msgid "&NMR Spectra Settings"
-#~ msgstr "Pengaturan Spektra &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
-
 #~ msgid "&UV Settings"
 #~ msgstr "Pengaturan &UV"
 
@@ -9872,18 +9771,11 @@ msgstr "Email anda"
 #~ msgid "Comma Separated Values"
 #~ msgstr "Angka Dispisahkan Koma"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Impor Spektra"
 
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Ekstensi tidak dikenal: %1"
-
-#~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
-#~ msgid "PWscf IR data (*.out)"
-#~ msgstr "PWscf IR data (*.out)"
 
 #~ msgctxt "Do not remove 'IR' or '(control)' -- needed for parsing later"
 #~ msgid "Turbomole IR data (control)"
@@ -9900,36 +9792,11 @@ msgstr "Email anda"
 #~ msgid "Data Format"
 #~ msgstr "Format Data"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Memuat Data Spektral"
 
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Berkas Turbomole CD tidak diformat dengan benar  : %1"
-
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Simpan Gambar Spektral"
@@ -9945,9 +9812,6 @@ msgstr "Email anda"
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Memvisualisasikan data spektral dari perhitungan kimia kuantum"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Analisis Getaran"
