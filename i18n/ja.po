@@ -9860,12 +9860,6 @@ msgstr ""
 #~ msgid "Windows Bitmap"
 #~ msgstr "ウィンドウズビットマップ"
 
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap (PPM)"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap (XBM)"
-
 #~ msgid "X11 Pixmap"
 #~ msgstr "X11 Pixmap (XPM)"
 

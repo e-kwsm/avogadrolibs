@@ -8733,15 +8733,6 @@ msgstr ""
 #~ msgid "Format:"
 #~ msgstr "Format :"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "bmp"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "ppm"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "xbm"
-
 #~ msgid "X11 Pixmap"
 #~ msgstr "xpm"
 
