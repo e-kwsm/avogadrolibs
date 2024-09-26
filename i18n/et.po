@@ -8338,80 +8338,38 @@ msgstr ""
 #~ msgid "Arginine"
 #~ msgstr "Arginiin"
 
-#~ msgid "Arg"
-#~ msgstr "Arg"
-
 #~ msgid "Asparagine"
 #~ msgstr "Asparagiin"
-
-#~ msgid "Asn"
-#~ msgstr "Asn"
 
 #~ msgid "Aspartic acid"
 #~ msgstr "Aspartiinhape"
 
-#~ msgid "Asp"
-#~ msgstr "Asp"
-
 #~ msgid "Cysteine"
 #~ msgstr "Tsüsteiin"
-
-#~ msgid "Cys"
-#~ msgstr "Cys"
 
 #~ msgid "Glutamic acid"
 #~ msgstr "Glutamiinhape"
 
-#~ msgid "Glu"
-#~ msgstr "Glu"
-
 #~ msgid "Glutamine"
 #~ msgstr "Glutamiin"
-
-#~ msgid "Gln"
-#~ msgstr "Gln"
 
 #~ msgid "Glycine"
 #~ msgstr "Glütsiin"
 
-#~ msgid "Gly"
-#~ msgstr "Gly"
-
 #~ msgid "Histidine"
 #~ msgstr "Histidiin"
-
-#~ msgid "His"
-#~ msgstr "His"
 
 #~ msgid "Isoleucine"
 #~ msgstr "Isoleutsiin"
 
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
-
 #~ msgid "Tryptophan"
 #~ msgstr "Trüptofaan"
-
-#~ msgid "Trp"
-#~ msgstr "Trp"
 
 #~ msgid "Threonine"
 #~ msgstr "Treoniin"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Seriin"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Proliin"
@@ -8419,41 +8377,14 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenüülalaniin"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
-#~ msgid "Met"
-#~ msgstr "Met"
-
 #~ msgid "Lysine"
 #~ msgstr "Lüsiin"
-
-#~ msgid "Lys"
-#~ msgstr "Lys"
 
 #~ msgid "Leucine"
 #~ msgstr "Leutsiin"
 
-#~ msgid "Leu"
-#~ msgstr "Leu"
-
 #~ msgid "Stereochemistry:"
 #~ msgstr "Stereokeemia:"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Straight Chain"
 #~ msgstr "Sirge agel"
@@ -8464,35 +8395,11 @@ msgstr ""
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Uue peptiidi ahelanumber"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Jääkide arv:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipoolmoment (D):"
 
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "toll"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
