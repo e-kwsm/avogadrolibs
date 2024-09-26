@@ -10625,236 +10625,20 @@ msgstr "Email anda"
 #~ msgid "Parallel"
 #~ msgstr "Paralel"
 
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
-
 #~ msgid "Grid Specification"
 #~ msgstr "Spesifikasi Grid"
 
 #~ msgid "Partitioning Scheme:"
 #~ msgstr "Skema Partisi:"
 
-#~ msgid "Becke"
-#~ msgstr "Becke"
-
 #~ msgid "Becke (original)"
 #~ msgstr "Becke (asli)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "Kualitas Grid:"
 
 #~ msgid "coarse"
 #~ msgstr "kasar"
-
-#~ msgid "normal"
-#~ msgstr "normal"
 
 #~ msgid "fine"
 #~ msgstr "halus"
@@ -10864,12 +10648,6 @@ msgstr "Email anda"
 
 #~ msgid "Radial Scheme:"
 #~ msgstr "Skema Radial:"
-
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
 
 #~ msgid "Show all functionals"
 #~ msgstr "Tampilkan semua fungsional"
@@ -10886,44 +10664,11 @@ msgstr "Email anda"
 #~ msgid "No. excitations:"
 #~ msgstr "No. eksitasi:"
 
-#~ msgid "EFP Matches"
-#~ msgstr "EFP Matches"
-
 #~ msgid "Group Label:"
 #~ msgstr "Label Grup:"
 
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "Pengaturan Lanjut"
-
-#~ msgid "Hessian"
-#~ msgstr "Hessian"
 
 #~ msgid "Stat Point"
 #~ msgstr "Poin Stat"
@@ -10943,41 +10688,14 @@ msgstr "Email anda"
 #~ msgid "Read"
 #~ msgstr "Baca"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Menghamburkan S-Shell pada Atom"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Hamburkan L-Shell pada Atom Berat"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Valensi Dua Zeta"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "Binning/Curtiss DZ"
-#~ msgstr "Binning/Curtiss DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Valensi Tiga Zeta"
@@ -10988,26 +10706,11 @@ msgstr "Email anda"
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Valensi Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Tipe ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Bawaan"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Fungsi Polarisasi Atom Berat:"
@@ -11021,26 +10724,11 @@ msgstr "Email anda"
 #~ msgid "Max SCF Iterations:"
 #~ msgstr "Iterasi SCF Max:"
 
-#~ msgid "Gradient"
-#~ msgstr "Gradient"
-
 #~ msgid "Trudge"
 #~ msgstr "Tertatih"
 
 #~ msgid "Saddle Point"
 #~ msgstr "Titik Duduk"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
-#~ msgid "Gradient Extremal"
-#~ msgstr "Gradient Extremal"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "Radiasi Transisi mom."
@@ -11051,14 +10739,8 @@ msgstr "Email anda"
 #~ msgid "Finite Electric Field"
 #~ msgstr "Bidang Elektrik Terhingga"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Optimisasi global"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "Optimisasi FMO"
