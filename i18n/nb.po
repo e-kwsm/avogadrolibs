@@ -8781,10 +8781,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Ingenting"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgid "Connect"
 #~ msgstr "Koble til"
 
@@ -8882,9 +8878,6 @@ msgstr ""
 #~ msgid "Axis 3:"
 #~ msgstr "Akse 3:"
 
-#~ msgid "Norm"
-#~ msgstr "Norm"
-
 #~ msgid "Bond Radius:"
 #~ msgstr "Bindingsradius:"
 
@@ -8897,9 +8890,6 @@ msgstr ""
 #~ msgid "Bond number"
 #~ msgstr "Bindingsnummer"
 
-#~ msgid "Radius:"
-#~ msgstr "Radius:"
-
 #~ msgid "Positive"
 #~ msgstr "Positiv"
 
@@ -8908,12 +8898,6 @@ msgstr ""
 
 #~ msgid "Show Atoms"
 #~ msgstr "Vis atomer"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "Number of atoms:"
 #~ msgstr "Antall atomer:"
@@ -8948,14 +8932,8 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritme"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arginin"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Cysteine"
 #~ msgstr "Cystein"
@@ -8966,14 +8944,8 @@ msgstr ""
 #~ msgid "Glycine"
 #~ msgstr "Glycin"
 
-#~ msgid "Gly"
-#~ msgstr "Gly"
-
 #~ msgid "Histidine"
 #~ msgstr "Histidin"
-
-#~ msgid "His"
-#~ msgstr "His"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Tryptofan"
@@ -8984,20 +8956,11 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenylalanin"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Metionin"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Leucin"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Path:"
 #~ msgstr "Sti:"
@@ -9007,9 +8970,6 @@ msgstr ""
 
 #~ msgid "Property:"
 #~ msgstr "Egenskap:"
-
-#~ msgid "System"
-#~ msgstr "System"
 
 #~ msgid "Misc"
 #~ msgstr "Diverse"
@@ -9052,9 +9012,6 @@ msgstr ""
 
 #~ msgid "Rename..."
 #~ msgstr "Endre navn …"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "Relative"
 #~ msgstr "Relativ"
