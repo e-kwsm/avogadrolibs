@@ -8448,10 +8448,6 @@ msgstr ""
 #~ "name."
 
 #, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
-#, fuzzy
 #~ msgid "YAeHMOP Band Structure"
 #~ msgstr "Load File"
 
