@@ -8594,9 +8594,6 @@ msgstr ""
 #~ msgid "Crystal..."
 #~ msgstr "Pegar cristal"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Engadir hidróxenos para o pH..."
@@ -8775,18 +8772,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Realza características concretas cun padrón de SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Motores"
 
@@ -8864,9 +8849,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Abrir un ficheiro de traxectoria"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Engadindo a extensión .avi"
@@ -8999,14 +8981,6 @@ msgstr ""
 #~ msgstr "Ortorrómbico"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cúbico"
 
@@ -9037,9 +9011,6 @@ msgstr ""
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Reducir a cela (&Primitivo)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanometro"
@@ -9200,9 +9171,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Formatos de imaxe vectorial habituais"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Exportar gráficos de vectores"
 
@@ -9211,9 +9179,6 @@ msgstr ""
 
 #~ msgid "H to Methyl"
 #~ msgstr "H para metilo"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Transforma hidróxenos en grupos metilo"
@@ -9229,9 +9194,6 @@ msgstr ""
 
 #~ msgid "Invert Chirality"
 #~ msgstr "Inverter a quiralidade"
-
-#~ msgid "InvertChiral"
-#~ msgstr "InvertChiral"
 
 #~ msgid "Invert chiral centers"
 #~ msgstr "Inverte os centros de quiralidade"
@@ -9258,9 +9220,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "A entrada PDB que se vai obter."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "O URL da molécula que se vai obter."
 
@@ -9284,9 +9243,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Ficheiros de imaxe (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Non se indicou ningún nome válido de ficheiro."
@@ -9332,9 +9288,6 @@ msgstr ""
 
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal de Python"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Terminal interactiva de scripting con Python"
@@ -9397,18 +9350,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "A conversión do formato SMILES non está dispoñíbel!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
@@ -9494,24 +9435,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussian non se executou correctamente, talvez non estea correctamente "
 #~ "instalado."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Aviso do xerador de ficheiros de entrada do Molpro"
@@ -9747,9 +9670,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valores separados por vírgulas"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Extensión descoñecida: %1"
 
@@ -9782,12 +9702,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "O ficheiro CD do Turbomole está formatado incorrectamente: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Formato TIFF"
 
@@ -9818,9 +9732,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualiza datos espectrais obtidos de cálculos químicos cuánticos"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Análise vibracional"
@@ -9857,27 +9768,12 @@ msgstr ""
 #~ msgid "Orbitals"
 #~ msgstr "Orbitais"
 
-#~ msgctxt "Highest Occupied MO"
-#~ msgid "HOMO"
-#~ msgstr "HOMO"
-
-#~ msgctxt "Lowest Unoccupied MO"
-#~ msgid "LUMO"
-#~ msgstr "LUMO"
-
-#~ msgid "Orbital"
-#~ msgstr "Orbital"
-
 #~ msgid "Status"
 #~ msgstr "Estado"
 
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Nada"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
@@ -9893,9 +9789,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Calculando o OM %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Calculate molecular orbitals and other surfaces"
 #~ msgstr "Calcula orbitais moleculares e outras superficies"
@@ -9939,9 +9832,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Desconectar"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Seguimento coa Wii"
 
@@ -9959,9 +9849,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Información de depuración"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Tamaño da vista: %L1 x %L2"
@@ -10031,10 +9918,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molécula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Motor de Python descoñecido"
 
@@ -10076,9 +9959,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Non foi posíbel configurar o campo de forzas..."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Núm. de restricións: %1"
@@ -10169,22 +10049,6 @@ msgstr ""
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Ángulo diedro: %1 °"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Distancia(s):"
@@ -10301,15 +10165,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Bucle"
 
@@ -10334,12 +10189,6 @@ msgstr ""
 #~ msgid "Rendering Engine:"
 #~ msgstr "Motor de renderización:"
 
-#~ msgid "TextRenderer"
-#~ msgstr "TextRenderer"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Texto:"
 
@@ -10357,15 +10206,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Cambiar o tipo de letra"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Cambio de etiqueta:"
@@ -10387,9 +10227,6 @@ msgstr ""
 
 #~ msgid "VdW Opacity:"
 #~ msgstr "Opacidade de VdW:"
-
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
 
 #~ msgid "Render:"
 #~ msgstr "Debuxar:"
@@ -10418,24 +10255,12 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animas a traxectoria"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Bucle"
 
 #~ msgid "Save as .avi..."
 #~ msgstr "Gardar como .avi..."
-
-#~ msgid "Angstroms"
-#~ msgstr "Angstroms"
-
-#~ msgid "Bohrs"
-#~ msgstr "Bohrs"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYX, só as coordenadas"
@@ -10503,15 +10328,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Vector de translación :"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "&Unidades do vector :"
 
@@ -10533,95 +10349,47 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Configurar o campo de forzas"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Cantidade de pasos:"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmo"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arxinina"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Asparaxina"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Ácido aspártico"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Cisteína"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "Ácido glutámico"
-
-#~ msgid "Glu"
-#~ msgstr "Glu"
 
 #~ msgid "Glutamine"
 #~ msgstr "Glutamina"
 
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
 #~ msgid "Glycine"
 #~ msgstr "Glicina"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
 
 #~ msgid "Histidine"
 #~ msgstr "Histidina"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Isoleucina"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Triptofano"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Treonina"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Serina"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Prolina"
@@ -10629,26 +10397,14 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenilalanina"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Metionina"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Lisina"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Leucina"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Secuencia (de N até C):"
@@ -10656,26 +10412,11 @@ msgstr ""
 #~ msgid "Stereochemistry:"
 #~ msgstr "Estereoquímica:"
 
-#~ msgid "L"
-#~ msgstr "L"
-
 #~ msgid "N Terminus:"
 #~ msgstr "N terminal:"
 
 #~ msgid "C Terminus:"
 #~ msgstr "C terminal:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Straight Chain"
 #~ msgstr "Cadea recta"
