@@ -8382,14 +8382,8 @@ msgstr "E-mail-címek"
 #~ msgid "In."
 #~ msgstr "Ebben."
 
-#~ msgid "El."
-#~ msgstr "El."
-
 #~ msgid "El.&No."
 #~ msgstr "El.&Sz."
-
-#~ msgid ", "
-#~ msgstr ", "
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS bemeneti fájlok (*.in)"
@@ -8461,14 +8455,6 @@ msgstr "E-mail-címek"
 #~ msgid "clientServer/%1:%2/lastOpenDir"
 #~ msgstr "ügyfélKiszolgáló/%1:%2/utoljáraMegnyitottKönyvtár"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Ügyfél/kiszolgáló"
 
@@ -8487,9 +8473,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "InChIKey"
 #~ msgstr "InChI kulcs"
-
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
 
 #~ msgid "Mongo Chem Server"
 #~ msgstr "MongoChem kiszolgáló"
@@ -8542,9 +8525,6 @@ msgstr "E-mail-címek"
 #~ msgid "MongoChem Config"
 #~ msgstr "MongoChem beállítása"
 
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
-
 #~ msgid "API Key:"
 #~ msgstr "API-kulcs:"
 
@@ -8557,9 +8537,6 @@ msgstr "E-mail-címek"
 #~ msgid "Upload"
 #~ msgstr "Feltöltés"
 
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
 #~ msgid "Singularity"
 #~ msgstr "Egyedülállóság"
 
@@ -8568,9 +8545,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Image:"
 #~ msgstr "Kép:"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -8700,9 +8674,6 @@ msgstr "E-mail-címek"
 #~ msgid "Write"
 #~ msgstr "Mentés"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #~ msgid "InChI..."
 #~ msgstr "InChI…"
 
@@ -8732,9 +8703,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "&Exit"
 #~ msgstr "&Kilépés"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Töredék beillesztése…"
@@ -8872,18 +8840,6 @@ msgstr "E-mail-címek"
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Szín molekularész szerint (aminosav-típus, hidrofobicitás, ..."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Név"
 
@@ -8931,17 +8887,10 @@ msgstr "E-mail-címek"
 #~ msgid "Electron density, isosurface = %L1"
 #~ msgstr "Elektron sűrűség, isosurface=%L1"
 
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
 #~ msgstr ""
 #~ "A kötéseket pálcikáknak mutatja, ez ideális nagyon nagy (bio)molekulák "
 #~ "esetén"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi fájl kiterjesztés hozzáadása"
@@ -9094,9 +9043,6 @@ msgstr "E-mail-címek"
 #~ msgid "PDB entry to download."
 #~ msgstr "Letöltendő PDB bejegyzés"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "Letöltendő molekula URL-je."
 
@@ -9120,9 +9066,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Képfájlok (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Nincs megadva érvényes fájlnév."
@@ -9188,15 +9131,6 @@ msgstr "E-mail-címek"
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES formátum konverzió nem választható!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Kimeneti fájl generálása GAMESS kvantum kémiai csomaghoz"
 
@@ -9261,14 +9195,8 @@ msgstr "E-mail-címek"
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gaussian"
 
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
 #~ msgid "&NWChem..."
 #~ msgstr "Copy text   \t &NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC-bevitel figyelmeztetés"
