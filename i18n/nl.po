@@ -10140,23 +10140,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Schema's:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Breedte:"
 
 #~ msgid "&Height"
 #~ msgstr "&Hoogte:"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -10178,9 +10166,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y As eenheden:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "&Gaussiaanse breedte:"
 
@@ -10189,9 +10174,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Label Toppen:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Moleculaire Vibraties"
@@ -10211,10 +10193,6 @@ msgstr ""
 #~ msgctxt "low resolution"
 #~ msgid "Low"
 #~ msgstr "Laag"
-
-#~ msgctxt "medium resolution"
-#~ msgid "Medium"
-#~ msgstr "Medium"
 
 #~ msgctxt "high resolution"
 #~ msgid "High"
@@ -10238,6 +10216,3 @@ msgstr ""
 
 #~ msgid "Python Settings"
 #~ msgstr "Python instellingen"
-
-#~ msgid "Z Matrix Editor"
-#~ msgstr "Z Matrix Editor"
