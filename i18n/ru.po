@@ -8711,9 +8711,6 @@ msgstr ""
 #~ msgid "Crystal..."
 #~ msgstr "Кристалл..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Добавить протоны при pH..."
@@ -8977,9 +8974,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Открытие файла траектории"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Добавление расширения .avi"
 
@@ -9211,9 +9205,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Распространенные форматы векторной графики"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Экспорт в формате векторной графики"
 
@@ -9266,9 +9257,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "Запись PDB для загрузки"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL молекулы для загрузки"
 
@@ -9292,9 +9280,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Файлы изображений (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Не указано корректное имя фала."
@@ -9381,17 +9366,8 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Недоступно преобразование из SMILES!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
 #~ msgid "efp"
 #~ msgstr "ЭСП"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Создать входные файлы для квантовохимического пакета GAMESS"
@@ -9472,21 +9448,6 @@ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Gaussian завершил работу некорректно. Возможно, он установлен неправильно."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Предупреждение генератора входных файлов Molpro"
@@ -9713,9 +9674,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Значения, разделенные запятыми"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Неизвестное расширение: %1"
 
@@ -9751,9 +9709,6 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Переносимая сетевая графика (PNG)"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Размеченный формат файлов изображений (TIFF)"
 
@@ -9762,12 +9717,6 @@ msgstr ""
 
 #~ msgid "Portable Pixmap"
 #~ msgstr "Портативное растровое изображение (PPM)"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Сохранить спектр как изображение"
@@ -9783,9 +9732,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Визуализировать спектральные данные из квантовохимических расчетов"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Колебательный анализ"
@@ -9907,9 +9853,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Разъединить"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Отслеживание Wii"
 
@@ -9997,8 +9940,6 @@ msgstr ""
 #~ msgstr "Молекула %1"
 
 #~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Неизвестный движок Python"
@@ -10044,9 +9985,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Невозможно установить силовое поле"
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Количество ограничений: %1"
@@ -10137,22 +10075,6 @@ msgstr ""
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Двуганный угол: %1 °"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Расстояние(я):"
@@ -10269,15 +10191,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Форма"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Петля"
 
@@ -10302,12 +10215,6 @@ msgstr ""
 #~ msgid "Rendering Engine:"
 #~ msgstr "Движок визуализации:"
 
-#~ msgid "TextRenderer"
-#~ msgstr "TextRenderer"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Текст:"
 
@@ -10325,15 +10232,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Сменить шрифт"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Сдвиг надписи:"
@@ -10392,9 +10290,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Анимировать траекторию"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Зациклить"
@@ -10407,9 +10302,6 @@ msgstr ""
 
 #~ msgid "Bohrs"
 #~ msgstr "Боры"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYZ, только координаты"
@@ -10485,15 +10377,6 @@ msgstr ""
 
 #~ msgid "length"
 #~ msgstr "длина"
-
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
 
 #~ msgid "Cartesian"
 #~ msgstr "Декартовы"
