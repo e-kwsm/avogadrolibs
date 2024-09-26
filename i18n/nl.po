@@ -10202,12 +10202,6 @@ msgstr ""
 #~ msgid "Very High"
 #~ msgstr "Zeer Hoog"
 
-#~ msgctxt ""
-#~ "Add the new surface to this particular display type (i.e., orbital or "
-#~ "surface)"
-#~ msgid "In Display Type:"
-#~ msgstr "In Display Type:"
-
 #~ msgid "New Display"
 #~ msgstr "Nieuwe Display"
 
