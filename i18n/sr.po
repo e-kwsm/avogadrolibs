@@ -9442,10 +9442,6 @@ msgstr ""
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interfejs sa Mongo Chem serverom."
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Učitaj strukturu datoteke"
-
 #~ msgid "Server settings"
 #~ msgstr "Podešavanja servera"
 

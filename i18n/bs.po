@@ -8925,22 +8925,6 @@ msgstr ""
 #~ msgstr "Ostalo..."
 
 #, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Ime datoteke:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktura:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigacija"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigacija"
-
-#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Ime elementa"
 
