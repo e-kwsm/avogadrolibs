@@ -9104,14 +9104,6 @@ msgstr ""
 #~ msgid "Diagonalization Method:"
 #~ msgstr "Diagonalisation Method:"
 
-#~ msgctxt "\"Loop\" load balancing - set static node assignments"
-#~ msgid "Loop"
-#~ msgstr "Loop"
-
-#~ msgctxt "\"Next Value\" load balancing - dynamically assign nodes work"
-#~ msgid "Next Value"
-#~ msgstr "Next Value"
-
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Use External Data Representation for Messages"
 
