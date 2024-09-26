@@ -9898,9 +9898,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Le fichier DC de Trubomole n'est pas correctement formaté : %1"
 
-#~ msgid "X11 Pixmap"
-#~ msgstr "xpm"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Enregistrer le spectre"
 
