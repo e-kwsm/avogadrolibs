@@ -8720,13 +8720,6 @@ msgstr ""
 #~ "Angle %2"
 
 #~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
-#~ msgid "Angle"
-#~ msgstr "Angle"
-
-#~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
@@ -8746,9 +8739,6 @@ msgstr ""
 
 #~ msgid "Yes"
 #~ msgstr "Sí"
-
-#~ msgid "No"
-#~ msgstr "No"
 
 #, fuzzy
 #~ msgid "Input Generators"
@@ -8770,9 +8760,6 @@ msgstr ""
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr ""
 #~ "Insereix un fragment molecular per la construcció de molècules llargues"
-
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
@@ -8928,9 +8915,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Obre fitxer de trajectòria"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Afegeix l'extensió .avi"
 
@@ -9043,19 +9027,8 @@ msgstr ""
 #~ msgstr "Ortoròmbic"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cúbic"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanòmetre"
@@ -9065,9 +9038,6 @@ msgstr ""
 
 #~ msgid "&Degree"
 #~ msgstr "&Grau"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Crystallography"
 #~ msgstr "Cristal·lografia"
@@ -9147,9 +9117,6 @@ msgstr ""
 
 #~ msgid "Common vector image formats"
 #~ msgstr "Formats comuns d'imatges vectorials"
-
-#~ msgid "EPS"
-#~ msgstr "EPS"
 
 #~ msgid "Change H to Methyl"
 #~ msgstr "Canvia d'H a metil"
@@ -9275,9 +9242,6 @@ msgstr ""
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal de python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Terminal interactiu de guions de python"
 
@@ -9314,21 +9278,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "El format de conversió SMILES no és disponible !"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Crea fitxers d'entrada per al paquet químic quàntic GAMESS"
