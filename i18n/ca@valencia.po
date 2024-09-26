@@ -8642,9 +8642,6 @@ msgstr ""
 #~ msgid "Yes"
 #~ msgstr "Sí"
 
-#~ msgid "No"
-#~ msgstr "No"
-
 #, fuzzy
 #~ msgid "Input Generators"
 #~ msgstr "Entrada del generador..."
@@ -8666,9 +8663,6 @@ msgstr ""
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr ""
 #~ "Insereix un fragment molecular per la construcció de molècules llargues"
-
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
@@ -8821,9 +8815,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Obri fitxer de trajectòria"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Afig l'extensió .avi"
 
@@ -8972,9 +8963,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Formats comuns d'imatges vectorials"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Change H to Methyl"
 #~ msgstr "Canvia d'H a metil"
 
@@ -9048,9 +9036,6 @@ msgstr ""
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Fitxers d'imatge (*.png *.pbm)"
 
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
 #~ msgid "No valid filename was supplied."
 #~ msgstr "No s'ha proporcionat cap nom de fitxer vàlid."
 
@@ -9096,9 +9081,6 @@ msgstr ""
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal de python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Terminal interactiu de guions de python"
 
@@ -9135,18 +9117,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "El format de conversió SMILES no és disponible !"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Crea fitxers d'entrada per al paquet químic quàntic GAMESS"
@@ -9349,9 +9319,6 @@ msgstr ""
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Selecciona àtoms, enllaços, residus..."
 
-#~ msgid "GLSL Shaders..."
-#~ msgstr "GLSL Shaders..."
-
 #~ msgid "Open a vertex shader source file"
 #~ msgstr "Obri un fitxer font de vertex shader"
 
@@ -9369,9 +9336,6 @@ msgstr ""
 
 #~ msgid "Shader parameters files (*.params)"
 #~ msgstr "Fitxers de paràmetres shader (*.params)"
-
-#~ msgid "GLSL Shaders"
-#~ msgstr "GLSL Shaders"
 
 #~ msgid "Load and use OpenGL 2.0 GLSL shaders"
 #~ msgstr "Carrega i utilitza OpenGL 2.0 GLSL shader"
@@ -9471,9 +9435,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valors separats per coma"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Extensió desconeguda: %1"
 
@@ -9496,10 +9457,6 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Format de dada"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Carrega les dades espectrals"
 
@@ -9508,9 +9465,6 @@ msgstr ""
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "PNG"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "TIFF"
@@ -9541,9 +9495,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualitza les dades espectrals dels càlculs químics quàntics"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Anàlisis vibracional"
