@@ -9025,9 +9025,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Відкриття файла траєкторії"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Додавання суфікса .avi"
 
@@ -9442,9 +9439,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Типові формати векторної графіки"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Експорт у форматі векторної графіки"
 
@@ -9521,9 +9515,6 @@ msgstr ""
 #~ msgid "OrcaExtension Warning"
 #~ msgstr "Попередження OrcaExtension"
 
-#~ msgid "OrcaExtension"
-#~ msgstr "OrcaExtension"
-
 #~ msgid " No vibration data found!"
 #~ msgstr " Не знайдено даних щодо вібрації!"
 
@@ -9574,9 +9565,6 @@ msgstr ""
 
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Проаналізувати виведені дані Orca…"
-
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
 
 #~ msgid "Orca Test Example"
 #~ msgstr "Тестовий приклад Orca"
@@ -9755,21 +9743,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Перетворення форматів SMILES недоступне!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
 #~ "Створення файлів вхідних даних для пакунка квантохімічних обчислень GAMESS"
@@ -9882,9 +9855,6 @@ msgstr ""
 
 #~ msgid "&Q-Chem..."
 #~ msgstr "&Q-Chem…"
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Попередження засобу для створення вхідних файлів Lammps"
@@ -10150,9 +10120,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Значення, відокремлені комами"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Імпортування спектрів"
 
@@ -10379,17 +10346,11 @@ msgstr ""
 #~ msgid "Save VRML rendered files"
 #~ msgstr "Зберегти оброблені файли VRML"
 
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
-
 #~ msgid "Connect"
 #~ msgstr "З'єднатися"
 
 #~ msgid "Disconnect"
 #~ msgstr "Роз'єднатися"
-
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
 
 #~ msgid "Wii Tracking"
 #~ msgstr "Стеження Wii"
@@ -10493,10 +10454,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Молекула %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Невідомий рушій Python"
 
@@ -10566,9 +10523,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Не вдалося встановити поле сил…"
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "К-ть обмежень: %1"
@@ -10659,22 +10613,6 @@ msgstr ""
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Двограний кут: %1°"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Відстані:"
@@ -10801,15 +10739,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Форма"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Цикл"
 
@@ -10834,12 +10763,6 @@ msgstr ""
 #~ msgid "Rendering Engine:"
 #~ msgstr "Рушій обробки:"
 
-#~ msgid "TextRenderer"
-#~ msgstr "TextRenderer"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Текст:"
 
@@ -10860,15 +10783,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Змінити шрифт"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Зсув мітки:"
@@ -10927,9 +10841,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Анімувати траєкторію"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Цикл"
@@ -10945,9 +10856,6 @@ msgstr ""
 
 #~ msgid "Fractional"
 #~ msgstr "Дроби"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYZ, лише координати"
@@ -11076,15 +10984,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Вектор перенесення:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "&Векторні одиниці:"
 
@@ -11118,18 +11017,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "Типовий перегляд"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Індекси Міллера"
 
@@ -11142,9 +11029,6 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Налаштування поля сил"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Кількість кроків"
 
@@ -11154,92 +11038,47 @@ msgstr ""
 #~ msgid "Alanine"
 #~ msgstr "Аланін"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Аргінін"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Аспарагін"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Аспарагінова кислота"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Цистеїн"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "Глутамінова кислота"
-
-#~ msgid "Glu"
-#~ msgstr "Glu"
 
 #~ msgid "Glutamine"
 #~ msgstr "Глутамін"
 
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
 #~ msgid "Glycine"
 #~ msgstr "Гліцин"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
 
 #~ msgid "Histidine"
 #~ msgstr "Гістидін"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Ізолейцин"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
 
 #~ msgid "Valine"
 #~ msgstr "Валін"
 
-#~ msgid "Val"
-#~ msgstr "Val"
-
 #~ msgid "Tyrosine"
 #~ msgstr "Тирозін"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Триптофан"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Треонін"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Серин"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Пролін"
@@ -11247,26 +11086,14 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Фенілаланін"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Метіонін"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Лізин"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Лейцин"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Послідовність (від N до C):"
@@ -11274,26 +11101,11 @@ msgstr ""
 #~ msgid "Stereochemistry:"
 #~ msgstr "Стереохімія:"
 
-#~ msgid "L"
-#~ msgstr "L"
-
 #~ msgid "N Terminus:"
 #~ msgstr "N-кінець:"
 
 #~ msgid "C Terminus:"
 #~ msgstr "C-кінець:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Structure:"
 #~ msgstr "Структура:"
@@ -11322,12 +11134,6 @@ msgstr ""
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Номер ланцюга нового пептиду"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Кількість залишків:"
 
@@ -11349,18 +11155,6 @@ msgstr ""
 #~ msgid "Frequency"
 #~ msgstr "Частота"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Format"
 #~ msgstr "Формат"
 
@@ -11376,12 +11170,6 @@ msgstr ""
 #~ msgid "Basis Set"
 #~ msgstr "Базисний набір"
 
-#~ msgid "SCF"
-#~ msgstr "SCF"
-
-#~ msgid "RijCosX"
-#~ msgstr "RijCosX"
-
 #~ msgid "Aux. Basis Set"
 #~ msgstr "Доп. базисний набір"
 
@@ -11390,15 +11178,6 @@ msgstr ""
 
 #~ msgid "Relativistic"
 #~ msgstr "Релятивістський"
-
-#~ msgid "ZORA"
-#~ msgstr "ZORA"
-
-#~ msgid "IORA"
-#~ msgstr "IORA"
-
-#~ msgid "DKH"
-#~ msgstr "DKH"
 
 #~ msgid "Order"
 #~ msgstr "Порядок"
@@ -11451,9 +11230,6 @@ msgstr ""
 
 #~ msgid "Extreme SCF"
 #~ msgstr "Надзвичайне SCF"
-
-#~ msgid "KDIIS"
-#~ msgstr "KDIIS"
 
 #~ msgid "Levelshift "
 #~ msgstr "Зсув рівня "
