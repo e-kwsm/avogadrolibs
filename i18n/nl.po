@@ -9506,9 +9506,6 @@ msgstr ""
 #~ msgid "  - script has no 'Tool' class defined"
 #~ msgstr "  - script heeft geen 'Tool' klasse gedefinieerd"
 
-#~ msgid "Tools"
-#~ msgstr "Tools"
-
 #~ msgid "Align:"
 #~ msgstr "Uitlijning:"
 
@@ -9517,9 +9514,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Kon het krachtveld niet instellen...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Steps per Update:"
 #~ msgstr "Stappen per Update:"
@@ -9533,17 +9527,11 @@ msgstr ""
 #~ msgid "Molecular Dynamics (900K)"
 #~ msgstr "Moleculaire Dynamica (900K)"
 
-#~ msgid "Start"
-#~ msgstr "Start"
-
 #~ msgid "Fixed atoms are movable"
 #~ msgstr "Gefixeerde atomen zjin beweegbaar"
 
 #~ msgid "Ignored atoms are movable"
 #~ msgstr "Genegeerde atomen zijn beweegbaar"
-
-#~ msgid "AutoOpt Molecule"
-#~ msgstr "AutoOpt Molecule"
 
 #~ msgid "Automatic optimization of molecular geometry"
 #~ msgstr "Automatische optimalisatie van de moleculaire geometrie"
@@ -9605,22 +9593,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Dihedrale Hoek: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Afstand(en):"
 
@@ -9669,12 +9641,6 @@ msgstr ""
 #~ msgid "Dihedral Angle"
 #~ msgstr "Dihedrale Hoek"
 
-#~ msgid "Z Matrix Editor..."
-#~ msgstr "Z Matrix Editor..."
-
-#~ msgid "Z-Matrix"
-#~ msgstr "Z-Matrix"
-
 #~ msgid "Create/edit a z-matrix"
 #~ msgstr "Creëer/bewerk een z-matrix"
 
@@ -9695,15 +9661,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "Vorm"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "Lus"
@@ -9768,18 +9725,12 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animeer Baan"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Herhaling"
 
 #~ msgid "Save as .avi..."
 #~ msgstr "Opslaan als .avi..."
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "Number of atoms:"
 #~ msgstr "Aantal atomen:"
@@ -9826,149 +9777,26 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Stel Krachtveld In"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Aantal stappen"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algorithme"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
-#~ msgid "Arginine"
-#~ msgstr "Arginine"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
-
-#~ msgid "Asparagine"
-#~ msgstr "Asparagine"
-
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Aspartinezuur"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
-
-#~ msgid "Cysteine"
-#~ msgstr "Cysteine"
-
-#~ msgid "Cys"
-#~ msgstr "Cys"
 
 #~ msgid "Glutamic acid"
 #~ msgstr "Glutaminezuur"
 
-#~ msgid "Glu"
-#~ msgstr "Glu"
-
-#~ msgid "Glutamine"
-#~ msgstr "Glutamine"
-
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
-#~ msgid "Glycine"
-#~ msgstr "Glycine"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
-
-#~ msgid "Histidine"
-#~ msgstr "Histidine"
-
-#~ msgid "His"
-#~ msgstr "His"
-
-#~ msgid "Isoleucine"
-#~ msgstr "Isoleucine"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
-
-#~ msgid "Tryptophan"
-#~ msgstr "Tryptophan"
-
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
-#~ msgid "Threonine"
-#~ msgstr "Threonine"
-
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
-#~ msgid "Serine"
-#~ msgstr "Serine"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
-
-#~ msgid "Proline"
-#~ msgstr "Proline"
-
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenylalanine"
-
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
-#~ msgid "Methionine"
-#~ msgstr "Methionine"
-
-#~ msgid "Met"
-#~ msgstr "Met"
-
-#~ msgid "Lysine"
-#~ msgstr "Lysine"
-
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
-#~ msgid "Leucine"
-#~ msgstr "Leucine"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Sequentie (N naar C):"
 
 #~ msgid "Stereochemistry:"
 #~ msgstr "Stereochemie:"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "N Terminus:"
-#~ msgstr "N Terminus:"
-
-#~ msgid "C Terminus:"
-#~ msgstr "C Terminus:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Straight Chain"
 #~ msgstr "Rechte Keten"
@@ -9979,20 +9807,11 @@ msgstr ""
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta Blad"
 
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
-
 #~ msgid "Chain Number:"
 #~ msgstr "Ketting Nummer:"
 
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Het Kettingnummer voor de nieuwe peptide"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Aantal Residuen"
@@ -10000,32 +9819,14 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipool Moment (D):"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Advanced"
 #~ msgstr "Geavanceerd"
 
 #~ msgid "Grid"
 #~ msgstr "Rooster"
 
-#~ msgid "POV-Ray Export"
-#~ msgstr "POV-Ray Export"
-
 #~ msgid "Select..."
 #~ msgstr "Selecteer..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Zet de achtergrondkleur transparant"
@@ -10036,74 +9837,11 @@ msgstr ""
 #~ msgid "Path:"
 #~ msgstr "Pad"
 
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
 #~ msgid "Compute..."
 #~ msgstr "Bereken..."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
 #~ msgid "EFP Matches"
 #~ msgstr "EFP Overeenkomsten"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "Ge&avanceerde Setup"
@@ -10120,38 +9858,8 @@ msgstr ""
 #~ msgid "MO Guess"
 #~ msgstr "MO Gok"
 
-#~ msgid "Misc"
-#~ msgstr "Misc"
-
 #~ msgid "Read"
 #~ msgstr "Lees"
-
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
-#~ msgid "ECP Type:"
-#~ msgstr "ECP Type:"
 
 #~ msgid "Default"
 #~ msgstr "Standaard"
