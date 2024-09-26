@@ -8897,10 +8897,6 @@ msgstr ""
 #~ msgid "Energy (eV)"
 #~ msgstr "Energia (eV)"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Estrutura:"
-
 #~ msgid "Server settings"
 #~ msgstr "Configurações de servidor"
 
