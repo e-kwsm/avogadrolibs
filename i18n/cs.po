@@ -9750,29 +9750,8 @@ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "Gaussovský neběžel správně. Snad není správně nainstalován."
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gaussův..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Upozornění nástrojem pro vytvoření vstupních souborů Lammps"

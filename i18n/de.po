@@ -8432,12 +8432,6 @@ msgstr ""
 #~ msgid "Optimize"
 #~ msgstr "Optimierung"
 
-#~ msgid "In."
-#~ msgstr "In."
-
-#~ msgid ", "
-#~ msgstr ", "
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS-Eingabe (*.in)"
 
@@ -8476,14 +8470,6 @@ msgstr ""
 #~ msgid "Connection failed with: %1"
 #~ msgstr "Verbindung mit %1 fehlgeschlagen"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Connection refused"
 #~ msgstr "Verbindung wurde abgelehnt"
 
@@ -8497,18 +8483,11 @@ msgstr ""
 #~ msgid "Formula"
 #~ msgstr "Formel"
 
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
-
 #~ msgid "Energy (eV)"
 #~ msgstr "Energie (eV)"
 
 #~ msgid "YAeHMOP Band Structure"
 #~ msgstr "YAeHMOP Bandstruktur"
-
-#, fuzzy
-#~ msgid "&Hostname:"
-#~ msgstr "&Hostname:"
 
 #, fuzzy
 #~ msgid "Navigate Back"
@@ -8520,9 +8499,6 @@ msgstr ""
 
 #~ msgid "File name:"
 #~ msgstr "Dateiname:"
-
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgid "Files of type:"
 #~ msgstr "Dateien von Art:"
@@ -8648,13 +8624,6 @@ msgstr ""
 #~ "Konformer %1\n"
 #~ "Torsion %2"
 
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
-
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Energie (kJ/mol)"
 
@@ -8750,21 +8719,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Besonderheiten hervorheben, die mit einem SMARTS Muster übereinstimmen"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
-#~ msgid "Engines"
-#~ msgstr "Engines"
-
 #~ msgid "Axes"
 #~ msgstr "Achsen"
 
@@ -8792,17 +8746,11 @@ msgstr ""
 #~ msgid "Select Bond Labels Font"
 #~ msgstr "Bindungsbeschriftung-Schriftart auswählen"
 
-#~ msgid "Polygon"
-#~ msgstr "Polygon"
-
 #~ msgid "Renders atoms as tetrahedra, octahedra, and other polygons"
 #~ msgstr "Zeichnet Atome als Tetraeder, Oktaeder oder andere Polygone"
 
 #~ msgid "Renders protein backbones as ribbons"
 #~ msgstr "Zeichnet das Proteinrückgrat als Band"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
 
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Zeichnet Ringe mit farbigen Ebenen"
@@ -8840,9 +8788,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Trajektoriendatei öffnen"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi Erweiterung hinzufügen"
@@ -8984,14 +8929,6 @@ msgstr ""
 #~ msgstr "Orthorhombisch"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Kubisch"
 
@@ -9045,15 +8982,6 @@ msgstr ""
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Zelle reduzieren (&Primitiv)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
-#~ msgid "&Nanometer"
-#~ msgstr "&Nanometer"
-
-#~ msgid "&Picometer"
-#~ msgstr "&Picometer"
 
 #~ msgid "&Degree"
 #~ msgstr "&Grad"
@@ -9243,9 +9171,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Allgemeine Vektorbilddateien"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Vektorgrafiken exportieren"
 
@@ -9276,9 +9201,6 @@ msgstr ""
 #~ msgid "Invert Chirality"
 #~ msgstr "Chiralität umkehren"
 
-#~ msgid "InvertChiral"
-#~ msgstr "InvertChiral"
-
 #~ msgid "Invert chiral centers"
 #~ msgstr "Chiralitätszentren umkehren"
 
@@ -9303,9 +9225,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "PDB Eintrag herunterladen"
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL des Moleküls zum Downloaden"
@@ -9381,9 +9300,6 @@ msgstr ""
 
 #~ msgid "Python Terminal"
 #~ msgstr "Python-Terminal"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Interaktives Python-Skripte-Terminal"
@@ -9464,18 +9380,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Format-Konvertierung nicht verfügbar!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Erstelle Eingabedateien für das GAMESS-Quantenchemie-Paket"
@@ -9786,20 +9690,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Infrarotspekten-Einstellungen"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR-Spektren-Einstellungen"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
 
 #~ msgid "&UV Settings"
 #~ msgstr "&UV-Einstellungen"
@@ -9846,9 +9738,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Komma-getrennte Werte"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Spektren importieren"
 
@@ -9874,21 +9763,11 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Datenformat"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Spektraldaten laden"
 
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Turbomole CD-Datei weist ungültige Formatierung auf : %1"
-
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "markiertes Bild-Datei-Format"
@@ -9923,9 +9802,6 @@ msgstr ""
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Spektraldaten von Quanten-Chemie-Berechnungen anzeigen"
 
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Vibrationsanalyse"
 
@@ -9937,9 +9813,6 @@ msgstr ""
 
 #~ msgid "Sorting %1 vibrations by frequency..."
 #~ msgstr "%1 Vibrationen werden nach Frequenz sortiert …"
-
-#~ msgid "Pause"
-#~ msgstr "Pause"
 
 #~ msgid "Super Cell Builder..."
 #~ msgstr "Superzellen-Erzeugung …"
@@ -9960,27 +9833,9 @@ msgstr ""
 #~ msgid "Orbitals"
 #~ msgstr "Orbitale"
 
-#~ msgctxt "Highest Occupied MO"
-#~ msgid "HOMO"
-#~ msgstr "HOMO"
-
-#~ msgctxt "Lowest Unoccupied MO"
-#~ msgid "LUMO"
-#~ msgstr "LUMO"
-
-#~ msgid "Orbital"
-#~ msgstr "Orbital"
-
-#~ msgid "Status"
-#~ msgstr "Status"
-
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Nichts"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
@@ -9996,9 +9851,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Berechne MO %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr ""
@@ -10079,9 +9931,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Trennen"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Wii-Tracking"
 
@@ -10100,9 +9949,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Debug-Informationen"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Neue Größe %L1 x %L2"
@@ -10185,14 +10031,9 @@ msgstr ""
 #~ msgstr "Molekül %1"
 
 #~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Unbekannte Python-Engine"
-
-#~ msgid "N/A"
-#~ msgstr "N/A"
 
 #~ msgid "PythonEngine: checking "
 #~ msgstr "Python-Engine: Prüfe "
@@ -10274,9 +10115,6 @@ msgstr ""
 #~ msgid "Molecular Dynamics (900K)"
 #~ msgstr "Moleküldynamik (900K)"
 
-#~ msgid "Start"
-#~ msgstr "Start"
-
 #~ msgid "Fixed atoms are movable"
 #~ msgstr "Gesperrte Atome sind beweglich"
 
@@ -10349,22 +10187,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Dihedral Winkel: %1*"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Abstände:"
 
@@ -10395,9 +10217,6 @@ msgstr ""
 #~ msgid "Selection Mode:"
 #~ msgstr "Auswahl-Modus:"
 
-#~ msgid "Atom/Bond"
-#~ msgstr "Atom/Bond"
-
 #~ msgid "Residue"
 #~ msgstr "Rest"
 
@@ -10423,9 +10242,6 @@ msgstr ""
 #~ msgid "Select atoms, residues, and molecules"
 #~ msgstr "Atome, Reste und Moleküle auswählen"
 
-#~ msgid "Symbol"
-#~ msgstr "Symbol"
-
 #~ msgid "Bond Length"
 #~ msgstr "Bindungslänge"
 
@@ -10434,9 +10250,6 @@ msgstr ""
 
 #~ msgid "Z Matrix Editor..."
 #~ msgstr "Z-Matrix-Editor …"
-
-#~ msgid "Z-Matrix"
-#~ msgstr "Z-Matrix"
 
 #~ msgid "Create/edit a z-matrix"
 #~ msgstr "Erzeugen/Editieren einer Z-Matrix"
@@ -10468,9 +10281,6 @@ msgstr ""
 #~ msgid "Axis 3:"
 #~ msgstr "Achse 3:"
 
-#~ msgid "Norm"
-#~ msgstr "Norm"
-
 #~ msgid "Preserve vector norms"
 #~ msgstr "Vektornorm erhalten"
 
@@ -10482,15 +10292,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "Schatten"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "Schleife"
@@ -10519,15 +10320,6 @@ msgstr ""
 #~ msgid "Rendering Engine:"
 #~ msgstr "Rendering-Engine"
 
-#~ msgid "TextRenderer"
-#~ msgstr "TextRenderer"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
-#~ msgid "Text:"
-#~ msgstr "Text:"
-
 #~ msgid "Symbol & Number in Group"
 #~ msgstr "Symbul & Nummer in Gruppe"
 
@@ -10546,15 +10338,6 @@ msgstr ""
 #~ msgid "Change Font"
 #~ msgstr "Schriftart ändern"
 
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
-
 #~ msgid "Label Shift:"
 #~ msgstr "Textversatz"
 
@@ -10569,9 +10352,6 @@ msgstr ""
 
 #~ msgid "Lines"
 #~ msgstr "Linien"
-
-#~ msgid "Radius:"
-#~ msgstr "Radius:"
 
 #~ msgid "Include Nitrogens"
 #~ msgstr "Stickstoff miteinbeziehen"
@@ -10612,9 +10392,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Flugbahn animieren"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Schleife"
@@ -10630,9 +10407,6 @@ msgstr ""
 
 #~ msgid "Fractional"
 #~ msgstr "Gitter"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYZ, nur Koordinaten"
@@ -10730,15 +10504,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Translationsvektor:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "&Vektoreinheiten:"
 
@@ -10772,18 +10537,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "Standard-Ansicht"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Millersche Indizes"
 
@@ -10796,134 +10549,32 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Kraftfeld einrichten"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Anzahl der Schritte"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algorithmus"
 
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "Alanine"
-#~ msgstr "Alanine"
-
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
-#~ msgid "Arginine"
-#~ msgstr "Arginine"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
-
-#~ msgid "Asparagine"
-#~ msgstr "Asparagine"
-
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "asparagische Säure"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
-
-#~ msgid "Cysteine"
-#~ msgstr "Cysteine"
-
-#~ msgid "Cys"
-#~ msgstr "Cys"
 
 #~ msgid "Glutamic acid"
 #~ msgstr "glutenische Säure"
 
-#~ msgid "Glu"
-#~ msgstr "Glu"
-
 #~ msgid "Glutamine"
 #~ msgstr "Glutamin"
-
-#~ msgid "Gln"
-#~ msgstr "Gln"
 
 #~ msgid "Glycine"
 #~ msgstr "Glyzin"
 
-#~ msgid "Gly"
-#~ msgstr "Gly"
-
 #~ msgid "Histidine"
 #~ msgstr "Histidin"
-
-#~ msgid "His"
-#~ msgstr "His"
 
 #~ msgid "Isoleucine"
 #~ msgstr "Isoleuzin"
 
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Valine"
-#~ msgstr "Valine"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
 #~ msgid "Tyrosine"
 #~ msgstr "Tyrosin"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
-
-#~ msgid "Tryptophan"
-#~ msgstr "Tryptophan"
-
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
-#~ msgid "Threonine"
-#~ msgstr "Threonine"
-
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
-#~ msgid "Serine"
-#~ msgstr "Serine"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
-
-#~ msgid "Proline"
-#~ msgstr "Proline"
-
-#~ msgid "Phenylalanine"
-#~ msgstr "Phenylalanine"
-
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
-#~ msgid "Methionine"
-#~ msgstr "Methionine"
-
-#~ msgid "Met"
-#~ msgstr "Met"
-
-#~ msgid "Lysine"
-#~ msgstr "Lysine"
-
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
-#~ msgid "Leucine"
-#~ msgstr "Leucine"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Sequenz (N0 nach C):"
@@ -10931,56 +10582,17 @@ msgstr ""
 #~ msgid "Stereochemistry:"
 #~ msgstr "Stereo-Chemie"
 
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "N Terminus:"
-#~ msgstr "N Terminus:"
-
-#~ msgid "C Terminus:"
-#~ msgstr "C Terminus:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Straight Chain"
 #~ msgstr "gerade Kette"
 
-#~ msgid "Alpha Helix"
-#~ msgstr "Alpha Helix"
-
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta Blatt"
-
-#~ msgid "Pi Helix"
-#~ msgstr "Pi Helix"
-
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
-
-#~ msgid "Psi:"
-#~ msgstr "Psi:"
 
 #~ msgid "Chain Number:"
 #~ msgstr "Ketten-Nummer"
 
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Die Kettennummer für das neue Peptid"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Anzahl der Residuen:"
@@ -10991,17 +10603,8 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipol-Moment (D)"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
 #~ msgid "DFT"
 #~ msgstr "diskrete Fouriertransformation"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Fortgeschritten"
@@ -11021,14 +10624,8 @@ msgstr ""
 #~ msgid "Select..."
 #~ msgstr "Auswählen …"
 
-#~ msgid "povray"
-#~ msgstr "povray"
-
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Benutze Vollbildantialiasing"
-
-#~ msgid "Antialias"
-#~ msgstr "Antialias"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Setze die Hintergrundfarbe auf transparent"
