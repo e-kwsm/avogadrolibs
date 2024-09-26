@@ -8534,10 +8534,6 @@ msgstr ""
 #~ msgstr "&Arkiv"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Renderar proteinets sekundära struktur"
-
-#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Gundämne:"
 

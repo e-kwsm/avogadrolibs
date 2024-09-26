@@ -9039,10 +9039,6 @@ msgstr ""
 #~ msgstr "Název souboru:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Nahrát soubor"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Pohyb"
 
