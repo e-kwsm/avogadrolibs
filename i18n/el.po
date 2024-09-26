@@ -8701,10 +8701,6 @@ msgstr ""
 #~ msgstr "Ενέργεια (eV)"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Δομή"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Περιήγηση"
 

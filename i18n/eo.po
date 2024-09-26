@@ -8870,10 +8870,6 @@ msgstr "phlostically@example.com"
 #~ msgid "Energy (eV)"
 #~ msgstr "Energio"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Ŝargi Strukturan Dosieron"
-
 #~ msgid "&Hostname:"
 #~ msgstr "Servilonomo (&H):"
 
