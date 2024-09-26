@@ -9176,9 +9176,6 @@ msgstr ""
 #~ msgid "CI:"
 #~ msgstr "CI :"
 
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Determinant Ames Lab"
 
@@ -9187,18 +9184,6 @@ msgstr ""
 
 #~ msgid "CC:"
 #~ msgstr "CC :"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Check"
 #~ msgstr "Verificacion"
@@ -9214,51 +9199,6 @@ msgstr ""
 
 #~ msgid "# of Z-Matrix Variables"
 #~ msgstr "Nombre de variablas de matritz Z"
-
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Minutes"
 #~ msgstr "Minutas"
@@ -9290,15 +9230,6 @@ msgstr ""
 #~ msgid "GigaBytes"
 #~ msgstr "Gigaoctets"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
 #~ msgid "MemDDI:"
 #~ msgstr "MemDDI :"
 
@@ -9309,12 +9240,6 @@ msgstr ""
 #~ msgid "Loop"
 #~ msgstr "En bocla"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "Lectura MO ($VEC)"
 
@@ -9324,47 +9249,14 @@ msgstr ""
 #~ msgid "Skip"
 #~ msgstr "Passar al seguent"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
-#~ msgid "GAMESS (UK Version)"
-#~ msgstr "GAMESS (UK Version)"
-
 #~ msgid "Direct SCF"
 #~ msgstr "SCF dirècte"
 
 #~ msgid "words"
 #~ msgstr "mots"
 
-#~ msgid "Numeric"
-#~ msgstr "Numeric"
-
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial:"
 #~ msgstr "Inicial :"
-
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Z-matrix"
 #~ msgstr "Matritz Z"
@@ -9372,17 +9264,8 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Entrada Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Estandard"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Checkpoint :"
@@ -9393,56 +9276,17 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "Donadas MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Version de Molpro :"
 
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
-
-#~ msgid "Quartet"
-#~ msgstr "Quartet"
-
 #~ msgid "Quintet"
 #~ msgstr "Quintuplet"
-
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
 
 #~ msgid "NWChem Input"
 #~ msgstr "Entrada NWChem"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Entrada Q-Chem"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Shader Name:"
 #~ msgstr "Nom de l'ombratge :"
@@ -9471,38 +9315,14 @@ msgstr ""
 #~ msgid "&Height"
 #~ msgstr "&Nautor"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "po"
 
 #~ msgid "States / Atom"
 #~ msgstr "Estats/atòm"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "Relative"
 #~ msgstr "Relatiu"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Activitat (A^4/amu)"
