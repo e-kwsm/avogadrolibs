@@ -8745,10 +8745,6 @@ msgstr ""
 #~ msgstr "No està configurada la molècula"
 
 #, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Cristall..."
 
