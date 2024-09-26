@@ -11331,18 +11331,6 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Izdelaj \"jedrno\" datoteko ob prekinitvi"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Pomnilnik:"
 
@@ -11366,12 +11354,6 @@ msgstr ""
 #~ msgid "Initial Guess:"
 #~ msgstr "Začetni ugib:"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "Prebrane MO ($VEC)"
 
@@ -11390,26 +11372,8 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Vmesnik GAMESS za drugovrstno kodo"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Vsili preverjanje vrste zagona"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK)"
@@ -11419,9 +11383,6 @@ msgstr ""
 
 #~ msgid "Generate UHF Natural Orbitals"
 #~ msgstr "Ustvari naravne orbitale UHF"
-
-#~ msgid "Direct SCF"
-#~ msgstr "Direct SCF"
 
 #~ msgid "Compute Only Changed in Fock Matrix"
 #~ msgstr "Izračunaj le spremenjene v matriki"
@@ -11561,17 +11522,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Začetno:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Prilagoditev racionalne funkcije"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Kvadratna aproksimacija"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "Prilagajanje omejitev"
@@ -11594,18 +11549,6 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "Osnova:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Matrika Z"
 
@@ -11626,17 +11569,8 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Skript Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Običajno"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Kontrolna točka:"
@@ -11647,26 +11581,8 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "Skript MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Različica Molpro:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "Quartet"
 #~ msgstr "Kvartet"
@@ -11674,71 +11590,20 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Kvintet"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Skript NWChem"
-
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Skript Q-Chem"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Neomejeno"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "ne"
 
 #~ msgid "yes"
 #~ msgstr "da"
-
-#~ msgid "D2"
-#~ msgstr "D2"
-
-#~ msgid "D3"
-#~ msgstr "D3"
 
 #~ msgid "Dispersion:"
 #~ msgstr "Razpršitev:"
@@ -11779,20 +11644,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Sheme:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Širina"
 
 #~ msgid "&Height"
 #~ msgstr "&Višina"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "in"
 #~ msgstr "palcev"
@@ -11850,9 +11706,6 @@ msgstr ""
 #~ msgid "Show integrated DOS"
 #~ msgstr "Pokaži vgrajeni DOS"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Enote osi &Y:"
 
@@ -11864,12 +11717,6 @@ msgstr ""
 
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Valovna dolžina laserja:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
 
 #~ msgid "Nucleus:"
 #~ msgstr "Jedro:"
@@ -11883,23 +11730,8 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Oznake vrhov:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekularne vibracije"
-
-#~ msgid "Filter: "
-#~ msgstr "Filter: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Aktivnost (A^4/amu)"
@@ -11970,12 +11802,6 @@ msgstr ""
 
 #~ msgid "Advanced..."
 #~ msgstr "Napredno ..."
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
 
 #~ msgid "&Length:"
 #~ msgstr "&Dolžina:"
