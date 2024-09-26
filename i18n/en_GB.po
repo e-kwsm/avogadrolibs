@@ -8850,55 +8850,6 @@ msgstr ""
 #~ "This document is currently an isolated molecule. You need to create a "
 #~ "unit cell."
 
-#~ msgctxt "Highest Occupied MO"
-#~ msgid "HOMO"
-#~ msgstr "HOMO"
-
-#~ msgctxt "Lowest Unoccupied MO"
-#~ msgid "LUMO"
-#~ msgstr "LUMO"
-
-#~ msgctxt "A cube type of nothing - empty cube"
-#~ msgid "Nothing"
-#~ msgstr "Nothing"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
-#~ msgctxt "Electron density surface type"
-#~ msgid "Electron Density"
-#~ msgstr "Electron Density"
-
-#~ msgctxt "Undefined cube type"
-#~ msgid "Error - undefined type"
-#~ msgstr "Error - undefined type"
-
-#~ msgid "Calculating VdW Cube"
-#~ msgstr "Calculating VdW Cube"
-
-#~ msgctxt "Molecular Orbital"
-#~ msgid "Calculating MO %L1"
-#~ msgstr "Calculating MO %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
-
-#~ msgid "Electrostatic potential surfaces are not yet supported."
-#~ msgstr "Electrostatic potential surfaces are not yet supported."
-
-#~ msgid "Calculate molecular orbitals and other surfaces"
-#~ msgstr "Calculate molecular orbitals and other surfaces"
-
-#~ msgid "&Nanotube Builder..."
-#~ msgstr "&Nanotube Builder..."
-
-#~ msgid "Nanotube Builder"
-#~ msgstr "Nanotube Builder"
-
-#~ msgid "Invalid Nanotube Specification"
-#~ msgstr "Invalid Nanotube Specification"
-
 #~ msgid ""
 #~ "The requested nanotube cannot be built for the following reason:\n"
 #~ "\n"
@@ -8907,37 +8858,10 @@ msgstr ""
 #~ "The requested nanotube cannot be built for the following reason:\n"
 #~ "\n"
 #~ "Either n or m must be greater than 1."
-
-#~ msgid "Insert Nanotube"
-#~ msgstr "Insert Nanotube"
-
-#~ msgid "SWCNT Builder"
-#~ msgstr "SWCNT Builder"
-
-#~ msgid "Construct single wall carbon nanotubes."
-#~ msgstr "Construct single wall carbon nanotubes."
-
-#~ msgid "Building..."
-#~ msgstr "Building..."
-
-#~ msgid "Display point group symmetry."
-#~ msgstr "Display point group symmetry."
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL widget was not correctly initialised in order to make a video"
 
-#~ msgid "GL widget has no molecule"
-#~ msgstr "GL widget has no molecule"
-
-#~ msgid "Building video "
-#~ msgstr "Building video "
-
-#~ msgid "Could not run mencoder."
-#~ msgstr "Could not run mencoder."
-
-#~ msgid "Set Aspect Ratio"
-#~ msgstr "Set Aspect Ratio"
-
 #~ msgid ""
 #~ "The current Avogadro scene is %1x%2 pixels large, and therefore has "
 #~ "aspect ratio %3.\n"
@@ -8955,27 +8879,6 @@ msgstr ""
 #~ "for example 1 if you intend to use POV-Ray to produce a square image, "
 #~ "like 1000x1000 pixels."
 
-#~ msgid "Save VRML rendered files"
-#~ msgstr "Save VRML rendered files"
-
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
-
-#~ msgid "Connect"
-#~ msgstr "Connect"
-
-#~ msgid "Disconnect"
-#~ msgstr "Disconnect"
-
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
-#~ msgid "Wii Tracking"
-#~ msgstr "Wii Tracking"
-
-#~ msgid "Track motion using Wii remotes"
-#~ msgstr "Track motion using Wii remotes"
-
 #~ msgid ""
 #~ "Invalid OpenGL context.\n"
 #~ "Either something is completely broken in your OpenGL setup (can you run "
@@ -8984,133 +8887,10 @@ msgstr ""
 #~ "Invalid OpenGL context.\n"
 #~ "Either something is completely broken in your OpenGL setup (can you run "
 #~ "any OpenGL application?), or you found a bug."
-
-#~ msgid "Debug Information"
-#~ msgstr "Debug Information"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
-
-#~ msgid "View Size: %L1 x %L2"
-#~ msgstr "View Size: %L1 x %L2"
-
-#~ msgid "ModelView row 1: %L1 %L2 %L3 %L4"
-#~ msgstr "ModelView row 1: %L1 %L2 %L3 %L4"
-
-#~ msgid "ModelView row 2: %L1 %L2 %L3 %L4"
-#~ msgstr "ModelView row 2: %L1 %L2 %L3 %L4"
-
-#~ msgid "ModelView row 3: %L1 %L2 %L3 %L4"
-#~ msgstr "ModelView row 3: %L1 %L2 %L3 %L4"
-
-#~ msgid "ModelView row 4: %L1 %L2 %L3 %L4"
-#~ msgstr "ModelView row 4: %L1 %L2 %L3 %L4"
-
-#~ msgid "Atoms: %L1"
-#~ msgstr "Atoms: %L1"
-
-#~ msgid "OBMol: index %1 out of reach."
-#~ msgstr "OBMol: index %1 out of reach."
-
-#~ msgid "File type '%1' is not supported for reading."
-#~ msgstr "File type '%1' is not supported for reading."
-
-#~ msgid "File type for file '%1' is not supported for reading."
-#~ msgstr "File type for file '%1' is not supported for reading."
-
-#~ msgid "Reading molecule with index %1 from file '%2' failed."
-#~ msgstr "Reading molecule with index %1 from file '%2' failed."
-
-#~ msgid "replaceMolecule: index %1 out of reach."
-#~ msgstr "replaceMolecule: index %1 out of reach."
-
-#~ msgid "File type '%1' is not supported for writing."
-#~ msgstr "File type '%1' is not supported for writing."
-
-#~ msgid "File type for file '%1' is not supported for writing."
-#~ msgstr "File type for file '%1' is not supported for writing."
-
-#~ msgid "Could not open file '%1' for reading."
-#~ msgstr "Could not open file '%1' for reading."
-
-#~ msgid "Replacing molecule with index %1 in file '%2' failed."
-#~ msgstr "Replacing molecule with index %1 in file '%2' failed."
-
-#~ msgid "File %1 cannot be opened for reading."
-#~ msgstr "File %1 cannot be opened for reading."
-
-#~ msgid "File %1 can not be opened for writing."
-#~ msgstr "File %1 can not be opened for writing."
-
-#~ msgid "Saving molecular file failed - could not rename original file."
-#~ msgstr "Saving molecular file failed - could not rename original file."
-
-#~ msgid "Saving molecular file failed - could not rename new file."
-#~ msgstr "Saving molecular file failed - could not rename new file."
-
-#~ msgid "Saving molecular file failed - could not remove old file."
-#~ msgstr "Saving molecular file failed - could not remove old file."
-
-#~ msgid "Writing a molecule to file '%1' failed. OpenBabel function failed."
-#~ msgstr "Writing a molecule to file '%1' failed. OpenBabel function failed."
-
-#~ msgid "File %1 cannot be opened for writing."
-#~ msgstr "File %1 cannot be opened for writing."
-
-#~ msgid "Writing conformers to file '%1' failed."
-#~ msgstr "Writing conformers to file '%1' failed."
-
-#~ msgid "Molecule %1"
-#~ msgstr "Molecule %1"
 
 #~ msgctxt "Default license for all Avogadro plugins"
 #~ msgid "GPL2+"
 #~ msgstr "GPL2+"
-
-#~ msgid "Unknown Python Engine"
-#~ msgstr "Unknown Python Engine"
-
-#~ msgid "N/A"
-#~ msgstr "N/A"
-
-#~ msgid "PythonEngine: checking "
-#~ msgstr "PythonEngine: checking "
-
-#~ msgid "  - script has no 'Engine' class defined"
-#~ msgstr "  - script has no 'Engine' class defined"
-
-#~ msgid "  - no module"
-#~ msgstr "  - no module"
-
-#~ msgid "Unknown Python Extension"
-#~ msgstr "Unknown Python Extension"
-
-#~ msgid "PythonExtension: checking "
-#~ msgstr "PythonExtension: checking "
-
-#~ msgid "  - script has no 'Extension' class defined"
-#~ msgstr "  - script has no 'Extension' class defined"
-
-#~ msgid "Unknown Python Tool"
-#~ msgstr "Unknown Python Tool"
-
-#~ msgid "PythonTool: checking "
-#~ msgstr "PythonTool: checking "
-
-#~ msgid "  - script has no 'Tool' class defined"
-#~ msgstr "  - script has no 'Tool' class defined"
-
-#~ msgid "Conformer %1"
-#~ msgstr "Conformer %1"
-
-#~ msgid "Tools"
-#~ msgstr "Tools"
-
-#~ msgid "Align:"
-#~ msgstr "Align:"
-
-#~ msgid "Everything"
-#~ msgstr "Everything"
 
 #~ msgid ""
 #~ "Auto Optimization Tool\n"
@@ -9135,90 +8915,15 @@ msgstr ""
 #~ "When running:\n"
 #~ "Left Mouse: \tClick and drag atoms to move them."
 
-#~ msgid "AutoOpt: Could not setup force field...."
-#~ msgstr "AutoOpt: Could not setup force field...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
-
-#~ msgid "Num Constraints: %1"
-#~ msgstr "Num Constraints: %1"
-
-#~ msgid "Steps per Update:"
-#~ msgstr "Steps per Update:"
-
-#~ msgid "Algorithm:"
-#~ msgstr "Algorithm:"
-
-#~ msgid "Molecular Dynamics (600K)"
-#~ msgstr "Molecular Dynamics (600K)"
-
-#~ msgid "Molecular Dynamics (900K)"
-#~ msgstr "Molecular Dynamics (900K)"
-
-#~ msgid "Start"
-#~ msgstr "Start"
-
-#~ msgid "Fixed atoms are movable"
-#~ msgstr "Fixed atoms are movable"
-
-#~ msgid "Ignored atoms are movable"
-#~ msgstr "Ignored atoms are movable"
-
-#~ msgid "AutoOpt Molecule"
-#~ msgstr "AutoOpt Molecule"
-
 #~ msgid "Automatic optimization of molecular geometry"
 #~ msgstr "Automatic optimisation of molecular geometry"
 
 #~ msgid "AutoOptimization Settings"
 #~ msgstr "AutoOptimisation Settings"
 
-#~ msgid "Auto Rotation Tool"
-#~ msgstr "Auto Rotation Tool"
-
-#~ msgid "x rotation:"
-#~ msgstr "x rotation:"
-
-#~ msgid "x rotation"
-#~ msgstr "x rotation"
-
-#~ msgid "y rotation:"
-#~ msgstr "y rotation:"
-
-#~ msgid "y rotation"
-#~ msgstr "y rotation"
-
-#~ msgid "z rotation:"
-#~ msgstr "z rotation:"
-
-#~ msgid "z rotation"
-#~ msgstr "z rotation"
-
-#~ msgid "Automatic rotation of molecules"
-#~ msgstr "Automatic rotation of molecules"
-
-#~ msgid "AutoRotate Settings"
-#~ msgstr "AutoRotate Settings"
-
 #~ msgctxt "%L1 is the length of the bond"
 #~ msgid "Bond Length: %L1"
 #~ msgstr "Bond Length: %L1"
-
-#~ msgid " Show Angles"
-#~ msgstr " Show Angles"
-
-#~ msgid "Snap-to Threshold: "
-#~ msgstr "Snap-to Threshold: "
-
-#~ msgid "Bond Centric Manipulate"
-#~ msgstr "Bond Centric Manipulate"
-
-#~ msgid "Manipulation of bond lengths, angles, and torsions"
-#~ msgstr "Manipulation of bond lengths, angles, and torsions"
-
-#~ msgid "Bond Centric Manipulate Settings"
-#~ msgstr "Bond Centric Manipulate Settings"
 
 #~ msgctxt "%L1 is distance, %2 is Angstrom symbol"
 #~ msgid "Distance (2->3): %L1 %2"
@@ -9227,9 +8932,6 @@ msgstr ""
 #~ msgctxt "%L1 is distance, %2 is Angstrom symbol"
 #~ msgid "Distance (3->4): %L1 %2"
 #~ msgstr "Distance (3->4): %L1 %2"
-
-#~ msgid "Dihedral Angle: %1 °"
-#~ msgstr "Dihedral Angle: %1 °"
 
 #~ msgctxt "*1 is a number. You most likely do not need to translate this"
 #~ msgid "*1"
