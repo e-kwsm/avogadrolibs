@@ -9134,28 +9134,6 @@ msgstr ""
 #~ msgid "&Normalize displacements"
 #~ msgstr "&Normalise displacements"
 
-#~ msgctxt "low resolution"
-#~ msgid "Low"
-#~ msgstr "Low"
-
-#~ msgctxt "medium resolution"
-#~ msgid "Medium"
-#~ msgstr "Medium"
-
-#~ msgctxt "high resolution"
-#~ msgid "High"
-#~ msgstr "High"
-
-#~ msgctxt "very high resolution"
-#~ msgid "Very High"
-#~ msgstr "Very High"
-
-#~ msgctxt ""
-#~ "Add the new surface to this particular display type (i.e., orbital or "
-#~ "surface)"
-#~ msgid "In Display Type:"
-#~ msgstr "In Display Type:"
-
 #~ msgid "nanometers"
 #~ msgstr "nanometres"
 
@@ -9168,32 +9146,3 @@ msgstr ""
 #~ "are needed (say, for a quantum mechanical calculation),\n"
 #~ "a single-bond-only representation should suffice."
 
-#~ msgid "Find &double bonds"
-#~ msgstr "Find &double bonds"
-
-#~ msgid "Molecular Symmetry"
-#~ msgstr "Molecular Symmetry"
-
-#~ msgid "VRML Export"
-#~ msgstr "VRML Export"
-
-#~ msgid "Scale (mm/Å):"
-#~ msgstr "Scale (mm/Å):"
-
-#~ msgid "Smallest sphere (mm): "
-#~ msgstr "Smallest sphere (mm): "
-
-#~ msgid "Thinnest cylinder (mm): "
-#~ msgstr "Thinnest cylinder (mm): "
-
-#~ msgid "Calculate Size..."
-#~ msgstr "Calculate Size..."
-
-#~ msgid "Display visual cues"
-#~ msgstr "Display visual cues"
-
-#~ msgid "Python Settings"
-#~ msgstr "Python Settings"
-
-#~ msgid "Z Matrix Editor"
-#~ msgstr "Z Matrix Editor"
