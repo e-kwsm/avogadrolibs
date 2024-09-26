@@ -9905,9 +9905,6 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "png"
 
-#~ msgid "Tagged Image File Format"
-#~ msgstr "tiff"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "bmp"
 

@@ -9435,9 +9435,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "El fitxer turbomole CD s'ha formatat de forma incorrecta: %1"
 
-#~ msgid "Tagged Image File Format"
-#~ msgstr "TIFF"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "Mapa de bits de Windows"
 

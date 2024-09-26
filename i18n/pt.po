@@ -10164,9 +10164,6 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Carregando Dados do Espectro"
 
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Formato TIFF"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "Imagem do Windows"
 

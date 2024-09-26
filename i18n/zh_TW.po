@@ -9391,9 +9391,6 @@ msgstr ""
 #~ msgid "jpeg"
 #~ msgstr "jpeg (jpeg 檔)"
 
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format (TIFF 檔)"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "Windows Bitmap (位元影像圖形)"
 
