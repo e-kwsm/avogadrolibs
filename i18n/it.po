@@ -10878,35 +10878,11 @@ msgstr ""
 #~ msgid "Millenia"
 #~ msgstr "Millenni"
 
-#~ msgid "MegaWords"
-#~ msgstr "MegaWords"
-
-#~ msgid "MegaBytes"
-#~ msgstr "MegaBytes"
-
-#~ msgid "GigaWords"
-#~ msgstr "GigaWords"
-
-#~ msgid "GigaBytes"
-#~ msgstr "GigaBytes"
-
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Forza Metodi Paralleli"
 
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Produci il file \"core\" in caso di abort"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
 
 #~ msgid "Memory:"
 #~ msgstr "Memoria:"
@@ -10928,12 +10904,6 @@ msgstr ""
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Usa la rappresentazione di dati esterni per i messaggi"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO Letti ($VEC)"
 
@@ -10952,29 +10922,8 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Interfaccia di GAMESS con Altri Codici"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forza un Controlla Tipo Di Avvio"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
-#~ msgid "GAMESS (UK Version)"
-#~ msgstr "GAMESS (UK Version)"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Solvata con Acqua"
@@ -10990,9 +10939,6 @@ msgstr ""
 
 #~ msgid "Slater exchange"
 #~ msgstr "Scambio di Slater"
-
-#~ msgid "Becke 1988 exchange"
-#~ msgstr "Becke 1988 exchange"
 
 #~ msgid "VWN: Vosko-Wilk-Nusair (VWN5) correlation"
 #~ msgstr "VWN: corrrelazione Vosko-Wilk-Nusair (VWN5)"
@@ -11120,17 +11066,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Iniziale:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Ottimizzazione della funzione razionale"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Approssimazione Quadratica"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "Ottimizzazione con vincoli"
@@ -11153,18 +11093,6 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "Set Base:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Matrice-Z"
 
@@ -11174,47 +11102,14 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Input Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
-#~ msgid "Standard"
-#~ msgstr "Standard"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
-
-#~ msgid "Checkpoint:"
-#~ msgstr "Checkpoint:"
-
 #~ msgid "Z-matrix (compact)"
 #~ msgstr "Matrice-Z (compatto)"
 
 #~ msgid "MOLPRO Input"
 #~ msgstr "Input MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Versione di Molpro:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "Quartet"
 #~ msgstr "Quartetto"
@@ -11222,50 +11117,14 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Quintetto"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Input NWChem"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Input Q-Chem"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
-
-#~ msgid "no"
-#~ msgstr "no"
-
 #~ msgid "yes"
 #~ msgstr "sì"
-
-#~ msgid "D2"
-#~ msgstr "D2"
-
-#~ msgid "D3"
-#~ msgstr "D3"
 
 #~ msgid "Dispersion:"
 #~ msgstr "Dispersione:"
@@ -11303,23 +11162,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Schemi:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Larghezza:"
 
 #~ msgid "&Height"
 #~ msgstr "&Altezza"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "Regola automaticamente la dimensione del c&arattere"
@@ -11363,9 +11210,6 @@ msgstr ""
 #~ msgid "Show integrated DOS"
 #~ msgstr "Mostra il DOS integrato"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Unità di asse &Y:"
 
@@ -11374,12 +11218,6 @@ msgstr ""
 
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Numero di onde laser:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
 
 #~ msgid "Nucleus:"
 #~ msgstr "Nucleo:"
@@ -11390,26 +11228,11 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Cime dell'etichetta:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Vibrazioni molecolari"
 
 #~ msgid "Filter: "
 #~ msgstr "Filtro: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
-
-#~ msgid "Activity (A^4/amu)"
-#~ msgstr "Activity (A^4/amu)"
 
 #~ msgid "&Show Spectra..."
 #~ msgstr "&Mostra spettri..."
@@ -11472,9 +11295,6 @@ msgstr ""
 
 #~ msgid "periodic units"
 #~ msgstr "unità periodiche"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "nanometers"
 #~ msgstr "nanometri"
