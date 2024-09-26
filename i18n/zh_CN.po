@@ -8424,9 +8424,6 @@ msgstr ""
 #~ msgid "El.&No."
 #~ msgstr "元素与编号"
 
-#~ msgid ", "
-#~ msgstr ", "
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "APBS 输入文件 (*.in)"
 
@@ -8504,9 +8501,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "晶体..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8758,9 +8752,6 @@ msgstr ""
 #~ msgid "Trajectory files"
 #~ msgstr "轨道文件"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "添加.avi扩展名"
 
@@ -8946,9 +8937,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "普通矢量图格式"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "矢量图输出"
 
@@ -8992,9 +8980,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "下载PDB项目。"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "从URL下载分子。"
 
@@ -9018,9 +9003,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "图像文件 (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "没有提供有效的文件名。"
@@ -9080,12 +9062,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES 格式转换不能使用"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "为GAMESS量子化学软件包创建输入文件"
@@ -9321,9 +9297,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "逗号分隔数值"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "未知扩展名: %1"
 
@@ -9343,9 +9316,6 @@ msgstr ""
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "便携式网络图形(PNG)"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "标签图像文件格式(TIFF)"
@@ -9398,10 +9368,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "无"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "电子密度"
@@ -9416,9 +9382,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "计算分子轨道%L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL小工具未能正确启动以制作视频"
@@ -9485,9 +9448,6 @@ msgstr ""
 #~ msgid "Atoms: %L1"
 #~ msgstr "原子: %L1"
 
-#~ msgid "OBMol: index %1 out of reach."
-#~ msgstr "OBMol: index %1 out of reach."
-
 #~ msgid "File type '%1' is not supported for reading."
 #~ msgstr "文件类型 '%1' 不支持读取操作。"
 
@@ -9496,9 +9456,6 @@ msgstr ""
 
 #~ msgid "Reading molecule with index %1 from file '%2' failed."
 #~ msgstr "读取含有索引 %1 的分子信息的文件 '%2' 失败。"
-
-#~ msgid "replaceMolecule: index %1 out of reach."
-#~ msgstr "replaceMolecule: index %1 out of reach."
 
 #~ msgid "File type '%1' is not supported for writing."
 #~ msgstr "文件类型 '%1' 不支持写入操作。"
@@ -9538,10 +9495,6 @@ msgstr ""
 
 #~ msgid "Molecule %1"
 #~ msgstr "分子 %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "未知Python引擎"
@@ -9672,22 +9625,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "二面角: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "距离(s):"
 
@@ -9763,15 +9700,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "图形"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "环"
 
@@ -9838,14 +9766,8 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "动画轨迹"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgid "Save as .avi..."
 #~ msgstr "保存为.avi文件..."
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "Number of atoms:"
 #~ msgstr "原子数量"
@@ -9895,95 +9817,47 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "建立力场"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "步骤数"
 
 #~ msgid "Algorithm"
 #~ msgstr "算法"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "精氨酸"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "天冬酰胺"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "天冬氨酸"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "半胱氨酸"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "谷氨酸"
-
-#~ msgid "Glu"
-#~ msgstr "Glu"
 
 #~ msgid "Glutamine"
 #~ msgstr "谷氨酰胺"
 
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
 #~ msgid "Glycine"
 #~ msgstr "甘氨酸"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
 
 #~ msgid "Histidine"
 #~ msgstr "组氨酸"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "异亮氨酸"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "色氨酸"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "苏氨酸"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "丝氨酸"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "脯氨酸"
@@ -9991,26 +9865,14 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "苯丙氨酸"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "甲硫氨酸"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "赖氨酸"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "亮氨酸"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "序列 (N to C):"
@@ -10018,26 +9880,11 @@ msgstr ""
 #~ msgid "Stereochemistry:"
 #~ msgstr "立体化学:"
 
-#~ msgid "L"
-#~ msgstr "L"
-
 #~ msgid "N Terminus:"
 #~ msgstr "N端:"
 
 #~ msgid "C Terminus:"
 #~ msgstr "C端:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Straight Chain"
 #~ msgstr "直链"
