@@ -9108,14 +9108,6 @@ msgstr ""
 #~ msgid "Diagonalization Method:"
 #~ msgstr "Diagonalisation Method:"
 
-#~ msgctxt "\"Loop\" load balancing - set static node assignments"
-#~ msgid "Loop"
-#~ msgstr "Loop"
-
-#~ msgctxt "\"Next Value\" load balancing - dynamically assign nodes work"
-#~ msgid "Next Value"
-#~ msgstr "Next Value"
-
 #~ msgid "Use Localized Orbitals"
 #~ msgstr "Use Localised Orbitals"
 
@@ -9146,10 +9138,6 @@ msgstr ""
 #~ msgid "&Normalize displacements"
 #~ msgstr "&Normalise displacements"
 
-#~ msgctxt "low resolution"
-#~ msgid "Low"
-#~ msgstr "Low"
-
 #~ msgctxt "medium resolution"
 #~ msgid "Medium"
 #~ msgstr "Medium"
@@ -9162,47 +9150,14 @@ msgstr ""
 #~ msgid "Very High"
 #~ msgstr "Very High"
 
-#~ msgid "Isosurface cutoff value"
-#~ msgstr "Isosurface cutoff value"
-
 #~ msgctxt ""
 #~ "Add the new surface to this particular display type (i.e., orbital or "
 #~ "surface)"
 #~ msgid "In Display Type:"
 #~ msgstr "In Display Type:"
 
-#~ msgid "New Display"
-#~ msgstr "New Display"
-
-#~ msgid "Advanced..."
-#~ msgstr "Advanced..."
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
-
-#~ msgid "&Length:"
-#~ msgstr "&Length:"
-
-#~ msgid "Uni&t:"
-#~ msgstr "Uni&t:"
-
-#~ msgid "periodic units"
-#~ msgstr "periodic units"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
-
-#~ msgid "bohr radii"
-#~ msgstr "bohr radii"
-
 #~ msgid "nanometers"
 #~ msgstr "nanometres"
-
-#~ msgid "&Cap with hydrogen"
-#~ msgstr "&Cap with hydrogen"
 
 #~ msgid ""
 #~ "This may take a while. If only the atomic coordinates\n"
