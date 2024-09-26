@@ -8276,18 +8276,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Optimize"
 #~ msgstr "기하학 최적화"
 
-#~ msgid "In."
-#~ msgstr "In."
-
-#~ msgid "El."
-#~ msgstr "El."
-
-#~ msgid "El.&No."
-#~ msgstr "El.&No."
-
-#~ msgid ", "
-#~ msgstr ", "
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS 입력 (*.in)"
 
@@ -8344,18 +8332,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #, qt-format
 #~ msgid "Connection failed with: %1"
 #~ msgstr "연결 실패: %1"
-
-#, qt-format
-#~ msgid "clientServer/%1:%2/lastOpenDir"
-#~ msgstr "clientServer/%1:%2/lastOpenDir"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
 
 #~ msgid "Client server"
 #~ msgstr "클라이언트 서버"
@@ -8418,9 +8394,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "File name:"
 #~ msgstr "파일 이름:"
 
-#~ msgid "OK"
-#~ msgstr "OK"
-
 #~ msgid "Files of type:"
 #~ msgstr "파일 유형:"
 
@@ -8429,9 +8402,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "MongoChem Config"
 #~ msgstr "몽고켐 구성"
-
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
 
 #~ msgid "API Key:"
 #~ msgstr "API 키:"
@@ -8456,9 +8426,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Image:"
 #~ msgstr "이미지:"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -8543,9 +8510,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #, fuzzy
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8786,9 +8750,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
 #~ msgstr "초거대분자에 최적화된 선형으로 결합 나타내기"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi 확장기능 추가"
 
@@ -8905,9 +8866,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Common vector image formats"
 #~ msgstr "일반적인 벡터 이미지 포맷"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "벡터 그래픽 내보내기"
 
@@ -8916,9 +8874,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "H to Methyl"
 #~ msgstr "수소를 메틸로"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "수소를 메틸기로 변경하기"
@@ -8947,9 +8902,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "PDB entry to download."
 #~ msgstr "다운로드 할 PDB 항목"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "다운로드할 분자 URL"
 
@@ -8973,9 +8925,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "이미지 파일 (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "유효한 파일 이름을 입력하지 않았습니다."
@@ -9046,15 +8995,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES 포맷 변환이 불가능합니다!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "GAMESS 양자 화학 패키지를 위해 입력 파일을 형성"
 
@@ -9120,15 +9060,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgstr ""
 #~ "가우스가 정확하게 동작하지 않습니다. 아마도 완전히 설치되지 않은 것으로 보"
 #~ "입니다."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC 입력 경고"
@@ -9270,9 +9201,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Comma Separated Values"
 #~ msgstr "쉼표로 분리된 값"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "알려지지 않은 확장자: %1"
 
@@ -9296,9 +9224,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "PNG"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "선택된 이미지 파일 형식"
@@ -9375,9 +9300,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Debug Information"
 #~ msgstr "디버그 정보"
 
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
-
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "보기 크기: %L1 x %L2"
 
@@ -9404,10 +9326,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Molecule %1"
 #~ msgstr "분자 %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "알수없는 Python 엔진"
@@ -9517,22 +9435,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "이면각: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "거리:"
 
@@ -9599,15 +9501,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Shape"
 #~ msgstr "모양"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "반복"
 
@@ -9671,9 +9564,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Animate Trajectory"
 #~ msgstr "궤도 애니메이션 시작"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "반복"
@@ -9722,9 +9612,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Algorithm"
 #~ msgstr "알고리즘"
-
-#~ msgid "10e-"
-#~ msgstr "10e-"
 
 #~ msgid "Ala"
 #~ msgstr "알라닌(Ala)"
@@ -9837,41 +9724,17 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Stereochemistry:"
 #~ msgstr "입체화학:"
 
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Chain Number:"
 #~ msgstr "연쇄 번호:"
 
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "새 펩티드에 대한 연쇄번호"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "잔류물의 수:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "쌍극자 모멘트 (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
 
 #~ msgid "Advanced"
 #~ msgstr "고급"
@@ -9884,9 +9747,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Select..."
 #~ msgstr "선택..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "전체 화면 안티앨리어싱 사용"
@@ -9903,9 +9763,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Compute..."
 #~ msgstr "계산..."
 
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "고급 설정(&A)"
 
@@ -9915,23 +9772,11 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Read"
 #~ msgstr "읽기"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
 #~ msgid "Default"
 #~ msgstr "기본값"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Debug"
 #~ msgstr "디버그"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
 
 #~ msgid "Minutes"
 #~ msgstr "분"
@@ -10007,20 +9852,8 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "&Height"
 #~ msgstr "높이(&H)"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Y 축 단위:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "분자 진동"
