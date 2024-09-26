@@ -8471,9 +8471,6 @@ msgstr ""
 #~ msgid "Optimize"
 #~ msgstr "Optimalisatie"
 
-#~ msgid "In."
-#~ msgstr "In."
-
 #, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
@@ -8499,9 +8496,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Navigate Forward"
 #~ msgstr "Navigeren"
-
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgid "Cancel"
 #~ msgstr "Annuleren"
@@ -8535,9 +8529,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "&Crystallography"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8706,22 +8697,10 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markeer particuliere functies die aan een SMARTS patroon voldoen."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr ""
 #~ "Copy text \n"
 #~ "  Ununoctium"
-
-#~ msgid "Engines"
-#~ msgstr "Engines"
 
 #~ msgid "Axes"
 #~ msgstr "Assen"
@@ -8754,9 +8733,6 @@ msgstr ""
 
 #~ msgid "Renders protein backbones as ribbons"
 #~ msgstr "Geef proteïne hoofdketens als lintjes weer"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
 
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Geef ringen met gekleurde vlakken weer"
@@ -8792,9 +8768,6 @@ msgstr ""
 
 #~ msgid "DL-POLY HISTORY files"
 #~ msgstr "DL-POLY HISTORY bestanden"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi extensie aan het toevoegen"
@@ -8876,9 +8849,6 @@ msgstr ""
 #~ "Je molecule moet minimum vier atomen bevatten om een torsie beperking toe "
 #~ "te voegen"
 
-#~ msgid "&Reduce"
-#~ msgstr "&Reduce"
-
 #~ msgid "Show &Editors"
 #~ msgstr "Toon &Editors"
 
@@ -8888,15 +8858,8 @@ msgstr ""
 #~ msgid "Show &Property Display"
 #~ msgstr "Toon &Eigenschappen Scherm"
 
-#~ msgctxt "Unit cell lattice"
-#~ msgid "Lattice Type: %1"
-#~ msgstr "Lattice Type: %1"
-
 #~ msgid "Spacegroup: %1"
 #~ msgstr "Ruimtegroep: %1"
-
-#~ msgid "Unit cell volume: %L1%2"
-#~ msgstr "Unit cell volume: %L1%2"
 
 #~ msgid "Undefined"
 #~ msgstr "Ongedefinieerd"
@@ -8936,9 +8899,6 @@ msgstr ""
 #~ "Gefaald om cel na 1000 pogingen van het verkleiningsalgoritme te "
 #~ "verkleinen. Taak afbreken."
 
-#~ msgid "&Slab..."
-#~ msgstr "&Slab..."
-
 #~ msgid "Set Spacegroup"
 #~ msgstr "Verander Ruimtegroep"
 
@@ -8975,9 +8935,6 @@ msgstr ""
 #~ msgid "Calculate Energy"
 #~ msgstr "Bereken Energie"
 
-#~ msgid "Constraints..."
-#~ msgstr "Constraints..."
-
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
@@ -8995,26 +8952,17 @@ msgstr ""
 #~ "Optimaliseer molecules en genereer conformers die moleculaire "
 #~ "krachtvelden gebruiken"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Change H to Methyl"
 #~ msgstr "Wijzig H naar Methyl"
 
 #~ msgid "H to Methyl"
 #~ msgstr "H naar Methyl"
 
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
-
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Transformeer waterstof naar methyl groepen"
 
 #~ msgid "Add or remove hydrogens"
 #~ msgstr "Voeg waterstoffen toe of verwijder ze"
-
-#~ msgid "Peptide..."
-#~ msgstr "Peptide..."
 
 #~ msgid "Insert oligopeptide sequences"
 #~ msgstr "Voeg oligopeptide sequenties in"
@@ -9025,14 +8973,8 @@ msgstr ""
 #~ msgid "Fetch from URL..."
 #~ msgstr "Haal vanURL..."
 
-#~ msgid "PDB Entry"
-#~ msgstr "PDB Entry"
-
 #~ msgid "PDB entry to download."
 #~ msgstr "PDB entry om te downloaden."
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL van de te downloaden molecule."
@@ -9057,9 +8999,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Beeld bestand (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Geen geldige bestandsnaam is voorzien."
@@ -9102,12 +9041,6 @@ msgstr ""
 #~ msgid "Conformer Properties..."
 #~ msgstr "conformer Eigenschappen..."
 
-#~ msgid "Python Terminal"
-#~ msgstr "Python Terminal"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "interactieve python scripting terminal"
 
@@ -9123,9 +9056,6 @@ msgstr ""
 #~ msgid "QM Selection..."
 #~ msgstr "QM Selectie..."
 
-#~ msgid "Delete"
-#~ msgstr "Delete"
-
 #~ msgid "You must make a selection!"
 #~ msgstr "Maak eens een selectie, anders kan ik niet veel doen ;-)"
 
@@ -9134,12 +9064,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Conversie Onbeschikbaar"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Creëer input bestanden voor het GAMESS quantum chemistry pakket"
@@ -9201,29 +9125,11 @@ msgstr ""
 #~ msgid "Running Gaussian calculation..."
 #~ msgstr "Bezig met Gaussiaanse berekening..."
 
-#~ msgid "G03 Crashed."
-#~ msgstr "G03 Crashed."
-
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Gaussian is niet correct gestart. Misschien is het niet correct "
 #~ "geïnstalleerd."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC Input Waarschuwing"
@@ -9302,9 +9208,6 @@ msgstr ""
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Selecteer atomen, bindingen, residuen..."
 
-#~ msgid "GLSL Shaders..."
-#~ msgstr "GLSL Shaders..."
-
 #~ msgid "Open a vertex shader source file"
 #~ msgstr "Open een vertex shader bronbestand"
 
@@ -9322,9 +9225,6 @@ msgstr ""
 
 #~ msgid "Shader parameters files (*.params)"
 #~ msgstr "Shader parameters bestanden (*.params)"
-
-#~ msgid "GLSL Shaders"
-#~ msgstr "GLSL Shaders"
 
 #~ msgid "Load and use OpenGL 2.0 GLSL shaders"
 #~ msgstr "Laad en gebruik OpenGL 2.0 GLSL shaders"
@@ -9362,10 +9262,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Infrarood Spectra instellingen"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR Spectra instellingen"
 
@@ -9399,28 +9295,11 @@ msgstr ""
 #~ msgid "Enter new name for current scheme:"
 #~ msgstr "Voeg een nieuwe naam toe aan het huidige schema"
 
-#~ msgid "Tab Separated Values (*.tsv)"
-#~ msgstr "Tab Separated Values (*.tsv)"
-
 #~ msgid "Tab Separated Values"
 #~ msgstr "Tab gescheiden waarden"
 
-#~ msgid "Comma Separated Values"
-#~ msgstr "Comma Separated Values"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Onbekende extentie: %1"
-
-#~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
-#~ msgid "PWscf IR data (*.out)"
-#~ msgstr "PWscf IR data (*.out)"
-
-#~ msgctxt "Do not remove 'IR' or '(control)' -- needed for parsing later"
-#~ msgid "Turbomole IR data (control)"
-#~ msgstr "Turbomole IR data (control)"
 
 #~ msgid "Data Format"
 #~ msgstr "Data Formaat"
@@ -9432,32 +9311,11 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "laad Spectraal Data"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Getagged beeld Bestandsformaat"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Sla Spectra Beeld op"
-
-#~ msgid "&Spectra..."
-#~ msgstr "&Spectra..."
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualiseer spectraal data van kwantum chemie berekeningen"
@@ -9487,10 +9345,6 @@ msgstr ""
 #~ msgid "Orbitals"
 #~ msgstr "Orbitalen"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Elektronen Dichtheid"
@@ -9505,9 +9359,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "MO berekenen %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL widget is niet correct geïnitialiseerd om een video te maken"
@@ -9547,12 +9398,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Verbinding verbreken"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
-#~ msgid "Wii Tracking"
-#~ msgstr "Wii Tracking"
-
 #~ msgid "Track motion using Wii remotes"
 #~ msgstr "Volg beweging door Wii remotes te gebruiken"
 
@@ -9567,9 +9412,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Debug informatie"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Beeld Grootte: %L1 x %L2"
@@ -9633,13 +9475,6 @@ msgstr ""
 
 #~ msgid "Writing conformers to file '%1' failed."
 #~ msgstr "Conformers schrijven naar bestand '%1' mislukt."
-
-#~ msgid "Molecule %1"
-#~ msgstr "Molecule %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Onbekende Python Engine"
