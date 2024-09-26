@@ -8729,10 +8729,6 @@ msgstr "Email anda"
 #~ msgstr "Nama berkas:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktur:"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Navigasi"
 
