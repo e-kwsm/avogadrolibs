@@ -8394,17 +8394,11 @@ msgstr ""
 #~ msgid "Optimize"
 #~ msgstr "Optimiser"
 
-#~ msgid "In."
-#~ msgstr "In."
-
 #~ msgid "El."
 #~ msgstr "Él."
 
 #~ msgid "El.&No."
 #~ msgstr "Él.&No."
-
-#~ msgid ", "
-#~ msgstr ", "
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "Fichier d'entrée APBS (*.in)"
@@ -8419,9 +8413,6 @@ msgstr ""
 
 #~ msgid "Set Python Path…"
 #~ msgstr "Définir le chemin d'accès à python…"
-
-#~ msgid "Fragment…"
-#~ msgstr "Fragment…"
 
 #, fuzzy
 #~| msgid "Functional"
@@ -8456,18 +8447,6 @@ msgstr ""
 #~ msgid "Connection failed with: %1"
 #~ msgstr "Échec de connexion avec : %1"
 
-#, qt-format
-#~ msgid "clientServer/%1:%2/lastOpenDir"
-#~ msgstr "clientServer/%1:%2/lastOpenDir"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Client serveur"
 
@@ -8479,12 +8458,6 @@ msgstr ""
 
 #~ msgid "Formula"
 #~ msgstr "Formule"
-
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
-
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
 
 #~ msgid "Energy (eV)"
 #~ msgstr "Énergie (eV)"
@@ -8498,9 +8471,6 @@ msgstr ""
 
 #~ msgid "&Hostname:"
 #~ msgstr "&Hôte :"
-
-#~ msgid "Port"
-#~ msgstr "Port"
 
 #~ msgid "Test C&onnection..."
 #~ msgstr "Tester la &connexion..."
@@ -8517,14 +8487,8 @@ msgstr ""
 #~ msgid "File name:"
 #~ msgstr "Nom de fichier :"
 
-#~ msgid "OK"
-#~ msgstr "OK"
-
 #~ msgid "Cancel"
 #~ msgstr "Annuler"
-
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
 
 #~ msgid "API Key:"
 #~ msgstr "Clé de l'API :"
@@ -8538,9 +8502,6 @@ msgstr ""
 #~ msgid "Upload"
 #~ msgstr "Envoi"
 
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
 #~ msgid "Singularity"
 #~ msgstr "Singularité"
 
@@ -8549,9 +8510,6 @@ msgstr ""
 
 #~ msgid "Image:"
 #~ msgstr "Image :"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid "Input Parameters:"
 #~ msgstr "Paramètres d'entrée :"
@@ -8588,15 +8546,9 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS-UK..."
 
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Cristal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8655,13 +8607,6 @@ msgstr ""
 #~ "Angle %2"
 
 #~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
-#~ msgid "Angle"
-#~ msgstr "Angle"
-
-#~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
@@ -8672,9 +8617,6 @@ msgstr ""
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
 #~ msgstr "Angle de torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
 
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Énergie (kJ/mol)"
@@ -8706,9 +8648,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Insérer des fragments moléculaires pour construire de plus grandes "
 #~ "molécules"
-
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
 
 #~ msgid "Symmetry Properties..."
 #~ msgstr "Propriétés de symétrie..."
@@ -8782,23 +8721,8 @@ msgstr ""
 #~ "Mettre en surbrillance les motifs qui correspondent  à une structure "
 #~ "SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Moteurs"
-
-#~ msgid "Axes"
-#~ msgstr "Axes"
 
 #~ msgid "Renders the x, y, and z axes at the origin"
 #~ msgstr "Affiche les axes x, y et z à l'origine"
@@ -8876,14 +8800,8 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Ouvrir un fichier de trajectoire"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "L'extension .avi sera ajoutée"
-
-#~ msgid "Animation..."
-#~ msgstr "Animation..."
 
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Impossible de lire le format du fichier %1."
@@ -9027,10 +8945,6 @@ msgstr ""
 #~ msgstr "Quadratique"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cubique"
 
@@ -9088,9 +9002,6 @@ msgstr ""
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Réduire la maille (&primitive)"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanomètre"
 
@@ -9099,9 +9010,6 @@ msgstr ""
 
 #~ msgid "&Degree"
 #~ msgstr "&Degré"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Display &cartesian coordinates"
 #~ msgstr "Afficher les coordonnées cartésiennes"
@@ -9306,9 +9214,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Format d'image vectorielle usuel"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Exportation des graphismes vectoriels"
 
@@ -9317,9 +9222,6 @@ msgstr ""
 
 #~ msgid "H to Methyl"
 #~ msgstr "Changer H en Méthyl"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Transformer les hydrogènes en méthyles"
@@ -9366,9 +9268,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "Entrée PDB à télécharger"
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL de la molécule à télécharger."
@@ -9445,9 +9344,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Analyser le fichier de résultat d'Orca..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Exemple test d'Orca"
 
@@ -9497,9 +9393,6 @@ msgstr ""
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Fichier d'images (*.png *.pbm)"
 
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Aucun nom de fichier valide n'est fourni."
 
@@ -9543,9 +9436,6 @@ msgstr ""
 
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal Python"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Terminal de script python interactif"
@@ -9632,20 +9522,8 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Conversion de format SMILES non disponible !"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
 #~ msgid "efp"
 #~ msgstr "pfe"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Créer les fichiers d'entrée pour GAMESS"
@@ -9739,29 +9617,8 @@ msgstr ""
 #~ "Gaussian n'a pas fonctionné correctement. Il n'est peut être pas "
 #~ "correctement installé."
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
 #~ msgid "&NWChem..."
 #~ msgstr "&NWCHEM..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Avertissement du générateur de fichier de données Lammps"
@@ -9942,12 +9799,6 @@ msgstr ""
 #~ msgid "Density of States (states/valence electron)"
 #~ msgstr "Densité d'états (états/électron de valence)"
 
-#~ msgid "Transmittance (%)"
-#~ msgstr "Transmittance (%)"
-
-#~ msgid "Absorbance (%)"
-#~ msgstr "Absorbance (%)"
-
 #~ msgid "No intensities"
 #~ msgstr "Aucune intensité"
 
@@ -9983,10 +9834,6 @@ msgstr ""
 #~ msgid "DOS"
 #~ msgstr "DEE"
 
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
-
 #~ msgid "&UV Settings"
 #~ msgstr "&Paramètres UV"
 
@@ -10001,9 +9848,6 @@ msgstr ""
 
 #~ msgid "Dark"
 #~ msgstr "Sombre"
-
-#~ msgid "Publication"
-#~ msgstr "Publication"
 
 #~ msgid "Handdrawn"
 #~ msgstr "Dessiné à main levée"
@@ -10031,9 +9875,6 @@ msgstr ""
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valeurs séparées par des virgules"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
 
 #~ msgid "Spectra Import"
 #~ msgstr "Importation de spectres"
@@ -10073,9 +9914,6 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "png"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "tiff"
 
@@ -10108,9 +9946,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualiser les données spectrales de calculs de chimie quantique"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Analyse vibrationnelle"
@@ -10164,10 +9999,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Vide"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Densité électronique"
@@ -10182,9 +10013,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Calcul de l'OM %L1 en cours"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr ""
@@ -10264,17 +10092,11 @@ msgstr ""
 #~ msgid "Save VRML rendered files"
 #~ msgstr "Enregistrer les fichiers de rendu VRML"
 
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
-
 #~ msgid "Connect"
 #~ msgstr "Connecter"
 
 #~ msgid "Disconnect"
 #~ msgstr "Déconnecter"
-
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
 
 #~ msgid "Wii Tracking"
 #~ msgstr "Suivi Wii"
@@ -10379,10 +10201,6 @@ msgstr ""
 
 #~ msgid "Molecule %1"
 #~ msgstr "Molécule %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Moteur Python inconnu"
@@ -10550,22 +10368,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Angle dièdre : %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Distance(s) :"
 
@@ -10690,15 +10492,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Forme"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Boucle"
 
@@ -10728,9 +10521,6 @@ msgstr ""
 
 #~ msgid "TextRenderer"
 #~ msgstr "Rendu textuel"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
 
 #~ msgid "Text:"
 #~ msgstr "Texte :"
@@ -10795,9 +10585,6 @@ msgstr ""
 #~ msgid "Fill"
 #~ msgstr "Remplissage"
 
-#~ msgid "Points"
-#~ msgstr "Points"
-
 #~ msgid "Draw Box:"
 #~ msgstr "Boîte de dessin :"
 
@@ -10818,9 +10605,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Trajectoire d'animation"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"

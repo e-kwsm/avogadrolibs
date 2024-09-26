@@ -11749,26 +11749,14 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Eskemak:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Zabalera:"
 
 #~ msgid "&Height"
 #~ msgstr "&Altuera"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "hazb"
-
-#~ msgid "px"
-#~ msgstr "px"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -11832,9 +11820,6 @@ msgstr ""
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Laser Uhin-Zenbakia:"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
 #~ msgid "Nucleus:"
 #~ msgstr "Nukleoa:"
 
@@ -11847,23 +11832,11 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Gailur-Markak:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Bibrazio Molekularrak"
 
 #~ msgid "Filter: "
 #~ msgstr "Iragazkia: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Jarduera (A^4/mau)"
@@ -11935,12 +11908,6 @@ msgstr ""
 #~ msgid "Advanced..."
 #~ msgstr "Aurreratua..."
 
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
-
 #~ msgid "&Length:"
 #~ msgstr "&Luzeera"
 
@@ -11949,9 +11916,6 @@ msgstr ""
 
 #~ msgid "periodic units"
 #~ msgstr "unitate periodikoak"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "bohr radii"
 #~ msgstr "bohr eradioak"
