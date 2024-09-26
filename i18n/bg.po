@@ -8528,6 +8528,3 @@ msgstr ""
 
 #~ msgid "Building video "
 #~ msgstr "Изграждане на видео "
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"

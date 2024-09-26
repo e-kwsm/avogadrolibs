@@ -8982,12 +8982,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES konverzija formata nije dostupna!"
 
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Kreiraj ulazne datoteke za GAMESS paket za kvantnu hemiju"
 
@@ -9051,18 +9045,6 @@ msgstr ""
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "GaussiaN se nije izvršio korektno. Možda nije instaliran korektno"
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "Mopac Ulazno upozorenje"
@@ -9194,10 +9176,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Infracrveno, postavke spektra"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR, postavke spektra"
 
@@ -9237,9 +9215,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Vrijednosti odvojene zarezom"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Nepoznata ekstenzija: %1"
 
@@ -9254,18 +9229,11 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Format podataka"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Učitaj spektralne podatke"
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Prijenosna Mrežna Grafika"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Tagged Image format datoteke"
@@ -9336,9 +9304,6 @@ msgstr ""
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Izračunavanje MO %L1"
 
-#~ msgid "VdW"
-#~ msgstr "VdW"
-
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL dodatak nije korektno inicijaliziran da bi se napravio video"
 
@@ -9382,9 +9347,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Informacije za otklanjanje grešaka"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Veličina pogleda: %L1 x %L2"
@@ -9454,10 +9416,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molekula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Nepoznat Python pogon"
 
@@ -9499,9 +9457,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "Auto optimizacija: Ne mogu postaviti polje sila...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Steps per Update:"
 #~ msgstr "Koraci za ažuriranje:"
@@ -9587,22 +9542,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Dihedralni ugao: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Razmak(ci):"
 
@@ -9675,15 +9614,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Oblik"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Petlja"
 
@@ -9726,9 +9656,6 @@ msgstr ""
 #~ msgid "Orbital:"
 #~ msgstr "Orbite:"
 
-#~ msgid "Render:"
-#~ msgstr "Render:"
-
 #~ msgid "Fill"
 #~ msgstr "Popuna"
 
@@ -9752,9 +9679,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animiraj putanju"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -9820,86 +9744,41 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritam"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arginin"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Asparagin"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Aspartična kiselina"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Cistein"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "Glutaminozna kiselina"
-
-#~ msgid "Glu"
-#~ msgstr "Glu"
 
 #~ msgid "Glutamine"
 #~ msgstr "Glutamin"
 
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
 #~ msgid "Glycine"
 #~ msgstr "Glicin"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
 
 #~ msgid "Histidine"
 #~ msgstr "Histidin"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Isoleucin"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Tirtofan"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Threonin"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Serin"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Prolin"
@@ -9907,26 +9786,14 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenilalanin"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Meitonin"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Lisin"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Leucin"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Sekvenca (N do C):"
