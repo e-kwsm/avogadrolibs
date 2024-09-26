@@ -8713,9 +8713,6 @@ msgstr ""
 #~ msgid "Crystal..."
 #~ msgstr "Kristal..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Gehitu Hidrogenoak pH-rentzat"
@@ -8989,9 +8986,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Trajektoria Fitxategia ireki"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Gehitzen .avi estentzioa"
 
@@ -9191,9 +9185,6 @@ msgstr ""
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Gelaxka Murriztu (&Jatorrizkoa)"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanometro"
 
@@ -9386,9 +9377,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Ohiko bektore irudi formatuak"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Bektore grafikoen exportaketa"
 
@@ -9447,9 +9435,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "Deskargatzeko PDB sarbidea"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "Deskargatzeko molekularen URL-a"
 
@@ -9507,9 +9492,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Orca-ren inputa analizatu..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Orca Test Adibidea"
 
@@ -9538,9 +9520,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Argazki-artxiboak (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Ez da hornitu artxibo izen onargarririk."
@@ -9585,9 +9564,6 @@ msgstr ""
 
 #~ msgid "Python Terminal"
 #~ msgstr "Python Terminala"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Python idazteko terminal interaktiboa"
@@ -9666,21 +9642,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Formatu Bihurriketa Eskuraezina!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
@@ -9769,30 +9730,6 @@ msgstr ""
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "Gaussian ez da ondo ibili. Agian ez da ongi instalatu."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Lammps Input Atalal Generadorearen Ohartarazpena"
@@ -9995,10 +9932,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Espektru Infragorriaren Ezarpenak"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR Espektruaren Ezarpenak"
 
@@ -10055,9 +9988,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Komaz Bereizitako Baloreak"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Espektru Inportazioa"
 
@@ -10097,9 +10027,6 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Sareko Grafiko Eramangarriak"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Etiketaturiko Argazkien Artxiboen Formatua"
 
@@ -10132,9 +10059,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Ikusi datu espektralak mekanika kimikoko kalkulutetatik"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Bibrazio-Analisi"
@@ -10188,10 +10112,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Ezer ez"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Elektroien Dentsitatea"
@@ -10206,9 +10126,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Kalkulatzen %1 Orbital Molekularra"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr ""
@@ -10285,9 +10202,6 @@ msgstr ""
 
 #~ msgid "Save VRML rendered files"
 #~ msgstr "Gorde VRML errenderizaturiko fitxategiak"
-
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
 
 #~ msgid "Connect"
 #~ msgstr "Konektatu"
@@ -10402,10 +10316,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "%1 Molekula"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Python Engine Ezezaguna"
 
@@ -10453,9 +10363,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt.: ezin izan da indar-eremua konfiguratu..."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Mugen Kopurua: %1"
@@ -10546,22 +10453,6 @@ msgstr ""
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Angelu Diedroa: %1º"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Distantzia(k):"
@@ -10684,15 +10575,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Errepikatu"
 
@@ -10717,12 +10599,6 @@ msgstr ""
 #~ msgid "Rendering Engine:"
 #~ msgstr "Errenderizazio Motorra:"
 
-#~ msgid "TextRenderer"
-#~ msgstr "TextRenderer"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Testua:"
 
@@ -10743,15 +10619,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Aldatu Letra-Tipoa"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Marka Aldatu:"
@@ -10807,9 +10674,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Ibilbidea Animatu"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Errepikatu"
@@ -10822,9 +10686,6 @@ msgstr ""
 
 #~ msgid "Bohrs"
 #~ msgstr "Bohr"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYZ, koordenatuak bakarrik"
@@ -10950,15 +10811,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Translazio bektorea:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "&Bektore unitateak:"
 
@@ -10989,18 +10841,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "Ikuspegi lehenetsia"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Miller Indizeak"
 
@@ -11013,9 +10853,6 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Indar-Eremua Konfiguratu"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Urrats Kopurua"
 
@@ -11025,44 +10862,23 @@ msgstr ""
 #~ msgid "Alanine"
 #~ msgstr "Alanina"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arginina"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Arparagina"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Azido Aspartikoa"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Zisteina"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "Azido Glutamikoa"
 
-#~ msgid "Glu"
-#~ msgstr "Glu"
-
 #~ msgid "Glutamine"
 #~ msgstr "Glutamina"
-
-#~ msgid "Gln"
-#~ msgstr "Gln"
 
 #~ msgid "Glycine"
 #~ msgstr "Glizina"
@@ -11073,44 +10889,23 @@ msgstr ""
 #~ msgid "Histidine"
 #~ msgstr "Histidina"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Isoleuzina"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
 
 #~ msgid "Valine"
 #~ msgstr "Balina"
 
-#~ msgid "Val"
-#~ msgstr "Val"
-
 #~ msgid "Tyrosine"
 #~ msgstr "Tirosina"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Triptofanoa"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Treonina"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Serina"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Prolina"
@@ -11118,26 +10913,14 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenilalanina"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Metionina"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Lisina"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Leuzina"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Sekuentzia (N-tik C-ra)"
@@ -11145,26 +10928,11 @@ msgstr ""
 #~ msgid "Stereochemistry:"
 #~ msgstr "Estereokimika:"
 
-#~ msgid "L"
-#~ msgstr "L"
-
 #~ msgid "N Terminus:"
 #~ msgstr "N Terminala:"
 
 #~ msgid "C Terminus:"
 #~ msgstr "C Terminala"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Structure:"
 #~ msgstr "Egitura:"
