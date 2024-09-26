@@ -8754,10 +8754,6 @@ msgstr ""
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Mongo Chem Server ile Arayüz."
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Yapı Dosyasını Yükle"
-
 #~ msgid "Port"
 #~ msgstr "Bağlantı Noktası"
 
