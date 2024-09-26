@@ -8596,12 +8596,6 @@ msgstr ""
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "能量 (kJ/mol):"
 
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
-
 #, fuzzy
 #~ msgid "Input Generators"
 #~ msgstr "匯入產生器..."
@@ -8688,18 +8682,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "標示出符合 SMARTS 樣式之特色"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "引擎"
 
@@ -8770,9 +8752,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "開啟軌跡檔"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "加上附檔名 .avi"
@@ -8936,15 +8915,6 @@ msgstr ""
 #~ "Switching to UFF."
 #~ msgstr "無法在這分子上設定所選的力場. 切換到 UFF."
 
-#~ msgid "Systematic Rotor Search"
-#~ msgstr "Systematic Rotor Search"
-
-#~ msgid "Random Rotor Search"
-#~ msgstr "Random Rotor Search"
-
-#~ msgid "Weighted Rotor Search"
-#~ msgstr "Weighted Rotor Search"
-
 #~ msgid "ForceField"
 #~ msgstr "力場"
 
@@ -8961,9 +8931,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "一般向量圖形格式"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "向量圖形匯出"
 
@@ -8972,9 +8939,6 @@ msgstr ""
 
 #~ msgid "H to Methyl"
 #~ msgstr "氫到甲基"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "把氫原子轉成甲基"
@@ -9016,9 +8980,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "可供下載 PDB 的項目"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "可供下載分子的 URL"
 
@@ -9042,9 +9003,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "圖片檔案 (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "未提供有效檔名檔名."
@@ -9122,15 +9080,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "無法使用轉換 SMILES 化學式"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "GAMESS"
 #~ msgstr "GAMESS (原子分子之電子結構系統)"
 
@@ -9196,9 +9145,6 @@ msgstr ""
 #~ msgid "G03 did not start. Perhaps it is not installed correctly."
 #~ msgstr "無法啟動 G03. 可能是安裝不正確."
 
-#~ msgid "Running Gaussian calculation..."
-#~ msgstr "Running Gaussian calculation..."
-
 #~ msgid "G03 Crashed."
 #~ msgstr "G03 當機."
 
@@ -9211,15 +9157,6 @@ msgstr ""
 
 #~ msgid "&Gaussian..."
 #~ msgstr "高斯(&G)..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Moloro 輸入面板產生器警告"
@@ -9337,9 +9274,6 @@ msgstr ""
 #~ msgid "Shader parameters files (*.params)"
 #~ msgstr "Shader 參數檔案 (*.params)"
 
-#~ msgid "GLSL Shaders"
-#~ msgstr "GLSL Shaders"
-
 #~ msgid "Load and use OpenGL 2.0 GLSL shaders"
 #~ msgstr "載入及使用 OpenGL 2.0 GLSL shaders"
 
@@ -9390,10 +9324,6 @@ msgstr ""
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "NMR (核磁共振) 光譜設定"
 
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
 #~ msgid "&UV Settings"
 #~ msgstr "&UV 設定"
 
@@ -9438,9 +9368,6 @@ msgstr ""
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "逗號分開的數值"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
 
 #~ msgid "Unknown extension: %1"
 #~ msgstr "未知的附檔名: %1"
@@ -9510,9 +9437,6 @@ msgstr ""
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "從量子化學計算顯示光譜的資料"
 
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-
 #~ msgid "Vibrational Analysis"
 #~ msgstr "振動分析"
 
@@ -9545,14 +9469,6 @@ msgstr ""
 #~ msgid "Orbitals"
 #~ msgstr "軌域"
 
-#~ msgctxt "Highest Occupied MO"
-#~ msgid "HOMO"
-#~ msgstr "HOMO"
-
-#~ msgctxt "Lowest Unoccupied MO"
-#~ msgid "LUMO"
-#~ msgstr "LUMO"
-
 #~ msgid "Orbital"
 #~ msgstr "軌域"
 
@@ -9582,9 +9498,6 @@ msgstr ""
 #~ msgid "Calculating MO %L1"
 #~ msgstr "計算 MO %L1"
 
-#~ msgid "VdW"
-#~ msgstr "VdW"
-
 #~ msgid "Calculate molecular orbitals and other surfaces"
 #~ msgstr "計算分子的軌域及其他表面"
 
@@ -9599,9 +9512,6 @@ msgstr ""
 
 #~ msgid "Could not run mencoder."
 #~ msgstr "無法執行 memcoder"
-
-#~ msgid "Set Aspect Ratio"
-#~ msgstr "Set Aspect Ratio"
 
 #~ msgid ""
 #~ "The current Avogadro scene is %1x%2 pixels large, and therefore has "
@@ -9640,9 +9550,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "除錯訊息"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "可視大小: %L1 x %L2"
@@ -9704,10 +9611,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "分子 %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "未知到 Python 引擎"
 
@@ -9749,12 +9652,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "自動最佳化: 無法設定力場... (請檢查所繪製的分子是否正確)"
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
-
-#~ msgid "Num Constraints: %1"
-#~ msgstr "Num Constraints: %1"
 
 #~ msgid "Steps per Update:"
 #~ msgstr "每次更新步數："
@@ -9843,22 +9740,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "二平面角度: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "距離："
 
@@ -9926,9 +9807,6 @@ msgstr ""
 #~ msgid "Z Matrix Editor..."
 #~ msgstr "Z Matrix 編輯器..."
 
-#~ msgid "Z-Matrix"
-#~ msgstr "Z-Matrix"
-
 #~ msgid "Create/edit a z-matrix"
 #~ msgstr "新增/編輯 z-matrix"
 
@@ -9959,9 +9837,6 @@ msgstr ""
 #~ msgid "Axis 3:"
 #~ msgstr "軸 3："
 
-#~ msgid "Norm"
-#~ msgstr "Norm"
-
 #~ msgid "Preserve vector norms"
 #~ msgstr "保留向量範數"
 
@@ -9973,15 +9848,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "形狀"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "圈"
@@ -10010,9 +9876,6 @@ msgstr ""
 #~ msgid "TextRenderer"
 #~ msgstr "文字描述器"
 
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "文字："
 
@@ -10030,18 +9893,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "改變字型"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
-
-#~ msgid "Label Shift:"
-#~ msgstr "Label Shift:"
 
 #~ msgid "Bond length"
 #~ msgstr "鍵的長度"
@@ -10085,14 +9936,8 @@ msgstr ""
 #~ msgid "Negative"
 #~ msgstr "負"
 
-#~ msgid "Show Atoms"
-#~ msgstr "Show Atoms"
-
 #~ msgid "Animate Trajectory"
 #~ msgstr "動畫軌跡"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
