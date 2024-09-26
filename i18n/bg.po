@@ -8526,27 +8526,6 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Зареждане на спектрални данни"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
-
 #~ msgid "Building video "
 #~ msgstr "Изграждане на видео "
 
