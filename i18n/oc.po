@@ -8747,12 +8747,6 @@ msgstr ""
 #~ msgid "Format:"
 #~ msgstr "Format :"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "tiff"
 
@@ -8801,10 +8795,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Pas res"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Densitat electronica"
@@ -8815,9 +8805,6 @@ msgstr ""
 
 #~ msgid "Calculating VdW Cube"
 #~ msgstr "Calcul d'un cub WdW en cors"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Building video "
 #~ msgstr "Generacion de la vidèo "
