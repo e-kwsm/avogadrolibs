@@ -8831,46 +8831,11 @@ msgstr ""
 #~ "intensity data. Intensities have been set to an arbitrary value for "
 #~ "visualisation."
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
-
 #~ msgid "Tab Separated Values"
 #~ msgstr "Tab-Separated Values"
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "Comma-Separated Values"
-
-#~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
-#~ msgid "PWscf IR data (*.out)"
-#~ msgstr "PWscf IR data (*.out)"
-
-#~ msgctxt "Do not remove 'IR' or '(control)' -- needed for parsing later"
-#~ msgid "Turbomole IR data (control)"
-#~ msgstr "Turbomole IR data (control)"
-
-#~ msgctxt "Do not remove 'UV' or '(spectrum)' -- needed for parsing later"
-#~ msgid "Turbomole UV data (spectrum)"
-#~ msgstr "Turbomole UV data (spectrum)"
-
-#~ msgctxt "Do not remove 'CD' or '(cdspectrum)' -- needed for parsing later"
-#~ msgid "Turbomole CD data (cdspectrum)"
-#~ msgstr "Turbomole CD data (cdspectrum)"
-
-#~ msgid "Data Format"
-#~ msgstr "Data Format"
-
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualise spectral data from quantum chemistry calculations"
