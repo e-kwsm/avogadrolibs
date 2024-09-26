@@ -8663,9 +8663,6 @@ msgstr ""
 #~ msgid "Crystal..."
 #~ msgstr "Cristall..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Afegeix hidrògens per al pH..."
