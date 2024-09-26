@@ -8905,10 +8905,6 @@ msgstr ""
 #~ msgid "Formula"
 #~ msgstr "Formule"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Ouvrir le fichier"
-
 #~ msgid "Server settings"
 #~ msgstr "Préférences du serveur"
 
