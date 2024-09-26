@@ -9024,10 +9024,6 @@ msgstr "Seus e-mails"
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interface com Servidor Mongo Chem."
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Carregar Arquivo de Estrutura"
-
 #~ msgid "Server settings"
 #~ msgstr "Configurações de servidor"
 
