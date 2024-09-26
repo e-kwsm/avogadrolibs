@@ -9726,6 +9726,9 @@ msgstr "Email anda"
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Pengaturak Spektra &Inframerah"
 
+#~ msgid "&NMR Spectra Settings"
+#~ msgstr "Pengaturan Spektra &NMR"
+
 #~ msgid "&UV Settings"
 #~ msgstr "Pengaturan &UV"
 
@@ -10751,29 +10754,8 @@ msgstr "Email anda"
 #~ msgid "Make EFP"
 #~ msgstr "Membuat EFP"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Kosong (Cl)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Tipe SCF:"
@@ -10783,12 +10765,6 @@ msgstr "Email anda"
 
 #~ msgid "Exec Type:"
 #~ msgstr "Tipe Exec:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
 
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Determinan Ames Lab."
@@ -10805,9 +10781,6 @@ msgstr "Email anda"
 #~ msgid "General CI"
 #~ msgstr "CI Umum"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD:  CC Linier"
 
@@ -10816,18 +10789,6 @@ msgstr "Email anda"
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC dengan Tunggal dan Berganda"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Dijalankan Normal"
@@ -10853,56 +10814,11 @@ msgstr "Email anda"
 #~ msgid "# of Z-Matrix Variables"
 #~ msgstr "# dari Variabel Matriks-Z"
 
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
-
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Orde Sumbu Utama:"
 
 #~ msgid "Coordinate Type:"
 #~ msgstr "Tipe Koordinat:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Koordinat Cartesian."
@@ -10934,38 +10850,11 @@ msgstr "Email anda"
 #~ msgid "Years"
 #~ msgstr "Tahun"
 
-#~ msgid "Millenia"
-#~ msgstr "Millenia"
-
-#~ msgid "MegaWords"
-#~ msgstr "MegaWords"
-
-#~ msgid "MegaBytes"
-#~ msgstr "MegaBytes"
-
-#~ msgid "GigaWords"
-#~ msgstr "GigaWords"
-
-#~ msgid "GigaBytes"
-#~ msgstr "GigaBytes"
-
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Metoda Gaya Paralel"
 
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Mnghasilkan berkas \"core\" saat membatalkan"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
 
 #~ msgid "Memory:"
 #~ msgstr "Memori:"
@@ -10987,12 +10876,6 @@ msgstr "Email anda"
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Gunakan Representasi Data Eksternal untuk Pesan Catatan"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO Dibaca ($VEC)"
 
@@ -11011,29 +10894,8 @@ msgstr "Email anda"
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Antarmuka GAMESS dengan Program Lain"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Paksa pada Tipe Check Run"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
-#~ msgid "GAMESS (UK Version)"
-#~ msgstr "GAMESS (UK Version)"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Solvate dengan Air"
@@ -11134,17 +10996,11 @@ msgstr "Email anda"
 #~ msgid "Transformation Method"
 #~ msgstr "Metoda Transformasi"
 
-#~ msgid "Two Phase Bin Sort"
-#~ msgstr "Two Phase Bin Sort"
-
 #~ msgid "Segmented Transformation"
 #~ msgstr "Transformasi Tersegmentasi"
 
 #~ msgid "Numeric"
 #~ msgstr "Numerik"
-
-#~ msgid "Double Differenced Hessian"
-#~ msgstr "Double Differenced Hessian"
 
 #~ msgid "Print Internal Force Constants"
 #~ msgstr "Cetak Konstanta Gaya Internal"
@@ -11154,9 +11010,6 @@ msgstr "Email anda"
 
 #~ msgid "Purify Hessian"
 #~ msgstr "Bersihkan Hessian"
-
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
 
 #~ msgid "Initial Hessian"
 #~ msgstr "Hessian Awal"
@@ -11182,26 +11035,17 @@ msgstr "Email anda"
 #~ msgid "Initial:"
 #~ msgstr "Awal:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Fungsi Rasional Optimisasi"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Pendekatan Kuadrat"
 
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
-
 #~ msgid "Constrained Optimization"
 #~ msgstr "Optimisasi dengan Kendala"
 
 #~ msgid "Recalculate Hessian Every:"
 #~ msgstr "Menghitung Ulang Setiap Hessian:"
-
-#~ msgid "Follow Mode:"
-#~ msgstr "Follow Mode:"
 
 #~ msgid "GAMESS-UK Input"
 #~ msgstr "Masukan GAMESS-UK"
@@ -11211,21 +11055,6 @@ msgstr "Email anda"
 
 #~ msgid "Transition State Search"
 #~ msgstr "Pencarian Transition State"
-
-#~ msgid "Basis:"
-#~ msgstr "Basis:"
-
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
 
 #~ msgid "Z-matrix"
 #~ msgstr "Matriks-Z"
@@ -11246,20 +11075,8 @@ msgstr "Email anda"
 #~ msgid "Gaussian Input"
 #~ msgstr "Masukan Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Standar"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
-
-#~ msgid "Checkpoint:"
-#~ msgstr "Checkpoint:"
 
 #~ msgid "Z-matrix (compact)"
 #~ msgstr "Matrix-Z (ringkas)"
@@ -11267,41 +11084,8 @@ msgstr "Email anda"
 #~ msgid "MOLPRO Input"
 #~ msgstr "Masukan MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Versi Molpro:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
-
-#~ msgid "Quartet"
-#~ msgstr "Quartet"
-
-#~ msgid "Quintet"
-#~ msgstr "Quintet"
-
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
 
 #~ msgid "NWChem Input"
 #~ msgstr "Masukan NWChem"
@@ -11309,23 +11093,11 @@ msgstr "Email anda"
 #~ msgid "Q-Chem Input"
 #~ msgstr "Masukan Q-Chem"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "Load Shaders"
 #~ msgstr "Memuat Shader"
 
 #~ msgid "Shader Name:"
 #~ msgstr "Nama Shader:"
-
-#~ msgid "Vertex Shader:"
-#~ msgstr "Vertex Shader:"
 
 #~ msgid "Fragment Shader:"
 #~ msgstr "Fragmen Shader:"
@@ -11351,23 +11123,11 @@ msgstr "Email anda"
 #~ msgid "&Schemes:"
 #~ msgstr "&Skema:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "Lebar:"
 
 #~ msgid "&Height"
 #~ msgstr "Tinggi"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -11385,9 +11145,6 @@ msgstr "Email anda"
 #~ msgid "&Gaussian Width:"
 #~ msgstr "Lebar &Gaussian:"
 
-#~ msgid "&Label peaks"
-#~ msgstr "&Label peaks"
-
 #~ msgid "Rotatory Strength type:"
 #~ msgstr "Tipe Rotatory Strength:"
 
@@ -11403,9 +11160,6 @@ msgstr "Email anda"
 #~ msgid "States / Cell"
 #~ msgstr "States / Sel"
 
-#~ msgid "States / Atom"
-#~ msgstr "States / Atom"
-
 #~ msgid "States / Valence electron"
 #~ msgstr "States / Elektron valensi"
 
@@ -11418,9 +11172,6 @@ msgstr "Email anda"
 #~ msgid "Show integrated DOS"
 #~ msgstr "Tampilan terintegrasi DOS"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Satuan Sumbu &Y:"
 
@@ -11430,38 +11181,14 @@ msgstr "Email anda"
 #~ msgid "Relative"
 #~ msgstr "Relatif"
 
-#~ msgid "Laser Wavenumber:"
-#~ msgstr "Laser Wavenumber:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Le&bar Gaussian:"
 
 #~ msgid "Reset &Plot Axes"
 #~ msgstr "Tata Ulan Sumbu &Plot"
 
-#~ msgid "Label Peaks:"
-#~ msgstr "Label Peaks:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Getaran molekuler"
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Aktivitas (A^4/amu)"
