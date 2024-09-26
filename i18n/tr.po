@@ -8659,10 +8659,6 @@ msgstr ""
 #~ msgid "Energy (eV)"
 #~ msgstr "Enerji (eV)"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Yapı Dosyasını Yükle"
-
 #~ msgid "Port"
 #~ msgstr "Bağlantı Noktası"
 
