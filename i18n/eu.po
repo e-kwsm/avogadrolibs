@@ -8929,10 +8929,6 @@ msgstr ""
 #~ msgstr "Artxibo-Izena:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Kargatu fitxategia"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Nabigatu"
 
