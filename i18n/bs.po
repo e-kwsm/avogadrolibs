@@ -8518,9 +8518,6 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Dodaj vodike za pH"
@@ -8747,9 +8744,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Renderira veze kao žice(linije), idealno za veoma velike (bio)molekule"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Dodajem .avi ekstenziju"
 
@@ -8895,9 +8889,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "PDB ulaz za download."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL molekule za download."
 
@@ -8921,9 +8912,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Datoteke slike(*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Nije predočeno validno ime datoteke."
@@ -8966,12 +8954,6 @@ msgstr ""
 
 #~ msgid "Conformer Properties..."
 #~ msgstr "Postavke konformera..."
-
-#~ msgid "Python Terminal"
-#~ msgstr "Python Terminal"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Interaktivni python terminal za skriptiranje"

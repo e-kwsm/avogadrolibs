@@ -8401,9 +8401,6 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "الصق"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Animation..."
 #~ msgstr "الرسوم المتحركة..."
 
@@ -8487,14 +8484,8 @@ msgstr ""
 #~ msgid "New Scheme"
 #~ msgstr "مخطط جديد"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Data Format"
 #~ msgstr "تنسيق البيانات"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "حفظ صورة الأطياف"
@@ -8555,9 +8546,6 @@ msgstr ""
 
 #~ msgid "Negative"
 #~ msgstr "سالب"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgid "Load"
 #~ msgstr "تحميل"

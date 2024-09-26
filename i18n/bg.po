@@ -8370,9 +8370,6 @@ msgstr ""
 #~ "Рендерира връзките като въжета (линии), идеално за много големи "
 #~ "(био)молекули"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Добавяне на разширение .avi"
 
@@ -8447,9 +8444,6 @@ msgstr ""
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Изображения (*.png *.pbm)"
 
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Не е въведено валидно име на файл."
 
@@ -8468,12 +8462,6 @@ msgstr ""
 
 #~ msgid "You must make a selection!"
 #~ msgstr "Трябва да направите избиране!"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Advanced Settings Changed"
 #~ msgstr "Разширените настройки са променени"
