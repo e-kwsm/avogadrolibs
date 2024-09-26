@@ -8451,55 +8451,6 @@ msgstr ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
 
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Load File"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element name"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "All files"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "No molecule set"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molecule Properties..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Symmetry"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Distance (1->2): %L1 %2"
-
 #~ msgctxt "in Angstrom"
 #~ msgid ""
 #~ "Conformer %1\n"
@@ -8523,26 +8474,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
-
-#, fuzzy
-#~ msgid "Input Generators"
-#~ msgstr "Input Generator..."
-
-#, fuzzy
-#~ msgid "Optimize geometry"
-#~ msgstr "&Optimise Geometry"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometry Optimization"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Surfaces"
 
 #~ msgid "Color by Index"
 #~ msgstr "Colour by Index"
