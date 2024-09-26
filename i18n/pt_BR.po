@@ -8854,14 +8854,6 @@ msgstr "Seus e-mails"
 #~ msgid "Connection failed with: %1"
 #~ msgstr "A conexão falhou com: %1"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Servidor cliente"
 
@@ -8877,9 +8869,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Formula"
 #~ msgstr "Fórmula"
-
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
 
 #~ msgid "Mongo Chem Server"
 #~ msgstr "Servidor Mongo Chem"
@@ -8920,9 +8909,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "File name:"
 #~ msgstr "Nome do Arquivo:"
-
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgid "Files of type:"
 #~ msgstr "Arquivos do tipo:"
@@ -9006,12 +8992,6 @@ msgstr "Seus e-mails"
 #, fuzzy
 #~ msgid "Write"
 #~ msgstr "escrevem"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#~ msgid "InChI..."
-#~ msgstr "InChI..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9120,9 +9100,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "No"
 #~ msgstr "Não"
-
-#~ msgid "&Quantum"
-#~ msgstr "&Quantum"
 
 #~ msgid "Input Generators"
 #~ msgstr "Geradores de Entrada"
@@ -9281,10 +9258,6 @@ msgstr "Seus e-mails"
 #~ msgid "Electron density, isosurface = %L1"
 #~ msgstr "Densidade eletrônica, isosurface = %L1"
 
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
 #~ msgstr ""
 #~ "Renderiza moléculas como arames (linhas), ideal para (bio)moléculas muito "
@@ -9298,9 +9271,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Abrir Arquiv de Trajetória"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Acrescentando extensão .avi"
@@ -9439,14 +9409,6 @@ msgstr "Seus e-mails"
 #~ msgstr "Ortorômbico"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cúbico"
 
@@ -9485,9 +9447,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Reduzir Célula (&Primitiva)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanômetro"
@@ -9583,9 +9542,6 @@ msgstr "Seus e-mails"
 #~ msgid "Common vector image formats"
 #~ msgstr "Formatos comuns de imagens vetoriais"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Change H to Methyl"
 #~ msgstr "Trocar H por Metil"
 
@@ -9638,9 +9594,6 @@ msgstr "Seus e-mails"
 #~ msgid "PDB entry to download."
 #~ msgstr "Entrada PDB para download."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL da molécula para baixar."
 
@@ -9680,9 +9633,6 @@ msgstr "Seus e-mails"
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Analisar Saída Orca..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Exemplo de Teste Orca"
 
@@ -9700,9 +9650,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Arquivos de imagem (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Não foi indicado nome válido de arquivo."
@@ -9749,9 +9696,6 @@ msgstr "Seus e-mails"
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal Python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Console Interativo do Python"
 
@@ -9785,15 +9729,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Conversão para o Formato SMILES Não Disponível!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
@@ -9862,20 +9797,8 @@ msgstr "Seus e-mails"
 #~ msgstr ""
 #~ "Gaussian não rodou corretamente. Talvez não esteja corretamente instalado."
 
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gaussiano..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "Alerta Holerite MOPAC"
@@ -9979,16 +9902,8 @@ msgstr "Seus e-mails"
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Configurações do Espectro de &Infravermelho"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Configurações do Espectro &RMN"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
 
 #~ msgid "No data"
 #~ msgstr "Sem dados"
@@ -10023,9 +9938,6 @@ msgstr "Seus e-mails"
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valores Separados por Vírgula"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Extensão desconhecida: %1"
 
@@ -10038,12 +9950,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Load Spectral Data"
 #~ msgstr "Carregar Dados Espectrais"
-
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Formato TIFF"
