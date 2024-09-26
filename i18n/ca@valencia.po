@@ -8563,9 +8563,6 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS-UK..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Afig hidrògens per al pH..."
