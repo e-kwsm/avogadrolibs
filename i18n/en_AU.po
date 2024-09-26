@@ -8722,10 +8722,6 @@ msgstr ""
 #~ "The identities field must contain the same number of space delimited "
 #~ "entries as line 6 of the POSCAR."
 
-#~ msgctxt "Unit cell matrix, arg is vector style (row or column"
-#~ msgid "Cell Matrix (%1)"
-#~ msgstr "Cell Matrix (%1)"
-
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
@@ -8743,84 +8739,8 @@ msgstr ""
 #~ msgid "Invert chiral centers"
 #~ msgstr "Invert chiral centres"
 
-#~ msgctxt "Unknown molecule name"
-#~ msgid "unknown"
-#~ msgstr "unknown"
-
-#~ msgid "Estimated Dipole Moment (D):"
-#~ msgstr "Estimated Dipole Moment (D):"
-
-#~ msgid "Display standard molecular properties."
-#~ msgstr "Display standard molecular properties."
-
-#~ msgid "Fetch by chemical name..."
-#~ msgstr "Fetch by chemical name..."
-
-#~ msgid "Fetch from URL..."
-#~ msgstr "Fetch from URL..."
-
-#~ msgid "PDB Entry"
-#~ msgstr "PDB Entry"
-
-#~ msgid "PDB entry to download."
-#~ msgstr "PDB entry to download."
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "URL of molecule to download."
-#~ msgstr "URL of molecule to download."
-
-#~ msgid "Specified molecule could not be loaded: %1"
-#~ msgstr "Specified molecule could not be loaded: %1"
-
-#~ msgid "Network Fetch"
-#~ msgstr "Network Fetch"
-
-#~ msgid "Fetch molecule files over the network."
-#~ msgstr "Fetch molecule files over the network."
-
-#~ msgid "OrcaExtension Warning"
-#~ msgstr "OrcaExtension Warning"
-
-#~ msgid "OrcaExtension"
-#~ msgstr "OrcaExtension"
-
-#~ msgid " No vibration data found!"
-#~ msgstr " No vibration data found!"
-
-#~ msgid " No vibration data found or molecule changed outside Orca Plugin!"
-#~ msgstr " No vibration data found or molecule changed outside Orca Plugin!"
-
 #~ msgid "Selected displacement data don't fit to the actual molecule!"
 #~ msgstr "Selected displacement data doesn't fit to the actual molecule!"
-
-#~ msgid "extended Geometry File"
-#~ msgstr "extended Geometry File"
-
-#~ msgid "Read Orca Outputfile"
-#~ msgstr "Read Orca Outputfile"
-
-#~ msgid "no file found"
-#~ msgstr "no file found"
-
-#~ msgid "Somethings wrong in the file structure"
-#~ msgstr "Somethings wrong in the file structure"
-
-#~ msgid "Somethings wrong in the file structure - unitcells"
-#~ msgstr "Somethings wrong in the file structure - unitcells"
-
-#~ msgid "Something is wrong in the IR output! "
-#~ msgstr "Something is wrong in the IR output! "
-
-#~ msgid "Something is wrong in the raman output! "
-#~ msgstr "Something is wrong in the raman output! "
-
-#~ msgid "Something is wrong in the orbital energy output! "
-#~ msgstr "Something is wrong in the orbital energy output! "
-
-#~ msgid "No geometry found in file!"
-#~ msgstr "No geometry found in file!"
 
 #~ msgid ""
 #~ "Molecule of the file does not fit the actual molecule structure! \n"
@@ -8828,34 +8748,10 @@ msgstr ""
 #~ msgstr ""
 #~ "Molecule of the file does not fit the actual molecule structure! \n"
 #~ " Would you like to override the actual molecule?"
-
-#~ msgid "Could not read file!"
-#~ msgstr "Could not read file!"
-
-#~ msgid "Analyse Orca Output..."
-#~ msgstr "Analyse Orca Output..."
-
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
-#~ msgid "Orca Test Example"
-#~ msgstr "Orca Test Example"
 
 #~ msgid "Provides a dialog box with the words \"H...\"."
 #~ msgstr "Provides a dialogue box with the words \"H...\"."
 
-#~ msgid "ORCA Input Deck"
-#~ msgstr "ORCA Input Deck"
-
-#~ msgid "Show Preview"
-#~ msgstr "Show Preview"
-
-#~ msgid "Hide Preview"
-#~ msgstr "Hide Preview"
-
-#~ msgid "RijCosX option not available for the selected DFT functional!"
-#~ msgstr "RijCosX option not available for the selected DFT functional!"
-
 #~ msgid ""
 #~ "RijCosX not available for the selected DFT functional! \n"
 #~ "RijCosX option reset!"
@@ -8871,24 +8767,6 @@ msgstr ""
 #~ "Unsaved changes are made in the actual preview text! \n"
 #~ " Generating a new preview will lose all changes! \n"
 #~ " Would you like to override them anyway?"
-
-#~ msgid " OrcaSpectra::No vibration data found!"
-#~ msgstr " OrcaSpectra::No vibration data found!"
-
-#~ msgid "Save POV-Ray rendered image"
-#~ msgstr "Save POV-Ray rendered image"
-
-#~ msgid "Image files (*.png *.pbm)"
-#~ msgstr "Image files (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
-#~ msgid "No valid filename was supplied."
-#~ msgstr "No valid filename was supplied."
-
-#~ msgid "Does not compute."
-#~ msgstr "Does not compute."
 
 #~ msgid ""
 #~ "You requested no direct rendering using POV-Ray and not to keep the POV-"
@@ -8906,9 +8784,6 @@ msgstr ""
 #~ "Cannot write to file %1. Do you have permissions to write to that "
 #~ "location?"
 
-#~ msgid "POV-Ray failed to start."
-#~ msgstr "POV-Ray failed to start."
-
 #~ msgid ""
 #~ "POV-Ray failed to start. May be the path to the executable is not set "
 #~ "correctly."
@@ -8923,33 +8798,12 @@ msgstr ""
 #~ "Create POV-Ray files and render them using the command line POV-Ray "
 #~ "program."
 
-#~ msgid "Conformer Properties..."
-#~ msgstr "Conformer Properties..."
-
-#~ msgid "Python Terminal"
-#~ msgstr "Python Terminal"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
-#~ msgid "Interactive python scripting terminal"
-#~ msgstr "Interactive python scripting terminal"
-
-#~ msgid "Abinit Input Deck Generator Warning"
-#~ msgstr "Abinit Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Abinit input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Abinit input deck preview pane?"
-
-#~ msgid "Abinit_Input_Deck"
-#~ msgstr "Abinit_Input_Deck"
-
-#~ msgid "Abinit Running."
-#~ msgstr "Abinit Running."
 
 #~ msgid ""
 #~ "Abinit is already running. Please wait until the previous calculation is "
@@ -8958,81 +8812,21 @@ msgstr ""
 #~ "Abinit is already running. Please wait until the previous calculation is "
 #~ "finished."
 
-#~ msgid "Abinit Not Installed."
-#~ msgstr "Abinit Not Installed."
-
-#~ msgid "The abinit executable cannot be found."
-#~ msgstr "The abinit executable cannot be found."
-
 #~ msgid ""
 #~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
 #~ msgstr ""
 #~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
-
-#~ msgid "abinit did not start. Perhaps it is not installed correctly."
-#~ msgstr "abinit did not start. Perhaps it is not installed correctly."
-
-#~ msgid "Running Abinit calculation..."
-#~ msgstr "Running Abinit calculation..."
 
 #~ msgid "Abinit did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Abinit did not run correctly. Perhaps it is not installed correctly."
 
-#~ msgid "Dalton Input File Generator Warning"
-#~ msgstr "Dalton Input File Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Dalton input file preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Dalton input file preview pane?"
-
-#~ msgid "QM Matches"
-#~ msgstr "QM Matches"
-
-#~ msgctxt ""
-#~ "Selection to be used as an Effective Fragment Potential in calculations"
-#~ msgid "EFP Selection..."
-#~ msgstr "EFP Selection..."
-
-#~ msgctxt "Selection to be used for Quantum Mechanical calculations"
-#~ msgid "QM Selection..."
-#~ msgstr "QM Selection..."
-
-#~ msgid "Delete"
-#~ msgstr "Delete"
-
-#~ msgid "You must make a selection!"
-#~ msgstr "You must make a selection!"
-
-#~ msgid "SMILES Conversion Unavailable"
-#~ msgstr "SMILES Conversion Unavailable"
-
-#~ msgid "SMILES Format Conversion Not Available!"
-#~ msgstr "SMILES Format Conversion Not Available!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
-#~ msgid "Create input files for the GAMESS quantum chemistry package"
-#~ msgstr "Create input files for the GAMESS quantum chemistry package"
-
-#~ msgid "Advanced Settings Changed"
-#~ msgstr "Advanced Settings Changed"
 
 #~ msgid ""
 #~ "Advanced settings have changed.\n"
@@ -9041,18 +8835,12 @@ msgstr ""
 #~ "Advanced settings have changed.\n"
 #~ "Discard?"
 
-#~ msgid "Advanced Settings Reset"
-#~ msgstr "Advanced Settings Reset"
-
 #~ msgid ""
 #~ "Are you sure you wish to reset advanced settings?\n"
 #~ "All changes will be lost!"
 #~ msgstr ""
 #~ "Are you sure you wish to reset advanced settings?\n"
 #~ "All changes will be lost!"
-
-#~ msgid "Basic Settings Reset"
-#~ msgstr "Basic Settings Reset"
 
 #~ msgid ""
 #~ "Are you sure you wish to reset basic settings?\n"
@@ -9061,21 +8849,12 @@ msgstr ""
 #~ "Are you sure you wish to reset basic settings?\n"
 #~ "All changes will be lost!"
 
-#~ msgid "GAMESS-UK Input Deck Generator Warning"
-#~ msgstr "GAMESS-UK Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "GAMESS-UK input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "GAMESS-UK input deck preview pane?"
-
-#~ msgid "GAMESS-UK Input Deck"
-#~ msgstr "GAMESS-UK Input Deck"
-
-#~ msgid "Gaussian Input Deck Generator Warning"
-#~ msgstr "Gaussian Input Deck Generator Warning"
 
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
@@ -9084,87 +8863,27 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Gaussian input deck preview pane?"
 
-#~ msgid "Gaussian Input Deck"
-#~ msgstr "Gaussian Input Deck"
-
-#~ msgid "Gaussian Running."
-#~ msgstr "Gaussian Running."
-
 #~ msgid ""
 #~ "Gaussian is already running. Wait until the previous calculation is "
 #~ "finished."
 #~ msgstr ""
 #~ "Gaussian is already running. Wait until the previous calculation is "
 #~ "finished."
-
-#~ msgid "Gaussian Not Installed."
-#~ msgstr "Gaussian Not Installed."
 
 #~ msgid "The G03 executable, cannot be found."
 #~ msgstr "The G03 executable cannot be found."
-
-#~ msgid "G03 did not start. Perhaps it is not installed correctly."
-#~ msgstr "G03 did not start. Perhaps it is not installed correctly."
-
-#~ msgid "Running Gaussian calculation..."
-#~ msgstr "Running Gaussian calculation..."
-
-#~ msgid "G03 Crashed."
-#~ msgstr "G03 Crashed."
 
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not correctly installed."
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
-
-#~ msgid "Lammps Input Deck Generator Warning"
-#~ msgstr "Lammps Input Deck Generator Warning"
-
-#~ msgid "Molpro Input Deck Generator Warning"
-#~ msgstr "Molpro Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Molpro input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Molpro input deck preview pane?"
-
-#~ msgid "Molpro Input Deck"
-#~ msgstr "Molpro Input Deck"
-
-#~ msgid "MOPAC Input Warning"
-#~ msgstr "MOPAC Input Warning"
-
-#~ msgid "MOPAC Input Deck"
-#~ msgstr "MOPAC Input Deck"
-
-#~ msgid "MOPAC Running."
-#~ msgstr "MOPAC Running."
 
 #~ msgid ""
 #~ "MOPAC is already running. Wait until the previous calculation is finished."
@@ -9172,42 +8891,12 @@ msgstr ""
 #~ "MOPAC is already running. Wait until the previous calculation has "
 #~ "finished."
 
-#~ msgid "MOPAC Not Installed."
-#~ msgstr "MOPAC Not Installed."
-
-#~ msgid "The MOPAC executable, cannot be found."
-#~ msgstr "The MOPAC executable, cannot be found."
-
-#~ msgid "MOPAC failed to start."
-#~ msgstr "MOPAC failed to start."
-
-#~ msgid "MOPAC did not start. Perhaps it is not installed correctly."
-#~ msgstr "MOPAC did not start. Perhaps it is not installed correctly."
-
-#~ msgid "Running MOPAC calculation..."
-#~ msgstr "Running MOPAC calculation..."
-
-#~ msgid "MOPAC Crashed."
-#~ msgstr "MOPAC Crashed."
-
-#~ msgid "MOPAC did not run correctly. Perhaps it is not installed correctly."
-#~ msgstr "MOPAC did not run correctly. Perhaps it is not installed correctly."
-
-#~ msgid "NWChem Input Deck Generator Warning"
-#~ msgstr "NWChem Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "NWChem input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "NWChem input deck preview pane?"
-
-#~ msgid "NWChem Input Deck"
-#~ msgstr "NWChem Input Deck"
-
-#~ msgid "Psi4 Input Deck Generator Warning"
-#~ msgstr "Psi4 Input Deck Generator Warning"
 
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
@@ -9216,12 +8905,6 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Psi4 input deck preview pane?"
 
-#~ msgid "Psi4 Input Deck"
-#~ msgstr "Psi4 Input Deck"
-
-#~ msgid "Q-Chem Input Deck Generator Warning"
-#~ msgstr "Q-Chem Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Q-Chem input deck preview pane?"
@@ -9229,99 +8912,12 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Q-Chem input deck preview pane?"
 
-#~ msgid "QChem Input Deck"
-#~ msgstr "QChem Input Deck"
-
-#~ msgid "TeraChem Input Deck Generator Warning"
-#~ msgstr "TeraChem Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "TeraChem input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "TeraChem input deck preview pane?"
-
-#~ msgid "TeraChem Input Deck"
-#~ msgstr "TeraChem Input Deck"
-
-#~ msgid "Select SMARTS..."
-#~ msgstr "Select SMARTS..."
-
-#~ msgid "Add Named Selection..."
-#~ msgstr "Add Named Selection..."
-
-#~ msgid "SMARTS Selection"
-#~ msgstr "SMARTS Selection"
-
-#~ msgid "SMARTS pattern to select"
-#~ msgstr "SMARTS pattern to select"
-
-#~ msgid "There is no current selection."
-#~ msgstr "There is no current selection."
-
-#~ msgid "Add Named Selection"
-#~ msgstr "Add Named Selection"
-
-#~ msgid "Name cannot be empty."
-#~ msgstr "Name cannot be empty."
-
-#~ msgid "There is already a selection with this name."
-#~ msgstr "There is already a selection with this name."
-
-#~ msgid "Selections"
-#~ msgstr "Selections"
-
-#~ msgid "Select atoms, bonds, residues..."
-#~ msgstr "Select atoms, bonds, residues..."
-
-#~ msgid "GLSL Shaders..."
-#~ msgstr "GLSL Shaders..."
-
-#~ msgid "Open a vertex shader source file"
-#~ msgstr "Open a vertex shader source file"
-
-#~ msgid "Vertex shader files (*.vert)"
-#~ msgstr "Vertex shader files (*.vert)"
-
-#~ msgid "Open a fragment shader source file"
-#~ msgstr "Open a fragment shader source file"
-
-#~ msgid "Fragment shader files (*.frag)"
-#~ msgstr "Fragment shader files (*.frag)"
-
-#~ msgid "Open a shader parameters file"
-#~ msgstr "Open a shader parameters file"
-
-#~ msgid "Shader parameters files (*.params)"
-#~ msgstr "Shader parameters files (*.params)"
-
-#~ msgid "GLSL Shaders"
-#~ msgstr "GLSL Shaders"
-
-#~ msgid "Load and use OpenGL 2.0 GLSL shaders"
-#~ msgstr "Load and use OpenGL 2.0 GLSL shaders"
-
-#~ msgid "Intensity (arb. units)"
-#~ msgstr "Intensity (arb. units)"
-
-#~ msgid "Density of States (states/cell)"
-#~ msgstr "Density of States (states/cell)"
-
-#~ msgid "Density of States (states/atom)"
-#~ msgstr "Density of States (states/atom)"
-
-#~ msgid "Density of States (states/valence electron)"
-#~ msgstr "Density of States (states/valence electron)"
-
-#~ msgid "Transmittance (%)"
-#~ msgstr "Transmittance (%)"
-
-#~ msgid "Absorbance (%)"
-#~ msgstr "Absorbance (%)"
-
-#~ msgid "No intensities"
-#~ msgstr "No intensities"
 
 #~ msgid ""
 #~ "The vibration data in the molecule you have loaded does not have any "
@@ -9332,86 +8928,11 @@ msgstr ""
 #~ "intensity data. Intensities have been set to an arbitrary value for "
 #~ "visualisation."
 
-#~ msgid "Activity"
-#~ msgstr "Activity"
-
-#~ msgid "X Axis"
-#~ msgstr "X Axis"
-
-#~ msgid "Y Axis"
-#~ msgstr "Y Axis"
-
-#~ msgid "&Infrared Spectra Settings"
-#~ msgstr "&Infrared Spectra Settings"
-
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
-#~ msgid "&NMR Spectra Settings"
-#~ msgstr "&NMR Spectra Settings"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
-
-#~ msgid "&UV Settings"
-#~ msgstr "&UV Settings"
-
-#~ msgid "&CD Settings"
-#~ msgstr "&CD Settings"
-
-#~ msgid "&Raman Settings"
-#~ msgstr "&Raman Settings"
-
-#~ msgid "No data"
-#~ msgstr "No data"
-
-#~ msgid "Dark"
-#~ msgstr "Dark"
-
-#~ msgid "Publication"
-#~ msgstr "Publication"
-
-#~ msgid "Handdrawn"
-#~ msgstr "Handdrawn"
-
-#~ msgid "New Scheme"
-#~ msgstr "New Scheme"
-
-#~ msgid "Confirm Scheme Removal"
-#~ msgstr "Confirm Scheme Removal"
-
-#~ msgid "Really remove current scheme?"
-#~ msgstr "Really remove current scheme?"
-
-#~ msgid "Change Scheme Name"
-#~ msgstr "Change Scheme Name"
-
-#~ msgid "Enter new name for current scheme:"
-#~ msgstr "Enter new name for current scheme:"
-
-#~ msgid "Tab Separated Values (*.tsv)"
-#~ msgstr "Tab Separated Values (*.tsv)"
-
 #~ msgid "Tab Separated Values"
 #~ msgstr "Tab-Separated Values"
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "Comma-Separated Values"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
-#~ msgid "Spectra Import"
-#~ msgstr "Spectra Import"
-
-#~ msgid "Unknown extension: %1"
-#~ msgstr "Unknown extension: %1"
 
 #~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
 #~ msgid "PWscf IR data (*.out)"
