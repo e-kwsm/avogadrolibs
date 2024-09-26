@@ -8816,10 +8816,6 @@ msgstr ""
 #~ msgstr "Energia (eV)"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Kargatu fitxategia"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Nabigatu"
 
