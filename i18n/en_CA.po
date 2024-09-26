@@ -8655,56 +8655,14 @@ msgstr ""
 #~ msgid "Fill the unit cell using current spacegroup."
 #~ msgstr "Fill the unit cell using current space group."
 
-#~ msgid "Reduce to &Asymmetric Unit"
-#~ msgstr "Reduce to &Asymmetric Unit"
-
-#~ msgid "Remove atoms in equivalent positions (inverse of Fill Unit Cell)."
-#~ msgstr "Remove atoms in equivalent positions (inverse of Fill Unit Cell)."
-
 #~ msgid "Sy&mmetrize Crystal"
 #~ msgstr "Sy&mmetrise Crystal"
-
-#~ msgid "Reduce Cell (&Primitive)"
-#~ msgstr "Reduce Cell (&Primitive)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanometre"
 
 #~ msgid "&Picometer"
 #~ msgstr "&Picometre"
-
-#~ msgid "&Degree"
-#~ msgstr "&Degree"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
-
-#~ msgid "Display &cartesian coordinates"
-#~ msgstr "Display &cartesian coordinates"
-
-#~ msgid "Preserve &Cartesian Coordinates During Cell Modification"
-#~ msgstr "Preserve &Cartesian Coordinates During Cell Modification"
-
-#~ msgid "Preserve &Fractional Coordinates During Cell Modification"
-#~ msgstr "Preserve &Fractional Coordinates During Cell Modification"
-
-#~ msgid "Display &cartesian matrix"
-#~ msgstr "Display &cartesian matrix"
-
-#~ msgid "Display &fractional matrix"
-#~ msgstr "Display &fractional matrix"
-
-#~ msgid "Display as &row vectors"
-#~ msgstr "Display as &row vectors"
-
-#~ msgid "Display as &column vectors"
-#~ msgstr "Display as &column vectors"
-
-#~ msgid "&Crystal View Options..."
-#~ msgstr "&Crystal View Options..."
 
 #~ msgid ""
 #~ "<p>Perceived spacegroup %1, Hall symbol %2, Hermann-Mauguin symbol %3."
@@ -8741,18 +8699,6 @@ msgstr ""
 #~ msgid "Symmetrize Crystal"
 #~ msgstr "Symmetrise Crystal"
 
-#~ msgid "Wrap Atoms To Cell"
-#~ msgstr "Wrap Atoms To Cell"
-
-#~ msgid "Reduce to Niggli Cell"
-#~ msgstr "Reduce to Niggli Cell"
-
-#~ msgid "Select tolerance in current cartesian units:"
-#~ msgstr "Select tolerance in current cartesian units:"
-
-#~ msgid "Crystallography"
-#~ msgstr "Crystallography"
-
 #~ msgid "Construct and analyze periodic structures."
 #~ msgstr "Construct and analyse periodic structures."
 
@@ -8765,104 +8711,23 @@ msgstr ""
 #~ "the following supported formats:\n"
 #~ "\n"
 
-#~ msgid "VASP Format\n"
-#~ msgstr "VASP Format\n"
-
-#~ msgid "Bad Compostion"
-#~ msgstr "Bad Compostion"
-
 #~ msgid ""
 #~ "The identities field must contain the same number of space delimited "
 #~ "entries as line 6 of the POSCAR."
 #~ msgstr ""
 #~ "The identities field must contain the same number of space delimited "
 #~ "entries as line 6 of the POSCAR."
-
-#~ msgid "Cartesian Coordinates"
-#~ msgstr "Cartesian Coordinates"
-
-#~ msgid "Fractional Coordinates"
-#~ msgstr "Fractional Coordinates"
 
 #~ msgctxt "Unit cell matrix, arg is vector style (row or column"
 #~ msgid "Cell Matrix (%1)"
 #~ msgstr "Cell Matrix (%1)"
 
-#~ msgid "Set Unit Cell Matrix"
-#~ msgstr "Set Unit Cell Matrix"
-
-#~ msgid "Set Unit Cell Params"
-#~ msgstr "Set Unit Cell Params"
-
-#~ msgid "Working..."
-#~ msgstr "Working..."
-
-#~ msgid "Build"
-#~ msgstr "Build"
-
-#~ msgid "Cut Slab From Crystal"
-#~ msgstr "Cut Slab From Crystal"
-
-#~ msgid "No GLWidget?"
-#~ msgstr "No GLWidget?"
-
-#~ msgid "Please select one or more atoms."
-#~ msgstr "Please select one or more atoms."
-
-#~ msgid "Trajectory..."
-#~ msgstr "Trajectory..."
-
-#~ msgid "Open chemical file format"
-#~ msgstr "Open chemical file format"
-
-#~ msgid "Chemical files (*.xyz)"
-#~ msgstr "Chemical files (*.xyz)"
-
-#~ msgid "Open parameter file"
-#~ msgstr "Open parameter file"
-
-#~ msgid "Chemical files (*.parm7)"
-#~ msgstr "Chemical files (*.parm7)"
-
-#~ msgid "Import Trajectory"
-#~ msgstr "Import Trajectory"
-
-#~ msgid "Import trajectory files"
-#~ msgstr "Import trajectory files"
-
-#~ msgid "Calculate Energy"
-#~ msgstr "Calculate Energy"
-
-#~ msgid "Conformer Search..."
-#~ msgstr "Conformer Search..."
-
-#~ msgid "Constraints..."
-#~ msgstr "Constraints..."
-
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
 #~ msgstr ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
-
-#~ msgid "Geometric Optimization"
-#~ msgstr "Geometric Optimization"
-
-#~ msgid "Systematic Rotor Search"
-#~ msgstr "Systematic Rotor Search"
-
-#~ msgid "Random Rotor Search"
-#~ msgstr "Random Rotor Search"
-
-#~ msgid "Weighted Rotor Search"
-#~ msgstr "Weighted Rotor Search"
-
-#~ msgid "Genetic Algorithm Search"
-#~ msgstr "Genetic Algorithm Search"
-
-#~ msgid "ForceField"
-#~ msgstr "ForceField"
 
 #~ msgid ""
 #~ "Optimize molecules and generate conformers using molecular mechanics "
@@ -8870,48 +8735,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Optimise molecules and generate conformers using molecular mechanics "
 #~ "force fields"
-
-#~ msgid "&Vector Graphics..."
-#~ msgstr "&Vector Graphics..."
-
-#~ msgid "Common vector image formats"
-#~ msgstr "Common vector image formats"
-
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
-#~ msgid "Vector graphics export"
-#~ msgstr "Vector graphics export"
-
-#~ msgid "Change H to Methyl"
-#~ msgstr "Change H to Methyl"
-
-#~ msgid "H to Methyl"
-#~ msgstr "H to Methyl"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
-
-#~ msgid "Transform hydrogens to methyl groups"
-#~ msgstr "Transform hydrogens to methyl groups"
-
-#~ msgid "Add or remove hydrogens"
-#~ msgstr "Add or remove hydrogens"
-
-#~ msgid "Insert DNA/RNA chains"
-#~ msgstr "Insert DNA/RNA chains"
-
-#~ msgid "Peptide..."
-#~ msgstr "Peptide..."
-
-#~ msgid "Insert oligopeptide sequences"
-#~ msgstr "Insert oligopeptide sequences"
-
-#~ msgid "Invert Chirality"
-#~ msgstr "Invert Chirality"
-
-#~ msgid "InvertChiral"
-#~ msgstr "InvertChiral"
 
 #~ msgid "Invert chiral centers"
 #~ msgstr "Invert chiral centres"
@@ -9002,33 +8825,9 @@ msgstr ""
 #~ "Molecule of the file does not fit the actual molecule structure! \n"
 #~ " Would you like to override the actual molecule?"
 
-#~ msgid "Could not read file!"
-#~ msgstr "Could not read file!"
-
-#~ msgid "Analyse Orca Output..."
-#~ msgstr "Analyse Orca Output..."
-
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
-#~ msgid "Orca Test Example"
-#~ msgstr "Orca Test Example"
-
 #~ msgid "Provides a dialog box with the words \"H...\"."
 #~ msgstr "Provides a dialogue box with the words \"H...\"."
 
-#~ msgid "ORCA Input Deck"
-#~ msgstr "ORCA Input Deck"
-
-#~ msgid "Show Preview"
-#~ msgstr "Show Preview"
-
-#~ msgid "Hide Preview"
-#~ msgstr "Hide Preview"
-
-#~ msgid "RijCosX option not available for the selected DFT functional!"
-#~ msgstr "RijCosX option not available for the selected DFT functional!"
-
 #~ msgid ""
 #~ "RijCosX not available for the selected DFT functional! \n"
 #~ "RijCosX option reset!"
@@ -9044,24 +8843,6 @@ msgstr ""
 #~ "Unsaved changes are made in the actual preview text! \n"
 #~ " Generating a new preview will lose all changes! \n"
 #~ " Would you like to override them anyway?"
-
-#~ msgid " OrcaSpectra::No vibration data found!"
-#~ msgstr " OrcaSpectra::No vibration data found!"
-
-#~ msgid "Save POV-Ray rendered image"
-#~ msgstr "Save POV-Ray rendered image"
-
-#~ msgid "Image files (*.png *.pbm)"
-#~ msgstr "Image files (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
-#~ msgid "No valid filename was supplied."
-#~ msgstr "No valid filename was supplied."
-
-#~ msgid "Does not compute."
-#~ msgstr "Does not compute."
 
 #~ msgid ""
 #~ "You requested no direct rendering using POV-Ray and not to keep the POV-"
@@ -9079,9 +8860,6 @@ msgstr ""
 #~ "Cannot write to file %1. Do you have permissions to write to that "
 #~ "location?"
 
-#~ msgid "POV-Ray failed to start."
-#~ msgstr "POV-Ray failed to start."
-
 #~ msgid ""
 #~ "POV-Ray failed to start. May be the path to the executable is not set "
 #~ "correctly."
@@ -9096,33 +8874,12 @@ msgstr ""
 #~ "Create POV-Ray files and render them using the command line POV-Ray "
 #~ "program."
 
-#~ msgid "Conformer Properties..."
-#~ msgstr "Conformer Properties..."
-
-#~ msgid "Python Terminal"
-#~ msgstr "Python Terminal"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
-#~ msgid "Interactive python scripting terminal"
-#~ msgstr "Interactive python scripting terminal"
-
-#~ msgid "Abinit Input Deck Generator Warning"
-#~ msgstr "Abinit Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Abinit input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Abinit input deck preview pane?"
-
-#~ msgid "Abinit_Input_Deck"
-#~ msgstr "Abinit_Input_Deck"
-
-#~ msgid "Abinit Running."
-#~ msgstr "Abinit Running."
 
 #~ msgid ""
 #~ "Abinit is already running. Please wait until the previous calculation is "
@@ -9131,39 +8888,21 @@ msgstr ""
 #~ "Abinit is already running. Please wait until the previous calculation is "
 #~ "finished."
 
-#~ msgid "Abinit Not Installed."
-#~ msgstr "Abinit Not Installed."
-
-#~ msgid "The abinit executable cannot be found."
-#~ msgstr "The abinit executable cannot be found."
-
 #~ msgid ""
 #~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
 #~ msgstr ""
 #~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
-
-#~ msgid "abinit did not start. Perhaps it is not installed correctly."
-#~ msgstr "abinit did not start. Perhaps it is not installed correctly."
-
-#~ msgid "Running Abinit calculation..."
-#~ msgstr "Running Abinit calculation..."
 
 #~ msgid "Abinit did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Abinit did not run correctly. Perhaps it is not installed correctly."
 
-#~ msgid "Dalton Input File Generator Warning"
-#~ msgstr "Dalton Input File Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Dalton input file preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Dalton input file preview pane?"
-
-#~ msgid "QM Matches"
-#~ msgstr "QM Matches"
 
 #~ msgctxt ""
 #~ "Selection to be used as an Effective Fragment Potential in calculations"
@@ -9174,48 +8913,12 @@ msgstr ""
 #~ msgid "QM Selection..."
 #~ msgstr "QM Selection..."
 
-#~ msgid "Delete"
-#~ msgstr "Delete"
-
-#~ msgid "You must make a selection!"
-#~ msgstr "You must make a selection!"
-
-#~ msgid "SMILES Conversion Unavailable"
-#~ msgstr "SMILES Conversion Unavailable"
-
-#~ msgid "SMILES Format Conversion Not Available!"
-#~ msgstr "SMILES Format Conversion Not Available!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
-#~ msgid "Create input files for the GAMESS quantum chemistry package"
-#~ msgstr "Create input files for the GAMESS quantum chemistry package"
-
-#~ msgid "Advanced Settings Changed"
-#~ msgstr "Advanced Settings Changed"
-
 #~ msgid ""
 #~ "Advanced settings have changed.\n"
 #~ "Discard?"
 #~ msgstr ""
 #~ "Advanced settings have changed.\n"
 #~ "Discard?"
-
-#~ msgid "Advanced Settings Reset"
-#~ msgstr "Advanced Settings Reset"
 
 #~ msgid ""
 #~ "Are you sure you wish to reset advanced settings?\n"
@@ -9224,18 +8927,12 @@ msgstr ""
 #~ "Are you sure you wish to reset advanced settings?\n"
 #~ "All changes will be lost!"
 
-#~ msgid "Basic Settings Reset"
-#~ msgstr "Basic Settings Reset"
-
 #~ msgid ""
 #~ "Are you sure you wish to reset basic settings?\n"
 #~ "All changes will be lost!"
 #~ msgstr ""
 #~ "Are you sure you wish to reset basic settings?\n"
 #~ "All changes will be lost!"
-
-#~ msgid "GAMESS-UK Input Deck Generator Warning"
-#~ msgstr "GAMESS-UK Input Deck Generator Warning"
 
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
@@ -9244,12 +8941,6 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "GAMESS-UK input deck preview pane?"
 
-#~ msgid "GAMESS-UK Input Deck"
-#~ msgstr "GAMESS-UK Input Deck"
-
-#~ msgid "Gaussian Input Deck Generator Warning"
-#~ msgstr "Gaussian Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Gaussian input deck preview pane?"
@@ -9257,33 +8948,15 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Gaussian input deck preview pane?"
 
-#~ msgid "Gaussian Input Deck"
-#~ msgstr "Gaussian Input Deck"
-
-#~ msgid "Gaussian Running."
-#~ msgstr "Gaussian Running."
-
 #~ msgid ""
 #~ "Gaussian is already running. Wait until the previous calculation is "
 #~ "finished."
 #~ msgstr ""
 #~ "Gaussian is already running. Wait until the previous calculation is "
 #~ "finished."
-
-#~ msgid "Gaussian Not Installed."
-#~ msgstr "Gaussian Not Installed."
 
 #~ msgid "The G03 executable, cannot be found."
 #~ msgstr "The G03 executable cannot be found."
-
-#~ msgid "G03 did not start. Perhaps it is not installed correctly."
-#~ msgstr "G03 did not start. Perhaps it is not installed correctly."
-
-#~ msgid "Running Gaussian calculation..."
-#~ msgstr "Running Gaussian calculation..."
-
-#~ msgid "G03 Crashed."
-#~ msgstr "G03 Crashed."
 
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
