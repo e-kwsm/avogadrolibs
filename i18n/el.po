@@ -8756,9 +8756,6 @@ msgstr ""
 #~ msgid "Crystal..."
 #~ msgstr "Κρύσταλλος..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Προσθήκη υδρογόνων για pH..."
@@ -9023,9 +9020,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Άνοιγμα αρχείου τροχιάς"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Προσθήκη κατάληξης .avi"
@@ -9444,9 +9438,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Κοινοί τύποι διανυσματικών εικόνων"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Εξαγωγή διανυσματικών γραφικών"
 
@@ -9505,9 +9496,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "Καταχώριση PDB για μεταφόρτωση."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL του μορίου για μεταφόρτωση."
 
@@ -9531,9 +9519,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Αρχεία εικόνας (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Δεν δόθηκε κανένα έγκυρο όνομα αρχείου."
@@ -9595,9 +9580,6 @@ msgstr ""
 #~ "Θα θέλατε να ενημερώσετε το κείμενο προεπισκόπησης, χάνοντας όλες τις "
 #~ "αλλαγές που έγιναν στο παράθυρο προεπισκόπησης κάρτας εισόδου Abinit;"
 
-#~ msgid "Abinit_Input_Deck"
-#~ msgstr "Abinit_Input_Deck"
-
 #~ msgid "Abinit Running."
 #~ msgstr "Το Abinit εκτελείται."
 
@@ -9658,21 +9640,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Η μετατροπή μορφής SMILES δεν είναι διαθέσιμη!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Δημιουργία αρχείων εισόδου για το πακέτο κβαντικής χημείας GAMESS"
@@ -9762,30 +9729,6 @@ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Το Gaussian δεν εκτελέστηκε σωστά. Ίσως δεν έχει εγκατασταθεί σωστά."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Προειδοποίηση γεννήτριας κάρτας εισόδου Lammps"
@@ -9989,16 +9932,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Ρυθμίσεις &υπέρυθρων φασμάτων"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Ρυθμίσεις φασμάτων &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
 
 #~ msgctxt "Ultra-Violet spectrum"
 #~ msgid "UV"
@@ -10049,9 +9984,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Τιμές χωριζόμενες με κόμμα"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Εισαγωγή φασμάτων"
 
@@ -10090,23 +10022,11 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Φορητά Δικτυακά Γραφικά (PNG)"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Μορφή αρχείου εικόνας με ετικέτες"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
 #~ msgid "Portable Pixmap"
 #~ msgstr "Φορητό Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Αποθήκευση εικόνας φασμάτων"
@@ -10126,9 +10046,6 @@ msgstr ""
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr ""
 #~ "Οπτικοποίηση φασματικών δεδομένων από υπολογισμούς κβαντικής χημείας"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Ανάλυση δονήσεων"
@@ -10165,14 +10082,6 @@ msgstr ""
 #~ msgid "Orbitals"
 #~ msgstr "Τροχιακά"
 
-#~ msgctxt "Highest Occupied MO"
-#~ msgid "HOMO"
-#~ msgstr "HOMO"
-
-#~ msgctxt "Lowest Unoccupied MO"
-#~ msgid "LUMO"
-#~ msgstr "LUMO"
-
 #~ msgid "Orbital"
 #~ msgstr "Τροχιακό"
 
@@ -10182,10 +10091,6 @@ msgstr ""
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Κανένας"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
@@ -10281,9 +10186,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Αποσύνδεση"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Εντοπισμός Wii"
 
@@ -10301,9 +10203,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Πληροφορίες αποσφαλμάτωσης"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Μέγεθος προβολής: %L1 x %L2"
@@ -10385,10 +10284,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Μόριο %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Άγνωστη μηχανή Python"
 
@@ -10459,9 +10354,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "Αυτόματη βελτιστοποίηση: Αδύνατη η ρύθμιση του δυναμικού πεδίου...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Αριθμός περιορισμών: %1"
@@ -10552,22 +10444,6 @@ msgstr ""
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Δίεδρη γωνία: %1 °"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Αποστάσεις:"
@@ -10690,15 +10566,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Σχήμα"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Βρόχος"
 
@@ -10726,9 +10593,6 @@ msgstr ""
 #~ msgid "TextRenderer"
 #~ msgstr "Απόδοση κειμένου"
 
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Κείμενο:"
 
@@ -10749,15 +10613,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Αλλαγή γραμματοσειράς"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Μετατόπιση ετικέτας:"
@@ -10816,9 +10671,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Παραγωγή τροχιάς"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Βρόχος"
@@ -10834,9 +10686,6 @@ msgstr ""
 
 #~ msgid "Fractional"
 #~ msgstr "Κλασματικός"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYZ, μόνο συντεταγμένες"
@@ -10965,15 +10814,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Διάνυσμα μετακίνησης:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "Μονάδες &διανύσματος:"
 
@@ -11007,18 +10847,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "Προεπιλεγμένη προβολή"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Δείκτες Μίλερ"
 
@@ -11031,9 +10859,6 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Ρύθμιση δυναμικού πεδίου"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Αριθμός βημάτων"
 
@@ -11043,92 +10868,47 @@ msgstr ""
 #~ msgid "Alanine"
 #~ msgstr "Αλανίνη"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Αργινίνη"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Ασπαραγίνη"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Ασπαρτικό Οξύ"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Κυστεΐνη"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "Γλουταμικό Οξύ"
-
-#~ msgid "Glu"
-#~ msgstr "Glu"
 
 #~ msgid "Glutamine"
 #~ msgstr "Γλουταμίνη"
 
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
 #~ msgid "Glycine"
 #~ msgstr "Γλυκίνη"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
 
 #~ msgid "Histidine"
 #~ msgstr "Ιστιδίνη"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Ισολευκίνη"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
 
 #~ msgid "Valine"
 #~ msgstr "Βαλίνη"
 
-#~ msgid "Val"
-#~ msgstr "Val"
-
 #~ msgid "Tyrosine"
 #~ msgstr "Τυροσίνη"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Τρυπτοφάνη"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Θρεονίνη"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Σερίνη"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Προλίνη"
@@ -11136,26 +10916,14 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Φαινυλαλανίνη"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Μεθειονίνη"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Λυσίνη"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Λευκίνη"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Αλληλουχία (Ν προς C):"
@@ -11171,18 +10939,6 @@ msgstr ""
 
 #~ msgid "C Terminus:"
 #~ msgstr "Τέλος C:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Straight Chain"
 #~ msgstr "Ευθεία αλυσίδα"
@@ -11208,12 +10964,6 @@ msgstr ""
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Ο αριθμός αλυσίδας για το νέο πεπτίδιο"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Αριθμός υπολοίπων:"
 
@@ -11223,23 +10973,8 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Ροπή διπόλου (D):"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Advanced"
 #~ msgstr "Προχωρημένη"
-
-#~ msgid "SCF"
-#~ msgstr "SCF"
 
 #~ msgid "Grid"
 #~ msgstr "Πλέγμα"
@@ -11249,9 +10984,6 @@ msgstr ""
 
 #~ msgid "Select..."
 #~ msgstr "Επιλογή..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Χρήση πλήρους εξομάλυνσης σκηνής"
@@ -11280,9 +11012,6 @@ msgstr ""
 #~ msgid "Abinit Input"
 #~ msgstr "Είσοδος Abinit"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "Καρτεσιανή (άνγκστρομ)"
 
@@ -11292,23 +11021,14 @@ msgstr ""
 #~ msgid "Plane Wave cutoff (Ha):"
 #~ msgstr "Αποκοπή επιπέδου κύματος (Ha):"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
 #~ msgid "Tolerance on forces(Ha/bohr):"
 #~ msgstr "Ανοχή στις δυνάμεις (Ha/bohr):"
 
 #~ msgid "Max lattice expansion:"
 #~ msgstr "Μέγιστη επέκταση πλέγματος:"
 
-#~ msgid "1.05"
-#~ msgstr "1.05"
-
 #~ msgid "k-point shift:"
 #~ msgstr "μετατόπιση σημείου k:"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
 
 #~ msgid "Number of bands:"
 #~ msgstr "Αριθμός ζωνών:"
@@ -11318,9 +11038,6 @@ msgstr ""
 
 #~ msgid "Double grid PW cutoff (Ha):"
 #~ msgstr "Αποκοπή PW διπλού πλέγματος (Ha):"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Occupation scheme:"
 #~ msgstr "Σχήμα κατάληψης:"
@@ -11349,17 +11066,11 @@ msgstr ""
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Πλάτος επάλειψης (Ha):"
 
-#~ msgid "0.01"
-#~ msgstr "0.01"
-
 #~ msgid "0 - no moving ions "
 #~ msgstr "0 - χωρίς ιόντα μετακίνησης "
 
 #~ msgid "1 - viscous damping"
 #~ msgstr "1 - ιξώδης απόσβεση"
-
-#~ msgid "2 - BFGS "
-#~ msgstr "2 - BFGS "
 
 #~ msgid "3 - BFGS with energy"
 #~ msgstr "3 - BFGS με ενέργεια"
@@ -11367,14 +11078,8 @@ msgstr ""
 #~ msgid "# Geometrical time steps:"
 #~ msgstr "# Γεωμετρικά βήματα χρόνου:"
 
-#~ msgid "1.e-10"
-#~ msgstr "1.e-10"
-
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "Εξομάλυνση κινητικής ενέργειας (Ha):"
-
-#~ msgid "0.5"
-#~ msgstr "0.5"
 
 #~ msgid "Compute..."
 #~ msgstr "Υπολογίζεται..."
@@ -11391,30 +11096,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Προσθέτει ό,τι πληκτρολογείτε στη γραμμή τίτλου του αρχείου εισόδου για\n"
 #~ "τους δικούς σας σκοπούς πληροφόρησης."
-
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
 
 #~ msgid "Pople-style"
 #~ msgstr "Τεχνοτροπία Pople"
