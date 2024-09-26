@@ -10580,9 +10580,6 @@ msgstr ""
 #~ msgid "Include Nitrogens"
 #~ msgstr "Incluir os Azotos"
 
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
-
 #~ msgid "Fill"
 #~ msgstr "Preencher"
 
@@ -10607,18 +10604,12 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animar Trajectória"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Ciclo"
 
 #~ msgid "Save as .avi..."
 #~ msgstr "Guardar como .avi..."
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "Number of atoms:"
 #~ msgstr "Total de átomos:"
@@ -10704,18 +10695,6 @@ msgstr ""
 #~ msgid "Stereochemistry:"
 #~ msgstr "Estereoquímica:"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Chain Number:"
 #~ msgstr "Número da Cadeia:"
 
@@ -10728,9 +10707,6 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momento Dipolar (D):"
 
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
 #~ msgid "Advanced"
 #~ msgstr "Avançadas"
 
@@ -10740,29 +10716,8 @@ msgstr ""
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Seleccionar a cor do fundo para transparente"
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "Configurações &Avançadas"
-
-#~ msgid "Hessian"
-#~ msgstr "Hessian"
 
 #~ msgid "Stat Point"
 #~ msgstr "Ponto Inicial"
@@ -10782,35 +10737,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Ler"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Difusão Orbital-S em Átomos Pesados"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Difusão Orbital-L em Átomos Pesados"
 
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Valência Zeta Dupla"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Valência Zeta Tripla"
@@ -10821,26 +10755,11 @@ msgstr ""
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Valência Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Tipo ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Padrão"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Funções de Polarização de Átomos Pesados:"
@@ -10848,14 +10767,8 @@ msgstr ""
 #~ msgid "#light Atom Polarization Functions:"
 #~ msgstr "#leve Funções de Polarização de Átomos:"
 
-#~ msgid "Polar:"
-#~ msgstr "Polar:"
-
 #~ msgid "Gradient"
 #~ msgstr "Gradiente"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
 
 #~ msgid "Spin Orbit"
 #~ msgstr "Orbital de Spin"
@@ -10872,29 +10785,11 @@ msgstr ""
 #~ msgid "Make EFP"
 #~ msgstr "Construir EFP"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Nenhum (CI)"
 
 #~ msgid "Foster-Boys"
 #~ msgstr "Adotados"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Tipo SCF:"
@@ -10907,9 +10802,6 @@ msgstr ""
 
 #~ msgid "Run Type:"
 #~ msgstr "Tipo de Execução:"
-
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
 
 #~ msgid "Coordinate Type:"
 #~ msgstr "Tipo de Coordenadas:"
@@ -10953,53 +10845,14 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Quinteto"
 
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Sem restrições"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "não"
 
 #~ msgid "yes"
 #~ msgstr "sim"
-
-#~ msgid "D2"
-#~ msgstr "D2"
-
-#~ msgid "D3"
-#~ msgstr "D3"
 
 #~ msgid "Dispersion:"
 #~ msgstr "Dispersão:"
@@ -11012,9 +10865,6 @@ msgstr ""
 
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "Tamanho da F&onte auto-ajustável"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Vibrações Moleculares"
@@ -11031,9 +10881,6 @@ msgstr ""
 
 #~ msgid "New Display"
 #~ msgstr "Nova Apresentação"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "bohr radii"
 #~ msgstr "raio de bohr"
