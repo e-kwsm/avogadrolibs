@@ -11406,48 +11406,6 @@ msgstr ""
 #~ msgid "Coordinate Type:"
 #~ msgstr "Typ souřadnic:"
 
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
-
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Jedinečné karteziánské souřadnice."
 
@@ -11499,18 +11457,6 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Po přerušení vytvořit \"hlavní\" soubor"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Paměť:"
 
@@ -11534,12 +11480,6 @@ msgstr ""
 #~ msgid "Initial Guess:"
 #~ msgstr "Počáteční předpoklad:"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO přečten ($VEC)"
 
@@ -11558,32 +11498,11 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Uživatelské rozhraní GAMESS k jiným kódům"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Vynutit jednu zkoušku vykonání běhu"
 
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (verze UK)"
-
-#~ msgid "Gaussian 9x"
-#~ msgstr "Gaussian 9x"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Solvát s vodou"
@@ -11735,9 +11654,6 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Výchozí:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Racionální optimalizace funkcí"
 
@@ -11768,18 +11684,6 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "Základ:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Matice Z"
 
@@ -11800,17 +11704,8 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Gaussovský vstup"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Standardní"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Kontrolní bod:"
@@ -11824,23 +11719,8 @@ msgstr ""
 #~ msgid "6-31+G(d)"
 #~ msgstr "6-31G(d)"
 
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Verze Molpro:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "MOPAC Input"
 #~ msgstr "Vstup MOPAC"
@@ -11851,74 +11731,23 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Pětice"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Vstup NWChem"
-
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Vstup Q-Chem"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "TeraChem Input"
 #~ msgstr "Zadání TeraChem"
 
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Neomezeno"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "Ne"
 
 #~ msgid "yes"
 #~ msgstr "Ano"
-
-#~ msgid "D2"
-#~ msgstr "D2"
-
-#~ msgid "D3"
-#~ msgstr "D3"
 
 #~ msgid "Dispersion:"
 #~ msgstr "Rozptyl:"
@@ -11959,26 +11788,14 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Nákresy:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Šířka:"
 
 #~ msgid "&Height"
 #~ msgstr "&Výška:"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "palec"
-
-#~ msgid "px"
-#~ msgstr "px"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -12030,9 +11847,6 @@ msgstr ""
 #~ msgid "Show integrated DOS"
 #~ msgstr "Ukázat začleněný DOS"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Jednotky na ose y:"
 
@@ -12044,12 +11858,6 @@ msgstr ""
 
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Vlnočet laseru:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
 
 #~ msgid "Nucleus:"
 #~ msgstr "Jádro:"
@@ -12063,23 +11871,11 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Vrcholy popisků"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekulární vibrace"
 
 #~ msgid "Filter: "
 #~ msgstr "Filtr: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Činnost (A^4/amu)"
@@ -12151,12 +11947,6 @@ msgstr ""
 #~ msgid "Advanced..."
 #~ msgstr "Pokročilé..."
 
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
-
 #~ msgid "&Length:"
 #~ msgstr "Dé&lka:"
 
@@ -12165,9 +11955,6 @@ msgstr ""
 
 #~ msgid "periodic units"
 #~ msgstr "Periodické jednotky"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "bohr radii"
 #~ msgstr "Bohrova poloměru"
@@ -12192,9 +11979,6 @@ msgstr ""
 
 #~ msgid "Molecular Symmetry"
 #~ msgstr "Molekulová symetrie"
-
-#~ msgid "VRML Export"
-#~ msgstr "VRML Export"
 
 #~ msgid "Scale (mm/Å):"
 #~ msgstr "Měřítko (mm/Å):"
