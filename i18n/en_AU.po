@@ -8632,39 +8632,6 @@ msgstr ""
 #~ msgid "Spacegroup: %1"
 #~ msgstr "Space group: %1"
 
-#~ msgid "Unit cell volume: %L1%2"
-#~ msgstr "Unit cell volume: %L1%2"
-
-#~ msgid "Undefined"
-#~ msgstr "Undefined"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Triclinic"
-#~ msgstr "Triclinic"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Monoclinic"
-#~ msgstr "Monoclinic"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Orthorhombic"
-#~ msgstr "Orthorhombic"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Cubic"
-#~ msgstr "Cubic"
-
-#~ msgid "Paste Crystal"
-#~ msgstr "Paste Crystal"
-
 #~ msgid ""
 #~ "Niggli-reduction failed. The input structure's lattice that is confusing "
 #~ "the Niggli-reduction algorithm. Try making a small perturbation (approx. "
@@ -8683,74 +8650,23 @@ msgstr ""
 #~ "Failed to reduce cell after 1000 iterations of the reduction algorithm. "
 #~ "Stopping."
 
-#~ msgid "Rotate To Standard &Orientation"
-#~ msgstr "Rotate To Standard &Orientation"
-
-#~ msgid "&Slab..."
-#~ msgstr "&Slab..."
-
 #~ msgid "Perceive Space&group..."
 #~ msgstr "Perceive Space &group..."
 
 #~ msgid "Set &Spacegroup..."
 #~ msgstr "Set &Space group..."
 
-#~ msgid "&Fill Unit Cell"
-#~ msgstr "&Fill Unit Cell"
-
 #~ msgid "Fill the unit cell using current spacegroup."
 #~ msgstr "Fill the unit cell using current space group."
 
-#~ msgid "Reduce to &Asymmetric Unit"
-#~ msgstr "Reduce to &Asymmetric Unit"
-
-#~ msgid "Remove atoms in equivalent positions (inverse of Fill Unit Cell)."
-#~ msgstr "Remove atoms in equivalent positions (inverse of Fill Unit Cell)."
-
 #~ msgid "Sy&mmetrize Crystal"
 #~ msgstr "Sy&mmetrise Crystal"
-
-#~ msgid "Reduce Cell (&Primitive)"
-#~ msgstr "Reduce Cell (&Primitive)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanometre"
 
 #~ msgid "&Picometer"
 #~ msgstr "&Picometre"
-
-#~ msgid "&Degree"
-#~ msgstr "&Degree"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
-
-#~ msgid "Display &cartesian coordinates"
-#~ msgstr "Display &cartesian coordinates"
-
-#~ msgid "Preserve &Cartesian Coordinates During Cell Modification"
-#~ msgstr "Preserve &Cartesian Coordinates During Cell Modification"
-
-#~ msgid "Preserve &Fractional Coordinates During Cell Modification"
-#~ msgstr "Preserve &Fractional Coordinates During Cell Modification"
-
-#~ msgid "Display &cartesian matrix"
-#~ msgstr "Display &cartesian matrix"
-
-#~ msgid "Display &fractional matrix"
-#~ msgstr "Display &fractional matrix"
-
-#~ msgid "Display as &row vectors"
-#~ msgstr "Display as &row vectors"
-
-#~ msgid "Display as &column vectors"
-#~ msgstr "Display as &column vectors"
-
-#~ msgid "&Crystal View Options..."
-#~ msgstr "&Crystal View Options..."
 
 #~ msgid ""
 #~ "<p>Perceived spacegroup %1, Hall symbol %2, Hermann-Mauguin symbol %3."
@@ -8787,18 +8703,6 @@ msgstr ""
 #~ msgid "Symmetrize Crystal"
 #~ msgstr "Symmetrise Crystal"
 
-#~ msgid "Wrap Atoms To Cell"
-#~ msgstr "Wrap Atoms To Cell"
-
-#~ msgid "Reduce to Niggli Cell"
-#~ msgstr "Reduce to Niggli Cell"
-
-#~ msgid "Select tolerance in current cartesian units:"
-#~ msgstr "Select tolerance in current cartesian units:"
-
-#~ msgid "Crystallography"
-#~ msgstr "Crystallography"
-
 #~ msgid "Construct and analyze periodic structures."
 #~ msgstr "Construct and analyse periodic structures."
 
@@ -8811,104 +8715,23 @@ msgstr ""
 #~ "the following supported formats:\n"
 #~ "\n"
 
-#~ msgid "VASP Format\n"
-#~ msgstr "VASP Format\n"
-
-#~ msgid "Bad Compostion"
-#~ msgstr "Bad Compostion"
-
 #~ msgid ""
 #~ "The identities field must contain the same number of space delimited "
 #~ "entries as line 6 of the POSCAR."
 #~ msgstr ""
 #~ "The identities field must contain the same number of space delimited "
 #~ "entries as line 6 of the POSCAR."
-
-#~ msgid "Cartesian Coordinates"
-#~ msgstr "Cartesian Coordinates"
-
-#~ msgid "Fractional Coordinates"
-#~ msgstr "Fractional Coordinates"
 
 #~ msgctxt "Unit cell matrix, arg is vector style (row or column"
 #~ msgid "Cell Matrix (%1)"
 #~ msgstr "Cell Matrix (%1)"
 
-#~ msgid "Set Unit Cell Matrix"
-#~ msgstr "Set Unit Cell Matrix"
-
-#~ msgid "Set Unit Cell Params"
-#~ msgstr "Set Unit Cell Params"
-
-#~ msgid "Working..."
-#~ msgstr "Working..."
-
-#~ msgid "Build"
-#~ msgstr "Build"
-
-#~ msgid "Cut Slab From Crystal"
-#~ msgstr "Cut Slab From Crystal"
-
-#~ msgid "No GLWidget?"
-#~ msgstr "No GLWidget?"
-
-#~ msgid "Please select one or more atoms."
-#~ msgstr "Please select one or more atoms."
-
-#~ msgid "Trajectory..."
-#~ msgstr "Trajectory..."
-
-#~ msgid "Open chemical file format"
-#~ msgstr "Open chemical file format"
-
-#~ msgid "Chemical files (*.xyz)"
-#~ msgstr "Chemical files (*.xyz)"
-
-#~ msgid "Open parameter file"
-#~ msgstr "Open parameter file"
-
-#~ msgid "Chemical files (*.parm7)"
-#~ msgstr "Chemical files (*.parm7)"
-
-#~ msgid "Import Trajectory"
-#~ msgstr "Import Trajectory"
-
-#~ msgid "Import trajectory files"
-#~ msgstr "Import trajectory files"
-
-#~ msgid "Calculate Energy"
-#~ msgstr "Calculate Energy"
-
-#~ msgid "Conformer Search..."
-#~ msgstr "Conformer Search..."
-
-#~ msgid "Constraints..."
-#~ msgstr "Constraints..."
-
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
 #~ msgstr ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
-
-#~ msgid "Geometric Optimization"
-#~ msgstr "Geometric Optimization"
-
-#~ msgid "Systematic Rotor Search"
-#~ msgstr "Systematic Rotor Search"
-
-#~ msgid "Random Rotor Search"
-#~ msgstr "Random Rotor Search"
-
-#~ msgid "Weighted Rotor Search"
-#~ msgstr "Weighted Rotor Search"
-
-#~ msgid "Genetic Algorithm Search"
-#~ msgstr "Genetic Algorithm Search"
-
-#~ msgid "ForceField"
-#~ msgstr "ForceField"
 
 #~ msgid ""
 #~ "Optimize molecules and generate conformers using molecular mechanics "
@@ -8916,48 +8739,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Optimise molecules and generate conformers using molecular mechanics "
 #~ "force fields"
-
-#~ msgid "&Vector Graphics..."
-#~ msgstr "&Vector Graphics..."
-
-#~ msgid "Common vector image formats"
-#~ msgstr "Common vector image formats"
-
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
-#~ msgid "Vector graphics export"
-#~ msgstr "Vector graphics export"
-
-#~ msgid "Change H to Methyl"
-#~ msgstr "Change H to Methyl"
-
-#~ msgid "H to Methyl"
-#~ msgstr "H to Methyl"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
-
-#~ msgid "Transform hydrogens to methyl groups"
-#~ msgstr "Transform hydrogens to methyl groups"
-
-#~ msgid "Add or remove hydrogens"
-#~ msgstr "Add or remove hydrogens"
-
-#~ msgid "Insert DNA/RNA chains"
-#~ msgstr "Insert DNA/RNA chains"
-
-#~ msgid "Peptide..."
-#~ msgstr "Peptide..."
-
-#~ msgid "Insert oligopeptide sequences"
-#~ msgstr "Insert oligopeptide sequences"
-
-#~ msgid "Invert Chirality"
-#~ msgstr "Invert Chirality"
-
-#~ msgid "InvertChiral"
-#~ msgstr "InvertChiral"
 
 #~ msgid "Invert chiral centers"
 #~ msgstr "Invert chiral centres"
