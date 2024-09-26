@@ -8613,10 +8613,6 @@ msgstr ""
 #~ "Angle %2"
 #~ msgstr "Estereoisòmer %1"
 
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
 #, fuzzy
 #~ msgid "Angle"
 #~ msgstr "Angle:"
@@ -9202,20 +9198,8 @@ msgstr ""
 #~ "La Gaussiana no s'ha executat bé. Tal vegada no s'ha instal·lat de forma "
 #~ "correcta."
 
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gaussià..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Avís de generador d'entrada Molpro"
