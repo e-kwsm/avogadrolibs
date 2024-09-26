@@ -9021,10 +9021,6 @@ msgstr ""
 #~ msgstr "Όνομα αρχείου:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Δομή"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Περιήγηση"
 
