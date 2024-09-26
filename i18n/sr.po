@@ -8973,9 +8973,6 @@ msgstr ""
 #~ msgid "Client server operations."
 #~ msgstr "Operacije klijentskog servera."
 
-#~ msgid "S&erver"
-#~ msgstr "S&erver"
-
 #~ msgid "Connection failed"
 #~ msgstr "Veza nije uspostavljena"
 
@@ -8990,18 +8987,6 @@ msgstr ""
 #~ msgid "Connection failed with: %1"
 #~ msgstr "Veza nije uspela sa: %1"
 
-#, qt-format
-#~ msgid "clientServer/%1:%2/lastOpenDir"
-#~ msgstr "clientServer/%1:%2/lastOpenDir"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Klijent server"
 
@@ -9014,18 +8999,6 @@ msgstr ""
 
 #~ msgid "Filename"
 #~ msgstr "Naziv datoteke:"
-
-#~ msgid "Formula"
-#~ msgstr "Formula"
-
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
-
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
-
-#~ msgid "Mongo Chem Server"
-#~ msgstr "Mongo Chem Server"
 
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interfejs sa Mongo Chem serverom."
@@ -9042,9 +9015,6 @@ msgstr ""
 
 #~ msgid "&Hostname:"
 #~ msgstr "&Ime hosta:"
-
-#~ msgid "Port"
-#~ msgstr "Port"
 
 #~ msgid "Test C&onnection..."
 #~ msgstr "Test K&onekcije..."
@@ -9076,9 +9046,6 @@ msgstr ""
 #~ msgid "MongoChem Config"
 #~ msgstr "MongoChem Konfiguracija"
 
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
-
 #~ msgid "API Key:"
 #~ msgstr "API Ključ:"
 
@@ -9091,9 +9058,6 @@ msgstr ""
 #~ msgid "Upload"
 #~ msgstr "Otpremiti"
 
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
 #~ msgid "Singularity"
 #~ msgstr "Jedinstvenost"
 
@@ -9102,9 +9066,6 @@ msgstr ""
 
 #~ msgid "Image:"
 #~ msgstr "Slika:"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -9238,12 +9199,6 @@ msgstr ""
 #~ msgid "Write"
 #~ msgstr "piši"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#~ msgid "InChI..."
-#~ msgstr "InChI..."
-
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Dodaj vodonike za pH..."
 
@@ -9271,9 +9226,6 @@ msgstr ""
 
 #~ msgid "&Exit"
 #~ msgstr "&Izlaz"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Umetni odlomak..."
@@ -9539,9 +9491,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Отвори датотеку трајекторије"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Додајем „.avi“ проширење"
@@ -10275,18 +10224,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Није доступно претварање ПЛУМУС записа!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "GAMESS"
 #~ msgstr "ГАМЕСС"
 
@@ -10615,10 +10552,6 @@ msgstr ""
 #~ msgctxt "Density of States"
 #~ msgid "DOS"
 #~ msgstr "ГС"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
 
 #~ msgid "&UV Settings"
 #~ msgstr "Подешавања &ултраљубичастог"
