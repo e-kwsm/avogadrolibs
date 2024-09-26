@@ -9847,27 +9847,12 @@ msgstr "Email anda"
 #~ msgid "Orbitals"
 #~ msgstr "Orbit"
 
-#~ msgctxt "Highest Occupied MO"
-#~ msgid "HOMO"
-#~ msgstr "HOMO"
-
-#~ msgctxt "Lowest Unoccupied MO"
-#~ msgid "LUMO"
-#~ msgstr "LUMO"
-
 #~ msgid "Orbital"
 #~ msgstr "Orbit"
-
-#~ msgid "Status"
-#~ msgstr "Status"
 
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Kosong"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
@@ -9883,9 +9868,6 @@ msgstr "Email anda"
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Menghitung MO %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Calculate molecular orbitals and other surfaces"
 #~ msgstr "Menghitung orbit melekul dan bidang lainnya"
@@ -9929,12 +9911,6 @@ msgstr "Email anda"
 #~ msgid "Disconnect"
 #~ msgstr "Putus Sambungan"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
-#~ msgid "Wii Tracking"
-#~ msgstr "Wii Tracking"
-
 #~ msgid "Track motion using Wii remotes"
 #~ msgstr "Track motion menggunakan Wii remote"
 
@@ -9949,9 +9925,6 @@ msgstr "Email anda"
 
 #~ msgid "Debug Information"
 #~ msgstr "Informasi Awakutu"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Ukuran Tampilan: %L1 x %L2"
@@ -10016,10 +9989,6 @@ msgstr "Email anda"
 #~ msgid "Molecule %1"
 #~ msgstr "Molekul %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Enjin Python Tidak Dikenal"
 
@@ -10061,9 +10030,6 @@ msgstr "Email anda"
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Tidak bisa mengatur bidang gaya...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Jumlah Constraints: %1"
@@ -10154,22 +10120,6 @@ msgstr "Email anda"
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Sudut Dihedral: %1 °"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Jarak:"
@@ -10274,9 +10224,6 @@ msgstr "Email anda"
 #~ msgid "Axis 3:"
 #~ msgstr "Sumbu 3:"
 
-#~ msgid "Norm"
-#~ msgstr "Norm"
-
 #~ msgid "Preserve vector norms"
 #~ msgstr "Tetap mempertahankan vektor normal"
 
@@ -10288,18 +10235,6 @@ msgstr "Email anda"
 
 #~ msgid "Shape"
 #~ msgstr "Bentuk"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
-#~ msgid "Loop"
-#~ msgstr "Loop"
 
 #~ msgid "Dipole:"
 #~ msgstr "Duakutub:"
@@ -10328,9 +10263,6 @@ msgstr "Email anda"
 #~ msgid "TextRenderer"
 #~ msgstr "PengaturanWarnaTeks"
 
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Teks:"
 
@@ -10348,18 +10280,6 @@ msgstr "Email anda"
 
 #~ msgid "Change Font"
 #~ msgstr "Ganti Huruf"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
-
-#~ msgid "Label Shift:"
-#~ msgstr "Label Shift:"
 
 #~ msgid "Bond length"
 #~ msgstr "Panjang Ikatan"
@@ -10409,9 +10329,6 @@ msgstr "Email anda"
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animasi Trayektori"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Perulangan"
@@ -10419,17 +10336,8 @@ msgstr "Email anda"
 #~ msgid "Save as .avi..."
 #~ msgstr "Simpan sebagai .avi..."
 
-#~ msgid "Angstroms"
-#~ msgstr "Angstroms"
-
-#~ msgid "Bohrs"
-#~ msgstr "Bohrs"
-
 #~ msgid "Fractional"
 #~ msgstr "Pecahan"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "Hanya koord XYZ"
@@ -10500,20 +10408,8 @@ msgstr "Email anda"
 #~ msgid "Translation vector:"
 #~ msgstr "Vektor translasi:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "Satuan vektor:"
-
-#~ msgid "Cartesian"
-#~ msgstr "Cartesian"
 
 #~ msgid "&Translate"
 #~ msgstr "Geser"
@@ -10539,86 +10435,41 @@ msgstr "Email anda"
 #~ msgid "Algorithm"
 #~ msgstr "Algoritma"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arginin"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Asparagin"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Asam Aspartik"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Sistein"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "Asam Glutamik"
-
-#~ msgid "Glu"
-#~ msgstr "Glu"
 
 #~ msgid "Glutamine"
 #~ msgstr "Glutamin"
 
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
 #~ msgid "Glycine"
 #~ msgstr "Glisin"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
 
 #~ msgid "Histidine"
 #~ msgstr "Histidin"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Isoleusin"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Triptopan"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Treonin"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Serin"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Prolin"
@@ -10626,26 +10477,14 @@ msgstr "Email anda"
 #~ msgid "Phenylalanine"
 #~ msgstr "Phenilalanin"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Metionin"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Lisin"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Leusin"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Urutan (N ke C):"
@@ -10653,41 +10492,11 @@ msgstr "Email anda"
 #~ msgid "Stereochemistry:"
 #~ msgstr "Stereokimia:"
 
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "N Terminus:"
-#~ msgstr "N Terminus:"
-
-#~ msgid "C Terminus:"
-#~ msgstr "C Terminus:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Straight Chain"
 #~ msgstr "Rantai Lurus"
 
-#~ msgid "Alpha Helix"
-#~ msgstr "Alpha Helix"
-
 #~ msgid "Beta Sheet"
 #~ msgstr "Lembar Beta"
-
-#~ msgid "Pi Helix"
-#~ msgstr "Pi Helix"
-
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
 
 #~ msgid "Chain Number:"
 #~ msgstr "Nomor Rantai:"
@@ -10695,29 +10504,11 @@ msgstr "Email anda"
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Nomor rantai untuk peptide baru"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Nomor dari Residu:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momen Dipol (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Lanjut"
@@ -10725,23 +10516,14 @@ msgstr "Email anda"
 #~ msgid "Control"
 #~ msgstr "Kontrol"
 
-#~ msgid "Grid"
-#~ msgstr "Grid"
-
 #~ msgid "POV-Ray Export"
 #~ msgstr "Ekspor POV-Ray"
 
 #~ msgid "Select..."
 #~ msgstr "Pilih..."
 
-#~ msgid "povray"
-#~ msgstr "povray"
-
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Menggunakan antialiasing penuh"
-
-#~ msgid "Antialias"
-#~ msgstr "Antialias"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Ubah warna latar dengan transparan"
