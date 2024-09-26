@@ -8448,14 +8448,6 @@ msgstr ""
 #~ msgid "Connection failed"
 #~ msgstr "接続に失敗しました"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "クライアントサーバ"
 
@@ -8467,9 +8459,6 @@ msgstr ""
 
 #~ msgid "Formula"
 #~ msgstr "化学式"
-
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
 
 #~ msgid "Energy (eV)"
 #~ msgstr "エネルギー (eV)"
@@ -8492,29 +8481,14 @@ msgstr ""
 #~ msgid "File name:"
 #~ msgstr "ファイル名:"
 
-#~ msgid "OK"
-#~ msgstr "OK"
-
 #~ msgid "Cancel"
 #~ msgstr "キャンセル"
-
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
 
 #~ msgid "Config"
 #~ msgstr "設定"
 
 #~ msgid "Upload"
 #~ msgstr "アップロード"
-
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
-#~ msgid "Singularity"
-#~ msgstr "Singularity"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid "All files (*);;"
 #~ msgstr "すべてのファイル (*);;"
@@ -8556,9 +8530,6 @@ msgstr ""
 #~ msgid "Crystal..."
 #~ msgstr "結晶..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "pHを指定して水素を付加..."
@@ -8585,9 +8556,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Symmetry..."
 #~ msgstr "対称性"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "フラグメントを挿入..."
@@ -8833,9 +8801,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "トラジェクトリファイルを開く"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "拡張子 .avi を追加"
@@ -9241,9 +9206,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "一般的なベクタ画像フォーマット"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "ベクタ画像のエクスポート"
 
@@ -9301,9 +9263,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "ダウンロードするPDBエントリ"
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "ダウンロードする分子のURL"
@@ -9374,9 +9333,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Orcaアウトプットを解析..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "ORCA Input Deck"
 #~ msgstr "ORCAインプット"
 
@@ -9416,9 +9372,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "イメージファイル (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "有効なファイル名が入力されていません"
@@ -9542,21 +9495,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES記法変換は利用できません"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "GAMESSのインプットファイルを作る"
 
@@ -9645,9 +9583,6 @@ msgstr ""
 #~ "Gaussianは適切に実行しませんでした。おそらく、適切にインストールされていま"
 #~ "せん。"
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
 #~ msgid "&Dalton..."
 #~ msgstr "Dalton(&D)..."
 
@@ -9660,14 +9595,8 @@ msgstr ""
 #~ msgid "&NWChem..."
 #~ msgstr "NSChem(&N)..."
 
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
 #~ msgid "&Q-Chem..."
 #~ msgstr "Q-Chem*&Q)..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "LAMMPSインプットジェネレータからの警告"
@@ -9872,16 +9801,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "赤外線スペクトルの設定(&I)"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "NMRスペクトルの設定(&N)"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
 
 #~ msgctxt "Ultra-Violet spectrum"
 #~ msgid "UV"
