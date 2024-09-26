@@ -8576,10 +8576,6 @@ msgstr ""
 #~ msgstr "Jäägi nimi"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktuur:"
-
-#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Elemendi nimi"
 
