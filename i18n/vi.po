@@ -8661,10 +8661,6 @@ msgstr ""
 #~ msgstr "Tên file:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Vẽ cấu trúc thứ cấp của prô-tê-in"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Di chuyển"
 
