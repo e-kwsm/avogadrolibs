@@ -11087,34 +11087,6 @@ msgstr ""
 #~ msgid "Pople-style"
 #~ msgstr "Τεχνοτροπία Pople"
 
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
-
-=======
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
 #~ msgid "Pople-style"
 #~ msgstr "Τεχνοτροπία Pople"
 
