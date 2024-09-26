@@ -11207,9 +11207,6 @@ msgstr ""
 #~ msgid "Transition State Search"
 #~ msgstr "Übergangsstatussuche"
 
-#~ msgid "Z-matrix"
-#~ msgstr "Z-Matrix"
-
 #~ msgid ""
 #~ "In direct mode, integrals are not stored on disk, but recalculated as "
 #~ "needed.\n"

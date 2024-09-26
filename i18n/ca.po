@@ -9360,9 +9360,6 @@ msgstr ""
 #~ "La Gaussiana no s'ha executat bé. Tal vegada no s'ha instal·lat de forma "
 #~ "correcta."
 
-#~ msgid "&Abinit..."
-#~ msgstr "&ABINIT..."
-
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gaussià..."
 
@@ -10787,9 +10784,6 @@ msgstr ""
 
 #~ msgid "MegaWords"
 #~ msgstr "Mega paraules"
-
-#~ msgid "MegaBytes"
-#~ msgstr "Megabytes"
 
 #~ msgid "GigaWords"
 #~ msgstr "Giga paraules"

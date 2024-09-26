@@ -8539,10 +8539,6 @@ msgstr ""
 #~ msgstr "Geometry Optimization"
 
 #, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Add Hydrogens"
-
-#, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Stop"
 

@@ -10785,27 +10785,6 @@ msgstr ""
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Порядок главной оси:"
 
-#~ msgid "CS"
-#~ msgstr "Cs"
-
-#~ msgid "CI"
-#~ msgstr "Ci"
-
-#~ msgid "DnD"
-#~ msgstr "Dnd"
-
-#~ msgid "DnH"
-#~ msgstr "Dnh"
-
-#~ msgid "TD"
-#~ msgstr "Td"
-
-#~ msgid "TH"
-#~ msgstr "Th"
-
-#~ msgid "OH"
-#~ msgstr "Oh"
-
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Уникальные декартовы координаты"
 

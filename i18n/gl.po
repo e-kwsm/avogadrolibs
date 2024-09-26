@@ -10795,14 +10795,8 @@ msgstr ""
 #~ msgid "MegaWords"
 #~ msgstr "Megapalabras"
 
-#~ msgid "MegaBytes"
-#~ msgstr "Megabytes"
-
 #~ msgid "GigaWords"
 #~ msgstr "Gigapalabras"
-
-#~ msgid "GigaBytes"
-#~ msgstr "Gigabytes"
 
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Forzar o uso de métodos paralelos"

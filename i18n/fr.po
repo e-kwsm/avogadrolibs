@@ -9617,9 +9617,6 @@ msgstr ""
 #~ "Gaussian n'a pas fonctionné correctement. Il n'est peut être pas "
 #~ "correctement installé."
 
-#~ msgid "&NWChem..."
-#~ msgstr "&NWCHEM..."
-
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Avertissement du générateur de fichier de données Lammps"
 

@@ -8661,9 +8661,6 @@ msgstr ""
 #~ msgid "Running Gaussian calculation..."
 #~ msgstr "Calcul Gaussian en cors..."
 
-#~ msgid "&NWChem..."
-#~ msgstr "&NWCHEM..."
-
 #~ msgid "Molpro Input Deck"
 #~ msgstr "Fichièr de donadas Molpro"
 
