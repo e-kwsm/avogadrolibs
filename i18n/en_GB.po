@@ -8731,48 +8731,6 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Dalton input file preview pane?"
 
-#~ msgctxt ""
-#~ "Selection to be used as an Effective Fragment Potential in calculations"
-#~ msgid "EFP Selection..."
-#~ msgstr "EFP Selection..."
-
-#~ msgctxt "Selection to be used for Quantum Mechanical calculations"
-#~ msgid "QM Selection..."
-#~ msgstr "QM Selection..."
-
-#~ msgid "Delete"
-#~ msgstr "Delete"
-
-#~ msgid "You must make a selection!"
-#~ msgstr "You must make a selection!"
-
-#~ msgid "SMILES Conversion Unavailable"
-#~ msgstr "SMILES Conversion Unavailable"
-
-#~ msgid "SMILES Format Conversion Not Available!"
-#~ msgstr "SMILES Format Conversion Not Available!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
-#~ msgid "Create input files for the GAMESS quantum chemistry package"
-#~ msgstr "Create input files for the GAMESS quantum chemistry package"
-
-#~ msgid "Advanced Settings Changed"
-#~ msgstr "Advanced Settings Changed"
-
 #~ msgid ""
 #~ "Advanced settings have changed.\n"
 #~ "Discard?"
@@ -8873,24 +8831,9 @@ msgstr ""
 #~ "intensity data. Intensities have been set to an arbitrary value for "
 #~ "visualisation."
 
-#~ msgid "Activity"
-#~ msgstr "Activity"
-
-#~ msgid "X Axis"
-#~ msgstr "X Axis"
-
-#~ msgid "Y Axis"
-#~ msgstr "Y Axis"
-
-#~ msgid "&Infrared Spectra Settings"
-#~ msgstr "&Infrared Spectra Settings"
-
 #~ msgctxt "NMR spectra option"
 #~ msgid "NMR"
 #~ msgstr "NMR"
-
-#~ msgid "&NMR Spectra Settings"
-#~ msgstr "&NMR Spectra Settings"
 
 #~ msgctxt "Density of States"
 #~ msgid "DOS"
@@ -8900,59 +8843,11 @@ msgstr ""
 #~ msgid "UV"
 #~ msgstr "UV"
 
-#~ msgid "&UV Settings"
-#~ msgstr "&UV Settings"
-
-#~ msgid "&CD Settings"
-#~ msgstr "&CD Settings"
-
-#~ msgid "&Raman Settings"
-#~ msgstr "&Raman Settings"
-
-#~ msgid "No data"
-#~ msgstr "No data"
-
-#~ msgid "Dark"
-#~ msgstr "Dark"
-
-#~ msgid "Publication"
-#~ msgstr "Publication"
-
-#~ msgid "Handdrawn"
-#~ msgstr "Handdrawn"
-
-#~ msgid "New Scheme"
-#~ msgstr "New Scheme"
-
-#~ msgid "Confirm Scheme Removal"
-#~ msgstr "Confirm Scheme Removal"
-
-#~ msgid "Really remove current scheme?"
-#~ msgstr "Really remove current scheme?"
-
-#~ msgid "Change Scheme Name"
-#~ msgstr "Change Scheme Name"
-
-#~ msgid "Enter new name for current scheme:"
-#~ msgstr "Enter new name for current scheme:"
-
-#~ msgid "Tab Separated Values (*.tsv)"
-#~ msgstr "Tab Separated Values (*.tsv)"
-
 #~ msgid "Tab Separated Values"
 #~ msgstr "Tab-Separated Values"
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "Comma-Separated Values"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
-#~ msgid "Spectra Import"
-#~ msgstr "Spectra Import"
-
-#~ msgid "Unknown extension: %1"
-#~ msgstr "Unknown extension: %1"
 
 #~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
 #~ msgid "PWscf IR data (*.out)"
@@ -8977,71 +8872,11 @@ msgstr ""
 #~ msgid "Format:"
 #~ msgstr "Format:"
 
-#~ msgid "Load Spectral Data"
-#~ msgstr "Load Spectral Data"
-
-#~ msgid "Turbomole CD file is improperly formatted  : %1"
-#~ msgstr "Turbomole CD file is improperly formatted  : %1"
-
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
-
-#~ msgid "Save Spectra Image"
-#~ msgstr "Save Spectra Image"
-
-#~ msgid "Image successfully written to %1"
-#~ msgstr "Image successfully written to %1"
-
-#~ msgid "&Advanced <<"
-#~ msgstr "&Advanced <<"
-
-#~ msgid "&Advanced >>"
-#~ msgstr "&Advanced >>"
-
-#~ msgid "&Spectra..."
-#~ msgstr "&Spectra..."
-
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualise spectral data from quantum chemistry calculations"
 
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-
-#~ msgid "Vibrational Analysis"
-#~ msgstr "Vibrational Analysis"
-
-#~ msgid "No vibrational displacements exist."
-#~ msgstr "No vibrational displacements exist."
-
 #~ msgid "Visualize vibrational modes from quantum chemistry calculations"
 #~ msgstr "Visualise vibrational modes from quantum chemistry calculations"
-
-#~ msgid "Sorting %1 vibrations by frequency..."
-#~ msgstr "Sorting %1 vibrations by frequency..."
-
-#~ msgid "Pause"
-#~ msgstr "Pause"
-
-#~ msgid "Super Cell Builder..."
-#~ msgstr "Super Cell Builder..."
 
 #~ msgid ""
 #~ "This document is currently an isolated molecule. You need to create a "
@@ -9050,15 +8885,6 @@ msgstr ""
 #~ "This document is currently an isolated molecule. You need to create a "
 #~ "unit cell."
 
-#~ msgid "Build and display crystallographic super cells"
-#~ msgstr "Build and display crystallographic super cells"
-
-#~ msgid "Molecular Orbitals..."
-#~ msgstr "Molecular Orbitals..."
-
-#~ msgid "Orbitals"
-#~ msgstr "Orbitals"
-
 #~ msgctxt "Highest Occupied MO"
 #~ msgid "HOMO"
 #~ msgstr "HOMO"
@@ -9066,12 +8892,6 @@ msgstr ""
 #~ msgctxt "Lowest Unoccupied MO"
 #~ msgid "LUMO"
 #~ msgstr "LUMO"
-
-#~ msgid "Orbital"
-#~ msgstr "Orbital"
-
-#~ msgid "Status"
-#~ msgstr "Status"
 
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
