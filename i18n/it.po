@@ -8694,10 +8694,6 @@ msgstr ""
 #~ msgstr "Nome del file"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Carica file struttura"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Naviga"
 
