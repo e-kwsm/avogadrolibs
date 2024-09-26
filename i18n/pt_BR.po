@@ -9954,18 +9954,6 @@ msgstr "Seus e-mails"
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Formato TIFF"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "salvar Imagem do Espectro"
 
@@ -9999,10 +9987,6 @@ msgstr "Seus e-mails"
 #~ msgid "Orbitals"
 #~ msgstr "Orbitais"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Densidade Eletrônica"
@@ -10013,9 +9997,6 @@ msgstr "Seus e-mails"
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Calculando OM %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr ""
@@ -10065,9 +10046,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Debug Information"
 #~ msgstr "Informações de Debug"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Tamanho da Visualização: %L1 x %L2"
@@ -10129,10 +10107,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Molecule %1"
 #~ msgstr "Molécula %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Motor Python Desconhecido"
@@ -10245,22 +10219,6 @@ msgstr "Seus e-mails"
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Ângulo Diédrico: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Distância(s):"
 
@@ -10357,15 +10315,6 @@ msgstr "Seus e-mails"
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Repetir"
 
@@ -10399,15 +10348,6 @@ msgstr "Seus e-mails"
 #~ msgid "Change Font"
 #~ msgstr "Alterar Fonte"
 
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
-
 #~ msgid "Bond length"
 #~ msgstr "Comprimento da ligação"
 
@@ -10425,9 +10365,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "VdW Opacity:"
 #~ msgstr "Opacidade VdW"
-
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
 
 #~ msgid "Render:"
 #~ msgstr "Renderizar:"
@@ -10456,20 +10393,8 @@ msgstr "Seus e-mails"
 #~ msgid "Animate Trajectory"
 #~ msgstr "Trajetória animada"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgid "Save as .avi..."
 #~ msgstr "Salvar como .avi..."
-
-#~ msgid "Angstroms"
-#~ msgstr "Angstroms"
-
-#~ msgid "Bohrs"
-#~ msgstr "Bohrs"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "Apply Changes"
 #~ msgstr "Aplicar Alterações"
@@ -10528,38 +10453,20 @@ msgstr "Seus e-mails"
 #~ msgid "Setup Force Field"
 #~ msgstr "Configurar Campo de Força"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Número de passos"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmo"
 
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arginina"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Asparagina"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Ácido Aspártico"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Cisteína"
@@ -10570,14 +10477,8 @@ msgstr "Seus e-mails"
 #~ msgid "Glutamic acid"
 #~ msgstr "Ácido Glutâmico"
 
-#~ msgid "Glu"
-#~ msgstr "Glu"
-
 #~ msgid "Glutamine"
 #~ msgstr "Glutamina"
-
-#~ msgid "Gln"
-#~ msgstr "Gln"
 
 #~ msgid "Glycine"
 #~ msgstr "Glicina"
@@ -10588,17 +10489,8 @@ msgstr "Seus e-mails"
 #~ msgid "Histidine"
 #~ msgstr "Histidina"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Isoleucina"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
 
 #~ msgid "Tyr"
 #~ msgstr "Tir"
@@ -10606,20 +10498,11 @@ msgstr "Seus e-mails"
 #~ msgid "Tryptophan"
 #~ msgstr "Triptofano"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Treonina"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Serina"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Prolina"
@@ -10627,14 +10510,8 @@ msgstr "Seus e-mails"
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenilalanina"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Metionina"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Lisina"
@@ -10644,9 +10521,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Leucine"
 #~ msgstr "Leucina"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Sequence (N to C):"
 #~ msgstr "Sequência (N até C):"
@@ -10663,29 +10537,11 @@ msgstr "Seus e-mails"
 #~ msgid "C Terminus:"
 #~ msgstr "Estação C:"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Alpha Helix"
 #~ msgstr "Alfa Hélice"
 
 #~ msgid "Beta Sheet"
 #~ msgstr "Folha Beta"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Número de Resíduos:"
@@ -10695,18 +10551,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momento Dipolar (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Avançado"
@@ -10722,9 +10566,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Select..."
 #~ msgstr "Selecionar..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Antialias"
 #~ msgstr "Suavizar"
@@ -10747,56 +10588,14 @@ msgstr "Seus e-mails"
 #~ msgid "Path:"
 #~ msgstr "Caminho:"
 
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
 #~ msgid "Compute..."
 #~ msgstr "Computar..."
 
 #~ msgid "Basics"
 #~ msgstr "Informações Básicas"
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
 #~ msgid "Parallel"
 #~ msgstr "Paralelo"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "normal"
-#~ msgstr "normal"
 
 #~ msgid "fine"
 #~ msgstr "fino"
@@ -10813,30 +10612,6 @@ msgstr "Seus e-mails"
 #~ msgid "EFP Matches"
 #~ msgstr "Resultados para EFP"
 
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "Configurações &Avançadas"
 
@@ -10848,9 +10623,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "MO Guess"
 #~ msgstr "Estimar OM"
-
-#~ msgid "Misc"
-#~ msgstr "Misc"
 
 #~ msgid "Read"
 #~ msgstr "Ler"
