@@ -8500,14 +8500,6 @@ msgstr ""
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Renders rings with coloured planes"
 
-#~ msgctxt "Electron density isosurface with a cutoff of %1"
-#~ msgid "Electron density, isosurface = %L1"
-#~ msgstr "Electron density, isosurface = %L1"
-
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
 #~ msgid "GL widget was not correctly initialized in order to save video"
 #~ msgstr "GL widget was not correctly initialised in order to save video"
 
@@ -8537,43 +8529,6 @@ msgstr ""
 #~ "Your molecule must contain at least four atoms to add a torsion constraint"
 #~ msgstr ""
 #~ "Your molecule must contain at least four atoms to add a torsion constraint"
-
-#~ msgid "&Crystallography"
-#~ msgstr "&Crystallography"
-
-#~ msgid "&Reduce"
-#~ msgstr "&Reduce"
-
-#~ msgid "&Length Unit"
-#~ msgstr "&Length Unit"
-
-#~ msgid "&Angle Unit"
-#~ msgstr "&Angle Unit"
-
-#~ msgid "&Coordinate Display"
-#~ msgstr "&Coordinate Display"
-
-#~ msgid "Coordinate &Preservation"
-#~ msgstr "Coordinate &Preservation"
-
-#~ msgid "&Matrix Display"
-#~ msgstr "&Matrix Display"
-
-#~ msgid "Hide &Editors"
-#~ msgstr "Hide &Editors"
-
-#~ msgid "Show &Editors"
-#~ msgstr "Show &Editors"
-
-#~ msgid "Hide &Property Display"
-#~ msgstr "Hide &Property Display"
-
-#~ msgid "Show &Property Display"
-#~ msgstr "Show &Property Display"
-
-#~ msgctxt "Unit cell lattice"
-#~ msgid "Lattice Type: %1"
-#~ msgstr "Lattice Type: %1"
 
 #~ msgid "Spacegroup: %1"
 #~ msgstr "Space group: %1"
