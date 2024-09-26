@@ -8470,9 +8470,6 @@ msgstr ""
 #~ msgid "Navigate Forward"
 #~ msgstr "Di chuyển"
 
-#~ msgid "OK"
-#~ msgstr "OK"
-
 #~ msgid "Cancel"
 #~ msgstr "Hủy bỏ"
 
@@ -8497,9 +8494,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8550,10 +8544,6 @@ msgstr ""
 #~ "Conformer %1\n"
 #~ "Angle %2"
 #~ msgstr "Đồng phân %1"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
 
 #, fuzzy
 #~ msgid "Angle"
@@ -8737,9 +8727,6 @@ msgstr ""
 #~ "Vẽ liên kết như các sợi dây (đường thẳng), phù hợp với các (sinh) phân tử "
 #~ "lớn"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Thêm phần mở rộng .avi"
 
@@ -8893,9 +8880,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "Mục PDB để tải xuống."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL của phân tử cần tải xuống."
 
@@ -8916,9 +8900,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Các file ảnh (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Chưa có tên file hợp lệ nào được nhập vào."
@@ -8962,9 +8943,6 @@ msgstr ""
 #~ msgid "Python Terminal"
 #~ msgstr "Cửa sổ lệnh Python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Cửa sổ lệnh tương tác Python"
 
@@ -8988,12 +8966,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Không có chuyển đổi định dạng SMILES!"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Tạo file đầu vào cho gói phần mềm hóa lượng tử GAMESS"
@@ -9047,20 +9019,8 @@ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "G03 bị lỗi và dừng chạy. Có lẽ nó đã không được cài đặt thành công."
 
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gauss..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck"
 #~ msgstr "Bảng nhập số liệu Molpro"
@@ -9176,16 +9136,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Đặt thuộc tính phổ &hồng ngoại"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Đặt thuộc tính &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
 
 #~ msgid "&CD Settings"
 #~ msgstr "Cài đặt &CD"
@@ -9229,9 +9181,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Dạng giá trị ngăn cách bởi dấu phảy"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Không rõ phần mở rộng: %1"
 
@@ -9252,23 +9201,11 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Portable Network Graphics (PNG)"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Dạng thức tập tin ảnh có thẻ (TIFF)"
 
 #~ msgid "Windows Bitmap"
 #~ msgstr "Windows Bitmap (BMP)"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Lưu ảnh phổ"
@@ -9284,9 +9221,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Hiển thị số liệu phổ từ kết quả tính toán hóa lượng tử"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Tính toán rung động"
@@ -9317,19 +9251,12 @@ msgstr ""
 #~ msgid "LUMO"
 #~ msgstr "LUMO (o. phân tử thấp nhất bị chiếm)"
 
-#~ msgid "Orbital"
-#~ msgstr "Orbital"
-
 #~ msgid "Status"
 #~ msgstr "Trạng thái"
 
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Không có gì"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
@@ -9345,9 +9272,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Tính MO %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Calculate molecular orbitals and other surfaces"
 #~ msgstr "Tính mật độ orbital phân tử và các mặt khác"
@@ -9385,9 +9309,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Ngắt kết nối"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Dò Wii"
 
@@ -9396,9 +9317,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Thông tin gỡ lỗi"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Kích thước khung nhìn: %L1 x %L2"
@@ -9461,10 +9379,6 @@ msgstr ""
 
 #~ msgid "Molecule %1"
 #~ msgstr "Phân tử %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Không rõ loại máy Python"
@@ -9590,22 +9504,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Góc nhị diện: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Khoảng cách:"
 
@@ -9715,15 +9613,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Hình"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Vòng"
 
@@ -9748,9 +9637,6 @@ msgstr ""
 #~ msgid "TextRenderer"
 #~ msgstr "Phần mềm hiện chữ"
 
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Đoạn chữ :"
 
@@ -9765,15 +9651,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Thay đổi phông chữ"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Dịch chuyển nhãn:"
