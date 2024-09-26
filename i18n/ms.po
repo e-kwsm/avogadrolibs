@@ -8690,9 +8690,6 @@ msgstr ""
 #~ msgid "Navigate Forward"
 #~ msgstr "Navigasi"
 
-#~ msgid "OK"
-#~ msgstr "OK"
-
 #~ msgid "Cancel"
 #~ msgstr "Batal"
 
@@ -8726,9 +8723,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Hablur"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8821,10 +8815,6 @@ msgstr ""
 #~ msgid "Input Generators"
 #~ msgstr "Penjana Input..."
 
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Import"
-
 #~ msgid "Insert SMILES"
 #~ msgstr "Sisip SMILES"
 
@@ -8901,15 +8891,6 @@ msgstr ""
 
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Sorot fitur tertentu yang sepadan dengan corak SMARTS."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
 
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoktium"
@@ -8993,9 +8974,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Buka Fail Trajektori"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Menambah sambungan .avi"
@@ -9193,20 +9171,11 @@ msgstr ""
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Kurangkan Sel (&Primitif)"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
-#~ msgid "&Nanometer"
-#~ msgstr "&Nanometer"
-
 #~ msgid "&Picometer"
 #~ msgstr "&Pikometer"
 
 #~ msgid "&Degree"
 #~ msgstr "&Darjah"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Display &cartesian coordinates"
 #~ msgstr "Papar koordinat &cartes"
@@ -9384,9 +9353,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Format imej vektor umum"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Grafik Vektor dieksport"
 
@@ -9444,9 +9410,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "Masukan PDB untuk dimuat turun."
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL molekul untuk dimuat turun."
@@ -9508,9 +9471,6 @@ msgstr ""
 
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Analisis Output Orca..."
-
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
 
 #~ msgid "Orca Test Example"
 #~ msgstr "Contoh Ujian Orca"
@@ -9656,21 +9616,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Penukaran Format SMILES Tidak Tersedia!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Cipta fail input untuk pakej kimia kuantum GAMESS"
 
@@ -9759,30 +9704,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussian tidak dijalankan dengan betul. Mungkin ia tidak dipasang dengan "
 #~ "betul."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Amaran Penjana Dek Input Lammps"
@@ -9986,20 +9907,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Tetapan Spektrum Ter&infra Merah"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Tetapan Spektrum &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
 
 #~ msgid "&UV Settings"
 #~ msgstr "Tetapan &UV"
@@ -10046,9 +9955,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Nilai Dipisah Koma"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Spektrum Diimport"
 
@@ -10074,10 +9980,6 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Format Data"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Muat Data Spektrum"
 
@@ -10086,9 +9988,6 @@ msgstr ""
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Grafik Rangkaian Mudahalih"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Format Fail Imej Bertag"
@@ -10122,9 +10021,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualkan data spektrum dari pengiraan kimia kuantum"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Analisis Getaran"
@@ -10170,9 +10066,6 @@ msgstr ""
 
 #~ msgid "Orbital"
 #~ msgstr "Petala"
-
-#~ msgid "Status"
-#~ msgstr "Status"
 
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
