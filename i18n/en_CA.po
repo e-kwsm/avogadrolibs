@@ -8718,10 +8718,6 @@ msgstr ""
 #~ "The identities field must contain the same number of space delimited "
 #~ "entries as line 6 of the POSCAR."
 
-#~ msgctxt "Unit cell matrix, arg is vector style (row or column"
-#~ msgid "Cell Matrix (%1)"
-#~ msgstr "Cell Matrix (%1)"
-
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
@@ -8743,80 +8739,8 @@ msgstr ""
 #~ msgid "unknown"
 #~ msgstr "unknown"
 
-#~ msgid "Estimated Dipole Moment (D):"
-#~ msgstr "Estimated Dipole Moment (D):"
-
-#~ msgid "Display standard molecular properties."
-#~ msgstr "Display standard molecular properties."
-
-#~ msgid "Fetch by chemical name..."
-#~ msgstr "Fetch by chemical name..."
-
-#~ msgid "Fetch from URL..."
-#~ msgstr "Fetch from URL..."
-
-#~ msgid "PDB Entry"
-#~ msgstr "PDB Entry"
-
-#~ msgid "PDB entry to download."
-#~ msgstr "PDB entry to download."
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
-#~ msgid "URL of molecule to download."
-#~ msgstr "URL of molecule to download."
-
-#~ msgid "Specified molecule could not be loaded: %1"
-#~ msgstr "Specified molecule could not be loaded: %1"
-
-#~ msgid "Network Fetch"
-#~ msgstr "Network Fetch"
-
-#~ msgid "Fetch molecule files over the network."
-#~ msgstr "Fetch molecule files over the network."
-
-#~ msgid "OrcaExtension Warning"
-#~ msgstr "OrcaExtension Warning"
-
-#~ msgid "OrcaExtension"
-#~ msgstr "OrcaExtension"
-
-#~ msgid " No vibration data found!"
-#~ msgstr " No vibration data found!"
-
-#~ msgid " No vibration data found or molecule changed outside Orca Plugin!"
-#~ msgstr " No vibration data found or molecule changed outside Orca Plugin!"
-
 #~ msgid "Selected displacement data don't fit to the actual molecule!"
 #~ msgstr "Selected displacement data doesn't fit to the actual molecule!"
-
-#~ msgid "extended Geometry File"
-#~ msgstr "extended Geometry File"
-
-#~ msgid "Read Orca Outputfile"
-#~ msgstr "Read Orca Outputfile"
-
-#~ msgid "no file found"
-#~ msgstr "no file found"
-
-#~ msgid "Somethings wrong in the file structure"
-#~ msgstr "Somethings wrong in the file structure"
-
-#~ msgid "Somethings wrong in the file structure - unitcells"
-#~ msgstr "Somethings wrong in the file structure - unitcells"
-
-#~ msgid "Something is wrong in the IR output! "
-#~ msgstr "Something is wrong in the IR output! "
-
-#~ msgid "Something is wrong in the raman output! "
-#~ msgstr "Something is wrong in the raman output! "
-
-#~ msgid "Something is wrong in the orbital energy output! "
-#~ msgstr "Something is wrong in the orbital energy output! "
-
-#~ msgid "No geometry found in file!"
-#~ msgstr "No geometry found in file!"
 
 #~ msgid ""
 #~ "Molecule of the file does not fit the actual molecule structure! \n"
@@ -8909,10 +8833,6 @@ msgstr ""
 #~ msgid "EFP Selection..."
 #~ msgstr "EFP Selection..."
 
-#~ msgctxt "Selection to be used for Quantum Mechanical calculations"
-#~ msgid "QM Selection..."
-#~ msgstr "QM Selection..."
-
 #~ msgid ""
 #~ "Advanced settings have changed.\n"
 #~ "Discard?"
@@ -8963,54 +8883,12 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not correctly installed."
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
-
-#~ msgid "Lammps Input Deck Generator Warning"
-#~ msgstr "Lammps Input Deck Generator Warning"
-
-#~ msgid "Molpro Input Deck Generator Warning"
-#~ msgstr "Molpro Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Molpro input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Molpro input deck preview pane?"
-
-#~ msgid "Molpro Input Deck"
-#~ msgstr "Molpro Input Deck"
-
-#~ msgid "MOPAC Input Warning"
-#~ msgstr "MOPAC Input Warning"
-
-#~ msgid "MOPAC Input Deck"
-#~ msgstr "MOPAC Input Deck"
-
-#~ msgid "MOPAC Running."
-#~ msgstr "MOPAC Running."
 
 #~ msgid ""
 #~ "MOPAC is already running. Wait until the previous calculation is finished."
@@ -9018,42 +8896,12 @@ msgstr ""
 #~ "MOPAC is already running. Wait until the previous calculation has "
 #~ "finished."
 
-#~ msgid "MOPAC Not Installed."
-#~ msgstr "MOPAC Not Installed."
-
-#~ msgid "The MOPAC executable, cannot be found."
-#~ msgstr "The MOPAC executable, cannot be found."
-
-#~ msgid "MOPAC failed to start."
-#~ msgstr "MOPAC failed to start."
-
-#~ msgid "MOPAC did not start. Perhaps it is not installed correctly."
-#~ msgstr "MOPAC did not start. Perhaps it is not installed correctly."
-
-#~ msgid "Running MOPAC calculation..."
-#~ msgstr "Running MOPAC calculation..."
-
-#~ msgid "MOPAC Crashed."
-#~ msgstr "MOPAC Crashed."
-
-#~ msgid "MOPAC did not run correctly. Perhaps it is not installed correctly."
-#~ msgstr "MOPAC did not run correctly. Perhaps it is not installed correctly."
-
-#~ msgid "NWChem Input Deck Generator Warning"
-#~ msgstr "NWChem Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "NWChem input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "NWChem input deck preview pane?"
-
-#~ msgid "NWChem Input Deck"
-#~ msgstr "NWChem Input Deck"
-
-#~ msgid "Psi4 Input Deck Generator Warning"
-#~ msgstr "Psi4 Input Deck Generator Warning"
 
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
@@ -9062,12 +8910,6 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Psi4 input deck preview pane?"
 
-#~ msgid "Psi4 Input Deck"
-#~ msgstr "Psi4 Input Deck"
-
-#~ msgid "Q-Chem Input Deck Generator Warning"
-#~ msgstr "Q-Chem Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Q-Chem input deck preview pane?"
@@ -9075,99 +8917,12 @@ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "Q-Chem input deck preview pane?"
 
-#~ msgid "QChem Input Deck"
-#~ msgstr "QChem Input Deck"
-
-#~ msgid "TeraChem Input Deck Generator Warning"
-#~ msgstr "TeraChem Input Deck Generator Warning"
-
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "TeraChem input deck preview pane?"
 #~ msgstr ""
 #~ "Would you like to update the preview text, losing all changes made in the "
 #~ "TeraChem input deck preview pane?"
-
-#~ msgid "TeraChem Input Deck"
-#~ msgstr "TeraChem Input Deck"
-
-#~ msgid "Select SMARTS..."
-#~ msgstr "Select SMARTS..."
-
-#~ msgid "Add Named Selection..."
-#~ msgstr "Add Named Selection..."
-
-#~ msgid "SMARTS Selection"
-#~ msgstr "SMARTS Selection"
-
-#~ msgid "SMARTS pattern to select"
-#~ msgstr "SMARTS pattern to select"
-
-#~ msgid "There is no current selection."
-#~ msgstr "There is no current selection."
-
-#~ msgid "Add Named Selection"
-#~ msgstr "Add Named Selection"
-
-#~ msgid "Name cannot be empty."
-#~ msgstr "Name cannot be empty."
-
-#~ msgid "There is already a selection with this name."
-#~ msgstr "There is already a selection with this name."
-
-#~ msgid "Selections"
-#~ msgstr "Selections"
-
-#~ msgid "Select atoms, bonds, residues..."
-#~ msgstr "Select atoms, bonds, residues..."
-
-#~ msgid "GLSL Shaders..."
-#~ msgstr "GLSL Shaders..."
-
-#~ msgid "Open a vertex shader source file"
-#~ msgstr "Open a vertex shader source file"
-
-#~ msgid "Vertex shader files (*.vert)"
-#~ msgstr "Vertex shader files (*.vert)"
-
-#~ msgid "Open a fragment shader source file"
-#~ msgstr "Open a fragment shader source file"
-
-#~ msgid "Fragment shader files (*.frag)"
-#~ msgstr "Fragment shader files (*.frag)"
-
-#~ msgid "Open a shader parameters file"
-#~ msgstr "Open a shader parameters file"
-
-#~ msgid "Shader parameters files (*.params)"
-#~ msgstr "Shader parameters files (*.params)"
-
-#~ msgid "GLSL Shaders"
-#~ msgstr "GLSL Shaders"
-
-#~ msgid "Load and use OpenGL 2.0 GLSL shaders"
-#~ msgstr "Load and use OpenGL 2.0 GLSL shaders"
-
-#~ msgid "Intensity (arb. units)"
-#~ msgstr "Intensity (arb. units)"
-
-#~ msgid "Density of States (states/cell)"
-#~ msgstr "Density of States (states/cell)"
-
-#~ msgid "Density of States (states/atom)"
-#~ msgstr "Density of States (states/atom)"
-
-#~ msgid "Density of States (states/valence electron)"
-#~ msgstr "Density of States (states/valence electron)"
-
-#~ msgid "Transmittance (%)"
-#~ msgstr "Transmittance (%)"
-
-#~ msgid "Absorbance (%)"
-#~ msgstr "Absorbance (%)"
-
-#~ msgid "No intensities"
-#~ msgstr "No intensities"
 
 #~ msgid ""
 #~ "The vibration data in the molecule you have loaded does not have any "
@@ -9178,24 +8933,9 @@ msgstr ""
 #~ "intensity data. Intensities have been set to an arbitrary value for "
 #~ "visualisation."
 
-#~ msgid "Activity"
-#~ msgstr "Activity"
-
-#~ msgid "X Axis"
-#~ msgstr "X Axis"
-
-#~ msgid "Y Axis"
-#~ msgstr "Y Axis"
-
-#~ msgid "&Infrared Spectra Settings"
-#~ msgstr "&Infrared Spectra Settings"
-
 #~ msgctxt "NMR spectra option"
 #~ msgid "NMR"
 #~ msgstr "NMR"
-
-#~ msgid "&NMR Spectra Settings"
-#~ msgstr "&NMR Spectra Settings"
 
 #~ msgctxt "Density of States"
 #~ msgid "DOS"
@@ -9205,59 +8945,11 @@ msgstr ""
 #~ msgid "UV"
 #~ msgstr "UV"
 
-#~ msgid "&UV Settings"
-#~ msgstr "&UV Settings"
-
-#~ msgid "&CD Settings"
-#~ msgstr "&CD Settings"
-
-#~ msgid "&Raman Settings"
-#~ msgstr "&Raman Settings"
-
-#~ msgid "No data"
-#~ msgstr "No data"
-
-#~ msgid "Dark"
-#~ msgstr "Dark"
-
-#~ msgid "Publication"
-#~ msgstr "Publication"
-
-#~ msgid "Handdrawn"
-#~ msgstr "Handdrawn"
-
-#~ msgid "New Scheme"
-#~ msgstr "New Scheme"
-
-#~ msgid "Confirm Scheme Removal"
-#~ msgstr "Confirm Scheme Removal"
-
-#~ msgid "Really remove current scheme?"
-#~ msgstr "Really remove current scheme?"
-
-#~ msgid "Change Scheme Name"
-#~ msgstr "Change Scheme Name"
-
-#~ msgid "Enter new name for current scheme:"
-#~ msgstr "Enter new name for current scheme:"
-
-#~ msgid "Tab Separated Values (*.tsv)"
-#~ msgstr "Tab Separated Values (*.tsv)"
-
 #~ msgid "Tab Separated Values"
 #~ msgstr "Tab-Separated Values"
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "Comma-Separated Values"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
-#~ msgid "Spectra Import"
-#~ msgstr "Spectra Import"
-
-#~ msgid "Unknown extension: %1"
-#~ msgstr "Unknown extension: %1"
 
 #~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
 #~ msgid "PWscf IR data (*.out)"
@@ -9275,78 +8967,15 @@ msgstr ""
 #~ msgid "Turbomole CD data (cdspectrum)"
 #~ msgstr "Turbomole CD data (cdspectrum)"
 
-#~ msgid "Data Format"
-#~ msgstr "Data Format"
-
 #~ msgctxt "noun, not verb"
 #~ msgid "Format:"
 #~ msgstr "Format:"
 
-#~ msgid "Load Spectral Data"
-#~ msgstr "Load Spectral Data"
-
-#~ msgid "Turbomole CD file is improperly formatted  : %1"
-#~ msgstr "Turbomole CD file is improperly formatted  : %1"
-
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
-
-#~ msgid "Save Spectra Image"
-#~ msgstr "Save Spectra Image"
-
-#~ msgid "Image successfully written to %1"
-#~ msgstr "Image successfully written to %1"
-
-#~ msgid "&Advanced <<"
-#~ msgstr "&Advanced <<"
-
-#~ msgid "&Advanced >>"
-#~ msgstr "&Advanced >>"
-
-#~ msgid "&Spectra..."
-#~ msgstr "&Spectra..."
-
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualise spectral data from quantum chemistry calculations"
 
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-
-#~ msgid "Vibrational Analysis"
-#~ msgstr "Vibrational Analysis"
-
-#~ msgid "No vibrational displacements exist."
-#~ msgstr "No vibrational displacements exist."
-
 #~ msgid "Visualize vibrational modes from quantum chemistry calculations"
 #~ msgstr "Visualise vibrational modes from quantum chemistry calculations"
-
-#~ msgid "Sorting %1 vibrations by frequency..."
-#~ msgstr "Sorting %1 vibrations by frequency..."
-
-#~ msgid "Pause"
-#~ msgstr "Pause"
-
-#~ msgid "Super Cell Builder..."
-#~ msgstr "Super Cell Builder..."
 
 #~ msgid ""
 #~ "This document is currently an isolated molecule. You need to create a "
@@ -9354,15 +8983,6 @@ msgstr ""
 #~ msgstr ""
 #~ "This document is currently an isolated molecule. You need to create a "
 #~ "unit cell."
-
-#~ msgid "Build and display crystallographic super cells"
-#~ msgstr "Build and display crystallographic super cells"
-
-#~ msgid "Molecular Orbitals..."
-#~ msgstr "Molecular Orbitals..."
-
-#~ msgid "Orbitals"
-#~ msgstr "Orbitals"
 
 #~ msgctxt "Highest Occupied MO"
 #~ msgid "HOMO"
