@@ -8451,10 +8451,6 @@ msgstr ""
 #~ msgstr "Energi"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Render protein sekundære struktur"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Navigér"
 

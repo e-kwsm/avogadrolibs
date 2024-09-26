@@ -8479,10 +8479,6 @@ msgstr ""
 #~ msgstr "Energija"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktura:"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Navigacija"
 

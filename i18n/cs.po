@@ -8710,10 +8710,6 @@ msgstr ""
 #~ msgstr "Energie (eV)"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Nahrát soubor"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Pohyb"
 
