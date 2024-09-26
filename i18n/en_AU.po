@@ -9138,24 +9138,6 @@ msgstr ""
 #~ msgid "&Normalize displacements"
 #~ msgstr "&Normalise displacements"
 
-#~ msgctxt "medium resolution"
-#~ msgid "Medium"
-#~ msgstr "Medium"
-
-#~ msgctxt "high resolution"
-#~ msgid "High"
-#~ msgstr "High"
-
-#~ msgctxt "very high resolution"
-#~ msgid "Very High"
-#~ msgstr "Very High"
-
-#~ msgctxt ""
-#~ "Add the new surface to this particular display type (i.e., orbital or "
-#~ "surface)"
-#~ msgid "In Display Type:"
-#~ msgstr "In Display Type:"
-
 #~ msgid "nanometers"
 #~ msgstr "nanometres"
 
