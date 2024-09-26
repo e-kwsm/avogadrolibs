@@ -10036,12 +10036,6 @@ msgstr "E-mail-címek"
 #~ msgid "Exec Type:"
 #~ msgstr "Exec típus:"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Ames Lab. determináns"
 
@@ -10054,9 +10048,6 @@ msgstr "E-mail-címek"
 #~ msgid "General CI"
 #~ msgstr "Általános CI"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: Linearizált CC"
 
@@ -10065,18 +10056,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC szimplákkal és duplákkal"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Normális futtatás"
@@ -10098,48 +10077,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Főtengely rendje"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Egyedi Descartes-koordináták"
@@ -10189,18 +10126,6 @@ msgstr "E-mail-címek"
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "\"core\" fájl létrehozása megszakításkor"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Memória:"
 
@@ -10221,12 +10146,6 @@ msgstr "E-mail-címek"
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Külső adatmegjelenítés használata üzenetekhez"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO beolvasva ($VEC)"
 
@@ -10241,24 +10160,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Print the Initial Guess"
 #~ msgstr "Kezdeti becslés kiírása"
-
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK verzió)"
@@ -10362,9 +10263,6 @@ msgstr "E-mail-címek"
 #~ msgid "Initial:"
 #~ msgstr "Kezdeti:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Racionális függvény optimalizálás"
 
@@ -10383,17 +10281,8 @@ msgstr "E-mail-címek"
 #~ msgid "Z-matrix"
 #~ msgstr "Z-mátrix"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Szabványos"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Ellenőrzőpont:"
@@ -10401,44 +10290,14 @@ msgstr "E-mail-címek"
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO bevitel"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "Kvartett"
 
 #~ msgid "Quintet"
 #~ msgstr "Kvintett"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem bevitel"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "Árnyékolók betöltése"
@@ -10467,23 +10326,11 @@ msgstr "E-mail-címek"
 #~ msgid "&Schemes:"
 #~ msgstr "&Sémák:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Szélesség:"
 
 #~ msgid "&Height"
 #~ msgstr "&Magasság"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "&Betűméret automatikus beállítása"
@@ -10497,17 +10344,11 @@ msgstr "E-mail-címek"
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y tengely egysége:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gauss-&szélesség:"
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Csúcsok cimkézése:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekularezgés:"
