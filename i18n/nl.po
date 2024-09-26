@@ -9864,18 +9864,6 @@ msgstr ""
 #~ msgid "Default"
 #~ msgstr "Standaard"
 
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
-
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Zware Atoom Polarisatie Functies:"
 
@@ -9885,29 +9873,14 @@ msgstr ""
 #~ msgid "Polar:"
 #~ msgstr "Polair:"
 
-#~ msgid "Gradient"
-#~ msgstr "Gradient"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Gradient Extremum"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
 
 #~ msgid "Finite Electric Field"
 #~ msgstr "Eindig Elektrisch Veld"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Globale Optimalisatie"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO Optimalisatie"
@@ -9918,47 +9891,11 @@ msgstr ""
 #~ msgid "Make EFP"
 #~ msgstr "Maak EFP"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Geen (CI)"
 
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
-
-#~ msgid "SCF Type:"
-#~ msgstr "SCF Type:"
-
 #~ msgid "Localization Method:"
 #~ msgstr "Localisatie Methode:"
-
-#~ msgid "Exec Type:"
-#~ msgstr "Exec Type:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
 
 #~ msgid "CI Singles"
 #~ msgstr "CI Singels"
@@ -9969,35 +9906,14 @@ msgstr ""
 #~ msgid "General CI"
 #~ msgstr "Algemene CI"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: Gelineariseerde CC"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Normale Uitvoering"
 
 #~ msgid "Check"
 #~ msgstr "Controle"
-
-#~ msgid "Debug"
-#~ msgstr "Debug"
-
-#~ msgid "Run Type:"
-#~ msgstr "Run Type:"
 
 #~ msgid "Use MP2"
 #~ msgstr "Gebruik MP2"
@@ -10010,48 +9926,6 @@ msgstr ""
 
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Orde van de Hoofdassen:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Unieke cartesische Coördinaten"
@@ -10074,29 +9948,11 @@ msgstr ""
 #~ msgid "Years"
 #~ msgstr "Jaren"
 
-#~ msgid "Millenia"
-#~ msgstr "Millenia"
-
 #~ msgid "MegaWords"
 #~ msgstr "MegaWoorden"
 
-#~ msgid "MegaBytes"
-#~ msgstr "MegaBytes"
-
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Forceer Parallelle Methoden"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
 
 #~ msgid "Memory:"
 #~ msgstr "Geheugen:"
@@ -10106,12 +9962,6 @@ msgstr ""
 
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Gebruik Externe Data Representatie voor Berichten"
-
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
 
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO Lees ($VEC)"
@@ -10131,29 +9981,8 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "GAMESS Interface naar Andere Codes"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forceer een Check Run Type"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
-#~ msgid "GAMESS (UK Version)"
-#~ msgstr "GAMESS (UK Version)"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Solveer met water"
@@ -10161,17 +9990,8 @@ msgstr ""
 #~ msgid "Generate UHF Natural Orbitals"
 #~ msgstr "Genereer UHF Natuurlijke Orbitalen"
 
-#~ msgid "Direct SCF"
-#~ msgstr "Direct SCF"
-
 #~ msgid "Compute Only Changed in Fock Matrix"
 #~ msgstr "Bereken Enkel Gewijzigde in Fock Matrix"
-
-#~ msgid "Slater exchange"
-#~ msgstr "Slater exchange"
-
-#~ msgid "Becke 1988 exchange"
-#~ msgstr "Becke 1988 exchange"
 
 #~ msgid "LYP: Lee-Yang-Parr correlation"
 #~ msgstr "LYP: Lee-Yang-Parr correlatie"
