@@ -8851,9 +8851,6 @@ msgstr ""
 #~ msgid "Format:"
 #~ msgstr "Format :"
 
-#~ msgid "Tagged Image File Format"
-#~ msgstr "tiff"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "bmp"
 
