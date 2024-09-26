@@ -8847,10 +8847,6 @@ msgstr ""
 #~ msgstr "Nom de fitxer:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Estrcutura:"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Navega"
 
