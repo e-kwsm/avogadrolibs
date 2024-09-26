@@ -11966,335 +11966,11 @@ msgstr ""
 #~ msgid "Diffuse functions"
 #~ msgstr "Функције простирања"
 
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "3-21++G"
-#~ msgstr "3-21++G"
-
-#~ msgid "6-31+G"
-#~ msgstr "6-31+G"
-
-#~ msgid "6-31++G"
-#~ msgstr "6-31++G"
-
-#~ msgid "3-21G*"
-#~ msgstr "3-21G*"
-
-#~ msgid "6-31G*"
-#~ msgstr "6-31G*"
-
-#~ msgid "6-31G**"
-#~ msgstr "6-31G**"
-
-#~ msgid "6-31G(3df,3pd)"
-#~ msgstr "6-31G(3df,3pd)"
-
-#~ msgid "6-311G*"
-#~ msgstr "6-311G*"
-
-#~ msgid "6-311G**"
-#~ msgstr "6-311G**"
-
-#~ msgid "6-311G(2df,2pd)"
-#~ msgstr "6-311G(2df,2pd)"
-
-#~ msgid "3-21++G*"
-#~ msgstr "3-21++G*"
-
-#~ msgid "6-31+G*"
-#~ msgstr "6-31+G*"
-
-#~ msgid "6-31++G*"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G**"
-
-#~ msgid "6-311+G*"
-#~ msgstr "6-311+G*"
-
-#~ msgid "6-311++G**"
-#~ msgstr "6-311++G**"
-
-#~ msgid "6-311++G(2d,2p)"
-#~ msgstr "6-311++G(2d,2p)"
-
-#~ msgid "6-311++G(3df,3pd)"
-#~ msgstr "6-311++G(3df,3pd)"
-
-#~ msgid "pc-0"
-#~ msgstr "pc-0"
-
-#~ msgid "pc-1"
-#~ msgstr "pc-1"
-
-#~ msgid "pc-2"
-#~ msgstr "pc-2"
-
-#~ msgid "pc-3"
-#~ msgstr "pc-3"
-
-#~ msgid "pc-4"
-#~ msgstr "pc-4"
-
-#~ msgid "apc-0"
-#~ msgstr "apc-0"
-
-#~ msgid "apc-1"
-#~ msgstr "apc-1"
-
-#~ msgid "apc-2"
-#~ msgstr "apc-2"
-
-#~ msgid "apc-3"
-#~ msgstr "apc-3"
-
-#~ msgid "apc-4"
-#~ msgstr "apc-4"
-
-#~ msgid "aug-cc-pCVDZ"
-#~ msgstr "aug-cc-pCVDZ"
-
-#~ msgid "aug-cc-pCVTZ"
-#~ msgstr "aug-cc-pCVTZ"
-
-#~ msgid "aug-cc-pCVQZ"
-#~ msgstr "aug-cc-pCVQZ"
-
-#~ msgid "aug-cc-pCV5Z"
-#~ msgstr "aug-cc-pCV5Z"
-
 #~ msgid "Direct"
 #~ msgstr "Усмери"
 
 #~ msgid "Parallel"
 #~ msgstr "Паралелно"
-
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
 
 #~ msgid "Grid Specification"
 #~ msgstr "Одредба мреже"
@@ -12307,9 +11983,6 @@ msgstr ""
 
 #~ msgid "Becke (original)"
 #~ msgstr "Беки (изворно)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "Квалитет мреже:"
@@ -12328,12 +12001,6 @@ msgstr ""
 
 #~ msgid "Radial Scheme:"
 #~ msgstr "Шема полупречника:"
-
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
 
 #~ msgid "Show all functionals"
 #~ msgstr "Прикажи све функционале"
@@ -12355,33 +12022,6 @@ msgstr ""
 
 #~ msgid "Group Label:"
 #~ msgstr "Натпис групе:"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "&Напредна подешавања"
@@ -12407,9 +12047,6 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Читај"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
 #~ msgid "Hay-Wadt"
 #~ msgstr "Хеј-Вадт"
 
@@ -12418,21 +12055,6 @@ msgstr ""
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Л-љуска простирања на тешким атомима"
-
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
 
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Двострука зета валентност"
@@ -12451,9 +12073,6 @@ msgstr ""
 
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Хеј/Вадт валентност"
-
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
 
 #~ msgid "ECP Type:"
 #~ msgstr "ЕЦП врста:"
@@ -12509,26 +12128,14 @@ msgstr ""
 #~ msgid "Spin Orbit"
 #~ msgstr "Орбита спина"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Општа оптимизација"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "ФМО оптимизација"
 
 #~ msgid "Make EFP"
 #~ msgstr "Направи ЕФП"
-
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
 
 #~ msgid "GVB"
 #~ msgstr "ГВБ"
@@ -12557,23 +12164,14 @@ msgstr ""
 #~ msgid "Exec Type:"
 #~ msgstr "Врста извршавања:"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
 #~ msgid "GUGA"
 #~ msgstr "ГУГА"
 
 #~ msgid "General CI"
 #~ msgstr "Општи ЦИ"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "CCD: CC with Doubles"
 #~ msgstr "CCD: ЦЦ са двоструким"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
 
 #~ msgid "CR-CC"
 #~ msgstr "ЦР-ЦЦ"
@@ -12616,48 +12214,6 @@ msgstr ""
 
 #~ msgid "Coordinate Type:"
 #~ msgstr "Врста координата:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Јединствене Декартове координате"
@@ -12703,15 +12259,6 @@ msgstr ""
 
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Присили паралелне начине"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
 
 #~ msgid "MemDDI:"
 #~ msgstr "МемДДИ:"
@@ -12760,17 +12307,11 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "ГАМЕСС сучеље за друге кодове"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
 #~ msgid "PltOrb"
 #~ msgstr "Плт орб"
 
 #~ msgid "AIMPAC"
 #~ msgstr "АИМПАЦ"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
 
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Приморај врсту покретања провере"
@@ -12892,18 +12433,6 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "Основно:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Z-матрица"
 
@@ -12923,9 +12452,6 @@ msgstr ""
 
 #~ msgid "Gaussian Input"
 #~ msgstr "Улаз Гауска"
-
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
 
 #~ msgid "Standard"
 #~ msgstr "Стандард"
@@ -12968,26 +12494,8 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "Улаз МОЛПРО-а"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Издање Молпро-а:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "MOPAC Input"
 #~ msgstr "Улаз МОПАК-а"
@@ -12998,74 +12506,23 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Квинтет"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Улаз НВХемије"
-
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Улаз Ку-Хемије"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "TeraChem Input"
 #~ msgstr "Улаз Тера-Хемије"
 
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Неограничено"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "не"
 
 #~ msgid "yes"
 #~ msgstr "да"
-
-#~ msgid "D2"
-#~ msgstr "D2"
-
-#~ msgid "D3"
-#~ msgstr "D3"
 
 #~ msgid "Dispersion:"
 #~ msgstr "Расипање:"
@@ -13115,17 +12572,8 @@ msgstr ""
 #~ msgid "&Height"
 #~ msgstr "&Висина"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "инча"
-
-#~ msgid "px"
-#~ msgstr "px"
 
 #~ msgid "&Save Image..."
 #~ msgstr "&Сачувај слику..."
@@ -13181,9 +12629,6 @@ msgstr ""
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Таласни број ласера:"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
 #~ msgid "Nucleus:"
 #~ msgstr "Језгро:"
 
@@ -13193,23 +12638,11 @@ msgstr ""
 #~ msgid "Reset &Plot Axes"
 #~ msgstr "Поврати осе &графикона"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Вибрације молекула"
 
 #~ msgid "Filter: "
 #~ msgstr "Пропусник: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Активност (A^4/amu)"
@@ -13274,12 +12707,6 @@ msgstr ""
 
 #~ msgid "Advanced..."
 #~ msgstr "Напредно..."
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
 
 #~ msgid "&Length:"
 #~ msgstr "&Дужина:"
