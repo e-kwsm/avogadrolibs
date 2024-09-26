@@ -8395,55 +8395,17 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS-UK..."
 
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Crystal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Add Hydrogens for pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Atom Properties..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Bond Properties..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Angle Properties..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Torsion Properties..."
-
 #, fuzzy
 #~ msgid "Residue Properties..."
 #~ msgstr "Molecule Properties..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Create Surfaces..."
 
 #, fuzzy
 #~ msgid "Symmetry..."
 #~ msgstr "Symmetry"
 
-#~ msgid "Insert Fragment..."
-#~ msgstr "Insert Fragment..."
-
-#~ msgid "Theory:"
-#~ msgstr "Theory:"
-
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
 #~ msgstr "Distance (1->2): %L1 %2"
-
-#~ msgid "Rotatable"
-#~ msgstr "Rotatable"
 
 #~ msgctxt "in Angstrom"
 #~ msgid ""
@@ -8462,35 +8424,12 @@ msgstr ""
 #~ "Angle %2"
 
 #~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
-#~ msgid "Angle"
-#~ msgstr "Angle"
-
-#~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
 #~ msgstr ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
-
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energy (kJ/mol)"
-
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
 
 #, fuzzy
 #~ msgid "Input Generators"
