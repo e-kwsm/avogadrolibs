@@ -9379,9 +9379,6 @@ msgstr "E-mail-címek"
 #~ msgid "Load Spectral Data"
 #~ msgstr "Spektrumadatok betöltése"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics (PNG)"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "TIFF (Tagged Image File Format)"
 

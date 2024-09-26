@@ -10147,9 +10147,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "CD-файл з Turbomole має помилковий формат  : %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "PNG (Portable Network Graphics)"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Формат файла зображення з мітками (TIFF)"
 

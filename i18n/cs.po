@@ -10025,9 +10025,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Soubor CD Turbomole je naformátován nesprávně: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "PNG (Portable Network Graphics)"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "TIFF (Tagged Image File Format)"
 

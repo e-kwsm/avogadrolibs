@@ -9193,9 +9193,6 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Tải số liệu phổ"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics (PNG)"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Dạng thức tập tin ảnh có thẻ (TIFF)"
 

@@ -9388,9 +9388,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Turbomole CD 檔不是適當的檔案格式: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics (PNG 檔)"
-
 #~ msgid "jpeg"
 #~ msgstr "jpeg (jpeg 檔)"
 

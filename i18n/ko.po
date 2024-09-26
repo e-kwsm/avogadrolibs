@@ -9217,9 +9217,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Load Spectral Data"
 #~ msgstr "스펙트럼 데이터 불러오기"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "PNG"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "선택된 이미지 파일 형식"
 

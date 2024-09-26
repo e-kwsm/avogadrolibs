@@ -9857,9 +9857,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Turbomole CDファイルのフォーマットが不正です: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "PNG 画像:"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Tagged Image File Format(TIFF)"
 
