@@ -8273,15 +8273,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Värv jäägi järgi (aminohappe tüüp, hüdrofoobsus, ..."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoktium"
 
@@ -8314,14 +8305,8 @@ msgstr ""
 #~ msgid "Chemical files (*.xyz)"
 #~ msgstr "Keemiafailid (*.xyz)"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "Allalaaditava molekuli URL."
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Vali aatomid, sidemed, jäägid..."
@@ -8331,9 +8316,6 @@ msgstr ""
 
 #~ msgid "Dark"
 #~ msgstr "Tume"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Residue"
 #~ msgstr "Jääk"
@@ -8352,9 +8334,6 @@ msgstr ""
 
 #~ msgid "Radius:"
 #~ msgstr "Raadius:"
-
-#~ msgid "Ala"
-#~ msgstr "Ala"
 
 #~ msgid "Arginine"
 #~ msgstr "Arginiin"
