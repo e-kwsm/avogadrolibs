@@ -9192,9 +9192,6 @@ msgstr ""
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Dạng thức tập tin ảnh có thẻ (TIFF)"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap (BMP)"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Lưu ảnh phổ"
 
