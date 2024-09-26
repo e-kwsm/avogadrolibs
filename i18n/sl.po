@@ -8959,9 +8959,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Odpri datoteko trajektorij"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Dodajanje pripone .avi"
 
@@ -9154,20 +9151,11 @@ msgstr ""
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Zmanjšaj celico (&primitivno)"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
-#~ msgid "&Nanometer"
-#~ msgstr "&Nanometer"
-
 #~ msgid "&Picometer"
 #~ msgstr "&Pikometer"
 
 #~ msgid "&Degree"
 #~ msgstr "&Stopinja"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Display &cartesian coordinates"
 #~ msgstr "Pokaži &kartezijske koordinate"
@@ -9348,9 +9336,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Vektorski zapisi"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Izvoz vektorske grafike"
 
@@ -9470,9 +9455,6 @@ msgstr ""
 
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Preučevanje odvoda Orca ..."
-
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
 
 #~ msgid "Orca Test Example"
 #~ msgstr "Preizkusni primer Orca"
@@ -9619,21 +9601,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Pretvorbe zapisa SMILES niso podprte!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Ustvarjanje vhodnih datotek za kvantni kemijski paket GAMESS"
 
@@ -9729,9 +9696,6 @@ msgstr ""
 
 #~ msgid "&NWChem..."
 #~ msgstr "&NWChem ..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
 
 #~ msgid "&Q-Chem..."
 #~ msgstr "&Q-Chem ..."
@@ -9926,16 +9890,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Nastavitve &Infrardečega spektra"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Nastavitve spektra &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
 
 #~ msgctxt "Ultra-Violet spectrum"
 #~ msgid "UV"
@@ -9986,9 +9942,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Z vejico ločene vrednosti"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Uvoz podatkov spektra"
 
@@ -10024,27 +9977,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Datoteka Turbomole CD ni pravilno oblikovana  : %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Shrani sliko spektra"
 
@@ -10059,9 +9991,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Predočenje spektralnih podatkov kvantnih kemijskih izračunov"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Analiza vibracij"
@@ -10095,14 +10024,6 @@ msgstr ""
 
 #~ msgid "Orbitals"
 #~ msgstr "Orbitale"
-
-#~ msgctxt "Highest Occupied MO"
-#~ msgid "HOMO"
-#~ msgstr "HOMO"
-
-#~ msgctxt "Lowest Unoccupied MO"
-#~ msgid "LUMO"
-#~ msgstr "LUMO"
 
 #~ msgid "Orbital"
 #~ msgstr "Orbitala"
@@ -10233,9 +10154,6 @@ msgstr ""
 #~ msgid "Debug Information"
 #~ msgstr "Podrobnosti razhroščevanja"
 
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
-
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Velikost pogleda: %L1 x %L2"
 
@@ -10316,15 +10234,8 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molekula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Neznan programnik Python"
-
-#~ msgid "N/A"
-#~ msgstr "N/A"
 
 #~ msgid "PythonEngine: checking "
 #~ msgstr "Programnik Python: poteka preverjanje "
@@ -10481,22 +10392,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Dihedralni kot: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Razdalje:"
 
@@ -10620,12 +10515,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "Oblika"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
 
 #~ msgid "c"
 #~ msgstr "C"
