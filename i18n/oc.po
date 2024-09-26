@@ -8463,9 +8463,6 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Atom Properties..."
 #~ msgstr "Proprietats dels atòms"
@@ -8494,20 +8491,9 @@ msgstr ""
 #~ msgid "Distance: %L1 Å"
 #~ msgstr "Distància (1->2) : %L1 %2"
 
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
 #, fuzzy
 #~ msgid "Angle"
 #~ msgstr "Angle :"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
@@ -8537,9 +8523,6 @@ msgstr ""
 #~ msgid "Insert Crystal"
 #~ msgstr "Inserir un fragment"
 
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
-
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Arrèst"
@@ -8563,9 +8546,6 @@ msgstr ""
 #~ msgid "Engines"
 #~ msgstr "Motors de rendut"
 
-#~ msgid "Axes"
-#~ msgstr "Axes"
-
 #~ msgid "Hydrogen Bond"
 #~ msgstr "Ligason Idrogèn"
 
@@ -8584,9 +8564,6 @@ msgstr ""
 #~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
 #~ msgid "%1, isosurface = %L2"
 #~ msgstr "%1, surfàcia iso = %L2"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Animation..."
 #~ msgstr "Animacion..."
@@ -8608,9 +8585,6 @@ msgstr ""
 
 #~ msgid "ForceField"
 #~ msgstr "Camp de fòrça"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Fetch by chemical name..."
 #~ msgstr "Telecargar per nom quimic..."
@@ -8639,17 +8613,11 @@ msgstr ""
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Fichièr d'imatges (*.png *.pbm)"
 
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
 #~ msgid "Does not compute."
 #~ msgstr "Error de calcul."
 
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal Python"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "QM Matches"
 #~ msgstr "Resultats MQ"
@@ -8672,15 +8640,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Conversion de format SMILES pas disponibla !"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Crear los fichièrs d'entrada per GAMESS"
 
@@ -8702,20 +8661,8 @@ msgstr ""
 #~ msgid "Running Gaussian calculation..."
 #~ msgstr "Calcul Gaussian en cors..."
 
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
 #~ msgid "&NWChem..."
 #~ msgstr "&NWCHEM..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck"
 #~ msgstr "Fichièr de donadas Molpro"
@@ -8771,14 +8718,6 @@ msgstr ""
 #~ msgid "Y Axis"
 #~ msgstr "Axe Y"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
 #~ msgid "&CD Settings"
 #~ msgstr "&Paramètres DC"
 
@@ -8793,9 +8732,6 @@ msgstr ""
 
 #~ msgid "Publication"
 #~ msgstr "Publicacion"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
 
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Extension desconeguda : %1"
