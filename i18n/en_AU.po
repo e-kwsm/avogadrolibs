@@ -8494,7 +8494,6 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS-UK..."
 
-
 #, fuzzy
 #~ msgid "Residue Properties..."
 #~ msgstr "Molecule Properties..."
@@ -8534,28 +8533,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Input Generators"
 #~ msgstr "Input Generator..."
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Import"
-
-#~ msgid "Insert SMILES"
-#~ msgstr "Insert SMILES"
-
-#~ msgid "Insert SMILES fragment:"
-#~ msgstr "Insert SMILES fragment:"
-
-#~ msgid "Insert Crystal"
-#~ msgstr "Insert Crystal"
-
-#~ msgid "Insert molecular fragments for building larger molecules"
-#~ msgstr "Insert molecular fragments for building larger molecules"
-
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
-
-#~ msgid "Symmetry Properties..."
-#~ msgstr "Symmetry Properties..."
 
 #, fuzzy
 #~ msgid "Optimize geometry"
@@ -8610,131 +8587,21 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Colour by Residue (amino acid type, hydrophobicity, ..."
 
-#~ msgid "SMARTS Pattern:"
-#~ msgstr "SMARTS Pattern:"
-
-#~ msgid "Highlight Color:"
-#~ msgstr "Highlight Color:"
-
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Colour by SMARTS Pattern"
-
-#~ msgid "Highlight particular features which match a SMARTS pattern."
-#~ msgstr "Highlight particular features which match a SMARTS pattern."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
-#~ msgid "Engines"
-#~ msgstr "Engines"
-
-#~ msgid "Axes"
-#~ msgstr "Axes"
 
 #~ msgid "Renders the x, y, and z axes at the origin"
 #~ msgstr "Renders the x, y and z axes at the origin"
 
-#~ msgid "Renders primitives using Balls (atoms) and Sticks (bonds)"
-#~ msgstr "Renders primitives using Balls (atoms) and Sticks (bonds)"
-
-#~ msgid "Dipole"
-#~ msgstr "Dipole"
-
-#~ msgid "Hydrogen Bond"
-#~ msgstr "Hydrogen Bond"
-
-#~ msgid "Renders hydrogen bonds"
-#~ msgstr "Renders hydrogen bonds"
-
-#~ msgid "Select Atom Labels Color"
-#~ msgstr "Select Atom Labels Color"
-
 #~ msgid "Select Bond Labels Color"
 #~ msgstr "Select Bond Labels Colour"
-
-#~ msgid "Select Bond Labels Font"
-#~ msgstr "Select Bond Labels Font"
-
-#~ msgid "Polygon"
-#~ msgstr "Polygon"
-
-#~ msgid "Renders atoms as tetrahedra, octahedra, and other polygons"
-#~ msgstr "Renders atoms as tetrahedra, octahedra, and other polygons"
-
-#~ msgid "Renders protein backbones as ribbons"
-#~ msgstr "Renders protein backbones as ribbons"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
 
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Renders rings with coloured planes"
 
-#~ msgid "Simple Wireframe"
-#~ msgstr "Simple Wireframe"
-
-#~ msgid "Renders bonds as wires (lines), ideal for large molecules"
-#~ msgstr "Renders bonds as wires (lines), ideal for large molecules"
-
-#~ msgid "Van der Waals Spheres"
-#~ msgstr "Van der Waals Spheres"
-
-#~ msgid "Stick"
-#~ msgstr "Stick"
-
-#~ msgctxt "Electron density isosurface with a cutoff of %1"
-#~ msgid "Electron density, isosurface = %L1"
-#~ msgstr "Electron density, isosurface = %L1"
-
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
-#~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
-#~ msgstr "Renders bonds as wires (lines), ideal for very large (bio)molecules"
-
-#~ msgid "Trajectory files"
-#~ msgstr "Trajectory files"
-
-#~ msgid "DL-POLY HISTORY files"
-#~ msgstr "DL-POLY HISTORY files"
-
-#~ msgid "Open Trajectory File"
-#~ msgstr "Open Trajectory File"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
-#~ msgid "Adding .avi extension"
-#~ msgstr "Adding .avi extension"
-
-#~ msgid "Animation..."
-#~ msgstr "Animation..."
-
-#~ msgid "Cannot read file format of file %1."
-#~ msgstr "Cannot read file format of file %1."
-
-#~ msgid "Read trajectory file %1 failed."
-#~ msgstr "Read trajectory file %1 failed."
-
-#~ msgid "Must specify a valid .avi file name"
-#~ msgstr "Must specify a valid .avi file name"
-
 #~ msgid "GL widget was not correctly initialized in order to save video"
 #~ msgstr "GL widget was not correctly initialised in order to save video"
 
-#~ msgid "Invalid video filename.  Must include full directory path"
-#~ msgstr "Invalid video filename.  Must include full directory path"
-
 #~ msgid ""
 #~ "Invalid video filename.  Must include full directory path and name, "
 #~ "ending with .avi"
@@ -8742,37 +8609,10 @@ msgstr ""
 #~ "Invalid video filename.  Must include full directory path and name, "
 #~ "ending with .avi"
 
-#~ msgid "Could not determine format from filename: %1"
-#~ msgstr "Could not determine format from filename: %1"
-
-#~ msgid "Animate trajectories, reactions, and vibrations."
-#~ msgstr "Animate trajectories, reactions, and vibrations."
-
-#~ msgid "Cartesian Editor"
-#~ msgstr "Cartesian Editor"
-
 #~ msgid ""
 #~ "No unit cell defined for molecule -- cannot use fractional coordinates."
 #~ msgstr ""
 #~ "No unit cell defined for molecule -- cannot use fractional coordinates."
-
-#~ msgid "Cartesian Editor..."
-#~ msgstr "Cartesian Editor..."
-
-#~ msgid "Cartesian editor"
-#~ msgstr "Cartesian editor"
-
-#~ msgid "Number of atoms: %1"
-#~ msgstr "Number of atoms: %1"
-
-#~ msgid "Number of rotatable bonds: %1"
-#~ msgstr "Number of rotatable bonds: %1"
-
-#~ msgid "Add constraint"
-#~ msgstr "Add constraint"
-
-#~ msgid "Your molecule must contain at least one atom to add a constraint"
-#~ msgstr "Your molecule must contain at least one atom to add a constraint"
 
 #~ msgid ""
 #~ "Your molecule must contain at least two atoms to add a bond constraint"
@@ -8788,43 +8628,6 @@ msgstr ""
 #~ "Your molecule must contain at least four atoms to add a torsion constraint"
 #~ msgstr ""
 #~ "Your molecule must contain at least four atoms to add a torsion constraint"
-
-#~ msgid "&Crystallography"
-#~ msgstr "&Crystallography"
-
-#~ msgid "&Reduce"
-#~ msgstr "&Reduce"
-
-#~ msgid "&Length Unit"
-#~ msgstr "&Length Unit"
-
-#~ msgid "&Angle Unit"
-#~ msgstr "&Angle Unit"
-
-#~ msgid "&Coordinate Display"
-#~ msgstr "&Coordinate Display"
-
-#~ msgid "Coordinate &Preservation"
-#~ msgstr "Coordinate &Preservation"
-
-#~ msgid "&Matrix Display"
-#~ msgstr "&Matrix Display"
-
-#~ msgid "Hide &Editors"
-#~ msgstr "Hide &Editors"
-
-#~ msgid "Show &Editors"
-#~ msgstr "Show &Editors"
-
-#~ msgid "Hide &Property Display"
-#~ msgstr "Hide &Property Display"
-
-#~ msgid "Show &Property Display"
-#~ msgstr "Show &Property Display"
-
-#~ msgctxt "Unit cell lattice"
-#~ msgid "Lattice Type: %1"
-#~ msgstr "Lattice Type: %1"
 
 #~ msgid "Spacegroup: %1"
 #~ msgstr "Space group: %1"
