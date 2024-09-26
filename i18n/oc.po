@@ -8931,9 +8931,6 @@ msgstr ""
 #~ msgid "Format:"
 #~ msgstr "Format :"
 
-#~ msgid "X11 Pixmap"
-#~ msgstr "xpm"
-
 #~ msgid "&Advanced <<"
 #~ msgstr "&Avançats >>"
 
