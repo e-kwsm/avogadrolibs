@@ -10098,17 +10098,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Initieel:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Rationale Functie Optimelisatie"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Quadratische Benadering"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Recalculate Hessian Every:"
 #~ msgstr "Herbereken de Hessiaan Elke:"
@@ -10116,74 +10110,14 @@ msgstr ""
 #~ msgid "Follow Mode:"
 #~ msgstr "Volg Mode"
 
-#~ msgid "Basis:"
-#~ msgstr "Basis:"
-
-#~ msgid "Z-matrix"
-#~ msgstr "Z-matrix"
-
 #~ msgid "Gaussian Input"
 #~ msgstr "Gaussiaanse Input"
-
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
 
 #~ msgid "Standard"
 #~ msgstr "Standaard"
 
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
-
-#~ msgid "Checkpoint:"
-#~ msgstr "Checkpoint:"
-
-#~ msgid "Z-matrix (compact)"
-#~ msgstr "Z-matrix (compact)"
-
-#~ msgid "MOLPRO Input"
-#~ msgstr "MOLPRO Input"
-
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "kwartet"
-
-#~ msgid "Quintet"
-#~ msgstr "Quintet"
-
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
-#~ msgid "Q-Chem Input"
-#~ msgstr "Q-Chem Input"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "Laad Shaders"
@@ -10191,17 +10125,8 @@ msgstr ""
 #~ msgid "Shader Name:"
 #~ msgstr "Shader Naam:"
 
-#~ msgid "Vertex Shader:"
-#~ msgstr "Vertex Shader:"
-
-#~ msgid "Fragment Shader:"
-#~ msgstr "Fragment Shader:"
-
 #~ msgid "Assign Shader"
 #~ msgstr "Wijs Shader toe"
-
-#~ msgid "Display Type:"
-#~ msgstr "Display Type:"
 
 #~ msgid "Change Font..."
 #~ msgstr "Wijzig Font..."
