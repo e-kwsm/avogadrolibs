@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Avogadro 1.99.0\n"
 "Report-Msgid-Bugs-To: avogadro-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2024-10-13 02:35+0000\n"
+"POT-Creation-Date: 2024-10-20 02:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,14 +210,14 @@ msgstr ""
 
 #: molequeue/inputgeneratorwidget.cpp:285
 #: molequeue/inputgeneratorwidget.cpp:593 molequeue/molequeuewidget.cpp:69
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:976
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:985
 #: qtplugins/gamessinput/gamessinputdialog.cpp:685
 msgid "Cannot connect to MoleQueue"
 msgstr ""
 
 #: molequeue/inputgeneratorwidget.cpp:286
 #: molequeue/inputgeneratorwidget.cpp:594 molequeue/molequeuewidget.cpp:70
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:977
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:986
 #: qtplugins/gamessinput/gamessinputdialog.cpp:686
 msgid ""
 "Cannot connect to MoleQueue server. Please ensure that it is running and try "
@@ -230,13 +230,13 @@ msgid "Submit %1 Calculation"
 msgstr ""
 
 #: molequeue/inputgeneratorwidget.cpp:333
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:1013
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:1022
 #: qtplugins/gamessinput/gamessinputdialog.cpp:722
 msgid "Job Failed"
 msgstr ""
 
 #: molequeue/inputgeneratorwidget.cpp:334
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:1014
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:1023
 #: qtplugins/gamessinput/gamessinputdialog.cpp:723
 msgid "The job did not complete successfully."
 msgstr ""
@@ -268,7 +268,7 @@ msgstr ""
 
 #: molequeue/inputgeneratorwidget.cpp:470
 #: molequeue/inputgeneratorwidget.cpp:581
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:966
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:975
 #: qtplugins/gamessinput/gamessinputdialog.cpp:675
 #: qtplugins/lammpsinput/lammpsinputdialog.cpp:324
 #: qtplugins/lammpsinput/lammpsinputdialog.cpp:354
@@ -281,7 +281,7 @@ msgstr ""
 
 #: molequeue/inputgeneratorwidget.cpp:471
 #: molequeue/inputgeneratorwidget.cpp:582
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:967
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:976
 #: qtplugins/gamessinput/gamessinputdialog.cpp:676
 #: qtplugins/lammpsinput/lammpsinputdialog.cpp:355
 #: qtplugins/lammpsinput/lammpsinputdialog.cpp:369
@@ -2563,11 +2563,11 @@ msgstr ""
 msgid "Overwrite modified input file?"
 msgstr ""
 
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:948
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:957
 msgid "Save CP2K input file"
 msgstr ""
 
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:997
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:1006
 msgid "Submit CP2K Calculation"
 msgstr ""
 
@@ -2891,15 +2891,15 @@ msgstr ""
 msgid "Autodetect (%1)"
 msgstr ""
 
-#: qtplugins/forcefield/obenergy.cpp:67 qtplugins/forcefield/obmmenergy.cpp:33
+#: qtplugins/forcefield/obenergy.cpp:76 qtplugins/forcefield/obmmenergy.cpp:33
 msgid "Universal Force Field"
 msgstr ""
 
-#: qtplugins/forcefield/obenergy.cpp:72 qtplugins/forcefield/obmmenergy.cpp:38
+#: qtplugins/forcefield/obenergy.cpp:81 qtplugins/forcefield/obmmenergy.cpp:38
 msgid "Generalized Amber Force Field"
 msgstr ""
 
-#: qtplugins/forcefield/obenergy.cpp:86 qtplugins/forcefield/obmmenergy.cpp:52
+#: qtplugins/forcefield/obenergy.cpp:95 qtplugins/forcefield/obmmenergy.cpp:52
 msgid "Merck Molecular Force Field 94"
 msgstr ""
 
