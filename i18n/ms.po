@@ -5096,8 +5096,8 @@ msgid "Open WFN File"
 msgstr "Buka Fail WFN"
 
 #: qtplugins/qtaim/qtaimextension.cpp:91
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "Fail WFN (*.wfn);;Semua fail (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "Fail WFN (*.wfn);;Semua fail (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:23
 msgid "QTAIM extension"

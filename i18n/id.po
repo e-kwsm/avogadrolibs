@@ -5114,8 +5114,8 @@ msgid "Open WFN File"
 msgstr "Buka Berkas WFN"
 
 #: qtplugins/qtaim/qtaimextension.cpp:91
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "Berkas WFN (*.wfn);;Semua berkas (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "Berkas WFN (*.wfn);;Semua berkas (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:23
 msgid "QTAIM extension"

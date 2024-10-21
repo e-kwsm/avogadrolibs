@@ -5124,8 +5124,8 @@ msgid "Open WFN File"
 msgstr "Malfermi WFN-Dosieron"
 
 #: qtplugins/qtaim/qtaimextension.cpp:91
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "WFN-dosieroj (*.wfn);;Ĉiuj dosieroj (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "WFN-dosieroj (*.wfn);;Ĉiuj dosieroj (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:23
 msgid "QTAIM extension"

@@ -5193,8 +5193,8 @@ msgid "Open WFN File"
 msgstr "Otvori WFN Datoteku"
 
 #: qtplugins/qtaim/qtaimextension.cpp:91
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "WFN Datoteke (*.wfn);;Sve Datoteke (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "WFN Datoteke (*.wfn);;Sve Datoteke (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:23
 msgid "QTAIM extension"

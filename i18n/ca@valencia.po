@@ -5055,8 +5055,8 @@ msgid "Open WFN File"
 msgstr "Obri el fitxer WFN"
 
 #: qtplugins/qtaim/qtaimextension.cpp:91
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "Fitxers WFN (*.wfn);;Tots els fitxers (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "Fitxers WFN (*.wfn);;Tots els fitxers (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:23
 msgid "QTAIM extension"

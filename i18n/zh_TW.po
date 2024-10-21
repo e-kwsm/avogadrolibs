@@ -5030,8 +5030,8 @@ msgid "Open WFN File"
 msgstr "開啟 WFN 檔"
 
 #: qtplugins/qtaim/qtaimextension.cpp:91
-msgid "WFN files (*.wfn);;All files (*.*)"
-msgstr "WFN 檔 (*.wfn);;所有檔案 (*.*)"
+msgid "WFN files (*.wfn);;All files (*)"
+msgstr "WFN 檔 (*.wfn);;所有檔案 (*)"
 
 #: qtplugins/qtaim/qtaimextension.h:23
 msgid "QTAIM extension"
