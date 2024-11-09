@@ -8887,11 +8887,6 @@ msgstr ""
 #~ msgid "&Copy"
 #~ msgstr "Copiar"
 
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Carga Molecular:"
-
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Massa Molecular (g/mol):"
 
