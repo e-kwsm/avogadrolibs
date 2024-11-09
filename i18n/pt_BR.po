@@ -8913,11 +8913,6 @@ msgstr "Seus e-mails"
 #~ msgid "&Copy"
 #~ msgstr "Copiar"
 
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Carga da Molécula:"
-
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Massa Molecular (g/mol):"
 
