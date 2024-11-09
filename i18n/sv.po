@@ -10456,22 +10456,6 @@ msgstr "nordinalex@gmail.com, yeager@ubuntu.com"
 #~ msgstr "Geometri"
 
 #, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Avstånd:"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Gundämne:"
-
-#, fuzzy
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekyldynamik (600 K)"
-
-#, fuzzy
-#~ msgid "Fragment…"
-#~ msgstr "Infoga fragment"
-
-#, fuzzy
 #~ msgid "Filename"
 #~ msgstr "&Arkiv"
 
