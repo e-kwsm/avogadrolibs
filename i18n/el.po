@@ -3695,7 +3695,6 @@ msgstr "Εξαγωγή CSV"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:249
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "Αρχεία CSV (*.csv);;Όλα τα αρχεία (*)"
 
@@ -8817,11 +8816,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Αντιγραφή Όλων"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Όνομα μορίου κατά IUPAC:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
