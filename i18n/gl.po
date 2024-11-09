@@ -9387,11 +9387,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgstr "Copiar todo"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nome IUPAC da molécula:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Masa molecular (g/mol):"
 

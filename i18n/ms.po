@@ -9626,11 +9626,6 @@ msgstr ""
 #~ msgstr "Salin Semua"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nama Molekul IUPAC:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Berat Molekul (g/mol):"
 

@@ -9196,18 +9196,6 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgstr "Gundämne:"
 
 #, fuzzy
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekyldynamik (600 K)"
-
-#, fuzzy
-#~ msgid "Optimize"
-#~ msgstr "&Optimera geometri"
-
-#, fuzzy
-#~ msgid "Fragment…"
-#~ msgstr "Infoga fragment"
-
-#, fuzzy
 #~ msgid "Filename"
 #~ msgstr "&Arkiv"
 

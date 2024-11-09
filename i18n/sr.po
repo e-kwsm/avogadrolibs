@@ -9802,11 +9802,6 @@ msgstr ""
 #~ msgid "&Copy"
 #~ msgstr "Kopiraj"
 
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "ЈУПАК назив молекула:"
-
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Molekularna masa (g/mol):"
 

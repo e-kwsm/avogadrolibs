@@ -9684,11 +9684,6 @@ msgstr ""
 #~ msgstr "Kopírovat vše"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Název molekuly IUPAC:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Váha molekuly (g/mol):"
 

@@ -9291,11 +9291,6 @@ msgstr ""
 #~ msgid "&Copy"
 #~ msgstr "Copiar tot"
 
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molecula"
-
 #~ msgid "Chemical Formula:"
 #~ msgstr "Formula quimica :"
 

@@ -9559,11 +9559,6 @@ msgstr "phlostically@example.com"
 #~ msgid "&Copy"
 #~ msgstr "Kopii"
 
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekulo"
-
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Molekulmaso (g/mol):"
 

@@ -9355,11 +9355,6 @@ msgstr ""
 #~ msgstr "Op afstand"
 
 #, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molecule Lading:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Molecule Gewicht (g/mol):"
 

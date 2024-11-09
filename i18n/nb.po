@@ -9280,15 +9280,6 @@ msgstr ""
 #~ msgid "By Distance"
 #~ msgstr "Avstand(er):"
 
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Atomnummer"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekyl"
-
 #~ msgid "Number of Atoms:"
 #~ msgstr "Antall atomer:"
 
