@@ -11390,16 +11390,8 @@ msgstr "Sähköpostisi"
 #~ msgstr "Täytä yksikkökoppi"
 
 #, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Järjestysluku"
-
-#, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Etäisyys"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Järjestysluku"
 
 #, fuzzy
 #~| msgid "Molecule Charge:"
