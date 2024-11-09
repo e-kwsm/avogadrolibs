@@ -3631,7 +3631,6 @@ msgid "Export CSV"
 msgstr "CSVをエクスポート"
 
 #: qtplugins/molecularproperties/molecularview.cpp:147
-#: qtplugins/propertytables/propertyview.cpp:232
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "CSVファイル (*.csv);;全てのファイル (*)"
 

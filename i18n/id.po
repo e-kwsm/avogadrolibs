@@ -3722,7 +3722,6 @@ msgstr "Ekspor CSV"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "Berkas CSV (*.csv);;Semua berkas (*)"
 
@@ -8615,11 +8614,6 @@ msgstr "Email anda"
 #~| msgid "Copy"
 #~ msgid "&Copy"
 #~ msgstr "Salin"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nama Molekul IUPAC:"
 
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Berat Molekul (g/mol):"

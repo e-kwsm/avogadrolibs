@@ -3745,7 +3745,6 @@ msgstr "Eksporti"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "CSV-dosieroj (*.csv);;Ĉiuj dosieroj (*)"
 
@@ -8857,11 +8856,6 @@ msgstr "phlostically@example.com"
 #~| msgid "Copy"
 #~ msgid "&Copy"
 #~ msgstr "Kopii"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekulo"
 
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Molekulmaso (g/mol):"

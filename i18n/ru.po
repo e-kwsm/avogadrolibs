@@ -3735,7 +3735,6 @@ msgstr "Экспортировать CSV"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "Файлы CSV (*.csv);;Все файлы (*)"
 
@@ -8737,11 +8736,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Копировать всё"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Заряд молекулы:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
