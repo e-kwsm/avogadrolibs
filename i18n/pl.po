@@ -9246,10 +9246,6 @@ msgstr ""
 #~ msgstr "Kopiuj"
 
 #, fuzzy
-#~ msgid "Molecule Name:"
-#~ msgstr "Dynamika cząsteczek (600K)"
-
-#, fuzzy
 #~ msgid "Fragment…"
 #~ msgstr "Wpisz fragment SMILES:"
 
