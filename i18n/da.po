@@ -8713,11 +8713,6 @@ msgstr ""
 #~ msgstr "Atom nummer"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekyle"
-
-#, fuzzy
 #~ msgid "Optimize"
 #~ msgstr "Optimer"
 

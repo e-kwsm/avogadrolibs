@@ -8561,9 +8561,6 @@ msgstr ""
 #~ msgid "Molecule Name:"
 #~ msgstr "مولېكۇلا"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
 #, fuzzy
 #~ msgid "In."
 #~ msgstr "دىكى:"
