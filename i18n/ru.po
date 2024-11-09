@@ -8732,11 +8732,6 @@ msgstr ""
 #~ msgstr "Копировать всё"
 
 #, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Заряд молекулы:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Молекулярная масса (г/моль):"
 
