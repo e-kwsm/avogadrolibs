@@ -9588,11 +9588,6 @@ msgstr ""
 #~ msgstr "Atom nummer"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekyle"
-
-#, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
 #~ msgstr "Fragment..."
