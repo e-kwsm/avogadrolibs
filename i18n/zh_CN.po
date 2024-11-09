@@ -8598,11 +8598,6 @@ msgstr ""
 #~ msgstr "复制(&C)"
 
 #, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "分子电荷:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "分子量 (g/mol):"
 
