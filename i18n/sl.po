@@ -5132,7 +5132,6 @@ msgstr "Premik (v ppm)"
 
 #: qtplugins/spectra/spectradialog.cpp:381
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
 msgstr "Elektronska Spektra"
 
