@@ -7815,7 +7815,6 @@ msgstr "y"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:529
 #. i18n: ectx: property (text), widget (QPushButton, push_options)
 #, fuzzy
-#| msgid "Operations"
 msgid "&Options…"
 msgstr "オプション (&O)…"
 
