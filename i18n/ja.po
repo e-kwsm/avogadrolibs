@@ -5053,7 +5053,6 @@ msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:83
 #, fuzzy
-#| msgid "Create Surfaces"
 msgid "Create Surfaces…"
 msgstr "表面を作成する…"
 
