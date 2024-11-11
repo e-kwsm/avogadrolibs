@@ -5359,7 +5359,7 @@ msgstr ""
 msgid "Clipboard"
 msgstr ""
 
-#: qtplugins/templatetool/templatetool.cpp:492
+#: qtplugins/templatetool/templatetool.cpp:404
 msgid "Insert Template"
 msgstr ""
 
