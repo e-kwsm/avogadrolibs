@@ -4379,7 +4379,6 @@ msgstr "價"
 
 #: qtplugins/propertytables/propertymodel.cpp:504
 #, fuzzy
-#| msgid "Partial Charge"
 msgid "Formal Charge"
 msgstr "形式電荷"
 
@@ -8129,7 +8128,6 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:99
 #. i18n: ectx: property (text), widget (QLabel, formalChargeLabel)
 #, fuzzy
-#| msgid "Partial Charge"
 msgid "Formal Charge:"
 msgstr "形式電荷"
 
