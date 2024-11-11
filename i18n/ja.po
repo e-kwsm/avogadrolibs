@@ -1577,7 +1577,6 @@ msgstr "軸にアラインする"
 
 #: qtplugins/aligntool/aligntool.cpp:308
 #, fuzzy
-#| msgid "selected atom to origin"
 msgid "Center the atom at the origin."
 msgstr "選択原子を原点に"
 
