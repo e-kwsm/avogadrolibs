@@ -7185,7 +7185,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:180
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #, fuzzy
-#| msgid "Scoring method"
 msgid "Scoring method:"
 msgstr "Kaedah penskoran:"
 
