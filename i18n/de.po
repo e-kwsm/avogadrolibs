@@ -8707,7 +8707,6 @@ msgstr ""
 #~ msgstr "Einfache Darstellung von VdW-Sphären mit ambienter Verdeckung."
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
 #~ msgstr "Geometrie"
 
