@@ -2999,7 +2999,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:152
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Υπολογισμός"
 
