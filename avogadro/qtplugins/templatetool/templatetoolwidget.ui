@@ -417,6 +417,7 @@
       </layout>
      </widget>
      <widget class="QWidget" name="tab">
+       <!-- XXX: FUNCTIONAL GROUP -->
       <attribute name="title">
        <string>Groups</string>
       </attribute>
