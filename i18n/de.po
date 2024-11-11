@@ -5365,7 +5365,6 @@ msgstr "Schwingungen"
 
 #: qtplugins/vibrations/vibrations.h:37
 #, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display vibrational modes."
 msgstr "Schwingungsmoden anzeigen."
 
