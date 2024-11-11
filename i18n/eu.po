@@ -5094,7 +5094,7 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:218
 #: qtplugins/spectra/spectradialog.cpp:409
 #, fuzzy
-#| msgid "&Density Of States Settings"
+#| msgid "Density Of States Settings"
 msgid "Density of States"
 msgstr "Estatuen Dentsitatearen Ezarpenak"
 
