@@ -3066,6 +3066,7 @@ msgstr "I&mportar Cristal da Área de Transferência"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
+#| msgid "Wrap Atoms to Unit Cell."
 msgid "Wrap atoms into the unit cell."
 msgstr "Envolver Átomos na Célula Unitária."
 
