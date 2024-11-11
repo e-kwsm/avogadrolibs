@@ -5585,7 +5585,6 @@ msgstr ""
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:363
 #. i18n: ectx: property (text), widget (QPushButton, computeButton)
 #, fuzzy
-#| msgid "Submit CP2K Calculation"
 msgid "Submit Calculation…"
 msgstr "Отправить расчет…"
 
