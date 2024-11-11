@@ -4772,8 +4772,10 @@ msgid "Select Water"
 msgstr ""
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
+#, fuzzy
+#| msgid "Selection"
 msgid "Enlarge Selection"
-msgstr ""
+msgstr "Výběr"
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
 #, fuzzy
