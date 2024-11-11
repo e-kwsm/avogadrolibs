@@ -5410,8 +5410,10 @@ msgid "Clipboard"
 msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:404
+#, fuzzy
+#| msgid "Insert"
 msgid "Insert Template"
-msgstr ""
+msgstr "Txertatu"
 
 #: qtplugins/templatetool/templatetool.cpp:679
 msgid "Insert Ligand"
