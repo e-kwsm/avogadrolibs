@@ -3700,7 +3700,6 @@ msgstr "Exporta CSV"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:249
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "Fitxers CSV (*.csv);;Tots els fitxers (*)"
 
