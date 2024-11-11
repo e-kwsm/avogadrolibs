@@ -8438,7 +8438,6 @@ msgstr ""
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:194
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Number of Bonds:"
 msgid "Number of Dimensions:"
 msgstr "次元数:"
 
