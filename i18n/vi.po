@@ -4957,8 +4957,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:200
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Hồng ngoại"
 
