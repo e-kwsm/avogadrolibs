@@ -5344,7 +5344,7 @@ msgstr ""
 
 #: qtplugins/templatetool/templatetool.cpp:404
 #, fuzzy
-#| msgid "Insert Peptide"
+#| msgid "Insert"
 msgid "Insert Template"
 msgstr "Inserisci"
 
