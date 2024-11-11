@@ -5318,7 +5318,6 @@ msgstr "Yaehmopが見つかりません"
 
 #: qtplugins/yaehmop/yaehmop.cpp:544
 #, fuzzy, qt-format
-#| msgid "G03 failed to start."
 msgid "Error: %1 failed to start"
 msgstr "エラー: %1 のスタートに失敗しました"
 
