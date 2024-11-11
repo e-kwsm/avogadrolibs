@@ -6222,7 +6222,6 @@ msgstr "Poisson EWALD Alfa"
 #. i18n: file: qtplugins/cp2kinput/cp2kinputdialog.ui:399
 #. i18n: ectx: property (text), widget (QLabel, label_23)
 #, fuzzy
-#| msgid "Poiosson EWALD GMAX"
 msgid "Poisson EWALD GMAX"
 msgstr "Poisson EWALD GMAX"
 
