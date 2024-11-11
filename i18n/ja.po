@@ -7113,7 +7113,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:157
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "Convergers"
 msgid "Convergence:"
 msgstr "収束性:"
 
