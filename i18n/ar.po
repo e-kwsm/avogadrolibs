@@ -4367,9 +4367,8 @@ msgid "Secondary Structure"
 msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:513
-#, fuzzy
 msgid "Heterogen"
-msgstr "هيدروجين"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:527
 #: qtplugins/propertytables/propertymodel.cpp:544
