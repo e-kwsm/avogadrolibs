@@ -4703,7 +4703,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "依照殘基來選擇"
 
