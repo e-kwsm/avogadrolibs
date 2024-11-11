@@ -3857,7 +3857,6 @@ msgstr "配座異性体を生成中 (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:710
 #, fuzzy
-#| msgid "Conformer"
 msgid "Generate Conformers"
 msgstr "配座異性体の生成"
 
