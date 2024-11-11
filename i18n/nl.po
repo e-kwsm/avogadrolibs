@@ -1497,7 +1497,6 @@ msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:101
 #, fuzzy
-#| msgid "&CD Settings"
 msgid "Settings"
 msgstr "Instellingen"
 
