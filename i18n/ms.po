@@ -3723,6 +3723,7 @@ msgstr "Import Hablur dari Papan Keratan"
 
 #: qtplugins/crystal/crystal.cpp:181
 #, fuzzy
+#| msgid "Keep atoms in unit cell."
 msgid "Wrap atoms into the unit cell."
 msgstr "Kekalkan atom dalam sel unit."
 
