@@ -8025,7 +8025,7 @@ msgstr "Fermi"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:91
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #, fuzzy
-#| msgid "&Scaling Factor:"
+#| msgid "Scaling Factor:"
 msgid "Scale Factor:"
 msgstr "Skala Faktoro:"
 
