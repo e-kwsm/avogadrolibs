@@ -4489,7 +4489,6 @@ msgstr "Elŝuti kromprogramojn el GitHub-deponejoj."
 
 #: qtplugins/ply/ply.cpp:29
 #, fuzzy
-#| msgid "VRML Render"
 msgid "PLY Render…"
 msgstr "PLY-Bildigo"
 
