@@ -3612,7 +3612,6 @@ msgstr "Molekylegenskaper"
 #: qtplugins/molecularproperties/molecularview.cpp:146
 #: qtplugins/propertytables/propertyview.cpp:248
 #, fuzzy
-#| msgid "&Export"
 msgid "Export CSV"
 msgstr "Eksporter CSV"
 
