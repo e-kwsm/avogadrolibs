@@ -8076,8 +8076,10 @@ msgstr "Aplicar Cor"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, SpectraDialog)
+#, fuzzy
+#| msgid "Spectra"
 msgid "Spectra Visualization"
-msgstr ""
+msgstr "Espectro"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_11)
