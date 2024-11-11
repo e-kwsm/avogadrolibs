@@ -3051,6 +3051,7 @@ msgstr "Kristall aus der Zwischenablage importieren"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
+#| msgid "Keep atoms in unit cell."
 msgid "Wrap atoms into the unit cell."
 msgstr "Atome in Elementarzelle halten."
 
