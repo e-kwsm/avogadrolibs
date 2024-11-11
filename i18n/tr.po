@@ -4398,7 +4398,6 @@ msgstr ""
 
 #: qtplugins/ply/ply.cpp:29
 #, fuzzy
-#| msgid "VRML Render…"
 msgid "PLY Render…"
 msgstr "PLY İşleme…"
 

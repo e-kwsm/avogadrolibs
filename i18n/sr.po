@@ -4564,7 +4564,6 @@ msgstr "Preuzmite dodatke iz spremišta GitHub."
 
 #: qtplugins/ply/ply.cpp:29
 #, fuzzy
-#| msgid "VRML Render"
 msgid "PLY Render…"
 msgstr "PLY Render"
 
