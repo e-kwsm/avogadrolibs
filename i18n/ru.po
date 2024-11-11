@@ -5119,7 +5119,6 @@ msgstr "Химический сдвиг (м.д.)"
 
 #: qtplugins/spectra/spectradialog.cpp:627
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
 msgstr "Электронная Спектры"
 
