@@ -3777,7 +3777,6 @@ msgstr ""
 
 #: qtplugins/molecularproperties/molecularproperties.cpp:27
 #, fuzzy
-#| msgid "Molecule"
 msgid "&Molecular…"
 msgstr "&Molécula"
 
