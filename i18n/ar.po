@@ -1465,9 +1465,9 @@ msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:101
 #, fuzzy
-#| msgid "&UV Settings"
+#| msgid "UV Settings"
 msgid "Settings"
-msgstr "&إعدادات الأشعة فوق البنفسجية"
+msgstr "إعدادات الأشعة فوق البنفسجية"
 
 #: qtgui/scriptloader.cpp:33
 #, qt-format
