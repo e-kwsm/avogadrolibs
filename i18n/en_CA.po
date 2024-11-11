@@ -3623,7 +3623,6 @@ msgstr "Could not open the file for writing."
 #: qtplugins/molecularproperties/molecularview.cpp:192
 #: qtplugins/propertytables/propertyview.cpp:293
 #, fuzzy
-#| msgid "Error reading structure file (%1)."
 msgid "Error writing to the file."
 msgstr "Error writing to the file."
 
