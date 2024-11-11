@@ -2440,10 +2440,8 @@ msgid "Element symbol."
 msgstr "Simbol elementa."
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:402
-#, fuzzy
-#| msgid "Invalid atomic number."
 msgid "Invalid atom label."
-msgstr "Nevažeći atomski broj."
+msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:420
 #, fuzzy
