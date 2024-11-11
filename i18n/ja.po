@@ -2728,7 +2728,6 @@ msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:177
 #, fuzzy
-#| msgid "Rotate to Standard Orientation"
 msgid "Rotate the unit cell to the standard orientation."
 msgstr "ユニットセルを標準配向に回転。"
 
