@@ -5383,7 +5383,7 @@ msgstr "Vložit"
 
 #: qtplugins/templatetool/templatetool.cpp:679
 #, fuzzy
-#| msgid "Insert Peptide"
+#| msgid "Insert"
 msgid "Insert Ligand"
 msgstr "Vložit"
 
