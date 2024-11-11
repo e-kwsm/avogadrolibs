@@ -3634,7 +3634,6 @@ msgstr ""
 
 #: qtplugins/molecularproperties/molecularproperties.cpp:27
 #, fuzzy
-#| msgid "Molecular Graph…"
 msgid "&Molecular…"
 msgstr "&Molekül…"
 
