@@ -3070,6 +3070,7 @@ msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:176
 #, fuzzy
+#| msgid "Keep atoms in unit cell."
 msgid "Wrap atoms into the unit cell."
 msgstr "Atomoak gelaxka unitatean mantendu."
 
