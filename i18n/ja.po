@@ -3154,7 +3154,6 @@ msgstr "水素"
 
 #: qtplugins/importpqr/importpqr.cpp:24
 #, fuzzy
-#| msgid "Search"
 msgid "&Search PQR…"
 msgstr "PQRを検索 (&S)…"
 
