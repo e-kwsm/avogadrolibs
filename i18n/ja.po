@@ -3632,7 +3632,6 @@ msgstr "CSVファイル (*.csv);;全てのファイル (*)"
 #: qtplugins/molecularproperties/molecularview.cpp:159
 #: qtplugins/propertytables/propertyview.cpp:261
 #, fuzzy
-#| msgid "Could not open file '%1' for writing."
 msgid "Could not open the file for writing."
 msgstr "ファイルを書き込みモードで開けません。"
 
