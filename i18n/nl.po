@@ -4696,7 +4696,6 @@ msgstr "Selecteer per Atoom Indices…"
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Selecteer per Residu…"
 
