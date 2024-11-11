@@ -8015,9 +8015,9 @@ msgstr "Apliki Koloron"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, SpectraDialog)
 #, fuzzy
-#| msgid "Spectra and Vibrations"
+#| msgid "Spectra"
 msgid "Spectra Visualization"
-msgstr "Spektroj kaj Vibroj"
+msgstr "Spektroj"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, push_loadSpectra)
