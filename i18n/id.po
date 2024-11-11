@@ -5846,7 +5846,7 @@ msgstr ""
 msgid "Clipboard"
 msgstr "Papan Klip"
 
-#: qtplugins/templatetool/templatetool.cpp:492
+#: qtplugins/templatetool/templatetool.cpp:404
 msgid "Insert Template"
 msgstr "Sisipkan Template"
 
