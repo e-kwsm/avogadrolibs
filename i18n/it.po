@@ -5045,8 +5045,6 @@ msgstr "Visualizza gli spettri e le modalità vibrazionali."
 
 #: qtplugins/spectra/spectradialog.cpp:200
 #, fuzzy
-#| msgctxt "Infrared spectra option"
-#| msgid "Infrared"
 msgid "Infrared"
 msgstr "Infrarosso"
 
