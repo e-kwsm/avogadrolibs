@@ -3016,9 +3016,8 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:411
 #, fuzzy, qt-format
-#| msgid "Energy = %L1 %2"
 msgid "%1 Energy = %L2"
-msgstr "Energie = %L1 %2"
+msgstr "%1 Energie = %L2"
 
 #: qtplugins/forcefield/forcefield.cpp:462
 #, qt-format
