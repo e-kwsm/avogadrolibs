@@ -5044,10 +5044,8 @@ msgid "Chemical Shift (ppm)"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:627
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
-msgstr "Elektrónová"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:628
 #: qtplugins/spectra/spectradialog.cpp:641
