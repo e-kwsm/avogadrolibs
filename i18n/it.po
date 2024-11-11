@@ -3707,7 +3707,6 @@ msgstr "Esporta CSV"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:249
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "File CSV (*.csv);;Tutti i file (*)"
 
