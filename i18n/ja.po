@@ -2926,7 +2926,6 @@ msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
 #, fuzzy
-#| msgid "Selection"
 msgid "Focus Selection"
 msgstr "選択にフォーカス"
 
