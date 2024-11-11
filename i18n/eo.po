@@ -8448,9 +8448,8 @@ msgstr "Centrigi"
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:99
 #. i18n: ectx: property (text), widget (QLabel, formalChargeLabel)
 #, fuzzy
-#| msgid "Formal Charge"
 msgid "Formal Charge:"
-msgstr "Formala Ŝargo"
+msgstr "Formala Ŝargo:"
 
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:109
 #. i18n: ectx: property (text), item, widget (QComboBox, chargeComboBox)
