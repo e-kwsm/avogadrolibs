@@ -7648,7 +7648,6 @@ msgstr "スペクトルの可視化"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #, fuzzy
-#| msgid "Scale &Factor:"
 msgid "Scale Factor:"
 msgstr "スケール因子:"
 
