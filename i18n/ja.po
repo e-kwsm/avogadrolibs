@@ -4719,7 +4719,6 @@ msgstr "選択する残基:"
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Residue"
 msgstr "残基を選択"
 
