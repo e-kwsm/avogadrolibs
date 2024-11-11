@@ -3011,7 +3011,6 @@ msgstr "力場による最適化"
 
 #: qtplugins/forcefield/forcefield.h:50
 #, fuzzy
-#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
 msgstr "力場による最適化、スクリプトふくむ"
 
