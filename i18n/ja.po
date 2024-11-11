@@ -5058,7 +5058,6 @@ msgstr "表面を作成する…"
 
 #: qtplugins/surfaces/surfaces.cpp:111
 #, fuzzy
-#| msgid "Renders atoms as Van der Waals spheres"
 msgid "Render the van der Waals surface."
 msgstr "ファンデルワールス表面を描画。"
 
