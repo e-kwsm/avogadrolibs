@@ -4324,7 +4324,6 @@ msgstr "GitHubレポジトリーからプラグインをダウンロード"
 
 #: qtplugins/ply/ply.cpp:29
 #, fuzzy
-#| msgid "Render:"
 msgid "PLY Render…"
 msgstr "PLY表示…"
 
