@@ -8634,7 +8634,6 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:455
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #, fuzzy
-#| msgid "Group %1"
 msgid "Groups"
 msgstr "Grupo"
 
