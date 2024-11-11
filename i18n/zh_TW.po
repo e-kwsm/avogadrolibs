@@ -5007,7 +5007,6 @@ msgstr "化學位移 (ppm)"
 
 #: qtplugins/spectra/spectradialog.cpp:381
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic Spectra"
 msgstr "電子光譜"
 
