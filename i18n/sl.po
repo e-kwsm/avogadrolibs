@@ -3076,6 +3076,7 @@ msgstr "Uvozi krstalno mrežo iz odložišča"
 
 #: qtplugins/crystal/crystal.cpp:176
 #, fuzzy
+#| msgid "Keep atoms in unit cell."
 msgid "Wrap atoms into the unit cell."
 msgstr "Združi atome v osnovno celico."
 
