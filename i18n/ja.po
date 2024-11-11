@@ -3674,7 +3674,6 @@ msgstr "シーンをズーム"
 
 #: qtplugins/navigator/navigator.cpp:64
 #, fuzzy
-#| msgid "&Translate Atoms..."
 msgid "Translate the scene."
 msgstr "シーンを平行移動。"
 
