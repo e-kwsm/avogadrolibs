@@ -4633,7 +4633,6 @@ msgstr "選択/非選択を反転"
 
 #: qtplugins/select/select.cpp:53
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select by Element…"
 msgstr "元素による選択…"
 
