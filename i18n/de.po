@@ -7747,7 +7747,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, SpectraDialog)
 #, fuzzy
-#| msgid "Spectra and Vibrations"
 msgid "Spectra Visualization"
 msgstr "Spektrenvisualisierung"
 
