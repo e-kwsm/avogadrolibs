@@ -5352,10 +5352,8 @@ msgid "Render the molecule as a wireframe."
 msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:90
-#, fuzzy
-#| msgid "Calculated Spectra:"
 msgid "Calculate Band Structure…"
-msgstr "Tính toán phổ:"
+msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:111
 msgid "&Yaehmop"
