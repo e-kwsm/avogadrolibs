@@ -5461,8 +5461,10 @@ msgid "Insert Template"
 msgstr "Txertatu"
 
 #: qtplugins/templatetool/templatetool.cpp:679
+#, fuzzy
+#| msgid "Insert"
 msgid "Insert Ligand"
-msgstr ""
+msgstr "Txertatu"
 
 #: qtplugins/templatetool/templatetool.h:35
 #: qtplugins/templatetool/templatetool.h:36
