@@ -3848,7 +3848,6 @@ msgstr "Open Babelで配座異性体を生成できません"
 
 #: qtplugins/openbabel/openbabel.cpp:619
 #, fuzzy
-#| msgid "Optimizing Geometry (Open Babel)"
 msgid "Generating Conformers (Open Babel)"
 msgstr "配座異性体を生成中 (Open Babel)"
 
