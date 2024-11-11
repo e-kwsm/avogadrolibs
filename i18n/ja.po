@@ -4672,7 +4672,6 @@ msgstr "原子のインデックスによる選択…"
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "残基による選択…"
 
