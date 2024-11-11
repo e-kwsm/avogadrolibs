@@ -3019,6 +3019,7 @@ msgstr "Zavést krystal ze schránky"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
+#| msgid "Keep atoms in unit cell."
 msgid "Wrap atoms into the unit cell."
 msgstr "Zachovat atomy v jednotkové buňce."
 
