@@ -4717,7 +4717,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:53
 #, fuzzy
-#| msgid "Color by Element"
 msgid "Select by Element…"
 msgstr "Seleccionar per element…"
 
