@@ -7190,7 +7190,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #, fuzzy
 msgid "Scoring method:"
-msgstr "Μέθοδος βαθμολόγησης"
+msgstr "Μέθοδος βαθμολόγησης:"
 
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:187
 #. i18n: ectx: property (toolTip), widget (QComboBox, scoringComboBox)
