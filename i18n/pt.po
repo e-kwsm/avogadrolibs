@@ -5187,7 +5187,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:454
 #: qtplugins/spectra/spectradialog.cpp:653
 #, fuzzy
-#| msgid "Density of States (states/cell)"
 msgid "Density of States"
 msgstr "Densidade dos Estados"
 
