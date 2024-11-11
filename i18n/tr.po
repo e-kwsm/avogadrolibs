@@ -3011,7 +3011,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate Energy"
 msgid "&Calculate"
 msgstr "Hesapla"
 

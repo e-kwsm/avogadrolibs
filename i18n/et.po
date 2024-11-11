@@ -2914,7 +2914,6 @@ msgstr "valitud aatomid"
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Arvuta"
 
