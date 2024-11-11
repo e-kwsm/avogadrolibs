@@ -6115,7 +6115,6 @@ msgstr "収束条件"
 #. i18n: file: qtplugins/forcefield/forcefielddialog.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #, fuzzy
-#| msgid "Energy and Forces"
 msgid "Energy convergence:"
 msgstr "エネルギーの収束:"
 
