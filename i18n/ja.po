@@ -8113,7 +8113,6 @@ msgstr "+7"
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:167
 #. i18n: ectx: property (text), widget (QLabel, coordinationLabel)
 #, fuzzy
-#| msgid "Coordinate editor"
 msgid "Coordination:"
 msgstr "配位:"
 
