@@ -4553,7 +4553,6 @@ msgstr "分子グラフ…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:48
 #, fuzzy
-#| msgid "Molecular Graph with Lone Pairs..."
 msgid "Molecular Graph with Lone Pairs…"
 msgstr "孤立対付きの分子グラフ…"
 
