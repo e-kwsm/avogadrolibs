@@ -5045,7 +5045,6 @@ msgstr "ファンデルワールス表面を描画。"
 
 #: qtplugins/surfaces/surfaces.cpp:113
 #, fuzzy
-#| msgid "Render the molecule as a wireframe."
 msgid "Render the van der Waals molecular surface."
 msgstr "ファンデルワールス分子表面を描画。"
 
