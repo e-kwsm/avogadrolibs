@@ -4733,7 +4733,7 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
 #, fuzzy
-#| msgid "Ignore Selection"
+#| msgid "Selection"
 msgid "Enlarge Selection"
 msgstr "Selectie"
 
