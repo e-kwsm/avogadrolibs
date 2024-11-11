@@ -4717,7 +4717,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Escoller segundo o residuo…"
 
