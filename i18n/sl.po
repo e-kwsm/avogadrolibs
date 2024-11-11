@@ -3713,7 +3713,6 @@ msgstr "Izvozi"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "Datoteke CSV (*.csv);;Vse datoteke (*)"
 
