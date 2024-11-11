@@ -5520,6 +5520,7 @@ msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:544
 #, fuzzy, qt-format
+#| msgid "%1 failed to start"
 msgid "Error: %1 failed to start"
 msgstr "%1 no s'ha executat"
 
