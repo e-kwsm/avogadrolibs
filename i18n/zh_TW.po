@@ -2971,7 +2971,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:154
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "計算 (&C)"
 
