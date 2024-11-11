@@ -5458,7 +5458,6 @@ msgstr "Avlus skript …"
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:363
 #. i18n: ectx: property (text), widget (QPushButton, computeButton)
 #, fuzzy
-#| msgid "Submit %1 Calculation"
 msgid "Submit Calculation…"
 msgstr "Send inn beregning …"
 
