@@ -4946,8 +4946,6 @@ msgstr "Infraroge"
 
 #: qtplugins/spectra/spectradialog.cpp:204
 #, fuzzy
-#| msgctxt "Raman spectrum"
-#| msgid "Raman"
 msgid "Raman"
 msgstr "Raman"
 
