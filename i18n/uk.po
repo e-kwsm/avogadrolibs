@@ -2757,7 +2757,7 @@ msgstr "Імпортувати кристал з буфера"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
-#| msgid "&Keep atoms in unit cell"
+#| msgid "Keep atoms in unit cell."
 msgid "Wrap atoms into the unit cell."
 msgstr "Зберігати атоми у елементарній комірці."
 
