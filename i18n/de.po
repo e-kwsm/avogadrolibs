@@ -6458,7 +6458,6 @@ msgstr "Stränge:"
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:190
 #. i18n: ectx: property (text), widget (QRadioButton, singleStrandRadio)
 #, fuzzy
-#| msgid "Single"
 msgctxt "single-strand DNA"
 msgid "Single"
 msgstr "Einfach"
