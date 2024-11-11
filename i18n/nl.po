@@ -3223,7 +3223,6 @@ msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:166
 #, fuzzy
-#| msgid "T"
 msgctxt "thymine"
 msgid "T"
 msgstr "T"
