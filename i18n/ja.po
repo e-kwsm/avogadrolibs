@@ -7037,7 +7037,6 @@ msgstr "変異頻度 (低いほど高頻度)"
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:131
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Mutability"
 msgid "Mutability:"
 msgstr "突然変異性:"
 

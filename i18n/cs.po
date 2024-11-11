@@ -7182,7 +7182,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:131
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Mutability"
 msgid "Mutability:"
 msgstr "Proměnitelnost:"
 
