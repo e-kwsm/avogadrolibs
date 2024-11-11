@@ -4289,7 +4289,6 @@ msgstr "Last ned programtillegg fra GitHub-pakkebrønner."
 
 #: qtplugins/ply/ply.cpp:29
 #, fuzzy
-#| msgid "VRML Render"
 msgid "PLY Render…"
 msgstr "PLY-opptegner …"
 
