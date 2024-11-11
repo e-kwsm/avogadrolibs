@@ -5666,7 +5666,7 @@ msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:544
 #, fuzzy, qt-format
-#| msgid "Script failed to start."
+#| msgid "%1 failed to start"
 msgid "Error: %1 failed to start"
 msgstr "%1 falhou ao iniciar"
 
