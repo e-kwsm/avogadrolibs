@@ -2156,7 +2156,6 @@ msgstr "線幅:"
 
 #: qtplugins/closecontacts/closecontacts.h:36
 #, fuzzy
-#| msgid "Renders force displacements on atoms"
 msgid "Render close contacts between atoms."
 msgstr "原子間の接触を表示。"
 
