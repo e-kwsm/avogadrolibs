@@ -2962,7 +2962,6 @@ msgstr "geselecteerde atomen"
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Bereken"
 
