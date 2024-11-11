@@ -5566,7 +5566,7 @@ msgstr ""
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:288
 #. i18n: ectx: property (text), widget (QPushButton, computeButton)
 #, fuzzy
-#| msgid "Calculation:"
+#| msgid "Calculation"
 msgid "Submit Calculation…"
 msgstr "Výpočet"
 
