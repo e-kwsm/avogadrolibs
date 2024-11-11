@@ -5963,6 +5963,7 @@ msgstr ""
 
 #: qtplugins/yaehmop/yaehmop.cpp:545
 #, fuzzy, qt-format
+#| msgid "%1 failed to start"
 msgid "Error: %1 failed to start"
 msgstr "L'esecuzione di %1 è fallita"
 
