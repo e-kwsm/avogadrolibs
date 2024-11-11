@@ -4978,10 +4978,8 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
-#, fuzzy
-#| msgid "ν (cm⁻¹)"
 msgid "Wavenumbers (cm⁻¹)"
-msgstr "ν (cm⁻¹)"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:588
 msgid "Transmission"
