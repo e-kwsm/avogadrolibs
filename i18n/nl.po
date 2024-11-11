@@ -3696,7 +3696,6 @@ msgstr ""
 #: qtplugins/molecularproperties/molecularview.cpp:204
 #: qtplugins/propertytables/propertyview.cpp:305
 #, fuzzy
-#| msgid "&Export"
 msgid "Export…"
 msgstr "Exporteren…"
 
