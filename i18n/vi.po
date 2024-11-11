@@ -7747,7 +7747,7 @@ msgstr "&Tải dữ liệu..."
 #. i18n: file: qtplugins/spectra/spectradialog.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, push_exportData)
 #, fuzzy
-#| msgid "&Export"
+#| msgid "Export"
 msgid "Export Data"
 msgstr "Xuất ra"
 
