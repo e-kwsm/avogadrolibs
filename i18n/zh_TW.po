@@ -3655,7 +3655,6 @@ msgstr "匯出"
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:249
 #, fuzzy
-#| msgid "WFN files (*.wfn);;All files (*.*)"
 msgid "CSV Files (*.csv);;All Files (*)"
 msgstr "CSV 檔 (*.csv);;所有檔案 (*)"
 
