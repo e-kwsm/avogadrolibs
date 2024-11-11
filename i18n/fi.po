@@ -3004,7 +3004,6 @@ msgstr "Kiinnitä valitut atomit paikoilleen"
 
 #: qtplugins/forcefield/forcefield.cpp:154
 #, fuzzy
-#| msgid "Calculate Energy"
 msgid "&Calculate"
 msgstr "Laske"
 
