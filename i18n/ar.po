@@ -6955,7 +6955,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, systematicOptionsGroupBox)
 #, fuzzy
-#| msgid "Method:"
 msgid "Method"
 msgstr "المنهج"
 
