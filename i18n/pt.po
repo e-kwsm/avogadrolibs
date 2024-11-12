@@ -4555,7 +4555,6 @@ msgstr "Gravar Ficheiro"
 
 #: qtplugins/ply/ply.cpp:71
 #, fuzzy
-#| msgid "VRML (*.wrl);;Text file (*.txt)"
 msgid "PLY (*.ply);;Text file (*.txt)"
 msgstr "PLY (*.ply);;Texto (*.txt)"
 
