@@ -4692,9 +4692,8 @@ msgid ""
 msgstr ""
 
 #: qtplugins/selectiontool/selectiontool.cpp:247
-#, fuzzy
 msgid "Paint Atoms"
-msgstr "הנפשה..."
+msgstr ""
 
 #: qtplugins/selectiontool/selectiontool.h:32
 #: qtplugins/selectiontool/selectiontool.h:33
