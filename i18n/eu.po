@@ -3221,7 +3221,7 @@ msgstr ""
 #: qtplugins/hydrogens/hydrogens.cpp:59
 #, fuzzy
 msgid "&Hydrogens"
-msgstr "Hidrogenoak"
+msgstr "&Hidrogenoak"
 
 #: qtplugins/hydrogens/hydrogens.h:24
 msgid "Hydrogens"
