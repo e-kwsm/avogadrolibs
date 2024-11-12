@@ -2586,7 +2586,7 @@ msgstr ""
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:341
 #, fuzzy
 msgid "Molecular Mechanics"
-msgstr "&Mecànica molecular"
+msgstr "Mecànica molecular"
 
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:344
 msgid "Hybrid quantum classical (Not yet supported)"
