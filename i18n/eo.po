@@ -4889,7 +4889,6 @@ msgstr "Elektotaj Atomoj:"
 
 #: qtplugins/select/select.cpp:446
 #, fuzzy
-#| msgid "Select All"
 msgid "Select Atom"
 msgstr "Elekti Atom"
 
