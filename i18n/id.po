@@ -4449,7 +4449,6 @@ msgstr ""
 
 #: qtplugins/ply/ply.h:29
 #, fuzzy
-#| msgid "Render the scene using POV-Ray."
 msgid "Render the scene using PLY."
 msgstr "Render adegan menggunakan PLY."
 
