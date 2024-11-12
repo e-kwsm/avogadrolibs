@@ -4726,7 +4726,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:446
 #, fuzzy
-#| msgid "Delete Atom"
 msgid "Select Atom"
 msgstr "選擇原子"
 

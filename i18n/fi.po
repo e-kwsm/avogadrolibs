@@ -4741,10 +4741,8 @@ msgid "Atoms to Select:"
 msgstr ""
 
 #: qtplugins/select/select.cpp:446
-#, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Select Atom"
-msgstr "Kiinnitä valitut atomit paikoilleen"
+msgstr ""
 
 #: qtplugins/select/select.cpp:485
 msgid "Select Atoms by Residue"
