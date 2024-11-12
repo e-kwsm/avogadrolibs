@@ -4507,7 +4507,6 @@ msgstr ""
 
 #: qtplugins/ply/ply.h:29
 #, fuzzy
-#| msgid "Render the scene using VRML."
 msgid "Render the scene using PLY."
 msgstr "Bildigi ĉi tiun scenon per PLY."
 
