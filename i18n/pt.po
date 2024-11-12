@@ -7373,7 +7373,6 @@ msgstr "Método"
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
 #, fuzzy
-#| msgid "Number of conformers"
 msgid "Number of conformers:"
 msgstr "Total de conformações:"
 
