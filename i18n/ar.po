@@ -4738,9 +4738,8 @@ msgid ""
 msgstr ""
 
 #: qtplugins/selectiontool/selectiontool.cpp:247
-#, fuzzy
 msgid "Paint Atoms"
-msgstr "بدء &الرسوم المتحركة"
+msgstr ""
 
 #: qtplugins/selectiontool/selectiontool.h:32
 #: qtplugins/selectiontool/selectiontool.h:33
