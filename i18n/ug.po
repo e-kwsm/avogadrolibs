@@ -2040,7 +2040,7 @@ msgstr ""
 #, fuzzy
 msgctxt "protein rendering style"
 msgid "Backbone"
-msgstr "تەگلىك:"
+msgstr "تەگلىك"
 
 #: qtplugins/cartoons/cartoons.cpp:93
 msgctxt "protein rendering style"
