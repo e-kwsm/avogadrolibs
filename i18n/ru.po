@@ -7046,7 +7046,6 @@ msgstr "Повернуть вокруг:"
 #. i18n: file: qtplugins/manipulator/manipulatewidget.ui:122
 #. i18n: ectx: property (text), item, widget (QComboBox, rotateComboBox)
 #, fuzzy
-#| msgid "Origin:"
 msgid "Origin"
 msgstr "Центр"
 
