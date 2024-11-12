@@ -4374,7 +4374,7 @@ msgstr ""
 #: qtplugins/propertytables/propertymodel.cpp:544
 #, fuzzy
 msgid "Atom 1"
-msgstr "ذرة %1"
+msgstr "ذرة 1"
 
 #: qtplugins/propertytables/propertymodel.cpp:529
 msgid "Vertex"
@@ -4384,7 +4384,7 @@ msgstr ""
 #: qtplugins/propertytables/propertymodel.cpp:548
 #, fuzzy
 msgid "Atom 3"
-msgstr "ذرة"
+msgstr "3 ذرة"
 
 #: qtplugins/propertytables/propertymodel.cpp:533
 #: qtplugins/propertytables/propertymodel.cpp:552
@@ -4395,12 +4395,12 @@ msgstr "زاوية"
 #: qtplugins/propertytables/propertymodel.cpp:546
 #, fuzzy
 msgid "Atom 2"
-msgstr "ذرة"
+msgstr "2 ذرة"
 
 #: qtplugins/propertytables/propertymodel.cpp:550
 #, fuzzy
 msgid "Atom 4"
-msgstr "ذرة"
+msgstr "4 ذرة"
 
 #: qtplugins/propertytables/propertymodel.cpp:563
 msgctxt "root mean squared displacement in Angstrom"
