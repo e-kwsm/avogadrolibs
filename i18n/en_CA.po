@@ -6975,7 +6975,6 @@ msgstr "Genetic algorithm search"
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:68
 #. i18n: ectx: property (text), widget (QLabel, optimizationStepsLabel)
 #, fuzzy
-#| msgid "Optimization algorithm:"
 msgid "Optimization per conformer:"
 msgstr "Optimization per conformer:"
 
