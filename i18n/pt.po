@@ -7393,9 +7393,8 @@ msgstr "Procurar conformação..."
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, systematicOptionsGroupBox)
 #, fuzzy
-#| msgid "Method:"
 msgid "Method"
-msgstr "Método:"
+msgstr "Método"
 
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
