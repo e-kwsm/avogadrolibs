@@ -4078,9 +4078,9 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:568
 #, fuzzy
-#| msgid "Molecule invalid. Cannot optimize geometry."
+#| msgid "Molecule invalid."
 msgid "Molecule invalid. Cannot generate conformers."
-msgstr "Molekul nije važeć. Ne može se optimizirati geometrija."
+msgstr "Molekul nije važeć."
 
 #: qtplugins/openbabel/openbabel.cpp:586
 #, fuzzy
