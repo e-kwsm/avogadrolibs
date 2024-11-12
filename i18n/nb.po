@@ -3951,7 +3951,7 @@ msgstr ""
 #: qtplugins/molecularproperties/molecularproperties.cpp:38
 #, fuzzy
 msgid "&Molecular…"
-msgstr "&Molekyl …"
+msgstr "&Molekylær …"
 
 #: qtplugins/molecularproperties/molecularproperties.cpp:50
 msgid "View general properties of a molecule."
