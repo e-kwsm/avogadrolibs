@@ -3688,9 +3688,9 @@ msgstr "Yapı dosyası okunurken hata oluştu (%1)."
 #: qtplugins/molecularproperties/molecularview.cpp:203
 #: qtplugins/propertytables/propertyview.cpp:288
 #, fuzzy
-#| msgid "&Export"
+#| msgid "Export"
 msgid "Export…"
-msgstr "&Dışa Aktar"
+msgstr "Dışa Aktar"
 
 #: qtplugins/navigator/navigator.cpp:39
 msgid "Navigate"

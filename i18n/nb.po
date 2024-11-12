@@ -3590,7 +3590,7 @@ msgstr ""
 #: qtplugins/molecularproperties/molecularview.cpp:203
 #: qtplugins/propertytables/propertyview.cpp:288
 #, fuzzy
-#| msgid "&Export"
+#| msgid "Export"
 msgid "Export…"
 msgstr "Eksporter"
 

@@ -3760,9 +3760,9 @@ msgstr "Problema ao ler a estrutura do ficheiro (%1)."
 #: qtplugins/molecularproperties/molecularview.cpp:203
 #: qtplugins/propertytables/propertyview.cpp:288
 #, fuzzy
-#| msgid "&Export"
+#| msgid "Export"
 msgid "Export…"
-msgstr "&Exportar"
+msgstr "Exportar"
 
 #: qtplugins/navigator/navigator.cpp:39
 msgid "Navigate"

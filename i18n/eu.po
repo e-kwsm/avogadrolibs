@@ -3741,9 +3741,9 @@ msgstr "Errorea (%1) egitura fitxategia irakurtzean."
 #: qtplugins/molecularproperties/molecularview.cpp:203
 #: qtplugins/propertytables/propertyview.cpp:288
 #, fuzzy
-#| msgid "&Export"
+#| msgid "Export"
 msgid "Export…"
-msgstr "&Esportatu"
+msgstr "Esportatu"
 
 #: qtplugins/navigator/navigator.cpp:39
 msgid "Navigate"

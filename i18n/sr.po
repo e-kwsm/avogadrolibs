@@ -3846,9 +3846,9 @@ msgstr "Greška pri čitanju strukture datoteke (%1)."
 #: qtplugins/molecularproperties/molecularview.cpp:203
 #: qtplugins/propertytables/propertyview.cpp:288
 #, fuzzy
-#| msgid "&Export"
+#| msgid "Export"
 msgid "Export…"
-msgstr "&Izvezi"
+msgstr "Izvezi"
 
 #: qtplugins/navigator/navigator.cpp:39
 msgid "Navigate"
