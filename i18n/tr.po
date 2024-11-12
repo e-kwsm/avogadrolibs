@@ -3662,9 +3662,9 @@ msgstr "Molekül Özellikleri"
 #: qtplugins/molecularproperties/molecularview.cpp:146
 #: qtplugins/propertytables/propertyview.cpp:231
 #, fuzzy
-#| msgid "&Export"
+#| msgid "Export"
 msgid "Export CSV"
-msgstr "&Dışa Aktar"
+msgstr "Dışa Aktar"
 
 #: qtplugins/molecularproperties/molecularview.cpp:147
 #: qtplugins/propertytables/propertyview.cpp:232
