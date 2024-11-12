@@ -4555,7 +4555,7 @@ msgstr ""
 #: qtplugins/select/select.cpp:68
 #, fuzzy
 msgid "Select Backbone Atoms…"
-msgstr "Gundämne:"
+msgstr "Gundämne"
 
 #: qtplugins/select/select.cpp:73
 #, fuzzy
