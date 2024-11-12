@@ -2542,9 +2542,8 @@ msgid "Electronic structure methods (DFT)"
 msgstr ""
 
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:341
-#, fuzzy
 msgid "Molecular Mechanics"
-msgstr "المدارات الجزيئية..."
+msgstr ""
 
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:344
 msgid "Hybrid quantum classical (Not yet supported)"
