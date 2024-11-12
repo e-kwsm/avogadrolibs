@@ -4717,7 +4717,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:446
 #, fuzzy
-#| msgid "Fix Selected Atoms"
 msgid "Select Atom"
 msgstr "Valitse atomi"
 
