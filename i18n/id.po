@@ -4961,7 +4961,7 @@ msgstr "Kurangi Ukuran Asimetrik"
 #: qtplugins/spacegroup/spacegroup.cpp:84
 #, fuzzy
 msgid "Set Tolerance…"
-msgstr "Toleransi SCF:"
+msgstr "Toleransi SCF"
 
 #: qtplugins/spacegroup/spacegroup.cpp:105
 #, fuzzy
