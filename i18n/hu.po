@@ -2485,7 +2485,7 @@ msgstr ""
 #: qtplugins/commandscripts/command.cpp:96
 #: qtplugins/commandscripts/command.cpp:414
 msgid "Scripts"
-msgstr "&Parancsfájlok"
+msgstr "Parancsfájlok"
 
 #: qtplugins/commandscripts/command.cpp:153
 #: qtplugins/cp2kinput/cp2kinput.cpp:86
