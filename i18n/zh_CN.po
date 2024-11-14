@@ -2730,7 +2730,7 @@ msgstr "扩展(&E)"
 #: qtplugins/commandscripts/command.cpp:99
 #: qtplugins/commandscripts/command.cpp:661
 msgid "Scripts"
-msgstr "脚本(&S)"
+msgstr "脚本"
 
 #: qtplugins/commandscripts/command.cpp:179
 #: qtplugins/cp2kinput/cp2kinput.cpp:86
