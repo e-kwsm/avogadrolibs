@@ -1770,7 +1770,7 @@ msgstr "struktur sekunder"
 #: qtplugins/applycolors/applycolors.cpp:87
 #, fuzzy
 msgid "By Amino Acid"
-msgstr "Asid Amino:"
+msgstr "Asid Amino"
 
 #: qtplugins/applycolors/applycolors.cpp:92
 msgid "By Shapely Scheme"
