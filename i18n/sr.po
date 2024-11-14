@@ -5346,7 +5346,7 @@ msgstr "Odaberite ostatku"
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
 #: qtplugins/select/select.h:30:2178
 msgid "Select"
-msgstr "&Izaberi"
+msgstr "Izaberi"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgctxt "control-key 4"
