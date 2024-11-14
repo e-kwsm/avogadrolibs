@@ -2600,7 +2600,7 @@ msgstr "Dinamik Molekul"
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:269
 #, fuzzy
 msgid "Geometry Optimization"
-msgstr "Pengoptimuman Geometri:"
+msgstr "Pengoptimuman Geometri"
 
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:338
 msgid "Electronic structure methods (DFT)"
