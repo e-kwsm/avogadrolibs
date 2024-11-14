@@ -3093,7 +3093,7 @@ msgstr ""
 #: qtplugins/gamessinput/gamessinputdialog.cpp:221
 #, fuzzy
 msgid "Single Point"
-msgstr "Energija jedne tačke:"
+msgstr "Energija jedne tačke"
 
 #: qtplugins/gamessinput/gamessinputdialog.cpp:224
 msgid "Equilibrium Geometry"
