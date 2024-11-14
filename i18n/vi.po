@@ -4423,7 +4423,7 @@ msgstr ""
 #: qtplugins/propertytables/propertymodel.cpp:560
 #, fuzzy
 msgid "Color"
-msgstr "Màu:"
+msgstr "Màu"
 
 #: qtplugins/propertytables/propertymodel.cpp:522
 msgid "Atom"
