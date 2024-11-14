@@ -8706,15 +8706,6 @@ msgstr ""
 #~ msgstr "Odustani"
 
 #, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Ime elementa"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekul"
-
-#, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "Nema postavljene molekule"
 
@@ -8737,10 +8728,6 @@ msgstr ""
 
 #~ msgid "Torsion Properties..."
 #~ msgstr "Postavke torzije..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Postavke molekule..."
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "Kreiraj površine..."
