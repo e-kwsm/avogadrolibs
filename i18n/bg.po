@@ -1717,7 +1717,7 @@ msgstr ""
 #: qtplugins/applycolors/applycolors.cpp:67
 #, fuzzy
 msgid "By Custom Color…"
-msgstr "Потребителски цвят:"
+msgstr "Потребителски цвят"
 
 #: qtplugins/applycolors/applycolors.cpp:51
 msgid "By Atomic Index…"
