@@ -5036,7 +5036,7 @@ msgstr ""
 #: qtplugins/propertytables/propertymodel.cpp:841
 #, fuzzy
 msgid "Color"
-msgstr "رەڭلەر:"
+msgstr "رەڭلەر"
 
 #: qtplugins/propertytables/propertymodel.cpp:801
 msgid "Atom"
