@@ -2505,7 +2505,7 @@ msgstr ""
 #: qtplugins/forcefield/forcefield.cpp:1086
 #: qtplugins/openbabel/openbabel.cpp:50 qtplugins/openbabel/openbabel.cpp:561
 msgid "Optimize Geometry"
-msgstr "&Prilagodi Geometriju"
+msgstr "Prilagodi Geometriju"
 
 #: qtplugins/autoopt/autoopt.cpp:683
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:261
