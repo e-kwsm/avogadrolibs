@@ -2894,7 +2894,7 @@ msgstr "Dreifach"
 #: qtplugins/insertfragment/insertfragment.cpp:58
 #: qtplugins/networkdatabases/networkdatabases.cpp:41
 msgid "&Import"
-msgstr "Importieren"
+msgstr "&Importieren"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 msgid "Fetch PDB"

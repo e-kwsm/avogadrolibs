@@ -2840,7 +2840,7 @@ msgstr "Triple"
 #: qtplugins/networkdatabases/networkdatabases.cpp:41
 #, fuzzy
 msgid "&Import"
-msgstr "Importar"
+msgstr "&Importar"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 #, fuzzy

@@ -2921,7 +2921,7 @@ msgstr "Tripel"
 #: qtplugins/networkdatabases/networkdatabases.cpp:41
 #, fuzzy
 msgid "&Import"
-msgstr "Import"
+msgstr "&Import"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 #, fuzzy

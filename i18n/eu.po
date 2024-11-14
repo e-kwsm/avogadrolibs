@@ -2915,7 +2915,7 @@ msgstr "Hirukoitza"
 #: qtplugins/networkdatabases/networkdatabases.cpp:41
 #, fuzzy
 msgid "&Import"
-msgstr "Inportatu"
+msgstr "&Inportatu"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 #, fuzzy
