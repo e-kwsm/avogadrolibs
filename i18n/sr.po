@@ -2144,7 +2144,7 @@ msgstr "Zaustavi"
 #: qtplugins/forcefield/forcefield.cpp:473 qtplugins/openbabel/openbabel.cpp:48
 #: qtplugins/openbabel/openbabel.cpp:560
 msgid "Optimize Geometry"
-msgstr "&Prilagodi Geometriju"
+msgstr "Prilagodi Geometriju"
 
 #: qtplugins/autoopt/autoopt.cpp:317
 #, qt-format
