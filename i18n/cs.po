@@ -3019,7 +3019,7 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:559
 #, fuzzy
 msgid "Optimize Geometry"
-msgstr "&Vyladit uspořádání"
+msgstr "Vyladit uspořádání"
 
 #: qtplugins/forcefield/forcefield.cpp:105
 msgid "Forces"

@@ -3108,7 +3108,7 @@ msgstr "Omogućite vizuelizaciju polja sila za atome molekula."
 #: qtplugins/forcefield/forcefield.cpp:339 qtplugins/openbabel/openbabel.cpp:47
 #: qtplugins/openbabel/openbabel.cpp:559
 msgid "Optimize Geometry"
-msgstr "&Prilagodi Geometriju"
+msgstr "Prilagodi Geometriju"
 
 #: qtplugins/forcefield/forcefield.cpp:105
 msgid "Forces"

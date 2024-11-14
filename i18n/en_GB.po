@@ -2944,7 +2944,7 @@ msgstr "Render the force field visualizations for the atoms of the molecule."
 #: qtplugins/forcefield/forcefield.cpp:339 qtplugins/openbabel/openbabel.cpp:47
 #: qtplugins/openbabel/openbabel.cpp:559
 msgid "Optimize Geometry"
-msgstr "&Optimize Geometry"
+msgstr "Optimize Geometry"
 
 #: qtplugins/forcefield/forcefield.cpp:105
 msgid "Forces"

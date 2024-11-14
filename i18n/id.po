@@ -2993,7 +2993,7 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:559
 #, fuzzy
 msgid "Optimize Geometry"
-msgstr "&Optimisasi Geometri"
+msgstr "Optimisasi Geometri"
 
 #: qtplugins/forcefield/forcefield.cpp:105
 msgid "Forces"
