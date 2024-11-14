@@ -4548,7 +4548,7 @@ msgstr "Последний атом"
 #: qtplugins/propertytables/propertymodel.cpp:535
 #, fuzzy
 msgid "Bond Order"
-msgstr "Порядок связи:"
+msgstr "Порядок связи"
 
 #: qtplugins/propertytables/propertymodel.cpp:539
 #, fuzzy
