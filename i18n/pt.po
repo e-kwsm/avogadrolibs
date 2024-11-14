@@ -4560,7 +4560,7 @@ msgstr "Terminar Átomo"
 #: qtplugins/propertytables/propertymodel.cpp:439
 #, fuzzy
 msgid "Bond Order"
-msgstr "Ordem de Ligação:"
+msgstr "Ordem de Ligação"
 
 #: qtplugins/propertytables/propertymodel.cpp:441
 #, fuzzy

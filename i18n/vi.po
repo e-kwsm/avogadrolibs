@@ -4382,7 +4382,7 @@ msgstr "Kết thúc nguyên tử"
 #: qtplugins/propertytables/propertymodel.cpp:439
 #, fuzzy
 msgid "Bond Order"
-msgstr "Thứ tự liên kết:"
+msgstr "Thứ tự liên kết"
 
 #: qtplugins/propertytables/propertymodel.cpp:441
 #, fuzzy

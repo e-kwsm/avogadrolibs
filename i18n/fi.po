@@ -4314,7 +4314,7 @@ msgstr "Näytä atomit"
 #: qtplugins/propertytables/propertymodel.cpp:439
 #, fuzzy
 msgid "Bond Order"
-msgstr "Sidoskertaluku:"
+msgstr "Sidoskertaluku"
 
 #: qtplugins/propertytables/propertymodel.cpp:441
 msgctxt "in Angstrom"

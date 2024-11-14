@@ -4439,7 +4439,7 @@ msgstr "Atomo terminale"
 #: qtplugins/propertytables/propertymodel.cpp:439
 #, fuzzy
 msgid "Bond Order"
-msgstr "Ordine dei legami:"
+msgstr "Ordine dei legami"
 
 #: qtplugins/propertytables/propertymodel.cpp:441
 #, fuzzy

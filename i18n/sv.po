@@ -4285,7 +4285,7 @@ msgstr "Rita atom"
 #: qtplugins/propertytables/propertymodel.cpp:439
 #, fuzzy
 msgid "Bond Order"
-msgstr "Bindningsordning:"
+msgstr "Bindningsordning"
 
 #: qtplugins/propertytables/propertymodel.cpp:441
 #, fuzzy
