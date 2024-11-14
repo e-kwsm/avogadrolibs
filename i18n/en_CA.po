@@ -2202,7 +2202,7 @@ msgstr "Edit colour opacity maps, primarily for volume rendering."
 #: qtplugins/commandscripts/command.cpp:64
 #: qtplugins/commandscripts/command.cpp:72
 msgid "Scripts"
-msgstr "&Scripts"
+msgstr "Scripts"
 
 #: qtplugins/commandscripts/command.cpp:126
 #: qtplugins/cp2kinput/cp2kinput.cpp:86

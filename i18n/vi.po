@@ -2181,7 +2181,7 @@ msgstr ""
 #: qtplugins/commandscripts/command.cpp:72
 #, fuzzy
 msgid "Scripts"
-msgstr "&Đoạn mã lệnh"
+msgstr "Đoạn mã lệnh"
 
 #: qtplugins/commandscripts/command.cpp:126
 #: qtplugins/cp2kinput/cp2kinput.cpp:86
