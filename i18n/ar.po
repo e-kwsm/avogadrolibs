@@ -8112,7 +8112,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, startButton)
 #, fuzzy
 msgid "Start Animation"
-msgstr "بدء &الرسوم المتحركة"
+msgstr "بدء الرسوم المتحركة"
 
 #. i18n: file: qtplugins/vibrations/vibrationdialog.ui:103
 #. i18n: ectx: property (text), widget (QPushButton, stopButton)
