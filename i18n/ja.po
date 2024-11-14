@@ -3290,9 +3290,8 @@ msgid "Element"
 msgstr "元素"
 
 #: qtplugins/label/label.cpp:175
-#, fuzzy
 msgid "Element & Number"
-msgstr "元素名"
+msgstr ""
 
 #: qtplugins/label/label.cpp:177
 #, fuzzy
