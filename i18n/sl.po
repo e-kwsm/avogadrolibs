@@ -4946,7 +4946,7 @@ msgstr "Zmanjšaj na asimetrično enoto"
 #: qtplugins/spacegroup/spacegroup.cpp:84
 #, fuzzy
 msgid "Set Tolerance…"
-msgstr "Odstopanje:"
+msgstr "Odstopanje"
 
 #: qtplugins/spacegroup/spacegroup.cpp:105
 #, fuzzy

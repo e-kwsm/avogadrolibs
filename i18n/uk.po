@@ -4943,7 +4943,7 @@ msgstr "Спростити до асиметричного модуля"
 #: qtplugins/spacegroup/spacegroup.cpp:84
 #, fuzzy
 msgid "Set Tolerance…"
-msgstr "Допуск:"
+msgstr "Допуск"
 
 #: qtplugins/spacegroup/spacegroup.cpp:105
 #, fuzzy
