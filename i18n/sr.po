@@ -3030,7 +3030,7 @@ msgstr "&Proširenja"
 #: qtplugins/commandscripts/command.cpp:127
 #: qtplugins/commandscripts/command.cpp:713
 msgid "Scripts"
-msgstr "&Skripte"
+msgstr "Skripte"
 
 #: qtplugins/commandscripts/command.cpp:229
 #: qtplugins/cp2kinput/cp2kinput.cpp:86
