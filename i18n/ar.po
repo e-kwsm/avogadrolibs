@@ -9044,6 +9044,18 @@ msgstr ""
 msgid "Amplitude:"
 msgstr ""
 
+#. i18n: file: qtplugins/vibrations/vibrationdialog.ui:96
+#. i18n: ectx: property (text), widget (QPushButton, startButton)
+#, fuzzy
+msgid "Start Animation"
+msgstr "بدء الرسوم المتحركة"
+
+#. i18n: file: qtplugins/vibrations/vibrationdialog.ui:103
+#. i18n: ectx: property (text), widget (QPushButton, stopButton)
+#, fuzzy
+msgid "Stop Animation"
+msgstr "إيقاف الرسوم المتحركة"
+
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::QtPlugins::BandDialog)
 msgid "Yaehmop Band"
