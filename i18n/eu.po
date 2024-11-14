@@ -1760,7 +1760,7 @@ msgstr "Proteinen bigarren estruktura errenderizatzen du"
 #: qtplugins/applycolors/applycolors.cpp:85
 #, fuzzy
 msgid "By Amino Acid"
-msgstr "Aminoazidoak:"
+msgstr "Aminoazidoak"
 
 #: qtplugins/applycolors/applycolors.cpp:90
 msgid "By Shapely Scheme"

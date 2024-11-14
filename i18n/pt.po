@@ -1814,7 +1814,7 @@ msgstr "estrutura secundária"
 #: qtplugins/applycolors/applycolors.cpp:85
 #, fuzzy
 msgid "By Amino Acid"
-msgstr "Aminoácidos:"
+msgstr "Aminoácidos"
 
 #: qtplugins/applycolors/applycolors.cpp:90
 msgid "By Shapely Scheme"

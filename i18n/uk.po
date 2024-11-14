@@ -1749,7 +1749,7 @@ msgstr "Показ вторинної структури білків"
 #: qtplugins/applycolors/applycolors.cpp:85
 #, fuzzy
 msgid "By Amino Acid"
-msgstr "Амінокислоти:"
+msgstr "Амінокислоти"
 
 #: qtplugins/applycolors/applycolors.cpp:90
 msgid "By Shapely Scheme"
