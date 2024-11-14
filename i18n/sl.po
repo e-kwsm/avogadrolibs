@@ -9688,32 +9688,16 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgstr "KrmarjenjeSkok navzgor"
 
 #, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Ime elementa"
-
-#, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Vse datoteke"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
 
 #, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "Ni nastavljene molekule"
 
 #, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK ..."
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Kristal ..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES ..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
