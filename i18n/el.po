@@ -4483,7 +4483,7 @@ msgstr ""
 #: qtplugins/propertytables/propertymodel.cpp:560
 #, fuzzy
 msgid "Color"
-msgstr "Χρώμα:"
+msgstr "Χρώμα"
 
 #: qtplugins/propertytables/propertymodel.cpp:522
 msgid "Atom"
