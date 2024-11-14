@@ -1688,7 +1688,7 @@ msgstr ""
 #: qtplugins/applycolors/applycolors.cpp:65
 #, fuzzy
 msgid "By Custom Color…"
-msgstr "لون مخصص:"
+msgstr "لون مخصص"
 
 #: qtplugins/applycolors/applycolors.cpp:49
 msgid "By Atomic Index…"
