@@ -2603,7 +2603,7 @@ msgstr "Μοριακή δυναμική"
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:269
 #, fuzzy
 msgid "Geometry Optimization"
-msgstr "Γεωμετρική βελτιστοποίηση:"
+msgstr "Γεωμετρική βελτιστοποίηση"
 
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:338
 msgid "Electronic structure methods (DFT)"
