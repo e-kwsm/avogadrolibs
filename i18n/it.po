@@ -2995,9 +2995,8 @@ msgstr "Fissa gli atomi selezionati"
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
-msgstr "Calcola"
+msgstr "&Calcola"
 
 #: qtplugins/forcefield/forcefield.cpp:245
 #: qtplugins/forcefield/forcefield.cpp:375

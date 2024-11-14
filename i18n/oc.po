@@ -2956,9 +2956,8 @@ msgstr "Suprimir un atòm"
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
-msgstr "Calcular"
+msgstr "&Calcular"
 
 #: qtplugins/forcefield/forcefield.cpp:245
 #: qtplugins/forcefield/forcefield.cpp:375

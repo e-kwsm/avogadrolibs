@@ -2965,7 +2965,6 @@ msgstr "Fixa els àtoms seleccionats"
 
 #: qtplugins/forcefield/forcefield.cpp:151
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "&Calcula"
 
