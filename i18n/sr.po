@@ -2499,7 +2499,7 @@ msgstr "&Proširenja"
 #: qtplugins/commandscripts/command.cpp:96
 #: qtplugins/commandscripts/command.cpp:492
 msgid "Scripts"
-msgstr "&Skripte"
+msgstr "Skripte"
 
 #: qtplugins/commandscripts/command.cpp:176
 #: qtplugins/cp2kinput/cp2kinput.cpp:86
