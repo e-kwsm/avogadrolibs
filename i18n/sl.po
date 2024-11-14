@@ -4879,7 +4879,7 @@ msgstr "Izbor po ostanku ..."
 #: qtplugins/select/select.h:30:1884
 #, fuzzy
 msgid "Select"
-msgstr "&Izberi"
+msgstr "Izberi"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgid "Selection"

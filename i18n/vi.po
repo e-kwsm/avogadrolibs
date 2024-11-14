@@ -4737,7 +4737,7 @@ msgstr "Dư chất"
 #: qtplugins/select/select.h:30:1884
 #, fuzzy
 msgid "Select"
-msgstr "&Chọn"
+msgstr "Chọn"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgid "Selection"

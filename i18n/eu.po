@@ -4862,7 +4862,7 @@ msgstr "Hondakinez Hautatu..."
 #: qtplugins/select/select.h:30:1884
 #, fuzzy
 msgid "Select"
-msgstr "&Hautatu"
+msgstr "Hautatu"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgid "Selection"

@@ -4887,7 +4887,7 @@ msgstr "Výběr podle zbytku..."
 #: qtplugins/select/select.h:30:1884
 #, fuzzy
 msgid "Select"
-msgstr "&Vybrat"
+msgstr "Vybrat"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgid "Selection"

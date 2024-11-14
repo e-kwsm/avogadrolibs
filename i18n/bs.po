@@ -4756,7 +4756,7 @@ msgstr "Odabir po ostatku..."
 #: qtplugins/select/select.h:30:1884
 #, fuzzy
 msgid "Select"
-msgstr "&Izaberi"
+msgstr "Izaberi"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgid "Selection"

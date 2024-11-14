@@ -4651,7 +4651,7 @@ msgstr "Select Residue"
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
 #: qtplugins/select/select.h:30:1884
 msgid "Select"
-msgstr "&Select"
+msgstr "Select"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgid "Selection"

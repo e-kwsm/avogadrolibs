@@ -4794,7 +4794,7 @@ msgstr "Seleziona per residuo..."
 #: qtplugins/select/select.h:30:1884
 #, fuzzy
 msgid "Select"
-msgstr "&Seleziona"
+msgstr "Seleziona"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgid "Selection"
