@@ -2450,7 +2450,7 @@ msgstr "Uredite mape neprozirnosti boja, prvenstveno za iscrtavanje volumena."
 #: qtplugins/commandscripts/command.cpp:64
 #: qtplugins/commandscripts/command.cpp:83
 msgid "Scripts"
-msgstr "&Skripte"
+msgstr "Skripte"
 
 #: qtplugins/commandscripts/command.cpp:140
 #: qtplugins/cp2kinput/cp2kinput.cpp:86

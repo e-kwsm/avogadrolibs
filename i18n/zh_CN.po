@@ -2398,7 +2398,7 @@ msgstr "编辑颜色透明度图，主要用于体积渲染。"
 #: qtplugins/commandscripts/command.cpp:64
 #: qtplugins/commandscripts/command.cpp:83
 msgid "Scripts"
-msgstr "脚本(&S)"
+msgstr "脚本"
 
 #: qtplugins/commandscripts/command.cpp:140
 #: qtplugins/cp2kinput/cp2kinput.cpp:86
