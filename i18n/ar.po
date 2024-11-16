@@ -3232,9 +3232,9 @@ msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:33
 #, fuzzy
-#| msgid "&Insert"
+#| msgid "Insert"
 msgid "InsertDNA"
-msgstr "&إدراج"
+msgstr "إدراج"
 
 #: qtplugins/insertdna/insertdna.h:63
 msgid "Insert DNA / RNA fragments through a dialog."
