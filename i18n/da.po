@@ -3737,7 +3737,6 @@ msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.cpp:340
 #, fuzzy
-#| msgid "°"
 msgid " °"
 msgstr " °"
 
