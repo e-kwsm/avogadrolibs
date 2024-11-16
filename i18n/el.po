@@ -7158,9 +7158,8 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:105
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #, fuzzy
-#| msgid "Children"
 msgid "Children:"
-msgstr "Θυγατρικά"
+msgstr "Θυγατρικά:"
 
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:128
 #. i18n: ectx: property (toolTip), widget (QLabel, label_3)
