@@ -5078,7 +5078,6 @@ msgstr "Intenzitete"
 
 #: qtplugins/spectra/spectradialog.cpp:613
 #, fuzzy
-#| msgid "Spectra"
 msgid "NMR Spectra"
 msgstr "NMR Spektri"
 
