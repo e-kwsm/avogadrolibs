@@ -4709,7 +4709,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:53
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Element…"
 msgstr "Selecteer per Element"
 
