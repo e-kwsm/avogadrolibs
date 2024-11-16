@@ -4964,7 +4964,6 @@ msgstr "绘制光谱…"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1646
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "光谱"
 
