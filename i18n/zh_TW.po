@@ -4972,7 +4972,6 @@ msgstr "NMR"
 
 #: qtplugins/spectra/spectradialog.cpp:446
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic"
 msgstr "電子"
 
