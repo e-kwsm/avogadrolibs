@@ -4501,7 +4501,6 @@ msgstr "Bildigi ĉi tiun scenon per PLY."
 
 #: qtplugins/povray/povray.cpp:29
 #, fuzzy
-#| msgid "POV-Ray Render"
 msgid "POV-Ray Render…"
 msgstr "Bildigi per POV-Ray…"
 
