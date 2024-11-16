@@ -5001,8 +5001,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1652
 #, fuzzy
-#| msgctxt "colormap"
-#| msgid "Spectral"
 msgid "Spectra"
 msgstr "Spektral"
 
@@ -5071,8 +5069,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:600
 #, fuzzy
-#| msgctxt "colormap"
-#| msgid "Spectral"
 msgid "Raman Spectra"
 msgstr "Raman Spektral"
 
@@ -5085,8 +5081,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:613
 #, fuzzy
-#| msgctxt "colormap"
-#| msgid "Spectral"
 msgid "NMR Spectra"
 msgstr "NMR Spektral"
 
