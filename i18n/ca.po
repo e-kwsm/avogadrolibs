@@ -3280,7 +3280,6 @@ msgstr ""
 #: qtplugins/lineformatinput/lineformatinput.cpp:109
 #: qtplugins/lineformatinput/lineformatinput.cpp:124:1052
 #, fuzzy
-#| msgid "Molecule"
 msgid "Insert Molecule…"
 msgstr "Insereix Molècula…"
 
