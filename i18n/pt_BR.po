@@ -4016,7 +4016,6 @@ msgstr "Otimizando Geometria (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
-#| msgid "Generating MDL..."
 msgid "Generating…"
 msgstr "Criando…"
 
