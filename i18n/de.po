@@ -3829,7 +3829,6 @@ msgstr "Geometrie wird optimiert (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
-#| msgid "Generating MDL…"
 msgid "Generating…"
 msgstr "generiert…"
 
@@ -6862,7 +6861,6 @@ msgstr "Benutze Form"
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:1012
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Generating MDL…"
 msgid "Generate…"
 msgstr "generiert…"
 
