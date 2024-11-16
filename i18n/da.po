@@ -3200,7 +3200,7 @@ msgstr "&Indsæt"
 
 #: qtplugins/insertdna/insertdna.cpp:79
 #, fuzzy
-#| msgid "&Insert"
+#| msgid "Insert"
 msgid "Insert DNA/RNA…"
 msgstr "Indsæt"
 
