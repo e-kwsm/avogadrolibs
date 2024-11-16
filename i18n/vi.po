@@ -4965,10 +4965,8 @@ msgid "NMR"
 msgstr "NMR"
 
 #: qtplugins/spectra/spectradialog.cpp:210
-#, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic"
-msgstr "Mật độ electron"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:214
 msgid "Circular Dichroism"

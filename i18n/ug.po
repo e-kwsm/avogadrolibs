@@ -4862,10 +4862,8 @@ msgid "NMR"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:210
-#, fuzzy
-#| msgid "Selection"
 msgid "Electronic"
-msgstr "تاللانما"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:214
 msgid "Circular Dichroism"

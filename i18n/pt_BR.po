@@ -5171,7 +5171,6 @@ msgstr "RMN"
 
 #: qtplugins/spectra/spectradialog.cpp:210
 #, fuzzy
-#| msgid "electron"
 msgid "Electronic"
 msgstr "elétron"
 
