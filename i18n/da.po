@@ -4985,8 +4985,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:443
 #, fuzzy
-#| msgctxt "NMR spectra option"
-#| msgid "NMR"
 msgid "NMR"
 msgstr "NMR"
 
