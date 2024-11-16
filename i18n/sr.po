@@ -5200,7 +5200,6 @@ msgstr "НМР"
 
 #: qtplugins/spectra/spectradialog.cpp:210
 #, fuzzy
-#| msgid "electron"
 msgid "Electronic"
 msgstr "elektron"
 
