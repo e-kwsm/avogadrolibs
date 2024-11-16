@@ -5115,7 +5115,6 @@ msgstr "ЯМР"
 
 #: qtplugins/spectra/spectradialog.cpp:210
 #, fuzzy
-#| msgid "electron"
 msgid "Electronic"
 msgstr "electron"
 
