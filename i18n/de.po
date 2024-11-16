@@ -4994,7 +4994,6 @@ msgstr "Intensität"
 
 #: qtplugins/spectra/spectradialog.cpp:368
 #, fuzzy
-#| msgctxt "colormap"
 #| msgid "Spectral"
 msgid "NMR Spectra"
 msgstr "Spektral"
