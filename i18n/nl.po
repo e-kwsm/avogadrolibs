@@ -5052,7 +5052,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:613
 #, fuzzy
-#| msgctxt "colormap"
 #| msgid "Spectral"
 msgid "NMR Spectra"
 msgstr "Spectraal"
