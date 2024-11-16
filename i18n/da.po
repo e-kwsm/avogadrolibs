@@ -4732,7 +4732,6 @@ msgstr "&Vælg"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Element"
 msgstr "Vælg element"
 
