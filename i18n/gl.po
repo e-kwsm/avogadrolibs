@@ -5023,7 +5023,6 @@ msgstr "RMN"
 
 #: qtplugins/spectra/spectradialog.cpp:446
 #, fuzzy
-#| msgid "Electron Density"
 msgid "Electronic"
 msgstr "Electrónica"
 
