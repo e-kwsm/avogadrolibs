@@ -5018,7 +5018,6 @@ msgstr "Vælg forgrundsfarve"
 
 #: qtplugins/spectra/spectradialog.cpp:522
 #, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Select Calculated Spectra Color"
 msgstr "udregnet spektrum"
 
