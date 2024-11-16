@@ -7599,10 +7599,8 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, push_loadSpectra)
-#, fuzzy
-#| msgid "No data"
 msgid "&Load data..."
-msgstr "لاتوجد بيانات"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, push_exportData)
