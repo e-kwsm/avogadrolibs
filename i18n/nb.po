@@ -4358,7 +4358,6 @@ msgstr "Tegn scenen ved bruk av PLY."
 
 #: qtplugins/povray/povray.cpp:29
 #, fuzzy
-#| msgid "VRML Render"
 msgid "POV-Ray Render…"
 msgstr "POV-Ray-opptegner"
 
