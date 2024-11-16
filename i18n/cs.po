@@ -5011,7 +5011,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1655
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "Spektra"
 
