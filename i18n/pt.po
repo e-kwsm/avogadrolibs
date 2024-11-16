@@ -3324,9 +3324,8 @@ msgstr "&Inserir"
 
 #: qtplugins/insertdna/insertdna.cpp:79
 #, fuzzy
-#| msgid "Insert DNA/RNA"
 msgid "Insert DNA/RNA…"
-msgstr "Inserir ADN/ARN"
+msgstr "Inserir ADN/ARN…"
 
 #: qtplugins/insertdna/insertdna.cpp:159
 msgctxt "uracil"
