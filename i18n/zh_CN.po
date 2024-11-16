@@ -3296,7 +3296,6 @@ msgstr "正在生成 3D 分子…"
 
 #: qtplugins/insertdna/insertdna.h:33
 #, fuzzy
-#| msgid "Insert DNA"
 msgid "InsertDNA"
 msgstr "插入 DNA"
 

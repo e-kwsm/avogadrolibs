@@ -3353,7 +3353,6 @@ msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:33
 #, fuzzy
-#| msgid "Insert DNA"
 msgid "InsertDNA"
 msgstr "Вставить ДНК"
 
