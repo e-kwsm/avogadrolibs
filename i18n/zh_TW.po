@@ -5524,7 +5524,7 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:127
 msgid "&Select"
-msgstr "選取"
+msgstr "選取 (&S)"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
