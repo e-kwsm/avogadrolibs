@@ -11992,6 +11992,12 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "Tüm Dosyalar (*);;"
 
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rombohedral"
+
 #~ msgid "Layer"
 #~ msgstr "Katman"
 
