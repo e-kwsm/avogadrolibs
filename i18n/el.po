@@ -1294,8 +1294,10 @@ msgid "Modify Layers"
 msgstr ""
 
 #: qtgui/rwlayermanager.cpp:196
+#, fuzzy
+#| msgid "Remove"
 msgid "Remove Layer"
-msgstr ""
+msgstr "Αφαίρεση"
 
 #: qtgui/rwlayermanager.cpp:203
 msgid "Remove Layer Info"
