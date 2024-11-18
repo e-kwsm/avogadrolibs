@@ -4702,6 +4702,7 @@ msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:653
 #, fuzzy
+#| msgid "Structure"
 msgid "Secondary Structure"
 msgstr "Estrcutura Secundària"
 
