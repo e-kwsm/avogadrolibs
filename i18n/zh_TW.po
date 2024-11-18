@@ -4022,7 +4022,7 @@ msgstr ""
 #: qtplugins/hydrogens/hydrogens.cpp:23
 #, fuzzy
 msgid "&Adjust Hydrogens"
-msgstr "自動加上氫原子"
+msgstr "自動加上氫原子 (&A)"
 
 #: qtplugins/hydrogens/hydrogens.cpp:29 qtplugins/openbabel/openbabel.cpp:74
 msgid "Add Hydrogens"
