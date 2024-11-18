@@ -4938,8 +4938,10 @@ msgid "Wavelength (nm)"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:586
+#, fuzzy
+#| msgid "Spectra"
 msgid "Vibrational Spectra"
-msgstr ""
+msgstr "Спектър"
 
 #: qtplugins/spectra/spectradialog.cpp:587
 #: qtplugins/spectra/spectradialog.cpp:601
