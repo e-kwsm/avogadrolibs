@@ -10196,7 +10196,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Geometria"
+#~ msgstr "&Ottimizza la geometria"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
@@ -10286,9 +10286,23 @@ msgstr ""
 #~ msgstr "Tutti i file(*);;"
 
 #, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Romboidale"
+
+#, fuzzy
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "Inserisci molecola..."
+
+#, fuzzy
+#~ msgid "Generating 3D molecule..."
+#~ msgstr "Nessuna molecola impostata"
+
+#, fuzzy
+#~ msgid "&GAMESS..."
+#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -10401,7 +10415,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Ottimizza la geometria"
+#~ msgstr "&Ottimizza la geometria"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."

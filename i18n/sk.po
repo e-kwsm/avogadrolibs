@@ -9995,6 +9995,11 @@ msgstr ""
 #~ msgstr "Farba podľa čiastkového náboja"
 
 #, fuzzy
+#~| msgid "Animation"
+#~ msgid "Animation Tool"
+#~ msgstr "Animácia"
+
+#, fuzzy
 #~ msgid "By Atomic Index"
 #~ msgstr "Atómové číslo"
 

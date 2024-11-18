@@ -10039,7 +10039,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Tilføj enhedscelle"
+#~ msgstr "Tilføj &enhedscelle"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
@@ -10052,6 +10052,11 @@ msgstr ""
 #, fuzzy
 #~ msgid "Select Water…"
 #~ msgstr "Atom nummer"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Molecule Name:"
+#~ msgstr "Molekyle"
 
 #, fuzzy
 #~| msgid "Fragment..."
@@ -10086,6 +10091,12 @@ msgstr ""
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Alle filer"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhombohedral"
 
 #, fuzzy
 #~| msgid "Molecule"
@@ -10194,7 +10205,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Optimer geometri"
+#~ msgstr "&Optimer geometri"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."

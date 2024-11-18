@@ -3346,7 +3346,6 @@ msgstr "&Importar"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 #, fuzzy
-#| msgid "Fetch from PDB"
 msgid "Fetch PDB"
 msgstr "Buscar no PDB"
 
@@ -5731,7 +5730,7 @@ msgstr "Selecionar por Índice Atômico…"
 #: qtplugins/select/select.cpp:63
 #, fuzzy
 msgid "Select by Residue…"
-msgstr "Selecionar Resíduo…"
+msgstr "Selecionar por Resíduo…"
 
 #: qtplugins/select/select.cpp:68
 msgid "Select Backbone Atoms…"
@@ -10575,6 +10574,11 @@ msgstr "Seus e-mails"
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
 
+#, fuzzy
+#~| msgid "Animation"
+#~ msgid "Animation Tool"
+#~ msgstr "Animação"
+
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Exibição simples de esferas VdW com oclusão ambiental."
 
@@ -10600,6 +10604,11 @@ msgstr "Seus e-mails"
 #~| msgid "Copy"
 #~ msgid "&Copy"
 #~ msgstr "Copiar"
+
+#, fuzzy
+#~| msgid "Molecule Charge:"
+#~ msgid "Molecule Name:"
+#~ msgstr "Carga da Molécula:"
 
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Massa Molecular (g/mol):"
@@ -10770,6 +10779,12 @@ msgstr "Seus e-mails"
 
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os arquivos (*);;"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Romboédrico"
 
 #, fuzzy
 #~| msgid "Insert Molecule..."

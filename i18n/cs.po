@@ -10596,7 +10596,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Přidat jednotkovou buňku"
+#~ msgstr "Přidat &jednotkovou buňku"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
@@ -10675,6 +10675,12 @@ msgstr ""
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Všechny soubory"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Klencová"
 
 #, fuzzy
 #~| msgid "Molecule"
@@ -10807,7 +10813,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Vyladit uspořádání"
+#~ msgstr "&Vyladit uspořádání"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -11362,7 +11368,7 @@ msgstr ""
 #~ "silových polí molekulární mechaniky"
 
 #~ msgid "&Vector Graphics..."
-#~ msgstr "&Vektorová grafika..."
+#~ msgstr "Vektorová grafika..."
 
 #~ msgid "Common vector image formats"
 #~ msgstr "Běžné formáty vektorového obrázku"
