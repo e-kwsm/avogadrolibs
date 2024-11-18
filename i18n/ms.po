@@ -4694,6 +4694,7 @@ msgstr "Rantaian"
 
 #: qtplugins/propertytables/propertymodel.cpp:588
 #, fuzzy
+#| msgid "Structure"
 msgid "Secondary Structure"
 msgstr "Struktur Sekunder"
 
