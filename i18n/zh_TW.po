@@ -4044,7 +4044,7 @@ msgstr ""
 #: qtplugins/hydrogens/hydrogens.cpp:59
 #, fuzzy
 msgid "&Hydrogens"
-msgstr "氫"
+msgstr "氫 (&H)"
 
 #: qtplugins/hydrogens/hydrogens.cpp:114
 msgid "Add any missing hydrogen atoms on atoms that have incomplete octets."
