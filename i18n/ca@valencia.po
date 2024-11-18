@@ -1718,7 +1718,7 @@ msgstr "Carrega parcial"
 #: qtplugins/applycolors/applycolors.cpp:82
 #, fuzzy
 msgid "By Secondary Structure"
-msgstr "Representa l'estructura secundària"
+msgstr "l'estructura secundària"
 
 #: qtplugins/applycolors/applycolors.cpp:87
 #, fuzzy
