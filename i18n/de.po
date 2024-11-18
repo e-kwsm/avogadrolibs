@@ -3241,8 +3241,10 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr "PDB Modelle von der Protein Data Bank laden"
 
 #: qtplugins/focus/focus.cpp:22
+#, fuzzy
+#| msgid "Selection"
 msgid "Focus Selection"
-msgstr ""
+msgstr "Auswahl"
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -8245,8 +8247,10 @@ msgstr "Peakbreite:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:183
 #. i18n: ectx: property (text), widget (QLabel, label_27)
+#, fuzzy
+#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr ""
+msgstr "Schwellwert:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:190
 #. i18n: ectx: property (text), widget (QLabel, unitsLabel)
