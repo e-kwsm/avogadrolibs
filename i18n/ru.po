@@ -10735,6 +10735,11 @@ msgstr ""
 #~ msgstr "Копировать всё"
 
 #, fuzzy
+#~| msgid "Molecule Charge:"
+#~ msgid "Molecule Name:"
+#~ msgstr "Заряд молекулы:"
+
+#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Молекулярная масса (г/моль):"
 
@@ -10764,6 +10769,11 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Фрагмент..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "Функционал плотности:"
+
 #~ msgid "Other..."
 #~ msgstr "Другой..."
 
@@ -10789,6 +10799,12 @@ msgstr ""
 
 #~ msgid "All files (*);;"
 #~ msgstr "Все файлы (*);;"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Ромбоэдрическая"
 
 #, fuzzy
 #~| msgid "Molecule"

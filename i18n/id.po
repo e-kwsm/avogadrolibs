@@ -10845,6 +10845,11 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Fragmen..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "DFT Fungsional:"
+
 #~ msgid "Other..."
 #~ msgstr "Lainnya..."
 
@@ -10899,6 +10904,12 @@ msgstr ""
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Semua berkas"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhombohedral"
 
 #, fuzzy
 #~| msgid "Molecule"
