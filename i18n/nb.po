@@ -4697,12 +4697,16 @@ msgid "Select Water"
 msgstr ""
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
+#, fuzzy
+#| msgid "Selection"
 msgid "Enlarge Selection"
-msgstr ""
+msgstr "Utvalg"
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
+#, fuzzy
+#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr ""
+msgstr "Utvalg"
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -4937,7 +4941,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:443
 #, fuzzy
-#| msgctxt "NMR spectra option"
 msgid "NMR"
 msgstr "NMR"
 
