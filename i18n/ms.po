@@ -11610,6 +11610,11 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Cebisan..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "Kefungsian DFT:"
+
 #~ msgid "Other..."
 #~ msgstr "Lain-lain..."
 
@@ -11636,6 +11641,12 @@ msgstr ""
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Semua fail"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rombohedron"
 
 #, fuzzy
 #~| msgid "Molecule"

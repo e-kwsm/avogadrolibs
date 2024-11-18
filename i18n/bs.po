@@ -11234,7 +11234,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Geometrije"
+#~ msgstr "&Optimizacija Geometrije"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
@@ -11247,6 +11247,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Rastojanje"
+
+#, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Indikacije atoma"
 
 #, fuzzy
 #~| msgid "Molecule Charge:"
@@ -11307,9 +11311,18 @@ msgstr ""
 #~ msgstr "Ime elementa"
 
 #, fuzzy
+#~| msgid "Dihedral:"
+#~ msgid "octahedral"
+#~ msgstr "Diedarski:"
+
+#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molekul"
+
+#, fuzzy
+#~ msgid "Generating 3D molecule..."
+#~ msgstr "Nema postavljene molekule"
 
 #, fuzzy
 #~ msgid "&GAMESS..."
@@ -11421,7 +11434,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Optimizacija Geometrije"
+#~ msgstr "&Optimizacija Geometrije"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."

@@ -6604,7 +6604,7 @@ msgstr ""
 #: qtplugins/select/select.cpp:496
 #, fuzzy
 msgid "Select Residue"
-msgstr "Selecciona residu"
+msgstr "Selecciona per residu"
 
 #: qtplugins/select/select.cpp:592
 msgid "Select all atoms."
@@ -11297,7 +11297,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "&Copy"
-#~ msgstr "&Copia-ho tot"
+#~ msgstr "Copia-ho tot"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -11329,6 +11329,11 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Fragment..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "Funció DFT:"
+
 #~ msgid "Other..."
 #~ msgstr "Altre..."
 
@@ -11355,6 +11360,11 @@ msgstr ""
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Tots els fitxers"
+
+#, fuzzy
+#~| msgid "Dihedral:"
+#~ msgid "octahedral"
+#~ msgstr "Diedre:"
 
 #, fuzzy
 #~| msgid "Molecule"
@@ -11473,7 +11483,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Optimitza Geometria"
+#~ msgstr "&Optimitza Geometria"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -12221,7 +12231,7 @@ msgstr ""
 #~ msgstr "RMN"
 
 #~ msgid "&NMR Spectra Settings"
-#~ msgstr "Paràmetres espectre RM&N"
+#~ msgstr "Paràmetres espectre RMN"
 
 #~ msgctxt "Density of States"
 #~ msgid "DOS"
