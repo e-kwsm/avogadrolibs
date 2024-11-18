@@ -9337,19 +9337,6 @@ msgstr ""
 #~ msgstr "Navigar"
 
 #, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nom de l'element"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Molecula"
-
-#, fuzzy
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS"
 
@@ -9391,9 +9378,6 @@ msgstr ""
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
 #~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
