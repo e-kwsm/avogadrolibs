@@ -4944,6 +4944,7 @@ msgstr ""
 
 #: qtplugins/spectra/spectra.cpp:29
 #, fuzzy
+#| msgid "Spectra"
 msgid "Plot Spectra…"
 msgstr "光譜"
 
