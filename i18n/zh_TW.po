@@ -1457,6 +1457,7 @@ msgstr "改變原子位置"
 
 #: qtgui/rwmolecule.h:242
 #, fuzzy
+#| msgid "Change"
 msgid "Change Atom Label"
 msgstr "改變"
 
