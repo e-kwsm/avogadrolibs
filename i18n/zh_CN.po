@@ -4972,7 +4972,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:355
 #, fuzzy
-#| msgid "Spectra"
 msgid "Raman Spectra"
 msgstr "拉曼光谱"
 
