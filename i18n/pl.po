@@ -1455,8 +1455,10 @@ msgid "Change Atom Label"
 msgstr "Etykieta"
 
 #: qtgui/rwmolecule.h:234
+#, fuzzy
+#| msgid "Selection"
 msgid "Change Selection"
-msgstr ""
+msgstr "Zaznaczenie"
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
@@ -1987,8 +1989,10 @@ msgid "Configure Bonding…"
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:32
+#, fuzzy
+#| msgid "Selected Atoms"
 msgid "Bond Selected Atoms"
-msgstr ""
+msgstr "zaznaczone atomy"
 
 #: qtplugins/bonding/bonding.cpp:61 qtplugins/centroid/centroid.cpp:44
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:34
@@ -2936,12 +2940,16 @@ msgid "Configure…"
 msgstr "Pole sił:"
 
 #: qtplugins/forcefield/forcefield.cpp:108
+#, fuzzy
+#| msgid "Selected Atoms"
 msgid "Freeze Selected Atoms"
-msgstr ""
+msgstr "zaznaczone atomy"
 
 #: qtplugins/forcefield/forcefield.cpp:115
+#, fuzzy
+#| msgid "Selected Atoms"
 msgid "Unfreeze Selected Atoms"
-msgstr ""
+msgstr "zaznaczone atomy"
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
