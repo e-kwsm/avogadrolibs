@@ -2929,8 +2929,10 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
+#, fuzzy
+#| msgid "Selection"
 msgid "Focus Selection"
-msgstr ""
+msgstr "Seleccion"
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3002,8 +3004,10 @@ msgid "%1 Force Norm = %L2"
 msgstr ""
 
 #: qtplugins/forcefield/forcefield.h:46
+#, fuzzy
+#| msgid "optimization"
 msgid "Forcefield optimization"
-msgstr ""
+msgstr "optimizacion"
 
 #: qtplugins/forcefield/forcefield.h:50
 msgid "Forcefield minimization, including scripts"
@@ -3213,8 +3217,9 @@ msgstr ""
 #: qtplugins/insertdna/insertdna.cpp:200
 #: qtplugins/lineformatinput/lineformatinput.cpp:108
 #: qtplugins/lineformatinput/lineformatinput.cpp:123:1046
+#, fuzzy
 msgid "Insert Molecule…"
-msgstr ""
+msgstr "Inserir Molecula"
 
 #: qtplugins/insertdna/insertdna.cpp:201
 #: qtplugins/lineformatinput/lineformatinput.cpp:124
@@ -4710,12 +4715,16 @@ msgid "Select Water"
 msgstr "Numèro de l'atòm"
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
+#, fuzzy
+#| msgid "Selection"
 msgid "Enlarge Selection"
-msgstr ""
+msgstr "Seleccion"
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
+#, fuzzy
+#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr ""
+msgstr "Seleccion"
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
@@ -5091,6 +5100,7 @@ msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:83
 #, fuzzy
+#| msgid "Create Surfaces..."
 msgid "Create Surfaces…"
 msgstr "Generar las surfàcias…"
 
@@ -5291,6 +5301,7 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
+#| msgid "Vibration"
 msgid "Vibrations"
 msgstr "Vibracion"
 
@@ -5512,6 +5523,7 @@ msgstr ""
 #. i18n: file: qtgui/insertfragmentdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::QtGui::InsertFragmentDialog)
 #, fuzzy
+#| msgid "Insert Fragment"
 msgid "Insert Fragment…"
 msgstr "Inserir un fragment…"
 
@@ -5659,8 +5671,10 @@ msgstr "Coloriar segon la carga parciala"
 
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
+#, fuzzy
+#| msgid "Charge:"
 msgid "Charge Model:"
-msgstr ""
+msgstr "Carga :"
 
 #. i18n: file: qtplugins/bonding/bondingdialog.ui:20
 #. i18n: ectx: property (text), widget (QLabel, label)
