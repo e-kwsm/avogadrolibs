@@ -4529,9 +4529,8 @@ msgid "Chain"
 msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:556
-#, fuzzy
 msgid "Secondary Structure"
-msgstr "Struktur"
+msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:558
 msgid "Heterogen"
