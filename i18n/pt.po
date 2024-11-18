@@ -2121,8 +2121,10 @@ msgid "Configure Bonding…"
 msgstr "Configurar Ligações…"
 
 #: qtplugins/bonding/bonding.cpp:32
+#, fuzzy
+#| msgid "Selected Atoms"
 msgid "Bond Selected Atoms"
-msgstr ""
+msgstr "átomos seleccionados"
 
 #: qtplugins/bonding/bonding.cpp:61
 #: qtplugins/propertytables/propertymodel.cpp:543
