@@ -2008,7 +2008,7 @@ msgstr "鍵所選的原子"
 #: qtplugins/insertfragment/insertfragment.cpp:60
 #: qtplugins/lineformatinput/lineformatinput.cpp:61
 msgid "&Build"
-msgstr "建立"
+msgstr "建立 (&B)"
 
 #: qtplugins/bonding/bonding.cpp:61
 #: qtplugins/propertytables/propertymodel.cpp:498
