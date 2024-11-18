@@ -1255,7 +1255,6 @@ msgstr "Kovalent Olmayan"
 
 #: qtgui/layermodel.cpp:190
 #, fuzzy
-#| msgid "QTAIM"
 msgctxt "quantum theory of atoms in molecules"
 msgid "QTAIM"
 msgstr "QTAIM (MAKT)"
