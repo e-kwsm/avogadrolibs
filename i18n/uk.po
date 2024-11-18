@@ -10671,6 +10671,11 @@ msgstr "Ваші електронні листи"
 #~ "Подвійне клацання: \tповернути початковий вигляд."
 
 #, fuzzy
+#~| msgid "Animation"
+#~ msgid "Animation Tool"
+#~ msgstr "Анімація"
+
+#, fuzzy
 #~| msgid ""
 #~| "Selection Tool (F11)\n"
 #~| "\n"
@@ -10733,6 +10738,10 @@ msgstr "Ваші електронні листи"
 #, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Відстань"
+
+#, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Номери атомів"
 
 #, fuzzy
 #~ msgid "&Copy"
@@ -10799,6 +10808,12 @@ msgstr "Ваші електронні листи"
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Усі файли"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "ромбоедрична"
 
 #, fuzzy
 #~| msgid "Molecule"

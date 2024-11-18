@@ -5096,7 +5096,7 @@ msgstr "ذرة"
 #: qtplugins/propertytables/propertymodel.cpp:810
 #, fuzzy
 msgid "Start Atom"
-msgstr "بدء الرسوم المتحركة"
+msgstr "بدء &الرسوم المتحركة"
 
 #: qtplugins/propertytables/propertymodel.cpp:812
 #, fuzzy
@@ -5201,7 +5201,7 @@ msgstr "خصائص الروابط"
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
 msgid "Angle Properties…"
-msgstr "خصائص الزاوية…"
+msgstr "خصائص الزاوية..."
 
 #: qtplugins/propertytables/propertytables.cpp:48
 msgid "Torsion Properties…"
@@ -5236,7 +5236,7 @@ msgstr "خصائص الروابط"
 #: qtplugins/propertytables/propertyview.cpp:56
 #, fuzzy
 msgid "Angle Properties"
-msgstr "خصائص الزاوية…"
+msgstr "خصائص الزاوية..."
 
 #: qtplugins/propertytables/propertyview.cpp:59
 msgid "Torsion Properties"
@@ -6030,7 +6030,7 @@ msgstr ""
 #: qtplugins/surfaces/surfacedialog.cpp:163
 #, fuzzy
 msgid "Molecular Orbital"
-msgstr "المدارات الجزيئية"
+msgstr "المدارات الجزيئية..."
 
 #: qtplugins/surfaces/surfacedialog.cpp:166
 msgid "Electron Density"

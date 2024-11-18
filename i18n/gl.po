@@ -10012,6 +10012,11 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Fragment…"
 #~ msgstr "Fragmento..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "DFT funcional:"
+
 #~ msgid "Other..."
 #~ msgstr "Outro..."
 
@@ -10038,6 +10043,12 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os ficheiros"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Romboédrico"
 
 #, fuzzy
 #~| msgid "Molecule"
