@@ -4240,21 +4240,6 @@ msgstr "Generating Conformers (Open Babel)"
 #: qtplugins/openbabel/openbabel.cpp:711
 msgid "Generate Conformers"
 msgstr "Generate Conformers"
-=======
-msgstr ""
-
-#: qtplugins/openbabel/openbabel.cpp:586
-msgid "Cannot generate conformers with Open Babel."
-msgstr ""
-
-#: qtplugins/openbabel/openbabel.cpp:619
-msgid "Generating Conformers (Open Babel)"
-msgstr ""
-
-#: qtplugins/openbabel/openbabel.cpp:711
-msgid "Generate Conformers"
-msgstr ""
->>>>>>> 3b832899475d (fix: remove inaccurate fuzzy entries)
 
 #: qtplugins/openbabel/openbabel.cpp:730
 msgid "Cannot open file with Open Babel."
@@ -9701,56 +9686,6 @@ msgstr ""
 
 #~ msgid "Connection failed"
 #~ msgstr "Connection failed"
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Load File"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element name"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "All files"
-
-#, fuzzy
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "No molecule set"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Crystal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Add Hydrogens for pH..."
 
 #~ msgid "Atom Properties..."
 #~ msgstr "Atom Properties..."
