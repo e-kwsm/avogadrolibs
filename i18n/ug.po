@@ -2875,8 +2875,10 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr ""
 
 #: qtplugins/focus/focus.cpp:22
+#, fuzzy
+#| msgid "Selection"
 msgid "Focus Selection"
-msgstr ""
+msgstr "تاللانما"
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3120,8 +3122,10 @@ msgid "&Insert"
 msgstr "قىستۇر(&I)"
 
 #: qtplugins/insertdna/insertdna.cpp:79
+#, fuzzy
+#| msgid "&Insert"
 msgid "Insert DNA/RNA…"
-msgstr ""
+msgstr "قىستۇر"
 
 #: qtplugins/insertdna/insertdna.cpp:159
 msgctxt "uracil"
@@ -3160,8 +3164,10 @@ msgid "Generating 3D molecule…"
 msgstr ""
 
 #: qtplugins/insertdna/insertdna.h:33
+#, fuzzy
+#| msgid "Insert"
 msgid "InsertDNA"
-msgstr ""
+msgstr "قىستۇر"
 
 #: qtplugins/insertdna/insertdna.h:63
 msgid "Insert DNA / RNA fragments through a dialog."
@@ -4603,12 +4609,16 @@ msgid "Select Water"
 msgstr "ئېلېمېنت"
 
 #: qtplugins/select/select.cpp:88 qtplugins/select/select.cpp:377
+#, fuzzy
+#| msgid "Selection"
 msgid "Enlarge Selection"
-msgstr ""
+msgstr "تاللانما"
 
 #: qtplugins/select/select.cpp:93 qtplugins/select/select.cpp:416
+#, fuzzy
+#| msgid "Selection"
 msgid "Shrink Selection"
-msgstr ""
+msgstr "تاللانما"
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
