@@ -4496,6 +4496,7 @@ msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:556
 #, fuzzy
+#| msgid "Structure"
 msgid "Secondary Structure"
 msgstr "Estrutura"
 
