@@ -4890,8 +4890,10 @@ msgid "Select Imported Spectra Color"
 msgstr "Внасяне на спектър"
 
 #: qtplugins/spectra/spectradialog.cpp:341
+#, fuzzy
+#| msgid "Spectra"
 msgid "Vibrational Spectra"
-msgstr ""
+msgstr "Спектър"
 
 #: qtplugins/spectra/spectradialog.cpp:342
 #: qtplugins/spectra/spectradialog.cpp:356
