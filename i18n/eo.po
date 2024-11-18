@@ -1073,7 +1073,6 @@ msgstr "Troviĝis pluro da %1 kiu povas %2 ĉi tiun dosierformon. Kiun uzi?"
 
 #: qtgui/fileformatdialog.cpp:279
 #, fuzzy
-#| msgid "All files (*);;"
 msgid "All files"
 msgstr "Ĉiuj dosieroj"
 
