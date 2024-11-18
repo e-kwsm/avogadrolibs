@@ -3942,7 +3942,7 @@ msgstr "分析 (&A)"
 #: qtplugins/propertytables/propertytables.cpp:86
 #: qtplugins/symmetry/symmetry.cpp:80
 msgid "&Properties"
-msgstr "性質"
+msgstr "性質 (&P)"
 
 #: qtplugins/molecularproperties/molecularproperties.h:36
 msgid "Molecular Properties"
