@@ -1292,6 +1292,7 @@ msgstr "移除"
 
 #: qtgui/rwlayermanager.cpp:203
 #, fuzzy
+#| msgid "Remove"
 msgid "Remove Layer Info"
 msgstr "移除"
 
