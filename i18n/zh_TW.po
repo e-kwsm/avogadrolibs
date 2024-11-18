@@ -3471,7 +3471,7 @@ msgstr ""
 #: qtplugins/hydrogens/hydrogens.cpp:57
 #, fuzzy
 msgid "&Hydrogens"
-msgstr "氫"
+msgstr "氫 (&H)"
 
 #: qtplugins/hydrogens/hydrogens.h:24
 msgid "Hydrogens"
