@@ -2806,6 +2806,7 @@ msgstr "Importi Kristalon el Tondujo"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
+#| msgid "Wrap Atoms to Unit Cell"
 msgid "Wrap atoms into the unit cell."
 msgstr "Faldi Atomojn en Unitan Ĉelon."
 
@@ -3056,7 +3057,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:159
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Kalkuli"
 
