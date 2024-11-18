@@ -2952,8 +2952,10 @@ msgid "Download PDB models from the Protein Data Bank"
 msgstr "PDB Modelle von der Protein Data Bank laden"
 
 #: qtplugins/focus/focus.cpp:22
+#, fuzzy
+#| msgid "Selection"
 msgid "Focus Selection"
-msgstr ""
+msgstr "Auswahl"
 
 #: qtplugins/focus/focus.cpp:23
 msgid "Unfocus"
@@ -3027,8 +3029,10 @@ msgid "Forcefield optimization"
 msgstr "Kraftfeld-Optimierung"
 
 #: qtplugins/forcefield/forcefield.h:50
+#, fuzzy
+#| msgid "Forcefield Optimization"
 msgid "Forcefield minimization, including scripts"
-msgstr ""
+msgstr "Kraftfeld-Optimierung"
 
 #: qtplugins/forcefield/forcefielddialog.cpp:119
 #: qtplugins/openbabel/obforcefielddialog.cpp:319
@@ -3821,6 +3825,7 @@ msgid "Optimizing Geometry (Open Babel)"
 msgstr "Geometrie wird optimiert (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
+#, fuzzy
 msgid "Generating…"
 msgstr "generiert…"
 
@@ -3869,6 +3874,7 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:568
 #, fuzzy
+#| msgid "Molecule invalid."
 msgid "Molecule invalid. Cannot generate conformers."
 msgstr "Molekül ungültig."
 
@@ -4890,6 +4896,7 @@ msgid "Spectra"
 msgstr "Spektral"
 
 #: qtplugins/spectra/spectra.h:38
+#, fuzzy
 msgid "Display spectra plots."
 msgstr "Spektren anzeigen."
 
@@ -7605,6 +7612,7 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:20
 #. i18n: ectx: property (windowTitle), widget (QDialog, SpectraDialog)
+#, fuzzy
 msgid "Spectra Visualization"
 msgstr "Spektren"
 
@@ -7663,8 +7671,10 @@ msgstr "Peakbreite:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
+#, fuzzy
+#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr ""
+msgstr "Schwellwert:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:224
 #. i18n: ectx: attribute (title), widget (QWidget, tab_appearance)
