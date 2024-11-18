@@ -4451,7 +4451,7 @@ msgstr ""
 
 #: qtplugins/propertytables/propertymodel.cpp:754
 #, fuzzy
-#| msgid "Insert Fragment"
+#| msgid "Fragment"
 msgid "Adjust Fragment"
 msgstr "片斷"
 
