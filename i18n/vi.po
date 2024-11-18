@@ -9856,6 +9856,11 @@ msgstr ""
 #~ msgstr "Chép tất cả"
 
 #, fuzzy
+#~| msgid "Molecule Charge:"
+#~ msgid "Molecule Name:"
+#~ msgstr "Điện tích phân tử:"
+
+#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Khối lượng phân tử (g/mol):"
 
@@ -9907,6 +9912,11 @@ msgstr ""
 #, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Tên nguyên tố"
+
+#, fuzzy
+#~| msgid "Dihedral:"
+#~ msgid "octahedral"
+#~ msgstr "Góc nhị diện:"
 
 #, fuzzy
 #~| msgid "Molecule"

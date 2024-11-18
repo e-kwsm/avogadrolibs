@@ -9753,7 +9753,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Геометрията"
+#~ msgstr "Oптимизиране на геометрията"
 
 #, fuzzy
 #~ msgid "By Distance"
@@ -9773,6 +9773,10 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgstr "Грешно име на файл"
 
 #, fuzzy
+#~ msgid "Element & Ordinal"
+#~ msgstr "Елемент"
+
+#, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Всички файлове"
 
@@ -9784,6 +9788,10 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #~ msgid "Angle Properties..."
 #~ msgstr "Свойства на връзката..."
+
+#, fuzzy
+#~ msgid "Torsion Properties..."
+#~ msgstr "Свойства на връзката"
 
 #, fuzzy
 #~ msgid "Residue Properties..."
@@ -9807,7 +9815,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Oптимизиране на геометрията"
+#~ msgstr "&Oптимизиране на геометрията"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."

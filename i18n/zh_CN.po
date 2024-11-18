@@ -10305,6 +10305,11 @@ msgstr ""
 #~ "鼠标中键：点击并拖动以缩放。\n"
 #~ "鼠标右键：点击并拖动以移动视角。\n"
 
+#, fuzzy
+#~| msgid "Animation"
+#~ msgid "Animation Tool"
+#~ msgstr "动画"
+
 #~ msgid ""
 #~ "Selection Tool\n"
 #~ "\n"
@@ -10372,6 +10377,11 @@ msgstr ""
 #~ msgstr "复制(&C)"
 
 #, fuzzy
+#~| msgid "Molecule Charge:"
+#~ msgid "Molecule Name:"
+#~ msgstr "分子电荷:"
+
+#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "分子量 (g/mol):"
 
@@ -10386,6 +10396,11 @@ msgstr ""
 
 #~ msgid "TODO"
 #~ msgstr "TODO"
+
+#, fuzzy
+#~| msgid "Jump Size:"
+#~ msgid "Line Size:"
+#~ msgstr "跳转尺度:"
 
 #~ msgid "In."
 #~ msgstr "输入。"
@@ -10424,13 +10439,39 @@ msgstr ""
 #~ msgstr "文件名"
 
 #, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "加载结构文件"
+
+#, fuzzy
+#~ msgid "Navigate Back"
+#~ msgstr "导航"
+
+#, fuzzy
+#~ msgid "Navigate Forward"
+#~ msgstr "导航"
+
+#, fuzzy
+#~ msgid "Element & Ordinal"
+#~ msgstr "元素名称。"
+
+#, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "所有文件 (*);;"
+
+#, fuzzy
+#~| msgid "Dihedral:"
+#~ msgid "octahedral"
+#~ msgstr "二面体："
 
 #, fuzzy
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "插入分子..."
+
+#, fuzzy
+#~| msgid "Error Pasting Molecule"
+#~ msgid "Generating 3D molecule..."
+#~ msgstr "错误粘贴分子"
 
 #, fuzzy
 #~ msgid "&GAMESS..."
@@ -10458,6 +10499,10 @@ msgstr ""
 
 #~ msgid "Torsion Properties..."
 #~ msgstr "扭转属性..."
+
+#, fuzzy
+#~ msgid "Residue Properties..."
+#~ msgstr "分子属性..."
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "创建表面..."
@@ -10516,7 +10561,15 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "能量 (kJ/mol)"
+#~ msgstr "能量 (kJ/mol):"
+
+#, fuzzy
+#~ msgid "Yes"
+#~ msgstr "年"
+
+#, fuzzy
+#~ msgid "No"
+#~ msgstr "氖"
 
 #, fuzzy
 #~ msgid "&Quantum"

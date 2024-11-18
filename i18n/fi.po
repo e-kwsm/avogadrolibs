@@ -10252,12 +10252,25 @@ msgstr "Sähköpostisi"
 #~ msgstr "Osittaisvaraus"
 
 #, fuzzy
+#~| msgid "Animation..."
+#~ msgid "Animation Tool"
+#~ msgstr "Animaatio"
+
+#, fuzzy
 #~ msgid "Add Unit Cell"
 #~ msgstr "Täytä yksikkökoppi"
 
 #, fuzzy
+#~ msgid "By Atomic Index"
+#~ msgstr "Järjestysluku"
+
+#, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Etäisyys"
+
+#, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Järjestysluku"
 
 #, fuzzy
 #~| msgid "Molecule Charge:"

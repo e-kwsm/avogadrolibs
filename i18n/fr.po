@@ -10751,6 +10751,10 @@ msgstr ""
 #~ msgid "&MongoChem"
 #~ msgstr "&MongoChem"
 
+#, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "Ouvrir le fichier"
+
 #~ msgid "Server settings"
 #~ msgstr "Préférences du serveur"
 
@@ -10813,6 +10817,12 @@ msgstr ""
 
 #~ msgid "All files (*);;"
 #~ msgstr "Tous les fichiers (*);;"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhomboédrique"
 
 #~ msgid "Layer"
 #~ msgstr "Calque"
@@ -10954,7 +10964,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Optimisation de la géométrie"
+#~ msgstr "&Optimisation de la géométrie"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."

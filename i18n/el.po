@@ -10222,7 +10222,7 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Προσθήκη μοναδιαίας κυψελίδας"
+#~ msgstr "Προσθήκη &μοναδιαίας κυψελίδας"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
@@ -10270,6 +10270,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Fragment…"
 #~ msgstr "Τμήμα..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "Συναρτησιακό DFT:"
+
 #~ msgid "Other..."
 #~ msgstr "Άλλο..."
 
@@ -10296,6 +10301,12 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Όλα τα αρχεία"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Ρομβοεδρικό"
 
 #, fuzzy
 #~| msgid "Molecule"
@@ -10422,7 +10433,7 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Βελτιστοποίηση Γεωμετρίας"
+#~ msgstr "&Βελτιστοποίηση Γεωμετρίας"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."

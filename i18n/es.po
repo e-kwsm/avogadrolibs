@@ -11016,6 +11016,12 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "Todos los archivos (*);;"
 
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rombohedral"
+
 #~ msgid "Layer"
 #~ msgstr "Capa"
 
@@ -11149,7 +11155,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Optimizar Geometría"
+#~ msgstr "&Optimizar Geometría"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -11469,7 +11475,7 @@ msgstr ""
 #~ "algoritmo de reducción. Deteniendo"
 
 #~ msgid "Rotate To Standard &Orientation"
-#~ msgstr "Rotar a &Orientación Estándar"
+#~ msgstr "Rotar a Orientación Estándar"
 
 #~ msgid "&Slab..."
 #~ msgstr "&Slab"

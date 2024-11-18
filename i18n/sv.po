@@ -9714,7 +9714,23 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Geometri"
+#~ msgstr "&Optimera geometri"
+
+#, fuzzy
+#~ msgid "By Distance"
+#~ msgstr "Avstånd:"
+
+#, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Gundämne:"
+
+#, fuzzy
+#~ msgid "Molecule Name:"
+#~ msgstr "Molekyldynamik (600 K)"
+
+#, fuzzy
+#~ msgid "Fragment…"
+#~ msgstr "Infoga fragment"
 
 #, fuzzy
 #~ msgid "Filename"

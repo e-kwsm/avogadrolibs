@@ -1909,7 +1909,6 @@ msgstr "Kateak"
 
 #: qtplugins/applycolors/applycolors.cpp:78
 #, fuzzy
-#| msgid "Partial Charge…"
 msgid "By Partial Charge…"
 msgstr "Karga Partziala…"
 
@@ -10159,6 +10158,12 @@ msgstr ""
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Fitxategi guztiak"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Romboedrikoa"
 
 #~ msgid "Layer"
 #~ msgstr "Geruza"

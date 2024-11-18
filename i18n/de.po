@@ -3131,7 +3131,7 @@ msgstr "Atome um Zelle &wickeln"
 
 #: qtplugins/crystal/crystal.cpp:63
 msgid "Rotate to Standard &Orientation"
-msgstr "In Standard&orientierung drehen"
+msgstr "In Standardorientierung drehen"
 
 #: qtplugins/crystal/crystal.cpp:69
 msgid "Scale Cell &Volume…"
@@ -3139,7 +3139,7 @@ msgstr "Zelle auf &Volumen skalieren …"
 
 #: qtplugins/crystal/crystal.cpp:74
 msgid "Build &Supercell…"
-msgstr "&Superzelle bauen …"
+msgstr "Superzelle bauen …"
 
 #: qtplugins/crystal/crystal.cpp:79
 msgid "Reduce Cell (&Niggli)"
@@ -3325,7 +3325,7 @@ msgstr "Dreifach"
 #: qtplugins/insertfragment/insertfragment.cpp:58
 #: qtplugins/networkdatabases/networkdatabases.cpp:42
 msgid "&Import"
-msgstr "&Importieren"
+msgstr "Importieren"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 msgid "Fetch PDB"
@@ -3767,7 +3767,7 @@ msgstr "DNA- / RNA-Fragmente über einen Dialog einfügen."
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 msgid "Molecule…"
-msgstr "Molekül …"
+msgstr "&Molekül …"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 msgid "Crystal…"
@@ -7358,7 +7358,7 @@ msgstr "&Anwenden"
 #. i18n: file: qtplugins/crystal/unitcelldialog.ui:307
 #. i18n: ectx: property (text), widget (QPushButton, revert)
 msgid "&Revert"
-msgstr "zu&rückkehren"
+msgstr "zurückkehren"
 
 #. i18n: file: qtplugins/crystal/unitcelldialog.ui:314
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
@@ -9403,7 +9403,7 @@ msgstr "&Schließen"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:504
 #. i18n: ectx: property (text), widget (QPushButton, push_options)
 msgid "&Options…"
-msgstr "&Optionen …"
+msgstr "Optionen …"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:554
 #. i18n: ectx: property (text), widget (QTableWidget, dataTable)
@@ -10655,6 +10655,12 @@ msgstr ""
 #~ msgid "Error: %1 crashed!"
 #~ msgstr "Fehler: %1 ist abgestürzt!"
 
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhomboedrisch"
+
 #~ msgid "Layer"
 #~ msgstr "Schicht"
 
@@ -10784,7 +10790,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Geometrie optimieren"
+#~ msgstr "Geometrie &optimieren"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -11136,7 +11142,7 @@ msgstr ""
 #~ msgstr "Entferne Atome in äquivalenten Positionen"
 
 #~ msgid "Sy&mmetrize Crystal"
-#~ msgstr "Kristall sy&mmetrisieren"
+#~ msgstr "Kristall symmetrisieren"
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Zelle reduzieren (&Primitiv)"
@@ -12758,7 +12764,7 @@ msgstr ""
 #~ msgstr "Ebene:"
 
 #~ msgid "&Miller Indices:"
-#~ msgstr "&Miller-Indices:"
+#~ msgstr "MIller-Indices"
 
 #~ msgid "Warning: Use non-zero Miller Indices"
 #~ msgstr "Achtung: Nutze Miller-Indices ungleich Null"
@@ -14378,7 +14384,7 @@ msgstr ""
 #~ msgstr "Umbenennen …"
 
 #~ msgid "&Schemes:"
-#~ msgstr "&Schemata:"
+#~ msgstr "Schemata:"
 
 #~ msgid "&DPI:"
 #~ msgstr "&DPI:"
@@ -14509,7 +14515,7 @@ msgstr ""
 #~ msgstr "Animationsgeschwindigkeit gesetzt durch Frequenz"
 
 #~ msgid "Display force &vectors"
-#~ msgstr "Kraft&vektoren anzeigen"
+#~ msgstr "Kraftvektoren anzeigen"
 
 #~ msgid "&Normalize displacements"
 #~ msgstr "Ablösungen &Normalisieren"

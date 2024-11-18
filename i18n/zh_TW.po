@@ -3566,7 +3566,7 @@ msgstr ""
 #: qtplugins/hydrogens/hydrogens.cpp:21
 #, fuzzy
 msgid "&Adjust Hydrogens"
-msgstr "自動加上氫原子 (&A)"
+msgstr "自動加上氫原子"
 
 #: qtplugins/hydrogens/hydrogens.cpp:27 qtplugins/openbabel/openbabel.cpp:72
 msgid "Add Hydrogens"
@@ -3575,7 +3575,7 @@ msgstr "加上氫"
 #: qtplugins/hydrogens/hydrogens.cpp:32
 #, fuzzy
 msgid "Remove E&xtra Hydrogens"
-msgstr "移除氫 (&X)"
+msgstr "移除氫"
 
 #: qtplugins/hydrogens/hydrogens.cpp:37
 msgid "&Remove All Hydrogens"
@@ -3588,7 +3588,7 @@ msgstr ""
 #: qtplugins/hydrogens/hydrogens.cpp:57
 #, fuzzy
 msgid "&Hydrogens"
-msgstr "氫 (&H)"
+msgstr "氫"
 
 #: qtplugins/hydrogens/hydrogens.h:24
 msgid "Hydrogens"
@@ -4135,7 +4135,7 @@ msgstr "分析 (&A)"
 #: qtplugins/propertytables/propertytables.cpp:86
 #: qtplugins/symmetry/symmetry.cpp:80
 msgid "&Properties"
-msgstr "性質 (&P)"
+msgstr "性質"
 
 #: qtplugins/molecularproperties/molecularproperties.h:36
 msgid "Molecular Properties"
@@ -5524,7 +5524,7 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:127
 msgid "&Select"
-msgstr "選取 (&S)"
+msgstr "選取"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
@@ -9873,6 +9873,11 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgstr "部份電荷"
 
 #, fuzzy
+#~| msgid "Animation"
+#~ msgid "Animation Tool"
+#~ msgstr "動畫"
+
+#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "幾何結構"
 
@@ -9891,6 +9896,10 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #, fuzzy
 #~ msgid "Select Water…"
 #~ msgstr "原子指數"
+
+#, fuzzy
+#~ msgid "&Copy"
+#~ msgstr "全部複製"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9922,6 +9931,11 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Fragment…"
 #~ msgstr "片斷..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "DFT Functional:"
+
 #~ msgid "Other..."
 #~ msgstr "其他..."
 
@@ -9948,6 +9962,12 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "所有檔案"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "菱形晶系"
 
 #, fuzzy
 #~| msgid "Molecule"

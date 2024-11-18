@@ -10014,8 +10014,16 @@ msgstr ""
 #~ msgstr "Distància"
 
 #, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Index d'àtoms"
+
+#, fuzzy
+#~ msgid "&Copy"
+#~ msgstr "Copia-ho tot"
+
+#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
-#~ msgstr "Massa molecular (g/mol):"
+#~ msgstr "Massa molecular (g/mol)"
 
 #~ msgid "Chemical Formula:"
 #~ msgstr "Formula química:"
@@ -10043,6 +10051,11 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Fragment..."
 
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "Funció DFT:"
+
 #~ msgid "Other..."
 #~ msgstr "Altre..."
 
@@ -10069,6 +10082,12 @@ msgstr ""
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Tots els fitxers"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Romboèdric"
 
 #, fuzzy
 #~| msgid "Molecule"
@@ -10196,7 +10215,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Optimitza Geometria"
+#~ msgstr "&Optimitza Geometria"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -10436,7 +10455,7 @@ msgstr ""
 #~ "una restricció de torsió"
 
 #~ msgid "&Crystallography"
-#~ msgstr "&Cristal·lografia"
+#~ msgstr "Cristal·lografia"
 
 #~ msgid "&Length Unit"
 #~ msgstr "Unitat de &longitud"
@@ -11031,7 +11050,7 @@ msgstr ""
 #~ msgstr "RMN"
 
 #~ msgid "&NMR Spectra Settings"
-#~ msgstr "Paràmetres espectre RM&N"
+#~ msgstr "Paràmetres espectre RMN"
 
 #~ msgctxt "Density of States"
 #~ msgid "DOS"
@@ -13592,7 +13611,7 @@ msgstr ""
 #~ "hauria de ser suficient."
 
 #~ msgid "Find &double bonds"
-#~ msgstr "Cerca enllaços &dobles"
+#~ msgstr "Cerca enllaços dobles"
 
 #~ msgid "Display visual cues"
 #~ msgstr "Mostra la senyal visual"

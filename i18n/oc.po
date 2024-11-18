@@ -9810,12 +9810,34 @@ msgstr ""
 #~ msgstr "eV"
 
 #, fuzzy
+#~ msgid "Partial Charge"
+#~ msgstr "Coloriar segon la carga parciala"
+
+#, fuzzy
+#~| msgid "Animation"
+#~ msgid "Animation Tool"
+#~ msgstr "Animacion"
+
+#, fuzzy
+#~ msgid "By Atomic Index"
+#~ msgstr "Numèro de l'atòm"
+
+#, fuzzy
+#~ msgid "By Distance"
+#~ msgstr "Distància"
+
+#, fuzzy
 #~ msgid "Select Water…"
 #~ msgstr "Numèro de l'atòm"
 
 #, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Copiar tot"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Molecule Name:"
+#~ msgstr "Molecula"
 
 #~ msgid "Chemical Formula:"
 #~ msgstr "Formula quimica :"
@@ -9860,6 +9882,11 @@ msgstr ""
 #, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Nom de l'element"
+
+#, fuzzy
+#~| msgid "Dihedral:"
+#~ msgid "octahedral"
+#~ msgstr "Dièdre :"
 
 #, fuzzy
 #~| msgid "Molecule"

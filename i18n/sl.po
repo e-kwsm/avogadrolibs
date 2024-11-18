@@ -10119,6 +10119,11 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ "Desni gumb miške: \tS klikom je mogoče povleči in premakniti pogled.\n"
 #~ "Dvojni klik: \tPonastavi pogled."
 
+#, fuzzy
+#~| msgid "Animation"
+#~ msgid "Animation Tool"
+#~ msgstr "Animacija"
+
 # Orodje za krmarjenje (F9)\n
 # \n
 # Levi gumb miške: \tS klikom in vlečenjem se pogled zavrti.\n
@@ -10242,6 +10247,10 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgstr "Ime datoteke:"
 
 #, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "Naloži datoteko"
+
+#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "KrmarjenjeSkok navzgor"
 
@@ -10256,6 +10265,12 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Vse datoteke"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Romboedrični"
 
 #, fuzzy
 #~| msgid "Molecule"
