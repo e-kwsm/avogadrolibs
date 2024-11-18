@@ -1356,6 +1356,7 @@ msgstr ""
 
 #: qtgui/rwmolecule.cpp:257
 #, fuzzy
+#| msgid "Change"
 msgid "Change Atom Layer"
 msgstr "改變"
 

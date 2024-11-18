@@ -1354,8 +1354,10 @@ msgid "Change Atom Color"
 msgstr ""
 
 #: qtgui/rwmolecule.cpp:257
+#, fuzzy
+#| msgid "Change"
 msgid "Change Atom Layer"
-msgstr ""
+msgstr "Ændr"
 
 #: qtgui/rwmolecule.cpp:273
 msgid "Add Bond"
