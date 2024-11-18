@@ -1239,7 +1239,6 @@ msgstr "非共价的"
 
 #: qtgui/layermodel.cpp:156
 #, fuzzy
-#| msgid "QTAIM"
 msgctxt "quantum theory of atoms in molecules"
 msgid "QTAIM"
 msgstr "QTAIM（分子中原子的量子论）"
