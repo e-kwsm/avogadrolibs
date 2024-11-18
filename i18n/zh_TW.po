@@ -3458,7 +3458,7 @@ msgstr "加上氫"
 #: qtplugins/hydrogens/hydrogens.cpp:32
 #, fuzzy
 msgid "Remove E&xtra Hydrogens"
-msgstr "移除氫"
+msgstr "移除氫 (&X)"
 
 #: qtplugins/hydrogens/hydrogens.cpp:37
 msgid "&Remove All Hydrogens"
