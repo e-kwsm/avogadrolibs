@@ -9333,6 +9333,7 @@ msgstr "Ĉu nulo ĉe Fermi?"
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:81
 #. i18n: ectx: property (text), widget (QLabel, label)
 #, fuzzy
+#| msgid "Num k-points connecting special k-points:"
 msgid "# of k-points connecting special k-points:"
 msgstr "Nombro de k-punktoj ligantaj specialajn k-punktojn:"
 
