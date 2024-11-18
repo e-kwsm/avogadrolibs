@@ -5167,8 +5167,10 @@ msgid "Space group features for crystals."
 msgstr "Karakteristike svemirske grupe za kristale."
 
 #: qtplugins/spectra/spectra.cpp:29
+#, fuzzy
+#| msgid "Spectra"
 msgid "Plot Spectra…"
-msgstr ""
+msgstr "Спектар"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
