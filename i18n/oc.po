@@ -7658,8 +7658,10 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_7)
+#, fuzzy
+#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr ""
+msgstr "Minimum :"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:115
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7678,8 +7680,10 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_8)
+#, fuzzy
+#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr ""
+msgstr "Minimum :"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:189
 #. i18n: ectx: property (text), widget (QLabel, label_13)
@@ -7688,8 +7692,10 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:216
 #. i18n: ectx: property (text), widget (QLabel, label_27)
+#, fuzzy
+#| msgid "Threshold:"
 msgid "Peak Threshold:"
-msgstr ""
+msgstr "Sulhet :"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:224
 #. i18n: ectx: attribute (title), widget (QWidget, tab_appearance)
@@ -8098,6 +8104,7 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:321
 #. i18n: ectx: property (text), widget (QLabel, typeLabel)
 #, fuzzy
+#| msgid "Type"
 msgid "Type:"
 msgstr "Tipe :"
 
@@ -8470,19 +8477,6 @@ msgstr ""
 #~ msgstr "Anullar"
 
 #, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nom de l'element"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Molecula"
-
-#, fuzzy
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS"
 
@@ -8521,16 +8515,9 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "Angle %1"
 
-#, fuzzy
-#~ msgid "Angle"
-#~ msgstr "Angle :"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
 #~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
