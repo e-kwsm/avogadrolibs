@@ -11650,9 +11650,8 @@ msgstr ""
 #~ msgstr "Partiell ladning"
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
-#~ msgstr "Optimiser geometri"
+#~ msgstr "Geometri"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
