@@ -4485,6 +4485,7 @@ msgstr "Rantaian NH"
 
 #: qtplugins/propertytables/propertymodel.cpp:458
 #, fuzzy
+#| msgid "Structure"
 msgid "Secondary Structure"
 msgstr "Struktur"
 
