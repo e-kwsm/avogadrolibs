@@ -9156,11 +9156,6 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgstr "Цвят по частичен заряд"
 
 #, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Анимация"
-
-#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "Oптимизиране на геометрията"
 
