@@ -7668,8 +7668,10 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_7)
+#, fuzzy
+#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
-msgstr ""
+msgstr "Minimum:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:82
 #. i18n: ectx: property (text), widget (QLabel, label_9)
@@ -7688,8 +7690,10 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:123
 #. i18n: ectx: property (text), widget (QLabel, label_8)
+#, fuzzy
+#| msgid "Minimum:"
 msgid "Y-Axis Minimum:"
-msgstr ""
+msgstr "Minimum:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
@@ -8453,9 +8457,8 @@ msgstr ""
 #~ msgstr "Van der Waals"
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
-#~ msgstr "Optimiser geometri"
+#~ msgstr "Geometri"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
