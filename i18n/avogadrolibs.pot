@@ -5337,7 +5337,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, openPdbFileButton)
 #. i18n: file: qtplugins/apbs/apbsdialog.ui:142
 #. i18n: ectx: property (text), widget (QPushButton, openPqrFileButton)
-msgid "..."
+msgid "…"
 msgstr ""
 
 #. i18n: file: qtplugins/apbs/apbsdialog.ui:67
@@ -5532,7 +5532,7 @@ msgstr ""
 msgid ""
 "<html><head/><body><p>Specification of format. Each character indicates a "
 "value to write per atom:</p><p><span style=\" font-weight:600;\">#</span> - "
-"Atom index (1, 2, ..., numAtoms)<br/><span style=\" font-weight:600;\">Z</"
+"Atom index (1, 2, …, numAtoms)<br/><span style=\" font-weight:600;\">Z</"
 "span> - Atomic number (e.g. \"6\" for carbon)<br/><span style=\" font-"
 "weight:600;\">G</span> - GAMESS-style atomic number (e.g. \"6.0\" for "
 "carbon)<br/><span style=\" font-weight:600;\">N</span> - Element name (e.g. "
@@ -7435,7 +7435,7 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:38
 #. i18n: ectx: property (text), widget (QPushButton, push_loadSpectra)
-msgid "&Load data..."
+msgid "&Load data…"
 msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:45
@@ -7507,7 +7507,7 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:252
 #. i18n: ectx: property (text), widget (QPushButton, push_import)
-msgid "&Import..."
+msgid "&Import…"
 msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:268
@@ -7518,7 +7518,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, push_colorCalculated)
 #. i18n: file: qtplugins/spectra/spectradialog.ui:388
 #. i18n: ectx: property (text), widget (QPushButton, push_colorBackground)
-msgid "Set Color..."
+msgid "Set Color…"
 msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:288
@@ -7528,7 +7528,7 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:336
 #. i18n: ectx: property (text), widget (QPushButton, push_export)
-msgid "&Export..."
+msgid "&Export…"
 msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:362
