@@ -5199,10 +5199,8 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:383
 #: qtplugins/spectra/spectradialog.cpp:398
 #: qtplugins/spectra/spectradialog.cpp:411
-#, fuzzy
-#| msgid "Density"
 msgid "Intensity"
-msgstr "Denso"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:368
 msgid "NMR Spectra"
