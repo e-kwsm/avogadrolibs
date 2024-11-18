@@ -1459,8 +1459,10 @@ msgid "Change Bond Label"
 msgstr ""
 
 #: qtgui/rwmolecule.h:266
+#, fuzzy
+#| msgid "Selection"
 msgid "Change Selection"
-msgstr ""
+msgstr "Zaznaczenie"
 
 #: qtgui/rwmolecule_undo.h:31
 msgid "Modify Molecule"
