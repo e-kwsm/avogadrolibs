@@ -4067,6 +4067,7 @@ msgstr ""
 
 #: qtplugins/overlayaxes/overlayaxes.cpp:237
 #, fuzzy
+#| msgid "Reference"
 msgid "Reference Axes"
 msgstr "參考"
 
