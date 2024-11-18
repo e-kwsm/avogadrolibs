@@ -9262,9 +9262,8 @@ msgstr ""
 #~ msgstr "Van der Waals"
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
-#~ msgstr "Optimiser geometri"
+#~ msgstr "Geometri"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
