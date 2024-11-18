@@ -5180,8 +5180,9 @@ msgstr ""
 #: qtplugins/qtaim/qtaimextension.cpp:68 qtplugins/spectra/spectra.cpp:43
 #: qtplugins/surfaces/orbitals.cpp:117 qtplugins/surfaces/surfaces.cpp:505
 #: qtplugins/symmetry/symmetry.cpp:81 qtplugins/vibrations/vibrations.cpp:44
+#, fuzzy
 msgid "&Analyze"
-msgstr ""
+msgstr "分析 (&A)"
 
 #: qtplugins/molecularproperties/molecularproperties.cpp:60
 #: qtplugins/propertytables/propertytables.cpp:86
