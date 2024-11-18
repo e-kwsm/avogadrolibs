@@ -4968,7 +4968,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:586
 #, fuzzy
-#| msgid "Vibrational Modes"
 msgid "Vibrational Spectra"
 msgstr "Vibrational Spectra"
 
