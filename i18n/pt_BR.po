@@ -1271,7 +1271,6 @@ msgstr "Não-Covalente"
 
 #: qtgui/layermodel.cpp:156
 #, fuzzy
-#| msgid "QTAIM"
 msgctxt "quantum theory of atoms in molecules"
 msgid "QTAIM"
 msgstr "QTAIM"
