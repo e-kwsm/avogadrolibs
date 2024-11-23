@@ -8385,7 +8385,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize"
-#~ msgstr "&Oптимизиране на геометрията"
+#~ msgstr "Oптимизиране"
 
 #, fuzzy
 #~ msgid "Filename"
