@@ -2924,7 +2924,7 @@ msgstr ""
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
 msgid "Freeze Selected Atoms"
-msgstr "ا&ختر"
+msgstr "اختر"
 
 #: qtplugins/forcefield/forcefield.cpp:115
 #, fuzzy
