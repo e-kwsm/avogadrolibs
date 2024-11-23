@@ -4766,7 +4766,7 @@ msgstr "ذرة"
 #: qtplugins/propertytables/propertymodel.cpp:637
 #, fuzzy
 msgid "Start Atom"
-msgstr "بدء &الرسوم المتحركة"
+msgstr "بدء الرسوم المتحركة"
 
 #: qtplugins/propertytables/propertymodel.cpp:639
 #, fuzzy
