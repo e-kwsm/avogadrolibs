@@ -8730,7 +8730,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimizacija Geometrije"
+#~ msgstr "Optimizacija Geometrije"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
