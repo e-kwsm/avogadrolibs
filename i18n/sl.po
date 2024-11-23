@@ -11025,6 +11025,22 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Oblika"
 
+<<<<<<< HEAD
+||||||| parent of 87bfbb5ef6c7 (i18n/sl.po)
+#~ msgid "a"
+#~ msgstr "a"
+
+#~ msgid "b"
+#~ msgstr "b"
+
+#~ msgid "c"
+#~ msgstr "C"
+
+=======
+#~ msgid "c"
+#~ msgstr "C"
+
+>>>>>>> 87bfbb5ef6c7 (i18n/sl.po)
 #~ msgid "Loop"
 #~ msgstr "Zanka"
 
