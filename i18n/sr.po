@@ -9786,10 +9786,6 @@ msgstr ""
 #~ msgstr "Pokazatelj atoma"
 
 #, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Udaljenost:"
-
-#, fuzzy
 #~| msgid "Select by Atom Index..."
 #~ msgid "Select Water…"
 #~ msgstr "Biraj prema Atom indeksu ..."
