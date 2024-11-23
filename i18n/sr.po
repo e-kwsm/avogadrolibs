@@ -9580,10 +9580,6 @@ msgstr ""
 #~ msgid "Edit Unit Cell..."
 #~ msgstr "Izmeni ćeliju jedinice ..."
 
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&ГАМЕСС-УК..."
-
 #~ msgid "&Import From PQR"
 #~ msgstr "&Uvezi iz PQR -a"
 
@@ -9695,9 +9691,6 @@ msgstr ""
 #~ msgid "Torsion"
 #~ msgstr "Увијање"
 
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Енергија (kJ/mol)"
-
 #~ msgid "Yes"
 #~ msgstr "Да"
 
@@ -9732,7 +9725,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Прилагоди геометрију"
+#~ msgstr "Прилагоди геометрију"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
