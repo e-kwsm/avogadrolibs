@@ -9240,27 +9240,9 @@ msgstr ""
 #~ msgstr "&Analytický"
 
 #, fuzzy
-#~ msgid "&Import..."
-#~ msgstr "&Import..."
-
-#, fuzzy
-#~| msgid "Selected Colors"
-#~ msgid "Set Color..."
-#~ msgstr "Vybrané Farby..."
-
-#, fuzzy
-#~ msgid "&Export..."
-#~ msgstr "&Export..."
-
-#, fuzzy
 #~| msgid "Color by Partial Charge"
 #~ msgid "Partial Charge"
 #~ msgstr "Farba podľa čiastkového náboja"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animácia"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
@@ -9271,35 +9253,8 @@ msgstr ""
 #~ msgstr "Vzdialenosť"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "V:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Zlomok..."
-
-#, fuzzy
-#~| msgid "Other..."
-#~ msgid "Other..."
-#~ msgstr "Ďaľšie..."
-
-#, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Nesprávny názov súboru"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigovať"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigovať"
 
 #, fuzzy
 #~ msgid "Element & Ordinal"
@@ -9309,48 +9264,15 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "Všetky súbory"
 
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&HRY"
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Pridať vodíky pre pH..."
-
 #~ msgid "Atom Properties..."
 #~ msgstr "Vlastnosti atómu..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Vlastnosti väzieb..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Vlastnosti uhla..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Vlastnosti krútenia..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Vlastnosti molekuly..."
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Vložiť Zlomok"
 
 #~ msgid "Theory:"
 #~ msgstr "Teória:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Vzdialenosť (1->2): %L1 %2"
+#~ msgstr "Vzdialenosť: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Otočný"
