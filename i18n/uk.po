@@ -13414,17 +13414,8 @@ msgstr "Ваші електронні листи"
 #~ msgid "Raman Intensities"
 #~ msgstr "Раманівські інтенсивності"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "Створити ЕПФ"
 
 #~ msgid "None (CI)"
 #~ msgstr "Немає (CI)"
