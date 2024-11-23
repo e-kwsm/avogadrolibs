@@ -9611,18 +9611,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Истакните нарочите функције које одговарају шаблону ПАМЕТНИХ."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Унунтријум"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Унунпентијум"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Унунсептијум"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Унуноктијум"
-
 #~ msgid "Engines"
 #~ msgstr "Погони"
 
