@@ -8826,11 +8826,24 @@ msgstr ""
 #, fuzzy
 #~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
-#~ msgstr "Geometri"
+#~ msgstr "Optimiser geometri"
+
+#, fuzzy
+#~ msgid "By Atomic Index"
+#~ msgstr "Atomnummer"
 
 #, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Avstand(er):"
+
+#, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Atomnummer"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Molecule Name:"
+#~ msgstr "Molekyl"
 
 #~ msgid "Number of Atoms:"
 #~ msgstr "Antall atomer:"
@@ -8843,6 +8856,15 @@ msgstr ""
 #~ msgid "Optimize"
 #~ msgstr "Optimalisering"
 
+#, fuzzy
+#~ msgid "In."
+#~ msgstr "Inn:"
+
+#, fuzzy
+#~| msgid "Fragment..."
+#~ msgid "Fragment…"
+#~ msgstr "Fragment …"
+
 #~ msgid "Download Plugins..."
 #~ msgstr "Laster ned programtillegg …"
 
@@ -8852,8 +8874,27 @@ msgstr ""
 #~ msgid "Connection failed"
 #~ msgstr "Tilkobling mislyktes"
 
+#, fuzzy
+#~ msgid "Filename"
+#~ msgstr "Filnavn:"
+
 #~ msgid "&Hostname:"
 #~ msgstr "&Vertsnavn:"
+
+#, fuzzy
+#~ msgid "Navigate Back"
+#~ msgstr "Naviger"
+
+#, fuzzy
+#~ msgid "Navigate Forward"
+#~ msgstr "Naviger"
+
+#~ msgid "Files of type:"
+#~ msgstr "Filer av type:"
+
+#, fuzzy
+#~ msgid "Element & Ordinal"
+#~ msgstr "Grunnstoff"
 
 #, fuzzy
 #~ msgid "All files (*);;"
@@ -8862,6 +8903,11 @@ msgstr ""
 #, fuzzy
 #~ msgid "Layer"
 #~ msgstr "Spiller"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Insert Molecule..."
+#~ msgstr "Molekyl"
 
 #, fuzzy
 #~| msgid "Generating 3D molecule..."
@@ -8891,6 +8937,14 @@ msgstr ""
 #~ msgstr "Vinkelegenskaper …"
 
 #, fuzzy
+#~ msgid "Torsion Properties..."
+#~ msgstr "Atomegenskaper"
+
+#, fuzzy
+#~ msgid "Residue Properties..."
+#~ msgstr "Molekylegenskaper..."
+
+#, fuzzy
 #~ msgid "Symmetry..."
 #~ msgstr "Symmetri …"
 
@@ -8913,6 +8967,15 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "Vinkel %1"
 
+#, fuzzy
+#~ msgctxt "Degree symbol"
+#~ msgid "Torsion %1"
+#~ msgstr "Torsion"
+
+#, fuzzy
+#~ msgid "Energy (kJ/mol)"
+#~ msgstr "Energi (eV)"
+
 #~ msgid "Yes"
 #~ msgstr "Ja"
 
@@ -8922,6 +8985,14 @@ msgstr ""
 #, fuzzy
 #~ msgid "Import"
 #~ msgstr "Importer"
+
+#, fuzzy
+#~ msgid "Insert SMILES fragment:"
+#~ msgstr "Sett inn fragment"
+
+#, fuzzy
+#~ msgid "Insert Crystal"
+#~ msgstr "&Krystallografi"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -8970,6 +9041,9 @@ msgstr ""
 
 #~ msgid "Van der Waals Spheres"
 #~ msgstr "Van der Waals-kuler"
+
+#~ msgid "%1/%2"
+#~ msgstr "%1%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Legger til .avi-utvidelse"
@@ -9079,6 +9153,12 @@ msgstr ""
 
 #~ msgid "Gaussian Not Installed."
 #~ msgstr "Gaussian er ikke installert."
+
+#~ msgid "&Dalton..."
+#~ msgstr "&Dalton …"
+
+#~ msgid "MOPAC Running."
+#~ msgstr "MOPAC kjører."
 
 #~ msgid ""
 #~ "MOPAC is already running. Wait until the previous calculation is finished."
