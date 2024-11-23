@@ -13053,7 +13053,7 @@ msgstr ""
 #~ "hauria de ser suficient."
 
 #~ msgid "Find &double bonds"
-#~ msgstr "Cerca enllaços dobles"
+#~ msgstr "Cerca enllaços &dobles"
 
 #~ msgid "Display visual cues"
 #~ msgstr "Mostra la senyal visual"
