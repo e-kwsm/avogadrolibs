@@ -12231,9 +12231,6 @@ msgstr ""
 #~ msgid "By Atomic Index"
 #~ msgstr "By Atomic Index"
 
-#~ msgid "By Distance"
-#~ msgstr "By Distance"
-
 #~ msgid "Select Water…"
 #~ msgstr "Select Water…"
 
