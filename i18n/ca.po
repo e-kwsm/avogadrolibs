@@ -9447,7 +9447,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "&Copy"
-#~ msgstr "Copia-ho tot"
+#~ msgstr "&Copia-ho tot"
 
 #, fuzzy
 #~| msgid "IUPAC Molecule Name:"
