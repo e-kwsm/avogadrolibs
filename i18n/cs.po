@@ -9676,7 +9676,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Přidat &jednotkovou buňku"
+#~ msgstr "Přidat jednotkovou buňku"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
