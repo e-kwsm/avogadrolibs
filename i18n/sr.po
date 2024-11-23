@@ -9786,11 +9786,6 @@ msgstr ""
 #~ msgstr "Pokazatelj atoma"
 
 #, fuzzy
-#~| msgid "Select by Atom Index..."
-#~ msgid "Select Water…"
-#~ msgstr "Biraj prema Atom indeksu ..."
-
-#, fuzzy
 #~| msgid "Copy"
 #~ msgid "&Copy"
 #~ msgstr "Kopiraj"
@@ -9818,10 +9813,6 @@ msgstr ""
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Оптимизација"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "u:"
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS ulaz (*.in)"
