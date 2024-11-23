@@ -8637,9 +8637,6 @@ msgstr ""
 #~ msgid "Color by Element (carbon = grey, oxygen = red, ...)."
 #~ msgstr "Väri alkuaineen mukaan (hiili = harmaa, happi = punainen, ...)"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoktium"
-
 #~ msgid "Axes"
 #~ msgstr "Akselit"
 

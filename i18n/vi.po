@@ -8879,18 +8879,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Tô màu theo mẫu SMARTS"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtri"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpenti"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununsepti"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununocti"
-
 #~ msgid "Engines"
 #~ msgstr "Động cơ"
 
