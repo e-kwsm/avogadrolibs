@@ -9429,7 +9429,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Ottimizza la geometria"
+#~ msgstr "Geometria"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
