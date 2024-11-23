@@ -8875,11 +8875,28 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Tilføj enhedscelle"
+#~ msgstr "Tilføj &enhedscelle"
+
+#, fuzzy
+#~ msgid "By Atomic Index"
+#~ msgstr "Atom nummer"
+
+#, fuzzy
+#~ msgid "By Distance"
+#~ msgstr "Afstand"
+
+#, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Atom nummer"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Molecule Name:"
+#~ msgstr "Molekyle"
 
 #, fuzzy
 #~ msgid "Optimize"
-#~ msgstr "Optimer"
+#~ msgstr "&Optimer geometri"
 
 #, fuzzy
 #~| msgid "Fragment..."
@@ -8896,8 +8913,46 @@ msgstr ""
 #~ msgstr "Filnavn:"
 
 #, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "Render protein sekundære struktur"
+
+#, fuzzy
+#~ msgid "Navigate Back"
+#~ msgstr "Navigér"
+
+#, fuzzy
+#~ msgid "Navigate Forward"
+#~ msgstr "Navigér"
+
+#, fuzzy
+#~ msgid "Element & Ordinal"
+#~ msgstr "Elementnavn"
+
+#, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Alle filer"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhombohedral"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Insert Molecule..."
+#~ msgstr "Molekyle"
+
+#, fuzzy
+#~ msgid "Generating 3D molecule..."
+#~ msgstr "Intet molekylesæt"
+
+#, fuzzy
+#~ msgid "Crystal..."
+#~ msgstr "Indsæt krystal"
+
+#~ msgid "SMILES..."
+#~ msgstr "SMILES,,,"
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8924,7 +8979,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Afstand: %L1 Å"
+#~ msgstr "Afstand (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Roterbar"
@@ -8960,7 +9015,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energi (kJ/mol)"
+#~ msgstr "Energi (eV)"
 
 #~ msgid "Yes"
 #~ msgstr "Ja"
@@ -8994,7 +9049,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Optimer geometri"
+#~ msgstr "&Optimer geometri"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -9361,6 +9416,9 @@ msgstr ""
 #~ msgid "Conformer Properties..."
 #~ msgstr "Konformationsegenskaber..."
 
+#~ msgid "Python Terminal"
+#~ msgstr "Python terminal"
+
 #~ msgid "pythonTerminalDock"
 #~ msgstr "pythonterminal"
 
@@ -9526,6 +9584,9 @@ msgstr ""
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Vælg atomer, bindinger, restprodukter..."
 
+#~ msgid "GLSL Shaders..."
+#~ msgstr "GLSL shaders..."
+
 #~ msgid "Intensity (arb. units)"
 #~ msgstr "Intensitet (arb. enheder)"
 
@@ -9599,6 +9660,9 @@ msgstr ""
 
 #~ msgid "Load Spectral Data"
 #~ msgstr "Indlæs spektrum data:"
+
+#~ msgid "Windows Bitmap"
+#~ msgstr "Windows-bitmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Gem spektrumbillede"
@@ -9922,6 +9986,9 @@ msgstr ""
 
 #~ msgid "7 - Gaussian smearing"
 #~ msgstr "Gaussisk udtværing"
+
+#~ msgid "Gaussian Input"
+#~ msgstr "Gaussian input"
 
 #~ msgid "&Gaussian Width:"
 #~ msgstr "&Gauss-bredde:"
