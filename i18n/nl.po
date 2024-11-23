@@ -8564,11 +8564,6 @@ msgstr ""
 #~ msgstr "gedeeltelijke verandering"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
-
-#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "Geometrie"
 
