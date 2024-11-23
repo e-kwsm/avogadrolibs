@@ -11683,17 +11683,8 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Intensidades Raman"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "Construir EFP"
 
 #~ msgid "None (CI)"
 #~ msgstr "Nenhum (CI)"
