@@ -10550,10 +10550,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Všetky súbory"
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Vlastnosti atómu..."
+#~ msgstr "Všetky súbory (*);;"
 
 #~ msgid "Theory:"
 #~ msgstr "Teória:"
@@ -11242,9 +11239,6 @@ msgstr ""
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO Optimalizácia"
-
-#~ msgid "Make EFP"
-#~ msgstr "Realizácia EFP"
 
 #~ msgid "None (CI)"
 #~ msgstr "Žiadny (CI)"
