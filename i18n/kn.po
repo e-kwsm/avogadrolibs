@@ -8306,7 +8306,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Filename"
-#~ msgstr "ಕಡತ(&F)"
+#~ msgstr "ಕಡತ"
 
 #~ msgid "Cancel"
 #~ msgstr "ರದ್ದುಮಾಡು"
