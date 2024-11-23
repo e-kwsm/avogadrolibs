@@ -8493,18 +8493,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "اللون عن طريق الأنماط الذكية"
 
-#~ msgid "Ununtrium"
-#~ msgstr "أنون-تريوم"
-
-#~ msgid "Ununpentium"
-#~ msgstr "أنون-بينتيوم"
-
-#~ msgid "Ununseptium"
-#~ msgstr "أنون-سيبتيوم"
-
-#~ msgid "Ununoctium"
-#~ msgstr "أنون-أوكتيوم"
-
 #~ msgid "Engines"
 #~ msgstr "المحركات"
 
