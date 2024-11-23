@@ -9187,7 +9187,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Oптимизиране на геометрията"
+#~ msgstr "Геометрията"
 
 #, fuzzy
 #~ msgid "By Distance"

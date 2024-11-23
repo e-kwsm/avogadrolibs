@@ -9185,7 +9185,7 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Optimera geometri"
+#~ msgstr "Geometri"
 
 #, fuzzy
 #~ msgid "By Distance"
