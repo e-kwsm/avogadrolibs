@@ -8507,7 +8507,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Optimera geometri"
+#~ msgstr "Geometri"
 
 #, fuzzy
 #~ msgid "By Distance"
