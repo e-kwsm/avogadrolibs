@@ -3026,7 +3026,7 @@ msgstr "Atome um Zelle &wickeln"
 
 #: qtplugins/crystal/crystal.cpp:63
 msgid "Rotate to Standard &Orientation"
-msgstr "In Standardorientierung drehen"
+msgstr "In Standard&orientierung drehen"
 
 #: qtplugins/crystal/crystal.cpp:69
 msgid "Scale Cell &Volume…"
