@@ -8346,7 +8346,6 @@ msgstr ""
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:361
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "From Clipboard"
 msgstr "из буфера обмена"
 
