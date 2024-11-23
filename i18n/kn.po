@@ -9155,9 +9155,6 @@ msgstr ""
 #~ msgid "Ring"
 #~ msgstr "ರಿಂಗ್"
 
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgctxt "low resolution"
 #~ msgid "Low"
 #~ msgstr "ಕಡಿಮೆ"
