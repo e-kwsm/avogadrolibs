@@ -1988,7 +1988,7 @@ msgstr ""
 #: qtplugins/bonding/bonding.cpp:32
 #, fuzzy
 msgid "Bond Selected Atoms"
-msgstr "ا&ختر"
+msgstr "اختر"
 
 #: qtplugins/bonding/bonding.cpp:61 qtplugins/centroid/centroid.cpp:44
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:34
