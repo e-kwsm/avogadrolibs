@@ -12290,29 +12290,8 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Intensità Raman"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
-#~ msgid "None (CI)"
-#~ msgstr "None (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
+#~ msgid "Make EFP"
+#~ msgstr "Costruisci EFP"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Tipo di SCF:"
@@ -12322,51 +12301,6 @@ msgstr ""
 
 #~ msgid "Exec Type:"
 #~ msgstr "Tipo Di Eseguibile:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
-
-#~ msgid "Occupation Restricted Multiple Active Space"
-#~ msgstr "Occupation Restricted Multiple Active Space"
-
-#~ msgid "CI Singles"
-#~ msgstr "CI Singles"
-
-#~ msgid "Full Second Order CI"
-#~ msgstr "Full Second Order CI"
-
-#~ msgid "General CI"
-#~ msgstr "General CI"
-
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
-#~ msgid "LCCD: Linearized CC"
-#~ msgstr "LCCD: Linearized CC"
-
-#~ msgid "CCD: CC with Doubles"
-#~ msgstr "CCD: CC with Doubles"
-
-#~ msgid "CCSD: CC with Singles and Doubles"
-#~ msgstr "CCSD: CC with Singles and Doubles"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Esecuzione Normale"
