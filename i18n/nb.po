@@ -8725,9 +8725,6 @@ msgstr ""
 #~ msgid "Van der Waals Spheres"
 #~ msgstr "Van der Waals-kuler"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Legger til .avi-utvidelse"
 
@@ -8839,12 +8836,6 @@ msgstr ""
 
 #~ msgid "Gaussian Not Installed."
 #~ msgstr "Gaussian er ikke installert."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton …"
-
-#~ msgid "MOPAC Running."
-#~ msgstr "MOPAC kjører."
 
 #~ msgid ""
 #~ "MOPAC is already running. Wait until the previous calculation is finished."
