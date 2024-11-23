@@ -8657,11 +8657,6 @@ msgstr ""
 #~ msgstr "Copia-ho tot"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nom de la molècula IUPAC:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Massa molecular (g/mol)"
 
@@ -8678,18 +8673,9 @@ msgstr ""
 #~ msgstr "PER FER"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Mida del salt:"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Optimització"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Entrada:"
 
 #, fuzzy
 #~| msgid "Fragment..."
@@ -8702,14 +8688,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Nom de fitxer:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navega"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navega"
 
 #~ msgid "OK"
 #~ msgstr "D'acord"
@@ -8726,17 +8704,8 @@ msgstr ""
 #~ msgstr "Tots els fitxers"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molècula"
-
-#, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "No està configurada la molècula"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -8769,7 +8738,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Distància (1->2): %L1 %2"
+#~ msgstr "Distància: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Angular"
@@ -8787,10 +8756,6 @@ msgstr ""
 #~ "Conformer %1\n"
 #~ "Angle %2"
 #~ msgstr "Estereoisòmer %1"
-
-#, fuzzy
-#~ msgid "Angle"
-#~ msgstr "Angle:"
 
 #, fuzzy
 #~ msgctxt "Degree symbol"
