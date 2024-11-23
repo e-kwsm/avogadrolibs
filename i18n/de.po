@@ -9783,7 +9783,7 @@ msgstr ""
 #~ msgstr "Entferne Atome in äquivalenten Positionen"
 
 #~ msgid "Sy&mmetrize Crystal"
-#~ msgstr "Kristall symmetrisieren"
+#~ msgstr "Kristall sy&mmetrisieren"
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Zelle reduzieren (&Primitiv)"
