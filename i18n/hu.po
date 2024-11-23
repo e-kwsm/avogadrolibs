@@ -9192,7 +9192,7 @@ msgstr "E-mail-címek"
 
 #, fuzzy
 #~ msgid "Angle"
-#~ msgstr "Szög:"
+#~ msgstr "Szög"
 
 #, fuzzy
 #~ msgctxt "Degree symbol"
@@ -9207,7 +9207,7 @@ msgstr "E-mail-címek"
 
 #, fuzzy
 #~ msgid "Torsion"
-#~ msgstr "Torzió %1"
+#~ msgstr "Torzió"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
@@ -9245,11 +9245,7 @@ msgstr "E-mail-címek"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&geometria optimalizáció"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometria optimalizálása"
+#~ msgstr "geometria optimalizáció"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
