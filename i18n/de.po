@@ -11947,7 +11947,7 @@ msgstr ""
 #~ msgstr "Ebene:"
 
 #~ msgid "&Miller Indices:"
-#~ msgstr "MIller-Indices"
+#~ msgstr "&Miller-Indices:"
 
 #~ msgid "Warning: Use non-zero Miller Indices"
 #~ msgstr "Achtung: Nutze Miller-Indices ungleich Null"
