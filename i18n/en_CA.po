@@ -8843,184 +8843,6 @@ msgstr ""
 #~ msgid "YAeHMOP Band Structure"
 #~ msgstr "Load File"
 
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigate"
-
-#~ msgid "OK"
-#~ msgstr "OK"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element name"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "All files"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Rhombohedral"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "No molecule set"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Crystal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Add Hydrogens for pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Atom Properties..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Bond Properties..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Angle Properties..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Torsion Properties..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molecule Properties..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Create Surfaces..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Symmetry"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Insert Fragment..."
-
-#~ msgid "Theory:"
-#~ msgstr "Theory:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Distance (1->2): %L1 %2"
-
-#~ msgid "Rotatable"
-#~ msgstr "Rotatable"
-
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
-#~ msgid "Angle"
-#~ msgstr "Angle"
-
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
-
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energy (kJ/mol)"
-
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
-
-#, fuzzy
-#~ msgid "Input Generators"
-#~ msgstr "Input Generator..."
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Import"
-
-#~ msgid "Insert SMILES"
-#~ msgstr "Insert SMILES"
-
-#~ msgid "Insert SMILES fragment:"
-#~ msgstr "Insert SMILES fragment:"
-
-#~ msgid "Insert Crystal"
-#~ msgstr "Insert Crystal"
-
-#~ msgid "Insert molecular fragments for building larger molecules"
-#~ msgstr "Insert molecular fragments for building larger molecules"
-
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
-
-#~ msgid "Symmetry Properties..."
-#~ msgstr "Symmetry Properties..."
-
-#, fuzzy
-#~ msgid "Optimize geometry"
-#~ msgstr "&Optimise Geometry"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometry Optimization"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Add Hydrogens"
-
-#, fuzzy
-#~ msgid "Stopped"
 #~ msgstr "Stop"
 
 #, fuzzy
@@ -9060,257 +8882,23 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Colour by Residue (amino acid type, hydrophobicity, ..."
 
-#~ msgid "SMARTS Pattern:"
-#~ msgstr "SMARTS Pattern:"
-
-#~ msgid "Highlight Color:"
-#~ msgstr "Highlight Color:"
-
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Colour by SMARTS Pattern"
-
-#~ msgid "Highlight particular features which match a SMARTS pattern."
-#~ msgstr "Highlight particular features which match a SMARTS pattern."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
-#~ msgid "Engines"
-#~ msgstr "Engines"
-
-#~ msgid "Axes"
-#~ msgstr "Axes"
 
 #~ msgid "Renders the x, y, and z axes at the origin"
 #~ msgstr "Renders the x, y and z axes at the origin"
 
-#~ msgid "Renders primitives using Balls (atoms) and Sticks (bonds)"
-#~ msgstr "Renders primitives using Balls (atoms) and Sticks (bonds)"
-
-#~ msgid "Dipole"
-#~ msgstr "Dipole"
-
-#~ msgid "Hydrogen Bond"
-#~ msgstr "Hydrogen Bond"
-
-#~ msgid "Renders hydrogen bonds"
-#~ msgstr "Renders hydrogen bonds"
-
-#~ msgid "Select Atom Labels Color"
-#~ msgstr "Select Atom Labels Color"
-
 #~ msgid "Select Bond Labels Color"
 #~ msgstr "Select Bond Labels Colour"
-
-#~ msgid "Select Bond Labels Font"
-#~ msgstr "Select Bond Labels Font"
-
-#~ msgid "Polygon"
-#~ msgstr "Polygon"
-
-#~ msgid "Renders atoms as tetrahedra, octahedra, and other polygons"
-#~ msgstr "Renders atoms as tetrahedra, octahedra, and other polygons"
-
-#~ msgid "Renders protein backbones as ribbons"
-#~ msgstr "Renders protein backbones as ribbons"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
 
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Renders rings with coloured planes"
 
-#~ msgid "Simple Wireframe"
-#~ msgstr "Simple Wireframe"
-
-#~ msgid "Renders bonds as wires (lines), ideal for large molecules"
-#~ msgstr "Renders bonds as wires (lines), ideal for large molecules"
-
-#~ msgid "Van der Waals Spheres"
-#~ msgstr "Van der Waals Spheres"
-
-#~ msgid "Stick"
-#~ msgstr "Stick"
-
-#~ msgctxt "Electron density isosurface with a cutoff of %1"
-#~ msgid "Electron density, isosurface = %L1"
-#~ msgstr "Electron density, isosurface = %L1"
-
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
-#~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
-#~ msgstr "Renders bonds as wires (lines), ideal for very large (bio)molecules"
-
-#~ msgid "Trajectory files"
-#~ msgstr "Trajectory files"
-
-#~ msgid "DL-POLY HISTORY files"
-#~ msgstr "DL-POLY HISTORY files"
-
-#~ msgid "Open Trajectory File"
-#~ msgstr "Open Trajectory File"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
-#~ msgid "Adding .avi extension"
-#~ msgstr "Adding .avi extension"
-
-#~ msgid "Animation..."
-#~ msgstr "Animation..."
-
-#~ msgid "Cannot read file format of file %1."
-#~ msgstr "Cannot read file format of file %1."
-
-#~ msgid "Read trajectory file %1 failed."
-#~ msgstr "Read trajectory file %1 failed."
-
-#~ msgid "Must specify a valid .avi file name"
-#~ msgstr "Must specify a valid .avi file name"
-
 #~ msgid "GL widget was not correctly initialized in order to save video"
 #~ msgstr "GL widget was not correctly initialised in order to save video"
 
-#~ msgid "Invalid video filename.  Must include full directory path"
-#~ msgstr "Invalid video filename.  Must include full directory path"
-
-#~ msgid ""
-#~ "Invalid video filename.  Must include full directory path and name, "
-#~ "ending with .avi"
-#~ msgstr ""
-#~ "Invalid video filename.  Must include full directory path and name, "
-#~ "ending with .avi"
-
-#~ msgid "Could not determine format from filename: %1"
-#~ msgstr "Could not determine format from filename: %1"
-
-#~ msgid "Animate trajectories, reactions, and vibrations."
-#~ msgstr "Animate trajectories, reactions, and vibrations."
-
-#~ msgid "Cartesian Editor"
-#~ msgstr "Cartesian Editor"
-
-#~ msgid ""
-#~ "No unit cell defined for molecule -- cannot use fractional coordinates."
-#~ msgstr ""
-#~ "No unit cell defined for molecule -- cannot use fractional coordinates."
-
-#~ msgid "Cartesian Editor..."
-#~ msgstr "Cartesian Editor..."
-
-#~ msgid "Cartesian editor"
-#~ msgstr "Cartesian editor"
-
-#~ msgid "Number of atoms: %1"
-#~ msgstr "Number of atoms: %1"
-
-#~ msgid "Number of rotatable bonds: %1"
-#~ msgstr "Number of rotatable bonds: %1"
-
-#~ msgid "Add constraint"
-#~ msgstr "Add constraint"
-
-#~ msgid "Your molecule must contain at least one atom to add a constraint"
-#~ msgstr "Your molecule must contain at least one atom to add a constraint"
-
-#~ msgid ""
-#~ "Your molecule must contain at least two atoms to add a bond constraint"
-#~ msgstr ""
-#~ "Your molecule must contain at least two atoms to add a bond constraint"
-
-#~ msgid ""
-#~ "Your molecule must contain at least three atoms to add an angle constraint"
-#~ msgstr ""
-#~ "Your molecule must contain at least three atoms to add an angle constraint"
-
-#~ msgid ""
-#~ "Your molecule must contain at least four atoms to add a torsion constraint"
-#~ msgstr ""
-#~ "Your molecule must contain at least four atoms to add a torsion constraint"
-
-#~ msgid "&Crystallography"
-#~ msgstr "&Crystallography"
-
-#~ msgid "&Reduce"
-#~ msgstr "&Reduce"
-
-#~ msgid "&Length Unit"
-#~ msgstr "&Length Unit"
-
-#~ msgid "&Angle Unit"
-#~ msgstr "&Angle Unit"
-
-#~ msgid "&Coordinate Display"
-#~ msgstr "&Coordinate Display"
-
-#~ msgid "Coordinate &Preservation"
-#~ msgstr "Coordinate &Preservation"
-
-#~ msgid "&Matrix Display"
-#~ msgstr "&Matrix Display"
-
-#~ msgid "Hide &Editors"
-#~ msgstr "Hide &Editors"
-
-#~ msgid "Show &Editors"
-#~ msgstr "Show &Editors"
-
-#~ msgid "Hide &Property Display"
-#~ msgstr "Hide &Property Display"
-
-#~ msgid "Show &Property Display"
-#~ msgstr "Show &Property Display"
-
-#~ msgctxt "Unit cell lattice"
-#~ msgid "Lattice Type: %1"
-#~ msgstr "Lattice Type: %1"
-
 #~ msgid "Spacegroup: %1"
 #~ msgstr "Space group: %1"
-
-#~ msgid "Unit cell volume: %L1%2"
-#~ msgstr "Unit cell volume: %L1%2"
-
-#~ msgid "Undefined"
-#~ msgstr "Undefined"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Triclinic"
-#~ msgstr "Triclinic"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Monoclinic"
-#~ msgstr "Monoclinic"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Orthorhombic"
-#~ msgstr "Orthorhombic"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Cubic"
-#~ msgstr "Cubic"
-
-#~ msgid "Paste Crystal"
-#~ msgstr "Paste Crystal"
 
 #~ msgid ""
 #~ "Niggli-reduction failed. The input structure's lattice that is confusing "
@@ -9323,81 +8911,23 @@ msgstr ""
 #~ "orders of magnitude smaller than the tolerance) to the input lattices and "
 #~ "try again."
 
-#~ msgid ""
-#~ "Failed to reduce cell after 1000 iterations of the reduction algorithm. "
-#~ "Stopping."
-#~ msgstr ""
-#~ "Failed to reduce cell after 1000 iterations of the reduction algorithm. "
-#~ "Stopping."
-
-#~ msgid "Rotate To Standard &Orientation"
-#~ msgstr "Rotate To Standard &Orientation"
-
-#~ msgid "&Slab..."
-#~ msgstr "&Slab..."
-
 #~ msgid "Perceive Space&group..."
 #~ msgstr "Perceive Space &group..."
 
 #~ msgid "Set &Spacegroup..."
 #~ msgstr "Set &Space group..."
 
-#~ msgid "&Fill Unit Cell"
-#~ msgstr "&Fill Unit Cell"
-
 #~ msgid "Fill the unit cell using current spacegroup."
 #~ msgstr "Fill the unit cell using current space group."
 
-#~ msgid "Reduce to &Asymmetric Unit"
-#~ msgstr "Reduce to &Asymmetric Unit"
-
-#~ msgid "Remove atoms in equivalent positions (inverse of Fill Unit Cell)."
-#~ msgstr "Remove atoms in equivalent positions (inverse of Fill Unit Cell)."
-
 #~ msgid "Sy&mmetrize Crystal"
 #~ msgstr "Sy&mmetrise Crystal"
-
-#~ msgid "Reduce Cell (&Primitive)"
-#~ msgstr "Reduce Cell (&Primitive)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanometre"
 
 #~ msgid "&Picometer"
 #~ msgstr "&Picometre"
-
-#~ msgid "&Degree"
-#~ msgstr "&Degree"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
-
-#~ msgid "Display &cartesian coordinates"
-#~ msgstr "Display &cartesian coordinates"
-
-#~ msgid "Preserve &Cartesian Coordinates During Cell Modification"
-#~ msgstr "Preserve &Cartesian Coordinates During Cell Modification"
-
-#~ msgid "Preserve &Fractional Coordinates During Cell Modification"
-#~ msgstr "Preserve &Fractional Coordinates During Cell Modification"
-
-#~ msgid "Display &cartesian matrix"
-#~ msgstr "Display &cartesian matrix"
-
-#~ msgid "Display &fractional matrix"
-#~ msgstr "Display &fractional matrix"
-
-#~ msgid "Display as &row vectors"
-#~ msgstr "Display as &row vectors"
-
-#~ msgid "Display as &column vectors"
-#~ msgstr "Display as &column vectors"
-
-#~ msgid "&Crystal View Options..."
-#~ msgstr "&Crystal View Options..."
 
 #~ msgid ""
 #~ "<p>Perceived spacegroup %1, Hall symbol %2, Hermann-Mauguin symbol %3."
@@ -9434,150 +8964,52 @@ msgstr ""
 #~ msgid "Symmetrize Crystal"
 #~ msgstr "Symmetrise Crystal"
 
-#~ msgid "Wrap Atoms To Cell"
-#~ msgstr "Wrap Atoms To Cell"
-
-#~ msgid "Reduce to Niggli Cell"
-#~ msgstr "Reduce to Niggli Cell"
-
-#~ msgid "Select tolerance in current cartesian units:"
-#~ msgstr "Select tolerance in current cartesian units:"
-
-#~ msgid "Crystallography"
-#~ msgstr "Crystallography"
-
 #~ msgid "Construct and analyze periodic structures."
 #~ msgstr "Construct and analyse periodic structures."
 
-#~ msgid ""
-#~ "The input is not formatted as one of\n"
-#~ "the following supported formats:\n"
-#~ "\n"
-#~ msgstr ""
-#~ "The input is not formatted as one of\n"
-#~ "the following supported formats:\n"
-#~ "\n"
+#~ msgid "Invert chiral centers"
+#~ msgstr "Invert chiral centres"
 
-#~ msgid "VASP Format\n"
-#~ msgstr "VASP Format\n"
+#~ msgid "Selected displacement data don't fit to the actual molecule!"
+#~ msgstr "Selected displacement data doesn't fit to the actual molecule!"
 
-#~ msgid "Bad Compostion"
-#~ msgstr "Bad Compostion"
+#~ msgid "Provides a dialog box with the words \"H...\"."
+#~ msgstr "Provides a dialogue box with the words \"H...\"."
+
+#~ msgid "The G03 executable, cannot be found."
+#~ msgstr "The G03 executable cannot be found."
 
 #~ msgid ""
-#~ "The identities field must contain the same number of space delimited "
-#~ "entries as line 6 of the POSCAR."
+#~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
-#~ "The identities field must contain the same number of space delimited "
-#~ "entries as line 6 of the POSCAR."
-
-#~ msgid "Cartesian Coordinates"
-#~ msgstr "Cartesian Coordinates"
-
-#~ msgid "Fractional Coordinates"
-#~ msgstr "Fractional Coordinates"
-
-#~ msgctxt "Unit cell matrix, arg is vector style (row or column"
-#~ msgid "Cell Matrix (%1)"
-#~ msgstr "Cell Matrix (%1)"
-
-#~ msgid "Set Unit Cell Matrix"
-#~ msgstr "Set Unit Cell Matrix"
-
-#~ msgid "Set Unit Cell Params"
-#~ msgstr "Set Unit Cell Params"
-
-#~ msgid "Working..."
-#~ msgstr "Working..."
-
-#~ msgid "Build"
-#~ msgstr "Build"
-
-#~ msgid "Cut Slab From Crystal"
-#~ msgstr "Cut Slab From Crystal"
-
-#~ msgid "No GLWidget?"
-#~ msgstr "No GLWidget?"
-
-#~ msgid "Please select one or more atoms."
-#~ msgstr "Please select one or more atoms."
-
-#~ msgid "Trajectory..."
-#~ msgstr "Trajectory..."
-
-#~ msgid "Open chemical file format"
-#~ msgstr "Open chemical file format"
-
-#~ msgid "Chemical files (*.xyz)"
-#~ msgstr "Chemical files (*.xyz)"
-
-#~ msgid "Open parameter file"
-#~ msgstr "Open parameter file"
-
-#~ msgid "Chemical files (*.parm7)"
-#~ msgstr "Chemical files (*.parm7)"
-
-#~ msgid "Import Trajectory"
-#~ msgstr "Import Trajectory"
-
-#~ msgid "Import trajectory files"
-#~ msgstr "Import trajectory files"
-
-#~ msgid "Calculate Energy"
-#~ msgstr "Calculate Energy"
-
-#~ msgid "Conformer Search..."
-#~ msgstr "Conformer Search..."
-
-#~ msgid "Constraints..."
-#~ msgstr "Constraints..."
+#~ "Gaussian did not run correctly. Perhaps it is not correctly installed."
 
 #~ msgid ""
-#~ "Cannot set up the currently selected force field for this molecule. "
-#~ "Switching to UFF."
+#~ "MOPAC is already running. Wait until the previous calculation is finished."
 #~ msgstr ""
-#~ "Cannot set up the currently selected force field for this molecule. "
-#~ "Switching to UFF."
-
-#~ msgid "Geometric Optimization"
-#~ msgstr "Geometric Optimization"
-
-#~ msgid "Systematic Rotor Search"
-#~ msgstr "Systematic Rotor Search"
-
-#~ msgid "Random Rotor Search"
-#~ msgstr "Random Rotor Search"
-
-#~ msgid "Weighted Rotor Search"
-#~ msgstr "Weighted Rotor Search"
-
-#~ msgid "Genetic Algorithm Search"
-#~ msgstr "Genetic Algorithm Search"
-
-#~ msgid "ForceField"
-#~ msgstr "ForceField"
+#~ "MOPAC is already running. Wait until the previous calculation has "
+#~ "finished."
 
 #~ msgid ""
-#~ "Optimize molecules and generate conformers using molecular mechanics "
-#~ "force fields"
+#~ "The vibration data in the molecule you have loaded does not have any "
+#~ "intensity data. Intensities have been set to an arbitrary value for "
+#~ "visualization."
 #~ msgstr ""
-#~ "Optimise molecules and generate conformers using molecular mechanics "
-#~ "force fields"
+#~ "The vibration data in the molecule you have loaded does not have any "
+#~ "intensity data. Intensities have been set to an arbitrary value for "
+#~ "visualisation."
 
-#~ msgid "&Vector Graphics..."
-#~ msgstr "&Vector Graphics..."
+#~ msgid "Tab Separated Values"
+#~ msgstr "Tab-Separated Values"
 
-#~ msgid "Common vector image formats"
-#~ msgstr "Common vector image formats"
+#~ msgid "Comma Separated Values"
+#~ msgstr "Comma-Separated Values"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
+#~ msgid "Visualize spectral data from quantum chemistry calculations"
+#~ msgstr "Visualise spectral data from quantum chemistry calculations"
 
-#~ msgid "Vector graphics export"
-#~ msgstr "Vector graphics export"
-
-#~ msgid "Change H to Methyl"
-#~ msgstr "Change H to Methyl"
+#~ msgid "Visualize vibrational modes from quantum chemistry calculations"
+#~ msgstr "Visualise vibrational modes from quantum chemistry calculations"
 
 #~ msgid "H to Methyl"
 #~ msgstr "H to Methyl"
