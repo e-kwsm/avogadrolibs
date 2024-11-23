@@ -9099,7 +9099,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Βελτιστοποίηση Γεωμετρίας"
+#~ msgstr "Βελτιστοποίηση Γεωμετρίας"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
