@@ -8522,15 +8522,6 @@ msgstr ""
 #~ msgid "Optimize"
 #~ msgstr "Optimalisering"
 
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Inn:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragment …"
-
 #~ msgid "Download Plugins..."
 #~ msgstr "Laster ned programtillegg …"
 
@@ -8540,30 +8531,11 @@ msgstr ""
 #~ msgid "Connection failed"
 #~ msgstr "Tilkobling mislyktes"
 
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filnavn:"
-
 #~ msgid "&Hostname:"
 #~ msgstr "&Vertsnavn:"
 
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Naviger"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Naviger"
-
-#~ msgid "Files of type:"
-#~ msgstr "Filer av type:"
-
 #~ msgid "Cancel"
 #~ msgstr "Avbryt"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Grunnstoff"
 
 #, fuzzy
 #~ msgid "All files (*);;"
@@ -8572,11 +8544,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Layer"
 #~ msgstr "Spiller"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekyl"
 
 #, fuzzy
 #~| msgid "Generating 3D molecule..."
@@ -8606,14 +8573,6 @@ msgstr ""
 #~ msgstr "Vinkelegenskaper …"
 
 #, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Atomegenskaper"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molekylegenskaper..."
-
-#, fuzzy
 #~ msgid "Symmetry..."
 #~ msgstr "Symmetri …"
 
@@ -8636,15 +8595,6 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "Vinkel %1"
 
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion"
-
-#, fuzzy
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energi (eV)"
-
 #~ msgid "Yes"
 #~ msgstr "Ja"
 
@@ -8654,14 +8604,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Import"
 #~ msgstr "Importer"
-
-#, fuzzy
-#~ msgid "Insert SMILES fragment:"
-#~ msgstr "Sett inn fragment"
-
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "&Krystallografi"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
