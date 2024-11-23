@@ -4708,7 +4708,7 @@ msgstr "تلوين حسب لون الرواسب"
 #: qtplugins/select/select.h:30:1896
 #, fuzzy
 msgid "Select"
-msgstr "ا&ختر"
+msgstr "اختر"
 
 #: qtplugins/selectiontool/selectiontool.cpp:50
 msgctxt "control-key 5"
