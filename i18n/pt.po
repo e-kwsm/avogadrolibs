@@ -9026,14 +9026,6 @@ msgstr ""
 #~ msgid "Connection failed with: %1"
 #~ msgstr "A conexão falhou com: %1"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Servidor do cliente"
 
@@ -9173,9 +9165,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Write"
 #~ msgstr "escrever"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9439,9 +9428,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Abrir Ficheiro de Trajectoria"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Adicionar extensão .avi"
 
@@ -9514,11 +9500,6 @@ msgstr ""
 #~ "restrição à ligação."
 
 #~ msgid ""
-#~ "Your molecule must contain at least three atoms to add an angle constraint"
-#~ msgstr ""
-#~ "Your molecule must contain at least three atoms to add an angle constraint"
-
-#~ msgid ""
 #~ "Your molecule must contain at least four atoms to add a torsion constraint"
 #~ msgstr ""
 #~ "A molécula deve conter pelo menos quatro átomos para poder adicionar uma "
@@ -9577,14 +9558,6 @@ msgstr ""
 #~ msgstr "Ortorrômbico"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cúbico"
 
@@ -9636,9 +9609,6 @@ msgstr ""
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Reduzir Célula (&Primitiva)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanómetro"
@@ -9778,9 +9748,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Formatos de imagem vectorial comuns"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Exportar gráfico vetorial"
 
@@ -9836,9 +9803,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "Entrada PDB a descarregar."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL da molécula para download."
 
@@ -9892,9 +9856,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "A analisar a saída Orca..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Exemplo Teste Orca"
 
@@ -9915,9 +9876,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Ficheiros de imagem (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "O nome do ficheiro fornecido não é válido."
@@ -9964,9 +9922,6 @@ msgstr ""
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal Python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Consola Interativo do Python"
 
@@ -9979,11 +9934,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Quer atualizar o texto, perdendo todas as alterações feitas no painel de "
 #~ "previsão da entrada deck abinit?"
-
-#~ msgid ""
-#~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
-#~ msgstr ""
-#~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
 
 #~ msgid ""
 #~ "Would you like to update the preview text, losing all changes made in the "
@@ -10015,18 +9965,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Conversão para o formato SMILES não disponível!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
@@ -10119,26 +10057,8 @@ msgstr ""
 #~ "Gaussian não consegue ser correctamente executado. Poderá não estar "
 #~ "correctamente instalado."
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
 #~ msgid "&MOLPRO..."
 #~ msgstr "&MOLPRO"
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Alerta do Gerador de Entrada Deck Lammps"
@@ -10330,14 +10250,6 @@ msgstr ""
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Definições do Espectro &NMR"
 
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
-
 #~ msgid "&UV Settings"
 #~ msgstr "Definições &UV"
 
@@ -10383,9 +10295,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valores separados por vírgulas"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Extensão desconhecida: %1"
 
@@ -10397,9 +10306,6 @@ msgstr ""
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Formato PNG"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Formato TIFF"
@@ -10479,9 +10385,6 @@ msgstr ""
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Calculando OM %L1"
 
-#~ msgid "VdW"
-#~ msgstr "VdW"
-
 #~ msgid "Building..."
 #~ msgstr "A construir..."
 
@@ -10515,9 +10418,6 @@ msgstr ""
 #~ "imagens\n"
 #~ "quadradas tais como 1000x1000 pixeis."
 
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
-
 #~ msgid "Connect"
 #~ msgstr "Conetar"
 
@@ -10535,9 +10435,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Informação de Depuração"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "Atoms: %L1"
 #~ msgstr "Átomos: %L1"
@@ -10708,22 +10605,6 @@ msgstr ""
 #~ msgid "Distance (3->4): %L1 %2"
 #~ msgstr "Distância (3->4): %L1 %2"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Distância(s):"
 
@@ -10787,15 +10668,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Ciclo"
 
@@ -10835,9 +10707,6 @@ msgstr ""
 #~ msgid "Include Nitrogens"
 #~ msgstr "Incluir os Azotos"
 
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
-
 #~ msgid "Fill"
 #~ msgstr "Preencher"
 
@@ -10861,9 +10730,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animar Trajectória"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -10953,18 +10819,6 @@ msgstr ""
 #~ msgid "Stereochemistry:"
 #~ msgstr "Estereoquímica:"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Chain Number:"
 #~ msgstr "Número da Cadeia:"
 
@@ -10977,9 +10831,6 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momento Dipolar (D):"
 
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
 #~ msgid "Advanced"
 #~ msgstr "Avançadas"
 
@@ -10989,29 +10840,8 @@ msgstr ""
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Seleccionar a cor do fundo para transparente"
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "Configurações &Avançadas"
-
-#~ msgid "Hessian"
-#~ msgstr "Hessian"
 
 #~ msgid "Stat Point"
 #~ msgstr "Ponto Inicial"
@@ -11031,35 +10861,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Ler"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Difusão Orbital-S em Átomos Pesados"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Difusão Orbital-L em Átomos Pesados"
 
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Valência Zeta Dupla"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Valência Zeta Tripla"
@@ -11070,26 +10879,11 @@ msgstr ""
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Valência Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Tipo ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Padrão"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Funções de Polarização de Átomos Pesados:"
@@ -11097,14 +10891,8 @@ msgstr ""
 #~ msgid "#light Atom Polarization Functions:"
 #~ msgstr "#leve Funções de Polarização de Átomos:"
 
-#~ msgid "Polar:"
-#~ msgstr "Polar:"
-
 #~ msgid "Gradient"
 #~ msgstr "Gradiente"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
 
 #~ msgid "Spin Orbit"
 #~ msgstr "Orbital de Spin"
@@ -11136,12 +10924,6 @@ msgstr ""
 #~ msgid "Foster-Boys"
 #~ msgstr "Adotados"
 
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
-
 #~ msgid "SCF Type:"
 #~ msgstr "Tipo SCF:"
 
@@ -11153,9 +10935,6 @@ msgstr ""
 
 #~ msgid "Run Type:"
 #~ msgstr "Tipo de Execução:"
-
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
 
 #~ msgid "Coordinate Type:"
 #~ msgstr "Tipo de Coordenadas:"
@@ -11199,41 +10978,8 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Quinteto"
 
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Sem restrições"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "não"
@@ -11253,9 +10999,6 @@ msgstr ""
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "Tamanho da F&onte auto-ajustável"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Vibrações Moleculares"
 
@@ -11271,9 +11014,6 @@ msgstr ""
 
 #~ msgid "New Display"
 #~ msgstr "Nova Apresentação"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "bohr radii"
 #~ msgstr "raio de bohr"
