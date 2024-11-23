@@ -8593,9 +8593,6 @@ msgstr ""
 #~ msgid "&Hostname:"
 #~ msgstr "&Vertsnavn:"
 
-#~ msgid "Port"
-#~ msgstr "Port"
-
 #, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Naviger"
@@ -8603,9 +8600,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Navigate Forward"
 #~ msgstr "Naviger"
-
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgid "Files of type:"
 #~ msgstr "Filer av type:"
@@ -8748,18 +8742,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Farge for framheving:"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Axes"
 #~ msgstr "Akser"
 
@@ -8771,9 +8753,6 @@ msgstr ""
 
 #~ msgid "Polygon"
 #~ msgstr "Mangekant"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
 
 #~ msgid "Van der Waals Spheres"
 #~ msgstr "Van der Waals-kuler"
@@ -8850,9 +8829,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Format d'image vectorielle usuel"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Peptide..."
 #~ msgstr "Peptid …"
 
@@ -8884,12 +8860,6 @@ msgstr ""
 #~ msgid "Delete"
 #~ msgstr "Slett"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Gaussian Running."
 #~ msgstr "Gaussian kjører."
 
@@ -8904,15 +8874,6 @@ msgstr ""
 
 #~ msgid "&Dalton..."
 #~ msgstr "&Dalton …"
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Running."
 #~ msgstr "MOPAC kjører."
@@ -8954,15 +8915,8 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Dataformat"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Last inn spektraldata"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Lagre spektralbilde"
@@ -8970,16 +8924,9 @@ msgstr ""
 #~ msgid "Sorting %1 vibrations by frequency..."
 #~ msgstr "Sorterer %1 vibrasjoner etter frekvens …"
 
-#~ msgid "Pause"
-#~ msgstr "Pause"
-
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Ingenting"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgid "Connect"
 #~ msgstr "Koble til"
@@ -8995,10 +8942,6 @@ msgstr ""
 
 #~ msgid "Molecule %1"
 #~ msgstr "Molekyl %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Ukjent Python-motor"
@@ -9042,22 +8985,6 @@ msgstr ""
 #~ msgid "z rotation"
 #~ msgstr "z rotasjon"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Draw Bond"
 #~ msgstr "Tegn binding"
 
@@ -9073,9 +9000,6 @@ msgstr ""
 #~ msgctxt "in Angstrom"
 #~ msgid "New Radius, %1:"
 #~ msgstr "Ny radius, %1:"
-
-#~ msgid "Symbol"
-#~ msgstr "Symbol"
 
 #~ msgid "Bond Length"
 #~ msgstr "Bindingslengde"
@@ -9101,9 +9025,6 @@ msgstr ""
 #~ msgid "Axis 3:"
 #~ msgstr "Akse 3:"
 
-#~ msgid "Norm"
-#~ msgstr "Norm"
-
 #~ msgid "Bond Radius:"
 #~ msgstr "Bindingsradius:"
 
@@ -9116,9 +9037,6 @@ msgstr ""
 #~ msgid "Bond number"
 #~ msgstr "Bindingsnummer"
 
-#~ msgid "Radius:"
-#~ msgstr "Radius:"
-
 #~ msgid "Positive"
 #~ msgstr "Positiv"
 
@@ -9127,12 +9045,6 @@ msgstr ""
 
 #~ msgid "Show Atoms"
 #~ msgstr "Vis atomer"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
 
 #~ msgid "Number of atoms:"
 #~ msgstr "Antall atomer:"
@@ -9167,14 +9079,8 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritme"
 
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arginin"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Cysteine"
 #~ msgstr "Cystein"
@@ -9185,14 +9091,8 @@ msgstr ""
 #~ msgid "Glycine"
 #~ msgstr "Glycin"
 
-#~ msgid "Gly"
-#~ msgstr "Gly"
-
 #~ msgid "Histidine"
 #~ msgstr "Histidin"
-
-#~ msgid "His"
-#~ msgstr "His"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Tryptofan"
@@ -9203,20 +9103,11 @@ msgstr ""
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenylalanin"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Metionin"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Leucin"
-
-#~ msgid "Leu"
-#~ msgstr "Leu"
 
 #~ msgid "Path:"
 #~ msgstr "Sti:"
@@ -9226,9 +9117,6 @@ msgstr ""
 
 #~ msgid "Property:"
 #~ msgstr "Egenskap:"
-
-#~ msgid "System"
-#~ msgstr "System"
 
 #~ msgid "Misc"
 #~ msgstr "Diverse"
@@ -9271,9 +9159,6 @@ msgstr ""
 
 #~ msgid "Rename..."
 #~ msgstr "Endre navn …"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "Relative"
 #~ msgstr "Relativ"
