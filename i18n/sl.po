@@ -9208,7 +9208,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Razdalja (1->2): %L1 %2"
+#~ msgstr "Razdalja: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Vrtljivo"
@@ -9285,7 +9285,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Prilagodi geometrijo"
+#~ msgstr "Prilagodi geometrijo"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
