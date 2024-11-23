@@ -4743,7 +4743,7 @@ msgstr "la Selecció"
 #, fuzzy
 #| msgid "Selection"
 msgid "Shrink Selection"
-msgstr "Selecció"
+msgstr "la Selecció"
 
 #: qtplugins/select/select.cpp:103
 msgid "Create New Layer from Selection"
