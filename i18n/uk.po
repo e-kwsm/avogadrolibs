@@ -10283,10 +10283,6 @@ msgstr "Ваші електронні листи"
 #~ msgstr "Відстань"
 
 #, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Номери атомів"
-
-#, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Копіювати все"
 
