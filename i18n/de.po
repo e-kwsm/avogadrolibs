@@ -3631,7 +3631,7 @@ msgstr "DNA- / RNA-Fragmente über einen Dialog einfügen."
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 msgid "Molecule…"
-msgstr "&Molekül …"
+msgstr "Molekül …"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 msgid "Crystal…"
