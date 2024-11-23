@@ -11815,11 +11815,14 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Raman Intensities"
 #~ msgstr "拉曼強度"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
+#~ msgid "Make EFP"
+#~ msgstr "產生 EFP"
 
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
+#~ msgid "SCF Type:"
+#~ msgstr "SCF 種類:"
+
+#~ msgid "Exec Type:"
+#~ msgstr "Exec 種類:"
 
 #~ msgid "GVB"
 #~ msgstr "GVB"
@@ -11839,38 +11842,16 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Pipek-Mezey"
 #~ msgstr "Pipek-Mezey"
 
+=======
+#~ msgid "Make EFP"
+#~ msgstr "產生 EFP"
+
+>>>>>>> 2252ee2df12c (i18n/zh_TW.po)
 #~ msgid "SCF Type:"
 #~ msgstr "SCF 種類:"
 
-#~ msgid "Localization Method:"
-#~ msgstr "Localization Method:"
-
 #~ msgid "Exec Type:"
 #~ msgstr "Exec 種類:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
-
-#~ msgid "Occupation Restricted Multiple Active Space"
-#~ msgstr "Occupation Restricted Multiple Active Space"
-
-#~ msgid "CI Singles"
-#~ msgstr "CI Singles"
-
-#~ msgid "Full Second Order CI"
-#~ msgstr "Full Second Order CI"
-
-#~ msgid "General CI"
-#~ msgstr "General CI"
-
-#~ msgid "CC:"
-#~ msgstr "CC:"
 
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: 線性化的 CC"
