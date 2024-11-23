@@ -9879,7 +9879,7 @@ msgstr ""
 #~ "una restricció de torsió"
 
 #~ msgid "&Crystallography"
-#~ msgstr "Cristal·lografia"
+#~ msgstr "&Cristal·lografia"
 
 #~ msgid "&Length Unit"
 #~ msgstr "Unitat de &longitud"
