@@ -9380,7 +9380,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Filename"
-#~ msgstr "ಕಡತ(&F)"
+#~ msgstr "ಕಡತ"
 
 #, fuzzy
 #~ msgid "No"
