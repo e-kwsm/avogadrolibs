@@ -3034,7 +3034,7 @@ msgstr "Zelle auf &Volumen skalieren …"
 
 #: qtplugins/crystal/crystal.cpp:74
 msgid "Build &Supercell…"
-msgstr "Superzelle bauen …"
+msgstr "&Superzelle bauen …"
 
 #: qtplugins/crystal/crystal.cpp:79
 msgid "Reduce Cell (&Niggli)"
