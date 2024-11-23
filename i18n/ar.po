@@ -4375,7 +4375,7 @@ msgstr "النوع"
 #: qtplugins/propertytables/propertymodel.cpp:532
 #, fuzzy
 msgid "Start Atom"
-msgstr "بدء &الرسوم المتحركة"
+msgstr "بدء الرسوم المتحركة"
 
 #: qtplugins/propertytables/propertymodel.cpp:534
 #, fuzzy
