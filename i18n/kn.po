@@ -8246,9 +8246,6 @@ msgstr ""
 #~ msgid "Delete"
 #~ msgstr "ಅಳಿಸು"
 
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgctxt "low resolution"
 #~ msgid "Low"
 #~ msgstr "ಕಡಿಮೆ"
