@@ -8766,7 +8766,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Προσθήκη &μοναδιαίας κυψελίδας"
+#~ msgstr "Προσθήκη μοναδιαίας κυψελίδας"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
