@@ -9636,7 +9636,7 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Προσθήκη &μοναδιαίας κυψελίδας"
+#~ msgstr "Προσθήκη μοναδιαίας κυψελίδας"
 
 #, fuzzy
 #~ msgid "By Atomic Index"

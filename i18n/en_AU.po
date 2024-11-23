@@ -9690,7 +9690,7 @@ msgstr ""
 #~ msgstr "Geometry"
 
 #~ msgid "Add Unit Cell"
-#~ msgstr "Add &Unit Cell"
+#~ msgstr "Add Unit Cell"
 
 #~ msgid "By Atomic Index"
 #~ msgstr "By Atomic Index"
