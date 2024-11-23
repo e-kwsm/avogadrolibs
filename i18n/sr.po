@@ -10343,9 +10343,6 @@ msgstr ""
 #~ msgid "Element & Ordinal"
 #~ msgstr "Naziv elementa."
 
-#~ msgid "'c' coordinate."
-#~ msgstr "'c' koordinata."
-
 #~ msgid "All files (*);;"
 #~ msgstr "Sve datoteke (*);;"
 
