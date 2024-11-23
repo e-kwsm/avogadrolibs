@@ -10031,7 +10031,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Optimizacija Geometrije"
+#~ msgstr "Geometrije"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
