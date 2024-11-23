@@ -8312,7 +8312,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Oптимизиране на геометрията"
+#~ msgstr "Геометрията"
 
 #, fuzzy
 #~ msgid "By Distance"
