@@ -8234,9 +8234,6 @@ msgstr "Temuri.doghonadze@gmail.com"
 #~ msgid "Optimize"
 #~ msgstr "ოპტიმიზაცია"
 
-#~ msgid ", "
-#~ msgstr ", "
-
 #~ msgid "Fragment…"
 #~ msgstr "ფრაგმენტი…"
 
@@ -8268,14 +8265,6 @@ msgstr "Temuri.doghonadze@gmail.com"
 #~ msgid "Connection failed with: %1"
 #~ msgstr "შეერთების შეცდომა: %1"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "კლიენტ-სერვერი"
 
@@ -8287,9 +8276,6 @@ msgstr "Temuri.doghonadze@gmail.com"
 
 #~ msgid "Formula"
 #~ msgstr "ფორმულა"
-
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
 
 #~ msgid "&Hostname:"
 #~ msgstr "&ჰოსტის სახელი:"
@@ -8318,9 +8304,6 @@ msgstr "Temuri.doghonadze@gmail.com"
 #~ msgid "Cancel"
 #~ msgstr "გაუქმება"
 
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
-
 #~ msgid "API Key:"
 #~ msgstr "API-ის გასაღები:"
 
@@ -8333,9 +8316,6 @@ msgstr "Temuri.doghonadze@gmail.com"
 #~ msgid "Upload"
 #~ msgstr "ატვირთვა"
 
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
 #~ msgid "Container:"
 #~ msgstr "შემადგენლობა:"
 
@@ -8344,9 +8324,6 @@ msgstr "Temuri.doghonadze@gmail.com"
 
 #~ msgid "Insert Molecule..."
 #~ msgstr "მოლეკულის ჩასმა..."
-
-#~ msgid "Z Å)"
-#~ msgstr "Z Å)"
 
 #, qt-format
 #~ msgid "%1: File exists and is not writable."
