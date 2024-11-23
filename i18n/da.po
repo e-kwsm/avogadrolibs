@@ -9309,45 +9309,12 @@ msgstr ""
 #~ msgstr "Tilføj enhedscelle"
 
 #, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~| msgid "Other..."
-#~ msgid "Other..."
-#~ msgstr "Andet..."
-
-#, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Filnavn:"
+#~ msgstr "Filnavn"
 
 #, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Alle filer"
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Tilføj H til pH"
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Atom Egenskaber..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Bindings Egenskaber..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Vinkel Egenskaber..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Drejningsegenskaber..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molekyle egenskaber..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Skab overflade..."
+#~ msgstr "Alle filer (*);;"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
@@ -9788,6 +9755,9 @@ msgstr ""
 #~ msgid "Conformer Properties..."
 #~ msgstr "Konformationsegenskaber..."
 
+#~ msgid "Python Terminal"
+#~ msgstr "Python terminal"
+
 #~ msgid "pythonTerminalDock"
 #~ msgstr "pythonterminal"
 
@@ -9952,6 +9922,9 @@ msgstr ""
 
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Vælg atomer, bindinger, restprodukter..."
+
+#~ msgid "GLSL Shaders..."
+#~ msgstr "GLSL shaders..."
 
 #~ msgid "Intensity (arb. units)"
 #~ msgstr "Intensitet (arb. enheder)"
@@ -10352,6 +10325,9 @@ msgstr ""
 
 #~ msgid "7 - Gaussian smearing"
 #~ msgstr "Gaussisk udtværing"
+
+#~ msgid "Gaussian Input"
+#~ msgstr "Gaussian input"
 
 #~ msgid "&Gaussian Width:"
 #~ msgstr "&Gauss-bredde:"
