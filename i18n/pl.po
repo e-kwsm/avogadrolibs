@@ -9290,9 +9290,6 @@ msgstr ""
 #~ msgid "All files (*);;"
 #~ msgstr "Wszystkie pliki"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Dodaj wodory, aby uzyskać podane pH..."
@@ -9394,9 +9391,6 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "Pałeczki"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Dodawanie rozszerzenia .avi"
 
@@ -9482,9 +9476,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Konwersja do formatu SMILES jest niedostępna!"
 
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Advanced Settings Changed"
 #~ msgstr "Zmieniono ustawienia zaawansowane"
 
@@ -9540,9 +9531,6 @@ msgstr ""
 #~ "Coś jest całkowicie zepsute w konfiguracji OpenGL na tym komputerze - czy "
 #~ "można uruchomić jakikolwiek program używający OpenGL?Jeśli tak, to "
 #~ "znalazłeś błąd."
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "Atoms: %L1"
 #~ msgstr "Atomy: %L1"
@@ -9643,9 +9631,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animuj trajektorię"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Zapętlaj"
@@ -9679,9 +9664,6 @@ msgstr ""
 
 #~ msgid "Minutes"
 #~ msgstr "Minuty"
-
-#~ msgid "Days"
-#~ msgstr "Days"
 
 #~ msgid "Z Matrix Editor"
 #~ msgstr "Edytor macierzy Z"
