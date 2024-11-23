@@ -10235,10 +10235,6 @@ msgstr ""
 #~ msgstr "Rastojanje"
 
 #, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Indikacije atoma"
-
-#, fuzzy
 #~| msgid "Molecule Charge:"
 #~ msgid "Molecule Name:"
 #~ msgstr "Naelektrisanje molekule:"
