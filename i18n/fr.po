@@ -9034,10 +9034,6 @@ msgstr ""
 #~ msgstr "%1 : Ce fichier existe déjà et n'est pas inscriptible."
 
 #, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Cristal..."
 
@@ -9145,7 +9141,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimisation de la géométrie"
+#~ msgstr "Optimisation de la géométrie"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
