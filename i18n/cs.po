@@ -10451,7 +10451,7 @@ msgstr ""
 #~ "silových polí molekulární mechaniky"
 
 #~ msgid "&Vector Graphics..."
-#~ msgstr "Vektorová grafika..."
+#~ msgstr "&Vektorová grafika..."
 
 #~ msgid "Common vector image formats"
 #~ msgstr "Běžné formáty vektorového obrázku"
