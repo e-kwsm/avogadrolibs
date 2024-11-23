@@ -9255,14 +9255,8 @@ msgstr "E-mail-címek"
 #~ msgid "In."
 #~ msgstr "Ebben."
 
-#~ msgid "El."
-#~ msgstr "El."
-
 #~ msgid "El.&No."
 #~ msgstr "El.&Sz."
-
-#~ msgid ", "
-#~ msgstr ", "
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS bemeneti fájlok (*.in)"
@@ -9334,14 +9328,6 @@ msgstr "E-mail-címek"
 #~ msgid "clientServer/%1:%2/lastOpenDir"
 #~ msgstr "ügyfélKiszolgáló/%1:%2/utoljáraMegnyitottKönyvtár"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Ügyfél/kiszolgáló"
 
@@ -9360,9 +9346,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "InChIKey"
 #~ msgstr "InChI kulcs"
-
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
 
 #~ msgid "Mongo Chem Server"
 #~ msgstr "MongoChem kiszolgáló"
@@ -9406,9 +9389,6 @@ msgstr "E-mail-címek"
 #~ msgid "MongoChem Config"
 #~ msgstr "MongoChem beállítása"
 
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
-
 #~ msgid "API Key:"
 #~ msgstr "API-kulcs:"
 
@@ -9421,9 +9401,6 @@ msgstr "E-mail-címek"
 #~ msgid "Upload"
 #~ msgstr "Feltöltés"
 
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
 #~ msgid "Singularity"
 #~ msgstr "Egyedülállóság"
 
@@ -9432,9 +9409,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Image:"
 #~ msgstr "Kép:"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid ""
 #~ "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -9564,9 +9538,6 @@ msgstr "E-mail-címek"
 #~ msgid "Write"
 #~ msgstr "Mentés"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #~ msgid "InChI..."
 #~ msgstr "InChI…"
 
@@ -9596,9 +9567,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "&Exit"
 #~ msgstr "&Kilépés"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Töredék beillesztése…"
@@ -9779,17 +9747,10 @@ msgstr "E-mail-címek"
 #~ msgid "Electron density, isosurface = %L1"
 #~ msgstr "Elektron sűrűség, isosurface=%L1"
 
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
 #~ msgstr ""
 #~ "A kötéseket pálcikáknak mutatja, ez ideális nagyon nagy (bio)molekulák "
 #~ "esetén"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi fájl kiterjesztés hozzáadása"
@@ -9942,9 +9903,6 @@ msgstr "E-mail-címek"
 #~ msgid "PDB entry to download."
 #~ msgstr "Letöltendő PDB bejegyzés"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "Letöltendő molekula URL-je."
 
@@ -9968,9 +9926,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Képfájlok (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Nincs megadva érvényes fájlnév."
@@ -10032,15 +9987,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES formátum konverzió nem választható!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Kimeneti fájl generálása GAMESS kvantum kémiai csomaghoz"
@@ -10106,14 +10052,8 @@ msgstr "E-mail-címek"
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gaussian"
 
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
 #~ msgid "&NWChem..."
 #~ msgstr "Copy text   \t &NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC-bevitel figyelmeztetés"
@@ -10233,10 +10173,6 @@ msgstr "E-mail-címek"
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Infravörös spektumok beállítása"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR spektumok beállítása"
 
@@ -10279,9 +10215,6 @@ msgstr "E-mail-címek"
 #~ msgid "Comma Separated Values"
 #~ msgstr "Vesszővel elválasztott értékek (CSV)"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Ismeretlen kiterjesztés: %1"
 
@@ -10305,9 +10238,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Portable Network Graphics (PNG)"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "TIFF (Tagged Image File Format)"
@@ -10381,9 +10311,6 @@ msgstr "E-mail-címek"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "MO %L1 számítása folyamatban"
 
-#~ msgid "VdW"
-#~ msgstr "VdW"
-
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "A GL widget nem megfelelően indult a video készítéséhez"
 
@@ -10401,9 +10328,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Debug Information"
 #~ msgstr "Hibakeresési információk"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Méret megjelenítése: %L1 x %L2"
@@ -10468,10 +10392,6 @@ msgstr "E-mail-címek"
 #~ msgid "Molecule %1"
 #~ msgstr "Molekula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Ismeretlen Python motor"
 
@@ -10513,9 +10433,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Nem sikerült beállítani erőteret..."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Steps per Update:"
 #~ msgstr "Frissítésenkénti lépések:"
@@ -10581,22 +10498,6 @@ msgstr "E-mail-címek"
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Diéderes szög: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Távolság:"
 
@@ -10656,12 +10557,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Shape"
 #~ msgstr "Alak"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "Hurok"
@@ -10735,9 +10630,6 @@ msgstr "E-mail-címek"
 #~ msgid "Animate Trajectory"
 #~ msgstr "Röppálya animálása"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Ciklus"
@@ -10756,18 +10648,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Ignore Atom"
 #~ msgstr "Atom elrejtése"
-
-#~ msgid "Fix Atom"
-#~ msgstr "Fix Atom"
-
-#~ msgid "Fix Atom X"
-#~ msgstr "Fix Atom X"
-
-#~ msgid "Fix Atom Y"
-#~ msgstr "Fix Atom Y"
-
-#~ msgid "Fix Atom Z"
-#~ msgstr "Fix Atom Z"
 
 #~ msgid "Torsion angle"
 #~ msgstr "Torziós szög"
@@ -10793,98 +10673,47 @@ msgstr "E-mail-címek"
 #~ msgid "Setup Force Field"
 #~ msgstr "Erőtér beállítása"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Lépések száma"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmus"
 
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "Ala"
-#~ msgstr "Ala"
-
 #~ msgid "Arginine"
 #~ msgstr "Arginin"
-
-#~ msgid "Arg"
-#~ msgstr "Arg"
 
 #~ msgid "Asparagine"
 #~ msgstr "Aszparagin"
 
-#~ msgid "Asn"
-#~ msgstr "Asn"
-
 #~ msgid "Aspartic acid"
 #~ msgstr "Aszparaginsav"
-
-#~ msgid "Asp"
-#~ msgstr "Asp"
 
 #~ msgid "Cysteine"
 #~ msgstr "Cisztein"
 
-#~ msgid "Cys"
-#~ msgstr "Cys"
-
 #~ msgid "Glutamic acid"
 #~ msgstr "Glutaminsav"
-
-#~ msgid "Glu"
-#~ msgstr "Glu"
 
 #~ msgid "Glutamine"
 #~ msgstr "Glutamin"
 
-#~ msgid "Gln"
-#~ msgstr "Gln"
-
 #~ msgid "Glycine"
 #~ msgstr "Glicin"
-
-#~ msgid "Gly"
-#~ msgstr "Gly"
 
 #~ msgid "Histidine"
 #~ msgstr "Hisztidin"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "Izoleucin"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
-
-#~ msgid "Tyr"
-#~ msgstr "Tyr"
 
 #~ msgid "Tryptophan"
 #~ msgstr "Triptofán"
 
-#~ msgid "Trp"
-#~ msgstr "Trp"
-
 #~ msgid "Threonine"
 #~ msgstr "Treonin"
 
-#~ msgid "Thr"
-#~ msgstr "Thr"
-
 #~ msgid "Serine"
 #~ msgstr "Szerin"
-
-#~ msgid "Ser"
-#~ msgstr "Ser"
 
 #~ msgid "Proline"
 #~ msgstr "Prolin"
@@ -10892,41 +10721,17 @@ msgstr "E-mail-címek"
 #~ msgid "Phenylalanine"
 #~ msgstr "Fenilalanin"
 
-#~ msgid "Phe"
-#~ msgstr "Phe"
-
 #~ msgid "Methionine"
 #~ msgstr "Metionin"
-
-#~ msgid "Met"
-#~ msgstr "Met"
 
 #~ msgid "Lysine"
 #~ msgstr "Lizin"
 
-#~ msgid "Lys"
-#~ msgstr "Lys"
-
 #~ msgid "Leucine"
 #~ msgstr "Leucin"
 
-#~ msgid "Leu"
-#~ msgstr "Leu"
-
 #~ msgid "Stereochemistry:"
 #~ msgstr "Sztereokémia:"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Straight Chain"
 #~ msgstr "Egyenes lánc"
@@ -10937,38 +10742,17 @@ msgstr "E-mail-címek"
 #~ msgid "Beta Sheet"
 #~ msgstr "Béta redő"
 
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
-
 #~ msgid "Chain Number:"
 #~ msgstr "Láncszám:"
 
 #~ msgid "The chain number for the new peptide"
 #~ msgstr "Az új peptid lánc-száma"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Molekularészek száma:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipólusmomentum (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Haladó"
@@ -10984,12 +10768,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Select..."
 #~ msgstr "Kijelölés…"
-
-#~ msgid "povray"
-#~ msgstr "povray"
-
-#~ msgid "Antialias"
-#~ msgstr "Antialias"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Háttérszín áttetszőre állítása"
@@ -11013,68 +10791,8 @@ msgstr "E-mail-címek"
 #~ msgid "Compute..."
 #~ msgstr "Számítás..."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
 #~ msgid "EFP Matches"
 #~ msgstr "EFP egyezések"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "&Haladó beállítások"
@@ -11100,29 +10818,8 @@ msgstr "E-mail-címek"
 #~ msgid "Read"
 #~ msgstr "Olvasás"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Dupla zéta vegyérték"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Tripla zéta vegyérték"
@@ -11133,26 +10830,11 @@ msgstr "E-mail-címek"
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Hay/Wadt vegyérték"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "ECP típus:"
 
 #~ msgid "Default"
 #~ msgstr "Alapbeállítás"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F nehézatom polarizációs függvény"
@@ -11169,17 +10851,8 @@ msgstr "E-mail-címek"
 #~ msgid "Gradient"
 #~ msgstr "Grádiens"
 
-#~ msgid "Trudge"
-#~ msgstr "Trudge"
-
 #~ msgid "Saddle Point"
 #~ msgstr "Nyeregpont"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Spin Orbit"
 #~ msgstr "Spin orbitál"
@@ -11187,14 +10860,8 @@ msgstr "E-mail-címek"
 #~ msgid "Finite Electric Field"
 #~ msgstr "Véges elektromos mező"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Globális optimalizálás"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO optimalizálás"
@@ -11235,12 +10902,6 @@ msgstr "E-mail-címek"
 #~ msgid "Exec Type:"
 #~ msgstr "Exec típus:"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Ames Lab. determináns"
 
@@ -11253,9 +10914,6 @@ msgstr "E-mail-címek"
 #~ msgid "General CI"
 #~ msgstr "Általános CI"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: Linearizált CC"
 
@@ -11264,18 +10922,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC szimplákkal és duplákkal"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Normális futtatás"
@@ -11297,48 +10943,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Főtengely rendje"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Egyedi Descartes-koordináták"
@@ -11388,18 +10992,6 @@ msgstr "E-mail-címek"
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "\"core\" fájl létrehozása megszakításkor"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Memória:"
 
@@ -11420,12 +11012,6 @@ msgstr "E-mail-címek"
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Külső adatmegjelenítés használata üzenetekhez"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO beolvasva ($VEC)"
 
@@ -11440,24 +11026,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Print the Initial Guess"
 #~ msgstr "Kezdeti becslés kiírása"
-
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK verzió)"
@@ -11561,9 +11129,6 @@ msgstr "E-mail-címek"
 #~ msgid "Initial:"
 #~ msgstr "Kezdeti:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Racionális függvény optimalizálás"
 
@@ -11582,17 +11147,8 @@ msgstr "E-mail-címek"
 #~ msgid "Z-matrix"
 #~ msgstr "Z-mátrix"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Szabványos"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Ellenőrzőpont:"
@@ -11600,44 +11156,14 @@ msgstr "E-mail-címek"
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO bevitel"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "Kvartett"
 
 #~ msgid "Quintet"
 #~ msgstr "Kvintett"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem bevitel"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "Árnyékolók betöltése"
@@ -11666,23 +11192,11 @@ msgstr "E-mail-címek"
 #~ msgid "&Schemes:"
 #~ msgstr "&Sémák:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Szélesség:"
 
 #~ msgid "&Height"
 #~ msgstr "&Magasság"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "&Betűméret automatikus beállítása"
@@ -11696,17 +11210,11 @@ msgstr "E-mail-címek"
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y tengely egysége:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gauss-&szélesség:"
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Csúcsok cimkézése:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekularezgés:"
