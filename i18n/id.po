@@ -2763,9 +2763,8 @@ msgid "Scale Cell &Volume…"
 msgstr "Skalakan Sel ke &Volume…"
 
 #: qtplugins/crystal/crystal.cpp:74
-#, fuzzy
 msgid "Build &Supercell…"
-msgstr "&Super Sel"
+msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:79
 msgid "Reduce Cell (&Niggli)"
