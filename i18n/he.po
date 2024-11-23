@@ -9223,9 +9223,6 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "מקל"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "הוספת סיומת .avi"
 
