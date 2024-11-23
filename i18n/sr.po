@@ -9171,9 +9171,6 @@ msgstr ""
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interfejs sa Mongo Chem serverom."
 
-#~ msgid "Energy (eV)"
-#~ msgstr "Енергија (eV)"
-
 #~ msgid "Server settings"
 #~ msgstr "Podešavanja servera"
 
@@ -9290,9 +9287,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Naziv elementa."
-
-#~ msgid "'c' coordinate."
-#~ msgstr "'c' koordinata."
 
 #~ msgid "All files (*);;"
 #~ msgstr "Sve datoteke (*);;"
