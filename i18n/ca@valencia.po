@@ -10319,7 +10319,7 @@ msgstr ""
 #~ msgstr "RMN"
 
 #~ msgid "&NMR Spectra Settings"
-#~ msgstr "Paràmetres espectre RMN"
+#~ msgstr "Paràmetres espectre RM&N"
 
 #~ msgctxt "Density of States"
 #~ msgid "DOS"
