@@ -8760,7 +8760,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Ottimizza la geometria"
+#~ msgstr "Geometria"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
@@ -8815,10 +8815,6 @@ msgstr ""
 #~ msgstr "Ottimizzazione"
 
 #, fuzzy
-#~ msgid "In."
-#~ msgstr "In:"
-
-#, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
 #~ msgstr "Frammento..."
@@ -8837,14 +8833,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Nome del file"
 
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Naviga"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Naviga"
-
 #~ msgid "Cancel"
 #~ msgstr "Annulla"
 
@@ -8862,14 +8850,6 @@ msgstr ""
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "Inserisci molecola..."
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Nessuna molecola impostata"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -8983,7 +8963,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Ottimizza la geometria"
+#~ msgstr "Ottimizza la geometria"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -8992,14 +8972,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "Aggiungi idrogeni"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Ferma"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Superfici"
 
 #~ msgid "Color by Index"
 #~ msgstr "Colore per Indice"
