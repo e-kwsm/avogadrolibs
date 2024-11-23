@@ -13495,11 +13495,8 @@ msgstr ""
 #~ msgid "FMO Optimization"
 #~ msgstr "ФМО оптимизација"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
+#~ msgid "Make EFP"
+#~ msgstr "Направи ЕФП"
 
 #~ msgid "GVB"
 #~ msgstr "ГВБ"
