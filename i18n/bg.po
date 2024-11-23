@@ -9253,7 +9253,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Oптимизиране на геометрията"
+#~ msgstr "Oптимизиране на геометрията"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."

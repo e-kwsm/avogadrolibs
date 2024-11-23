@@ -9861,7 +9861,7 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Βελτιστοποίηση Γεωμετρίας"
+#~ msgstr "Βελτιστοποίηση Γεωμετρίας"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
