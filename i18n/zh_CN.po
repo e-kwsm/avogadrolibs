@@ -11408,29 +11408,11 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Raman强度"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "构建 EFP"
 
 #~ msgid "None (CI)"
 #~ msgstr "无 (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "SCF 类型:"
