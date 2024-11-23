@@ -10053,7 +10053,7 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&구조 최적화"
+#~ msgstr "구조 최적화"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
