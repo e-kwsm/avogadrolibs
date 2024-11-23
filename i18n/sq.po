@@ -9153,9 +9153,6 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "Ngjit"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Duke shtuar zgjatimin .avi"
 
