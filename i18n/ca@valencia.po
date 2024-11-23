@@ -8813,18 +8813,6 @@ msgstr ""
 #~ "Color ressaltat de les característiques particulars amb concordança amb "
 #~ "el patró SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtri"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpenti"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununsepti"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununocti"
-
 #~ msgid "Engines"
 #~ msgstr "Motors"
 
