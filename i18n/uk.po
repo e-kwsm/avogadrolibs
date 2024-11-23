@@ -9944,11 +9944,6 @@ msgstr "Ваші електронні листи"
 #~ msgstr "Копіювати все"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Назва молекули у IUPAC:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Молекулярна вага (г/моль):"
 
@@ -9965,18 +9960,9 @@ msgstr "Ваші електронні листи"
 #~ msgstr "ЩЕ НЕ НАПИСАНО"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Розмір переходу:"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Оптимізація"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "У:"
 
 #, fuzzy
 #~| msgid "Fragments"
@@ -9995,17 +9981,8 @@ msgstr "Ваші електронні листи"
 #~ msgid "Filename"
 #~ msgstr "Назва файла:"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Завантажити файл"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Навігація"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Навігація"
+#~ msgid "OK"
+#~ msgstr "Гаразд"
 
 #, fuzzy
 #~ msgid "Element & Ordinal"
@@ -10014,25 +9991,6 @@ msgstr "Ваші електронні листи"
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Усі файли"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "ромбоедрична"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Молекула"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Не вказано молекули"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK…"
 
 #~ msgid "Fragment..."
 #~ msgstr "Фрагмент…"
@@ -10059,10 +10017,6 @@ msgstr "Ваші електронні листи"
 
 #~ msgid "Torsion Properties..."
 #~ msgstr "Властивості обертання…"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Властивості молекули…"
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "Створити поверхні…"
