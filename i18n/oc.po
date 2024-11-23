@@ -8838,6 +8838,10 @@ msgstr ""
 #~ msgstr "Distància"
 
 #, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Numèro de l'atòm"
+
+#, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Copiar tot"
 
@@ -8872,13 +8876,11 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Nom de fichièr"
+#~ msgstr "Nom de fichièr :"
 
-#~ msgid "OK"
-#~ msgstr "D'acòrdi"
-
-#~ msgid "Cancel"
-#~ msgstr "Anullar"
+#, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "Estructura :"
 
 #, fuzzy
 #~ msgid "Navigate Back"
@@ -8887,6 +8889,28 @@ msgstr ""
 #, fuzzy
 #~ msgid "Navigate Forward"
 #~ msgstr "Navigar"
+
+#, fuzzy
+#~ msgid "Element & Ordinal"
+#~ msgstr "Nom de l'element"
+
+#, fuzzy
+#~| msgid "Dihedral:"
+#~ msgid "octahedral"
+#~ msgstr "Dièdre :"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Insert Molecule..."
+#~ msgstr "Molecula"
+
+#, fuzzy
+#~ msgid "Generating 3D molecule..."
+#~ msgstr "Molecula"
+
+#, fuzzy
+#~ msgid "&GAMESS..."
+#~ msgstr "&GAMESS"
 
 #, fuzzy
 #~ msgid "Atom Properties..."
@@ -8914,7 +8938,11 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Distància : %L1 Å"
+#~ msgstr "Distància (1->2) : %L1 %2"
+
+#, fuzzy
+#~ msgid "Energy (kJ/mol)"
+#~ msgstr "Energia (kJ/mol) :"
 
 #~ msgid "Yes"
 #~ msgstr "Òc"
@@ -8935,6 +8963,10 @@ msgstr ""
 
 #~ msgid "Insert SMILES fragment:"
 #~ msgstr "Inserir un fragment SMILES"
+
+#, fuzzy
+#~ msgid "Insert Crystal"
+#~ msgstr "Inserir un fragment"
 
 #, fuzzy
 #~ msgid "Stopped"
@@ -9071,6 +9103,9 @@ msgstr ""
 #~ msgid "Running Gaussian calculation..."
 #~ msgstr "Calcul Gaussian en cors..."
 
+#~ msgid "&NWChem..."
+#~ msgstr "&NWCHEM..."
+
 #~ msgid "Molpro Input Deck"
 #~ msgstr "Fichièr de donadas Molpro"
 
@@ -9153,6 +9188,21 @@ msgstr ""
 #~ msgctxt "noun, not verb"
 #~ msgid "Format:"
 #~ msgstr "Format :"
+
+#~ msgid "Tagged Image File Format"
+#~ msgstr "tiff"
+
+#~ msgid "Windows Bitmap"
+#~ msgstr "bmp"
+
+#~ msgid "Portable Pixmap"
+#~ msgstr "ppm"
+
+#~ msgid "X11 Bitmap"
+#~ msgstr "xbm"
+
+#~ msgid "X11 Pixmap"
+#~ msgstr "xpm"
 
 #~ msgid "&Advanced <<"
 #~ msgstr "&Avançats >>"
