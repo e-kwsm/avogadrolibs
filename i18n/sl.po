@@ -8795,23 +8795,9 @@ msgstr ""
 #~ msgstr "CILJI"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Velikost skoka:"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Prilagajanje"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "V:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Molekulski delci ..."
 
 #, fuzzy
 #~| msgid "DFT Functional"
@@ -8823,18 +8809,10 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Ime datoteke:"
+#~ msgstr "Ime datoteke"
 
 #~ msgid "Energy (eV)"
 #~ msgstr "Energija (eV)"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "KrmarjenjeSkok navzgor"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "KrmarjenjeSkok navzgor"
 
 #~ msgid "OK"
 #~ msgstr "V redu"
