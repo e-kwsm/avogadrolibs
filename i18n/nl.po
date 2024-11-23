@@ -11114,47 +11114,14 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Raman Intensiteit"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "Maak EFP"
 
 #~ msgid "None (CI)"
 #~ msgstr "Geen (CI)"
 
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
-
-#~ msgid "SCF Type:"
-#~ msgstr "SCF Type:"
-
 #~ msgid "Localization Method:"
 #~ msgstr "Localisatie Methode:"
-
-#~ msgid "Exec Type:"
-#~ msgstr "Exec Type:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
 
 #~ msgid "CI Singles"
 #~ msgstr "CI Singels"
