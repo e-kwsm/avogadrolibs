@@ -9986,27 +9986,6 @@ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "Programnik Gaussian ni pravilno zagnan. Morda ni pravilno nameščen."
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit ..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton ..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian ..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO ..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem ..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem ..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem ..."
-
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Opozorilo ustvarjalnika skripta Molpro"
 
