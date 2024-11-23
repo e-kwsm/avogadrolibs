@@ -8059,7 +8059,7 @@ msgstr "&Schließen"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:484
 #. i18n: ectx: property (text), widget (QPushButton, push_options)
 msgid "&Options…"
-msgstr "Optionen …"
+msgstr "&Optionen …"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:534
 #. i18n: ectx: property (text), widget (QTableWidget, dataTable)
