@@ -12854,29 +12854,11 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "Raman Intensities"
 #~ msgstr "Intenziteta Ramanskih vrhov"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "Ustvari EPF"
 
 #~ msgid "None (CI)"
 #~ msgstr "Brez (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Vrsta SCF:"
