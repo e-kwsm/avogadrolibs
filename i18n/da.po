@@ -9348,7 +9348,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize"
-#~ msgstr "&Optimer geometri"
+#~ msgstr "Optimer"
 
 #, fuzzy
 #~| msgid "Fragment..."
