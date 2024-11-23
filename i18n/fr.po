@@ -12228,9 +12228,6 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Étiqueter les pics :"
 
-#~ msgid "Molecular Vibrations"
-#~ msgstr "Fréquences"
-
 #~ msgid "Filter: "
 #~ msgstr "Filtre : "
 
@@ -12302,12 +12299,6 @@ msgstr ""
 #~ msgid "Advanced..."
 #~ msgstr "Avancé..."
 
-#~ msgid "&n:"
-#~ msgstr "&n :"
-
-#~ msgid "&m:"
-#~ msgstr "&m :"
-
 #~ msgid "&Length:"
 #~ msgstr "&Longueur :"
 
@@ -12319,9 +12310,6 @@ msgstr ""
 
 #~ msgid "angstrom"
 #~ msgstr "angström"
-
-#~ msgid "bohr radii"
-#~ msgstr "bohr"
 
 #~ msgid "nanometers"
 #~ msgstr "nanomètres"
