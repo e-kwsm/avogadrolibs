@@ -9094,18 +9094,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Poudari posebne lastnosti, ki so skladne z vzorcem SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "ununtrij"
-
-#~ msgid "Ununpentium"
-#~ msgstr "ununpentij"
-
-#~ msgid "Ununseptium"
-#~ msgstr "ununseptij"
-
-#~ msgid "Ununoctium"
-#~ msgstr "ununoktij"
-
 #~ msgid "Engines"
 #~ msgstr "Programniki"
 
