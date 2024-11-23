@@ -9448,7 +9448,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Vyladit uspořádání"
+#~ msgstr "Vyladit uspořádání"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
