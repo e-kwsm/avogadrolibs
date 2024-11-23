@@ -8810,7 +8810,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Tilføj &enhedscelle"
+#~ msgstr "Tilføj enhedscelle"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
