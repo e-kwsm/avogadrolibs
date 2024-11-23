@@ -13006,7 +13006,7 @@ msgstr ""
 #~ msgstr "Umbenennen …"
 
 #~ msgid "&Schemes:"
-#~ msgstr "Schemata:"
+#~ msgstr "&Schemata:"
 
 #~ msgid "&DPI:"
 #~ msgstr "&DPI:"
