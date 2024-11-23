@@ -9339,9 +9339,6 @@ msgstr ""
 #~ msgid "Adding .avi extension"
 #~ msgstr "Pridávanie prípony .avi"
 
-#~ msgid "Animation..."
-#~ msgstr "Animácia..."
-
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Nie je možné prečítať formát súboru %1."
 
