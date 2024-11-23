@@ -9818,86 +9818,94 @@ msgstr ""
 #~ msgid "By Atomic Index"
 #~ msgstr "By Atomic Index"
 
-#~ msgid "By Distance"
-#~ msgstr "By Distance"
-
 #~ msgid "Select Water…"
 #~ msgstr "Select Water…"
 
 #~ msgid "&Copy"
 #~ msgstr "&Copy"
 
-#~ msgid "Molecule Name:"
-#~ msgstr "Molecule Name:"
-
-#~ msgid "Molecular Mass (g/mol):"
-#~ msgstr "Molecular Mass (g/mol):"
-
-#~ msgid "Chemical Formula:"
-#~ msgstr "Chemical Formula:"
-
-#~ msgid "Number of Atoms:"
-#~ msgstr "Number of Atoms:"
-
-#~ msgid "Number of Bonds:"
-#~ msgstr "Number of Bonds:"
-
-#~ msgid "TODO"
-#~ msgstr "TODO"
+#, fuzzy
+#~ msgid "All files (*);;"
+#~ msgstr "All files"
 
 #, fuzzy
-#~ msgid "Line Size:"
-#~ msgstr "Line width:"
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhombohedral"
 
-#~ msgid "Optimize"
-#~ msgstr "Optimize"
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Insert Molecule..."
+#~ msgstr "Molecule"
 
-#~ msgid "In."
-#~ msgstr "In."
+#, fuzzy
+#~ msgid "Generating 3D molecule..."
+#~ msgstr "No molecule set"
 
-#~ msgid "El."
-#~ msgstr "El."
+#, fuzzy
+#~ msgid "&GAMESS..."
+#~ msgstr "&GAMESS-UK..."
 
-#~ msgid "El.&No."
-#~ msgstr "El.&No."
+#~ msgid "Fragment..."
+#~ msgstr "Fragment..."
 
-#~ msgid ", "
-#~ msgstr ", "
+#, fuzzy
+#~ msgid "Crystal..."
+#~ msgstr "Crystal..."
 
-#~ msgid "ABPS Input (*.in)"
-#~ msgstr "ABPS Input (*.in)"
+#~ msgid "SMILES..."
+#~ msgstr "SMILES..."
 
+#, fuzzy
+#~ msgid "Add Hydrogens for pH..."
+#~ msgstr "Add Hydrogens for pH..."
+
+#~ msgid "Atom Properties..."
+#~ msgstr "Atom Properties..."
+
+#~ msgid "Bond Properties..."
+#~ msgstr "Bond Properties..."
+
+#~ msgid "Angle Properties..."
+#~ msgstr "Angle Properties..."
+
+#~ msgid "Torsion Properties..."
+#~ msgstr "Torsion Properties..."
+
+#, fuzzy
+#~ msgid "Residue Properties..."
+#~ msgstr "Molecule Properties..."
+
+#~ msgid "Create Surfaces..."
+#~ msgstr "Create Surfaces..."
+
+#, fuzzy
+#~ msgid "Symmetry..."
+#~ msgstr "Symmetry"
+
+#~ msgid "Insert Fragment..."
+#~ msgstr "Insert Fragment..."
+
+#~ msgid "Theory:"
+#~ msgstr "Theory:"
+
+#, fuzzy
+#~ msgid "Distance: %L1 Å"
+#~ msgstr "Distance (1->2): %L1 %2"
+
+#~ msgid "Rotatable"
+#~ msgstr "Rotatable"
+
+#~ msgctxt "in Angstrom"
 #~ msgid ""
-#~ "Select the python interpreter used to run input generator scripts.\n"
-#~ "Avogadro must be restarted for any changes to take effect."
+#~ "Conformer %1\n"
+#~ "Length %2"
 #~ msgstr ""
-#~ "Select the Python interpreter used to run input generator scripts.\n"
-#~ "Avogadro must be restarted for any changes to take effect."
+#~ "Conformer %1\n"
+#~ "Length %2"
 
-#~ msgid "Set Python Path…"
-#~ msgstr "Set Python Path…"
-
-#~ msgid "Fragment…"
-#~ msgstr "Fragment…"
-
-#~ msgid "Functional Groups"
-#~ msgstr "Functional Groups"
-
-#~ msgid "Help..."
-#~ msgstr "Help..."
-
-#~ msgid "Submit Calculation..."
-#~ msgstr "Submit Calculation..."
-
-#~ msgid "Save File..."
-#~ msgstr "Save File..."
-
-#~ msgid "Download Plugins..."
-#~ msgstr "Download Plugins..."
-
-#~ msgid "Record Movie..."
-#~ msgstr "Record Movie..."
-
+#~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
@@ -9905,8 +9913,14 @@ msgstr ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
 
-#~ msgid "Other..."
-#~ msgstr "Other..."
+#~ msgid "Energy (kJ/mol)"
+#~ msgstr "Energy (kJ/mol)"
+
+#~ msgid "Yes"
+#~ msgstr "Yes"
+
+#~ msgid "No"
+#~ msgstr "No"
 
 #~ msgid "Connection failed"
 #~ msgstr "Connection failed"
