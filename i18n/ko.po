@@ -8903,10 +8903,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgstr "설정된 분자 없음"
 
 #, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "pH를 위해 수소 추가..."
 
@@ -8963,9 +8959,8 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgstr "각 %1"
 
 #, fuzzy
-#~| msgid "Angle:"
 #~ msgid "Angle"
-#~ msgstr "각:"
+#~ msgstr "각"
 
 #, fuzzy
 #~| msgid "Conformer %1"
@@ -8980,25 +8975,17 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgstr "비틀림 %1"
 
 #, fuzzy
-#~| msgctxt "Degree symbol"
-#~| msgid "Torsion %1"
 #~ msgid "Torsion"
-#~ msgstr "비틀림 %1"
+#~ msgstr "비틀림"
 
 #, fuzzy
-#~| msgid "Energy (kJ/mol):"
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "에너지 (kJ/mol):"
+#~ msgstr "에너지 (kJ/mol)"
 
 #, fuzzy
 #~| msgid "Years"
 #~ msgid "Yes"
 #~ msgstr "년"
-
-#, fuzzy
-#~| msgid "Neon"
-#~ msgid "No"
-#~ msgstr "네온"
 
 #, fuzzy
 #~ msgid "Input Generators"
@@ -9026,7 +9013,7 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&구조 최적화"
+#~ msgstr "구조 최적화"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
