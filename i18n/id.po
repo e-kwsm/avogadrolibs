@@ -9060,7 +9060,7 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Tambahkan Unit Sel"
+#~ msgstr "Tambahkan &Unit Sel"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
@@ -9071,9 +9071,18 @@ msgstr "Email anda"
 #~ msgstr "Jarak"
 
 #, fuzzy
+#~ msgid "Select Water…"
+#~ msgstr "Indeks Atom"
+
+#, fuzzy
 #~| msgid "Copy"
 #~ msgid "&Copy"
 #~ msgstr "Salin"
+
+#, fuzzy
+#~| msgid "IUPAC Molecule Name:"
+#~ msgid "Molecule Name:"
+#~ msgstr "Nama Molekul IUPAC:"
 
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Berat Molekul (g/mol):"
@@ -9100,9 +9109,18 @@ msgstr "Email anda"
 #~ msgstr "Optimisasi"
 
 #, fuzzy
+#~ msgid "In."
+#~ msgstr "Dalam:"
+
+#, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
 #~ msgstr "Fragmen..."
+
+#, fuzzy
+#~| msgid "DFT Functional:"
+#~ msgid "Functional Groups"
+#~ msgstr "DFT Fungsional:"
 
 #~ msgid "Other..."
 #~ msgstr "Lainnya..."
@@ -9110,6 +9128,18 @@ msgstr "Email anda"
 #, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Nama berkas:"
+
+#, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "Struktur:"
+
+#, fuzzy
+#~ msgid "Navigate Back"
+#~ msgstr "Navigasi"
+
+#, fuzzy
+#~ msgid "Navigate Forward"
+#~ msgstr "Navigasi"
 
 #~ msgid "API Key:"
 #~ msgstr "Kunci API:"
@@ -9141,6 +9171,12 @@ msgstr "Email anda"
 #~ msgstr "Semua berkas"
 
 #, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhombohedral"
+
+#, fuzzy
 #~| msgid "Molecule"
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molekul"
@@ -9152,6 +9188,10 @@ msgstr "Email anda"
 #, qt-format
 #~ msgid "%1: File exists and is not writable."
 #~ msgstr "%1: File ada dan tidak bisa ditulis."
+
+#, fuzzy
+#~ msgid "&GAMESS..."
+#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -9192,7 +9232,7 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Jarak: %L1 Å"
+#~ msgstr "Jarak (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Dapat diputar"
@@ -9217,10 +9257,6 @@ msgstr "Email anda"
 #~ msgid "Angle %1"
 #~ msgstr "Sudut %1"
 
-#, fuzzy
-#~ msgid "Angle"
-#~ msgstr "Sudut"
-
 #~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
@@ -9238,7 +9274,7 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energi (kJ/mol)"
+#~ msgstr "Energi (kJ/mol):"
 
 #~ msgid "Yes"
 #~ msgstr "Ya"
@@ -9271,6 +9307,10 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
+#~ msgstr "&Optimisasi Geometri"
+
+#, fuzzy
+#~ msgid "Configure geometry optimization..."
 #~ msgstr "Optimisasi Geometri"
 
 #, fuzzy
@@ -9327,6 +9367,9 @@ msgstr "Email anda"
 
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Sorot fitur tertentu yang sesuai dengan pola SMARTS"
+
+#~ msgid "Ununoctium"
+#~ msgstr "Ununoktium"
 
 #~ msgid "Engines"
 #~ msgstr "Mesin"
@@ -11235,11 +11278,29 @@ msgstr "Email anda"
 #~ msgid "Raman Intensities"
 #~ msgstr "Intensitas Raman"
 
-#~ msgid "Make EFP"
-#~ msgstr "Membuat EFP"
+#~ msgid "UHF"
+#~ msgstr "UHF"
+
+#~ msgid "ROHF"
+#~ msgstr "ROHF"
+
+#~ msgid "GVB"
+#~ msgstr "GVB"
+
+#~ msgid "MCSCF"
+#~ msgstr "MCSCF"
 
 #~ msgid "None (CI)"
 #~ msgstr "Kosong (Cl)"
+
+#~ msgid "Foster-Boys"
+#~ msgstr "Foster-Boys"
+
+#~ msgid "Edmistron-Ruedenberg"
+#~ msgstr "Edmistron-Ruedenberg"
+
+#~ msgid "Pipek-Mezey"
+#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Tipe SCF:"
