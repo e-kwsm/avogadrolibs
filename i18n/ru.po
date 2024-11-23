@@ -9568,28 +9568,15 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Добавить &Элементарную ячейку"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Номера атомов"
+#~ msgstr "Добавить Элементарную ячейку"
 
 #, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Расстояние"
 
 #, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Номера атомов"
-
-#, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Копировать всё"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Заряд молекулы:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9608,73 +9595,20 @@ msgstr ""
 #~ msgstr "TODO"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Размер перехода:"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Оптимизация"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "В:"
 
 #, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
 #~ msgstr "Фрагмент..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Функционал плотности:"
-
 #~ msgid "Other..."
 #~ msgstr "Другой..."
 
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Имя файла:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Структура:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Навигация"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Навигация"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Название элемента"
-
 #~ msgid "All files (*);;"
 #~ msgstr "Все файлы (*);;"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Ромбоэдрическая"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Молекула"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Молекула не задана"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -9718,35 +9652,17 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Расстояние (1->2): %L1 %2"
+#~ msgstr "Расстояние: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Вращение"
-
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "Конформер %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "Конформер %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "Угол %1"
 
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "Конформер %1"
+#~ msgid "Angle"
+#~ msgstr "Угол"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
@@ -9789,7 +9705,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Оптимизировать геометрию"
+#~ msgstr "Оптимизировать геометрию"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -12178,29 +12094,8 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Рамановские интенсивности"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Отсутствует"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Тип SCF:"
