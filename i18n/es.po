@@ -10729,7 +10729,7 @@ msgstr ""
 #~ "algoritmo de reducción. Deteniendo"
 
 #~ msgid "Rotate To Standard &Orientation"
-#~ msgstr "Rotar a Orientación Estándar"
+#~ msgstr "Rotar a &Orientación Estándar"
 
 #~ msgid "&Slab..."
 #~ msgstr "&Slab"
