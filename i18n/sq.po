@@ -9138,18 +9138,6 @@ msgstr ""
 #~ msgid "E&xtensions"
 #~ msgstr "Z&gjatimet"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Motorrët"
 
@@ -9164,9 +9152,6 @@ msgstr ""
 
 #~ msgid "Stick"
 #~ msgstr "Ngjit"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Duke shtuar zgjatimin .avi"
