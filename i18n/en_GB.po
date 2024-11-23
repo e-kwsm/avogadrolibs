@@ -10004,7 +10004,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimise Geometry"
+#~ msgstr "Optimise Geometry"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
