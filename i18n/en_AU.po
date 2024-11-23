@@ -9648,9 +9648,6 @@ msgstr ""
 #~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
 #~ "Right Mouse: \tClick and drag to move the view.\n"
 
-#~ msgid "Animation Tool"
-#~ msgstr "Animation Tool"
-
 #~ msgid ""
 #~ "Selection Tool\n"
 #~ "\n"
@@ -9667,10 +9664,6 @@ msgstr ""
 #~ "Right Mouse: \tClick outside the molecule to clear selection\n"
 #~ "Use Ctrl to toggle the selection and shift to add to the selection.\n"
 #~ "Double-Click: \tSelect an entire fragment."
-
-#~ msgctxt "ambient occlusion"
-#~ msgid "Van der Waals (AO)"
-#~ msgstr "Van der Waals (AO)"
 
 #~ msgid ""
 #~ "Manipulation Tool\n"
@@ -9686,41 +9679,8 @@ msgstr ""
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Simple display of VdW spheres with ambient occlusion."
 
-#~ msgid "Geometry"
-#~ msgstr "Geometry"
-
 #~ msgid "Add Unit Cell"
 #~ msgstr "Add &Unit Cell"
-
-#~ msgid "By Atomic Index"
-#~ msgstr "By Atomic Index"
-
-#~ msgid "By Distance"
-#~ msgstr "By Distance"
-
-#~ msgid "Select Water…"
-#~ msgstr "Select Water…"
-
-#~ msgid "&Copy"
-#~ msgstr "&Copy"
-
-#~ msgid "Molecule Name:"
-#~ msgstr "Molecule Name:"
-
-#~ msgid "Molecular Mass (g/mol):"
-#~ msgstr "Molecular Mass (g/mol):"
-
-#~ msgid "Chemical Formula:"
-#~ msgstr "Chemical Formula:"
-
-#~ msgid "Number of Atoms:"
-#~ msgstr "Number of Atoms:"
-
-#~ msgid "Number of Bonds:"
-#~ msgstr "Number of Bonds:"
-
-#~ msgid "TODO"
-#~ msgstr "TODO"
 
 #, fuzzy
 #~ msgid "Line Size:"
@@ -9965,6 +9925,184 @@ msgstr ""
 #~ msgstr "Stop"
 
 #, fuzzy
+#~ msgid "Navigate Forward"
+#~ msgstr "Navigate"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancel"
+
+#, fuzzy
+#~ msgid "Element & Ordinal"
+#~ msgstr "Element name"
+
+#, fuzzy
+#~ msgid "All files (*);;"
+#~ msgstr "All files"
+
+#, fuzzy
+#~| msgctxt "Lattice type"
+#~| msgid "Rhombohedral"
+#~ msgid "octahedral"
+#~ msgstr "Rhombohedral"
+
+#, fuzzy
+#~| msgid "Molecule"
+#~ msgid "Insert Molecule..."
+#~ msgstr "Molecule"
+
+#, fuzzy
+#~ msgid "Generating 3D molecule..."
+#~ msgstr "No molecule set"
+
+#, fuzzy
+#~ msgid "&GAMESS..."
+#~ msgstr "&GAMESS-UK..."
+
+#~ msgid "Fragment..."
+#~ msgstr "Fragment..."
+
+#, fuzzy
+#~ msgid "Crystal..."
+#~ msgstr "Crystal..."
+
+#~ msgid "SMILES..."
+#~ msgstr "SMILES..."
+
+#, fuzzy
+#~ msgid "Add Hydrogens for pH..."
+#~ msgstr "Add Hydrogens for pH..."
+
+#~ msgid "Atom Properties..."
+#~ msgstr "Atom Properties..."
+
+#~ msgid "Bond Properties..."
+#~ msgstr "Bond Properties..."
+
+#~ msgid "Angle Properties..."
+#~ msgstr "Angle Properties..."
+
+#~ msgid "Torsion Properties..."
+#~ msgstr "Torsion Properties..."
+
+#, fuzzy
+#~ msgid "Residue Properties..."
+#~ msgstr "Molecule Properties..."
+
+#~ msgid "Create Surfaces..."
+#~ msgstr "Create Surfaces..."
+
+#, fuzzy
+#~ msgid "Symmetry..."
+#~ msgstr "Symmetry"
+
+#~ msgid "Insert Fragment..."
+#~ msgstr "Insert Fragment..."
+
+#~ msgid "Theory:"
+#~ msgstr "Theory:"
+
+#, fuzzy
+#~ msgid "Distance: %L1 Å"
+#~ msgstr "Distance (1->2): %L1 %2"
+
+#~ msgid "Rotatable"
+#~ msgstr "Rotatable"
+
+#~ msgctxt "in Angstrom"
+#~ msgid ""
+#~ "Conformer %1\n"
+#~ "Length %2"
+#~ msgstr ""
+#~ "Conformer %1\n"
+#~ "Length %2"
+
+#~ msgctxt "Degree symbol"
+#~ msgid ""
+#~ "Conformer %1\n"
+#~ "Angle %2"
+#~ msgstr ""
+#~ "Conformer %1\n"
+#~ "Angle %2"
+
+#~ msgctxt "Degree symbol"
+#~ msgid "Angle %1"
+#~ msgstr "Angle %1"
+
+#~ msgid "Angle"
+#~ msgstr "Angle"
+
+#~ msgctxt "Degree symbol"
+#~ msgid ""
+#~ "Conformer %1\n"
+#~ "Torsion %2"
+#~ msgstr ""
+#~ "Conformer %1\n"
+#~ "Torsion %2"
+
+#~ msgctxt "Degree symbol"
+#~ msgid "Torsion %1"
+#~ msgstr "Torsion %1"
+
+#~ msgid "Torsion"
+#~ msgstr "Torsion"
+
+#~ msgid "Energy (kJ/mol)"
+#~ msgstr "Energy (kJ/mol)"
+
+#~ msgid "Yes"
+#~ msgstr "Yes"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#, fuzzy
+#~ msgid "Input Generators"
+#~ msgstr "Input Generator..."
+
+#, fuzzy
+#~ msgid "Import"
+#~ msgstr "Import"
+
+#~ msgid "Insert SMILES"
+#~ msgstr "Insert SMILES"
+
+#~ msgid "Insert SMILES fragment:"
+#~ msgstr "Insert SMILES fragment:"
+
+#~ msgid "Insert Crystal"
+#~ msgstr "Insert Crystal"
+
+#~ msgid "Insert molecular fragments for building larger molecules"
+#~ msgstr "Insert molecular fragments for building larger molecules"
+
+#~ msgid "E&xtensions"
+#~ msgstr "E&xtensions"
+
+#~ msgid "Symmetry Properties..."
+#~ msgstr "Symmetry Properties..."
+
+#, fuzzy
+#~ msgid "Optimize geometry"
+#~ msgstr "&Optimise Geometry"
+
+#, fuzzy
+#~ msgid "Configure geometry optimization..."
+#~ msgstr "Geometry Optimization"
+
+#, fuzzy
+#~ msgid "Add hydrogens"
+#~ msgstr "Add Hydrogens"
+
+#, fuzzy
+#~ msgid "Stopped"
+=======
+>>>>>>> 782f5b83e275 (i18n/en_AU.po)
+#~ msgstr "Stop"
+
+#, fuzzy
 #~ msgid "Surface Dialog"
 #~ msgstr "Surfaces"
 
@@ -10001,112 +10139,17 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Colour by Residue (amino acid type, hydrophobicity, ..."
 
-#~ msgid "SMARTS Pattern:"
-#~ msgstr "SMARTS Pattern:"
-
-#~ msgid "Highlight Color:"
-#~ msgstr "Highlight Color:"
-
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Colour by SMARTS Pattern"
-
-#~ msgid "Highlight particular features which match a SMARTS pattern."
-#~ msgstr "Highlight particular features which match a SMARTS pattern."
-
-#~ msgid "Engines"
-#~ msgstr "Engines"
-
-#~ msgid "Axes"
-#~ msgstr "Axes"
 
 #~ msgid "Renders the x, y, and z axes at the origin"
 #~ msgstr "Renders the x, y and z axes at the origin"
 
-#~ msgid "Renders primitives using Balls (atoms) and Sticks (bonds)"
-#~ msgstr "Renders primitives using Balls (atoms) and Sticks (bonds)"
-
-#~ msgid "Dipole"
-#~ msgstr "Dipole"
-
-#~ msgid "Hydrogen Bond"
-#~ msgstr "Hydrogen Bond"
-
-#~ msgid "Renders hydrogen bonds"
-#~ msgstr "Renders hydrogen bonds"
-
-#~ msgid "Select Atom Labels Color"
-#~ msgstr "Select Atom Labels Color"
-
 #~ msgid "Select Bond Labels Color"
 #~ msgstr "Select Bond Labels Colour"
 
-#~ msgid "Select Bond Labels Font"
-#~ msgstr "Select Bond Labels Font"
-
-#~ msgid "Polygon"
-#~ msgstr "Polygon"
-
-#~ msgid "Renders atoms as tetrahedra, octahedra, and other polygons"
-#~ msgstr "Renders atoms as tetrahedra, octahedra, and other polygons"
-
-#~ msgid "Renders protein backbones as ribbons"
-#~ msgstr "Renders protein backbones as ribbons"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
-
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Renders rings with coloured planes"
-
-#~ msgid "Simple Wireframe"
-#~ msgstr "Simple Wireframe"
-
-#~ msgid "Renders bonds as wires (lines), ideal for large molecules"
-#~ msgstr "Renders bonds as wires (lines), ideal for large molecules"
-
-#~ msgid "Van der Waals Spheres"
-#~ msgstr "Van der Waals Spheres"
-
-#~ msgid "Stick"
-#~ msgstr "Stick"
-
-#~ msgctxt "Electron density isosurface with a cutoff of %1"
-#~ msgid "Electron density, isosurface = %L1"
-#~ msgstr "Electron density, isosurface = %L1"
-
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
-#~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
-#~ msgstr "Renders bonds as wires (lines), ideal for very large (bio)molecules"
-
-#~ msgid "Trajectory files"
-#~ msgstr "Trajectory files"
-
-#~ msgid "DL-POLY HISTORY files"
-#~ msgstr "DL-POLY HISTORY files"
-
-#~ msgid "Open Trajectory File"
-#~ msgstr "Open Trajectory File"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
-#~ msgid "Adding .avi extension"
-#~ msgstr "Adding .avi extension"
-
-#~ msgid "Animation..."
-#~ msgstr "Animation..."
-
-#~ msgid "Cannot read file format of file %1."
-#~ msgstr "Cannot read file format of file %1."
-
-#~ msgid "Read trajectory file %1 failed."
-#~ msgstr "Read trajectory file %1 failed."
-
-#~ msgid "Must specify a valid .avi file name"
-#~ msgstr "Must specify a valid .avi file name"
 
 #~ msgid "GL widget was not correctly initialized in order to save video"
 #~ msgstr "GL widget was not correctly initialised in order to save video"
