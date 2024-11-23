@@ -9528,11 +9528,6 @@ msgstr "Email anda"
 #~ msgid "&Copy"
 #~ msgstr "Salin"
 
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nama Molekul IUPAC:"
-
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Berat Molekul (g/mol):"
 
