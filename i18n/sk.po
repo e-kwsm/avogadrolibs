@@ -9290,18 +9290,9 @@ msgstr ""
 #~ msgstr "Vzdialenosť"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekula"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Optimalizácia"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "V:"
 
 #, fuzzy
 #~| msgid "Fragment..."
@@ -9318,33 +9309,12 @@ msgstr ""
 #~ msgstr "Nesprávny názov súboru"
 
 #, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigovať"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigovať"
-
-#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Názov prvku"
 
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Všetky súbory"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&HRY"
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9362,10 +9332,6 @@ msgstr ""
 #~ msgid "Torsion Properties..."
 #~ msgstr "Vlastnosti krútenia..."
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Vlastnosti molekuly..."
-
 #~ msgid "Insert Fragment..."
 #~ msgstr "Vložiť Zlomok"
 
@@ -9374,7 +9340,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Vzdialenosť (1->2): %L1 %2"
+#~ msgstr "Vzdialenosť: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Otočný"
