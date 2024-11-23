@@ -9638,11 +9638,6 @@ msgstr ""
 #~ msgstr "复制(&C)"
 
 #, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "分子电荷:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "分子量 (g/mol):"
 
@@ -9654,14 +9649,6 @@ msgstr ""
 
 #~ msgid "Number of Bonds:"
 #~ msgstr "化学键的数量:"
-
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
-#, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "跳转尺度:"
 
 #~ msgid "In."
 #~ msgstr "输入。"
@@ -9685,65 +9672,12 @@ msgstr ""
 #~ "选择用以运行输入文件生成脚本的 Python 解释器。\n"
 #~ "更改将在 Avogadro 重启后生效。"
 
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "片段..."
-
-#~ msgid "Submit Calculation..."
-#~ msgstr "提交计算..."
-
-#~ msgid "Other..."
-#~ msgstr "其它..."
-
 #~ msgid "Filename"
 #~ msgstr "文件名"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "加载结构文件"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "导航"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "导航"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "元素名称。"
-
-#, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "所有文件 (*);;"
-
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "二面体："
-
-#, fuzzy
-#~| msgid "Insert Molecule..."
-#~ msgid "Insert Molecule..."
-#~ msgstr "插入分子..."
-
-#, fuzzy
-#~| msgid "Error Pasting Molecule"
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "错误粘贴分子"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "晶体..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
