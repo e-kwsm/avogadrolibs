@@ -9145,18 +9145,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Позначати окремі елементи, які відповідають набору SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Унунтрій"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Унунпентій"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Унунсептій"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Унуноктій"
-
 #~ msgid "Engines"
 #~ msgstr "Рушії"
 

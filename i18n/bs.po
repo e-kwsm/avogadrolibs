@@ -8774,18 +8774,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Boja po ostatku (tip amino kiselina, hidrofobnost, ..."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrijum"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentijum"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptijum"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoktijum"
-
 #~ msgid "Engines"
 #~ msgstr "Mašine"
 
