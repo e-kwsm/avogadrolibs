@@ -11190,7 +11190,7 @@ msgstr "nordinalex@gmail.com, yeager@ubuntu.com"
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Optimera geometri"
+#~ msgstr "Geometri"
 
 #, fuzzy
 #~ msgid "By Distance"
