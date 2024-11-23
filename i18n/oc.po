@@ -8559,15 +8559,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Distància (1->2) : %L1 %2"
-
-#, fuzzy
-#~ msgid "Angle"
-#~ msgstr "Angle :"
-
-#, fuzzy
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energia (kJ/mol) :"
+#~ msgstr "Distància : %L1 Å"
 
 #~ msgid "Yes"
 #~ msgstr "Òc"
@@ -8588,10 +8580,6 @@ msgstr ""
 
 #~ msgid "Insert SMILES fragment:"
 #~ msgstr "Inserir un fragment SMILES"
-
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "Inserir un fragment"
 
 #, fuzzy
 #~ msgid "Stopped"
