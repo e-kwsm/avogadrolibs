@@ -9204,7 +9204,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Optimize"
-#~ msgstr "&Oптимизиране на геометрията"
+#~ msgstr "Oптимизиране"
 
 #, fuzzy
 #~ msgid "Filename"
