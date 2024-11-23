@@ -9578,17 +9578,11 @@ msgstr ""
 #~ msgid "Select Bond Labels Font"
 #~ msgstr "Vælg skrifttype for bindingsetiketter"
 
-#~ msgid "Polygon"
-#~ msgstr "Polygon"
-
 #~ msgid "Renders atoms as tetrahedra, octahedra, and other polygons"
 #~ msgstr "Render atomer som tetraeder, oktraeder eller andre polygoner"
 
 #~ msgid "Renders protein backbones as ribbons"
 #~ msgstr "Render protein-rygrad som bånd"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
 
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Render ringe med farvede flader"
@@ -9620,14 +9614,8 @@ msgstr ""
 #~ msgid "DL-POLY HISTORY files"
 #~ msgstr "DL-POLY HISTORIK-filer"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Tilføj .avi filendelse"
-
-#~ msgid "Animation..."
-#~ msgstr "Animation..."
 
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Kan ikke læse filformatet på filen %1."
@@ -9722,30 +9710,14 @@ msgstr ""
 #~ msgstr "Orthorhombisk"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Kubisk"
 
 #~ msgid "&Fill Unit Cell"
 #~ msgstr "&Fyld enhedscelle"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
-#~ msgid "&Nanometer"
-#~ msgstr "&Nanometer"
-
-#~ msgid "&Picometer"
-#~ msgstr "&Picometer"
-
 #~ msgid "&Degree"
 #~ msgstr "&Grad"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Preserve &Cartesian Coordinates During Cell Modification"
 #~ msgstr "Bevar &kartesiske koordinater under ændring af celle"
@@ -9799,9 +9771,6 @@ msgstr ""
 #~ msgid "H to Methyl"
 #~ msgstr "H til Methyl"
 
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
-
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Ændre hydrogen til metylgrupper"
 
@@ -9833,9 +9802,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "PDB element der skal hentes."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL til molekylerne som skal hentes."
 
@@ -9859,9 +9825,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Billedfiler (*.png, *pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Intet gyldigt filnavn angivet."
@@ -9934,12 +9897,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES format konvertering ikke tilgængelig!"
 
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Skab inputfil til GAMESS kvantekemipakken"
 
@@ -10001,21 +9958,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussian blev ikke afviklet korrekt. Måske er programmet ikke installeret "
 #~ "korrekt."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC input advarsel"
@@ -10125,10 +10067,6 @@ msgstr ""
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR spektrum indstillinger"
 
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
 #~ msgid "&UV Settings"
 #~ msgstr "Indstillinger for &UV"
 
@@ -10165,15 +10103,8 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Komma separerede værdier"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Ukendt udvidelse: %1"
-
-#~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
-#~ msgid "PWscf IR data (*.out)"
-#~ msgstr "PWscf IR data (*.out)"
 
 #~ msgid "Data Format"
 #~ msgstr "Dataformat"
@@ -10181,26 +10112,8 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Indlæs spektrum data:"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "Windows-bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Gem spektrumbillede"
@@ -10233,10 +10146,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Ingenting"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Elektrontæthed"
@@ -10251,9 +10160,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Udregner MO %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL widget blev ikke initializeret korrekt så video kan ikke skabes"
@@ -10284,9 +10190,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Fejlretningsinformation"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Vis størrelse: %L1 x %L2"
@@ -10324,15 +10227,8 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molekyle %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Ukendt Python-motor"
-
-#~ msgid "PythonEngine: checking "
-#~ msgstr "PythonEngine: checking "
 
 #~ msgid "  - script has no 'Engine' class defined"
 #~ msgstr "  - scriptet har ikke defineret en \"Engine\"-klasse"
@@ -10352,9 +10248,6 @@ msgstr ""
 #~ msgid "Unknown Python Tool"
 #~ msgstr "Ukendt Python-værktøj"
 
-#~ msgid "PythonTool: checking "
-#~ msgstr "PythonTool: checking "
-
 #~ msgid "  - script has no 'Tool' class defined"
 #~ msgstr "  - scriptet har ikke defineret en \"Tool\"-klasse"
 
@@ -10369,9 +10262,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: kunne ikke sætte et kraftfelt op...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Steps per Update:"
 #~ msgstr "Trin per opdatering:"
@@ -10445,22 +10335,6 @@ msgstr ""
 #~ msgid "Distance (3->4): %L1 %2"
 #~ msgstr "Afstand  (3->4): %L1 %2"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Afstande:"
 
@@ -10491,9 +10365,6 @@ msgstr ""
 #~ msgid "Select atoms, residues, and molecules"
 #~ msgstr "Vælg atomer, rester og molekyler"
 
-#~ msgid "Symbol"
-#~ msgstr "Symbol"
-
 #~ msgid "Bond Length"
 #~ msgstr "Bindingslængde"
 
@@ -10508,15 +10379,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "Form"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "Løkke"
@@ -10542,9 +10404,6 @@ msgstr ""
 #~ msgid "Bond order"
 #~ msgstr "Bindingsorden"
 
-#~ msgid "Radius:"
-#~ msgstr "Radius:"
-
 #~ msgid "Include Nitrogens"
 #~ msgstr "Inkludér kvælstoffer"
 
@@ -10565,9 +10424,6 @@ msgstr ""
 
 #~ msgid "Show Atoms"
 #~ msgstr "Vis atomer"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -10591,9 +10447,6 @@ msgstr ""
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gauss-&bredde:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "higher frequency vibrations will show faster movement"
 #~ msgstr "højere frekvens vibrationer vil vise hurtigere bevægelser"
 
@@ -10609,10 +10462,6 @@ msgstr ""
 #~ msgctxt "low resolution"
 #~ msgid "Low"
 #~ msgstr "Lav"
-
-#~ msgctxt "medium resolution"
-#~ msgid "Medium"
-#~ msgstr "Medium"
 
 #~ msgctxt "high resolution"
 #~ msgid "High"
