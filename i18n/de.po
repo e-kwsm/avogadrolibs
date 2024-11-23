@@ -12940,7 +12940,7 @@ msgstr ""
 #~ msgstr "Animationsgeschwindigkeit gesetzt durch Frequenz"
 
 #~ msgid "Display force &vectors"
-#~ msgstr "Kraftvektoren anzeigen"
+#~ msgstr "Kraft&vektoren anzeigen"
 
 #~ msgid "&Normalize displacements"
 #~ msgstr "Ablösungen &Normalisieren"
