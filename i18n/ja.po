@@ -11967,9 +11967,6 @@ msgstr ""
 #~ msgid "Number of Bonds:"
 #~ msgstr "結合数:"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
 #, fuzzy
 #~| msgid "Line width:"
 #~ msgid "Line Size:"
@@ -11977,11 +11974,6 @@ msgstr ""
 
 #~ msgid "Fragment…"
 #~ msgstr "フラグメント…"
-
-#, fuzzy
-#~| msgid "Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "汎関数"
 
 #~ msgid "Help..."
 #~ msgstr "ヘルプ..."
@@ -12213,10 +12205,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&ジオメトリ最適化"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
 #~ msgstr "構造最適化"
 
 #, fuzzy
