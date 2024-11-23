@@ -8686,27 +8686,6 @@ msgstr ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
 
-#~ msgid "Other..."
-#~ msgstr "Other..."
-
-#~ msgid "Connection failed"
-#~ msgstr "Connection failed"
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
-#~ msgid "Energy (eV)"
-#~ msgstr "Energy (eV)"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Load File"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigate"
-
 #~ msgid "Color by atomic partial charge (blue = positive, red = negative."
 #~ msgstr "Colour by atomic partial charge (blue = positive, red = negative."
 
