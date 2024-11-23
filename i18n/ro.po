@@ -3045,7 +3045,7 @@ msgstr "G&rupează atomii în celula unitară"
 
 #: qtplugins/crystal/crystal.cpp:63
 msgid "Rotate to Standard &Orientation"
-msgstr "Rotire în orientarea standard"
+msgstr "Rotire în &orientarea standard"
 
 #: qtplugins/crystal/crystal.cpp:69
 msgid "Scale Cell &Volume…"
