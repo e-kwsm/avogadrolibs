@@ -9387,18 +9387,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Resaltar características particulares que se ajustan a patrones SMARTS"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrio"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentio"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptio"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctio"
-
 #~ msgid "Engines"
 #~ msgstr "Motores"
 
