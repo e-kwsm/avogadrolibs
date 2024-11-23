@@ -11584,29 +11584,11 @@ msgstr "E-mail-címek"
 #~ msgid "Raman Intensities"
 #~ msgstr "Raman intenzitás"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "EFP készítés"
 
 #~ msgid "None (CI)"
 #~ msgstr "Nincs (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "SCF típus:"
