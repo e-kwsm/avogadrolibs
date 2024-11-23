@@ -10188,7 +10188,7 @@ msgstr "E-mail-címek"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&geometria optimalizáció"
+#~ msgstr "geometria optimalizáció"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
