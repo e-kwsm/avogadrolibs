@@ -9346,9 +9346,6 @@ msgstr ""
 #~ msgid "&GAMESS..."
 #~ msgstr "&HRY"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Pridať vodíky pre pH..."
@@ -9397,10 +9394,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "No"
 #~ msgstr "Neón"
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Import"
 
 #~ msgid "Insert SMILES"
 #~ msgstr "Vložiť SMILES"
@@ -9466,18 +9459,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Farba podľa SMARTS vzoru"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Axes"
 #~ msgstr "Osy"
 
@@ -9508,15 +9489,8 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "Tyčinka"
 
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
 #~ msgid "Trajectory files"
 #~ msgstr "Súbory trajektórie"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Pridávanie prípony .avi"
@@ -9623,9 +9597,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Bežné vektorové formáty"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "H to Methyl"
 #~ msgstr "H na metyl"
 
@@ -9646,9 +9617,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "Záznam PDB na stiahnutie."
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL molekuly na stiahnutie."
@@ -9695,12 +9663,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Konverzia formátu nie je k dispozícii!"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Vytvorenie vstupných súborov pre balík kvantovej chémie GAMESS"
@@ -9778,10 +9740,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Nastavenie &Infračerveného Spektra"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR Nastavenie Spektra"
 
@@ -9821,18 +9779,6 @@ msgstr ""
 
 #~ msgid "Load Spectral Data"
 #~ msgstr "Načítať spektrálne údaje"
-
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
 
 #~ msgid "Portable Pixmap"
 #~ msgstr "Prenosná Pixmapa"
@@ -9876,9 +9822,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Ladiace informácie"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Zobrazenie veľkosti: %L1 x %L2"
@@ -10009,9 +9952,6 @@ msgstr ""
 #~ msgid "Select atoms, residues, and molecules"
 #~ msgstr "Vyber atómy, zvyšky a molekuly"
 
-#~ msgid "Symbol"
-#~ msgstr "Symbol"
-
 #~ msgid "Hydrophobicity"
 #~ msgstr "Hydrofóbia"
 
@@ -10020,15 +9960,6 @@ msgstr ""
 
 #~ msgid "Bond Radius:"
 #~ msgstr "Radius Väzby:"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "Slučka"
@@ -10053,9 +9984,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animovať Trajektórie"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgid "Save as .avi..."
 #~ msgstr "Uložiť ako .avi..."
@@ -10090,71 +10018,14 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmus"
 
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Advanced"
 #~ msgstr "Pokročilé"
 
 #~ msgid "Grid"
 #~ msgstr "Mriežka"
 
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
 #~ msgid "EFP Matches"
 #~ msgstr "EFP Výsledky"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "&Pokročilé Nastavenia"
@@ -10168,24 +10039,6 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Čítať"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "ECP Typ:"
 
@@ -10195,20 +10048,11 @@ msgstr ""
 #~ msgid "Max SCF Iterations:"
 #~ msgstr "Max SCF Iterácia:"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Finite Electric Field"
 #~ msgstr "Obmedzené Elektrické Pole"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Celková Optimalizácia"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO Optimalizácia"
@@ -10234,29 +10078,8 @@ msgstr ""
 #~ msgid "Localization Method:"
 #~ msgstr "Lokalizačná Metóda"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
 #~ msgid "General CI"
 #~ msgstr "Všeobecné CI"
-
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Spustiť Normálne"
@@ -10275,45 +10098,6 @@ msgstr ""
 
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Poradie Hlavnej Osi"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Hilderbrant internals"
 #~ msgstr "Vnútorný Hilderbrant"
@@ -10339,15 +10123,6 @@ msgstr ""
 #~ msgid "MegaBytes"
 #~ msgstr "MegaByty"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
 #~ msgid "Memory:"
 #~ msgstr "Pamäť:"
 
@@ -10365,15 +10140,6 @@ msgstr ""
 
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "GAMESS Rozhranie pre Iné Kódy"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK Verzia)"
@@ -10417,11 +10183,5 @@ msgstr ""
 #~ msgid "Follow Mode:"
 #~ msgstr "Dodržiavajte režim:"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Štandard"
-
-#~ msgid "Checkpoint:"
-#~ msgstr "Checkpoint:"
