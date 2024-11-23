@@ -8446,7 +8446,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Filename"
-#~ msgstr "&Skedari"
+#~ msgstr "Skedari"
 
 #, fuzzy
 #~ msgid "No"
