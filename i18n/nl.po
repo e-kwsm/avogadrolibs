@@ -8484,11 +8484,6 @@ msgstr ""
 "vandruten@smoose.nl,sanderd17@gmail.com,vtijms@gmail.com,"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
-
-#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "Geometrie"
 
