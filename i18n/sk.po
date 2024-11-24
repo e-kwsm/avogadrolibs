@@ -7756,8 +7756,10 @@ msgstr "Vybrané Farby"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:288
 #. i18n: ectx: property (text), widget (QLabel, label_4)
+#, fuzzy
+#| msgid "Import Spectra"
 msgid "Imported Spectra:"
-msgstr ""
+msgstr "Importovať Spectra"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:336
 #. i18n: ectx: property (text), widget (QPushButton, push_export)
