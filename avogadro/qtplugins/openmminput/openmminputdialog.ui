@@ -204,16 +204,19 @@
       <widget class="QComboBox" name="precisionCombo">
        <item>
         <property name="text">
+         <!-- precision -->
          <string>single</string>
         </property>
        </item>
        <item>
         <property name="text">
+         <!-- precision -->
          <string>mixed</string>
         </property>
        </item>
        <item>
         <property name="text">
+         <!-- precision -->
          <string>double</string>
         </property>
        </item>
