@@ -8835,19 +8835,11 @@ msgstr "Ваші електронні листи"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Вилучити &елементарну комірку"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Номери атомів"
+#~ msgstr "Вилучити елементарну комірку"
 
 #, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Відстань"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Номери атомів"
 
 #, fuzzy
 #~ msgid "&Copy"
@@ -8898,10 +8890,6 @@ msgstr "Ваші електронні листи"
 #~ msgstr "Скасувати"
 
 #, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Назва елемента"
-
-#, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Усі файли"
 
@@ -8911,9 +8899,6 @@ msgstr "Ваші електронні листи"
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Кристал…"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES…"
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
