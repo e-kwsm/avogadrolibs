@@ -9679,12 +9679,6 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analitika"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgid "&Import..."
 #~ msgstr "&Inportatu..."
 
