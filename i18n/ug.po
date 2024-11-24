@@ -8504,9 +8504,6 @@ msgstr ""
 #~ msgid "Molecule Name:"
 #~ msgstr "مولېكۇلا"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
 #, fuzzy
 #~ msgid "In."
 #~ msgstr "دىكى:"
@@ -8603,20 +8600,11 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "مۇقىم"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "Show Preview"
 #~ msgstr "ئالدىن كۆزىتىشنى كۆرسەت"
 
 #~ msgid "Delete"
 #~ msgstr "ئۆچۈر"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Y Axis"
 #~ msgstr "Y ئوقى"
@@ -8659,15 +8647,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "شەكىل"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "دەۋرىي"
 
@@ -8699,15 +8678,6 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "ئالگورىزىم"
 
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Advanced"
 #~ msgstr "ئالىي"
 
@@ -8726,29 +8696,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "ئوقۇ"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
 #~ msgid "Default"
 #~ msgstr "كۆڭۈلدىكى"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
-#~ msgid "CC:"
-#~ msgstr "CC:"
 
 #~ msgid "Check"
 #~ msgstr "تەكشۈر"
 
 #~ msgid "Debug"
 #~ msgstr "سازلا"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Minutes"
 #~ msgstr "مىنۇت"
@@ -8761,9 +8716,6 @@ msgstr ""
 
 #~ msgid "Weeks"
 #~ msgstr "ھەپتە"
-
-#~ msgid "Memory:"
-#~ msgstr "Memory:"
 
 #~ msgctxt "\"Loop\" load balancing - set static node assignments"
 #~ msgid "Loop"
@@ -8783,9 +8735,6 @@ msgstr ""
 
 #~ msgid "&Width:"
 #~ msgstr "كەڭلىك(&W):"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "in"
 #~ msgstr "دىيۇيم"
