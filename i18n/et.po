@@ -9281,6 +9281,9 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Värv jäägi järgi (aminohappe tüüp, hüdrofoobsus, ..."
 
+#~ msgid "Ununoctium"
+#~ msgstr "Ununoktium"
+
 #~ msgid "Engines"
 #~ msgstr "Mootorid"
 
