@@ -12848,29 +12848,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Raman Intensities"
 #~ msgstr "Εντάσεις Ράμαν"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Κανένα (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Τύπος SCF:"
