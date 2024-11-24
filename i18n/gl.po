@@ -8808,10 +8808,6 @@ msgstr ""
 #~ msgstr "Distancia"
 
 #, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Índices atómicos"
-
-#, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Copiar todo"
 
@@ -8832,18 +8828,9 @@ msgstr ""
 #~ msgstr "POR FACER"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Tamaño do salto:"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Optimización"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "En:"
 
 #, fuzzy
 #~| msgid "Fragment..."
@@ -8857,37 +8844,19 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Nome do ficheiro:"
 
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navegar"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navegar"
+#~ msgid "OK"
+#~ msgstr "Aceptar"
 
 #~ msgid "Cancel"
 #~ msgstr "Cancelar"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nome do elemento"
 
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os ficheiros"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molécula"
-
-#, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "Non se definiu ningunha molécula"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -8928,7 +8897,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Distancia (1->2): %L1 %2"
+#~ msgstr "Distancia: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Rotábel"
@@ -8952,6 +8921,10 @@ msgstr ""
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "Ángulo %1"
+
+#, fuzzy
+#~ msgid "Angle"
+#~ msgstr "Ángulo"
 
 #~ msgctxt "Degree symbol"
 #~ msgid ""
@@ -9004,7 +8977,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimizar a xeometría"
+#~ msgstr "Optimizar a xeometría"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
