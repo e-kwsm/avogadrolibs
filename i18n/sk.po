@@ -7755,7 +7755,7 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:269
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 msgid "Imported Spectra:"
-msgstr "Importovať Spectra:"
+msgstr "Importovať Spectra"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:317
 #. i18n: ectx: property (text), widget (QPushButton, push_export)
