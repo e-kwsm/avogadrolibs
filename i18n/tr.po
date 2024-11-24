@@ -8863,10 +8863,6 @@ msgstr ""
 #~ msgstr "istemciSunucu/%1:%2/açılanSonDizin"
 
 #, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
 #~ msgid "*.%1"
 #~ msgstr "*. %1"
 
@@ -8960,9 +8956,6 @@ msgstr ""
 
 #~ msgid "Write"
 #~ msgstr "Yaz"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "pH için Hidrojenleri Ekle..."
@@ -9187,9 +9180,6 @@ msgstr ""
 
 #~ msgid "DL-POLY HISTORY files"
 #~ msgstr "DL-POLY GEÇMİŞ dosyaları"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi uzantısı ekleniyor"
@@ -9453,9 +9443,6 @@ msgstr ""
 #~ msgid "H to Methyl"
 #~ msgstr "H'den Methyl'e"
 
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
-
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Hidrojenleri metil grubuna dönüştür"
 
@@ -9483,9 +9470,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "İndirmek için PDB kaydı."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "İndirmek için molekül URL'i"
 
@@ -9509,9 +9493,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Resim Dosyaları (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "HErhangi bir geçerli dosya adı belirtilmedi."
@@ -9583,12 +9564,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Biçim Dönüşümü Mevcut Değil"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "GAMESS kuantum kimya paketi için girdi dosyası oluştur"
@@ -9782,12 +9757,6 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Taşınabilir Ağ Grafikleri"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
 #~ msgid "No vibrational displacements exist."
 #~ msgstr "Hiçbir titreşimsel yerdeğişimi yok."
 
@@ -9828,17 +9797,8 @@ msgstr ""
 #~ msgid "Histidine"
 #~ msgstr "Histidin"
 
-#~ msgid "His"
-#~ msgstr "His"
-
 #~ msgid "Isoleucine"
 #~ msgstr "İzolösin"
-
-#~ msgid "Ile"
-#~ msgstr "Ile"
-
-#~ msgid "Val"
-#~ msgstr "Val"
 
 #~ msgid "Tyr"
 #~ msgstr "Tir"
