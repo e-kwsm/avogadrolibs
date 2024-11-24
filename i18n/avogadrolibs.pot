@@ -7979,16 +7979,19 @@ msgstr ""
 
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:207
 #. i18n: ectx: property (text), item, widget (QComboBox, precisionCombo)
+msgctxt "single precision"
 msgid "single"
 msgstr ""
 
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:212
 #. i18n: ectx: property (text), item, widget (QComboBox, precisionCombo)
+msgctxt "mixed precision"
 msgid "mixed"
 msgstr ""
 
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:217
 #. i18n: ectx: property (text), item, widget (QComboBox, precisionCombo)
+msgctxt "double precision"
 msgid "double"
 msgstr ""
 
