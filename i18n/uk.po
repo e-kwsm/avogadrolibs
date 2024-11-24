@@ -9279,7 +9279,7 @@ msgstr "Ваші електронні листи"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Відстань (1->2): %L1 %2"
+#~ msgstr "Відстань: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Обертання"
@@ -9353,14 +9353,6 @@ msgstr "Ваші електронні листи"
 
 #~ msgid "Symmetry Properties..."
 #~ msgstr "Властивості симетрії…"
-
-#, fuzzy
-#~ msgid "Optimize geometry"
-#~ msgstr "&Оптимізувати геометричні параметри"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Оптимізація геометричних параметрів"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -10312,27 +10304,6 @@ msgstr "Ваші електронні листи"
 #~ msgstr ""
 #~ "Gaussian не запущено належним чином. Ймовірно, програму встановлено з "
 #~ "помилками."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit…"
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton…"
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian…"
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO…"
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem…"
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4…"
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem…"
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Попередження засобу для створення вхідних файлів Lammps"
