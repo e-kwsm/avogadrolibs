@@ -8942,12 +8942,6 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analitika"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgid "&Import..."
 #~ msgstr "&Inportatu..."
 
@@ -8959,10 +8953,6 @@ msgstr ""
 
 #~ msgid "&Load data..."
 #~ msgstr "&Kargatu datuak..."
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
 
 #, fuzzy
 #~ msgid "eV)"
