@@ -8912,6 +8912,10 @@ msgstr ""
 #~ msgstr "Tên file:"
 
 #, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "Vẽ cấu trúc thứ cấp của prô-tê-in"
+
+#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Di chuyển"
 
@@ -8922,6 +8926,11 @@ msgstr ""
 #, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Tên nguyên tố"
+
+#, fuzzy
+#~| msgid "Dihedral:"
+#~ msgid "octahedral"
+#~ msgstr "Góc nhị diện:"
 
 #, fuzzy
 #~| msgid "Molecule"
@@ -9085,6 +9094,18 @@ msgstr ""
 
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Tô màu theo mẫu SMARTS"
+
+#~ msgid "Ununtrium"
+#~ msgstr "Ununtri"
+
+#~ msgid "Ununpentium"
+#~ msgstr "Ununpenti"
+
+#~ msgid "Ununseptium"
+#~ msgstr "Ununsepti"
+
+#~ msgid "Ununoctium"
+#~ msgstr "Ununocti"
 
 #~ msgid "Engines"
 #~ msgstr "Động cơ"
@@ -9620,8 +9641,14 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Tải số liệu phổ"
 
+#~ msgid "Portable Network Graphics"
+#~ msgstr "Portable Network Graphics (PNG)"
+
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Dạng thức tập tin ảnh có thẻ (TIFF)"
+
+#~ msgid "Windows Bitmap"
+#~ msgstr "Windows Bitmap (BMP)"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Lưu ảnh phổ"
@@ -10325,11 +10352,29 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Các cường độ Raman"
 
-#~ msgid "Make EFP"
-#~ msgstr "Tạo EFP"
+#~ msgid "UHF"
+#~ msgstr "UHF"
+
+#~ msgid "ROHF"
+#~ msgstr "ROHF"
+
+#~ msgid "GVB"
+#~ msgstr "GVB"
+
+#~ msgid "MCSCF"
+#~ msgstr "MCSCF"
 
 #~ msgid "None (CI)"
 #~ msgstr "Không (CI)"
+
+#~ msgid "Foster-Boys"
+#~ msgstr "Foster-Boys"
+
+#~ msgid "Edmistron-Ruedenberg"
+#~ msgstr "Edmistron-Ruedenberg"
+
+#~ msgid "Pipek-Mezey"
+#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Kiểu SCF:"
