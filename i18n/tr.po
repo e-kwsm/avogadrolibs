@@ -9415,9 +9415,8 @@ msgstr ""
 #~ msgstr "Van der Waals Küreleri"
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
-#~ msgstr "Geometriyi İyileştir"
+#~ msgstr "Geometriyi"
 
 #~ msgid "Add Unit Cell"
 #~ msgstr "Birim Hücresi Ekle"
@@ -9428,23 +9427,12 @@ msgstr ""
 #~ msgid "By Distance"
 #~ msgstr "Uzaklığa Göre"
 
-#, fuzzy
-#~| msgid "Select by Atom Index…"
-#~ msgid "Select Water…"
-#~ msgstr "Atom dizini ile seç…"
-
-#, fuzzy
-#~| msgid "Copy"
-#~ msgid "&Copy"
-#~ msgstr "Kopyala"
-
 #~ msgid "Molecule Name:"
 #~ msgstr "Molekül Adı:"
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Optimize"
-#~ msgstr "Geometriyi İyileştir"
+#~ msgstr "İyileştir"
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS Girişi (* .in)"
@@ -9664,10 +9652,6 @@ msgstr ""
 #~ msgstr "Bükülme %1"
 
 #, fuzzy
-#~ msgid "No"
-#~ msgstr "Neon"
-
-#, fuzzy
 #~ msgid "Input Generators"
 #~ msgstr "Girdi Üreteci..."
 
@@ -9699,11 +9683,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "Geometriyi &Optimize Et"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrik Optimizasyon"
+#~ msgstr "Geometriyi Optimize Et"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
