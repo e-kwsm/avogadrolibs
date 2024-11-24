@@ -9650,15 +9650,6 @@ msgstr "Sähköpostisi"
 #~ msgid "Color by Element (carbon = grey, oxygen = red, ...)."
 #~ msgstr "Väri alkuaineen mukaan (hiili = harmaa, happi = punainen, ...)"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoktium"
 
@@ -9676,9 +9667,6 @@ msgstr "Sähköpostisi"
 
 #~ msgid "Stick"
 #~ msgstr "Tikku"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Number of rotatable bonds: %1"
 #~ msgstr "Kierrettävien sidosten määrä: %1"
@@ -9718,9 +9706,6 @@ msgstr "Sähköpostisi"
 #~ msgid "&Vector Graphics..."
 #~ msgstr "&Vektorigrafiikka"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "H to Methyl"
 #~ msgstr "H metyyliin"
 
@@ -9736,9 +9721,6 @@ msgstr "Sähköpostisi"
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Kuvatiedostot (*.png *.pbm)"
 
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
 #~ msgid ""
 #~ "You requested no direct rendering using POV-Ray and not to keep the POV-"
 #~ "Ray file. This will result in no output being saved. Are you sure that is "
@@ -9750,9 +9732,6 @@ msgstr "Sähköpostisi"
 
 #~ msgid "Python Terminal"
 #~ msgstr "Python-terminaali"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Name cannot be empty."
 #~ msgstr "Nimi ei voi olla tyhjä."
@@ -9777,9 +9756,6 @@ msgstr "Sähköpostisi"
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Ei voitu asettaa voimakenttää..."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Algorithm:"
 #~ msgstr "Algoritmi:"
@@ -9847,9 +9823,6 @@ msgstr "Sähköpostisi"
 #~ msgid "Negative"
 #~ msgstr "Negatiivinen"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgid "Number of rotatable bonds:"
 #~ msgstr "Kierrettävien sidosten määrä:"
 
@@ -9871,116 +9844,20 @@ msgstr "Sähköpostisi"
 #~ msgid "All"
 #~ msgstr "Kaikki"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmi"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Aseta taustaväri läpinäkyväksi"
 
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "Default"
 #~ msgstr "Oletusarvo"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
-
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO-optimisaatio"
 
 #~ msgid "Raman Intensities"
 #~ msgstr "Raman-intensiteetit"
-
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Normaali ajo"
@@ -10006,38 +9883,11 @@ msgstr "Sähköpostisi"
 #~ msgid "Weeks"
 #~ msgstr "Viikkoa"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
 #~ msgid "Diagonalization Method:"
 #~ msgstr "Diagonalisointimenetelmä:"
 
 #~ msgid "Print the Initial Guess"
 #~ msgstr "Tulosta alkuarvaus"
-
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Liuota veteen"
@@ -10048,17 +9898,11 @@ msgstr "Sähköpostisi"
 #~ msgid "Numeric"
 #~ msgstr "Numeerinen"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Rationaalifunktio-optimisaatio"
 
 #~ msgid "Z-matrix"
 #~ msgstr "Z-matriisi"
-
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
 
 #~ msgid "Standard"
 #~ msgstr "Tavallinen"
