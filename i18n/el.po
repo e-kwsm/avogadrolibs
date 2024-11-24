@@ -9014,9 +9014,6 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "Αναλυτική"
 
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgid "&Import..."
 #~ msgstr "&Εισαγωγή..."
 
@@ -9028,14 +9025,6 @@ msgstr ""
 
 #~ msgid "&Load data..."
 #~ msgstr "&Φόρτωση δεδομένων..."
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Μερικό φορτίου"
@@ -11567,9 +11556,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Προσθέτει ό,τι πληκτρολογείτε στη γραμμή τίτλου του αρχείου εισόδου για\n"
 #~ "τους δικούς σας σκοπούς πληροφόρησης."
-
-#~ msgid "Pople-style"
-#~ msgstr "Τεχνοτροπία Pople"
 
 #~ msgid "Pople-style"
 #~ msgstr "Τεχνοτροπία Pople"
