@@ -9561,19 +9561,6 @@ msgstr "Sähköpostisi"
 #~ msgstr "Alkuaineen nimi"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekyyli"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Molekyyli"
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Lisää vetyjä"
-
-#, fuzzy
 #~ msgid "Atom Properties..."
 #~ msgstr "Atomiominaisuudet..."
 
@@ -9598,17 +9585,7 @@ msgstr "Sähköpostisi"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Etäisyys"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Kulma"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Kiertokulma"
+#~ msgstr "Etäisyys: %L1 Å"
 
 #, fuzzy
 #~ msgid "Yes"
