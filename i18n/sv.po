@@ -9219,9 +9219,6 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgid "Element & Ordinal"
 #~ msgstr "Gundämne:"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Visa väte för pH..."
@@ -9317,18 +9314,6 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markera speciella funktioner som matchar ett SMARTS-mönster."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Axes"
 #~ msgstr "Axlar"
 
@@ -9338,14 +9323,8 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgid "Renders hydrogen bonds"
 #~ msgstr "Renderar vätebindningar"
 
-#~ msgid "Polygon"
-#~ msgstr "Polygon"
-
 #~ msgid "Renders atoms as tetrahedra, octahedra, and other polygons"
 #~ msgstr "Renderar atomer som tetraedrar, oktaedrar, och andra polygoner"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Your molecule must contain at least one atom to add a constraint"
 #~ msgstr ""
@@ -9366,9 +9345,6 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 
 #~ msgid "&Angle Unit"
 #~ msgstr "&Vinkelenhet"
-
-#~ msgid "EPS"
-#~ msgstr "EPS"
 
 #~ msgid "Vector graphics export"
 #~ msgstr "Vektorgrafikexport"
@@ -9397,9 +9373,6 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "Automatisk optimering: Kunde inte ställa in kraftfält..."
 
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
-
 #~ msgid "Steps per Update:"
 #~ msgstr "Steg per uppdatering:"
 
@@ -9415,17 +9388,5 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgid "Ignored atoms are movable"
 #~ msgstr "Ignorerade atomer är flyttbara"
 
-#~ msgid "x rotation:"
-#~ msgstr "x rotation:"
-
 #~ msgid "y rotation:"
 #~ msgstr "Y-rotation:"
-
-#~ msgid "z rotation:"
-#~ msgstr "z rotation:"
-
-#~ msgid "z rotation"
-#~ msgstr "z rotation"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
