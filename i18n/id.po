@@ -8686,7 +8686,7 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "Tambahkan &Unit Sel"
+#~ msgstr "Tambahkan Unit Sel"
 
 #, fuzzy
 #~ msgid "By Atomic Index"
@@ -8695,10 +8695,6 @@ msgstr "Email anda"
 #, fuzzy
 #~ msgid "By Distance"
 #~ msgstr "Jarak"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Indeks Atom"
 
 #, fuzzy
 #~| msgid "Copy"
@@ -8730,10 +8726,6 @@ msgstr "Email anda"
 #~ msgstr "Optimisasi"
 
 #, fuzzy
-#~ msgid "In."
-#~ msgstr "Dalam:"
-
-#, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
 #~ msgstr "Fragmen..."
@@ -8744,14 +8736,6 @@ msgstr "Email anda"
 #, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Nama berkas:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigasi"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigasi"
 
 #~ msgid "Cancel"
 #~ msgstr "Batalkan"
@@ -8799,10 +8783,6 @@ msgstr "Email anda"
 #~ msgstr "%1: File ada dan tidak bisa ditulis."
 
 #, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Kristal"
 
@@ -8841,7 +8821,7 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Jarak (1->2): %L1 %2"
+#~ msgstr "Jarak: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Dapat diputar"
@@ -8868,7 +8848,7 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Angle"
-#~ msgstr "Sudut:"
+#~ msgstr "Sudut"
 
 #~ msgctxt "Degree symbol"
 #~ msgid ""
@@ -8887,7 +8867,7 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energi (kJ/mol):"
+#~ msgstr "Energi (kJ/mol)"
 
 #~ msgid "Yes"
 #~ msgstr "Ya"
@@ -8920,10 +8900,6 @@ msgstr "Email anda"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimisasi Geometri"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
 #~ msgstr "Optimisasi Geometri"
 
 #, fuzzy
