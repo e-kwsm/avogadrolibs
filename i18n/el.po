@@ -8965,10 +8965,6 @@ msgstr ""
 #~ msgstr "Απόσταση"
 
 #, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Δείκτες ατόμου"
-
-#, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Αντιγραφή Όλων"
 
@@ -8989,18 +8985,9 @@ msgstr ""
 #~ msgstr "ΠΡΟΣ ΥΛΟΠΟΙΗΣΗ"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Μέγεθος άλματος:"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Βελτιστοποίηση"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Σε:"
 
 #, fuzzy
 #~| msgid "Fragment..."
@@ -9014,13 +9001,8 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Όνομα αρχείου:"
 
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Περιήγηση"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Περιήγηση"
+#~ msgid "OK"
+#~ msgstr "Εντάξει"
 
 #~ msgid "Cancel"
 #~ msgstr "Άκυρο"
@@ -9034,17 +9016,8 @@ msgstr ""
 #~ msgstr "Όλα τα αρχεία"
 
 #, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Μόριο"
-
-#, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "Δεν έχει οριστεί μόριο"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -9159,7 +9132,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Βελτιστοποίηση Γεωμετρίας"
+#~ msgstr "Βελτιστοποίηση Γεωμετρίας"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
