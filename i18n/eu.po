@@ -9585,22 +9585,9 @@ msgstr ""
 #~ msgid "Layer"
 #~ msgstr "Geruza"
 
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Setatutako Molekularik ez"
-
 #, qt-format
 #~ msgid "%1: File exists and is not writable."
 #~ msgstr "%1: Fitxategia existitzen da eta idazgarria da."
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #~ msgid "Fragment..."
 #~ msgstr "Zatitu..."
@@ -9647,7 +9634,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Distantzia (1->2): %L1 %2"
+#~ msgstr "Distantzia: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Biragarria"
