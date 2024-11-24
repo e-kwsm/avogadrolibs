@@ -8754,6 +8754,10 @@ msgstr ""
 #~ msgstr "Jäägi nimi"
 
 #, fuzzy
+#~ msgid "YAeHMOP Band Structure"
+#~ msgstr "Struktuur:"
+
+#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Elemendi nimi"
 
@@ -8831,6 +8835,9 @@ msgstr ""
 
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Värv jäägi järgi (aminohappe tüüp, hüdrofoobsus, ..."
+
+#~ msgid "Ununoctium"
+#~ msgstr "Ununoktium"
 
 #~ msgid "Engines"
 #~ msgstr "Mootorid"
