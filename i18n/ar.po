@@ -8406,11 +8406,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "اسم الملف عير صالح"
 
-#, fuzzy
-#~| msgid "Energy"
-#~ msgid "Energy (eV)"
-#~ msgstr "الطاقة"
-
 #~ msgid "OK"
 #~ msgstr "موافق"
 
