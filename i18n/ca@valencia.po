@@ -10679,9 +10679,6 @@ msgstr ""
 #~ msgid "MegaWords"
 #~ msgstr "Mega paraules"
 
-#~ msgid "MegaBytes"
-#~ msgstr "Megabytes"
-
 #~ msgid "GigaWords"
 #~ msgstr "Giga paraules"
 
