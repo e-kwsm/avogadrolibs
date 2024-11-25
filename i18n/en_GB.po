@@ -9861,35 +9861,8 @@ msgstr ""
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Molecular Mass (g/mol):"
 
-#~ msgid "Chemical Formula:"
-#~ msgstr "Chemical Formula:"
-
-#~ msgid "Number of Atoms:"
-#~ msgstr "Number of Atoms:"
-
-#~ msgid "Number of Bonds:"
-#~ msgstr "Number of Bonds:"
-
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
-#~ msgid "Line Size:"
-#~ msgstr "Line Size:"
-
 #~ msgid "Optimize"
 #~ msgstr "Optimize"
-
-#~ msgid "In."
-#~ msgstr "In."
-
-#~ msgid "El."
-#~ msgstr "El."
-
-#~ msgid "El.&No."
-#~ msgstr "El.&No."
-
-#~ msgid ", "
-#~ msgstr ", "
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS Input (*.in)"
