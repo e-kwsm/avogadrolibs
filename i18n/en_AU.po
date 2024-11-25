@@ -9283,30 +9283,6 @@ msgstr ""
 #~ "Select the Python interpreter used to run input generator scripts.\n"
 #~ "Avogadro must be restarted for any changes to take effect."
 
-#~ msgid "Set Python Path…"
-#~ msgstr "Set Python Path…"
-
-#~ msgid "Fragment…"
-#~ msgstr "Fragment…"
-
-#~ msgid "Functional Groups"
-#~ msgstr "Functional Groups"
-
-#~ msgid "Help..."
-#~ msgstr "Help..."
-
-#~ msgid "Submit Calculation..."
-#~ msgstr "Submit Calculation..."
-
-#~ msgid "Save File..."
-#~ msgstr "Save File..."
-
-#~ msgid "Download Plugins..."
-#~ msgstr "Download Plugins..."
-
-#~ msgid "Record Movie..."
-#~ msgstr "Record Movie..."
-
 #~ msgid ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
@@ -9386,26 +9362,14 @@ msgstr ""
 #~ msgid "Torsion Properties..."
 #~ msgstr "Torsion Properties..."
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molecule Properties..."
-
 #~ msgid "Create Surfaces..."
 #~ msgstr "Create Surfaces..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Symmetry"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Insert Fragment..."
 
 #~ msgid "Theory:"
 #~ msgstr "Theory:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Distance (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Rotatable"
@@ -9485,20 +9449,12 @@ msgstr ""
 #~ msgstr "&Optimise Geometry"
 
 #, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometry Optimization"
-
-#, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "Add Hydrogens"
 
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Surfaces"
 
 #~ msgid "Color by Index"
 #~ msgstr "Colour by Index"
