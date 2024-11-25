@@ -11134,9 +11134,6 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "PNG (Portable Network Graphics)"
 
-#~ msgid "jpeg"
-#~ msgstr "Jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "TIFF (Tagged Image File Format)"
 
