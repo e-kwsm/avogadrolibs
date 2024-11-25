@@ -11015,9 +11015,6 @@ msgstr ""
 #~ msgid "&Advanced >>"
 #~ msgstr "&Pokročilé >>"
 
-#~ msgid "&Spectra..."
-#~ msgstr "&Spektra..."
-
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Zviditelnit údaje o spektru z výpočtů kvantové chemie"
 
