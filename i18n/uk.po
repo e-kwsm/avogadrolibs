@@ -11990,9 +11990,6 @@ msgstr "Ваші електронні листи"
 #~ msgid "Portable Network Graphics"
 #~ msgstr "PNG (Portable Network Graphics)"
 
-#~ msgid "jpeg"
-#~ msgstr "JPEG"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Формат файла зображення з мітками (TIFF)"
 
