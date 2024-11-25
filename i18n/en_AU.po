@@ -8800,8 +8800,6 @@ msgstr ""
 #~ msgid "YAeHMOP Band Structure"
 #~ msgstr "Load File"
 
-#~ msgstr "Stop"
-
 #, fuzzy
 #~ msgid "Surface Dialog"
 #~ msgstr "Surfaces"
