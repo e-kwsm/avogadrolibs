@@ -10167,9 +10167,6 @@ msgstr "phlostically@example.com"
 #~ msgid "&Analysis"
 #~ msgstr "&Analizo"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
 #~ msgid "..."
 #~ msgstr "…"
 
