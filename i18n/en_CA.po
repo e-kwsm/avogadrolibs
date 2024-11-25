@@ -9234,10 +9234,6 @@ msgstr ""
 #~ msgstr "&Optimise Geometry"
 
 #, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometry Optimization"
-
-#, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Stop"
 
