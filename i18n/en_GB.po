@@ -10103,20 +10103,12 @@ msgstr ""
 #~ msgstr "&Optimise Geometry"
 
 #, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometry Optimization"
-
-#, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "Add Hydrogens"
 
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Surfaces"
 
 #~ msgid "Color by Index"
 #~ msgstr "Colour by Index"
@@ -10162,6 +10154,18 @@ msgstr ""
 
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Highlight particular features which match a SMARTS pattern."
+
+#~ msgid "Ununtrium"
+#~ msgstr "Ununtrium"
+
+#~ msgid "Ununpentium"
+#~ msgstr "Ununpentium"
+
+#~ msgid "Ununseptium"
+#~ msgstr "Ununseptium"
+
+#~ msgid "Ununoctium"
+#~ msgstr "Ununoctium"
 
 #~ msgid "Engines"
 #~ msgstr "Engines"
