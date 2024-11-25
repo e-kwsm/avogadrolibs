@@ -9297,9 +9297,6 @@ msgstr ""
 #~ msgid "Conformer Properties..."
 #~ msgstr "Konformationsegenskaber..."
 
-#~ msgid "Python Terminal"
-#~ msgstr "Python terminal"
-
 #~ msgid "pythonTerminalDock"
 #~ msgstr "pythonterminal"
 
@@ -9464,9 +9461,6 @@ msgstr ""
 
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Vælg atomer, bindinger, restprodukter..."
-
-#~ msgid "GLSL Shaders..."
-#~ msgstr "GLSL shaders..."
 
 #~ msgid "Intensity (arb. units)"
 #~ msgstr "Intensitet (arb. enheder)"
@@ -9867,9 +9861,6 @@ msgstr ""
 
 #~ msgid "7 - Gaussian smearing"
 #~ msgstr "Gaussisk udtværing"
-
-#~ msgid "Gaussian Input"
-#~ msgstr "Gaussian input"
 
 #~ msgid "&Gaussian Width:"
 #~ msgstr "&Gauss-bredde:"
