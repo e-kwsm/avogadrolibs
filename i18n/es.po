@@ -11839,9 +11839,6 @@ msgstr ""
 #~ msgid "MegaWords"
 #~ msgstr "MegaPalabras"
 
-#~ msgid "MegaBytes"
-#~ msgstr "Megabytes"
-
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Forzar métodos paralelos"
 
