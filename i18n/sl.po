@@ -10824,9 +10824,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Oblika"
 
-#~ msgid "c"
-#~ msgstr "C"
-
 #~ msgid "Loop"
 #~ msgstr "Zanka"
 
