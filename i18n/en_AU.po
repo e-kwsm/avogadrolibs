@@ -8814,17 +8814,6 @@ msgstr ""
 #~ msgid "Other..."
 #~ msgstr "Other..."
 
-#~ msgid "Connection failed"
-#~ msgstr "Connection failed"
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Load File"
-
 #, fuzzy
 #~ msgid "Surface Dialog"
 #~ msgstr "Surfaces"
