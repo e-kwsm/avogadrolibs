@@ -8753,13 +8753,6 @@ msgstr ""
 #~ msgstr "&Optimise Geometry"
 
 #, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometry Optimization"
-
-#~ msgid "Energy (eV)"
-#~ msgstr "Energy (eV)"
-
-#, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Stop"
 
