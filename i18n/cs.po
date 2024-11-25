@@ -11633,18 +11633,6 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Ramanovy síly"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Nic (CI)"
 
