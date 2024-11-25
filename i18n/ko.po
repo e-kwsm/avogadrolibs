@@ -9460,7 +9460,7 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "거리 (1->2): %L1 %2"
+#~ msgstr "거리: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "회전가능한"
@@ -9508,11 +9508,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "에너지 (kJ/mol)"
-
-#, fuzzy
-#~| msgid "Years"
-#~ msgid "Yes"
-#~ msgstr "년"
 
 #, fuzzy
 #~ msgid "Input Generators"
