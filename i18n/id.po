@@ -8691,9 +8691,6 @@ msgstr "Email anda"
 #~ msgid "Navigate Forward"
 #~ msgstr "Navigasi"
 
-#~ msgid "OK"
-#~ msgstr "Ok"
-
 #~ msgid "Cancel"
 #~ msgstr "Batalkan"
 
