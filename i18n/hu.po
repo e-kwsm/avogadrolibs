@@ -10880,10 +10880,6 @@ msgstr "E-mail-címek"
 #~ msgid "Nothing"
 #~ msgstr "Semmi"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Elektronsűrűség"
