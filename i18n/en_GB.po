@@ -8873,8 +8873,6 @@ msgstr ""
 #~ msgid "Navigate Back"
 #~ msgstr "Navigate"
 
-#~ msgstr "Colour by Partial Charge"
-
 #~ msgid "Color by atomic partial charge (blue = positive, red = negative."
 #~ msgstr "Colour by atomic partial charge (blue = positive, red = negative."
 
