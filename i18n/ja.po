@@ -11366,9 +11366,6 @@ msgstr ""
 #~ msgid "Calculating MO %L1"
 #~ msgstr "第%L1分子軌道を計算中"
 
-#~ msgid "VdW"
-#~ msgstr "vdW"
-
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr "静電ポテンシャルサーフェスはサポートされていません。"
 
