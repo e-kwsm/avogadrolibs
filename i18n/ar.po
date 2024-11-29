@@ -9305,10 +9305,6 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "زاوية"
 
-#, fuzzy
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "الطاقة (eV)"
-
 #~ msgid "Yes"
 #~ msgstr "نعم"
 
