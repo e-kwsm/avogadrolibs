@@ -6875,7 +6875,6 @@ msgstr "Canvia l'estil del límit X."
 #. i18n: file: qtplugins/lammpsinput/lammpsinputdialog.ui:566
 #. i18n: ectx: property (toolTip), widget (QLabel, label_boundary)
 #, fuzzy
-#| msgid "Select bondary Styles in X, Y and Z directions."
 msgid "Select boundary Styles in X, Y and Z directions."
 msgstr "Selecciona l'estil del límit en les direccions X, Y i Z."
 

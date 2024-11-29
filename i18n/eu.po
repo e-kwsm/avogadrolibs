@@ -6913,7 +6913,6 @@ msgstr "X mugaren estiloa aldatu."
 #. i18n: file: qtplugins/lammpsinput/lammpsinputdialog.ui:566
 #. i18n: ectx: property (toolTip), widget (QLabel, label_boundary)
 #, fuzzy
-#| msgid "Select bondary Styles in X, Y and Z directions."
 msgid "Select boundary Styles in X, Y and Z directions."
 msgstr "Muga estiloak aukeratu X, Y eta Z norabideetan."
 
