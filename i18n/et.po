@@ -8339,11 +8339,6 @@ msgstr ""
 #~ msgstr "Jäägi nimi"
 
 #, fuzzy
-#~| msgid "Energy"
-#~ msgid "Energy (eV)"
-#~ msgstr "Energia"
-
-#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Elemendi nimi"
 
