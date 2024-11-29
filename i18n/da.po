@@ -1440,8 +1440,10 @@ msgid "Reduce Cell to Asymmetric Unit"
 msgstr ""
 
 #: qtgui/rwmolecule.h:214
+#, fuzzy
+#| msgid "Change"
 msgid "Change Atom Positions"
-msgstr ""
+msgstr "Ændr"
 
 #: qtgui/rwmolecule.h:224
 msgid "Change Atom Position"
