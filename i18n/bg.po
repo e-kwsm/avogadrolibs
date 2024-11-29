@@ -8343,11 +8343,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Грешно име на файл"
 
-#, fuzzy
-#~| msgid "Energy"
-#~ msgid "Energy (eV)"
-#~ msgstr "Енергия"
-
 #~ msgid "OK"
 #~ msgstr "Добре"
 
