@@ -8358,11 +8358,6 @@ msgstr ""
 #~ msgstr ":ھۆججەت ئاتى"
 
 #, fuzzy
-#~| msgid "Energy"
-#~ msgid "Energy (eV)"
-#~ msgstr "قۇۋۋىتى"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "يول باشلا"
 

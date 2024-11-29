@@ -8470,11 +8470,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Nazwa pliku:"
 
-#, fuzzy
-#~| msgid "Energy"
-#~ msgid "Energy (eV)"
-#~ msgstr "Energia"
-
 #~ msgid "Cancel"
 #~ msgstr "Anuluj"
 

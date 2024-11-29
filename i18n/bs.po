@@ -8588,11 +8588,6 @@ msgstr ""
 #~ msgstr "Ime datoteke:"
 
 #, fuzzy
-#~| msgid "Energy"
-#~ msgid "Energy (eV)"
-#~ msgstr "Energija"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Navigacija"
 
