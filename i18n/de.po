@@ -3937,7 +3937,7 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:710
 #, fuzzy
 msgid "Generate Conformers"
-msgstr "Konformer"
+msgstr "Konformere"
 
 #: qtplugins/openbabel/openbabel.cpp:729
 msgid "Cannot open file with Open Babel."
