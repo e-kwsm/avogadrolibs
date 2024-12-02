@@ -3393,7 +3393,7 @@ msgstr " & "
 #: qtplugins/label/label.cpp:248
 #, fuzzy
 msgid "Residue Label:"
-msgstr "Restname"
+msgstr "Restetikett:"
 
 #: qtplugins/label/label.h:29
 msgid "Display labels on ball and stick style."
