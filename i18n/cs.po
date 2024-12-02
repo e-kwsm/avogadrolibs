@@ -3954,7 +3954,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:710
 #, fuzzy
-#| msgid "Conformer"
 msgid "Generate Conformers"
 msgstr "Konformační izomer"
 
