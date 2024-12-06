@@ -9306,11 +9306,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgstr "部份電荷"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "動畫"
-
-#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "幾何結構"
 
