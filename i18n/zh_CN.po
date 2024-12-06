@@ -6366,7 +6366,6 @@ msgstr "名称："
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, InsertDNADialog)
 #, fuzzy
-#| msgid "Insert DNA"
 msgid "Insert Nucleic Acids"
 msgstr "插入核酸"
 
