@@ -5345,7 +5345,7 @@ msgstr "显示振动模式对话框。"
 
 #: qtplugins/vibrations/vibrations.cpp:91
 #, fuzzy
-#| msgid "Display spectra and vibrational modes."
+#| msgid "vibrational mode."
 msgid "Set the vibrational mode."
 msgstr "振动模式。"
 
