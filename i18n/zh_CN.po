@@ -8853,11 +8853,6 @@ msgstr ""
 #~ msgstr "TODO"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "跳转尺度:"
-
-#, fuzzy
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "优化"
