@@ -9552,11 +9552,6 @@ msgstr ""
 #~ "鼠标中键：点击并拖动以缩放。\n"
 #~ "鼠标右键：点击并拖动以移动视角。\n"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "动画"
-
 #~ msgid ""
 #~ "Selection Tool\n"
 #~ "\n"
