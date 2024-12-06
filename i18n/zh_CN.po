@@ -5044,7 +5044,7 @@ msgstr "电子密度"
 
 #: qtplugins/surfaces/surfacedialog.cpp:173
 #, fuzzy
-#| msgid "Electron Density"
+#| msgid "Density"
 msgid "Spin Density"
 msgstr "密度"
 
