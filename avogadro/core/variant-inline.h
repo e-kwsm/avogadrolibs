@@ -17,7 +17,7 @@ inline Variant::Variant() : m_type(Null) {}
 
 inline Variant::Variant(double x, double y, double z) : m_type(Vector)
 {
-  Vector3* v = new Vector3(x, y, z);
+  auto* v = new Vector3(x, y, z);
   m_value.vector = v;
 }
 
@@ -44,21 +44,21 @@ inline Variant::Variant(const MatrixXf& v) : m_type(Matrix)
 template <>
 inline Variant::Variant(const Vector3& v) : m_type(Vector)
 {
-  Vector3* _v = new Vector3(v);
+  auto* _v = new Vector3(v);
   m_value.vector = _v;
 }
 
 template <>
 inline Variant::Variant(const Vector3f& v) : m_type(Vector)
 {
-  Vector3* _v = new Vector3(v.x(), v.y(), v.z());
+  auto* _v = new Vector3(v.x(), v.y(), v.z());
   m_value.vector = _v;
 }
 
 template <>
 inline Variant::Variant(const std::vector<double>& v) : m_type(Matrix)
 {
-  MatrixX* m = new MatrixX(v.size(), 1);
+  auto* m = new MatrixX(v.size(), 1);
   for (size_t i = 0; i < v.size(); ++i)
     m->coeffRef(i, 0) = v[i];
   m_value.matrix = m;
