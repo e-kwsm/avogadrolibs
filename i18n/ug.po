@@ -3264,9 +3264,8 @@ msgid "Atom Label:"
 msgstr "ئەن"
 
 #: qtplugins/label/label.cpp:205 qtplugins/propertytables/propertymodel.cpp:507
-#, fuzzy
 msgid "ID"
-msgstr "D"
+msgstr ""
 
 #: qtplugins/label/label.cpp:209
 #: qtplugins/plugindownloader/downloaderwidget.cpp:63

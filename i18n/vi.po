@@ -3324,9 +3324,8 @@ msgid "Atom Label:"
 msgstr "Nhãn của nguyên tử"
 
 #: qtplugins/label/label.cpp:205 qtplugins/propertytables/propertymodel.cpp:507
-#, fuzzy
 msgid "ID"
-msgstr "X"
+msgstr ""
 
 #: qtplugins/label/label.cpp:209
 #: qtplugins/plugindownloader/downloaderwidget.cpp:63
