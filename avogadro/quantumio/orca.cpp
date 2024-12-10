@@ -393,7 +393,7 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
           // e.g. index atom charge spin
           // e.g. 0 O   -0.714286   0.000
           int atomIndex = Core::lexicalCast<int>(list[0]);
-          double charge = Core::lexicalCast<double>(list[2]);
+          auto charge = Core::lexicalCast<double>(list[2]);
           charges(atomIndex, 0) = charge;
 
           getline(in, key);
@@ -722,7 +722,7 @@ void ORCAOutput::processLine(std::istream& in, GaussianSet* basis)
 
           // e.g.  1  C  0.0000  0.0000  0.0000  0.0000
           int atomIndex = Core::lexicalCast<int>(list[0]);
-          double shift = Core::lexicalCast<double>(list[2]);
+          auto shift = Core::lexicalCast<double>(list[2]);
           // ignore the anisotropy for now
           m_nmrShifts[atomIndex] = shift;
 
