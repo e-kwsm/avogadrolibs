@@ -7776,9 +7776,8 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:356
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Calculate Energy"
 msgid "Calculated Spectra:"
-msgstr "Laske energia"
+msgstr "Laskettu spektri:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:376
 #. i18n: ectx: property (text), widget (QLabel, label)
