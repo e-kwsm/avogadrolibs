@@ -5721,6 +5721,7 @@ msgstr "Succes!"
 #. i18n: file: qtplugins/apbs/apbsoutputdialog.ui:27
 #. i18n: ectx: property (text), widget (QCheckBox, loadStructureCheckBox)
 #, fuzzy
+#| msgid "Structure"
 msgid "Load Structure File"
 msgstr "Structuur"
 
