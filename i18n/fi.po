@@ -994,7 +994,7 @@ msgstr "Oganesson"
 #: qtgui/filebrowsewidget.cpp:23
 #, fuzzy
 msgid "Browse"
-msgstr "Selaa..."
+msgstr "Selaa"
 
 #: qtgui/filebrowsewidget.cpp:96
 msgid "Select file:"
