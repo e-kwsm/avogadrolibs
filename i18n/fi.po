@@ -2307,9 +2307,8 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2070
 #, fuzzy
-#| msgid "Other..."
 msgid "Other…"
-msgstr "Muu..."
+msgstr "Muu…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
