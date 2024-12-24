@@ -5235,9 +5235,8 @@ msgstr "Selecione cor de primeiro plano"
 
 #: qtplugins/spectra/spectradialog.cpp:522
 #, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Select Calculated Spectra Color"
-msgstr "Exportar o espectro calculado"
+msgstr "Espectro calculado:"
 
 #: qtplugins/spectra/spectradialog.cpp:534
 #, fuzzy
@@ -8177,7 +8176,6 @@ msgstr "Núcleo"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:356
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #, fuzzy
-#| msgid "Export Calculated Spectrum"
 msgid "Calculated Spectra:"
 msgstr "Espectro calculado:"
 
