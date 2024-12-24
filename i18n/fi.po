@@ -1246,7 +1246,7 @@ msgstr ""
 #: qtplugins/vanderwaals/vanderwaals.h:29
 #, fuzzy
 msgid "Van der Waals"
-msgstr "Van der Waals -pallot"
+msgstr "Van der Waals"
 
 #: qtgui/layermodel.cpp:162 qtplugins/wireframe/wireframe.h:28
 msgid "Wireframe"
