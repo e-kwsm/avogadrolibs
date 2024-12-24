@@ -2256,7 +2256,6 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2097
 #, fuzzy
-#| msgid "Other..."
 msgid "Other…"
 msgstr "Ďaľšie…"
 
