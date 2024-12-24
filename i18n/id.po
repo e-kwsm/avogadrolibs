@@ -2330,7 +2330,7 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:448:2121
 #, fuzzy
 msgid "Other…"
-msgstr "Lainnya"
+msgstr "Lainnya…"
 
 #: qtplugins/constraints/constraintsextension.cpp:22
 msgid "Constraints…"
