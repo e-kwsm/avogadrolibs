@@ -4582,9 +4582,8 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:27
 #, fuzzy
-#| msgid "Atom Properties"
 msgid "Atom Properties…"
-msgstr "Ιδιότητες ατόμου"
+msgstr "Ιδιότητες ατόμου…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
