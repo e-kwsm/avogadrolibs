@@ -4761,7 +4761,6 @@ msgstr "Molekula Grafo kun Solaj Paroj…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
 msgstr "Atoma Ŝargo…"
 
