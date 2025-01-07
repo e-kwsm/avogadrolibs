@@ -9967,11 +9967,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgstr "에너지 (kJ/mol):"
 
 #, fuzzy
-#~| msgid "Years"
-#~ msgid "Yes"
-#~ msgstr "년"
-
-#, fuzzy
 #~| msgid "Neon"
 #~ msgid "No"
 #~ msgstr "네온"
