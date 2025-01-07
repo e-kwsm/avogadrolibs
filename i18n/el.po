@@ -4662,7 +4662,7 @@ msgstr "Ιδιότητες ατόμου…"
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
 msgid "Bond Properties…"
-msgstr "Ιδιότητες δεσμού"
+msgstr "Ιδιότητες δεσμού…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
