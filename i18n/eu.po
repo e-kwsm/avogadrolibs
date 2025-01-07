@@ -4657,7 +4657,6 @@ msgstr "Grafiko Molekularra Bikote Bakartiekin…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
 msgstr "Karga Atomikoa…"
 

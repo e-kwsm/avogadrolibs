@@ -4821,9 +4821,8 @@ msgstr "Gráfico Molecular com Pares Isolados..."
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
-msgstr "Carga Atómica..."
+msgstr "Carga Atómica…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:93
 msgid "Open WFN File"

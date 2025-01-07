@@ -4684,9 +4684,8 @@ msgstr "Graf Molekul dengan Pasangan Tersendiri..."
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
-msgstr "Cas Atom..."
+msgstr "Cas Atom…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:93
 msgid "Open WFN File"
