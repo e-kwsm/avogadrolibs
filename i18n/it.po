@@ -3978,7 +3978,6 @@ msgstr "pH:"
 
 #: qtplugins/openbabel/openbabel.cpp:878 qtplugins/openbabel/openbabel.cpp:920
 #, fuzzy
-#| msgid "Error generating Open Babel input."
 msgid "Generating obabel input…"
 msgstr "Generando l'input obabel…"
 
