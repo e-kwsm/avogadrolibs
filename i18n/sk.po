@@ -1732,7 +1732,6 @@ msgstr ""
 
 #: qtplugins/applycolors/applycolors.cpp:77
 #, fuzzy
-#| msgid "Color by Partial Charge"
 msgid "By Partial Charge…"
 msgstr "Podľa čiastkového náboja…"
 
