@@ -3797,7 +3797,6 @@ msgstr "Configura el camp de força…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search"
 msgid "Conformer Search…"
 msgstr "Cerca d'esteroisòmers…"
 

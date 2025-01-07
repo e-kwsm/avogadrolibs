@@ -3788,7 +3788,6 @@ msgstr "Indstil kraftfelt…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search..."
 msgid "Conformer Search…"
 msgstr "Søg efter konformationer…"
 
