@@ -5336,7 +5336,7 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.cpp:27
 #, fuzzy
-#| msgid "Vibrational modes..."
+#| msgid "Vibrational modes…"
 msgid "Vibrational Modes…"
 msgstr "Modalità vibrazionali…"
 
