@@ -10292,14 +10292,8 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgstr "비틀림 %1"
 
 #, fuzzy
-#~| msgid "Energy (kJ/mol):"
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "에너지 (kJ/mol):"
-
-#, fuzzy
-#~| msgid "Neon"
-#~ msgid "No"
-#~ msgstr "네온"
+#~ msgstr "에너지 (kJ/mol)"
 
 #, fuzzy
 #~ msgid "Import"
