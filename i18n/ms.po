@@ -3436,7 +3436,6 @@ msgstr ""
 
 #: qtplugins/lammpsinput/lammpsinput.cpp:30
 #, fuzzy
-#| msgid "&LAMMPS..."
 msgid "&LAMMPS…"
 msgstr "&LAMMPS…"
 
