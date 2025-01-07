@@ -5046,9 +5046,8 @@ msgstr "Simetrizuj"
 
 #: qtplugins/spacegroup/spacegroup.cpp:73
 #, fuzzy
-#| msgid "Fill Unit Cell"
 msgid "Fill Unit Cell…"
-msgstr "Ispuni jediničnu ćeliju"
+msgstr "Ispuni jediničnu ćeliju…"
 
 #: qtplugins/spacegroup/spacegroup.cpp:78
 #: qtplugins/spacegroup/spacegroup.cpp:334

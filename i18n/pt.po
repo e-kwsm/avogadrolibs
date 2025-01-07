@@ -5046,9 +5046,8 @@ msgstr "Tornar Simétrico"
 
 #: qtplugins/spacegroup/spacegroup.cpp:73
 #, fuzzy
-#| msgid "Fill Unit Cell"
 msgid "Fill Unit Cell…"
-msgstr "Preencher Célula Unitária"
+msgstr "Preencher Célula Unitária…"
 
 #: qtplugins/spacegroup/spacegroup.cpp:78
 #: qtplugins/spacegroup/spacegroup.cpp:334

@@ -4819,7 +4819,6 @@ msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:73
 #, fuzzy
-#| msgid "Fill Unit Cell"
 msgid "Fill Unit Cell…"
 msgstr "Popuni jedinicu ćelije…"
 
