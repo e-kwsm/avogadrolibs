@@ -4538,7 +4538,6 @@ msgstr "Hoek Eigenschappen…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
-#| msgid "Torsion Properties"
 msgid "Torsion Properties…"
 msgstr "Torsie Eigenschappen…"
 
