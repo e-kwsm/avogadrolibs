@@ -4870,9 +4870,8 @@ msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:73
 #, fuzzy
-#| msgid "Fill Unit Cell"
 msgid "Fill Unit Cell…"
-msgstr "Omple la cel·la unitat"
+msgstr "Omple la cel·la unitat…"
 
 #: qtplugins/spacegroup/spacegroup.cpp:79
 #: qtplugins/spacegroup/spacegroup.cpp:338
