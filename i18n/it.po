@@ -8227,7 +8227,6 @@ msgstr "1: Lineare"
 #. i18n: file: qtplugins/templatetool/templatetoolwidget.ui:197
 #. i18n: ectx: property (text), item, widget (QComboBox, coordinationComboBox)
 #, fuzzy
-#| msgid "Linear"
 msgid "2: Linear"
 msgstr "2: Lineare"
 
