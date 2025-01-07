@@ -10485,10 +10485,6 @@ msgstr ""
 #~ msgstr "Inserisci molecola..."
 
 #, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Cristallo..."
 
