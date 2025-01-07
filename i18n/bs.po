@@ -4529,7 +4529,6 @@ msgstr "Postavke spoja…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Postavke ugla…"
 
