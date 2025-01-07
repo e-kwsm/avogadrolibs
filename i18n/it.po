@@ -4889,7 +4889,6 @@ msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:85
 #, fuzzy
-#| msgid "Set Tolerance"
 msgid "Set Tolerance…"
 msgstr "Imposta tolleranza…"
 
