@@ -4700,7 +4700,7 @@ msgstr ""
 #: qtplugins/select/select.cpp:63
 #, fuzzy
 msgid "Select by Residue…"
-msgstr "Odabir po ostatku..."
+msgstr "Odabir po ostatku…"
 
 #: qtplugins/select/select.cpp:68
 msgid "Select Backbone Atoms…"
