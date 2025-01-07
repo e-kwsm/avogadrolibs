@@ -1645,8 +1645,9 @@ msgid "Scale Cell Volume"
 msgstr "Scala il volume della cellula"
 
 #: qtgui/rwmolecule.cpp:717 qtgui/rwmolecule.cpp:742
+#, fuzzy
 msgid "Build Super Cell"
-msgstr ""
+msgstr "Costruisci Super Cella"
 
 #: qtgui/rwmolecule.cpp:767
 msgid "Niggli Reduction"
