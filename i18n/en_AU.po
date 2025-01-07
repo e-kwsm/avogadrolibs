@@ -2788,10 +2788,8 @@ msgid "Tools for crystal-specific editing/analysis."
 msgstr "Tools for crystal-specific editing/analysis."
 
 #: qtplugins/crystal/crystalscene.cpp:178
-#, fuzzy
-#| msgid "Colors:"
 msgid "Color axes:"
-msgstr "Colour axes:"
+msgstr ""
 
 #: qtplugins/crystal/crystalscene.cpp:184
 msgid "Line color:"
