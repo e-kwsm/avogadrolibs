@@ -3884,7 +3884,7 @@ msgstr ""
 #: qtplugins/noncovalent/noncovalent.cpp:372
 #, fuzzy
 msgid " °"
-msgstr "°"
+msgstr " °"
 
 #: qtplugins/noncovalent/noncovalent.cpp:400
 msgid "Angle tolerance:"
