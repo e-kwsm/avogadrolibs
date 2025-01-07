@@ -5073,7 +5073,6 @@ msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:84
 #, fuzzy
-#| msgid "Create Surfaces..."
 msgid "Create Surfaces…"
 msgstr "Generar las surfàcias…"
 
