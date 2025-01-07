@@ -1468,7 +1468,6 @@ msgstr ""
 
 #: qtgui/scenepluginmodel.cpp:101
 #, fuzzy
-#| msgid "Draw Settings"
 msgid "Settings"
 msgstr "Postavke"
 
