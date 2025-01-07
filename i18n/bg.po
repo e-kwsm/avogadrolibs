@@ -1400,6 +1400,7 @@ msgstr ""
 
 #: qtgui/rwmolecule.cpp:542
 #, fuzzy
+#| msgid "Super Cell"
 msgid "Build Super Cell"
 msgstr "Супер клетка"
 
