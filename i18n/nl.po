@@ -2962,9 +2962,8 @@ msgid "Forces"
 msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:96
-#, fuzzy
 msgid "Configure…"
-msgstr "Stel Krachtveld op"
+msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
