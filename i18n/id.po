@@ -7848,9 +7848,8 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:58
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #, fuzzy
-#| msgid "Frequency Scale Factor:"
 msgid "Scale Factor:"
-msgstr "Faktor Skala Frekuensi:"
+msgstr "Faktor Skala:"
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_7)
