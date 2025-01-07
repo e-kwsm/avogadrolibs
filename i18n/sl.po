@@ -5597,7 +5597,6 @@ msgstr ""
 #. i18n: file: qtgui/insertfragmentdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::QtGui::InsertFragmentDialog)
 #, fuzzy
-#| msgid "Insert Fragment"
 msgid "Insert Fragment…"
 msgstr "Vstavi molekulski delec…"
 
