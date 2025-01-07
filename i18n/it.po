@@ -6208,7 +6208,6 @@ msgstr "Criteri di convergenza"
 #. i18n: file: qtplugins/forcefield/forcefielddialog.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #, fuzzy
-#| msgid "\"Energy\" convergence:"
 msgid "Energy convergence:"
 msgstr "Convergenza energetica:"
 
