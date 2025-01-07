@@ -1459,6 +1459,7 @@ msgstr "Satuan Skala Volume Sel"
 
 #: qtgui/rwmolecule.cpp:542
 #, fuzzy
+#| msgid "Super Cell"
 msgid "Build Super Cell"
 msgstr "Super Sel"
 
