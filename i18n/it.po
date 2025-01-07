@@ -4231,7 +4231,6 @@ msgstr ""
 
 #: qtplugins/plotpdf/plotpdf.cpp:37
 #, fuzzy
-#| msgid "Plot Pair Distribution Function..."
 msgid "Plot Pair Distribution Function…"
 msgstr "Funzione di distribuzione delle coppie di grafici…"
 
