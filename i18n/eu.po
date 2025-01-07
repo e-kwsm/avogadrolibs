@@ -3008,7 +3008,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:96
 #, fuzzy
-#| msgid "Configure Job"
 msgid "Configure…"
 msgstr "Konfiguratu…"
 
