@@ -3537,7 +3537,6 @@ msgstr "Misura"
 
 #: qtplugins/meshes/meshes.h:31
 #, fuzzy
-#| msgid "Render triangle meshes."
 msgid "Render polygon meshes."
 msgstr "Rendi le maglie poligonali."
 
