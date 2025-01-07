@@ -1750,7 +1750,6 @@ msgstr ""
 
 #: qtplugins/applycolors/applycolors.cpp:77
 #, fuzzy
-#| msgid "Partial Charge"
 msgid "By Partial Charge…"
 msgstr "Με Μερικό φορτίου…"
 
