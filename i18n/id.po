@@ -5717,7 +5717,7 @@ msgstr ""
 #. i18n: ectx: property (windowTitle), widget (QDialog, Avogadro::QtGui::InsertFragmentDialog)
 #, fuzzy
 msgid "Insert Fragment…"
-msgstr "Sisipkan Fragmen"
+msgstr "Sisipkan Fragmen…"
 
 #. i18n: file: qtgui/insertfragmentdialog.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
