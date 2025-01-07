@@ -4559,7 +4559,6 @@ msgstr "Atom Egenskaber…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Bindings Egenskaber…"
 
