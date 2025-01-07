@@ -4555,7 +4555,6 @@ msgstr "Thuộc tính góc…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
-#| msgid "Torsion Properties"
 msgid "Torsion Properties…"
 msgstr "Thuộc tính xoắn…"
 
