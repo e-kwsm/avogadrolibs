@@ -4460,7 +4460,6 @@ msgstr "Свойства на атома…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Свойства на връзката…"
 
