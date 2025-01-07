@@ -9018,14 +9018,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Angle"
 #~ msgstr "각:"
 
-#, fuzzy
-#~| msgid "Conformer %1"
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "이형태체 %1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
 #~ msgstr "비틀림 %1"
