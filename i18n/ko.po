@@ -9916,10 +9916,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "설정된 분자 없음"
 
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
 #~ msgid "SMILES..."
 #~ msgstr "SMILES..."
 
