@@ -4969,7 +4969,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:629
 #: qtplugins/spectra/spectradialog.cpp:642
 #, fuzzy
-#| msgid "No intensities"
 msgid "Intensity"
 msgstr "Intensiteter"
 
