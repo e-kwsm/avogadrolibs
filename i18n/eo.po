@@ -2223,9 +2223,8 @@ msgstr " Å"
 #: qtplugins/closecontacts/closecontacts.cpp:229
 #: qtplugins/noncovalent/noncovalent.cpp:369
 #, fuzzy
-#| msgid "Minimum Distance:"
 msgid "Maximum distance:"
-msgstr "Minimuma Distanco:"
+msgstr "Distância Máxima:"
 
 #: qtplugins/closecontacts/closecontacts.cpp:230
 #: qtplugins/crystal/crystalscene.cpp:174
