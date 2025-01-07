@@ -4465,7 +4465,6 @@ msgstr "Свойства на връзката…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Свойства на ъгъла…"
 
