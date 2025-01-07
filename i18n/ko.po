@@ -9671,11 +9671,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Line Size:"
 #~ msgstr "선 크기:"
 
-#, fuzzy
-#~| msgid "Optimize Geometry"
-#~ msgid "Optimize"
-#~ msgstr "기하학 최적화"
-
 #~ msgid "In."
 #~ msgstr "In."
 
