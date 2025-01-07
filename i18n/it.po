@@ -3993,7 +3993,6 @@ msgstr "Errore nel generare l'input Open Babel."
 #: qtplugins/openbabel/openbabel.cpp:849 qtplugins/openbabel/openbabel.cpp:899
 #: qtplugins/openbabel/openbabel.cpp:941
 #, fuzzy, qt-format
-#| msgid "Running %1..."
 msgid "Running %1…"
 msgstr "Esecuzione di %1…"
 
