@@ -5674,7 +5674,6 @@ msgstr ""
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, ChargeDialog)
 #, fuzzy
-#| msgid "Color by Partial Charge"
 msgid "Partial Charges"
 msgstr "Delvis ladning"
 
