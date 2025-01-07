@@ -3020,7 +3020,6 @@ msgstr "Kuvvetler"
 
 #: qtplugins/forcefield/forcefield.cpp:96
 #, fuzzy
-#| msgid "Configure Bonding…"
 msgid "Configure…"
 msgstr "Yapılandır…"
 
