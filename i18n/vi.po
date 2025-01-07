@@ -5158,9 +5158,8 @@ msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:84
 #, fuzzy
-#| msgid "Create Surfaces"
 msgid "Create Surfaces…"
-msgstr "Tạo các mặt"
+msgstr "Tạo các mặt…"
 
 #: qtplugins/surfaces/surfaces.cpp:112
 msgid "Render the van der Waals surface."
