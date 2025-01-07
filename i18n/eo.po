@@ -4683,7 +4683,6 @@ msgstr "Atributoj de Atomo…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Atributoj de Ligo…"
 
