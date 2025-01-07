@@ -3793,7 +3793,6 @@ msgstr "Nastavitev polja sil …"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search"
 msgid "Conformer Search…"
 msgstr "Iskanje konformer …"
 

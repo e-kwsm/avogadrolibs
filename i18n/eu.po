@@ -3800,7 +3800,6 @@ msgstr "Konfigurazio Behartutako Eremua…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search"
 msgid "Conformer Search…"
 msgstr "Egokitzaile-Bilaketa…"
 

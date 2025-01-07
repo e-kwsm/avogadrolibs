@@ -3795,7 +3795,6 @@ msgstr "Nastavit silové pole…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search"
 msgid "Conformer Search…"
 msgstr "Hledání konformačního izomeru…"
 

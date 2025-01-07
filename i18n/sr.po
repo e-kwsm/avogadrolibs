@@ -3918,7 +3918,6 @@ msgstr "Podesi polje sile…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search"
 msgid "Conformer Search…"
 msgstr "Претрага саобразника…"
 
