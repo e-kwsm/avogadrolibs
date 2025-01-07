@@ -2750,7 +2750,6 @@ msgstr "Ячейка тумблера"
 
 #: qtplugins/crystal/crystal.cpp:52
 #, fuzzy
-#| msgid "Edit Unit Cell..."
 msgid "Edit Unit Cell…"
 msgstr "Редактировать ячейку…"
 
