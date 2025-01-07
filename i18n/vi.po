@@ -4553,9 +4553,8 @@ msgstr "Thuộc tính của nguyên tử…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
-msgstr "Thuộc tính của liên kết"
+msgstr "Thuộc tính của liên kết…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
