@@ -5537,7 +5537,6 @@ msgstr "Jednostavan prikaz VdW sfera."
 
 #: qtplugins/vibrations/vibrations.cpp:27
 #, fuzzy
-#| msgid "Vibrational Modes"
 msgid "Vibrational Modes…"
 msgstr "Režimi vibracija…"
 
