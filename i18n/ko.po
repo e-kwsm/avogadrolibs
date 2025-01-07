@@ -9947,25 +9947,9 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Rotatable"
 #~ msgstr "회전가능한"
 
-#, fuzzy
-#~| msgid "Conformer %1"
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "이형태체 %1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "각 %1"
-
-#, fuzzy
-#~| msgid "Conformer %1"
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "이형태체 %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
