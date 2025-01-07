@@ -7725,7 +7725,6 @@ msgstr "Scale Factor:"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #, fuzzy
-#| msgid "Minimum:"
 msgid "X-Axis Minimum:"
 msgstr "X-Axis Minimum:"
 
