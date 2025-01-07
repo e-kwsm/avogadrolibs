@@ -3905,7 +3905,6 @@ msgstr "Configurar Campo de Força…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search"
 msgid "Conformer Search…"
 msgstr "Busca Conformacional…"
 
