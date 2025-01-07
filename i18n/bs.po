@@ -8724,10 +8724,6 @@ msgstr ""
 #~ msgstr "Molekul"
 
 #, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Nema postavljene molekule"
-
-#, fuzzy
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS"
 
