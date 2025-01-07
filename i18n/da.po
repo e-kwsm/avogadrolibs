@@ -4534,7 +4534,6 @@ msgstr "Bindings Egenskaber…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
 msgstr "Vinkel Egenskaber…"
 

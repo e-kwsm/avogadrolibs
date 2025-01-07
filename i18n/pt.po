@@ -4744,9 +4744,8 @@ msgstr "Propriedades da ligação…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
-#| msgid "Angle Properties"
 msgid "Angle Properties…"
-msgstr "Propriedades do ângulo"
+msgstr "Propriedades do ângulo…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
