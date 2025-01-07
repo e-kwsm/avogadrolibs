@@ -7776,7 +7776,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:269
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "Import Spectra"
 msgid "Imported Spectra:"
 msgstr "Importer spektrum:"
 
