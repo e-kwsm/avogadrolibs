@@ -9949,14 +9949,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #, fuzzy
 #~| msgid "Conformer %1"
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "이형태체 %1"
-
-#, fuzzy
-#~| msgid "Conformer %1"
 #~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
