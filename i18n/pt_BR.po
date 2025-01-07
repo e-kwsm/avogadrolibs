@@ -3093,7 +3093,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:96
 #, fuzzy
-#| msgid "Configure Bonding…"
 msgid "Configure…"
 msgstr "Configurar…"
 
