@@ -4667,7 +4667,7 @@ msgstr "Ιδιότητες δεσμού…"
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
 msgid "Angle Properties…"
-msgstr "Ιδιότητες γωνίας"
+msgstr "Ιδιότητες γωνίας…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
