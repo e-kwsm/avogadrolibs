@@ -4705,9 +4705,8 @@ msgstr "Atributoj de Angulo…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 #, fuzzy
-#| msgid "Torsion Properties"
 msgid "Torsion Properties…"
-msgstr "Atributoj de Tordo"
+msgstr "Atributoj de Tordo…"
 
 #: qtplugins/propertytables/propertytables.cpp:55
 #, fuzzy
