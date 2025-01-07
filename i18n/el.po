@@ -5658,7 +5658,7 @@ msgstr ""
 #: qtplugins/symmetry/symmetry.cpp:39
 #, fuzzy
 msgid "Symmetry…"
-msgstr "Συμμετρία"
+msgstr "Συμμετρία…"
 
 #: qtplugins/symmetry/symmetry.h:67
 msgid "Provide symmetry functionality."
