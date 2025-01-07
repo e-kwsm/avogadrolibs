@@ -1758,6 +1758,7 @@ msgstr "sekundarnu strukturu"
 
 #: qtplugins/applycolors/applycolors.cpp:87
 #, fuzzy
+#| msgid "Amino Acid"
 msgid "By Amino Acid"
 msgstr "Amino kiseline"
 
