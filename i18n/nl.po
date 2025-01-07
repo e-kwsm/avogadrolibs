@@ -2346,7 +2346,6 @@ msgstr ""
 
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:422
 #, fuzzy
-#| msgid "By Atomic Index"
 msgid "Atomic index."
 msgstr "Atoomindex."
 
