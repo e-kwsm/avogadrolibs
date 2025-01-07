@@ -9004,10 +9004,6 @@ msgstr ""
 #~ msgstr "Inserisci molecola..."
 
 #, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Nessuna molecola impostata"
-
-#, fuzzy
 #~ msgid "&GAMESS..."
 #~ msgstr "&GAMESS-UK..."
 
