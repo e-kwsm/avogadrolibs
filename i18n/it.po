@@ -2690,7 +2690,6 @@ msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
 msgstr "Importa il Cristallo dagli appunti…"
 
