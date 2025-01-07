@@ -7020,6 +7020,7 @@ msgstr "Y"
 #. i18n: file: qtplugins/manipulator/manipulatewidget.ui:100
 #. i18n: ectx: property (text), widget (QLabel, label)
 #, fuzzy
+#| msgid "Translate"
 msgid "Translate by:"
 msgstr "Trasforma"
 
