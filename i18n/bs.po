@@ -1838,6 +1838,7 @@ msgstr "djelomični naboj…"
 
 #: qtplugins/applycolors/applycolors.cpp:82
 #, fuzzy
+#| msgid "Secondary Structure"
 msgid "By Secondary Structure"
 msgstr "sekundarnu strukturu"
 
