@@ -3278,6 +3278,7 @@ msgstr "Boje:"
 
 #: qtplugins/label/label.cpp:170
 #, fuzzy
+#| msgid "Distance:"
 msgid "Distance from center:"
 msgstr "Rastojanje:"
 
