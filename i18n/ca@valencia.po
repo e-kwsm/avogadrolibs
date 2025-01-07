@@ -4573,9 +4573,8 @@ msgstr "Propietats d'Àtom…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
-msgstr "Propietats d'enllaç"
+msgstr "Propietats d'enllaç…"
 
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy

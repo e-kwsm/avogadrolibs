@@ -4554,7 +4554,6 @@ msgstr "Postavke atoma…"
 
 #: qtplugins/propertytables/propertytables.cpp:34
 #, fuzzy
-#| msgid "Bond Properties"
 msgid "Bond Properties…"
 msgstr "Postavke spoja…"
 
