@@ -1452,10 +1452,8 @@ msgid "Change Atom Positions"
 msgstr ""
 
 #: qtgui/rwmolecule.h:224
-#, fuzzy
-#| msgid "Change"
 msgid "Change Atom Position"
-msgstr "Ændr"
+msgstr ""
 
 #: qtgui/rwmolecule.h:242
 msgid "Change Atom Label"
