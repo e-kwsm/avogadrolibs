@@ -9944,10 +9944,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Theory:"
 #~ msgstr "이론:"
 
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "거리 (1->2): %L1 %2"
-
 #~ msgid "Rotatable"
 #~ msgstr "회전가능한"
 
