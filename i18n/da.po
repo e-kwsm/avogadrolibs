@@ -5057,7 +5057,6 @@ msgstr ""
 #: qtplugins/spectra/spectradialog.cpp:654
 #: qtplugins/surfaces/orbitaltablemodel.cpp:108
 #, fuzzy
-#| msgid "Energy"
 msgid "Energy (eV)"
 msgstr "Energi (eV)"
 
