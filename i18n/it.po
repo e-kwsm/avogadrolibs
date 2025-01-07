@@ -2297,7 +2297,6 @@ msgstr "Altre…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
-#| msgid "Atomic &Coordinate Editor..."
 msgid "Atomic &Coordinate Editor…"
 msgstr "Editor atomico di &Coordinate…"
 
