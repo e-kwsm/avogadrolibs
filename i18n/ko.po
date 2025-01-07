@@ -9935,10 +9935,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Torsion Properties..."
 #~ msgstr "비틀림 정보..."
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "분자 속성..."
-
 #~ msgid "Create Surfaces..."
 #~ msgstr "표면 형성..."
 
