@@ -1406,9 +1406,8 @@ msgid "Scale Cell Volume"
 msgstr ""
 
 #: qtgui/rwmolecule.cpp:542
-#, fuzzy
 msgid "Build Super Cell"
-msgstr "Супер клетка"
+msgstr ""
 
 #: qtgui/rwmolecule.cpp:566
 msgid "Niggli Reduction"
