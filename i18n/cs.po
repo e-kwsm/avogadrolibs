@@ -4653,7 +4653,6 @@ msgstr "Molekulární graf s osamělými páry…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
 msgstr "Atomický náboj…"
 
