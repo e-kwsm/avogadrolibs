@@ -2697,6 +2697,7 @@ msgstr ""
 
 #: qtplugins/crystal/crystal.cpp:74
 #, fuzzy
+#| msgid "&Supercell"
 msgid "Build &Supercell…"
 msgstr "&Super ćelija"
 
