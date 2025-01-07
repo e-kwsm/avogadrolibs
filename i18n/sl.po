@@ -4674,7 +4674,6 @@ msgstr ""
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
 msgstr "Atomski nabo …"
 
