@@ -5291,7 +5291,6 @@ msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:119 qtplugins/surfaces/surfaces.cpp:120
 #, fuzzy
-#| msgid "Molecular Orbital"
 msgid "Render a molecular orbital."
 msgstr "Montri Molekula Orbito."
 
