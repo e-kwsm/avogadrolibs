@@ -5366,10 +5366,8 @@ msgid "Render the solvent-excluded molecular surface."
 msgstr "Montri molekulon kiel dratan kadron."
 
 #: qtplugins/surfaces/surfaces.cpp:119 qtplugins/surfaces/surfaces.cpp:120
-#, fuzzy
-#| msgid "Molecular Orbital"
 msgid "Render a molecular orbital."
-msgstr "Molekula Orbito"
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:122
 msgid "Render the electron density."
