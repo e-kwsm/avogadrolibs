@@ -4879,9 +4879,8 @@ msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:73
 #, fuzzy
-#| msgid "Fill Unit Cell"
 msgid "Fill Unit Cell…"
-msgstr "Γέμισμα μοναδιαίας κυψελίδας"
+msgstr "Γέμισμα μοναδιαίας κυψελίδας…"
 
 #: qtplugins/spacegroup/spacegroup.cpp:79
 #: qtplugins/spacegroup/spacegroup.cpp:338
