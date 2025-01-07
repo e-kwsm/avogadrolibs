@@ -7030,7 +7030,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, ConformerSearchDialog)
 #, fuzzy
-#| msgid "Conformer Search..."
 msgid "Conformer Search"
 msgstr "Søg efter konformationer"
 
