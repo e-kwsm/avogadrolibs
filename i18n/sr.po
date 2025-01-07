@@ -3317,7 +3317,6 @@ msgstr "Preuzmite molekul iz PQR -a."
 
 #: qtplugins/insertdna/insertdna.cpp:43
 #, fuzzy
-#| msgid "DNA/RNA..."
 msgid "DNA/RNA…"
 msgstr "ДНА/РНА…"
 
