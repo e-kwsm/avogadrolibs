@@ -9598,10 +9598,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgstr "Ime datoteke:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Naloži datoteko"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "KrmarjenjeSkok navzgor"
 
