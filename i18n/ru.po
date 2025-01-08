@@ -5765,7 +5765,6 @@ msgstr "Частичный заряд"
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
 #, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
 msgstr "Заряд модель:"
 
