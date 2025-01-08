@@ -8989,10 +8989,6 @@ msgstr ""
 #~ msgstr "Ime datoteke:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Naloži datoteko"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "KrmarjenjeSkok navzgor"
 
