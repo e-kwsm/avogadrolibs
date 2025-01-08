@@ -7713,7 +7713,6 @@ msgstr "&Importar..."
 #. i18n: file: qtplugins/spectra/spectradialog.ui:369
 #. i18n: ectx: property (text), widget (QPushButton, push_colorBackground)
 #, fuzzy
-#| msgid "Set Color..."
 msgid "Set Color..."
 msgstr "Causir la color..."
 
