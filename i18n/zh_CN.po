@@ -5716,7 +5716,6 @@ msgstr "部分电荷"
 #. i18n: file: qtplugins/applycolors/chargedialog.ui:66
 #. i18n: ectx: property (text), widget (QLabel, chargeModelLabel)
 #, fuzzy
-#| msgid "Charge:"
 msgid "Charge Model:"
 msgstr "电荷模型:"
 
