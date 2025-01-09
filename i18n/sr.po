@@ -5627,6 +5627,7 @@ msgstr "Predstavi molekul kao žičani okvir."
 
 #: qtplugins/yaehmop/yaehmop.cpp:90
 #, fuzzy
+#| msgid "Calculate band structure…"
 msgid "Calculate Band Structure…"
 msgstr "Izračunaj strukturu opsega …"
 
