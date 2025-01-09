@@ -475,7 +475,6 @@ msgstr "Prestani čekati"
 
 #: molequeue/molequeuedialog.cpp:105
 #, fuzzy
-#| msgid "Fetching completed job information..."
 msgid "Fetching completed job information…"
 msgstr "Preuzimanje završenih informacija o poslu…"
 
