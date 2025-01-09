@@ -2273,7 +2273,6 @@ msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:66
 #, fuzzy
-#| msgid "Edit Color Opacity Map..."
 msgid "Edit Color Opacity Map…"
 msgstr "Izmeni boju mape neprozirnosti…"
 
