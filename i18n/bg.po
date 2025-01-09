@@ -8614,10 +8614,6 @@ msgstr ""
 #~ msgstr "Свойства на връзката..."
 
 #, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Свойства на връзката"
-
-#, fuzzy
 #~ msgid "Residue Properties..."
 #~ msgstr "Свойства на молекулата..."
 
