@@ -4779,19 +4779,16 @@ msgstr "Renderuje primitive koristeći QTAIM svojstva"
 
 #: qtplugins/qtaim/qtaimextension.cpp:41
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "Molecular Graph…"
 msgstr "Molekularni grafikon …"
 
 #: qtplugins/qtaim/qtaimextension.cpp:48
 #, fuzzy
-#| msgid "Molecular Graph with Lone Pairs..."
 msgid "Molecular Graph with Lone Pairs…"
 msgstr "Molekularni grafikon sa usamljenim parovima …"
 
 #: qtplugins/qtaim/qtaimextension.cpp:55
 #, fuzzy
-#| msgid "Atomic Charge..."
 msgid "Atomic Charge…"
 msgstr "Naelektrisanje Atoma…"
 
@@ -4869,19 +4866,16 @@ msgstr "Obrni selekciju"
 
 #: qtplugins/select/select.cpp:53
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select by Element…"
 msgstr "Biraj po elementu …"
 
 #: qtplugins/select/select.cpp:58
 #, fuzzy
-#| msgid "Select by Atom Index..."
 msgid "Select by Atom Index…"
 msgstr "Biraj prema Atom indeksu …"
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Odaberite prema ostatku …"
 
@@ -4923,7 +4917,6 @@ msgstr "&Izaberi"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select Element"
 msgstr "Biraj po elementu …"
 
@@ -4957,7 +4950,6 @@ msgstr "Ostaci za izbor:"
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Residue"
 msgstr "Odaberite prema ostatku …"
 
@@ -5569,7 +5561,7 @@ msgstr "Predstavi molekul kao žičani okvir."
 
 #: qtplugins/yaehmop/yaehmop.cpp:90
 #, fuzzy
-#| msgid "Calculate band structure..."
+#| msgid "Calculate band structure…"
 msgid "Calculate Band Structure…"
 msgstr "Izračunaj strukturu opsega …"
 
@@ -5668,7 +5660,6 @@ msgstr "Postavke izračunavanja"
 #. i18n: file: molequeue/inputgeneratorwidget.ui:69
 #. i18n: ectx: property (text), widget (QPushButton, warningTextButton)
 #, fuzzy
-#| msgid "Placeholder text..."
 msgid "Placeholder text…"
 msgstr "Tekst čuvara mesta …"
 
@@ -5684,7 +5675,6 @@ msgstr "Resetuj"
 #. i18n: file: molequeue/inputgeneratorwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, debugCheckBox)
 #, fuzzy
-#| msgid "Debug script..."
 msgid "Debug Script…"
 msgstr "Otkrivanje grešaka …"
 
@@ -5695,7 +5685,6 @@ msgstr "Otkrivanje grešaka …"
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:288
 #. i18n: ectx: property (text), widget (QPushButton, computeButton)
 #, fuzzy
-#| msgid "Submit Calculation..."
 msgid "Submit Calculation…"
 msgstr "Predloži proračun …"
 
@@ -7253,7 +7242,6 @@ msgstr "Koristi obrazac"
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:1012
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Generate..."
 msgid "Generate…"
 msgstr "Generiši…"
 
