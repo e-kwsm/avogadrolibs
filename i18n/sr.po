@@ -2896,7 +2896,6 @@ msgstr "Nema prisutnih jediničnih ćelija."
 
 #: qtplugins/customelements/customelements.cpp:19
 #, fuzzy
-#| msgid "Reassign &Custom Elements..."
 msgid "Reassign &Custom Elements…"
 msgstr "Ponovo dodeli &prilagođene elemente …"
 
@@ -3037,7 +3036,7 @@ msgstr "Ne mogu da pronađem navedeni molekul: %1"
 
 #: qtplugins/fetchpdb/fetchpdb.h:35
 msgid "Fetch from PDB"
-msgstr "Dovuci sa PDB-а..."
+msgstr "Dovuci sa PDB-а"
 
 #: qtplugins/fetchpdb/fetchpdb.h:39
 msgid "Download PDB models from the Protein Data Bank"
@@ -3372,14 +3371,12 @@ msgstr "Тимин"
 #: qtplugins/lineformatinput/lineformatinput.cpp:109
 #: qtplugins/lineformatinput/lineformatinput.cpp:124:1052
 #, fuzzy
-#| msgid "Insert Molecule..."
 msgid "Insert Molecule…"
 msgstr "Umetni molekul …"
 
 #: qtplugins/insertdna/insertdna.cpp:201
 #: qtplugins/lineformatinput/lineformatinput.cpp:125
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generating 3D molecule…"
 msgstr "Generiše se 3D molekul …"
 
@@ -3526,7 +3523,6 @@ msgstr "Alat za uređivanje"
 
 #: qtplugins/lammpsinput/lammpsinput.cpp:30
 #, fuzzy
-#| msgid "&LAMMPS..."
 msgid "&LAMMPS…"
 msgstr "&ЛАМПС…"
 
@@ -3902,7 +3898,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:53
 #, fuzzy
-#| msgid "Configure Force Field..."
 msgid "Configure Force Field…"
 msgstr "Podesi polje sile…"
 
@@ -3940,7 +3935,6 @@ msgstr "Formati datoteka Open Babel nisu spremni za dodavanje."
 
 #: qtplugins/openbabel/openbabel.cpp:203
 #, fuzzy
-#| msgid "Loading molecule from CML..."
 msgid "Loading molecule from Open Babel…"
 msgstr "Učitavanje molekula iz Open Babel -a …"
 
@@ -3985,7 +3979,6 @@ msgstr "&Prilagodi Geometriju (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
-#| msgid "Generating MDL..."
 msgid "Generating…"
 msgstr "Generiranje …"
 
@@ -4003,8 +3996,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:492 qtplugins/openbabel/openbabel.cpp:643
 #, fuzzy, qt-format
-#| msgctxt "arg is an executable file."
-#| msgid "Starting %1..."
 msgctxt "arg is an executable file."
 msgid "Starting %1…"
 msgstr "Pokretanje %1 …"
@@ -4023,7 +4014,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:528 qtplugins/openbabel/openbabel.cpp:679
 #, fuzzy
-#| msgid "Updating molecule..."
 msgid "Updating molecule…"
 msgstr "Ažuriranje molekula …"
 
@@ -4072,7 +4062,6 @@ msgstr "Opazivanje Veza (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:742
 #, fuzzy
-#| msgid "Generating XYZ representation..."
 msgid "Generating XYZ representation…"
 msgstr "Generisanje XYZ predstavljanja …"
 
@@ -4082,13 +4071,11 @@ msgstr "Greška pri generisanju XYZ niza."
 
 #: qtplugins/openbabel/openbabel.cpp:760
 #, fuzzy, qt-format
-#| msgid "Converting XYZ to CML with %1..."
 msgid "Converting XYZ to Open Babel with %1…"
 msgstr "Pretvaranje XYZ u Open Babel sa %1 …"
 
 #: qtplugins/openbabel/openbabel.cpp:770
 #, fuzzy
-#| msgid "Updating molecule from CML..."
 msgid "Updating molecule from Open Babel…"
 msgstr "Ažuriranje molekula iz Open Babel -a …"
 
@@ -4102,7 +4089,6 @@ msgstr "Dodaj Vodonike (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:828
 #, fuzzy
-#| msgid "Generating Open Babel input..."
 msgid "Generating Open Babel input…"
 msgstr "Generisanje unosa Open Babel …"
 
@@ -4113,7 +4099,6 @@ msgstr "Greška pri generisanju unosa Open Babel."
 #: qtplugins/openbabel/openbabel.cpp:849 qtplugins/openbabel/openbabel.cpp:899
 #: qtplugins/openbabel/openbabel.cpp:941
 #, fuzzy, qt-format
-#| msgid "Running %1..."
 msgid "Running %1…"
 msgstr "Pokreće se %1 …"
 
@@ -4127,7 +4112,6 @@ msgstr "pH:"
 
 #: qtplugins/openbabel/openbabel.cpp:878 qtplugins/openbabel/openbabel.cpp:920
 #, fuzzy
-#| msgid "Generating obabel input..."
 msgid "Generating obabel input…"
 msgstr "Generiranje obabel unosa …"
 
@@ -4145,7 +4129,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:951
 #, fuzzy
-#| msgid "Reading obabel output..."
 msgid "Reading obabel output…"
 msgstr "Čitanje Obabel izlaza …"
 
@@ -4302,7 +4285,6 @@ msgstr "Dinamičke veze?"
 #. i18n: ectx: property (text), widget (QPushButton, recordButton)
 #: qtplugins/playertool/playertool.cpp:144:1899
 #, fuzzy
-#| msgid "Record Movie..."
 msgid "Record Movie…"
 msgstr "Snimi film…"
 
@@ -4354,7 +4336,6 @@ msgstr "Reprodukujte putanje"
 
 #: qtplugins/plotpdf/plotpdf.cpp:37
 #, fuzzy
-#| msgid "Plot Pair Distribution Function..."
 msgid "Plot Pair Distribution Function…"
 msgstr "Funkcija distribucije parcela…"
 
@@ -4376,7 +4357,6 @@ msgstr "Generišite i iscrtajte krivu funkcije raspodele parova."
 
 #: qtplugins/plotrmsd/plotrmsd.cpp:30
 #, fuzzy
-#| msgid "Plot RMSD curve..."
 msgid "Plot RMSD curve…"
 msgstr "Iscrtajte krivu RMSD …"
 
@@ -4390,7 +4370,6 @@ msgstr "Generišite i iscrtajte RMSD krivu."
 
 #: qtplugins/plotxrd/plotxrd.cpp:35
 #, fuzzy
-#| msgid "Plot Theoretical XRD Pattern..."
 msgid "Plot Theoretical XRD Pattern…"
 msgstr "Teoretski XRD uzorak …"
 
