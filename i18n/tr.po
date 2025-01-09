@@ -3989,7 +3989,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:770
 #, fuzzy
-#| msgid "Updating molecule from CML…"
 msgid "Updating molecule from Open Babel…"
 msgstr "Open Babel'den molekül güncelleniyor…"
 
