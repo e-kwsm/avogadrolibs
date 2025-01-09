@@ -1811,7 +1811,6 @@ msgstr "Ulazna datoteka zapisana u '%1'"
 #: qtplugins/applycolors/applycolors.cpp:46
 #: qtplugins/applycolors/applycolors.cpp:67
 #, fuzzy
-#| msgid "By Custom Color..."
 msgid "By Custom Color…"
 msgstr "Proizvoljna boja…"
 
