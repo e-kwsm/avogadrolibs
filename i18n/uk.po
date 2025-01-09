@@ -9862,11 +9862,6 @@ msgstr "Ваші електронні листи"
 #~ "Подвійне клацання: \tповернути початковий вигляд."
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Анімація"
-
-#, fuzzy
 #~| msgid ""
 #~| "Selection Tool (F11)\n"
 #~| "\n"
