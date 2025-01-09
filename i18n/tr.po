@@ -3588,7 +3588,6 @@ msgstr ""
 #: qtplugins/molecularproperties/molecularmodel.cpp:116
 #: qtplugins/molecularproperties/molecularmodel.cpp:132
 #, fuzzy
-#| msgid "[no molecule]"
 msgid "unknown molecule"
 msgstr "bilinmeyen molekül"
 
