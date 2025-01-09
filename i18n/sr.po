@@ -2385,7 +2385,6 @@ msgstr "Друго…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
-#| msgid "Atomic &Coordinate Editor..."
 msgid "Atomic &Coordinate Editor…"
 msgstr "Atomski i koordinatni uređivač …"
 
