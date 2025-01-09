@@ -1544,7 +1544,6 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: qtplugins/aligntool/aligntool.cpp:79:1691
 #, fuzzy
-#| msgid "X Axis"
 msgid "Axis:"
 msgstr "محور"
 
