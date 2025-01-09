@@ -4826,7 +4826,6 @@ msgstr ""
 
 #: qtplugins/selectiontool/selectiontoolwidget.cpp:35
 #, fuzzy
-#| msgid "Layer"
 msgid "New Layer"
 msgstr "Yeni Katman"
 
