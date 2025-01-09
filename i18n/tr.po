@@ -5341,7 +5341,6 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibrational Modes…"
 msgid "Vibrations"
 msgstr "Titreşim"
 
