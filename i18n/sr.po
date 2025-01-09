@@ -3016,7 +3016,7 @@ msgstr "Ne mogu da pronađem navedeni molekul: %1"
 
 #: qtplugins/fetchpdb/fetchpdb.h:35
 msgid "Fetch from PDB"
-msgstr "Dovuci sa PDB-а..."
+msgstr "Dovuci sa PDB-а"
 
 #: qtplugins/fetchpdb/fetchpdb.h:39
 msgid "Download PDB models from the Protein Data Bank"
