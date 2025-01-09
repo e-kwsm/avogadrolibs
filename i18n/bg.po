@@ -9228,10 +9228,6 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgstr "Свойства на връзката..."
 
 #, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Свойства на връзката"
-
-#, fuzzy
 #~ msgid "Residue Properties..."
 #~ msgstr "Свойства на молекулата..."
 
