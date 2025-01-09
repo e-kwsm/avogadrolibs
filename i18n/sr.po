@@ -465,7 +465,6 @@ msgstr "Avogadro je istekao čekajući na odgovor od MoleQueue."
 
 #: molequeue/molequeuedialog.cpp:83
 #, fuzzy, qt-format
-#| msgid "Waiting for job %1 '%2' to finish..."
 msgctxt "%1 = job ID, %2 = description"
 msgid "Waiting for job %1 “%2” to finish…"
 msgstr "Čeka se završetak posla %1 “ %2” …"
