@@ -4805,9 +4805,8 @@ msgstr "Desenha primitivas utilizando propriedades QTAIM"
 
 #: qtplugins/qtaim/qtaimextension.cpp:41
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "Molecular Graph…"
-msgstr "Gráfico Molecular..."
+msgstr "Gráfico Molecular…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:48
 #, fuzzy

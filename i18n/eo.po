@@ -4760,7 +4760,6 @@ msgstr "Montri primitivaĵojn laŭ QTAIM-atributoj"
 
 #: qtplugins/qtaim/qtaimextension.cpp:41
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "Molecular Graph…"
 msgstr "Molekula Grafo…"
 

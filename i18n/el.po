@@ -4621,7 +4621,6 @@ msgstr "Αποδίδει τα κύρια τμήματα χρησιμοποιών
 
 #: qtplugins/qtaim/qtaimextension.cpp:41
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "Molecular Graph…"
 msgstr "Μοριακό γράφημα…"
 
