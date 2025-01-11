@@ -4817,7 +4817,6 @@ msgstr "Renderiza primitivas usando propriedades QTAIM"
 
 #: qtplugins/qtaim/qtaimextension.cpp:41
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "Molecular Graph…"
 msgstr "Gráfico Molecular…"
 

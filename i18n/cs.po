@@ -4670,7 +4670,6 @@ msgstr "Vykresluje základní tvary za použití vlastností QTAIM"
 
 #: qtplugins/qtaim/qtaimextension.cpp:41
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "Molecular Graph…"
 msgstr "Molekulární graf…"
 
