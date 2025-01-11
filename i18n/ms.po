@@ -4632,7 +4632,6 @@ msgstr "Graf Molekul…"
 
 #: qtplugins/qtaim/qtaimextension.cpp:48
 #, fuzzy
-#| msgid "Molecular Graph with Lone Pairs..."
 msgid "Molecular Graph with Lone Pairs…"
 msgstr "Graf Molekul dengan Pasangan Tersendiri…"
 
