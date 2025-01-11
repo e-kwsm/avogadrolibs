@@ -3832,9 +3832,8 @@ msgstr "Ângulos:"
 
 #: qtplugins/measuretool/measuretool.h:33
 #: qtplugins/measuretool/measuretool.h:34
-#, fuzzy
 msgid "Measure tool"
-msgstr "Ferramenta de Medida"
+msgstr ""
 
 #: qtplugins/molecularproperties/molecularmodel.cpp:77
 msgctxt "asking server for molecule name"
