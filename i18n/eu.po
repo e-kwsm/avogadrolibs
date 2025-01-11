@@ -4674,7 +4674,6 @@ msgstr ""
 
 #: qtplugins/qtaim/qtaimextension.cpp:41
 #, fuzzy
-#| msgid "Molecular Graph..."
 msgid "Molecular Graph…"
 msgstr "Grafiko Molekularra…"
 
