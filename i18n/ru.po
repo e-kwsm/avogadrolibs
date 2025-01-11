@@ -2739,7 +2739,6 @@ msgstr "Отправить расчет CP2K"
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
 msgstr "Импорт кристаллов из буфера обмена…"
 
