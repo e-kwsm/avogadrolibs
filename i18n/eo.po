@@ -4068,7 +4068,6 @@ msgstr "Eraro pri generado de enigo de OpenBabel."
 #: qtplugins/openbabel/openbabel.cpp:849 qtplugins/openbabel/openbabel.cpp:899
 #: qtplugins/openbabel/openbabel.cpp:941
 #, fuzzy, qt-format
-#| msgid "Running %1..."
 msgid "Running %1…"
 msgstr "Rulante %1…"
 
