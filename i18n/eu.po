@@ -2384,6 +2384,7 @@ msgstr "Kateak"
 
 #: qtplugins/applycolors/applycolors.cpp:80
 #, fuzzy
+#| msgid "Partial Charge…"
 msgid "By Partial Charge…"
 msgstr "Karga Partziala…"
 
