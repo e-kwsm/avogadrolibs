@@ -3945,7 +3945,6 @@ msgstr "Optimumigante Geometrion (OpenBabel)"
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
-#| msgid "Generating MDL..."
 msgid "Generating…"
 msgstr "Generante…"
 
