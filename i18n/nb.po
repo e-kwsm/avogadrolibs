@@ -6288,7 +6288,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:52
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_A)
 #, fuzzy
-#| msgid "A:"
 msgctxt "adenine (A)"
 msgid "A"
 msgstr "A"
@@ -6301,7 +6300,6 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:62
 #. i18n: ectx: property (text), widget (QToolButton, toolButton_C)
 #, fuzzy
-#| msgid "C:"
 msgctxt "cytosine (C)"
 msgid "C"
 msgstr "C"
@@ -6338,14 +6336,12 @@ msgstr ""
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:127
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "A:"
 msgid "A"
 msgstr "A"
 
 #. i18n: file: qtplugins/insertdna/insertdnadialog.ui:132
 #. i18n: ectx: property (text), item, widget (QComboBox, bpCombo)
 #, fuzzy
-#| msgid "B:"
 msgid "B"
 msgstr "B"
 
