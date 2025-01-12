@@ -463,7 +463,6 @@ msgstr "Avogadro esgotou o tempo aguardando uma resposta de MoleQueue."
 
 #: molequeue/molequeuedialog.cpp:83
 #, fuzzy, qt-format
-#| msgid "Waiting for job %1 '%2' to finish..."
 msgctxt "%1 = job ID, %2 = description"
 msgid "Waiting for job %1 “%2” to finish…"
 msgstr "Esperando o trabalho %1 '%2' para terminar…"
