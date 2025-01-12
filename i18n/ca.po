@@ -9785,16 +9785,8 @@ msgstr ""
 #~ msgstr "Distància"
 
 #, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Index d'àtoms"
-
-#, fuzzy
-#~ msgid "&Copy"
-#~ msgstr "&Copia-ho tot"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
-#~ msgstr "Massa molecular (g/mol)"
+#~ msgstr "Massa molecular (g/mol):"
 
 #~ msgid "Chemical Formula:"
 #~ msgstr "Formula química:"
