@@ -4878,7 +4878,7 @@ msgstr "خصائص الروابط"
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
 msgid "Angle Properties…"
-msgstr "خصائص الزاوية..."
+msgstr "خصائص الزاوية…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 msgid "Torsion Properties…"
@@ -4913,7 +4913,7 @@ msgstr "خصائص الروابط"
 #: qtplugins/propertytables/propertyview.cpp:51
 #, fuzzy
 msgid "Angle Properties"
-msgstr "خصائص الزاوية..."
+msgstr "خصائص الزاوية…"
 
 #: qtplugins/propertytables/propertyview.cpp:54
 msgid "Torsion Properties"
@@ -5542,7 +5542,7 @@ msgstr ""
 #: qtplugins/surfaces/surfacedialog.cpp:163
 #, fuzzy
 msgid "Molecular Orbital"
-msgstr "المدارات الجزيئية..."
+msgstr "المدارات الجزيئية"
 
 #: qtplugins/surfaces/surfacedialog.cpp:166
 msgid "Electron Density"
