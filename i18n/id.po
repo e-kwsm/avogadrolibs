@@ -3044,7 +3044,7 @@ msgstr "&Impor"
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 #, fuzzy
 msgid "Fetch PDB"
-msgstr "Mengambil dari PDB…"
+msgstr "Mengambil dari PDB"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:62
 #, qt-format
@@ -4926,6 +4926,7 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
+#| msgid "Select by Residue"
 msgid "Select Residue"
 msgstr "Pilih Residu"
 

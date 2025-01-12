@@ -4673,7 +4673,7 @@ msgstr "Postavke atoma"
 #: qtplugins/propertytables/propertyview.cpp:48
 #, fuzzy
 msgid "Bond Properties"
-msgstr "Postavke spoja…"
+msgstr "Postavke spoja"
 
 #: qtplugins/propertytables/propertyview.cpp:51
 msgid "Angle Properties"
