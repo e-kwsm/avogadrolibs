@@ -1670,7 +1670,6 @@ msgstr "Поравнајте молекуле на Декартове осе"
 
 #: qtplugins/apbs/apbs.cpp:32
 #, fuzzy
-#| msgid "Run APBS"
 msgid "Run APBS…"
 msgstr "Pokrenite APBS…"
 
