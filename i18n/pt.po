@@ -3945,7 +3945,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:203
 #, fuzzy
-#| msgid "Loading molecule from CML..."
 msgid "Loading molecule from Open Babel…"
 msgstr "Carregando molécula de Open Babel…"
 
@@ -4087,13 +4086,11 @@ msgstr "Erro ao criar a cadeia XYZ."
 
 #: qtplugins/openbabel/openbabel.cpp:760
 #, fuzzy, qt-format
-#| msgid "Converting XYZ to CML with %1..."
 msgid "Converting XYZ to Open Babel with %1…"
 msgstr "Convertendo XYZ em Open Babel com %1…"
 
 #: qtplugins/openbabel/openbabel.cpp:770
 #, fuzzy
-#| msgid "Updating molecule from CML..."
 msgid "Updating molecule from Open Babel…"
 msgstr "Atualizando molécula de Open Babel…"
 

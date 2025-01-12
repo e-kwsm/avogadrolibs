@@ -3909,7 +3909,6 @@ msgstr "La OpenBabel-dosierformoj ne pretas aldoniĝi."
 
 #: qtplugins/openbabel/openbabel.cpp:203
 #, fuzzy
-#| msgid "Loading molecule from CML..."
 msgid "Loading molecule from Open Babel…"
 msgstr "Ŝargante molekulon el Open Babel…"
 
@@ -4049,13 +4048,11 @@ msgstr "Eraro pri generado de XYZ-signoĉeno."
 
 #: qtplugins/openbabel/openbabel.cpp:760
 #, fuzzy, qt-format
-#| msgid "Converting XYZ to CML with %1..."
 msgid "Converting XYZ to Open Babel with %1…"
 msgstr "Konvertante XYZ al Open Babel laŭ %1…"
 
 #: qtplugins/openbabel/openbabel.cpp:770
 #, fuzzy
-#| msgid "Updating molecule from CML..."
 msgid "Updating molecule from Open Babel…"
 msgstr "Ĝisdatigante molekulon laŭ Open Babel…"
 
