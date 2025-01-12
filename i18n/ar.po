@@ -3708,9 +3708,8 @@ msgid " °"
 msgstr " °"
 
 #: qtplugins/noncovalent/noncovalent.cpp:368
-#, fuzzy
 msgid "Angle tolerance:"
-msgstr "خصائص الزاوية..."
+msgstr ""
 
 #: qtplugins/noncovalent/noncovalent.h:34
 msgid "Render a few non-covalent interactions."
@@ -4501,7 +4500,7 @@ msgstr "خصائص الروابط"
 #: qtplugins/propertytables/propertytables.cpp:41
 #, fuzzy
 msgid "Angle Properties…"
-msgstr "خصائص الزاوية..."
+msgstr "خصائص الزاوية…"
 
 #: qtplugins/propertytables/propertytables.cpp:48
 msgid "Torsion Properties…"
@@ -4536,7 +4535,7 @@ msgstr "خصائص الروابط"
 #: qtplugins/propertytables/propertyview.cpp:50
 #, fuzzy
 msgid "Angle Properties"
-msgstr "خصائص الزاوية..."
+msgstr "خصائص الزاوية…"
 
 #: qtplugins/propertytables/propertyview.cpp:53
 msgid "Torsion Properties"
@@ -5058,7 +5057,7 @@ msgstr ""
 #: qtplugins/surfaces/surfacedialog.cpp:163
 #, fuzzy
 msgid "Molecular Orbital"
-msgstr "المدارات الجزيئية..."
+msgstr "المدارات الجزيئية"
 
 #: qtplugins/surfaces/surfacedialog.cpp:166
 msgid "Electron Density"
