@@ -1909,9 +1909,8 @@ msgid "Colormap:"
 msgstr ""
 
 #: qtplugins/applycolors/applycolors.h:29
-#, fuzzy
 msgid "ApplyColors"
-msgstr "顏色"
+msgstr ""
 
 #: qtplugins/ballandstick/ballandstick.cpp:107
 #, fuzzy
