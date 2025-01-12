@@ -4312,7 +4312,7 @@ msgstr ""
 #: qtplugins/propertytables/propertymodel.cpp:531
 #, fuzzy
 msgid "Start Atom"
-msgstr "הנפשה..."
+msgstr "הנפשה"
 
 #: qtplugins/propertytables/propertymodel.cpp:533
 msgid "End Atom"
