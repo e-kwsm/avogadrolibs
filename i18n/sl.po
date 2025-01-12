@@ -2719,7 +2719,7 @@ msgstr "Zavrti na &običajno usmerjenost"
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
 msgid "Scale Cell &Volume…"
-msgstr "Prolagajanje celice na &prostornino ..."
+msgstr "Prolagajanje celice na &prostornino …"
 
 #: qtplugins/crystal/crystal.cpp:74
 msgid "Build &Supercell…"
