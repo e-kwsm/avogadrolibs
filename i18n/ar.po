@@ -1917,9 +1917,8 @@ msgid "Colormap:"
 msgstr ""
 
 #: qtplugins/applycolors/applycolors.h:29
-#, fuzzy
 msgid "ApplyColors"
-msgstr "طبّق"
+msgstr ""
 
 #: qtplugins/ballandstick/ballandstick.cpp:107
 msgid "Atom scale"
