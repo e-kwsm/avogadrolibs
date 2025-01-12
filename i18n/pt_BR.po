@@ -4161,7 +4161,6 @@ msgstr "Removendo Hidrogênios (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:928
 #, fuzzy
-#| msgid "Error generating Open Babel input."
 msgid "Error generating Open Babel data."
 msgstr "Erro ao criar dados Open Babel."
 
