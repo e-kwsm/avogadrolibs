@@ -2542,6 +2542,7 @@ msgstr "R&edakti"
 
 #: qtplugins/copypaste/copypaste.cpp:81
 #, fuzzy
+#| msgid "Copy"
 msgid "Copy As"
 msgstr "Kopii kiel"
 
