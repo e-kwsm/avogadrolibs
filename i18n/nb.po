@@ -6918,7 +6918,6 @@ msgstr ""
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:1012
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generate…"
 msgstr "Genererer …"
 
