@@ -2739,7 +2739,7 @@ msgstr ""
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
 msgid "Import Crystal from Clipboard…"
-msgstr "Impor Kristal dari Clipboard..."
+msgstr "Impor Kristal dari Clipboard…"
 
 #: qtplugins/crystal/crystal.cpp:47
 msgid "Toggle Unit Cell"
@@ -2792,7 +2792,7 @@ msgstr "Tambahkan &Unit Sel"
 #: qtplugins/crystal/crystal.cpp:168
 #, fuzzy
 msgid "Import Crystal from Clipboard"
-msgstr "Impor Kristal dari Clipboard..."
+msgstr "Impor Kristal dari Clipboard"
 
 #: qtplugins/crystal/crystal.cpp:175
 #, fuzzy
@@ -2940,7 +2940,7 @@ msgstr "&Impor"
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 #, fuzzy
 msgid "Fetch PDB"
-msgstr "Mengambil dari PDB..."
+msgstr "Mengambil dari PDB"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:62
 #, fuzzy, qt-format
@@ -2995,7 +2995,7 @@ msgstr "Molekul yang dikehendaki tidak ditemukan: %1"
 #: qtplugins/fetchpdb/fetchpdb.h:35
 #, fuzzy
 msgid "Fetch from PDB"
-msgstr "Mengambil dari PDB..."
+msgstr "Mengambil dari PDB"
 
 #: qtplugins/fetchpdb/fetchpdb.h:39
 msgid "Download PDB models from the Protein Data Bank"
@@ -3036,7 +3036,7 @@ msgstr ""
 #: qtplugins/forcefield/forcefield.cpp:96
 #, fuzzy
 msgid "Configure…"
-msgstr "Pengaturan Bidang Gaya..."
+msgstr "Pengaturan…"
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
@@ -3851,7 +3851,7 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:53
 #, fuzzy
 msgid "Configure Force Field…"
-msgstr "Pengaturan Bidang Gaya..."
+msgstr "Pengaturan Bidang Gaya…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
@@ -4781,9 +4781,8 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
-msgstr "Pilih berdasarkan Residu..."
+msgstr "Pilih berdasarkan Residu…"
 
 #: qtplugins/select/select.cpp:68
 msgid "Select Backbone Atoms…"
@@ -4855,9 +4854,9 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
+#| msgid "Select by Residue"
 msgid "Select Residue"
-msgstr "Pilih berdasarkan Residu..."
+msgstr "Pilih berdasarkan Residu"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
@@ -4905,7 +4904,7 @@ msgstr "Label Baru:"
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
 msgid "Perceive Space Group…"
-msgstr "Mengambil grup ruang..."
+msgstr "Mengambil grup ruang…"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:99
 #. i18n: ectx: property (text), widget (QPushButton, symmetrizeMoleculeButton)

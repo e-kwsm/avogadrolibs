@@ -950,9 +950,8 @@ msgid "Oganesson"
 msgstr "Oganesson"
 
 #: qtgui/filebrowsewidget.cpp:23
-#, fuzzy
 msgid "Browse"
-msgstr "Layar"
+msgstr ""
 
 #: qtgui/filebrowsewidget.cpp:96
 msgid "Select file:"
@@ -2481,7 +2480,7 @@ msgstr "Salin"
 #: qtplugins/lineformatinput/lineformatinput.cpp:46
 #, fuzzy
 msgid "SMILES"
-msgstr "SMILES..."
+msgstr "SMILES…"
 
 #: qtplugins/copypaste/copypaste.cpp:32 qtplugins/copypaste/copypaste.cpp:78
 #: qtplugins/lineformatinput/lineformatinput.cpp:45
@@ -2728,7 +2727,7 @@ msgstr "Putar ke &Orientasi Piawai"
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
 msgid "Scale Cell &Volume…"
-msgstr "Skalakan Sel Ke &Volum..."
+msgstr "Skalakan Sel Ke &Volum…"
 
 #: qtplugins/crystal/crystal.cpp:74
 #, fuzzy
@@ -2906,7 +2905,7 @@ msgstr "&Import"
 #: qtplugins/fetchpdb/fetchpdb.cpp:61
 #, fuzzy
 msgid "Fetch PDB"
-msgstr "Diperoleh dari PDB..."
+msgstr "Diperoleh dari PDB"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:62
 #, fuzzy, qt-format
@@ -2961,7 +2960,7 @@ msgstr "Molekul yang dinyatakan tidak ditemui: %1"
 #: qtplugins/fetchpdb/fetchpdb.h:35
 #, fuzzy
 msgid "Fetch from PDB"
-msgstr "Diperoleh dari PDB..."
+msgstr "Diperoleh dari PDB"
 
 #: qtplugins/fetchpdb/fetchpdb.h:39
 msgid "Download PDB models from the Protein Data Bank"
@@ -3004,7 +3003,7 @@ msgstr ""
 #: qtplugins/forcefield/forcefield.cpp:96
 #, fuzzy
 msgid "Configure…"
-msgstr "Sediakan Medan Daya..."
+msgstr "Sediakan…"
 
 #: qtplugins/forcefield/forcefield.cpp:108
 #, fuzzy
@@ -3227,9 +3226,8 @@ msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:43
 #, fuzzy
-#| msgid "DNA/RNA..."
 msgid "DNA/RNA…"
-msgstr "DNA/RNA..."
+msgstr "DNA/RNA…"
 
 #: qtplugins/insertdna/insertdna.cpp:62
 #: qtplugins/insertfragment/insertfragment.cpp:60
@@ -3471,7 +3469,7 @@ msgstr ""
 #: qtplugins/lineformatinput/lineformatinput.cpp:31
 #, fuzzy
 msgid "SMILES…"
-msgstr "SMILES..."
+msgstr "SMILES…"
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:37
 msgid "InChI…"
@@ -3813,7 +3811,7 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:53
 #, fuzzy
 msgid "Configure Force Field…"
-msgstr "Sediakan Medan Daya..."
+msgstr "Sediakan Medan Daya…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
@@ -4761,9 +4759,8 @@ msgstr "Indeks Atom"
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
-msgstr "Pilih mengikut Baki..."
+msgstr "Pilih mengikut Baki…"
 
 #: qtplugins/select/select.cpp:68
 #, fuzzy
@@ -4842,9 +4839,9 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
+#| msgid "Select by Residue"
 msgid "Select Residue"
-msgstr "Pilih mengikut Baki..."
+msgstr "Pilih mengikut Baki"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
