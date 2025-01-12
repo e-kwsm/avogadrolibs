@@ -5068,7 +5068,6 @@ msgstr ""
 
 #: qtplugins/spectra/spectra.h:38
 #, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display spectra plots."
 msgstr "Montru spektrojn."
 
@@ -5451,7 +5450,6 @@ msgstr "Vibraj"
 
 #: qtplugins/vibrations/vibrations.h:37
 #, fuzzy
-#| msgid "Display spectra and vibrational modes."
 msgid "Display vibrational modes."
 msgstr "Montru vibrajn modojn."
 
