@@ -483,7 +483,6 @@ msgstr "Eraro pri Submeto de Tasko"
 
 #: molequeue/molequeuedialog.cpp:128
 #, fuzzy, qt-format
-#| msgid "The job has been rejected by MoleQueue: %1"
 msgctxt "%1 = error"
 msgid "The job has been rejected by MoleQueue: %1"
 msgstr "MoleQueue rifuzis la taskon: %1"
