@@ -1850,7 +1850,6 @@ msgstr ""
 #: qtplugins/applycolors/applycolors.cpp:311
 #: qtplugins/surfaces/surfaces.cpp:780:183 rc.cpp:1824
 #, fuzzy
-#| msgid "Spectra"
 msgctxt "colormap"
 msgid "Spectral"
 msgstr "Spektrum"
@@ -5028,7 +5027,6 @@ msgstr ""
 #. i18n: ectx: attribute (title), widget (QWidget, tab_spectra)
 #: qtplugins/spectra/spectra.h:36:1646
 #, fuzzy
-#| msgid "Spectra"
 msgid "Spectra"
 msgstr "Spektrum"
 
