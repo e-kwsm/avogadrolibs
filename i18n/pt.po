@@ -1792,7 +1792,6 @@ msgstr "Ficheiro de entrada gravado em %1"
 #: qtplugins/applycolors/applycolors.cpp:46
 #: qtplugins/applycolors/applycolors.cpp:67
 #, fuzzy
-#| msgid "By Custom Color..."
 msgid "By Custom Color…"
 msgstr "Por Cor Personalizada…"
 
@@ -2241,7 +2240,6 @@ msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:66
 #, fuzzy
-#| msgid "Edit Color Opacity Map..."
 msgid "Edit Color Opacity Map…"
 msgstr "Editar Mapa de Opacidade de Cor …"
 
@@ -2349,13 +2347,11 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2097
 #, fuzzy
-#| msgid "Other..."
 msgid "Other…"
 msgstr "Outro…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
-#| msgid "Atomic &Coordinate Editor..."
 msgid "Atomic &Coordinate Editor…"
 msgstr "Editor de &Coordenadas Atômicas…"
 
@@ -2872,7 +2868,6 @@ msgstr "Nenhuma célula unitária presente."
 
 #: qtplugins/customelements/customelements.cpp:19
 #, fuzzy
-#| msgid "Reassign &Custom Elements..."
 msgid "Reassign &Custom Elements…"
 msgstr "Reatribuir Elementos &Personalizados…"
 
@@ -3268,7 +3263,6 @@ msgstr "Descarregar uma molécula de PQR."
 
 #: qtplugins/insertdna/insertdna.cpp:43
 #, fuzzy
-#| msgid "DNA/RNA..."
 msgid "DNA/RNA…"
 msgstr "DNA/RNA…"
 
@@ -3309,14 +3303,12 @@ msgstr "Timina"
 #: qtplugins/lineformatinput/lineformatinput.cpp:108
 #: qtplugins/lineformatinput/lineformatinput.cpp:123:1046
 #, fuzzy
-#| msgid "Insert Molecule..."
 msgid "Insert Molecule…"
 msgstr "Inserir Molécula…"
 
 #: qtplugins/insertdna/insertdna.cpp:201
 #: qtplugins/lineformatinput/lineformatinput.cpp:124
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generating 3D molecule…"
 msgstr "A criar molécula 3D…"
 
@@ -3864,7 +3856,6 @@ msgstr "Configurar Campo de Força…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
-#| msgid "Conformer Search..."
 msgid "Conformer Search…"
 msgstr "Procurar conformação…"
 
@@ -4026,7 +4017,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:742
 #, fuzzy
-#| msgid "Generating XYZ representation..."
 msgid "Generating XYZ representation…"
 msgstr "Criando representação XYZ…"
 
@@ -4253,7 +4243,6 @@ msgstr "Ligações dinâmicas?"
 #. i18n: ectx: property (text), widget (QPushButton, recordButton)
 #: qtplugins/playertool/playertool.cpp:144:1893
 #, fuzzy
-#| msgid "Record Movie..."
 msgid "Record Movie…"
 msgstr "Gravar Vídeo…"
 
@@ -4307,7 +4296,6 @@ msgstr "Reproduzir trajetórias"
 
 #: qtplugins/plotpdf/plotpdf.cpp:37
 #, fuzzy
-#| msgid "Plot Pair Distribution Function..."
 msgid "Plot Pair Distribution Function…"
 msgstr "Traçar Função de Distribuição de Pares…"
 
@@ -4329,7 +4317,6 @@ msgstr "Criar e desenhar uma curva Função de Distribuição de Pares (PDF)."
 
 #: qtplugins/plotrmsd/plotrmsd.cpp:30
 #, fuzzy
-#| msgid "Plot RMSD curve..."
 msgid "Plot RMSD curve…"
 msgstr "Traçar curva RMSD…"
 
@@ -4343,7 +4330,6 @@ msgstr "Criar e desenhar uma curva RMSD."
 
 #: qtplugins/plotxrd/plotxrd.cpp:35
 #, fuzzy
-#| msgid "Plot Theoretical XRD Pattern..."
 msgid "Plot Theoretical XRD Pattern…"
 msgstr "Traçar modelo DRX Teórico…"
 
@@ -4836,7 +4822,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Seleccionar por Resíduo…"
 
@@ -4874,7 +4859,6 @@ msgstr "&Seleccionar"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select Element"
 msgstr "Seleccionar elemento"
 
@@ -4908,7 +4892,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Residue"
 msgstr "Seleccionar Resíduo"
 
@@ -5600,7 +5583,6 @@ msgstr "Configurações de Cálculo"
 #. i18n: file: molequeue/inputgeneratorwidget.ui:69
 #. i18n: ectx: property (text), widget (QPushButton, warningTextButton)
 #, fuzzy
-#| msgid "Placeholder text..."
 msgid "Placeholder text…"
 msgstr "Texto de espaço reservado…"
 
@@ -5616,7 +5598,6 @@ msgstr ""
 #. i18n: file: molequeue/inputgeneratorwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, debugCheckBox)
 #, fuzzy
-#| msgid "Debug script..."
 msgid "Debug Script…"
 msgstr "Depurar script…"
 
@@ -5627,7 +5608,6 @@ msgstr "Depurar script…"
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:288
 #. i18n: ectx: property (text), widget (QPushButton, computeButton)
 #, fuzzy
-#| msgid "Submit Calculation..."
 msgid "Submit Calculation…"
 msgstr "Submeter Cálculo…"
 
