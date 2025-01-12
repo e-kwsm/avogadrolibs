@@ -4764,7 +4764,6 @@ msgstr "&Izberi"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select Element"
 msgstr "Izbor elementu"
 
@@ -4798,7 +4797,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Residue"
 msgstr "Izbor ostanku"
 
