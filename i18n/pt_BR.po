@@ -4932,7 +4932,7 @@ msgstr ""
 #: qtplugins/select/select.cpp:491
 #, fuzzy
 msgid "Select Residue"
-msgstr "Selecionar Resíduo…"
+msgstr "Selecionar Resíduo"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
