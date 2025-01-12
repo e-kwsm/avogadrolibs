@@ -4597,7 +4597,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Vali jäägi järgi…"
 
@@ -4667,7 +4666,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Residue"
 msgstr "Vali jäägi…"
 
