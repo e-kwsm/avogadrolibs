@@ -1988,9 +1988,8 @@ msgid "Colormap:"
 msgstr ""
 
 #: qtplugins/applycolors/applycolors.h:29
-#, fuzzy
 msgid "ApplyColors"
-msgstr "طبّق"
+msgstr ""
 
 #: qtplugins/autoopt/autoopt.cpp:66
 msgctxt "control-key 7"
