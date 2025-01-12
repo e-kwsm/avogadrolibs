@@ -6604,7 +6604,7 @@ msgstr ""
 #: qtplugins/select/select.cpp:496
 #, fuzzy
 msgid "Select Residue"
-msgstr "Selecciona per residu"
+msgstr "Selecciona residu"
 
 #: qtplugins/select/select.cpp:592
 msgid "Select all atoms."
