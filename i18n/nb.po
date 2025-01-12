@@ -5447,7 +5447,6 @@ msgstr "Send inn beregning …"
 #. i18n: file: molequeue/inputgeneratorwidget.ui:123
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Save APBS Input File"
 msgid "Save Input…"
 msgstr "Lagre inndatafil …"
 
