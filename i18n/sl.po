@@ -2717,7 +2717,7 @@ msgstr "Zavrti na &običajno usmerjenost"
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
 msgid "Scale Cell &Volume…"
-msgstr "Prolagajanje celice na &prostornino ..."
+msgstr "Prolagajanje celice na &prostornino …"
 
 #: qtplugins/crystal/crystal.cpp:74
 #, fuzzy
@@ -3210,7 +3210,6 @@ msgstr ""
 
 #: qtplugins/insertdna/insertdna.cpp:43
 #, fuzzy
-#| msgid "DNA/RNA..."
 msgid "DNA/RNA…"
 msgstr "DNA/RNA…"
 
@@ -4725,7 +4724,6 @@ msgstr ""
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Izbor po ostanku …"
 
