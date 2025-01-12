@@ -6376,7 +6376,6 @@ msgstr "Kriterijumi konvergencije"
 #. i18n: file: qtplugins/forcefield/forcefielddialog.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #, fuzzy
-#| msgid "\"Energy\" convergence:"
 msgid "Energy convergence:"
 msgstr "Konvergencija energije:"
 
@@ -7339,7 +7338,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:157
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #, fuzzy
-#| msgid "\"Energy\" convergence:"
 msgid "Convergence:"
 msgstr "Konvergencija:"
 
