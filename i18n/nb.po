@@ -427,7 +427,6 @@ msgstr "Klarte ikke å sende inn jobb"
 
 #: molequeue/molequeuedialog.cpp:128
 #, fuzzy, qt-format
-#| msgid "The job has been rejected by MoleQueue: %1"
 msgctxt "%1 = error"
 msgid "The job has been rejected by MoleQueue: %1"
 msgstr "Jobben har blitt avvist av MoleQueue: %1"
