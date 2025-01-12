@@ -1169,7 +1169,6 @@ msgstr "[molekularik ez]"
 
 #: qtgui/layermodel.cpp:117
 #, fuzzy, qt-format
-#| msgid "Layer"
 msgid "Layer %1"
 msgstr "%1 Geruza"
 
