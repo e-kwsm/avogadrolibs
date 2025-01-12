@@ -1778,9 +1778,9 @@ msgstr "Kateak"
 
 #: qtplugins/applycolors/applycolors.cpp:77
 #, fuzzy
-#| msgid "Partial Charge"
+#| msgid "Partial Charge…"
 msgid "By Partial Charge…"
-msgstr "Karga Partziala"
+msgstr "Karga Partziala…"
 
 #: qtplugins/applycolors/applycolors.cpp:82
 #, fuzzy
@@ -3021,7 +3021,6 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:152
 #, fuzzy
-#| msgid "Calculate"
 msgid "&Calculate"
 msgstr "Kalkulatu"
 
