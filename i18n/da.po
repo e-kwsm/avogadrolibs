@@ -4590,7 +4590,7 @@ msgstr "Egenskaber"
 
 #: qtplugins/propertytables/propertyview.cpp:44
 msgid "Atom Properties"
-msgstr "Atom Egenskaber..."
+msgstr "Atom Egenskaber"
 
 #: qtplugins/propertytables/propertyview.cpp:47
 msgid "Bond Properties"
