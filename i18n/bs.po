@@ -3764,7 +3764,7 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:53
 #, fuzzy
 msgid "Configure Force Field…"
-msgstr "Podesi polje sile..."
+msgstr "Podesi polje sile…"
 
 #: qtplugins/openbabel/openbabel.cpp:59
 #, fuzzy
@@ -4581,7 +4581,7 @@ msgstr "Postavke atoma"
 
 #: qtplugins/propertytables/propertyview.cpp:48
 msgid "Bond Properties"
-msgstr "Postavke spoja..."
+msgstr "Postavke spoja"
 
 #: qtplugins/propertytables/propertyview.cpp:51
 msgid "Angle Properties"
