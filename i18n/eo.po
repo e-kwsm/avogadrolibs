@@ -2748,7 +2748,6 @@ msgstr "Submeti CP2K-Kalkulon"
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
 msgstr "Importi Kristalon el Tondujo…"
 
