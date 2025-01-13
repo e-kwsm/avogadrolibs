@@ -2762,7 +2762,6 @@ msgstr "Turni al Norma &Orientiĝo"
 
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
-#| msgid "Scale Cell &Volume"
 msgid "Scale Cell &Volume…"
 msgstr "Ŝanĝi Ĉelan &Volumenon…"
 
