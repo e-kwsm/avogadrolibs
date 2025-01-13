@@ -2561,7 +2561,7 @@ msgstr "R&edakti"
 
 #: qtplugins/copypaste/copypaste.cpp:81
 msgid "Copy As"
-msgstr ""
+msgstr "Kopii kiel"
 
 #: qtplugins/copypaste/copypaste.cpp:150
 msgid "Error Clipping Molecule"
