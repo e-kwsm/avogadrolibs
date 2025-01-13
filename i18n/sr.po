@@ -2779,7 +2779,6 @@ msgstr "Predložite proračun CP2K"
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
 msgstr "Uvezite kristal iz međuspremnika …"
 
