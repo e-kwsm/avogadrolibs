@@ -2789,7 +2789,6 @@ msgstr "Uključi / isključi ćeliju jedinice"
 
 #: qtplugins/crystal/crystal.cpp:52
 #, fuzzy
-#| msgid "Edit Unit Cell"
 msgid "Edit Unit Cell…"
 msgstr "Izmeni ćeliju jedinice…"
 
