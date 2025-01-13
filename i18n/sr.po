@@ -3903,9 +3903,8 @@ msgstr "Spoznaj veze"
 
 #: qtplugins/openbabel/openbabel.cpp:77
 #, fuzzy
-#| msgid "Add hydrogens for pH"
 msgid "Add Hydrogens for pH…"
-msgstr "Dodaj vodonike za pH"
+msgstr "Dodaj vodonike za pH…"
 
 #: qtplugins/openbabel/openbabel.cpp:83
 msgid "Remove Hydrogens"
