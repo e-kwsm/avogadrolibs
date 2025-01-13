@@ -3904,7 +3904,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:492 qtplugins/openbabel/openbabel.cpp:643
 #, fuzzy, qt-format
-#| msgctxt "arg is an executable file."
 msgctxt "arg is an executable file."
 msgid "Starting %1…"
 msgstr "Lanĉante %1…"
