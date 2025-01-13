@@ -2570,7 +2570,6 @@ msgstr "Limpar"
 
 #: qtplugins/copypaste/copypaste.cpp:35
 #, fuzzy
-#| msgid "Paste"
 msgid "&Paste"
 msgstr "Colar"
 

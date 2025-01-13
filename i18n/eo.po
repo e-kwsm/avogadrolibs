@@ -2552,7 +2552,6 @@ msgstr "Forviŝi"
 
 #: qtplugins/copypaste/copypaste.cpp:35
 #, fuzzy
-#| msgid "Paste"
 msgid "&Paste"
 msgstr "Alglui"
 
