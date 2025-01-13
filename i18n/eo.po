@@ -8245,10 +8245,8 @@ msgstr ""
 #. i18n: ectx: property (currentText), widget (QComboBox, smoothingCombo)
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:375
 #. i18n: ectx: property (text), item, widget (QComboBox, smoothingCombo)
-#, fuzzy
-#| msgid "Tight"
 msgid "Light"
-msgstr "Strikta"
+msgstr ""
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:385
 #. i18n: ectx: property (text), item, widget (QComboBox, smoothingCombo)
