@@ -1207,7 +1207,6 @@ msgstr "[neniu molekulo]"
 
 #: qtgui/layermodel.cpp:85
 #, fuzzy, qt-format
-#| msgid "Layer"
 msgid "Layer %1"
 msgstr "Tavolo"
 
@@ -1510,15 +1509,13 @@ msgstr "Redukti Ĉelon al Nesimetria Unito"
 
 #: qtgui/rwmolecule.h:214
 #, fuzzy
-#| msgid "Change Atom Hybridization"
 msgid "Change Atom Positions"
-msgstr "Ŝanĝi Atoman Hibridiĝon"
+msgstr "Ŝanĝi Atoman Poziciojn"
 
 #: qtgui/rwmolecule.h:224
 #, fuzzy
-#| msgid "Change Atom Color"
 msgid "Change Atom Position"
-msgstr "Ŝanĝi Atoman Koloron"
+msgstr "Ŝanĝi Atoman Poziciojn"
 
 #: qtgui/rwmolecule.h:242
 #, fuzzy
@@ -1542,9 +1539,8 @@ msgstr "Modifi Molekulon"
 
 #: qtgui/scenepluginmodel.cpp:92
 #, fuzzy
-#| msgid "Server settings"
 msgid "Settings"
-msgstr "Agordoj pri servilo"
+msgstr "Agordoj"
 
 #: qtgui/scriptloader.cpp:33
 #, fuzzy, qt-format
