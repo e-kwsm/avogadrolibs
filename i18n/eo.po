@@ -3048,9 +3048,8 @@ msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:96
 #, fuzzy
-#| msgid "Configure Bonding…"
 msgid "Configure…"
-msgstr "Agordi Ligadon…"
+msgstr "Agordi…"
 
 #: qtplugins/forcefield/forcefield.cpp:108
 msgid "Freeze Selected Atoms"
