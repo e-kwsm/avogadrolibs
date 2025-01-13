@@ -3969,9 +3969,6 @@ msgstr "Criando…"
 
 #: qtplugins/openbabel/openbabel.cpp:486 qtplugins/openbabel/openbabel.cpp:637
 #, fuzzy
-#| msgid ""
-#| "An internal error occurred while generating an CML representation of the "
-#| "current molecule."
 msgid ""
 "An internal error occurred while generating an Open Babel representation of "
 "the current molecule."
