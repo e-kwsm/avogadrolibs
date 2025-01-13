@@ -4835,7 +4835,6 @@ msgstr "Elekti (&S)"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select Element"
 msgstr "Elekti Elemento"
 
