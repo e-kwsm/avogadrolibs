@@ -5403,7 +5403,6 @@ msgstr ""
 
 #: qtplugins/vibrations/vibrations.h:33
 #, fuzzy
-#| msgid "Vibrational Modes"
 msgid "Vibrations"
 msgstr "Vibraj"
 
@@ -5414,7 +5413,6 @@ msgstr "Montru vibrajn modojn."
 
 #: qtplugins/vrml/vrml.cpp:29
 #, fuzzy
-#| msgid "VRML Render"
 msgid "VRML Render…"
 msgstr "VRML-Bildigo…"
 
