@@ -5463,7 +5463,6 @@ msgstr "Montri molekulon kiel dratan kadron."
 
 #: qtplugins/yaehmop/yaehmop.cpp:90
 #, fuzzy
-#| msgid "Calculate band structure..."
 msgid "Calculate Band Structure…"
 msgstr "Kalkuli bendostrukturon…"
 
@@ -5562,7 +5561,6 @@ msgstr "Agordoj pri Kalkulado"
 #. i18n: file: molequeue/inputgeneratorwidget.ui:69
 #. i18n: ectx: property (text), widget (QPushButton, warningTextButton)
 #, fuzzy
-#| msgid "Placeholder text..."
 msgid "Placeholder text…"
 msgstr "Lokokupa teksto…"
 
@@ -5578,7 +5576,6 @@ msgstr "Restarigi"
 #. i18n: file: molequeue/inputgeneratorwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, debugCheckBox)
 #, fuzzy
-#| msgid "Debug script..."
 msgid "Debug Script…"
 msgstr "Sencimigi programeton…"
 
@@ -5589,7 +5586,6 @@ msgstr "Sencimigi programeton…"
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:363
 #. i18n: ectx: property (text), widget (QPushButton, computeButton)
 #, fuzzy
-#| msgid "Submit Calculation..."
 msgid "Submit Calculation…"
 msgstr "Submeti Kalkulon…"
 
@@ -7145,7 +7141,6 @@ msgstr "Uzi Formularon"
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:1012
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Generate..."
 msgid "Generate…"
 msgstr "Generi…"
 
