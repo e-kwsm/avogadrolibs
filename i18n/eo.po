@@ -4889,9 +4889,8 @@ msgstr "Elektotaj restaĵoj:"
 
 #: qtplugins/select/select.cpp:491
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select Residue"
-msgstr "Elekti laŭ restaĵo…"
+msgstr "Elekti restaĵo"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
