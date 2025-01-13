@@ -43,18 +43,14 @@ xgettext --from-code=UTF-8 -C -T --qt -kde -ci18n -ki18n:1 -ki18nc:1c,2 -ki18np:
 echo "Done extracting messages"
 
 # Replace some boilerplate strings
-sed -e "s/SOME DESCRIPTIVE TITLE/Translations for the Avogadro molecular builder/" <${PROJECT}.pot >${PROJECT}.new
-mv ${PROJECT}.new ${PROJECT}.pot
 year=$(date "+%Y")
-sed -e "s/Copyright (C) YEAR/Copyright (C) 2006-$year/" <${PROJECT}.pot >${PROJECT}.new
-mv ${PROJECT}.new ${PROJECT}.pot
-sed -e 's/as the PACKAGE package/as the Avogadro package/' <${PROJECT}.pot >${PROJECT}.new
-mv ${PROJECT}.new ${PROJECT}.pot
-sed -e 's/^#. i18n: .\//#: /' <${PROJECT}.pot >${PROJECT}.new
-mv ${PROJECT}.new ${PROJECT}.pot
-sed -e '/^#: rc.cpp/ d' <${PROJECT}.pot >${PROJECT}.new
-mv ${PROJECT}.new ${PROJECT}.pot
-sed -e 's/rc\.cpp//' <${PROJECT}.pot >${PROJECT}.new
+sed -e "s/SOME DESCRIPTIVE TITLE/Translations for the Avogadro molecular builder/" \
+    -e "s/Copyright (C) YEAR/Copyright (C) 2006-$year/" \
+    -e 's/as the PACKAGE package/as the Avogadro package/' \
+    -e 's/^#. i18n: .\//#: /' \
+    -e '/^#: rc.cpp/ d' \
+    -e 's/rc\.cpp//' \
+  <${PROJECT}.pot >${PROJECT}.new
 mv ${PROJECT}.new ${PROJECT}.pot
 
 mv ${PROJECT}.pot ${I18NDIR}
