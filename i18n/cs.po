@@ -4770,7 +4770,6 @@ msgstr "&Vybrat"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select Element"
 msgstr "Výběr prvku"
 
