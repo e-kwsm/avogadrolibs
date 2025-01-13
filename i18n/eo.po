@@ -7693,7 +7693,6 @@ msgstr "Raporti Intervalon:"
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:760
 #. i18n: ectx: property (text), widget (QLabel, label_equilibriationSteps)
 #, fuzzy
-#| msgid "Equilibriation Steps:"
 msgid "Equilibration Steps:"
 msgstr "Paŝoj de Ekvilibrigo:"
 
