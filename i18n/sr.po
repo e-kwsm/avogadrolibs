@@ -2811,9 +2811,8 @@ msgstr "Srazmeri ćeliju na &zapreminu…"
 
 #: qtplugins/crystal/crystal.cpp:74
 #, fuzzy
-#| msgid "Build &Supercell"
 msgid "Build &Supercell…"
-msgstr "Izgradi &Super ćeliju"
+msgstr "Izgradi &Super ćeliju…"
 
 #: qtplugins/crystal/crystal.cpp:79
 msgid "Reduce Cell (&Niggli)"
