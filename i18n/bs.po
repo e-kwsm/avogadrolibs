@@ -1741,7 +1741,6 @@ msgstr ""
 
 #: qtplugins/applycolors/applycolors.cpp:77
 #, fuzzy
-#| msgid "Partial charge"
 msgid "By Partial Charge…"
 msgstr "djelomični naboj…"
 
