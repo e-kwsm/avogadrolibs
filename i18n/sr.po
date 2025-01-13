@@ -5534,7 +5534,6 @@ msgstr "Ne može se izračunati struktura pojasa: nema jedinične ćelije!"
 
 #: qtplugins/yaehmop/yaehmop.cpp:299
 #, fuzzy, qt-format
-#| msgid "Yaehmop execution failed with the following error:\n"
 msgid ""
 "Yaehmop execution failed with the following error:\n"
 "%1"
