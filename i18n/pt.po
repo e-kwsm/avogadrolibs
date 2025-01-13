@@ -4409,8 +4409,9 @@ msgid "Interact with OpenBabel utilities."
 msgstr "Interagir com utilitários OpenBabel."
 
 #: qtplugins/openmminput/openmminput.cpp:30
+#, fuzzy
 msgid "&OpenMM Script…"
-msgstr ""
+msgstr "Script &OpenMM…"
 
 #: qtplugins/openmminput/openmminput.h:31
 msgid "OpenMM input"
