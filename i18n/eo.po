@@ -1815,7 +1815,6 @@ msgstr "Ĉenoj"
 
 #: qtplugins/applycolors/applycolors.cpp:77
 #, fuzzy
-#| msgid "Partial Charge"
 msgid "By Partial Charge…"
 msgstr "Laŭ Parta Ŝargo…"
 
@@ -2342,7 +2341,6 @@ msgstr ""
 #: qtplugins/templatetool/templatetoolwidget.cpp:366
 #: qtplugins/templatetool/templatetoolwidget.cpp:429:2103
 #, fuzzy
-#| msgid "Other..."
 msgid "Other…"
 msgstr "Alia…"
 
