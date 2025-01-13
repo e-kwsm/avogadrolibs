@@ -2786,7 +2786,6 @@ msgstr "Girar para &Orientação Padrão"
 
 #: qtplugins/crystal/crystal.cpp:69
 #, fuzzy
-#| msgid "Scale Cell &Volume"
 msgid "Scale Cell &Volume…"
 msgstr "Redimensionar &Volume da Célula…"
 
