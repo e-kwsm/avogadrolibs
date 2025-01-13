@@ -3231,7 +3231,6 @@ msgstr ""
 #: qtplugins/insertdna/insertdna.cpp:201
 #: qtplugins/lineformatinput/lineformatinput.cpp:125
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generating 3D molecule…"
 msgstr "Genererer 3D-molekyl …"
 
@@ -3818,7 +3817,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generating…"
 msgstr "Genererer …"
 
@@ -3831,7 +3829,6 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:492 qtplugins/openbabel/openbabel.cpp:643
 #, fuzzy, qt-format
 #| msgctxt "arg is an executable file."
-#| msgid "Starting %1..."
 msgctxt "arg is an executable file."
 msgid "Starting %1…"
 msgstr "Starter %1 …"
@@ -5414,7 +5411,6 @@ msgstr ""
 #. i18n: file: molequeue/inputgeneratorwidget.ui:69
 #. i18n: ectx: property (text), widget (QPushButton, warningTextButton)
 #, fuzzy
-#| msgid "Placeholder text..."
 msgid "Placeholder text…"
 msgstr "Plassholdertekst …"
 
@@ -5430,7 +5426,6 @@ msgstr ""
 #. i18n: file: molequeue/inputgeneratorwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, debugCheckBox)
 #, fuzzy
-#| msgid "Debug script..."
 msgid "Debug Script…"
 msgstr "Avlus skript …"
 
