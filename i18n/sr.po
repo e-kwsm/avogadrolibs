@@ -5499,7 +5499,6 @@ msgstr "Prikaz vibracionih režima."
 
 #: qtplugins/vrml/vrml.cpp:29
 #, fuzzy
-#| msgid "VRML Render"
 msgid "VRML Render…"
 msgstr "VRML Render…"
 
