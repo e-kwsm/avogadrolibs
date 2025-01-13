@@ -3932,7 +3932,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:528 qtplugins/openbabel/openbabel.cpp:679
 #, fuzzy
-#| msgid "Updating molecule..."
 msgid "Updating molecule…"
 msgstr "Ĝisdatigante molekulon…"
 
