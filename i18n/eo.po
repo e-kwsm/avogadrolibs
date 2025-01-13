@@ -8103,7 +8103,6 @@ msgstr "Eksporti"
 #. i18n: file: qtplugins/spectra/spectradialog.ui:471
 #. i18n: ectx: property (text), widget (QPushButton, pushButton)
 #, fuzzy
-#| msgid "Close"
 msgid "&Close"
 msgstr "Fermi"
 
