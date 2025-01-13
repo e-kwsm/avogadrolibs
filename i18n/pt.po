@@ -3955,7 +3955,6 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:492 qtplugins/openbabel/openbabel.cpp:643
 #, fuzzy, qt-format
 #| msgctxt "arg is an executable file."
-#| msgid "Starting %1..."
 msgctxt "arg is an executable file."
 msgid "Starting %1…"
 msgstr "Iniciando %1…"
@@ -4049,7 +4048,6 @@ msgstr "Adicionando Hidrogênios (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:828
 #, fuzzy
-#| msgid "Generating Open Babel input..."
 msgid "Generating Open Babel input…"
 msgstr "Criando entrada Open Babel…"
 
@@ -4074,7 +4072,6 @@ msgstr "pH:"
 
 #: qtplugins/openbabel/openbabel.cpp:878 qtplugins/openbabel/openbabel.cpp:920
 #, fuzzy
-#| msgid "Generating obabel input..."
 msgid "Generating obabel input…"
 msgstr "Criando entrada obabel…"
 
@@ -4094,7 +4091,6 @@ msgstr "Erro ao criar dados Open Babel."
 
 #: qtplugins/openbabel/openbabel.cpp:951
 #, fuzzy
-#| msgid "Reading obabel output..."
 msgid "Reading obabel output…"
 msgstr "Lendo saída obabel…"
 
@@ -4115,8 +4111,9 @@ msgid "Interact with OpenBabel utilities."
 msgstr "Interagir com utilitários OpenBabel."
 
 #: qtplugins/openmminput/openmminput.cpp:30
+#, fuzzy
 msgid "&OpenMM Script…"
-msgstr ""
+msgstr "Script &OpenMM…"
 
 #: qtplugins/openmminput/openmminput.h:31
 msgid "OpenMM input"
@@ -7226,7 +7223,6 @@ msgstr ""
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, ConformerSearchDialog)
 #, fuzzy
-#| msgid "Conformer Search..."
 msgid "Conformer Search"
 msgstr "Procurar conformação"
 
