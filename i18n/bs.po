@@ -2138,10 +2138,8 @@ msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.cpp:229
 #: qtplugins/noncovalent/noncovalent.cpp:369
-#, fuzzy
-#| msgid "distance:"
 msgid "Maximum distance:"
-msgstr "Rastojanje:"
+msgstr ""
 
 #: qtplugins/closecontacts/closecontacts.cpp:230
 #: qtplugins/crystal/crystalscene.cpp:174
