@@ -5013,10 +5013,8 @@ msgid "Wavenumbers (cm⁻¹)"
 msgstr "Số sóng (cm⁻¹)"
 
 #: qtplugins/spectra/spectradialog.cpp:588
-#, fuzzy
-#| msgid "Torsion"
 msgid "Transmission"
-msgstr "Xoắn"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:600
 msgid "Raman Spectra"
