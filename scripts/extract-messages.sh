@@ -3,12 +3,12 @@ BASEDIR="avogadro/"	# root of translatable sources
 PROJECT="avogadrolibs"	# project name
 PACKAGE="Avogadro"  # user-readable package name
 # user-readable version
-MAJORVERSION=`grep 'set(AvogadroLibs_VERSION_MAJOR' CMakeLists.txt | cut -f 2 -d '"'`
-MINORVERSION=`grep 'set(AvogadroLibs_VERSION_MINOR' CMakeLists.txt | cut -f 2 -d '"'`
-PATCHVERSION=`grep 'set(AvogadroLibs_VERSION_PATCH' CMakeLists.txt | cut -f 2 -d '"'`
+MAJORVERSION=$(grep 'set(AvogadroLibs_VERSION_MAJOR' CMakeLists.txt | cut -f 2 -d '"')
+MINORVERSION=$(grep 'set(AvogadroLibs_VERSION_MINOR' CMakeLists.txt | cut -f 2 -d '"')
+PATCHVERSION=$(grep 'set(AvogadroLibs_VERSION_PATCH' CMakeLists.txt | cut -f 2 -d '"')
 VERSION="${MAJORVERSION}.${MINORVERSION}.${PATCHVERSION}"
 BUGADDR="avogadro-devel@lists.sourceforge.net"	# MSGID-Bugs
-WDIR=`pwd`		# working dir
+WDIR=$(pwd)		# working dir
 I18NDIR="i18n/"          # i18n dir
 
 echo "Preparing rc files"
@@ -41,7 +41,7 @@ echo "Done extracting messages"
 # Replace some boilerplate strings
 sed -e "s/SOME DESCRIPTIVE TITLE/Translations for the Avogadro molecular builder/" <${PROJECT}.pot >${PROJECT}.new
 mv ${PROJECT}.new ${PROJECT}.pot
-year=`date "+%Y"`
+year=$(date "+%Y")
 sed -e "s/Copyright (C) YEAR/Copyright (C) 2006-$year/" <${PROJECT}.pot >${PROJECT}.new
 mv ${PROJECT}.new ${PROJECT}.pot
 sed -e 's/as the PACKAGE package/as the Avogadro package/' <${PROJECT}.pot >${PROJECT}.new
@@ -57,7 +57,7 @@ mv ${PROJECT}.pot ${I18NDIR}
 
 #cd ${I18NDIR}
 #echo "Merging translations"
-#catalogs=`find . -name '*.po'`
+#catalogs=$(find . -name '*.po')
 #for cat in $catalogs; do
 #  # remove any \r escapes
 #  sed -e 's/\\r//' <$cat >$cat.new
