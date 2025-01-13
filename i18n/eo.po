@@ -4762,13 +4762,11 @@ msgstr "Elekti laŭ Elemento…"
 
 #: qtplugins/select/select.cpp:58
 #, fuzzy
-#| msgid "Select by Atom Index..."
 msgid "Select by Atom Index…"
 msgstr "Elekti laŭ Atoma Indico…"
 
 #: qtplugins/select/select.cpp:63
 #, fuzzy
-#| msgid "Select by Residue..."
 msgid "Select by Residue…"
 msgstr "Elekti laŭ restaĵo…"
 
