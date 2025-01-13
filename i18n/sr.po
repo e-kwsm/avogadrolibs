@@ -3974,14 +3974,12 @@ msgstr "Generiranje …"
 
 #: qtplugins/openbabel/openbabel.cpp:486 qtplugins/openbabel/openbabel.cpp:637
 #, fuzzy
-#| msgid ""
-#| "An internal error occurred while generating an CML representation of the "
-#| "current molecule."
 msgid ""
 "An internal error occurred while generating an Open Babel representation of "
 "the current molecule."
 msgstr ""
-"Došlo je do unutrašnje greške pri generisanju CML prikaza trenutnog molekula."
+"Došlo je do unutrašnje greške pri generisanju Open Babel prikaza trenutnog "
+"molekula."
 
 #: qtplugins/openbabel/openbabel.cpp:492 qtplugins/openbabel/openbabel.cpp:643
 #, fuzzy, qt-format
