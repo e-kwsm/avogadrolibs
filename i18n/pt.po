@@ -2783,9 +2783,8 @@ msgstr "Enviar cálculo CP2K"
 
 #: qtplugins/crystal/crystal.cpp:40
 #, fuzzy
-#| msgid "Import Crystal from Clipboard"
 msgid "Import Crystal from Clipboard…"
-msgstr "Importar Cristal da Área de Transferência"
+msgstr "Importar Cristal da Área de Transferência…"
 
 #: qtplugins/crystal/crystal.cpp:47
 msgid "Toggle Unit Cell"
