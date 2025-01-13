@@ -3530,9 +3530,8 @@ msgid "Measure tool"
 msgstr ""
 
 #: qtplugins/meshes/meshes.h:31
-#, fuzzy
 msgid "Render polygon meshes."
-msgstr "Rendi le maglie poligonali."
+msgstr ""
 
 #: qtplugins/molecularproperties/molecularmodel.cpp:77
 msgctxt "asking server for molecule name"
