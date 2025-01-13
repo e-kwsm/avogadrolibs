@@ -452,7 +452,6 @@ msgstr "Avogadro elĉerpis templimon atendante respondon de MoleQueue."
 
 #: molequeue/molequeuedialog.cpp:83
 #, fuzzy, qt-format
-#| msgid "Waiting for job %1 '%2' to finish..."
 msgctxt "%1 = job ID, %2 = description"
 msgid "Waiting for job %1 “%2” to finish…"
 msgstr "Atendante finon de tasko %1 '%2'…"
@@ -463,7 +462,6 @@ msgstr "Ĉesigi atendon"
 
 #: molequeue/molequeuedialog.cpp:105
 #, fuzzy
-#| msgid "Fetching completed job information..."
 msgid "Fetching completed job information…"
 msgstr "Akirante informojn pri finitaj taskoj…"
 
@@ -2228,7 +2226,6 @@ msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:66
 #, fuzzy
-#| msgid "Edit Color Opacity Map..."
 msgid "Edit Color Opacity Map…"
 msgstr "Redakti Mapon de Kolora Opakeco…"
 
@@ -2338,7 +2335,6 @@ msgstr "Alia…"
 
 #: qtplugins/coordinateeditor/coordinateeditor.cpp:17
 #, fuzzy
-#| msgid "Atomic &Coordinate Editor..."
 msgid "Atomic &Coordinate Editor…"
 msgstr "Redaktilo de Atomaj Koordinatoj… (&C)"
 
@@ -2847,7 +2843,6 @@ msgstr "Neniu unita ĉelo ĉeestas."
 
 #: qtplugins/customelements/customelements.cpp:19
 #, fuzzy
-#| msgid "Reassign &Custom Elements..."
 msgid "Reassign &Custom Elements…"
 msgstr "Reasigni Laŭmendajn Elementojn… (&C)"
 
@@ -3280,14 +3275,12 @@ msgstr ""
 #: qtplugins/lineformatinput/lineformatinput.cpp:108
 #: qtplugins/lineformatinput/lineformatinput.cpp:123:1046
 #, fuzzy
-#| msgid "Insert Molecule..."
 msgid "Insert Molecule…"
 msgstr "Enmeti Molekulon…"
 
 #: qtplugins/insertdna/insertdna.cpp:201
 #: qtplugins/lineformatinput/lineformatinput.cpp:124
 #, fuzzy
-#| msgid "Generating 3D molecule..."
 msgid "Generating 3D molecule…"
 msgstr "Generante 3D-molekulon…"
 
@@ -3820,7 +3813,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:53
 #, fuzzy
-#| msgid "Configure Force Field..."
 msgid "Configure Force Field…"
 msgstr "Agordi Fortokampon…"
 
@@ -3913,7 +3905,6 @@ msgstr ""
 #: qtplugins/openbabel/openbabel.cpp:492 qtplugins/openbabel/openbabel.cpp:643
 #, fuzzy, qt-format
 #| msgctxt "arg is an executable file."
-#| msgid "Starting %1..."
 msgctxt "arg is an executable file."
 msgid "Starting %1…"
 msgstr "Lanĉante %1…"
@@ -3980,7 +3971,6 @@ msgstr "Trovante Ligojn (per OpenBabel)"
 
 #: qtplugins/openbabel/openbabel.cpp:742
 #, fuzzy
-#| msgid "Generating XYZ representation..."
 msgid "Generating XYZ representation…"
 msgstr "Generante XYZ-prezenton…"
 
@@ -4008,7 +3998,6 @@ msgstr "Aldonante Hidrogenojn (OpenBabel)"
 
 #: qtplugins/openbabel/openbabel.cpp:828
 #, fuzzy
-#| msgid "Generating Open Babel input..."
 msgid "Generating Open Babel input…"
 msgstr "Generante enigon de Open Babel…"
 
@@ -4032,7 +4021,6 @@ msgstr "pH:"
 
 #: qtplugins/openbabel/openbabel.cpp:878 qtplugins/openbabel/openbabel.cpp:920
 #, fuzzy
-#| msgid "Generating obabel input..."
 msgid "Generating obabel input…"
 msgstr "Generante enigon de obabel…"
 
@@ -4050,7 +4038,6 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:951
 #, fuzzy
-#| msgid "Reading obabel output..."
 msgid "Reading obabel output…"
 msgstr "Legante eligon de OpenBabel…"
 
@@ -4206,7 +4193,6 @@ msgstr "Ĉu dinamika ligado?"
 #. i18n: ectx: property (text), widget (QPushButton, recordButton)
 #: qtplugins/playertool/playertool.cpp:144:1893
 #, fuzzy
-#| msgid "Record Movie..."
 msgid "Record Movie…"
 msgstr "Registri Filmeton…"
 
@@ -4258,7 +4244,6 @@ msgstr "Reludi trajektorion"
 
 #: qtplugins/plotpdf/plotpdf.cpp:37
 #, fuzzy
-#| msgid "Plot Pair Distribution Function..."
 msgid "Plot Pair Distribution Function…"
 msgstr "Desegni Paro-Distribuan Funkcion…"
 
@@ -4280,7 +4265,6 @@ msgstr "Generi kaj dezegni kurbon de paro-distribua funkcio."
 
 #: qtplugins/plotrmsd/plotrmsd.cpp:30
 #, fuzzy
-#| msgid "Plot RMSD curve..."
 msgid "Plot RMSD curve…"
 msgstr "Desegni RMSD-kurbon…"
 
@@ -4294,7 +4278,6 @@ msgstr "Generi kaj desegni RMSD-kurbon."
 
 #: qtplugins/plotxrd/plotxrd.cpp:35
 #, fuzzy
-#| msgid "Plot Theoretical XRD Pattern..."
 msgid "Plot Theoretical XRD Pattern…"
 msgstr "Desegni Teorian Formon de Iksradia Difrakto…"
 
