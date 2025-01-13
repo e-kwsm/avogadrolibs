@@ -4855,21 +4855,16 @@ msgstr "Elekti (&S)"
 
 #: qtplugins/select/select.cpp:180
 #, fuzzy
-#| msgid "Select by Element..."
 msgid "Select Element"
-msgstr "Elekti laŭ Elemento…"
+msgstr "Elekti Elemento"
 
 #: qtplugins/select/select.cpp:269
-#, fuzzy
-#| msgid "Select by Atom Index..."
 msgid "Select Backbone"
-msgstr "Elekti laŭ Atoma Indico…"
+msgstr ""
 
 #: qtplugins/select/select.cpp:308
-#, fuzzy
-#| msgid "Select by Atom Index..."
 msgid "Select Sidechain"
-msgstr "Elekti laŭ Atoma Indico…"
+msgstr ""
 
 #: qtplugins/select/select.cpp:440
 msgid "Select Atoms by Index"
