@@ -51,9 +51,7 @@ sed -e "s/SOME DESCRIPTIVE TITLE/Translations for the Avogadro molecular builder
     -e '/^#: rc.cpp/ d' \
     -e 's/rc\.cpp//' \
   <${PROJECT}.pot >${PROJECT}.new
-mv ${PROJECT}.new ${PROJECT}.pot
-
-mv ${PROJECT}.pot ${I18NDIR}
+mv ${PROJECT}.new ${I18NDIR}/${PROJECT}.pot
 
 #cd ${I18NDIR}
 #echo "Merging translations"
