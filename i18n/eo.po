@@ -3834,7 +3834,6 @@ msgstr "Trovi Ligojn"
 
 #: qtplugins/openbabel/openbabel.cpp:77
 #, fuzzy
-#| msgid "Add hydrogens for pH"
 msgid "Add Hydrogens for pH…"
 msgstr "Aldoni hidrogenojn por pH…"
 
