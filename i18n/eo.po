@@ -3273,7 +3273,6 @@ msgstr "Hidrogenoj"
 
 #: qtplugins/importpqr/importpqr.cpp:25
 #, fuzzy
-#| msgid "Search"
 msgid "&Search PQR…"
 msgstr "&Serĉi PQR…"
 
