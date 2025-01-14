@@ -4902,7 +4902,7 @@ msgstr "Nova Tavolo"
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
 msgid "Perceive Space Group…"
-msgstr "Trovi Spacgrupon"
+msgstr "Trovi Spacgrupon…"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:99
 #. i18n: ectx: property (text), widget (QPushButton, symmetrizeMoleculeButton)
