@@ -1991,10 +1991,8 @@ msgid "Configure Bonding…"
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:32
-#, fuzzy
-#| msgid "Select Atom Labels Color"
 msgid "Bond Selected Atoms"
-msgstr "בחר צבע לתוויות אטומים"
+msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:61
 #: qtplugins/propertytables/propertymodel.cpp:543
@@ -4612,16 +4610,12 @@ msgid "&Select"
 msgstr ""
 
 #: qtplugins/select/select.cpp:180
-#, fuzzy
-#| msgid "Select Atom Labels Color"
 msgid "Select Element"
-msgstr "בחר צבע לתוויות אטומים"
+msgstr ""
 
 #: qtplugins/select/select.cpp:269
-#, fuzzy
-#| msgid "Select Bond Labels Font"
 msgid "Select Backbone"
-msgstr "בחר גופן תוויות קשרים"
+msgstr ""
 
 #: qtplugins/select/select.cpp:308
 msgid "Select Sidechain"
@@ -4849,26 +4843,20 @@ msgid "Density of States"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:496
-#, fuzzy
-#| msgid "Select Bond Labels Color"
 msgid "Select Background Color"
-msgstr "בחר צבע תוויות קשרים"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:509
-#, fuzzy
-#| msgid "Select Bond Labels Color"
 msgid "Select Foreground Color"
-msgstr "בחר צבע תוויות קשרים"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:522
 msgid "Select Calculated Spectra Color"
 msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:534
-#, fuzzy
-#| msgid "Select Bond Labels Color"
 msgid "Select Imported Spectra Color"
-msgstr "בחר צבע תוויות קשרים"
+msgstr ""
 
 #: qtplugins/spectra/spectradialog.cpp:580
 msgid "Wavelength (nm)"
@@ -5011,10 +4999,8 @@ msgid "From File"
 msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:84
-#, fuzzy
-#| msgid "Surfaces"
 msgid "Create Surfaces…"
-msgstr "משטחים"
+msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:112
 msgid "Render the van der Waals surface."
@@ -7631,10 +7617,8 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, push_colorCalculated)
 #. i18n: file: qtplugins/spectra/spectradialog.ui:369
 #. i18n: ectx: property (text), widget (QPushButton, push_colorBackground)
-#, fuzzy
-#| msgid "Select Atom Labels Color"
 msgid "Set Color..."
-msgstr "בחר צבע לתוויות אטומים"
+msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:269
 #. i18n: ectx: property (text), widget (QLabel, label_4)
