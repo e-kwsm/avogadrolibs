@@ -3545,7 +3545,6 @@ msgstr "Atome pretvoriti u likoriš."
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:31
 #, fuzzy
-#| msgid "SMILES"
 msgid "SMILES…"
 msgstr "SMILES…"
 
