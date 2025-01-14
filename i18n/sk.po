@@ -2125,7 +2125,6 @@ msgstr ""
 #: qtplugins/closecontacts/closecontacts.cpp:229
 #: qtplugins/noncovalent/noncovalent.cpp:369
 #, fuzzy
-#| msgid "distance:"
 msgid "Maximum distance:"
 msgstr "Maximálna vzdialenosť:"
 
