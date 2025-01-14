@@ -1676,7 +1676,6 @@ msgstr "Executar APBS…"
 
 #: qtplugins/apbs/apbs.cpp:37
 #, fuzzy
-#| msgid "Open Output File"
 msgid "Open Output File…"
 msgstr "Abrir Arquivo de Saída…"
 
