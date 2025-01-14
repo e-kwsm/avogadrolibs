@@ -5624,9 +5624,8 @@ msgstr "Submeter Cálculo…"
 #. i18n: file: molequeue/inputgeneratorwidget.ui:123
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Save Input File"
 msgid "Save Input…"
-msgstr "Gravar Ficheiro de Entrada"
+msgstr "Gravar Ficheiro de Entrada…"
 
 #. i18n: file: molequeue/molequeuewidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_4)
@@ -6066,7 +6065,6 @@ msgstr "Padrões"
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:370
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Save File"
 msgid "Save File…"
 msgstr "Gravar Ficheiro…"
 
