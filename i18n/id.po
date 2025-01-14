@@ -3529,9 +3529,8 @@ msgstr "Senyum…"
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:37
 #, fuzzy
-#| msgid "InChI"
 msgid "InChI…"
-msgstr "InChI"
+msgstr "InChI…"
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:88
 #: qtplugins/lineformatinput/lineformatinput.cpp:113
