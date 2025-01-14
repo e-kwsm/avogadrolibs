@@ -6015,7 +6015,6 @@ msgstr "Aprioroj"
 #. i18n: file: qtplugins/gamessinput/gamessinputdialog.ui:370
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
-#| msgid "Save File"
 msgid "Save File…"
 msgstr "Konservi Dosieron…"
 
