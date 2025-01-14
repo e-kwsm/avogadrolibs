@@ -1671,7 +1671,6 @@ msgstr "Alinha moléculas a um eixo cartesiano"
 
 #: qtplugins/apbs/apbs.cpp:32
 #, fuzzy
-#| msgid "Run APBS"
 msgid "Run APBS…"
 msgstr "Executar APBS…"
 
