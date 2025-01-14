@@ -3537,7 +3537,6 @@ msgstr "SMILES…"
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:37
 #, fuzzy
-#| msgid "InChI"
 msgid "InChI…"
 msgstr "InChI…"
 
