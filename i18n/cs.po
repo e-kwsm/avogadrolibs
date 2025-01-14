@@ -1297,16 +1297,12 @@ msgid "Modify Layers"
 msgstr ""
 
 #: qtgui/rwlayermanager.cpp:196
-#, fuzzy
-#| msgid "Remove"
 msgid "Remove Layer"
-msgstr "Odstranit"
+msgstr ""
 
 #: qtgui/rwlayermanager.cpp:203
-#, fuzzy
-#| msgid "Remove"
 msgid "Remove Layer Info"
-msgstr "Odstranit"
+msgstr ""
 
 #: qtgui/rwlayermanager.cpp:212
 msgid "Add Layer"
