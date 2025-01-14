@@ -7730,7 +7730,6 @@ msgstr ""
 #. i18n: file: qtplugins/spectra/spectradialog.ui:317
 #. i18n: ectx: property (text), widget (QPushButton, push_export)
 #, fuzzy
-#| msgid "&Export"
 msgid "&Export..."
 msgstr "&Eksporter ..."
 
