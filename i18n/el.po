@@ -4775,7 +4775,7 @@ msgstr "&Επιλογή"
 #: qtplugins/select/select.cpp:180
 #, fuzzy
 msgid "Select Element"
-msgstr "Χρώμα κατά στοιχείο"
+msgstr "Επιλογή στοιχείο"
 
 #: qtplugins/select/select.cpp:269
 msgid "Select Backbone"
