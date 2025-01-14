@@ -3282,7 +3282,7 @@ msgstr ""
 #: qtplugins/insertfragment/insertfragment.cpp:32
 #, fuzzy
 msgid "Molecule…"
-msgstr "Molècula"
+msgstr "Molècula…"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 msgid "Crystal…"
