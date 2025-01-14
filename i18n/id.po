@@ -3739,7 +3739,6 @@ msgstr "Properti Molekul"
 #: qtplugins/molecularproperties/molecularview.cpp:146
 #: qtplugins/propertytables/propertyview.cpp:249
 #, fuzzy
-#| msgid "Export"
 msgid "Export CSV"
 msgstr "Ekspor CSV"
 
@@ -3764,7 +3763,7 @@ msgstr ""
 #: qtplugins/propertytables/propertyview.cpp:306
 #, fuzzy
 msgid "Export…"
-msgstr "Ekspor"
+msgstr "Ekspor…"
 
 #: qtplugins/navigator/navigator.cpp:39
 msgctxt "control-key 1"
