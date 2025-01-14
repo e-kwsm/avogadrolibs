@@ -2188,10 +2188,8 @@ msgid "Repulsive"
 msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:66
-#, fuzzy
-#| msgid "ColorOpacityMap"
 msgid "Edit Color Opacity Map…"
-msgstr "ColorOpacityMap"
+msgstr ""
 
 #: qtplugins/coloropacitymap/coloropacitymap.cpp:84
 #: qtplugins/commandscripts/command.cpp:64
@@ -4017,10 +4015,8 @@ msgid "Removing Hydrogens (Open Babel)"
 msgstr "Rimuovi idrogeni (Open Babel)"
 
 #: qtplugins/openbabel/openbabel.cpp:928
-#, fuzzy
-#| msgid "Error generating Open Babel input."
 msgid "Error generating Open Babel data."
-msgstr "Errore nel generare l'input Open Babel."
+msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:951
 msgid "Reading obabel output…"
