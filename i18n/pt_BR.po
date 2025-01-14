@@ -6500,7 +6500,6 @@ msgstr "Carga:"
 #. i18n: file: qtplugins/importpqr/pqrwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, PQRWidget)
 #, fuzzy
-#| msgid "Import From PQR"
 msgid "Import From PQR…"
 msgstr "Importar de PQR…"
 
