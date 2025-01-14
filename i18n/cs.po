@@ -1752,7 +1752,6 @@ msgstr "řetězce"
 
 #: qtplugins/applycolors/applycolors.cpp:77
 #, fuzzy
-#| msgid "Partial Charge"
 msgid "By Partial Charge…"
 msgstr "Částečný náboj…"
 
@@ -3267,7 +3266,6 @@ msgstr ""
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 #, fuzzy
-#| msgid "Molecule"
 msgid "Molecule…"
 msgstr "Molekula…"
 
@@ -3700,7 +3698,6 @@ msgstr ""
 #: qtplugins/molecularproperties/molecularview.cpp:204
 #: qtplugins/propertytables/propertyview.cpp:305
 #, fuzzy
-#| msgid "Export"
 msgid "Export…"
 msgstr "Exportovat…"
 
