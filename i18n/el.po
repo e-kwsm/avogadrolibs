@@ -5062,7 +5062,7 @@ msgstr ""
 #: qtplugins/select/select.cpp:53
 #, fuzzy
 msgid "Select by Element…"
-msgstr "Χρώμα κατά στοιχείο"
+msgstr "Επιλογή κατά στοιχείο…"
 
 #: qtplugins/select/select.cpp:58
 msgid "Select by Atom Index…"
