@@ -5940,7 +5940,7 @@ msgstr "Bawaan"
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
 msgid "Save File…"
-msgstr "Simpan Berkas"
+msgstr "Simpan Berkas…"
 
 #. i18n: file: qtplugins/cp2kinput/cp2kinputdialog.ui:95
 #. i18n: ectx: attribute (title), widget (QWidget, basicWidget)
