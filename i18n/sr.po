@@ -1682,7 +1682,6 @@ msgstr "Pokrenite APBS…"
 
 #: qtplugins/apbs/apbs.cpp:37
 #, fuzzy
-#| msgid "Open Output File"
 msgid "Open Output File…"
 msgstr "Otvorite izlaznu datoteku…"
 
