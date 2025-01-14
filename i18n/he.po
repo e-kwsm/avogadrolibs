@@ -4645,10 +4645,8 @@ msgid "Select Element"
 msgstr ""
 
 #: qtplugins/select/select.cpp:269
-#, fuzzy
-#| msgid "Select Bond Labels Font"
 msgid "Select Backbone"
-msgstr "בחר גופן תוויות קשרים"
+msgstr ""
 
 #: qtplugins/select/select.cpp:308
 msgid "Select Sidechain"
