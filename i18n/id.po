@@ -7181,7 +7181,7 @@ msgstr "Gunakan Bentuk"
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
 msgid "Generate…"
-msgstr "Generasi"
+msgstr "Generasi…"
 
 #. i18n: file: qtplugins/lineformatinput/lineformatinputdialog.ui:41
 #. i18n: ectx: property (text), widget (QLabel, label_2)
