@@ -1249,7 +1249,6 @@ msgstr "Rótulos"
 
 #: qtgui/layermodel.cpp:150 qtplugins/licorice/licorice.h:31
 #, fuzzy
-#| msgid "Licorice"
 msgctxt "stick / licorice rendering"
 msgid "Licorice"
 msgstr "Bastão"
