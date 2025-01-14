@@ -3492,7 +3492,6 @@ msgstr "Opacidade:"
 
 #: qtplugins/licorice/licorice.h:36
 #, fuzzy
-#| msgid "Render atoms as licorice."
 msgid "Render atoms as licorice / sticks."
 msgstr "Renderizar átomos como palito/bastão."
 
