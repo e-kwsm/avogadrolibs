@@ -1660,7 +1660,6 @@ msgstr "Alinhar moléculas com o eixo Cartesiano"
 
 #: qtplugins/apbs/apbs.cpp:32
 #, fuzzy
-#| msgid "Run APBS"
 msgid "Run APBS…"
 msgstr "Executar APBS…"
 
