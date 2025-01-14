@@ -3337,13 +3337,11 @@ msgstr ""
 
 #: qtplugins/insertfragment/insertfragment.cpp:32
 #, fuzzy
-#| msgid "Molecule"
 msgid "Molecule…"
 msgstr "Molekulo…"
 
 #: qtplugins/insertfragment/insertfragment.cpp:38
 #, fuzzy
-#| msgid "Crystal"
 msgid "Crystal…"
 msgstr "Kristalo…"
 
@@ -3503,13 +3501,11 @@ msgstr "Montri atomojn kiel glicirizon / bastonoj."
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:31
 #, fuzzy
-#| msgid "SMILES"
 msgid "SMILES…"
 msgstr "SMILES…"
 
 #: qtplugins/lineformatinput/lineformatinput.cpp:37
 #, fuzzy
-#| msgid "InChI"
 msgid "InChI…"
 msgstr "InChI…"
 
@@ -4410,7 +4406,6 @@ msgstr "Eraro dum maldensigado: %1"
 #. i18n: ectx: property (windowTitle), widget (QDialog, DownloaderWidget)
 #: qtplugins/plugindownloader/plugindownloader.cpp:27:1619
 #, fuzzy
-#| msgid "Download Plugins"
 msgid "Download Plugins…"
 msgstr "Elŝuti kromprogramojn…"
 
@@ -4907,15 +4902,13 @@ msgstr "Elekta ilo"
 
 #: qtplugins/selectiontool/selectiontoolwidget.cpp:35
 #, fuzzy
-#| msgid "Layer"
 msgid "New Layer"
 msgstr "Nova Tavolo"
 
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
-#| msgid "Perceive Space Group"
 msgid "Perceive Space Group…"
-msgstr "Trovi Spacgrupon"
+msgstr "Trovi Spacgrupon…"
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:99
 #. i18n: ectx: property (text), widget (QPushButton, symmetrizeMoleculeButton)
@@ -4935,7 +4928,6 @@ msgstr "Redukti al Nesimetria Unito"
 
 #: qtplugins/spacegroup/spacegroup.cpp:85
 #, fuzzy
-#| msgid "Set Tolerance"
 msgid "Set Tolerance…"
 msgstr "Agordi Toleron…"
 
@@ -5401,7 +5393,6 @@ msgstr "Simpla montro de sferoj de Van der Waals."
 
 #: qtplugins/vibrations/vibrations.cpp:27
 #, fuzzy
-#| msgid "Vibrational Modes"
 msgid "Vibrational Modes…"
 msgstr "Vibraj Modoj…"
 
