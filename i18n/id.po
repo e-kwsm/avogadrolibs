@@ -3922,7 +3922,7 @@ msgstr "Optimisasi Geometri (Open Babel)"
 #: qtplugins/openbabel/openbabel.cpp:467 qtplugins/openbabel/openbabel.cpp:620
 #, fuzzy
 msgid "Generating…"
-msgstr "Generasi"
+msgstr "Generasi…"
 
 #: qtplugins/openbabel/openbabel.cpp:486 qtplugins/openbabel/openbabel.cpp:637
 msgid ""
@@ -4834,10 +4834,8 @@ msgid "Residues to Select:"
 msgstr ""
 
 #: qtplugins/select/select.cpp:491
-#, fuzzy
-#| msgid "Select by Residue"
 msgid "Select Residue"
-msgstr "Pilih berdasarkan Residu"
+msgstr ""
 
 #. i18n: file: qtplugins/symmetry/symmetrywidget.ui:186
 #. i18n: ectx: property (text), widget (QPushButton, selectSubgroupButton)
