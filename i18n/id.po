@@ -5190,10 +5190,8 @@ msgid "Electron Density"
 msgstr "Kepadatan Elektron"
 
 #: qtplugins/surfaces/surfacedialog.cpp:173
-#, fuzzy
-#| msgid "Density"
 msgid "Spin Density"
-msgstr "Kerapatan"
+msgstr ""
 
 #: qtplugins/surfaces/surfacedialog.cpp:185
 #, fuzzy, qt-format
