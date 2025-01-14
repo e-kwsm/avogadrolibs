@@ -5618,7 +5618,7 @@ msgstr "Submeter Cálculo…"
 #. i18n: ectx: property (text), widget (QPushButton, generateButton)
 #, fuzzy
 msgid "Save Input…"
-msgstr "Gravar Ficheiro de Entrada"
+msgstr "Gravar Ficheiro de Entrada…"
 
 #. i18n: file: molequeue/molequeuewidget.ui:30
 #. i18n: ectx: property (text), widget (QLabel, label_4)
