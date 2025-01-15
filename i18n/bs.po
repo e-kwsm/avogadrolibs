@@ -1838,13 +1838,11 @@ msgstr "djelomični naboj…"
 
 #: qtplugins/applycolors/applycolors.cpp:82
 #, fuzzy
-#| msgid "Secondary Structure"
 msgid "By Secondary Structure"
 msgstr "sekundarnu strukturu"
 
 #: qtplugins/applycolors/applycolors.cpp:87
 #, fuzzy
-#| msgid "Amino Acid"
 msgid "By Amino Acid"
 msgstr "Amino kiseline"
 
