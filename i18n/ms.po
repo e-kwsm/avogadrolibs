@@ -4825,10 +4825,8 @@ msgid "Selection tool"
 msgstr ""
 
 #: qtplugins/selectiontool/selectiontoolwidget.cpp:35
-#, fuzzy
-#| msgid "New Label:"
 msgid "New Layer"
-msgstr "Label Baru:"
+msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
