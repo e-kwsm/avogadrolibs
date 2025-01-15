@@ -7034,7 +7034,6 @@ msgstr "方法"
 #. i18n: file: qtplugins/openbabel/conformersearchdialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
 #, fuzzy
-#| msgid "Number of conformers"
 msgid "Number of conformers:"
 msgstr "構形異構物的數目："
 
