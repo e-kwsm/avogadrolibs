@@ -4929,7 +4929,6 @@ msgstr "Нови слој"
 
 #: qtplugins/spacegroup/spacegroup.cpp:50
 #, fuzzy
-#| msgid "Perceive Space Group"
 msgid "Perceive Space Group…"
 msgstr "Spoznaj Prostornu Grupu…"
 
