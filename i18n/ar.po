@@ -3276,9 +3276,8 @@ msgid "Color:"
 msgstr ""
 
 #: qtplugins/label/label.cpp:170
-#, fuzzy
 msgid "Distance from center:"
-msgstr "المسافة"
+msgstr ""
 
 #: qtplugins/label/label.cpp:181 qtplugins/label/label.cpp:212
 msgid "Index"
