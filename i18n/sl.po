@@ -1419,7 +1419,6 @@ msgstr "Prilagodi prostornino osnovne celice"
 
 #: qtgui/rwmolecule.cpp:542
 #, fuzzy
-#| msgid "Super Cell"
 msgid "Build Super Cell"
 msgstr "Supercelica"
 
