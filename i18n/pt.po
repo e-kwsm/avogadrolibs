@@ -2624,7 +2624,6 @@ msgstr "Interagir com área de transferência."
 
 #: qtplugins/cp2kinput/cp2kinput.cpp:33
 #, fuzzy
-#| msgid "&CP2K"
 msgid "&CP2K…"
 msgstr "&CP2K…"
 
