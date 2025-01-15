@@ -3632,6 +3632,7 @@ msgstr "&Importar"
 
 #: qtplugins/fetchpdb/fetchpdb.cpp:77 qtplugins/fetchpdb/fetchpdb.cpp:321
 #, fuzzy
+#| msgid "Fetch from PDB"
 msgid "Fetch PDB"
 msgstr "Buscar no PDB"
 
