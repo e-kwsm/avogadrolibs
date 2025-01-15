@@ -4261,7 +4261,6 @@ msgstr "Klarte ikke å pakke ut: %1"
 #. i18n: ectx: property (windowTitle), widget (QDialog, DownloaderWidget)
 #: qtplugins/plugindownloader/plugindownloader.cpp:27:1613
 #, fuzzy
-#| msgid "Download Plugins"
 msgid "Download Plugins…"
 msgstr "Laster ned programtillegg …"
 
