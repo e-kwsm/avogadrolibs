@@ -29,7 +29,7 @@ class TemplateTool : public QtGui::ToolPlugin
 {
   Q_OBJECT
 public:
-  explicit TemplateTool(QObject* parent_ = NULL);
+  explicit TemplateTool(QObject* parent_ = nullptr);
   ~TemplateTool();
 
   QString name() const override { return tr("Template tool"); }
