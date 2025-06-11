@@ -285,9 +285,9 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
         message = obj["message"].toString();
       else if (obj["message"].isArray()) {
         QJsonArray messageList = obj["message"].toArray();
-        for (int i = 0; i < messageList.size(); ++i) {
-          if (messageList[i].isString())
-            message += messageList[i].toString() + "\n";
+        for (auto&& i : messageList) {
+          if (i.isString())
+            message += i.toString() + "\n";
         }
       }
       if (!message.isEmpty()) {
