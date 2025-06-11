@@ -250,8 +250,7 @@ TEST(Hdf5Test, datasetInteraction)
     EXPECT_EQ(dim[i], dims_vec[i]) << "Wrong dimensionality returned at " << i;
   }
 
-  for (size_t i = 0; i < refDatasets.size(); ++i) {
-    const std::string& str = refDatasets[i];
+  for (const auto& str : refDatasets) {
     EXPECT_TRUE(hdf5.datasetExists(str))
       << "Data set should exist, but isn't found: " << str;
     EXPECT_TRUE(hdf5.removeDataset(str)) << "Error removing dataset " << str;
