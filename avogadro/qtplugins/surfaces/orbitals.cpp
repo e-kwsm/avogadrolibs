@@ -28,8 +28,8 @@ const double cubePadding = 5.0;
 const int smoothingPasses = 1;
 
 Orbitals::Orbitals(QObject* p)
-  : ExtensionPlugin(p), m_molecule(nullptr), m_dialog(nullptr),
-    m_action(new QAction(this))
+  : ExtensionPlugin(p), m_action(new QAction(this)), m_molecule(nullptr),
+    m_dialog(nullptr)
 {
   m_action->setEnabled(false);
   m_action->setText(tr("Molecular Orbitals…"));

@@ -47,7 +47,7 @@ enum LigandType
 
 TemplateToolWidget::TemplateToolWidget(QWidget* parent_)
   : QWidget(parent_), m_ui(new Ui::TemplateToolWidget),
-    m_elementSelector(nullptr), m_fragmentDialog(nullptr), m_currentElement(26)
+    m_fragmentDialog(nullptr), m_elementSelector(nullptr), m_currentElement(26)
 {
   m_ui->setupUi(this);
 

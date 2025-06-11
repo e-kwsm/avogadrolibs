@@ -18,13 +18,13 @@
 namespace Avogadro::QtPlugins {
 
 OBMMEnergy::OBMMEnergy(const std::string& method)
-  : m_identifier(method), m_name(method), m_process(nullptr),
-    m_molecule(nullptr),
+  : m_molecule(nullptr), m_process(nullptr),
 #if defined(_WIN32)
-    m_executable("obmm.exe")
+    m_executable("obmm.exe"),
 #else
-    m_executable("obmm")
+    m_executable("obmm"),
 #endif
+    m_identifier(method), m_name(method)
 {
   // eventually CJSON might be nice
   m_inputFormat = new Io::CmlFormat;
