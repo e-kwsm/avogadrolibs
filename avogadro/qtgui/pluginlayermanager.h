@@ -41,17 +41,17 @@ public:
     auto info = activeMoleculeInfo();
     if (info != nullptr) {
       if (info->loaded.find(m_name) == info->loaded.end()) {
-        for (size_t i = 0; i < info->settings[m_name].size(); ++i) {
+        for (auto& i : info->settings[m_name]) {
           // A null slot means this layer has no settings for this plugin;
           // leave it null. Every other slot has to be rebuilt as a T, empty
           // getSave() included: reading came from CjsonFormat, which can only
           // construct the LayerData base, and getSetting() below static_casts
           // whatever is here to T*.
-          if (info->settings[m_name][i] == nullptr)
+          if (i == nullptr)
             continue;
           auto aux = std::make_shared<T>();
-          aux->deserialize(info->settings[m_name][i]->getSave());
-          info->settings[m_name][i] = aux;
+          aux->deserialize(i->getSave());
+          i = aux;
         }
         info->loaded.insert(m_name);
       }
