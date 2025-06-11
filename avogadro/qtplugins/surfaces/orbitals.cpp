@@ -177,10 +177,10 @@ void Orbitals::calculateOrbitalFromWidget(unsigned int orbital,
 
   // check if the orbital is already in the queue
   bool found = false;
-  for (int i = 0; i < m_queue.size(); i++) {
-    if (m_queue[i].orbital == orbital && m_queue[i].resolution == resolution) {
+  for (auto& i : m_queue) {
+    if (i.orbital == orbital && i.resolution == resolution) {
       // change the priority to the highest
-      m_queue[i].priority = 0;
+      i.priority = 0;
       found = true;
       break;
     }
