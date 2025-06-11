@@ -173,24 +173,24 @@ void MopacAux::processLine(std::istream& in)
   } else if (Core::contains(key, "KEYWORDS=")) {
     // parse for charge and spin
     std::vector<std::string> list = Core::split(key, ' ');
-    for (size_t i = 0; i < list.size(); ++i) {
-      if (Core::contains(list[i], "CHARGE=")) {
-        m_charge = Core::lexicalCast<int>(list[i].substr(7)).value_or(0);
-      } else if (Core::contains(list[i], "DOUBLET")) {
+    for (const auto& i : list) {
+      if (Core::contains(i, "CHARGE=")) {
+        m_charge = Core::lexicalCast<int>(i.substr(7)).value_or(0);
+      } else if (Core::contains(i, "DOUBLET")) {
         m_spin = 2;
-      } else if (Core::contains(list[i], "TRIPLET")) {
+      } else if (Core::contains(i, "TRIPLET")) {
         m_spin = 3;
-      } else if (Core::contains(list[i], "QUARTET")) {
+      } else if (Core::contains(i, "QUARTET")) {
         m_spin = 4;
-      } else if (Core::contains(list[i], "QUINTET")) {
+      } else if (Core::contains(i, "QUINTET")) {
         m_spin = 5;
-      } else if (Core::contains(list[i], "SEXTET")) {
+      } else if (Core::contains(i, "SEXTET")) {
         m_spin = 6;
-      } else if (Core::contains(list[i], "SEPTET")) {
+      } else if (Core::contains(i, "SEPTET")) {
         m_spin = 7;
-      } else if (Core::contains(list[i], "OCTET")) {
+      } else if (Core::contains(i, "OCTET")) {
         m_spin = 8;
-      } else if (Core::contains(list[i], "NONET")) {
+      } else if (Core::contains(i, "NONET")) {
         m_spin = 9;
       }
     }
