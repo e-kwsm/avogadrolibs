@@ -91,8 +91,8 @@ void Meshes::process(const QtGui::Molecule& mol, GroupNode& node)
     }
 
     // Add the triangles for the first mesh
-    for (size_t i = 0; i < triangles.size(); ++i) {
-      mesh1->addTriangle(triangles[i][0], triangles[i][1], triangles[i][2]);
+    for (auto& triangle : triangles) {
+      mesh1->addTriangle(triangle[0], triangle[1], triangle[2]);
     }
 
     mesh1->setRenderPass(m_opacity == 255 ? Rendering::SolidPass

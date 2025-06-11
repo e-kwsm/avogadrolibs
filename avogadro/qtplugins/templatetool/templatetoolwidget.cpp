@@ -525,8 +525,8 @@ void TemplateToolWidget::buildElements()
 void TemplateToolWidget::saveElements()
 {
   QVariantList atomicNums;
-  for (int i = 0; i < m_userElements.size(); ++i)
-    atomicNums << QVariant(m_userElements[i]);
+  for (unsigned char m_userElement : m_userElements)
+    atomicNums << QVariant(m_userElement);
 
   QSettings().setValue("templatetool/userElements", atomicNums);
 }
