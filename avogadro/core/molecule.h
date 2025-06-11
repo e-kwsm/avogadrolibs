@@ -1203,8 +1203,8 @@ inline bool Molecule::atomSelected(Index atomId) const
 
 inline bool Molecule::isSelectionEmpty() const
 {
-  for (Index i = 0; i < m_selectedAtoms.size(); ++i) {
-    if (m_selectedAtoms[i])
+  for (auto m_selectedAtom : m_selectedAtoms) {
+    if (m_selectedAtom)
       return false;
   }
   return true;
