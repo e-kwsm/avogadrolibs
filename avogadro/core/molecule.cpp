@@ -21,6 +21,7 @@
 #include <cassert>
 #include <cstddef>
 #include <iostream>
+#include <utility>
 
 namespace Avogadro::Core {
 
@@ -144,11 +145,9 @@ Molecule::Molecule(Molecule&& other) noexcept
     m_bondOrders(other.m_bondOrders), m_atomicNumbers(other.m_atomicNumbers),
     m_layers(LayerManager::getMoleculeLayer(this))
 {
-  m_basisSet = other.m_basisSet;
-  other.m_basisSet = nullptr;
+  m_basisSet = std::exchange(other.m_basisSet, nullptr);
 
-  m_unitCell = other.m_unitCell;
-  other.m_unitCell = nullptr;
+  m_unitCell = std::exchange(other.m_unitCell, nullptr);
 
   // Copy the layers, only if they exist
   if (other.m_layers.maxLayer() > 0)
@@ -259,12 +258,10 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
     m_cubes = std::move(other.m_cubes);
 
     delete m_basisSet;
-    m_basisSet = other.m_basisSet;
-    other.m_basisSet = nullptr;
+    m_basisSet = std::exchange(other.m_basisSet, nullptr);
 
     delete m_unitCell;
-    m_unitCell = other.m_unitCell;
-    other.m_unitCell = nullptr;
+    m_unitCell = std::exchange(other.m_unitCell, nullptr);
 
     // Copy the layers, if they exist
     if (other.m_layers.maxLayer() > 0)
