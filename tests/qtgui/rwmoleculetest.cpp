@@ -686,9 +686,8 @@ TEST(RWMoleculeTest, setBondPairs)
   typedef std::pair<Index, Index> BondPair;
   Array<BondPair> old(mol.bondPairs());
   Array<BondPair> rep(old);
-  for (Array<BondPair>::iterator it = rep.begin(), itEnd = rep.end();
-       it != itEnd; ++it) {
-    ++it->second;
+  for (auto& it : rep) {
+    ++it.second;
   }
 
   mol.setBondPairs(rep);
