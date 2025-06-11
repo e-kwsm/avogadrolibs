@@ -47,27 +47,27 @@ TEST(FileFormatManagerTest, identifiers)
     std::cout << i << ": " << ids[i] << std::endl;
   std::vector<std::string> mimes = FileFormatManager::instance().mimeTypes();
   std::cout << "\nMIME types supported:\n";
-  for (size_t i = 0; i < mimes.size(); ++i)
-    std::cout << "\t" << mimes[i] << std::endl;
+  for (const auto& mime : mimes)
+    std::cout << "\t" << mime << std::endl;
   std::vector<std::string> extensions =
     FileFormatManager::instance().fileExtensions();
   std::cout << "\nFile extensions supported:\n";
-  for (size_t i = 0; i < extensions.size(); ++i)
-    std::cout << "\t" << extensions[i] << std::endl;
+  for (const auto& extension : extensions)
+    std::cout << "\t" << extension << std::endl;
 }
 
 TEST(FileFormatManagerTest, emptyFile)
 {
   std::vector<std::string> ids = FileFormatManager::instance().identifiers();
-  for (size_t i = 0; i < ids.size(); ++i) {
+  for (const auto& id : ids) {
     FileFormat* format =
-      FileFormatManager::instance().newFormatFromIdentifier(ids[i]);
+      FileFormatManager::instance().newFormatFromIdentifier(id);
     EXPECT_TRUE(format != nullptr);
     if (!format) {
       delete format;
       continue;
     }
-    std::cout << "Testing " << ids[i] << std::endl;
+    std::cout << "Testing " << id << std::endl;
 
     Molecule molecule;
     format->readString("", molecule);

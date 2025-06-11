@@ -135,8 +135,8 @@ protected:
 
     auto* basis = new GaussianSet;
     basis->setMolecule(&m_molecule);
-    for (int i = 0; i < PROBE_COUNT; ++i) {
-      unsigned int s = basis->addBasis(0, PROBES[i].type);
+    for (auto i : PROBES) {
+      unsigned int s = basis->addBasis(0, i.type);
       basis->addGto(s, 1.0, ALPHA);
     }
     unsigned int s = basis->addBasis(0, shell.type);
@@ -165,19 +165,19 @@ protected:
   {
     const double scale = std::sqrt(2.0 * ALPHA);
     double sum = 0.0;
-    for (int a = 0; a < HERMITE_COUNT; ++a) {
-      const double x = HERMITE[a].node / scale;
-      for (int b = 0; b < HERMITE_COUNT; ++b) {
-        const double y = HERMITE[b].node / scale;
-        for (int c = 0; c < HERMITE_COUNT; ++c) {
-          const double z = HERMITE[c].node / scale;
+    for (const auto& a : HERMITE) {
+      const double x = a.node / scale;
+      for (const auto& b : HERMITE) {
+        const double y = b.node / scale;
+        for (const auto& c : HERMITE) {
+          const double z = c.node / scale;
           const Vector3 position(x * BOHR_TO_ANGSTROM, y * BOHR_TO_ANGSTROM,
                                  z * BOHR_TO_ANGSTROM);
           const double r2 = x * x + y * y + z * z;
           const double vi = m_tools->calculateMolecularOrbital(position, i);
           const double vj = m_tools->calculateMolecularOrbital(position, j);
-          sum += HERMITE[a].weight * HERMITE[b].weight * HERMITE[c].weight *
-                 vi * vj * std::exp(2.0 * ALPHA * r2);
+          sum += a.weight * b.weight * c.weight * vi * vj *
+                 std::exp(2.0 * ALPHA * r2);
         }
       }
     }
@@ -245,20 +245,20 @@ TEST_P(GaussianShellNormalizationTest,
     GTEST_SKIP() << "Cartesian shells legitimately contain lower-l parts";
 
   int probeAo = 0;
-  for (int p = 0; p < PROBE_COUNT; ++p) {
-    if (PROBES[p].l >= shell.l) {
-      probeAo += PROBES[p].components;
+  for (const auto& p : PROBES) {
+    if (p.l >= shell.l) {
+      probeAo += p.components;
       continue;
     }
-    for (int pc = 0; pc < PROBES[p].components; ++pc) {
+    for (int pc = 0; pc < p.components; ++pc) {
       for (int c = 0; c < shell.components; ++c) {
         EXPECT_NEAR(overlap(probeAo + pc, PROBE_AO_COUNT + c), 0.0, 1e-6)
           << shell.name << " component " << c
-          << " has a non-zero overlap with an l=" << PROBES[p].l
+          << " has a non-zero overlap with an l=" << p.l
           << " function: it is not a pure l=" << shell.l << " function";
       }
     }
-    probeAo += PROBES[p].components;
+    probeAo += p.components;
   }
 }
 

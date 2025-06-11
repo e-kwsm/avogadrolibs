@@ -341,12 +341,12 @@ void deserializeProperties(const json& obj, PropertyMap& props,
     // Detect type from array elements
     bool allString = true;
     bool hasFloat = false;
-    for (size_t i = 0; i < value.size(); ++i) {
-      if (value[i].is_number()) {
+    for (const auto& i : value) {
+      if (i.is_number()) {
         allString = false;
-        if (value[i].is_number_float())
+        if (i.is_number_float())
           hasFloat = true;
-      } else if (!value[i].is_string()) {
+      } else if (!i.is_string()) {
         allString = false;
       }
     }
@@ -355,22 +355,20 @@ void deserializeProperties(const json& obj, PropertyMap& props,
     if (allString) {
       Array<std::string> values;
       values.reserve(value.size());
-      for (size_t i = 0; i < value.size(); ++i)
-        values.push_back(value[i].is_string() ? value[i].get<std::string>()
-                                              : std::string());
+      for (const auto& i : value)
+        values.push_back(i.is_string() ? i.get<std::string>() : std::string());
       props.setStrings(key, values);
     } else if (hasFloat) {
       Array<double> values;
       values.reserve(value.size());
-      for (size_t i = 0; i < value.size(); ++i)
-        values.push_back(value[i].is_number() ? value[i].get<double>() : 0.0);
+      for (const auto& i : value)
+        values.push_back(i.is_number() ? i.get<double>() : 0.0);
       props.setDoubles(key, values);
     } else {
       Array<int> values;
       values.reserve(value.size());
-      for (size_t i = 0; i < value.size(); ++i)
-        values.push_back(value[i].is_number_integer() ? value[i].get<int>()
-                                                      : 0);
+      for (const auto& i : value)
+        values.push_back(i.is_number_integer() ? i.get<int>() : 0);
       props.setInts(key, values);
     }
   }
@@ -442,22 +440,22 @@ json serializeProperties(const PropertyMap& props)
   for (const auto& name : props.doubleNames()) {
     json arr;
     const auto& values = props.doubles(name);
-    for (Index i = 0; i < values.size(); ++i)
-      arr.push_back(values[i]);
+    for (auto value : values)
+      arr.push_back(value);
     result[name] = arr;
   }
   for (const auto& name : props.intNames()) {
     json arr;
     const auto& values = props.ints(name);
-    for (Index i = 0; i < values.size(); ++i)
-      arr.push_back(values[i]);
+    for (auto value : values)
+      arr.push_back(value);
     result[name] = arr;
   }
   for (const auto& name : props.stringNames()) {
     json arr;
     const auto& values = props.strings(name);
-    for (Index i = 0; i < values.size(); ++i)
-      arr.push_back(values[i]);
+    for (const auto& value : values)
+      arr.push_back(value);
     result[name] = arr;
   }
   for (const auto& name : props.matrixNames()) {
@@ -2341,8 +2339,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule)
     // only needed when the flat block alone cannot reproduce the molecule.
     if (vibrationConformers.size() > 1 || flatConformer != active) {
       json perConformer = json::object();
-      for (size_t i = 0; i < vibrationConformers.size(); ++i) {
-        const size_t conformer = vibrationConformers[i];
+      for (auto conformer : vibrationConformers) {
         // The flat block already holds this one; reuse it rather than
         // rebuilding every eigenvector.
         perConformer[std::to_string(conformer)] =

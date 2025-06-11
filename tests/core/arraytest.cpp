@@ -142,8 +142,8 @@ TEST(ArrayTest, detachLeavesOtherHolderIntact)
   }
   // The copies are gone, a1 is now the sole owner and must still be valid.
   ASSERT_EQ(a1.size(), static_cast<size_t>(4));
-  for (size_t i = 0; i < a1.size(); ++i)
-    EXPECT_EQ(a1.at(i), 7);
+  for (auto i : a1)
+    EXPECT_EQ(i, 7);
   const int* before = a1.constData();
   a1[0] = 3; // sole owner: no copy
   EXPECT_EQ(a1.constData(), before);
@@ -192,8 +192,8 @@ TEST(ArrayTest, threadedCopyDetachDestroy)
 
   EXPECT_EQ(source.constData(), sourceData);
   ASSERT_EQ(source.size(), static_cast<size_t>(64));
-  for (size_t i = 0; i < source.size(); ++i)
-    EXPECT_EQ(source.at(i), 42);
+  for (auto i : source)
+    EXPECT_EQ(i, 42);
 }
 
 TEST(ArrayTest, threadedSimultaneousDetach)
