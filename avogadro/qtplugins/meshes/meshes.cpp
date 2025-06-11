@@ -90,8 +90,8 @@ void Meshes::process(const QtGui::Molecule& mol, GroupNode& node)
     }   
 
     // Add the triangles for the first mesh
-    for (size_t i = 0; i < triangles.size(); ++i) {
-      mesh1->addTriangle(triangles[i][0], triangles[i][1], triangles[i][2]);
+    for (auto& triangle : triangles) {
+      mesh1->addTriangle(triangle[0], triangle[1], triangle[2]);
     }
 
     mesh1->setRenderPass(m_opacity == 255 ? Rendering::SolidPass : Rendering::TranslucentPass);
@@ -111,8 +111,8 @@ void Meshes::process(const QtGui::Molecule& mol, GroupNode& node)
       mesh2->addVertices(mesh->vertices(), mesh->normals());
 
       // Add the correct triangles for the second mesh
-      for (size_t i = 0; i < triangles2.size(); ++i) {
-        mesh2->addTriangle(triangles2[i][0], triangles2[i][1], triangles2[i][2]);
+      for (auto& i : triangles2) {
+        mesh2->addTriangle(i[0], i[1], i[2]);
       }
 
       mesh2->setRenderPass(m_opacity == 255 ? Rendering::SolidPass
