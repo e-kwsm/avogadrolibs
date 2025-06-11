@@ -249,8 +249,7 @@ void AlignTool::draw(Rendering::GroupNode& node)
     return;
 
   // check to make sure we have atoms for all of these
-  for (int i = 0; i < m_atoms.size(); ++i) {
-    Identifier& ident = m_atoms[i];
+  for (auto& ident : m_atoms) {
     if (ident.type == Rendering::AtomType &&
         ident.index >= m_molecule->atomCount())
       return;
