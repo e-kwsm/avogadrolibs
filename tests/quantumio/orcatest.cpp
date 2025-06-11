@@ -129,8 +129,8 @@ TEST(OrcaTest, transitionStateKeepsEveryHessianWithItsGeometry)
   auto imaginaryCount = [&](size_t conformer) {
     auto frequencies = molecule.vibrationFrequencies(conformer);
     int count = 0;
-    for (size_t i = 0; i < frequencies.size(); ++i)
-      if (frequencies[i] < -1.0)
+    for (auto frequencie : frequencies)
+      if (frequencie < -1.0)
         ++count;
     return count;
   };
@@ -156,8 +156,8 @@ TEST(OrcaTest, convergedGeometryCarriesItsOwnHessian)
   // A converged transition state has exactly one imaginary frequency.
   auto frequencies = molecule.vibrationFrequencies();
   int imaginary = 0;
-  for (size_t i = 0; i < frequencies.size(); ++i)
-    if (frequencies[i] < -1.0)
+  for (auto frequencie : frequencies)
+    if (frequencie < -1.0)
       ++imaginary;
   EXPECT_EQ(imaginary, 1);
   EXPECT_NEAR(frequencies[6], -31.0, 0.5);

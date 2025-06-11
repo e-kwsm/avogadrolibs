@@ -616,9 +616,8 @@ void TessellatingVisitor::visit(MeshGeometry& geometry)
   // The alpha channel of each vertex colour already includes the mesh
   // opacity() (it is applied when the vertices are added), and the mesh
   // shader uses it unchanged.
-  for (size_t i = 0; i < vertices.size(); ++i)
-    addVertex(result, vertices[i].vertex, vertices[i].normal,
-              vertices[i].color);
+  for (const auto& vertice : vertices)
+    addVertex(result, vertice.vertex, vertice.normal, vertice.color);
 
   // Out-of-range indices and non-finite data are dealt with by
   // keepIfNotEmpty().
