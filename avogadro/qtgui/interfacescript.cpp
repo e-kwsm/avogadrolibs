@@ -267,9 +267,9 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
     // select some atoms
     if (obj.contains("selectedAtoms") && obj["selectedAtoms"].isArray()) {
       QJsonArray selectedList = obj["selectedAtoms"].toArray();
-      for (int i = 0; i < selectedList.size(); ++i) {
-        if (selectedList[i].isDouble()) {
-          Index index = static_cast<Index>(selectedList[i].toDouble());
+      for (auto&& i : selectedList) {
+        if (i.isDouble()) {
+          Index index = static_cast<Index>(i.toDouble());
           if (index >= 0 && index < guiMol->atomCount())
             guiMol->undoMolecule()->setAtomSelected(index, true);
         }
@@ -285,9 +285,9 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
         message = obj["message"].toString();
       else if (obj["message"].isArray()) {
         QJsonArray messageList = obj["message"].toArray();
-        for (int i = 0; i < messageList.size(); ++i) {
-          if (messageList[i].isString())
-            message += messageList[i].toString() + "\n";
+        for (auto&& i : messageList) {
+          if (i.isString())
+            message += i.toString() + "\n";
         }
       }
       if (!message.isEmpty()) {
