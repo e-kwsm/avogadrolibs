@@ -158,8 +158,7 @@ void PropertyView::selectionChanged(const QItemSelection& selected,
       if (m_model != nullptr) {
         const auto residue = m_molecule->residue(rowNum);
         auto atoms = residue.residueAtoms();
-        for (Index i = 0; i < atoms.size(); ++i) {
-          const auto atom = atoms[i];
+        for (auto atom : atoms) {
           m_molecule->undoMolecule()->setAtomSelected(atom.index(), true);
         }
       }

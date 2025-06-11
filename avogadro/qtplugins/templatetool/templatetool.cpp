@@ -690,9 +690,9 @@ void TemplateTool::atomLeftClick(QMouseEvent*)
       }
 
       // Estimate and try to realize bond distances
-      for (size_t i = 0; i < templateLigandIndices.size(); i++) {
+      for (unsigned long templateLigandIndice : templateLigandIndices) {
         unsigned char ligandAtomicNumber =
-          templateMolecule.atomicNumber(templateLigandIndices[i]);
+          templateMolecule.atomicNumber(templateLigandIndice);
         ligandAtomicNumber = (ligandAtomicNumber == 0) ? 6 : ligandAtomicNumber;
         // Estimate as the sum of covalent radii
         double bondDistance = Elements::radiusCovalent(ligandAtomicNumber) +
@@ -700,7 +700,7 @@ void TemplateTool::atomLeftClick(QMouseEvent*)
                                 m_molecule->atomicNumber(moleculeCenterIndex));
         Vector3 inVector =
           templateMolecule.atomPosition3d(templateDummyIndex) -
-          templateMolecule.atomPosition3d(templateLigandIndices[i]);
+          templateMolecule.atomPosition3d(templateLigandIndice);
         Vector3 correctionVector = inVector;
         correctionVector.normalize();
         correctionVector *= bondDistance - inVector.norm();
