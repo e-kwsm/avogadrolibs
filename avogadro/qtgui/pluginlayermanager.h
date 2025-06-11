@@ -40,13 +40,13 @@ public:
     if (m_activeMolecule != nullptr) {
       auto& info = m_molToInfo[m_activeMolecule];
       if (info->loaded.find(m_name) == info->loaded.end()) {
-        for (size_t i = 0; i < info->settings[m_name].size(); ++i) {
-          auto serial = info->settings[m_name][i]->getSave();
+        for (auto& i : info->settings[m_name]) {
+          auto serial = i->getSave();
           if (serial != "") {
             T* aux = new T;
             aux->deserialize(serial);
-            delete info->settings[m_name][i];
-            info->settings[m_name][i] = aux;
+            delete i;
+            i = aux;
           }
         }
         info->loaded.insert(m_name);
