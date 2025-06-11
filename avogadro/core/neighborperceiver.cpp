@@ -23,8 +23,7 @@ NeighborPerceiver::NeighborPerceiver(const Array<Vector3> points,
   // find the bounding box of the finite points; non-finite points (malformed
   // input) are never binned
   bool found = false;
-  for (Index i = 0; i < points.size(); i++) {
-    const Vector3& ipos = points[i];
+  for (const auto& ipos : points) {
     if (!ipos.allFinite())
       continue;
     if (!found) {

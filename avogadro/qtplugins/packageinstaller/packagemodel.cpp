@@ -443,8 +443,7 @@ void PackageModel::loadDownloadStats(const QByteArray& jsonBytes)
   }
 
   m_downloadWindowDays = windowDays;
-  for (int row = 0; row < m_entries.size(); ++row) {
-    PackageEntry& e = m_entries[row];
+  for (auto& e : m_entries) {
     // -1 (unknown) rather than 0 for a plugin the counter has never seen:
     // "no data" and "nobody installed it" are different claims.
     e.recentDownloads = counts.value(normalizePackageName(e.name), -1);
