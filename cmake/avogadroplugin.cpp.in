@@ -5,32 +5,40 @@
 
 #include <QtCore/QtPlugin>
 
-@PluginIncludes@
+@PluginIncludes @
 
-namespace Avogadro::QtPlugins {
-
-class @PluginName@Factory : public QObject, public QtGui::@PluginType@Factory
+  namespace Avogadro::QtPlugins
 {
-  Q_OBJECT
-  Q_PLUGIN_METADATA(IID "org.openchemistry.avogadro.@PluginType@Factory")
-  Q_INTERFACES(Avogadro::QtGui::@PluginType@Factory)
 
-public:
-  explicit @PluginName@Factory(QObject *parent_ = nullptr) : QObject(parent_) {}
-
-  QtGui::@PluginType@ * createInstance(QObject *parent_ = nullptr)
+  class @PluginName @Factory : public QObject,
+                               public QtGui::@PluginType @Factory
   {
-    auto *object = new @PluginClass@(parent_);
-    object->setObjectName("@PluginName@");
-    return object;
-  }
+    Q_OBJECT
+    Q_PLUGIN_METADATA(IID "org.openchemistry.avogadro.@PluginType@Factory")
+    Q_INTERFACES(Avogadro::QtGui::@PluginType @Factory)
 
-  QString identifier() const { return "@PluginName@"; }
+  public:
+    explicit @PluginName @Factory(QObject* parent_ = nullptr) : QObject(parent_)
+    {
+    }
 
-  QString description() const { return "@PluginDescription@"; }
+    QtGui::@PluginType @* createInstance(QObject* parent_ = nullptr)
+    {
+      auto* object = new @PluginClass @(parent_);
+      object->setObjectName("@PluginName@");
+      return object;
+    }
 
-};
+    QString identifier() const
+    {
+      return "@PluginName@";
+    }
 
+    QString description() const
+    {
+      return "@PluginDescription@";
+    }
+  };
 }
 
 #include "@PluginName@Plugin.moc"
