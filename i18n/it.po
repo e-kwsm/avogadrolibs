@@ -5219,8 +5219,9 @@ msgid "Render the solvent-excluded molecular surface."
 msgstr ""
 
 #: qtplugins/surfaces/surfaces.cpp:119 qtplugins/surfaces/surfaces.cpp:120
+#, fuzzy
 msgid "Render a molecular orbital."
-msgstr ""
+msgstr "Renderizza Orbitale Molecolare"
 
 #: qtplugins/surfaces/surfaces.cpp:122
 #, fuzzy
