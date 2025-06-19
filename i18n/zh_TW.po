@@ -5030,7 +5030,6 @@ msgstr "NMR光譜"
 
 #: qtplugins/spectra/spectradialog.cpp:614
 #, fuzzy
-#| msgid "Shift (ppm)"
 msgid "Chemical Shift (ppm)"
 msgstr "化學位移 (ppm)"
 
