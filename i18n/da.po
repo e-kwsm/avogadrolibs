@@ -3684,7 +3684,7 @@ msgstr "CSV-filer (*.csv);;Alle filer (*)"
 #: qtplugins/propertytables/propertyview.cpp:262
 #, fuzzy
 msgid "Could not open the file for writing."
-msgstr "Kunne ikke åbne fil '%1' for at skrive til den."
+msgstr "Kunne ikke åbne fil for at skrive til den."
 
 #: qtplugins/molecularproperties/molecularview.cpp:192
 #: qtplugins/propertytables/propertyview.cpp:294

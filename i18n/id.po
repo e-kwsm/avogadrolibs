@@ -3752,7 +3752,7 @@ msgstr "Berkas CSV (*.csv);;Semua berkas (*)"
 #: qtplugins/propertytables/propertyview.cpp:262
 #, fuzzy
 msgid "Could not open the file for writing."
-msgstr "Tidak bisa membuka berkas '%1' untuk ditulis."
+msgstr "Tidak bisa membuka berkas untuk ditulis."
 
 #: qtplugins/molecularproperties/molecularview.cpp:192
 #: qtplugins/propertytables/propertyview.cpp:294
