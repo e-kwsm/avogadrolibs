@@ -3667,9 +3667,8 @@ msgstr ""
 #: qtplugins/molecularproperties/molecularview.cpp:159
 #: qtplugins/propertytables/propertyview.cpp:261
 #, fuzzy
-#| msgid "Could not open file '%1' for writing."
 msgid "Could not open the file for writing."
-msgstr "Không thể mở file '%1' để ghi dữ liệu."
+msgstr "Không thể mở file để ghi dữ liệu."
 
 #: qtplugins/molecularproperties/molecularview.cpp:192
 #: qtplugins/propertytables/propertyview.cpp:293
