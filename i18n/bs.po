@@ -8596,9 +8596,6 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analitika"
 
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgid "&Import..."
 #~ msgstr "&Uvezi..."
 
@@ -9372,10 +9369,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Infracrveno, postavke spektra"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR, postavke spektra"
 
@@ -9414,9 +9407,6 @@ msgstr ""
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "Vrijednosti odvojene zarezom"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
 
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Nepoznata ekstenzija: %1"
