@@ -2754,8 +2754,9 @@ msgid "Tools for crystal-specific editing/analysis."
 msgstr ""
 
 #: qtplugins/crystal/crystalscene.cpp:178
+#, fuzzy
 msgid "Color axes:"
-msgstr ""
+msgstr "Farver akser:"
 
 #: qtplugins/crystal/crystalscene.cpp:184
 msgid "Line color:"
