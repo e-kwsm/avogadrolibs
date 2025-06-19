@@ -4869,7 +4869,7 @@ msgstr "Selecione o Índices Átomos…"
 #: qtplugins/select/select.cpp:63
 #, fuzzy
 msgid "Select by Residue…"
-msgstr "Selecionar Resíduo…"
+msgstr "Selecionar por Resíduo…"
 
 #: qtplugins/select/select.cpp:68
 msgid "Select Backbone Atoms…"
