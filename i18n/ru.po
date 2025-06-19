@@ -7837,8 +7837,6 @@ msgstr ""
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:156
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#, fuzzy
-#| msgid "Width:"
 msgid "Peak Width:"
 msgstr "Толщина:"
 
