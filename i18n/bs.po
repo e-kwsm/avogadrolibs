@@ -10144,18 +10144,11 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Format podataka"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Učitaj spektralne podatke"
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Prijenosna Mrežna Grafika"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Tagged Image format datoteke"
@@ -10226,9 +10219,6 @@ msgstr ""
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Izračunavanje MO %L1"
 
-#~ msgid "VdW"
-#~ msgstr "VdW"
-
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL dodatak nije korektno inicijaliziran da bi se napravio video"
 
@@ -10272,9 +10262,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Informacije za otklanjanje grešaka"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Veličina pogleda: %L1 x %L2"
@@ -10344,10 +10331,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molekula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Nepoznat Python pogon"
 
@@ -10389,9 +10372,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "Auto optimizacija: Ne mogu postaviti polje sila...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Steps per Update:"
 #~ msgstr "Koraci za ažuriranje:"
@@ -10474,22 +10454,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Dihedralni ugao: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Razmak(ci):"
 
@@ -10561,15 +10525,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "Oblik"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "Petlja"
