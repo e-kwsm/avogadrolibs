@@ -140,15 +140,13 @@ Molecule::Molecule(Molecule&& other) noexcept
     m_vibrationLx(other.m_vibrationLx),
     m_selectedAtoms(std::move(other.m_selectedAtoms)),
     m_meshes(std::move(other.m_meshes)), m_cubes(std::move(other.m_cubes)),
+    m_basisSet(std::exchange(other.m_basisSet, nullptr)),
+    m_unitCell(std::exchange(other.m_unitCell, nullptr)),
     m_residues(other.m_residues), m_hallNumber(other.m_hallNumber),
     m_frozenAtomMask(other.m_frozenAtomMask), m_graph(other.m_graph),
     m_bondOrders(other.m_bondOrders), m_atomicNumbers(other.m_atomicNumbers),
     m_layers(LayerManager::getMoleculeLayer(this))
 {
-  m_basisSet = std::exchange(other.m_basisSet, nullptr);
-
-  m_unitCell = std::exchange(other.m_unitCell, nullptr);
-
   // Copy the layers, only if they exist
   if (other.m_layers.maxLayer() > 0)
     m_layers = LayerManager::getMoleculeLayer(&other, this);
