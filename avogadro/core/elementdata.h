@@ -1,9 +1,11 @@
 #ifndef AVOGADRO_CORE_ELEMENTS_DATA
 #define AVOGADRO_CORE_ELEMENTS_DATA
 
+#include <array>
+
 namespace Avogadro::Core {
 
-const char* element_symbols[] = {
+const std::array<const char*, 119> element_symbols = {
   "Xx", "H",  "He", "Li", "Be", "B",  "C",  "N",  "O",  "F",  "Ne", "Na",
   "Mg", "Al", "Si", "P",  "S",  "Cl", "Ar", "K",  "Ca", "Sc", "Ti", "V",
   "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br",
@@ -16,7 +18,7 @@ const char* element_symbols[] = {
   "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"
 };
 
-const char* element_names[] = {
+const std::array<const char*, 119> element_names = {
   "Dummy",        "Hydrogen",     "Helium",      "Lithium",     "Beryllium",
   "Boron",        "Carbon",       "Nitrogen",    "Oxygen",      "Fluorine",
   "Neon",         "Sodium",       "Magnesium",   "Aluminium",   "Silicon",
@@ -43,7 +45,7 @@ const char* element_names[] = {
   "Moscovium",    "Livermorium",  "Tennessine",  "Oganesson"
 };
 
-double element_masses[] = {
+const std::array<double, 119> element_masses = {
   // from IUPAC  (2021 set) https://doi.org/10.1515/pac-2019-0603
   //    https://iupac.org/what-we-do/periodic-table-of-elements/
   //    https://iupac.qmul.ac.uk/AtWt/
@@ -67,16 +69,16 @@ double element_masses[] = {
   285,       286,       289,        289,       293,       293,       294
 };
 
-unsigned char valence_electrons[] = {
+const std::array<unsigned char, 119> valence_electrons = {
   // some of these are debatable, but are intended as a reasonable start
-  0, 1, 0, // He
-  1, 2, 3, 4, 5, 6, 7, 8, // Ne
-  1, 2, 3, 4, 5, 6, 7, 8, // Ar
+  0, 1, 0,                                              // He
+  1, 2, 3, 4, 5, 6, 7, 8,                               // Ne
+  1, 2, 3, 4, 5, 6, 7, 8,                               // Ar
   1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 6, 7, 8, // Kr
   1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 6, 7, 8, // Xe
-  1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-  2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2,
-  2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
+  1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+  2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+  2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2
 };
 
 double element_VDW[] = {
