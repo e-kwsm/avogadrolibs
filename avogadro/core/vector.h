@@ -8,6 +8,7 @@
 
 #include "avogadrocore.h"
 #include <Eigen/Dense>
+#include <array>
 
 namespace Avogadro {
 
@@ -29,8 +30,8 @@ using Vector4ub = Eigen::Matrix<unsigned char, 4, 1>;
 /** A simple struct composed of Vector3f to represent a frustrum. */
 struct Frustrum
 {
-  Vector3f points[8];
-  Vector3f planes[4];
+  std::array<Vector3f, 8> points;
+  std::array<Vector3f, 4> planes;
 };
 
 } // namespace Avogadro
