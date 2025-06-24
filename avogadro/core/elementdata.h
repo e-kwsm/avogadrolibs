@@ -2,13 +2,14 @@
 #define AVOGADRO_CORE_ELEMENTS_DATA
 
 #include "elements.h"
+#include <array>
 #include <vector>
 
 using isotope = std::pair<unsigned short, double>;
 
 namespace Avogadro::Core {
 
-const char* const element_symbols[element_count] = {
+const std::array<const char*, 119> element_symbols = {
   "Xx", "H",  "He", "Li", "Be", "B",  "C",  "N",  "O",  "F",  "Ne", "Na",
   "Mg", "Al", "Si", "P",  "S",  "Cl", "Ar", "K",  "Ca", "Sc", "Ti", "V",
   "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br",
@@ -21,7 +22,7 @@ const char* const element_symbols[element_count] = {
   "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"
 };
 
-const char* const element_names[element_count] = {
+const std::array<const char*, 119> element_names = {
   "Dummy",        "Hydrogen",     "Helium",      "Lithium",     "Beryllium",
   "Boron",        "Carbon",       "Nitrogen",    "Oxygen",      "Fluorine",
   "Neon",         "Sodium",       "Magnesium",   "Aluminium",   "Silicon",
@@ -48,7 +49,7 @@ const char* const element_names[element_count] = {
   "Moscovium",    "Livermorium",  "Tennessine",  "Oganesson"
 };
 
-const double element_masses[element_count] = {
+const std::array<double, 119> element_masses = {
   // from IUPAC  (2021 set) https://doi.org/10.1515/pac-2019-0603
   //    https://iupac.org/what-we-do/periodic-table-of-elements/
   //    https://iupac.qmul.ac.uk/AtWt/
@@ -72,7 +73,7 @@ const double element_masses[element_count] = {
   285,       286,       289,        289,       293,       293,       294
 };
 
-const unsigned char valence_electrons[element_count] = {
+const std::array<unsigned char, 119> valence_electrons = {
   // some of these are debatable, but are intended as a reasonable start
   0, 1, 0,                                              // He
   1, 2, 3, 4, 5, 6, 7, 8,                               // Ne
