@@ -49,7 +49,7 @@ void PQRRequest::sendRequest(QString url)
  * @param url The url to send the request to
  * @param mol2 The mol2 representation of the molecule to download
  */
-void PQRRequest::sendRequest(QString url, QString)
+void PQRRequest::sendRequest(QString url, [[maybe_unused]] QString mol2)
 {
   reply = oNetworkAccessManager->get(QNetworkRequest(QUrl(url)));
   currentMolName = nameDisplay->text(); // needed to load mol into Avogadro
