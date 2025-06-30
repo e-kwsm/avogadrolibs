@@ -195,13 +195,13 @@ void GaussianSet::outputAll(ElectronType type)
   auto numAtoms = static_cast<unsigned int>(m_molecule->atomCount());
   cout << "\nGaussian Basis Set\nNumber of atoms:" << numAtoms << endl;
   switch (m_scfType) {
-    case Rhf:
+    case ScfType::Rhf:
       cout << "RHF orbitals" << endl;
       break;
-    case Uhf:
+    case ScfType::Uhf:
       cout << "UHF orbitals" << endl;
       break;
-    case Rohf:
+    case ScfType::Rohf:
       cout << "ROHF orbitals" << endl;
       break;
     default:
