@@ -51,7 +51,7 @@ void PQRWidget::searchAction()
  * @param row The row of the result selected.
  * @param col The column of the result selected.
  */
-void PQRWidget::molSelected(int row, int)
+void PQRWidget::molSelected(int row, [[maybe_unused]] int col)
 {
   currentlySelectedMol = request->molSelected(row);
   if (currentlySelectedMol == "N/A")
