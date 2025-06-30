@@ -21,7 +21,6 @@ class Molecule;
 
 /**
  * @class LayerManager layermanager.h <avogadro/core/layermanager.h>
- * @brief
  */
 class AVOGADROCORE_EXPORT LayerManager
 {
