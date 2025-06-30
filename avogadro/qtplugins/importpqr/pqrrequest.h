@@ -73,7 +73,7 @@ public:
    * @param num The row number of the table result selected
    * @returns The mol2 of the result for the widget to reference
    */
-  QString molSelected(int);
+  QString molSelected(int num);
 
 private slots:
   /**
