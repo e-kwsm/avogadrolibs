@@ -17,7 +17,9 @@ using std::vector;
 
 namespace Avogadro::Core {
 
-GaussianSet::GaussianSet() : m_numMOs(0), m_init(false), m_scfType(Rhf) {}
+GaussianSet::GaussianSet() : m_numMOs(0), m_init(false), m_scfType(ScfType::Rhf)
+{
+}
 
 unsigned int GaussianSet::addBasis(unsigned int atom, orbital type)
 {
@@ -510,7 +512,7 @@ void GaussianSet::initCalculation()
 
 bool GaussianSet::generateDensityMatrix()
 {
-  if (m_scfType == Unknown)
+  if (m_scfType == ScfType::Unknown)
     return false;
 
   if (m_moMatrix[0].size() == 0)
@@ -524,7 +526,7 @@ bool GaussianSet::generateDensityMatrix()
   for (unsigned int iBasis = 0; iBasis < m_numMOs; ++iBasis) {
     for (unsigned int jBasis = 0; jBasis <= iBasis; ++jBasis) {
       switch (m_scfType) {
-        case Rhf:
+        case ScfType::Rhf:
           for (unsigned int iMO = 0; iMO < m_electrons[0] / 2; ++iMO) {
             double icoeff = m_moMatrix[0](iBasis, iMO);
             double jcoeff = m_moMatrix[0](jBasis, iMO);
@@ -535,8 +537,8 @@ bool GaussianSet::generateDensityMatrix()
           //          m_density(iBasis, jBasis)
           //               << endl;
           break;
-        case Rohf: // ROHF is handled similarly to UHF
-        case Uhf:
+        case ScfType::Rohf: // ROHF is handled similarly to UHF
+        case ScfType::Uhf:
           for (unsigned int iaMO = 0; iaMO < m_electrons[0]; ++iaMO) {
             double icoeff = m_moMatrix[0](iBasis, iaMO);
             double jcoeff = m_moMatrix[0](jBasis, iaMO);
@@ -554,7 +556,7 @@ bool GaussianSet::generateDensityMatrix()
           //               << endl;
           break;
         default:
-          cout << "Unhandled scf type:" << m_scfType << endl;
+          cout << "Unhandled scf type:" << static_cast<int>(m_scfType) << endl;
       }
     }
   }
@@ -563,7 +565,7 @@ bool GaussianSet::generateDensityMatrix()
 
 bool GaussianSet::generateSpinDensityMatrix()
 {
-  if (m_scfType != Uhf)
+  if (m_scfType != ScfType::Uhf)
     return false;
 
   m_spinDensity.resize(m_numMOs, m_numMOs);
