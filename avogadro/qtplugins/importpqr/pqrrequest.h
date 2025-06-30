@@ -40,7 +40,8 @@ public:
    * @param nd Pointer to the name display
    * @param fd Pointer to the formula display
    */
-  PQRRequest(QTableWidget*, QLabel*, QLineEdit*, QLabel*, PQRWidget*);
+  PQRRequest(QTableWidget* tw, QLabel* gv, QLineEdit* nd, QLabel* fd,
+             PQRWidget* w);
 
   /**
    * @brief Free the ui pointers
