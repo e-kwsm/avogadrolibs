@@ -40,7 +40,8 @@ public:
    * @param nd Pointer to the name display
    * @param fd Pointer to the formula display
    */
-  PQRRequest(QTableWidget*, QLabel*, QLineEdit*, QLabel*, PQRWidget*);
+  PQRRequest(QTableWidget* tw, QLabel* gv, QLineEdit* nd, QLabel* fd,
+             PQRWidget* w);
 
   /**
    * @brief Free the ui pointers
@@ -51,14 +52,14 @@ public:
    * @brief Sends a network request to search for molecules from PQR;
    * @param url The url to query
    */
-  void sendRequest(QString);
+  void sendRequest(QString url);
 
   /**
    * @brief Sends a network request to download a file from PQR
    * @param url The url to send the request to
    * @param mol2 The mol2 representation of the molecule to download
    */
-  void sendRequest(QString, QString);
+  void sendRequest(QString url, [[maybe_unused]] QString mol2);
 
   /**
    * @brief Sends a network request to download a png form PQR
@@ -72,7 +73,7 @@ public:
    * @param num The row number of the table result selected
    * @returns The mol2 of the result for the widget to reference
    */
-  QString molSelected(int);
+  QString molSelected(int num);
 
 private slots:
   /**
@@ -136,14 +137,14 @@ private:
    * @brief Takes a formula string and returns a QString with subscript tags
    * @param formula The formula string
    */
-  QString parseSubscripts(QString);
+  QString parseSubscripts(QString formula);
 
   /**
    * @brief Takes a formula string and returns the molecular mass of the
    * molecule
    * @param formula The formula string
    */
-  float getMolMass(QString);
+  float getMolMass(QString formula);
 };
 } // namespace QtPlugins
 } // namespace Avogadro
