@@ -60,7 +60,7 @@ private slots:
    * @param row The row of the result selected.
    * @param col The column of the result selected.
    */
-  void molSelected(int, int);
+  void molSelected(int row, int col);
 
   /**
    * @brief Called when the download button is clicked to send a request to
