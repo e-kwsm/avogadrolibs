@@ -224,7 +224,7 @@ void CoordinateEditorDialog::specEdited()
 void CoordinateEditorDialog::updateText()
 {
   if (m_ui->text->document()->isModified()) {
-    int reply = QMessageBox::question(
+    auto reply = QMessageBox::question(
       this, tr("Overwrite changes?"),
       tr("The text document has been modified. Would "
          "you like to discard your changes and revert "
