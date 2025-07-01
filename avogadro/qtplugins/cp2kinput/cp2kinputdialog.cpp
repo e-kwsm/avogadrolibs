@@ -543,12 +543,11 @@ void Cp2kInputDialog::updatePreviewText()
     if (m_promptingOverwrite)
       return;
     m_promptingOverwrite = true;
-    int response = QMessageBox::question(
+    auto response = QMessageBox::question(
       this, tr("Overwrite modified input file?"), message,
       QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
     m_promptingOverwrite = false;
-    if (static_cast<QMessageBox::StandardButton>(response) !=
-        QMessageBox::Yes) {
+    if (response != QMessageBox::Yes) {
       restoreOptionCache();
       return;
     }
