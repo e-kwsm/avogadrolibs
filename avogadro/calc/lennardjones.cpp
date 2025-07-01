@@ -45,20 +45,14 @@ void LennardJones::setMolecule(Core::Molecule* mol)
   for (Index i = 0; i < numAtoms; ++i) {
     Core::Atom atom1 = mol->atom(i);
     unsigned char number1 = atom1.atomicNumber();
-    double r1;
-    if (m_vdw)
-      r1 = Core::Elements::radiusVDW(number1);
-    else
-      r1 = Core::Elements::radiusCovalent(number1);
+    double r1 = m_vdw ? Core::Elements::radiusVDW(number1)
+                      : Core::Elements::radiusCovalent(number1);
 
     for (Index j = i + 1; j < numAtoms; ++j) {
       Core::Atom atom2 = mol->atom(j);
       unsigned char number2 = atom2.atomicNumber();
-      double r2;
-      if (m_vdw)
-        r2 = Core::Elements::radiusVDW(number2);
-      else
-        r2 = Core::Elements::radiusCovalent(number2);
+      double r2 = m_vdw ? Core::Elements::radiusVDW(number2)
+                        : Core::Elements::radiusCovalent(number2);
 
       radii(i, j) = r1 + r2; // expected distance
     }
