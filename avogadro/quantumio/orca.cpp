@@ -349,9 +349,7 @@ void ORCAOutput::processLine(std::istream& in,
   } else {
 
     vector<vector<double>> columns;
-    unsigned int numColumns, numRows;
-    numColumns = 0;
-    numRows = 0;
+    unsigned int numColumns = 0, numRows = 0;
     // parsing a line -- what mode are we in?
 
     switch (m_currentMode) {
