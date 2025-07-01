@@ -13,7 +13,8 @@
 
 #include <iostream>
 
-extern "C" {
+extern "C"
+{
 #include "spglib.h"
 }
 
@@ -167,4 +168,4 @@ bool AvoSpglib::standardizeCell(Molecule& mol, double cartTol, bool toPrimitive,
   return true;
 }
 
-} // end Avogadro namespace
+} // namespace Avogadro::Core

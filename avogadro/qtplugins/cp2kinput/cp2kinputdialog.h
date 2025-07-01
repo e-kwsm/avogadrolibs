@@ -31,6 +31,27 @@ class Cp2kInputDialog : public QDialog
 {
   Q_OBJECT
 
+  enum CalculateOption
+  {
+    CalculateEnergy = 0,
+    CalculateEnergyAndForces,
+    CalculateMolecularDynamics,
+    CalculateGeometryOptimization,
+
+    CalculateCount
+  };
+
+  enum BasisOption
+  {
+    BasisSZVGTH = 0,
+    BasisDZVGTH,
+    BasisDZVPGTH,
+    BasisTZVPGTH,
+    BasisTZV2PGTH,
+
+    BasisCount
+  };
+
 public:
   explicit Cp2kInputDialog(QWidget* parent_ = nullptr,
                            Qt::WindowFlags f = Qt::WindowFlags());
@@ -81,6 +102,8 @@ private:
 
   void setBasicDefaults();
 
+  /// @return valid values for CP2K RUN_TYPE
+  static QString fromCalcEnum(CalculateOption option);
   QString generateJobTitle() const;
 
   Ui::Cp2kInputDialog ui;
