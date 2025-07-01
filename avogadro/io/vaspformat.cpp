@@ -48,7 +48,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   inStream.seekg(0, std::ios::beg);
 
   // We'll use these throughout
-  bool ok;
+  bool ok = false;
   string line;
   std::vector<string> stringSplit;
 
