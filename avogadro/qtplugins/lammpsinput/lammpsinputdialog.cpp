@@ -143,11 +143,11 @@ void LammpsInputDialog::updatePreviewText()
     QString message =
       tr("Would you like to update the preview text, losing all "
          "changes made in the Lammps input deck preview pane?");
-    int response = QMessageBox::question(
+    auto response = QMessageBox::question(
       this, tr("Overwrite modified input files?"), message,
       QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 
-    if (static_cast<QMessageBox::StandardButton>(response) == QMessageBox::No) {
+    if (response == QMessageBox::No) {
       return;
     }
   }
@@ -330,7 +330,7 @@ void LammpsInputDialog::generateClicked()
     QString formattedError = tr("Warning:\n\n%1\n\nWould you like to continue?")
                                .arg(errors.join("\n"));
 
-    QMessageBox::StandardButton reply =
+    auto reply =
       QMessageBox::warning(this, tr("Write input files"), formattedError,
                            QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
 
