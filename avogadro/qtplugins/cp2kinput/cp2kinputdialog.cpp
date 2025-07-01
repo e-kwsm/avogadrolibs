@@ -539,11 +539,10 @@ void Cp2kInputDialog::updatePreviewText()
     QString message = tr("The input file has been modified. "
                          "Would you like to overwrite your changes to reflect "
                          "the new geometry or job options?");
-    int response = QMessageBox::question(
+    auto response = QMessageBox::question(
       this, tr("Overwrite modified input file?"), message,
       QMessageBox::Yes | QMessageBox::No, QMessageBox::No);
-    if (static_cast<QMessageBox::StandardButton>(response) !=
-        QMessageBox::Yes) {
+    if (response != QMessageBox::Yes) {
       restoreOptionCache();
       return;
     }
