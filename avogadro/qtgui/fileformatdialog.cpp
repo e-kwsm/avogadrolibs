@@ -48,7 +48,7 @@ FileFormatDialog::FormatFilePair FileFormatDialog::fileToRead(
 
     // If none found, give user the option to retry.
     if (!format) {
-      QMessageBox::StandardButton reply = QMessageBox::question(
+      auto reply = QMessageBox::question(
         parent, caption,
         tr("Unable to find a suitable file reader for "
            "the selected file."),
@@ -99,7 +99,7 @@ FileFormatDialog::FormatFilePair FileFormatDialog::fileToWrite(
           .toLower();
 
       if (extension.isEmpty()) {
-        QMessageBox::StandardButton reply = QMessageBox::question(
+        auto reply = QMessageBox::question(
           parentWidget, caption,
           tr(
             "The file extension is missing, so the format cannot be determined."
@@ -114,7 +114,7 @@ FileFormatDialog::FormatFilePair FileFormatDialog::fileToWrite(
         }
       }
 
-      QMessageBox::StandardButton reply = QMessageBox::question(
+      auto reply = QMessageBox::question(
         parentWidget, caption,
         tr("Unable to find a suitable file writer for "
            "the selected format."),
