@@ -187,12 +187,12 @@ void SpaceGroup::perceiveSpaceGroup()
     std::string hallSymbol =
       Core::SpaceGroups::hallSymbol(m_molecule->hallNumber());
 
-    QMessageBox::StandardButton reply;
-    reply = QMessageBox::question(nullptr, tr("Perceive Space Group"),
-                                  tr("The space group is already set to: %1.\n"
-                                     "Would you like to overwrite it?")
-                                    .arg(hallSymbol.c_str()),
-                                  QMessageBox::Yes | QMessageBox::No);
+    auto reply =
+      QMessageBox::question(nullptr, tr("Perceive Space Group"),
+                            tr("The space group is already set to: %1.\n"
+                               "Would you like to overwrite it?")
+                              .arg(hallSymbol.c_str()),
+                            QMessageBox::Yes | QMessageBox::No);
     if (reply == QMessageBox::No)
       return;
   }
@@ -218,12 +218,11 @@ void SpaceGroup::perceiveSpaceGroup()
   // Failure
   else {
     // Ask if the user wants to try again with a different tolerance
-    QMessageBox::StandardButton reply;
-    reply = QMessageBox::question(nullptr, tr("Failure"),
-                                  tr("Space group perception failed.\n"
-                                     "Would you like to try again with a "
-                                     "different tolerance?"),
-                                  QMessageBox::Yes | QMessageBox::No);
+    auto reply = QMessageBox::question(nullptr, tr("Failure"),
+                                       tr("Space group perception failed.\n"
+                                          "Would you like to try again with a "
+                                          "different tolerance?"),
+                                       QMessageBox::Yes | QMessageBox::No);
     if (reply == QMessageBox::Yes) {
       setTolerance();
       perceiveSpaceGroup(); // Recursion!
@@ -234,12 +233,12 @@ void SpaceGroup::perceiveSpaceGroup()
 void SpaceGroup::reduceToPrimitive()
 {
   // Confirm the tolerance
-  QMessageBox::StandardButton reply;
-  reply = QMessageBox::question(nullptr, tr("Primitive Reduction"),
-                                tr("The tolerance is currently set to: %1.\n"
-                                   "Proceed with this tolerance?")
-                                  .arg(m_spgTol),
-                                QMessageBox::Yes | QMessageBox::No);
+  auto reply =
+    QMessageBox::question(nullptr, tr("Primitive Reduction"),
+                          tr("The tolerance is currently set to: %1.\n"
+                             "Proceed with this tolerance?")
+                            .arg(m_spgTol),
+                          QMessageBox::Yes | QMessageBox::No);
   if (reply == QMessageBox::No)
     setTolerance();
 
@@ -259,12 +258,12 @@ void SpaceGroup::reduceToPrimitive()
 void SpaceGroup::conventionalizeCell()
 {
   // Confirm the tolerance
-  QMessageBox::StandardButton reply;
-  reply = QMessageBox::question(nullptr, tr("Conventionalize Cell"),
-                                tr("The tolerance is currently set to: %1.\n"
-                                   "Proceed with this tolerance?")
-                                  .arg(m_spgTol),
-                                QMessageBox::Yes | QMessageBox::No);
+  auto reply =
+    QMessageBox::question(nullptr, tr("Conventionalize Cell"),
+                          tr("The tolerance is currently set to: %1.\n"
+                             "Proceed with this tolerance?")
+                            .arg(m_spgTol),
+                          QMessageBox::Yes | QMessageBox::No);
   if (reply == QMessageBox::No)
     setTolerance();
 
@@ -284,12 +283,12 @@ void SpaceGroup::conventionalizeCell()
 void SpaceGroup::symmetrize()
 {
   // Confirm the tolerance
-  QMessageBox::StandardButton reply;
-  reply = QMessageBox::question(nullptr, tr("Symmetrize Cell"),
-                                tr("The tolerance is currently set to: %1.\n"
-                                   "Proceed with this tolerance?")
-                                  .arg(m_spgTol),
-                                QMessageBox::Yes | QMessageBox::No);
+  auto reply =
+    QMessageBox::question(nullptr, tr("Symmetrize Cell"),
+                          tr("The tolerance is currently set to: %1.\n"
+                             "Proceed with this tolerance?")
+                            .arg(m_spgTol),
+                          QMessageBox::Yes | QMessageBox::No);
   if (reply == QMessageBox::No)
     setTolerance();
 
@@ -334,10 +333,9 @@ void SpaceGroup::reduceToAsymmetricUnit()
      << "\nSpace Group: " << intNum << "\nHall symbol: " << hallSymbol
      << "\nInternational symbol: " << intShort
      << "\n\nProceed with this space group?";
-  QMessageBox::StandardButton reply;
-  reply = QMessageBox::question(nullptr, tr("Reduce to Asymmetric Unit"),
-                                tr(ss.str().c_str()),
-                                QMessageBox::Yes | QMessageBox::No);
+  auto reply = QMessageBox::question(nullptr, tr("Reduce to Asymmetric Unit"),
+                                     tr(ss.str().c_str()),
+                                     QMessageBox::Yes | QMessageBox::No);
 
   // If the user does not want to use the perceived space group,
   // let the user set it.
