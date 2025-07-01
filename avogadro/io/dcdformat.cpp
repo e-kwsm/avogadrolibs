@@ -118,8 +118,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   // DELTA (timestep) is stored as a double with X-PLOR but as a float with
   // CHARMM
   if (charmm & DCD_IS_CHARMM) {
-    float ftmp;
-    ftmp = *(reinterpret_cast<float*>(raw + 40));
+    float ftmp = *(reinterpret_cast<float*>(raw + 40));
 
     DELTA = static_cast<double>(ftmp);
   } else {
