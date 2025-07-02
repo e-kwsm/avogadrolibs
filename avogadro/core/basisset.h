@@ -217,18 +217,18 @@ protected:
   /**
    * The orbital symmetry labels (if they exist) for the MOs
    */
-  std::vector<std::string> m_symmetryLabels[2];
+  std::array<std::vector<std::string>, 2> m_symmetryLabels;
 
   /**
    * @brief This block stores energies for the molecular orbitals (same
    * convention as the molecular orbital coefficients).
    */
-  std::vector<double> m_moEnergy[2];
+  std::array<std::vector<double>, 2> m_moEnergy;
 
   /**
    * @brief The occupancy of the molecular orbitals.
    */
-  std::vector<unsigned char> m_moOccupancy[2];
+  std::array<std::vector<unsigned char>, 2> m_moOccupancy;
 };
 
 inline unsigned int BasisSet::lumo(ElectronType type) const
