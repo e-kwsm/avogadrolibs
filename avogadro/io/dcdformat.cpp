@@ -65,8 +65,10 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   /** Endian type, Buffer and Format char containers for unpacking and storing
    * data using struct library */
   char endian = '>';
-  std::vector<char> buff(BUFSIZ);
-  char fmt[BUFSIZ];
+  std::string buff;
+  buff.resize(BUFSIZ);
+  std::string fmt;
+  fmt.resize(BUFSIZ);
 
   /** Variables to store various components from the binary data unpacked using
    * the struct library */
@@ -116,12 +118,12 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // Determining whether the trajectory file is from CHARMM or not
-  if (*(reinterpret_cast<int*>(raw + 80)) != 0) {
+  if (*(reinterpret_cast<const int*>(raw.substr(80).c_str())) != 0) {
     charmm = DCD_IS_CHARMM;
-    if (*(reinterpret_cast<int*>(raw + 44)) != 0)
+    if (*(reinterpret_cast<const int*>(raw.substr(44).c_str())) != 0)
       charmm |= DCD_HAS_EXTRA_BLOCK;
 
-    if (*(reinterpret_cast<int*>(raw + 48)) == 1)
+    if (*(reinterpret_cast<const int*>(raw.substr(48).c_str())) == 1)
       charmm |= DCD_HAS_4DIMS;
   } else {
     charmm = 0;
@@ -135,17 +137,17 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   struct_unpack(raw + 8, fmt, &ISTART, &NSAVC);
 
   // number of fixed atoms
-  NAMNF = *(reinterpret_cast<int*>(raw + 36));
+  NAMNF = *(reinterpret_cast<const int*>(raw.substr(36).c_str()));
 
   // DELTA (timestep) is stored as a double, in picoseconds, with X-PLOR, but
   // as a float in AKMA time units with CHARMM. Both end up in picoseconds.
   if (charmm & DCD_IS_CHARMM) {
     float ftmp;
-    ftmp = *(reinterpret_cast<float*>(raw + 40));
+    ftmp = *(reinterpret_cast<const float*>(raw.substr(40).c_str()));
 
     DELTA = static_cast<double>(ftmp) * AkmaToPicoseconds;
   } else {
-    (DELTA) = *(reinterpret_cast<double*>(raw + 40));
+    (DELTA) = *(reinterpret_cast<const double*>(raw.substr(40).c_str()));
   }
 
   // DELTA is the integration timestep, but only every NSAVC-th step was
@@ -291,7 +293,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
     struct_unpack(buff.data(), fmt, &leadingNum);
 
     if (leadingNum == 48) {
-      double unitcell[6];
+      std::array<double, 6> unitcell;
       for (double& aa : unitcell) {
         snprintf(fmt, sizeof(fmt), "%c%dd", endian, 1);
         if (!readBlock(inStream, buff, struct_calcsize(fmt), fileLen)) {
