@@ -61,7 +61,7 @@ public:
   ~TextProperties();
 
   TextProperties& operator=(TextProperties other);
-  void swap(TextProperties& other);
+  void swap(TextProperties& other) noexcept;
 
   bool operator==(const TextProperties& other) const;
   bool operator!=(const TextProperties& other) const
@@ -285,7 +285,7 @@ inline Vector3ub TextProperties::colorRgb() const
   return Vector3ub(m_rgba);
 }
 
-inline void swap(TextProperties& lhs, TextProperties& rhs)
+inline void swap(TextProperties& lhs, TextProperties& rhs) noexcept
 {
   lhs.swap(rhs);
 }
