@@ -48,23 +48,18 @@ public:
 
 private:
   size_t m_size;
-  size_t* m_values;
+  std::vector<size_t> m_values;
 };
 
 DistanceMatrix::DistanceMatrix(size_t size)
-  : m_size(size), m_values(new size_t[size * size])
+  : m_size(size), m_values(size * size, 0)
 {
-  memset(m_values, 0, size * size * sizeof(size_t));
 }
 
 [[maybe_unused]]
 DistanceMatrix::DistanceMatrix(const DistanceMatrix& other)
-  : m_size(other.m_size),
-    m_values(other.m_size ? new size_t[other.m_size * other.m_size] : nullptr)
+  : m_size(other.m_size), m_values(other.m_values)
 {
-  if (m_values)
-    std::copy(other.m_values, other.m_values + (other.m_size * other.m_size),
-              m_values);
 }
 
 [[maybe_unused]]
@@ -76,10 +71,7 @@ DistanceMatrix& DistanceMatrix::operator=(DistanceMatrix other)
   return *this;
 }
 
-DistanceMatrix::~DistanceMatrix()
-{
-  delete[] m_values;
-}
+DistanceMatrix::~DistanceMatrix() {}
 
 size_t& DistanceMatrix::operator()(size_t i, size_t j)
 {
