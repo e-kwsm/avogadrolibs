@@ -39,8 +39,7 @@ unsigned short AvoSpglib::getHallNumber(Molecule& mol, double cartTol)
 
   Index numAtoms = mol.atomCount();
   auto* positions = new double[numAtoms][3];
-  std::vector<int> types;
-  types.resize(numAtoms);
+  std::vector<int> types(numAtoms);
 
   const Array<unsigned char>& atomicNums = mol.atomicNumbers();
   const Array<Vector3>& pos = mol.atomPositions3d();
@@ -113,8 +112,7 @@ bool AvoSpglib::standardizeCell(Molecule& mol, double cartTol, bool toPrimitive,
   // See http://atztogo.github.io/spglib/api.html#spg-standardize-cell
   int numAtomsMultiplier = toPrimitive ? 1 : 4;
   auto* positions = new double[numAtoms * numAtomsMultiplier][3];
-  std::vector<int> types;
-  types.resize(numAtoms * numAtomsMultiplier);
+  std::vector<int> types(numAtoms * numAtomsMultiplier);
 
   const Array<unsigned char>& atomicNums = mol.atomicNumbers();
   const Array<Vector3>& pos = mol.atomPositions3d();
