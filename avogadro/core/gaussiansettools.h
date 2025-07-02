@@ -11,6 +11,7 @@
 #include "basisset.h"
 #include "vector.h"
 
+#include <array>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -134,7 +135,7 @@ private:
 
   // map from symmetry to angular momentum
   // S, SP, P, D, D5, F, F7, G, G9, etc.
-  const int symToL[13] = { 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
+  const std::array<int, 13> symToL = { 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
 };
 
 } // namespace Avogadro::Core
