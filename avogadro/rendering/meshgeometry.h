@@ -49,7 +49,7 @@ public:
   ~MeshGeometry() override;
 
   MeshGeometry& operator=(MeshGeometry);
-  friend void swap(MeshGeometry& lhs, MeshGeometry& rhs);
+  friend void swap(MeshGeometry& lhs, MeshGeometry& rhs) noexcept;
 
   /**
    * Accept a visit from our friendly visitor.
@@ -160,7 +160,7 @@ inline MeshGeometry& MeshGeometry::operator=(MeshGeometry other)
   return *this;
 }
 
-inline void swap(MeshGeometry& lhs, MeshGeometry& rhs)
+inline void swap(MeshGeometry& lhs, MeshGeometry& rhs) noexcept
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
