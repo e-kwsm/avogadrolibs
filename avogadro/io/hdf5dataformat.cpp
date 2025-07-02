@@ -435,9 +435,9 @@ std::vector<int> Hdf5DataFormat::readRawDataset(
   }
 
   // Get actual dimensions.
-  hsize_t* hdims = new hsize_t[ndims];
-  if (H5Sget_simple_extent_dims(dataspace_id, hdims, nullptr) != ndims) {
-    delete[] hdims;
+  std::vector<hsize_t> hdims;
+  hdims.resize(ndims);
+  if (H5Sget_simple_extent_dims(dataspace_id, hdims.data(), nullptr) != ndims) {
     H5Sclose(dataspace_id);
     H5Dclose(dataset_id);
     return result;
