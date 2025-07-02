@@ -425,10 +425,10 @@ TEST(SpaceGroupTest, fillUnitCell)
     mat4.col(1) = Vector3{ tmp, -tmp, tmp };
     mat4.col(2) = Vector3{ tmp, tmp, -tmp };
 
-    UnitCell uc4{ mat4 };
+    auto* uc4 = new UnitCell{ mat4 };
     Molecule mol4;
-    mol4.setUnitCell(&uc4);
-    mol4.addAtom(25).setPosition3d({ 0.0, 0.0, 0.0 });
+    mol4.setUnitCell(uc4);
+    mol4.addAtom(25).setPosition3d(uc4->toCartesian({ 0.0, 0.0, 0.0 }));
 
     // 529, I m -3 m
     SpaceGroups::fillUnitCell(mol4, 529, cartTol);
@@ -446,10 +446,10 @@ TEST(SpaceGroupTest, fillUnitCell)
     mat4.col(1) = Vector3{ tmp, 0.0, tmp };
     mat4.col(2) = Vector3{ tmp, tmp, 0.0 };
 
-    UnitCell uc4{ mat4 };
+    auto* uc4 = new UnitCell{ mat4 };
     Molecule mol4;
-    mol4.setUnitCell(&uc4);
-    mol4.addAtom(14).setPosition3d(uc4.toCartesian(Vector3{ 0.0, 0.0, 0.0 }));
+    mol4.setUnitCell(uc4);
+    mol4.addAtom(14).setPosition3d(uc4->toCartesian({ 0.0, 0.0, 0.0 }));
 
     // 525, F d -3 m
     SpaceGroups::fillUnitCell(mol4, 525, cartTol);
