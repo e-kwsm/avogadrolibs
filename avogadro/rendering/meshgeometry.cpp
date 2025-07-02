@@ -108,25 +108,25 @@ void MeshGeometry::update()
     d->fragmentShaderOpaque->setSource(mesh_opaque_fs);
 
     if (!d->vertexShader->compile())
-      cout << d->vertexShader->error() << endl;
+      cout << d->vertexShader->error() << '\n';
     if (!d->fragmentShader->compile())
-      cout << d->fragmentShader->error() << endl;
+      cout << d->fragmentShader->error() << '\n';
     if (!d->fragmentShaderOpaque->compile())
-      cout << d->fragmentShaderOpaque->error() << endl;
+      cout << d->fragmentShaderOpaque->error() << '\n';
 
     if (d->program == nullptr)
       d->program = new ShaderProgram;
     d->program->attachShader(*d->vertexShader);
     d->program->attachShader(*d->fragmentShader);
     if (!d->program->link())
-      cout << d->program->error() << endl;
+      cout << d->program->error() << '\n';
 
     if (d->programOpaque == nullptr)
       d->programOpaque = new ShaderProgram;
     d->programOpaque->attachShader(*d->vertexShader);
     d->programOpaque->attachShader(*d->fragmentShaderOpaque);
     if (!d->programOpaque->link())
-      cout << d->programOpaque->error() << endl;
+      cout << d->programOpaque->error() << '\n';
   }
 }
 
@@ -146,44 +146,44 @@ void MeshGeometry::render(const Camera& camera)
     program = d->programOpaque;
 
   if (!program->bind())
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
 
   d->vbo.bind();
   d->ibo.bind();
 
   // Set up our attribute arrays.
   if (!program->enableAttributeArray("vertex"))
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   if (!program->useAttributeArray("vertex", PackedVertex::vertexOffset(),
                                   sizeof(PackedVertex), FloatType, 3,
                                   ShaderProgram::NoNormalize)) {
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   }
   if (!program->enableAttributeArray("color"))
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   if (!program->useAttributeArray("color", PackedVertex::colorOffset(),
                                   sizeof(PackedVertex), UCharType, 4,
                                   ShaderProgram::Normalize)) {
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   }
   if (!program->enableAttributeArray("normal"))
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   if (!program->useAttributeArray("normal", PackedVertex::normalOffset(),
                                   sizeof(PackedVertex), FloatType, 3,
                                   ShaderProgram::NoNormalize)) {
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   }
 
   // Set up our uniforms (model-view and projection matrices right now).
   if (!program->setUniformValue("modelView", camera.modelView().matrix())) {
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   }
   if (!program->setUniformValue("projection", camera.projection().matrix())) {
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   }
   Matrix3f normalMatrix = camera.modelView().linear().inverse().transpose();
   if (!program->setUniformValue("normalMatrix", normalMatrix))
-    std::cout << program->error() << std::endl;
+    std::cout << program->error() << '\n';
 
   // Render the loaded spheres using the shader and bound VBO.
   glDrawRangeElements(GL_TRIANGLES, 0,
