@@ -14,7 +14,7 @@ TEST(MutexTest, lock)
   Mutex mutex;
 
   mutex.lock();
-  int array[15];
+  std::array<int, 15> array;
   array[4] = 1;
   mutex.unlock();
 
@@ -27,7 +27,7 @@ TEST(MutexText, tryLock)
 
   mutex.lock();
   EXPECT_FALSE(mutex.tryLock());
-  int array[15];
+  std::array<int, 15> array;
   array[4] = 2;
   mutex.unlock();
 
