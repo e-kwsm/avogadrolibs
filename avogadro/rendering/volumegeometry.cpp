@@ -442,7 +442,7 @@ void VolumeGeometry::initialize()
     d->fragmentShader = new Shader(Shader::Fragment);
     d->fragmentShader->setSource(volume_fs);
     if (!d->fragmentShader->compile())
-      std::cout << d->fragmentShader->error() << std::endl;
+      std::cout << d->fragmentShader->error() << '\n';
   }
 
   if (!d->program) {
