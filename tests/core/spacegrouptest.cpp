@@ -436,6 +436,10 @@ TEST(SpaceGroupTest, fillUnitCell)
     auto hallNumber4 = AvoSpglib::getHallNumber(mol4, cartTol);
     EXPECT_EQ(hallNumber4, 525);
     EXPECT_EQ(mol4.atomCount(), 2);
+    const auto pos = mol4.atomPosition3d(1);
+    EXPECT_TRUE((pos == Vector3{ 0.25, 0.25, 0.25 }) ||
+                (pos == Vector3{ 0.75, 0.75, 0.75 }))
+      << pos;
   }
 }
 
