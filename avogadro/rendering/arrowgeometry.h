@@ -42,7 +42,7 @@ public:
   ~ArrowGeometry() override;
 
   ArrowGeometry& operator=(ArrowGeometry);
-  friend void swap(ArrowGeometry& lhs, ArrowGeometry& rhs);
+  friend void swap(ArrowGeometry& lhs, ArrowGeometry& rhs) noexcept;
 
   /**
    * Accept a visit from our friendly visitor.
@@ -115,7 +115,7 @@ inline ArrowGeometry& ArrowGeometry::operator=(ArrowGeometry other)
   return *this;
 }
 
-inline void swap(ArrowGeometry& lhs, ArrowGeometry& rhs)
+inline void swap(ArrowGeometry& lhs, ArrowGeometry& rhs) noexcept
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
