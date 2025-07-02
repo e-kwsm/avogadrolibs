@@ -37,7 +37,7 @@ Vector3 ChargeModel::dipoleMoment(const Molecule& mol) const
   Vector3 dipole(0.0, 0.0, 0.0);
   if (static_cast<std::size_t>(charges.rows()) != positions.size())
     std::cout << "Error: charges " << charges.rows() << " != positions "
-              << positions.size() << std::endl;
+              << positions.size() << '\n' << std::flush;
 
   for (Eigen::Index i = 0; i < charges.size(); ++i)
     dipole += charges(i, 0) * positions[i];
