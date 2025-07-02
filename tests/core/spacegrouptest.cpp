@@ -418,6 +418,26 @@ TEST(SpaceGroupTest, fillUnitCell)
   ASSERT_EQ(mol3.atomCount(), 30);
 
   {
+    // δ-Mn (FCC)
+    Matrix3 mat4;
+    constexpr double tmp = 1.546;
+    mat4.col(0) = Vector3{ -tmp, tmp, tmp };
+    mat4.col(1) = Vector3{ tmp, -tmp, tmp };
+    mat4.col(2) = Vector3{ tmp, tmp, -tmp };
+
+    UnitCell uc4{ mat4 };
+    Molecule mol4;
+    mol4.setUnitCell(&uc4);
+    mol4.addAtom(25).setPosition3d({ 0.0, 0.0, 0.0 });
+
+    // 529, I m -3 m
+    SpaceGroups::fillUnitCell(mol4, 529, cartTol);
+    auto hallNumber4 = AvoSpglib::getHallNumber(mol4, cartTol);
+    EXPECT_EQ(hallNumber4, 529);
+    EXPECT_EQ(mol4.atomCount(), 1);
+  }
+
+  {
     // diamond structured Si, primitive cell
     Matrix3 mat4;
     constexpr double lattice_const = 5.43;
