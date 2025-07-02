@@ -202,12 +202,12 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   // Reading the coordinates of positions, velocities and forces
   for (auto& _kid : keyCheck2) {
     natoms = header["natoms"];
-    double coordsDouble[DIM];
-    float coordsFloat[DIM];
+    std::array<double, DIM> coordsDouble;
+    std::array<float, DIM> coordsFloat;
     for (int i = 0; i < natoms; ++i) {
       if (header[_kid] != 0) {
-        memset(coordsDouble, 0, sizeof(coordsDouble));
-        memset(coordsFloat, 0, sizeof(coordsFloat));
+        coordsDouble.fill(0);
+        coordsFloat.fill(0);
         if (doubleStatus) {
           snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM);
           inStream.read(buff, struct_calcsize(fmt));
@@ -374,12 +374,12 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     // Reading the coordinates of positions, velocities and forces
     for (auto& _kid : keyCheck2) {
-      double coordsDouble[DIM];
-      float coordsFloat[DIM];
+      std::array<double, DIM> coordsDouble;
+      std::array<float, DIM> coordsFloat;
       for (int i = 0; i < natoms; ++i) {
         if (header[_kid] != 0) {
-          memset(coordsDouble, 0, sizeof(coordsDouble));
-          memset(coordsFloat, 0, sizeof(coordsFloat));
+          coordsDouble.fill(0);
+          coordsFloat.fill(0);
           if (doubleStatus) {
             snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM);
             inStream.read(buff, struct_calcsize(fmt));
