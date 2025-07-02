@@ -33,7 +33,7 @@ TEST(CameraTest, perspective)
   if (!camera.projection().matrix().isApprox(expected)) {
     std::cout << "Error: No match\n"
               << camera.projection().matrix() << "\nexpected\n"
-              << expected << std::endl;
+              << expected << '\n';
   }
 }
 
@@ -51,7 +51,7 @@ TEST(CameraTest, orthographic)
   if (!camera.projection().matrix().isApprox(expected)) {
     std::cout << "Error: No match\n"
               << camera.projection().matrix() << "\nexpected\n"
-              << expected << std::endl;
+              << expected << '\n';
   }
 }
 
@@ -65,7 +65,7 @@ TEST(CameraTest, projectOrthographic)
   Vector3f expected(10.0, 20.0, 0.0);
   EXPECT_TRUE(position.isApprox(expected));
   if (!position.isApprox(expected)) {
-    std::cout << "Error: No match\n" << position << std::endl;
+    std::cout << "Error: No match\n" << position << '\n';
   }
 }
 
@@ -80,7 +80,7 @@ TEST(CameraTest, projectPerspective)
   Vector3f expected(59.1583f, 77.4748f, 1.0f);
   EXPECT_TRUE(position.isApprox(expected));
   if (!position.isApprox(expected)) {
-    std::cout << "Error: No match\n" << position << std::endl;
+    std::cout << "Error: No match\n" << position << '\n';
   }
 }
 
@@ -94,7 +94,7 @@ TEST(CameraTest, unProjectOrthographic)
   Vector3f expected(1.0, 7.5, 0.0);
   EXPECT_TRUE(position.isApprox(expected));
   if (!position.isApprox(expected)) {
-    std::cout << "Error: No match\n" << position << std::endl;
+    std::cout << "Error: No match\n" << position << '\n';
   }
 }
 
@@ -109,6 +109,6 @@ TEST(CameraTest, unProjectPerspective)
   Vector3f expected(-0.436764f, 0.181985f, 9.0f);
   EXPECT_TRUE(position.isApprox(expected));
   if (!position.isApprox(expected)) {
-    std::cout << "Error: No match\n" << position << std::endl;
+    std::cout << "Error: No match\n" << position << '\n';
   }
 }
