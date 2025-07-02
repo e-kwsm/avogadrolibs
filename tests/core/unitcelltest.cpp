@@ -49,7 +49,7 @@ bool checkParams(const UnitCell& cell, Real a, Real b, Real c, Real alpha,
               << "c=" << cell.c() << " "
               << "alpha=" << cell.alpha() * RAD_TO_DEG << " "
               << "beta=" << cell.beta() * RAD_TO_DEG << " "
-              << "gamma=" << cell.gamma() * RAD_TO_DEG << std::endl;
+              << "gamma=" << cell.gamma() * RAD_TO_DEG << '\n';
     return false;
   }
   return true;
