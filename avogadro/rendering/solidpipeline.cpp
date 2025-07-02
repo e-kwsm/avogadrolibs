@@ -120,17 +120,17 @@ void SolidPipeline::initialize()
   d->screenVertexShader.setType(Shader::Vertex);
   d->screenVertexShader.setSource(solid_vs);
   if (!d->screenVertexShader.compile())
-    std::cout << d->screenVertexShader.error() << std::endl;
+    std::cout << d->screenVertexShader.error() << '\n';
 
   d->firstFragmentShader.setType(Shader::Fragment);
   d->firstFragmentShader.setSource(solid_first_fs);
   if (!d->firstFragmentShader.compile())
-    std::cout << d->firstFragmentShader.error() << std::endl;
+    std::cout << d->firstFragmentShader.error() << '\n';
 
   d->firstStageShaders.attachShader(d->screenVertexShader);
   d->firstStageShaders.attachShader(d->firstFragmentShader);
   if (!d->firstStageShaders.link())
-    std::cout << d->firstStageShaders.error() << std::endl;
+    std::cout << d->firstStageShaders.error() << '\n';
 }
 
 void SolidPipeline::begin()
