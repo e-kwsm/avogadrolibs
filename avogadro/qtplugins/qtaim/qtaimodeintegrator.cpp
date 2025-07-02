@@ -723,11 +723,11 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
   qreal eps;
   qreal esttol;
   qreal et;
-  qreal* f1;
-  qreal* f2;
-  qreal* f3;
-  qreal* f4;
-  qreal* f5;
+  std::vector<qreal> f1;
+  std::vector<qreal> f2;
+  std::vector<qreal> f3;
+  std::vector<qreal> f4;
+  std::vector<qreal> f5;
   bool hfaild;
   qreal hmin;
   qint64 i;
@@ -856,11 +856,11 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
   //  set the counter for function evaluations, NFE;
   //  estimate the starting stepsize.
   //
-  f1 = new qreal[neqn];
-  f2 = new qreal[neqn];
-  f3 = new qreal[neqn];
-  f4 = new qreal[neqn];
-  f5 = new qreal[neqn];
+  f1.resize(neqn);
+  f2.resize(neqn);
+  f3.resize(neqn);
+  f4.resize(neqn);
+  f5.resize(neqn);
 
   if (mflag == 1) {
     init = 0;
@@ -916,11 +916,6 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
   //
   if (kop == 100) {
     kop = 0;
-    delete[] f1;
-    delete[] f2;
-    delete[] f3;
-    delete[] f4;
-    delete[] f5;
     return 7;
   }
   //
@@ -935,11 +930,6 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
     QTAIMODEIntegrator::r8_f(*t, y, yp);
     nfe = nfe + 1;
 
-    delete[] f1;
-    delete[] f2;
-    delete[] f3;
-    delete[] f4;
-    delete[] f5;
     return 2;
   }
   //
@@ -1017,17 +1007,13 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
       //
       if (MAXNFE < nfe) {
         kflag = 4;
-        delete[] f1;
-        delete[] f2;
-        delete[] f3;
-        delete[] f4;
-        delete[] f5;
         return 4;
       }
       //
       //  Advance an approximate solution over one step of length H.
       //
-      r8_fehl(neqn, y, *t, h, yp, f1, f2, f3, f4, f5, f1);
+      r8_fehl(neqn, y, *t, h, yp, f1.data(), f2.data(), f3.data(), f4.data(),
+              f5.data(), f1.data());
       nfe = nfe + 5;
       //
       //  Compute and test allowable tolerances versus local error estimates
@@ -1041,11 +1027,6 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
         et = r8_abs(y[k]) + r8_abs(f1[k]) + ae;
 
         if (et <= 0.0) {
-          delete[] f1;
-          delete[] f2;
-          delete[] f3;
-          delete[] f4;
-          delete[] f5;
           return 5;
         }
 
@@ -1077,11 +1058,6 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
 
       if (r8_abs(h) < hmin) {
         kflag = 6;
-        delete[] f1;
-        delete[] f2;
-        delete[] f3;
-        delete[] f4;
-        delete[] f5;
         return 6;
       }
     }
@@ -1117,20 +1093,10 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
     //
     if (output) {
       *t = tout;
-      delete[] f1;
-      delete[] f2;
-      delete[] f3;
-      delete[] f4;
-      delete[] f5;
       return 2;
     }
 
     if (flag <= 0) {
-      delete[] f1;
-      delete[] f2;
-      delete[] f3;
-      delete[] f4;
-      delete[] f5;
       return (-2);
     }
   }
