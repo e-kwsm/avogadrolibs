@@ -307,17 +307,17 @@ std::vector<int> Hdf5DataFormat::datasetDimensions(
   }
 
   // Get actual dimensions.
-  hsize_t* hdims = new hsize_t[ndims];
-  int checkDims = H5Sget_simple_extent_dims(dataspace_id, hdims, nullptr);
+  std::vector<hsize_t> hdims(ndims);
+  int checkDims =
+    H5Sget_simple_extent_dims(dataspace_id, hdims.data(), nullptr);
 
   // Copy dimensions if successful.
   if (checkDims == ndims) {
     result.resize(ndims);
-    std::copy(hdims, hdims + ndims, result.begin());
+    std::copy(hdims.begin(), hdims.end(), result.begin());
   }
 
   // Cleanup.
-  delete[] hdims;
   H5Sclose(dataspace_id);
   H5Dclose(dataset_id);
 
@@ -338,14 +338,14 @@ bool Hdf5DataFormat::writeRawDataset(const std::string& path,
   }
 
   // Get dimensions of data.
-  hsize_t* hdims = new hsize_t[ndims];
+  std::vector<hsize_t> hdims;
+  hdims.reserve(ndims);
   for (int i = 0; i < ndims; ++i) {
-    hdims[i] = static_cast<hsize_t>(dims[i]);
+    hdims.push_back(static_cast<hsize_t>(dims[i]));
   }
 
   // Create a dataspace description.
-  hid_t dataspace_id = H5Screate_simple(ndims, hdims, nullptr);
-  delete[] hdims;
+  hid_t dataspace_id = H5Screate_simple(ndims, hdims.data(), nullptr);
   if (dataspace_id < 0)
     return false;
 
@@ -381,10 +381,10 @@ bool Hdf5DataFormat::writeRawDataset(const std::string& path,
 bool Hdf5DataFormat::writeDataset(const std::string& path,
                                   const MatrixX& data) const
 {
-  size_t dims[2] = { static_cast<size_t>(data.rows()),
-                     static_cast<size_t>(data.cols()) };
+  std::array<size_t, 2> dims = { static_cast<size_t>(data.rows()),
+                                 static_cast<size_t>(data.cols()) };
   // Transpose data -- Eigen uses column-major ordering.
-  return this->writeRawDataset(path, data.transpose().data(), 2, dims);
+  return this->writeRawDataset(path, data.transpose().data(), 2, dims.data());
 }
 
 bool Hdf5DataFormat::writeDataset(const std::string& path,
@@ -447,7 +447,6 @@ std::vector<int> Hdf5DataFormat::readRawDataset(
   for (int i = 0; i < ndims; ++i) {
     result.push_back(static_cast<int>(hdims[i]));
   }
-  delete[] hdims;
 
   // Allocate and read into data.
   if (!container.resize(result)) {
