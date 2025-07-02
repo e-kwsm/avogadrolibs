@@ -112,10 +112,10 @@ void SphereGeometry::update()
     }
 
     if (!d->vbo.upload(sphereVertices, BufferObject::ArrayBuffer))
-      cout << d->vbo.error() << endl;
+      cout << d->vbo.error() << '\n';
 
     if (!d->ibo.upload(sphereIndices, BufferObject::ElementArrayBuffer))
-      cout << d->ibo.error() << endl;
+      cout << d->ibo.error() << '\n';
 
     d->numberOfVertices = sphereVertices.size();
     d->numberOfIndices = sphereIndices.size();
@@ -132,9 +132,9 @@ void SphereGeometry::update()
     d->fragmentShader->setType(Shader::Fragment);
     d->fragmentShader->setSource(spheres_fs);
     if (!d->vertexShader->compile())
-      cout << d->vertexShader->error() << endl;
+      cout << d->vertexShader->error() << '\n';
     if (!d->fragmentShader->compile())
-      cout << d->fragmentShader->error() << endl;
+      cout << d->fragmentShader->error() << '\n';
 
     if (d->program == nullptr)
       d->program = new ShaderProgram;
@@ -142,7 +142,7 @@ void SphereGeometry::update()
     d->program->attachShader(*d->vertexShader);
     d->program->attachShader(*d->fragmentShader);
     if (!d->program->link())
-      cout << d->program->error() << endl;
+      cout << d->program->error() << '\n';
 
     /*
         d->program.detachShader(d->vertexShader);
@@ -162,44 +162,44 @@ void SphereGeometry::render(const Camera& camera)
   update();
 
   if (!d->program->bind())
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
 
   d->vbo.bind();
   d->ibo.bind();
 
   // Set up our attribute arrays.
   if (!d->program->enableAttributeArray("vertex"))
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   if (!d->program->useAttributeArray(
         "vertex", ColorTextureVertex::vertexOffset(),
         sizeof(ColorTextureVertex), FloatType, 3, ShaderProgram::NoNormalize)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->enableAttributeArray("color"))
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   if (!d->program->useAttributeArray("color", ColorTextureVertex::colorOffset(),
                                      sizeof(ColorTextureVertex), UCharType, 3,
                                      ShaderProgram::Normalize)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->enableAttributeArray("texCoordinate"))
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   if (!d->program->useAttributeArray(
         "texCoordinate", ColorTextureVertex::textureCoordOffset(),
         sizeof(ColorTextureVertex), FloatType, 2, ShaderProgram::NoNormalize)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
 
   // Set up our uniforms (model-view and projection matrices right now).
   if (!d->program->setUniformValue("modelView", camera.modelView().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("projection",
                                    camera.projection().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("opacity", m_opacity)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
 
   // Render the loaded spheres using the shader and bound VBO.
