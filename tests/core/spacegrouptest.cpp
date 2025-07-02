@@ -416,6 +416,20 @@ TEST(SpaceGroupTest, fillUnitCell)
 
   // It should now have 30 atoms
   ASSERT_EQ(mol3.atomCount(), 30);
+
+  // Si
+  Molecule mol4;
+
+  UnitCell* uc4 = new UnitCell(3.84, 3.84, 3.84, 60.0, 60.0, 60.0);
+  mol4.setUnitCell(uc4);
+  mol4.addAtom(14).setPosition3d(uc4->toCartesian(Vector3(0.0, 0.0, 0.0)));
+  // mol4.addAtom(14).setPosition3d(uc4->toCartesian(Vector3(0.25, 0.25, 0.25)));
+
+  // 525, F d -3 m
+  SpaceGroups::fillUnitCell(mol4, 525, cartTol);
+  auto hallNumber4 = AvoSpglib::getHallNumber(mol4, cartTol);
+  ASSERT_EQ(hallNumber4, 525);
+  ASSERT_EQ(mol4.atomCount(), 2);
 }
 
 TEST(SpaceGroupTest, reduceToAsymmetricUnit)
