@@ -243,12 +243,12 @@ bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
 {
   // Title
   if (mol.data("name").toString().length())
-    outStream << mol.data("name").toString() << std::endl;
+    outStream << mol.data("name").toString() << '\n';
   else
-    outStream << "POSCAR" << std::endl;
+    outStream << "POSCAR" << '\n';
 
   // Scaling factor
-  outStream << " 1.00000000" << std::endl;
+  outStream << " 1.00000000" << '\n';
 
   // 3x3 matrix. Transpose is needed to orient the matrix correctly.
   const Matrix3& mat = mol.unitCell()->cellMatrix().transpose();
@@ -257,7 +257,7 @@ bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
       outStream << "   " << std::setw(10) << std::right << std::fixed
                 << std::setprecision(8) << mat(i, j);
     }
-    outStream << std::endl;
+    outStream << '\n';
   }
 
   // Adapted from chemkit:
@@ -274,7 +274,7 @@ bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
     outStream << "   " << Elements::symbol(iter->first);
     ++iter;
   }
-  outStream << std::endl;
+  outStream << '\n';
 
   // Numbers of each type
   iter = composition.begin();
@@ -282,10 +282,10 @@ bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
     outStream << "   " << iter->second;
     ++iter;
   }
-  outStream << std::endl;
+  outStream << '\n';
 
   // Direct or cartesian?
-  outStream << "Direct" << std::endl;
+  outStream << "Direct" << '\n';
 
   // Final section is atomic coordinates
   size_t numAtoms = mol.atomCount();
