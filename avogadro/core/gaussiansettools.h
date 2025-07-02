@@ -12,6 +12,7 @@
 #include "gaussianset.h"
 #include "vector.h"
 
+#include <array>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -205,11 +206,12 @@ private:
 
   // Map from shell type enum to angular momentum
   // S, SP, P, D, D5, F, F7, G, G9, H, H11, I, I13
-  static constexpr int symToL[13] = { 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
+  static constexpr std::array<int, 13> symToL = { 0, 1, 1, 2, 2, 3, 3,
+                                                  4, 4, 5, 5, 6, 6 };
 
   // Map from shell type enum to number of basis function components
-  static constexpr int symToNComp[13] = { 1,  4, 3,  6,  5,  10, 7,
-                                          15, 9, 21, 11, 28, 13 };
+  static constexpr std::array<int, 13> symToNComp = { 1,  4, 3,  6,  5,  10, 7,
+                                                      15, 9, 21, 11, 28, 13 };
 };
 
 } // namespace Avogadro::Core
