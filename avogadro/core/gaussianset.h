@@ -13,6 +13,7 @@
 #include <avogadro/core/matrix.h>
 #include <avogadro/core/vector.h>
 
+#include <array>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -280,7 +281,7 @@ private:
    * @brief This block can be once (doubly) or in two parts (alpha and beta) for
    * open shell calculations.
    */
-  MatrixX m_moMatrix[2]; //! MO coefficient matrix
+  std::array<MatrixX, 2> m_moMatrix; //! MO coefficient matrix
 
   /**
    * @brief If there are a sequence of related MOs, they are stored here, and
