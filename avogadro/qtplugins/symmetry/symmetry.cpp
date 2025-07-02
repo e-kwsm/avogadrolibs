@@ -180,7 +180,7 @@ void Symmetry::detectSymmetry()
   // interface with libmsym
   msym_error_t ret = MSYM_SUCCESS;
   msym_element_t* elements = nullptr;
-  char point_group[6];
+  std::array<char, 6> point_group;
   std::array<double, 3> cm;
   double radius = 0.0;
 
@@ -243,8 +243,8 @@ void Symmetry::detectSymmetry()
   }
 
   /* Get the point group name */
-  if (MSYM_SUCCESS !=
-      (ret = msymGetPointGroupName(m_ctx, sizeof(char[6]), point_group))) {
+  if (MSYM_SUCCESS != (ret = msymGetPointGroupName(m_ctx, sizeof(char[6]),
+                                                   point_group.data()))) {
     free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
@@ -320,7 +320,7 @@ void Symmetry::detectSymmetry()
   //    printf("Found point group [0] %s select subgroup\n",point_group);
   // for(int i = 0; i < msgl;i++) printf("\t [%d] %s\n",i+1,msg[i].name);
 
-  m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(point_group));
+  m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(point_group.data()));
   m_symmetryWidget->setEquivalenceSets(mesl, mes);
   m_symmetryWidget->setSymmetryOperations(msopsl, msops);
   m_symmetryWidget->setSubgroups(msgl, msg);
