@@ -73,10 +73,10 @@ void ArrowGeometry::update()
     d->vertexShader.setType(Shader::Vertex);
     d->vertexShader.setSource(arrow_vs);
     if (!d->vertexShader.compile())
-      cout << d->vertexShader.error() << endl;
+      cout << d->vertexShader.error() << '\n';
     d->program.attachShader(d->vertexShader);
     if (!d->program.link())
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
   }
 }
 
@@ -89,14 +89,14 @@ void ArrowGeometry::render(const Camera& camera)
   update();
 
   if (!d->program.bind())
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
 
   // Set up our uniforms (model-view and projection matrices right now).
   if (!d->program.setUniformValue("modelView", camera.modelView().matrix())) {
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
   }
   if (!d->program.setUniformValue("projection", camera.projection().matrix())) {
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
   }
 
   // Render the arrows using the shader.
