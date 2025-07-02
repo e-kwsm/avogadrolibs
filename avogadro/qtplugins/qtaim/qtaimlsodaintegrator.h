@@ -131,9 +131,12 @@ private:
   /* no static variable for prja(), solsy() */
   /* static variables for stoda() */
 
-  double conit, crate, el[14], elco[13][14], hold, rmax, tesco[13][4];
+  double conit, crate, elco[13][14], hold, rmax, tesco[13][4];
+  std::array<double, 14> el;
   int ialth, ipup, lmax, meo, nslp;
-  double pdest, pdlast, ratio, cm1[13], cm2[6];
+  double pdest, pdlast, ratio;
+  std::array<double, 13> cm1;
+  std::array<double, 6> cm2;
   int icount, irflag;
 
   /* static variable for block data */
