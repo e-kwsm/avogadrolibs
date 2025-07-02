@@ -79,7 +79,8 @@ int main(int argc, char* argv[])
 {
   if (argc != 3) {
     cout << "Incorrrect number of arguments specified. "
-         << "2 arguments expected, path to input xml, and output file name.\n";
+         << "2 arguments expected, path to input xml, and output file name."
+         << '\n';
     return 1;
   }
 
@@ -109,7 +110,7 @@ int main(int argc, char* argv[])
         elements.emplace_back(string(attribute.value()));
       }
       else {
-        cout << "Error, no atom id found. Skipping this entry." << endl;
+        cout << "Error, no atom id found. Skipping this entry." << '\n';
         atomNode = atomNode.next_sibling("atom");
         continue;
       }
@@ -171,7 +172,7 @@ int main(int argc, char* argv[])
   string outputFileName = string(argv[2]) + ".h";
   ofstream output(outputFileName.c_str());
   if (!output.is_open()) {
-    cout << "Failed to open file " << outputFileName << endl;
+    cout << "Failed to open file " << outputFileName << '\n';
     return 1;
   }
 
