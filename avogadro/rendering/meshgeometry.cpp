@@ -96,16 +96,16 @@ void MeshGeometry::update()
     d->fragmentShader->setSource(mesh_fs);
 
     if (!d->vertexShader->compile())
-      cout << d->vertexShader->error() << endl;
+      cout << d->vertexShader->error() << '\n';
     if (!d->fragmentShader->compile())
-      cout << d->fragmentShader->error() << endl;
+      cout << d->fragmentShader->error() << '\n';
 
     if (d->program == nullptr)
       d->program = new ShaderProgram;
     d->program->attachShader(*d->vertexShader);
     d->program->attachShader(*d->fragmentShader);
     if (!d->program->link())
-      cout << d->program->error() << endl;
+      cout << d->program->error() << '\n';
   }
 
   // Check if the VBOs are ready, if not get them ready.
@@ -160,21 +160,21 @@ void MeshGeometry::render(const Camera& camera)
   ShaderProgram* program = d->program;
 
   if (!program->bind())
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
 
   // Bind the VAO (captures all vertex attribute state)
   d->vao.bind();
 
   // Set up our uniforms (model-view and projection matrices right now).
   if (!program->setUniformValue("modelView", camera.modelView().matrix())) {
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   }
   if (!program->setUniformValue("projection", camera.projection().matrix())) {
-    cout << program->error() << endl;
+    cout << program->error() << '\n';
   }
   Matrix3f normalMatrix = camera.modelView().linear().inverse().transpose();
   if (!program->setUniformValue("normalMatrix", normalMatrix))
-    std::cout << program->error() << std::endl;
+    std::cout << program->error() << '\n';
 
   // Render the mesh using the shader and VAO.
   glDrawRangeElements(GL_TRIANGLES, 0,

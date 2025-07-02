@@ -207,25 +207,25 @@ void CylinderGeometry::render(const Camera& camera)
   update();
 
   if (!d->program->bind())
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
 
   // Bind the VAO (captures all vertex attribute state)
   d->vao.bind();
 
   // Set up our uniforms (model-view and projection matrices right now).
   if (!d->program->setUniformValue("modelView", camera.modelView().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("projection",
                                    camera.projection().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("opacity", m_opacity)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   Matrix3f normalMatrix = camera.modelView().linear().inverse().transpose();
   if (!d->program->setUniformValue("normalMatrix", normalMatrix))
-    std::cout << d->program->error() << std::endl;
+    std::cout << d->program->error() << '\n';
 
   // Render the loaded cylinders using the shader and VAO.
   glDrawRangeElements(GL_TRIANGLES, 0, static_cast<GLuint>(d->numberOfVertices),

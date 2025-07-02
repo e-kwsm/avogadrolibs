@@ -136,10 +136,10 @@ void SphereGeometry::update()
     }
 
     if (!d->vbo.upload(sphereVertices, BufferObject::ArrayBuffer))
-      cout << d->vbo.error() << endl;
+      cout << d->vbo.error() << '\n';
 
     if (!d->ibo.upload(sphereIndices, BufferObject::ElementArrayBuffer))
-      cout << d->ibo.error() << endl;
+      cout << d->ibo.error() << '\n';
 
     // Set up VAO with vertex attribute bindings (OpenGL 4.0 core profile)
     // Check bind() return values - if binding fails (e.g., no GL context),
@@ -202,7 +202,7 @@ void SphereGeometry::render(const Camera& camera)
   update();
 
   if (!d->program->bind())
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
 
   // Bind the VAO (captures all vertex attribute state)
   // If bind fails (e.g., no GL context), skip rendering to avoid GL errors.
@@ -213,14 +213,14 @@ void SphereGeometry::render(const Camera& camera)
 
   // Set up our uniforms (model-view and projection matrices right now).
   if (!d->program->setUniformValue("modelView", camera.modelView().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("projection",
                                    camera.projection().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("opacity", m_opacity)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
 
   // Render the loaded spheres using the shader and VAO.

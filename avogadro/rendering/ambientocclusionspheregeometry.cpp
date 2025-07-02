@@ -625,35 +625,34 @@ private:
     GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
     switch (status) {
       case GL_FRAMEBUFFER_COMPLETE:
-        std::cerr << "GL_FRAMEBUFFER_COMPLETE" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_COMPLETE" << '\n';
         break;
       case GL_FRAMEBUFFER_UNDEFINED:
-        std::cerr << "GL_FRAMEBUFFER_UNDEFINED" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_UNDEFINED" << '\n';
         break;
       case GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT:
-        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT" << '\n';
         break;
       case GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT:
-        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT"
-                  << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT" << '\n';
         break;
       case GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER:
-        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER" << '\n';
         break;
       case GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER:
-        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER" << '\n';
         break;
       case GL_FRAMEBUFFER_UNSUPPORTED:
-        std::cerr << "GL_FRAMEBUFFER_UNSUPPORTED" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_UNSUPPORTED" << '\n';
         break;
       case GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE:
-        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE" << '\n';
         break;
       case GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS:
-        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS" << '\n';
         break;
       default:
-        std::cerr << "GL_FRAMEBUFFER_???" << std::endl;
+        std::cerr << "GL_FRAMEBUFFER_???" << '\n';
         break;
     }
   }
@@ -884,28 +883,28 @@ public:
 
     // set the uniforms
     if (!m_depthProgram.setUniformValue("u_modelView", modelView)) {
-      cout << m_depthProgram.error() << endl;
+      cout << m_depthProgram.error() << '\n';
     }
     if (!m_depthProgram.setUniformValue("u_projection", projection)) {
-      cout << m_depthProgram.error() << endl;
+      cout << m_depthProgram.error() << '\n';
     }
 
     // set the attributes
     if (!m_depthProgram.enableAttributeArray("a_pos"))
-      cout << m_depthProgram.error() << endl;
+      cout << m_depthProgram.error() << '\n';
     if (!m_depthProgram.useAttributeArray("a_pos",
                                           ColorTextureVertex::vertexOffset(),
                                           sizeof(ColorTextureVertex), FloatType,
                                           3, ShaderProgram::NoNormalize)) {
-      cout << m_depthProgram.error() << endl;
+      cout << m_depthProgram.error() << '\n';
     }
     if (!m_depthProgram.enableAttributeArray("a_corner"))
-      cout << m_depthProgram.error() << endl;
+      cout << m_depthProgram.error() << '\n';
     if (!m_depthProgram.useAttributeArray(
           "a_corner", ColorTextureVertex::textureCoordOffset(),
           sizeof(ColorTextureVertex), FloatType, 2,
           ShaderProgram::NoNormalize)) {
-      cout << m_depthProgram.error() << endl;
+      cout << m_depthProgram.error() << '\n';
     }
 
     // draw
@@ -934,52 +933,52 @@ public:
 
     // set the uniforms
     if (!m_aoProgram.setUniformValue("u_modelView", modelView)) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
     if (!m_aoProgram.setUniformValue("u_projection", projection)) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
     if (!m_aoProgram.setUniformValue("u_textureSize",
                                      static_cast<GLfloat>(textureSize))) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
     if (!m_aoProgram.setUniformValue(
           "u_tileSize",
           1.0f / std::ceil(std::sqrt(static_cast<float>(m_numSpheres))))) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
     if (!m_aoProgram.setUniformValue("u_depthTex", 0)) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
     if (!m_aoProgram.setUniformValue("u_intensity",
                                      1.0f / (0.3f * numDirections))) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
 
     // set the attributes
     if (!m_aoProgram.enableAttributeArray("a_pos"))
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     if (!m_aoProgram.useAttributeArray("a_pos",
                                        ColorTextureVertex::vertexOffset(),
                                        sizeof(ColorTextureVertex), FloatType, 3,
                                        ShaderProgram::NoNormalize)) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
     if (!m_aoProgram.enableAttributeArray("a_corner"))
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     if (!m_aoProgram.useAttributeArray("a_corner",
                                        ColorTextureVertex::textureCoordOffset(),
                                        sizeof(ColorTextureVertex), FloatType, 2,
                                        ShaderProgram::NoNormalize)) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
     if (!m_aoProgram.enableAttributeArray("a_tileOffset"))
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     if (!m_aoProgram.useAttributeArray(
           "a_tileOffset", ColorTextureVertex::textureCoord2Offset(),
           sizeof(ColorTextureVertex), FloatType, 2,
           ShaderProgram::NoNormalize)) {
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
     }
 
     // draw
@@ -1018,31 +1017,31 @@ private:
     m_depthVertexShader.setType(Shader::Vertex);
     m_depthVertexShader.setSource(sphere_ao_depth_vs);
     if (!m_depthVertexShader.compile())
-      cout << m_depthVertexShader.error() << endl;
+      cout << m_depthVertexShader.error() << '\n';
     m_depthFragmentShader.setType(Shader::Fragment);
     m_depthFragmentShader.setSource(sphere_ao_depth_fs);
     if (!m_depthFragmentShader.compile())
-      cout << m_depthFragmentShader.error() << endl;
+      cout << m_depthFragmentShader.error() << '\n';
     // link depth program
     m_depthProgram.attachShader(m_depthVertexShader);
     m_depthProgram.attachShader(m_depthFragmentShader);
     if (!m_depthProgram.link())
-      cout << m_depthProgram.error() << endl;
+      cout << m_depthProgram.error() << '\n';
 
     // compile AO shaders
     m_aoVertexShader.setType(Shader::Vertex);
     m_aoVertexShader.setSource(sphere_ao_bake_vs);
     if (!m_aoVertexShader.compile())
-      cout << m_aoVertexShader.error() << endl;
+      cout << m_aoVertexShader.error() << '\n';
     m_aoFragmentShader.setType(Shader::Fragment);
     m_aoFragmentShader.setSource(sphere_ao_bake_fs);
     if (!m_aoFragmentShader.compile())
-      cout << m_aoFragmentShader.error() << endl;
+      cout << m_aoFragmentShader.error() << '\n';
     // link AO program
     m_aoProgram.attachShader(m_aoVertexShader);
     m_aoProgram.attachShader(m_aoFragmentShader);
     if (!m_aoProgram.link())
-      cout << m_aoProgram.error() << endl;
+      cout << m_aoProgram.error() << '\n';
   }
 
   Shader m_depthVertexShader;
@@ -1260,27 +1259,27 @@ void AmbientOcclusionSphereGeometry::render(const Camera& camera)
   glBindTexture(GL_TEXTURE_2D, d->aoTexture);
 
   if (!d->program.bind())
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
 
   // Bind the VAO (captures all vertex attribute state)
   d->vao.bind();
 
   // Set up our uniforms
   if (!d->program.setUniformValue("u_modelView", camera.modelView().matrix())) {
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
   }
   if (!d->program.setUniformValue(
         "u_invModelView",
         Eigen::Matrix3f(
           camera.modelView().matrix().block<3, 3>(0, 0).inverse()))) {
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
   }
   if (!d->program.setUniformValue("u_projection",
                                   camera.projection().matrix())) {
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
   }
   if (!d->program.setUniformValue("u_tex", 0)) {
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
   }
 
   // To avoid texture interpolation from neighboring tiles, texture coords are
@@ -1300,7 +1299,7 @@ void AmbientOcclusionSphereGeometry::render(const Camera& camera)
         "u_texScale", (1.0f - 2.0f * texel / tile) /
                         (2.0f * std::ceil(std::sqrt(
                                   static_cast<float>(m_spheres.size())))))) {
-    cout << d->program.error() << endl;
+    cout << d->program.error() << '\n';
   }
 
   // Render the loaded spheres using the shader and VAO.

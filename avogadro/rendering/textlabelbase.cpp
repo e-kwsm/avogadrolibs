@@ -158,7 +158,7 @@ void TextLabelBase::RenderImpl::render(const Camera& cam)
   if (textureInvalid) {
     std::cerr << "Unable to render text label -- no texture set. "
                  "This is a bug."
-              << std::endl;
+              << '\n';
     return;
   }
 
@@ -211,7 +211,7 @@ void TextLabelBase::RenderImpl::compileShaders()
   vertexShader->setType(Shader::Vertex);
   vertexShader->setSource(textlabelbase_vs);
   if (!vertexShader->compile()) {
-    std::cerr << vertexShader->error() << std::endl;
+    std::cerr << vertexShader->error() << '\n';
     return;
   }
 
@@ -220,7 +220,7 @@ void TextLabelBase::RenderImpl::compileShaders()
   fragmentShader->setType(Shader::Fragment);
   fragmentShader->setSource(textlabelbase_fs);
   if (!fragmentShader->compile()) {
-    std::cerr << fragmentShader->error() << std::endl;
+    std::cerr << fragmentShader->error() << '\n';
     return;
   }
 
@@ -229,7 +229,7 @@ void TextLabelBase::RenderImpl::compileShaders()
   shaderProgram->attachShader(*vertexShader);
   shaderProgram->attachShader(*fragmentShader);
   if (!shaderProgram->link()) {
-    std::cerr << shaderProgram->error() << std::endl;
+    std::cerr << shaderProgram->error() << '\n';
     return;
   }
   /*  shaderProgram->detachShader(vertexShader);
