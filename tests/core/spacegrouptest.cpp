@@ -419,22 +419,23 @@ TEST(SpaceGroupTest, fillUnitCell)
 
   {
     // diamond structured Si, primitive cell
-    // UnitCell uc4 {3.84, 3.84, 3.84, M_PI / 3.0, M_PI / 3.0, M_PI / 3.0};
     Matrix3 mat4;
-    mat4.col(0) = Vector3{ 0.0, 2.7, 2.7 };
-    mat4.col(1) = Vector3{ 2.7, 0.0, 2.7 };
-    mat4.col(2) = Vector3{ 2.7, 2.7, 0.0 };
+    constexpr double lattice_const = 5.43;
+    constexpr double tmp = 0.5 * lattice_const;
+    mat4.col(0) = Vector3{ 0.0, tmp, tmp };
+    mat4.col(1) = Vector3{ tmp, 0.0, tmp };
+    mat4.col(2) = Vector3{ tmp, tmp, 0.0 };
 
     UnitCell uc4{ mat4 };
     Molecule mol4;
     mol4.setUnitCell(&uc4);
-    mol4.addAtom(14).setPosition3d(uc4.toCartesian(Vector3(0.0, 0.0, 0.0)));
+    mol4.addAtom(14).setPosition3d(uc4.toCartesian(Vector3{ 0.0, 0.0, 0.0 }));
 
     // 525, F d -3 m
     SpaceGroups::fillUnitCell(mol4, 525, cartTol);
     auto hallNumber4 = AvoSpglib::getHallNumber(mol4, cartTol);
-    ASSERT_EQ(hallNumber4, 525);
-    ASSERT_EQ(mol4.atomCount(), 2);
+    EXPECT_EQ(hallNumber4, 525);
+    EXPECT_EQ(mol4.atomCount(), 2);
   }
 }
 
