@@ -39,7 +39,7 @@ public:
   ~LineStripGeometry() override;
 
   LineStripGeometry& operator=(LineStripGeometry);
-  friend void swap(LineStripGeometry& lhs, LineStripGeometry& rhs);
+  friend void swap(LineStripGeometry& lhs, LineStripGeometry& rhs) noexcept;
 
   /**
    * Accept a visit from our friendly visitor.
@@ -125,7 +125,7 @@ inline LineStripGeometry& LineStripGeometry::operator=(LineStripGeometry other)
   return *this;
 }
 
-inline void swap(LineStripGeometry& lhs, LineStripGeometry& rhs)
+inline void swap(LineStripGeometry& lhs, LineStripGeometry& rhs) noexcept
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
