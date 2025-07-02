@@ -468,12 +468,12 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
       }
 
       const unsigned int lineSize = 256;
-      char atomline[lineSize];
-      snprintf(atomline, lineSize - 1, "%-*d %d %10f %10f %10f\n",
+      std::array<char, lineSize> atomline;
+      snprintf(atomline.data(), lineSize - 1, "%-*d %d %10f %10f %10f\n",
                static_cast<int>(log(numAtoms)) + 1, static_cast<int>(i + 1),
                static_cast<int>(composition[atomicNumbers[i]]), coords.x(),
                coords.y(), coords.z());
-      atomStream << atomline;
+      atomStream << atomline.data();
     }
 
     atomStream << std::endl << std::endl;
