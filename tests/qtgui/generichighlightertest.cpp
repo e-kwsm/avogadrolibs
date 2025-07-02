@@ -86,7 +86,7 @@ public:
 } // namespace
 
 // This currently seg faults...
-TEST(DISABLED_GenericHighlighterTest, exercise)
+TEST(GenericHighlighterTest, exercise)
 {
   QTextDocument doc("A regexp will turn this blue.\n"
                     "Only this and that will be yellow.\n"
@@ -121,8 +121,11 @@ TEST(DISABLED_GenericHighlighterTest, exercise)
     "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" "
     "\"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
     "<html><head><meta name=\"qrichtext\" content=\"1\" />"
-    "<style type=\"text/css\">\n"
+    "<meta charset=\"utf-8\" /><style type=\"text/css\">\n"
     "p, li { white-space: pre-wrap; }\n"
+    "hr { height: 1px; border-width: 0; }\n"
+    "li.unchecked::marker { content: \"\\2610\"; }\n"
+    "li.checked::marker { content: \"\\2612\"; }\n"
     "</style></head><body>\n"
     "<pre style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
     "margin-right:0px; -qt-block-indent:0; text-indent:0px;\">"
@@ -138,7 +141,7 @@ TEST(DISABLED_GenericHighlighterTest, exercise)
     "will be yellow.</span></pre>\n"
     "<pre style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
     "margin-right:0px; -qt-block-indent:0; text-indent:0px;\">"
-    "<span style=\" color:#ff0000;\">"
+    "<span style=\" color:#a0a0a4;\">"
     "A wildcard expression will turn this red.</span></pre>\n"
     "<pre style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; "
     "margin-right:0px; -qt-block-indent:0; text-indent:0px;\">"
