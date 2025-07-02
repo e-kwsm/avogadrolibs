@@ -300,8 +300,7 @@ std::vector<int> Hdf5DataFormat::datasetDimensions(
   }
 
   // Get actual dimensions.
-  std::vector<hsize_t> hdims;
-  hdims.resize(ndims);
+  std::vector<hsize_t> hdims(ndims);
   int checkDims =
     H5Sget_simple_extent_dims(dataspace_id, hdims.data(), nullptr);
 
