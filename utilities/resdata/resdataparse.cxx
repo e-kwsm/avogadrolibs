@@ -38,8 +38,7 @@ int main(int argc, char* argv[])
   */
   if (argc != 3) {
     cout << "Incorrrect number of arguments specified. "
-         << "2 arguments expected, path to input txt, and output file name."
-         << endl;
+         << "2 arguments expected, path to input txt, and output file name.\n";
     return 1;
   }
 
@@ -47,7 +46,7 @@ int main(int argc, char* argv[])
   string outputFileName = string(argv[2]) + ".h";
   ofstream output(outputFileName.c_str());
   if (!output.is_open()) {
-    cout << "Failed to open file " << outputFileName << endl;
+    cout << "Failed to open file " << outputFileName << '\n';
     return 1;
   }
 
@@ -108,7 +107,7 @@ int main(int argc, char* argv[])
 
   ifstream file(argv[1]);
   if (!file.is_open()) {
-    cout << "Failed to open file " << argv[1] << endl;
+    cout << "Failed to open file " << argv[1] << '\n';
     return 1;
   }
 
