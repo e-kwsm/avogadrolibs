@@ -10,6 +10,8 @@
 
 #include <avogadro/core/array.h>
 
+#include <array>
+
 namespace Avogadro {
 namespace Rendering {
 
@@ -27,7 +29,7 @@ public:
     Vector4ub color;          //  4 bytes
     Vector3f normal;          // 12 bytes
     Vector3f vertex;          // 12 bytes
-    unsigned char padding[4]; //  4 bytes
+    std::array<unsigned char, 4> padding; //  4 bytes
 
     PackedVertex(const Vector4ub& c, const Vector3f& n, const Vector3f& v)
       : color(c), normal(n), vertex(v)
