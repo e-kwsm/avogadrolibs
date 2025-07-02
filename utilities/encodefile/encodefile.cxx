@@ -4,6 +4,7 @@
  * if supplied the final one would be the variable name.
  */
 
+#include <array>
 #include <iostream>
 #include <fstream>
 
@@ -33,9 +34,9 @@ int main(int argc, char *argv[])
     output << "inputvariable";
   output << " =";
   while (!input.eof()) {
-    char buffer[256];
-    input.getline(buffer, 256);
-    output << std::endl << "  \"" << buffer << "\\n\"";
+    std::array<char, 256> buffer;
+    input.getline(buffer.data(), 256);
+    output << std::endl << "  \"" << buffer.data() << "\\n\"";
   }
   output << ";" << std::endl;
 
