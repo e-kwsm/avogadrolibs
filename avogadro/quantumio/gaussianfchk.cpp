@@ -204,7 +204,8 @@ void GaussianFchk::processLine(std::istream& in)
       m_alphaMOcoeffs =
         readArrayD(in, Core::lexicalCast<int>(list[2]).value_or(0), 16);
     } else {
-      cout << "Error, alpha MO coefficients, n = " << m_MOcoeffs.size() << endl;
+      cout << "Error, alpha MO coefficients, n = " << m_MOcoeffs.size() << '\n'
+           << flush;
     }
   } else if (key == "Beta MO coefficients" && list.size() > 2) {
     m_betaMOcoeffs =
@@ -394,7 +395,7 @@ vector<int> GaussianFchk::readArrayI(std::istream& in, unsigned int n)
     for (auto& i : list) {
       if (tmp.size() >= n) {
         cout << "Too many variables read in. File may be inconsistent. "
-             << tmp.size() << " of " << n << endl;
+             << tmp.size() << " of " << n << '\n';
         return tmp;
       }
       tmp.push_back(Core::lexicalCast<int>(i, ok));
@@ -429,7 +430,7 @@ vector<double> GaussianFchk::readArrayD(std::istream& in, unsigned int n,
       for (auto& i : list) {
         if (tmp.size() >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
-               << tmp.size() << " of " << n << endl;
+               << tmp.size() << " of " << n << '\n';
           return tmp;
         }
         tmp.push_back(Core::lexicalCast<double>(i, ok) * factor);
@@ -447,7 +448,7 @@ vector<double> GaussianFchk::readArrayD(std::istream& in, unsigned int n,
           break;
         if (tmp.size() >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
-               << tmp.size() << " of " << n << endl;
+               << tmp.size() << " of " << n << '\n';
           return tmp;
         }
         tmp.push_back(Core::lexicalCast<double>(substring, ok) * factor);
@@ -486,7 +487,7 @@ bool GaussianFchk::readDensityMatrix(std::istream& in, unsigned int n,
       for (auto& k : list) {
         if (cnt >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
-               << cnt << " of " << n << endl;
+               << cnt << " of " << n << '\n';
           return false;
         }
         // Read in lower half matrix
@@ -514,7 +515,7 @@ bool GaussianFchk::readDensityMatrix(std::istream& in, unsigned int n,
           break;
         } else if (cnt >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
-               << cnt << " of " << n << endl;
+               << cnt << " of " << n << '\n';
           return false;
         }
         // Read in lower half matrix
@@ -562,7 +563,7 @@ bool GaussianFchk::readSpinDensityMatrix(std::istream& in, unsigned int n,
       for (auto& k : list) {
         if (cnt >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
-               << cnt << " of " << n << endl;
+               << cnt << " of " << n << '\n';
           return false;
         }
         // Read in lower half matrix
@@ -590,7 +591,7 @@ bool GaussianFchk::readSpinDensityMatrix(std::istream& in, unsigned int n,
           break;
         } else if (cnt >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
-               << cnt << " of " << n << endl;
+               << cnt << " of " << n << '\n';
           return false;
         }
         // Read in lower half matrix
@@ -634,24 +635,24 @@ void GaussianFchk::outputAll()
   for (unsigned int i = 0; i < m_shellTypes.size(); ++i)
     cout << i << " : type = " << m_shellTypes.at(i)
          << ", number = " << m_shellNums.at(i)
-         << ", atom = " << m_shelltoAtom.at(i) << endl;
+         << ", atom = " << m_shelltoAtom.at(i) << '\n';
   if (m_MOcoeffs.size()) {
     cout << "MO coefficients:\n";
     for (double m_MOcoeff : m_MOcoeffs)
       cout << m_MOcoeff << "\t";
-    cout << endl << endl;
+    cout << "\n\n";
   }
   if (m_alphaMOcoeffs.size()) {
     cout << "Alpha MO coefficients:\n";
     for (double m_alphaMOcoeff : m_alphaMOcoeffs)
       cout << m_alphaMOcoeff << "\t";
-    cout << endl << endl;
+    cout << "\n\n";
   }
   if (m_betaMOcoeffs.size()) {
     cout << "Beta MO coefficients:\n";
     for (double m_betaMOcoeff : m_betaMOcoeffs)
       cout << m_betaMOcoeff << "\t";
-    cout << endl << endl;
+    cout << "\n\n";
   }
 }
 } // namespace Avogadro::QuantumIO
