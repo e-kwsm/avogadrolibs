@@ -252,7 +252,7 @@ inline void TextProperties::colorRgba(unsigned char rgba[4]) const
 
 inline Vector4ub TextProperties::colorRgba() const
 {
-  return Vector4ub(m_rgba);
+  return Vector4ub(m_rgba.data());
 }
 
 inline void TextProperties::setColorRgb(unsigned char r, unsigned char g,
@@ -284,7 +284,7 @@ inline void TextProperties::colorRgb(unsigned char rgb[3]) const
 
 inline Vector3ub TextProperties::colorRgb() const
 {
-  return Vector3ub(m_rgba);
+  return Vector3ub(m_rgba.data());
 }
 
 inline void swap(TextProperties& lhs, TextProperties& rhs)
