@@ -80,7 +80,8 @@ QVector3D QTAIMLSODAIntegrator::integrate(QVector3D x0y0z0)
   mesflg = 1;
 
   double rwork1, rwork5, rwork6, rwork7;
-  double atol[4], rtol[4], t, tout, y[4];
+  double t, tout;
+  std::array<double, 4> atol, rtol, y;
   int iwork1, iwork2, iwork5, iwork6, iwork7, iwork8, iwork9;
   int neq = 3;
   int itol, itask, istate, iopt, jt;
@@ -141,9 +142,9 @@ QVector3D QTAIMLSODAIntegrator::integrate(QVector3D x0y0z0)
       }
     } // beta spheres
 
-    lsoda(neq, y, &t, tout, itol, rtol, atol, itask, &istate, iopt, jt, iwork1,
-          iwork2, iwork5, iwork6, iwork7, iwork8, iwork9, rwork1, rwork5,
-          rwork6, rwork7);
+    lsoda(neq, y.data(), &t, tout, itol, rtol.data(), atol.data(), itask,
+          &istate, iopt, jt, iwork1, iwork2, iwork5, iwork6, iwork7, iwork8,
+          iwork9, rwork1, rwork5, rwork6, rwork7);
 
     m_path.append(QVector3D(y[1], y[2], y[3]));
 
@@ -1999,7 +2000,8 @@ static globally.  The above sum is done in reverse order.
 void QTAIMLSODAIntegrator::cfode(int meth_)
 {
   int i, nq_, nqm1, nqp1;
-  double agamq, fnq, fnqm1, pc[13], pint, ragq, rqfac, rq1fac, tsign, xpin;
+  double agamq, fnq, fnqm1, pint, ragq, rqfac, rq1fac, tsign, xpin;
+  std::array<double, 13> pc;
   /*
    cfode is called by the integrator routine to set coefficients
    needed there.  The coefficients for the current method, as
