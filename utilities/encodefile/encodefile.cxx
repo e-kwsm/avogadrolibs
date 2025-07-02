@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
   while (!input.eof()) {
     std::array<char, 256> buffer;
     input.getline(buffer.data(), 256);
-    output << std::endl << "  \"" << buffer << "\\n\"";
+    output << std::endl << "  \"" << buffer.data() << "\\n\"";
   }
   output << ";" << std::endl;
 
