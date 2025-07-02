@@ -11,6 +11,7 @@
 #include <avogadro/core/array.h>
 #include <avogadro/core/vector.h>
 
+#include <array>
 #include <QtCore/QThread>
 
 namespace Avogadro {
@@ -249,7 +250,7 @@ protected:
    * Reference :
    * https://github.com/sandialabs/miniIsosurface/blob/master/flyingEdges/util/MarchingCubesTables.h
    */
-  static const unsigned char m_numTris[256];
+  static const std::array<unsigned char, 256> m_numTris;
   static const bool m_isCut[256][12];
   static const signed char m_caseTriangles[256][16];
   static const unsigned char m_edgeVertices[12][2];
