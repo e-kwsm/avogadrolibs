@@ -115,9 +115,9 @@ private:
   /* newly added static variables */
 
   int ml, mu, imxer;
-  int mord[3];
+  std::array<int, 3> mord;
   double sqrteta, *yp1, *yp2;
-  double sm1[13];
+  std::array<double, 13> sm1;
 
   /* static variables for lsoda() */
 
