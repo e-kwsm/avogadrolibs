@@ -7,6 +7,8 @@
 
 #include "avogadrogl.h"
 
+#include <vector>
+
 namespace Avogadro::Rendering {
 
 #ifdef __EMSCRIPTEN__
