@@ -236,7 +236,7 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
       a = a - terCount;
       a = rawToAtomId[a];
 
-      int bCoords[] = { 11, 16, 21, 26 };
+      std::array<int, 4> bCoords = { 11, 16, 21, 26 };
       for (int i = 0; i < 4; i++) {
         // Check if buffer is long enough for this column
         if (static_cast<int>(buffer.length()) < bCoords[i] + 5)
