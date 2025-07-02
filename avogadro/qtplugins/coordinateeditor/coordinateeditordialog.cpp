@@ -683,7 +683,7 @@ QString CoordinateEditorDialog::detectInputFormat() const
   QList<QString> tokens(sample.split(TOKEN_SEPARATOR, Qt::SkipEmptyParts));
   QList<TokenType> tokenTypes;
   tokenTypes.reserve(tokens.size());
-  size_t tokenTypeCounts[3] = { 0, 0, 0 };
+  std::array<size_t, 3> tokenTypeCounts = { 0, 0, 0 };
 
   foreach (const QString& token, tokens) {
     TokenType tokenType = String;
