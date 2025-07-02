@@ -29,7 +29,7 @@ public:
   UnitCell(const UnitCell& other);
   ~UnitCell() = default;
   UnitCell& operator=(UnitCell other);
-  friend void swap(UnitCell& lhs, UnitCell& rhs);
+  friend void swap(UnitCell& lhs, UnitCell& rhs) noexcept;
 
   /** The lattice vector in the unit cell. Units: Angstrom @{ */
   Vector3 aVector() const { return m_cellMatrix.col(0); }
@@ -193,7 +193,7 @@ inline UnitCell& UnitCell::operator=(UnitCell other)
   return *this;
 }
 
-inline void swap(UnitCell& lhs, UnitCell& rhs)
+inline void swap(UnitCell& lhs, UnitCell& rhs) noexcept
 {
   using std::swap;
   swap(lhs.m_cellMatrix, rhs.m_cellMatrix);
