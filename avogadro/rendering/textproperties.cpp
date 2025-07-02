@@ -35,7 +35,7 @@ TextProperties& TextProperties::operator=(TextProperties other)
   return *this;
 }
 
-void TextProperties::swap(TextProperties& other)
+void TextProperties::swap(TextProperties& other) noexcept
 {
   using std::swap;
   swap(m_pixelHeight, other.m_pixelHeight);
