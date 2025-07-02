@@ -84,8 +84,9 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   std::array<char, 1000> raw;
   int magic, natoms, slen0, slen1;
   std::array<int, 13> headval;
-  string subs, keyCheck[] = { "box_size", "vir_size", "pres_size" },
-               keyCheck2[] = { "x_size", "v_size", "f_size" };
+  string subs;
+  std::array<string, 3> keyCheck{ "box_size", "vir_size", "pres_size" },
+    keyCheck2{ "x_size", "v_size", "f_size" };
   map<string, int> header;
 
   // Determining size of file
@@ -172,12 +173,12 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                     mat[2][2] * NM_TO_ANGSTROM)));
         }
       } else {
-        snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM * DIM);
+        snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, DIM * DIM);
         float mat[DIM][DIM];
-        inStream.read(buff, struct_calcsize(fmt));
-        struct_unpack(buff, fmt, &mat[0][0], &mat[0][1], &mat[0][2], &mat[1][0],
-                      &mat[1][1], &mat[1][2], &mat[2][0], &mat[2][1],
-                      &mat[2][2]);
+        inStream.read(buff.data(), struct_calcsize(fmt.data()));
+        struct_unpack(buff.data(), fmt.data(), &mat[0][0], &mat[0][1],
+                      &mat[0][2], &mat[1][0], &mat[1][1], &mat[1][2],
+                      &mat[2][0], &mat[2][1], &mat[2][2]);
         if (_kid == "box_size") {
           mol.setUnitCell(new UnitCell(
             Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
@@ -205,15 +206,15 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
         coordsDouble.fill(0);
         coordsFloat.fill(0);
         if (doubleStatus) {
-          snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM);
-          inStream.read(buff, struct_calcsize(fmt));
-          struct_unpack(buff, fmt, &coordsDouble[0], &coordsDouble[1],
-                        &coordsDouble[2]);
+          snprintf(fmt.data(), sizeof(fmt.data()), "%c%dd", endian, DIM);
+          inStream.read(buff.data(), struct_calcsize(fmt.data()));
+          struct_unpack(buff.data(), fmt.data(), &coordsDouble[0],
+                        &coordsDouble[1], &coordsDouble[2]);
         } else {
-          snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM);
-          inStream.read(buff, struct_calcsize(fmt));
-          struct_unpack(buff, fmt, &coordsFloat[0], &coordsFloat[1],
-                        &coordsFloat[2]);
+          snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, DIM);
+          inStream.read(buff.data(), struct_calcsize(fmt.data()));
+          struct_unpack(buff.data(), fmt.data(), &coordsFloat[0],
+                        &coordsFloat[1], &coordsFloat[2]);
         }
 
         if (_kid == "x_size") {
@@ -256,9 +257,9 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   int coordSet = 1;
   while (static_cast<int>(inStream.tellg()) != fileLen) {
     // Binary header must start with 1993
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &magic);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &magic);
     if (magic != GROMACS_MAGIC) {
       // Endian conversion
       magic = swapInteger(magic);
@@ -269,15 +270,15 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
       }
     }
 
-    snprintf(fmt, sizeof(fmt), "%c2i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &slen0, &slen1);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c2i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &slen0, &slen1);
 
     // Reading trajectory version string
-    snprintf(fmt, sizeof(fmt), "%c%ds", endian, slen0 - 1);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, raw);
-    subs = string(raw).substr(0, 12);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c%ds", endian, slen0 - 1);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), raw.data());
+    subs = string(raw.data()).substr(0, 12);
     if (subs != TRRVERSION) {
       appendError("Gromacs version string mismatch.");
       return false;
@@ -286,12 +287,12 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     // "ir_size", "e_size", "box_size", "vir_size", "pres_size",
     // "top_size", "sym_size", "x_size", "v_size", "f_size",
     // "natoms", "step", "nre"
-    snprintf(fmt, sizeof(fmt), "%c13i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &headval[0], &headval[1], &headval[2], &headval[3],
-                  &headval[4], &headval[5], &headval[6], &headval[7],
-                  &headval[8], &headval[9], &headval[10], &headval[11],
-                  &headval[12]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c13i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &headval[0], &headval[1],
+                  &headval[2], &headval[3], &headval[4], &headval[5],
+                  &headval[6], &headval[7], &headval[8], &headval[9],
+                  &headval[10], &headval[11], &headval[12]);
     for (int i = 0; i < 13; ++i) {
       header.insert(pair<string, int>(HEADITEMS[i], headval[i]));
     }
@@ -300,16 +301,16 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     doubleStatus = isDouble(header);
     if (doubleStatus) {
       double header0, header1;
-      snprintf(fmt, sizeof(fmt), "%c2d", endian);
-      inStream.read(buff, struct_calcsize(fmt));
-      struct_unpack(buff, fmt, &header0, &header1);
+      snprintf(fmt.data(), sizeof(fmt.data()), "%c2d", endian);
+      inStream.read(buff.data(), struct_calcsize(fmt.data()));
+      struct_unpack(buff.data(), fmt.data(), &header0, &header1);
       header.insert(pair<string, int>("time", header0));
       header.insert(pair<string, int>("lambda", header1));
     } else {
       float header0, header1;
-      snprintf(fmt, sizeof(fmt), "%c2f", endian);
-      inStream.read(buff, struct_calcsize(fmt));
-      struct_unpack(buff, fmt, &header0, &header1);
+      snprintf(fmt.data(), sizeof(fmt.data()), "%c2f", endian);
+      inStream.read(buff.data(), struct_calcsize(fmt.data()));
+      struct_unpack(buff.data(), fmt.data(), &header0, &header1);
       header.insert(pair<string, int>("time", header0));
       header.insert(pair<string, int>("lambda", header1));
     }
@@ -319,12 +320,12 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (header[_kid] != 0) {
         natoms = header["natoms"];
         if (doubleStatus) {
-          snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM * DIM);
+          snprintf(fmt.data(), sizeof(fmt.data()), "%c%dd", endian, DIM * DIM);
           double mat[DIM][DIM];
-          inStream.read(buff, struct_calcsize(fmt));
-          struct_unpack(buff, fmt, &mat[0][0], &mat[0][1], &mat[0][2],
-                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
-                        &mat[2][1], &mat[2][2]);
+          inStream.read(buff.data(), struct_calcsize(fmt.data()));
+          struct_unpack(buff.data(), fmt.data(), &mat[0][0], &mat[0][1],
+                        &mat[0][2], &mat[1][0], &mat[1][1], &mat[1][2],
+                        &mat[2][0], &mat[2][1], &mat[2][2]);
           if (_kid == "box_size") {
             mol.setUnitCell(new UnitCell(
               Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
@@ -335,12 +336,12 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                       mat[2][2] * NM_TO_ANGSTROM)));
           }
         } else {
-          snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM * DIM);
+          snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, DIM * DIM);
           float mat[DIM][DIM];
-          inStream.read(buff, struct_calcsize(fmt));
-          struct_unpack(buff, fmt, &mat[0][0], &mat[0][1], &mat[0][2],
-                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
-                        &mat[2][1], &mat[2][2]);
+          inStream.read(buff.data(), struct_calcsize(fmt.data()));
+          struct_unpack(buff.data(), fmt.data(), &mat[0][0], &mat[0][1],
+                        &mat[0][2], &mat[1][0], &mat[1][1], &mat[1][2],
+                        &mat[2][0], &mat[2][1], &mat[2][2]);
           if (_kid == "box_size") {
             mol.setUnitCell(new UnitCell(
               Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
@@ -367,15 +368,15 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
           coordsDouble.fill(0);
           coordsFloat.fill(0);
           if (doubleStatus) {
-            snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM);
-            inStream.read(buff, struct_calcsize(fmt));
-            struct_unpack(buff, fmt, &coordsDouble[0], &coordsDouble[1],
-                          &coordsDouble[2]);
+            snprintf(fmt.data(), sizeof(fmt.data()), "%c%dd", endian, DIM);
+            inStream.read(buff.data(), struct_calcsize(fmt.data()));
+            struct_unpack(buff.data(), fmt.data(), &coordsDouble[0],
+                          &coordsDouble[1], &coordsDouble[2]);
           } else {
-            snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM);
-            inStream.read(buff, struct_calcsize(fmt));
-            struct_unpack(buff, fmt, &coordsFloat[0], &coordsFloat[1],
-                          &coordsFloat[2]);
+            snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, DIM);
+            inStream.read(buff.data(), struct_calcsize(fmt.data()));
+            struct_unpack(buff.data(), fmt.data(), &coordsFloat[0],
+                          &coordsFloat[1], &coordsFloat[2]);
           }
 
           if (_kid == "x_size") {
