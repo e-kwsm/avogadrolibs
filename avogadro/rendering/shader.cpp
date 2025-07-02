@@ -52,10 +52,9 @@ bool Shader::compile()
     GLint length(0);
     glGetShaderiv(handle_, GL_INFO_LOG_LENGTH, &length);
     if (length > 1) {
-      char* logMessage = new char[length];
-      glGetShaderInfoLog(handle_, length, nullptr, logMessage);
-      m_error = logMessage;
-      delete[] logMessage;
+      std::vector<char> logMessage(length);
+      glGetShaderInfoLog(handle_, length, nullptr, logMessage.data());
+      m_error = logMessage.data();
     }
     glDeleteShader(handle_);
     return false;
