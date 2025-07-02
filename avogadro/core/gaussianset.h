@@ -288,13 +288,13 @@ private:
    * set as the active MOs upon demand. Alpha will store Paired or the Alpha,
    * Beta will store Beta coefficients for the appropriate calculation types.
    */
-  std::vector<MatrixX> m_moMatrixSet[2];
+  std::array<std::vector<MatrixX>, 2> m_moMatrixSet;
 
   /**
    * @brief This stores the molecular orbital number (when they are sparse). It
    * is used to lookup the actual index of the molecular orbital data.
    */
-  std::vector<unsigned int> m_moNumber[2];
+  std::array<std::vector<unsigned int>, 2> m_moNumber;
 
   MatrixX m_density;     //! Density matrix
   MatrixX m_spinDensity; //! Spin Density matrix
