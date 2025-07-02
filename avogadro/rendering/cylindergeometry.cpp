@@ -151,9 +151,9 @@ void CylinderGeometry::update()
     d->fragmentShader->setType(Shader::Fragment);
     d->fragmentShader->setSource(cylinders_fs);
     if (!d->vertexShader->compile())
-      cout << d->vertexShader->error() << endl;
+      cout << d->vertexShader->error() << '\n';
     if (!d->fragmentShader->compile())
-      cout << d->fragmentShader->error() << endl;
+      cout << d->fragmentShader->error() << '\n';
 
     if (d->program == nullptr)
       d->program = new ShaderProgram;
@@ -161,7 +161,7 @@ void CylinderGeometry::update()
     d->program->attachShader(*d->vertexShader);
     d->program->attachShader(*d->fragmentShader);
     if (!d->program->link())
-      cout << d->program->error() << endl;
+      cout << d->program->error() << '\n';
   }
 }
 
@@ -174,48 +174,48 @@ void CylinderGeometry::render(const Camera& camera)
   update();
 
   if (!d->program->bind())
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
 
   d->vbo.bind();
   d->ibo.bind();
 
   // Set up our attribute arrays.
   if (!d->program->enableAttributeArray("vertex"))
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   if (!d->program->useAttributeArray(
         "vertex", ColorNormalVertex::vertexOffset(), sizeof(ColorNormalVertex),
         FloatType, 3, ShaderProgram::NoNormalize)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->enableAttributeArray("color"))
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   if (!d->program->useAttributeArray("color", ColorNormalVertex::colorOffset(),
                                      sizeof(ColorNormalVertex), UCharType, 3,
                                      ShaderProgram::Normalize)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->enableAttributeArray("normal"))
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   if (!d->program->useAttributeArray(
         "normal", ColorNormalVertex::normalOffset(), sizeof(ColorNormalVertex),
         FloatType, 3, ShaderProgram::NoNormalize)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
 
   // Set up our uniforms (model-view and projection matrices right now).
   if (!d->program->setUniformValue("modelView", camera.modelView().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("projection",
                                    camera.projection().matrix())) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   if (!d->program->setUniformValue("opacity", m_opacity)) {
-    cout << d->program->error() << endl;
+    cout << d->program->error() << '\n';
   }
   Matrix3f normalMatrix = camera.modelView().linear().inverse().transpose();
   if (!d->program->setUniformValue("normalMatrix", normalMatrix))
-    std::cout << d->program->error() << std::endl;
+    std::cout << d->program->error() << '\n';
 
   // Render the loaded spheres using the shader and bound VBO.
   glDrawRangeElements(GL_TRIANGLES, 0, static_cast<GLuint>(d->numberOfVertices),
