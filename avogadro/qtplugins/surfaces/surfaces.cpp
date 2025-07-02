@@ -960,20 +960,18 @@ void Surfaces::movieFrame()
 
   if (d->gifWriter) {
     int pixelCount = exportImage.width() * exportImage.height();
-    auto* imageData = new uint8_t[pixelCount * 4];
-    int imageIndex = 0;
+    std::vector<uint8_t> imageData;
+    imageData.reserve(pixelCount * 4);
     for (int j = 0; j < exportImage.height(); ++j) {
       for (int k = 0; k < exportImage.width(); ++k) {
         QColor color = exportImage.pixel(k, j);
-        imageData[imageIndex] = static_cast<uint8_t>(color.red());
-        imageData[imageIndex + 1] = static_cast<uint8_t>(color.green());
-        imageData[imageIndex + 2] = static_cast<uint8_t>(color.blue());
-        imageData[imageIndex + 3] = static_cast<uint8_t>(color.alpha());
-        imageIndex += 4;
+        imageData.push_back(static_cast<uint8_t>(color.red()));
+        imageData.push_back(static_cast<uint8_t>(color.green()));
+        imageData.push_back(static_cast<uint8_t>(color.blue()));
+        imageData.push_back(static_cast<uint8_t>(color.alpha()));
       }
     }
-    GifWriteFrame(d->gifWriter, imageData, 800, 600, 100 / 4);
-    delete[] imageData;
+    GifWriteFrame(d->gifWriter, imageData.data(), 800, 600, 100 / 4);
   } else if (d->gwaviWriter) {
     QByteArray ba;
     QBuffer buffer(&ba);
