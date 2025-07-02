@@ -374,10 +374,10 @@ bool Hdf5DataFormat::writeRawDataset(const std::string& path,
 bool Hdf5DataFormat::writeDataset(const std::string& path,
                                   const MatrixX& data) const
 {
-  size_t dims[2] = { static_cast<size_t>(data.rows()),
-                     static_cast<size_t>(data.cols()) };
+  std::array<size_t, 2> dims = { static_cast<size_t>(data.rows()),
+                                 static_cast<size_t>(data.cols()) };
   // Transpose data -- Eigen uses column-major ordering.
-  return this->writeRawDataset(path, data.transpose().data(), 2, dims);
+  return this->writeRawDataset(path, data.transpose().data(), 2, dims.data());
 }
 
 bool Hdf5DataFormat::writeDataset(const std::string& path,
