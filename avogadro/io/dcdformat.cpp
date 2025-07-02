@@ -216,7 +216,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
     struct_unpack(buff.data(), fmt.data(), &leadingNum);
 
     if (leadingNum == 48) {
-      double unitcell[6];
+      std::array<double, 6> unitcell;
       for (double& aa : unitcell) {
         snprintf(fmt.data(), sizeof(fmt.data()), "%c%dd", endian, 1);
         inStream.read(buff.data(), struct_calcsize(fmt.data()));
@@ -241,7 +241,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // Reading the atom coordinates
-  int formatint[6];
+  std::array<int, 6> formatint;
   Array<float> cx, cy, cz;
   cx.reserve(NATOMS);
   cy.reserve(NATOMS);
