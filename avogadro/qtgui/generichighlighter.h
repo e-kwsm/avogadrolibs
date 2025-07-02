@@ -81,7 +81,8 @@ public:
   /** @return An ordered list of this highlighter's rules. */
   QList<Rule> rules() const;
 
-  friend void swap(GenericHighlighter& first, GenericHighlighter& second)
+  friend void swap(GenericHighlighter& first,
+                   GenericHighlighter& second) noexcept
   {
     using std::swap;
     swap(first.m_rules, second.m_rules);

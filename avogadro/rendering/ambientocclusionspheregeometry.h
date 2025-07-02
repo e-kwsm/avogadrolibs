@@ -39,7 +39,7 @@ public:
 
   AmbientOcclusionSphereGeometry& operator=(AmbientOcclusionSphereGeometry);
   friend void swap(AmbientOcclusionSphereGeometry& lhs,
-                   AmbientOcclusionSphereGeometry& rhs);
+                   AmbientOcclusionSphereGeometry& rhs) noexcept;
 
   /**
    * Accept a visit from our friendly visitor.
@@ -109,7 +109,7 @@ AmbientOcclusionSphereGeometry::operator=(AmbientOcclusionSphereGeometry other)
 }
 
 inline void swap(AmbientOcclusionSphereGeometry& lhs,
-                 AmbientOcclusionSphereGeometry& rhs)
+                 AmbientOcclusionSphereGeometry& rhs) noexcept
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));

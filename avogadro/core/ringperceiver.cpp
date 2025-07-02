@@ -24,7 +24,7 @@ class DistanceMatrix
 public:
   // swap function marked friend so it can only be found via Argument Dependent
   // Lookup (ADL)
-  friend void swap(DistanceMatrix& first, DistanceMatrix& second)
+  friend void swap(DistanceMatrix& first, DistanceMatrix& second) noexcept
   {
     // Enable ADL for the swap
     using std::swap;
