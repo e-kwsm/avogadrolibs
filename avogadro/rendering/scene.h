@@ -14,6 +14,7 @@
 #include <avogadro/core/avogadrocore.h>
 #include <avogadro/core/vector.h>
 
+#include <array>
 #include <map>    // For member variables.
 #include <string> // For member variables.
 #include <vector> // For member variables.
@@ -71,7 +72,7 @@ struct ColorNormalVertex
   unsigned char unusedAlign; //  1 byte
   Vector3f normal;           // 12 bytes
   Vector3f vertex;           // 12 bytes
-  unsigned char padding[4];  //  4 bytes
+  std::array<unsigned char, 4> padding; //  4 bytes
   ColorNormalVertex() {}
   ColorNormalVertex(const Vector3ub& c, const Vector3f& n, const Vector3f& v)
     : color(c), normal(n), vertex(v)
