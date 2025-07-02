@@ -57,12 +57,15 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   /** Endian type, Buffer and Format char containers for unpacking and storing
    * data using struct library */
   char endian = '>';
-  char buff[BUFSIZ];
-  char fmt[BUFSIZ];
+  std::string buff;
+  buff.resize(BUFSIZ);
+  std::string fmt;
+  fmt.resize(BUFSIZ);
 
   /** Variables to store various components from the binary data unpacked using
    * the struct library */
-  char raw[84];
+  std::string raw;
+  raw.resize(84);
   char* remarks;
   double DELTA;
   int magic;
@@ -79,9 +82,9 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   inStream.seekg(0, inStream.beg);
 
   // Reading magic number
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &magic);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &magic);
   if (magic != DCD_MAGIC) {
     magic = swap_integer(magic);
     endian = swap_endian(endian);
@@ -92,83 +95,83 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // CORD
-  snprintf(fmt, sizeof(fmt), "%c%ds", endian, magic);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, raw);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c%ds", endian, magic);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), raw.data());
   if (raw[0] != 'C' || raw[1] != 'O' || raw[2] != 'R' || raw[3] != 'D') {
     appendError("Keyword CORD not found.");
     return false;
   }
 
   // Determining whether the trajectory file is from CHARMM or not
-  if (*(reinterpret_cast<int*>(raw + 80)) != 0) {
+  if (*(reinterpret_cast<const int*>(raw.substr(80).c_str())) != 0) {
     charmm = DCD_IS_CHARMM;
-    if (*(reinterpret_cast<int*>(raw + 44)) != 0)
+    if (*(reinterpret_cast<const int*>(raw.substr(44).c_str())) != 0)
       charmm |= DCD_HAS_EXTRA_BLOCK;
 
-    if (*(reinterpret_cast<int*>(raw + 48)) == 1)
+    if (*(reinterpret_cast<const int*>(raw.substr(48).c_str())) == 1)
       charmm |= DCD_HAS_4DIMS;
   } else {
     charmm = 0;
   }
 
   // number of fixed atoms
-  NAMNF = *(reinterpret_cast<int*>(raw + 36));
+  NAMNF = *(reinterpret_cast<const int*>(raw.substr(36).c_str()));
 
   // DELTA (timestep) is stored as a double with X-PLOR but as a float with
   // CHARMM
   if (charmm & DCD_IS_CHARMM) {
     float ftmp;
-    ftmp = *(reinterpret_cast<float*>(raw + 40));
+    ftmp = *(reinterpret_cast<const float*>(raw.substr(40).c_str()));
 
     DELTA = static_cast<double>(ftmp);
   } else {
-    (DELTA) = *(reinterpret_cast<double*>(raw + 40));
+    (DELTA) = *(reinterpret_cast<const double*>(raw.substr(40).c_str()));
   }
 
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &magic);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &magic);
 
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &blockSize);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &blockSize);
 
   if (((blockSize - 4) % 80) == 0) {
     // Read NTITLE, the number of 80 character title strings
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &NTITLE);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &NTITLE);
     lenRemarks = NTITLE * 80;
     remarks = reinterpret_cast<char*>(malloc(lenRemarks));
-    snprintf(fmt, sizeof(fmt), "%c%ds", endian, lenRemarks);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, remarks);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c%ds", endian, lenRemarks);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), remarks);
 
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
     int endSize;
-    struct_unpack(buff, fmt, &endSize);
+    struct_unpack(buff.data(), fmt.data(), &endSize);
   } else {
     appendError("Block size must be 4 plus a multiple of 80.");
     return false;
   }
 
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
   int fourInput;
-  struct_unpack(buff, fmt, &fourInput);
+  struct_unpack(buff.data(), fmt.data(), &fourInput);
   if (fourInput != 4) {
     // Error
   }
 
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &NATOMS);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &NATOMS);
 
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &fourInput);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &fourInput);
   if (fourInput != 4) {
     appendError("Expected token 4. Read token " + to_string(fourInput));
     return false;
@@ -183,23 +186,23 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
     }
 
     /* Read in index array size */
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
     int arrSize;
-    struct_unpack(buff, fmt, &arrSize);
+    struct_unpack(buff.data(), fmt.data(), &arrSize);
 
     if (arrSize != (NATOMS - NAMNF) * 4) {
       appendError("DCD file contains bad format.");
       return false;
     }
 
-    snprintf(fmt, sizeof(fmt), "%c%di", endian, (NATOMS - NAMNF));
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, *FREEINDEXES);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c%di", endian, (NATOMS - NAMNF));
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), *FREEINDEXES);
 
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &arrSize);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &arrSize);
 
     if (arrSize != (NATOMS - NAMNF) * 4) {
       appendError("DCD file contains bad format.");
@@ -210,17 +213,17 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   // CHARMM trajectories have an extra block to be read, that contains
   // information about the unit cell
   if ((charmm & DCD_IS_CHARMM) && (charmm & DCD_HAS_EXTRA_BLOCK)) {
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
     int leadingNum;
-    struct_unpack(buff, fmt, &leadingNum);
+    struct_unpack(buff.data(), fmt.data(), &leadingNum);
 
     if (leadingNum == 48) {
-      double unitcell[6];
+      std::array<double, 6> unitcell;
       for (double& aa : unitcell) {
-        snprintf(fmt, sizeof(fmt), "%c%dd", endian, 1);
-        inStream.read(buff, struct_calcsize(fmt));
-        struct_unpack(buff, fmt, &aa);
+        snprintf(fmt.data(), sizeof(fmt.data()), "%c%dd", endian, 1);
+        inStream.read(buff.data(), struct_calcsize(fmt.data()));
+        struct_unpack(buff.data(), fmt.data(), &aa);
       }
       if (unitcell[1] >= -1.0 && unitcell[1] <= 1.0 && unitcell[3] >= -1.0 &&
           unitcell[3] <= 1.0 && unitcell[4] >= -1.0 && unitcell[4] <= 1.0) {
@@ -241,55 +244,55 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
       }
       mol.setUnitCell(cell);
     } else {
-      inStream.read(buff, leadingNum);
+      inStream.read(buff.data(), leadingNum);
     }
-    inStream.read(buff, sizeof(int));
+    inStream.read(buff.data(), sizeof(int));
   }
 
   // Reading the atom coordinates
-  int formatint[6];
+  std::array<int, 6> formatint;
   Array<float> cx, cy, cz;
   cx.reserve(NATOMS);
   cy.reserve(NATOMS);
   cz.reserve(NATOMS);
 
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &formatint[0]);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &formatint[0]);
 
   for (int i = 0; i < NATOMS; ++i) {
     // X coordinates
-    snprintf(fmt, sizeof(fmt), "%c%df", endian, 1);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &cx[i]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, 1);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &cx[i]);
     /* code */
   }
 
-  snprintf(fmt, sizeof(fmt), "%c2i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &formatint[1], &formatint[2]);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c2i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &formatint[1], &formatint[2]);
 
   for (int i = 0; i < NATOMS; ++i) {
     // Y coordinates
-    snprintf(fmt, sizeof(fmt), "%c%df", endian, 1);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &cy[i]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, 1);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &cy[i]);
   }
 
-  snprintf(fmt, sizeof(fmt), "%c2i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &formatint[3], &formatint[4]);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c2i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &formatint[3], &formatint[4]);
 
   for (int i = 0; i < NATOMS; ++i) {
     // Z coordinates
-    snprintf(fmt, sizeof(fmt), "%c%df", endian, 1);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &cz[i]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, 1);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &cz[i]);
   }
 
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  inStream.read(buff, struct_calcsize(fmt));
-  struct_unpack(buff, fmt, &formatint[5]);
+  snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+  inStream.read(buff.data(), struct_calcsize(fmt.data()));
+  struct_unpack(buff.data(), fmt.data(), &formatint[5]);
 
   typedef map<string, unsigned char> AtomTypeMap;
   AtomTypeMap atomTypes;
@@ -313,14 +316,14 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   // Skipping fourth dimension block
   if ((charmm & DCD_IS_CHARMM) && (charmm & DCD_HAS_EXTRA_BLOCK)) {
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
     int sizeToRead;
-    struct_unpack(buff, fmt, &sizeToRead);
+    struct_unpack(buff.data(), fmt.data(), &sizeToRead);
 
-    inStream.read(buff, sizeToRead);
+    inStream.read(buff.data(), sizeToRead);
 
-    inStream.read(buff, sizeof(int));
+    inStream.read(buff.data(), sizeof(int));
   }
 
   // Set the custom element map if needed
@@ -343,42 +346,42 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
     Array<Vector3> positions;
     positions.reserve(NATOMS);
 
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &formatint[0]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &formatint[0]);
 
     for (int i = 0; i < NATOMS; ++i) {
       // X coordinates
-      snprintf(fmt, sizeof(fmt), "%c%df", endian, 1);
-      inStream.read(buff, struct_calcsize(fmt));
-      struct_unpack(buff, fmt, &cx[i]);
+      snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, 1);
+      inStream.read(buff.data(), struct_calcsize(fmt.data()));
+      struct_unpack(buff.data(), fmt.data(), &cx[i]);
     }
 
-    snprintf(fmt, sizeof(fmt), "%c2i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &formatint[1], &formatint[2]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c2i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &formatint[1], &formatint[2]);
 
     for (int i = 0; i < NATOMS; ++i) {
       // Y coordinates
-      snprintf(fmt, sizeof(fmt), "%c%df", endian, 1);
-      inStream.read(buff, struct_calcsize(fmt));
-      struct_unpack(buff, fmt, &cy[i]);
+      snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, 1);
+      inStream.read(buff.data(), struct_calcsize(fmt.data()));
+      struct_unpack(buff.data(), fmt.data(), &cy[i]);
     }
 
-    snprintf(fmt, sizeof(fmt), "%c2i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &formatint[3], &formatint[4]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c2i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &formatint[3], &formatint[4]);
 
     for (int i = 0; i < NATOMS; ++i) {
       // Z coordinates
-      snprintf(fmt, sizeof(fmt), "%c%df", endian, 1);
-      inStream.read(buff, struct_calcsize(fmt));
-      struct_unpack(buff, fmt, &cz[i]);
+      snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, 1);
+      inStream.read(buff.data(), struct_calcsize(fmt.data()));
+      struct_unpack(buff.data(), fmt.data(), &cz[i]);
     }
 
-    snprintf(fmt, sizeof(fmt), "%c1i", endian);
-    inStream.read(buff, struct_calcsize(fmt));
-    struct_unpack(buff, fmt, &formatint[5]);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+    inStream.read(buff.data(), struct_calcsize(fmt.data()));
+    struct_unpack(buff.data(), fmt.data(), &formatint[5]);
 
     for (int i = 0; i < NATOMS; ++i) {
       Vector3 pos(cx[i], cy[i], cz[i]);
@@ -389,14 +392,14 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     // Skipping fourth dimension block
     if ((charmm & DCD_IS_CHARMM) && (charmm & DCD_HAS_EXTRA_BLOCK)) {
-      snprintf(fmt, sizeof(fmt), "%c1i", endian);
-      inStream.read(buff, struct_calcsize(fmt));
+      snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
+      inStream.read(buff.data(), struct_calcsize(fmt.data()));
       int sizeToRead;
-      struct_unpack(buff, fmt, &sizeToRead);
+      struct_unpack(buff.data(), fmt.data(), &sizeToRead);
 
-      inStream.read(buff, sizeToRead);
+      inStream.read(buff.data(), sizeToRead);
 
-      inStream.read(buff, sizeof(int));
+      inStream.read(buff.data(), sizeof(int));
     }
 
     mol.setCoordinate3d(positions, coordSet++);
