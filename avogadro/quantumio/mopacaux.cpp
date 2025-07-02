@@ -129,7 +129,7 @@ void MopacAux::processLine(std::istream& in)
   // Big switch statement checking for various things we are interested in
   if (Core::contains(key, "ATOM_EL")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 4));
-    cout << "Number of atoms = " << tmp << endl;
+    cout << "Number of atoms = " << tmp << '\n';
     m_atomNums = readArrayElements(in, tmp);
   } else if (Core::contains(key, "HEAT_OF_FORMATION:KCAL/MOL")) {
     vector<string> list = Core::split(line, '=');
@@ -137,21 +137,21 @@ void MopacAux::processLine(std::istream& in)
       std::replace(list[1].begin(), list[1].end(), 'D', 'E');
       m_heatOfFormation = Core::lexicalCast<double>(list[1]);
       cout << "Heat of formation = " << m_heatOfFormation << " kcal/mol"
-           << endl;
+           << '\n';
     }
   } else if (Core::contains(key, "AREA:SQUARE ANGSTROMS")) {
     vector<string> list = Core::split(line, '=');
     if (list.size() > 1) {
       std::replace(list[1].begin(), list[1].end(), 'D', 'E');
       m_area = Core::lexicalCast<double>(list[1]);
-      cout << "Area = " << m_area << " square Angstroms" << endl;
+      cout << "Area = " << m_area << " square Angstroms" << '\n';
     }
   } else if (Core::contains(key, "VOLUME:CUBIC ANGSTROMS")) {
     vector<string> list = Core::split(line, '=');
     if (list.size() > 1) {
       std::replace(list[1].begin(), list[1].end(), 'D', 'E');
       m_volume = Core::lexicalCast<double>(list[1]);
-      cout << "Volume = " << m_volume << " cubic Angstroms" << endl;
+      cout << "Volume = " << m_volume << " cubic Angstroms" << '\n';
     }
   } else if (Core::contains(key, "KEYWORDS=")) {
     // parse for charge and spin
@@ -189,55 +189,55 @@ void MopacAux::processLine(std::istream& in)
                                  Core::lexicalCast<double>(dipole[2]));
       }
     }
-    cout << "Dipole moment " << m_dipoleMoment.norm() << " Debye" << endl;
+    cout << "Dipole moment " << m_dipoleMoment.norm() << " Debye" << '\n';
   } else if (Core::contains(key, "AO_ATOMINDEX")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 4));
-    cout << "Number of atomic orbitals = " << tmp << endl;
+    cout << "Number of atomic orbitals = " << tmp << '\n';
     m_atomIndex = readArrayI(in, tmp);
     for (int& i : m_atomIndex)
       --i;
   } else if (Core::contains(key, "ATOM_SYMTYPE")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 4));
-    cout << "Number of atomic orbital types = " << tmp << endl;
+    cout << "Number of atomic orbital types = " << tmp << '\n';
     m_atomSym = readArraySym(in, tmp);
   } else if (Core::contains(key, "AO_ZETA")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 4));
-    cout << "Number of zeta values = " << tmp << endl;
+    cout << "Number of zeta values = " << tmp << '\n';
     m_zeta = readArrayD(in, tmp);
   } else if (Core::contains(key, "ATOM_CHARGES")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 4));
-    cout << "Number of atomic charges = " << tmp << endl;
+    cout << "Number of atomic charges = " << tmp << '\n';
     m_partialCharges = readArrayD(in, tmp);
   } else if (Core::contains(key, "ATOM_PQN")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 4));
-    cout << "Number of PQN values =" << tmp << endl;
+    cout << "Number of PQN values =" << tmp << '\n';
     m_pqn = readArrayI(in, tmp);
   } else if (Core::contains(key, "NUM_ELECTRONS")) {
     vector<string> list = Core::split(line, '=');
     if (list.size() > 1) {
       m_electrons = Core::lexicalCast<int>(list[1]);
-      cout << "Number of electrons = " << m_electrons << endl;
+      cout << "Number of electrons = " << m_electrons << '\n';
     }
   } else if (Core::contains(key, "ATOM_X")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 4));
-    cout << "Number of atomic coordinates = " << tmp << endl;
+    cout << "Number of atomic coordinates = " << tmp << '\n';
     m_atomPos = readArrayVec(in, tmp);
     m_coordSets.push_back(m_atomPos);
   } else if (Core::contains(key, "OVERLAP_MATRIX")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 6));
-    cout << "Size of lower half triangle of overlap matrix = " << tmp << endl;
+    cout << "Size of lower half triangle of overlap matrix = " << tmp << '\n';
     readOverlapMatrix(in, tmp);
   } else if (Core::contains(key, "EIGENVECTORS")) {
     // For large molecules the Eigenvectors counter overflows to [*****]
     // So just use the square of the m_atomIndex array
     //      QString tmp = key.mid(key.indexOf('[')+1, 6);
     cout << "Size of eigen vectors matrix = "
-         << m_atomIndex.size() * m_atomIndex.size() << endl;
+         << m_atomIndex.size() * m_atomIndex.size() << '\n';
     readEigenVectors(in,
                      static_cast<int>(m_atomIndex.size() * m_atomIndex.size()));
   } else if (Core::contains(key, "TOTAL_DENSITY_MATRIX")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 6));
-    cout << "Size of lower half triangle of density matrix = " << tmp << endl;
+    cout << "Size of lower half triangle of density matrix = " << tmp << '\n';
     readDensityMatrix(in, tmp);
   } else if (Core::contains(key, "VIB._FREQ")) {
     int tmp = Core::lexicalCast<int>(key.substr(key.find('[') + 1, 6));
@@ -254,7 +254,7 @@ void MopacAux::processLine(std::istream& in)
 void MopacAux::load(SlaterSet* basis)
 {
   if (m_atomPos.size() == 0) {
-    cout << "No atoms found in .aux file. Bailing out." << endl;
+    cout << "No atoms found in .aux file. Bailing out." << '\n';
     // basis->setIsValid(false);
     return;
   }
@@ -466,10 +466,10 @@ void MopacAux::outputAll()
   for (unsigned int i = 0; i < m_shellTypes.size(); ++i)
     cout << i << ": type = " << m_shellTypes.at(i)
          << ", number = " << m_shellNums.at(i)
-         << ", atom = " << m_shelltoAtom.at(i) << endl;
+         << ", atom = " << m_shelltoAtom.at(i) << '\n';
   cout << "MO coefficients:\n";
   for (double m_MOcoeff : m_MOcoeffs)
     cout << m_MOcoeff << "\t";
-  cout << endl;
+  cout << '\n';
 }
 } // namespace Avogadro::QuantumIO
