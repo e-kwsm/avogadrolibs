@@ -10,6 +10,8 @@
 
 #include <avogadro/core/vector.h>
 
+#include <array>
+
 namespace Avogadro::Rendering {
 
 /**
@@ -168,7 +170,7 @@ private:
   float m_rotationDegreesCW;
   FontFamily m_fontFamily;
   FontStyles m_fontStyles;
-  unsigned char m_rgba[4];
+  std::array<unsigned char, 4> m_rgba;
 };
 
 inline void TextProperties::setAlign(TextProperties::HAlign h,
