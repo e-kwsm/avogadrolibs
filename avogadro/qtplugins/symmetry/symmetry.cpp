@@ -248,7 +248,7 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
   // interface with libmsym
   msym_error_t ret = MSYM_SUCCESS;
   msym_element_t* elements = nullptr;
-  char point_group[6];
+  std::array<char, 6> point_group;
   std::array<double, 3> cm;
   double radius = 0.0;
 
@@ -317,8 +317,8 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
   }
 
   /* Get the point group name */
-  if (MSYM_SUCCESS !=
-      (ret = msymGetPointGroupName(m_ctx, sizeof(char[6]), point_group))) {
+  if (MSYM_SUCCESS != (ret = msymGetPointGroupName(m_ctx, sizeof(char[6]),
+                                                   point_group.data()))) {
     free(elements);
     return libmsymFailed(ret);
   }
