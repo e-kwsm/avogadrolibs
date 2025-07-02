@@ -197,8 +197,8 @@ bool GromacsFormat::read(std::istream& in, Molecule& molecule)
     }
 
     // Index arrays for parsing loop:
-    const int rows[] = { 0, 1, 2, 1, 2, 0, 2, 0, 1 };
-    const int cols[] = { 0, 1, 2, 0, 0, 1, 1, 2, 2 };
+    const std::array<int, 9> rows = { 0, 1, 2, 1, 2, 0, 2, 0, 1 };
+    const std::array<int, 9> cols = { 0, 1, 2, 0, 0, 1, 1, 2, 2 };
 
     Matrix3 cellMatrix = Matrix3::Zero();
     for (size_t i = 0; i < tokens.size(); ++i) {
