@@ -295,7 +295,7 @@ inline void GaussianSetTools::pointD(unsigned int moIndex, const Vector3& delta,
 
   unsigned int baseIndex = m_basis->moIndices()[moIndex];
 
-  double components[6] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+  std::array<double, 6> components = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
   // Now iterate through the GTOs and sum their contributions
   unsigned int cIndex = m_basis->cIndices()[moIndex];
@@ -307,12 +307,12 @@ inline void GaussianSetTools::pointD(unsigned int moIndex, const Vector3& delta,
       component += gtoCN[cIndex++] * tmpGTO;
   }
 
-  double componentsD[6] = { delta.x() * delta.x(),   // xx
-                            delta.y() * delta.y(),   // yy
-                            delta.z() * delta.z(),   // zz
-                            delta.x() * delta.y(),   // xy
-                            delta.x() * delta.z(),   // xz
-                            delta.y() * delta.z() }; // yz
+  std::array<double, 6> componentsD = { delta.x() * delta.x(),   // xx
+                                        delta.y() * delta.y(),   // yy
+                                        delta.z() * delta.z(),   // zz
+                                        delta.x() * delta.y(),   // xy
+                                        delta.x() * delta.z(),   // xz
+                                        delta.y() * delta.z() }; // yz
 
   for (int i = 0; i < 6; ++i)
     values[baseIndex + i] += components[i] * componentsD[i];
@@ -329,7 +329,7 @@ inline void GaussianSetTools::pointD5(unsigned int moIndex,
   const vector<unsigned int>& gtoIndices = m_basis->gtoIndices();
 
   unsigned int baseIndex = m_basis->moIndices()[moIndex];
-  double components[5] = { 0.0, 0.0, 0.0, 0.0, 0.0 };
+  std::array<double, 5> components = { 0.0, 0.0, 0.0, 0.0, 0.0 };
 
   // Now iterate through the D type GTOs and sum their contributions
   unsigned int cIndex = m_basis->cIndices()[moIndex];
@@ -349,11 +349,11 @@ inline void GaussianSetTools::pointD5(unsigned int moIndex,
   double xz = delta.x() * delta.z();
   double yz = delta.y() * delta.z();
 
-  double componentsD[5] = { zz - dr2, // 0
-                            xz,       // 1p
-                            yz,       // 1n
-                            xx - yy,  // 2p
-                            xy };     // 2n
+  std::array<double, 5> componentsD = { zz - dr2, // 0
+                                        xz,       // 1p
+                                        yz,       // 1n
+                                        xx - yy,  // 2p
+                                        xy };     // 2n
 
   for (int i = 0; i < 5; ++i)
     values[baseIndex + i] += componentsD[i] * components[i];
@@ -369,7 +369,8 @@ inline void GaussianSetTools::pointF(unsigned int moIndex, const Vector3& delta,
 
   unsigned int baseIndex = m_basis->moIndices()[moIndex];
 
-  double components[10] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+  std::array<double, 10> components = { 0.0, 0.0, 0.0, 0.0, 0.0,
+                                        0.0, 0.0, 0.0, 0.0, 0.0 };
 
   // Now iterate through the GTOs and sum their contributions
   unsigned int cIndex = m_basis->cIndices()[moIndex];
@@ -392,7 +393,7 @@ inline void GaussianSetTools::pointF(unsigned int moIndex, const Vector3& delta,
   double yzz = delta.y() * delta.z() * delta.z(); // yzz
   double zzz = delta.z() * delta.z() * delta.z(); // zzz
 
-  double componentsF[10] = {
+  std::array<double, 10> componentsF = {
     // molden order
     // e.g https://gau2grid.readthedocs.io/en/latest/order.html
     xxx, yyy, zzz, xyy, xxy, xxz, xzz, yzz, yyz, xyz
@@ -414,7 +415,7 @@ inline void GaussianSetTools::pointF7(unsigned int moIndex,
 
   unsigned int baseIndex = m_basis->moIndices()[moIndex];
 
-  double components[7] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+  std::array<double, 7> components = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
   // Now iterate through the F type GTOs and sum their contributions
   unsigned int cIndex = m_basis->cIndices()[moIndex];
@@ -457,13 +458,15 @@ final normalization
   double root6 = 2.449489742783178;
   double root60 = 7.745966692414834;
   double root360 = 18.973665961010276;
-  double componentsF[7] = { zzz - 3.0 / 2.0 * (xxz + yyz),
-                            (6.0 * xzz - 3.0 / 2.0 * (xxx + xyy)) / root6,
-                            (6.0 * yzz - 3.0 / 2.0 * (xxy + yyy)) / root6,
-                            (15.0 * (xxz - yyz)) / root60,
-                            (30.0 * xyz) / root60,
-                            (15.0 * xxx - 45.0 * xyy) / root360,
-                            (45.0 * xxy - 15.0 * yyy) / root360 };
+  std::array<double, 7> componentsF = {
+    zzz - 3.0 / 2.0 * (xxz + yyz),
+    (6.0 * xzz - 3.0 / 2.0 * (xxx + xyy)) / root6,
+    (6.0 * yzz - 3.0 / 2.0 * (xxy + yyy)) / root6,
+    (15.0 * (xxz - yyz)) / root60,
+    (30.0 * xyz) / root60,
+    (15.0 * xxx - 45.0 * xyy) / root360,
+    (45.0 * xxy - 15.0 * yyy) / root360
+  };
 
   for (int i = 0; i < 7; ++i)
     values[baseIndex + i] += components[i] * componentsF[i];
@@ -480,8 +483,8 @@ inline void GaussianSetTools::pointG(unsigned int moIndex, const Vector3& delta,
 
   unsigned int baseIndex = m_basis->moIndices()[moIndex];
 
-  double components[15] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
-                            0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+  std::array<double, 15> components = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                                        0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
 
   // Now iterate through the G type GTOs and sum their contributions
   unsigned int cIndex = m_basis->cIndices()[moIndex];
@@ -516,8 +519,9 @@ inline void GaussianSetTools::pointG(unsigned int moIndex, const Vector3& delta,
   // https://gau2grid.readthedocs.io/en/latest/order.html
   // xxxx yyyy zzzz xxxy xxxz yyyx yyyz zzzx zzzy,
   // xxyy xxzz yyzz xxyz yyxz zzxy
-  double componentsG[15] = { xxxx, yyyy, zzzz, xxxy, xxxz, yyyx, yyyz, zzzx,
-                             zzzy, xxyy, xxzz, yyzz, xxyz, yyxz, zzxy };
+  std::array<double, 15> componentsG = { xxxx, yyyy, zzzz, xxxy, xxxz,
+                                         yyyx, yyyz, zzzx, zzzy, xxyy,
+                                         xxzz, yyzz, xxyz, yyxz, zzxy };
 
   for (int i = 0; i < 15; ++i)
     values[baseIndex + i] += components[i] * componentsG[i];
@@ -536,7 +540,8 @@ inline void GaussianSetTools::pointG9(unsigned int moIndex,
 
   unsigned int baseIndex = m_basis->moIndices()[moIndex];
 
-  double components[9] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 };
+  std::array<double, 9> components = { 0.0, 0.0, 0.0, 0.0, 0.0,
+                                       0.0, 0.0, 0.0, 0.0 };
 
   // Now iterate through the GTOs and sum their contributions
   unsigned int cIndex = m_basis->cIndices()[moIndex];
@@ -551,7 +556,7 @@ inline void GaussianSetTools::pointG9(unsigned int moIndex,
   double x2(delta.x() * delta.x()), y2(delta.y() * delta.y()),
     z2(delta.z() * delta.z());
 
-  double componentsG[9] = {
+  std::array<double, 9> componentsG = {
     3.0 * dr2 * dr2 - 30.0 * dr2 * z2 + 35.0 * z2 * z2 * (1.0 / 8.0),
     delta.x() * delta.z() * (7.0 * z2 - 3.0 * dr2) * (sqrt(5.0) / 8.0),
     delta.y() * delta.z() * (7.0 * z2 - 3.0 * dr2) * (sqrt(5.0) / 8.0),
