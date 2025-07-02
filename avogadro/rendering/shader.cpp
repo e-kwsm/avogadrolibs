@@ -7,6 +7,8 @@
 
 #include "avogadrogl.h"
 
+#include <vector>
+
 namespace Avogadro::Rendering {
 
 Shader::Shader(Type type_, const std::string& source_)
