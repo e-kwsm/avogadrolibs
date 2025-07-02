@@ -249,7 +249,8 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
   msym_error_t ret = MSYM_SUCCESS;
   msym_element_t* elements = nullptr;
   char point_group[6];
-  double cm[3], radius = 0.0;
+  std::array<double, 3> cm;
+  double radius = 0.0;
 
   /* Do not free these variables */
   const msym_symmetry_operation_t* msops = nullptr;
@@ -333,7 +334,7 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
     return libmsymFailed(ret);
   }
 
-  if (MSYM_SUCCESS != (ret = msymGetCenterOfMass(m_ctx, cm))) {
+  if (MSYM_SUCCESS != (ret = msymGetCenterOfMass(m_ctx, cm.data()))) {
     free(elements);
     return libmsymFailed(ret);
   }
