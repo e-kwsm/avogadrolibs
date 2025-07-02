@@ -181,7 +181,8 @@ void Symmetry::detectSymmetry()
   msym_error_t ret = MSYM_SUCCESS;
   msym_element_t* elements = nullptr;
   char point_group[6];
-  double cm[3], radius = 0.0;
+  std::array<double, 3> cm;
+  double radius = 0.0;
 
   /* Do not free these variables */
   const msym_symmetry_operation_t* msops = nullptr;
@@ -277,7 +278,7 @@ void Symmetry::detectSymmetry()
     return;
   }
 
-  if (MSYM_SUCCESS != (ret = msymGetCenterOfMass(m_ctx, cm))) {
+  if (MSYM_SUCCESS != (ret = msymGetCenterOfMass(m_ctx, cm.data()))) {
     free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
@@ -323,7 +324,7 @@ void Symmetry::detectSymmetry()
   m_symmetryWidget->setEquivalenceSets(mesl, mes);
   m_symmetryWidget->setSymmetryOperations(msopsl, msops);
   m_symmetryWidget->setSubgroups(msgl, msg);
-  m_symmetryWidget->setCenterOfMass(cm);
+  m_symmetryWidget->setCenterOfMass(cm.data());
   m_symmetryWidget->setRadius(radius);
   // m_symmetryWidget->m_ui->pointGroupLabel->setText(pgSymbol(point_group));
 
