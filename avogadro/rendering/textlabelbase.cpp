@@ -327,8 +327,8 @@ void TextLabelBase::buildTexture(const TextRenderStrategy& tren)
     1, static_cast<size_t>(
          std::lround(m_textProperties.pixelHeight() * m_render->pixelRatio))));
 
-  int bbox[4];
-  tren.boundingBox(m_text, scaledProperties, bbox);
+  std::array<int, 4> bbox;
+  tren.boundingBox(m_text, scaledProperties, bbox.data());
   const Vector2i newDims(bbox[1] - bbox[0] + 1, bbox[3] - bbox[2] + 1);
   if (newDims != m_imageDimensions) {
     m_imageDimensions = newDims;
