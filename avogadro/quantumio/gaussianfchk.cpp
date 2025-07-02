@@ -205,7 +205,7 @@ void GaussianFchk::processLine(std::istream& in)
         readArrayD(in, Core::lexicalCast<int>(list[2]).value_or(0), 16);
     } else {
       cout << "Error, alpha MO coefficients, n = " << m_MOcoeffs.size() << '\n'
-           << flush;
+           << std::flush;
     }
   } else if (key == "Beta MO coefficients" && list.size() > 2) {
     m_betaMOcoeffs =
