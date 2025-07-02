@@ -349,7 +349,7 @@ public:
     return *this;
   }
 
-  void swap(Array<ValueType>& other)
+  void swap(Array<ValueType>& other) noexcept
   {
     using std::swap;
     swap(d, other.d);
@@ -446,7 +446,7 @@ inline bool operator>=(const Array<T>& lhs, const Array<T>& rhs)
 }
 
 template <typename T>
-inline void swap(Array<T>& lhs, Array<T>& rhs)
+inline void swap(Array<T>& lhs, Array<T>& rhs) noexcept
 {
   lhs.swap(rhs);
 }
