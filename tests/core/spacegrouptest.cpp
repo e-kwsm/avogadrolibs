@@ -419,12 +419,16 @@ TEST(SpaceGroupTest, fillUnitCell)
 
   {
     // diamond structured Si, primitive cell
-    Molecule mol4;
+    // UnitCell uc4 {3.84, 3.84, 3.84, M_PI / 3.0, M_PI / 3.0, M_PI / 3.0};
+    Matrix3 mat4;
+    mat4.col(0) = Vector3{ 0.0, 2.7, 2.7 };
+    mat4.col(1) = Vector3{ 2.7, 0.0, 2.7 };
+    mat4.col(2) = Vector3{ 2.7, 2.7, 0.0 };
 
-    auto uc4 = std::make_unique<UnitCell>(3.84, 3.84, 3.84, M_PI / 3.0,
-                                          M_PI / 3.0, M_PI / 3.0);
-    mol4.setUnitCell(uc4.get());
-    mol4.addAtom(14).setPosition3d(uc4->toCartesian(Vector3(0.0, 0.0, 0.0)));
+    UnitCell uc4{ mat4 };
+    Molecule mol4;
+    mol4.setUnitCell(&uc4);
+    mol4.addAtom(14).setPosition3d(uc4.toCartesian(Vector3(0.0, 0.0, 0.0)));
 
     // 525, F d -3 m
     SpaceGroups::fillUnitCell(mol4, 525, cartTol);
