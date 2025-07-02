@@ -34,10 +34,11 @@ constexpr int GROMACS_MAGIC = 1993;
 constexpr int DIM = 3;
 constexpr float NM_TO_ANGSTROM = 10.0;
 string TRRVERSION = "GMX_trn_file";
-string HEADITEMS[] = { "ir_size",   "e_size",   "box_size", "vir_size",
-                       "pres_size", "top_size", "sym_size", "x_size",
-                       "v_size",    "f_size",   "natoms",   "step",
-                       "nre",       "time",     "lambda" };
+std::array<string, 15> HEADITEMS = { "ir_size",  "e_size",    "box_size",
+                                     "vir_size", "pres_size", "top_size",
+                                     "sym_size", "x_size",    "v_size",
+                                     "f_size",   "natoms",    "step",
+                                     "nre",      "time",      "lambda" };
 
 int swapInteger(int inp)
 {
@@ -59,7 +60,8 @@ int isDouble(map<string, int>& header)
 {
   int SIZE_DOUBLE = struct_calcsize("d");
   int size = 0;
-  string headerKeys[] = { "box_size", "x_size", "v_size", "f_size" };
+  std::array<string, 4> headerKeys = { "box_size", "x_size", "v_size",
+                                       "f_size" };
 
   for (auto& headerKey : headerKeys) {
     if (header[headerKey] != 0) {
@@ -82,8 +84,11 @@ int isDouble(map<string, int>& header)
 bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
 {
   bool doubleStatus;
-  char endian = '>', fmt[BUFSIZ], raw[1000] = {};
-  std::vector<char> buff(BUFSIZ);
+  char endian = '>', raw[1000] = {};
+  std::string buff;
+  buff.resize(BUFSIZ);
+  std::string fmt;
+  fmt.resize(BUFSIZ);
   int magic = 0, natoms = 0, slen0 = 0, slen1 = 0, headval[13] = {};
   string subs, keyCheck[] = { "box_size", "vir_size", "pres_size" },
                keyCheck2[] = { "x_size", "v_size", "f_size" };
@@ -95,9 +100,9 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   inStream.seekg(0, inStream.beg);
 
   // Binary file must start with 1993
-  snprintf(fmt, sizeof(fmt), "%c1i", endian);
-  readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-  struct_unpack(buff.data(), fmt, &magic);
+  snprintf(fmt.data(), sizeof(fmt), "%c1i", endian);
+  readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+  struct_unpack(buff.data(), fmt.data(), &magic);
   if (magic != GROMACS_MAGIC) {
     // Endian conversion
     magic = swapInteger(magic);
@@ -108,9 +113,9 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     }
   }
 
-  snprintf(fmt, sizeof(fmt), "%c2i", endian);
-  readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-  struct_unpack(buff.data(), fmt, &slen0, &slen1);
+  snprintf(fmt.data(), sizeof(fmt), "%c2i", endian);
+  readBlock(inStream, buff.data(), struct_calcsize(fmt), fileLen);
+  struct_unpack(buff.data(), fmt.data(), &slen0, &slen1);
 
   // Reading trajectory version string. slen0 comes from the file and was fed
   // straight to a "%ds" unpack into raw[1000], overflowing it above 1001 as
@@ -121,8 +126,8 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     return false;
   }
   snprintf(fmt, sizeof(fmt), "%c%ds", endian, slen0 - 1);
-  readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-  struct_unpack(buff.data(), fmt, raw);
+  readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+  struct_unpack(buff.data(), fmt.data(), raw);
   subs = string(raw).substr(0, 12);
   if (subs != TRRVERSION) {
     appendError("Gromacs version string mismatch.");
@@ -132,9 +137,9 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   // "ir_size", "e_size", "box_size", "vir_size", "pres_size",
   // "top_size", "sym_size", "x_size", "v_size", "f_size",
   // "natoms", "step", "nre"
-  snprintf(fmt, sizeof(fmt), "%c13i", endian);
-  readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-  struct_unpack(buff.data(), fmt, &headval[0], &headval[1], &headval[2],
+  snprintf(fmt.data(), sizeof(fmt), "%c13i", endian);
+  readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+  struct_unpack(buff.data(), fmt.data(), &headval[0], &headval[1], &headval[2],
                 &headval[3], &headval[4], &headval[5], &headval[6], &headval[7],
                 &headval[8], &headval[9], &headval[10], &headval[11],
                 &headval[12]);
@@ -146,16 +151,16 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   doubleStatus = isDouble(header);
   if (doubleStatus) {
     double header0, header1;
-    snprintf(fmt, sizeof(fmt), "%c2d", endian);
-    readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-    struct_unpack(buff.data(), fmt, &header0, &header1);
+    snprintf(fmt.data(), sizeof(fmt.data()), "%c2d", endian);
+    readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+    struct_unpack(buff.data(), fmt.data(), &header0, &header1);
     header.insert(pair<string, int>("time", header0));
     header.insert(pair<string, int>("lambda", header1));
   } else {
     float header0, header1;
-    snprintf(fmt, sizeof(fmt), "%c2f", endian);
-    readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-    struct_unpack(buff.data(), fmt, &header0, &header1);
+    snprintf(fmt.data(), sizeof(fmt), "%c2f", endian);
+    readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+    struct_unpack(buff.data(), fmt.data(), &header0, &header1);
     header.insert(pair<string, int>("time", header0));
     header.insert(pair<string, int>("lambda", header1));
   }
@@ -164,10 +169,10 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   for (auto& _kid : keyCheck) {
     if (header[_kid] != 0) {
       if (doubleStatus) {
-        snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM * DIM);
+        snprintf(fmt.data(), sizeof(fmt.data()), "%c%dd", endian, DIM * DIM);
         double mat[DIM][DIM];
-        readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-        struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
+        readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+        struct_unpack(buff.data(), fmt.data(), &mat[0][0], &mat[0][1], &mat[0][2],
                       &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
                       &mat[2][1], &mat[2][2]);
         if (_kid == "box_size") {
@@ -186,10 +191,10 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
           mol.setUnitCell(uc);
         }
       } else {
-        snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM * DIM);
+        snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, DIM * DIM);
         float mat[DIM][DIM];
-        readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-        struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
+        readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+        struct_unpack(buff.data(), fmt.data(), &mat[0][0], &mat[0][1], &mat[0][2],
                       &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
                       &mat[2][1], &mat[2][2]);
         if (_kid == "box_size") {
@@ -231,14 +236,14 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
         coordsDouble.fill(0);
         coordsFloat.fill(0);
         if (doubleStatus) {
-          snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM);
-          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-          struct_unpack(buff.data(), fmt, &coordsDouble[0], &coordsDouble[1],
+          snprintf(fmt.data(), sizeof(fmt.data()), "%c%dd", endian, DIM);
+          readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+          struct_unpack(buff.data(), fmt.data(), &coordsDouble[0], &coordsDouble[1],
                         &coordsDouble[2]);
         } else {
-          snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM);
-          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-          struct_unpack(buff.data(), fmt, &coordsFloat[0], &coordsFloat[1],
+          snprintf(fmt.data(), sizeof(fmt.data()), "%c%df", endian, DIM);
+          readBlock(inStream, buff.data(), struct_calcsize(fmt.data()), fileLen);
+          struct_unpack(buff.data(), fmt.data(), &coordsFloat[0], &coordsFloat[1],
                         &coordsFloat[2]);
         }
 
