@@ -214,7 +214,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
                 static_cast<unsigned char>(order));
   }
 
-  std::cout << "read atoms and bonds" << std::endl;
+  std::cout << "read atoms and bonds" << '\n';
 
   // Parse the properties block until the end of the file.
   // Property lines count is not used, as it it now unsupported.
@@ -224,7 +224,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     if (!in.good() || buffer.size() < 6) {
       break;
     }
-    std::cout << " prefix " << buffer.substr(0, 6) << std::endl;
+    std::cout << " prefix " << buffer.substr(0, 6) << '\n';
 
     string prefix = buffer.substr(0, 6);
     if (prefix == "M  END") {
@@ -236,7 +236,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
       size_t entryCount(lexicalCast<int>(buffer.substr(6, 3), ok));
       if (buffer.length() < 17 + 8 * (entryCount - 1)) {
         appendError("Error parsing charge block.");
-        std::cout << " " << entryCount << " " << buffer.length() << std::endl;
+        std::cout << " " << entryCount << " " << buffer.length() << '\n';
         return false;
       }
 
@@ -315,7 +315,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     }
   }
 
-  std::cout << " read properties " << std::endl;
+  std::cout << " read properties " << '\n';
 
   if (!foundEnd) {
     appendError("Error, ending tag for file not found.");
