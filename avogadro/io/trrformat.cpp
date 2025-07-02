@@ -32,10 +32,11 @@ constexpr int GROMACS_MAGIC = 1993;
 constexpr int DIM = 3;
 constexpr float NM_TO_ANGSTROM = 10.0;
 string TRRVERSION = "GMX_trn_file";
-string HEADITEMS[] = { "ir_size",   "e_size",   "box_size", "vir_size",
-                       "pres_size", "top_size", "sym_size", "x_size",
-                       "v_size",    "f_size",   "natoms",   "step",
-                       "nre",       "time",     "lambda" };
+std::array<string, 15> HEADITEMS = { "ir_size",  "e_size",    "box_size",
+                                     "vir_size", "pres_size", "top_size",
+                                     "sym_size", "x_size",    "v_size",
+                                     "f_size",   "natoms",    "step",
+                                     "nre",      "time",      "lambda" };
 
 int swapInteger(int inp)
 {
@@ -57,7 +58,8 @@ int isDouble(map<string, int>& header)
 {
   int SIZE_DOUBLE = struct_calcsize("d");
   int size = 0;
-  string headerKeys[] = { "box_size", "x_size", "v_size", "f_size" };
+  std::array<string, 4> headerKeys = { "box_size", "x_size", "v_size",
+                                       "f_size" };
 
   for (auto& headerKey : headerKeys) {
     if (header[headerKey] != 0) {
