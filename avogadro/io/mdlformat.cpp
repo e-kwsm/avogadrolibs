@@ -347,7 +347,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
       size_t entryCount(lexicalCast<int>(buffer.substr(6, 3), ok));
       if (buffer.length() < 17 + 8 * (entryCount - 1)) {
         appendError("Error parsing charge block.");
-        std::cout << " " << entryCount << " " << buffer.length() << std::endl;
+        std::cout << " " << entryCount << " " << buffer.length() << '\n';
         return false;
       }
 
@@ -423,7 +423,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     } // isotope
 #ifndef NDEBUG
     else if (buffer.size() >= 6) {
-      std::cout << " prefix " << buffer.substr(0, 6) << std::endl;
+      std::cout << " prefix " << buffer.substr(0, 6) << '\n';
     }
 #endif
   }
@@ -833,7 +833,7 @@ bool MdlFormat::readV3000(std::istream& in, Core::Molecule& mol)
           }
         } else {
 #ifndef NDEBUG
-          std::cerr << "Unknown key: " << key << std::endl;
+          std::cerr << "Unknown key: " << key << '\n';
 #endif
         }
       } // end of key-value loop

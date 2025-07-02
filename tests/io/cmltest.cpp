@@ -132,7 +132,7 @@ TEST(CmlTest, fractionalCoords)
 
   cmlStr.clear();
   cml.writeString(cmlStr, molecule);
-  std::cout << cmlStr << std::endl;
+  std::cout << cmlStr << '\n';
   EXPECT_TRUE(cmlStr.find("<scalar title=\"a\" units=\"units:angstrom\">5.3"
                           "</scalar>") != std::string::npos);
   EXPECT_TRUE(cmlStr.find("<scalar title=\"b\" units=\"units:angstrom\">2.4"
