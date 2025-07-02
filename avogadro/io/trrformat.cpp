@@ -231,7 +231,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   // Reading the coordinates of positions, velocities and forces
   for (auto& _kid : keyCheck2) {
     natoms = header["natoms"];
-    double coords[DIM];
+    std::array<double, DIM> coords;
     for (int i = 0; i < natoms; ++i) {
       if (header[_kid] != 0) {
         readScaled(inStream, buff, fileLen, endian, doubleStatus, DIM, coords);
@@ -347,7 +347,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     // Reading the coordinates of positions, velocities and forces
     for (auto& _kid : keyCheck2) {
-      double coords[DIM];
+      std::array<double, DIM> coords;
       for (int i = 0; i < natoms; ++i) {
         if (header[_kid] != 0) {
           readScaled(inStream, buff, fileLen, endian, doubleStatus, DIM,
