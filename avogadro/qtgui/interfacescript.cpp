@@ -788,7 +788,7 @@ bool InterfaceScript::parseFormat(const QJsonObject& json,
       if (array.size() != 3)
         return result;
 
-      int rgb[3];
+      std::array<int, 3> rgb;
       for (int i = 0; i < 3; ++i) {
         if (!array.at(i).isDouble())
           return result;
