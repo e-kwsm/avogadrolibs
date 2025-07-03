@@ -116,8 +116,8 @@ Molecule::AtomType Molecule::addAtom(unsigned char number, Index uniqueId)
   return a;
 }
 
-Molecule::AtomType Molecule::addAtom(unsigned char number, Vector3 position3d,
-                                     Index uniqueId)
+Molecule::AtomType Molecule::addAtom(unsigned char number,
+                                     const Vector3& position3d, Index uniqueId)
 {
   // Store the position first, as Core::Molecule::addAtom() does, so the atom
   // is added to the coordinate sets with it.
