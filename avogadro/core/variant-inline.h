@@ -127,7 +127,27 @@ inline bool Variant::setValue(const std::vector<double>& v)
 }
 
 template <typename T>
-inline bool Variant::setValue(T v)
+inline bool Variant::setValue(const T& v)
+{
+  AVO_UNUSED(v);
+
+#ifndef NDEBUG
+#if defined(_MSC_VER)
+  std::cerr << " Variant::setValue() not implemented for " << __FUNCSIG__
+            << std::endl;
+#else
+  std::cerr << " Variant::setValue() not implemented for "
+            << __PRETTY_FUNCTION__ << std::endl;
+#endif
+#endif
+
+  clear();
+
+  return false;
+}
+
+template <typename T>
+inline bool Variant::setValue(T* v)
 {
   AVO_UNUSED(v);
 
