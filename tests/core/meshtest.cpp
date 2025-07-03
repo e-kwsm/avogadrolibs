@@ -54,8 +54,8 @@ void MeshTest::assertEquals(const Mesh& m1, const Mesh& m2)
   EXPECT_EQ(m1.isoValue(), m2.isoValue());
   EXPECT_TRUE(m1.vertices() == m2.vertices());
 
-  const Array<Color3f> colors1 = m1.colors();
-  const Array<Color3f> colors2 = m1.colors();
+  const Array<Color3f>& colors1 = m1.colors();
+  const Array<Color3f>& colors2 = m1.colors();
 
   EXPECT_EQ(colors1.size(), colors2.size());
 

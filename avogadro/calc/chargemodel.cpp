@@ -32,7 +32,7 @@ Vector3 ChargeModel::dipoleMoment(const Molecule& mol) const
   // (some models might do something more sophisticated)
   const MatrixX charges = partialCharges(mol);
   // also get the positions of the atoms
-  const Array<Vector3> positions = mol.atomPositions3d();
+  const Array<Vector3>& positions = mol.atomPositions3d();
 
   Vector3 dipole(0.0, 0.0, 0.0);
   if (static_cast<std::size_t>(charges.rows()) != positions.size())
