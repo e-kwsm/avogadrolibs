@@ -39,7 +39,7 @@ public:
   }
 
 public slots:
-  void responseReceived(const Array<double> output)
+  void responseReceived(const Array<double>& output)
   {
     m_finished = true;
     m_output = output;
