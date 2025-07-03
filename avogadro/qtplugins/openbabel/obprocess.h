@@ -281,9 +281,9 @@ public slots:
    * @return True if the process started successfully, false otherwise.
    */
   bool optimizeGeometry(const QByteArray& cml, const QStringList& options,
-                        std::string format = "cml");
+                        const std::string& format = "cml");
   bool generateConformers(const QByteArray& cml, const QStringList& options,
-                          std::string format = "cml");
+                          const std::string& format = "cml");
 signals:
   /**
    * Emitted with the standard output of the process when it finishes.
