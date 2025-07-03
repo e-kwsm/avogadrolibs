@@ -21,7 +21,7 @@ QString dataDirectory()
   return QString(AvogadroLibs_DATA_DIR);
 }
 
-QString findExecutablePath(QString program)
+QString findExecutablePath(const QString& program)
 {
   // we want to return the path to a program if it exists
   // using the PATH system environment variable
@@ -48,7 +48,7 @@ QString findExecutablePath(QString program)
   return QString();
 }
 
-QStringList findExecutablePaths(QStringList programs)
+QStringList findExecutablePaths(const QStringList& programs)
 {
   QStringList result;
 
