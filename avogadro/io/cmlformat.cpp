@@ -626,7 +626,7 @@ bool CmlFormat::write(std::ostream& out, const Core::Molecule& mol)
   bool openFile = true;
 
   xml_node dataMapNode = moleculeNode.append_child("dataMap");
-  VariantMap dataMap = mol.dataMap();
+  const VariantMap& dataMap = mol.dataMap();
   for (VariantMap::const_iterator it = dataMap.constBegin(),
                                   itEnd = dataMap.constEnd();
        it != itEnd; ++it) {

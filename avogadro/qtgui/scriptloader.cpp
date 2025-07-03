@@ -136,7 +136,7 @@ QMultiMap<QString, QString> ScriptLoader::scriptList(const QString& type)
     if (scriptFiles.contains(filePath)) {
       int index = scriptFiles.indexOf(filePath);
       if (index != -1) {
-        QString hash = scriptHashes.at(index);
+        const QString& hash = scriptHashes.at(index);
         // got a match?
         if (hash ==
             QString::number(file.size()) + file.lastModified().toString()) {
