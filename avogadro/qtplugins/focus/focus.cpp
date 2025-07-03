@@ -63,7 +63,7 @@ void Focus::setActiveWidget(QWidget* widget)
   }
 }
 
-void Focus::newFocus(Eigen::Vector3f point, float distance)
+void Focus::newFocus(const Eigen::Vector3f& point, float distance)
 {
   Eigen::Vector3f cameraPoint = -m_camera->modelView().translation();
   Eigen::Vector3f vectorOfSight = point - cameraPoint;
