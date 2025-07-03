@@ -598,7 +598,8 @@ Molecule::AtomType Molecule::addAtom(unsigned char number)
   return AtomType(this, static_cast<Index>(atomCount() - 1));
 }
 
-Molecule::AtomType Molecule::addAtom(unsigned char number, Vector3 position3d)
+Molecule::AtomType Molecule::addAtom(unsigned char number,
+                                     const Vector3& position3d)
 {
   if (m_positions3d.size() == atomCount()) {
     m_positions3d.push_back(position3d);
