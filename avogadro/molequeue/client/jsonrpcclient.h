@@ -92,7 +92,7 @@ protected slots:
   /**
    * Read incoming packets of data from the server.
    */
-  void readPacket(const QByteArray message);
+  void readPacket(const QByteArray& message);
 
   /**
    * Read incoming data, interpret JSON stream.
