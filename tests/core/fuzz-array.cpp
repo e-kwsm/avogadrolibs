@@ -104,7 +104,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
         break;
       }
       case 11: { // copy and compare
-        Array<int> copy = arr;
+        const Array<int>& copy = arr;
         (void)(arr == copy);
         (void)(arr != copy);
         break;
