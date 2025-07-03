@@ -225,7 +225,7 @@ void TemplateToolWidget::groupChanged(int index)
 {
   // get the current name from the text
   QString groupName = m_ui->groupComboBox->currentText();
-  QString iconName = groupName;
+  const QString& iconName = groupName;
   m_denticity = 1;
 
   // check if it's "other"
