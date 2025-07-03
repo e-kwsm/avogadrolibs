@@ -36,7 +36,7 @@ public:
    *                    detected. Should be as low as possible for best
    *                    performance.
    */
-  NeighborPerceiver(const Array<Vector3> points, float maxDistance);
+  NeighborPerceiver(const Array<Vector3>& points, float maxDistance);
 
   /**
    * Returns a list of neighboring points. Linear time to number of neighbors.
