@@ -25,8 +25,8 @@ public:
   OBFileFormat(const std::string& name_, const std::string& identifier_,
                const std::string& description_,
                const std::string& specificationUrl_,
-               const std::vector<std::string> fileExtensions_,
-               const std::vector<std::string> mimeTypes_,
+               const std::vector<std::string>& fileExtensions_,
+               const std::vector<std::string>& mimeTypes_,
                const std::string& defaultFormat_, bool fileOnly_ = false);
   ~OBFileFormat() override;
 
