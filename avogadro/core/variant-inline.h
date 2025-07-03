@@ -23,7 +23,7 @@ inline Variant::Variant(double x, double y, double z) : m_type(Vector)
 }
 
 template <typename T>
-inline Variant::Variant(T v) : m_type(Null)
+inline Variant::Variant(const T& v) : m_type(Null)
 {
   setValue(std::move(v));
 }
