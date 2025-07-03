@@ -73,7 +73,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
 
   // Also test copy construction and operator+=
   if (highlighter.ruleCount() > 0) {
-    GenericHighlighter copy(highlighter);
+    const GenericHighlighter& copy(highlighter);
     GenericHighlighter combined(&doc);
     combined += copy;
   }

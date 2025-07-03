@@ -1422,7 +1422,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
         }
         if (element.value().type() == json::value_t::array) {
           // check if it is a numeric array to go into Eigen::MatrixXd
-          json j = element.value(); // convenience
+          const json& j = element.value(); // convenience
           std::size_t rows = j.size();
           // Rows are not required to be the same length, so size the matrix to
           // the longest of them up front. Growing it row by row instead would
