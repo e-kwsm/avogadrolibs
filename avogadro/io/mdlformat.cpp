@@ -543,7 +543,7 @@ bool MdlFormat::readV3000(std::istream& in, Core::Molecule& mol)
     if (atomData.size() > 8) {
       // loop through the key=value pairs
       for (size_t j = 8; j < atomData.size(); ++j) {
-        string key = atomData[j];
+        const string& key = atomData[j];
         if (startsWith(key, "CHG=")) {
           int charge = lexicalCast<int>(key.substr(4), ok);
           if (!ok) {
@@ -680,7 +680,7 @@ bool MdlFormat::writeV3000(std::ostream& out, const Core::Molecule& mol)
 
   // TODO: isotopes, radicals, etc.
   if (m_writeProperties) {
-    const auto dataMap = mol.dataMap();
+    const auto& dataMap = mol.dataMap();
     for (const auto& key : dataMap.names()) {
       // skip some keys
       if (key == "modelView" || key == "projection")
@@ -763,7 +763,7 @@ bool MdlFormat::write(std::ostream& out, const Core::Molecule& mol)
   out << "M  END\n";
   // Data block
   if (m_writeProperties) {
-    const auto dataMap = mol.dataMap();
+    const auto& dataMap = mol.dataMap();
     for (const auto& key : dataMap.names()) {
       // skip some keys
       if (key == "modelView" || key == "projection")

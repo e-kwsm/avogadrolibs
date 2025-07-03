@@ -947,8 +947,8 @@ public:
       Vector3d grad_cross_j = -(grad_cross_i + grad_cross_k);
 
       // Gradients of the dot product
-      Vector3d grad_dot_i = kj;
-      Vector3d grad_dot_k = ij;
+      const Vector3d& grad_dot_i = kj;
+      const Vector3d& grad_dot_k = ij;
       Vector3d grad_dot_j = -(kj + ij);
 
       // Final gradient using atan2 derivative: d/dx(atan2(y,x)) = (x*dy/dx -
