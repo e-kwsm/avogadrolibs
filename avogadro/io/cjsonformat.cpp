@@ -1045,7 +1045,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         }
         if (element.value().type() == json::value_t::array) {
           // check if it is a numeric array to go into Eigen::MatrixXd
-          json j = element.value(); // convenience
+          const json& j = element.value(); // convenience
           std::size_t rows = j.size();
           MatrixX matrix;
           matrix.resize(rows, 1); // default to 1 columns
@@ -1254,7 +1254,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
   properties["totalCharge"] = molecule.totalCharge();
   properties["totalSpinMultiplicity"] = molecule.totalSpinMultiplicity();
   // loop through all other properties
-  const auto map = molecule.dataMap();
+  const auto& map = molecule.dataMap();
   for (const auto& element : map) {
     if (element.first == "name" || element.first == "inchi")
       continue;
@@ -1693,7 +1693,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
     atoms["coords"] = coords;
 
     // forces if present
-    const auto forceVectors = molecule.forceVectors();
+    const auto& forceVectors = molecule.forceVectors();
     if (forceVectors.size() == molecule.atomCount()) {
       json forces;
       for (const auto& force : forceVectors) {
@@ -1727,7 +1727,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
 
     // isotopes (if present)
     json isotopes;
-    const auto isotopeList = molecule.isotopes();
+    const auto& isotopeList = molecule.isotopes();
     if (isotopeList.size() == molecule.atomCount()) {
       for (Index i = 0; i < molecule.atomCount(); ++i) {
         isotopes.push_back(isotopeList[i]);
