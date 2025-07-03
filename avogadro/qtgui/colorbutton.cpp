@@ -49,7 +49,7 @@ void ColorButton::setColor(const QColor& color)
   emit colorChanged(m_color);
 }
 
-void ColorButton::setDialogTitle(const QString title)
+void ColorButton::setDialogTitle(const QString& title)
 {
   m_title = title;
 }
