@@ -145,7 +145,7 @@ int main(int argc, char** argv)
 
   const std::size_t before = residentBytes();
   for (int i = 0; i < edits; ++i) {
-    QtGui::Molecule next(molecule);
+    const QtGui::Molecule& next(molecule);
     next.atom(0).setPosition3d(Vector3(0.01 * (i + 1), 0.0, 0.0));
     editable.modifyMolecule(next,
                             QtGui::Molecule::Atoms | QtGui::Molecule::Moved,

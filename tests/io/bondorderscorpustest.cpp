@@ -292,7 +292,7 @@ Evaluation evaluate(const std::string& fullPath, bool stripCharges)
   // of its double bonds do.
   bool referenceIsSixSix = false;
   if (hydrocarbon && anyMultiple && referenceUsable) {
-    Molecule ref = truth;
+    const Molecule& ref = truth;
     Avogadro::Core::RingPerceiver perceiver(&ref);
     std::vector<bool> inPentagon(truth.bondCount(), false);
     bool anyPentagon = false;
