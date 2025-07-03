@@ -24,6 +24,7 @@
 #include <list>
 #include <map>
 #include <string>
+#include <utility>
 
 namespace Avogadro::Core {
 class BasisSet;
@@ -341,7 +342,7 @@ public:
 
   /**  Adds an atom to the molecule. */
   virtual AtomType addAtom(unsigned char atomicNumber);
-  AtomType addAtom(unsigned char atomicNumber, Vector3 position3d);
+  AtomType addAtom(unsigned char atomicNumber, const Vector3& position3d);
 
   /**
    * @brief Remove the specified atom from the molecule.
@@ -996,7 +997,7 @@ inline bool Molecule::setColor(Index atomId, Vector3ub color)
         m_colors.push_back(Vector3ub(Elements::color(atomicNumber(i))));
       }
     }
-    m_colors[atomId] = color;
+    m_colors[atomId] = std::move(color);
     return true;
   }
   return false;
