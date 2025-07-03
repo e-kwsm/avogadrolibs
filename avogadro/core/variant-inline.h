@@ -287,7 +287,7 @@ inline bool Variant::setValue(Vector3 vector)
   clear();
 
   m_type = Vector;
-  m_value.vector = new Vector3(vector);
+  m_value.vector = new Vector3(std::move(vector));
 
   return true;
 }
