@@ -80,7 +80,7 @@ int MolecularModel::columnCount(const QModelIndex& parent) const
   return 1; // values
 }
 
-QString formatPointGroup(std::string pointgroup)
+QString formatPointGroup(const std::string& pointgroup)
 {
   // first character is in capital
   // then everything else is in subscript using <sub>...</sub>
