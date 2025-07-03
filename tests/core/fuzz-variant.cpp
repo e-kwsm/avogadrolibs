@@ -161,7 +161,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
         v.clear();
         break;
       case 3: { // copy construct
-        Variant copy(v);
+        const Variant& copy(v);
         (void)copy.type();
         (void)copy.isNull();
         readRandomType(copy, fdp);
