@@ -92,7 +92,7 @@ bool JsonRpcClient::sendRequest(const QJsonObject& request)
   return true;
 }
 
-void JsonRpcClient::readPacket(const QByteArray message)
+void JsonRpcClient::readPacket(const QByteArray& message)
 {
   // Read packet into a Json value
   QJsonParseError error;
