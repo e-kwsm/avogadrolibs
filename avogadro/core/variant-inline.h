@@ -52,6 +52,12 @@ inline Variant::Variant(const T& v) : m_type(Null)
   setValue(std::move(v));
 }
 
+template <typename T>
+inline Variant::Variant(T* v) : m_type(Null)
+{
+  setValue(v);
+}
+
 template <>
 inline Variant::Variant(char v) : m_type(Int)
 {
