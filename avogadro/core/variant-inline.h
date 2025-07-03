@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include <sstream>
+#include <utility>
 
 namespace Avogadro::Core {
 
@@ -222,7 +223,7 @@ inline bool Variant::setValue(std::string string)
   clear();
 
   m_type = String;
-  m_value.string = new std::string(string);
+  m_value.string = new std::string(std::move(string));
 
   return true;
 }
@@ -250,7 +251,7 @@ inline bool Variant::setValue(MatrixX matrix)
   clear();
 
   m_type = Matrix;
-  m_value.matrix = new MatrixX(matrix);
+  m_value.matrix = new MatrixX(std::move(matrix));
 
   return true;
 }
@@ -261,7 +262,7 @@ inline bool Variant::setValue(Vector3 vector)
   clear();
 
   m_type = Vector;
-  m_value.vector = new Vector3(vector);
+  m_value.vector = new Vector3(std::move(vector));
 
   return true;
 }
