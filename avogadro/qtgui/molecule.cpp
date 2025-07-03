@@ -94,8 +94,8 @@ Molecule::AtomType Molecule::addAtom(unsigned char number, Index uniqueId)
   return a;
 }
 
-Molecule::AtomType Molecule::addAtom(unsigned char number, Vector3 position3d,
-                                     Index uniqueId)
+Molecule::AtomType Molecule::addAtom(unsigned char number,
+                                     const Vector3& position3d, Index uniqueId)
 {
   if (uniqueId >= static_cast<Index>(m_atomUniqueIds.size())) {
     // Add atom using our own addAtom (which handles unique IDs)
