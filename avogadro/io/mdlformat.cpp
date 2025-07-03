@@ -39,7 +39,7 @@ namespace {
 
 // Helper function to handle partial charge property blocks
 // e.g. PUBCHEM_MMFF94_PARTIAL_CHARGES
-void handlePartialCharges(Core::Molecule& mol, std::string data)
+void handlePartialCharges(Core::Molecule& mol, const std::string& data)
 {
   // the string starts with the number of charges
   // then atom index  charge
