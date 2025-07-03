@@ -3,6 +3,8 @@
 #include "pqrrequest.h"
 #include "ui_pqrwidget.h"
 
+#include <utility>
+
 namespace Avogadro::QtPlugins {
 
 PQRWidget::PQRWidget(QWidget* parent, ImportPQR* p)
@@ -88,7 +90,7 @@ void PQRWidget::downloadMol()
 
 void PQRWidget::loadMolecule(QByteArray& molData, QString name)
 {
-  plugin->setMoleculeData(molData, name);
+  plugin->setMoleculeData(molData, std::move(name));
 }
 
 } // namespace Avogadro::QtPlugins
