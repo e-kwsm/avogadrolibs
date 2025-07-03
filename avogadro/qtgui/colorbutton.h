@@ -50,7 +50,7 @@ public:
   /**
    * @param title custom title for color choice dialog
    */
-  void setDialogTitle(const QString title = "");
+  void setDialogTitle(const QString& title = "");
 
   /**
    * @return the current color
