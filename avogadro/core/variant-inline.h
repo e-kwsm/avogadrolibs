@@ -12,7 +12,6 @@
 #include <iostream>
 #include <limits>
 #include <sstream>
-#include <utility>
 
 namespace Avogadro::Core {
 
@@ -47,9 +46,9 @@ inline Variant::Variant(double x, double y, double z) : m_type(Vector)
 }
 
 template <typename T>
-inline Variant::Variant(const T& v) : m_type(Null)
+inline Variant::Variant(T v) : m_type(Null)
 {
-  setValue(std::move(v));
+  setValue(v);
 }
 
 template <>
@@ -247,7 +246,7 @@ inline bool Variant::setValue(std::string string)
   clear();
 
   m_type = String;
-  m_value.string = new std::string(std::move(string));
+  m_value.string = new std::string(string);
 
   return true;
 }
@@ -275,7 +274,7 @@ inline bool Variant::setValue(MatrixX matrix)
   clear();
 
   m_type = Matrix;
-  m_value.matrix = new MatrixX(std::move(matrix));
+  m_value.matrix = new MatrixX(matrix);
 
   return true;
 }
@@ -286,7 +285,7 @@ inline bool Variant::setValue(Vector3 vector)
   clear();
 
   m_type = Vector;
-  m_value.vector = new Vector3(std::move(vector));
+  m_value.vector = new Vector3(vector);
 
   return true;
 }
