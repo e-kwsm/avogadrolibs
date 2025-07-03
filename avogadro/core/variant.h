@@ -68,7 +68,9 @@ public:
 
   /** Sets the value of the variant to @p value. */
   template <typename T>
-  bool setValue(T value);
+  bool setValue(const T& value);
+  template <typename T>
+  bool setValue(T* value);
 
   /** Sets the value of the variant to a 3D vector */
   bool setValue(double x, double y, double z);
