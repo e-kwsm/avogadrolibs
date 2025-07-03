@@ -8,6 +8,7 @@
 
 #include <algorithm>
 #include <cassert>
+#include <utility>
 
 #ifdef USE_SPGLIB
 #include <avogadro/core/avospglib.h>
@@ -268,8 +269,8 @@ bool RWMolecule::setColor(Index atomId, Vector3ub color)
   if (atomId >= atomCount())
     return false;
 
-  auto* comm =
-    new SetAtomColorCommand(*this, atomId, m_molecule.color(atomId), color);
+  auto* comm = new SetAtomColorCommand(*this, atomId, m_molecule.color(atomId),
+                                       std::move(color));
   comm->setText(tr("Change Atom Color"));
   m_undoStack.push(comm);
   return true;

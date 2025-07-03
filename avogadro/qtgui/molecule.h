@@ -98,7 +98,7 @@ public:
    */
   virtual AtomType addAtom(unsigned char atomicNumber, Index uniqueId);
 
-  AtomType addAtom(unsigned char number, Vector3 position3d,
+  AtomType addAtom(unsigned char number, const Vector3& position3d,
                    Index uniqueId = MaxIndex);
 
   /**

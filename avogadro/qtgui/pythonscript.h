@@ -106,7 +106,7 @@ public:
    * @param input The input to write to the process' standard input
    * @return The standard output of the process
    */
-  QByteArray asyncWriteAndResponse(QByteArray input);
+  QByteArray asyncWriteAndResponse(const QByteArray& input);
 
   /**
    * Terminate the asynchronous process.

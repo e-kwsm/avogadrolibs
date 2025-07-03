@@ -555,7 +555,8 @@ public:
    * adjusted so that their fractional (lattice) coordinates are preserved. This
    * option is ignored if the input molecule has no unit cell.
    */
-  void editUnitCell(Matrix3 cellMatrix, Core::CrystalTools::Options opts);
+  void editUnitCell(const Matrix3& cellMatrix,
+                    Core::CrystalTools::Options opts);
 
   /**
    * Wrap atoms to the unit cell. Changes are emitted.

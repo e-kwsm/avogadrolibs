@@ -17,9 +17,10 @@ namespace Utilities {
 AVOGADROQTGUI_EXPORT QString libraryDirectory();
 AVOGADROQTGUI_EXPORT QString dataDirectory();
 //! \return a fully-qualified path for a program or an empty string if not found
-AVOGADROQTGUI_EXPORT QString findExecutablePath(QString program);
+AVOGADROQTGUI_EXPORT QString findExecutablePath(const QString& program);
 //! \return a list of all fully-qualified paths for programs that are found
-AVOGADROQTGUI_EXPORT QStringList findExecutablePaths(QStringList programs);
+AVOGADROQTGUI_EXPORT QStringList
+findExecutablePaths(const QStringList& programs);
 
 } // namespace Utilities
 } // namespace QtGui
