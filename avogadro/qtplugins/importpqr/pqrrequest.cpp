@@ -38,7 +38,7 @@ PQRRequest::~PQRRequest()
  * @brief Sends a network request to search for molecules from PQR;
  * @param url The url to query
  */
-void PQRRequest::sendRequest(QString url)
+void PQRRequest::sendRequest(const QString& url)
 {
   reply = oNetworkAccessManager->get(QNetworkRequest(QUrl(url)));
   connect(reply, SIGNAL(finished()), this, SLOT(parseJson()));
@@ -49,7 +49,7 @@ void PQRRequest::sendRequest(QString url)
  * @param url The url to send the request to
  * @param mol2 The mol2 representation of the molecule to download
  */
-void PQRRequest::sendRequest(QString url, QString)
+void PQRRequest::sendRequest(const QString& url, const QString&)
 {
   reply = oNetworkAccessManager->get(QNetworkRequest(QUrl(url)));
   currentMolName = nameDisplay->text(); // needed to load mol into Avogadro
@@ -60,7 +60,7 @@ void PQRRequest::sendRequest(QString url, QString)
  * @brief Sends a network request to download a png form PQR
  * @param url The url to send the request to
  */
-void PQRRequest::sendPNGRequest(QString url)
+void PQRRequest::sendPNGRequest(const QString& url)
 {
   reply = oNetworkAccessManager->get(QNetworkRequest(QUrl(url)));
   connect(reply, SIGNAL(finished()), this, SLOT(SetPNG()));
@@ -175,7 +175,7 @@ void PQRRequest::SetPNG()
  * @brief Takes a formula string and returns a QString with subscript tags
  * @param formula The formula string
  */
-QString PQRRequest::parseSubscripts(QString formula)
+QString PQRRequest::parseSubscripts(const QString& formula)
 {
   std::string str = formula.toStdString();
   QString toReturn;
@@ -195,7 +195,7 @@ QString PQRRequest::parseSubscripts(QString formula)
  * @brief Takes a formula string and returns the molecular mass of the molecule
  * @param formula The formula string
  */
-float PQRRequest::getMolMass(QString formula)
+float PQRRequest::getMolMass(const QString& formula)
 {
   std::string str = formula.toStdString();
   float totalMass = 0.0;
