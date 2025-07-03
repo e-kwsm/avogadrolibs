@@ -24,6 +24,7 @@
 #include <locale>
 #include <map>
 #include <sstream>
+#include <utility>
 
 #ifndef M_PI
 #define M_PI 3.14159265358979323846
@@ -50,7 +51,8 @@ class CmlFormatPrivate
 {
 public:
   CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_)
-    : success(false), molecule(mol), moleculeNode(nullptr), filename(filename_)
+    : success(false), molecule(mol), moleculeNode(nullptr),
+      filename(std::move(filename_))
   {
     // Parse the CML document, and create molecules/elements as necessary.
     moleculeNode = document.child("molecule");
