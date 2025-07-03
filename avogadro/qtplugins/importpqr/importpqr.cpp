@@ -13,6 +13,7 @@
 
 #include <QAction>
 #include <QMessageBox>
+#include <utility>
 
 namespace Avogadro::QtPlugins {
 
@@ -89,7 +90,7 @@ void ImportPQR::menuActivated()
 // called by widget
 void ImportPQR::setMoleculeData(QByteArray& molData, QString name)
 {
-  m_moleculeName = name;
+  m_moleculeName = std::move(name);
   m_moleculeData = molData;
 
   m_dialog->hide();
