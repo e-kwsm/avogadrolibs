@@ -7,7 +7,7 @@
 
 namespace Avogadro::Core {
 
-NeighborPerceiver::NeighborPerceiver(const Array<Vector3> points,
+NeighborPerceiver::NeighborPerceiver(const Array<Vector3>& points,
                                      float maxDistance)
   : m_maxDistance(maxDistance), m_cachedArray(nullptr)
 {
