@@ -49,7 +49,7 @@ void SlaterSetConcurrent::setMolecule(Core::Molecule* mol)
   // while a calculation is still in flight.
   cancelAndWait();
 
-  m_set = dynamic_cast<SlaterSet*>(mol->basisSet());
+  m_set = std::dynamic_pointer_cast<SlaterSet>(mol->basisSet());
 
   delete m_tools;
   m_tools = new SlaterSetTools(mol);
