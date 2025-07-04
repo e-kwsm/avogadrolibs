@@ -198,7 +198,7 @@ bool AvoSpglib::standardizeCell(Molecule& mol, double cartTol, bool toPrimitive,
     }
   }
 
-  auto* newCell = new UnitCell(newCellMat);
+  auto newCell = std::make_shared<UnitCell>(newCellMat);
   newMol.setUnitCell(newCell);
 
   // Next, add in the atoms

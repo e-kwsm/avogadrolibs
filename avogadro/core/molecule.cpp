@@ -253,8 +253,7 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
     // Free what this molecule owns; none of it goes to the source.
     clearMeshes();
     clearCubes();
-    delete m_basisSet;
-    m_basisSet = nullptr;
+    m_basisSet.reset();
     m_unitCell.reset();
 
     takeContentsFrom(other);
