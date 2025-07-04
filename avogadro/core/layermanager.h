@@ -71,6 +71,7 @@ struct MoleculeInfo
     locked.push_back(false);
     visible.push_back(true);
   }
+  ~MoleculeInfo();
 
   void clear()
   {
@@ -87,6 +88,7 @@ struct MoleculeInfo
 class AVOGADROCORE_EXPORT LayerManager
 {
 public:
+  ~LayerManager();
   /** @return active molecule Layer */
   static Layer& getMoleculeLayer();
 

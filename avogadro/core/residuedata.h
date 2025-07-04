@@ -27,6 +27,7 @@ public:
       m_residueDoubleBonds(std::move(doubleBonds))
   {
   }
+  ~ResidueData() = default;
 
   ResidueData(const ResidueData& other)
     : m_residueName(other.m_residueName),
