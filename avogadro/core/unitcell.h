@@ -62,7 +62,7 @@ public:
    * in Angstrom, @a alpha, @a beta, and @a gamma are in radians.
    */
   void setCellParameters(Real a, Real b, Real c, Real alpha, Real beta,
-                         Real gamma);
+                         Real gamma) noexcept(false);
 
   /**
    * The volume of the unit cell in cubic Angstroms.
