@@ -210,8 +210,7 @@ Molecule& Molecule::operator=(const Molecule& other)
 
     delete m_basisSet;
     m_basisSet = other.m_basisSet ? other.m_basisSet->clone() : nullptr;
-    delete m_unitCell;
-    m_unitCell = other.m_unitCell ? new UnitCell(*other.m_unitCell) : nullptr;
+    m_unitCell = other.m_unitCell ? other.m_unitCell : nullptr;
 
     // Copy the layers, only if they exist
     if (other.m_layers.maxLayer() > 0)
@@ -266,7 +265,6 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
     m_basisSet = other.m_basisSet;
     other.m_basisSet = nullptr;
 
-    delete m_unitCell;
     m_unitCell = other.m_unitCell;
     other.m_unitCell = nullptr;
 
@@ -287,7 +285,6 @@ Molecule::~Molecule()
 {
   // LayerManager::deleteMolecule(this);
   delete m_basisSet;
-  delete m_unitCell;
   clearMeshes();
   clearCubes();
 }
@@ -938,10 +935,14 @@ std::string Molecule::formula(const std::string& delimiter, int over) const
 
 void Molecule::setUnitCell(UnitCell* uc)
 {
-  if (uc != m_unitCell) {
-    delete m_unitCell;
-    m_unitCell = uc;
+  if (uc != m_unitCell.get()) {
+    m_unitCell.reset(uc);
   }
+}
+
+void Molecule::setUnitCell(std::shared_ptr<UnitCell> uc)
+{
+  m_unitCell = std::move(uc);
 }
 
 double Molecule::mass() const
