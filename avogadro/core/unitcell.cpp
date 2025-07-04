@@ -12,6 +12,8 @@ namespace Avogadro::Core {
 
 std::string UnitCell::errorCellParameters(const std::string& name) const
 {
+  if (volume() > 0.0)
+    return "";
   Eigen::IOFormat v3_fmt{
     Eigen::StreamPrecision, 0, " ", ", ", "", "", "[", "]"
   };
@@ -31,16 +33,16 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
   m_cellMatrix.col(0) = a_;
   m_cellMatrix.col(1) = b_;
   m_cellMatrix.col(2) = c_;
-  if (volume() == 0.0) {
-    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
+  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
+    throw std::invalid_argument(s);
   }
   computeFractionalMatrix();
 }
 
 UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
 {
-  if (volume() == 0.0) {
-    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
+  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
+    throw std::invalid_argument(s);
   }
   computeFractionalMatrix();
 }
@@ -48,8 +50,8 @@ UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
 void UnitCell::setAVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(0) = v;
-  if (volume() == 0.0) {
-    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
+  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
+    throw std::invalid_argument(s);
   }
   computeFractionalMatrix();
 }
@@ -57,8 +59,8 @@ void UnitCell::setAVector(const Vector3& v) noexcept(false)
 void UnitCell::setBVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(1) = v;
-  if (volume() == 0.0) {
-    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
+  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
+    throw std::invalid_argument(s);
   }
   computeFractionalMatrix();
 }
@@ -66,8 +68,8 @@ void UnitCell::setBVector(const Vector3& v) noexcept(false)
 void UnitCell::setCVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(2) = v;
-  if (volume() == 0.0) {
-    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
+  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
+    throw std::invalid_argument(s);
   }
   computeFractionalMatrix();
 }
@@ -75,8 +77,8 @@ void UnitCell::setCVector(const Vector3& v) noexcept(false)
 void UnitCell::setCellMatrix(const Matrix3& m)
 {
   m_cellMatrix = m;
-  if (volume() == 0.0) {
-    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
+  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
+    throw std::invalid_argument(s);
   }
   computeFractionalMatrix();
 }
