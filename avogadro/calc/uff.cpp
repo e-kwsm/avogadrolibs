@@ -117,7 +117,7 @@ public:
   Eigen::VectorXd m_lastVdWPositions; // positions when VdW list was last built
   int m_vdwCallCount = 0;             // counter for rebuild check interval
   Core::Molecule* m_molecule;
-  Core::UnitCell* m_cell;
+  std::shared_ptr<Core::UnitCell> m_cell;
 
   static uint64_t pairKey(Index i, Index j)
   {
