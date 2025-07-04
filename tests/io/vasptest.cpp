@@ -98,7 +98,7 @@ TEST(VaspTest, writePoscar)
   mat.col(1) = Vector3(0.00000, 4.59373, 0.00000); // B
   mat.col(2) = Vector3(0.00000, 0.00000, 4.59373); // C
 
-  UnitCell* uc = new UnitCell(mat);
+  auto uc = std::make_shared<UnitCell>(mat);
 
   molecule.setUnitCell(uc);
 

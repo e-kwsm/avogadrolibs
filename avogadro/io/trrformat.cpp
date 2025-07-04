@@ -328,10 +328,102 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     for (auto& _kid : keyCheck) {
       if (header[_kid] != 0) {
         natoms = header["natoms"];
+<<<<<<< HEAD
         if (!readMatrix(inStream, buff, fileLen, endian, doubleStatus,
                         _kid == "box_size", mol)) {
           appendError("lattice vectors are not linear independent");
           return false;
+||||||| parent of 75e14b301 (avogadro/core/avospglib.cpp)
+        if (doubleStatus) {
+          snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM * DIM);
+          double mat[DIM][DIM];
+          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
+          struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
+                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
+                        &mat[2][1], &mat[2][2]);
+          if (_kid == "box_size") {
+            auto* uc = new UnitCell(
+              Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
+                      mat[0][2] * NM_TO_ANGSTROM),
+              Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
+                      mat[1][2] * NM_TO_ANGSTROM),
+              Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
+                      mat[2][2] * NM_TO_ANGSTROM));
+            if (!uc->isRegular()) {
+              appendError("lattice vectors are not linear independent");
+              delete uc;
+              return false;
+            }
+            mol.setUnitCell(uc);
+          }
+        } else {
+          snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM * DIM);
+          float mat[DIM][DIM];
+          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
+          struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
+                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
+                        &mat[2][1], &mat[2][2]);
+          if (_kid == "box_size") {
+            auto* uc = new UnitCell(
+              Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
+                      mat[0][2] * NM_TO_ANGSTROM),
+              Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
+                      mat[1][2] * NM_TO_ANGSTROM),
+              Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
+                      mat[2][2] * NM_TO_ANGSTROM));
+            if (!uc->isRegular()) {
+              appendError("lattice vectors are not linear independent");
+              delete uc;
+              return false;
+            }
+            mol.setUnitCell(uc);
+          }
+=======
+        if (doubleStatus) {
+          snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM * DIM);
+          double mat[DIM][DIM];
+          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
+          struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
+                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
+                        &mat[2][1], &mat[2][2]);
+          if (_kid == "box_size") {
+            auto uc = std::make_shared<UnitCell>(
+              Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
+                      mat[0][2] * NM_TO_ANGSTROM),
+              Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
+                      mat[1][2] * NM_TO_ANGSTROM),
+              Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
+                      mat[2][2] * NM_TO_ANGSTROM));
+            if (!uc->isRegular()) {
+              appendError("lattice vectors are not linear independent");
+              delete uc;
+              return false;
+            }
+            mol.setUnitCell(uc);
+          }
+        } else {
+          snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM * DIM);
+          float mat[DIM][DIM];
+          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
+          struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
+                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
+                        &mat[2][1], &mat[2][2]);
+          if (_kid == "box_size") {
+            auto uc = std::make_shared<UnitCell>(
+              Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
+                      mat[0][2] * NM_TO_ANGSTROM),
+              Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
+                      mat[1][2] * NM_TO_ANGSTROM),
+              Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
+                      mat[2][2] * NM_TO_ANGSTROM));
+            if (!uc->isRegular()) {
+              appendError("lattice vectors are not linear independent");
+              delete uc;
+              return false;
+            }
+            mol.setUnitCell(uc);
+          }
+>>>>>>> 75e14b301 (avogadro/core/avospglib.cpp)
         }
       }
     }
