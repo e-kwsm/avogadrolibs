@@ -66,7 +66,7 @@ private:
   Core::Cube* m_cube;
   QVector<GaussianShell>* m_gaussianShells;
 
-  Core::GaussianSet* m_set;
+  std::shared_ptr<Core::GaussianSet> m_set;
   Core::GaussianSetTools* m_tools;
 
   bool setUpCalculation(Core::Cube* cube, unsigned int state,
