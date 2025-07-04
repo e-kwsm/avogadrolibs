@@ -72,6 +72,15 @@ void UnitCell::setCVector(const Vector3& v) noexcept(false)
   computeFractionalMatrix();
 }
 
+void UnitCell::setCellMatrix(const Matrix3& m)
+{
+  m_cellMatrix = m;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
+  }
+  computeFractionalMatrix();
+}
+
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
                                  Real ga) noexcept(false)
 {

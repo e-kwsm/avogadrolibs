@@ -213,12 +213,6 @@ inline const Matrix3& UnitCell::cellMatrix() const
   return m_cellMatrix;
 }
 
-inline void UnitCell::setCellMatrix(const Matrix3& m)
-{
-  m_cellMatrix = m;
-  computeFractionalMatrix();
-}
-
 inline const Matrix3& UnitCell::fractionalMatrix() const
 {
   return m_fractionalMatrix;
