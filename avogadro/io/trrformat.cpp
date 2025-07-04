@@ -156,7 +156,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                       &mat[1][1], &mat[1][2], &mat[2][0], &mat[2][1],
                       &mat[2][2]);
         if (_kid == "box_size") {
-          auto* uc = new UnitCell(
+          auto uc = std::make_shared<UnitCell>(
             Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                     mat[0][2] * NM_TO_ANGSTROM),
             Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
@@ -165,7 +165,6 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                     mat[2][2] * NM_TO_ANGSTROM));
           if (!uc->isRegular()) {
             appendError("lattice vectors are not linear independent");
-            delete uc;
             return false;
           }
           mol.setUnitCell(uc);
@@ -178,7 +177,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                       &mat[1][1], &mat[1][2], &mat[2][0], &mat[2][1],
                       &mat[2][2]);
         if (_kid == "box_size") {
-          auto* uc = new UnitCell(
+          auto uc = std::make_shared<UnitCell>(
             Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                     mat[0][2] * NM_TO_ANGSTROM),
             Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
@@ -330,7 +329,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                         &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
                         &mat[2][1], &mat[2][2]);
           if (_kid == "box_size") {
-            auto* uc = new UnitCell(
+            auto uc = std::make_shared<UnitCell>(
               Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                       mat[0][2] * NM_TO_ANGSTROM),
               Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
@@ -351,7 +350,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                         &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
                         &mat[2][1], &mat[2][2]);
           if (_kid == "box_size") {
-            auto* uc = new UnitCell(
+            auto uc = std::make_shared<UnitCell>(
               Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                       mat[0][2] * NM_TO_ANGSTROM),
               Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
