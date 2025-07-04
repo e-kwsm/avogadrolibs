@@ -103,7 +103,7 @@ private:
   QFutureWatcher<void> m_watcher;
   QVector<GaussianShell>* m_gaussianShells;
 
-  Core::GaussianSet* m_set;
+  std::shared_ptr<Core::GaussianSet> m_set;
   Core::GaussianSetTools* m_tools;
   // Keeps the basis set the workers read alive for the job, even if the
   // molecule later detaches from it and hands it to an undo snapshot.

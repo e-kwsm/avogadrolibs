@@ -102,7 +102,7 @@ private:
   QFutureWatcher<void> m_watcher;
   QVector<SlaterShell>* m_shells;
 
-  Core::SlaterSet* m_set;
+  std::shared_ptr<Core::SlaterSet> m_set;
   Core::SlaterSetTools* m_tools;
   // Keeps the basis set the workers read alive for the job, even if the
   // molecule later detaches from it and hands it to an undo snapshot.
