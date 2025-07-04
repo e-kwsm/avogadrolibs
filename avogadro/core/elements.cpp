@@ -109,6 +109,7 @@ public:
         CustomElementNamePrefix + suffix;
     }
   }
+  ~InitializeCustomElementTables() = default;
 } CustomElementTableInitializer;
 
 } // namespace
