@@ -1006,6 +1006,11 @@ std::pair<Vector3, Vector3> Molecule::bestFitPlane(const Array<Vector3>& pos)
   return std::make_pair(centroid, plane_normal);
 }
 
+void Molecule::setBasisSet(BasisSet* basis)
+{
+  m_basisSet.reset(basis);
+}
+
 Array<double> Molecule::vibrationFrequencies() const
 {
   return m_vibrationFrequencies;
