@@ -158,21 +158,6 @@ inline UnitCell::UnitCell(Real a_, Real b_, Real c_, Real alpha_, Real beta_,
   setCellParameters(a_, b_, c_, alpha_, beta_, gamma_);
 }
 
-inline UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
-                          const Vector3& c_)
-{
-  m_cellMatrix.col(0) = a_;
-  m_cellMatrix.col(1) = b_;
-  m_cellMatrix.col(2) = c_;
-  computeFractionalMatrix();
-}
-
-inline UnitCell::UnitCell(const Matrix3& cellMatrix_)
-  : m_cellMatrix(cellMatrix_)
-{
-  computeFractionalMatrix();
-}
-
 inline UnitCell::UnitCell(const UnitCell& other)
   : m_cellMatrix(other.m_cellMatrix),
     m_fractionalMatrix(other.m_fractionalMatrix)
