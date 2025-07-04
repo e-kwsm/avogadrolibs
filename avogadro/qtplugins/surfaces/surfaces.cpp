@@ -84,7 +84,7 @@ public:
 
 Surfaces::Surfaces(QObject* p) : ExtensionPlugin(p), d(new PIMPL())
 {
-  auto action = new QAction(this);
+  auto* action = new QAction(this);
   action->setText(tr("Create Surfaces…"));
   connect(action, SIGNAL(triggered()), SLOT(surfacesActivated()));
   connect(&m_displayMeshWatcher, SIGNAL(finished()), SLOT(displayMesh()));
@@ -286,7 +286,7 @@ void Surfaces::surfacesActivated()
 
   if (m_basis) {
     // we have quantum data, set up the dialog accordingly
-    auto gaussian = dynamic_cast<Core::GaussianSet*>(m_basis);
+    auto* gaussian = dynamic_cast<Core::GaussianSet*>(m_basis);
     bool beta = false;
     if (gaussian) {
       auto b = gaussian->moMatrix(GaussianSet::Beta);
@@ -700,7 +700,7 @@ void Surfaces::stepChanged(int n)
     return;
 
   qDebug() << "\n\t==== Step changed to" << n << "====";
-  auto g = dynamic_cast<GaussianSet*>(m_basis);
+  auto* g = dynamic_cast<GaussianSet*>(m_basis);
   if (g) {
     g->setActiveSetStep(n - 1);
     m_molecule->clearCubes();
@@ -936,7 +936,7 @@ void Surfaces::movieFrame()
   QCoreApplication::sendPostedEvents();
   QCoreApplication::processEvents();
 
-  auto glWidget = QtOpenGL::ActiveObjects::instance().activeGLWidget();
+  auto* glWidget = QtOpenGL::ActiveObjects::instance().activeGLWidget();
   if (!glWidget) {
     QMessageBox::warning(
       qobject_cast<QWidget*>(parent()), tr("Avogadro"),
