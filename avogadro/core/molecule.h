@@ -24,6 +24,7 @@
 #include <cstddef>
 #include <list>
 #include <map>
+#include <memory>
 #include <string>
 
 namespace Avogadro::Core {
@@ -592,13 +593,13 @@ public:
    * Set the basis set for the molecule, note that the molecule takes ownership
    * of the object.
    */
-  void setBasisSet(BasisSet* basis) { m_basisSet = basis; }
+  void setBasisSet(BasisSet* basis);
 
   /**
    * @return the basis set (if present) for the molecule.
    */
-  BasisSet* basisSet() { return m_basisSet; }
-  const BasisSet* basisSet() const { return m_basisSet; }
+  BasisSet* basisSet() { return m_basisSet.get(); }
+  const BasisSet* basisSet() const { return m_basisSet.get(); }
 
   /**
    * The unit cell for this molecule. May be nullptr for non-periodic
@@ -995,7 +996,7 @@ protected:
   std::vector<Cube*> m_cubes;
   Index m_activeCubeIndex = 0;
 
-  BasisSet* m_basisSet;
+  std::shared_ptr<BasisSet> m_basisSet;
   UnitCell* m_unitCell;
   Array<Residue> m_residues;
 
