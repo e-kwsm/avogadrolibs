@@ -669,6 +669,7 @@ public:
    * @{
    */
   void setUnitCell(UnitCell* uc);
+  void setUnitCell(std::shared_ptr<UnitCell> uc);
   UnitCell* unitCell() { return m_unitCell.get(); }
   const UnitCell* unitCell() const { return m_unitCell.get(); }
   /** @} */

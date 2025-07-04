@@ -1755,6 +1755,11 @@ void Molecule::setUnitCell(UnitCell* uc)
     m_unitCell.reset(uc);
 }
 
+void Molecule::setUnitCell(std::shared_ptr<UnitCell> uc)
+{
+  m_unitCell = std::move(uc);
+}
+
 double Molecule::mass() const
 {
   double m(0.0);
