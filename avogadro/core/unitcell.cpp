@@ -21,6 +21,14 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
   computeFractionalMatrix();
 }
 
+UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
+{
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
+  computeFractionalMatrix();
+}
+
 void UnitCell::setAVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(0) = v;
