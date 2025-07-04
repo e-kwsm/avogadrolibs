@@ -784,7 +784,7 @@ void Cp2kInputDialog::updatePreviewText()
 
   // unit cell
   file += "    &CELL\n";
-  if (const Core::UnitCell* cell = m_molecule->unitCell()) {
+  if (const auto& cell = m_molecule->unitCell()) {
     Vector3f a = cell->aVector().cast<float>();
     Vector3f b = cell->bVector().cast<float>();
     Vector3f c = cell->cVector().cast<float>();
