@@ -797,7 +797,7 @@ public:
 
   void redo() override
   {
-    m_mol.molecule().setUnitCell(new UnitCell(m_newUnitCell));
+    m_mol.molecule().setUnitCell(std::make_shared<UnitCell>(m_newUnitCell));
   }
 
   void undo() override { m_mol.molecule().setUnitCell(nullptr); }
@@ -819,7 +819,7 @@ public:
 
   void undo() override
   {
-    m_mol.molecule().setUnitCell(new UnitCell(m_oldUnitCell));
+    m_mol.molecule().setUnitCell(std::make_shared<UnitCell>(m_oldUnitCell));
   }
 };
 } // namespace
