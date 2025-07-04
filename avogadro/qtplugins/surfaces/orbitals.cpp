@@ -75,7 +75,8 @@ void Orbitals::setMolecule(QtGui::Molecule* mol)
   // check if it has basis set data
   bool hasOrbitals = (m_molecule->basisSet() != nullptr);
   // sanity check if there are actually mo coefficients
-  auto* basis = dynamic_cast<Core::GaussianSet*>(m_molecule->basisSet());
+  auto basis =
+    std::dynamic_pointer_cast<Core::GaussianSet>(m_molecule->basisSet());
   if (basis == nullptr || basis->moMatrix().size() == 0)
     hasOrbitals = false;
 
@@ -116,7 +117,8 @@ void Orbitals::loadOrbitals()
   if (m_basis == nullptr || m_molecule == nullptr)
     return;
 
-  auto* basis = dynamic_cast<Core::GaussianSet*>(m_molecule->basisSet());
+  auto basis =
+    std::dynamic_pointer_cast<Core::GaussianSet>(m_molecule->basisSet());
   if (basis == nullptr || basis->moMatrix().size() == 0)
     return;
 
@@ -136,7 +138,7 @@ void Orbitals::loadOrbitals()
             SLOT(precalculateOrbitals()));
   }
 
-  m_dialog->fillTable(m_basis);
+  m_dialog->fillTable(m_basis.get());
   m_dialog->show();
   m_dialog->raise();
 }
@@ -150,7 +152,8 @@ void Orbitals::moleculeChanged([[maybe_unused]] unsigned int changes)
   bool hasOrbitals = (m_molecule->basisSet() != nullptr);
 
   // sanity check if there are actually mo coefficients
-  auto* basis = dynamic_cast<Core::GaussianSet*>(m_molecule->basisSet());
+  auto basis =
+    std::dynamic_pointer_cast<Core::GaussianSet>(m_molecule->basisSet());
   if (basis == nullptr || basis->moMatrix().size() == 0)
     hasOrbitals = false;
 
