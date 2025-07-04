@@ -78,7 +78,7 @@ void GaussianSetConcurrent::setMolecule(Core::Molecule* mol)
   // Setting up a calculation writes into the basis set (initCalculation(),
   // and generateDensityMatrix() for a Gaussian set), so take the mutable
   // one. The molecule gets a private copy if an undo snapshot shares it.
-  m_set = dynamic_cast<GaussianSet*>(mol->basisSet());
+  m_set = std::dynamic_pointer_cast<GaussianSet>(mol->basisSet());
 
   delete m_tools;
   m_tools = new GaussianSetTools(mol);
