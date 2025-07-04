@@ -64,8 +64,7 @@ std::string CoordinateBlockGenerator::generateCoordinateBlock()
   const char* name = "\0";
   Vector3 pos3d;
   Vector3 fpos3d;
-  const UnitCell* cell =
-    needFractionalPosition ? molecule()->unitCell() : nullptr;
+  const auto cell = needFractionalPosition ? molecule()->unitCell() : nullptr;
 
   // widths/precisions
   enum
