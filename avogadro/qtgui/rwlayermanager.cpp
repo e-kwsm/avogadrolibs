@@ -42,7 +42,7 @@ public:
     }
     // now we do the same thing for settings
     for (const auto& names : m_moleculeInfo->settings) {
-      auto value = names.second[activeLayer];
+      auto* value = names.second[activeLayer];
       m_settings[names.first] = value;
     }
   }
