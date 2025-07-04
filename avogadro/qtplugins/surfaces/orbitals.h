@@ -147,7 +147,7 @@ private:
   QAction* m_action;
 
   QtGui::Molecule* m_molecule = nullptr;
-  Core::BasisSet* m_basis = nullptr;
+  std::shared_ptr<Core::BasisSet> m_basis = nullptr;
 
   QList<calcInfo> m_queue;
   int m_currentRunningCalculation = -1;
