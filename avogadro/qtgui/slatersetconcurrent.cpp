@@ -71,7 +71,7 @@ void SlaterSetConcurrent::setMolecule(Core::Molecule* mol)
   // Setting up a calculation writes into the basis set (initCalculation(),
   // and generateDensityMatrix() for a Gaussian set), so take the mutable
   // one. The molecule gets a private copy if an undo snapshot shares it.
-  m_set = dynamic_cast<SlaterSet*>(mol->basisSet());
+  m_set = std::dynamic_pointer_cast<SlaterSet>(mol->basisSet());
 
   delete m_tools;
   m_tools = new SlaterSetTools(mol);
