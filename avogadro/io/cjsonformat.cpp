@@ -355,7 +355,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
       unitCell = jsonRoot["unit cell"];
 
     if (unitCell.is_object()) {
-      Core::UnitCell* unitCellObject = nullptr;
+      std::shared_ptr<Core::UnitCell> unitCellObject;
 
       // read in cell vectors in preference to a, b, c parameters
       json cellVectors = unitCell["cellVectors"];
@@ -364,7 +364,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         Vector3 aVector(cellVectors[0], cellVectors[1], cellVectors[2]);
         Vector3 bVector(cellVectors[3], cellVectors[4], cellVectors[5]);
         Vector3 cVector(cellVectors[6], cellVectors[7], cellVectors[8]);
-        unitCellObject = new Core::UnitCell(aVector, bVector, cVector);
+        unitCellObject =
+          std::make_shared<Core::UnitCell>(aVector, bVector, cVector);
       } else if (unitCell["a"].is_number() && unitCell["b"].is_number() &&
                  unitCell["c"].is_number() && unitCell["alpha"].is_number() &&
                  unitCell["beta"].is_number() &&
@@ -375,7 +376,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         Real alpha = static_cast<Real>(unitCell["alpha"]) * DEG_TO_RAD;
         Real beta = static_cast<Real>(unitCell["beta"]) * DEG_TO_RAD;
         Real gamma = static_cast<Real>(unitCell["gamma"]) * DEG_TO_RAD;
-        unitCellObject = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+        unitCellObject =
+          std::make_shared<Core::UnitCell>(a, b, c, alpha, beta, gamma);
       }
       if (unitCellObject != nullptr)
         molecule.setUnitCell(unitCellObject);
