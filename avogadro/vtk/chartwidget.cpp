@@ -113,9 +113,8 @@ bool ChartWidget::addPlots(const std::vector<std::vector<float>>& plotData,
   std::vector<vtkFloatArray*> vtkArrays;
 
   int col = 0;
-  for (const auto& d : plotData) {
+  for ([[maybe_unused]] const auto& d : plotData) {
     // The vtkTable will hold a reference, the temp std::vector doesn't need to.
-    AVO_UNUSED(d);
     vtkNew<vtkFloatArray> vtkArray;
     // Runtime errors without unique names, so construct something.
     vtkArray->SetName(("c" + std::to_string(col++)).c_str());
