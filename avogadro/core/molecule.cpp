@@ -114,14 +114,14 @@ void Molecule::readProperties(const Molecule& other)
   m_conformerProperties = other.m_conformerProperties;
 
   // copy orbital information
-  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
+  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet.get());
   if (slaterSet != nullptr) {
-    m_basisSet = slaterSet->clone();
+    m_basisSet.reset(slaterSet->clone());
     m_basisSet->setMolecule(this);
   }
-  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
+  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet.get());
   if (gaussianSet != nullptr) {
-    m_basisSet = gaussianSet->clone();
+    m_basisSet.reset(gaussianSet->clone());
     m_basisSet->setMolecule(this);
   }
 
@@ -208,8 +208,7 @@ Molecule& Molecule::operator=(const Molecule& other)
     }
     m_activeCubeIndex = other.m_activeCubeIndex;
 
-    delete m_basisSet;
-    m_basisSet = other.m_basisSet ? other.m_basisSet->clone() : nullptr;
+    m_basisSet.reset(other.m_basisSet ? other.m_basisSet->clone() : nullptr);
     if (m_basisSet != nullptr && m_basisSet->molecule() == &other)
       m_basisSet->setMolecule(this);
     delete m_unitCell;
@@ -358,7 +357,6 @@ void Molecule::takeContentsFrom(Molecule& other) noexcept
 Molecule::~Molecule()
 {
   // LayerManager::deleteMolecule(this);
-  delete m_basisSet;
   delete m_unitCell;
   clearMeshes();
   clearCubes();
