@@ -15,12 +15,6 @@
 #endif
 
 /**
- * This macro marks a parameter as unused. Its purpose is to disable the
- * compiler from emitting unused parameter warnings.
- */
-#define AVO_UNUSED(variable) (void)variable
-
-/**
  * This macro marks a class as not copyable. It should be used in the private
  * section of a class's declaration.
  */

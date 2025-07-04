@@ -120,10 +120,8 @@ inline bool Variant::setValue(const std::vector<double>& v)
 }
 
 template <typename T>
-inline bool Variant::setValue(T v)
+inline bool Variant::setValue([[maybe_unused]] T v)
 {
-  AVO_UNUSED(v);
-
 #ifndef NDEBUG
 #if defined(_MSC_VER)
   std::cerr << " Variant::setValue() not implemented for " << __FUNCSIG__
