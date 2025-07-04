@@ -83,9 +83,11 @@ void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
   }
   if (al <= 0.0 || al >= M_PI || be <= 0.0 || be >= M_PI || ga <= 0.0 ||
       ga >= M_PI) {
+    constexpr auto rad2deg = 180.0 / M_PI;
     std::stringstream ss;
     ss << __FUNCTION__ << ": angle is wrong\n"
-       << "alpha=" << al << ", beta=" << be << ", gamma=" << ga << "\n";
+       << "alpha=" << rad2deg * al << ", beta=" << rad2deg * be
+       << ", gamma=" << rad2deg * ga << " (in degree)\n";
     throw std::invalid_argument{ ss.str() };
   }
 
