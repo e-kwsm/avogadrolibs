@@ -44,7 +44,7 @@ void SlaterSetConcurrent::setMolecule(Core::Molecule* mol)
 {
   if (!mol)
     return;
-  m_set = dynamic_cast<SlaterSet*>(mol->basisSet());
+  m_set = std::dynamic_pointer_cast<SlaterSet>(mol->basisSet());
 
   delete m_tools;
   m_tools = new SlaterSetTools(mol);
