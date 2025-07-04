@@ -33,18 +33,27 @@ UnitCell::UnitCell(const Matrix3& cellMatrix_) noexcept(false)
 void UnitCell::setAVector(const Vector3& v)
 {
   m_cellMatrix.col(0) = v;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
   computeFractionalMatrix();
 }
 
 void UnitCell::setBVector(const Vector3& v)
 {
   m_cellMatrix.col(1) = v;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
   computeFractionalMatrix();
 }
 
 void UnitCell::setCVector(const Vector3& v)
 {
   m_cellMatrix.col(2) = v;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
   computeFractionalMatrix();
 }
 
