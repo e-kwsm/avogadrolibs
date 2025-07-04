@@ -38,14 +38,12 @@ using Core::UnitCell;
 bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
 {
   size_t numAtoms = 0, timestep = 0, x_idx = -1, y_idx = -1, z_idx = -1,
-         type_idx = -1, id_idx = -1;
+         type_idx = -1;
+  // This can likely be removed as it is clearly not used anywhere.
+  [[maybe_unused]] size_t id_idx = -1;
   double x_min = 0, x_max = 0, y_min = 0, y_max = 0, z_min = 0, z_max = 0,
          tilt_xy = 0, tilt_xz = 0, tilt_yz = 0, scale_x = 0., scale_y = 0.,
          scale_z = 0.;
-
-  // This can likely be removed as it is clearly not used anywhere, suppress for
-  // now.
-  AVO_UNUSED(id_idx);
 
   string buffer;
   getline(inStream, buffer); // Finish the first line
