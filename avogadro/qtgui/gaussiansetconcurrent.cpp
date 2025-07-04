@@ -55,7 +55,7 @@ void GaussianSetConcurrent::setMolecule(Core::Molecule* mol)
 {
   if (!mol)
     return;
-  m_set = dynamic_cast<GaussianSet*>(mol->basisSet());
+  m_set = std::dynamic_pointer_cast<GaussianSet>(mol->basisSet());
 
   delete m_tools;
   m_tools = new GaussianSetTools(mol);
