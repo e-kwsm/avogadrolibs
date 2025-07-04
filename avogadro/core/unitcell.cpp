@@ -23,8 +23,16 @@ UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
 }
 
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
-                                 Real ga)
+                                 Real ga) noexcept(false)
 {
+  if (a_ <= 0.0 || b_ <= 0.0 || c_ <= 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
+  if (al <= 0.0 || al >= M_PI || be <= 0.0 || be >= M_PI || ga <= 0.0 ||
+      ga >= M_PI) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
+
   // Convert parameters to matrix. See "Appendix 2: Coordinate Systems and
   // Transformations" of the PDB guide (ref v2.2, 4/23/13,
   // http://www.bmsc.washington.edu/CrystaLinks/man/pdb/guide2.2_frame.html)
