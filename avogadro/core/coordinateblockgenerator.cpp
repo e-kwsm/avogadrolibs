@@ -118,8 +118,7 @@ std::string CoordinateBlockGenerator::generateCoordinateBlock()
   const char* name = "\0";
   Vector3 pos3d = Vector3::Zero();
   Vector3 fpos3d = Vector3::Zero();
-  const UnitCell* cell =
-    needFractionalPosition ? molecule()->unitCell() : nullptr;
+  const auto cell = needFractionalPosition ? molecule()->unitCell() : nullptr;
 
   const int indexWidth(indexWidthFor(numAtoms));
 
