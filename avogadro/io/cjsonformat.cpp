@@ -339,7 +339,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
 
         json atomsResidue = residue["atoms"];
         if (atomsResidue.is_object()) {
-          for (auto& item : atomsResidue.items()) {
+          for (const auto& item : atomsResidue.items()) {
             if (item.value() < molecule.atomCount()) {
               const Atom& atom = molecule.atom(item.value());
               newResidue.addResidueAtom(item.key(), atom);
@@ -701,7 +701,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         }
       }
       // iterate through everything else
-      for (auto& element : properties.items()) {
+      for (const auto& element : properties.items()) {
         if (element.key() == "totalCharge" ||
             element.key() == "totalSpinMultiplicity" ||
             element.key() == "dipoleMoment") {
@@ -776,7 +776,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
     json partialCharges = atoms["partialCharges"];
     if (partialCharges.is_object()) {
       // keys are types, values are arrays of charges
-      for (auto& kv : partialCharges.items()) {
+      for (const auto& kv : partialCharges.items()) {
         MatrixX charges(atomCount, 1);
         if (isNumericArray(kv.value()) && kv.value().size() == atomCount) {
           for (size_t i = 0; i < kv.value().size(); ++i) {
@@ -966,7 +966,8 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
   if (molecule.basisSet() &&
       dynamic_cast<const GaussianSet*>(molecule.basisSet())) {
     json basis;
-    auto gaussian = dynamic_cast<const GaussianSet*>(molecule.basisSet());
+    const auto* gaussian =
+      dynamic_cast<const GaussianSet*>(molecule.basisSet());
 
     // Map the shell types from enumeration to integer values.
     auto symmetry = gaussian->symmetry();
