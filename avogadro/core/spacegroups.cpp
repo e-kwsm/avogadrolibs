@@ -1244,7 +1244,7 @@ void SpaceGroups::reduceToAsymmetricUnit(Molecule& mol,
 {
   if (!mol.unitCell())
     return;
-  UnitCell* uc = mol.unitCell();
+  const auto& uc = mol.unitCell();
 
   // The number of atoms may change as we remove atoms, so don't cache
   // the number of atoms, atomic positions, or atomic numbers
