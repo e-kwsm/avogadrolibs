@@ -157,7 +157,7 @@ bool OrbitalTableModel::setOrbitals(const Core::BasisSet* basis)
   // TODO: handle both alpha and beta (separate columns?)
   // TODO: move moEnergies to the BasisSet class
   QList<QVariant> alphaEnergies;
-  auto* gaussianBasis = dynamic_cast<const Core::GaussianSet*>(basis);
+  const auto* gaussianBasis = dynamic_cast<const Core::GaussianSet*>(basis);
   if (gaussianBasis != nullptr) {
     auto moEnergies = gaussianBasis->moEnergy();
     alphaEnergies.reserve(moEnergies.size());
