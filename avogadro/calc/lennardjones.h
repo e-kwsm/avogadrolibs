@@ -52,7 +52,7 @@ public:
 
 protected:
   Core::Molecule* m_molecule;
-  Core::UnitCell* m_cell;
+  std::shared_ptr<Core::UnitCell> m_cell;
   Eigen::MatrixXd m_radii;
   bool m_vdw;
   Real m_depth;
