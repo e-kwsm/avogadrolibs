@@ -409,7 +409,7 @@ void RWMolecule::addUnitCell()
   if (m_molecule.unitCell())
     return;
 
-  auto* cell = new UnitCell;
+  auto cell = std::make_shared<UnitCell>();
   cell->setCellParameters(
     static_cast<Real>(3.0), static_cast<Real>(3.0), static_cast<Real>(3.0),
     static_cast<Real>(90.0) * DEG_TO_RAD, static_cast<Real>(90.0) * DEG_TO_RAD,

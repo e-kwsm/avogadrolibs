@@ -228,13 +228,12 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     return false;
   }
   mol.setCoordinate3d(mol.atomPositions3d(), 0);
-  auto* uc = new UnitCell(Vector3(x_max - x_min, 0, 0),
-                          Vector3(tilt_xy, y_max - y_min, 0),
-                          Vector3(tilt_xz, tilt_yz, z_max - z_min));
+  auto uc = std::make_shared<UnitCell>(
+    Vector3(x_max - x_min, 0, 0), Vector3(tilt_xy, y_max - y_min, 0),
+    Vector3(tilt_xz, tilt_yz, z_max - z_min));
   if (!uc->isRegular()) {
     appendError(
       "'ITEM: BOX BOUNDS' does not give linear-independent lattive vectors");
-    delete uc;
     return false;
   }
   mol.setUnitCell(uc);
@@ -396,9 +395,9 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     }
 
     mol.setCoordinate3d(positions, coordSet++);
-    auto* uc = new UnitCell(Vector3(x_max - x_min, 0, 0),
-                            Vector3(tilt_xy, y_max - y_min, 0),
-                            Vector3(tilt_xz, tilt_yz, z_max - z_min));
+    auto uc = std::make_shared<UnitCell>(
+      Vector3(x_max - x_min, 0, 0), Vector3(tilt_xy, y_max - y_min, 0),
+      Vector3(tilt_xz, tilt_yz, z_max - z_min));
     if (!uc->isRegular()) {
       appendError(
         "'ITEM: BOX BOUNDS' does not give linear-independent lattive vectors");

@@ -19,7 +19,7 @@ Molecule createCrystal(Real a, Real b, Real c, Real alpha, Real beta,
                        Real gamma)
 {
   Molecule mol;
-  mol.setUnitCell(new UnitCell);
+  mol.setUnitCell(std::make_shared<UnitCell>());
   mol.unitCell()->setCellParameters(a, b, c, alpha * DEG_TO_RAD,
                                     beta * DEG_TO_RAD, gamma * DEG_TO_RAD);
   return mol;

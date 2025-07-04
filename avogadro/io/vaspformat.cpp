@@ -200,11 +200,10 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // Let's make a unit cell
-  auto* cell = new UnitCell(cellMat);
+  auto cell = std::make_shared<UnitCell>(cellMat);
 
   if (!cell->isRegular()) {
     appendError("cell vectors are not linear independent");
-    delete cell;
     return false;
   }
 
@@ -389,7 +388,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
         }
         // Checks whether all the three axis vectors have been read
         if (ax1Set && ax2Set && ax3Set) {
-          auto* cell = new UnitCell(ax1, ax2, ax3);
+          auto cell = std::make_shared<UnitCell>(ax1, ax2, ax3);
           if (!cell->isRegular()) {
             appendError("cell vectors are not linear independent");
             return false;

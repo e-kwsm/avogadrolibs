@@ -640,7 +640,7 @@ bool CrystalTools::setCellMatrix(Molecule& molecule,
 
   // only create a new unit cell if it doesn't exist
   if (!molecule.unitCell())
-    molecule.setUnitCell(new UnitCell);
+    molecule.setUnitCell(std::make_shared<UnitCell>());
 
   molecule.unitCell()->setCellMatrix(newCellColMatrix);
 
