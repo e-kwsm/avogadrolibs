@@ -912,6 +912,16 @@ std::string Molecule::formula(const std::string& delimiter, int over) const
   return result.str();
 }
 
+void Molecule::setBasisSet(BasisSet* basis)
+{
+  m_basisSet.reset(basis);
+}
+
+void Molecule::setBasisSet(std::shared_ptr<BasisSet> basis)
+{
+  m_basisSet = std::move(basis);
+}
+
 void Molecule::setUnitCell(UnitCell* uc)
 {
   if (uc != m_unitCell) {

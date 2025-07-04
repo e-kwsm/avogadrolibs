@@ -535,11 +535,8 @@ public:
    * Set the basis set for the molecule, note that the molecule takes ownership
    * of the object.
    */
-  void setBasisSet(BasisSet* basis) { m_basisSet.reset(basis); }
-  void setBasisSet(std::shared_ptr<BasisSet> basis)
-  {
-    m_basisSet = std::move(basis);
-  }
+  void setBasisSet(BasisSet* basis);
+  void setBasisSet(std::shared_ptr<BasisSet> basis);
 
   /**
    * @return the basis set (if present) for the molecule.
