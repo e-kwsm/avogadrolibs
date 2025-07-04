@@ -20,8 +20,30 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_, const Vector3& c_)
   computeFractionalMatrix();
 }
 
-UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
+void UnitCell::setAVector(const Vector3& v)
 {
+  m_cellMatrix.col(0) = v;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
+  computeFractionalMatrix();
+}
+
+void UnitCell::setBVector(const Vector3& v)
+{
+  m_cellMatrix.col(1) = v;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
+  computeFractionalMatrix();
+}
+
+void UnitCell::setCVector(const Vector3& v)
+{
+  m_cellMatrix.col(2) = v;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
   computeFractionalMatrix();
 }
 
