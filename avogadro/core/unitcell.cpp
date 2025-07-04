@@ -9,7 +9,8 @@
 
 namespace Avogadro::Core {
 
-UnitCell::UnitCell(const Vector3& a_, const Vector3& b_, const Vector3& c_)
+UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
+                   const Vector3& c_) noexcept(false)
 {
   m_cellMatrix.col(0) = a_;
   m_cellMatrix.col(1) = b_;
@@ -20,7 +21,7 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_, const Vector3& c_)
   computeFractionalMatrix();
 }
 
-void UnitCell::setAVector(const Vector3& v)
+void UnitCell::setAVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(0) = v;
   if (volume() == 0.0) {
@@ -29,7 +30,7 @@ void UnitCell::setAVector(const Vector3& v)
   computeFractionalMatrix();
 }
 
-void UnitCell::setBVector(const Vector3& v)
+void UnitCell::setBVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(1) = v;
   if (volume() == 0.0) {
@@ -38,7 +39,7 @@ void UnitCell::setBVector(const Vector3& v)
   computeFractionalMatrix();
 }
 
-void UnitCell::setCVector(const Vector3& v)
+void UnitCell::setCVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(2) = v;
   if (volume() == 0.0) {

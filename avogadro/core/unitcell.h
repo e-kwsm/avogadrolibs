@@ -23,8 +23,10 @@ class AVOGADROCORE_EXPORT UnitCell
 {
 public:
   UnitCell();
-  UnitCell(Real a, Real b, Real c, Real alpha, Real beta, Real gamma);
-  UnitCell(const Vector3& a, const Vector3& b, const Vector3& c);
+  UnitCell(Real a, Real b, Real c, Real alpha, Real beta,
+           Real gamma) noexcept(false);
+  UnitCell(const Vector3& a, const Vector3& b,
+           const Vector3& c) noexcept(false);
   explicit UnitCell(const Matrix3& cellMatrix);
   UnitCell(const UnitCell& other);
   ~UnitCell() = default;
@@ -35,9 +37,9 @@ public:
   Vector3 aVector() const { return m_cellMatrix.col(0); }
   Vector3 bVector() const { return m_cellMatrix.col(1); }
   Vector3 cVector() const { return m_cellMatrix.col(2); }
-  void setAVector(const Vector3& v);
-  void setBVector(const Vector3& v);
-  void setCVector(const Vector3& v);
+  void setAVector(const Vector3& v) noexcept(false);
+  void setBVector(const Vector3& v) noexcept(false);
+  void setCVector(const Vector3& v) noexcept(false);
   /** @} */
 
   /** The length of the lattice vector in the unit cell. Units: Angstrom @{ */
@@ -153,7 +155,7 @@ inline UnitCell::UnitCell()
 }
 
 inline UnitCell::UnitCell(Real a_, Real b_, Real c_, Real alpha_, Real beta_,
-                          Real gamma_)
+                          Real gamma_) noexcept(false)
 {
   setCellParameters(a_, b_, c_, alpha_, beta_, gamma_);
 }
