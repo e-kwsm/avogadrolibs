@@ -284,7 +284,7 @@ void Surfaces::surfacesActivated()
 
   if (m_basis) {
     // we have quantum data, set up the dialog accordingly
-    auto gaussian = dynamic_cast<Core::GaussianSet*>(m_basis);
+    auto gaussian = std::dynamic_pointer_cast<Core::GaussianSet>(m_basis);
     bool beta = false;
     if (gaussian) {
       auto b = gaussian->moMatrix(GaussianSet::Beta);
@@ -562,7 +562,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
   bool connectSlots = false;
 
   // set up QtConcurrent calculators for Gaussian or Slater basis sets
-  if (dynamic_cast<GaussianSet*>(m_basis)) {
+  if (std::dynamic_pointer_cast<GaussianSet>(m_basis)) {
     if (!m_gaussianConcurrent) {
       m_gaussianConcurrent = new GaussianSetConcurrent(this);
       connectSlots = true;
@@ -605,7 +605,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
     progressText = tr("Calculating electron density");
     m_cube->setName("Electron Density");
     m_cube->setCubeType(Core::Cube::Type::ElectronDensity);
-    if (dynamic_cast<GaussianSet*>(m_basis)) {
+    if (std::dynamic_pointer_cast<GaussianSet>(m_basis)) {
       m_gaussianConcurrent->calculateElectronDensity(m_cube);
     } else {
       m_slaterConcurrent->calculateElectronDensity(m_cube);
@@ -614,7 +614,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
     progressText = tr("Calculating spin density");
     m_cube->setName("Spin Density");
     m_cube->setCubeType(Core::Cube::Type::SpinDensity);
-    if (dynamic_cast<GaussianSet*>(m_basis)) {
+    if (std::dynamic_pointer_cast<GaussianSet>(m_basis)) {
       m_gaussianConcurrent->calculateSpinDensity(m_cube);
     } else {
       m_slaterConcurrent->calculateSpinDensity(m_cube);
@@ -623,7 +623,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
     progressText = tr("Calculating molecular orbital %L1").arg(index);
     m_cube->setName("Molecular Orbital " + std::to_string(index + 1));
     m_cube->setCubeType(Core::Cube::Type::MO);
-    if (dynamic_cast<GaussianSet*>(m_basis)) {
+    if (std::dynamic_pointer_cast<GaussianSet>(m_basis)) {
       m_gaussianConcurrent->calculateMolecularOrbital(m_cube, index, beta);
     } else {
       m_slaterConcurrent->calculateMolecularOrbital(m_cube, index);
@@ -631,7 +631,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
   }
 
   // Set up the progress dialog.
-  if (dynamic_cast<GaussianSet*>(m_basis)) {
+  if (std::dynamic_pointer_cast<GaussianSet>(m_basis)) {
     m_progressDialog->setWindowTitle(progressText);
     m_progressDialog->setRange(
       m_gaussianConcurrent->watcher().progressMinimum(),
@@ -697,7 +697,7 @@ void Surfaces::stepChanged(int n)
     return;
 
   qDebug() << "\n\t==== Step changed to" << n << "====";
-  auto g = dynamic_cast<GaussianSet*>(m_basis);
+  auto g = std::dynamic_pointer_cast<GaussianSet>(m_basis);
   if (g) {
     g->setActiveSetStep(n - 1);
     m_molecule->clearCubes();
