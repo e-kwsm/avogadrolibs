@@ -23,6 +23,7 @@
 #include <cstddef>
 #include <list>
 #include <map>
+#include <memory>
 #include <string>
 
 namespace Avogadro::Core {
@@ -549,8 +550,9 @@ public:
    * @{
    */
   void setUnitCell(UnitCell* uc);
-  UnitCell* unitCell() { return m_unitCell; }
-  const UnitCell* unitCell() const { return m_unitCell; }
+  void setUnitCell(std::shared_ptr<UnitCell> uc);
+  UnitCell* unitCell() { return m_unitCell.get(); }
+  const UnitCell* unitCell() const { return m_unitCell.get(); }
   /** @} */
 
   /**
@@ -876,7 +878,7 @@ protected:
   std::vector<Cube*> m_cubes;
 
   BasisSet* m_basisSet;
-  UnitCell* m_unitCell;
+  std::shared_ptr<UnitCell> m_unitCell;
   Array<Residue> m_residues;
 
   // This will be stored from the last space group operation
