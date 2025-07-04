@@ -155,7 +155,7 @@ public:
         }
       }
 
-      auto* cell = new UnitCell;
+      auto cell = std::make_shared<UnitCell>();
       cell->setCellParameters(a, b, c, alpha, beta, gamma);
       molecule->setUnitCell(cell);
       if (hall != 0)

@@ -188,7 +188,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // Let's make a unit cell
-  auto* cell = new UnitCell(cellMat);
+  auto cell = std::make_shared<UnitCell>(cellMat);
 
   // If our atomic coordinates are fractional, convert them to Cartesian
   if (!cart) {
@@ -372,7 +372,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
         }
         // Checks whether all the three axis vectors have been read
         if (ax1Set && ax2Set && ax3Set) {
-          mol.setUnitCell(new UnitCell(ax1, ax2, ax3));
+          mol.setUnitCell(std::make_shared<UnitCell>(ax1, ax2, ax3));
         }
       }
     }

@@ -631,7 +631,7 @@ bool CrystalTools::setCellMatrix(Molecule& molecule,
   }
 
   if (!molecule.unitCell())
-    molecule.setUnitCell(new UnitCell);
+    molecule.setUnitCell(std::make_shared<UnitCell>());
 
   molecule.unitCell()->setCellMatrix(newCellColMatrix);
 
