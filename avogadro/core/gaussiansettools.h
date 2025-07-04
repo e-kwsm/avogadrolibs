@@ -12,6 +12,7 @@
 #include "gaussianset.h"
 #include "vector.h"
 
+#include <memory>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -138,7 +139,7 @@ public:
 
 private:
   Molecule* m_molecule;
-  GaussianSet* m_basis;
+  std::shared_ptr<GaussianSet> m_basis;
   BasisSet::ElectronType m_type = BasisSet::Paired;
 
   // Pre-packed shell data built once in the constructor
