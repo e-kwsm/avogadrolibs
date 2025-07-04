@@ -12,6 +12,9 @@ using std::make_shared;
 using std::map;
 using std::shared_ptr;
 
+MoleculeInfo::~MoleculeInfo() = default;
+LayerManager::~LayerManager() = default;
+
 const Molecule* LayerManager::m_activeMolecule = nullptr;
 map<const Molecule*, shared_ptr<MoleculeInfo>> LayerManager::m_molToInfo;
 
