@@ -92,14 +92,14 @@ void Molecule::readProperties(const Molecule& other)
   m_spectra = other.m_spectra;
 
   // copy orbital information
-  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
+  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet.get());
   if (slaterSet != nullptr) {
-    m_basisSet = slaterSet->clone();
+    m_basisSet.reset(slaterSet->clone());
     m_basisSet->setMolecule(this);
   }
-  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
+  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet.get());
   if (gaussianSet != nullptr) {
-    m_basisSet = gaussianSet->clone();
+    m_basisSet.reset(gaussianSet->clone());
     m_basisSet->setMolecule(this);
   }
 
@@ -144,10 +144,10 @@ Molecule::Molecule(Molecule&& other) noexcept
     m_bondOrders(other.m_bondOrders), m_atomicNumbers(other.m_atomicNumbers),
     m_layers(LayerManager::getMoleculeLayer(this))
 {
-  m_basisSet = other.m_basisSet;
+  m_basisSet = std::move(other.m_basisSet);
   other.m_basisSet = nullptr;
 
-  m_unitCell = other.m_unitCell;
+  m_unitCell = std::move(other.m_unitCell);
   other.m_unitCell = nullptr;
 
   // Copy the layers, only if they exist
@@ -205,8 +205,7 @@ Molecule& Molecule::operator=(const Molecule& other)
       *c = *other.cube(i);
     }
 
-    delete m_basisSet;
-    m_basisSet = other.m_basisSet ? other.m_basisSet->clone() : nullptr;
+    m_basisSet.reset(other.m_basisSet ? other.m_basisSet->clone() : nullptr);
     delete m_unitCell;
     m_unitCell = other.m_unitCell ? new UnitCell(*other.m_unitCell) : nullptr;
 
@@ -258,8 +257,7 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
     clearCubes();
     m_cubes = std::move(other.m_cubes);
 
-    delete m_basisSet;
-    m_basisSet = other.m_basisSet;
+    m_basisSet = std::move(other.m_basisSet);
     other.m_basisSet = nullptr;
 
     delete m_unitCell;
@@ -282,7 +280,6 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
 Molecule::~Molecule()
 {
   // LayerManager::deleteMolecule(this);
-  delete m_basisSet;
   delete m_unitCell;
   clearMeshes();
   clearCubes();
