@@ -65,7 +65,7 @@ private:
   Core::Cube* m_cube;
   QVector<SlaterShell>* m_shells;
 
-  Core::SlaterSet* m_set;
+  std::shared_ptr<Core::SlaterSet> m_set;
   Core::SlaterSetTools* m_tools;
 
   bool setUpCalculation(Core::Cube* cube, unsigned int state,
