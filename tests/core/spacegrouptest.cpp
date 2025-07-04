@@ -420,7 +420,7 @@ TEST(SpaceGroupTest, fillUnitCell)
   {
     // δ-Mn (FCC)
     Matrix3 mat4;
-    constexpr double tmp = 1.546;
+    constexpr double tmp = 3.093 / 2.0;
     mat4.col(0) = Vector3{ -tmp, tmp, tmp };
     mat4.col(1) = Vector3{ tmp, -tmp, tmp };
     mat4.col(2) = Vector3{ tmp, tmp, -tmp };
@@ -435,6 +435,27 @@ TEST(SpaceGroupTest, fillUnitCell)
     auto hallNumber4 = AvoSpglib::getHallNumber(mol4, cartTol);
     EXPECT_EQ(hallNumber4, 529);
     EXPECT_EQ(mol4.atomCount(), 1);
+  }
+
+  {
+    // ZnS zinc blende
+    Matrix3 mat4;
+    constexpr double tmp = 5.4093 / 2.0;
+    mat4.col(0) = Vector3{ 0.0, tmp, tmp };
+    mat4.col(1) = Vector3{ tmp, 0.0, tmp };
+    mat4.col(2) = Vector3{ tmp, tmp, 0.0 };
+
+    auto* uc4 = new UnitCell{ mat4 };
+    Molecule mol4;
+    mol4.setUnitCell(uc4);
+    mol4.addAtom(30).setPosition3d(uc4->toCartesian({ 0.0, 0.0, 0.0 }));
+    mol4.addAtom(16).setPosition3d(uc4->toCartesian({ 0.25, 0.25, 0.25 }));
+
+    // 512, F -4 3 m
+    SpaceGroups::fillUnitCell(mol4, 512, cartTol);
+    auto hallNumber4 = AvoSpglib::getHallNumber(mol4, cartTol);
+    EXPECT_EQ(hallNumber4, 512);
+    EXPECT_EQ(mol4.atomCount(), 2);
   }
 
   {
