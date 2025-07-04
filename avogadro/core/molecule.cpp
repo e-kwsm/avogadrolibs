@@ -266,10 +266,7 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
     clearCubes();
     m_cubes = std::move(other.m_cubes);
 
-    delete m_basisSet;
     m_basisSet = std::exchange(other.m_basisSet, nullptr);
-
-    delete m_unitCell;
     m_unitCell = std::exchange(other.m_unitCell, nullptr);
 
     // Copy the layers, if they exist
