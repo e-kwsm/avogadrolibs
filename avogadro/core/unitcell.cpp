@@ -9,6 +9,19 @@
 
 namespace Avogadro::Core {
 
+UnitCell::UnitCell(const Vector3& a_, const Vector3& b_, const Vector3& c_)
+{
+  m_cellMatrix.col(0) = a_;
+  m_cellMatrix.col(1) = b_;
+  m_cellMatrix.col(2) = c_;
+  computeFractionalMatrix();
+}
+
+UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
+{
+  computeFractionalMatrix();
+}
+
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
                                  Real ga)
 {
