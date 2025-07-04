@@ -550,7 +550,7 @@ void Surfaces::surfacesActivated()
 
   if (m_basis) {
     // we have quantum data, set up the dialog accordingly
-    auto gaussian = dynamic_cast<const Core::GaussianSet*>(m_basis);
+    auto gaussian = std::dynamic_pointer_cast<const Core::GaussianSet>(m_basis);
     bool beta = false;
     if (gaussian) {
       auto b = gaussian->moMatrix(GaussianSet::Beta);
@@ -998,7 +998,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
   bool connectSlots = false;
 
   // set up QtConcurrent calculators for Gaussian or Slater basis sets
-  if (dynamic_cast<const GaussianSet*>(m_basis)) {
+  if (std::dynamic_pointer_cast<const GaussianSet>(m_basis)) {
     if (!m_gaussianConcurrent) {
       m_gaussianConcurrent = new GaussianSetConcurrent(this);
       connectSlots = true;
@@ -1182,7 +1182,7 @@ bool Surfaces::changeStep(int n)
     return false;
 
   qDebug() << "\n\t==== Step changed to" << n << "====";
-  if (dynamic_cast<const GaussianSet*>(m_basis) != nullptr) {
+  if (std::dynamic_pointer_cast<const GaussianSet>(m_basis) != nullptr) {
     // Stop the workers first: a QM calculation reads the set being stepped.
     const bool interrupted = clearSurfaceData();
     // Step the molecule's own basis set. The mutable accessor gives it a
