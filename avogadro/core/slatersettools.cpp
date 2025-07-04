@@ -15,7 +15,7 @@ namespace Avogadro::Core {
 SlaterSetTools::SlaterSetTools(Molecule* mol) : m_molecule(mol)
 {
   if (m_molecule)
-    m_basis = dynamic_cast<SlaterSet*>(m_molecule->basisSet());
+    m_basis = std::dynamic_pointer_cast<SlaterSet>(m_molecule->basisSet());
 }
 
 double SlaterSetTools::calculateMolecularOrbital(const Vector3& position,
