@@ -10,6 +10,7 @@
 
 #include "vector.h"
 
+#include <memory>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -64,7 +65,7 @@ public:
 
 private:
   Molecule* m_molecule;
-  SlaterSet* m_basis;
+  std::shared_ptr<SlaterSet> m_basis;
 
   bool isSmall(double value) const;
 
