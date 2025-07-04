@@ -204,8 +204,7 @@ Molecule& Molecule::operator=(const Molecule& other)
     }
     m_activeCubeIndex = other.m_activeCubeIndex;
 
-    delete m_basisSet;
-    m_basisSet = other.m_basisSet ? other.m_basisSet->clone() : nullptr;
+    m_basisSet.reset(other.m_basisSet ? other.m_basisSet->clone() : nullptr);
     if (m_basisSet != nullptr && m_basisSet->molecule() == &other)
       m_basisSet->setMolecule(this);
     m_unitCell = other.m_unitCell
@@ -381,7 +380,6 @@ void Molecule::takeContentsFrom(Molecule& other) noexcept
 Molecule::~Molecule()
 {
   // LayerManager::deleteMolecule(this);
-  delete m_basisSet;
   clearMeshes();
   clearCubes();
 }
