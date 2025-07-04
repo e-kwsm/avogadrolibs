@@ -11,6 +11,7 @@
 #include "basisset.h"
 #include "vector.h"
 
+#include <memory>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -94,7 +95,7 @@ public:
 
 private:
   Molecule* m_molecule;
-  GaussianSet* m_basis;
+  std::shared_ptr<GaussianSet> m_basis;
   BasisSet::ElectronType m_type = BasisSet::Paired;
   std::vector<double> m_cutoffDistances;
   // Cached atom positions in Bohr as 3 x N matrix for vectorized operations
