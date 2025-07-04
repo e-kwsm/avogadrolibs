@@ -578,8 +578,8 @@ public:
   /**
    * @return the basis set (if present) for the molecule.
    */
-  BasisSet* basisSet() { return m_basisSet.get(); }
-  const BasisSet* basisSet() const { return m_basisSet.get(); }
+  auto basisSet() { return m_basisSet; }
+  const auto basisSet() const { return m_basisSet; }
 
   /**
    * The unit cell for this molecule. May be nullptr for non-periodic
