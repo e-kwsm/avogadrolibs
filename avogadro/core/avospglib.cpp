@@ -27,7 +27,7 @@ unsigned short AvoSpglib::getHallNumber(Molecule& mol, double cartTol)
   if (!mol.unitCell())
     return 0;
 
-  const UnitCell* uc = mol.unitCell();
+  const auto& uc = mol.unitCell();
   Matrix3 cellMat = uc->cellMatrix();
 
   double lattice[3][3];
@@ -119,7 +119,7 @@ bool AvoSpglib::standardizeCell(Molecule& mol, double cartTol, bool toPrimitive,
   if (!mol.unitCell())
     return false;
 
-  const UnitCell* uc = mol.unitCell();
+  const auto& uc = mol.unitCell();
   Matrix3 cellMat = uc->cellMatrix();
 
   double lattice[3][3];
