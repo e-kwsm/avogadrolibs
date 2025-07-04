@@ -6,8 +6,24 @@
 #include "unitcell.h"
 
 #include <cmath>
+#include <sstream>
 
 namespace Avogadro::Core {
+
+std::string UnitCell::errorCellParameters(const std::string& name) const
+{
+  Eigen::IOFormat v3_fmt{
+    Eigen::StreamPrecision, 0, " ", ", ", "", "", "[", "]"
+  };
+  std::stringstream ss;
+  ss << name
+     << ": lattice vectors does not span "
+        "(zero length or linearly dependent)\n"
+     << "a=" << aVector().format(v3_fmt) << "\n"
+     << "b=" << bVector().format(v3_fmt) << "\n"
+     << "c=" << cVector().format(v3_fmt) << "\n";
+  return ss.str();
+}
 
 UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
                    const Vector3& c_) noexcept(false)
@@ -16,7 +32,7 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
   m_cellMatrix.col(1) = b_;
   m_cellMatrix.col(2) = c_;
   if (volume() == 0.0) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
   }
   computeFractionalMatrix();
 }
@@ -25,7 +41,7 @@ UnitCell::UnitCell(const Matrix3& cellMatrix_) noexcept(false)
   : m_cellMatrix(cellMatrix_)
 {
   if (volume() == 0.0) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
   }
   computeFractionalMatrix();
 }
@@ -34,7 +50,7 @@ void UnitCell::setAVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(0) = v;
   if (volume() == 0.0) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
   }
   computeFractionalMatrix();
 }
@@ -43,7 +59,7 @@ void UnitCell::setBVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(1) = v;
   if (volume() == 0.0) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
   }
   computeFractionalMatrix();
 }
@@ -52,7 +68,7 @@ void UnitCell::setCVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(2) = v;
   if (volume() == 0.0) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
   }
   computeFractionalMatrix();
 }
@@ -61,7 +77,7 @@ void UnitCell::setCellMatrix(const Matrix3& m)
 {
   m_cellMatrix = m;
   if (volume() == 0.0) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    throw std::invalid_argument{ errorCellParameters(__FUNCTION__) };
   }
   computeFractionalMatrix();
 }
@@ -70,11 +86,18 @@ void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
                                  Real ga) noexcept(false)
 {
   if (a_ <= 0.0 || b_ <= 0.0 || c_ <= 0.0) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    std::stringstream ss;
+    ss << __FUNCTION__ << ": length is not positive\n"
+       << "a=" << a_ << ", b=" << b_ << ", c=" << c_ << "\n";
+    throw std::invalid_argument{ ss.str() };
   }
   if (al <= 0.0 || al >= M_PI || be <= 0.0 || be >= M_PI || ga <= 0.0 ||
       ga >= M_PI) {
-    throw std::invalid_argument{ __FUNCTION__ };
+    std::stringstream ss;
+    ss << __FUNCTION__ << ": angle is wrong\n"
+       << "alpha=" << RAD_TO_DEG * al << ", beta=" << RAD_TO_DEG * be
+       << ", gamma=" << RAD_TO_DEG * ga << " (in degree)\n";
+    throw std::invalid_argument{ ss.str() };
   }
 
   // Convert parameters to matrix. See "Appendix 2: Coordinate Systems and
