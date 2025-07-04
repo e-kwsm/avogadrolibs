@@ -60,6 +60,9 @@ void UnitCell::setCVector(const Vector3& v) noexcept(false)
 void UnitCell::setCellMatrix(const Matrix3& m)
 {
   m_cellMatrix = m;
+  if (volume() == 0.0) {
+    throw std::invalid_argument{ __FUNCTION__ };
+  }
   computeFractionalMatrix();
 }
 
