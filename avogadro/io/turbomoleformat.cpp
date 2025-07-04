@@ -151,10 +151,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   } // done reading the file
 
   if (hasLattice) {
-    auto* cell = new Core::UnitCell(v1, v2, v3);
+    auto cell = std::make_shared<Core::UnitCell>(v1, v2, v3);
     mol.setUnitCell(cell);
   } else if (hasCell) {
-    auto* cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+    auto cell = std::make_shared<Core::UnitCell>(a, b, c, alpha, beta, gamma);
     mol.setUnitCell(cell);
   }
 
