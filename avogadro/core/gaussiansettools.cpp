@@ -18,7 +18,7 @@ namespace Avogadro::Core {
 GaussianSetTools::GaussianSetTools(Molecule* mol) : m_molecule(mol)
 {
   if (m_molecule) {
-    m_basis = dynamic_cast<GaussianSet*>(m_molecule->basisSet());
+    m_basis = std::dynamic_pointer_cast<GaussianSet>(m_molecule->basisSet());
     m_cutoffDistances.resize(7, 0.0); // s, p, d, f, g, h, i (for now)
 
     // Pre-compute atom positions in Bohr as 3 x N matrix for vectorized ops
@@ -123,8 +123,8 @@ double GaussianSetTools::calculateSpinDensity(const Vector3& position) const
 
 bool GaussianSetTools::isValid() const
 {
-  return (m_molecule != nullptr) &&
-         (dynamic_cast<GaussianSet*>(m_molecule->basisSet()) != nullptr);
+  return (m_molecule != nullptr) && (std::dynamic_pointer_cast<GaussianSet>(
+                                       m_molecule->basisSet()) != nullptr);
 }
 
 inline bool GaussianSetTools::isSmall(double val) const
