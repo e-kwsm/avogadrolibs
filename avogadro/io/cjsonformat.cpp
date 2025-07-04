@@ -1151,9 +1151,10 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
 
   // Create a basis set/MO matrix we can round trip.
   if (molecule.basisSet() &&
-      dynamic_cast<const GaussianSet*>(molecule.basisSet())) {
+      std::dynamic_pointer_cast<const GaussianSet>(molecule.basisSet())) {
     json basis;
-    auto gaussian = dynamic_cast<const GaussianSet*>(molecule.basisSet());
+    auto gaussian =
+      std::dynamic_pointer_cast<const GaussianSet>(molecule.basisSet());
 
     // Map the shell types from enumeration to integer values.
     auto symmetry = gaussian->symmetry();
