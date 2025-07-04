@@ -130,7 +130,7 @@ bool XyzFormat::read(std::istream& inStream, Core::Molecule& mol)
         Vector3 v2(tmp->at(3), tmp->at(4), tmp->at(5));
         Vector3 v3(tmp->at(6), tmp->at(7), tmp->at(8));
 
-        auto* cell = new Core::UnitCell(v1, v2, v3);
+        auto cell = std::make_shared<Core::UnitCell>(v1, v2, v3);
         std::cout << " Lattice: " << cell->aVector() << " " << cell->bVector()
                   << " " << cell->cVector() << std::endl;
         if (!cell->isRegular()) {
