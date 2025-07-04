@@ -212,8 +212,7 @@ Molecule& Molecule::operator=(const Molecule& other)
     m_basisSet = other.m_basisSet ? other.m_basisSet->clone() : nullptr;
     if (m_basisSet != nullptr && m_basisSet->molecule() == &other)
       m_basisSet->setMolecule(this);
-    delete m_unitCell;
-    m_unitCell = other.m_unitCell ? new UnitCell(*other.m_unitCell) : nullptr;
+    m_unitCell = other.m_unitCell ? other.m_unitCell : nullptr;
 
     // Assign into the existing MoleculeInfo rather than replacing the handle,
     // so anything already sharing it (an undo command, say) sees the update.
@@ -359,7 +358,6 @@ Molecule::~Molecule()
 {
   // LayerManager::deleteMolecule(this);
   delete m_basisSet;
-  delete m_unitCell;
   clearMeshes();
   clearCubes();
 }
@@ -1680,10 +1678,14 @@ std::string Molecule::formula(const std::string& delimiter, int over) const
 
 void Molecule::setUnitCell(UnitCell* uc)
 {
-  if (uc != m_unitCell) {
-    delete m_unitCell;
-    m_unitCell = uc;
+  if (uc != m_unitCell.get()) {
+    m_unitCell.reset(uc);
   }
+}
+
+void Molecule::setUnitCell(std::shared_ptr<UnitCell> uc)
+{
+  m_unitCell = std::move(uc);
 }
 
 double Molecule::mass() const
