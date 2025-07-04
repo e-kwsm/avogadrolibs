@@ -37,9 +37,9 @@ public:
   Vector3 aVector() const { return m_cellMatrix.col(0); }
   Vector3 bVector() const { return m_cellMatrix.col(1); }
   Vector3 cVector() const { return m_cellMatrix.col(2); }
-  void setAVector(const Vector3& v);
-  void setBVector(const Vector3& v);
-  void setCVector(const Vector3& v);
+  void setAVector(const Vector3& v) noexcept(false);
+  void setBVector(const Vector3& v) noexcept(false);
+  void setCVector(const Vector3& v) noexcept(false);
   /** @} */
 
   /** The length of the lattice vector in the unit cell. Units: Angstrom @{ */
