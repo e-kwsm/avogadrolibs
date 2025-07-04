@@ -144,7 +144,7 @@ public:
         }
       }
 
-      auto* cell = new UnitCell;
+      auto cell = std::make_shared<UnitCell>();
       cell->setCellParameters(a, b, c, alpha, beta, gamma);
       if (!cell->isRegular()) {
         error += "<crystal> does not give linear independent lattice vectors";
