@@ -144,6 +144,7 @@ private:
   {
     m_fractionalMatrix = m_cellMatrix.inverse();
   }
+  std::string errorCellParameters(const std::string& name) const;
 
   Matrix3 m_cellMatrix;
   Matrix3 m_fractionalMatrix;
