@@ -258,7 +258,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
   if (atoms.contains("properties")) {
     json atomProperties = atoms["properties"];
     if (atomProperties.is_object()) {
-      for (auto& property : atomProperties.items()) {
+      for (const auto& property : atomProperties.items()) {
         if (property.value().is_array()) {
           // TODO: handle atom properties
         }
@@ -378,7 +378,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
       if (bonds.contains("properties")) {
         json bondProperties = bonds["properties"];
         if (bondProperties.is_object()) {
-          for (auto& property : bondProperties.items()) {
+          for (const auto& property : bondProperties.items()) {
             if (property.value().is_array()) {
               // TODO: handle bond properties
             }
@@ -413,7 +413,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
 
         json atomsResidue = residue["atoms"];
         if (atomsResidue.is_object()) {
-          for (auto& item : atomsResidue.items()) {
+          for (const auto& item : atomsResidue.items()) {
             if (item.value() < molecule.atomCount()) {
               const Atom& atom = molecule.atom(item.value());
               newResidue.addResidueAtom(item.key(), atom);
@@ -823,7 +823,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         }
       }
       // iterate through everything else
-      for (auto& element : properties.items()) {
+      for (const auto& element : properties.items()) {
         if (element.key() == "totalCharge" ||
             element.key() == "totalSpinMultiplicity" ||
             element.key() == "dipoleMoment") {
@@ -1153,7 +1153,8 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
   if (molecule.basisSet() &&
       dynamic_cast<const GaussianSet*>(molecule.basisSet())) {
     json basis;
-    auto gaussian = dynamic_cast<const GaussianSet*>(molecule.basisSet());
+    const auto* gaussian =
+      dynamic_cast<const GaussianSet*>(molecule.basisSet());
 
     // Map the shell types from enumeration to integer values.
     auto symmetry = gaussian->symmetry();
