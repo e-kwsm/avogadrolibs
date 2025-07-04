@@ -1675,13 +1675,6 @@ void Molecule::setBasisSet(BasisSet* basis)
   m_basisSet = basis;
 }
 
-void Molecule::setUnitCell(UnitCell* uc)
-{
-  if (uc != m_unitCell.get()) {
-    m_unitCell.reset(uc);
-  }
-}
-
 void Molecule::setUnitCell(std::shared_ptr<UnitCell> uc)
 {
   m_unitCell = std::move(uc);
