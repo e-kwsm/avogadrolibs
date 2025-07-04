@@ -396,7 +396,7 @@ void JsonWidget::addOptionRow(const QString& key, const QString& name,
   if (hide) {
     widget->hide();
     // find the label and hide that too
-    auto fLabel = form->labelForField(widget);
+    auto* fLabel = form->labelForField(widget);
     if (fLabel)
       fLabel->hide();
   }
