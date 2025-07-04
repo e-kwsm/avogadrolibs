@@ -550,8 +550,11 @@ public:
    */
   void setUnitCell(UnitCell* uc);
   void setUnitCell(std::shared_ptr<UnitCell> uc);
-  UnitCell* unitCell() { return m_unitCell.get(); }
-  const UnitCell* unitCell() const { return m_unitCell.get(); }
+  auto unitCell() { return m_unitCell; }
+  const auto& unitCell() const { return m_unitCell; }
+  // auto unitCell() const { return m_unitCell; }
+  // UnitCell* unitCell() { return m_unitCell.get(); }
+  // const UnitCell* unitCell() const { return m_unitCell.get(); }
   /** @} */
 
   /**
