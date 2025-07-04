@@ -349,7 +349,7 @@ MatrixX Molecule::partialCharges(const std::string& type) const
 std::set<std::string> Molecule::partialChargeTypes() const
 {
   std::set<std::string> types;
-  for (auto& it : m_partialCharges)
+  for (const auto& it : m_partialCharges)
     types.insert(it.first);
   return types;
 }
@@ -397,7 +397,7 @@ const PropertyMap& Molecule::conformerProperties() const
 std::set<std::string> Molecule::spectraTypes() const
 {
   std::set<std::string> types;
-  for (auto& it : m_spectra)
+  for (const auto& it : m_spectra)
     types.insert(it.first);
   return types;
 }
