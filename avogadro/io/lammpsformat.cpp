@@ -561,7 +561,7 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
     }
   }
 
-  UnitCell* unitcell = mol2.unitCell();
+  const auto& unitcell = mol2.unitCell();
   const unsigned int lineSize = 256;
   char simBoxBlock[lineSize];
   if (unitcell) {

@@ -74,7 +74,7 @@ PYBIND11_MODULE(core, m)
     .def("distance", &UnitCell::distance,
          "Calculate the distance between two points in the unit cell");
 
-  UnitCell* (Molecule::*unitCell0)() = &Molecule::unitCell;
+  std::shared_ptr<UnitCell> (Molecule::*unitCell0)() = &Molecule::unitCell;
 
   py::class_<Molecule>(m, "Molecule")
     .def(py::init<>())

@@ -954,13 +954,6 @@ std::string Molecule::formula(const std::string& delimiter, int over) const
   return result.str();
 }
 
-void Molecule::setUnitCell(UnitCell* uc)
-{
-  if (uc != m_unitCell.get()) {
-    m_unitCell.reset(uc);
-  }
-}
-
 void Molecule::setUnitCell(std::shared_ptr<UnitCell> uc)
 {
   m_unitCell = std::move(uc);

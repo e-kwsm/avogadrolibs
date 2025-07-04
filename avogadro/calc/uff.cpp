@@ -100,7 +100,7 @@ public:
   std::vector<UFFTorsion> m_torsions;
   std::vector<UFFVdW> m_vdws;
   Core::Molecule* m_molecule;
-  Core::UnitCell* m_cell;
+  std::shared_ptr<Core::UnitCell> m_cell;
 
   UFFPrivate(Core::Molecule* mol = nullptr) : m_molecule(mol)
   {

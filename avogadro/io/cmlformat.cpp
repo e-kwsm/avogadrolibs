@@ -534,7 +534,7 @@ bool CmlFormat::write(std::ostream& out, const Core::Molecule& mol)
   }
 
   // Cell specification
-  const UnitCell* cell = mol.unitCell();
+  const auto& cell = mol.unitCell();
   if (cell) {
     xml_node crystalNode = moleculeNode.append_child("crystal");
 

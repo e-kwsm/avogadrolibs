@@ -53,7 +53,7 @@ CrystalScene::~CrystalScene() {}
 
 void CrystalScene::process(const QtGui::Molecule& molecule, GroupNode& node)
 {
-  if (const UnitCell* cell = molecule.unitCell()) {
+  if (const auto& cell = molecule.unitCell()) {
     auto* geometry = new GeometryNode;
     node.addChild(geometry);
     auto* lines = new LineStripGeometry;

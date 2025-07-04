@@ -348,7 +348,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   // if we have fractional coordinates, we need to convert them to cartesian
   if (fractionalCoords) {
-    auto* cell = mol.unitCell();
+    const auto& cell = mol.unitCell();
     for (Index i = 0; i < mol.atomCount(); ++i) {
       mol.setAtomPosition3d(i, cell->toCartesian(mol.atomPosition3d(i)));
     }
