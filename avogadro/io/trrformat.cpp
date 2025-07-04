@@ -156,7 +156,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                       &mat[1][1], &mat[1][2], &mat[2][0], &mat[2][1],
                       &mat[2][2]);
         if (_kid == "box_size") {
-          mol.setUnitCell(new UnitCell(
+          mol.setUnitCell(std::make_shared<UnitCell>(
             Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                     mat[0][2] * NM_TO_ANGSTROM),
             Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
@@ -172,7 +172,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                       &mat[1][1], &mat[1][2], &mat[2][0], &mat[2][1],
                       &mat[2][2]);
         if (_kid == "box_size") {
-          mol.setUnitCell(new UnitCell(
+          mol.setUnitCell(std::make_shared<UnitCell>(
             Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                     mat[0][2] * NM_TO_ANGSTROM),
             Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
@@ -319,7 +319,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                         &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
                         &mat[2][1], &mat[2][2]);
           if (_kid == "box_size") {
-            mol.setUnitCell(new UnitCell(
+            mol.setUnitCell(std::make_shared<UnitCell>(
               Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                       mat[0][2] * NM_TO_ANGSTROM),
               Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
@@ -335,7 +335,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                         &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
                         &mat[2][1], &mat[2][2]);
           if (_kid == "box_size") {
-            mol.setUnitCell(new UnitCell(
+            mol.setUnitCell(std::make_shared<UnitCell>(
               Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
                       mat[0][2] * NM_TO_ANGSTROM),
               Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
