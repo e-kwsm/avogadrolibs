@@ -14,12 +14,6 @@
 #undef max
 #endif
 
-/**
- * This macro marks a parameter as unused. Its purpose is to disable the
- * compiler from emitting unused parameter warnings.
- */
-#define AVO_UNUSED(variable) (void)variable
-
 namespace Avogadro {
 
 /** Typedef for a real number. */
