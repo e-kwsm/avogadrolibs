@@ -208,7 +208,7 @@ QUndoCommand* TemplateTool::keyPressEvent(QKeyEvent* e)
       currentTab++;
     }
     m_toolWidget->setCurrentTab(currentTab);
-    return NULL;
+    return nullptr;
   }
 
   // Set a timer to clear the buffer on first keypress:
@@ -233,7 +233,7 @@ QUndoCommand* TemplateTool::keyPressEvent(QKeyEvent* e)
         formalCharge--;
       m_toolWidget->setFormalCharge(formalCharge);
       clearKeyPressBuffer();
-      return NULL;
+      return nullptr;
     }
 
     // metal center -- interpret as an element
