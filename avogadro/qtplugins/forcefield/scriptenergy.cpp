@@ -129,7 +129,7 @@ Real ScriptEnergy::value(const Eigen::VectorXd& x)
   // go through lines in result until we see "AvogadroEnergy: "
   QStringList lines = QString(result).remove('\r').split('\n');
   double energy = 0.0;
-  for (auto line : lines) {
+  for (const auto& line : lines) {
     if (line.startsWith("AvogadroEnergy:")) {
       QStringList items = line.split(" ", Qt::SkipEmptyParts);
       if (items.size() > 1) {
@@ -166,7 +166,7 @@ void ScriptEnergy::gradient(const Eigen::VectorXd& x, Eigen::VectorXd& grad)
   QStringList lines = QString(result).remove('\r').split('\n');
   unsigned int i = 0;
   bool readingGrad = false;
-  for (auto line : lines) {
+  for (const auto& line : lines) {
     if (line.startsWith("AvogadroGradient:")) {
       readingGrad = true;
       continue; // next line
