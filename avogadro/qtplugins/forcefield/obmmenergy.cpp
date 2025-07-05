@@ -249,7 +249,7 @@ Real OBMMEnergy::value(const Eigen::VectorXd& x)
   // go through lines in result until we see "total energy"
   QStringList lines = QString(result).remove('\r').split('\n');
   double energy = 0.0;
-  for (auto line : lines) {
+  for (const auto& line : lines) {
     if (line.contains("total energy =")) {
       QStringList items = line.split(" ", Qt::SkipEmptyParts);
       if (items.size() > 4)
@@ -289,7 +289,7 @@ void OBMMEnergy::gradient(const Eigen::VectorXd& x, Eigen::VectorXd& grad)
   QStringList lines = QString(result).remove('\r').split('\n');
   bool readingGradient = false;
   unsigned int i = 0;
-  for (auto line : lines) {
+  for (const auto& line : lines) {
     if (line.contains("gradient")) {
       readingGradient = true;
       continue;

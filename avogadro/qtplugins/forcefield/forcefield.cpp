@@ -232,7 +232,7 @@ void Forcefield::showDialog()
   QStringList forceFields;
   auto list =
     Calc::EnergyManager::instance().identifiersForMolecule(*m_molecule);
-  for (auto option : list) {
+  for (const auto& option : list) {
     forceFields << option.c_str();
   }
 
@@ -311,7 +311,7 @@ void Forcefield::setupMethod()
   auto list =
     Calc::EnergyManager::instance().identifiersForMolecule(*m_molecule);
   bool found = false;
-  for (auto option : list) {
+  for (const auto& option : list) {
     if (option == m_methodName) {
       found = true;
       break;
@@ -602,7 +602,7 @@ std::string Forcefield::recommendedForceField() const
 
   // iterate to see what we have
   std::string bestOption;
-  for (auto option : list) {
+  for (const auto& option : list) {
     // GAFF is better than MMFF94 which is better than UFF
     if (option == "UFF" && bestOption != "GAFF" && bestOption != "MMFF94")
       bestOption = option;
