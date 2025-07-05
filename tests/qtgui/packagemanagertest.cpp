@@ -1405,7 +1405,7 @@ TEST_F(PackageManagerTest, resolveCommandLineVenvFallbackSetsBinDir)
   ASSERT_TRUE(createConsoleScript(m_packageDir + venvBinDir(), "avo-cmd"));
 
   // With or without pixi: no pixi environment, so the venv is run directly.
-  for (const QString pixi : { QString(), QString("/fake/bin/pixi") }) {
+  for (const QString& pixi : { QString(), QString("/fake/bin/pixi") }) {
     const auto commandLine =
       PackageManager::resolveCommandLine(m_packageDir, "avo-cmd", pixi);
     EXPECT_EQ(commandLine.program,
