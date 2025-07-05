@@ -148,10 +148,7 @@ public:
 
   const qint64* nuclearCharges() const { return m_nuclearCharges.constData(); }
   qint64 nuclearCharge(qint64 i) const { return m_nuclearCharges.at(i); }
-  const QList<qint64> nuclearChargesList() const
-  {
-    return m_nuclearCharges.toList();
-  }
+  QList<qint64> nuclearChargesList() const { return m_nuclearCharges.toList(); }
 
   const qreal* xGaussianPrimitiveCenterCoordinates() const
   {

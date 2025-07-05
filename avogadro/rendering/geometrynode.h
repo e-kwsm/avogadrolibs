@@ -67,7 +67,7 @@ public:
    * @brief Get a reference to the child nodes list.
    */
   std::vector<Drawable*>& drawables() { return m_drawables; }
-  const std::vector<Drawable*> drawables() const { return m_drawables; }
+  std::vector<Drawable*> drawables() const { return m_drawables; }
 
   /**
    * @brief Remove all drawable objects.
