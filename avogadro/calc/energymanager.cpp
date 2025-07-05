@@ -170,7 +170,7 @@ std::string EnergyManager::recommendedModel(
 
   // if not, we look through the built-in list in order
   // of preference (e.g., GAFF > MMFF94 > UFF > LJ)
-  for (auto option : METHOD_TIER_LIST) {
+  for (const auto& option : METHOD_TIER_LIST) {
     if (identifiers.find(option) != identifiers.end()) {
       bestOption = option;
       break;
