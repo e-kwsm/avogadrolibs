@@ -829,7 +829,7 @@ std::string respell(const std::string& op, bool decimals, bool upper,
   const std::vector<std::string> coordinates = split(op, ',', false);
 
   std::string result;
-  for (std::string coordinate : coordinates) {
+  for (const std::string& coordinate : coordinates) {
     // split into signed terms
     std::vector<std::string> terms;
     std::string term;
