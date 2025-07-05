@@ -279,7 +279,7 @@ void JsonWidget::buildOptionGui()
     }
 
     // now loop over keys and add them
-    for (QString key : std::as_const(keys))
+    for (const QString& key : std::as_const(keys))
       addOptionRow(key, key, userOptions.take(key));
 
     // Make connections for standard options:
