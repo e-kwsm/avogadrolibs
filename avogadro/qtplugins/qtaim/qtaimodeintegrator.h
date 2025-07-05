@@ -51,7 +51,7 @@ public:
   QVector3D integrate(QVector3D x0y0z0);
 
   qint64 status() const { return m_status; }
-  const QList<QVector3D> path() const { return m_path; }
+  QList<QVector3D> path() const { return m_path; }
 
   void setBetaSpheres(QList<QPair<QVector3D, qreal>> betaSpheres)
   {
