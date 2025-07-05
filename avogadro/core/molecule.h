@@ -301,7 +301,7 @@ public:
    */
   bool setAtomLabel(Index atomId, const std::string& label);
 
-  const Core::Array<std::string> atomLabels() const { return m_atomLabels; }
+  Core::Array<std::string> atomLabels() const { return m_atomLabels; }
 
   /**
    * Set all the atom labels in the molecule.
@@ -337,7 +337,7 @@ public:
   /** @} */
 
   /** @return the elements currently in this molecule */
-  const ElementMask elements() const;
+  ElementMask elements() const;
 
   /**  Adds an atom to the molecule. */
   virtual AtomType addAtom(unsigned char atomicNumber);
@@ -436,7 +436,7 @@ public:
    */
   bool setBondLabel(Index bondIndex, const std::string& label);
 
-  const Core::Array<std::string> bondLabels() const { return m_bondLabels; }
+  Core::Array<std::string> bondLabels() const { return m_bondLabels; }
 
   /**
    * Set all the atom labels in the molecule.
@@ -486,7 +486,7 @@ public:
    * @return The cube vector for the molecule
    */
   std::vector<Cube*> cubes() { return m_cubes; }
-  const std::vector<Cube*> cubes() const { return m_cubes; }
+  std::vector<Cube*> cubes() const { return m_cubes; }
 
   /**
    * @return the chemical formula of the molecule.
@@ -963,7 +963,7 @@ inline bool Molecule::setFormalCharge(Index atomId, signed char charge)
   return false;
 }
 
-inline const Molecule::ElementMask Molecule::elements() const
+inline Molecule::ElementMask Molecule::elements() const
 {
   return m_elements;
 }
