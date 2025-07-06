@@ -12,6 +12,8 @@
 #include <avogadro/core/types.h>
 #include <avogadro/core/vector.h>
 
+#include <memory>
+
 namespace Avogadro::Rendering {
 
 /**
@@ -170,7 +172,7 @@ private:
   bool generateTextureHandle();
 
   class Private;
-  Private* const d;
+  std::unique_ptr<Private> const d;
   bool m_dirty;
   mutable std::string m_error;
 };
