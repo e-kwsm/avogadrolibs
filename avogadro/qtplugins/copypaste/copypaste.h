@@ -11,6 +11,8 @@
 
 #include <QtGui/QIcon>
 
+#include <memory>
+
 namespace Avogadro {
 namespace Io {
 class FileFormat;
@@ -55,7 +57,7 @@ private slots:
 private:
   // Cached between emitting moleculeReady() and calling readMolecule().
   QByteArray m_pastedData;
-  Io::FileFormat* m_pastedFormat;
+  std::unique_ptr<Io::FileFormat> m_pastedFormat;
 
   QtGui::Molecule* m_molecule;
 
