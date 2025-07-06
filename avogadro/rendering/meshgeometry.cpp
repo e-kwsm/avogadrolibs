@@ -69,10 +69,7 @@ MeshGeometry::MeshGeometry(const MeshGeometry& other)
 {
 }
 
-MeshGeometry::~MeshGeometry()
-{
-  delete d;
-}
+MeshGeometry::~MeshGeometry() = default;
 
 void MeshGeometry::accept(Visitor& visitor)
 {
