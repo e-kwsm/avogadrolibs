@@ -12,6 +12,8 @@
 #include <QtCore/QMultiHash>
 #include <QtCore/QVariant>
 
+#include <memory>
+
 namespace Avogadro {
 
 namespace Calc {
@@ -60,7 +62,7 @@ public slots:
                          const QString& command, const QString& identifier);
 
 private:
-  QList<Calc::ChargeModel*> m_models;
+  QList<std::shared_ptr<Calc::ChargeModel>> m_models;
   QMultiHash<QString, QString> m_packageModels;
 
   void refreshModels();
