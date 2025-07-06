@@ -8,6 +8,8 @@
 
 #include <QtWidgets/QWidget>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtGui {
 class PeriodicTableView;
@@ -47,7 +49,7 @@ private:
   void buildBondOrders();
   void saveElements();
 
-  Ui::EditorToolWidget* m_ui;
+  std::unique_ptr<Ui::EditorToolWidget> m_ui;
   QtGui::PeriodicTableView* m_elementSelector;
   QList<unsigned char> m_defaultElements;
   QList<unsigned char> m_userElements;
