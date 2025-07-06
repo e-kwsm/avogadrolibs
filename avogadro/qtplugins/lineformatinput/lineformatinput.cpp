@@ -47,10 +47,7 @@ LineFormatInput::LineFormatInput(QObject* parent_)
   m_formats.insert(tr("SMILES"), "smi"s);
 }
 
-LineFormatInput::~LineFormatInput()
-{
-  delete m_reader;
-}
+LineFormatInput::~LineFormatInput() = default;
 
 QList<QAction*> LineFormatInput::actions() const
 {
@@ -154,8 +151,7 @@ void LineFormatInput::showDialog()
   dlg.hide();
 
   m_descriptor.clear();
-  delete m_reader;
-  m_reader = nullptr;
+  m_reader.reset();
 }
 
 } // namespace Avogadro::QtPlugins
