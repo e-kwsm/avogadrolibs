@@ -64,10 +64,7 @@ LineStripGeometry::LineStripGeometry(const LineStripGeometry& other)
 {
 }
 
-LineStripGeometry::~LineStripGeometry()
-{
-  delete d;
-}
+LineStripGeometry::~LineStripGeometry() = default;
 
 void LineStripGeometry::accept(Visitor& visitor)
 {
