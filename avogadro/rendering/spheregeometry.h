@@ -11,6 +11,8 @@
 #include <avogadro/core/array.h>
 #include <avogadro/core/vector.h>
 
+#include <memory>
+
 namespace Avogadro {
 namespace Rendering {
 
@@ -120,7 +122,7 @@ private:
   float m_opacity = 1.0f;
 
   class Private;
-  Private* d;
+  std::unique_ptr<Private> d;
 };
 
 inline SphereGeometry& SphereGeometry::operator=(SphereGeometry other)
