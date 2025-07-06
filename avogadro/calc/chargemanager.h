@@ -13,6 +13,7 @@
 #include <avogadro/core/vector.h>
 
 #include <map>
+#include <memory>
 #include <set>
 #include <string>
 #include <vector>
@@ -57,7 +58,7 @@ public:
    * ownership of the object passed in.
    * @return True on success, false on failure.
    */
-  static bool registerModel(ChargeModel* model);
+  static bool registerModel(const std::shared_ptr<ChargeModel>& model);
 
   /**
    * @brief Unregister a charge model from the manager.
@@ -72,7 +73,7 @@ public:
    * supplied object.
    * @return True on success, false on failure.
    */
-  bool addModel(ChargeModel* model);
+  bool addModel(const std::shared_ptr<ChargeModel>& model);
 
   /**
    * Remove the model with the identifier @a identifier from the manager.
@@ -168,7 +169,7 @@ private:
    */
   void appendError(const std::string& errorMessage);
 
-  std::vector<ChargeModel*> m_models;
+  std::vector<std::shared_ptr<ChargeModel>> m_models;
   mutable ChargeIdMap m_identifiers;
   mutable std::map<std::string, std::string> m_identifierToName;
 
