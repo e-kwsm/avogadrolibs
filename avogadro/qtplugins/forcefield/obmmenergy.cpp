@@ -28,7 +28,7 @@ OBMMEnergy::OBMMEnergy(const std::string& method)
     m_identifier(method), m_name(method)
 {
   // eventually CJSON might be nice
-  m_inputFormat = new Io::CmlFormat;
+  m_inputFormat = std::make_unique<Io::CmlFormat>();
 
   if (method == "UFF") {
     m_description = tr("Universal Force Field");
@@ -78,12 +78,7 @@ OBMMEnergy::OBMMEnergy(const std::string& method)
   }
 }
 
-OBMMEnergy::~OBMMEnergy()
-{
-  delete m_inputFormat;
-  if (m_process != nullptr)
-    delete m_process;
-}
+OBMMEnergy::~OBMMEnergy() = default;
 
 bool OBMMEnergy::acceptsRadicals() const
 {
@@ -125,10 +120,10 @@ void OBMMEnergy::setupProcess()
 {
   if (m_process != nullptr) {
     m_process->kill();
-    delete m_process;
+    m_process.reset();
   }
 
-  m_process = new QProcess();
+  m_process = std::make_unique<QProcess>();
 
   // Read the AVO_OBMM_EXECUTABLE env var to optionally override the
   // executable used.
