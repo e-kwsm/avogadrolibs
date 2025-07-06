@@ -35,10 +35,7 @@ ScriptChargeModel::ScriptChargeModel(const QString& scriptFileName_)
   readMetaData();
 }
 
-ScriptChargeModel::~ScriptChargeModel()
-{
-  delete m_interpreter;
-}
+ScriptChargeModel::~ScriptChargeModel() = default;
 
 QString ScriptChargeModel::scriptFilePath() const
 {
