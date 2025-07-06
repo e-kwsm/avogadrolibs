@@ -70,10 +70,7 @@ ArrowGeometry::ArrowGeometry(const ArrowGeometry& other)
 {
 }
 
-ArrowGeometry::~ArrowGeometry()
-{
-  delete d;
-}
+ArrowGeometry::~ArrowGeometry() = default;
 
 void ArrowGeometry::accept(Visitor& visitor)
 {
