@@ -52,7 +52,7 @@ private:
   QList<QAction*> m_actions;
 
   QtGui::Molecule* m_molecule;
-  Io::FileFormat* m_reader;
+  std::unique_ptr<Io::FileFormat> m_reader;
   InsertDNADialog* m_dialog;
 
   void constructDialog();
