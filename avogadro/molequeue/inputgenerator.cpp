@@ -339,8 +339,9 @@ bool InputGenerator::insertMolecule(QJsonObject& json,
     return true;
 
   Io::FileFormatManager& formats = Io::FileFormatManager::instance();
-  QScopedPointer<Io::FileFormat> format(
-    formats.newFormatFromFileExtension(m_moleculeExtension.toStdString()));
+  auto tmp =
+    formats.newFormatFromFileExtension(m_moleculeExtension.toStdString());
+  QScopedPointer<Io::FileFormat> format(tmp.get());
 
   if (format.isNull()) {
     m_errors << tr("Error saving molecule representation to string: "
