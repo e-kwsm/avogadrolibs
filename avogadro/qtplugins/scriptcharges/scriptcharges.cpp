@@ -51,7 +51,6 @@ void ScriptCharges::setMolecule(QtGui::Molecule*) {}
 void ScriptCharges::refreshModels()
 {
   unregisterModels();
-  qDeleteAll(m_models);
   m_models.clear();
   m_packageModels.clear();
   registerModels();
