@@ -26,7 +26,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new GAMESSUSOutput; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<GAMESSUSOutput>();
+  }
   std::string identifier() const override { return "Avogadro: GAMESS"; }
   std::string name() const override { return "GAMESS"; }
   std::string description() const override

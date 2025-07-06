@@ -28,7 +28,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new ORCAOutput; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<ORCAOutput>();
+  }
   std::string identifier() const override { return "Avogadro: Orca"; }
   std::string name() const override { return "Orca"; }
   std::string description() const override { return "Orca output format."; }

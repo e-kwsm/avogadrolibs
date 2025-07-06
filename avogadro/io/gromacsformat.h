@@ -28,7 +28,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new GromacsFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::make_unique<GromacsFormat>();
+  }
   std::string identifier() const override { return "Avogadro: GROMACS"; }
   std::string name() const override { return "GROMACS"; }
   std::string description() const override
