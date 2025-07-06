@@ -60,10 +60,7 @@ DashedLineGeometry::DashedLineGeometry(const DashedLineGeometry& other)
 {
 }
 
-DashedLineGeometry::~DashedLineGeometry()
-{
-  delete d;
-}
+DashedLineGeometry::~DashedLineGeometry() = default;
 
 void DashedLineGeometry::accept(Visitor& visitor)
 {
