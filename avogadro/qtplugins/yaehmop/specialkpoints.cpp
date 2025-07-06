@@ -25,7 +25,7 @@ namespace Avogadro::QtPlugins {
 
 QString SpecialKPoints::getSpecialKPoints(Molecule& mol)
 {
-  UnitCell* cell = mol.unitCell();
+  const auto& cell = mol.unitCell();
   if (cell) {
     // Check to see if the space group is set.
     unsigned short hallNumber = mol.hallNumber();
@@ -55,7 +55,7 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
                                              unsigned short spgNum)
 {
   // Check to see if the space group is set.
-  UnitCell* cell = mol.unitCell();
+  const auto& cell = mol.unitCell();
 
   if (!cell) {
     qDebug() << "Error in " << __FUNCTION__ << ": cell is NULL!";
