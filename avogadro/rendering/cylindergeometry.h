@@ -8,6 +8,7 @@
 
 #include "drawable.h"
 
+#include <memory>
 #include <vector>
 
 namespace Avogadro::Rendering {
@@ -172,7 +173,7 @@ private:
   bool m_dirty;
 
   class Private;
-  Private* d;
+  std::unique_ptr<Private> d;
 };
 
 inline CylinderGeometry& CylinderGeometry::operator=(CylinderGeometry other)
