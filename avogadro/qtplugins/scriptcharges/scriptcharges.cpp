@@ -47,18 +47,15 @@ void ScriptCharges::setMolecule(QtGui::Molecule*) {}
 void ScriptCharges::refreshModels()
 {
   unregisterModels();
-  qDeleteAll(m_models);
   m_models.clear();
   m_packageModels.clear();
 
   QMultiMap<QString, QString> scriptPaths =
     QtGui::ScriptLoader::scriptList("charges");
   foreach (const QString& filePath, scriptPaths) {
-    auto* model = new ScriptChargeModel(filePath);
+    auto model = std::make_shared<ScriptChargeModel>(filePath);
     if (model->isValid())
-      m_models.push_back(model);
-    else
-      delete model;
+      m_models.push_back(std::move(model));
   }
 
   registerModels();
@@ -66,13 +63,13 @@ void ScriptCharges::refreshModels()
 
 void ScriptCharges::unregisterModels()
 {
-  for (auto* model : m_models)
+  for (auto& model : m_models)
     Calc::ChargeManager::unregisterModel(model->identifier());
 }
 
 void ScriptCharges::registerModels()
 {
-  for (auto* model : m_models) {
+  for (auto& model : m_models) {
     if (!Calc::ChargeManager::registerModel(model->newInstance())) {
       qDebug() << "Could not register model" << model->identifier().c_str()
                << "due to name conflict.";
