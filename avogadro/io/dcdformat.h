@@ -27,7 +27,10 @@ public:
     return Read | MultiMolecule | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new DcdFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<DcdFormat>();
+  }
   std::string identifier() const override { return "Avogadro: DCD"; }
   std::string name() const override { return "DCD"; }
   std::string description() const override

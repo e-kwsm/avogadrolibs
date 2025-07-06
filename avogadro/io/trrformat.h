@@ -27,7 +27,10 @@ public:
     return Read | MultiMolecule | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new TrrFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<TrrFormat>();
+  }
   std::string identifier() const override { return "Avogadro: GROMACS TRR"; }
   std::string name() const override { return "TRR"; }
   std::string description() const override
