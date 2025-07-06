@@ -94,7 +94,7 @@ bool GaussianFchk::read(std::istream& in, Core::Molecule& molecule)
     return false;
   }
 
-  auto* basis = new GaussianSet;
+  auto basis = std::make_shared<GaussianSet>();
   for (size_t i = 0; i < atomCount; ++i) {
     Atom a = molecule.addAtom(static_cast<unsigned char>(m_aNums[i]));
     const size_t offset = i * 3;
@@ -127,7 +127,7 @@ bool GaussianFchk::read(std::istream& in, Core::Molecule& molecule)
   molecule.perceiveBondOrders();
   molecule.setBasisSet(basis);
   basis->setMolecule(&molecule);
-  load(basis);
+  load(basis.get());
 
   // partial charges
   if (m_mullikenCharges.size() == m_aNums.size()) {
