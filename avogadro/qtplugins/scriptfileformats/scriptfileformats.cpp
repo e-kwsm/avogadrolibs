@@ -72,7 +72,7 @@ void ScriptFileFormats::registerFileFormats()
   for (QList<Io::FileFormat*>::const_iterator it = m_formats.constBegin(),
                                               itEnd = m_formats.constEnd();
        it != itEnd; ++it) {
-    if (!Io::FileFormatManager::registerFormat((*it)->newInstance())) {
+    if (!Io::FileFormatManager::registerFormat((*it)->newInstance().get())) {
       qDebug() << "Could not register format" << (*it)->identifier().c_str()
                << "due to name conflict.";
     }
