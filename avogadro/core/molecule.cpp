@@ -1009,6 +1009,11 @@ void Molecule::setBasisSet(BasisSet* basis)
   m_basisSet.reset(basis);
 }
 
+void Molecule::setBasisSet(std::shared_ptr<BasisSet> basis)
+{
+  m_basisSet = std::move(basis);
+}
+
 Array<double> Molecule::vibrationFrequencies() const
 {
   return m_vibrationFrequencies;
