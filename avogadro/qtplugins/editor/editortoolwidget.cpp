@@ -39,10 +39,7 @@ EditorToolWidget::EditorToolWidget(QWidget* parent_)
   selectElement(6);
 }
 
-EditorToolWidget::~EditorToolWidget()
-{
-  delete m_ui;
-}
+EditorToolWidget::~EditorToolWidget() = default;
 
 void EditorToolWidget::setAtomicNumber(unsigned char atomicNum)
 {
