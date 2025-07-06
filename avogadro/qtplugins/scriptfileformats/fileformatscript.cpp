@@ -44,9 +44,9 @@ QString FileFormatScript::scriptFilePath() const
   return m_interpreter->scriptFilePath();
 }
 
-Io::FileFormat* FileFormatScript::newInstance() const
+std::unique_ptr<Io::FileFormat> FileFormatScript::newInstance() const
 {
-  return new FileFormatScript(m_interpreter->scriptFilePath());
+  return std::make_unique<FileFormatScript>(m_interpreter->scriptFilePath());
 }
 
 bool FileFormatScript::read(std::istream& in, Core::Molecule& molecule)
