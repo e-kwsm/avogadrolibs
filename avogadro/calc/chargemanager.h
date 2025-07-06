@@ -13,6 +13,7 @@
 #include <avogadro/core/vector.h>
 
 #include <map>
+#include <memory>
 #include <set>
 #include <string>
 #include <vector>
@@ -168,7 +169,7 @@ private:
    */
   void appendError(const std::string& errorMessage);
 
-  std::vector<ChargeModel*> m_models;
+  std::vector<std::shared_ptr<ChargeModel>> m_models;
   mutable ChargeIdMap m_identifiers;
   mutable std::map<std::string, std::string> m_identifierToName;
 
