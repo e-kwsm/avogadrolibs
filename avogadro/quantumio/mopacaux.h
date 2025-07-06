@@ -28,7 +28,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new MopacAux; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<MopacAux>();
+  }
   std::string identifier() const override { return "Avogadro: MOPAC"; }
   std::string name() const override { return "MOPAC AUX"; }
   std::string description() const override { return "MOPAC AUX file format."; }

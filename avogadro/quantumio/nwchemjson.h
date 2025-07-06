@@ -29,7 +29,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new NWChemJson; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<NWChemJson>();
+  }
   std::string identifier() const override { return "Avogadro: NWCHEMJSON"; }
   std::string name() const override { return "NWChem JSON"; }
   std::string description() const override
