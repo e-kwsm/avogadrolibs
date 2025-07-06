@@ -13,6 +13,7 @@
 
 #include <avogadro/core/array.h>
 
+#include <memory>
 #include <string>
 
 namespace Avogadro {
@@ -82,7 +83,7 @@ protected:
 private:
   // Container for rendering cache:
   class RenderImpl;
-  RenderImpl* const m_render;
+  std::unique_ptr<RenderImpl> m_render;
 };
 
 inline TextLabelBase& TextLabelBase::operator=(TextLabelBase other)
