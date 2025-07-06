@@ -72,7 +72,7 @@ bool MopacAux::read(std::istream& in, Core::Molecule& molecule)
       return false;
   }
 
-  auto* basis = new SlaterSet;
+  auto basis = std::make_shared<SlaterSet>();
 
   // The element and coordinate counts come from separate headers in the file
   // and need not agree.
@@ -86,7 +86,7 @@ bool MopacAux::read(std::istream& in, Core::Molecule& molecule)
   molecule.perceiveBondOrders();
   molecule.setBasisSet(basis);
   basis->setMolecule(&molecule);
-  load(basis);
+  load(basis.get());
 
   // Bank the last Hessian, which has no following geometry to trigger it.
   flushVibrationData();
