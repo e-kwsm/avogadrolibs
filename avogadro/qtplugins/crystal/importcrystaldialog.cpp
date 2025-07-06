@@ -26,10 +26,7 @@ ImportCrystalDialog::ImportCrystalDialog(QWidget* p)
   m_ui->setupUi(this);
 }
 
-ImportCrystalDialog::~ImportCrystalDialog()
-{
-  delete m_ui;
-}
+ImportCrystalDialog::~ImportCrystalDialog() = default;
 
 bool ImportCrystalDialog::importCrystalClipboard(Avogadro::Core::Molecule& mol)
 {
