@@ -85,10 +85,7 @@ CylinderGeometry::CylinderGeometry(const CylinderGeometry& other)
   setRenderPass(SolidPass);
 }
 
-CylinderGeometry::~CylinderGeometry()
-{
-  delete d;
-}
+CylinderGeometry::~CylinderGeometry() = default;
 
 void CylinderGeometry::accept(Visitor& visitor)
 {
