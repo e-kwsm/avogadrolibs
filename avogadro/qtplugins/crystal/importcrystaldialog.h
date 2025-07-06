@@ -10,6 +10,8 @@
 
 #include <QtWidgets/QDialog>
 
+#include <memory>
+
 namespace Avogadro {
 
 namespace Core {
@@ -43,7 +45,7 @@ public:
   void displayInvalidFormatMessage();
 
 private:
-  Ui::ImportCrystalDialog* m_ui;
+  std::unique_ptr<Ui::ImportCrystalDialog> m_ui;
 };
 
 } // namespace QtPlugins
