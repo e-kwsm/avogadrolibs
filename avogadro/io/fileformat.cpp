@@ -67,7 +67,7 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
     // Imbue the standard C locale.
     locale cLocale("C");
     if (m_mode & Read) {
-      auto* file = new ifstream(m_fileName.c_str(), std::ifstream::binary);
+      auto* file = new ifstream(m_fileName, std::ifstream::binary);
       m_in = file;
       if (file->is_open()) {
         m_in->imbue(cLocale);
@@ -77,7 +77,7 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
         return false;
       }
     } else if (m_mode & Write) {
-      auto* file = new ofstream(m_fileName.c_str(), std::ofstream::binary);
+      auto* file = new ofstream(m_fileName, std::ofstream::binary);
       m_out = file;
       if (file->is_open()) {
         m_out->imbue(cLocale);
