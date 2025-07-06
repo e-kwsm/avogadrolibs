@@ -27,7 +27,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new PdbFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<PdbFormat>();
+  }
   std::string identifier() const override { return "Avogadro: PDB"; }
   std::string name() const override { return "PDB"; }
   std::string description() const override
