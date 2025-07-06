@@ -75,10 +75,7 @@ SphereGeometry::SphereGeometry(const SphereGeometry& other)
   setRenderPass(SolidPass);
 }
 
-SphereGeometry::~SphereGeometry()
-{
-  delete d;
-}
+SphereGeometry::~SphereGeometry() = default;
 
 void SphereGeometry::accept(Visitor& visitor)
 {
