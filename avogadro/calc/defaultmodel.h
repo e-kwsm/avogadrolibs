@@ -39,7 +39,14 @@ public:
    * Create a new instance of the file format class. Ownership passes to the
    * caller.
    */
-  DefaultModel* newInstance() const override { return new DefaultModel; }
+  std::shared_ptr<ChargeModel> newInstance() override
+  {
+    return shared_from_this();
+  }
+  std::shared_ptr<const ChargeModel> newInstance() const override
+  {
+    return shared_from_this();
+  }
 
   /**
    * @brief A unique identifier defined by the file
