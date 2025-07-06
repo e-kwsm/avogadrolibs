@@ -208,14 +208,14 @@ FileFormat* FileFormatManager::newFormatFromIdentifier(
   const std::string& id, FileFormat::Operations filter) const
 {
   FileFormat* format(filteredFormatFromFormatMap(id, filter, m_identifiers));
-  return format ? format->newInstance() : nullptr;
+  return format ? format->newInstance().get() : nullptr;
 }
 
 FileFormat* FileFormatManager::newFormatFromMimeType(
   const std::string& mime, FileFormat::Operations filter) const
 {
   FileFormat* format(filteredFormatFromFormatMap(mime, filter, m_mimeTypes));
-  return format ? format->newInstance() : nullptr;
+  return format ? format->newInstance().get() : nullptr;
 }
 
 FileFormat* FileFormatManager::newFormatFromFileExtension(
@@ -223,7 +223,7 @@ FileFormat* FileFormatManager::newFormatFromFileExtension(
 {
   FileFormat* format(
     filteredFormatFromFormatMap(extension, filter, m_fileExtensions));
-  return format ? format->newInstance() : nullptr;
+  return format ? format->newInstance().get() : nullptr;
 }
 
 std::vector<std::string> FileFormatManager::identifiers(
