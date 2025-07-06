@@ -28,7 +28,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new GaussianFchk; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<GaussianFchk>();
+  }
   std::string identifier() const override { return "Avogadro: FCHK"; }
   std::string name() const override { return "Gaussian FCHK"; }
   std::string description() const override
