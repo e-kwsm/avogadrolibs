@@ -38,7 +38,7 @@ TEST(VaspTest, readPoscar)
   ASSERT_EQ(poscar.error(), std::string());
 
   // First, let's check the unit cell
-  UnitCell* uc = molecule.unitCell();
+  auto uc = molecule.unitCell();
 
   EXPECT_EQ(uc->aVector(), Vector3(2.95812000, 0.00000000, 0.00000000));
   EXPECT_EQ(uc->bVector(), Vector3(0.00000000, 4.59373000, 0.00000000));
@@ -155,7 +155,7 @@ TEST(VaspTest, readOutcar)
   ASSERT_EQ(multi.error(), "");
 
   // First, let's check the unit cell
-  UnitCell* uc = molecule.unitCell();
+  auto uc = molecule.unitCell();
 
   EXPECT_EQ(uc->aVector(), Vector3(5.8783178329, 0.0000000000, 0.0000000000));
   EXPECT_EQ(uc->bVector(), Vector3(-2.9391589165, 5.0907725749, 0.0000000000));
