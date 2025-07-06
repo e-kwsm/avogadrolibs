@@ -220,8 +220,9 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
     }
 
     Io::FileFormatManager& formats = Io::FileFormatManager::instance();
-    QScopedPointer<Io::FileFormat> format(
-      formats.newFormatFromFileExtension(m_moleculeExtension.toStdString()));
+    auto tmp =
+      formats.newFormatFromFileExtension(m_moleculeExtension.toStdString());
+    QScopedPointer<Io::FileFormat> format(tmp.get());
 
     if (format.isNull()) {
       m_errors << tr("Error reading molecule representation: "
@@ -527,10 +528,11 @@ bool InterfaceScript::insertMolecule(QJsonObject& json,
   json.insert("spin", mol.totalSpinMultiplicity());
 
   Io::FileFormatManager& formats = Io::FileFormatManager::instance();
-  QScopedPointer<Io::FileFormat> format(
-    formats.newFormatFromFileExtension(m_moleculeExtension.toStdString()));
-  QScopedPointer<Io::FileFormat> cjsonFormat(
-    formats.newFormatFromFileExtension("cjson"));
+  auto tmp =
+    formats.newFormatFromFileExtension(m_moleculeExtension.toStdString());
+  QScopedPointer<Io::FileFormat> format(tmp.get());
+  auto tmp2 = formats.newFormatFromFileExtension("cjson");
+  QScopedPointer<Io::FileFormat> cjsonFormat(tmp2.get());
 
   // If we want something *other* than CJSON, check that we can supply that
   // format
