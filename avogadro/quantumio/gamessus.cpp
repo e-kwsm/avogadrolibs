@@ -89,8 +89,8 @@ bool GAMESSUSOutput::read(std::istream& in, Core::Molecule& molecule)
 
   molecule.perceiveBondsSimple();
   molecule.perceiveBondOrders();
-  auto* basis = new GaussianSet;
-  load(basis);
+  auto basis = std::make_shared<GaussianSet>();
+  load(basis.get());
   molecule.setBasisSet(basis);
   basis->setMolecule(&molecule);
 
