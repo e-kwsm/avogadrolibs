@@ -41,7 +41,6 @@ BufferObject::~BufferObject()
 {
   if (d->handle != 0)
     glDeleteBuffers(1, &d->handle);
-  delete d;
 }
 
 BufferObject::ObjectType BufferObject::type() const
