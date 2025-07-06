@@ -27,7 +27,10 @@ public:
     return ReadWrite | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new TurbomoleFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<TurbomoleFormat>();
+  }
   std::string identifier() const override
   {
     return "Avogadro: Turbomole Coord";

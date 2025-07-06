@@ -40,7 +40,7 @@ public:
 
   void clear() override;
 
-  FileFormat* newInstance() const override;
+  std::unique_ptr<FileFormat> newInstance() const override;
 
   std::string description() const override { return m_description; }
   std::string identifier() const override { return m_identifier; }

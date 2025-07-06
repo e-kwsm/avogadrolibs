@@ -27,7 +27,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new MoldenFile; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<MoldenFile>();
+  }
   std::string identifier() const override { return "Avogadro: Molden"; }
   std::string name() const override { return "Molden"; }
   std::string description() const override { return "Molden file format."; }

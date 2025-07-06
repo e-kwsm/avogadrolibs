@@ -27,9 +27,9 @@ public:
     return Read | MultiMolecule | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override
+  std::unique_ptr<FileFormat> newInstance() const override
   {
-    return new LammpsTrajectoryFormat;
+    return std::make_unique<LammpsTrajectoryFormat>();
   }
   std::string identifier() const override
   {
@@ -64,7 +64,10 @@ public:
     return Write | MultiMolecule | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new LammpsDataFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<LammpsDataFormat>();
+  }
   std::string identifier() const override { return "Avogadro: LAMMPS Data"; }
   std::string name() const override { return "LAMMPS"; }
   std::string description() const override

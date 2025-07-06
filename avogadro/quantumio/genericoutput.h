@@ -26,7 +26,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new GenericOutput; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<GenericOutput>();
+  }
   std::string identifier() const override { return "Avogadro: Generic Output"; }
   std::string name() const override { return "Generic Output"; }
   std::string description() const override { return "Generic output format."; }
