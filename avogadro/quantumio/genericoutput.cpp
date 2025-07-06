@@ -88,7 +88,7 @@ std::vector<std::string> GenericOutput::mimeTypes() const
 bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
 {
   // check the stream line-by-line until we see the program name
-  FileFormat* reader = nullptr;
+  std::unique_ptr<FileFormat> reader = nullptr;
   // How the reader was chosen, so the error message can say what actually ran.
   std::string detected;
 
@@ -97,27 +97,27 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
     if (line.find("Northwest Computational Chemistry Package") !=
         std::string::npos) {
       // NWChem
-      reader = new NWChemLog;
+      reader = std::unique_ptr<NWChemLog>();
       detected = "NWChem";
       break;
     } else if (line.find("GAMESS VERSION") != std::string::npos) {
       // GAMESS-US .. don't know if we can read Firefly or GAMESS-UK
-      reader = new GAMESSUSOutput;
+      reader = std::unique_ptr<GAMESSUSOutput>();
       detected = "GAMESS-US";
       break;
     } else if (line.find("[Molden Format]") != std::string::npos) {
       // molden with .out extension
-      reader = new MoldenFile;
+      reader = std::unique_ptr<MoldenFile>();
       detected = "Molden";
       break;
     } else if (line.find("O   R   C   A") != std::string::npos) {
       // ORCA reader
-      reader = new ORCAOutput;
+      reader = std::unique_ptr<ORCAOutput>();
       detected = "ORCA";
       break;
     } else if (line.find("xtb:") != std::string::npos) {
       // xtb reader
-      reader = new Io::XyzFormat;
+      reader = std::unique_ptr<Io::XyzFormat>();
       detected = "xtb";
       break;
     }
@@ -215,7 +215,6 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
     appendError("Detected " + detected + " (" + identifier +
                 "), but that reader needs a file path and this output was "
                 "read from a stream.");
-    delete reader;
     return false;
   }
 
@@ -235,7 +234,6 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
       appendError("The reader did not report a reason.", false);
   }
 
-  delete reader;
   return success;
 }
 

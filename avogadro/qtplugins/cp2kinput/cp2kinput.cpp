@@ -79,7 +79,7 @@ void Cp2kInput::openJobOutput(const JobObject& job)
 
 bool Cp2kInput::readMolecule(QtGui::Molecule& mol)
 {
-  Io::FileFormat* reader = m_outputFormat->newInstance();
+  auto reader = m_outputFormat->newInstance();
   bool success = reader->readFile(m_outputFileName.toStdString(), mol);
   if (!success) {
     QMessageBox::information(qobject_cast<QWidget*>(parent()), tr("Error"),
