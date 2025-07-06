@@ -236,7 +236,7 @@ double Yaehmop::kpointDistance(const Vector3& a, const Vector3& b)
     return -1.0;
   }
 
-  UnitCell* cell = m_molecule->unitCell();
+  const auto& cell = m_molecule->unitCell();
   if (!cell) {
     qDebug() << "Error in " << __FUNCTION__ << ": there is no unit cell";
     return -1.0;
@@ -428,7 +428,7 @@ QString Yaehmop::createGeometryAndLatticeInput() const
     return "";
   }
 
-  UnitCell* cell = m_molecule->unitCell();
+  const auto& cell = m_molecule->unitCell();
   if (!cell) {
     QMessageBox::warning(nullptr, tr("Avogadro2"),
                          tr("Cannot calculate band structure: no unit cell!"));
