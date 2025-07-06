@@ -97,7 +97,7 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
     locale cLocale("C");
     if (m_mode & Read) {
       auto file =
-        std::make_unique<ifstream>(m_fileName.c_str(), std::ifstream::binary);
+        std::make_unique<ifstream>(m_fileName, std::ifstream::binary);
       if (!file->is_open()) {
         appendError("Error opening file: " + fileName_);
         return false;
@@ -130,7 +130,7 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
       }
 
       auto file =
-        std::make_unique<ofstream>(m_fileName.c_str(), std::ofstream::binary);
+        std::make_unique<ofstream>(m_fileName, std::ofstream::binary);
       if (!file->is_open()) {
         appendError("Error opening file: " + fileName_);
         return false;
