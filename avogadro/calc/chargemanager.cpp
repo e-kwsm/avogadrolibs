@@ -29,7 +29,8 @@ void ChargeManager::appendError(const std::string& errorMessage)
   m_error += errorMessage + "\n";
 }
 
-bool ChargeManager::registerModel(const std::shared_ptr<ChargeModel>& model)
+bool ChargeManager::registerModel(
+  const std::shared_ptr<const ChargeModel>& model)
 {
   return instance().addModel(model);
 }
@@ -39,7 +40,7 @@ bool ChargeManager::unregisterModel(const std::string& identifier)
   return instance().removeModel(identifier);
 }
 
-bool ChargeManager::addModel(const std::shared_ptr<ChargeModel>& model)
+bool ChargeManager::addModel(const std::shared_ptr<const ChargeModel>& model)
 {
   if (model == nullptr) {
     appendError("Supplied model was null.");
