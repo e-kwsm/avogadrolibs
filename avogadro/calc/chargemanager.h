@@ -58,7 +58,7 @@ public:
    * ownership of the object passed in.
    * @return True on success, false on failure.
    */
-  static bool registerModel(const std::shared_ptr<ChargeModel>& model);
+  static bool registerModel(const std::shared_ptr<const ChargeModel>& model);
 
   /**
    * @brief Unregister a charge model from the manager.
@@ -73,7 +73,7 @@ public:
    * supplied object.
    * @return True on success, false on failure.
    */
-  bool addModel(const std::shared_ptr<ChargeModel>& model);
+  bool addModel(const std::shared_ptr<const ChargeModel>& model);
 
   /**
    * Remove the model with the identifier @a identifier from the manager.
@@ -169,7 +169,7 @@ private:
    */
   void appendError(const std::string& errorMessage);
 
-  std::vector<std::shared_ptr<ChargeModel>> m_models;
+  std::vector<std::shared_ptr<const ChargeModel>> m_models;
   mutable ChargeIdMap m_identifiers;
   mutable std::map<std::string, std::string> m_identifierToName;
 
