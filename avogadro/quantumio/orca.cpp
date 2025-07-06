@@ -47,10 +47,10 @@ std::vector<std::string> ORCAOutput::mimeTypes() const
 bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
 {
   // Read the log file line by line
-  auto* basis = new GaussianSet;
+  auto basis = std::make_shared<GaussianSet>();
 
   while (!in.eof())
-    processLine(in, basis);
+    processLine(in, basis.get());
 
   // Set up the molecule
   int nAtom = 0;
@@ -159,7 +159,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
 
   molecule.setBasisSet(basis);
   basis->setMolecule(&molecule);
-  load(basis);
+  load(basis.get());
 
   // we have to do a few things *after* any modifications to bonds / atoms
   // because those automatically clear partial charges and data

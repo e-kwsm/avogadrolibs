@@ -51,7 +51,7 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
     processLine(in);
   }
 
-  auto* basis = new GaussianSet;
+  auto basis = std::make_shared<GaussianSet>();
 
   int nAtom = 0;
   for (unsigned int i = 0; i < m_aPos.size(); i += 3) {
@@ -63,7 +63,7 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
   molecule.perceiveBondOrders();
   molecule.setBasisSet(basis);
   basis->setMolecule(&molecule);
-  load(basis);
+  load(basis.get());
 
   if (m_frequencies.size() > 0 &&
       m_frequencies.size() == m_vibDisplacements.size()) {
