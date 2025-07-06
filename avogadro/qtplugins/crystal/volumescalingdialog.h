@@ -8,6 +8,8 @@
 
 #include <QtWidgets/QDialog>
 
+#include <memory>
+
 namespace Avogadro::QtPlugins {
 
 namespace Ui {
@@ -35,7 +37,7 @@ private slots:
   void factorEdited();
 
 private:
-  Ui::VolumeScalingDialog* m_ui;
+  std::unique_ptr<Ui::VolumeScalingDialog> m_ui;
   double m_currentVolume;
 };
 
