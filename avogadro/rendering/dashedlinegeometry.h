@@ -10,6 +10,8 @@
 
 #include <avogadro/core/array.h>
 
+#include <memory>
+
 namespace Avogadro::Rendering {
 
 /**
@@ -124,7 +126,7 @@ private:
   bool m_dirty;
 
   class Private;
-  Private* d;
+  std::unique_ptr<Private> d;
 };
 
 inline DashedLineGeometry& DashedLineGeometry::operator=(
