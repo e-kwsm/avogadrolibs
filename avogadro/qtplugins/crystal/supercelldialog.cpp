@@ -20,10 +20,7 @@ SupercellDialog::SupercellDialog(QWidget* p)
   m_ui->setupUi(this);
 }
 
-SupercellDialog::~SupercellDialog()
-{
-  delete m_ui;
-}
+SupercellDialog::~SupercellDialog() = default;
 
 bool SupercellDialog::buildSupercell(Avogadro::QtGui::Molecule& mol)
 {
