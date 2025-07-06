@@ -14,6 +14,7 @@
 #include <avogadro/core/vector.h>
 
 #include <cstddef>
+#include <memory>
 #include <string>
 
 namespace Avogadro::Calc {
@@ -37,16 +38,25 @@ namespace Avogadro::Calc {
  */
 
 class AVOGADROCALC_EXPORT ChargeModel
+  : public std::enable_shared_from_this<ChargeModel>
 {
 public:
   ChargeModel() = default;
   virtual ~ChargeModel() = default;
 
   /**
-   * Create a new instance of the model. Ownership passes to the
-   * caller.
+   * Create a new instance of the model.
+   * @{
    */
-  virtual ChargeModel* newInstance() const = 0;
+  virtual std::shared_ptr<ChargeModel> newInstance()
+  {
+    return shared_from_this();
+  }
+  virtual std::shared_ptr<const ChargeModel> newInstance() const
+  {
+    return shared_from_this();
+  }
+  /** @} */
 
   /**
    * @brief A unique identifier, used to retrieve models programmatically.
