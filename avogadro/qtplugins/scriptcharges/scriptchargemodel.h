@@ -50,10 +50,6 @@ public:
 
   bool isValid() const { return m_valid; }
 
-  std::shared_ptr<Avogadro::Calc::ChargeModel> newInstance() override
-  {
-    return shared_from_this();
-  }
   std::shared_ptr<const Avogadro::Calc::ChargeModel> newInstance()
     const override
   {
