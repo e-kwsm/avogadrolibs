@@ -270,10 +270,7 @@ TextLabelBase::TextLabelBase(const TextLabelBase& other)
 {
 }
 
-TextLabelBase::~TextLabelBase()
-{
-  delete m_render;
-}
+TextLabelBase::~TextLabelBase() = default;
 
 void TextLabelBase::render(const Camera& camera)
 {
