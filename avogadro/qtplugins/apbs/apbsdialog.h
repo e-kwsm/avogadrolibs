@@ -10,6 +10,8 @@
 
 #include <QDialog>
 
+#include <memory>
+
 namespace Ui {
 class ApbsDialog;
 }
@@ -66,10 +68,10 @@ private:
   void updatePreviewTextImmediately();
 
 private:
-  Ui::ApbsDialog* m_ui;
+  std::unique_ptr<Ui::ApbsDialog> m_ui;
   QString m_generatedPqrFileName;
   QtGui::Molecule* m_molecule;
-  MoleQueue::InputGenerator* m_inputGenerator;
+  std::unique_ptr<MoleQueue::InputGenerator> m_inputGenerator;
   QString m_cubeFileName;
   bool m_loadStructureFile;
   bool m_loadCubeFile;
