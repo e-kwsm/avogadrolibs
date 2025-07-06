@@ -30,7 +30,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new MMTFFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<MMTFFormat>();
+  }
   std::string identifier() const override { return "Avogadro: MMTF"; }
   std::string name() const override
   {

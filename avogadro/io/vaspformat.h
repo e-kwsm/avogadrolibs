@@ -27,7 +27,10 @@ public:
     return ReadWrite | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new PoscarFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<PoscarFormat>();
+  }
   std::string identifier() const override { return "Avogadro: POSCAR"; }
   std::string name() const override { return "POSCAR"; }
   std::string description() const override
@@ -58,7 +61,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new OutcarFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<OutcarFormat>();
+  }
   std::string identifier() const override { return "Avogadro: OUTCAR"; }
   std::string name() const override { return "OUTCAR"; }
   std::string description() const override
