@@ -243,7 +243,7 @@ TEST(FileFormatManagerTest, filtering)
 TEST(FileFormatManagerTest, unregister)
 {
   Format testFormat("testingFormat", FileFormat::All);
-  FileFormatManager::registerFormat(testFormat.newInstance());
+  FileFormatManager::registerFormat(testFormat.newInstance().get());
 
   FileFormatManager& manager = FileFormatManager::instance();
   FileFormat* format = manager.newFormatFromIdentifier("testingFormat");
