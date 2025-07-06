@@ -537,7 +537,8 @@ public:
    * Set the basis set for the molecule, note that the molecule takes ownership
    * of the object.
    */
-  void setBasisSet(BasisSet* basis);
+  [[deprecated]] void setBasisSet(BasisSet* basis);
+  void setBasisSet(std::shared_ptr<BasisSet> basis);
 
   /**
    * @return the basis set (if present) for the molecule.
