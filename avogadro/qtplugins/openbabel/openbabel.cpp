@@ -356,8 +356,8 @@ void OpenBabel::handleChargesUpdate(
     // we're only picking a few select models for now
     if (key == "eem" || key == "eem2015ba" || key == "eqeq" ||
         key == "gasteiger" || key == "mmff94") {
-      auto* model = new OBCharges(key.toStdString());
-      Calc::ChargeManager::instance().registerModel(model);
+      auto model = std::make_shared<OBCharges>(key.toStdString());
+      Calc::ChargeManager::instance().registerModel(std::move(model));
     }
   }
 }
