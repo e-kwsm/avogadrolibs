@@ -47,10 +47,7 @@ InsertDna::InsertDna(QObject* p)
   m_actions.append(action);
 }
 
-InsertDna::~InsertDna()
-{
-  delete m_reader;
-}
+InsertDna::~InsertDna() = default;
 
 QList<QAction*> InsertDna::actions() const
 {
