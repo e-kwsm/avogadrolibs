@@ -214,8 +214,8 @@ TEST(FileFormatManagerTest, filtering)
   // Add formats with various supported operations
   Format readOnly("readOnly", Format::All ^ Format::Write);
   Format writeOnly("writeOnly", Format::All ^ Format::Read);
-  FileFormatManager::registerFormat(readOnly.newInstance());
-  FileFormatManager::registerFormat(writeOnly.newInstance());
+  FileFormatManager::registerFormat(readOnly.newInstance().get());
+  FileFormatManager::registerFormat(writeOnly.newInstance().get());
 
   FileFormatManager& manager = FileFormatManager::instance();
   FileFormat* format = nullptr;
