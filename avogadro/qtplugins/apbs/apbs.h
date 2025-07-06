@@ -9,6 +9,8 @@
 #include <avogadro/core/avogadrocore.h>
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 class QProgressDialog;
 
 namespace Avogadro::QtPlugins {
@@ -52,8 +54,8 @@ private:
 private:
   QtGui::Molecule* m_molecule;
   QList<QAction*> m_actions;
-  QProgressDialog* m_progressDialog;
-  ApbsDialog* m_dialog;
+  std::unique_ptr<QProgressDialog> m_progressDialog;
+  std::unique_ptr<ApbsDialog> m_dialog;
   QString m_pqrFileName;
   QString m_cubeFileName;
 };

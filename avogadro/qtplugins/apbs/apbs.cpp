@@ -39,11 +39,7 @@ Apbs::Apbs(QObject* parent_)
   m_actions.append(action);
 }
 
-Apbs::~Apbs()
-{
-  delete m_dialog;
-  delete m_progressDialog;
-}
+Apbs::~Apbs() = default;
 
 QStringList Apbs::menuPath(QAction*) const
 {
@@ -93,7 +89,7 @@ void Apbs::onMeshGeneratorProgress(int value)
 void Apbs::onRunApbs()
 {
   if (!m_dialog)
-    m_dialog = new ApbsDialog(qobject_cast<QWidget*>(parent()));
+    m_dialog = std::make_unique<ApbsDialog>(qobject_cast<QWidget*>(parent()));
 
   m_dialog->setMolecule(m_molecule);
   int code = m_dialog->exec();
@@ -145,7 +141,7 @@ bool Apbs::loadOpenDxFile(const QString& fileName, QtGui::Molecule& molecule)
     } else {
       if (!m_progressDialog)
         m_progressDialog =
-          new QProgressDialog(qobject_cast<QWidget*>(parent()));
+          std::make_unique<QProgressDialog>(qobject_cast<QWidget*>(parent()));
 
       // generate positive mesh
       m_progressDialog->setLabelText("Generating Positive Potential Mesh");
