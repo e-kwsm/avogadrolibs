@@ -257,10 +257,7 @@ TextLabelBase::TextLabelBase(const TextLabelBase& other)
   m_render->pixelRatio = other.m_render->pixelRatio;
 }
 
-TextLabelBase::~TextLabelBase()
-{
-  delete m_render;
-}
+TextLabelBase::~TextLabelBase() = default;
 
 void TextLabelBase::render(const Camera& camera)
 {
