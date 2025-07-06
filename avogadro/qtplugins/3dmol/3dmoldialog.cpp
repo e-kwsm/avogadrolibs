@@ -37,10 +37,7 @@ ThreeDMolDialog::ThreeDMolDialog(QtGui::Molecule* mol, QWidget* parent_)
   setMolecule(mol);
 }
 
-ThreeDMolDialog::~ThreeDMolDialog()
-{
-  delete m_ui;
-}
+ThreeDMolDialog::~ThreeDMolDialog() = default;
 
 void ThreeDMolDialog::setMolecule(QtGui::Molecule* mol)
 {
