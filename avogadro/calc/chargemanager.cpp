@@ -53,7 +53,7 @@ bool ChargeManager::addModel(ChargeModel* model)
 
   // If we got here then the format is unique enough to be added.
   size_t index = m_models.size();
-  m_models.push_back(model);
+  m_models.emplace_back(model);
   std::string lowerId = toLower(model->identifier());
   m_identifiers[lowerId] = index;
   m_identifierToName[lowerId] = model->name();
@@ -69,11 +69,9 @@ bool ChargeManager::removeModel(const std::string& identifier)
   m_identifiers.erase(lowerId);
   m_identifierToName.erase(lowerId);
 
-  ChargeModel* model = m_models[ids];
-
+  auto& model = m_models[ids];
   if (model != nullptr) {
-    m_models[ids] = nullptr;
-    delete model;
+    model.reset();
   }
 
   return true;
@@ -98,9 +96,6 @@ ChargeManager::ChargeManager()
 ChargeManager::~ChargeManager()
 {
   // Delete the models that were loaded.
-  for (auto& m_model : m_models) {
-    delete m_model;
-  }
   m_models.clear();
 }
 
@@ -111,7 +106,7 @@ std::set<std::string> ChargeManager::identifiersForMolecule(
   std::set<std::string> identifiers = molecule.partialChargeTypes();
 
   // check our models for compatibility
-  for (auto* m_model : m_models) {
+  for (const auto& m_model : m_models) {
     if (m_model == nullptr)
       continue;
     // We check that every element in the molecule
@@ -172,7 +167,7 @@ MatrixX ChargeManager::partialCharges(const std::string& identifier,
   }
 
   const auto id = m_identifiers[lowerId];
-  const ChargeModel* model = m_models[id];
+  const auto& model = m_models[id];
   return model->partialCharges(molecule);
 }
 
@@ -199,7 +194,7 @@ Vector3 ChargeManager::dipoleMoment(const std::string& identifier,
   }
 
   const auto id = m_identifiers[lowerId];
-  const ChargeModel* model = m_models[id];
+  const auto& model = m_models[id];
   return model->dipoleMoment(molecule);
 }
 
@@ -222,7 +217,7 @@ double ChargeManager::potential(const std::string& identifier,
   }
 
   const auto id = m_identifiers[identifier];
-  const ChargeModel* model = m_models[id];
+  const auto& model = m_models[id];
   return model->potential(molecule, point);
 }
 
@@ -244,7 +239,7 @@ Core::Array<double> ChargeManager::potentials(
   }
 
   const auto id = m_identifiers[identifier];
-  const ChargeModel* model = m_models[id];
+  const auto& model = m_models[id];
   return model->potentials(molecule, points);
 }
 
