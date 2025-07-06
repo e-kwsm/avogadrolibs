@@ -69,7 +69,7 @@ void ScriptCharges::registerModels()
   for (QList<Calc::ChargeModel*>::const_iterator it = m_models.constBegin(),
                                                  itEnd = m_models.constEnd();
        it != itEnd; ++it) {
-    if (!Calc::ChargeManager::registerModel((*it)->newInstance())) {
+    if (!Calc::ChargeManager::registerModel((*it)->newInstance().get())) {
       qDebug() << "Could not register model" << (*it)->identifier().c_str()
                << "due to name conflict.";
     }
