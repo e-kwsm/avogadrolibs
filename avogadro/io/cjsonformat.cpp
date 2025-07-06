@@ -493,7 +493,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
   if (jsonRoot.contains("basisSet")) {
     json basisSet = jsonRoot["basisSet"];
     if (basisSet.is_object()) {
-      auto* basis = new GaussianSet;
+      auto basis = std::make_shared<GaussianSet>();
       basis->setMolecule(&molecule);
       // Gather the relevant pieces together so that they can be read in.
       json shellTypes = basisSet["shellTypes"];
@@ -661,7 +661,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
           }
         }
       }
-      molecule.setBasisSet(basis);
+      molecule.setBasisSet(std::move(basis));
     }
   }
 
