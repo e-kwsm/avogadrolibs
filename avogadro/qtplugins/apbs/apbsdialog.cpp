@@ -44,11 +44,7 @@ ApbsDialog::ApbsDialog(QWidget* parent_)
           qOverload<>(&ApbsDialog::saveInputFile));
 }
 
-ApbsDialog::~ApbsDialog()
-{
-  delete m_ui;
-  delete m_inputGenerator;
-}
+ApbsDialog::~ApbsDialog() = default;
 
 void ApbsDialog::setMolecule(QtGui::Molecule* molecule)
 {
