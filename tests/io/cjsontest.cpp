@@ -172,7 +172,7 @@ TEST(CjsonTest, crystal)
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(6));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(0));
 
-  const UnitCell* unitCell = molecule.unitCell();
+  const auto& unitCell = molecule.unitCell();
   ASSERT_NE(unitCell, (UnitCell*)nullptr);
   EXPECT_TRUE(std::fabs((float)unitCell->a() - 2.95812f) < 1e-5f);
   EXPECT_TRUE(std::fabs((float)unitCell->b() - 4.59373f) < 1e-5f);
@@ -192,7 +192,7 @@ TEST(CjsonTest, crystal)
   Molecule otherMolecule;
   cjson.readString(cjsonStr, otherMolecule);
 
-  const UnitCell* otherUnitCell = otherMolecule.unitCell();
+  const auto& otherUnitCell = otherMolecule.unitCell();
   ASSERT_NE(otherUnitCell, (UnitCell*)nullptr);
   EXPECT_FLOAT_EQ((float)otherUnitCell->a(), (float)unitCell->a());
   EXPECT_FLOAT_EQ((float)otherUnitCell->b(), (float)unitCell->b());
