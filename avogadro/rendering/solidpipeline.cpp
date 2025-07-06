@@ -144,10 +144,7 @@ SolidPipeline::SolidPipeline()
 {
 }
 
-SolidPipeline::~SolidPipeline()
-{
-  delete d;
-}
+SolidPipeline::~SolidPipeline() = default;
 
 void SolidPipeline::initialize()
 {
