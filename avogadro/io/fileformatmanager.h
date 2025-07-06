@@ -148,7 +148,7 @@ public:
    * the
    * caller.
    */
-  FileFormat* newFormatFromIdentifier(
+  std::unique_ptr<FileFormat> newFormatFromIdentifier(
     const std::string& identifier,
     FileFormat::Operations filter = FileFormat::None) const;
 
@@ -162,7 +162,7 @@ public:
    * the
    * caller.
    */
-  FileFormat* newFormatFromMimeType(
+  std::unique_ptr<FileFormat> newFormatFromMimeType(
     const std::string& mimeType,
     FileFormat::Operations filter = FileFormat::None) const;
 
@@ -176,7 +176,7 @@ public:
    * the
    * caller.
    */
-  FileFormat* newFormatFromFileExtension(
+  std::unique_ptr<FileFormat> newFormatFromFileExtension(
     const std::string& extension,
     FileFormat::Operations filter = FileFormat::None) const;
 
