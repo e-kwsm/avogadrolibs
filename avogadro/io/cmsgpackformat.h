@@ -32,7 +32,10 @@ public:
     return ReadWrite | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new CMsgPackFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<CMsgPackFormat>();
+  }
   std::string identifier() const override { return "Avogadro: CMsgPack"; }
   std::string name() const override { return "Chemical MessagePack"; }
   std::string description() const override

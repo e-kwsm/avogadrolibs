@@ -101,9 +101,9 @@ QString FileFormatScript::scriptFilePath() const
   return m_interpreter->scriptFilePath();
 }
 
-Io::FileFormat* FileFormatScript::newInstance() const
+std::unique_ptr<Io::FileFormat> FileFormatScript::newInstance() const
 {
-  auto* copy = new FileFormatScript();
+  auto copy = std::make_unique<FileFormatScript>();
   copy->m_interpreter->setPackageInfo(m_interpreter->packageDir(),
                                       m_interpreter->packageCommand(),
                                       m_interpreter->packageIdentifier());

@@ -29,7 +29,10 @@ public:
     return ReadWrite | MultiMolecule | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new MdlFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::make_unique<MdlFormat>();
+  }
   std::string identifier() const override { return "Avogadro: MDL"; }
   std::string name() const override { return "MDL"; }
   std::string description() const override
