@@ -112,8 +112,7 @@ bool FileFormatScript::write(std::ostream& out, const Core::Molecule& molecule)
 
   // Call the script to convert the file
   QByteArray result = m_interpreter->execute(
-    QStringList() << "--write",
-    QByteArray::fromRawData(intermediate.c_str(), intermediate.size()));
+    QStringList() << "--write", QByteArray::fromStdString(intermediate));
 
   if (m_interpreter->hasErrors()) {
     foreach (const QString& err, m_interpreter->errorList())
