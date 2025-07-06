@@ -8,6 +8,8 @@
 
 #include "camera.h"
 
+#include <memory>
+
 namespace Avogadro {
 namespace Rendering {
 
@@ -141,7 +143,7 @@ private:
   int m_height;
 
   class Private;
-  Private* d;
+  std::unique_ptr<Private> d;
 };
 
 } // End namespace Rendering
