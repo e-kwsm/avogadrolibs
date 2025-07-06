@@ -10,6 +10,7 @@
 
 #include "avogadrocore.h"
 
+#include <memory>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -44,7 +45,7 @@ private:
   void assignBackboneHydrogenBonds();
 
   Molecule* m_molecule;
-  std::vector<hBondRecord*> m_hBonds;
+  std::vector<std::unique_ptr<hBondRecord>> m_hBonds;
 };
 
 } // namespace Avogadro::Core
