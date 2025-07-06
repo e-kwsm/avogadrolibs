@@ -56,7 +56,7 @@ void OpenMMInput::setMolecule(QtGui::Molecule* mol)
 
 bool OpenMMInput::readMolecule(QtGui::Molecule& mol)
 {
-  Io::FileFormat* reader = m_outputFormat->newInstance();
+  auto reader = m_outputFormat->newInstance();
   bool success = reader->readFile(m_outputFileName.toStdString(), mol);
   if (!success) {
     QMessageBox::information(qobject_cast<QWidget*>(parent()), tr("Error"),
