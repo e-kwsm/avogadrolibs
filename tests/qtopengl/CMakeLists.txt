@@ -12,7 +12,7 @@ add_definitions(${Qt5Widgets_DEFINITIONS})
 
 # We want to find some parts of VTK in order to do image comparisons.
 find_package(VTK
-  COMPONENTS vtkImagingCore vtkRenderingQt vtkIOImage
+  COMPONENTS ImagingCore RenderingQt IOImage
   NO_MODULE REQUIRED)
 include_directories(SYSTEM ${VTK_INCLUDE_DIRS})
 
@@ -46,9 +46,9 @@ add_executable(AvogadroQtOpenGLTests ${testDriver})
 
 target_link_libraries(AvogadroQtOpenGLTests
   Avogadro::QtOpenGL
-  vtkImagingCore
-  vtkIOImage
-  vtkRenderingQt)
+  VTK::ImagingCore
+  VTK::IOImage
+  VTK::RenderingQt)
 
 foreach(test ${tests})
   string(TOLOWER ${test} testname)
