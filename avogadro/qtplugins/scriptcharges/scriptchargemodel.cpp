@@ -45,11 +45,6 @@ QString ScriptChargeModel::scriptFilePath() const
   return m_interpreter->scriptFilePath();
 }
 
-Calc::ChargeModel* ScriptChargeModel::newInstance() const
-{
-  return new ScriptChargeModel(m_interpreter->scriptFilePath());
-}
-
 MatrixX ScriptChargeModel::partialCharges(const Core::Molecule& mol) const
 {
   MatrixX charges(mol.atomCount(), 1);
