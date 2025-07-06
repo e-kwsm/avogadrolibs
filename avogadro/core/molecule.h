@@ -632,7 +632,8 @@ public:
    * basis set is a no-op. Passing nullptr removes (and deletes) the
    * current one.
    */
-  void setBasisSet(BasisSet* basis);
+  [[deprecated]] void setBasisSet(BasisSet* basis);
+  void setBasisSet(std::shared_ptr<BasisSet> basis);
 
   /**
    * @return the basis set (if present) for the molecule.
