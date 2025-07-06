@@ -147,10 +147,7 @@ public:
 
 Texture2D::Texture2D() : d(new Private) {}
 
-Texture2D::~Texture2D()
-{
-  delete d;
-}
+Texture2D::~Texture2D() = default;
 
 Index Texture2D::handle() const
 {
