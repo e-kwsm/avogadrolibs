@@ -61,10 +61,7 @@ CopyPaste::CopyPaste(QObject* parent_)
   connect(m_clearAction, SIGNAL(triggered()), SLOT(clear()));
 }
 
-CopyPaste::~CopyPaste()
-{
-  delete m_pastedFormat;
-}
+CopyPaste::~CopyPaste() = default;
 
 QList<QAction*> CopyPaste::actions() const
 {
@@ -219,8 +216,7 @@ void CopyPaste::paste()
 {
   // Delete any old clipboard data.
   if (m_pastedFormat) {
-    delete m_pastedFormat;
-    m_pastedFormat = nullptr;
+    m_pastedFormat.reset();
     m_pastedData.clear();
   }
 
@@ -245,8 +241,9 @@ void CopyPaste::paste()
   QStringList mimeTypes(mimeData->formats());
   Io::FileFormat::Operations ops(Io::FileFormat::Read | Io::FileFormat::String);
   foreach (const QString& mimeType, mimeTypes) {
-    if ((m_pastedFormat =
-           mgr.newFormatFromMimeType(mimeType.toStdString(), ops))) {
+    m_pastedFormat.reset(
+      mgr.newFormatFromMimeType(mimeType.toStdString(), ops));
+    if (m_pastedFormat) {
       m_pastedData = mimeData->data(mimeType);
       break;
     }
@@ -254,7 +251,7 @@ void CopyPaste::paste()
 
   // No mime-type match, default to cjson.
   if (!m_pastedFormat && mimeData->hasText()) {
-    m_pastedFormat = new Io::CjsonFormat;
+    m_pastedFormat = std::make_unique<Io::CjsonFormat>();
     m_pastedData = mimeData->text().toLatin1();
   }
 
@@ -282,8 +279,7 @@ void CopyPaste::paste()
   m_molecule->undoMolecule()->appendMolecule(mol, "Paste Molecule");
   emit requestActiveTool("Manipulator");
 
-  delete m_pastedFormat;
-  m_pastedFormat = nullptr;
+  m_pastedFormat.reset();
   m_pastedData.clear();
 }
 
