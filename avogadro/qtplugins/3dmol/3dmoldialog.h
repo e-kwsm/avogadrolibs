@@ -19,6 +19,8 @@
 
 #include <QtWidgets/QDialog>
 
+#include <memory>
+
 namespace Avogadro {
 
 namespace QtGui {
@@ -60,7 +62,7 @@ private slots:
 
 private:
   QtGui::Molecule* m_molecule;
-  Ui::ThreeDMolDialog* m_ui;
+  std::unique_ptr<Ui::ThreeDMolDialog> m_ui;
 };
 
 } // namespace QtPlugins
