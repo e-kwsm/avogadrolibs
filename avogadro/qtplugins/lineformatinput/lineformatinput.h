@@ -45,7 +45,7 @@ private:
   QMap<QString, std::string> m_formats;
 
   QtGui::Molecule* m_molecule;
-  Io::FileFormat* m_reader;
+  std::unique_ptr<Io::FileFormat> m_reader;
   std::string m_descriptor;
 };
 
