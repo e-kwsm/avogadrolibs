@@ -58,13 +58,13 @@ void ScriptCharges::refreshModels()
 
 void ScriptCharges::unregisterModels()
 {
-  for (auto* model : m_models)
+  for (auto& model : m_models)
     Calc::ChargeManager::unregisterModel(model->identifier());
 }
 
 void ScriptCharges::registerModels()
 {
-  for (auto* model : m_models) {
+  for (auto& model : m_models) {
     if (!Calc::ChargeManager::registerModel(model->newInstance())) {
       qDebug() << "Could not register model" << model->identifier().c_str()
                << "due to name conflict.";
