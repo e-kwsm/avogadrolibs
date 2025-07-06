@@ -12,6 +12,8 @@
 #include <avogadro/core/matrix.h>
 #include <avogadro/core/unitcell.h>
 
+#include <memory>
+
 class QPlainTextEdit;
 
 namespace Avogadro {
@@ -93,7 +95,7 @@ private:
   static Matrix3 stringToMatrix(const QString& str);
 
 private:
-  Ui::UnitCellDialog* m_ui;
+  std::unique_ptr<Ui::UnitCellDialog> m_ui;
   QtGui::Molecule* m_molecule;
   Core::UnitCell m_tempCell;
   Mode m_mode;
