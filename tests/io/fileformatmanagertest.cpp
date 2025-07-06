@@ -187,9 +187,9 @@ public:
   Operations supportedOperations() const override { return m_ops; }
   bool read(std::istream&, Molecule&) override { return false; }
   bool write(std::ostream&, const Molecule&) override { return false; }
-  FileFormat* newInstance() const override
+  std::unique_ptr<FileFormat> newInstance() const override
   {
-    return new Format(m_ident, m_ops);
+    return std::make_unique<Format>(m_ident, m_ops);
   }
   std::string identifier() const override { return m_ident; }
   std::string name() const override { return m_ident; }
