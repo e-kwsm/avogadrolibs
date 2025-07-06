@@ -1093,10 +1093,7 @@ AmbientOcclusionSphereGeometry::AmbientOcclusionSphereGeometry(
 {
 }
 
-AmbientOcclusionSphereGeometry::~AmbientOcclusionSphereGeometry()
-{
-  delete d;
-}
+AmbientOcclusionSphereGeometry::~AmbientOcclusionSphereGeometry() = default;
 
 void AmbientOcclusionSphereGeometry::accept(Visitor& visitor)
 {
