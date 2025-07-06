@@ -75,9 +75,8 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
   molecule.perceiveBondsSimple();
   molecule.perceiveBondOrders();
 
-  auto* basis = new GaussianSet;
+  auto basis = std::make_shared<GaussianSet>();
   if (!load(basis, atomCount)) {
-    delete basis;
     return false;
   }
 

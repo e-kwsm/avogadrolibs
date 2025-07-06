@@ -45,7 +45,7 @@ bool MopacAux::read(std::istream& in, Core::Molecule& molecule)
   while (!in.eof())
     processLine(in);
 
-  auto* basis = new SlaterSet;
+  auto basis = std::make_shared<SlaterSet>();
 
   for (unsigned int i = 0; i < m_atomPos.size(); ++i) {
     Atom a = molecule.addAtom(static_cast<unsigned char>(m_atomNums[i]));
@@ -56,7 +56,7 @@ bool MopacAux::read(std::istream& in, Core::Molecule& molecule)
   molecule.perceiveBondOrders();
   molecule.setBasisSet(basis);
   basis->setMolecule(&molecule);
-  load(basis);
+  load(basis.get());
 
   // Bank the last Hessian, which has no following geometry to trigger it.
   flushVibrationData();
