@@ -224,7 +224,6 @@ SolidPipeline::SolidPipeline()
 SolidPipeline::~SolidPipeline()
 {
   releaseResources();
-  delete d;
 }
 
 void SolidPipeline::releaseResources()

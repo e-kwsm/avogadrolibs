@@ -9,6 +9,8 @@
 #include "avogadrorenderingexport.h"
 #include "camera.h"
 
+#include <memory>
+
 namespace Avogadro::Rendering {
 
 class AVOGADRORENDERING_EXPORT SolidPipeline
@@ -239,7 +241,7 @@ private:
   int m_height;
 
   class Private;
-  Private* d;
+  std::unique_ptr<Private> d;
 };
 
 } // namespace Avogadro::Rendering
