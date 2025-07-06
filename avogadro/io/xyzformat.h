@@ -27,7 +27,10 @@ public:
     return ReadWrite | MultiMolecule | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new XyzFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<XyzFormat>();
+  }
   std::string identifier() const override { return "Avogadro: XYZ"; }
   std::string name() const override { return "XYZ"; }
   std::string description() const override

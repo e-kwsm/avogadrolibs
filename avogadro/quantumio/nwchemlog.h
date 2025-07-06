@@ -27,7 +27,10 @@ public:
     return Read | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new NWChemLog; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<NWChemLog>();
+  }
   std::string identifier() const override { return "Avogadro: NWChem"; }
   std::string name() const override { return "NWChem Log"; }
   std::string description() const override { return "NWChem log file format."; }
