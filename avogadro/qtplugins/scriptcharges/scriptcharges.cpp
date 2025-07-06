@@ -59,7 +59,7 @@ void ScriptCharges::unregisterModels()
   }
 }
 
-void ScriptCharges::registerModels()
+void ScriptCharges::registerModels() const
 {
   for (auto& it : m_models) {
     if (!Calc::ChargeManager::registerModel(it->newInstance())) {
