@@ -201,7 +201,7 @@ public:
    * Create a new instance of the file format class. Ownership passes to the
    * caller.
    */
-  virtual FileFormat* newInstance() const = 0;
+  virtual std::unique_ptr<FileFormat> newInstance() const = 0;
 
   /**
    * @brief A unique identifier, used to retrieve formats programmatically.
