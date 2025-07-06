@@ -154,7 +154,7 @@ bool PlotPdf::generatePdfPattern(QtGui::Molecule& mol, PdfData& results,
 
   size_t i, j;
 
-  UnitCell* uc = mol.unitCell();
+  auto uc = mol.unitCell();
   if (!uc) {
     err = "No unit cell found.";
     return false;
