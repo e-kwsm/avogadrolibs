@@ -49,7 +49,7 @@ private:
 
   void refreshModels();
   void unregisterModels();
-  void registerModels();
+  void registerModels() const;
 };
 
 } // namespace QtPlugins
