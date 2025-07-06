@@ -98,7 +98,7 @@ void QuantumInput::openJobOutput(const JobObject& job)
 
 bool QuantumInput::readMolecule(QtGui::Molecule& mol)
 {
-  Io::FileFormat* reader = m_outputFormat->newInstance();
+  auto reader = m_outputFormat->newInstance();
   bool success = reader->readFile(m_outputFileName.toStdString(), mol);
   if (!success) {
     QMessageBox::information(qobject_cast<QWidget*>(parent()), tr("Error"),
