@@ -18,12 +18,7 @@ SecondaryStructureAssigner::SecondaryStructureAssigner(Molecule* mol)
 {
 }
 
-SecondaryStructureAssigner::~SecondaryStructureAssigner()
-{
-  for (auto* hBond : m_hBonds)
-    delete hBond;
-  m_hBonds.clear();
-}
+SecondaryStructureAssigner::~SecondaryStructureAssigner() = default;
 
 //! Adapted from 3DMol.js parsers.js
 //! https://github.com/3dmol/3Dmol.js/blob/master/3Dmol/parsers.js
@@ -41,7 +36,7 @@ void SecondaryStructureAssigner::assign(Molecule* mol)
 
   float infinity = std::numeric_limits<float>::max();
   // Then assign the alpha helix by going through the hBond records
-  for (auto* hBond : m_hBonds) {
+  for (const auto& hBond : m_hBonds) {
     if (hBond->distSquared < infinity) {
       // check to see how far apart the residues are
       int separation = std::abs(int(hBond->residue - hBond->residuePair));
@@ -92,7 +87,7 @@ void SecondaryStructureAssigner::assign(Molecule* mol)
   }
 
   // Then assign the beta sheet - but only if a residue isn't assigned
-  for (auto* hBond : m_hBonds) {
+  for (const auto& hBond : m_hBonds) {
     if (hBond->distSquared < infinity) {
       if (m_molecule->residue(hBond->residue).secondaryStructure() ==
           Residue::SecondaryStructure::undefined)
@@ -102,7 +97,7 @@ void SecondaryStructureAssigner::assign(Molecule* mol)
   }
 
   // Check that sheets bond to other sheets
-  for (auto* hBond : m_hBonds) {
+  for (const auto& hBond : m_hBonds) {
     if (hBond->distSquared < infinity) {
       // find the match
       auto current = m_molecule->residue(hBond->residue);
@@ -182,8 +177,6 @@ void SecondaryStructureAssigner::assignBackboneHydrogenBonds()
   const float maxDistSq = maxDist * maxDist; // 10.24
 
   // delete any previous records
-  for (auto* hBond : m_hBonds)
-    delete hBond;
   m_hBonds.clear();
 
   // Loop over the backbone atoms
@@ -196,24 +189,24 @@ void SecondaryStructureAssigner::assignBackboneHydrogenBonds()
 
     auto oxygen = residue.atomByName("O");
     if (oxygen.isValid()) {
-      auto* oRecord = new hBondRecord();
+      auto oRecord = std::make_unique<hBondRecord>();
       oRecord->atom = oxygen.index();
       oRecord->atomZ = oxygen.position3d()[2];
       oRecord->distSquared = std::numeric_limits<float>::max();
       oRecord->residue = residueId;
       oRecord->residuePair = residueId; // just a placeholder
-      m_hBonds.push_back(oRecord);
+      m_hBonds.push_back(std::move(oRecord));
     }
 
     auto nitrogen = residue.atomByName("N");
     if (nitrogen.isValid()) {
-      auto* nRecord = new hBondRecord();
+      auto nRecord = std::make_unique<hBondRecord>();
       nRecord->atom = nitrogen.index();
       nRecord->atomZ = nitrogen.position3d()[2];
       nRecord->distSquared = std::numeric_limits<float>::max();
       nRecord->residue = residueId;
       nRecord->residuePair = residueId;
-      m_hBonds.push_back(nRecord);
+      m_hBonds.push_back(std::move(nRecord));
     }
   }
 
@@ -223,18 +216,16 @@ void SecondaryStructureAssigner::assignBackboneHydrogenBonds()
   // sort by z-coordinate
   std::sort(m_hBonds.begin(), m_hBonds.end(),
             // lambda for sorting by z-coordinate [2]
-            [](const hBondRecord* a, const hBondRecord* b) {
-              return a->atomZ < b->atomZ;
-            });
+            [](const auto& a, const auto& b) { return a->atomZ < b->atomZ; });
 
   // now loop through the sorted list (so we can exit quickly)
   int n = m_hBonds.size();
   for (int i = 0; i < n; ++i) {
-    auto* recordI = m_hBonds[i];
+    const auto& recordI = m_hBonds[i];
     const Residue& residueI = m_molecule->residue(recordI->residue);
 
     for (int j = i + 1; j < n; ++j) {
-      auto* recordJ = m_hBonds[j];
+      const auto& recordJ = m_hBonds[j];
       const Residue& residueJ = m_molecule->residue(recordJ->residue);
 
       // skip if we're not on the same chain
