@@ -62,7 +62,7 @@ void ScriptCharges::unregisterModels()
     Calc::ChargeManager::unregisterModel(model->identifier());
 }
 
-void ScriptCharges::registerModels()
+void ScriptCharges::registerModels() const
 {
   for (auto& model : m_models) {
     if (!Calc::ChargeManager::registerModel(model->newInstance())) {
