@@ -53,7 +53,7 @@ void ChargeManager::appendError(const std::string& errorMessage)
   m_error += errorMessage + "\n";
 }
 
-bool ChargeManager::registerModel(ChargeModel* model)
+bool ChargeManager::registerModel(const std::shared_ptr<ChargeModel>& model)
 {
   return instance().addModel(model);
 }
@@ -63,7 +63,7 @@ bool ChargeManager::unregisterModel(const std::string& identifier)
   return instance().removeModel(identifier);
 }
 
-bool ChargeManager::addModel(ChargeModel* model)
+bool ChargeManager::addModel(const std::shared_ptr<ChargeModel>& model)
 {
   if (model == nullptr) {
     appendError("Supplied model was null.");
@@ -99,12 +99,8 @@ bool ChargeManager::removeModel(const std::string& identifier)
   m_identifiers.erase(lowerId);
   m_identifierToName.erase(lowerId);
 
-  ChargeModel* model = m_models[ids];
-
-  if (model != nullptr) {
-    m_models[ids] = nullptr;
-    delete model;
-  }
+  auto& model = m_models[ids];
+  model.reset();
 
   return true;
 }
@@ -129,9 +125,6 @@ ChargeManager::ChargeManager()
 ChargeManager::~ChargeManager()
 {
   // Delete the models that were loaded.
-  for (auto& m_model : m_models) {
-    delete m_model;
-  }
   m_models.clear();
 }
 
@@ -142,7 +135,7 @@ std::set<std::string> ChargeManager::identifiersForMolecule(
   std::set<std::string> identifiers = molecule.partialChargeTypes();
 
   // check our models for compatibility
-  for (auto* m_model : m_models) {
+  for (const auto& m_model : m_models) {
     if (m_model == nullptr)
       continue;
     // We check that every element in the molecule
@@ -201,7 +194,7 @@ MatrixX ChargeManager::partialCharges(const std::string& identifier,
     return molecule.partialCharges(*key);
 
   // otherwise go through our list
-  const ChargeModel* model = registeredModel(identifier);
+  const ChargeModel& model = registeredModel(identifier);
   // No rows means failure: callers compare the row count with the atom count
   if (model == nullptr)
     return MatrixX(0, 1);
@@ -220,7 +213,7 @@ Vector3 ChargeManager::dipoleMoment(const std::string& identifier,
   }
 
   // otherwise go through our list
-  const ChargeModel* model = registeredModel(identifier);
+  const auto& model = registeredModel(identifier);
   if (model == nullptr || molecule.atomCount() < 2)
     return Vector3(0.0, 0.0, 0.0);
 
@@ -239,7 +232,7 @@ double ChargeManager::potential(const std::string& identifier,
   }
 
   // otherwise go through our list
-  const ChargeModel* model = registeredModel(identifier);
+  const auto& model = registeredModel(identifier);
   return model == nullptr ? 0.0 : model->potential(molecule, point);
 }
 
@@ -253,7 +246,7 @@ Core::Array<double> ChargeManager::potentials(
     return model.potentials(molecule, points);
   }
 
-  const ChargeModel* model = registeredModel(identifier);
+  const auto& model = registeredModel(identifier);
   if (model == nullptr)
     return Core::Array<double>(points.size(), 0.0);
 
