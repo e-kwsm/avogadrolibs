@@ -13,6 +13,8 @@
 #include <QtCore/QString>
 #include <QtCore/QVariantMap>
 
+#include <memory>
+
 class QJsonObject;
 
 namespace Avogadro {
@@ -94,7 +96,7 @@ private:
   void copyMetaDataFrom(const ScriptChargeModel& other);
 
 private:
-  QtGui::PythonScript* m_interpreter;
+  std::unique_ptr<QtGui::PythonScript> m_interpreter;
   Format m_inputFormat;
   Core::Molecule::ElementMask m_elements;
   bool m_valid;
