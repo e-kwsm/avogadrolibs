@@ -50,10 +50,7 @@ SupercellDialog::SupercellDialog(QWidget* p)
   rangeChanged();
 }
 
-SupercellDialog::~SupercellDialog()
-{
-  delete m_ui;
-}
+SupercellDialog::~SupercellDialog() = default;
 
 void SupercellDialog::rangeChanged()
 {
