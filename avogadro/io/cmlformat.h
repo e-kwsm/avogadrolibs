@@ -27,7 +27,10 @@ public:
     return ReadWrite | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new CmlFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<CmlFormat>();
+  }
   std::string identifier() const override { return "Avogadro: CML"; }
   std::string name() const override { return "Chemical Markup Language"; }
   std::string description() const override

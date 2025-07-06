@@ -300,11 +300,11 @@ void OBFileFormat::clear()
   Io::FileFormat::clear();
 }
 
-Io::FileFormat* OBFileFormat::newInstance() const
+std::unique_ptr<Io::FileFormat> OBFileFormat::newInstance() const
 {
-  return new OBFileFormat(m_name, m_identifier, m_description,
-                          m_specificationUrl, m_fileExtensions, m_mimeTypes,
-                          m_defaultFormat, m_fileOnly);
+  return std::make_unique<OBFileFormat>(
+    m_name, m_identifier, m_description, m_specificationUrl, m_fileExtensions,
+    m_mimeTypes, m_defaultFormat, m_fileOnly);
 }
 
 } // namespace Avogadro::QtPlugins

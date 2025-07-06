@@ -33,7 +33,10 @@ public:
     return ReadWrite | MultiMolecule | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new SdfFormat; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<SdfFormat>();
+  }
   std::string identifier() const override { return "Avogadro: SDF"; }
   std::string name() const override { return "SDF"; }
   std::string description() const override

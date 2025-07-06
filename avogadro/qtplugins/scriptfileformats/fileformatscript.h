@@ -147,7 +147,7 @@ public:
 
   bool isValid() const { return m_valid; }
 
-  FileFormat* newInstance() const override;
+  std::unique_ptr<FileFormat> newInstance() const override;
 
   bool read(std::istream& in, Core::Molecule& molecule) override;
 

@@ -25,7 +25,10 @@ public:
     return ReadWrite | File | Stream | String;
   }
 
-  FileFormat* newInstance() const override { return new GaussianCube; }
+  std::unique_ptr<FileFormat> newInstance() const override
+  {
+    return std::unique_ptr<GaussianCube>();
+  }
   std::string identifier() const override { return "Avogadro: Gaussian Cube"; }
   std::string name() const override { return "Gaussian"; }
   std::string description() const override
