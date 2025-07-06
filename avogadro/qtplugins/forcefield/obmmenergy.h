@@ -15,6 +15,8 @@
 #include <QtCore/QString>
 #include <QtCore/QTemporaryFile>
 
+#include <memory>
+
 class QJsonObject;
 
 namespace Avogadro {
@@ -77,8 +79,8 @@ public:
 
 private:
   Core::Molecule* m_molecule;
-  Io::FileFormat* m_inputFormat;
-  QProcess* m_process;
+  std::unique_ptr<Io::FileFormat> m_inputFormat;
+  std::unique_ptr<QProcess> m_process;
   QString m_executable;
 
   Core::Molecule::ElementMask m_elements;
