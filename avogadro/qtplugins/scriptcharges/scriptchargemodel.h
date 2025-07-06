@@ -12,6 +12,8 @@
 
 #include <QtCore/QString>
 
+#include <memory>
+
 class QJsonObject;
 
 namespace Avogadro {
@@ -80,7 +82,7 @@ private:
   bool parseElements(const QJsonObject& ob);
 
 private:
-  QtGui::PythonScript* m_interpreter;
+  std::unique_ptr<QtGui::PythonScript> m_interpreter;
   Format m_inputFormat;
   Core::Molecule::ElementMask m_elements;
   bool m_valid;
