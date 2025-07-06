@@ -9,6 +9,8 @@
 #include <avogadro/core/avogadrocore.h>
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 namespace Avogadro {
 
 namespace Calc {
@@ -43,7 +45,7 @@ public:
   void setMolecule(QtGui::Molecule* mol) override;
 
 private:
-  QList<Calc::ChargeModel*> m_models;
+  QList<std::shared_ptr<Calc::ChargeModel>> m_models;
 
   void refreshModels();
   void unregisterModels();
