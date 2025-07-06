@@ -19,20 +19,6 @@ public:
   ~OBCharges() override;
 
   /**
-   * Create a new instance of the file format class. Ownership passes to the
-   * caller.
-   */
-  std::shared_ptr<Avogadro::Calc::ChargeModel> newInstance() override
-  {
-    return shared_from_this();
-  }
-  std::shared_ptr<const Avogadro::Calc::ChargeModel> newInstance()
-    const override
-  {
-    return shared_from_this();
-  }
-
-  /**
    * @brief A unique identifier defined by the file
    */
   std::string identifier() const override { return m_identifier; }
