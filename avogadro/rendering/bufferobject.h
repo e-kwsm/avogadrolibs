@@ -12,6 +12,7 @@
 #include "scene.h"
 
 #include <cstdint>
+#include <memory>
 #include <string> // For member variables.
 #include <vector> // For API.
 
@@ -80,7 +81,7 @@ private:
   bool uploadInternal(const void* buffer, size_t size, ObjectType objectType);
 
   struct Private;
-  Private* d;
+  std::unique_ptr<Private> d;
   bool m_dirty;
 
   std::string m_error;
