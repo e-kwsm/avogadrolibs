@@ -38,7 +38,7 @@ TEST(LammpsTest, read)
   ASSERT_EQ(multi.error(), "");
 
   // First, let's check the unit cell
-  UnitCell* uc = molecule.unitCell();
+  auto uc = molecule.unitCell();
   bool status = true;
 
   EXPECT_EQ(uc->aVector(),
