@@ -15,6 +15,8 @@
 #include <avogadro/core/spacegroups.h>
 #include <avogadro/qtgui/hydrogentools.h>
 
+#include <QtCore/QDebug>
+
 namespace Avogadro::QtGui {
 
 using Core::Array;
@@ -472,7 +474,11 @@ void RWMolecule::editUnitCell(Matrix3 cellMatrix, CrystalTools::Options options)
   // If the user has "TransformAtoms" set in the options, then
   // the atom positions will move as well.
   Molecule newMolecule = m_molecule;
-  CrystalTools::setCellMatrix(newMolecule, cellMatrix, options);
+  try {
+    CrystalTools::setCellMatrix(newMolecule, cellMatrix, options);
+  } catch (const std::exception& err) {
+    qCritical() << err.what();
+  }
 
   // We will just modify the whole molecule since there may be many changes
   Molecule::MoleculeChanges changes = Molecule::UnitCell | Molecule::Modified;
