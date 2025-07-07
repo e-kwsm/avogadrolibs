@@ -372,7 +372,12 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         Vector3 aVector(cellVectors[0], cellVectors[1], cellVectors[2]);
         Vector3 bVector(cellVectors[3], cellVectors[4], cellVectors[5]);
         Vector3 cVector(cellVectors[6], cellVectors[7], cellVectors[8]);
-        unitCellObject = new Core::UnitCell(aVector, bVector, cVector);
+        try {
+          unitCellObject = new Core::UnitCell(aVector, bVector, cVector);
+        } catch (std::exception& err) {
+          appendError(err.what());
+          return false;
+        }
       } else if (unitCell["a"].is_number() && unitCell["b"].is_number() &&
                  unitCell["c"].is_number() && unitCell["alpha"].is_number() &&
                  unitCell["beta"].is_number() &&
@@ -383,7 +388,12 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         Real alpha = static_cast<Real>(unitCell["alpha"]) * DEG_TO_RAD;
         Real beta = static_cast<Real>(unitCell["beta"]) * DEG_TO_RAD;
         Real gamma = static_cast<Real>(unitCell["gamma"]) * DEG_TO_RAD;
-        unitCellObject = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+        try {
+          unitCellObject = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+        } catch (std::exception& err) {
+          appendError(err.what());
+          return false;
+        }
       }
       if (unitCellObject != nullptr)
         molecule.setUnitCell(unitCellObject);
