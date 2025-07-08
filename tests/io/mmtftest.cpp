@@ -49,9 +49,9 @@ TEST(MMTFTEST, unitCell)
   EXPECT_NEAR(cell->a(), 63.150, 1e-3);
   EXPECT_NEAR(cell->b(), 83.590, 1e-3);
   EXPECT_NEAR(cell->c(), 53.800, 1e-3);
-  EXPECT_NEAR(cell->alpha(), 90.00 * DEG_TO_RAD, 1e-3);
-  EXPECT_NEAR(cell->beta(), 99.34 * DEG_TO_RAD, 1e-3);
-  EXPECT_NEAR(cell->gamma(), 90.00 * DEG_TO_RAD, 1e-3);
+  EXPECT_NEAR(cell->alpha(), 90.00 * DEG_TO_RAD<>, 1e-3);
+  EXPECT_NEAR(cell->beta(), 99.34 * DEG_TO_RAD<>, 1e-3);
+  EXPECT_NEAR(cell->gamma(), 90.00 * DEG_TO_RAD<>, 1e-3);
 }
 
 TEST(MMTFTest, atoms)

@@ -115,9 +115,9 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       a = lexicalCast<double>(tokens[0]) * cellConversion;
       b = lexicalCast<double>(tokens[1]) * cellConversion;
       c = lexicalCast<double>(tokens[2]) * cellConversion;
-      alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD;
-      beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
-      gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
+      alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD<>;
+      beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD<>;
+      gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD<>;
 
     } else if (buffer.find("$lattice") != std::string::npos) {
       hasLattice = true;
