@@ -226,9 +226,11 @@ void UnitCellDialog::revertParameters()
     m_ui->a->setValue(static_cast<double>(m_tempCell.a()));
     m_ui->b->setValue(static_cast<double>(m_tempCell.b()));
     m_ui->c->setValue(static_cast<double>(m_tempCell.c()));
-    m_ui->alpha->setValue(static_cast<double>(m_tempCell.alpha() * RAD_TO_DEG));
-    m_ui->beta->setValue(static_cast<double>(m_tempCell.beta() * RAD_TO_DEG));
-    m_ui->gamma->setValue(static_cast<double>(m_tempCell.gamma() * RAD_TO_DEG));
+    m_ui->alpha->setValue(
+      static_cast<double>(m_tempCell.alpha() * RAD_TO_DEG<>));
+    m_ui->beta->setValue(static_cast<double>(m_tempCell.beta() * RAD_TO_DEG<>));
+    m_ui->gamma->setValue(
+      static_cast<double>(m_tempCell.gamma() * RAD_TO_DEG<>));
   } else {
     enableParameters(false);
     m_ui->a->setValue(3.);
