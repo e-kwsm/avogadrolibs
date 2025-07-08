@@ -400,7 +400,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
           if (isNumericArray(arr) && arr.size() == atomCount * 3) {
             Array<Vector3> mode;
             mode.resize(arr.size() / 3);
-            double* ptr = &mode[0][0];
+            double* ptr = mode[0].data();
             for (auto& j : arr) {
               *(ptr++) = static_cast<double>(j);
             }
