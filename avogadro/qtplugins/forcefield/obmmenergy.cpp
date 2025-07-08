@@ -78,10 +78,7 @@ OBMMEnergy::~OBMMEnergy()
 bool OBMMEnergy::acceptsRadicals() const
 {
   // UFF will figure something out
-  if (m_identifier == "UFF")
-    return true;
-
-  return false;
+  return m_identifier == "UFF";
 }
 
 QByteArray OBMMEnergy::writeAndRead(const QByteArray& input)
