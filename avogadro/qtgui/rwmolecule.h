@@ -726,14 +726,14 @@ protected:
 class AVOGADROQTGUI_EXPORT RWAtom : public Core::AtomTemplate<RWMolecule>
 {
 public:
-  RWAtom() : {}
+  RWAtom() {}
   RWAtom(RWMolecule* m, Index i) : Core::AtomTemplate<RWMolecule>(m, i) {}
 };
 
 class AVOGADROQTGUI_EXPORT RWBond : public Core::BondTemplate<RWMolecule>
 {
 public:
-  RWBond() : {}
+  RWBond() {}
   RWBond(RWMolecule* m, Index i) : Core::BondTemplate<RWMolecule>(m, i) {}
 };
 
