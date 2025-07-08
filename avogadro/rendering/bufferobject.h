@@ -44,7 +44,7 @@ public:
   Index handle() const;
 
   /** Determine if the buffer object is ready to be used. */
-  bool ready() const { return m_dirty == false; }
+  bool ready() const { return !m_dirty; }
 
   /**
    * Upload data to the buffer object. The BufferObject::type() must match

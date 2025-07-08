@@ -142,10 +142,7 @@ OBEnergy::~OBEnergy() {}
 
 bool OBEnergy::acceptsRadicals() const
 {
-  if (m_identifier == "UFF")
-    return true;
-
-  return false;
+  return m_identifier == "UFF";
 }
 
 Calc::EnergyCalculator* OBEnergy::newInstance() const
