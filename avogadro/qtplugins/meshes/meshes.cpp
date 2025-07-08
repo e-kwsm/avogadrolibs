@@ -70,7 +70,7 @@ void Meshes::process(const QtGui::Molecule& mol, GroupNode& node)
     const Mesh* mesh = mol.mesh(0);
     Core::Array<Vector3f> triangles = mesh->triangles();
 
-    bool hasColors = (mesh->colors().size() != 0);
+    bool hasColors = (!mesh->colors().empty());
 
     auto* mesh1 = new MeshGeometry;
     geometry->addDrawable(mesh1);
