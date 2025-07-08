@@ -78,7 +78,7 @@ constexpr auto DEG_TO_RAD_D = DEG_TO_RAD<double>;
 constexpr auto DEG_TO_RAD_F = DEG_TO_RAD<float>;
 
 template <typename T = Real>
-constexpr T RAD_TO_DEG = static_cast<Real>(180.0 / PI_D);
+constexpr T RAD_TO_DEG = static_cast<T>(180.0 / PI_D);
 constexpr auto RAD_TO_DEG_D = RAD_TO_DEG<double>;
 constexpr auto RAD_TO_DEG_F = RAD_TO_DEG<float>;
 
@@ -89,7 +89,7 @@ constexpr auto BOHR_TO_ANGSTROM_D = BOHR_TO_ANGSTROM<double>;
 constexpr auto BOHR_TO_ANGSTROM_F = BOHR_TO_ANGSTROM<float>;
 
 template <typename T = Real>
-constexpr T ANGSTROM_TO_BOHR = static_cast<Real>(1.0 / BOHR_TO_ANGSTROM_D);
+constexpr T ANGSTROM_TO_BOHR = static_cast<T>(1.0 / BOHR_TO_ANGSTROM_D);
 constexpr auto ANGSTROM_TO_BOHR_D = ANGSTROM_TO_BOHR<double>;
 constexpr auto ANGSTROM_TO_BOHR_F = ANGSTROM_TO_BOHR<float>;
 
