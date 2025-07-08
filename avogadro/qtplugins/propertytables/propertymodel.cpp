@@ -758,7 +758,7 @@ Qt::ItemFlags PropertyModel::flags(const QModelIndex& index) const
       return editable;
   }
 
-  return QAbstractItemModel::flags(index);
+  return QAbstractTableModel::flags(index);
 }
 
 bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
