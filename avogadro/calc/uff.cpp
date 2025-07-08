@@ -335,7 +335,7 @@ public:
       a._atom2 = j;
       a._atom3 = k;
 
-      Real theta0 = uffparams[m_atomTypes[j]].theta0 * DEG_TO_RAD;
+      Real theta0 = uffparams[m_atomTypes[j]].theta0 * DEG_TO_RAD<>;
       a._theta0 = theta0 * RAD_TO_DEG<>; // store in degrees for consistency
 
       // calculate the kijk
@@ -445,13 +445,13 @@ public:
         Real phi;
         switch (atomicNumber) {
           case 15: // P
-            phi = 84.4339 * DEG_TO_RAD;
+            phi = 84.4339 * DEG_TO_RAD<>;
             break;
           case 33: // As
-            phi = 86.9735 * DEG_TO_RAD;
+            phi = 86.9735 * DEG_TO_RAD<>;
             break;
           case 51: // Sb
-            phi = 87.7047 * DEG_TO_RAD;
+            phi = 87.7047 * DEG_TO_RAD<>;
             break;
           case 83: // Bi
           default:
@@ -566,14 +566,14 @@ public:
             (symbol1[0] == 'C' && symbol2[0] == 'N'))
           order = 1.41;
         t._n = 2;
-        t._cos_phi0 = cos(t._n * 180.0 * DEG_TO_RAD);
+        t._cos_phi0 = cos(t._n * 180.0 * DEG_TO_RAD<>);
         t._ijkl = 5.0 * sqrt(uffparams[m_atomTypes[j]].Uj *
                              uffparams[m_atomTypes[k]].Uj);
         t._ijkl *= 0.5 * (1.0 + 4.18 * log(order));
       } else if ((symbol1[2] == '2' && symbol2[2] == '3') ||
                  (symbol1[2] == '3' && symbol2[2] == '2')) {
         // sp2-sp3
-        t._cos_phi0 = cos(0.0 * DEG_TO_RAD);
+        t._cos_phi0 = cos(0.0 * DEG_TO_RAD<>);
         t._n = 6;
         t._ijkl = 0.5;
 
@@ -659,7 +659,7 @@ public:
     Real energy = 0.0;
     for (const UFFAngle& angle : m_angles) {
       Index j = angle._atom2;
-      Real theta0 = angle._theta0 * DEG_TO_RAD;
+      Real theta0 = angle._theta0 * DEG_TO_RAD<>;
       Real kijk = angle._kijk;
 
       Vector3d ij = x.segment<3>(3 * angle._atom1) - x.segment<3>(3 * j);
@@ -739,7 +739,7 @@ public:
       Vector3d vk(x.segment<3>(3 * k));
       Vector3d vl(x.segment<3>(3 * l));
 
-      Real angle = outOfPlaneAngle(vi, vj, vk, vl) * DEG_TO_RAD;
+      Real angle = outOfPlaneAngle(vi, vj, vk, vl) * DEG_TO_RAD<>;
       energy += koop * (c0 + c1 * cos(angle) + c2 * cos(2 * angle));
     }
 
@@ -755,7 +755,7 @@ public:
       Vector3d vk(x.segment<3>(3 * torsion._atom3));
       Vector3d vl(x.segment<3>(3 * torsion._atom4));
 
-      Real phi = calculateDihedral(vi, vj, vk, vl) * DEG_TO_RAD;
+      Real phi = calculateDihedral(vi, vj, vk, vl) * DEG_TO_RAD<>;
 
       Real cosPhi = cos(torsion._n * phi);
       Real cosPhi0 = torsion._cos_phi0;
@@ -816,7 +816,7 @@ public:
       Index i = angle._atom1;
       Index j = angle._atom2;
       Index k = angle._atom3;
-      Real theta0 = angle._theta0 * DEG_TO_RAD;
+      Real theta0 = angle._theta0 * DEG_TO_RAD<>;
       Real kijk = angle._kijk;
 
       const Vector3d vi = x.segment<3>(3 * i);
