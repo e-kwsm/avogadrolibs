@@ -50,11 +50,11 @@ void NeighborPerceiver::getNeighborsInclusiveInPlace(Array<Index>& out,
 
   m_cachedIndex = bin_index;
   out.clear();
-  for (int xi = std::max(int(1), bin_index[0]) - 1;
+  for (int xi = std::max(1, bin_index[0]) - 1;
        xi < std::min(m_binCount[0], bin_index[0] + 2); xi++) {
-    for (int yi = std::max(int(1), bin_index[1]) - 1;
+    for (int yi = std::max(1, bin_index[1]) - 1;
          yi < std::min(m_binCount[1], bin_index[1] + 2); yi++) {
-      for (int zi = std::max(int(1), bin_index[2]) - 1;
+      for (int zi = std::max(1, bin_index[2]) - 1;
            zi < std::min(m_binCount[2], bin_index[2] + 2); zi++) {
         const std::vector<Index>& bin = m_bins[xi][yi][zi];
         out.insert(out.end(), bin.begin(), bin.end());
