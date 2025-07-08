@@ -317,7 +317,7 @@ void Label::processResidue(const Core::Molecule& molecule,
       text = std::to_string(residue.residueId());
     }
     if (interface->residueOptions & LayerLabel::LabelOptions::Name) {
-      text += (text == "" ? "" : " / ") + name;
+      text += (text.empty() ? "" : " / ") + name;
     }
     TextLabel3D* residueLabel = createLabel(text, pos, radius, color);
     geometry->addDrawable(residueLabel);
@@ -329,7 +329,7 @@ QString partialCharge(Molecule* molecule, int atom)
   // TODO: we need to track type and/or calling the charge calculator
   float charge = 0.0;
   std::set<std::string> types = molecule->partialChargeTypes();
-  if (types.size() > 0) {
+  if (!types.empty()) {
     auto first = types.cbegin();
     MatrixX charges = molecule->partialCharges((*first));
     charge = charges(atom, 0);
@@ -337,7 +337,7 @@ QString partialCharge(Molecule* molecule, int atom)
     // find something
     const auto options =
       Calc::ChargeManager::instance().identifiersForMolecule(*molecule);
-    if (options.size() > 0) {
+    if (!options.empty()) {
       // look for GFN2 or AM1BCC, then MMFF94 then Gasteiger
       std::string type;
       if (options.find("GFN2") != options.end())
@@ -391,7 +391,7 @@ void Label::processAtom(const Core::Molecule& molecule,
       // already set
     }
     if (interface->atomOptions & LayerLabel::LabelOptions::Index) {
-      text += (text == "" ? "" : " / ") + std::to_string(atom.index() + 1);
+      text += (text.empty() ? "" : " / ") + std::to_string(atom.index() + 1);
     }
     if (interface->atomOptions & LayerLabel::LabelOptions::Name) {
       std::string name = std::string(Elements::symbol(atomicNumber));
@@ -403,17 +403,17 @@ void Label::processAtom(const Core::Molecule& molecule,
           name = "T";
         }
       }
-      text += (text == "" ? "" : " / ") + name;
+      text += (text.empty() ? "" : " / ") + name;
     }
     if (interface->atomOptions & LayerLabel::LabelOptions::Ordinal) {
-      text += (text == "" ? "" : " / ") +
+      text += (text.empty() ? "" : " / ") +
               std::string(Elements::symbol(atomicNumber) +
                           std::to_string(atomCount[atomicNumber]));
     }
     if (interface->atomOptions & LayerLabel::LabelOptions::UniqueID) {
-      text += (text == "" ? "" : " / ") + std::to_string(atom.index());
+      text += (text.empty() ? "" : " / ") + std::to_string(atom.index());
     }
-    if (text != "") {
+    if (!text.empty()) {
       const Vector3f pos(atom.position3d().cast<float>());
       Vector3ub color = atom.color();
       float radius = static_cast<float>(Elements::radiusVDW(atomicNumber)) *

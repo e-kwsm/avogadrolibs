@@ -368,7 +368,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     if (trimmed(buffer) == "$$$$")
       break;
     if (inValue) {
-      if (buffer.empty() && dataName.length() > 0) {
+      if (buffer.empty() && !dataName.empty()) {
         // check for partial charges
         if (dataName == "PUBCHEM_MMFF94_PARTIAL_CHARGES")
           handlePartialCharges(mol, dataValue);
@@ -383,7 +383,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
         dataValue.clear();
         inValue = false;
       } else {
-        if (dataValue.length())
+        if (!dataValue.empty())
           dataValue += "\n";
         dataValue += buffer;
       }
@@ -592,7 +592,7 @@ bool MdlFormat::readV3000(std::istream& in, Core::Molecule& mol)
       string key = trimmed(buffer.substr(3, buffer.length() - 4));
       string value;
       while (getline(in, buffer)) {
-        if (trimmed(buffer) == "")
+        if (trimmed(buffer).empty())
           break;
         value += buffer + "\n";
       }
