@@ -42,7 +42,7 @@ public:
       if (info->loaded.find(m_name) == info->loaded.end()) {
         for (size_t i = 0; i < info->settings[m_name].size(); ++i) {
           auto serial = info->settings[m_name][i]->getSave();
-          if (serial != "") {
+          if (!serial.empty()) {
             T* aux = new T;
             aux->deserialize(serial);
             delete info->settings[m_name][i];

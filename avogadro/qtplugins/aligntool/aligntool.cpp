@@ -135,10 +135,10 @@ void AlignTool::alignChanged(int align)
 
 void AlignTool::align()
 {
-  if (m_atoms.size() == 0)
+  if (m_atoms.empty())
     return;
 
-  if (m_atoms.size() >= 1)
+  if (!m_atoms.empty())
     shiftAtomToOrigin(m_atoms[0].index);
   if (m_atoms.size() == 2)
     alignAtomToAxis(m_atoms[1].index, m_axis);
@@ -245,7 +245,7 @@ bool AlignTool::toggleAtom(const Rendering::Identifier& atom)
 
 void AlignTool::draw(Rendering::GroupNode& node)
 {
-  if (m_atoms.size() == 0)
+  if (m_atoms.empty())
     return;
 
   // check to make sure we have atoms for all of these

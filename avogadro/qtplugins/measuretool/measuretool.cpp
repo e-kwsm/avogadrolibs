@@ -154,7 +154,7 @@ void MeasureTool::createLabels(T* mol, GeometryNode* geo,
 
 void MeasureTool::draw(Rendering::GroupNode& node)
 {
-  if (m_atoms.size() == 0)
+  if (m_atoms.empty())
     return;
 
   auto* geo = new GeometryNode;

@@ -241,10 +241,10 @@ void Surfaces::setMolecule(QtGui::Molecule* mol)
 
   if (mol->basisSet()) {
     m_basis = mol->basisSet();
-  } else if (mol->cubes().size() != 0) {
+  } else if (!mol->cubes().empty()) {
     m_cubes = mol->cubes();
     // calculate the mesh for the first cube
-    if (m_cubes.size() > 0) {
+    if (!m_cubes.empty()) {
       calculateCube(0, m_isoValue);
     }
   }
@@ -271,7 +271,7 @@ void Surfaces::moleculeChanged(unsigned int changes)
 
   // if we now have more cubes than before
   // calculate the new mesh
-  if (currentCubes == 0 && m_cubes.size() > 0) {
+  if (currentCubes == 0 && !m_cubes.empty()) {
     calculateCube(0, m_isoValue);
   }
 }
@@ -311,7 +311,7 @@ void Surfaces::surfacesActivated()
                          m_basis->molecularOrbitalCount(), beta);
   }
   // only show cubes from files so we don't duplicate orbitals
-  if (m_cubes.size() > 0) {
+  if (!m_cubes.empty()) {
     QStringList cubeNames;
     for (auto* cube : m_cubes) {
       if (cube->cubeType() == Core::Cube::Type::FromFile) {
@@ -703,7 +703,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
 
 void Surfaces::calculateCube(int index, float isoValue)
 {
-  if (m_cubes.size() == 0)
+  if (m_cubes.empty())
     return;
 
   if (index == -1 && m_dialog != nullptr)
