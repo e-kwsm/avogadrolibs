@@ -1099,9 +1099,9 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
     unitCell["a"] = molecule.unitCell()->a();
     unitCell["b"] = molecule.unitCell()->b();
     unitCell["c"] = molecule.unitCell()->c();
-    unitCell["alpha"] = molecule.unitCell()->alpha() * RAD_TO_DEG;
-    unitCell["beta"] = molecule.unitCell()->beta() * RAD_TO_DEG;
-    unitCell["gamma"] = molecule.unitCell()->gamma() * RAD_TO_DEG;
+    unitCell["alpha"] = molecule.unitCell()->alpha() * RAD_TO_DEG<>;
+    unitCell["beta"] = molecule.unitCell()->beta() * RAD_TO_DEG<>;
+    unitCell["gamma"] = molecule.unitCell()->gamma() * RAD_TO_DEG<>;
 
     json vectors;
     vectors.push_back(molecule.unitCell()->aVector().x());
