@@ -718,7 +718,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         if (isNumericArray(arr)) {
           Array<Vector3> mode;
           mode.resize(arr.size() / 3);
-          double* ptr = &mode[0][0];
+          double* ptr = mode[0].data();
           for (auto& j : arr) {
             *(ptr++) = static_cast<double>(j);
           }
