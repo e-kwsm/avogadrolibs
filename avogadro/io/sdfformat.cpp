@@ -7,7 +7,7 @@
 
 namespace Avogadro::Io {
 
-SdfFormat::SdfFormat() :
+SdfFormat::SdfFormat()
 {
   m_writeProperties = true;
 }
