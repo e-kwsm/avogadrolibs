@@ -130,7 +130,7 @@ Vector3 AtomUtilities::generateNewBondVector(
       v2 = Vector3::Random().normalized();
 
       double angle = fabs(acos(bond1.dot(v2)));
-      while (angle < 45.0 * DEG_TO_RAD || angle > 135.0 * DEG_TO_RAD) {
+      while (angle < 45.0 * DEG_TO_RAD<> || angle > 135.0 * DEG_TO_RAD<>) {
         v2 = Vector3::Random().normalized();
         angle = fabs(acos(bond1.dot(v2)));
         //          std::cout << "angle = " << angle*RAD_TO_DEG << std::endl;
@@ -151,14 +151,14 @@ Vector3 AtomUtilities::generateNewBondVector(
         newPos = bond1; // 180 degrees away from the current neighbor
         break;
       case SP2: // sp2
-        newPos = bond1 - v2 * tan(DEG_TO_RAD * 120.0);
+        newPos = bond1 - v2 * tan(DEG_TO_RAD<> * 120.0);
         break;
       case Octahedral: // octahedral
-        newPos = bond1 - v2 * tan(DEG_TO_RAD * 90.0);
+        newPos = bond1 - v2 * tan(DEG_TO_RAD<> * 90.0);
         break;
       case SP3:
       default:
-        newPos = (bond1 - v2 * tan(DEG_TO_RAD * M_TETRAHED));
+        newPos = (bond1 - v2 * tan(DEG_TO_RAD<> * M_TETRAHED));
         break;
     }
 
