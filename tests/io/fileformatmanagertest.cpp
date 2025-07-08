@@ -180,8 +180,7 @@ private:
   std::string m_ident;
 
 public:
-  Format(const std::string& ident, Operations ops)
-    : FileFormat(), m_ops(ops), m_ident(ident)
+  Format(const std::string& ident, Operations ops) : m_ops(ops), m_ident(ident)
   {
   }
   Operations supportedOperations() const override { return m_ops; }
