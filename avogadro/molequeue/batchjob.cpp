@@ -92,7 +92,7 @@ BatchJob::BatchId BatchJob::submitNextJob(const Core::Molecule& mol)
 
 bool BatchJob::lookupJob(BatchId bId)
 {
-  ServerId sId = serverId(static_cast<BatchId>(bId));
+  ServerId sId = serverId(bId);
   if (sId == InvalidServerId)
     return false;
 

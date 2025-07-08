@@ -286,7 +286,7 @@ float SurfaceDialog::isosurfaceValue()
 
 int SurfaceDialog::smoothingPassesValue()
 {
-  return static_cast<int>(m_ui->smoothingPassesSpinBox->value());
+  return m_ui->smoothingPassesSpinBox->value();
 }
 
 float SurfaceDialog::resolution()

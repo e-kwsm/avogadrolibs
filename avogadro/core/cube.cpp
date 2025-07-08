@@ -369,15 +369,14 @@ float Cube::valuef(const Vector3f& pos) const
              (delta.z() - lCf.z() * spacingf.z()) / spacingf.z());
   Vector3f dP = Vector3f(1.0f, 1.0f, 1.0f) - P;
   // Now calculate and return the interpolated value
-  return static_cast<float>(
-    value(lC.x(), lC.y(), lC.z()) * dP.x() * dP.y() * dP.z() +
-    value(hC.x(), lC.y(), lC.z()) * P.x() * dP.y() * dP.z() +
-    value(lC.x(), hC.y(), lC.z()) * dP.x() * P.y() * dP.z() +
-    value(lC.x(), lC.y(), hC.z()) * dP.x() * dP.y() * P.z() +
-    value(hC.x(), lC.y(), hC.z()) * P.x() * dP.y() * P.z() +
-    value(lC.x(), hC.y(), hC.z()) * dP.x() * P.y() * P.z() +
-    value(hC.x(), hC.y(), lC.z()) * P.x() * P.y() * dP.z() +
-    value(hC.x(), hC.y(), hC.z()) * P.x() * P.y() * P.z());
+  return (value(lC.x(), lC.y(), lC.z()) * dP.x() * dP.y() * dP.z() +
+          value(hC.x(), lC.y(), lC.z()) * P.x() * dP.y() * dP.z() +
+          value(lC.x(), hC.y(), lC.z()) * dP.x() * P.y() * dP.z() +
+          value(lC.x(), lC.y(), hC.z()) * dP.x() * dP.y() * P.z() +
+          value(hC.x(), lC.y(), hC.z()) * P.x() * dP.y() * P.z() +
+          value(lC.x(), hC.y(), hC.z()) * dP.x() * P.y() * P.z() +
+          value(hC.x(), hC.y(), lC.z()) * P.x() * P.y() * dP.z() +
+          value(hC.x(), hC.y(), hC.z()) * P.x() * P.y() * P.z());
 }
 
 float Cube::value(const Vector3& pos) const
