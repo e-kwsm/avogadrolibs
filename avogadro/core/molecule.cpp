@@ -46,7 +46,7 @@ Molecule::Molecule(const Molecule& other)
     m_vibrationIRIntensities(other.m_vibrationIRIntensities),
     m_vibrationRamanIntensities(other.m_vibrationRamanIntensities),
     m_vibrationLx(other.m_vibrationLx), m_selectedAtoms(other.m_selectedAtoms),
-    m_meshes(), m_cubes(),
+
     m_basisSet(other.m_basisSet ? other.m_basisSet->clone() : nullptr),
     m_unitCell(other.m_unitCell ? new UnitCell(*other.m_unitCell) : nullptr),
     m_residues(other.m_residues), m_hallNumber(other.m_hallNumber),
