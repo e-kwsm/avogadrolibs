@@ -25,7 +25,7 @@ void GeometryVisitor::visit(Drawable&) {}
 void GeometryVisitor::visit(SphereGeometry& geometry)
 {
   const Core::Array<SphereColor>& spheres = geometry.spheres();
-  if (!spheres.size())
+  if (spheres.empty())
     return;
 
   m_dirty = true;
@@ -54,7 +54,7 @@ void GeometryVisitor::visit(SphereGeometry& geometry)
 void GeometryVisitor::visit(AmbientOcclusionSphereGeometry& geometry)
 {
   const Core::Array<SphereColor>& spheres = geometry.spheres();
-  if (!spheres.size())
+  if (spheres.empty())
     return;
 
   m_dirty = true;
@@ -83,7 +83,7 @@ void GeometryVisitor::visit(AmbientOcclusionSphereGeometry& geometry)
 void GeometryVisitor::visit(CurveGeometry& cg)
 {
   const auto& lines = cg.lines();
-  if (lines.size() == 0) {
+  if (lines.empty()) {
     return;
   }
   m_dirty = true;
@@ -113,7 +113,7 @@ void GeometryVisitor::visit(LineStripGeometry& lsg)
 {
   typedef Core::Array<LineStripGeometry::PackedVertex> VertexArray;
   const VertexArray verts(lsg.vertices());
-  if (!verts.size())
+  if (verts.empty())
     return;
 
   m_dirty = true;
