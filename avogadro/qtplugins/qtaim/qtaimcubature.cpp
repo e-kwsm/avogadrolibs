@@ -487,7 +487,7 @@ static void evalR0_0fs4d(double* pts, unsigned int dim, double* p,
 
 #define num0_0(dim) (1U)
 #define numR0_0fs(dim) (2 * (dim))
-#define numRR0_0fs(dim) (2 * (dim) * (dim - 1))
+#define numRR0_0fs(dim) (2 * (dim) * ((dim) - 1))
 #define numR_Rfs(dim) (1U << (dim))
 
 /***************************************************************************/
