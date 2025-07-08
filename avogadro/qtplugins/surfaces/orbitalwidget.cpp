@@ -153,7 +153,7 @@ void OrbitalWidget::tableClicked(const QItemSelection& selected)
 
   // Only one row can be selected at a time, so just check the row
   // of the first entry.
-  if (selection.size() == 0)
+  if (selection.empty())
     return;
   int orbital = selection.first().row() + 1;
   emit orbitalSelected(orbital);
@@ -166,7 +166,7 @@ void OrbitalWidget::renderClicked()
 
   // Only one row can be selected at a time, so just check the row
   // of the first entry.
-  if (selection.size() == 0)
+  if (selection.empty())
     return;
 
   QModelIndex first = selection.first();

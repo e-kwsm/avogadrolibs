@@ -112,7 +112,7 @@ void GAMESSUSOutput::readAtomBlock(std::istream& in, Core::Molecule& molecule,
   while (getline(in, buffer)) {
     if (Core::contains(buffer, "CHARGE") || Core::contains(buffer, "------"))
       continue;
-    else if (buffer.length() == 0 || buffer == "\n") // Our work here is done.
+    else if (buffer.empty() || buffer == "\n") // Our work here is done.
       return;
     vector<string> parts = Core::split(buffer, ' ');
     if (parts.size() != 5) {
@@ -303,11 +303,11 @@ void GAMESSUSOutput::load(GaussianSet* basis)
   //    qDebug() << " loading MOs " << m_MOcoeffs.size();
 
   // Now to load in the MO coefficients
-  if (m_MOcoeffs.size())
+  if (!m_MOcoeffs.empty())
     basis->setMolecularOrbitals(m_MOcoeffs);
-  if (m_alphaMOcoeffs.size())
+  if (!m_alphaMOcoeffs.empty())
     basis->setMolecularOrbitals(m_alphaMOcoeffs, BasisSet::Alpha);
-  if (m_betaMOcoeffs.size())
+  if (!m_betaMOcoeffs.empty())
     basis->setMolecularOrbitals(m_betaMOcoeffs, BasisSet::Beta);
 
   // generateDensity();
@@ -409,7 +409,7 @@ void GAMESSUSOutput::outputAll()
          << ", atom = " << m_shelltoAtom.at(i) << endl;
   }
   int nGTOs = 0;
-  if (m_MOcoeffs.size()) {
+  if (!m_MOcoeffs.empty()) {
     nGTOs = m_MOcoeffs.size() / m_nMOs;
     cout << m_nMOs << " MOs, " << nGTOs << " GTOs" << endl;
   }
@@ -421,11 +421,11 @@ void GAMESSUSOutput::outputAll()
     cout << "\n";
   }
 
-  if (m_alphaMOcoeffs.size())
+  if (!m_alphaMOcoeffs.empty())
     cout << "Alpha MO coefficients.\n";
   for (double m_alphaMOcoeff : m_alphaMOcoeffs)
     cout << m_alphaMOcoeff;
-  if (m_betaMOcoeffs.size())
+  if (!m_betaMOcoeffs.empty())
     cout << "Beta MO coefficients.\n";
   for (double m_betaMOcoeff : m_betaMOcoeffs)
     cout << m_betaMOcoeff;
