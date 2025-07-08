@@ -133,7 +133,7 @@ void Cp2kInputDialog::setMolecule(QtGui::Molecule* mol)
 
 void Cp2kInputDialog::showEvent(QShowEvent* e)
 {
-  QWidget::showEvent(e);
+  QDialog::showEvent(e);
 
   // Update the preview text if an update was requested while hidden. Use a
   // single shot to allow the dialog to show before popping up any warnings.
