@@ -47,9 +47,9 @@ bool checkParams(const UnitCell& cell, Real a, Real b, Real c, Real alpha,
               << "a=" << cell.a() << " "
               << "b=" << cell.b() << " "
               << "c=" << cell.c() << " "
-              << "alpha=" << cell.alpha() * RAD_TO_DEG << " "
-              << "beta=" << cell.beta() * RAD_TO_DEG << " "
-              << "gamma=" << cell.gamma() * RAD_TO_DEG << std::endl;
+              << "alpha=" << cell.alpha() * RAD_TO_DEG<> << " "
+              << "beta=" << cell.beta() * RAD_TO_DEG<> << " "
+              << "gamma=" << cell.gamma() * RAD_TO_DEG<> << std::endl;
     return false;
   }
   return true;
@@ -240,11 +240,11 @@ TEST(UnitCellTest, setVolume)
   EXPECT_TRUE(CrystalTools::setVolume(mol, static_cast<Real>(1.0)));
   EXPECT_FLOAT_EQ(1.f, static_cast<float>(mol.unitCell()->volume()));
   EXPECT_FLOAT_EQ(90.f,
-                  static_cast<float>(mol.unitCell()->alpha() * RAD_TO_DEG));
+                  static_cast<float>(mol.unitCell()->alpha() * RAD_TO_DEG<>));
   EXPECT_FLOAT_EQ(120.f,
-                  static_cast<float>(mol.unitCell()->beta() * RAD_TO_DEG));
+                  static_cast<float>(mol.unitCell()->beta() * RAD_TO_DEG<>));
   EXPECT_FLOAT_EQ(77.f,
-                  static_cast<float>(mol.unitCell()->gamma() * RAD_TO_DEG));
+                  static_cast<float>(mol.unitCell()->gamma() * RAD_TO_DEG<>));
 }
 
 TEST(UnitCellTest, fractionalCoordinates)
