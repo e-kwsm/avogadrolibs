@@ -26,7 +26,7 @@
  */
 #define AVO_DISABLE_COPY(Class)                                                \
   Class(const Class&);                                                         \
-  Class& operator=(const Class&);
+  (Class) & operator=(const Class&);
 
 namespace Avogadro {
 
