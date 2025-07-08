@@ -191,12 +191,12 @@ inline std::vector<double> GaussianSetTools::calculateValues(
   dr2.reserve(atomsSize);
 
   // Calculate our position
-  Vector3 pos(position * ANGSTROM_TO_BOHR);
+  Vector3 pos(position * ANGSTROM_TO_BOHR<>);
 
   // Calculate the deltas for the position
   for (Index i = 0; i < atomsSize; ++i) {
-    deltas.emplace_back(pos -
-                        (m_molecule->atom(i).position3d() * ANGSTROM_TO_BOHR));
+    deltas.emplace_back(
+      pos - (m_molecule->atom(i).position3d() * ANGSTROM_TO_BOHR<>));
     dr2.push_back(deltas[i].squaredNorm());
   }
 
