@@ -1030,7 +1030,7 @@ inline Vector2 Molecule::atomPosition2d(Index atomId) const
 
 inline bool Molecule::setAtomPositions2d(const Core::Array<Vector2>& pos)
 {
-  if (pos.size() == atomCount() || pos.size() == 0) {
+  if (pos.size() == atomCount() || pos.empty()) {
     m_positions2d = pos;
     return true;
   }
@@ -1055,7 +1055,7 @@ inline Vector3 Molecule::atomPosition3d(Index atomId) const
 
 inline bool Molecule::setAtomPositions3d(const Core::Array<Vector3>& pos)
 {
-  if (pos.size() == atomCount() || pos.size() == 0) {
+  if (pos.size() == atomCount() || pos.empty()) {
     m_positions3d = pos;
     return true;
   }
@@ -1080,7 +1080,7 @@ inline std::string Molecule::atomLabel(Index atomId) const
 
 inline bool Molecule::setAtomLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == atomCount() || labels.size() == 0) {
+  if (labels.size() == atomCount() || labels.empty()) {
     m_atomLabels = labels;
     return true;
   }
@@ -1128,7 +1128,7 @@ inline Vector3 Molecule::forceVector(Index atomId) const
 
 inline bool Molecule::setForceVectors(const Core::Array<Vector3>& forces)
 {
-  if (forces.size() == atomCount() || forces.size() == 0) {
+  if (forces.size() == atomCount() || forces.empty()) {
     m_forceVectors = forces;
     return true;
   }
@@ -1177,7 +1177,7 @@ inline std::string Molecule::bondLabel(Index bondId) const
 
 inline bool Molecule::setBondLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == atomCount() || labels.size() == 0) {
+  if (labels.size() == atomCount() || labels.empty()) {
     m_bondLabels = labels;
     return true;
   }
