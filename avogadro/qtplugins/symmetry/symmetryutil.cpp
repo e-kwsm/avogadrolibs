@@ -16,11 +16,11 @@
 
 #include "symmetryutil.h"
 
-#define _ORIENT_HORIZONTAL                                                     \
+#define ORIENT_HORIZONTAL                                                      \
   msym::_msym_symmetry_operation::MSYM_SYMMETRY_OPERATION_ORIENTATION_HORIZONTAL
-#define _ORIENT_VERTICAL                                                       \
+#define ORIENT_VERTICAL                                                        \
   msym::_msym_symmetry_operation::MSYM_SYMMETRY_OPERATION_ORIENTATION_VERTICAL
-#define _ORIENT_DIHEDRAL                                                       \
+#define ORIENT_DIHEDRAL                                                        \
   msym::_msym_symmetry_operation::MSYM_SYMMETRY_OPERATION_ORIENTATION_DIHEDRAL
 
 namespace Avogadro::QtPlugins::SymmetryUtil {
@@ -60,11 +60,11 @@ QString operationSymbol(const msym::msym_symmetry_operation_t* operation)
       symbol.append(QString("<sup>%2</sup>").arg(operation->power));
   } else if (operation->type == REFLECTION) {
     symbol = QString("&sigma;");
-    if (operation->orientation == _ORIENT_HORIZONTAL)
+    if (operation->orientation == ORIENT_HORIZONTAL)
       symbol.append("<sub>h</sub>");
-    else if (operation->orientation == _ORIENT_DIHEDRAL)
+    else if (operation->orientation == ORIENT_DIHEDRAL)
       symbol.append("<sub>d</sub>");
-    else if (operation->orientation == _ORIENT_VERTICAL)
+    else if (operation->orientation == ORIENT_VERTICAL)
       symbol.append("<sub>v</sub>");
   }
 
