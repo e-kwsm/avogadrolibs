@@ -167,7 +167,7 @@ unsigned short SpaceGroups::transformsCount(unsigned short hallNumber)
 Real readTransformCoordinate(const std::string& coordinate, const Vector3& v)
 {
   // The coordinate should be at least 1 character
-  assert(coordinate.size() != 0);
+  assert(!coordinate.empty());
 
   Real ret = 0.0;
   Index i = 0;
