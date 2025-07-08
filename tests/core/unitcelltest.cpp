@@ -20,8 +20,8 @@ Molecule createCrystal(Real a, Real b, Real c, Real alpha, Real beta,
 {
   Molecule mol;
   mol.setUnitCell(new UnitCell);
-  mol.unitCell()->setCellParameters(a, b, c, alpha * DEG_TO_RAD,
-                                    beta * DEG_TO_RAD, gamma * DEG_TO_RAD);
+  mol.unitCell()->setCellParameters(a, b, c, alpha * DEG_TO_RAD<>,
+                                    beta * DEG_TO_RAD<>, gamma * DEG_TO_RAD<>);
   return mol;
 }
 
@@ -36,9 +36,9 @@ Molecule createCrystal(const Vector3& a, const Vector3& b, const Vector3& c)
 bool checkParams(const UnitCell& cell, Real a, Real b, Real c, Real alpha,
                  Real beta, Real gamma)
 {
-  Real aRad = alpha * DEG_TO_RAD;
-  Real bRad = beta * DEG_TO_RAD;
-  Real gRad = gamma * DEG_TO_RAD;
+  Real aRad = alpha * DEG_TO_RAD<>;
+  Real bRad = beta * DEG_TO_RAD<>;
+  Real gRad = gamma * DEG_TO_RAD<>;
   if (std::fabs(cell.a() - a) > 1e-3 || std::fabs(cell.b() - b) > 1e-3 ||
       std::fabs(cell.c() - c) > 1e-3 || std::fabs(cell.alpha() - aRad) > 1e-3 ||
       std::fabs(cell.beta() - bRad) > 1e-3 ||
@@ -60,9 +60,9 @@ TEST(UnitCellTest, cellParameters)
   Real a = static_cast<Real>(2.0);
   Real b = static_cast<Real>(3.0);
   Real c = static_cast<Real>(4.0);
-  Real alpha = static_cast<Real>(70 * DEG_TO_RAD);
-  Real beta = static_cast<Real>(120 * DEG_TO_RAD);
-  Real gamma = static_cast<Real>(85 * DEG_TO_RAD);
+  Real alpha = static_cast<Real>(70 * DEG_TO_RAD<>);
+  Real beta = static_cast<Real>(120 * DEG_TO_RAD<>);
+  Real gamma = static_cast<Real>(85 * DEG_TO_RAD<>);
 
   const Vector3 ux{ 1.0, 0.0, 0.0 }, uy{ 0.0, 1.0, 0.0 }, uz{ 0.0, 0.0, 1.0 },
     zero{ 0.0, 0.0, 0.0 };
