@@ -565,11 +565,11 @@ bool CmlFormat::write(std::ostream& out, const Core::Molecule& mol)
     crystalBNode.text() = formatNumber(numberStream, cell->b()).c_str();
     crystalCNode.text() = formatNumber(numberStream, cell->c()).c_str();
     crystalAlphaNode.text() =
-      formatNumber(numberStream, cell->alpha() * RAD_TO_DEG).c_str();
+      formatNumber(numberStream, cell->alpha() * RAD_TO_DEG<>).c_str();
     crystalBetaNode.text() =
-      formatNumber(numberStream, cell->beta() * RAD_TO_DEG).c_str();
+      formatNumber(numberStream, cell->beta() * RAD_TO_DEG<>).c_str();
     crystalGammaNode.text() =
-      formatNumber(numberStream, cell->gamma() * RAD_TO_DEG).c_str();
+      formatNumber(numberStream, cell->gamma() * RAD_TO_DEG<>).c_str();
 
     // add the space group
     unsigned short hall = mol.hallNumber();
