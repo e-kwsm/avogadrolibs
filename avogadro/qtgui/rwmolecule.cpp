@@ -35,7 +35,7 @@ RWMolecule::~RWMolecule() {}
 
 RWMolecule::AtomType RWMolecule::addAtom(unsigned char num, bool usingPositions)
 {
-  auto atomId = static_cast<Index>(m_molecule.atomCount());
+  auto atomId = m_molecule.atomCount();
   auto atomUid = static_cast<Index>(m_molecule.m_atomUniqueIds.size());
 
   auto* comm = new AddAtomCommand(*this, num, usingPositions, atomId, atomUid);
