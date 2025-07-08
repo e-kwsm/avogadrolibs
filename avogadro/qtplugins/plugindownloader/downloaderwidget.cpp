@@ -421,7 +421,7 @@ void DownloaderWidget::unzipPlugin()
 
       // get the list of files / directories we unzipped
       // the first one is the main directory name
-      if (newFiles.length() > 0) // got an empty archive
+      if (!newFiles.empty()) // got an empty archive
       {
         // check for a previous version of this plugin and remove it
         // e.g. we extracted to a path like User-Repo-GitHash
