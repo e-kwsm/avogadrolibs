@@ -321,11 +321,11 @@ void JsonWidget::combinedOptionRow(const QString& label1, const QString& label2,
     QWidget* widget1 = createOptionWidget(options.take(label1));
     QWidget* widget2 = createOptionWidget(options.take(label2));
     auto* hbox = new QHBoxLayout;
-    if (option1) {
+
       widget1->setObjectName(label1);
       hbox->addWidget(widget1);
       m_widgets.insert(label1, widget1);
-    }
+
     if (bothLabels) {
       QLabel* label = new QLabel(tr2 + ":");
       hbox->addWidget(label);
