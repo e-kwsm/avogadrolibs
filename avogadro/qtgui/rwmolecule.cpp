@@ -410,10 +410,11 @@ void RWMolecule::addUnitCell()
     return;
 
   auto* cell = new UnitCell;
-  cell->setCellParameters(
-    static_cast<Real>(3.0), static_cast<Real>(3.0), static_cast<Real>(3.0),
-    static_cast<Real>(90.0) * DEG_TO_RAD, static_cast<Real>(90.0) * DEG_TO_RAD,
-    static_cast<Real>(90.0) * DEG_TO_RAD);
+  cell->setCellParameters(static_cast<Real>(3.0), static_cast<Real>(3.0),
+                          static_cast<Real>(3.0),
+                          static_cast<Real>(90.0) * DEG_TO_RAD<>,
+                          static_cast<Real>(90.0) * DEG_TO_RAD<>,
+                          static_cast<Real>(90.0) * DEG_TO_RAD<>);
   m_molecule.setUnitCell(cell);
 
   auto* comm = new AddUnitCellCommand(*this, *m_molecule.unitCell());
