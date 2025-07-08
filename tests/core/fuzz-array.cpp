@@ -115,7 +115,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
         break;
       }
       case 13: { // assign from iterators
-        if (cow.size() > 0) {
+        if (!cow.empty()) {
           size_t count = std::min(cow.size(), size_t(64));
           arr.assign(cow.begin(), cow.begin() + count);
         }

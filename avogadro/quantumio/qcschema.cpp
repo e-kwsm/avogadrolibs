@@ -34,7 +34,7 @@ using Core::Elements;
 
 bool isNumericArray(json& j)
 {
-  if (j.is_array() && j.size() > 0) {
+  if (j.is_array() && !j.empty()) {
     for (const auto& v : j) {
       if (!v.is_number()) {
         return false;
@@ -47,7 +47,7 @@ bool isNumericArray(json& j)
 
 bool isBooleanArray(json& j)
 {
-  if (j.is_array() && j.size() > 0) {
+  if (j.is_array() && !j.empty()) {
     for (const auto& v : j) {
       if (!v.is_boolean()) {
         return false;
@@ -274,7 +274,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
       }
 
       json coordSets = properties["geometry_sequence"]["geometries"];
-      if (coordSets.is_array() && coordSets.size()) {
+      if (coordSets.is_array() && !coordSets.empty()) {
         for (unsigned int i = 0; i < coordSets.size(); ++i) {
           Array<Vector3> setArray;
           json set = coordSets[i];
