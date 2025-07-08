@@ -414,7 +414,7 @@ QWidget* NonCovalent::setupWidget()
 
 void NonCovalent::setAngleTolerance(float angleTolerance, Index index)
 {
-  m_angleTolerancesDegrees[index] = float(angleTolerance);
+  m_angleTolerancesDegrees[index] = angleTolerance;
   emit drawablesChanged();
 
   QSettings settings;
@@ -424,7 +424,7 @@ void NonCovalent::setAngleTolerance(float angleTolerance, Index index)
 
 void NonCovalent::setMaximumDistance(float maximumDistance, Index index)
 {
-  m_maximumDistances[index] = float(maximumDistance);
+  m_maximumDistances[index] = maximumDistance;
   emit drawablesChanged();
 
   QSettings settings;
