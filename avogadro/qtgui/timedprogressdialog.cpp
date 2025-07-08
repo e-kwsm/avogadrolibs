@@ -86,7 +86,7 @@ QString TimedProgressDialog::formatTime(double seconds)
   } else {
     // hopefully we don't have anything this slow
     int hours = static_cast<int>(seconds / 3600);
-    int minutes = static_cast<int>((static_cast<int>(seconds) % 3600) / 60);
+    int minutes = (static_cast<int>(seconds) % 3600) / 60;
     if (hours == 1 && minutes > 0) {
       // give a message for under 2 hours, e.g.
       // "1 hour 10 minutes remaining"
