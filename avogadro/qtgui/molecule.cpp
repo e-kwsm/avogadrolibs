@@ -16,14 +16,13 @@ namespace Avogadro::QtGui {
 using std::swap;
 
 Molecule::Molecule(QObject* p)
-  : QObject(p), Core::Molecule(), m_undoMolecule(new RWMolecule(*this, this))
+  : QObject(p), m_undoMolecule(new RWMolecule(*this, this))
 {
   m_undoMolecule->setInteractive(false);
 }
 
 Molecule::Molecule(const Molecule& other)
-  : QObject(), Core::Molecule(other),
-    m_undoMolecule(new RWMolecule(*this, this))
+  : Core::Molecule(other), m_undoMolecule(new RWMolecule(*this, this))
 {
   m_undoMolecule->setInteractive(false);
   // Now assign the unique ids
@@ -34,8 +33,7 @@ Molecule::Molecule(const Molecule& other)
     m_bondUniqueIds.push_back(i);
 }
 
-Molecule::Molecule(const Core::Molecule& other)
-  : QObject(), Core::Molecule(other)
+Molecule::Molecule(const Core::Molecule& other) : Core::Molecule(other)
 {
   // Now assign the unique ids
   for (Index i = 0; i < atomCount(); i++)
