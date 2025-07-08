@@ -23,9 +23,11 @@ class AVOGADROCORE_EXPORT UnitCell
 {
 public:
   UnitCell();
-  UnitCell(Real a, Real b, Real c, Real alpha, Real beta, Real gamma);
-  UnitCell(const Vector3& a, const Vector3& b, const Vector3& c);
-  explicit UnitCell(const Matrix3& cellMatrix);
+  UnitCell(Real a, Real b, Real c, Real alpha, Real beta,
+           Real gamma) noexcept(false);
+  UnitCell(const Vector3& a, const Vector3& b,
+           const Vector3& c) noexcept(false);
+  explicit UnitCell(const Matrix3& cellMatrix) noexcept(false);
   UnitCell(const UnitCell& other);
   ~UnitCell() = default;
   UnitCell& operator=(UnitCell other);
@@ -153,7 +155,7 @@ inline UnitCell::UnitCell()
 }
 
 inline UnitCell::UnitCell(Real a_, Real b_, Real c_, Real alpha_, Real beta_,
-                          Real gamma_)
+                          Real gamma_) noexcept(false)
 {
   setCellParameters(a_, b_, c_, alpha_, beta_, gamma_);
 }

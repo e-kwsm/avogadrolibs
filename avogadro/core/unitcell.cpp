@@ -9,16 +9,24 @@
 
 namespace Avogadro::Core {
 
-UnitCell::UnitCell(const Vector3& a_, const Vector3& b_, const Vector3& c_)
+UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
+                   const Vector3& c_) noexcept(false)
 {
   m_cellMatrix.col(0) = a_;
   m_cellMatrix.col(1) = b_;
   m_cellMatrix.col(2) = c_;
+  if (volume() == 0.0) {
+    throw std::invalid_argument(__func__);
+  }
   computeFractionalMatrix();
 }
 
-UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
+UnitCell::UnitCell(const Matrix3& cellMatrix_) noexcept(false)
+  : m_cellMatrix(cellMatrix_)
 {
+  if (volume() == 0.0) {
+    throw std::invalid_argument(__func__);
+  }
   computeFractionalMatrix();
 }
 
