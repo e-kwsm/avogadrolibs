@@ -315,7 +315,7 @@ inline bool endsNumber(const char* pos, const char* last)
   const char c = *pos;
   const bool letter = (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
   const bool digit = c >= '0' && c <= '9';
-  return !(letter || digit || c == '.' || c == '+' || c == '-');
+  return !letter && !digit && c != '.' && c != '+' && c != '-';
 }
 
 /**
