@@ -333,7 +333,7 @@ public:
       a._atom3 = k;
 
       Real theta0 = uffparams[m_atomTypes[j]].theta0 * DEG_TO_RAD;
-      a._theta0 = theta0 * RAD_TO_DEG; // store in degrees for consistency
+      a._theta0 = theta0 * RAD_TO_DEG<>; // store in degrees for consistency
 
       // calculate the kijk
       Real rij = calculateRij(i, j);
@@ -682,7 +682,8 @@ public:
 
       /*
       std::cout << " Angle " << i << " " << j << " " << k << " " << r1 << " "
-                << r2 << " " << theta * RAD_TO_DEG << " " << theta0 * RAD_TO_DEG
+                << r2 << " " << theta * RAD_TO_DEG<> << " "
+                << theta0 * RAD_TO_DEG<>
                 << std::endl;
   */
 
@@ -879,10 +880,11 @@ public:
 
       /*
             std::cout << " AngleGrad " << i << " " << j << " " << k << " "
-                      << theta0 * RAD_TO_DEG << " " << theta * RAD_TO_DEG << " "
-                      << dtheta * RAD_TO_DEG << " " << kijk << std::endl;
-                      std::cout << " Norms " << rij << " " << rkj << " " << rki
-         << std::endl;
+                      << theta0 * RAD_TO_DEG<> << " " << theta * RAD_TO_DEG<>
+                      << " " << dtheta * RAD_TO_DEG<> << " " << kijk
+                      << std::endl;
+            std::cout << " Norms " << rij << " " << rkj << " " << rki
+                      << std::endl;
       */
 
       // dE / dtheta is a bit annoying with UFF
