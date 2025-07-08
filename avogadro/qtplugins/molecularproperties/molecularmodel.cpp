@@ -49,10 +49,7 @@ void MolecularModel::setMolecule(QtGui::Molecule* molecule)
   m_molecule = molecule;
   // check if it has a pre-defined name
   if (molecule) {
-    if (m_molecule->data("name").toString().empty())
-      m_autoName = true;
-    else
-      m_autoName = false;
+    m_autoName = m_molecule->data("name").toString().empty();
     m_name = QString::fromStdString(molecule->data("name").toString());
   }
 
