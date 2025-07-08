@@ -40,7 +40,8 @@ public:
   void displayInvalidFormatMessage();
 
 private:
-  AVO_DISABLE_COPY(ImportCrystalDialog)
+  ImportCrystalDialog(const ImportCrystalDialog&);
+  ImportCrystalDialog& operator=(const ImportCrystalDialog&);
 
   Ui::ImportCrystalDialog* m_ui;
 };
