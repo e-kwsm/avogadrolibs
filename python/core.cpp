@@ -17,7 +17,7 @@ PYBIND11_MODULE(core, m)
   m.doc() = "AvogadroCore Python binding";
 
   using atomBase = AtomTemplate<Molecule>;
-  py::class_<atomBase>(m, "atomBase");
+  py::class_<atomBase> give_me_a_name(m, "atomBase");
   py::class_<Atom, atomBase>(m, "Atom")
     .def_property_readonly("index", &Atom::index, "Index in the molecule")
     .def_property("atomic_number", &Atom::atomicNumber, &Atom::setAtomicNumber,
@@ -31,7 +31,7 @@ PYBIND11_MODULE(core, m)
     .def("is_valid", &Atom::isValid, "Check if the object is valid");
 
   using bondBase = BondTemplate<Molecule>;
-  py::class_<bondBase>(m, "bondBase");
+  py::class_<bondBase> give_me_a_name(m, "bondBase");
   py::class_<Bond, bondBase>(m, "Bond")
     .def_property_readonly("index", &Bond::index, "Index in the molecule")
     .def_property("order", &Bond::order, &Bond::setOrder,
