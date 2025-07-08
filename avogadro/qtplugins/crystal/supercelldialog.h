@@ -46,7 +46,8 @@ private slots:
   void rangeChanged();
 
 private:
-  AVO_DISABLE_COPY(SupercellDialog)
+  SupercellDialog(const SupercellDialog&);
+  SupercellDialog& operator=(const SupercellDialog&);
 
   Ui::SupercellDialog* m_ui;
 
