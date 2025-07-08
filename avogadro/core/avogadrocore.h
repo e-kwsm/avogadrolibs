@@ -67,25 +67,30 @@ constexpr bool isCustomElement(unsigned char atomicNumber)
 } // namespace Core
 
 /** Unit conversion factors. @{ */
-constexpr double PI_D = 3.141592653589793238462643;
-constexpr float PI_F = static_cast<float>(PI_D);
-constexpr Real PI = static_cast<Real>(PI_D);
+template <typename T = Real>
+constexpr T PI = static_cast<T>(3.141592653589793238462643);
+constexpr auto PI_D = PI<double>;
+constexpr auto PI_F = PI<float>;
 
-constexpr double DEG_TO_RAD_D = PI_D / 180.0;
-constexpr float DEG_TO_RAD_F = static_cast<float>(DEG_TO_RAD_D);
-constexpr Real DEG_TO_RAD = static_cast<Real>(DEG_TO_RAD_D);
+template <typename T = Real>
+constexpr T DEG_TO_RAD = static_cast<T>(PI_D / 180.0);
+constexpr auto DEG_TO_RAD_D = DEG_TO_RAD<double>;
+constexpr auto DEG_TO_RAD_F = DEG_TO_RAD<float>;
 
-constexpr double RAD_TO_DEG_D = 180.0 / PI_D;
-constexpr float RAD_TO_DEG_F = static_cast<float>(RAD_TO_DEG_D);
-constexpr Real RAD_TO_DEG = static_cast<Real>(RAD_TO_DEG_D);
+template <typename T = Real>
+constexpr T RAD_TO_DEG = static_cast<Real>(180.0 / PI_D);
+constexpr auto RAD_TO_DEG_D = RAD_TO_DEG<double>;
+constexpr auto RAD_TO_DEG_F = RAD_TO_DEG<float>;
 
-constexpr double BOHR_TO_ANGSTROM_D = 0.52917721092;
-constexpr float BOHR_TO_ANGSTROM_F = static_cast<float>(BOHR_TO_ANGSTROM_D);
-constexpr Real BOHR_TO_ANGSTROM = static_cast<Real>(BOHR_TO_ANGSTROM_D);
+template <typename T = Real>
+constexpr T BOHR_TO_ANGSTROM = static_cast<T>(0.52917721092);
+constexpr auto BOHR_TO_ANGSTROM_D = BOHR_TO_ANGSTROM<double>;
+constexpr auto BOHR_TO_ANGSTROM_F = BOHR_TO_ANGSTROM<float>;
 
-constexpr double ANGSTROM_TO_BOHR_D = 1.0 / BOHR_TO_ANGSTROM_D;
-constexpr float ANGSTROM_TO_BOHR_F = static_cast<float>(ANGSTROM_TO_BOHR_D);
-constexpr Real ANGSTROM_TO_BOHR = static_cast<Real>(ANGSTROM_TO_BOHR_D);
+template <typename T = Real>
+constexpr T ANGSTROM_TO_BOHR = static_cast<Real>(1.0 / BOHR_TO_ANGSTROM_D);
+constexpr auto ANGSTROM_TO_BOHR_D = ANGSTROM_TO_BOHR<double>;
+constexpr auto ANGSTROM_TO_BOHR_F = ANGSTROM_TO_BOHR<float>;
 /** @} */
 
 } // namespace Avogadro
