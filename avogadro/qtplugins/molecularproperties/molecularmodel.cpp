@@ -250,7 +250,7 @@ Qt::ItemFlags MolecularModel::flags(const QModelIndex& index) const
   if (key == " 9totalCharge" || key == " 9totalSpinMultiplicity")
     return editable;
 
-  return QAbstractItemModel::flags(index);
+  return QAbstractTableModel::flags(index);
 }
 
 bool MolecularModel::setData(const QModelIndex& index, const QVariant& value,
