@@ -427,7 +427,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
         dataValue.clear();
         inValue = false;
       } else {
-        if (dataValue.length())
+        if (!dataValue.empty())
           dataValue += "\n";
         dataValue += trimmed(buffer);
       }
@@ -773,7 +773,7 @@ bool MdlFormat::readV3000(std::istream& in, Core::Molecule& mol)
       string key = trimmed(buffer.substr(3, buffer.length() - 4));
       string value;
       while (getline(in, buffer)) {
-        if (trimmed(buffer) == "")
+        if (trimmed(buffer).empty())
           break;
         value += buffer + "\n";
       }

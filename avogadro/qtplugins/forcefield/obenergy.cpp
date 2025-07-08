@@ -73,7 +73,7 @@ OBEnergy::OBEnergy(const std::string& method)
   if (qgetenv("BABEL_LIBDIR").isEmpty()) {
     QDir dir(QCoreApplication::applicationDirPath() + "/../lib/openbabel");
     QStringList dirs = dir.entryList(filters);
-    if (dirs.size() == 0) {
+    if (dirs.empty()) {
       QString libDir =
         QCoreApplication::applicationDirPath() + "/../lib/openbabel/";
       qputenv("BABEL_LIBDIR", libDir.toLocal8Bit());
