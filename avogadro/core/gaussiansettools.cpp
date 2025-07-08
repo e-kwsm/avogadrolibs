@@ -185,7 +185,7 @@ inline void GaussianSetTools::calculateValues(const Vector3& position,
   const std::vector<unsigned int>& atomIndices = m_basis->atomIndices();
 
   // Calculate our position
-  Vector3 pos(position * ANGSTROM_TO_BOHR);
+  Vector3 pos(position * ANGSTROM_TO_BOHR<>);
 
   // Vectorized computation of deltas and squared distances
   // deltas: 3 x N matrix where each column is (pos - atomPos[i])
