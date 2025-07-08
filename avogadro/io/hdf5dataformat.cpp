@@ -96,7 +96,7 @@ public:
     m_data.resize(dimsToNumberOfElements(dims));
     return true;
   }
-  void* dataPointer() { return &m_data[0]; }
+  void* dataPointer() { return m_data.data(); }
 };
 
 class ResizeArray : public Avogadro::Io::Hdf5DataFormat::ResizeContainer
@@ -110,7 +110,7 @@ public:
     m_data.resize(dimsToNumberOfElements(dims));
     return true;
   }
-  void* dataPointer() { return &m_data[0]; }
+  void* dataPointer() { return m_data.data(); }
 };
 
 } // end unnamed namespace
@@ -392,7 +392,7 @@ bool Hdf5DataFormat::writeDataset(const std::string& path,
                                   size_t* dims) const
 {
   size_t size = data.size();
-  return this->writeRawDataset(path, &(data[0]), ndims, dims ? dims : &size);
+  return this->writeRawDataset(path, data.data(), ndims, dims ? dims : &size);
 }
 
 bool Hdf5DataFormat::writeDataset(const std::string& path,
@@ -400,7 +400,7 @@ bool Hdf5DataFormat::writeDataset(const std::string& path,
                                   size_t* dims) const
 {
   size_t size = data.size();
-  return this->writeRawDataset(path, &(data[0]), ndims, dims ? dims : &size);
+  return this->writeRawDataset(path, data.data(), ndims, dims ? dims : &size);
 }
 
 std::vector<int> Hdf5DataFormat::readRawDataset(
