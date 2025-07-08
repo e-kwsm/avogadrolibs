@@ -32,7 +32,9 @@ class ImportCrystalDialog : public QDialog
   Q_OBJECT
 public:
   ImportCrystalDialog(QWidget* p = nullptr);
+  ImportCrystalDialog(const ImportCrystalDialog&) = delete;
   ~ImportCrystalDialog() override;
+  ImportCrystalDialog& operator=(const ImportCrystalDialog&) = delete;
 
   // Avogadro::Core::Molecule is required for the format function
   bool importCrystalClipboard(Avogadro::Core::Molecule& mol);
@@ -40,8 +42,6 @@ public:
   void displayInvalidFormatMessage();
 
 private:
-  AVO_DISABLE_COPY(ImportCrystalDialog)
-
   Ui::ImportCrystalDialog* m_ui;
 };
 

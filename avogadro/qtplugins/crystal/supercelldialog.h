@@ -32,15 +32,15 @@ class SupercellDialog : public QDialog
   Q_OBJECT
 public:
   SupercellDialog(QWidget* p = nullptr);
+  SupercellDialog(const SupercellDialog&) = delete;
   ~SupercellDialog() override;
+  SupercellDialog& operator=(const SupercellDialog&) = delete;
 
   bool buildSupercell(Avogadro::QtGui::Molecule& mol);
 
   void displayInvalidFormatMessage();
 
 private:
-  AVO_DISABLE_COPY(SupercellDialog)
-
   Ui::SupercellDialog* m_ui;
 };
 
