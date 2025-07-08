@@ -72,9 +72,9 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
       Real a = lexicalCast<Real>(buffer.substr(6, 9), ok);
       Real b = lexicalCast<Real>(buffer.substr(15, 9), ok);
       Real c = lexicalCast<Real>(buffer.substr(24, 9), ok);
-      Real alpha = lexicalCast<Real>(buffer.substr(33, 7), ok) * DEG_TO_RAD;
-      Real beta = lexicalCast<Real>(buffer.substr(40, 7), ok) * DEG_TO_RAD;
-      Real gamma = lexicalCast<Real>(buffer.substr(47, 8), ok) * DEG_TO_RAD;
+      Real alpha = lexicalCast<Real>(buffer.substr(33, 7), ok) * DEG_TO_RAD<>;
+      Real beta = lexicalCast<Real>(buffer.substr(40, 7), ok) * DEG_TO_RAD<>;
+      Real gamma = lexicalCast<Real>(buffer.substr(47, 8), ok) * DEG_TO_RAD<>;
 
       auto* cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
       if (!cell->isRegular()) {
