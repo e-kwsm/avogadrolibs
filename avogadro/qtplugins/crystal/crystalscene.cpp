@@ -63,7 +63,7 @@ void CrystalScene::process(const QtGui::Molecule& molecule, GroupNode& node)
     geometry->addDrawable(spheres);
 
     auto color = m_color;
-    float radius = static_cast<float>(m_lineWidth) * 0.0125f;
+    float radius = m_lineWidth * 0.0125f;
 
     Vector3f a = cell->aVector().cast<float>();
     Vector3f b = cell->bVector().cast<float>();
