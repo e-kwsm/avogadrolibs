@@ -7,7 +7,7 @@
 
 namespace Avogadro::QtGui {
 
-ElementTranslator::ElementTranslator() : {}
+ElementTranslator::ElementTranslator() = default;
 
 QString ElementTranslator::name(int element)
 {
