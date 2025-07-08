@@ -134,9 +134,9 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         a = tmp->at(0) * cellConversion;
         b = tmp->at(1) * cellConversion;
         c = tmp->at(2) * cellConversion;
-        alpha = tmp->at(3) * DEG_TO_RAD;
-        beta = tmp->at(4) * DEG_TO_RAD;
-        gamma = tmp->at(5) * DEG_TO_RAD;
+        alpha = tmp->at(3) * DEG_TO_RAD<>;
+        beta = tmp->at(4) * DEG_TO_RAD<>;
+        gamma = tmp->at(5) * DEG_TO_RAD<>;
       } else {
         appendError("Failed to parse this line: " + buffer);
         return false;
