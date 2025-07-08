@@ -190,7 +190,7 @@ void QtTextRenderStrategy::render(const std::string& string,
   auto rot(static_cast<qreal>(tprop.rotationDegreesCW()));
   if (rot != 0.f) {
     // Rotate the painter:
-    painter.rotate(static_cast<qreal>(rot));
+    painter.rotate(rot);
 
     // Convert the bbox into a polygon and rotate it
     QPolygonF textCorners(textRect);
