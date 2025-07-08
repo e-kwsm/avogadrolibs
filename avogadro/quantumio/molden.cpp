@@ -64,7 +64,7 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
   basis->setMolecule(&molecule);
   load(basis);
 
-  if (m_frequencies.size() > 0 &&
+  if (!m_frequencies.empty() &&
       m_frequencies.size() == m_vibDisplacements.size()) {
     molecule.setVibrationFrequencies(m_frequencies);
     molecule.setVibrationLx(m_vibDisplacements);
@@ -77,7 +77,7 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
     }
     molecule.setVibrationIRIntensities(m_IRintensities);
 
-    if (m_RamanIntensities.size())
+    if (!m_RamanIntensities.empty())
       molecule.setVibrationRamanIntensities(m_RamanIntensities);
   }
 
@@ -139,7 +139,7 @@ void MoldenFile::processLine(std::istream& in)
         line = Core::trimmed(line);
         while (!line.empty()) { // Read the shell types in this GTO.
           list = Core::split(line, ' ');
-          if (list.size() < 1)
+          if (list.empty())
             break;
           shell = list[0];
           shellType = GaussianSet::UU;
@@ -374,9 +374,9 @@ void MoldenFile::load(GaussianSet* basis)
     }
   }
   // Now to load in the MO coefficients
-  if (m_MOcoeffs.size())
+  if (!m_MOcoeffs.empty())
     basis->setMolecularOrbitals(m_MOcoeffs);
-  if (m_orbitalEnergy.size())
+  if (!m_orbitalEnergy.empty())
     basis->setMolecularOrbitalEnergy(m_orbitalEnergy);
 }
 
