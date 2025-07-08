@@ -22,6 +22,30 @@ UnitCell::UnitCell(const Matrix3& cellMatrix_) : m_cellMatrix(cellMatrix_)
   computeFractionalMatrix();
 }
 
+void UnitCell::setAVector(const Vector3& v)
+{
+  m_cellMatrix.col(0) = v;
+  computeFractionalMatrix();
+}
+
+void UnitCell::setBVector(const Vector3& v)
+{
+  m_cellMatrix.col(1) = v;
+  computeFractionalMatrix();
+}
+
+void UnitCell::setCVector(const Vector3& v)
+{
+  m_cellMatrix.col(2) = v;
+  computeFractionalMatrix();
+}
+
+void UnitCell::setCellMatrix(const Matrix3& m)
+{
+  m_cellMatrix = m;
+  computeFractionalMatrix();
+}
+
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
                                  Real ga)
 {

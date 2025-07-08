@@ -178,24 +178,6 @@ inline void swap(UnitCell& lhs, UnitCell& rhs)
   swap(lhs.m_fractionalMatrix, rhs.m_fractionalMatrix);
 }
 
-inline void UnitCell::setAVector(const Vector3& v)
-{
-  m_cellMatrix.col(0) = v;
-  computeFractionalMatrix();
-}
-
-inline void UnitCell::setBVector(const Vector3& v)
-{
-  m_cellMatrix.col(1) = v;
-  computeFractionalMatrix();
-}
-
-inline void UnitCell::setCVector(const Vector3& v)
-{
-  m_cellMatrix.col(2) = v;
-  computeFractionalMatrix();
-}
-
 inline Real UnitCell::alpha() const
 {
   return signedAngleRadians(bVector(), cVector(), aVector());
@@ -226,12 +208,6 @@ inline Vector3 UnitCell::imageOffset(int i, int j, int k) const
 inline const Matrix3& UnitCell::cellMatrix() const
 {
   return m_cellMatrix;
-}
-
-inline void UnitCell::setCellMatrix(const Matrix3& m)
-{
-  m_cellMatrix = m;
-  computeFractionalMatrix();
 }
 
 inline const Matrix3& UnitCell::fractionalMatrix() const
