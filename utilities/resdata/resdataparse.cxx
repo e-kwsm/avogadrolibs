@@ -117,11 +117,11 @@ int main(int argc, char* argv[])
   vector<pair<string, string>> singleBonds, doubleBonds;
   while (getline(file, buffer)) {
     vector<string> params(Avogadro::Core::split(buffer, ' '));
-    if (params.size() == 0) {
+    if (params.empty()) {
 
     } else {
       if (params[0] == "RES") {
-        if (currResidue != "") {
+        if (!currResidue.empty()) {
           output << "ResidueData " << currResidue << "Data(\"" << currResidue
                  << "\",\n"
                  << "// Atoms\n{";
