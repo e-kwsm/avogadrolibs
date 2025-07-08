@@ -322,7 +322,7 @@ void ConstraintsExtension::addConstraint(const QtGui::CommandArguments& args)
     return;
   }
   if (type == Core::Constraint::AngleConstraint &&
-      !(value >= 0.0 && value <= 180.0)) {
+      (value < 0.0 || value > 180.0)) {
     emit commandFailed(tr("value must be an angle from 0 to 180 degrees."));
     return;
   }

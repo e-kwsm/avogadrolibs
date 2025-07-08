@@ -474,7 +474,7 @@ std::streamsize DecompressingStreamBuf::xsgetn(char* s, std::streamsize count)
 {
   std::streamsize total = 0;
   while (total < count) {
-    if (!(gptr() != nullptr && gptr() < egptr())) {
+    if (gptr() == nullptr || gptr() >= egptr()) {
       if (underflow() == traits_type::eof())
         break;
     }

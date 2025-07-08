@@ -203,7 +203,7 @@ bool parseInteger(const QVariant& value, const CommandArgumentSpec& spec,
       constexpr double limit = 9223372036854775808.0;
       if (!wholeNumber(value, raw))
         return notWhole();
-      if (!(raw >= -limit && raw < limit)) {
+      if (raw < -limit || raw >= limit) {
         error = CommandRegistry::tr("%1 is too large.").arg(spec.name);
         return false;
       }
