@@ -189,7 +189,7 @@ inline TextRenderStrategy* GLRenderer::textRenderStrategy()
 inline Identifier GLRenderer::hit(int x, int y) const
 {
   std::multimap<float, Identifier> results = hits(x, y);
-  if (results.size())
+  if (!results.empty())
     return results.begin()->second;
   return Identifier();
 }

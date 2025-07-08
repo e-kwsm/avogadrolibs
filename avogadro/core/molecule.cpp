@@ -108,7 +108,7 @@ void Molecule::readProperties(const Molecule& other)
   }
 
   // copy over spectra information
-  if (other.m_vibrationFrequencies.size() > 0) {
+  if (!other.m_vibrationFrequencies.empty()) {
     m_vibrationFrequencies = other.m_vibrationFrequencies;
     m_vibrationIRIntensities = other.m_vibrationIRIntensities;
     m_vibrationRamanIntensities = other.m_vibrationRamanIntensities;
@@ -506,7 +506,7 @@ signed char Molecule::totalCharge() const
   // check the data map first
   if (m_data.hasValue("totalCharge")) {
     charge = m_data.value("totalCharge").toInt();
-  } else if (m_formalCharges.size() > 0) {
+  } else if (!m_formalCharges.empty()) {
     for (Index i = 0; i < m_formalCharges.size(); ++i)
       charge += m_formalCharges[i];
     return charge;
@@ -1539,7 +1539,7 @@ bool Molecule::removeBonds(Index atom)
 
   while (true) {
     const std::vector<size_t>& bondList = m_graph.edges(atom);
-    if (!bondList.size())
+    if (bondList.empty())
       break;
     size_t bond = bondList[0];
     removeBond(bond);

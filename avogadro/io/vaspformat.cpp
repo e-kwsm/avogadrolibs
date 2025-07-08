@@ -118,7 +118,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   // In Vasp 4.x, symbols are in the title like so: " O4H2 <restOfTitle>"
   else {
     stringSplit = split(title, ' ');
-    if (stringSplit.size() != 0) {
+    if (!stringSplit.empty()) {
       string trimmedFormula = trimmed(stringSplit.at(0));
       // Let's replace all numbers with spaces
       for (char& i : trimmedFormula) {
@@ -144,7 +144,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   // If we never filled up the atomic numbers, fill them up
   // now with "1, 2, 3…"
-  if (atomicNumbers.size() == 0)
+  if (atomicNumbers.empty())
     for (size_t i = 1; i <= atomCounts.size(); ++i)
       atomicNumbers.push_back(i);
 
@@ -242,7 +242,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
 bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
 {
   // Title
-  if (mol.data("name").toString().length())
+  if (!mol.data("name").toString().empty())
     outStream << mol.data("name").toString() << std::endl;
   else
     outStream << "POSCAR" << std::endl;

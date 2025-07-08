@@ -11,7 +11,7 @@ NeighborPerceiver::NeighborPerceiver(const Array<Vector3> points,
                                      float maxDistance)
   : m_maxDistance(maxDistance), m_cachedArray(nullptr)
 {
-  if (!points.size())
+  if (points.empty())
     return;
 
   // find bounding box

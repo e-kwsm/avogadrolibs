@@ -82,13 +82,13 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
   molecule.perceiveBondsSimple();
   molecule.perceiveBondOrders();
 
-  if (m_frequencies.size() > 0 &&
+  if (!m_frequencies.empty() &&
       m_frequencies.size() == m_vibDisplacements.size() &&
       m_frequencies.size() == m_IRintensities.size()) {
     molecule.setVibrationFrequencies(m_frequencies);
     molecule.setVibrationIRIntensities(m_IRintensities);
     molecule.setVibrationLx(m_vibDisplacements);
-    if (m_RamanIntensities.size())
+    if (!m_RamanIntensities.empty())
       molecule.setVibrationRamanIntensities(m_RamanIntensities);
   }
 
@@ -142,7 +142,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
   }
 
   // check bonds from calculated bond orders
-  if (m_bondOrders.size() > 0) {
+  if (!m_bondOrders.empty()) {
     for (unsigned int i = 0; i < m_bondOrders.size(); i++) {
       // m_bondOrders[i][0] is the first atom
       // m_bondOrders[i][1] is the second atom
@@ -165,7 +165,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
   // because those automatically clear partial charges and data
 
   // add the partial charges
-  if (m_partialCharges.size() > 0) {
+  if (!m_partialCharges.empty()) {
     for (auto it = m_partialCharges.begin(); it != m_partialCharges.end();
          ++it) {
       molecule.setPartialCharges(it->first, it->second);
@@ -199,7 +199,7 @@ void ORCAOutput::processLine(std::istream& in,
     m_coordFactor = 1.; // leave the coords in BOHR ....
     m_currentMode = Atoms;
     // if there are any current coordinates, push them back
-    if (m_atomPos.size() > 0) {
+    if (!m_atomPos.empty()) {
       m_coordSets.push_back(m_atomPos);
     }
     m_atomPos.clear();
@@ -903,7 +903,7 @@ void ORCAOutput::processLine(std::istream& in,
           key = Core::trimmed(key);
 
           list = Core::split(key, ' ');
-          if (list.size() == 0)
+          if (list.empty())
             break; // unexpected structure - suppose no more NewGTOs
         }
 
@@ -966,7 +966,7 @@ void ORCAOutput::processLine(std::istream& in,
 
           numColumns = list.size();
           columns.resize(numColumns);
-          while (list.size() > 0) {
+          while (!list.empty()) {
             // get the '2s' or '1dx2y2' piece from the line
             // so we can re-order the orbitals later
             std::vector<std::string> pieces = Core::split(key, ' ');
@@ -1060,7 +1060,7 @@ void ORCAOutput::processLine(std::istream& in,
 
             numColumns = list.size();
             columns.resize(numColumns);
-            while (list.size() > 0) {
+            while (!list.empty()) {
               // get the '2s' or '1dx2y2' piece from the line
               // so we can re-order the orbitals later
               std::vector<std::string> pieces = Core::split(key, ' ');
@@ -1173,14 +1173,14 @@ void ORCAOutput::load(GaussianSet* basis)
   }
 
   // Now to load in the MO coefficients
-  if (m_MOcoeffs.size())
+  if (!m_MOcoeffs.empty())
     basis->setMolecularOrbitals(m_MOcoeffs);
-  if (m_BetaMOcoeffs.size())
+  if (!m_BetaMOcoeffs.empty())
     basis->setMolecularOrbitals(m_BetaMOcoeffs, Core::BasisSet::Beta);
 
-  if (m_orbitalEnergy.size())
+  if (!m_orbitalEnergy.empty())
     basis->setMolecularOrbitalEnergy(m_orbitalEnergy);
-  if (m_betaOrbitalEnergy.size())
+  if (!m_betaOrbitalEnergy.empty())
     basis->setMolecularOrbitalEnergy(m_betaOrbitalEnergy, Core::BasisSet::Beta);
 
   // TODO: set orbital symmetries

@@ -65,7 +65,7 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
   basis->setMolecule(&molecule);
   load(basis);
 
-  if (m_frequencies.size() > 0 &&
+  if (!m_frequencies.empty() &&
       m_frequencies.size() == m_vibDisplacements.size()) {
     molecule.setVibrationFrequencies(m_frequencies);
     molecule.setVibrationLx(m_vibDisplacements);
@@ -78,7 +78,7 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
     }
     molecule.setVibrationIRIntensities(m_IRintensities);
 
-    if (m_RamanIntensities.size())
+    if (!m_RamanIntensities.empty())
       molecule.setVibrationRamanIntensities(m_RamanIntensities);
   }
 
@@ -140,7 +140,7 @@ void MoldenFile::processLine(std::istream& in)
         line = Core::trimmed(line);
         while (!line.empty()) { // Read the shell types in this GTO.
           list = Core::split(line, ' ');
-          if (list.size() < 1)
+          if (list.empty())
             break;
           shell = list[0];
           shellType = GaussianSet::UU;
