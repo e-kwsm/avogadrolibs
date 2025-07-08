@@ -333,7 +333,7 @@ public:
       a._atom3 = k;
 
       Real theta0 = uffparams[m_atomTypes[j]].theta0 * DEG_TO_RAD;
-      a._theta0 = theta0 * RAD_TO_DEG; // store in degrees for consistency
+      a._theta0 = theta0 * RAD_TO_DEG<>; // store in degrees for consistency
 
       // calculate the kijk
       Real rij = calculateRij(i, j);
