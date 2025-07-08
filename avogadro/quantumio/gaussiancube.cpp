@@ -139,8 +139,8 @@ bool GaussianCube::write(std::ostream& outStream, const Core::Molecule& mol)
 
   const Core::Cube* cube =
     mol.cube(0); // eventually need to write all the cubes
-  Vector3 min = cube->min() * ANGSTROM_TO_BOHR;
-  Vector3 spacing = cube->spacing() * ANGSTROM_TO_BOHR;
+  Vector3 min = cube->min() * ANGSTROM_TO_BOHR<>;
+  Vector3 spacing = cube->spacing() * ANGSTROM_TO_BOHR<>;
   Vector3i dim = cube->dimensions(); // number of points in each direction
 
   // might be useful to use the 2nd line, but it's just a comment
@@ -188,9 +188,9 @@ bool GaussianCube::write(std::ostream& outStream, const Core::Molecule& mol)
 
     writeFixedInt(outStream, static_cast<int>(atom.atomicNumber()));
     writeFixedFloat(outStream, 0.0); // charge
-    writeFixedFloat(outStream, atom.position3d()[0] * ANGSTROM_TO_BOHR);
-    writeFixedFloat(outStream, atom.position3d()[1] * ANGSTROM_TO_BOHR);
-    writeFixedFloat(outStream, atom.position3d()[2] * ANGSTROM_TO_BOHR);
+    writeFixedFloat(outStream, atom.position3d()[0] * ANGSTROM_TO_BOHR<>);
+    writeFixedFloat(outStream, atom.position3d()[1] * ANGSTROM_TO_BOHR<>);
+    writeFixedFloat(outStream, atom.position3d()[2] * ANGSTROM_TO_BOHR<>);
     outStream << "\n";
   }
 
