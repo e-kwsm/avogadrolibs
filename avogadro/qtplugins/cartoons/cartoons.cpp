@@ -372,10 +372,10 @@ void Cartoons::process(const Molecule& molecule, Rendering::GroupNode& node)
         interface->showSimpleCartoon || interface->showCartoon ||
         interface->showRope) {
       map<size_t, AtomsPairList> backbones;
-      if (molecule.residues().size() > 0) {
+      if (!molecule.residues().empty()) {
         backbones = getBackboneByResidues(molecule, layer);
       }
-      if (backbones.size() == 0) {
+      if (backbones.empty()) {
         continue; // maybe something in a different layer
       }
       size_t i = 0;
