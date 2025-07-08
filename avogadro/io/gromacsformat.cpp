@@ -189,7 +189,7 @@ bool GromacsFormat::read(std::istream& in, Molecule& molecule)
   // v1(y) == v1(z) == v2(z) == 0 always.
   std::getline(in, buffer);
   std::vector<string> tokens(split(buffer, ' ', true));
-  if (tokens.size() > 0) {
+  if (!tokens.empty()) {
     if (tokens.size() != 3 && tokens.size() != 9) {
       appendError("Invalid box specification -- need either 3 or 9 values: '" +
                   buffer + "'");
