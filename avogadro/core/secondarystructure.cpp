@@ -213,7 +213,7 @@ void SecondaryStructureAssigner::assignBackboneHydrogenBonds()
     }
   }
 
-  if (m_hBonds.size() == 0)
+  if (m_hBonds.empty())
     return;
 
   // sort by z-coordinate
