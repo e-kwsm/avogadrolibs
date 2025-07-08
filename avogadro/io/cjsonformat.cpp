@@ -463,9 +463,9 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
         Real a = static_cast<Real>(unitCell["a"]);
         Real b = static_cast<Real>(unitCell["b"]);
         Real c = static_cast<Real>(unitCell["c"]);
-        Real alpha = static_cast<Real>(unitCell["alpha"]) * DEG_TO_RAD;
-        Real beta = static_cast<Real>(unitCell["beta"]) * DEG_TO_RAD;
-        Real gamma = static_cast<Real>(unitCell["gamma"]) * DEG_TO_RAD;
+        Real alpha = static_cast<Real>(unitCell["alpha"]) * DEG_TO_RAD<>;
+        Real beta = static_cast<Real>(unitCell["beta"]) * DEG_TO_RAD<>;
+        Real gamma = static_cast<Real>(unitCell["gamma"]) * DEG_TO_RAD<>;
         unitCellObject = new Core::UnitCell(a, b, c, alpha, beta, gamma);
         if (!unitCellObject->isRegular()) {
           appendError(
