@@ -372,10 +372,7 @@ bool Hdf5DataFormat::writeRawDataset(const std::string& path,
   H5Dclose(dataset_id);
   H5Sclose(dataspace_id);
 
-  if (err < 0)
-    return false;
-
-  return true;
+  return err >= 0;
 }
 
 bool Hdf5DataFormat::writeDataset(const std::string& path,
