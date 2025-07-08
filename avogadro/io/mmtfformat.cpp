@@ -70,9 +70,9 @@ bool MMTFFormat::read(std::istream& file, Molecule& molecule)
     Real a = static_cast<Real>(structure.unitCell[0]);
     Real b = static_cast<Real>(structure.unitCell[1]);
     Real c = static_cast<Real>(structure.unitCell[2]);
-    Real alpha = static_cast<Real>(structure.unitCell[3]) * DEG_TO_RAD;
-    Real beta = static_cast<Real>(structure.unitCell[4]) * DEG_TO_RAD;
-    Real gamma = static_cast<Real>(structure.unitCell[5]) * DEG_TO_RAD;
+    Real alpha = static_cast<Real>(structure.unitCell[3]) * DEG_TO_RAD<>;
+    Real beta = static_cast<Real>(structure.unitCell[4]) * DEG_TO_RAD<>;
+    Real gamma = static_cast<Real>(structure.unitCell[5]) * DEG_TO_RAD<>;
 
     auto* unitCellObject = new Core::UnitCell(a, b, c, alpha, beta, gamma);
     if (!unitCellObject->isRegular()) {
