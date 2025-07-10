@@ -84,8 +84,12 @@ void UnitCell::setCellMatrix(const Matrix3& m)
   computeFractionalMatrix();
 }
 
-void UnitCell::setFractionalMatrix(const Matrix3& m)
+void UnitCell::setFractionalMatrix(const Matrix3& m) noexcept(false)
 {
+  constexpr double tiny = 1e-6;
+  if (std::fabs(m.determinant()) < tiny) {
+    throw std::invalid_argument("singular");
+  }
   m_fractionalMatrix = m;
   computeCellMatrix();
 }

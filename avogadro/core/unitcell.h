@@ -87,7 +87,7 @@ public:
    * The matrix used to convert cartesian to fractional coordinates.
    */
   const Matrix3& fractionalMatrix() const;
-  void setFractionalMatrix(const Matrix3& m);
+  void setFractionalMatrix(const Matrix3& m) noexcept(false);
   /** @} */
 
   /**
