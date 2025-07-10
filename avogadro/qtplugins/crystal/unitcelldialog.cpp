@@ -290,13 +290,14 @@ void UnitCellDialog::updateParameters()
 void UnitCellDialog::updateCellMatrix()
 {
 #if 0
-  const auto bak = m_tempCell.cellMatrix();
-  try {
-    m_tempCell.setCellMatrix(stringToMatrix(m_ui->cellMatrix->toPlainText()));
-  } catch (std::exception& err) {
-    QMessageBox::warning(nullptr, tr("Unit Cell Editor"), tr(err.what()));
-    m_tempCell.setCellMatrix(bak);
+  const Matrix3 tmp = stringToMatrix(m_ui->cellMatrix->toPlainText());
+  constexpr double tiny = 1e-6;
+  if (std::fabs(tmp.determinant()) < tiny) {
+    QMessageBox::warning(nullptr, tr("Unit Cell Editor"),
+                         tr("Ignoring singular cell matrix"));
+    return;
   }
+  m_tempCell.setCellMatrix(tmp);
 #else
   constexpr double tiny = 1e-6;
   const Matrix3 tmp = stringToMatrix(m_ui->cellMatrix->toPlainText());
@@ -316,14 +317,14 @@ void UnitCellDialog::updateCellMatrix()
 void UnitCellDialog::updateFractionalMatrix()
 {
 #if 0
-  const auto bak = m_tempCell.fractionalMatrix();
-  try {
-    m_tempCell.setFractionalMatrix(
-      stringToMatrix(m_ui->fractionalMatrix->toPlainText()));
-  } catch (std::exception& err) {
-    QMessageBox::warning(nullptr, tr("Unit Cell Editor"), tr(err.what()));
-    m_tempCell.setFractionalMatrix(bak);
+  const Matrix3 tmp = stringToMatrix(m_ui->fractionalMatrix->toPlainText());
+  constexpr double tiny = 1e-6;
+  if (std::fabs(tmp.determinant()) < tiny) {
+    QMessageBox::warning(nullptr, tr("Unit Cell Editor"),
+                         tr("Ignoring singular fractional cell matrix"));
+    return;
   }
+  m_tempCell.setFractionalMatrix(tmp);
 #else
   constexpr double tiny = 1e-6;
   const Matrix3 tmp = stringToMatrix(m_ui->fractionalMatrix->toPlainText());
