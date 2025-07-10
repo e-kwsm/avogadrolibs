@@ -75,12 +75,13 @@ void UnitCell::setCVector(const Vector3& v) noexcept(false)
   computeFractionalMatrix();
 }
 
-void UnitCell::setCellMatrix(const Matrix3& m)
+void UnitCell::setCellMatrix(const Matrix3& m) noexcept(false)
 {
-  m_cellMatrix = m;
-  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
-    throw std::invalid_argument(s);
+  constexpr double tiny = 1e-6;
+  if (std::fabs(m.determinant()) < tiny) {
+    throw std::invalid_argument("singular");
   }
+  m_cellMatrix = m;
   computeFractionalMatrix();
 }
 

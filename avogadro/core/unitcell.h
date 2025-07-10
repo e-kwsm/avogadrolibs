@@ -80,7 +80,7 @@ public:
    * The cell matrix with lattice vectors as columns. Units: Angstrom @{
    */
   const Matrix3& cellMatrix() const;
-  void setCellMatrix(const Matrix3& m);
+  void setCellMatrix(const Matrix3& m) noexcept(false);
   /** @} */
 
   /**
