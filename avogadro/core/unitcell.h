@@ -219,12 +219,6 @@ inline const Matrix3& UnitCell::fractionalMatrix() const
   return m_fractionalMatrix;
 }
 
-inline void UnitCell::setFractionalMatrix(const Matrix3& m)
-{
-  m_fractionalMatrix = m;
-  computeCellMatrix();
-}
-
 inline Vector3 UnitCell::toFractional(const Vector3& cart) const
 {
   return m_fractionalMatrix * cart;

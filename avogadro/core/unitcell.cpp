@@ -84,6 +84,12 @@ void UnitCell::setCellMatrix(const Matrix3& m)
   computeFractionalMatrix();
 }
 
+void UnitCell::setFractionalMatrix(const Matrix3& m)
+{
+  m_fractionalMatrix = m;
+  computeCellMatrix();
+}
+
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
                                  Real ga) noexcept(false)
 {
