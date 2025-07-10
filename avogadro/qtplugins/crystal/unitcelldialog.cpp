@@ -289,6 +289,15 @@ void UnitCellDialog::updateParameters()
 
 void UnitCellDialog::updateCellMatrix()
 {
+#if 0
+  const auto bak = m_tempCell.cellMatrix();
+  try {
+    m_tempCell.setCellMatrix(stringToMatrix(m_ui->cellMatrix->toPlainText()));
+  } catch (std::exception& err) {
+    QMessageBox::warning(nullptr, tr("Unit Cell Editor"), tr(err.what()));
+    m_tempCell.setCellMatrix(bak);
+  }
+#else
   constexpr double tiny = 1e-6;
   const Matrix3 tmp = stringToMatrix(m_ui->cellMatrix->toPlainText());
   const Real a = tmp.col(0).norm();
@@ -301,10 +310,21 @@ void UnitCellDialog::updateCellMatrix()
     return;
   }
   m_tempCell.setCellMatrix(tmp);
+#endif
 }
 
 void UnitCellDialog::updateFractionalMatrix()
 {
+#if 0
+  const auto bak = m_tempCell.fractionalMatrix();
+  try {
+    m_tempCell.setFractionalMatrix(
+      stringToMatrix(m_ui->fractionalMatrix->toPlainText()));
+  } catch (std::exception& err) {
+    QMessageBox::warning(nullptr, tr("Unit Cell Editor"), tr(err.what()));
+    m_tempCell.setFractionalMatrix(bak);
+  }
+#else
   constexpr double tiny = 1e-6;
   const Matrix3 tmp = stringToMatrix(m_ui->fractionalMatrix->toPlainText());
   const Real a = tmp.col(0).norm();
@@ -317,6 +337,7 @@ void UnitCellDialog::updateFractionalMatrix()
     return;
   }
   m_tempCell.setFractionalMatrix(tmp);
+#endif
 }
 
 bool UnitCellDialog::validateCellMatrix()
