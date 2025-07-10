@@ -15,5 +15,11 @@
 
 // #include <QtCore/QVariant>
 
-TEST(crystal, UnitCellEditor) {
+#include <avogadro/core/unitcell.h>
+
+using Avogadro::Core::UnitCell;
+
+TEST(CrystalTest, UnitCellEditor)
+{
+  UnitCell uc{ 3.0, 3.0, 3.0, 90.0, 90.0, 90.0 };
 }
