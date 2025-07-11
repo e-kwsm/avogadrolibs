@@ -59,7 +59,7 @@ public:
    * @param url The url to send the request to
    * @param mol2 The mol2 representation of the molecule to download
    */
-  void sendRequest(QString url, QString);
+  void sendRequest(QString url, [[maybe_unused]] QString mol2);
 
   /**
    * @brief Sends a network request to download a png form PQR
