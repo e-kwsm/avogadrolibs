@@ -40,6 +40,9 @@ public:
   };
   using Options = int;
 
+  CrystalTools() = delete;  // not implemented
+  ~CrystalTools() = delete; // not implemented
+
   /**
    * Adjust the atomic positions in @a molecule so that the fractional (lattice)
    * coordinates of all atoms are in the range [0, 1].
@@ -145,10 +148,6 @@ public:
    */
   static bool setFractionalCoordinates(Molecule& molecule,
                                        const Array<Vector3>& coords);
-
-private:
-  CrystalTools();  // not implemented
-  ~CrystalTools(); // not implemented
 };
 
 } // namespace Avogadro::Core
