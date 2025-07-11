@@ -6,7 +6,7 @@
 // #include "qtguitests.h"
 #include <gtest/gtest.h>
 
-// #include <avogadro/qtgui/filebrowsewidget.h>
+#include <avogadro/qtplugins/crystal/unitcelldialog.h>
 
 // #include <QtTest/QSignalSpy>
 
@@ -19,7 +19,21 @@
 
 using Avogadro::Core::UnitCell;
 
-TEST(CrystalTest, UnitCellEditor)
+class CrystalTest : public testing::Test
 {
-  UnitCell uc{ 3.0, 3.0, 3.0, 90.0, 90.0, 90.0 };
+public:
+  CrystalTest();
+
+protected:
+  UnitCell m_testUnitCell;
+};
+
+CrystalTest::CrystalTest()
+{
+  m_testUnitCell.setCellParameters(3.0, 3.0, 3.0, 90.0, 90.0, 90.0);
+}
+
+TEST_F(CrystalTest, UnitCellEditor)
+{
+  Avogadro::QtPlugins::UnitCellDialog xx;
 }
