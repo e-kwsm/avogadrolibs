@@ -19,6 +19,9 @@ class Molecule;
 class AVOGADROCORE_EXPORT AtomUtilities
 {
 public:
+  AtomUtilities() = delete;  // Not implemented
+  ~AtomUtilities() = delete; // Not implemented
+
   /**
    * Perceive the geometry / hybridization bonded to @a atom.
    * Ideally, the client should cache the hybridization number
@@ -32,10 +35,6 @@ public:
   static Vector3 generateNewBondVector(
     const Atom& atom, const std::vector<Vector3>& currentVectors,
     AtomHybridization hybridization);
-
-private:
-  AtomUtilities();  // Not implemented
-  ~AtomUtilities(); // Not implemented
 };
 
 } // namespace Avogadro::Core
