@@ -289,56 +289,24 @@ void UnitCellDialog::updateParameters()
 
 void UnitCellDialog::updateCellMatrix()
 {
-#if 0
   const Matrix3 tmp = stringToMatrix(m_ui->cellMatrix->toPlainText());
-  constexpr double tiny = 1e-6;
-  if (std::fabs(tmp.determinant()) < tiny) {
+  if (!Core::UnitCell::isRegular(tmp)) {
     QMessageBox::warning(nullptr, tr("Unit Cell Editor"),
                          tr("Ignoring singular cell matrix"));
     return;
   }
   m_tempCell.setCellMatrix(tmp);
-#else
-  constexpr double tiny = 1e-6;
-  const Matrix3 tmp = stringToMatrix(m_ui->cellMatrix->toPlainText());
-  const Real a = tmp.col(0).norm();
-  const Real b = tmp.col(1).norm();
-  const Real c = tmp.col(2).norm();
-  const Real w = a * b * c;
-  if (w <= 0.0 || std::fabs(tmp.determinant()) < w * tiny) {
-    QMessageBox::warning(nullptr, tr("Unit Cell Editor"),
-                         tr("Ignoring singular cell matrix"));
-    return;
-  }
-  m_tempCell.setCellMatrix(tmp);
-#endif
 }
 
 void UnitCellDialog::updateFractionalMatrix()
 {
-#if 0
   const Matrix3 tmp = stringToMatrix(m_ui->fractionalMatrix->toPlainText());
-  constexpr double tiny = 1e-6;
-  if (std::fabs(tmp.determinant()) < tiny) {
+  if (!Core::UnitCell::isRegular(tmp)) {
     QMessageBox::warning(nullptr, tr("Unit Cell Editor"),
                          tr("Ignoring singular fractional cell matrix"));
     return;
   }
   m_tempCell.setFractionalMatrix(tmp);
-#else
-  constexpr double tiny = 1e-6;
-  const Matrix3 tmp = stringToMatrix(m_ui->fractionalMatrix->toPlainText());
-  const Real a = tmp.col(0).norm();
-  const Real b = tmp.col(1).norm();
-  const Real c = tmp.col(2).norm();
-  const Real w = a * b * c;
-  if (w <= 0.0 || std::fabs(tmp.determinant()) < w * tiny) {
-    QMessageBox::warning(nullptr, tr("Unit Cell Editor"),
-                         tr("Ignoring singular fractional cell matrix"));
-    return;
-  }
-  m_tempCell.setFractionalMatrix(tmp);
-#endif
 }
 
 bool UnitCellDialog::validateCellMatrix()
