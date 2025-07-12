@@ -27,6 +27,16 @@ std::string UnitCell::errorCellParameters(const std::string& name) const
   return ss.str();
 }
 
+bool UnitCell::isRegular(const Matrix3& m)
+{
+  constexpr double tiny = 1e-6;
+  const auto a = m.col(0).norm();
+  const auto b = m.col(1).norm();
+  const auto c = m.col(2).norm();
+  const auto w = a * b * c;
+  return w > 0.0 && std::fabs(m.determinant()) > tiny * w;
+}
+
 UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
                    const Vector3& c_) noexcept(false)
 {
