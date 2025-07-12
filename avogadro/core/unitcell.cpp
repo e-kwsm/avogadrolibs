@@ -10,23 +10,6 @@
 
 namespace Avogadro::Core {
 
-std::string UnitCell::errorCellParameters(const std::string& name) const
-{
-  if (volume() > 0.0)
-    return "";
-  Eigen::IOFormat v3_fmt{
-    Eigen::StreamPrecision, 0, " ", ", ", "", "", "[", "]"
-  };
-  std::stringstream ss;
-  ss << name
-     << ": lattice vectors does not span "
-        "(zero length or linearly dependent)\n"
-     << "a=" << aVector().format(v3_fmt) << "\n"
-     << "b=" << bVector().format(v3_fmt) << "\n"
-     << "c=" << cVector().format(v3_fmt) << "\n";
-  return ss.str();
-}
-
 bool UnitCell::isRegular(const Matrix3& m)
 {
   constexpr double tiny = 1e-6;

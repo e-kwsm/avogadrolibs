@@ -144,8 +144,6 @@ private:
   {
     m_fractionalMatrix = m_cellMatrix.inverse();
   }
-  /// @return error message if the cell has a problem
-  std::string errorCellParameters(const std::string& name) const;
   static bool isRegular(const Matrix3& m);
 
   Matrix3 m_cellMatrix;
