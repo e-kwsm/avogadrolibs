@@ -137,9 +137,10 @@ public:
   Real distance(const Vector3& v1, const Vector3& v2) const;
 
   /**
-   * @return if argument is regular, i.e. its determinant is nonzero
+   * @return if @a m is regular, i.e. its determinant is nonzero
    */
   static bool isRegular(const Matrix3& m);
+  bool isRegular() const { return isRegular(m_cellMatrix); }
 
 private:
   static Real signedAngleRadians(const Vector3& v1, const Vector3& v2,
