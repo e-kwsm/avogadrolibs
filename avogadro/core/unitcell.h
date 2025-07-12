@@ -136,6 +136,11 @@ public:
    */
   Real distance(const Vector3& v1, const Vector3& v2) const;
 
+  /**
+   * @return if argument is regular, i.e. its determinant is nonzero
+   */
+  static bool isRegular(const Matrix3& m);
+
 private:
   static Real signedAngleRadians(const Vector3& v1, const Vector3& v2,
                                  const Vector3& axis);
@@ -144,7 +149,6 @@ private:
   {
     m_fractionalMatrix = m_cellMatrix.inverse();
   }
-  static bool isRegular(const Matrix3& m);
 
   Matrix3 m_cellMatrix;
   Matrix3 m_fractionalMatrix;
