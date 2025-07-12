@@ -27,7 +27,7 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
   m_cellMatrix.col(1) = b_;
   m_cellMatrix.col(2) = c_;
   if (!isRegular(m_cellMatrix)) {
-    throw std::invalid_argument("singular");
+    throw std::invalid_argument("cell matrix is singular");
   }
   computeFractionalMatrix();
 }
@@ -36,7 +36,7 @@ UnitCell::UnitCell(const Matrix3& cellMatrix_) noexcept(false)
   : m_cellMatrix(cellMatrix_)
 {
   if (!isRegular(m_cellMatrix)) {
-    throw std::invalid_argument("singular");
+    throw std::invalid_argument("cell matrix is singular");
   }
   computeFractionalMatrix();
 }
@@ -45,7 +45,7 @@ void UnitCell::setAVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(0) = v;
   if (!isRegular(m_cellMatrix)) {
-    throw std::invalid_argument("singular");
+    throw std::invalid_argument("cell matrix is singular");
   }
   computeFractionalMatrix();
 }
@@ -54,7 +54,7 @@ void UnitCell::setBVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(1) = v;
   if (!isRegular(m_cellMatrix)) {
-    throw std::invalid_argument("singular");
+    throw std::invalid_argument("cell matrix is singular");
   }
   computeFractionalMatrix();
 }
@@ -63,7 +63,7 @@ void UnitCell::setCVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(2) = v;
   if (!isRegular(m_cellMatrix)) {
-    throw std::invalid_argument("singular");
+    throw std::invalid_argument("cell matrix is singular");
   }
   computeFractionalMatrix();
 }
@@ -71,7 +71,7 @@ void UnitCell::setCVector(const Vector3& v) noexcept(false)
 void UnitCell::setCellMatrix(const Matrix3& m) noexcept(false)
 {
   if (!isRegular(m)) {
-    throw std::invalid_argument("singular");
+    throw std::invalid_argument("cell matrix is singular");
   }
   m_cellMatrix = m;
   computeFractionalMatrix();
@@ -80,7 +80,7 @@ void UnitCell::setCellMatrix(const Matrix3& m) noexcept(false)
 void UnitCell::setFractionalMatrix(const Matrix3& m) noexcept(false)
 {
   if (!isRegular(m)) {
-    throw std::invalid_argument("singular");
+    throw std::invalid_argument("fractional cell matrix is singular");
   }
   m_fractionalMatrix = m;
   computeCellMatrix();

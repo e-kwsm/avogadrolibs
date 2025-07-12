@@ -267,19 +267,16 @@ void UnitCellDialog::revertFractionalMatrix()
 
 void UnitCellDialog::updateParameters()
 {
-  constexpr double tiny = 1e-6;
   const auto a = static_cast<Real>(m_ui->a->value());
   const auto b = static_cast<Real>(m_ui->b->value());
   const auto c = static_cast<Real>(m_ui->c->value());
   assert(a > 0.0 && b > 0.0 && c > 0.0);
-  const auto w = a * b * c;
   Core::UnitCell tmp;
   tmp.setCellParameters(a, b, c,
                         static_cast<Real>(m_ui->alpha->value()) * DEG_TO_RAD,
                         static_cast<Real>(m_ui->beta->value()) * DEG_TO_RAD,
                         static_cast<Real>(m_ui->gamma->value()) * DEG_TO_RAD);
-  const auto vol = tmp.volume();
-  if (std::isnan(vol) || vol < tiny * w) {
+  if (tmp.isRegular()) {
     QMessageBox::warning(nullptr, tr("Unit Cell Editor"),
                          tr("Ignoring singular cell matrix"));
     return;
