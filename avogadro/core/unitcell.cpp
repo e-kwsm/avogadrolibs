@@ -43,8 +43,8 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
   m_cellMatrix.col(0) = a_;
   m_cellMatrix.col(1) = b_;
   m_cellMatrix.col(2) = c_;
-  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
-    throw std::invalid_argument(s);
+  if (!isRegular(m_cellMatrix)) {
+    throw std::invalid_argument("singular");
   }
   computeFractionalMatrix();
 }
@@ -52,8 +52,8 @@ UnitCell::UnitCell(const Vector3& a_, const Vector3& b_,
 UnitCell::UnitCell(const Matrix3& cellMatrix_) noexcept(false)
   : m_cellMatrix(cellMatrix_)
 {
-  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
-    throw std::invalid_argument(s);
+  if (!isRegular(m_cellMatrix)) {
+    throw std::invalid_argument("singular");
   }
   computeFractionalMatrix();
 }
@@ -61,8 +61,8 @@ UnitCell::UnitCell(const Matrix3& cellMatrix_) noexcept(false)
 void UnitCell::setAVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(0) = v;
-  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
-    throw std::invalid_argument(s);
+  if (!isRegular(m_cellMatrix)) {
+    throw std::invalid_argument("singular");
   }
   computeFractionalMatrix();
 }
@@ -70,8 +70,8 @@ void UnitCell::setAVector(const Vector3& v) noexcept(false)
 void UnitCell::setBVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(1) = v;
-  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
-    throw std::invalid_argument(s);
+  if (!isRegular(m_cellMatrix)) {
+    throw std::invalid_argument("singular");
   }
   computeFractionalMatrix();
 }
@@ -79,16 +79,15 @@ void UnitCell::setBVector(const Vector3& v) noexcept(false)
 void UnitCell::setCVector(const Vector3& v) noexcept(false)
 {
   m_cellMatrix.col(2) = v;
-  if (auto s = errorCellParameters(__FUNCTION__); !s.empty()) {
-    throw std::invalid_argument(s);
+  if (!isRegular(m_cellMatrix)) {
+    throw std::invalid_argument("singular");
   }
   computeFractionalMatrix();
 }
 
 void UnitCell::setCellMatrix(const Matrix3& m) noexcept(false)
 {
-  constexpr double tiny = 1e-6;
-  if (std::fabs(m.determinant()) < tiny) {
+  if (!isRegular(m)) {
     throw std::invalid_argument("singular");
   }
   m_cellMatrix = m;
@@ -97,8 +96,7 @@ void UnitCell::setCellMatrix(const Matrix3& m) noexcept(false)
 
 void UnitCell::setFractionalMatrix(const Matrix3& m) noexcept(false)
 {
-  constexpr double tiny = 1e-6;
-  if (std::fabs(m.determinant()) < tiny) {
+  if (!isRegular(m)) {
     throw std::invalid_argument("singular");
   }
   m_fractionalMatrix = m;
