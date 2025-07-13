@@ -188,7 +188,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // Let's make a unit cell
-  auto* cell = new UnitCell(cellMat);
+  auto cell = std::make_unique<UnitCell>(cellMat);
 
   // If our atomic coordinates are fractional, convert them to Cartesian
   if (!cart) {
@@ -205,7 +205,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   // Delete the current molecule. Add the new title and unit cell
   mol.clearAtoms();
   mol.setData("name", title);
-  mol.setUnitCell(cell);
+  mol.setUnitCell(cell.release());
 
   // Now add the atoms
   size_t k = 0;
