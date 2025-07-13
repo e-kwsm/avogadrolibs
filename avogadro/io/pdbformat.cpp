@@ -82,14 +82,14 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
         return false;
       }
 
-      auto* cell = new Core::UnitCell(*a, *b, *c, *alpha * DEG_TO_RAD,
-                                      *beta * DEG_TO_RAD, *gamma * DEG_TO_RAD);
+      auto cell = std::make_unique<Core::UnitCell>(
+        *a, *b, *c, *alpha * DEG_TO_RAD, *beta * DEG_TO_RAD,
+        *gamma * DEG_TO_RAD);
       if (!cell->isRegular()) {
         appendError("CRYST1 does not give linear independent lattice vectors");
-        delete cell;
         return false;
       }
-      mol.setUnitCell(cell);
+      mol.setUnitCell(cell.release());
     }
 
     else if (startsWith(buffer, "ATOM") || startsWith(buffer, "HETATM")) {
