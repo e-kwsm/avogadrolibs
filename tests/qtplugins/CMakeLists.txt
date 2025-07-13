@@ -4,6 +4,7 @@
 #  "${AvogadroLibs_SOURCE_DIR}/tests/core")
 #
 #find_package(Qt${QT_VERSION} COMPONENTS Widgets Network Test REQUIRED)
+find_package(Qt${QT_VERSION} COMPONENTS Widgets Test REQUIRED)
 #
 ## Find python interpreter for input generator
 #find_package(Python3 COMPONENTS Interpreter)
@@ -18,12 +19,6 @@
 # Specify the name of each test (the Test will be appended where needed).
 set(tests
   Crystal
-# GenericHighlighter
-# HydrogenTools
-# # GitHub is showing this as a free() bug
-# # TODO: Fix this
-# # Molecule
-# RWMolecule
   )
 
 #if (BUILD_MOLEQUEUE)
@@ -57,8 +52,7 @@ endforeach()
 add_executable(AvogadroQtPluginsTests ${testSrcs})
 target_link_libraries(AvogadroQtPluginsTests Avogadro::QtPlugins ${MoleQueueLink}
  ${GTEST_BOTH_LIBRARIES} ${EXTRA_LINK_LIB}
-#Qt${QT_VERSION}::Widgets Qt${QT_VERSION}::Test
-)
+ Qt${QT_VERSION}::Widgets Qt${QT_VERSION}::Test)
 
 # Now add all of the tests, using the gtest_filter argument so that only those
 # cases are run in each test invocation.
