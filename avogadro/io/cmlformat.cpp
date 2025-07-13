@@ -173,6 +173,10 @@ bool CmlFormatPrivate::properties()
 
     auto* cell = new UnitCell;
     cell->setCellParameters(a, b, c, alpha, beta, gamma);
+    if (!cell->isRegular()) {
+      error += "<crystal> gives singular lattice vector";
+      return false;
+    }
     molecule->setUnitCell(cell);
     if (hall != 0)
       molecule->setHallNumber(hall);

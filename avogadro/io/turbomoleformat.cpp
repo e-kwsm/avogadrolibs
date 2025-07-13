@@ -150,11 +150,17 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
     getline(inStream, buffer);
   } // done reading the file
 
+  Core::UnitCell* cell = nullptr;
   if (hasLattice) {
-    auto* cell = new Core::UnitCell(v1, v2, v3);
-    mol.setUnitCell(cell);
+    cell = new Core::UnitCell(v1, v2, v3);
   } else if (hasCell) {
-    auto* cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+    cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+  }
+  if (cell) {
+    if (!cell->isRegular()) {
+      appendError("$cell or $lattice gives singular lattice vectors");
+      return false;
+    }
     mol.setUnitCell(cell);
   }
 
