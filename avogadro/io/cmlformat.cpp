@@ -154,9 +154,9 @@ public:
         }
       }
 
-      auto* cell = new UnitCell;
+      auto cell = std::make_unique<UnitCell>();
       cell->setCellParameters(a, b, c, alpha, beta, gamma);
-      molecule->setUnitCell(cell);
+      molecule->setUnitCell(cell.release());
       if (hall != 0)
         molecule->setHallNumber(hall);
     }
