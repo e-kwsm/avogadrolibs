@@ -187,7 +187,7 @@ vec4 applyFog(vec2 texCoord) {
 
 float computeEdgeLuminosity(vec3 normal)
 {
-    return max(0.0, pow(normal.z - 0.1, 1.0 / 3.0));
+    return max(0.0, cbrt(normal.z - 0.1));
 }
 
 void main() {
