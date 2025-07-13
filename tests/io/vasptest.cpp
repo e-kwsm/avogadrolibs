@@ -67,6 +67,48 @@ TEST(VaspTest, readPoscar)
   EXPECT_DOUBLE_EQ(pos5.z(), 0.5);
 }
 
+TEST(VaspTest, readInvalidPoscar)
+{
+  Molecule molecule;
+  PoscarFormat poscar;
+  EXPECT_FALSE(poscar.readString(R"(vector length is zero
+5.43
+  0.00  0.00  0.00
+  0.00  1.00  0.00
+  0.00  0.00  1.00
+Si
+1
+Direct
+  0.00  0.00  0.00
+)",
+                                 molecule));
+
+  EXPECT_FALSE(poscar.readString(R"(angle is zero
+5.43
+  1.00  0.00  0.00
+  2.00  0.00  0.00
+  0.00  0.00  1.00
+Si
+1
+Direct
+  0.00  0.00  0.00
+)",
+                                 molecule));
+
+  EXPECT_FALSE(
+    poscar.readString(R"(non-zero vector and angle, but linear dependent
+5.43
+  1.00  0.00  0.25
+  0.00  1.00  0.75
+  1.00  1.00  1.00
+Si
+1
+Direct
+  0.00  0.00  0.00
+)",
+                      molecule));
+}
+
 TEST(VaspTest, writePoscar)
 {
   PoscarFormat poscar;
