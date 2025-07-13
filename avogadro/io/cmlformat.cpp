@@ -145,14 +145,13 @@ public:
         }
       }
 
-      auto* cell = new UnitCell;
+      auto cell = std::make_unique<UnitCell>();
       cell->setCellParameters(a, b, c, alpha, beta, gamma);
       if (!cell->isRegular()) {
         error += "<crystal> does not give linear independent lattice vectors";
-        delete cell;
         return false;
       }
-      molecule->setUnitCell(cell);
+      molecule->setUnitCell(cell.release());
       if (hall != 0)
         molecule->setHallNumber(hall);
     }
