@@ -336,7 +336,7 @@ float Surfaces::resolution(float specified)
   if (m_dialog != nullptr && !m_dialog->automaticResolution())
     return m_dialog->resolution();
 
-  float r = 0.02 * powf(m_molecule->atomCount(), 1.0f / 3.0f);
+  float r = 0.02 * cbrtf(m_molecule->atomCount());
   float minimum = 0.05;
   float maximum = 0.5;
 
