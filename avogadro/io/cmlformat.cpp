@@ -41,7 +41,8 @@ namespace {
 class CmlFormatPrivate
 {
 public:
-  CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_);
+  CmlFormatPrivate(Molecule* mol, xml_document& document,
+                   std::string filename_);
 
   bool properties();
   bool atoms();
@@ -56,413 +57,413 @@ public:
   string error;
 };
 
-  CmlFormatPrivate::CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_)
-    : success(false), molecule(mol), moleculeNode(nullptr), filename(filename_)
-  {
-    // Parse the CML document, and create molecules/elements as necessary.
-    moleculeNode = document.child("molecule");
-    xml_node cmlNode = document.child("cml");
-    if (cmlNode)
-      moleculeNode = cmlNode.child("molecule");
+CmlFormatPrivate::CmlFormatPrivate(Molecule* mol, xml_document& document,
+                                   std::string filename_)
+  : success(false), molecule(mol), moleculeNode(nullptr), filename(filename_)
+{
+  // Parse the CML document, and create molecules/elements as necessary.
+  moleculeNode = document.child("molecule");
+  xml_node cmlNode = document.child("cml");
+  if (cmlNode)
+    moleculeNode = cmlNode.child("molecule");
 
-    if (moleculeNode) {
+  if (moleculeNode) {
 // Parse the various components we know about.
 #ifdef AVO_USE_HDF5
-      data();
+    data();
 #endif
-      success = properties();
-      if (success)
-        success = atoms();
-      if (success)
-        success = bonds();
-    } else {
-      error += "Error, no molecule node found.";
-      success = false;
+    success = properties();
+    if (success)
+      success = atoms();
+    if (success)
+      success = bonds();
+  } else {
+    error += "Error, no molecule node found.";
+    success = false;
+  }
+}
+
+bool CmlFormatPrivate::properties()
+{
+  xml_attribute attribute;
+  xml_node node;
+  node = moleculeNode.child("name");
+  if (node && node.value())
+    molecule->setData("name", std::string(node.child_value()));
+  node = moleculeNode.child("identifier");
+  if (node && node.value()) {
+    attribute = node.attribute("convention");
+    if (attribute && std::string(attribute.value()) == "iupac:inchi") {
+      attribute = node.attribute("value");
+      if (attribute && std::string(attribute.name()) == "value")
+        molecule->setData("inchi", std::string(attribute.value()));
     }
   }
 
-  bool CmlFormatPrivate::properties()
-  {
-    xml_attribute attribute;
-    xml_node node;
-    node = moleculeNode.child("name");
-    if (node && node.value())
-      molecule->setData("name", std::string(node.child_value()));
-    node = moleculeNode.child("identifier");
-    if (node && node.value()) {
-      attribute = node.attribute("convention");
-      if (attribute && std::string(attribute.value()) == "iupac:inchi") {
-        attribute = node.attribute("value");
-        if (attribute && std::string(attribute.name()) == "value")
-          molecule->setData("inchi", std::string(attribute.value()));
-      }
-    }
-
-    // Unit cell:
-    node = moleculeNode.child("crystal");
-    if (node) {
-      float a(0);
-      float b(0);
-      float c(0);
-      float alpha(0);
-      float beta(0);
-      float gamma(0);
-      enum
-      {
-        CellA = 0,
-        CellB,
-        CellC,
-        CellAlpha,
-        CellBeta,
-        CellGamma
-      };
-      std::bitset<6> parsedValues;
-      for (pugi::xml_node scalar = node.child("scalar"); scalar;
-           scalar = scalar.next_sibling("scalar")) {
-        pugi::xml_attribute title = scalar.attribute("title");
-        if (title) {
-          std::string titleStr(title.value());
-          if (titleStr == "a") {
-            a = scalar.text().as_float();
-            parsedValues.set(CellA);
-          } else if (titleStr == "b") {
-            b = scalar.text().as_float();
-            parsedValues.set(CellB);
-          } else if (titleStr == "c") {
-            c = scalar.text().as_float();
-            parsedValues.set(CellC);
-          } else if (titleStr == "alpha") {
-            alpha = scalar.text().as_float() * DEG_TO_RAD_F;
-            parsedValues.set(CellAlpha);
-          } else if (titleStr == "beta") {
-            beta = scalar.text().as_float() * DEG_TO_RAD_F;
-            parsedValues.set(CellBeta);
-          } else if (titleStr == "gamma") {
-            gamma = scalar.text().as_float() * DEG_TO_RAD_F;
-            parsedValues.set(CellGamma);
-          }
+  // Unit cell:
+  node = moleculeNode.child("crystal");
+  if (node) {
+    float a(0);
+    float b(0);
+    float c(0);
+    float alpha(0);
+    float beta(0);
+    float gamma(0);
+    enum
+    {
+      CellA = 0,
+      CellB,
+      CellC,
+      CellAlpha,
+      CellBeta,
+      CellGamma
+    };
+    std::bitset<6> parsedValues;
+    for (pugi::xml_node scalar = node.child("scalar"); scalar;
+         scalar = scalar.next_sibling("scalar")) {
+      pugi::xml_attribute title = scalar.attribute("title");
+      if (title) {
+        std::string titleStr(title.value());
+        if (titleStr == "a") {
+          a = scalar.text().as_float();
+          parsedValues.set(CellA);
+        } else if (titleStr == "b") {
+          b = scalar.text().as_float();
+          parsedValues.set(CellB);
+        } else if (titleStr == "c") {
+          c = scalar.text().as_float();
+          parsedValues.set(CellC);
+        } else if (titleStr == "alpha") {
+          alpha = scalar.text().as_float() * DEG_TO_RAD_F;
+          parsedValues.set(CellAlpha);
+        } else if (titleStr == "beta") {
+          beta = scalar.text().as_float() * DEG_TO_RAD_F;
+          parsedValues.set(CellBeta);
+        } else if (titleStr == "gamma") {
+          gamma = scalar.text().as_float() * DEG_TO_RAD_F;
+          parsedValues.set(CellGamma);
         }
       }
-      if (parsedValues.count() != 6) {
-        error += "Incomplete unit cell description.";
-        return false;
-      }
-
-      // look for space group, e.g.
-      // <symmetry spaceGroup="F -4 2 3">
-      xml_node symmetry = node.child("symmetry");
-      unsigned short hall = 0;
-      if (symmetry) {
-        xml_attribute spaceGroup = symmetry.attribute("spaceGroup");
-        if (spaceGroup) {
-          // look for space group in the space group table
-          hall = Core::SpaceGroups::hallNumber(std::string(spaceGroup.value()));
-        }
-      }
-
-      auto* cell = new UnitCell;
-      cell->setCellParameters(a, b, c, alpha, beta, gamma);
-      if (!cell->isRegular()) {
-        error += "<crystal> does not give linear independent lattice vectors";
-        delete cell;
-        return false;
-      }
-      molecule->setUnitCell(cell);
-      if (hall != 0)
-        molecule->setHallNumber(hall);
     }
-    return true;
-  }
-
-  bool CmlFormatPrivate::atoms()
-  {
-    xml_node atomArray = moleculeNode.child("atomArray");
-    if (!atomArray)
+    if (parsedValues.count() != 6) {
+      error += "Incomplete unit cell description.";
       return false;
-
-    xml_node node = atomArray.child("atom");
-    Atom atom;
-    while (node) {
-      // Step through all of the atom attributes and store them.
-      {
-        /* Element Attribute Check */
-        xml_attribute elementAtt = node.attribute("elementType");
-        if (elementAtt) {
-          unsigned char atomicNumber =
-            Elements::atomicNumberFromSymbol(elementAtt.value());
-          atom = molecule->addAtom(atomicNumber);
-        } else {
-          // There is no element data, this atom node is corrupt.
-          error += "Warning, corrupt element node found.";
-          return false;
-        }
-      }
-
-      {
-        /* ID Attribute Check */
-        xml_attribute idAtt = node.attribute("id");
-        if (idAtt)
-          atomIds[std::string(idAtt.value())] = atom.index();
-        else // Atom nodes must have IDs - bail.
-          return false;
-      }
-
-      // Check for 3D geometry.
-      {
-        /* XYZ3 and Fract Attribute Check */
-        xml_attribute x3Att = node.attribute("x3");
-        xml_attribute xFractAtt = node.attribute("xFract");
-        if (x3Att) {
-          xml_attribute y3 = node.attribute("y3");
-          xml_attribute z3 = node.attribute("z3");
-          if (y3 && z3) {
-            auto x = lexicalCast<double>(x3Att.value());
-            auto y = lexicalCast<double>(y3.value());
-            auto z = lexicalCast<double>(z3.value());
-            if (x && y && z) {
-              // It looks like we have a valid 3D position.
-              Vector3 position(*x, *y, *z);
-              atom.setPosition3d(position);
-            } else {
-              error += "x3, y3 or z3 attribute is malformed: ["s +
-                       x3Att.value() + ", "s + y3.value() + ", "s + z3.value() +
-                       "]."s;
-              return false;
-            }
-          } else {
-            // Corrupt 3D position supplied for atom.
-            return false;
-          }
-        } else if (xFractAtt) {
-          if (!molecule->unitCell()) {
-            error += "No unit cell defined. "
-                     "Cannot interpret fractional coordinates.";
-            return false;
-          }
-          xml_attribute yF = node.attribute("yFract");
-          xml_attribute zF = node.attribute("zFract");
-          if (yF && zF) {
-            Vector3 coord(static_cast<Real>(xFractAtt.as_float()),
-                          static_cast<Real>(yF.as_float()),
-                          static_cast<Real>(zF.as_float()));
-            molecule->unitCell()->toCartesian(coord, coord);
-            atom.setPosition3d(coord);
-          } else {
-            error += "Missing y or z fractional coordinate on atom.";
-            return false;
-          }
-        }
-      }
-
-      // Check for 2D geometry.
-      {
-        /* XY2 Attribute Check */
-        xml_attribute x2Att = node.attribute("x2");
-        if (x2Att) {
-          xml_attribute y2 = node.attribute("y2");
-          if (y2) {
-            auto x = lexicalCast<double>(x2Att.value());
-            auto y = lexicalCast<double>(y2.value());
-            if (x && y) {
-              Vector2 position(*x, *y);
-              atom.setPosition2d(position);
-            } else {
-              error += "x2 or y2 attribute is malformed: ["s + x2Att.value() +
-                       ", "s + y2.value() + "]."s;
-              return false;
-            }
-          } else {
-            // Corrupt 2D position supplied for atom.
-            return false;
-          }
-        }
-      }
-
-      // Check formal charge.
-      {
-        /* Formal Charge Attribute Check */
-        xml_attribute formalChargeAtt = node.attribute("formalCharge");
-        if (formalChargeAtt) {
-          if (auto formalCharge =
-                lexicalCast<signed int>(formalChargeAtt.value())) {
-            atom.setFormalCharge(*formalCharge);
-          } else {
-            error += "formalCharge attribute is malformed: "s +
-                     formalChargeAtt.value();
-            return false;
-          }
-        }
-      }
-
-      // Move on to the next atom node (if there is one).
-      node = node.next_sibling("atom");
     }
-    return true;
-  }
 
-  bool CmlFormatPrivate::bonds()
-  {
-    xml_node bondArray = moleculeNode.child("bondArray");
-    if (!bondArray)
-      return true;
-
-    xml_node node = bondArray.child("bond");
-
-    while (node) {
-      xml_attribute attribute = node.attribute("atomRefs2");
-      Bond bond;
-      if (attribute) {
-        // Should contain two elements separated by a space.
-        std::string refs(attribute.value());
-        std::vector<std::string> tokens = split(refs, ' ');
-        if (tokens.size() != 2) // Corrupted file/input we don't understand
-          return false;
-        std::map<std::string, Index>::const_iterator begin, end;
-        begin = atomIds.find(tokens[0]);
-        end = atomIds.find(tokens[1]);
-        if (begin != atomIds.end() && end != atomIds.end() &&
-            begin->second < molecule->atomCount() &&
-            end->second < molecule->atomCount()) {
-          bond = molecule->addBond(molecule->atom(begin->second),
-                                   molecule->atom(end->second));
-        } else { // Couldn't parse the bond begin and end.
-          return false;
-        }
+    // look for space group, e.g.
+    // <symmetry spaceGroup="F -4 2 3">
+    xml_node symmetry = node.child("symmetry");
+    unsigned short hall = 0;
+    if (symmetry) {
+      xml_attribute spaceGroup = symmetry.attribute("spaceGroup");
+      if (spaceGroup) {
+        // look for space group in the space group table
+        hall = Core::SpaceGroups::hallNumber(std::string(spaceGroup.value()));
       }
+    }
 
-      if (!bond.isValid()) {
-        // Couldn't create the bond.
+    auto* cell = new UnitCell;
+    cell->setCellParameters(a, b, c, alpha, beta, gamma);
+    if (!cell->isRegular()) {
+      error += "<crystal> does not give linear independent lattice vectors";
+      delete cell;
+      return false;
+    }
+    molecule->setUnitCell(cell);
+    if (hall != 0)
+      molecule->setHallNumber(hall);
+  }
+  return true;
+}
+
+bool CmlFormatPrivate::atoms()
+{
+  xml_node atomArray = moleculeNode.child("atomArray");
+  if (!atomArray)
+    return false;
+
+  xml_node node = atomArray.child("atom");
+  Atom atom;
+  while (node) {
+    // Step through all of the atom attributes and store them.
+    {
+      /* Element Attribute Check */
+      xml_attribute elementAtt = node.attribute("elementType");
+      if (elementAtt) {
+        unsigned char atomicNumber =
+          Elements::atomicNumberFromSymbol(elementAtt.value());
+        atom = molecule->addAtom(atomicNumber);
+      } else {
+        // There is no element data, this atom node is corrupt.
+        error += "Warning, corrupt element node found.";
         return false;
       }
-
-      attribute = node.attribute("order");
-      if (attribute && strlen(attribute.value()) == 1) {
-        char o = attribute.value()[0];
-        switch (o) {
-          case '1':
-          case 'S':
-          case 's':
-            bond.setOrder(1);
-            break;
-          case '2':
-          case 'D':
-          case 'd':
-            bond.setOrder(2);
-            break;
-          case '3':
-          case 'T':
-          case 't':
-            bond.setOrder(3);
-            break;
-          case '4':
-            bond.setOrder(4);
-            break;
-          case '5':
-            bond.setOrder(5);
-            break;
-          case '6':
-            bond.setOrder(6);
-            break;
-          default:
-            bond.setOrder(1);
-        }
-      } else {
-        bond.setOrder(1);
-      }
-
-      // Move on to the next bond node (if there is one).
-      node = node.next_sibling("bond");
     }
 
-    return true;
-  }
+    {
+      /* ID Attribute Check */
+      xml_attribute idAtt = node.attribute("id");
+      if (idAtt)
+        atomIds[std::string(idAtt.value())] = atom.index();
+      else // Atom nodes must have IDs - bail.
+        return false;
+    }
 
-#ifdef AVO_USE_HDF5
-  bool CmlFormatPrivate::data()
-  {
-    xml_node dataNode = moleculeNode.child("dataMap").first_child();
-    if (!dataNode)
-      return true;
-
-    // Check if HDF5 file exists before attempting to open it
-    bool hdf5Available = false;
-    Hdf5DataFormat hdf5;
-    if (std::ifstream(filename + ".h5").good()) {
-      if (hdf5.openFile(filename + ".h5", Hdf5DataFormat::ReadOnly)) {
-        hdf5Available = true;
+    // Check for 3D geometry.
+    {
+      /* XYZ3 and Fract Attribute Check */
+      xml_attribute x3Att = node.attribute("x3");
+      xml_attribute xFractAtt = node.attribute("xFract");
+      if (x3Att) {
+        xml_attribute y3 = node.attribute("y3");
+        xml_attribute z3 = node.attribute("z3");
+        if (y3 && z3) {
+          auto x = lexicalCast<double>(x3Att.value());
+          auto y = lexicalCast<double>(y3.value());
+          auto z = lexicalCast<double>(z3.value());
+          if (x && y && z) {
+            // It looks like we have a valid 3D position.
+            Vector3 position(*x, *y, *z);
+            atom.setPosition3d(position);
+          } else {
+            error += "x3, y3 or z3 attribute is malformed: ["s + x3Att.value() +
+                     ", "s + y3.value() + ", "s + z3.value() + "]."s;
+            return false;
+          }
+        } else {
+          // Corrupt 3D position supplied for atom.
+          return false;
+        }
+      } else if (xFractAtt) {
+        if (!molecule->unitCell()) {
+          error += "No unit cell defined. "
+                   "Cannot interpret fractional coordinates.";
+          return false;
+        }
+        xml_attribute yF = node.attribute("yFract");
+        xml_attribute zF = node.attribute("zFract");
+        if (yF && zF) {
+          Vector3 coord(static_cast<Real>(xFractAtt.as_float()),
+                        static_cast<Real>(yF.as_float()),
+                        static_cast<Real>(zF.as_float()));
+          molecule->unitCell()->toCartesian(coord, coord);
+          atom.setPosition3d(coord);
+        } else {
+          error += "Missing y or z fractional coordinate on atom.";
+          return false;
+        }
       }
     }
-    do {
-      std::string dataNodeName = dataNode.name();
-      std::string dataName = dataNode.attribute("name").as_string();
-      std::string dataType = dataNode.attribute("dataType").as_string();
-      std::stringstream dataStream(dataNode.text().as_string());
-      Variant variant;
 
-      // Read data from HDF5?
-      if (dataNodeName == "hdf5data") {
-        if (!hdf5Available) {
-          error += "CmlFormatPrivate::data: Cannot read data member '" +
-                   dataName + "'. Cannot open file " + filename + ".h5.";
-          continue;
+    // Check for 2D geometry.
+    {
+      /* XY2 Attribute Check */
+      xml_attribute x2Att = node.attribute("x2");
+      if (x2Att) {
+        xml_attribute y2 = node.attribute("y2");
+        if (y2) {
+          auto x = lexicalCast<double>(x2Att.value());
+          auto y = lexicalCast<double>(y2.value());
+          if (x && y) {
+            Vector2 position(*x, *y);
+            atom.setPosition2d(position);
+          } else {
+            error += "x2 or y2 attribute is malformed: ["s + x2Att.value() +
+                     ", "s + y2.value() + "]."s;
+            return false;
+          }
+        } else {
+          // Corrupt 2D position supplied for atom.
+          return false;
         }
-
-        if (dataType != "xsd:double") {
-          error += "CmlFormatPrivate::data: Cannot read data member '" +
-                   dataName + "'. Data type is not 'double'.";
-          continue;
-        }
-
-        MatrixX matrix;
-        if (!hdf5.readDataset(dataStream.str(), matrix)) {
-          error += "CmlFormatPrivate::data: Cannot read data member '" +
-                   dataName + "': Unable to read data set '" +
-                   dataStream.str() + "' from " + filename + ".h5";
-          continue;
-        }
-
-        variant.setValue(matrix);
       }
+    }
 
-      // or read data from CML?
-      else if (dataNodeName == "scalar") {
-        if (dataType == "xsd:boolean") {
-          bool tmp;
-          dataStream >> tmp;
-          variant.setValue(tmp);
-        } else if (dataType == "xsd:int") {
-          int tmp;
-          dataStream >> tmp;
-          variant.setValue(tmp);
-        } else if (dataType == "xsd:long") {
-          long tmp;
-          dataStream >> tmp;
-          variant.setValue(tmp);
-        } else if (dataType == "xsd:float") {
-          float tmp;
-          dataStream >> tmp;
-          variant.setValue(tmp);
-        } else if (dataType == "xsd:double") {
-          double tmp;
-          dataStream >> tmp;
-          variant.setValue(tmp);
-        } else if (dataType == "xsd:string") {
-          string tmp;
-          dataStream >> tmp;
-          variant.setValue(tmp);
+    // Check formal charge.
+    {
+      /* Formal Charge Attribute Check */
+      xml_attribute formalChargeAtt = node.attribute("formalCharge");
+      if (formalChargeAtt) {
+        if (auto formalCharge =
+              lexicalCast<signed int>(formalChargeAtt.value())) {
+          atom.setFormalCharge(*formalCharge);
         } else {
           error +=
-            "CmlFormatPrivate::data: handled scalar data type: " + dataType;
-          continue;
+            "formalCharge attribute is malformed: "s + formalChargeAtt.value();
+          return false;
         }
       }
-      molecule->setData(dataName, variant);
-    } while ((dataNode = dataNode.next_sibling()));
+    }
 
-    if (hdf5Available)
-      hdf5.closeFile();
-    return true;
+    // Move on to the next atom node (if there is one).
+    node = node.next_sibling("atom");
   }
+  return true;
+}
+
+bool CmlFormatPrivate::bonds()
+{
+  xml_node bondArray = moleculeNode.child("bondArray");
+  if (!bondArray)
+    return true;
+
+  xml_node node = bondArray.child("bond");
+
+  while (node) {
+    xml_attribute attribute = node.attribute("atomRefs2");
+    Bond bond;
+    if (attribute) {
+      // Should contain two elements separated by a space.
+      std::string refs(attribute.value());
+      std::vector<std::string> tokens = split(refs, ' ');
+      if (tokens.size() != 2) // Corrupted file/input we don't understand
+        return false;
+      std::map<std::string, Index>::const_iterator begin, end;
+      begin = atomIds.find(tokens[0]);
+      end = atomIds.find(tokens[1]);
+      if (begin != atomIds.end() && end != atomIds.end() &&
+          begin->second < molecule->atomCount() &&
+          end->second < molecule->atomCount()) {
+        bond = molecule->addBond(molecule->atom(begin->second),
+                                 molecule->atom(end->second));
+      } else { // Couldn't parse the bond begin and end.
+        return false;
+      }
+    }
+
+    if (!bond.isValid()) {
+      // Couldn't create the bond.
+      return false;
+    }
+
+    attribute = node.attribute("order");
+    if (attribute && strlen(attribute.value()) == 1) {
+      char o = attribute.value()[0];
+      switch (o) {
+        case '1':
+        case 'S':
+        case 's':
+          bond.setOrder(1);
+          break;
+        case '2':
+        case 'D':
+        case 'd':
+          bond.setOrder(2);
+          break;
+        case '3':
+        case 'T':
+        case 't':
+          bond.setOrder(3);
+          break;
+        case '4':
+          bond.setOrder(4);
+          break;
+        case '5':
+          bond.setOrder(5);
+          break;
+        case '6':
+          bond.setOrder(6);
+          break;
+        default:
+          bond.setOrder(1);
+      }
+    } else {
+      bond.setOrder(1);
+    }
+
+    // Move on to the next bond node (if there is one).
+    node = node.next_sibling("bond");
+  }
+
+  return true;
+}
+
+#ifdef AVO_USE_HDF5
+bool CmlFormatPrivate::data()
+{
+  xml_node dataNode = moleculeNode.child("dataMap").first_child();
+  if (!dataNode)
+    return true;
+
+  // Check if HDF5 file exists before attempting to open it
+  bool hdf5Available = false;
+  Hdf5DataFormat hdf5;
+  if (std::ifstream(filename + ".h5").good()) {
+    if (hdf5.openFile(filename + ".h5", Hdf5DataFormat::ReadOnly)) {
+      hdf5Available = true;
+    }
+  }
+  do {
+    std::string dataNodeName = dataNode.name();
+    std::string dataName = dataNode.attribute("name").as_string();
+    std::string dataType = dataNode.attribute("dataType").as_string();
+    std::stringstream dataStream(dataNode.text().as_string());
+    Variant variant;
+
+    // Read data from HDF5?
+    if (dataNodeName == "hdf5data") {
+      if (!hdf5Available) {
+        error += "CmlFormatPrivate::data: Cannot read data member '" +
+                 dataName + "'. Cannot open file " + filename + ".h5.";
+        continue;
+      }
+
+      if (dataType != "xsd:double") {
+        error += "CmlFormatPrivate::data: Cannot read data member '" +
+                 dataName + "'. Data type is not 'double'.";
+        continue;
+      }
+
+      MatrixX matrix;
+      if (!hdf5.readDataset(dataStream.str(), matrix)) {
+        error += "CmlFormatPrivate::data: Cannot read data member '" +
+                 dataName + "': Unable to read data set '" + dataStream.str() +
+                 "' from " + filename + ".h5";
+        continue;
+      }
+
+      variant.setValue(matrix);
+    }
+
+    // or read data from CML?
+    else if (dataNodeName == "scalar") {
+      if (dataType == "xsd:boolean") {
+        bool tmp;
+        dataStream >> tmp;
+        variant.setValue(tmp);
+      } else if (dataType == "xsd:int") {
+        int tmp;
+        dataStream >> tmp;
+        variant.setValue(tmp);
+      } else if (dataType == "xsd:long") {
+        long tmp;
+        dataStream >> tmp;
+        variant.setValue(tmp);
+      } else if (dataType == "xsd:float") {
+        float tmp;
+        dataStream >> tmp;
+        variant.setValue(tmp);
+      } else if (dataType == "xsd:double") {
+        double tmp;
+        dataStream >> tmp;
+        variant.setValue(tmp);
+      } else if (dataType == "xsd:string") {
+        string tmp;
+        dataStream >> tmp;
+        variant.setValue(tmp);
+      } else {
+        error +=
+          "CmlFormatPrivate::data: handled scalar data type: " + dataType;
+        continue;
+      }
+    }
+    molecule->setData(dataName, variant);
+  } while ((dataNode = dataNode.next_sibling()));
+
+  if (hdf5Available)
+    hdf5.closeFile();
+  return true;
+}
 #endif
 
 } // namespace
