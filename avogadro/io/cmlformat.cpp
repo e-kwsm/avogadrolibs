@@ -41,7 +41,22 @@ namespace {
 class CmlFormatPrivate
 {
 public:
-  CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_)
+  CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_);
+
+  bool properties();
+  bool atoms();
+  bool bonds();
+  bool data();
+
+  bool success;
+  Molecule* molecule;
+  xml_node moleculeNode;
+  std::map<std::string, Index> atomIds;
+  string filename;
+  string error;
+};
+
+  CmlFormatPrivate::CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_)
     : success(false), molecule(mol), moleculeNode(nullptr), filename(filename_)
   {
     // Parse the CML document, and create molecules/elements as necessary.
@@ -66,7 +81,7 @@ public:
     }
   }
 
-  bool properties()
+  bool CmlFormatPrivate::properties()
   {
     xml_attribute attribute;
     xml_node node;
@@ -159,7 +174,7 @@ public:
     return true;
   }
 
-  bool atoms()
+  bool CmlFormatPrivate::atoms()
   {
     xml_node atomArray = moleculeNode.child("atomArray");
     if (!atomArray)
@@ -285,7 +300,7 @@ public:
     return true;
   }
 
-  bool bonds()
+  bool CmlFormatPrivate::bonds()
   {
     xml_node bondArray = moleculeNode.child("bondArray");
     if (!bondArray)
@@ -363,7 +378,7 @@ public:
   }
 
 #ifdef AVO_USE_HDF5
-  bool data()
+  bool CmlFormatPrivate::data()
   {
     xml_node dataNode = moleculeNode.child("dataMap").first_child();
     if (!dataNode)
@@ -450,13 +465,6 @@ public:
   }
 #endif
 
-  bool success;
-  Molecule* molecule;
-  xml_node moleculeNode;
-  std::map<std::string, Index> atomIds;
-  string filename;
-  string error;
-};
 } // namespace
 
 bool CmlFormat::read(std::istream& file, Core::Molecule& mol)
