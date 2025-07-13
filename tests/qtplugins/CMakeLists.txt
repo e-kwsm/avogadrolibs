@@ -50,7 +50,14 @@ endforeach()
 
 # Add a single executable for all of our tests.
 add_executable(AvogadroQtPluginsTests ${testSrcs})
-target_link_libraries(AvogadroQtPluginsTests Avogadro::QtPlugins ${MoleQueueLink}
+target_link_libraries(AvogadroQtPluginsTests
+  Avogadro::QtPlugins
+ #Avogadro::QtGui
+ #Avogadro::IO
+ #Avogadro::QtOpenGL
+ #Avogadro::Crystal
+  Avogadro::Core
+  ${MoleQueueLink}
  ${GTEST_BOTH_LIBRARIES} ${EXTRA_LINK_LIB}
  Qt${QT_VERSION}::Widgets Qt${QT_VERSION}::Test)
 
