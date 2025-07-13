@@ -259,7 +259,7 @@ vec4 applyBlur(vec2 texCoord, float viewDist, float centerDistance,
 
 float computeEdgeLuminosity(vec3 normal)
 {
-    return max(0.0, pow(normal.z - 0.1, 1.0 / 3.0));
+    return max(0.0, cbrt(normal.z - 0.1));
 }
 
 // Anti-aliased edge term. The test above is binary per pixel: at a silhouette
