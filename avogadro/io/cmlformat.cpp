@@ -42,7 +42,40 @@ namespace {
 class CmlFormatPrivate
 {
 public:
-  CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_)
+  CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_);
+
+  bool properties();
+  bool atoms();
+  bool bonds();
+
+  // Reads the 3D geometry of @a node into @a positions, checking that the node
+  // describes the molecule that has already been parsed. Returns false if the
+  // atoms differ in count, element, or order, or if any of them lack a 3D
+  // position -- in those cases the node is a different molecule, not another
+  // geometry of this one.
+  bool geometry(const xml_node& node, Array<Vector3>& positions) const;
+
+  // A CML file can hold several <molecule> elements, either wrapped in <cml> or
+  // -- as Open Babel writes them for a conformer search -- concatenated one
+  // after another. When every sibling turns out to be another geometry of the
+  // first molecule, keep them as coordinate sets instead of discarding them.
+  // Anything else is a genuine multi-molecule file, and only the first molecule
+  // is read, as before.
+  bool conformers();
+
+#ifdef AVO_USE_HDF5
+  bool data();
+#endif
+
+  bool success;
+  Molecule* molecule;
+  xml_node moleculeNode;
+  std::map<std::string, Index> atomIds;
+  string filename;
+  string error;
+};
+
+  CmlFormatPrivate::CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_)
     : success(false), molecule(mol), moleculeNode(nullptr), filename(filename_)
   {
     // Parse the CML document, and create molecules/elements as necessary.
@@ -69,7 +102,7 @@ public:
     }
   }
 
-  bool properties()
+  bool CmlFormatPrivate::properties()
   {
     xml_attribute attribute;
     xml_node node;
@@ -162,7 +195,7 @@ public:
     return true;
   }
 
-  bool atoms()
+  bool CmlFormatPrivate::atoms()
   {
     xml_node atomArray = moleculeNode.child("atomArray");
     if (!atomArray)
@@ -288,7 +321,7 @@ public:
     return true;
   }
 
-  bool bonds()
+  bool CmlFormatPrivate::bonds()
   {
     xml_node bondArray = moleculeNode.child("bondArray");
     if (!bondArray)
@@ -392,12 +425,7 @@ public:
     return true;
   }
 
-  // Reads the 3D geometry of @a node into @a positions, checking that the node
-  // describes the molecule that has already been parsed. Returns false if the
-  // atoms differ in count, element, or order, or if any of them lack a 3D
-  // position -- in those cases the node is a different molecule, not another
-  // geometry of this one.
-  bool geometry(const xml_node& node, Array<Vector3>& positions) const
+  bool CmlFormatPrivate::geometry(const xml_node& node, Array<Vector3>& positions) const
   {
     xml_node atomArray = node.child("atomArray");
     if (!atomArray)
@@ -455,13 +483,7 @@ public:
     return index == molecule->atomCount();
   }
 
-  // A CML file can hold several <molecule> elements, either wrapped in <cml> or
-  // -- as Open Babel writes them for a conformer search -- concatenated one
-  // after another. When every sibling turns out to be another geometry of the
-  // first molecule, keep them as coordinate sets instead of discarding them.
-  // Anything else is a genuine multi-molecule file, and only the first molecule
-  // is read, as before.
-  bool conformers()
+  bool CmlFormatPrivate::conformers()
   {
     if (!moleculeNode.next_sibling("molecule"))
       return true;
@@ -484,7 +506,7 @@ public:
   }
 
 #ifdef AVO_USE_HDF5
-  bool data()
+  bool CmlFormatPrivate::data()
   {
     xml_node dataNode = moleculeNode.child("dataMap").first_child();
     if (!dataNode)
@@ -571,13 +593,6 @@ public:
   }
 #endif
 
-  bool success;
-  Molecule* molecule;
-  xml_node moleculeNode;
-  std::map<std::string, Index> atomIds;
-  string filename;
-  string error;
-};
 } // namespace
 
 bool CmlFormat::read(std::istream& file, Core::Molecule& mol)
