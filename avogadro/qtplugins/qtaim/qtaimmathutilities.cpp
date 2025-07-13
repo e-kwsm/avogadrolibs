@@ -80,7 +80,7 @@ qreal ellipticityOfASymmetricThreeByThreeMatrix(const Matrix<qreal, 3, 3>& A)
 
 qreal distance(const Matrix<qreal, 3, 1>& a, const Matrix<qreal, 3, 1>& b)
 {
-  return sqrt(pow(a(0) - b(0), 2) + pow(a(1) - b(1), 2) + pow(a(2) - b(2), 2));
+  return std::hypot(a(0) - b(0), a(1) - b(1), a(2) - b(2));
 }
 
 Matrix<qreal, 3, 1> sphericalToCartesian(const Matrix<qreal, 3, 1>& rtp,
@@ -127,7 +127,7 @@ Matrix<qreal, 3, 1> cartesianToSpherical(const Matrix<qreal, 3, 1>& xyz,
   qreal yshift = y - y0;
   qreal zshift = z - z0;
 
-  qreal length = sqrt(pow(xshift, 2) + pow(yshift, 2) + pow(zshift, 2));
+  qreal length = std::hypot(xshift, yshift, zshift);
 
   Matrix<qreal, 3, 1> rtp;
 
