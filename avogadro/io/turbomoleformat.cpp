@@ -150,13 +150,13 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
     getline(inStream, buffer);
   } // done reading the file
 
-  Core::UnitCell* cell = nullptr;
+  std::unique_ptr<Core::UnitCell> cell;
   std::string tmp;
   if (hasLattice) {
-    cell = new Core::UnitCell(v1, v2, v3);
+    cell.reset(new Core::UnitCell(v1, v2, v3));
     tmp = "$lattice";
   } else if (hasCell) {
-    cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+    cell.reset(new Core::UnitCell(a, b, c, alpha, beta, gamma));
     tmp = "$cell";
   }
   if (cell) {
@@ -165,7 +165,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       delete cell;
       return false;
     }
-    mol.setUnitCell(cell);
+    mol.setUnitCell(cell.release());
   }
 
   // if we have fractional coordinates, we need to convert them to cartesian
