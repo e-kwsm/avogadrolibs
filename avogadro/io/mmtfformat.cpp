@@ -76,7 +76,7 @@ bool MMTFFormat::read(std::istream& file, Molecule& molecule)
 
     auto* unitCellObject = new Core::UnitCell(a, b, c, alpha, beta, gamma);
     if (!unitCellObject->isRegular()) {
-      appendError("singular");
+      appendError("cell matrix is singular");
       return false;
     }
     molecule.setUnitCell(unitCellObject);
