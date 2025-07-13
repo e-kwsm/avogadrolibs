@@ -130,8 +130,7 @@ bool CrystalTools::setVolume(Molecule& molecule, Real newVolume, Options opts)
 
   const UnitCell& cell = *molecule.unitCell();
 
-  const Real scaleFactor =
-    std::pow(newVolume / cell.volume(), static_cast<Real>(1.0 / 3.0));
+  const Real scaleFactor = std::cbrt(newVolume / cell.volume());
 
   const Matrix3 newMatrix(cell.cellMatrix() * scaleFactor);
 
@@ -224,7 +223,7 @@ bool CrystalTools::niggliReduce(Molecule& molecule, Options opts)
   bool ret = false;
 
   // Comparison tolerance.
-  Real tol = FUZZY_TOL * std::pow(a * b * c, static_cast<Real>(1.0 / 3.0));
+  Real tol = FUZZY_TOL * std::cbrt(a * b * c);
 
   // Initialize change of basis matrices:
   //
