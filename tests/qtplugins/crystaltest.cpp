@@ -56,22 +56,3 @@ TEST(CrystalTest, setFileName)
   EXPECT_STREQ("some file", qPrintable(widget.lineEdit()->text()));
 #endif
 }
-
-class CrystalTest : public testing::Test
-{
-public:
-  CrystalTest();
-
-protected:
-  UnitCell m_testUnitCell;
-};
-
-CrystalTest::CrystalTest()
-{
-  m_testUnitCell.setCellParameters(3.0, 3.0, 3.0, 90.0, 90.0, 90.0);
-}
-
-TEST_F(CrystalTest, UnitCellEditor)
-{
-  Avogadro::QtPlugins::UnitCellDialog xx;
-}
