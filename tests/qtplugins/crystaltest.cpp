@@ -6,11 +6,12 @@
 // #include "qtguitests.h"
 #include <gtest/gtest.h>
 
+// #include <avogadro/qtgui/filebrowsewidget.h>
 #include <avogadro/qtplugins/crystal/unitcelldialog.h>
 
 #include <QtTest/QSignalSpy>
 
-// #include <QtWidgets/QApplication>
+#include <QtWidgets/QApplication>
 // #include <QtWidgets/QLineEdit>
 
 // #include <QtCore/QVariant>
@@ -27,9 +28,12 @@ using Avogadro::Core::UnitCell;
   QApplication app(argc, argv);                                                \
   Q_UNUSED(app)
 
-TEST(FileBrowseWidgetTest, setFileName)
+TEST(CrystalTest, setFileName)
 {
-  START_QAPP;
+  int argc = 1;
+  char argName[] = "FakeApp.exe";
+  char* argv[2] = { argName, nullptr };
+  [[maybe_unused]] QApplication app(argc, argv);
 
 #ifndef HOGE
   using Avogadro::QtPlugins::UnitCellDialog;
