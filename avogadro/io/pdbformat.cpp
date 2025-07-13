@@ -77,6 +77,10 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
       Real gamma = lexicalCast<Real>(buffer.substr(47, 8), ok) * DEG_TO_RAD;
 
       auto* cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
+      if (!cell->isRegular()) {
+        appendError("cell matrix is singular");
+        return false;
+      }
       mol.setUnitCell(cell);
     }
 
