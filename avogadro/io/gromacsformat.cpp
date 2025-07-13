@@ -210,9 +210,9 @@ bool GromacsFormat::read(std::istream& in, Molecule& molecule)
       }
     }
 
-    auto* cell = new UnitCell;
+    auto cell = std::make_unique<UnitCell>();
     cell->setCellMatrix(cellMatrix * static_cast<Real>(10)); // nm --> Angstrom
-    molecule.setUnitCell(cell);
+    molecule.setUnitCell(cell.release());
   }
 
   return true;

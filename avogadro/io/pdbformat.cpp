@@ -76,8 +76,8 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
       Real beta = lexicalCast<Real>(buffer.substr(40, 7), ok) * DEG_TO_RAD;
       Real gamma = lexicalCast<Real>(buffer.substr(47, 8), ok) * DEG_TO_RAD;
 
-      auto* cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
-      mol.setUnitCell(cell);
+      auto cell = std::make_unique<Core::UnitCell>(a, b, c, alpha, beta, gamma);
+      mol.setUnitCell(cell.release());
     }
 
     else if (startsWith(buffer, "ATOM") || startsWith(buffer, "HETATM")) {
