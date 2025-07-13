@@ -207,8 +207,7 @@ Matrix<qreal, 3, 1> minusOneSignatureLocatorGradient(
   Matrix<qreal, 3, 1> eval = eigenvaluesOfASymmetricThreeByThreeMatrix(A);
 
   Matrix<qreal, 3, 1> lambda;
-  lambda << eval(2), eval(2),
-    (0.5) * (b(2) - sqrt(pow(b(2), 2) + 4.0 * pow(F(2), 2)));
+  lambda << eval(2), eval(2), (0.5) * (b(2) - std::hypot(b(2), 2 * F(2)));
 
   Matrix<qreal, 3, 1> denom;
   denom = b - lambda;
@@ -245,8 +244,7 @@ Matrix<qreal, 3, 1> plusOneSignatureLocatorGradient(
   Matrix<qreal, 3, 1> eval = eigenvaluesOfASymmetricThreeByThreeMatrix(A);
 
   Matrix<qreal, 3, 1> lambda;
-  lambda << eval(2), eval(2),
-    (0.5) * (b(0) + sqrt(pow(b(0), 2) + 4.0 * pow(F(0), 2)));
+  lambda << eval(2), eval(2), (0.5) * (b(0) + std::hypot(b(0), 2.0 * F(0)));
 
   Matrix<qreal, 3, 1> denom;
   denom = b - lambda;
