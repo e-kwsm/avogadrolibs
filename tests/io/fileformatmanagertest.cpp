@@ -44,16 +44,16 @@ TEST(FileFormatManagerTest, identifiers)
   std::vector<std::string> ids = FileFormatManager::instance().identifiers();
   std::cout << "FileFormatManager has loaded " << ids.size() << " formats.\n";
   for (size_t i = 0; i < ids.size(); ++i)
-    std::cout << i << ": " << ids[i] << std::endl;
+    std::cout << i << ": " << ids[i] << '\n';
   std::vector<std::string> mimes = FileFormatManager::instance().mimeTypes();
   std::cout << "\nMIME types supported:\n";
   for (size_t i = 0; i < mimes.size(); ++i)
-    std::cout << "\t" << mimes[i] << std::endl;
+    std::cout << "\t" << mimes[i] << '\n';
   std::vector<std::string> extensions =
     FileFormatManager::instance().fileExtensions();
   std::cout << "\nFile extensions supported:\n";
   for (size_t i = 0; i < extensions.size(); ++i)
-    std::cout << "\t" << extensions[i] << std::endl;
+    std::cout << "\t" << extensions[i] << '\n';
 }
 
 TEST(FileFormatManagerTest, emptyFile)
@@ -67,7 +67,7 @@ TEST(FileFormatManagerTest, emptyFile)
       delete format;
       continue;
     }
-    std::cout << "Testing " << ids[i] << std::endl;
+    std::cout << "Testing " << ids[i] << '\n';
 
     Molecule molecule;
     format->readString("", molecule);
@@ -132,8 +132,8 @@ TEST(FileFormatManagerTest, writeStringCjson)
   std::string cml;
   FileFormatManager::instance().writeString(molecule, cml, "cml");
 
-  std::cout << cjson << std::endl;
-  std::cout << cml << std::endl;
+  std::cout << cjson << '\n';
+  std::cout << cml << '\n';
 
   // See if they still have data in them now they have gone back and forth...
   Molecule cmlMol, cjsonMol;
@@ -160,7 +160,7 @@ TEST(FileFormatManagerTest, writeStringCjsonOptions)
   std::string cjson;
   FileFormatManager::instance().writeString(molecule, cjson, "cjson", options);
 
-  std::cout << cjson << std::endl;
+  std::cout << cjson << '\n';
 
   // See if they still have data in them now they have gone back and forth...
   Molecule cjsonMol;
