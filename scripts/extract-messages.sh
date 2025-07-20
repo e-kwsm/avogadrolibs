@@ -65,8 +65,7 @@ mv ${PROJECT}.new ${I18NDIR}/${PROJECT}.pot
 
 cd ${I18NDIR}
 echo "Merging translations"
-catalogs=$(find . -name '*.po')
-for cat in $catalogs; do
+find . -name '*.po' | while read -r cat; do
   # remove any \r escapes
   sed -e 's/\\r//' <$cat >$cat.new
   mv $cat.new $cat
