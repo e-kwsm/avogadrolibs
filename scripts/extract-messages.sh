@@ -11,6 +11,16 @@ BUGADDR="avogadro-devel@lists.sourceforge.net"	# MSGID-Bugs
 WDIR=$(pwd)		# working dir
 I18NDIR="i18n/"          # i18n dir
 
+cleanup() {
+echo "Cleaning up"
+cd ${WDIR}
+rm rcfiles.list
+rm infiles.list
+rm rc.cpp
+echo "Done"
+}
+trap cleanup 0
+
 echo "Preparing rc files"
 cd "${BASEDIR}"
 # we use simple sorting to make sure the lines do not jump around too much from system to system
@@ -67,11 +77,3 @@ for cat in $catalogs; do
   msgmerge -N -U $cat ${PROJECT}.pot
 done
 echo "Done merging translations"
-
-
-echo "Cleaning up"
-cd ${WDIR}
-rm rcfiles.list
-rm infiles.list
-rm rc.cpp
-echo "Done"
