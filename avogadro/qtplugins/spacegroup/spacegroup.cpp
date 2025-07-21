@@ -206,9 +206,10 @@ void SpaceGroup::perceiveSpaceGroup()
   if (hallNumber != 0) {
     // Let's make the message
     std::stringstream ss;
-    ss << "Tolerance: " << m_spgTol << "  Å"
-       << "\nSpace Group: " << intNum << "\nHall symbol: " << hallSymbol
-       << "\nInternational symbol: " << intShort;
+    ss << "Tolerance: " << m_spgTol << "  Å\n"
+       << "Space Group: " << intNum << "\n"
+       << "Hall symbol: " << hallSymbol << "\n"
+       << "International symbol: " << intShort;
 
     // Now let's make the Message Box
     QMessageBox retMsgBox;
