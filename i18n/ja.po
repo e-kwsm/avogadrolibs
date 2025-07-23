@@ -9626,10 +9626,6 @@ msgstr ""
 #~ "Ctrlキー・Shiftキーで原子を追加選択\n"
 #~ "ダブルクリック: \tフラグメント全体を選択"
 
-#~ msgctxt "ambient occlusion"
-#~ msgid "Van der Waals (AO)"
-#~ msgstr "ファンデルワールス (AO)"
-
 #~ msgid ""
 #~ "Manipulation Tool\n"
 #~ "\n"
@@ -9895,14 +9891,6 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "スティック"
 
-#~ msgctxt "Electron density isosurface with a cutoff of %1"
-#~ msgid "Electron density, isosurface = %L1"
-#~ msgstr "電子密度, 等値面 = %L1"
-
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, 等値面 = %L2"
-
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
 #~ msgstr "結合をワイヤ ( 直線 ) で表示, 巨大 ( 生体 ) 分子に最適"
 
@@ -10003,10 +9991,6 @@ msgstr ""
 
 #~ msgid "Show &Property Display"
 #~ msgstr "プロパティディスプレイを表示(&P)"
-
-#~ msgctxt "Unit cell lattice"
-#~ msgid "Lattice Type: %1"
-#~ msgstr "格子タイプ: %1"
 
 #~ msgid "Spacegroup: %1"
 #~ msgstr "空間群: %1"
@@ -10187,10 +10171,6 @@ msgstr ""
 #~ msgid "Set Fractional Coordinates"
 #~ msgstr "フラクショナル座標をセット"
 
-#~ msgctxt "Unit cell matrix, arg is vector style (row or column"
-#~ msgid "Cell Matrix (%1)"
-#~ msgstr "セル行列(%1)"
-
 #~ msgid "Set Unit Cell Matrix"
 #~ msgstr "ユニットセル行列をセット"
 
@@ -10288,10 +10268,6 @@ msgstr ""
 
 #~ msgid "Invert chiral centers"
 #~ msgstr "キラル中心を反転"
-
-#~ msgctxt "Unknown molecule name"
-#~ msgid "unknown"
-#~ msgstr "不明"
 
 #~ msgid "Estimated Dipole Moment (D):"
 #~ msgstr "双極子モーメントを推定する(D):"
@@ -12226,18 +12202,6 @@ msgstr ""
 #~ msgid "Foreground:"
 #~ msgstr "前景色:"
 
-#~ msgid "&Schemes:"
-#~ msgstr "スキーム(&S)"
-
-#~ msgid "&DPI:"
-#~ msgstr "DPI(&D)"
-
-#~ msgid "&Width:"
-#~ msgstr "幅(&W):"
-
-#~ msgid "&Height"
-#~ msgstr "高さ(&H)"
-
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
 #~ "value (screen to image point sizes don't translate well!)"
@@ -12272,20 +12236,11 @@ msgstr ""
 #~ msgid "States / Valence electron"
 #~ msgstr "1価電子あたり状態数"
 
-#~ msgid "Fermi energy at zero"
-#~ msgstr "ゼロ点フェルミエネルギー"
-
 #~ msgid "Scale integrated DOS"
 #~ msgstr "積算状態密度でスケール"
 
 #~ msgid "Show integrated DOS"
 #~ msgstr "積算状態密度を表示"
-
-#~ msgid "tab_IR_Raman"
-#~ msgstr "IR ラマンラブ"
-
-#~ msgid "&Y Axis Units:"
-#~ msgstr "Y軸の単位(&Y)"
 
 #~ msgid "Scaling Type:"
 #~ msgstr "スケーリングタイプ:"
@@ -12310,9 +12265,6 @@ msgstr ""
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "分子振動"
-
-#~ msgid "Activity (A^4/amu)"
-#~ msgstr "アクティビティ (A^4/amu)"
 
 #~ msgid "higher frequency vibrations will show faster movement"
 #~ msgstr "高振動数の振動を速い運動で表示"
