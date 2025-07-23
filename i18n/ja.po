@@ -10651,30 +10651,6 @@ msgstr ""
 #~ "Gaussianは適切に実行しませんでした。おそらく、適切にインストールされていま"
 #~ "せん。"
 
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "Dalton(&D)..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "Gaussian(&G)..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "MOLPRO(&M)..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "NSChem(&N)..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "Q-Chem*&Q)..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
-
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "LAMMPSインプットジェネレータからの警告"
 
@@ -10688,14 +10664,8 @@ msgstr ""
 #~ "プレビューテキストを更新しますか?  Molproインプットプレビュー画面での変更"
 #~ "は失われます。"
 
-#~ msgid "Molpro Input Deck"
-#~ msgstr "Molproインプット"
-
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPACインプット警告"
-
-#~ msgid "MOPAC Input Deck"
-#~ msgstr "MOPACインプット"
 
 #~ msgid "MOPAC Running."
 #~ msgstr "MOPAC実行中"
@@ -10738,9 +10708,6 @@ msgstr ""
 #~ "プレビューテキストを更新しますか? NWChemインプットプレビュー画面での変更は"
 #~ "失われます。"
 
-#~ msgid "NWChem Input Deck"
-#~ msgstr "NWChem インプット"
-
 #~ msgid "Psi4 Input Deck Generator Warning"
 #~ msgstr "Psi4 インプットジェネレーター警告"
 
@@ -10750,9 +10717,6 @@ msgstr ""
 #~ msgstr ""
 #~ "プレビューテキストを更新しますか? Psi4 インプットプレビュー画面での変更は"
 #~ "失われます。"
-
-#~ msgid "Psi4 Input Deck"
-#~ msgstr "Psi4 インプット"
 
 #~ msgid "Q-Chem Input Deck Generator Warning"
 #~ msgstr "Q-Chem インプットジェネレーター警告"
@@ -10764,9 +10728,6 @@ msgstr ""
 #~ "プレビューテキストを更新しますか? Q-Chem インプットプレビュー画面での変更"
 #~ "は失われます。"
 
-#~ msgid "QChem Input Deck"
-#~ msgstr "QChem インプット"
-
 #~ msgid "TeraChem Input Deck Generator Warning"
 #~ msgstr "TeraChem インプットジェネレーター警告"
 
@@ -10776,15 +10737,6 @@ msgstr ""
 #~ msgstr ""
 #~ "プレビューテキストを更新しますか? TeraChem インプットプレビュー画面での変"
 #~ "更は失われます。"
-
-#~ msgid "TeraChem Input Deck"
-#~ msgstr "TeraChem インプット"
-
-#~ msgid "Select SMARTS..."
-#~ msgstr "SMARTSによる選択..."
-
-#~ msgid "Add Named Selection..."
-#~ msgstr "名前付き選択の追加..."
 
 #~ msgid "SMARTS Selection"
 #~ msgstr "SMARTSで選択"
@@ -10810,9 +10762,6 @@ msgstr ""
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "原子・結合・残基を選択..."
 
-#~ msgid "GLSL Shaders..."
-#~ msgstr "GLSL シェーダー..."
-
 #~ msgid "Open a vertex shader source file"
 #~ msgstr "頂点シェーダーソースファイルを開く"
 
@@ -10837,9 +10786,6 @@ msgstr ""
 #~ msgid "Load and use OpenGL 2.0 GLSL shaders"
 #~ msgstr "OpenGL 2.0 GLSL シェーダーをロードして使用する"
 
-#~ msgid "Intensity (arb. units)"
-#~ msgstr "インテンシティー (arb. units)"
-
 #~ msgid "Density of States (states/cell)"
 #~ msgstr "状態密度 (states/cell)"
 
@@ -10848,12 +10794,6 @@ msgstr ""
 
 #~ msgid "Density of States (states/valence electron)"
 #~ msgstr "状態密度 (states/valence electron)"
-
-#~ msgid "Transmittance (%)"
-#~ msgstr "トランスミッタンス (%)"
-
-#~ msgid "Absorbance (%)"
-#~ msgstr "アブソーバンス (%)"
 
 #~ msgid "No intensities"
 #~ msgstr "データがありません"
@@ -10941,9 +10881,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "カンマ区切りフォーマット (CSV)"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "スペクトルのインポート"
 
@@ -10979,27 +10916,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Turbomole CDファイルのフォーマットが不正です: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "PNG 画像:"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format(TIFF)"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "ウィンドウズビットマップ"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap (PPM)"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap (XBM)"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap (XPM)"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "スペクトル画像を保存"
 
@@ -11033,9 +10949,6 @@ msgstr ""
 #~ msgid "Sorting %1 vibrations by frequency..."
 #~ msgstr "%1振動を周波数で並び換え"
 
-#~ msgid "Super Cell Builder..."
-#~ msgstr "スーパーセルビルダ"
-
 #~ msgid ""
 #~ "This document is currently an isolated molecule. You need to create a "
 #~ "unit cell."
@@ -11044,9 +10957,6 @@ msgstr ""
 
 #~ msgid "Build and display crystallographic super cells"
 #~ msgstr "結晶のスーパーセルを作成"
-
-#~ msgid "Molecular Orbitals..."
-#~ msgstr "分子軌道..."
 
 #~ msgid "Orbitals"
 #~ msgstr "軌道"
@@ -11073,9 +10983,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "第%L1分子軌道を計算中"
-
-#~ msgid "VdW"
-#~ msgstr "vdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr "静電ポテンシャルサーフェスはサポートされていません。"
@@ -11109,9 +11016,6 @@ msgstr ""
 
 #~ msgid "Construct single wall carbon nanotubes."
 #~ msgstr "単層カーボンナノチューブを構築します。"
-
-#~ msgid "Building..."
-#~ msgstr "構築中..."
 
 #~ msgid "Display point group symmetry."
 #~ msgstr "点群の対称性を表示"
@@ -11252,15 +11156,8 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "分子%1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "未知の Python Engine"
-
-#~ msgid "N/A"
-#~ msgstr "N/A"
 
 #~ msgid "PythonEngine: checking "
 #~ msgstr "PythonEngine: チェック中 "
@@ -11417,36 +11314,8 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "二面角: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
-#~ msgid "Distance(s):"
-#~ msgstr "距離"
-
 #~ msgid "Measure bond lengths, angles, and dihedrals"
 #~ msgstr "結合長・結合角・二面角の測定"
-
-#~ msgid "Draw Bond"
-#~ msgstr "結合を作成"
-
-#~ msgid "Draw and edit atoms and bonds"
-#~ msgstr "原子・結合を作成・変更"
-
-#~ msgid "Draw Settings"
-#~ msgstr "作成の設定"
 
 #~ msgid "Translate, rotate, and adjust atoms and fragments"
 #~ msgstr "原子及びフラグメントの移動・回転・調整"
@@ -11500,9 +11369,6 @@ msgstr ""
 #~ msgid "Dihedral Angle"
 #~ msgstr "二面角"
 
-#~ msgid "Z Matrix Editor..."
-#~ msgstr "Z マトリックスエディター..."
-
 #~ msgid "Z-Matrix"
 #~ msgstr "Z マトリックス"
 
@@ -11553,15 +11419,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "形状"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "ループ"
@@ -11614,15 +11471,6 @@ msgstr ""
 #~ msgid "Change Font"
 #~ msgstr "フォントを変更"
 
-#~ msgid "x : "
-#~ msgstr "x "
-
-#~ msgid "y : "
-#~ msgstr "y "
-
-#~ msgid "z : "
-#~ msgstr "z "
-
 #~ msgid "Label Shift:"
 #~ msgstr "ラベルのオフセット:"
 
@@ -11674,15 +11522,9 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "トラジェクトリをアニメーションで表示"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "ループ"
-
-#~ msgid "Save as .avi..."
-#~ msgstr ".avi で保存..."
 
 #~ msgid "Angstroms"
 #~ msgstr "オングストローム"
@@ -11692,12 +11534,6 @@ msgstr ""
 
 #~ msgid "Fractional"
 #~ msgstr "フラクショナル"
-
-#~ msgid "XYZ, coords only"
-#~ msgstr "XYZ (座標のみ)"
-
-#~ msgid "GAMESS Input #2"
-#~ msgstr "GAMESS インプット #2"
 
 #~ msgid "Priroda Input"
 #~ msgstr "Priroda インプット"
@@ -11787,18 +11623,6 @@ msgstr ""
 #~ msgid "Warning: Use non-zero Miller Indices"
 #~ msgstr "警告: 0以外のミラー指数をお使いください。"
 
-#~ msgid "Width (x)"
-#~ msgstr "幅(&W):"
-
-#~ msgid "Width (y)"
-#~ msgstr "幅(&W):"
-
-#~ msgid "Height (z)"
-#~ msgstr "高さ(&H)"
-
-#~ msgid "length"
-#~ msgstr "長さ %1"
-
 #~ msgid "cell repeats"
 #~ msgstr "セル繰り返し"
 
@@ -11813,18 +11637,6 @@ msgstr ""
 
 #~ msgid "Translation vector:"
 #~ msgstr "平行移動ベクトル"
-
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
-#~ msgid "&Vector units:"
-#~ msgstr "エネルギー単位:"
 
 #~ msgid "Cartesian"
 #~ msgstr "デカルト座標"
@@ -11856,18 +11668,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "デフォルトの表示"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "ミラー指数"
 
@@ -11880,32 +11680,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "力場をセットアップ"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "ステップ数"
 
 #~ msgid "Algorithm"
 #~ msgstr "アルゴリズム"
-
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "αヘリックス"
