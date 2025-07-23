@@ -10357,15 +10357,6 @@ msgstr ""
 #~ msgid "Somethings wrong in the file structure - unitcells"
 #~ msgstr "ユニットセルでファイル構造が不正です"
 
-#~ msgid "Something is wrong in the IR output! "
-#~ msgstr "IRアウトプットが不正です "
-
-#~ msgid "Something is wrong in the raman output! "
-#~ msgstr "ラマンアウトプットが不正です "
-
-#~ msgid "Something is wrong in the orbital energy output! "
-#~ msgstr "オービタルエネルギーアウトプットが不正です "
-
 #~ msgid "No geometry found in file!"
 #~ msgstr "ファイルにジオメトリがありません!"
 
@@ -10978,9 +10969,6 @@ msgstr ""
 #~ msgid "GL widget has no molecule"
 #~ msgstr "GLウィジェットに分子がありません"
 
-#~ msgid "Building video "
-#~ msgstr "動画を作成中 "
-
 #~ msgid "Could not run mencoder."
 #~ msgstr "mencoderを実行できませんでした"
 
@@ -11108,9 +11096,6 @@ msgstr ""
 #~ msgid "Unknown Python Engine"
 #~ msgstr "未知の Python Engine"
 
-#~ msgid "PythonEngine: checking "
-#~ msgstr "PythonEngine: チェック中 "
-
 #~ msgid "  - script has no 'Engine' class defined"
 #~ msgstr "  - スクリプトには Engine クラスが定義されていません"
 
@@ -11120,17 +11105,11 @@ msgstr ""
 #~ msgid "Unknown Python Extension"
 #~ msgstr "未知の Python Extension"
 
-#~ msgid "PythonExtension: checking "
-#~ msgstr "PythonExtension: チェック中 "
-
 #~ msgid "  - script has no 'Extension' class defined"
 #~ msgstr "  - スクリプトには Extension クラスが定義されていません"
 
 #~ msgid "Unknown Python Tool"
 #~ msgstr "未知の Python Tool"
-
-#~ msgid "PythonTool: checking "
-#~ msgstr "PythonTool: チェック中 "
 
 #~ msgid "  - script has no 'Tool' class defined"
 #~ msgstr "  - スクリプトには Tool クラスが定義されていません"
@@ -11239,9 +11218,6 @@ msgstr ""
 
 #~ msgid " Show Angles"
 #~ msgstr " 結合角を表示する"
-
-#~ msgid "Snap-to Threshold: "
-#~ msgstr "吸着のしきい値: "
 
 #~ msgid "Bond Centric Manipulate"
 #~ msgstr "結合中心操作"
@@ -11521,9 +11497,6 @@ msgstr ""
 #~ msgid "(None)"
 #~ msgstr "(なし)"
 
-#~ msgid "Sort by  "
-#~ msgstr "ソート  "
-
 #~ msgid "Number of atoms:"
 #~ msgstr "原子数:"
 
@@ -11571,9 +11544,6 @@ msgstr ""
 
 #~ msgid "cell repeats"
 #~ msgstr "セル繰り返し"
-
-#~ msgid "&Translate "
-#~ msgstr "平行移動 (&T) "
 
 #~ msgid "by arbitrary vector"
 #~ msgstr "任意のベクトルで"
@@ -11831,14 +11801,8 @@ msgstr ""
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Smearing幅(Ha)"
 
-#~ msgid "0 - no moving ions "
-#~ msgstr "0 - イオンを動かさない "
-
 #~ msgid "1 - viscous damping"
 #~ msgstr "1 - 粘性減衰"
-
-#~ msgid "2 - BFGS "
-#~ msgstr "2 - BFGS法 "
 
 #~ msgid "3 - BFGS with energy"
 #~ msgstr "3 - BFGS法(エネルギー使用)"
@@ -12202,9 +12166,6 @@ msgstr ""
 #~ msgid "DFT Functional:"
 #~ msgstr "DFT 汎関数"
 
-#~ msgid "AO Integral Storage"
-#~ msgstr "AO積分の保管場所"
-
 #~ msgid "Duplicated on Each Node"
 #~ msgstr "各ノードで複製"
 
@@ -12219,9 +12180,6 @@ msgstr ""
 
 #~ msgid "Use Localized Orbitals"
 #~ msgstr "局在化軌道を使用する"
-
-#~ msgid "# of Core Electrons:"
-#~ msgstr "コア電子の数"
 
 #~ msgid "Transformation Method"
 #~ msgstr "変換法"
@@ -12424,9 +12382,6 @@ msgstr ""
 #~ msgid "Density units"
 #~ msgstr "密度単位"
 
-#~ msgid "Fermi Energy: "
-#~ msgstr "フェルミエネルギー: "
-
 #~ msgid "States / Cell"
 #~ msgstr "1セルあたり状態数"
 
@@ -12475,9 +12430,6 @@ msgstr ""
 #~ msgid "Molecular Vibrations"
 #~ msgstr "分子振動"
 
-#~ msgid "Filter: "
-#~ msgstr "フィルタ: "
-
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "アクティビティ (A^4/amu)"
 
@@ -12504,9 +12456,6 @@ msgstr ""
 
 #~ msgid "Show occupied orbitals first"
 #~ msgstr "最初に占有軌道を表示"
-
-#~ msgid "Limit orbital precalculations to "
-#~ msgstr "軌道の前計算を "
 
 #~ msgid "orbitals around HOMO/LUMO"
 #~ msgstr "個の HOMO/LUMO 周辺軌道に限定"
