@@ -9743,90 +9743,11 @@ msgstr ""
 #~ msgid "Upload"
 #~ msgstr "アップロード"
 
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
-#~ msgid "Singularity"
-#~ msgstr "Singularity"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
-
 #~ msgid "All files (*);;"
 #~ msgstr "すべてのファイル (*);;"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "菱面体晶"
-
 #~ msgid "Layer"
 #~ msgstr "レイヤー"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "分子を挿入..."
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "3D分子を生成中..."
-
-#, fuzzy
-#~ msgid "Run APBS..."
-#~ msgstr "APBSを実行"
-
-#, fuzzy
-#~ msgid "Edit Unit Cell..."
-#~ msgstr "ユニットセルの編集"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "Fragment..."
-#~ msgstr "フラグメント..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "結晶..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "pHを指定して水素を付加..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "原子のプロパティ..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "結合のプロパティ..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "角度のプロパティ..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "二面角のプロパティ..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "分子の性質..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "サーフェスを作成..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "対称性"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "フラグメントを挿入..."
 
 #~ msgid "Theory:"
 #~ msgstr "理論:"
@@ -9887,14 +9808,6 @@ msgstr ""
 #~ msgid "No"
 #~ msgstr "いいえ"
 
-#, fuzzy
-#~ msgid "Input Generators"
-#~ msgstr "インプットファイルを作る..."
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "インポート"
-
 #~ msgid "Insert SMILES"
 #~ msgstr "SMILESを挿入"
 
@@ -9909,25 +9822,6 @@ msgstr ""
 
 #~ msgid "E&xtensions"
 #~ msgstr "エクステンション(&x)"
-
-#~ msgid "Symmetry Properties..."
-#~ msgstr "対称性の性質..."
-
-#, fuzzy
-#~ msgid "Optimize geometry"
-#~ msgstr "&ジオメトリ最適化"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "構造最適化"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "水素を追加"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "ストップ"
 
 #~ msgid "Color by Index"
 #~ msgstr "インデックスによるカラー"
@@ -9973,21 +9867,6 @@ msgstr ""
 
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "SMARTSパターンに一致するものをハイライト"
-
-#~ msgid "Ununtrium"
-#~ msgstr "ウンウントリウム (Ununtrium)"
-
-#~ msgid "Ununpentium"
-#~ msgstr "ウンウンペンチウム (Ununpentium)"
-
-#~ msgid "Ununseptium"
-#~ msgstr "ウンウンセプチウム (Ununseptium)"
-
-#~ msgid "Ununoctium"
-#~ msgstr "ウンウンオクチウム (Ununoctium)"
-
-#~ msgid "Engines"
-#~ msgstr "エンジン"
 
 #~ msgid "Axes"
 #~ msgstr "軸"
@@ -10063,14 +9942,8 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "トラジェクトリファイルを開く"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "拡張子 .avi を追加"
-
-#~ msgid "Animation..."
-#~ msgstr "アニメーション ...."
 
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "ファイル %1 のファイル形式を読めません"
@@ -10100,20 +9973,11 @@ msgstr ""
 #~ msgid "Animate trajectories, reactions, and vibrations."
 #~ msgstr "トラジェクトリ, 反応, 振動をアニメーションで表示"
 
-#~ msgid "Cartesian Editor"
-#~ msgstr "カルテシアン座標エディタ"
-
 #~ msgid ""
 #~ "No unit cell defined for molecule -- cannot use fractional coordinates."
 #~ msgstr ""
 #~ "分子のユニットセルが定義されていません。 -- フラクショナル座標を使用できま"
 #~ "せん。"
-
-#~ msgid "Cartesian Editor..."
-#~ msgstr "カルテシアンエディタ..."
-
-#~ msgid "Cartesian editor"
-#~ msgstr "カルテシアンエディタ"
 
 #~ msgid "Number of atoms: %1"
 #~ msgstr "原子数 : %1"
@@ -10148,9 +10012,6 @@ msgstr ""
 
 #~ msgid "&Crystallography"
 #~ msgstr "結晶(&C)"
-
-#~ msgid "&Reduce"
-#~ msgstr "リデュース(&R)"
 
 #~ msgid "&Length Unit"
 #~ msgstr "長さの単位(&L)"
@@ -10239,15 +10100,6 @@ msgstr ""
 
 #~ msgid "&Slab..."
 #~ msgstr "スラブ(&S)"
-
-#~ msgid "Perceive Space&group..."
-#~ msgstr "空間群を検出(&G)..."
-
-#~ msgid "Set &Spacegroup..."
-#~ msgstr "空間群を設定(&S)"
-
-#~ msgid "&Fill Unit Cell"
-#~ msgstr "単位胞を構成(&F)"
 
 #~ msgid "Fill the unit cell using current spacegroup."
 #~ msgstr "現在の空間群を元に単位胞を構成"
@@ -10358,9 +10210,6 @@ msgstr ""
 #~ "フォーマットのどれにも合致しません。\n"
 #~ "\n"
 
-#~ msgid "VASP Format\n"
-#~ msgstr "VASPフォーマット\n"
-
 #~ msgid "Bad Compostion"
 #~ msgstr "不正な組成式"
 
@@ -10390,9 +10239,6 @@ msgstr ""
 #~ msgid "Set Unit Cell Params"
 #~ msgstr "ユニットセルのパラメータをセット"
 
-#~ msgid "Working..."
-#~ msgstr "処理中..."
-
 #~ msgid "Build"
 #~ msgstr "ビルド(&B)"
 
@@ -10404,9 +10250,6 @@ msgstr ""
 
 #~ msgid "Please select one or more atoms."
 #~ msgstr "一つ以上の原子を選択してください。"
-
-#~ msgid "Trajectory..."
-#~ msgstr "トラジェクトリ ..."
 
 #~ msgid "Open chemical file format"
 #~ msgstr "化学ファイル形式を開く"
@@ -10429,12 +10272,6 @@ msgstr ""
 #~ msgid "Calculate Energy"
 #~ msgstr "エネルギー計算"
 
-#~ msgid "Conformer Search..."
-#~ msgstr "配座探索 ..."
-
-#~ msgid "Constraints..."
-#~ msgstr "束縛 ..."
-
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
@@ -10443,12 +10280,6 @@ msgstr ""
 
 #~ msgid "Geometric Optimization"
 #~ msgstr "構造最適化"
-
-#~ msgid "Systematic Rotor Search"
-#~ msgstr "システマティック・ローター検索"
-
-#~ msgid "Random Rotor Search"
-#~ msgstr "ランダム・ローター検索"
 
 #~ msgid "Weighted Rotor Search"
 #~ msgstr "重みづけローター検索"
@@ -10494,9 +10325,6 @@ msgstr ""
 #~ msgid "Insert DNA/RNA chains"
 #~ msgstr "DNA/RNA鎖を挿入"
 
-#~ msgid "Peptide..."
-#~ msgstr "ペプチド"
-
 #~ msgid "Insert oligopeptide sequences"
 #~ msgstr "オリゴペプチド配列を挿入する"
 
@@ -10519,20 +10347,11 @@ msgstr ""
 #~ msgid "Display standard molecular properties."
 #~ msgstr "一般的な分子の性質を見る"
 
-#~ msgid "Fetch by chemical name..."
-#~ msgstr "化学名を指定して構造を取得..."
-
-#~ msgid "Fetch from URL..."
-#~ msgstr "URLを指定して構造を取得..."
-
 #~ msgid "PDB Entry"
 #~ msgstr "PDBエントリ"
 
 #~ msgid "PDB entry to download."
 #~ msgstr "ダウンロードするPDBエントリ"
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "ダウンロードする分子のURL"
@@ -10562,9 +10381,6 @@ msgstr ""
 
 #~ msgid "Selected displacement data don't fit to the actual molecule!"
 #~ msgstr "選択された変位データは分子に適合しません!"
-
-#~ msgid "extended Geometry File"
-#~ msgstr "拡張ジオメトリファイル"
 
 #~ msgid "Read Orca Outputfile"
 #~ msgstr "Orca アウトプットファイルを読み込む"
@@ -10603,12 +10419,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Orcaアウトプットを解析..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
-#~ msgid "ORCA Input Deck"
-#~ msgstr "ORCAインプット"
-
 #~ msgid "Show Preview"
 #~ msgstr "プレビューを表示"
 
@@ -10645,9 +10455,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "イメージファイル (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "有効なファイル名が入力されていません"
@@ -10686,9 +10493,6 @@ msgstr ""
 #~ "POV-Rayファイルを作り、POV-Rayコマンドラインプログラムを使ってレンダリング"
 #~ "します。"
 
-#~ msgid "Conformer Properties..."
-#~ msgstr "配座異性体のプロパティ..."
-
 #~ msgid "Python Terminal"
 #~ msgstr "Pythonターミナル"
 
@@ -10707,9 +10511,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Abinit入力プレビューペインへの全ての変更を破棄してプレビューテキストを更新"
 #~ "しますか？"
-
-#~ msgid "Abinit_Input_Deck"
-#~ msgstr "Abinit インプット"
 
 #~ msgid "Abinit Running."
 #~ msgstr "Abinit実行中"
@@ -10768,21 +10569,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES記法変換は利用できません"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "GAMESSのインプットファイルを作る"
 
@@ -10826,9 +10612,6 @@ msgstr ""
 #~ "GAMESS-UKインプットプレビューペインへの変更を全て破棄してプレビューテキス"
 #~ "トを更新しますか？"
 
-#~ msgid "GAMESS-UK Input Deck"
-#~ msgstr "GAMESS-UKインプット"
-
 #~ msgid "Gaussian Input Deck Generator Warning"
 #~ msgstr "Gaussianインプットジェネレータからの警告"
 
@@ -10838,9 +10621,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussianインプットプレビューペインへの変更を全て破棄してプレビューテキスト"
 #~ "を更新しますか？"
-
-#~ msgid "Gaussian Input Deck"
-#~ msgstr "Gaussianインプット"
 
 #~ msgid "Gaussian Running."
 #~ msgstr "Gaussianが実行中です"
