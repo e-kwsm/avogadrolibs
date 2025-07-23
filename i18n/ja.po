@@ -11747,30 +11747,6 @@ msgstr ""
 #~ "\n"
 #~ "リガンドまたは官能基を選択して付加する水素をクリック"
 
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "+1"
-#~ msgstr "+1"
-
-#~ msgid "+2"
-#~ msgstr "+2"
-
-#~ msgid "+3"
-#~ msgstr "+3"
-
-#~ msgid "+4"
-#~ msgstr "+4"
-
-#~ msgid "+5"
-#~ msgstr "+5"
-
-#~ msgid "+6"
-#~ msgstr "+6"
-
-#~ msgid "+7"
-#~ msgstr "+7"
-
 #~ msgid "Render polygon meshes."
 #~ msgstr "ポリゴンメッシュの描画"
 
@@ -11779,9 +11755,6 @@ msgstr ""
 
 #~ msgid "∞"
 #~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "インポート(&I)…"
@@ -11794,9 +11767,6 @@ msgstr ""
 
 #~ msgid "&Load data..."
 #~ msgstr "データのロード(&L)..."
-
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #~ msgid "Partial Charge"
 #~ msgstr "部分電荷"
@@ -11953,21 +11923,8 @@ msgstr ""
 #~ msgid "Number of Bonds:"
 #~ msgstr "結合数:"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgid "Line Size:"
-#~ msgstr "線幅:"
-
 #~ msgid "Fragment…"
 #~ msgstr "フラグメント…"
-
-#, fuzzy
-#~| msgid "Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "汎関数"
 
 #~ msgid "Help..."
 #~ msgstr "ヘルプ..."
@@ -11983,14 +11940,6 @@ msgstr ""
 
 #~ msgid "Connection failed"
 #~ msgstr "接続に失敗しました"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
 
 #~ msgid "Client server"
 #~ msgstr "クライアントサーバ"
@@ -12212,10 +12161,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "ストップ"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "サーフェス"
 
 #~ msgid "Color by Index"
 #~ msgstr "インデックスによるカラー"
