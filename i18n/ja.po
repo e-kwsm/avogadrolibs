@@ -11720,9 +11720,6 @@ msgstr ""
 #~ msgid "Relativistic"
 #~ msgstr "相対論的"
 
-#~ msgid "Order"
-#~ msgstr "オーダー"
-
 #~ msgid "Corr. Aux. Basis Set"
 #~ msgstr "相関補正基底"
 
@@ -11732,26 +11729,8 @@ msgstr ""
 #~ msgid "Run type"
 #~ msgstr "計算"
 
-#~ msgid "MOs"
-#~ msgstr "MO"
-
 #~ msgid "Basis Sets"
 #~ msgstr "基底"
-
-#~ msgid "Printlevel"
-#~ msgstr "プリントレベル"
-
-#~ msgid "Small"
-#~ msgstr "やや小"
-
-#~ msgid "Large"
-#~ msgstr "大"
-
-#~ msgid "Damping"
-#~ msgstr "ダンプ"
-
-#~ msgid "Factor"
-#~ msgstr "ファクター"
 
 #~ msgid ""
 #~ "<html><head/><body><p><span style=\" font-size:10pt; font-style:italic;"
@@ -11772,14 +11751,8 @@ msgstr ""
 #~ msgid "Extreme SCF"
 #~ msgstr "最高精度SCF"
 
-#~ msgid "Levelshift "
-#~ msgstr "レベルシフト "
-
 #~ msgid "Levelshift"
 #~ msgstr "レベルシフト"
-
-#~ msgid "2nd Order"
-#~ msgstr "２次計算"
 
 #~ msgid "max. SCF iterations"
 #~ msgstr "SCF最大反復"
@@ -11801,12 +11774,6 @@ msgstr ""
 
 #~ msgid "Grid"
 #~ msgstr "グリッド"
-
-#~ msgid "POV-Ray Export"
-#~ msgstr "POV-Ray エクスポート"
-
-#~ msgid "Select..."
-#~ msgstr "選択..."
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "全シーンにアンチエイリアス"
@@ -11886,9 +11853,6 @@ msgstr ""
 #~ msgid "3 - Fermi Dirac"
 #~ msgstr "3 - フェルミ・ディラック分布"
 
-#~ msgid "7 - Gaussian smearing"
-#~ msgstr "Gaussianが実行中です"
-
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Smearing幅(Ha)"
 
@@ -11910,9 +11874,6 @@ msgstr ""
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "運動エネルギースムージング (Ha):"
 
-#~ msgid "Compute..."
-#~ msgstr "計算..."
-
 #~ msgid "Dalton Input"
 #~ msgstr "Dalton インプット"
 
@@ -11929,12 +11890,6 @@ msgstr ""
 
 #~ msgid "Pople-style"
 #~ msgstr "Pople 方式"
-
-#~ msgid "Jensen's polarization consistent"
-#~ msgstr "Jensen の polarization consistent"
-
-#~ msgid "Dunning's correlation consistent"
-#~ msgstr "Dunning の correlation consistent"
 
 #~ msgid "Core correlating functions"
 #~ msgstr "内殻相関関数"
@@ -12008,17 +11963,8 @@ msgstr ""
 #~ msgid "&Advanced Setup"
 #~ msgstr "詳細セットアップ (&A)"
 
-#~ msgid "Hessian"
-#~ msgstr "ヘシアン"
-
 #~ msgid "Stat Point"
 #~ msgstr "停留点"
-
-#~ msgid "System"
-#~ msgstr "システム"
-
-#~ msgid "MO Guess"
-#~ msgstr "MO 推測"
 
 #~ msgid "Misc"
 #~ msgstr "その他"
@@ -12064,9 +12010,6 @@ msgstr ""
 
 #~ msgid "IRC"
 #~ msgstr "固有反応座標 (IRC)"
-
-#~ msgid "Gradient Extremal"
-#~ msgstr "グラジエントエクストレマルパス"
 
 #~ msgid "DRC"
 #~ msgstr "動的反応座標 (DRC)"
@@ -12170,18 +12113,6 @@ msgstr ""
 #~ msgid "Millenia"
 #~ msgstr "千年"
 
-#~ msgid "MegaWords"
-#~ msgstr "メガワード"
-
-#~ msgid "MegaBytes"
-#~ msgstr "メガバイト"
-
-#~ msgid "GigaWords"
-#~ msgstr "ギガワード"
-
-#~ msgid "GigaBytes"
-#~ msgstr "ギガバイト"
-
 #~ msgid "Force Parallel Methods"
 #~ msgstr "必ず並列法を実施"
 
@@ -12199,14 +12130,6 @@ msgstr ""
 
 #~ msgid "Parallel Load Balance Type"
 #~ msgstr "並列負荷分散タイプ"
-
-#~ msgctxt "\"Loop\" load balancing - set static node assignments"
-#~ msgid "Loop"
-#~ msgstr "ループ"
-
-#~ msgctxt "\"Next Value\" load balancing - dynamically assign nodes work"
-#~ msgid "Next Value"
-#~ msgstr "次回の値"
 
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "メッセージに外部データ表現を使用"
@@ -12228,9 +12151,6 @@ msgstr ""
 
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "他のコードとの GAMESS インターフェース"
-
-#~ msgid "Force a Check Run Type"
-#~ msgstr "必ず CHECK ランを実行"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK 版)"
@@ -12340,23 +12260,14 @@ msgstr ""
 #~ msgid "Numeric"
 #~ msgstr "数値"
 
-#~ msgid "Double Differenced Hessian"
-#~ msgstr "二次微分ヘシアン行列"
-
 #~ msgid "Print Internal Force Constants"
 #~ msgstr "内部座標による力の定数を印刷する"
 
 #~ msgid "Displacement Size:"
 #~ msgstr "変位の大きさ："
 
-#~ msgid "Purify Hessian"
-#~ msgstr "ヘシアンをクリーンアップ"
-
 #~ msgid "Frequency Scale Factor:"
 #~ msgstr "振動数のスケーリング因子:"
-
-#~ msgid "Initial Hessian"
-#~ msgstr "初期ヘシアン行列"
 
 #~ msgid "Read (from $HESS)"
 #~ msgstr "$HESSから読み込む"
@@ -12384,9 +12295,6 @@ msgstr ""
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "制約付き最適化"
-
-#~ msgid "Recalculate Hessian Every:"
-#~ msgstr "毎回ヘシアン行列を再計算する"
 
 #~ msgid "Follow Mode:"
 #~ msgstr "次のモードにしたがう:"
