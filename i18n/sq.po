@@ -8496,9 +8496,6 @@ msgstr ""
 #~ msgid "E&xtensions"
 #~ msgstr "Z&gjatimet"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctium"
 
