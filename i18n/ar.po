@@ -9360,9 +9360,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "اللون عن طريق الأنماط الذكية"
 
-#~ msgid "Ununoctium"
-#~ msgstr "أنون-أوكتيوم"
-
 #~ msgid "Engines"
 #~ msgstr "المحركات"
 

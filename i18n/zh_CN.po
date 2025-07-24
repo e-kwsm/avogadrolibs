@@ -9912,9 +9912,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "以 SMARTS 模式着色"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Uuo"
-
 #~ msgid "Engines"
 #~ msgstr "引擎"
 

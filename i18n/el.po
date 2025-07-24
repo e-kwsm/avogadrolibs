@@ -9923,9 +9923,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgstr ""
 #~ "Επισήμανση ειδικών χαρακτηριστικών που ταιριάζουν με ένα μοτίβο SMARTS."
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ουνουνόκτιο"
-
 #~ msgid "Engines"
 #~ msgstr "Μηχανές"
 

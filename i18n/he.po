@@ -9199,9 +9199,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "הדגש מאפיינים ספציפיים התואמים דפוס SMARTS."
 
-#~ msgid "Ununoctium"
-#~ msgstr "אונונאוקטיום"
-
 #~ msgid "Engines"
 #~ msgstr "מנועים"
 
