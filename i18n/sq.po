@@ -8441,9 +8441,6 @@ msgstr ""
 #~ msgid "E&xtensions"
 #~ msgstr "Z&gjatimet"
 
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Ununseptium"
 
