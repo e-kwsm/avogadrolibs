@@ -11352,89 +11352,11 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Generate UHF Natural Orbitals"
 #~ msgstr "產生 UHF 自然軌域"
 
-#~ msgid "Direct SCF"
-#~ msgstr "Direct SCF"
-
-#~ msgid "Compute Only Changed in Fock Matrix"
-#~ msgstr "Compute Only Changed in Fock Matrix"
-
-#~ msgid "Slater exchange"
-#~ msgstr "Slater exchange"
-
-#~ msgid "Becke 1988 exchange"
-#~ msgstr "Becke 1988 exchange"
-
-#~ msgid "VWN: Vosko-Wilk-Nusair (VWN5) correlation"
-#~ msgstr "VWN: Vosko-Wilk-Nusair (VWN5) correlation"
-
-#~ msgid "LYP: Lee-Yang-Parr correlation"
-#~ msgstr "LYP: Lee-Yang-Parr correlation"
-
 #~ msgid "SVWN: Slater exchange + VWN correlation"
 #~ msgstr "SVWN: Slater 交換 + VWN 相關性"
 
-#~ msgid "BVWN: BECKE exchange + VWN5 correlation"
-#~ msgstr "BVWN: BECKE exchange + VWN5 correlation"
-
-#~ msgid "BLYP: BECKE exchange + LYP correlation"
-#~ msgstr "BLYP: BECKE exchange + LYP correlation"
-
-#~ msgid "Gill 1996 exchange"
-#~ msgstr "Gill 1996 exchange"
-
-#~ msgid "Perdew-Burke-Ernzerhof (PBE) exchange"
-#~ msgstr "Perdew-Burke-Ernzerhof (PBE) exchange"
-
-#~ msgid "OP: One-parameter Progressive correlation"
-#~ msgstr "OP: One-parameter Progressive correlation"
-
-#~ msgid "SLYP: SLATER + Lee-Yang-Parr (LYP) correlation"
-#~ msgstr "SLYP: SLATER + Lee-Yang-Parr (LYP) correlation"
-
-#~ msgid "SOP: SLATER + OP correlation"
-#~ msgstr "SOP: SLATER + OP correlation"
-
-#~ msgid "BOP: BECKE exchange + OP correlation"
-#~ msgstr "BOP: BECKE exchange + OP correlation"
-
-#~ msgid "BVWN: GILL exchange + VWN5 correlation"
-#~ msgstr "BVWN: GILL exchange + VWN5 correlation"
-
-#~ msgid "GLYP: GILL exchange + LYP correlation"
-#~ msgstr "GLYP: GILL exchange + LYP correlation"
-
-#~ msgid "PBEVWN: PBE exchange + VWN6 correlation"
-#~ msgstr "PBEVWN: PBE exchange + VWN6 correlation"
-
-#~ msgid "PBELYP: PBE exchange +LYP correlation"
-#~ msgstr "PBELYP: PBE exchange +LYP correlation"
-
-#~ msgid "PBEOP: PBE exchange + OP correlation"
-#~ msgstr "PBEOP: PBE exchange + OP correlation"
-
-#~ msgid "BHHLYP: HF and BECKE exchange + LYP correlation"
-#~ msgstr "BHHLYP: HF and BECKE exchange + LYP correlation"
-
-#~ msgid "Grid-Free"
-#~ msgstr "Grid-Free"
-
-#~ msgid "AO Integral Storage"
-#~ msgstr "AO Integral Storage"
-
-#~ msgid "Duplicated on Each Node"
-#~ msgstr "Duplicated on Each Node"
-
-#~ msgid "Distributed Across All Nodes"
-#~ msgstr "Distributed Across All Nodes"
-
-#~ msgid "words"
-#~ msgstr "words"
-
 #~ msgid "Compute MP2 Properties"
 #~ msgstr "計算 MP2 的特性"
-
-#~ msgid "Integral Retention Cutoff:"
-#~ msgstr "Integral Retention Cutoff:"
 
 #~ msgid "Use Localized Orbitals"
 #~ msgstr "使用定域軌域"
@@ -11442,71 +11364,14 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "# of Core Electrons:"
 #~ msgstr "內層電子數:"
 
-#~ msgid "Two Phase Bin Sort"
-#~ msgstr "Two Phase Bin Sort"
-
-#~ msgid "Segmented Transformation"
-#~ msgstr "Segmented Transformation"
-
 #~ msgid "Numeric"
 #~ msgstr "數字"
-
-#~ msgid "Double Differenced Hessian"
-#~ msgstr "Double Differenced Hessian"
-
-#~ msgid "Print Internal Force Constants"
-#~ msgstr "Print Internal Force Constants"
 
 #~ msgid "Displacement Size:"
 #~ msgstr "置換大小"
 
-#~ msgid "Purify Hessian"
-#~ msgstr "Purify Hessian"
-
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
-#~ msgid "Initial Hessian"
-#~ msgstr "Initial Hessian"
-
-#~ msgid "Guess (+ define)"
-#~ msgstr "Guess (+ define)"
-
-#~ msgid "Read (from $HESS)"
-#~ msgstr "Read (from $HESS)"
-
-#~ msgid "Update Step Size"
-#~ msgstr "Update Step Size"
-
-#~ msgid "Print Orbs at Each Iteration"
-#~ msgstr "Print Orbs at Each Iteration"
-
-#~ msgid "Stationary Point"
-#~ msgstr "Stationary Point"
-
-#~ msgid "Initial:"
-#~ msgstr "Initial:"
-
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
-#~ msgid "Rational Function Optimization"
-#~ msgstr "Rational Function Optimization"
-
 #~ msgid "Quadratic Approximation"
 #~ msgstr "二次逼近"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
-
-#~ msgid "Constrained Optimization"
-#~ msgstr "Constrained Optimization"
-
-#~ msgid "Recalculate Hessian Every:"
-#~ msgstr "Recalculate Hessian Every:"
-
-#~ msgid "Follow Mode:"
-#~ msgstr "Follow Mode:"
 
 #~ msgid "GAMESS-UK Input"
 #~ msgstr "GAMESS-UK 輸入"
@@ -11520,35 +11385,11 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Basis:"
 #~ msgstr "基礎:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
-#~ msgid "Z-matrix"
-#~ msgstr "Z-matrix"
-
 #~ msgid "Gaussian Input"
 #~ msgstr "輸入 Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "標準"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "檢查點:"
@@ -11559,26 +11400,8 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO 輸入"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Molpro 版本:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "Quartet"
 #~ msgstr "Quartet 四重"
@@ -11586,29 +11409,11 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Quintet"
 #~ msgstr "Quintet 五重"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "NWChem 輸入"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem 輸入"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "載入 Shaders (幕後工程師)"
@@ -11652,15 +11457,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "&Height"
 #~ msgstr "高"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
 #~ "value (screen to image point sizes don't translate well!)"
@@ -11702,14 +11498,8 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Fermi energy at zero"
 #~ msgstr "費米能為零"
 
-#~ msgid "Scale integrated DOS"
-#~ msgstr "Scale integrated DOS"
-
 #~ msgid "Show integrated DOS"
 #~ msgstr "顯示 integrated DOS"
-
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
 
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Y 軸單位:"
@@ -11723,12 +11513,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "雷射波數:"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gaussian 寬度:"
 
@@ -11738,20 +11522,8 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Label Peaks:"
 #~ msgstr "標示 peaks:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "分子振動"
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "活性 (A^4/amu)"
