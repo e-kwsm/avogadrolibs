@@ -9286,9 +9286,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "&Analysis"
 #~ msgstr "分析"
 
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgid "&Import..."
 #~ msgstr "匯入"
 
@@ -9300,10 +9297,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "&Load data..."
 #~ msgstr "載入資料"
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #~ msgid "Partial Charge"
 #~ msgstr "部份電荷"
