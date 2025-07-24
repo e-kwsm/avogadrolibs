@@ -9705,9 +9705,6 @@ msgstr ""
 #~ "Mettre en surbrillance les motifs qui correspondent  à une structure "
 #~ "SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
