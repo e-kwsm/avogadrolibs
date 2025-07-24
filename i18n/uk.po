@@ -10212,9 +10212,6 @@ msgstr "Ваші електронні листи"
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Позначати окремі елементи, які відповідають набору SMARTS."
 
-#~ msgid "Ununpentium"
-#~ msgstr "Унунпентій"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Унунсептій"
 

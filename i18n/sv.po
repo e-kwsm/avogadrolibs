@@ -9317,9 +9317,6 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markera speciella funktioner som matchar ett SMARTS-mönster."
 
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Ununseptium"
 

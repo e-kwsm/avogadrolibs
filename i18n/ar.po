@@ -9363,9 +9363,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "اللون عن طريق الأنماط الذكية"
 
-#~ msgid "Ununpentium"
-#~ msgstr "أنون-بينتيوم"
-
 #~ msgid "Ununseptium"
 #~ msgstr "أنون-سيبتيوم"
 
