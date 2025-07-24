@@ -9550,9 +9550,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Tô màu theo mẫu SMARTS"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununocti"
-
 #~ msgid "Engines"
 #~ msgstr "Động cơ"
 

@@ -9848,9 +9848,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Sorot fitur tertentu yang sesuai dengan pola SMARTS"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoktium"
-
 #~ msgid "Engines"
 #~ msgstr "Mesin"
 

@@ -10078,9 +10078,6 @@ msgstr "Seus e-mails"
 #~ msgstr ""
 #~ "Realçar funcionalidades particulares que coincidem com o padrão SMARTS."
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctio"
-
 #~ msgid "Engines"
 #~ msgstr "Mecanismos"
 

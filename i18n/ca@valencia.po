@@ -9628,9 +9628,6 @@ msgstr ""
 #~ "Color ressaltat de les característiques particulars amb concordança amb "
 #~ "el patró SMARTS."
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununocti"
-
 #~ msgid "Engines"
 #~ msgstr "Motors"
 

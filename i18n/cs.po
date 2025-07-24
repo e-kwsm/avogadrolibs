@@ -9955,9 +9955,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Zvýraznit zvláštní vlastnosti, které odpovídají vzoru SMARTS."
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Stroje"
 

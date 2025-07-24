@@ -9652,9 +9652,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Realza características concretas cun padrón de SMARTS."
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Motores"
 
