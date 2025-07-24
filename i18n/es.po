@@ -10463,9 +10463,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Resaltar características particulares que se ajustan a patrones SMARTS"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrio"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentio"
 
