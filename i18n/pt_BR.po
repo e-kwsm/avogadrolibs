@@ -11989,7 +11989,7 @@ msgstr "Seus e-mails"
 #~ msgstr "Hondo 8.2"
 
 #~ msgid "MELDF"
-#~ msgstr "Copy text   \t MELDF"
+#~ msgstr "MELDF"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Solvatar com Água"

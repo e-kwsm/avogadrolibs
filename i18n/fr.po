@@ -12610,7 +12610,7 @@ msgstr ""
 #~ msgstr "SCF"
 
 #~ msgid "RijCosX"
-#~ msgstr "Copy text \t RijCosX"
+#~ msgstr "RijCosX"
 
 #~ msgid "Aux. Basis Set"
 #~ msgstr "Base auxiliaire"
