@@ -9908,9 +9908,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "以 SMARTS 模式着色"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Uus"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Uuo"
 

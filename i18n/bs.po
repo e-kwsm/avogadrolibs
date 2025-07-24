@@ -9571,9 +9571,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Boja po ostatku (tip amino kiselina, hidrofobnost, ..."
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptijum"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoktijum"
 

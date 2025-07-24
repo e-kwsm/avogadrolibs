@@ -9718,9 +9718,6 @@ msgstr ""
 #~ "Evidenzia caratteristiche particolari che corrispondono a uno schema "
 #~ "SMARTS"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctium"
 

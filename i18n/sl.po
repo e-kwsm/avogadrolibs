@@ -9895,9 +9895,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Poudari posebne lastnosti, ki so skladne z vzorcem SMARTS."
 
-#~ msgid "Ununseptium"
-#~ msgstr "ununseptij"
-
 #~ msgid "Ununoctium"
 #~ msgstr "ununoktij"
 

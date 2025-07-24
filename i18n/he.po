@@ -9202,9 +9202,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "הדגש מאפיינים ספציפיים התואמים דפוס SMARTS."
 
-#~ msgid "Ununseptium"
-#~ msgstr "אונונספטיום"
-
 #~ msgid "Ununoctium"
 #~ msgstr "אונונאוקטיום"
 

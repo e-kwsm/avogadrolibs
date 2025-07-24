@@ -10032,9 +10032,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "SMARTSパターンに一致するものをハイライト"
 
-#~ msgid "Ununseptium"
-#~ msgstr "ウンウンセプチウム (Ununseptium)"
-
 #~ msgid "Ununoctium"
 #~ msgstr "ウンウンオクチウム (Ununoctium)"
 
