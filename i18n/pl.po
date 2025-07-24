@@ -11486,9 +11486,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Kolor podświetlenia:"
 
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Ununseptium"
 
