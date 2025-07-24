@@ -8752,9 +8752,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markera speciella funktioner som matchar ett SMARTS-mönster."
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Axes"
 #~ msgstr "Axlar"
 
