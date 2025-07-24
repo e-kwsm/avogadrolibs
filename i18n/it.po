@@ -11921,9 +11921,6 @@ msgstr ""
 #~ "Evidenzia caratteristiche particolari che corrispondono a uno schema "
 #~ "SMARTS"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Motori"
 
