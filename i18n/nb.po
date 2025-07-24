@@ -8855,9 +8855,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Farge for framheving:"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctium"
 

@@ -9377,9 +9377,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Besonderheiten hervorheben, die mit einem SMARTS Muster übereinstimmen"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctium"
 
