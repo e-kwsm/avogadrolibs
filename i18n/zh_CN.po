@@ -9453,12 +9453,6 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "分析(&A)"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgid "&Import..."
 #~ msgstr "导入(&I)…"
 
@@ -9470,9 +9464,6 @@ msgstr ""
 
 #~ msgid "&Load data..."
 #~ msgstr "载入数据(&L)…"
-
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #, fuzzy
 #~| msgid "Partial charge"
@@ -9645,9 +9636,6 @@ msgstr ""
 #~ msgid "Number of Bonds:"
 #~ msgstr "化学键的数量:"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
 #, fuzzy
 #~| msgid "Jump Size:"
 #~ msgid "Line Size:"
@@ -9666,9 +9654,6 @@ msgstr ""
 
 #~ msgid "El.&No."
 #~ msgstr "元素与编号"
-
-#~ msgid ", "
-#~ msgstr ", "
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "APBS 输入文件 (*.in)"
@@ -9736,9 +9721,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "晶体..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9986,9 +9968,6 @@ msgstr ""
 #~ msgid "Trajectory files"
 #~ msgstr "轨道文件"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "添加.avi扩展名"
 
@@ -10174,9 +10153,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "普通矢量图格式"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "矢量图输出"
 
@@ -10220,9 +10196,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "下载PDB项目。"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "从URL下载分子。"
 
@@ -10246,9 +10219,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "图像文件 (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "没有提供有效的文件名。"
