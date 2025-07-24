@@ -9515,9 +9515,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Besonderheiten hervorheben, die mit einem SMARTS Muster übereinstimmen"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Engines"
 
