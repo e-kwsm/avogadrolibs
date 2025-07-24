@@ -9923,7 +9923,7 @@ msgstr "E-mail-címek"
 #~ msgstr "&MOLPRO..."
 
 #~ msgid "&NWChem..."
-#~ msgstr "Copy text   \t &NWChem..."
+#~ msgstr "&NWChem..."
 
 #~ msgid "&Q-Chem..."
 #~ msgstr "&Q-Chem..."
