@@ -8616,9 +8616,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Цвят по група (тип на амино киелината, хидрофобност, ...)"
 
-#~ msgid "Ununpentium"
-#~ msgstr "Унунпентиум"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Унунсептий"
 
