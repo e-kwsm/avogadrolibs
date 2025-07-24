@@ -9558,9 +9558,6 @@ msgstr "Sähköpostisi"
 #~ msgid "Color by Element (carbon = grey, oxygen = red, ...)."
 #~ msgstr "Väri alkuaineen mukaan (hiili = harmaa, happi = punainen, ...)"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
