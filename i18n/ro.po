@@ -1628,11 +1628,11 @@ msgid ""
 msgstr ""
 "Aliniere molecule\n"
 "\n"
-"Butonul stâng al mouse-ului: \tSelectează până la doi atomi.\n"
+"Butonul stâng al mouse-ului:\tSelectează până la doi atomi.\n"
 "\tPrimul atom este centrat la origine.\n"
 "\tAl doilea atom este aliniat la axa selectată.\n"
-"Butonul drept al mouse-ului: \tRestabilește alinierea.\n"
-"Dublu clic: \tCentrează atomul la origine."
+"Butonul drept al mouse-ului:\tRestabilește alinierea.\n"
+"Dublu clic:\tCentrează atomul la origine."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:262
 #. i18n: ectx: property (text), widget (QLabel, label_6)
