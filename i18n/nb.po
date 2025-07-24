@@ -8990,9 +8990,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Farge for framheving:"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Axes"
 #~ msgstr "Akser"
 
