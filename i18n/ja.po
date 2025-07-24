@@ -7000,7 +7000,7 @@ msgstr "NHチェーン"
 #. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, stepSpin)
 msgid ""
 "Time step for the simulation in units according to \"Units\" specification."
-msgstr "シミュレーションの1ステップ時間 （「単位」で指定した単位）"
+msgstr "シミュレーションの1ステップ時間 (「単位」で指定した単位)"
 
 #. i18n: file: qtplugins/lammpsinput/lammpsinputdialog.ui:396
 #. i18n: ectx: property (text), widget (QLabel, label_2)
