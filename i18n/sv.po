@@ -10581,9 +10581,6 @@ msgstr "nordinalex@gmail.com, yeager@ubuntu.com"
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markera speciella funktioner som matchar ett SMARTS-mönster."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
