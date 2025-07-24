@@ -10025,9 +10025,7 @@ msgstr ""
 #~ msgstr "Ununseptium"
 
 #~ msgid "Ununoctium"
-#~ msgstr ""
-#~ "Copy text \n"
-#~ "  Ununoctium"
+#~ msgstr "Ununoctium"
 
 #~ msgid "Engines"
 #~ msgstr "Engines"
