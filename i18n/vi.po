@@ -8931,9 +8931,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Tô màu theo mẫu SMARTS"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununsepti"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununocti"
 
