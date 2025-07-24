@@ -10276,12 +10276,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES 格式转换不能使用"
 
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "为GAMESS量子化学软件包创建输入文件"
 
@@ -10516,9 +10510,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "逗号分隔数值"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "未知扩展名: %1"
 
@@ -10538,9 +10529,6 @@ msgstr ""
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "便携式网络图形(PNG)"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "标签图像文件格式(TIFF)"
@@ -10593,10 +10581,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "无"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "电子密度"
@@ -10611,9 +10595,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "计算分子轨道%L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL小工具未能正确启动以制作视频"
@@ -10680,9 +10661,6 @@ msgstr ""
 #~ msgid "Atoms: %L1"
 #~ msgstr "原子: %L1"
 
-#~ msgid "OBMol: index %1 out of reach."
-#~ msgstr "OBMol: index %1 out of reach."
-
 #~ msgid "File type '%1' is not supported for reading."
 #~ msgstr "文件类型 '%1' 不支持读取操作。"
 
@@ -10691,9 +10669,6 @@ msgstr ""
 
 #~ msgid "Reading molecule with index %1 from file '%2' failed."
 #~ msgstr "读取含有索引 %1 的分子信息的文件 '%2' 失败。"
-
-#~ msgid "replaceMolecule: index %1 out of reach."
-#~ msgstr "replaceMolecule: index %1 out of reach."
 
 #~ msgid "File type '%1' is not supported for writing."
 #~ msgstr "文件类型 '%1' 不支持写入操作。"
