@@ -10987,9 +10987,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Realçar funcionalidades particulares que coincidem com o padrão SMARTS."
 
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentio"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Ununséptio"
 
