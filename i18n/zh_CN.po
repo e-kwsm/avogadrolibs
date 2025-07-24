@@ -10734,10 +10734,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "分子 %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "未知Python引擎"
 
@@ -10864,22 +10860,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "二面角: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "距离(s):"
 
@@ -10955,15 +10935,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "图形"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "环"
 
@@ -11027,9 +10998,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "动画轨迹"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgid "Save as .avi..."
 #~ msgstr "保存为.avi文件..."
 
@@ -11078,29 +11046,77 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "建立力场"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "步骤数"
 
 #~ msgid "Algorithm"
 #~ msgstr "算法"
 
-#~ msgid "L"
-#~ msgstr "L"
+#~ msgid "Arginine"
+#~ msgstr "精氨酸"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
+#~ msgid "Asparagine"
+#~ msgstr "天冬酰胺"
 
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
+#~ msgid "Aspartic acid"
+#~ msgstr "天冬氨酸"
 
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
+#~ msgid "Cysteine"
+#~ msgstr "半胱氨酸"
 
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
+#~ msgid "Glutamic acid"
+#~ msgstr "谷氨酸"
+
+#~ msgid "Glutamine"
+#~ msgstr "谷氨酰胺"
+
+#~ msgid "Glycine"
+#~ msgstr "甘氨酸"
+
+#~ msgid "Histidine"
+#~ msgstr "组氨酸"
+
+#~ msgid "Isoleucine"
+#~ msgstr "异亮氨酸"
+
+#~ msgid "Tryptophan"
+#~ msgstr "色氨酸"
+
+#~ msgid "Threonine"
+#~ msgstr "苏氨酸"
+
+#~ msgid "Serine"
+#~ msgstr "丝氨酸"
+
+#~ msgid "Proline"
+#~ msgstr "脯氨酸"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "苯丙氨酸"
+
+#~ msgid "Methionine"
+#~ msgstr "甲硫氨酸"
+
+#~ msgid "Lysine"
+#~ msgstr "赖氨酸"
+
+#~ msgid "Leucine"
+#~ msgstr "亮氨酸"
+
+#~ msgid "Sequence (N to C):"
+#~ msgstr "序列 (N to C):"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "立体化学:"
+
+#~ msgid "N Terminus:"
+#~ msgstr "N端:"
+
+#~ msgid "C Terminus:"
+#~ msgstr "C端:"
+
+#~ msgid "Straight Chain"
+#~ msgstr "直链"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Alpha螺旋"
@@ -11108,32 +11124,17 @@ msgstr ""
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta片层"
 
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
+#~ msgid "Chain Number:"
+#~ msgstr "链编号:"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "新多肽所用的链编号"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "残基的数量:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "偶极矩 (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "高级"
@@ -11149,9 +11150,6 @@ msgstr ""
 
 #~ msgid "Select..."
 #~ msgstr "选择..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "使用全场景抗锯齿"
@@ -11177,47 +11175,8 @@ msgstr ""
 #~ msgid "Path:"
 #~ msgstr "路径:"
 
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
 #~ msgid "Compute..."
 #~ msgstr "计算..."
-
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
 
 #~ msgid "Property:"
 #~ msgstr "属性："
@@ -11225,35 +11184,8 @@ msgstr ""
 #~ msgid "EFP Matches"
 #~ msgstr "EFP匹配"
 
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "高级设置"
-
-#~ msgid "Hessian"
-#~ msgstr "Hessian"
 
 #~ msgid "Stat Point"
 #~ msgstr "起始点"
@@ -11273,38 +11205,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "读取"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "散射重原子的S壳层"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "散射重原子的L壳层"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "双Zeta化合价"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "三Zeta化合价"
@@ -11315,26 +11223,11 @@ msgstr ""
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Hay/Wadt 化合价"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "ECP 类型:"
 
 #~ msgid "Default"
 #~ msgstr "默认"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F 重原子极化函数:"
@@ -11351,20 +11244,11 @@ msgstr ""
 #~ msgid "Gradient"
 #~ msgstr "渐变"
 
-#~ msgid "Trudge"
-#~ msgstr "Trudge"
-
 #~ msgid "Saddle Point"
 #~ msgstr "马鞍点"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "渐变极值"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "放射性过渡力矩"
@@ -11375,14 +11259,8 @@ msgstr ""
 #~ msgid "Finite Electric Field"
 #~ msgstr "有限电场"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "全局优化"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO 优化"
@@ -11390,29 +11268,8 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Raman强度"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "无 (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "SCF 类型:"
@@ -11422,15 +11279,6 @@ msgstr ""
 
 #~ msgid "Exec Type:"
 #~ msgstr "执行类型:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
 
 #~ msgid "Occupation Restricted Multiple Active Space"
 #~ msgstr "被限制占据的多重活动空间"
@@ -11444,9 +11292,6 @@ msgstr ""
 #~ msgid "General CI"
 #~ msgstr "通用 CI"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: 线性化CC"
 
@@ -11455,18 +11300,6 @@ msgstr ""
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: 含有Singles和Doubles的CC"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "正常运行"
@@ -11498,53 +11331,8 @@ msgstr ""
 #~ msgid "Coordinate Type:"
 #~ msgstr "坐标类型:"
 
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
-
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "独立笛卡尔坐标."
-
-#~ msgid "Hilderbrant internals"
-#~ msgstr "Hilderbrant internals"
 
 #~ msgid "Use Symmetry During Calculation"
 #~ msgstr "计算中使用对称性"
@@ -11579,18 +11367,6 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "当取消时创建\"核心\"文件"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "内存："
 
@@ -11602,9 +11378,6 @@ msgstr ""
 
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "使用外部数据来表示信息"
-
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
 
 #~ msgid "HCore"
 #~ msgstr "H核"
@@ -11627,26 +11400,8 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "GAMESS界面到其它编码"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "强制检查运行类型"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK版)"
@@ -11792,9 +11547,6 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "初始"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "有理函数优化"
 
@@ -11822,17 +11574,8 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Gaussian输入"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "标准"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "检查点:"
@@ -11843,44 +11586,14 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO输入"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "四重"
 
 #~ msgid "Quintet"
 #~ msgstr "五重"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem导入"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "载入着色器"
@@ -11915,9 +11628,6 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "原理图(&S):"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "宽度(&W):"
 
@@ -11951,9 +11661,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y轴单位:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "高斯宽度(&W):"
 
@@ -11962,9 +11669,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "标记谱峰:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "分子振动"
