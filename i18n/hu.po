@@ -10093,7 +10093,7 @@ msgstr "E-mail-címek"
 #~ msgstr "&Gaussian"
 
 #~ msgid "&NWChem..."
-#~ msgstr "Copy text \t&NWChem..."
+#~ msgstr "Copy text\t&NWChem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC-bevitel figyelmeztetés"
