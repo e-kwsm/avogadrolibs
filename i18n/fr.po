@@ -12592,7 +12592,7 @@ msgstr ""
 #~ msgstr "SCF"
 
 #~ msgid "RijCosX"
-#~ msgstr "Copy text\tRijCosX"
+#~ msgstr "RijCosX"
 
 #~ msgid "Aux. Basis Set"
 #~ msgstr "Base auxiliaire"
