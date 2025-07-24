@@ -8838,9 +8838,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Farba podľa SMARTS vzoru"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Axes"
 #~ msgstr "Osy"
 
