@@ -9074,9 +9074,6 @@ msgstr ""
 #~ "Color ressaltat de les característiques particulars amb concordança amb "
 #~ "el patró SMARTS."
 
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpenti"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Ununsepti"
 
