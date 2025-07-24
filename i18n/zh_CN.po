@@ -9465,8 +9465,6 @@ msgstr ""
 #~ msgid "&Load data..."
 #~ msgstr "载入数据(&L)…"
 
-#, fuzzy
-#~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "部分电荷"
 
@@ -9543,11 +9541,6 @@ msgstr ""
 #~ "鼠标中键：点击并拖动以缩放。\n"
 #~ "鼠标右键：点击并拖动以移动视角。\n"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "动画"
-
 #~ msgid ""
 #~ "Selection Tool\n"
 #~ "\n"
@@ -9619,11 +9612,6 @@ msgstr ""
 #~ msgstr "复制(&C)"
 
 #, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "分子电荷:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "分子量 (g/mol):"
 
@@ -9635,25 +9623,6 @@ msgstr ""
 
 #~ msgid "Number of Bonds:"
 #~ msgstr "化学键的数量:"
-
-#, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "跳转尺度:"
-
-#, fuzzy
-#~| msgid "Optimization"
-#~ msgid "Optimize"
-#~ msgstr "优化"
-
-#~ msgid "In."
-#~ msgstr "输入。"
-
-#~ msgid "El."
-#~ msgstr "元素名"
-
-#~ msgid "El.&No."
-#~ msgstr "元素与编号"
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "APBS 输入文件 (*.in)"
@@ -9679,17 +9648,8 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "文件名"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "加载结构文件"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "导航"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "导航"
+#~ msgid "Cancel"
+#~ msgstr "取消"
 
 #, fuzzy
 #~ msgid "Element & Ordinal"
@@ -9700,11 +9660,6 @@ msgstr ""
 #~ msgstr "所有文件 (*);;"
 
 #, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "二面体："
-
-#, fuzzy
 #~| msgid "Insert Molecule..."
 #~ msgid "Insert Molecule..."
 #~ msgstr "插入分子..."
@@ -9713,10 +9668,6 @@ msgstr ""
 #~| msgid "Error Pasting Molecule"
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "错误粘贴分子"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -9738,16 +9689,8 @@ msgstr ""
 #~ msgid "Torsion Properties..."
 #~ msgstr "扭转属性..."
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "分子属性..."
-
 #~ msgid "Create Surfaces..."
 #~ msgstr "创建表面..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "对称"
 
 #~ msgid "&Exit"
 #~ msgstr "退出(&E)"
@@ -9765,30 +9708,9 @@ msgstr ""
 #~ msgid "Rotatable"
 #~ msgstr "可旋转的"
 
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "构象异构体%1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "构象异构体%1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "角度%1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "构象异构体%1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
@@ -9799,15 +9721,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "能量 (kJ/mol):"
-
-#, fuzzy
-#~ msgid "Yes"
-#~ msgstr "年"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "氖"
+#~ msgstr "能量 (kJ/mol)"
 
 #, fuzzy
 #~ msgid "&Quantum"
@@ -9851,10 +9765,6 @@ msgstr ""
 #~ msgid "Stopped"
 #~ msgstr "停止"
 
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "表面"
-
 #~ msgid "Color by Index"
 #~ msgstr "按索引着色"
 
@@ -9893,18 +9803,6 @@ msgstr ""
 
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "以 SMARTS 模式着色"
-
-#~ msgid "Ununtrium"
-#~ msgstr "Uut"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Uup"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Uus"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Uuo"
 
 #~ msgid "Engines"
 #~ msgstr "引擎"
