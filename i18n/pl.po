@@ -9942,9 +9942,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Kolor podświetlenia:"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Silniki"
 
