@@ -8923,9 +8923,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Kolor podświetlenia:"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
