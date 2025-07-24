@@ -9063,9 +9063,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Farve efter SMARTS-mønster"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
