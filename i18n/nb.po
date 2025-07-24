@@ -9460,9 +9460,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Farge for framheving:"
 
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Ununseptium"
 
