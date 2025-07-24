@@ -10098,9 +10098,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "잔여부분 채색 (아미노산 타입, 광견병, ..."
 
-#~ msgid "Ununtrium"
-#~ msgstr "운운트리움"
-
 #~ msgid "Ununpentium"
 #~ msgstr "운운펜튬"
 

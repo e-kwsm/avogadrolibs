@@ -10034,9 +10034,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Besonderheiten hervorheben, die mit einem SMARTS Muster übereinstimmen"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 

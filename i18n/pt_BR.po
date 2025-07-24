@@ -10083,9 +10083,6 @@ msgstr "Seus e-mails"
 #~ msgstr ""
 #~ "Realçar funcionalidades particulares que coincidem com o padrão SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrio"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentio"
 

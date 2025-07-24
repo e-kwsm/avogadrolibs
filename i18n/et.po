@@ -9281,9 +9281,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Värv jäägi järgi (aminohappe tüüp, hüdrofoobsus, ..."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
