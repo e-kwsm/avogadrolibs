@@ -9127,9 +9127,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markeer particuliere functies die aan een SMARTS patroon voldoen."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
