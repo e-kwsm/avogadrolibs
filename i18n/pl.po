@@ -9359,9 +9359,6 @@ msgstr ""
 #~ msgid "Highlight Color:"
 #~ msgstr "Kolor podświetlenia:"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctium"
 
