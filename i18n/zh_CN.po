@@ -10985,18 +10985,6 @@ msgstr ""
 #~ msgid "Ignore Atom"
 #~ msgstr "忽略原子"
 
-#~ msgid "Fix Atom"
-#~ msgstr "修正原子"
-
-#~ msgid "Fix Atom X"
-#~ msgstr "修正原子X"
-
-#~ msgid "Fix Atom Y"
-#~ msgstr "修正原子Y"
-
-#~ msgid "Fix Atom Z"
-#~ msgstr "修正原子Z"
-
 #~ msgid "Torsion angle"
 #~ msgstr "扭转角"
 
