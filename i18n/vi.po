@@ -9526,9 +9526,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Tô màu theo mẫu SMARTS"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtri"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpenti"
 
