@@ -11042,9 +11042,6 @@ msgstr ""
 #~ msgid "E&xtensions"
 #~ msgstr "Z&gjatimet"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
 #~ msgid "Ununpentium"
 #~ msgstr "Ununpentium"
 
