@@ -11248,44 +11248,8 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Millenia"
 #~ msgstr "千年"
 
-#~ msgid "MegaWords"
-#~ msgstr "MegaWords"
-
-#~ msgid "MegaBytes"
-#~ msgstr "MegaBytes"
-
-#~ msgid "GigaWords"
-#~ msgstr "GigaWords"
-
-#~ msgid "GigaBytes"
-#~ msgstr "GigaBytes"
-
-#~ msgid "Force Parallel Methods"
-#~ msgstr "Force Parallel Methods"
-
-#~ msgid "Produce \"core\" file upon abort"
-#~ msgstr "Produce \"core\" file upon abort"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "記憶體："
-
-#~ msgid "Diagonalization Method:"
-#~ msgstr "Diagonalization Method:"
-
-#~ msgid "Parallel Load Balance Type"
-#~ msgstr "Parallel Load Balance Type"
 
 #~ msgctxt "\"Loop\" load balancing - set static node assignments"
 #~ msgid "Loop"
@@ -11295,18 +11259,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Next Value"
 #~ msgstr "下一個值"
 
-#~ msgid "Use External Data Representation for Messages"
-#~ msgstr "Use External Data Representation for Messages"
-
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
-#~ msgid "MO Read ($VEC)"
-#~ msgstr "MO Read ($VEC)"
-
 #~ msgid "MO Saved (DICTNRY)"
 #~ msgstr "MO 已存檔 (DICTNRY)"
 
@@ -11315,33 +11267,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Rotate Alpha and Beta Orbitals"
 #~ msgstr "選轉 Alpha 及 Beta 軌域"
-
-#~ msgid "Print the Initial Guess"
-#~ msgstr "Print the Initial Guess"
-
-#~ msgid "GAMESS Interface to Other Codes"
-#~ msgstr "GAMESS Interface to Other Codes"
-
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
-#~ msgid "Force a Check Run Type"
-#~ msgstr "Force a Check Run Type"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (英國版本)"
