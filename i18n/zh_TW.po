@@ -9360,9 +9360,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Number of Bonds:"
 #~ msgstr "鍵的數目:"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
 #, fuzzy
 #~| msgid "Jump Size:"
 #~ msgid "Line Size:"
@@ -9512,12 +9509,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "能量 (kJ/mol):"
 
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
-
 #, fuzzy
 #~ msgid "Input Generators"
 #~ msgstr "匯入產生器..."
@@ -9604,18 +9595,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "標示出符合 SMARTS 樣式之特色"
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "引擎"
 
@@ -9686,9 +9665,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "開啟軌跡檔"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "加上附檔名 .avi"
@@ -9852,15 +9828,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ "Switching to UFF."
 #~ msgstr "無法在這分子上設定所選的力場. 切換到 UFF."
 
-#~ msgid "Systematic Rotor Search"
-#~ msgstr "Systematic Rotor Search"
-
-#~ msgid "Random Rotor Search"
-#~ msgstr "Random Rotor Search"
-
-#~ msgid "Weighted Rotor Search"
-#~ msgstr "Weighted Rotor Search"
-
 #~ msgid "ForceField"
 #~ msgstr "力場"
 
@@ -9877,9 +9844,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Common vector image formats"
 #~ msgstr "一般向量圖形格式"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "向量圖形匯出"
 
@@ -9888,9 +9852,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "H to Methyl"
 #~ msgstr "氫到甲基"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "把氫原子轉成甲基"
@@ -9932,9 +9893,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "PDB entry to download."
 #~ msgstr "可供下載 PDB 的項目"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "可供下載分子的 URL"
 
@@ -9958,9 +9916,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "圖片檔案 (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "未提供有效檔名檔名."
@@ -10035,15 +9990,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "無法使用轉換 SMILES 化學式"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "GAMESS"
 #~ msgstr "GAMESS (原子分子之電子結構系統)"
 
@@ -10109,9 +10055,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "G03 did not start. Perhaps it is not installed correctly."
 #~ msgstr "無法啟動 G03. 可能是安裝不正確."
 
-#~ msgid "Running Gaussian calculation..."
-#~ msgstr "Running Gaussian calculation..."
-
 #~ msgid "G03 Crashed."
 #~ msgstr "G03 當機."
 
@@ -10124,15 +10067,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "&Gaussian..."
 #~ msgstr "高斯(&G)..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Moloro 輸入面板產生器警告"
@@ -10250,9 +10184,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Shader parameters files (*.params)"
 #~ msgstr "Shader 參數檔案 (*.params)"
 
-#~ msgid "GLSL Shaders"
-#~ msgstr "GLSL Shaders"
-
 #~ msgid "Load and use OpenGL 2.0 GLSL shaders"
 #~ msgstr "載入及使用 OpenGL 2.0 GLSL shaders"
 
@@ -10303,10 +10234,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "NMR (核磁共振) 光譜設定"
 
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
 #~ msgid "&UV Settings"
 #~ msgstr "&UV 設定"
 
@@ -10351,9 +10278,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "逗號分開的數值"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
 
 #~ msgid "Unknown extension: %1"
 #~ msgstr "未知的附檔名: %1"
@@ -10423,9 +10347,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "從量子化學計算顯示光譜的資料"
 
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-
 #~ msgid "Vibrational Analysis"
 #~ msgstr "振動分析"
 
@@ -10478,9 +10399,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Calculating MO %L1"
 #~ msgstr "計算 MO %L1"
 
-#~ msgid "VdW"
-#~ msgstr "VdW"
-
 #~ msgid "Calculate molecular orbitals and other surfaces"
 #~ msgstr "計算分子的軌域及其他表面"
 
@@ -10495,9 +10413,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Could not run mencoder."
 #~ msgstr "無法執行 memcoder"
-
-#~ msgid "Set Aspect Ratio"
-#~ msgstr "Set Aspect Ratio"
 
 #~ msgid ""
 #~ "The current Avogadro scene is %1x%2 pixels large, and therefore has "
