@@ -10550,12 +10550,6 @@ msgstr "E-mail-címek"
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "Gaussian nem fut megfelelően,  talán nincs installálva megfelelően."
 
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian"
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC-bevitel figyelmeztetés"
 
