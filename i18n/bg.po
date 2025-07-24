@@ -8848,9 +8848,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Цвят по група (тип на амино киелината, хидрофобност, ...)"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Унуноктий"
-
 #~ msgid "Engines"
 #~ msgstr "Системи"
 
