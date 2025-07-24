@@ -9160,8 +9160,5 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "उभारें विशेष सुविधाओं को, जो किसी स्मर्ट्स पत्तेर्ण की तरह के हों"
 
-#~ msgid "Ununpentium"
-#~ msgstr "उनुनपेंटियम"
-
 #~ msgid "Z Matrix Editor"
 #~ msgstr "जेड मैट्रिक्स संपादक"

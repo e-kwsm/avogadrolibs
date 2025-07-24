@@ -9753,9 +9753,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Bir SMARTS şablonu ile eşleşen özellikleri vurgula."
 
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentiyum"
-
 #~ msgid "Ununseptium"
 #~ msgstr "Ununseptiyum"
 
