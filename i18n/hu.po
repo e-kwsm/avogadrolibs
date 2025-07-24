@@ -10238,9 +10238,6 @@ msgstr "E-mail-címek"
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Szín molekularész szerint (aminosav-típus, hidrofobicitás, ..."
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctium"
 

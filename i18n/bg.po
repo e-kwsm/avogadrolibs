@@ -9287,9 +9287,6 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Цвят по група (тип на амино киелината, хидрофобност, ...)"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Унунсептий"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Унуноктий"
 

@@ -9798,9 +9798,6 @@ msgstr ""
 #~ msgid "Color by SMARTS Pattern"
 #~ msgstr "Kolorea SMARTS Diseinuaz jarri"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptio"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctio"
 
