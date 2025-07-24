@@ -9447,9 +9447,6 @@ msgstr ""
 #~ msgid "E&xtensions"
 #~ msgstr "Z&gjatimet"
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Motorrët"
 
