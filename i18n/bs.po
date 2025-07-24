@@ -8925,9 +8925,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Boja po ostatku (tip amino kiselina, hidrofobnost, ..."
 
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoktijum"
-
 #~ msgid "Engines"
 #~ msgstr "Mašine"
 
