@@ -9134,9 +9134,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Выделить фрагменты, удовлетворяющие запросу SMARTS"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Унунсептий"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Унуноктий"
 

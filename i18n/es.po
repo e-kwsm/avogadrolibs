@@ -9708,9 +9708,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Resaltar características particulares que se ajustan a patrones SMARTS"
 
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptio"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoctio"
 
