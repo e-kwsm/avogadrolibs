@@ -9426,28 +9426,6 @@ msgstr ""
 #~ msgstr "Stav"
 
 #, fuzzy
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr "Okna pro zobrazení vlastností atomů, vazeb, úhlů a zkroucení."
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Zarovnat molekuly\n"
-#~ "\n"
-#~ "Levé tlačítko myši: \tVybrat až dva atomy.\n"
-#~ "\tPrvní atom je vystředěn při původním.\n"
-#~ "\tDruhý atom je zarovnán vůči vybrané ose.\n"
-#~ "Pravé tlačítko myši: \tNastavit zarovnání znovu.\n"
-#~ "Dvojité klepnutí: \tVystředit atom  při původním."
-
-#, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analytická"
 
