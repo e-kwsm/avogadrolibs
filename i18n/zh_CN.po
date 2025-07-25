@@ -8678,13 +8678,6 @@ msgstr ""
 "chaofeng111@gmail.com,allen19920930@gmail.com,skyxxzc@gmail.com,"
 "sihanzheng@gmail.com,cyliang532@gmail.com,zhangtengshuo@gmail.com"
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "默认：向下滚动以缩小，向上滚动以放大\n"
-#~ "反向：向上滚动以缩小，向下滚动以放大"
-
 #~ msgid "Render polygon meshes."
 #~ msgstr "渲染多边形网格。"
 
