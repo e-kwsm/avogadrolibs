@@ -9528,17 +9528,6 @@ msgstr ""
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals（范德华）"
 
-#~ msgid ""
-#~ "Manipulation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-#~ msgstr ""
-#~ "操作工具\n"
-#~ "\n"
-#~ "鼠标左键：点击并拖动以移动原子\n"
-#~ "鼠标右键：点击并拖动以旋转选中的原子。\n"
-
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "带环境光遮挡的 VdW 球的简化显示。"
 
