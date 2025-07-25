@@ -3904,10 +3904,13 @@ msgid "Reverse Direction of Zoom on Scroll"
 msgstr "滚动时反向缩放"
 
 #: qtplugins/navigator/navigator.cpp:108
+#, fuzzy
 msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"默认：向下滚动以缩小，向上滚动以放大\n"
+"反向：向上滚动以缩小，向下滚动以放大"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -8674,13 +8677,6 @@ msgstr ""
 "devel@lists.sourceforge.net,chensiqiong@126.com,frankensteinyang@gmail.com,"
 "chaofeng111@gmail.com,allen19920930@gmail.com,skyxxzc@gmail.com,"
 "sihanzheng@gmail.com,cyliang532@gmail.com,zhangtengshuo@gmail.com"
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "默认：向下滚动以缩小，向上滚动以放大\n"
-#~ "反向：向上滚动以缩小，向下滚动以放大"
 
 #~ msgid "Render polygon meshes."
 #~ msgstr "渲染多边形网格。"
