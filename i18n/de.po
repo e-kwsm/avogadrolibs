@@ -3896,10 +3896,15 @@ msgid "Reverse Direction of Zoom on Scroll"
 msgstr "Richtung von Zoomen beim Scrollen umkehren"
 
 #: qtplugins/navigator/navigator.cpp:108
+#, fuzzy
 msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"Standard:\tNach unten scrollen zu verkleinern, nach oben scrollen zu "
+"vergrößern\n"
+"Umgekehrt:\tNach oben scrollen zu verkleinern, nach unten scrollen zu "
+"vergrößern"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -8684,15 +8689,6 @@ msgstr ""
 "de,,,,coolx67@gmx.at,,,,,,,,simon@ochsenreither.de,,,aleixosk@gmail.com,,"
 "avogadro-devel@lists.sourceforge.net,,,,,,,,,armin_mohring@web.de,,,,"
 "coolx67@gmx.at,,,,tobannert@gmail.com,,,,simon@ochsenreither.de"
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Standard:\tNach unten scrollen zu verkleinern, nach oben scrollen zu "
-#~ "vergrößern\n"
-#~ "Umgekehrt:\tNach oben scrollen zu verkleinern, nach unten scrollen zu "
-#~ "vergrößern"
 
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
