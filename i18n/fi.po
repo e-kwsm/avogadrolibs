@@ -9370,13 +9370,6 @@ msgstr "Sähköpostisi"
 #~ "Taulukot atomin, sidoksen, kulman ja vääntöominaisuuksien näyttämiseen ja "
 #~ "muokkaamiseen."
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Oletus:\tVieritä alas loitontaaksesi ja vieritä ylös lähentääksesi\n"
-#~ "Käänteinen:\tVieritä ylös loitontaaksesi ja vieritä alas lähentääksesi"
-
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
 #~ msgstr "Animaatiotyökalu \t(%1)"
