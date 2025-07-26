@@ -3551,12 +3551,15 @@ msgid "Edit Labels"
 msgstr "Muokkaa nimiöitä"
 
 #: qtplugins/label/labeleditor.cpp:34
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Atom Label Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick on Atoms to add Custom Labels"
 msgstr ""
+"Atominimiötyökalu\t(%1)\n"
+"\n"
+"Vasen-hiiri:\tNapsauta atomit lisätäksesi mukautettuja nimiöitä"
 
 #: qtplugins/label/labeleditor.cpp:81
 msgid "Create Label"
@@ -8605,16 +8608,6 @@ msgstr "Ricky Tigg,"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Sähköpostisi"
-
-#, qt-format
-#~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Atominimiötyökalu\t(%1)\n"
-#~ "\n"
-#~ "Vasen-hiiri:\tNapsauta atomit lisätäksesi mukautettuja nimiöitä"
 
 #, qt-format
 #~ msgid ""
