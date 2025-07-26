@@ -3890,7 +3890,7 @@ msgid "Navigate"
 msgstr "Navigieren"
 
 #: qtplugins/navigator/navigator.cpp:42
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Navigation Tool\t(%1)\n"
 "\n"
@@ -3898,6 +3898,11 @@ msgid ""
 "Middle Mouse:\tClick and drag to zoom in or out.\n"
 "Right Mouse:\tClick and drag to move the view."
 msgstr ""
+"Navigationswerkzeug\t(%1)\n"
+"\n"
+"Linke Maustaste:\tKlicken und ziehen, um die Ansicht zu rotieren.\n"
+"Mittlere Maustaste:\tKlicken und ziehen, um den Zoom zu verändern.\n"
+"Rechte Maustaste:\tKlicken und ziehen, um die Ansicht zu bewegen."
 
 #: qtplugins/navigator/navigator.cpp:63
 #, fuzzy
@@ -8769,19 +8774,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Partialladung"
-
-#~ msgid ""
-#~ "Navigation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ msgstr ""
-#~ "Navigationswerkzeug\n"
-#~ "\n"
-#~ "Linke Maustaste: \t Klicken und ziehen, um die Ansicht zu rotieren.\n"
-#~ "Mittlere Maustaste: Klicken und ziehen, um den Zoom zu verändern.\n"
-#~ "Rechte Maustaste: \t Klicken und ziehen, um die Ansicht zu bewegen.\n"
 
 #~ msgid "Animation Tool"
 #~ msgstr "Animationswerkzeug"
