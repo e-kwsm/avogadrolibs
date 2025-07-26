@@ -9371,10 +9371,6 @@ msgstr "Sähköpostisi"
 #~ "muokkaamiseen."
 
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Animaatiotyökalu \t(%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
