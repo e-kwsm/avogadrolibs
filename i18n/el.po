@@ -9448,28 +9448,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgstr "Μερικό φορτίου"
 
 #, fuzzy
-#~| msgid ""
-#~| "Navigation Tool (F9)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and drag to rotate the view.\n"
-#~| "Middle Mouse: Click and drag to zoom in or out.\n"
-#~| "Right Mouse: \tClick and drag to move the view.\n"
-#~| "Double-Click: \tReset the view."
-#~ msgid ""
-#~ "Navigation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ msgstr ""
-#~ "Εργαλείο περιήγησης (F9)\n"
-#~ "\n"
-#~ "Αριστερό πλήκτρο: Πάτημα και σύρσιμο για την περιστροφή προβολής.\n"
-#~ "Μεσαίο πλήκτρο: Πάτημα και σύρσιμο για μεγέθυνση ή σμίκρυνση.\n"
-#~ "Δεξί πλήκτρο: Πάτημα και σύρσιμο για τη μετακίνηση της προβολής.\n"
-#~ "Διπλό πάτημα: Επαναφορά της προβολής."
-
-#, fuzzy
 #~| msgid "Animation"
 #~ msgid "Animation Tool"
 #~ msgstr "Κινούμενη απεικόνιση"
