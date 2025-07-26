@@ -9422,28 +9422,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgstr "Κατάσταση"
 
 #, fuzzy
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr "Παράθυρα για εμφάνιση ατόμου, δεσμού, γωνίας και ιδιοτήτων στρέψης."
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Στοίχιση μορίων\n"
-#~ "\n"
-#~ "Αριστερό πλήκτρο: Επιλέξτε μέχρι δύο άτομα.\n"
-#~ "      Το πρώτο άτομο κεντράρεται στο αρχικό.\n"
-#~ "      Το δεύτερο άτομο στοιχίζεται στον επιλεγμένο άξονα.\n"
-#~ "Δεξιό πλήκτρο: Επαναφορά στοίχισης.\n"
-#~ "Διπλό πάτημα: Κεντράρισμα του ατόμου στο αρχικό."
-
-#, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "Αναλυτική"
 
