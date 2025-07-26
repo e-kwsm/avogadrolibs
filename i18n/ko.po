@@ -2959,8 +2959,8 @@ msgid ""
 msgstr ""
 "그리기 도구\t(%1)\n"
 "\n"
-"왼쪽 마우스: \t클릭 및 드래그로 원자 및 결합 생성\n"
-"오른쪽 마우스: \t원자 삭제"
+"왼쪽 마우스:\t클릭 및 드래그로 원자 및 결합 생성\n"
+"오른쪽 마우스:\t원자 삭제"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8762,17 +8762,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Partial Charge"
 #~ msgstr "부분 전하"
-
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "그리기 도구 \n"
-#~ " \n"
-#~ "왼쪽 마우스: \t클릭 및 드래그로 원자 및 결합 생성 \n"
-#~ "오른쪽 마우스: \t원자 삭제"
 
 #~ msgid ""
 #~ "Atom Label Tool\n"
