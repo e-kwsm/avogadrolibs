@@ -3639,13 +3639,17 @@ msgid "Manipulate"
 msgstr "Manipuloi"
 
 #: qtplugins/manipulator/manipulator.cpp:52
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and drag to move atoms\n"
 "Right Mouse:\tClick and drag to rotate atoms."
 msgstr ""
+"Manipulointityökalu\t(%1)\n"
+"\n"
+"Vasen-hiiri:\tNapsauta ja vedä siirtääksesi atomeja\n"
+"Oikea-hiiri:\tKierrä atomeja napsauttamalla ja vetämällä."
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -8608,18 +8612,6 @@ msgstr "Ricky Tigg,"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Sähköpostisi"
-
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate atoms.\n"
-#~ msgstr ""
-#~ "Manipulointityökalu\t(%1)\n"
-#~ "\n"
-#~ "Vasen-hiiri:\tNapsauta ja vedä siirtääksesi atomeja\n"
-#~ "Oikea-hiiri:\tKierrä atomeja napsauttamalla ja vetämällä.\n"
 
 #, qt-format
 #~ msgid ""
