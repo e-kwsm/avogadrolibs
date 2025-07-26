@@ -2956,7 +2956,8 @@ msgid ""
 msgstr ""
 "Εργαλείο σχεδίασης\t(%1)\n"
 "\n"
-"Αριστερό πλήκτρο: Πάτημα και μετακίνηση για τη δημιουργία ατόμων και δεσμών\n"
+"Αριστερό πλήκτρο: Πάτημα και μετακίνηση για τη δημιουργία ατόμων και "
+"δεσμών\n"
 "Δεξί πλήκτρο: Διαγραφή ατόμου"
 
 #: qtplugins/editor/editor.cpp:116
@@ -8760,24 +8761,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Μερικό φορτίου"
-
-#, fuzzy
-#~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Εργαλείο σχεδίασης (F8)\n"
-#~ "\n"
-#~ "Αριστερό πλήκτρο: Πάτημα και μετακίνηση για τη δημιουργία ατόμων και "
-#~ "δεσμών\n"
-#~ "Δεξί πλήκτρο: Διαγραφή ατόμου"
 
 #, fuzzy
 #~| msgid ""
