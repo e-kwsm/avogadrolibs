@@ -9372,18 +9372,6 @@ msgstr "Sähköpostisi"
 
 #, qt-format
 #~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Piirustustyökalu\t(%1 )\n"
-#~ "\n"
-#~ "Vasen-hiiri:\tNapsauta ja vedä luodaksesi atomeja ja sidos\n"
-#~ "Oikea-hiiri:\tPoista atomi"
-
-#, qt-format
-#~ msgid ""
 #~ "Atom Label Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick on Atoms to add Custom Labels"
