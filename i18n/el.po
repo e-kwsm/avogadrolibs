@@ -2095,7 +2095,7 @@ msgid "Auto Optimize"
 msgstr ""
 
 #: qtplugins/autoopt/autoopt.cpp:71
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Auto Optimize Tool\t(%1)\n"
 "\n"
@@ -2109,6 +2109,17 @@ msgid ""
 "Left Mouse:\tClick and drag atoms to move them.\n"
 "Right Mouse:\tClick and drag to rotate atoms."
 msgstr ""
+"Εργαλείο αυτόματης βελτιστοποίησης\t(%1)\n"
+"\n"
+"Συναρτήσεις περιήγησης κατά το πάτημα σε κενό χώρο.\n"
+"Αριστερό πλήκτρο: Περιστροφή χώρου\n"
+"Μεσαίο πλήκτρο: Εστίαση χώρου\n"
+"Δεξιό πλήκτρο: Μετακίνηση χώρου\n"
+"Διπλό πάτημα: Επαναφορά προβολής\n"
+"\n"
+"Κατά την εκτέλεση:\n"
+"Αριστερό πλήκτρο: Πάτημα και μετακίνηση ατόμων για τη μετακίνησή τους.\n"
+"Δεξιό πλήκτρο:"
 
 #: qtplugins/autoopt/autoopt.cpp:152
 #, fuzzy
@@ -11494,29 +11505,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Everything"
 #~ msgstr "Όλα"
-
-#~ msgid ""
-#~ "Auto Optimization Tool\n"
-#~ "\n"
-#~ "Navigation Functions when clicking in empty space.\n"
-#~ "Left Mouse: \tRotate Space\n"
-#~ "Middle Mouse: Zoom Space\n"
-#~ "Right Mouse: \tMove Space\n"
-#~ "Double-Click: \t Reset View\n"
-#~ "\n"
-#~ "When running:\n"
-#~ "Left Mouse: \tClick and drag atoms to move them."
-#~ msgstr ""
-#~ "Εργαλείο αυτόματης βελτιστοποίησης\n"
-#~ "\n"
-#~ "Συναρτήσεις περιήγησης κατά το πάτημα σε κενό χώρο.\n"
-#~ "Αριστερό πλήκτρο: Περιστροφή χώρου\n"
-#~ "Μεσαίο πλήκτρο: Εστίαση χώρου\n"
-#~ "Δεξιό πλήκτρο: Μετακίνηση χώρου\n"
-#~ "Διπλό πάτημα: Επαναφορά προβολής\n"
-#~ "\n"
-#~ "Κατά την εκτέλεση:\n"
-#~ "Αριστερό πλήκτρο: Πάτημα και μετακίνηση ατόμων για τη μετακίνησή τους."
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "Αυτόματη βελτιστοποίηση: Αδύνατη η ρύθμιση του δυναμικού πεδίου...."
