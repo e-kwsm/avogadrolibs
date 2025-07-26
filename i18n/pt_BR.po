@@ -9540,18 +9540,6 @@ msgstr "Seus e-mails"
 
 #, qt-format
 #~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Ferramenta Desenhar (%1)\n"
-#~ "\n"
-#~ "Botão esquerdo do mouse: Clique e arraste para criar átomos e ligações\n"
-#~ "Botão direito do mouse: Exclua átomo"
-
-#, qt-format
-#~ msgid ""
 #~ "Navigation Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick and drag to rotate the view.\n"
