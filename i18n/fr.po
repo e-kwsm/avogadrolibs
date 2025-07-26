@@ -2991,13 +2991,18 @@ msgid "Draw"
 msgstr "Dessiner"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Outil de dessin\t(%1)\n"
+"\n"
+"Clic gauche : \tCliquer et faire glisser pour créer des atomes et des "
+"liaisons\n"
+"Clic droit : \tEffacer un atome"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8732,19 +8737,6 @@ msgstr ""
 "psycojoker@gmail.com, louis.ricard@polytechnique.edu nizar.kerkeni@gmail."
 "com, jacob.benoit.1@gmail.com, nizarus@nizarus.org, nizarus@nizarus.tn, "
 "pierre.slamich@gmail.com, etc"
-
-#, qt-format
-#~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Outil de dessin \t(%1)\n"
-#~ "\n"
-#~ "Clic gauche : \tCliquer et faire glisser pour créer des atomes et des "
-#~ "liaisons\n"
-#~ "Clic droit : \tEffacer un atome"
 
 #, qt-format
 #~ msgid ""
