@@ -9453,15 +9453,6 @@ msgstr ""
 #~ msgid "Max 2*theta:"
 #~ msgstr "Max 2*theta:"
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Standard:\tNach unten scrollen zu verkleinern, nach oben scrollen zu "
-#~ "vergrößern\n"
-#~ "Umgekehrt:\tNach oben scrollen zu verkleinern, nach unten scrollen zu "
-#~ "vergrößern"
-
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
 #~ msgstr "Animationswerkzeug\t(%1)"
