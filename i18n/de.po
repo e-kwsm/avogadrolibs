@@ -8804,10 +8804,6 @@ msgstr ""
 "avogadro-devel@lists.sourceforge.net,,,,,,,,,armin_mohring@web.de,,,,"
 "coolx67@gmx.at,,,,tobannert@gmail.com,,,,simon@ochsenreither.de"
 
-#, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Animationswerkzeug\t(%1)"
-
 #~ msgid "0"
 #~ msgstr "0"
 
