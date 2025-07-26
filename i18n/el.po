@@ -2092,7 +2092,7 @@ msgid "Auto Optimize"
 msgstr ""
 
 #: qtplugins/autoopt/autoopt.cpp:71
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Auto Optimize Tool\t(%1)\n"
 "\n"
