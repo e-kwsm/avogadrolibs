@@ -4937,7 +4937,7 @@ msgid "Selection"
 msgstr "Pemilihan"
 
 #: qtplugins/selectiontool/selectiontool.cpp:53
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Selection Tool\t(%1)\n"
 "\n"
@@ -4947,6 +4947,14 @@ msgid ""
 "Use Ctrl to toggle the selection and shift to add to the selection.\n"
 "Double-Click:\tSelect an entire fragment."
 msgstr ""
+"Alat Pemilihan\t(%1)\n"
+"\n"
+"Butang Kiri Tetikus:\tKlik untuk ambil atom, baki, atau cebisan secara "
+"individu\n"
+"\tSeret untuk pilih julat atom\n"
+"Butang Kanan Tetikus:\tKlik diluar molekul untuk batalkan pemilihan\n"
+"Guna Ctrl untuk togol pemilihan dan shift untuk tambah pemilihan.\n"
+"Dwi-Klik:\tPilih keseluruhan cebisan."
 
 #: qtplugins/selectiontool/selectiontool.cpp:248
 #, fuzzy
@@ -8744,33 +8752,6 @@ msgstr ""
 #~| msgid "Animation"
 #~ msgid "Animation Tool"
 #~ msgstr "Animasi"
-
-#, fuzzy
-#~| msgid ""
-#~| "Selection Tool (F11)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick to pick individual atoms, residues, or fragments\n"
-#~| "\tDrag to select a range of atoms\n"
-#~| "Right Mouse: \tClick outside the molecule to clear selection\n"
-#~| "Use Ctrl to toggle the selection and shift to add to the selection.\n"
-#~| "Double-Click: \tSelect an entire fragment."
-#~ msgid ""
-#~ "Selection Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick to pick individual atoms, residues, or fragments\n"
-#~ "\tDrag to select a range of atoms\n"
-#~ "Right Mouse: \tClick outside the molecule to clear selection\n"
-#~ "Use Ctrl to toggle the selection and shift to add to the selection.\n"
-#~ "Double-Click: \tSelect an entire fragment."
-#~ msgstr ""
-#~ "Alat Pemilihan (F11)\n"
-#~ "\n"
-#~ "Butang Kiri Tetikus: \tKlik untuk ambil atom, baki, atau cebisan secara "
-#~ "individu\n"
-#~ "\tSeret untuk pilih julat atom\n"
-#~ "Butang Kanan Tetikus: \tKlik diluar molekul untuk batalkan pemilihan\n"
-#~ "Guna Ctrl untuk togol pemilihan dan shift untuk tambah pemilihan.\n"
-#~ "Dwi-Klik: \tPilih keseluruhan cebisan."
 
 #, fuzzy
 #~ msgctxt "ambient occlusion"
