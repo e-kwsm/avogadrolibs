@@ -9449,24 +9449,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #, fuzzy
 #~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Εργαλείο σχεδίασης (F8)\n"
-#~ "\n"
-#~ "Αριστερό πλήκτρο: Πάτημα και μετακίνηση για τη δημιουργία ατόμων και "
-#~ "δεσμών\n"
-#~ "Δεξί πλήκτρο: Διαγραφή ατόμου"
-
-#, fuzzy
-#~| msgid ""
 #~| "Click to Measure (F12)\n"
 #~| "\n"
 #~| "Left Mouse: \tSelect up to three Atoms.\n"
