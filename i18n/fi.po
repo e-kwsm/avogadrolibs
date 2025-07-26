@@ -1603,6 +1603,7 @@ msgid "Align"
 msgstr "Kohdista"
 
 #: qtplugins/aligntool/aligntool.cpp:53
+#, fuzzy
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1612,6 +1613,13 @@ msgid ""
 "Right Mouse:\tReset alignment.\n"
 "Double-Click:\tCenter the atom at the origin."
 msgstr ""
+"Kohdista molekyylit\t(%1)\n"
+"\n"
+"Hiiren vasen painike:\tValitse enintään kaksi atomia.\n"
+"\tEnsimmäinen atomi on keskitetty alkupisteeseen.\n"
+"\tToinen atomi on kohdistettu valitulle akselille.\n"
+"Hiiren oikea painike:\tNollaa kohdistus.\n"
+"Kaksoisnapsautus:\tKeskitä atomi alkupisteeseen."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:262
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8580,23 +8588,6 @@ msgstr "Ricky Tigg,"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Sähköpostisi"
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Kohdista molekyylit\n"
-#~ "\n"
-#~ "Hiiren vasen painike: Valitse enintään kaksi atomia.\n"
-#~ "\tEnsimmäinen atomi on keskitetty alkupisteeseen.\n"
-#~ "\tToinen atomi on kohdistettu valitulle akselille.\n"
-#~ "Hiiren oikea painike:\tNollaa kohdistus.\n"
-#~ "Kaksoisnapsautus:\tKeskitä atomi alkupisteeseen."
 
 #, qt-format
 #~ msgid ""
