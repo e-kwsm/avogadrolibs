@@ -9453,10 +9453,6 @@ msgstr ""
 #~ msgid "Max 2*theta:"
 #~ msgstr "Max 2*theta:"
 
-#, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Animationswerkzeug\t(%1)"
-
 #~ msgid "0"
 #~ msgstr "0"
 
