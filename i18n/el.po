@@ -1548,6 +1548,7 @@ msgid "Align"
 msgstr "Στοίχιση"
 
 #: qtplugins/aligntool/aligntool.cpp:53
+#, fuzzy
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1557,6 +1558,13 @@ msgid ""
 "Right Mouse:\tReset alignment.\n"
 "Double-Click:\tCenter the atom at the origin."
 msgstr ""
+"Στοίχιση μορίων\n"
+"\n"
+"Αριστερό πλήκτρο: Επιλέξτε μέχρι δύο άτομα.\n"
+"\tΤο πρώτο άτομο κεντράρεται στο αρχικό.\n"
+"\tΤο δεύτερο άτομο στοιχίζεται στον επιλεγμένο άξονα.\n"
+"Δεξιό πλήκτρο: Επαναφορά στοίχισης.\n"
+"Διπλό πάτημα: Κεντράρισμα του ατόμου στο αρχικό."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:262
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8689,23 +8697,6 @@ msgstr ""
 "a.brzns@gmail.com,,elkosmas@gmail.com,,athmakrigiannis@gmail.com,,,"
 "angelosarn@hotmail.com,a.brzns@gmail.com,,elkosmas@gmail.com,,"
 "athmakrigiannis@gmail.com"
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Στοίχιση μορίων\n"
-#~ "\n"
-#~ "Αριστερό πλήκτρο: Επιλέξτε μέχρι δύο άτομα.\n"
-#~ "      Το πρώτο άτομο κεντράρεται στο αρχικό.\n"
-#~ "      Το δεύτερο άτομο στοιχίζεται στον επιλεγμένο άξονα.\n"
-#~ "Δεξιό πλήκτρο: Επαναφορά στοίχισης.\n"
-#~ "Διπλό πάτημα: Κεντράρισμα του ατόμου στο αρχικό."
 
 #, fuzzy
 #~ msgid "&Analysis"
