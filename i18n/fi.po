@@ -4281,9 +4281,9 @@ msgid "Player"
 msgstr "Toistin"
 
 #: qtplugins/playertool/playertool.cpp:49
-#, qt-format
+#, fuzzy, qt-format
 msgid "Animation Tool\t(%1)"
-msgstr ""
+msgstr "Animaatiotyökalu\t(%1)"
 
 #: qtplugins/playertool/playertool.cpp:74
 msgid "Play"
@@ -8627,10 +8627,6 @@ msgstr "Ricky Tigg,"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Sähköpostisi"
-
-#, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Animaatiotyökalu \t(%1)"
 
 #, qt-format
 #~ msgid ""
