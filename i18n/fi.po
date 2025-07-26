@@ -9372,16 +9372,6 @@ msgstr "Sähköpostisi"
 
 #, qt-format
 #~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Atominimiötyökalu\t(%1)\n"
-#~ "\n"
-#~ "Vasen-hiiri:\tNapsauta atomit lisätäksesi mukautettuja nimiöitä"
-
-#, qt-format
-#~ msgid ""
 #~ "Manipulation Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick and drag to move atoms\n"
