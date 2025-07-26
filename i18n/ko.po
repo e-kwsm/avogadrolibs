@@ -3836,10 +3836,13 @@ msgid "Reverse Direction of Zoom on Scroll"
 msgstr "스크롤 시 확대/축소의 반대 방향"
 
 #: qtplugins/navigator/navigator.cpp:108
+#, fuzzy
 msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"기본값:\t아래로 스크롤하여 축소, 위로 스크롤하여 확대\n"
+"역방향:\t위로 스크롤하여 축소, 아래로 스크롤하여 확대"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -8632,13 +8635,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ "두 번째 원자는 선택한 축으로 정렬됩니다.\n"
 #~ "마우스 오른쪽: 정렬 재설정.\n"
 #~ "Double-Click: 원자를 원점 중심에 나두기."
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "기본값:\t 아래로 스크롤하여 축소, 위로 스크롤하여 확대 \n"
-#~ "역방향:\t 위로 스크롤하여 축소, 아래로 스크롤하여 확대"
 
 #~ msgid "0"
 #~ msgstr "0"
