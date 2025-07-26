@@ -3905,10 +3905,13 @@ msgid "Reverse Direction of Zoom on Scroll"
 msgstr "Käännä zoomaussuunta vierittämisen yhteydessä"
 
 #: qtplugins/navigator/navigator.cpp:108
+#, fuzzy
 msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"Oletus:\tVieritä alas loitontaaksesi ja vieritä ylös lähentääksesi\n"
+"Käänteinen:\tVieritä ylös loitontaaksesi ja vieritä alas lähentääksesi"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -8624,13 +8627,6 @@ msgstr "Ricky Tigg,"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Sähköpostisi"
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Oletus:\tVieritä alas loitontaaksesi ja vieritä ylös lähentääksesi\n"
-#~ "Käänteinen:\tVieritä ylös loitontaaksesi ja vieritä alas lähentääksesi"
 
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
