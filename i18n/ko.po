@@ -8880,17 +8880,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "판 데르 발스 (AO)"
 
-#~ msgid ""
-#~ "Manipulation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-#~ msgstr ""
-#~ "조작 도구 \n"
-#~ " \n"
-#~ "왼쪽 마우스: \t클릭과 드래그로 원자 이동 \n"
-#~ "오른쪽 마무스: \t클릭과 드래그로 선택한 원자 회전합니다.\n"
-
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "주변 폐색이 있는 VdW 구체의 간단한 표시입니다."
 
