@@ -1626,6 +1626,7 @@ msgid "Align"
 msgstr "Aligner"
 
 #: qtplugins/aligntool/aligntool.cpp:53
+#, fuzzy
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1635,6 +1636,13 @@ msgid ""
 "Right Mouse:\tReset alignment.\n"
 "Double-Click:\tCenter the atom at the origin."
 msgstr ""
+"Aligner les molécules\n"
+"\n"
+"Bouton gauche :\tsélectionner jusqu'à deux atomes,\n"
+"\tLe premier atome est centré à l'origine,\n"
+"\tLe deuxième est aligné selon l'axe sélectionné.\n"
+"Bouton droit :\tréinitialiser l'alignement.\n"
+"Double clic :\tcentrer l'atome à l'origine."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:262
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8724,23 +8732,6 @@ msgstr ""
 "psycojoker@gmail.com, louis.ricard@polytechnique.edu nizar.kerkeni@gmail."
 "com, jacob.benoit.1@gmail.com, nizarus@nizarus.org, nizarus@nizarus.tn, "
 "pierre.slamich@gmail.com, etc"
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Aligner les molécules\n"
-#~ "\n"
-#~ "Bouton gauche :\tsélectionner jusqu'à deux atomes,\n"
-#~ "\tLe premier atome est centré à l'origine,\n"
-#~ "\tLe deuxième est aligné selon l'axe sélectionné.\n"
-#~ "Bouton droit :\tréinitialiser l'alignement.\n"
-#~ "Double clic :\tcentrer l'atome à l'origine."
 
 #, qt-format
 #~ msgid ""
