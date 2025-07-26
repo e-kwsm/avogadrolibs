@@ -2925,13 +2925,17 @@ msgid "Draw"
 msgstr "Lukis"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Alat Lukis\t(%1)\n"
+"\n"
+"Butang Kiri Tetikus:\tKlik dan Seret untuk cipta Atom dan Ikatan\n"
+"Butang Kanan Tetikus:\tPadam Atom"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8735,23 +8739,6 @@ msgstr ""
 #~ "Klik Kiri & Seret pada salah satu Atom dalam Ikatan untuk mengubah sudut\n"
 #~ "Klik Kanan & Seret pada salah satu Atom dalam Ikatan untuk mengubah "
 #~ "panjang"
-
-#, fuzzy
-#~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Alat Lukis (F8)\n"
-#~ "\n"
-#~ "Butang Kiri Tetikus: \tKlik dan Seret untuk cipta Atom dan Ikatan\n"
-#~ "Butang Kanan Tetikus: \tPadam Atom"
 
 #, fuzzy
 #~| msgid ""
