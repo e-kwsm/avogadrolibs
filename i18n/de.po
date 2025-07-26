@@ -2988,13 +2988,17 @@ msgid "Draw"
 msgstr "Zeichnen"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Zeichenwerkzeug\t(%1)\n"
+"\n"
+"Linke Maustaste:\tKlicken und ziehen um Atome und Bindungen zu erstellen\n"
+"Rechte Maustaste:\tAtom löschen"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8758,17 +8762,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Partialladung"
-
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Zeichenwerkzeug\n"
-#~ "\n"
-#~ "Linke Maustaste:\tKlicken und ziehen um Atome und Bindungen zu erstellen\n"
-#~ "Rechte Maustaste:\tAtom löschen"
 
 #~ msgid ""
 #~ "Measure Tool\n"
