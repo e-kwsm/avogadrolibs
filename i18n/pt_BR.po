@@ -3032,13 +3032,17 @@ msgid "Draw"
 msgstr "Desenho"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Ferramenta Desenhar\t(%1)\n"
+"\n"
+"Botão esquerdo do mouse: Clique e arraste para criar átomos e ligações\n"
+"Botão direito do mouse: Exclua átomo"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8790,18 +8794,6 @@ msgstr "Seus nomes"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Seus e-mails"
-
-#, qt-format
-#~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Ferramenta Desenhar (%1)\n"
-#~ "\n"
-#~ "Botão esquerdo do mouse: Clique e arraste para criar átomos e ligações\n"
-#~ "Botão direito do mouse: Exclua átomo"
 
 #, qt-format
 #~ msgid ""
