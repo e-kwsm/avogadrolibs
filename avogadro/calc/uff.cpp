@@ -1246,8 +1246,7 @@ void UFF::setMolecule(Core::Molecule* mol)
     return; // nothing to do for single atoms
 
   // start with assigning atom types
-  if (d != nullptr)
-    delete d;
+  delete d;
 
   d = new UFFPrivate(mol);
 }
