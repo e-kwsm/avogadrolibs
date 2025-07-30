@@ -3577,12 +3577,15 @@ msgid "Edit Labels"
 msgstr "Címkék szerkesztése"
 
 #: qtplugins/label/labeleditor.cpp:34
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Atom Label Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick on Atoms to add Custom Labels"
 msgstr ""
+"Atom címkeeszköz\t(%1)\n"
+"\n"
+"Bal egérgomb:\tEgyedi címkék hozzáadásához kattintson az atomokra"
 
 #: qtplugins/label/labeleditor.cpp:81
 msgid "Create Label"
@@ -8798,15 +8801,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Részleges töltés"
-
-#~ msgid ""
-#~ "Atom Label Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Atom címkeeszköz\n"
-#~ "\n"
-#~ "Bal egérgomb:\tEgyedi címkék hozzáadásához kattintson az atomokra"
 
 #~ msgid ""
 #~ "Measure Tool\n"
