@@ -3004,13 +3004,17 @@ msgid "Draw"
 msgstr "Rajzolás"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Rajzeszköz\t(%1)\n"
+"\n"
+"Bal egérgomb:\tKattintson és húzza az atomok és a kötés létrehozásához\n"
+"Jobb egérgomb:\tAtom törlése"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8794,17 +8798,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Részleges töltés"
-
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Rajzeszköz\n"
-#~ "\n"
-#~ "Bal egérgomb:\tKattintson és húzza az atomok és a kötés létrehozásához\n"
-#~ "Jobb egérgomb:\tAtom törlése"
 
 #~ msgid ""
 #~ "Atom Label Tool\n"
