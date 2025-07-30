@@ -3899,7 +3899,7 @@ msgid "Navigate"
 msgstr "Navigálás"
 
 #: qtplugins/navigator/navigator.cpp:42
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Navigation Tool\t(%1)\n"
 "\n"
@@ -3907,6 +3907,12 @@ msgid ""
 "Middle Mouse:\tClick and drag to zoom in or out.\n"
 "Right Mouse:\tClick and drag to move the view."
 msgstr ""
+"Navigációs eszköz\t(%1)\n"
+"\n"
+"Bal egérgomb:\tKattintson és húzza a nézet elforgatásához.\n"
+"Középső egérgomb:\tKattintson és húzza a nagyításhoz vagy "
+"kicsinyítéshez.\n"
+"Jobb egérgomb:\tKattintson és húzza a nézet mozgatásához."
 
 #: qtplugins/navigator/navigator.cpp:63
 msgid "Rotate the scene along the x, y, or z axes."
@@ -8808,20 +8814,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Részleges töltés"
-
-#~ msgid ""
-#~ "Navigation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ msgstr ""
-#~ "Navigációs eszköz\n"
-#~ "\n"
-#~ "Bal egérgomb:\tKattintson és húzza a nézet elforgatásához.\n"
-#~ "Középső egérgomb:\tKattintson és húzza a nagyításhoz vagy "
-#~ "kicsinyítéshez.\n"
-#~ "Jobb egérgomb:\tKattintson és húzza a nézet mozgatásához.\n"
 
 #~ msgid "Animation Tool"
 #~ msgstr "Animációs eszköz"
