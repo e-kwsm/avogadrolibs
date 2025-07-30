@@ -3897,10 +3897,15 @@ msgid "Reverse Direction of Zoom on Scroll"
 msgstr "A nagyítás fordított iránya a görgetésen"
 
 #: qtplugins/navigator/navigator.cpp:108
+#, fuzzy
 msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"Alapértelmezett: Lefelé görgetés a kicsinyítéséhez, felfelé görgetés a "
+"nagyításához\n"
+"Fordított: Felfelé görgetés a kicsinyítéséhez, lefelé görgetés a "
+"nagyításához"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -8718,15 +8723,6 @@ msgstr "Óvári"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "E-mail-címek"
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Alapértelmezett: Lefelé görgetés a kicsinyítéséhez, felfelé görgetés a "
-#~ "nagyításához\n"
-#~ "Fordított: Felfelé görgetés a kicsinyítéséhez, lefelé görgetés a "
-#~ "nagyításához"
 
 #~ msgid "0"
 #~ msgstr "0"
