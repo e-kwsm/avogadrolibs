@@ -35,7 +35,7 @@ public:
 
   ~Private()
   {
-    if (m_obmol != nullptr)
+    
       delete m_obmol;
   }
 };
