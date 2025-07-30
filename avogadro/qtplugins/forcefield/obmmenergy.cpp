@@ -71,7 +71,7 @@ OBMMEnergy::OBMMEnergy(const std::string& method)
 OBMMEnergy::~OBMMEnergy()
 {
   delete m_inputFormat;
-  if (m_process != nullptr)
+
     delete m_process;
 }
 

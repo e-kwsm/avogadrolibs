@@ -323,9 +323,8 @@ void Forcefield::setupMethod()
     m_methodName = recommendedForceField();
   }
 
-  if (m_method != nullptr) {
     delete m_method; // delete the previous one
-  }
+
   m_method = Calc::EnergyManager::instance().model(m_methodName);
 
   if (m_method != nullptr)
