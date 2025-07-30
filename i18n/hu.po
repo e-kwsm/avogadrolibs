@@ -8838,15 +8838,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "E-mail-címek"
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Alapértelmezett: Lefelé görgetés a kicsinyítéséhez, felfelé görgetés a "
-#~ "nagyításához\n"
-#~ "Fordított: Felfelé görgetés a kicsinyítéséhez, lefelé görgetés a "
-#~ "nagyításához"
-
 #~ msgid "0"
 #~ msgstr "0"
 
