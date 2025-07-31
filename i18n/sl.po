@@ -9440,12 +9440,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "Animation Tool"
 #~ msgstr "Animacija"
 
-# Orodje za krmarjenje (F9)\n
-# \n
-# Levi gumb miške: \tS klikom in vlečenjem se pogled zavrti.\n
-# Srednji gumb miške: S klikom se predmet približa ali oddalji.\n
-# Desni gumb miške: \tS klikom je mogoče povleči im premakniti pogled.\n
-# Dvojni klik: \tPonastavi pogled.
 #, fuzzy
 #~| msgid ""
 #~| "Selection Tool (F11)\n"
