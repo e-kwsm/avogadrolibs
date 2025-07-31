@@ -9608,18 +9608,6 @@ msgstr ""
 
 #, qt-format
 #~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Herramienta Dibujar (%1)\n"
-#~ "\n"
-#~ "Botón izquierdo ratón: \tClic y Arrastrar para crear Átomos y Enlace\n"
-#~ "Botón derecho ratón: \tBorrar Átomo"
-
-#, qt-format
-#~ msgid ""
 #~ "Atom Label Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick on Atoms to add Custom Labels"
@@ -9779,18 +9767,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
-
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Herramienta de dibujo\n"
-#~ "\n"
-#~ "Botón Izquierdo del Ratón: \tPresionar y Arrastrar para crear Átomos y "
-#~ "Enlaces\n"
-#~ "Botón Derecho del Ratón: \tBorrar Átomo"
 
 #~ msgid ""
 #~ "Atom Label Tool\n"
