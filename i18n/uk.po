@@ -9532,18 +9532,6 @@ msgstr "Ваші електронні листи"
 
 #, qt-format
 #~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Інструмент малювання (%1)\n"
-#~ "\n"
-#~ "Ліва миша: клацніть і перетягніть, щоб створити атоми та зв’язок\n"
-#~ "Права кнопка миші: Видалити атом"
-
-#, qt-format
-#~ msgid ""
 #~ "Atom Label Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick on Atoms to add Custom Labels"
