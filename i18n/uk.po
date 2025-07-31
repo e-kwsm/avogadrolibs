@@ -9532,16 +9532,6 @@ msgstr "Ваші електронні листи"
 
 #, qt-format
 #~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Інструмент Atom Label (%1)\n"
-#~ "\n"
-#~ "Ліва миша: клацніть на Atoms, щоб додати власні мітки"
-
-#, qt-format
-#~ msgid ""
 #~ "Manipulation Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick and drag to move atoms\n"
