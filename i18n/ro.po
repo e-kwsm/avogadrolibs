@@ -8881,19 +8881,6 @@ msgstr "remusgabriel.chelu@disroot.org"
 
 #, qt-format
 #~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Instrument de desen (%1)\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului: \tFaceți clic și trageți pentru a crea atomi "
-#~ "și legături\n"
-#~ "Butonul drept al mouse-ului: \tȘterge atomul"
-
-#, qt-format
-#~ msgid ""
 #~ "Atom Label Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick on Atoms to add Custom Labels"
