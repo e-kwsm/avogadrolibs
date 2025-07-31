@@ -3871,7 +3871,7 @@ msgid "Navigate"
 msgstr "Navigacija"
 
 #: qtplugins/navigator/navigator.cpp:42
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Navigation Tool\t(%1)\n"
 "\n"
@@ -3879,6 +3879,12 @@ msgid ""
 "Middle Mouse:\tClick and drag to zoom in or out.\n"
 "Right Mouse:\tClick and drag to move the view."
 msgstr ""
+"Alat za navigaciju\t(%1)\n"
+"\n"
+"Lijeva tipka miša:\tKlikni i povuci za okretanje prikaza.\n"
+"Srednja tipka miša:\tKlikni i povuci za povećanje ili smanjenje "
+"prikaza.\n"
+"Desna tipka miša:\tKlikni i povuci za pomicanje prikaza."
 
 #: qtplugins/navigator/navigator.cpp:63
 msgid "Rotate the scene along the x, y, or z axes."
@@ -8668,21 +8674,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "avogadro-devel@lists.sourceforge.net, trebelnik2@gmail.com, mail@milotype.de"
-
-#, qt-format
-#~ msgid ""
-#~ "Navigation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ msgstr ""
-#~ "Alat za navigaciju \t(%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: \tKlikni i povuci za okretanje prikaza.\n"
-#~ "Srednja tipka miša: \tKlikni i povuci za povećanje ili smanjenje "
-#~ "prikaza.\n"
-#~ "Desna tipka miša: \tKlikni i povuci za pomicanje prikaza.\n"
 
 #~ msgid ""
 #~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
