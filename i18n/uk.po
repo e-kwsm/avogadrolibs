@@ -9532,18 +9532,6 @@ msgstr "Ваші електронні листи"
 
 #, qt-format
 #~ msgid ""
-#~ "Manipulation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate atoms.\n"
-#~ msgstr ""
-#~ "Інструмент маніпуляції (%1)\n"
-#~ "\n"
-#~ "Ліва миша: натисніть і перетягніть, щоб перемістити атоми\n"
-#~ "Права миша: клацніть і перетягніть, щоб обертати атоми.\n"
-
-#, qt-format
-#~ msgid ""
 #~ "Measure Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tSelect up to four Atoms.\n"
