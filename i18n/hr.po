@@ -1602,6 +1602,7 @@ msgid "Align"
 msgstr "Poravnaj"
 
 #: qtplugins/aligntool/aligntool.cpp:53
+#, fuzzy
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1611,6 +1612,13 @@ msgid ""
 "Right Mouse:\tReset alignment.\n"
 "Double-Click:\tCenter the atom at the origin."
 msgstr ""
+"Poravnaj molekule\n"
+"\n"
+"Lijeva tipka miša: Odaberi do dva atoma.\n"
+"\tPrvi atom je centriran pri izvoru.\n"
+"\tDrugi atom je poravnat na odabranu os.\n"
+"Desna tipka miša: Poništi poravnanje.\n"
+"Dvostruki klik: Centriraj atom pri izvoru."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:262
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8628,28 +8636,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "avogadro-devel@lists.sourceforge.net, trebelnik2@gmail.com, mail@milotype.de"
-
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr ""
-#~ "Tablice za prikaz i uređivanje svojstva atoma, veze, kuta i torzije."
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Poravnaj molekule\n"
-#~ "\n"
-#~ "Lijeva tipka miša: Odaberi do dva atoma.\n"
-#~ "\tPrvi atom je centriran pri izvoru.\n"
-#~ "\tDrugi atom je poravnat na odabranu os.\n"
-#~ "Desna tipka miša: Poništi poravnanje.\n"
-#~ "Dvostruki klik: Centriraj atom pri izvoru."
 
 #, qt-format
 #~ msgid ""
