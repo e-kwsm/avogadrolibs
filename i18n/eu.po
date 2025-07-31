@@ -9456,23 +9456,6 @@ msgstr ""
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals"
 
-#, fuzzy
-#~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Manipulation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-#~ msgstr ""
-#~ "Marrazketa Tresna (F8)\n"
-#~ "\n"
-#~ "Saguko ezker botoia: \t Klikatu eta tiratu Atomoak eta Loturak sortzeko\n"
-#~ "Saguko eskuin botoia: \t Atomoa ezabatu"
-
 #~ msgid "Geometry"
 #~ msgstr "Geometria"
 
