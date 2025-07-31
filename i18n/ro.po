@@ -8904,17 +8904,6 @@ msgstr "remusgabriel.chelu@disroot.org"
 
 #, qt-format
 #~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Instrument de etichetare a atomilor \t(%1)\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului: \tFaceți clic pe atomi pentru a adăuga "
-#~ "etichete personalizate"
-
-#, qt-format
-#~ msgid ""
 #~ "Manipulation Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick and drag to move atoms\n"
