@@ -9444,18 +9444,6 @@ msgstr ""
 
 #, qt-format
 #~ msgid ""
-#~ "Manipulation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate atoms.\n"
-#~ msgstr ""
-#~ "Alat za upravljanje \t(%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: \tKlikni i povuci za pomicanje atoma\n"
-#~ "Desna tipka miša: \tKlikni i povuci za oretanje atoma.\n"
-
-#, qt-format
-#~ msgid ""
 #~ "Measure Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tSelect up to four Atoms.\n"
