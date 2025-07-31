@@ -2103,7 +2103,7 @@ msgid "Auto Optimize"
 msgstr ""
 
 #: qtplugins/autoopt/autoopt.cpp:71
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Auto Optimize Tool\t(%1)\n"
 "\n"
@@ -2117,6 +2117,17 @@ msgid ""
 "Left Mouse:\tClick and drag atoms to move them.\n"
 "Right Mouse:\tClick and drag to rotate atoms."
 msgstr ""
+"Orodje za samodejno prilagajanje\t(%1)\n"
+"\n"
+"S klikom na prazen prostor, se omogočijo funkcije krmarjenja.\n"
+"Levi gumb miške:\tZavrti prostor\n"
+"Srednji gumb miške:\tPribližaj prostor\n"
+"Desni gumb miške:\tPremakni prostor\n"
+"Dvojni klik:\tPočisti pogled\n"
+"\n"
+"Ob zagonu:\n"
+"Levi klik:\tS klikom in vlečenjem je mogoče atome premikati.\n"
+"Desni klik:\t"
 
 #: qtplugins/autoopt/autoopt.cpp:152
 #, fuzzy
@@ -11481,29 +11492,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 
 #~ msgid "Everything"
 #~ msgstr "Vse"
-
-#~ msgid ""
-#~ "Auto Optimization Tool\n"
-#~ "\n"
-#~ "Navigation Functions when clicking in empty space.\n"
-#~ "Left Mouse: \tRotate Space\n"
-#~ "Middle Mouse: Zoom Space\n"
-#~ "Right Mouse: \tMove Space\n"
-#~ "Double-Click: \t Reset View\n"
-#~ "\n"
-#~ "When running:\n"
-#~ "Left Mouse: \tClick and drag atoms to move them."
-#~ msgstr ""
-#~ "Orodje za samodejno prilagajanje\n"
-#~ "\n"
-#~ "S klikom na prazen prostor, se omogočijo funkcije krmarjenja.\n"
-#~ "Levi gumb miške: \tZavrti prostor\n"
-#~ "Srednji gumb miške: Približaj prostor\n"
-#~ "Desni gumb miške: \tPremakni prostor\n"
-#~ "Dvojni klik: \t Počisti pogled\n"
-#~ "\n"
-#~ "Ob zagonu:\n"
-#~ "Levi klik: \tS klikom in vlečenjem je mogoče atome premikati."
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "Samodejno prilagajanje: ni mogoče nastaviti polja sil ..."
