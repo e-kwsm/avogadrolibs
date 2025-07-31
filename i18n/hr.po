@@ -9442,15 +9442,6 @@ msgstr ""
 #~ "\n"
 #~ "Lijeva tipka miša: \tKlikni na atome za dodavanje prilagođenih oznaka"
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Standardno:\tPovuci prema dolje za smanjivanje, povuci prema gore za "
-#~ "zumiranje\n"
-#~ "Obrnuto:\tPovuci prema gore za smanjivanje, povuci prema dolje za "
-#~ "zumiranje"
-
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
 #~ msgstr "Alat za animaciju \t(%1)"
