@@ -2955,13 +2955,17 @@ msgid "Draw"
 msgstr "Nariši"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Orodje risanja\t(%1)\n"
+"\n"
+"Levi gumb miške:\tS klikom in vlečenjem se izrišejo atomi in vezi\n"
+"Desni klik miške:\tIzbriše atom"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8680,23 +8684,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Delni naboj"
-
-#, fuzzy
-#~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Orodje risanja (F8)\n"
-#~ "\n"
-#~ "Levi gumb miške: \tS klikom in vlečenjem se izrišejo atomi in vezi\n"
-#~ "Desni klik miške: \tIzbriše atom"
 
 #, fuzzy
 #~| msgid ""
