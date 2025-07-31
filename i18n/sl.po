@@ -1549,6 +1549,7 @@ msgid "Align"
 msgstr "Poravnava"
 
 #: qtplugins/aligntool/aligntool.cpp:53
+#, fuzzy
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1558,6 +1559,13 @@ msgid ""
 "Right Mouse:\tReset alignment.\n"
 "Double-Click:\tCenter the atom at the origin."
 msgstr ""
+"Poravnava molekul\n"
+"\n"
+"Levi gumb miške:\tIzbor do dveh atomov.\n"
+"\tPrvi izbran atom je postavljen v izhodiščno točko.\n"
+"\tDrugi izbran atom je poravnan na izbrano os.\n"
+"Desni klik miške:\tPočisti poravnavo.\n"
+"Dvojni klik:\tPostavi atom v izhodiščno točko."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:262
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8628,23 +8636,6 @@ msgid "Your emails"
 msgstr ""
 ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,"
 "mateju@svn.gnome.org"
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Poravnava molekul\n"
-#~ "\n"
-#~ "Levi gumb miške: \tIzbor do dveh atomov.\n"
-#~ "\tPrvi izbran atom je postavljen v izhodiščno točko.\n"
-#~ "\tDrugi izbran atom je poravnan na izbrano os.\n"
-#~ "Desni klik miške: \tPočisti poravnavo.\n"
-#~ "Dvojni klik: \tPostavi atom v izhodiščno točko."
 
 #, fuzzy
 #~ msgid "&Analysis"
