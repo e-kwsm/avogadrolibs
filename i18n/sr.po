@@ -9626,23 +9626,6 @@ msgstr ""
 
 #, fuzzy
 #~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Алат за цртање (Ф8)\n"
-#~ "\n"
-#~ "Леви тастер: \tПритисните и превуците да направите атоме и везе\n"
-#~ "Десни тастер: \tОбришите атом"
-
-#, fuzzy
-#~| msgid ""
 #~| "Click to Measure (F12)\n"
 #~| "\n"
 #~| "Left Mouse: \tSelect up to three Atoms.\n"
