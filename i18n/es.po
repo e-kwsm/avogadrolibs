@@ -9606,13 +9606,6 @@ msgstr ""
 #~ "Tablas para visualizar y editar propiedades de átomos, enlaces, ángulos y "
 #~ "torsiones."
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Por defecto:\tBaje para alejar, suba para aumentar\n"
-#~ "Invertido:\tSuba para alejar, baje para aumentar"
-
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
 #~ msgstr "Herramienta de animación (%1)"
