@@ -9606,10 +9606,6 @@ msgstr ""
 #~ "Tablas para visualizar y editar propiedades de átomos, enlaces, ángulos y "
 #~ "torsiones."
 
-#, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Herramienta de animación (%1)"
-
 #~ msgid "0"
 #~ msgstr "0"
 
@@ -9663,9 +9659,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
-
-#~ msgid "Animation Tool"
-#~ msgstr "Herramienta de Animación"
 
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
