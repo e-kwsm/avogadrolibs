@@ -1609,6 +1609,7 @@ msgid "Align"
 msgstr "Hizala"
 
 #: qtplugins/aligntool/aligntool.cpp:53
+#, fuzzy
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1618,6 +1619,13 @@ msgid ""
 "Right Mouse:\tReset alignment.\n"
 "Double-Click:\tCenter the atom at the origin."
 msgstr ""
+"Molekülleri Hizala\n"
+"\n"
+"Sol Fare: En fazla iki atom seçin.\n"
+"\tİlk atom orijinde ortalanır.\n"
+"\tİkinci atom seçilen eksene hizalanır.\n"
+"Sağ Fare:\tHizalamayı sıfırlayın.\n"
+"Çift Tıklama:\tAtomu orijinde ortalar."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:262
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -8641,24 +8649,6 @@ msgstr ""
 "abdurrahmanolgac@bireczaci.com,avogadro-devel@lists.sourceforge.net,,efe."
 "ciftci@linux.org.tr,,,,,kudretemre@hotmail.com,apshalasha@gmail.com,rainman."
 "neu@gmail.com,para4360@gmail.com,,ytopcu@gmail.com,,hhaydarakdag@gmail.com,"
-
-#, fuzzy
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "Molekülleri Hizala\n"
-#~ "\n"
-#~ "Sol Fare: En fazla iki atom seçin.\n"
-#~ "\tİlk atom orijinde ortalanır.\n"
-#~ "\tİkinci atom seçilen eksene hizalanır.\n"
-#~ "Sağ Fare: Hizalamayı sıfırlayın.\n"
-#~ "Çift Tıklama: \tAtomu orijinde ortalar."
 
 #, fuzzy
 #~| msgid "&Import"
