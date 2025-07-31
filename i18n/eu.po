@@ -2954,13 +2954,17 @@ msgid "Draw"
 msgstr "Marraztu"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Marrazketa Tresna\t(%1)\n"
+"\n"
+"Saguko ezker botoia:\tKlikatu eta tiratu Atomoak eta Loturak sortzeko\n"
+"Saguko eskuin botoia:\tAtomoa ezabatu"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8722,23 +8726,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Karga Partziala"
-
-#, fuzzy
-#~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Marrazketa Tresna (F8)\n"
-#~ "\n"
-#~ "Saguko ezker botoia: \t Klikatu eta tiratu Atomoak eta Loturak sortzeko\n"
-#~ "Saguko eskuin botoia: \t Atomoa ezabatu"
 
 #, fuzzy
 #~| msgid ""
