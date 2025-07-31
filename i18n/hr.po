@@ -8775,10 +8775,6 @@ msgstr ""
 "avogadro-devel@lists.sourceforge.net, trebelnik2@gmail.com, mail@milotype.de"
 
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Alat za animaciju \t(%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
