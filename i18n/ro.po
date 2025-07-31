@@ -3936,8 +3936,8 @@ msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
-"Implicit:\t Derulați în jos pentru a micșora, derulați în sus pentru a mări\n"
-"Inversată:\t Derulați în sus pentru a micșora, derulați în jos pentru a mări"
+"Implicit:\tDerulați în jos pentru a micșora, derulați în sus pentru a mări\n"
+"Inversată:\tDerulați în sus pentru a micșora, derulați în jos pentru a mări"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
