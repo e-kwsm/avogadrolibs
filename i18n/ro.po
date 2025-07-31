@@ -9575,20 +9575,6 @@ msgstr "remusgabriel.chelu@disroot.org, 2023, 2024, 2025, 2026"
 
 #, qt-format
 #~ msgid ""
-#~ "Manipulation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate atoms.\n"
-#~ msgstr ""
-#~ "Instrument de manipulare (%1)\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului: \tFaceți clic și trageți pentru a muta "
-#~ "atomii\n"
-#~ "Butonul drept al mouse-ului: \tFaceți clic și trageți pentru a roti "
-#~ "atomii.\n"
-
-#, qt-format
-#~ msgid ""
 #~ "Measure Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tSelect up to four Atoms.\n"
