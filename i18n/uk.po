@@ -8802,15 +8802,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Ваші електронні листи"
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "За замовчуванням: прокрутіть вниз, щоб зменшити, прокрутіть вгору, щоб "
-#~ "збільшити\n"
-#~ "Перевернуто: прокрутіть вгору, щоб зменшити, прокрутіть вниз, щоб "
-#~ "збільшити"
-
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
 #~ msgstr "Інструмент анімації (%1)"
