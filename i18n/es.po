@@ -3942,10 +3942,13 @@ msgid "Reverse Direction of Zoom on Scroll"
 msgstr "Invertir el Sentido al Acercar/Alejar"
 
 #: qtplugins/navigator/navigator.cpp:108
+#, fuzzy
 msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"Por defecto:\tBaje para alejar, suba para aumentar\n"
+"Invertido:\tSuba para alejar, baje para aumentar"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -8902,13 +8905,6 @@ msgstr ""
 "grovertapia@hotmail.com,,joseb.gutierrez@gmail.com,,,,meilan@adinet.com.uy,"
 "tres.14159@gmail.com,monkey.libre@gmail.com,nzahlut@live.com,,paco@byasl."
 "com,,victorhera@gmail.com,memaljo@yahoo.com,"
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Por defecto:\tBaje para alejar, suba para aumentar\n"
-#~ "Invertido:\tSuba para alejar, baje para aumentar"
 
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
