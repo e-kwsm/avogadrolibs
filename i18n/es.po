@@ -3585,12 +3585,16 @@ msgid "Edit Labels"
 msgstr "Editar Etiquetas"
 
 #: qtplugins/label/labeleditor.cpp:34
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Atom Label Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick on Atoms to add Custom Labels"
 msgstr ""
+"Herramienta de etiquetas de átomos\t(%1)\n"
+"\n"
+"Botón izquierdo del ratón:\tHaga clic en los átomos para añadir "
+"etiquetas personalizadas"
 
 #: qtplugins/label/labeleditor.cpp:81
 msgid "Create Label"
@@ -8866,17 +8870,6 @@ msgstr ""
 
 #, qt-format
 #~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Herramienta de etiquetas de átomos (%1)\n"
-#~ "\n"
-#~ "Botón izquierdo del ratón: \tHaga clic en los átomos para añadir "
-#~ "etiquetas personalizadas"
-
-#, qt-format
-#~ msgid ""
 #~ "Manipulation Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick and drag to move atoms\n"
@@ -9028,16 +9021,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
-
-#~ msgid ""
-#~ "Atom Label Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Herramienta de Etiquetado de Átomos\n"
-#~ "\n"
-#~ "Botón Izquierdo del Ratón:\tPresionar sobre los Átomos para añadir "
-#~ "Etiquetas Personalizadas"
 
 #~ msgid ""
 #~ "Manipulation Tool\n"
