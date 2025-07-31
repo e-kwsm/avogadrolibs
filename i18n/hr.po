@@ -3548,12 +3548,15 @@ msgid "Edit Labels"
 msgstr "Uredi oznake"
 
 #: qtplugins/label/labeleditor.cpp:34
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Atom Label Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick on Atoms to add Custom Labels"
 msgstr ""
+"Alat za oznake atoma\t(%1)\n"
+"\n"
+"Lijeva tipka miša:\tKlikni na atome za dodavanje prilagođenih oznaka"
 
 #: qtplugins/label/labeleditor.cpp:81
 msgid "Create Label"
@@ -8654,16 +8657,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "avogadro-devel@lists.sourceforge.net, trebelnik2@gmail.com, mail@milotype.de"
-
-#, qt-format
-#~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Alat za oznake atoma \t(%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: \tKlikni na atome za dodavanje prilagođenih oznaka"
 
 #, qt-format
 #~ msgid ""
