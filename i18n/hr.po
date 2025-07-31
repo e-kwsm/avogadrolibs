@@ -3636,13 +3636,17 @@ msgid "Manipulate"
 msgstr "Upravljaj"
 
 #: qtplugins/manipulator/manipulator.cpp:52
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and drag to move atoms\n"
 "Right Mouse:\tClick and drag to rotate atoms."
 msgstr ""
+"Alat za upravljanje\t(%1)\n"
+"\n"
+"Lijeva tipka miša:\tKlikni i povuci za pomicanje atoma\n"
+"Desna tipka miša:\tKlikni i povuci za oretanje atoma."
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -8657,18 +8661,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "avogadro-devel@lists.sourceforge.net, trebelnik2@gmail.com, mail@milotype.de"
-
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate atoms.\n"
-#~ msgstr ""
-#~ "Alat za upravljanje \t(%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: \tKlikni i povuci za pomicanje atoma\n"
-#~ "Desna tipka miša: \tKlikni i povuci za oretanje atoma.\n"
 
 #, qt-format
 #~ msgid ""
