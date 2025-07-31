@@ -9517,17 +9517,6 @@ msgstr "remusgabriel.chelu@disroot.org, 2023, 2024, 2025, 2026"
 #~ msgid "Generate and plot an RMSD curve."
 #~ msgstr "Generează și trasează o curbă RMSD."
 
-#, qt-format
-#~ msgid ""
-#~ "Atom Label Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Instrument de etichetare a atomilor\t(%1)\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului:\tApăsați-l pe atomi pentru a adăuga etichete "
-#~ "personalizate"
-
 #~ msgid "Max 2*theta:"
 #~ msgstr "Max 2*theta:"
 
@@ -9583,30 +9572,6 @@ msgstr "remusgabriel.chelu@disroot.org, 2023, 2024, 2025, 2026"
 #~ "\tAl doilea atom este aliniat la axa selectată.\n"
 #~ "Butonul drept al mouse-ului: \tRestabilește alinierea.\n"
 #~ "Dublu clic: \tCentrează atomul la origine."
-
-#, qt-format
-#~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Instrument de desen (%1)\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului: \tFaceți clic și trageți pentru a crea atomi "
-#~ "și legături\n"
-#~ "Butonul drept al mouse-ului: \tȘterge atomul"
-
-#, qt-format
-#~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Instrument de etichetare a atomilor \t(%1)\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului: \tFaceți clic pe atomi pentru a adăuga "
-#~ "etichete personalizate"
 
 #, qt-format
 #~ msgid ""
@@ -9764,16 +9729,6 @@ msgstr "remusgabriel.chelu@disroot.org, 2023, 2024, 2025, 2026"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Sarcina parțială"
-
-#~ msgid ""
-#~ "Atom Label Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Instrument de etichetare a atomilor\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului: \tFaceți clic pe atomi pentru a adăuga "
-#~ "etichete personalizate"
 
 #~ msgid ""
 #~ "Manipulation Tool\n"
