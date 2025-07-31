@@ -3910,7 +3910,7 @@ msgid "Navigate"
 msgstr "Navegar"
 
 #: qtplugins/navigator/navigator.cpp:42
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Navigation Tool\t(%1)\n"
 "\n"
@@ -3918,6 +3918,12 @@ msgid ""
 "Middle Mouse:\tClick and drag to zoom in or out.\n"
 "Right Mouse:\tClick and drag to move the view."
 msgstr ""
+"Herramienta de navegación\t(%1)\n"
+"\n"
+"Botón izquierdo ratón:\tHaga clic y arrastre para girar la vista.\n"
+"Botón central del ratón:\tHaga clic y arrastre para acercar o alejar la "
+"vista.\n"
+"Botón derecho del ratón:\tHaga clic y arrastre para mover la vista."
 
 #: qtplugins/navigator/navigator.cpp:63
 msgid "Rotate the scene along the x, y, or z axes."
@@ -8879,21 +8885,6 @@ msgstr ""
 "tres.14159@gmail.com,monkey.libre@gmail.com,nzahlut@live.com,,paco@byasl."
 "com,,victorhera@gmail.com,memaljo@yahoo.com,"
 
-#, qt-format
-#~ msgid ""
-#~ "Navigation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ msgstr ""
-#~ "Herramienta de navegación (%1)\n"
-#~ "\n"
-#~ "Botón izquierdo ratón: \tHaga clic y arrastre para girar la vista.\n"
-#~ "Botón central del ratón:\tHaga clic y arrastre para acercar o alejar la "
-#~ "vista.\n"
-#~ "Botón derecho del ratón: \tHaga clic y arrastre para mover la vista.\n"
-
 #~ msgid ""
 #~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
 #~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
@@ -9002,19 +8993,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
-
-#~ msgid ""
-#~ "Navigation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ msgstr ""
-#~ "Herramienta de Navegación\n"
-#~ "\n"
-#~ "Botón Izquierdo del Ratón:\tPresionar y arrastrar para rotar la vista.\n"
-#~ "Botón Central del Ratón:\tPresionar y arrastrar para acercar o alejar.\n"
-#~ "Botón Derecho del Ratón:\tPresionar y arrastrar para mover la vista.\n"
 
 #~ msgid "Animation Tool"
 #~ msgstr "Herramienta de Animación"
