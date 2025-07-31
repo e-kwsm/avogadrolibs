@@ -9654,10 +9654,6 @@ msgstr ""
 #~ "Tablas para visualizar y editar propiedades de átomos, enlaces, ángulos y "
 #~ "torsiones."
 
-#, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Herramienta de animación (%1)"
-
 #~ msgid "0"
 #~ msgstr "0"
 
