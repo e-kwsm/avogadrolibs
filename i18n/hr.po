@@ -3903,10 +3903,15 @@ msgid "Reverse Direction of Zoom on Scroll"
 msgstr "Obrni smjer zumiranja pri povlačenju"
 
 #: qtplugins/navigator/navigator.cpp:108
+#, fuzzy
 msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"Standardno:\tPovuci prema dolje za smanjivanje, povuci prema gore za "
+"zumiranje\n"
+"Obrnuto:\tPovuci prema gore za smanjivanje, povuci prema dolje za "
+"zumiranje"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -8690,15 +8695,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "avogadro-devel@lists.sourceforge.net, trebelnik2@gmail.com, mail@milotype.de"
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Standardno:\tPovuci prema dolje za smanjivanje, povuci prema gore za "
-#~ "zumiranje\n"
-#~ "Obrnuto:\tPovuci prema gore za smanjivanje, povuci prema dolje za "
-#~ "zumiranje"
 
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
