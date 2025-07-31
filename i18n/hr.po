@@ -2975,13 +2975,17 @@ msgid "Draw"
 msgstr "Crtaj"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Alat za crtanje (%1)\n"
+"\n"
+"Lijeva tipka miša: Klikni i povuci za stvaranje atoma i veza\n"
+"Desna tipka miša: Izbriši atom"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8650,18 +8654,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "avogadro-devel@lists.sourceforge.net, trebelnik2@gmail.com, mail@milotype.de"
-
-#, qt-format
-#~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Alat za crtanje (%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: Klikni i povuci za stvaranje atoma i veza\n"
-#~ "Desna tipka miša: Izbriši atom"
 
 #, qt-format
 #~ msgid ""
