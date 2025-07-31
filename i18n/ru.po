@@ -3586,12 +3586,16 @@ msgid "Edit Labels"
 msgstr ""
 
 #: qtplugins/label/labeleditor.cpp:34
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Atom Label Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick on Atoms to add Custom Labels"
 msgstr ""
+"Инструмент для пометки атомов\t(%1)\n"
+"\n"
+"Нажатием левой кнопки мыши на определенном атоме можно инициировать\n"
+"текстовое поле для создания текстовой метки на атоме"
 
 #: qtplugins/label/labeleditor.cpp:81
 msgid "Create Label"
@@ -8749,16 +8753,6 @@ msgstr ""
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "Частичный заряд"
-
-#~ msgid ""
-#~ "Atom Label Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Инструмент для пометки атомов\n"
-#~ "\n"
-#~ "Нажатием левой кнопки мыши на определенном атоме можно инициировать\n"
-#~ "текстовое поле для создания текстовой метки на атоме"
 
 #~ msgid ""
 #~ "Measure Tool\n"
