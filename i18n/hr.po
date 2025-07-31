@@ -9444,18 +9444,6 @@ msgstr ""
 
 #, qt-format
 #~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Alat za crtanje (%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: Klikni i povuci za stvaranje atoma i veza\n"
-#~ "Desna tipka miša: Izbriši atom"
-
-#, qt-format
-#~ msgid ""
 #~ "Atom Label Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick on Atoms to add Custom Labels"
