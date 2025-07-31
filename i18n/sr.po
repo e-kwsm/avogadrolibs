@@ -3025,13 +3025,17 @@ msgid "Draw"
 msgstr "Iscrtaj"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"Алат за цртање\t(%1)\n"
+"\n"
+"Леви тастер:\tПритисните и превуците да направите атоме и везе\n"
+"Десни тастер:\tОбришите атом"
 
 #: qtplugins/editor/editor.cpp:116
 msgid "Draw Atom"
@@ -8882,23 +8886,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Делимично наелектрисање"
-
-#, fuzzy
-#~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Алат за цртање (Ф8)\n"
-#~ "\n"
-#~ "Леви тастер: \tПритисните и превуците да направите атоме и везе\n"
-#~ "Десни тастер: \tОбришите атом"
 
 #, fuzzy
 #~| msgid ""
