@@ -8761,10 +8761,6 @@ msgid "Your emails"
 msgstr "Ваші електронні листи"
 
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Інструмент анімації (%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
