@@ -8769,15 +8769,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "remusgabriel.chelu@disroot.org"
 
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "Implicit:\t Derulați în jos pentru a micșora, derulați în sus pentru a "
-#~ "mări\n"
-#~ "Inversată:\t Derulați în sus pentru a micșora, derulați în jos pentru a "
-#~ "mări"
-
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
 #~ msgstr "Instrument de animație \t(%1)"
