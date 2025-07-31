@@ -9443,10 +9443,6 @@ msgstr ""
 #~ "Lijeva tipka miša: \tKlikni na atome za dodavanje prilagođenih oznaka"
 
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Alat za animaciju \t(%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
