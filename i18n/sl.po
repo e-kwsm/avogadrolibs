@@ -4024,12 +4024,12 @@ msgstr ""
 
 #: qtplugins/openbabel/openbabel.cpp:549 qtplugins/openbabel/openbabel.cpp:700
 #: qtplugins/openbabel/openbabel.cpp:790
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Number of atoms in obabel output (%1) does not match the number of atoms in "
 "the original molecule (%2)."
 msgstr ""
-"Datoteka trajektorij %1 ni skladna s številom atomov v trenutni molekuli."
+"Datoteka trajektorij %1 ni skladna s številom atomov v trenutni molekuli (%2)."
 
 #: qtplugins/openbabel/openbabel.cpp:568
 msgid "Molecule invalid. Cannot generate conformers."
