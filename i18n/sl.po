@@ -9412,23 +9412,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 
 #, fuzzy
 #~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Orodje risanja (F8)\n"
-#~ "\n"
-#~ "Levi gumb miške: \tS klikom in vlečenjem se izrišejo atomi in vezi\n"
-#~ "Desni klik miške: \tIzbriše atom"
-
-#, fuzzy
-#~| msgid ""
 #~| "Click to Measure (F12)\n"
 #~| "\n"
 #~| "Left Mouse: \tSelect up to three Atoms.\n"
