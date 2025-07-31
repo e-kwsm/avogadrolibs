@@ -9574,10 +9574,6 @@ msgstr "remusgabriel.chelu@disroot.org, 2023, 2024, 2025, 2026"
 #~ "Dublu clic: \tCentrează atomul la origine."
 
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Instrument de animație \t(%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
@@ -9701,9 +9697,6 @@ msgstr "remusgabriel.chelu@disroot.org, 2023, 2024, 2025, 2026"
 #~ "\tUnghiul este măsurat între 1-3 folosind 2 ca punct comun\n"
 #~ "\tDiedrul este măsurat între 1-2-3-4\n"
 #~ "Butonul drept al mouse-ului: \tReinițializează măsurătorile."
-
-#~ msgid "Animation Tool"
-#~ msgstr "Instrument de animație"
 
 #~ msgid ""
 #~ "Selection Tool\n"
