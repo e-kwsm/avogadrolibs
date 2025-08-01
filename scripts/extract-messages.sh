@@ -15,7 +15,7 @@ echo "Preparing rc files"
 cd ${BASEDIR}
 # we use simple sorting to make sure the lines do not jump around too much from system to system
 find . -name '*.rc' -o -name '*.ui' -o -name '*.kcfg' | grep -v 'test' | grep -v 'example' | sort > ${WDIR}/rcfiles.list
-cat ${WDIR}/rcfiles.list | xargs ${WDIR}/scripts/extractrc.sh > ${WDIR}/rc.cpp
+< ${WDIR}/rcfiles.list xargs ${WDIR}/scripts/extractrc.sh > ${WDIR}/rc.cpp
 # additional string for KAboutData
 echo 'i18nc("NAME OF TRANSLATORS","Your names");' >> ${WDIR}/rc.cpp
 echo 'i18nc("EMAIL OF TRANSLATORS","Your emails");' >> ${WDIR}/rc.cpp
