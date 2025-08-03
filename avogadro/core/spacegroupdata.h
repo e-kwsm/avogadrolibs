@@ -6,13 +6,15 @@
 #ifndef AVOGADRO_CORE_SPACE_GROUP_DATA
 #define AVOGADRO_CORE_SPACE_GROUP_DATA
 
+#include <array>
+
 // This file contains data for each hall number.
 // For example, [3] accesses data for hall number 3.
 // [0] is a dummy in every case. There are 530 entries in each one.
 
 namespace Avogadro::Core {
 
-const unsigned short space_group_international_number[] = {
+const std::array<unsigned short, 531> space_group_international_number = {
   0,   1,   2,   3,   3,   3,   4,   4,   4,   5,   5,   5,   5,   5,   5,
   5,   5,   5,   6,   6,   6,   7,   7,   7,   7,   7,   7,   7,   7,   7,
   8,   8,   8,   8,   8,   8,   8,   8,   8,   9,   9,   9,   9,   9,   9,
@@ -51,7 +53,7 @@ const unsigned short space_group_international_number[] = {
   227, 227, 228, 228, 229, 230
 };
 
-const char* const space_group_schoenflies[] = {
+const std::array<const char* const, 531> space_group_schoenflies[] = {
   "",       "C1^1",   "Ci^1",   "C2^1",   "C2^1",   "C2^1",   "C2^2",
   "C2^2",   "C2^2",   "C2^3",   "C2^3",   "C2^3",   "C2^3",   "C2^3",
   "C2^3",   "C2^3",   "C2^3",   "C2^3",   "Cs^1",   "Cs^1",   "Cs^1",
@@ -130,7 +132,7 @@ const char* const space_group_schoenflies[] = {
   "Oh^7",   "Oh^7",   "Oh^8",   "Oh^8",   "Oh^9",   "Oh^10"
 };
 
-const char* const space_group_hall_symbol[] = { "",
+const std::array<const char* const, 531> space_group_hall_symbol[] = { "",
                                                 "P 1",
                                                 "-P 1",
                                                 "P 2y",
@@ -662,7 +664,7 @@ const char* const space_group_hall_symbol[] = { "",
                                                 "-I 4 2 3",
                                                 "-I 4bd 2c 3" };
 
-const char* const space_group_international[] = {
+const std::array<const char* const, 531> space_group_international[] = {
   "",
   "P 1",
   "P -1",
@@ -1728,7 +1730,7 @@ const char* const space_group_international_full[] = { "",
                                                        "I 4/m -3 2/m",
                                                        "I 4_1/a -3 2/d" };
 
-const char* const space_group_international_short[] = {
+const std::array<const char* const, 531> space_group_international_short[] = {
   "",         "P1",         "P-1",      "P2",       "P2",         "P2",
   "P2_1",     "P2_1",       "P2_1",     "C2",       "C2",         "C2",
   "C2",       "C2",         "C2",       "C2",       "C2",         "C2",
@@ -1820,7 +1822,7 @@ const char* const space_group_international_short[] = {
   "Fd-3c",    "Im-3m",      "Ia-3d"
 };
 
-const char* const space_group_setting[] = {
+const std::array<const char* const, 531> space_group_setting = {
   "",      "",      "",     "b",    "c",     "a",     "b",    "c",    "a",
   "b1",    "b2",    "b3",   "c1",   "c2",    "c3",    "a1",   "a2",   "a3",
   "b",     "c",     "a",    "b1",   "b2",    "b3",    "c1",   "c2",   "c3",
@@ -1882,7 +1884,7 @@ const char* const space_group_setting[] = {
   "2",     "",      "",     "1",    "2",     "1",     "2",    "",     ""
 };
 
-const char* const space_group_transforms[] = {
+const std::array<const char* const, 531> space_group_transforms = {
   "",
   "x,y,z",
   "x,y,z -x,-y,-z",
