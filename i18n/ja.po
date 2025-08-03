@@ -4669,7 +4669,7 @@ msgstr "配座異性体のプロパティ…"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr "原子、結合、角度、二面角のプロパティを表示・編集する表"
 
 #: qtplugins/propertytables/propertytables.h:29

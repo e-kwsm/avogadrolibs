@@ -4652,9 +4652,9 @@ msgstr "Conformer Properties…"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr ""
-"Tables for displaying and editng atom, bond, angle, and torsion properties."
+"Tables for displaying and editing atom, bond, angle, and torsion properties."
 
 #: qtplugins/propertytables/propertytables.h:29
 msgid "PropertyTables"

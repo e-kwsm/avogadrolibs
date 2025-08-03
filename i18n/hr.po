@@ -4659,7 +4659,7 @@ msgstr "Svojstva konformera …"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr "Tablice za prikaz i uređivanje svojstva atoma, veze, kuta i torzije."
 
 #: qtplugins/propertytables/propertytables.h:29

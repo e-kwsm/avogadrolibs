@@ -4727,7 +4727,7 @@ msgstr "Властивості конформера…"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr ""
 "Таблиці для відображення та редагування властивостей атома, зв’язку, кута та "
 "кручення."

@@ -4668,7 +4668,7 @@ msgstr "Konformeerin ominaisuudet…"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr ""
 "Taulukot atomin, sidoksen, kulman ja vääntöominaisuuksien näyttämiseen ja "
 "muokkaamiseen."

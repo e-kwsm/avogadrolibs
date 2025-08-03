@@ -4740,7 +4740,7 @@ msgstr "Proprietăți conformer…"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr ""
 "Tabele pentru afișarea și editarea proprietăților atomului, legăturii, "
 "unghiului și torsiunii."

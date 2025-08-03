@@ -4735,7 +4735,7 @@ msgstr ""
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr ""
 "Tabeloj por montri kaj redakti atributojn pri atomo, ligo, angulo kaj tordo."
 

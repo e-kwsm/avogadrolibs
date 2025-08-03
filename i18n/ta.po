@@ -4648,7 +4648,7 @@ msgstr "கன்ஃபார்மர் பண்புகள்…"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr ""
 "அணு, பிணைப்பு, கோணம் மற்றும் முறுக்கு பண்புகளைக் காண்பிப்பதற்கும் திருத்துவதற்கும் "
 "அட்டவணைகள்."

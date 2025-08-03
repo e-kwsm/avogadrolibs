@@ -4652,7 +4652,7 @@ msgstr ""
 #: qtplugins/propertytables/propertytables.cpp:75
 #, fuzzy
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr "這些視窗可以用來顯示原子, 鍵, 鍵角, 及扭力性質等."
 
 #: qtplugins/propertytables/propertytables.h:29

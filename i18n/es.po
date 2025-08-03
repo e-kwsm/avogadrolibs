@@ -4701,7 +4701,7 @@ msgstr "Propiedades Heteromorfismo…"
 
 #: qtplugins/propertytables/propertytables.cpp:75
 msgid ""
-"Tables for displaying and editng atom, bond, angle and torsion properties."
+"Tables for displaying and editing atom, bond, angle and torsion properties."
 msgstr ""
 "Tablas para visualizar y editar propiedades de átomos, enlaces, ángulos y "
 "torsiones."
