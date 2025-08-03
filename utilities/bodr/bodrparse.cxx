@@ -18,6 +18,7 @@
 
 #include <avogadro/core/utilities.h>
 
+#include <array>
 #include <fstream>
 #include <string>
 #include <iostream>
@@ -35,12 +36,9 @@ using pugi::xml_node;
 using pugi::xml_attribute;
 
 struct Color {
-  Color() { c[0] = c[1] = c[2] = 0; }
-  Color(unsigned char r, unsigned char g, unsigned char b)
-  {
-    c[0] = r; c[1] = g; c[2] = b;
-  }
-  unsigned char c[3];
+  Color() : c{ { 0, 0, 0 } } {}
+  Color(unsigned char r, unsigned char g, unsigned char b) : c{ { r, g, b } } {}
+  std::array<unsigned char, 3> c;
 };
 
 struct Element {
