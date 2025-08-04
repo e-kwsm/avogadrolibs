@@ -1657,6 +1657,7 @@ msgid "Align"
 msgstr "சீரமைத்தல்"
 
 #: qtplugins/aligntool/aligntool.cpp:53
+#, fuzzy
 msgid ""
 "Align Molecules\n"
 "\n"
@@ -1666,6 +1667,13 @@ msgid ""
 "Right Mouse:\tReset alignment.\n"
 "Double-Click:\tCenter the atom at the origin."
 msgstr ""
+"மூலக்கூறுகளை சீரமைக்கவும்\n"
+"\n"
+" இடது சுட்டி: இரண்டு அணுக்கள் வரை தேர்ந்தெடுக்கவும்.\n"
+" முதல் அணு தோற்றத்தை மையமாகக் கொண்டுள்ளது.\n"
+" இரண்டாவது அணு தேர்ந்தெடுக்கப்பட்ட அச்சுடன் சீரமைக்கப்பட்டுள்ளது.\n"
+" வலது சுட்டி: சீரமைப்பை மீட்டமை.\n"
+" இருமுறை சொடுக்கு செய்யவும்: அணுவை தோற்றத்தில் மையப்படுத்தவும்."
 
 #. i18n: file: qtplugins/spectra/spectradialog.ui:230
 #. i18n: ectx: property (text), widget (QLabel, label_6)
@@ -9369,23 +9377,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ msgstr ""
 #~ "அணு, பிணைப்பு, கோணம் மற்றும் முறுக்கு பண்புகளைக் காண்பிப்பதற்கும் திருத்துவதற்கும் "
 #~ "அட்டவணைகள்."
-
-#~ msgid ""
-#~ "Align Molecules\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
-#~ "\tThe first atom is centered at the origin.\n"
-#~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
-#~ msgstr ""
-#~ "மூலக்கூறுகளை சீரமைக்கவும்\n"
-#~ "\n"
-#~ " இடது சுட்டி: இரண்டு அணுக்கள் வரை தேர்ந்தெடுக்கவும்.\n"
-#~ " முதல் அணு தோற்றத்தை மையமாகக் கொண்டுள்ளது.\n"
-#~ " இரண்டாவது அணு தேர்ந்தெடுக்கப்பட்ட அச்சுடன் சீரமைக்கப்பட்டுள்ளது.\n"
-#~ " வலது சுட்டி: சீரமைப்பை மீட்டமை.\n"
-#~ " இருமுறை சொடுக்கு செய்யவும்: அணுவை தோற்றத்தில் மையப்படுத்தவும்."
 
 #, qt-format
 #~ msgid ""
