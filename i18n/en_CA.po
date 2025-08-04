@@ -3556,6 +3556,9 @@ msgid ""
 "\n"
 "Left Mouse:\tClick on Atoms to add Custom Labels"
 msgstr ""
+"Atom Label Tool\t(%1)\n"
+"\n"
+"Left Mouse:\tClick on Atoms to add Custom Labels"
 
 #: qtplugins/label/labeleditor.cpp:81
 msgid "Create Label"
@@ -8780,16 +8783,6 @@ msgstr ""
 
 #, qt-format
 #~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-
-#, qt-format
-#~ msgid ""
 #~ "Manipulation Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick and drag to move atoms\n"
@@ -8937,15 +8930,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Partial Charge"
-
-#~ msgid ""
-#~ "Atom Label Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Atom Label Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
 
 #~ msgid ""
 #~ "Measure Tool\n"
