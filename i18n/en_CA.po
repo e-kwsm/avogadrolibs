@@ -4284,7 +4284,7 @@ msgstr "Player"
 #: qtplugins/playertool/playertool.cpp:49
 #, qt-format
 msgid "Animation Tool\t(%1)"
-msgstr ""
+msgstr "Animation Tool\t(%1)"
 
 #: qtplugins/playertool/playertool.cpp:74
 msgid "Play"
@@ -8798,10 +8798,6 @@ msgstr ""
 "sourceforge.net,bburns@aundae.com,cwoollard@gmail.com,,,,joseph."
 "odell@googlemail.com,,,,,avogadro-devel@lists.sourceforge.net,bburns@aundae."
 "com,cwoollard@gmail.com,,,,joseph.odell@googlemail.com"
-
-#, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "Animation Tool \t(%1)"
 
 #, qt-format
 #~ msgid ""
