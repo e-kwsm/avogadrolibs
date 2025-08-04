@@ -3712,11 +3712,15 @@ msgid "Edit Labels"
 msgstr "லேபிள்களைத் திருத்து"
 
 #: qtplugins/label/labeleditor.cpp:33
+#, fuzzy, qt-format
 msgid ""
 "Atom Label Tool\n"
 "\n"
 "Left Mouse:\tClick on Atoms to add Custom Labels"
 msgstr ""
+"ஆட்டம் சிட்டை கருவி (%1)\n"
+"\n"
+" இடது சுட்டி: தனிப்பயன் லேபிள்களைச் சேர்க்க அணுக்களைக் சொடுக்கு செய்க"
 
 #: qtplugins/label/labeleditor.cpp:79
 msgid "Create Label"
@@ -9394,16 +9398,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #, qt-format
 #~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "ஆட்டம் சிட்டை கருவி (%1)\n"
-#~ "\n"
-#~ " இடது சுட்டி: தனிப்பயன் லேபிள்களைச் சேர்க்க அணுக்களைக் சொடுக்கு செய்க"
-
-#, qt-format
-#~ msgid ""
 #~ "Manipulation Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick and drag to move atoms\n"
@@ -9548,15 +9542,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #~ msgid "Partial Charge"
 #~ msgstr "பகுதி கட்டணம்"
-
-#~ msgid ""
-#~ "Atom Label Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "அணு சிட்டை கருவி\n"
-#~ "\n"
-#~ " இடது சுட்டி: தனிப்பயன் லேபிள்களைச் சேர்க்க அணுக்களைக் சொடுக்கு செய்க"
 
 #~ msgid ""
 #~ "Measure Tool\n"
