@@ -3114,13 +3114,17 @@ msgid "Draw"
 msgstr "டிரா"
 
 #: qtplugins/editor/editor.cpp:76
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Draw Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
 "Right Mouse:\tDelete Atom"
 msgstr ""
+"டிரா கருவி (%1)\n"
+"\n"
+" இடது சுட்டி: அணுக்கள் மற்றும் பிணைப்பை உருவாக்க சொடுக்கு செய்து இழுக்கவும்\n"
+" வலது சுட்டி: அணுவை நீக்கு"
 
 #: qtplugins/editor/editor.cpp:123
 msgid "Draw Atom"
@@ -9390,18 +9394,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #, qt-format
 #~ msgid ""
-#~ "Draw Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "டிரா கருவி (%1)\n"
-#~ "\n"
-#~ " இடது சுட்டி: அணுக்கள் மற்றும் பிணைப்பை உருவாக்க சொடுக்கு செய்து இழுக்கவும்\n"
-#~ " வலது சுட்டி: அணுவை நீக்கு"
-
-#, qt-format
-#~ msgid ""
 #~ "Atom Label Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tClick on Atoms to add Custom Labels"
@@ -9556,17 +9548,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #~ msgid "Partial Charge"
 #~ msgstr "பகுதி கட்டணம்"
-
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "கருவி டிரா\n"
-#~ "\n"
-#~ " இடது சுட்டி: அணுக்கள் மற்றும் பிணைப்பை உருவாக்க சொடுக்கு செய்து இழுக்கவும்\n"
-#~ " வலது சுட்டி: அணுவை நீக்கு"
 
 #~ msgid ""
 #~ "Atom Label Tool\n"
