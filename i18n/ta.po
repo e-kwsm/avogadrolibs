@@ -10308,10 +10308,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 =======
 >>>>>>> 81b994f76fb5 ("Default:\tScroll down to shrink, scroll up to zoom\n"	[skip ci])
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "அனிமேசன் கருவி (%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
@@ -10402,9 +10398,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #~ msgid "Partial Charge"
 #~ msgstr "பகுதி கட்டணம்"
-
-#~ msgid "Animation Tool"
-#~ msgstr "அனிமேசன் கருவி"
 
 #~ msgid ""
 #~ "Selection Tool\n"
