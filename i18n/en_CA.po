@@ -5616,6 +5616,14 @@ msgid ""
 "Select a ligand or functional group and click on a hydrogen atom to attach "
 "it."
 msgstr ""
+"Template Tool\t(%1)\n"
+"\n"
+"Insert fragments, including metal centres.\n"
+"Select an element and coordination geometry, then click to insert a "
+"fragment.\n"
+"\n"
+"Select a ligand or functional group and click on a hydrogen atom to "
+"attach it."
 
 #: qtplugins/templatetool/templatetool.cpp:404
 #: qtplugins/templatetool/templatetool.cpp:572
@@ -8957,12 +8965,6 @@ msgstr ""
 
 #~ msgid "Max 2*theta:"
 #~ msgstr "Max 2*theta:"
-
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr ""
-#~ "Tables for displaying and editng atom, bond, angle, and torsion "
-#~ "properties."
 
 #~ msgid "0"
 #~ msgstr "0"
