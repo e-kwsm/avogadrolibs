@@ -4339,7 +4339,7 @@ msgstr "Player"
 #: qtplugins/playertool/playertool.cpp:49
 #, qt-format
 msgid "Animation Tool\t(%1)"
-msgstr ""
+msgstr "Animation Tool\t(%1)"
 
 #: qtplugins/playertool/playertool.cpp:74
 msgid "Play"
