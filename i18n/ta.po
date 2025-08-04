@@ -4073,6 +4073,8 @@ msgid ""
 "Default:\tScroll down to shrink, scroll up to zoom\n"
 "Reversed:\tScroll up to shrink, scroll down to zoom"
 msgstr ""
+"இயல்புநிலை: சுருங்கவும், சூம் வரை உருட்டவும்\n"
+" தலைகீழ்: சுருங்கவும், பெரிதாக்க கீழே உருட்டவும்"
 
 #: qtplugins/navigator/navigator.h:31 qtplugins/navigator/navigator.h:32
 msgid "Navigate tool"
@@ -9411,13 +9413,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ msgstr ""
 #~ "அணு, பிணைப்பு, கோணம் மற்றும் முறுக்கு பண்புகளைக் காண்பிப்பதற்கும் திருத்துவதற்கும் "
 #~ "அட்டவணைகள்."
-
-#~ msgid ""
-#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
-#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
-#~ msgstr ""
-#~ "இயல்புநிலை: சுருங்கவும், சூம் வரை உருட்டவும்\n"
-#~ " தலைகீழ்: சுருங்கவும், பெரிதாக்க கீழே உருட்டவும்"
 
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
