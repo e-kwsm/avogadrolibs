@@ -4435,7 +4435,7 @@ msgstr "வீரர்"
 #: qtplugins/playertool/playertool.cpp:53
 #, qt-format
 msgid "Animation Tool\t(%1)"
-msgstr ""
+msgstr "அனிமேசன் கருவி (%1)"
 
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:432
 #. i18n: ectx: property (text), widget (QLabel, frameLabel)
@@ -9415,10 +9415,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ "அட்டவணைகள்."
 
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "அனிமேசன் கருவி (%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
@@ -9509,9 +9505,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #~ msgid "Partial Charge"
 #~ msgstr "பகுதி கட்டணம்"
-
-#~ msgid "Animation Tool"
-#~ msgstr "அனிமேசன் கருவி"
 
 #~ msgid ""
 #~ "Selection Tool\n"
