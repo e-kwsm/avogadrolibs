@@ -9596,17 +9596,6 @@ msgstr ""
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "Van der Waals (AO)"
 
-#~ msgid ""
-#~ "Manipulation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-#~ msgstr ""
-#~ "Manipulation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Simple display of VdW spheres with ambient occlusion."
 
