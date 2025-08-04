@@ -10701,10 +10701,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ " தலைகீழ்: சுருங்கவும், பெரிதாக்க கீழே உருட்டவும்"
 
 #, qt-format
-#~ msgid "Animation Tool \t(%1)"
-#~ msgstr "அனிமேசன் கருவி (%1)"
-
-#, qt-format
 #~ msgid ""
 #~ "Selection Tool \t(%1)\n"
 #~ "\n"
@@ -10795,9 +10791,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #~ msgid "Partial Charge"
 #~ msgstr "பகுதி கட்டணம்"
-
-#~ msgid "Animation Tool"
-#~ msgstr "அனிமேசன் கருவி"
 
 #~ msgid ""
 #~ "Selection Tool\n"
