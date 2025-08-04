@@ -9992,6 +9992,7 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ "அட்டவணைகள்."
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #~ msgid ""
 #~ "Align Molecules\n"
 #~ "\n"
@@ -10047,6 +10048,16 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ "இயல்புநிலை: சுருங்கவும், சூம் வரை உருட்டவும்\n"
 #~ " தலைகீழ்: சுருங்கவும், பெரிதாக்க கீழே உருட்டவும்"
 
+||||||| parent of 81b994f76fb5 ("Default:\tScroll down to shrink, scroll up to zoom\n"	[skip ci])
+#~ msgid ""
+#~ "Default:\t Scroll down to shrink, scroll up to zoom\n"
+#~ "Reversed:\t Scroll up to shrink, scroll down to zoom"
+#~ msgstr ""
+#~ "இயல்புநிலை: சுருங்கவும், சூம் வரை உருட்டவும்\n"
+#~ " தலைகீழ்: சுருங்கவும், பெரிதாக்க கீழே உருட்டவும்"
+
+=======
+>>>>>>> 81b994f76fb5 ("Default:\tScroll down to shrink, scroll up to zoom\n"	[skip ci])
 #, qt-format
 #~ msgid "Animation Tool \t(%1)"
 #~ msgstr "அனிமேசன் கருவி (%1)"
