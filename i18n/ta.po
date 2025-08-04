@@ -3809,13 +3809,17 @@ msgid "Manipulate"
 msgstr "கையாளுதல்"
 
 #: qtplugins/manipulator/manipulator.cpp:52
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and drag to move atoms\n"
 "Right Mouse:\tClick and drag to rotate atoms."
 msgstr ""
+"கையாளுதல் கருவி (%1)\n"
+"\n"
+" இடது சுட்டி: சொடுக்கு செய்து அணுகுகளை நகர்த்த இழுக்கவும்\n"
+" வலது சுட்டி: அணுக்களைச் சுழற்ற சொடுக்கு செய்து இழுக்கவும்.\n"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -9398,18 +9402,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 
 #, qt-format
 #~ msgid ""
-#~ "Manipulation Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate atoms.\n"
-#~ msgstr ""
-#~ "கையாளுதல் கருவி (%1)\n"
-#~ "\n"
-#~ " இடது சுட்டி: சொடுக்கு செய்து அணுகுகளை நகர்த்த இழுக்கவும்\n"
-#~ " வலது சுட்டி: அணுக்களைச் சுழற்ற சொடுக்கு செய்து இழுக்கவும்.\n"
-
-#, qt-format
-#~ msgid ""
 #~ "Measure Tool \t(%1)\n"
 #~ "\n"
 #~ "Left Mouse: \tSelect up to four Atoms.\n"
@@ -9615,17 +9607,6 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ msgctxt "ambient occlusion"
 #~ msgid "Van der Waals (AO)"
 #~ msgstr "வான் டெர் வால்ச் (ஏஓ)"
-
-#~ msgid ""
-#~ "Manipulation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-#~ msgstr ""
-#~ "கையாளுதல் கருவி\n"
-#~ "\n"
-#~ " இடது சுட்டி: சொடுக்கு செய்து அணுகுகளை நகர்த்த இழுக்கவும்\n"
-#~ " வலது சுட்டி: தேர்ந்தெடுக்கப்பட்ட அணுக்களைச் சுழற்ற சொடுக்கு செய்து இழுக்கவும்.\n"
 
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "சுற்றுப்புற மறுப்புடன் VDW கோளங்களின் எளிய காட்சி."
