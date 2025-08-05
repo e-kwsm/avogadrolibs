@@ -2129,7 +2129,7 @@ msgid "Bond-Centric Manipulation"
 msgstr "Úpravy zaměřené na vazbu"
 
 #: qtplugins/bondcentrictool/bondcentrictool.cpp:120
-#, fuzzy, qt-format
+#, qt-format
 msgid ""
 "Bond Centric Manipulation Tool\t(%1)\n"
 "\n"
