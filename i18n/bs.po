@@ -9270,11 +9270,6 @@ msgstr ""
 "devel@lists.sourceforge.net,,,,,avogadro-devel@lists.sourceforge.net,,"
 
 #, fuzzy
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr "Prozori za prikazivanje postavki atoma, spojeva, ugla i torzije."
-
-#, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analitika"
 
