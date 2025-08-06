@@ -9456,22 +9456,6 @@ msgstr ""
 
 #, fuzzy
 #~| msgid ""
-#~| "Draw Tool (F8)\n"
-#~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
-#~ msgid ""
-#~ "Draw Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
-#~ msgstr ""
-#~ "Nástroj na kreslení (F8)\n"
-#~ "Levé tlačítko myši: \tKlepnout a táhnout pro vytvoření atomů a vazeb\n"
-#~ "Pravé tlačítko myši: \tSmazat atom"
-
-#, fuzzy
-#~| msgid ""
 #~| "Click to Measure (F12)\n"
 #~| "\n"
 #~| "Left Mouse: \tSelect up to three Atoms.\n"
