@@ -9543,12 +9543,6 @@ msgstr ""
 #~ msgstr "(afventende)"
 
 #, fuzzy
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr ""
-#~ "Vindue til at vise atomer-, binding-, vinkle- og drejningsegenskaber."
-
-#, fuzzy
 #~ msgid "&Import..."
 #~ msgstr "&Importér..."
 
