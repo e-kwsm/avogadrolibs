@@ -9562,12 +9562,6 @@ msgstr ""
 #~ msgstr "(pendent)"
 
 #, fuzzy
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr ""
-#~ "Finestra per mostrar l'àtom, enllaços, angles i propietats de torsió."
-
-#, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analític"
 
