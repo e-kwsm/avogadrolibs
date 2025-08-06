@@ -8784,12 +8784,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "phlostically@example.com"
 
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr ""
-#~ "Tabeloj por montri kaj redakti atributojn pri atomo, ligo, angulo kaj "
-#~ "tordo."
-
 #~ msgid "&Analysis"
 #~ msgstr "&Analizo"
 
