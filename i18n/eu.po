@@ -9308,11 +9308,6 @@ msgstr ""
 "devel@lists.sourceforge.net,julenl@gmail.com"
 
 #, fuzzy
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr "Atomo-, lotura-, angelu- eta tortsio-propietateak ikusteko leihoa."
-
-#, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analitika"
 
