@@ -890,10 +890,9 @@ void ORCAOutput::processLine(std::istream& in,
 
             list = Core::split(key, ' ');
           }
-          m_orcaShellTypes.push_back(
-            std::vector<GaussianSet::orbital>(shellTypes.size()));
+          m_orcaShellTypes.emplace_back(shellTypes.size());
           m_orcaShellTypes.at(nGTOs) = shellTypes;
-          m_orcaNumShells.push_back(std::vector<int>(shellFunctions.size()));
+          m_orcaNumShells.emplace_back(shellFunctions.size());
           m_orcaNumShells.at(nGTOs) = shellFunctions;
           nGTOs++;
 
