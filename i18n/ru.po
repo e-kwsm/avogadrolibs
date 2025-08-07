@@ -8746,12 +8746,6 @@ msgstr ""
 "ru,,yuray@komyakino.ru,dn2010@km.ru"
 
 #, fuzzy
-#~ msgid ""
-#~ "Tables for displaying and editng atom, bond, angle and torsion properties."
-#~ msgstr ""
-#~ "Окна, отображающие свойства атомов, связей, валентных и двугранных углов."
-
-#, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "Аналитический"
 
