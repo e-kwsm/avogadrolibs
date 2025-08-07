@@ -25,9 +25,9 @@ using Core::Array;
 using Core::Atom;
 using Core::GaussianSet;
 
-ORCAOutput::ORCAOutput() {}
+ORCAOutput::ORCAOutput() = default;
 
-ORCAOutput::~ORCAOutput() {}
+ORCAOutput::~ORCAOutput() = default;
 
 constexpr double BOHR_TO_ANGSTROM = 0.529177210544;
 constexpr double HARTREE_TO_EV = 27.211386245981;

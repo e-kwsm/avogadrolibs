@@ -7,8 +7,8 @@
 
 namespace Avogadro::Rendering {
 
-VolumeGeometry::VolumeGeometry() {}
+VolumeGeometry::VolumeGeometry() = default;
 
-VolumeGeometry::~VolumeGeometry() {}
+VolumeGeometry::~VolumeGeometry() = default;
 
 } // namespace Avogadro::Rendering

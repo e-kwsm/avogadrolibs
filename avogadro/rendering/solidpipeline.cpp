@@ -23,7 +23,7 @@ namespace Avogadro::Rendering {
 class SolidPipeline::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   void attachStage(ShaderProgram& prog, const GLchar* nameRGB, GLuint texRGB,
                    const GLchar* nameDepth, GLuint texDepth, int w, int h)

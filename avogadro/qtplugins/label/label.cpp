@@ -246,7 +246,7 @@ Label::Label(QObject* parent_) : QtGui::ScenePlugin(parent_)
   m_layerManager = PluginLayerManager(m_name);
 }
 
-Label::~Label() {}
+Label::~Label() = default;
 
 void Label::process(const QtGui::Molecule& molecule, Rendering::GroupNode& node)
 {

@@ -8,9 +8,9 @@
 #include <QtCore/QString>
 namespace Avogadro::QtPlugins {
 
-ZipExtracter::ZipExtracter() {}
+ZipExtracter::ZipExtracter() = default;
 
-ZipExtracter::~ZipExtracter() {}
+ZipExtracter::~ZipExtracter() = default;
 
 /*************  ✨ Windsurf Command ⭐  *************/
 /**

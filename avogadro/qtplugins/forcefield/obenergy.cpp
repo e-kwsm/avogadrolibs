@@ -138,7 +138,7 @@ OBEnergy::OBEnergy(const std::string& method)
   }
 }
 
-OBEnergy::~OBEnergy() {}
+OBEnergy::~OBEnergy() = default;
 
 bool OBEnergy::acceptsRadicals() const
 {

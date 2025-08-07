@@ -40,7 +40,7 @@ const unsigned int MeshGeometry::InvalidIndex =
 class MeshGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;

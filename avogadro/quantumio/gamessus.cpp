@@ -26,7 +26,7 @@ using Core::Uhf;
 
 GAMESSUSOutput::GAMESSUSOutput() : m_coordFactor(1.0), m_scftype(Rhf) {}
 
-GAMESSUSOutput::~GAMESSUSOutput() {}
+GAMESSUSOutput::~GAMESSUSOutput() = default;
 
 std::vector<std::string> GAMESSUSOutput::fileExtensions() const
 {

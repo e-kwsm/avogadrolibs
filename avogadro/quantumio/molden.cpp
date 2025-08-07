@@ -27,7 +27,7 @@ MoldenFile::MoldenFile()
 {
 }
 
-MoldenFile::~MoldenFile() {}
+MoldenFile::~MoldenFile() = default;
 
 std::vector<std::string> MoldenFile::fileExtensions() const
 {

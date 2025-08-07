@@ -36,7 +36,7 @@ InterfaceWidget::InterfaceWidget(const QString& scriptFilePath,
   this->setInterfaceScript(scriptFilePath);
 }
 
-InterfaceWidget::~InterfaceWidget() {}
+InterfaceWidget::~InterfaceWidget() = default;
 
 void InterfaceWidget::setInterfaceScript(const QString& scriptFile)
 {

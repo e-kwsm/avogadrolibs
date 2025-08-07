@@ -34,7 +34,7 @@ Cp2kInput::Cp2kInput(QObject* parent_)
   connect(m_action, SIGNAL(triggered()), SLOT(menuActivated()));
 }
 
-Cp2kInput::~Cp2kInput() {}
+Cp2kInput::~Cp2kInput() = default;
 
 QList<QAction*> Cp2kInput::actions() const
 {

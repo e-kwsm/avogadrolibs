@@ -18,7 +18,7 @@ RichTextDelegate::RichTextDelegate(QObject* parent_)
 {
 }
 
-RichTextDelegate::~RichTextDelegate() {};
+RichTextDelegate::~RichTextDelegate() = default;
 
 QSize RichTextDelegate::sizeHint(const QStyleOptionViewItem& o,
                                  const QModelIndex& index) const

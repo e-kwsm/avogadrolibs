@@ -58,7 +58,7 @@ Manipulator::Manipulator(QObject* parent_)
           SLOT(buttonClicked(QAbstractButton*)));
 }
 
-Manipulator::~Manipulator() {}
+Manipulator::~Manipulator() = default;
 
 void Manipulator::setIcon(bool darkTheme)
 {

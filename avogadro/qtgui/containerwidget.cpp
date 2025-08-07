@@ -40,7 +40,7 @@ ContainerWidget::ContainerWidget(QWidget* p, Qt::WindowFlags f)
   setLayout(v);
 }
 
-ContainerWidget::~ContainerWidget() {}
+ContainerWidget::~ContainerWidget() = default;
 
 void ContainerWidget::setViewWidget(QWidget* widget)
 {

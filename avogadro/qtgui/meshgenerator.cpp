@@ -33,7 +33,7 @@ MeshGenerator::MeshGenerator(const Cube* cube_, Mesh* mesh_, float iso,
   initialize(cube_, mesh_, iso, passes);
 }
 
-MeshGenerator::~MeshGenerator() {}
+MeshGenerator::~MeshGenerator() = default;
 
 bool MeshGenerator::initialize(const Cube* cube_, Mesh* mesh_, float iso,
                                int passes, bool reverse)

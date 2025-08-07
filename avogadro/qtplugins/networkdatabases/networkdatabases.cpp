@@ -27,7 +27,7 @@ NetworkDatabases::NetworkDatabases(QObject* parent_)
   connect(m_action, SIGNAL(triggered()), SLOT(showDialog()));
 }
 
-NetworkDatabases::~NetworkDatabases() {}
+NetworkDatabases::~NetworkDatabases() = default;
 
 QList<QAction*> NetworkDatabases::actions() const
 {
