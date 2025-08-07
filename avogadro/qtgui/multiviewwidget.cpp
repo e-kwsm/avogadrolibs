@@ -48,7 +48,7 @@ MultiViewWidget::MultiViewWidget(QWidget* p, Qt::WindowFlags f)
 {
 }
 
-MultiViewWidget::~MultiViewWidget() {}
+MultiViewWidget::~MultiViewWidget() = default;
 
 void MultiViewWidget::addWidget(QWidget* widget)
 {

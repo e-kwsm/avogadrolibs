@@ -60,7 +60,7 @@ SelectionTool::SelectionTool(QObject* parent_)
   setIcon();
 }
 
-SelectionTool::~SelectionTool() {}
+SelectionTool::~SelectionTool() = default;
 
 void SelectionTool::setIcon(bool darkTheme)
 {

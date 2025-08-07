@@ -49,7 +49,7 @@ VRMLVisitor::VRMLVisitor(const Camera& c)
 {
 }
 
-VRMLVisitor::~VRMLVisitor() {}
+VRMLVisitor::~VRMLVisitor() = default;
 
 void VRMLVisitor::begin()
 {

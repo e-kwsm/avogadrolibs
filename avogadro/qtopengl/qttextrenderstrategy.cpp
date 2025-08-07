@@ -121,9 +121,9 @@ inline QFont textPropertiesToQFont(const TextProperties& prop)
 
 namespace Avogadro::QtOpenGL {
 
-QtTextRenderStrategy::QtTextRenderStrategy() {}
+QtTextRenderStrategy::QtTextRenderStrategy() = default;
 
-QtTextRenderStrategy::~QtTextRenderStrategy() {}
+QtTextRenderStrategy::~QtTextRenderStrategy() = default;
 
 Rendering::TextRenderStrategy* QtTextRenderStrategy::newInstance() const
 {

@@ -43,7 +43,7 @@ GLWidget::GLWidget(QWidget* p)
       .toInt());
 }
 
-GLWidget::~GLWidget() {}
+GLWidget::~GLWidget() = default;
 
 void GLWidget::setMolecule(QtGui::Molecule* mol)
 {

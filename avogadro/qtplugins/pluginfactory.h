@@ -19,7 +19,7 @@ template <typename T>
 class PluginFactory
 {
 public:
-  virtual ~PluginFactory() {}
+  virtual ~PluginFactory() = default;
 
   virtual T* createInstance(QObject* parent = nullptr) = 0;
   virtual QString identifier() const = 0;

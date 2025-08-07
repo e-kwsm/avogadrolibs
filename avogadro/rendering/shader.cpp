@@ -14,7 +14,7 @@ Shader::Shader(Type type_, const std::string& source_)
 {
 }
 
-Shader::~Shader() {}
+Shader::~Shader() = default;
 
 void Shader::setType(Type type_)
 {

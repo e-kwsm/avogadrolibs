@@ -20,7 +20,7 @@ namespace Io {
 class Hdf5DataFormat::ResizeContainer
 {
 public:
-  virtual ~ResizeContainer(){};
+  virtual ~ResizeContainer() = default;
   virtual bool resize(const std::vector<int>& dims) = 0;
   virtual void* dataPointer() = 0;
 

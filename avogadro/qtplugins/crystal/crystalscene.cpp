@@ -49,7 +49,7 @@ CrystalScene::CrystalScene(QObject* p) : ScenePlugin(p), m_setupWidget(nullptr)
   m_multiColor = settings.value("crystal/multiColor", true).toBool();
 }
 
-CrystalScene::~CrystalScene() {}
+CrystalScene::~CrystalScene() = default;
 
 void CrystalScene::process(const QtGui::Molecule& molecule, GroupNode& node)
 {

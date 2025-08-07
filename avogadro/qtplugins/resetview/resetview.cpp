@@ -46,7 +46,7 @@ ResetView::ResetView(QObject* parent_)
   connect(m_viewToAxesAction, SIGNAL(triggered()), SLOT(alignToAxes()));
 }
 
-ResetView::~ResetView() {}
+ResetView::~ResetView() = default;
 
 void ResetView::registerCommands()
 {

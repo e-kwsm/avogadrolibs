@@ -42,7 +42,7 @@ PLYVisitor::PLYVisitor(const Camera& c)
 {
 }
 
-PLYVisitor::~PLYVisitor() {}
+PLYVisitor::~PLYVisitor() = default;
 
 void PLYVisitor::begin() {}
 
