@@ -10,7 +10,6 @@
 
 #include <iostream>
 #include <sstream>
-#include <utility>
 
 namespace Avogadro::Core {
 
@@ -23,13 +22,7 @@ inline Variant::Variant(double x, double y, double z) : m_type(Vector)
 }
 
 template <typename T>
-inline Variant::Variant(const T& v) : m_type(Null)
-{
-  setValue(std::move(v));
-}
-
-template <typename T>
-inline Variant::Variant(T* v) : m_type(Null)
+inline Variant::Variant(T v) : m_type(Null)
 {
   setValue(v);
 }
@@ -121,27 +114,7 @@ inline bool Variant::setValue(const std::vector<double>& v)
 }
 
 template <typename T>
-inline bool Variant::setValue(const T& v)
-{
-  AVO_UNUSED(v);
-
-#ifndef NDEBUG
-#if defined(_MSC_VER)
-  std::cerr << " Variant::setValue() not implemented for " << __FUNCSIG__
-            << std::endl;
-#else
-  std::cerr << " Variant::setValue() not implemented for "
-            << __PRETTY_FUNCTION__ << std::endl;
-#endif
-#endif
-
-  clear();
-
-  return false;
-}
-
-template <typename T>
-inline bool Variant::setValue(T* v)
+inline bool Variant::setValue(T v)
 {
   AVO_UNUSED(v);
 
@@ -243,7 +216,7 @@ inline bool Variant::setValue(std::string string)
   clear();
 
   m_type = String;
-  m_value.string = new std::string(std::move(string));
+  m_value.string = new std::string(string);
 
   return true;
 }
@@ -271,7 +244,7 @@ inline bool Variant::setValue(MatrixX matrix)
   clear();
 
   m_type = Matrix;
-  m_value.matrix = new MatrixX(std::move(matrix));
+  m_value.matrix = new MatrixX(matrix);
 
   return true;
 }
@@ -282,7 +255,7 @@ inline bool Variant::setValue(Vector3 vector)
   clear();
 
   m_type = Vector;
-  m_value.vector = new Vector3(std::move(vector));
+  m_value.vector = new Vector3(vector);
 
   return true;
 }
