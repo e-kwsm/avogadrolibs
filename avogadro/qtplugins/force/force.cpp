@@ -30,7 +30,7 @@ Force::Force(QObject* p) : ScenePlugin(p)
   m_layerManager = QtGui::PluginLayerManager(m_name);
 }
 
-Force::~Force() {}
+Force::~Force() = default;
 
 void Force::process(const QtGui::Molecule& molecule, Rendering::GroupNode& node)
 {

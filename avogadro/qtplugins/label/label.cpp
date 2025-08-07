@@ -332,7 +332,7 @@ Label::Label(QObject* parent_) : QtGui::ScenePlugin(parent_)
   connect(&m_chargeTimer, &QTimer::timeout, this, &Label::chargeTimerFired);
 }
 
-Label::~Label() {}
+Label::~Label() = default;
 
 void Label::watchMolecule(const QtGui::Molecule& molecule)
 {

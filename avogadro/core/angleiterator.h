@@ -26,7 +26,7 @@ public:
    */
   AngleIterator(const Molecule* mol);
 
-  ~AngleIterator() {}
+  ~AngleIterator() = default;
 
   Angle* operator*() { return &m_current; }
 

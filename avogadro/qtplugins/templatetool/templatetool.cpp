@@ -111,7 +111,7 @@ TemplateTool::TemplateTool(QObject* parent_)
           &TemplateTool::drawablesChanged);
 }
 
-TemplateTool::~TemplateTool() {}
+TemplateTool::~TemplateTool() = default;
 
 void TemplateTool::setIcon(bool darkTheme)
 {

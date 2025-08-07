@@ -68,7 +68,7 @@ PropertyTables::PropertyTables(QObject* parent_)
   m_actions.append(action);
 }
 
-PropertyTables::~PropertyTables() {}
+PropertyTables::~PropertyTables() = default;
 
 QString PropertyTables::description() const
 {

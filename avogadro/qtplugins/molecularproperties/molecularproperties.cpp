@@ -43,7 +43,7 @@ MolecularProperties::MolecularProperties(QObject* parent_)
           SLOT(updateNameReady(QNetworkReply*)));
 }
 
-MolecularProperties::~MolecularProperties() {}
+MolecularProperties::~MolecularProperties() = default;
 
 QString MolecularProperties::description() const
 {

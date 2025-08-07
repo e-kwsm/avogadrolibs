@@ -35,7 +35,7 @@ GamessInput::GamessInput(QObject* parent_)
   connect(m_action, SIGNAL(triggered()), SLOT(menuActivated()));
 }
 
-GamessInput::~GamessInput() {}
+GamessInput::~GamessInput() = default;
 
 QList<QAction*> GamessInput::actions() const
 {

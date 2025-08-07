@@ -29,9 +29,9 @@ using Core::GaussianSet;
 using Core::Molecule;
 using Core::split;
 
-NWChemJson::NWChemJson() {}
+NWChemJson::NWChemJson() = default;
 
-NWChemJson::~NWChemJson() {}
+NWChemJson::~NWChemJson() = default;
 
 bool NWChemJson::read(std::istream& file, Molecule& molecule)
 {

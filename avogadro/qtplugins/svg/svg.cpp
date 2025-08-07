@@ -33,7 +33,7 @@ SVG::SVG(QObject* parent_)
   connect(m_action, SIGNAL(triggered()), SLOT(render()));
 }
 
-SVG::~SVG() {}
+SVG::~SVG() = default;
 
 QList<QAction*> SVG::actions() const
 {

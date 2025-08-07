@@ -130,7 +130,7 @@ BondCentricTool::BondCentricTool(QObject* parent_)
   setIcon();
 }
 
-BondCentricTool::~BondCentricTool() {}
+BondCentricTool::~BondCentricTool() = default;
 
 void BondCentricTool::setIcon(bool darkTheme)
 {

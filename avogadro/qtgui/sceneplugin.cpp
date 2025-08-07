@@ -9,7 +9,7 @@ namespace Avogadro::QtGui {
 
 ScenePlugin::ScenePlugin(QObject* parent_) : QObject(parent_) {}
 
-ScenePlugin::~ScenePlugin() {}
+ScenePlugin::~ScenePlugin() = default;
 
 void ScenePlugin::process(const QtGui::Molecule&, Rendering::GroupNode&) {}
 

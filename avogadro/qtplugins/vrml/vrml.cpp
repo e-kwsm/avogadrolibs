@@ -31,7 +31,7 @@ VRML::VRML(QObject* p)
   connect(m_action, SIGNAL(triggered()), SLOT(render()));
 }
 
-VRML::~VRML() {}
+VRML::~VRML() = default;
 
 QList<QAction*> VRML::actions() const
 {
