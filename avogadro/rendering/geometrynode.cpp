@@ -14,7 +14,7 @@ namespace Avogadro::Rendering {
 
 using Core::Array;
 
-GeometryNode::GeometryNode() {}
+GeometryNode::GeometryNode() = default;
 
 GeometryNode::~GeometryNode()
 {

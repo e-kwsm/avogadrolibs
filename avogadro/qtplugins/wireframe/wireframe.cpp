@@ -120,7 +120,7 @@ Wireframe::Wireframe(QObject* p) : ScenePlugin(p), m_group(nullptr)
   m_layerManager = PluginLayerManager(m_name);
 }
 
-Wireframe::~Wireframe() {}
+Wireframe::~Wireframe() = default;
 
 void Wireframe::process(const QtGui::Molecule& molecule,
                         Rendering::GroupNode& node)

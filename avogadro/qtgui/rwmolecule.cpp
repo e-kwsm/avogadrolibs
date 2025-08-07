@@ -30,7 +30,7 @@ RWMolecule::RWMolecule(Molecule& mol, QObject* p)
 {
 }
 
-RWMolecule::~RWMolecule() {}
+RWMolecule::~RWMolecule() = default;
 
 RWMolecule::AtomType RWMolecule::addAtom(unsigned char num, bool usingPositions)
 {
