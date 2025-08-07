@@ -7,6 +7,7 @@
 #define AVOGADRO_RENDERING_PRIMITIVE_H
 
 #include <avogadro/core/vector.h>
+#include <utility>
 
 namespace Avogadro::Rendering {
 
@@ -72,8 +73,8 @@ public:
     Index index;
   };
 
-  Primitive(Identifier id, const Vector3ub& color_)
-    : m_identifier(id), m_color(color_)
+  Primitive(Identifier id, Vector3ub color_)
+    : m_identifier(id), m_color(std::move(color_))
   {
   }
 
@@ -91,9 +92,9 @@ private:
 class Sphere : public Primitive
 {
 public:
-  Sphere(const Vector3f& position_, float radius_, Primitive::Identifier id,
+  Sphere(Vector3f position_, float radius_, Primitive::Identifier id,
          const Vector3ub& color_)
-    : Primitive(id, color_), m_position(position_), m_radius(radius_)
+    : Primitive(id, color_), m_position(std::move(position_)), m_radius(radius_)
   {
   }
 
@@ -112,10 +113,10 @@ class Cylinder : public Primitive
 {
 public:
   /// Direction must be normalized
-  Cylinder(const Vector3f& position_, const Vector3f& direction_, float length_,
+  Cylinder(Vector3f position_, Vector3f direction_, float length_,
            float radius_, Primitive::Identifier id, const Vector3ub& color_)
-    : Primitive(id, color_), m_position(position_), m_direction(direction_),
-      m_length(length_), m_radius(radius_)
+    : Primitive(id, color_), m_position(std::move(position_)),
+      m_direction(std::move(direction_)), m_length(length_), m_radius(radius_)
   {
   }
 
