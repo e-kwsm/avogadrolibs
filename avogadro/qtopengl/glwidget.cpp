@@ -37,7 +37,7 @@ GLWidget::GLWidget(QWidget* p)
   m_renderer.setTextRenderStrategy(new QtTextRenderStrategy);
 }
 
-GLWidget::~GLWidget() {}
+GLWidget::~GLWidget() = default;
 
 void GLWidget::setMolecule(QtGui::Molecule* mol)
 {

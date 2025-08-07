@@ -36,7 +36,7 @@ namespace Avogadro::Rendering {
 class DashedLineGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
 

@@ -63,7 +63,7 @@ public:
   inline static ShaderProgram* shaderProgram = nullptr;
 
   RenderImpl();
-  ~RenderImpl() {}
+  ~RenderImpl() = default;
 
   void setTextureData(const Array<unsigned char>& buffer,
                       const Vector2i& dimensions);
