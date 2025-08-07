@@ -74,7 +74,7 @@ Molecule& Molecule::operator=(const Core::Molecule& other)
   return *this;
 }
 
-Molecule::~Molecule() {}
+Molecule::~Molecule() = default;
 
 Molecule::AtomType Molecule::addAtom(unsigned char number)
 {

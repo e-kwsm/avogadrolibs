@@ -43,11 +43,7 @@ public:
   ChartWidgetImpl(const ChartWidgetImpl& other) { plot = other.plot; }
 
   // copy assignment
-  ChartWidgetImpl& operator=(const ChartWidgetImpl& other)
-  {
-    plot = other.plot;
-    return *this;
-  }
+  ChartWidgetImpl& operator=(const ChartWidgetImpl& other) = default;
   // move constructor
   ChartWidgetImpl(ChartWidgetImpl&& other) { plot = other.plot; }
 

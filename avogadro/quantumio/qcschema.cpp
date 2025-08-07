@@ -51,9 +51,9 @@ bool isBooleanArray(json& j)
   return false;
 }
 
-QCSchema::QCSchema() {}
+QCSchema::QCSchema() = default;
 
-QCSchema::~QCSchema() {}
+QCSchema::~QCSchema() = default;
 
 std::vector<std::string> QCSchema::fileExtensions() const
 {

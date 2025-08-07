@@ -29,7 +29,7 @@ vtkStandardNewMacro(vtkAvogadroActor)
     m_bound = 0.0;
 }
 
-vtkAvogadroActor::~vtkAvogadroActor() {}
+vtkAvogadroActor::~vtkAvogadroActor() = default;
 
 int vtkAvogadroActor::RenderOpaqueGeometry(vtkViewport*)
 {

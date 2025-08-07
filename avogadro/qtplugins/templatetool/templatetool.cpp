@@ -93,7 +93,7 @@ TemplateTool::TemplateTool(QObject* parent_)
   reset();
 }
 
-TemplateTool::~TemplateTool() {}
+TemplateTool::~TemplateTool() = default;
 
 void TemplateTool::setIcon(bool darkTheme)
 {

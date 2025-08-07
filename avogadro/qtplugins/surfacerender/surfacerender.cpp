@@ -59,7 +59,7 @@ SurfaceRender::SurfaceRender(QObject* p)
   m_lineWidth = settings.value("meshes/lineWidth", 1.0).toFloat();
 }
 
-SurfaceRender::~SurfaceRender() {}
+SurfaceRender::~SurfaceRender() = default;
 
 void SurfaceRender::process(const QtGui::Molecule& mol, GroupNode& node)
 {

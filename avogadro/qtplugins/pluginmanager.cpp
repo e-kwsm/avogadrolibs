@@ -68,7 +68,7 @@ PluginManager::PluginManager(QObject* p)
   initAvogadroPluginResources();
 }
 
-PluginManager::~PluginManager() {}
+PluginManager::~PluginManager() = default;
 
 PluginManager* PluginManager::instance()
 {
