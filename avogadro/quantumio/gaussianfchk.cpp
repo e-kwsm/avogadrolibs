@@ -31,7 +31,7 @@ const double hartreeToEV = 27.211386245981;
 
 GaussianFchk::GaussianFchk() : m_scftype(Rhf) {}
 
-GaussianFchk::~GaussianFchk() {}
+GaussianFchk::~GaussianFchk() = default;
 
 std::vector<std::string> GaussianFchk::fileExtensions() const
 {

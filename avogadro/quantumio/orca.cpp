@@ -24,9 +24,9 @@ using Core::Array;
 using Core::Atom;
 using Core::GaussianSet;
 
-ORCAOutput::ORCAOutput() {}
+ORCAOutput::ORCAOutput() = default;
 
-ORCAOutput::~ORCAOutput() {}
+ORCAOutput::~ORCAOutput() = default;
 
 std::vector<std::string> ORCAOutput::fileExtensions() const
 {
