@@ -14,7 +14,7 @@ TextLabel3D::TextLabel3D()
   setRenderPass(TranslucentPass);
 }
 
-TextLabel3D::~TextLabel3D() {}
+TextLabel3D::~TextLabel3D() = default;
 
 void TextLabel3D::accept(Visitor& visitor)
 {

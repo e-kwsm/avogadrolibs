@@ -14,7 +14,7 @@ TextLabel2D::TextLabel2D()
   setRenderPass(Rendering::Overlay2DPass);
 }
 
-TextLabel2D::~TextLabel2D() {}
+TextLabel2D::~TextLabel2D() = default;
 
 void TextLabel2D::accept(Visitor& visitor)
 {

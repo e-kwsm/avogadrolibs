@@ -41,7 +41,7 @@ const size_t LineStripGeometry::InvalidIndex =
 class LineStripGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
   VertexArrayObject vao;

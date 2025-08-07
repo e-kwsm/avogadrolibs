@@ -23,8 +23,8 @@ namespace Rendering {
 class AVOGADRORENDERING_EXPORT ArcSector : public MeshGeometry
 {
 public:
-  ArcSector() {}
-  ~ArcSector() override {}
+  ArcSector() = default;
+  ~ArcSector() override = default;
 
   /**
    * Define the sector.

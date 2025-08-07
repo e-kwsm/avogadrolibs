@@ -10,9 +10,9 @@
 
 namespace Avogadro::QtPlugins {
 
-ZipExtractor::ZipExtractor() {}
+ZipExtractor::ZipExtractor() = default;
 
-ZipExtractor::~ZipExtractor() {}
+ZipExtractor::~ZipExtractor() = default;
 
 /**
  * Copies data from one archive to another.

@@ -96,9 +96,9 @@ bool readCubeValue(std::istream& in, std::string& token, float& value)
 }
 } // namespace
 
-GaussianCube::GaussianCube() {}
+GaussianCube::GaussianCube() = default;
 
-GaussianCube::~GaussianCube() {}
+GaussianCube::~GaussianCube() = default;
 
 std::vector<std::string> GaussianCube::fileExtensions() const
 {

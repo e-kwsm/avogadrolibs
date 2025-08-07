@@ -14,7 +14,7 @@ GenericHighlighter::GenericHighlighter(QObject* parent_)
 {
 }
 
-GenericHighlighter::~GenericHighlighter() {}
+GenericHighlighter::~GenericHighlighter() = default;
 
 GenericHighlighter::GenericHighlighter(const GenericHighlighter& other)
   : QSyntaxHighlighter(static_cast<QTextDocument*>(nullptr))

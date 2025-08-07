@@ -22,7 +22,7 @@ GLRenderVisitor::GLRenderVisitor(const Camera& camera_,
 {
 }
 
-GLRenderVisitor::~GLRenderVisitor() {}
+GLRenderVisitor::~GLRenderVisitor() = default;
 
 void GLRenderVisitor::visit(Drawable& geometry)
 {

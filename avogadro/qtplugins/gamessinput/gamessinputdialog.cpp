@@ -149,7 +149,7 @@ GamessInputDialog::GamessInputDialog(QWidget* parent_, Qt::WindowFlags f)
   updatePreviewText();
 }
 
-GamessInputDialog::~GamessInputDialog() {}
+GamessInputDialog::~GamessInputDialog() = default;
 
 void GamessInputDialog::setMolecule(QtGui::Molecule* mol)
 {
