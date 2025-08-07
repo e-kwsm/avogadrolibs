@@ -70,8 +70,8 @@ private:
   float m_aspectRatio;
   long m_vertexCount = 0;
   long m_faceCount = 0;
-  std::string m_sceneVertices = "";
-  std::string m_sceneFaces = "";
+  std::string m_sceneVertices;
+  std::string m_sceneFaces;
 
   void visitSphereIcosphereRecursionMethod(const SphereColor& geometry,
                                            unsigned int subdivisions);
