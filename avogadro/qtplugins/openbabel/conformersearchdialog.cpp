@@ -41,7 +41,7 @@ ConformerSearchDialog::ConformerSearchDialog(QWidget* parent) : QDialog(parent)
   ui.scoringComboBox->setEnabled(false);
 }
 
-ConformerSearchDialog::~ConformerSearchDialog() {}
+ConformerSearchDialog::~ConformerSearchDialog() = default;
 
 void ConformerSearchDialog::buttonClicked(QAbstractButton* button)
 {

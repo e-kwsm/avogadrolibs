@@ -14,7 +14,7 @@ namespace Avogadro::MoleQueue {
 
 Client::Client(QObject* parent_) : QObject(parent_), m_jsonRpcClient(nullptr) {}
 
-Client::~Client() {}
+Client::~Client() = default;
 
 bool Client::isConnected() const
 {

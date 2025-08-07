@@ -209,7 +209,7 @@ Forcefield::Forcefield(QObject* parent_)
 #endif
 }
 
-Forcefield::~Forcefield() {}
+Forcefield::~Forcefield() = default;
 
 QList<QAction*> Forcefield::actions() const
 {

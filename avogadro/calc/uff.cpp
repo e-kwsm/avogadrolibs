@@ -1231,7 +1231,7 @@ UFF::UFF() : d(nullptr)
   }
 }
 
-UFF::~UFF() {}
+UFF::~UFF() = default;
 
 void UFF::setMolecule(Core::Molecule* mol)
 {
