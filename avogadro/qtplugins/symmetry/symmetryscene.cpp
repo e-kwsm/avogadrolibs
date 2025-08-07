@@ -40,7 +40,7 @@ SymmetryScene::SymmetryScene(QObject* p)
 {
 }
 
-SymmetryScene::~SymmetryScene() {}
+SymmetryScene::~SymmetryScene() = default;
 
 void SymmetryScene::process(const QtGui::Molecule& molecule,
                             Rendering::GroupNode& node)
