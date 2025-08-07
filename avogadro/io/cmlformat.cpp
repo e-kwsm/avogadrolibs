@@ -31,11 +31,6 @@
 
 namespace Avogadro::Io {
 
-namespace {
-const Real DEG_TO_RAD = static_cast<Avogadro::Real>(M_PI / 180.0);
-const Real RAD_TO_DEG = static_cast<Avogadro::Real>(180.0 / M_PI);
-} // namespace
-
 using std::string;
 
 using pugi::xml_attribute;
