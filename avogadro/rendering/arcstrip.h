@@ -22,8 +22,8 @@ namespace Rendering {
 class AVOGADRORENDERING_EXPORT ArcStrip : public LineStripGeometry
 {
 public:
-  ArcStrip() {}
-  ~ArcStrip() override {}
+  ArcStrip() = default;
+  ~ArcStrip() override = default;
 
   /**
    * Define the arc.

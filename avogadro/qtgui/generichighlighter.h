@@ -33,8 +33,8 @@ public:
   class AVOGADROQTGUI_EXPORT Rule
   {
   public:
-    Rule() {}
-    ~Rule() {}
+    Rule() = default;
+    ~Rule() = default;
 
     /** Add the pattern @a regexp to this Rule. */
     void addPattern(const QRegularExpression& regexp);

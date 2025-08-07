@@ -39,7 +39,7 @@ JsonWidget::JsonWidget(QWidget* parent_)
 {
 }
 
-JsonWidget::~JsonWidget() {}
+JsonWidget::~JsonWidget() = default;
 
 void JsonWidget::setMolecule(QtGui::Molecule* mol)
 {

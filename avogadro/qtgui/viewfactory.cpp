@@ -7,8 +7,8 @@
 
 namespace Avogadro::QtGui {
 
-ViewFactory::ViewFactory() {}
+ViewFactory::ViewFactory() = default;
 
-ViewFactory::~ViewFactory() {}
+ViewFactory::~ViewFactory() = default;
 
 } // namespace Avogadro::QtGui

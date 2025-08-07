@@ -28,7 +28,7 @@ OperationsTableModel::OperationsTableModel(QObject* parent)
   m_operations_size = 0;
 }
 
-OperationsTableModel::~OperationsTableModel() {}
+OperationsTableModel::~OperationsTableModel() = default;
 
 void OperationsTableModel::setOperations(
   int operations_size, const msym::msym_symmetry_operation_t* operations)

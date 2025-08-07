@@ -31,7 +31,7 @@ class OverlayArrowGeometry : public ArrowGeometry
 {
 public:
   OverlayArrowGeometry() { setRenderPass(Avogadro::Rendering::Overlay3DPass); }
-  ~OverlayArrowGeometry() override {}
+  ~OverlayArrowGeometry() override = default;
 
   void render(const Camera& camera) override;
 };
@@ -100,7 +100,7 @@ OverlayAxes::OverlayAxes(QObject* p) : ScenePlugin(p), m_render(new RenderImpl)
   m_layerManager = QtGui::PluginLayerManager(m_name);
 }
 
-OverlayAxes::~OverlayAxes() {}
+OverlayAxes::~OverlayAxes() = default;
 
 void OverlayAxes::process(const QtGui::Molecule&, Rendering::GroupNode& node)
 {

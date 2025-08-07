@@ -47,7 +47,7 @@ protected:
   class PlaceHolder
   {
   public:
-    virtual ~PlaceHolder() {}
+    virtual ~PlaceHolder() = default;
 
     virtual const std::type_info& type() const = 0;
 

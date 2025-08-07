@@ -34,7 +34,7 @@ namespace Avogadro::Rendering {
 class CylinderGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;

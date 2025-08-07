@@ -78,7 +78,7 @@ OBFileFormat::OBFileFormat(const std::string& name_,
 {
 }
 
-OBFileFormat::~OBFileFormat() {}
+OBFileFormat::~OBFileFormat() = default;
 
 bool OBFileFormat::read(std::istream& in, Core::Molecule& molecule)
 {

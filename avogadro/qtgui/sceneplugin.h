@@ -123,7 +123,7 @@ class AVOGADROQTGUI_EXPORT ScenePluginFactory
   : public Avogadro::QtPlugins::PluginFactory<ScenePlugin>
 {
 public:
-  ~ScenePluginFactory() override {}
+  ~ScenePluginFactory() override = default;
 };
 
 } // namespace QtGui

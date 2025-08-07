@@ -17,7 +17,7 @@ Scene::Scene()
 {
 }
 
-Scene::~Scene() {}
+Scene::~Scene() = default;
 
 Vector3f Scene::center()
 {

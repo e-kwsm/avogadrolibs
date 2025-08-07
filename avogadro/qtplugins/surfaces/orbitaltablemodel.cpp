@@ -23,7 +23,7 @@ OrbitalTableModel::OrbitalTableModel(QWidget* parent)
   m_orbitals.clear();
 }
 
-OrbitalTableModel::~OrbitalTableModel() {}
+OrbitalTableModel::~OrbitalTableModel() = default;
 
 int OrbitalTableModel::columnCount(const QModelIndex&) const
 {

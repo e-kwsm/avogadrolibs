@@ -47,7 +47,7 @@ struct RemapAtomicNumbers
   const MapType& map;
 
   RemapAtomicNumbers(const MapType& m) : map(m) {}
-  RemapAtomicNumbers(const RemapAtomicNumbers& o) : map(o.map) {}
+  RemapAtomicNumbers(const RemapAtomicNumbers& o) = default;
 
   unsigned char operator()(unsigned char old) const
   {

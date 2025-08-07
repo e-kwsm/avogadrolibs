@@ -81,7 +81,7 @@ NonCovalent::NonCovalent(QObject* p) : ScenePlugin(p)
                    settings.value("nonCovalent/lineWidth2", 5.0).toFloat() };
 }
 
-NonCovalent::~NonCovalent() {}
+NonCovalent::~NonCovalent() = default;
 
 enum InteractionTypes
 {

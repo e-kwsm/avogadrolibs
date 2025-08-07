@@ -7,8 +7,8 @@
 
 namespace Avogadro::Rendering {
 
-Visitor::Visitor() {}
+Visitor::Visitor() = default;
 
-Visitor::~Visitor() {}
+Visitor::~Visitor() = default;
 
 } // namespace Avogadro::Rendering
