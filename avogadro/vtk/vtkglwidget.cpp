@@ -143,7 +143,7 @@ vtkGLWidget::vtkGLWidget(QWidget* p, Qt::WindowFlags f)
   m_contourActor->SetVisibility(0);
 }
 
-vtkGLWidget::~vtkGLWidget() {}
+vtkGLWidget::~vtkGLWidget() = default;
 
 void vtkGLWidget::setMolecule(QtGui::Molecule* mol)
 {

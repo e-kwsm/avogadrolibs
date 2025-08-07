@@ -29,14 +29,7 @@ Residue::Residue(std::string& name, Index& number, char& id)
 {
 }
 
-Residue::Residue(const Residue& other)
-  : m_residueName(other.m_residueName), m_residueId(other.m_residueId),
-    m_chainId(other.m_chainId), m_atomNameMap(other.m_atomNameMap),
-    m_heterogen(other.m_heterogen), m_color(other.m_color),
-    m_customColorSet(other.m_customColorSet),
-    m_secondaryStructure(other.m_secondaryStructure)
-{
-}
+Residue::Residue(const Residue& other) = default;
 
 Residue& Residue::operator=(Residue other)
 {

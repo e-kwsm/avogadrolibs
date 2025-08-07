@@ -54,7 +54,7 @@ PlayerTool::PlayerTool(QObject* parent_)
   setIcon();
 }
 
-PlayerTool::~PlayerTool() {}
+PlayerTool::~PlayerTool() = default;
 
 void PlayerTool::setIcon(bool darkTheme)
 {

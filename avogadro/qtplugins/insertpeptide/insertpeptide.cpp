@@ -58,7 +58,7 @@ InsertPeptide::InsertPeptide(QObject* parent_)
   m_actions.append(action);
 }
 
-InsertPeptide::~InsertPeptide() {}
+InsertPeptide::~InsertPeptide() = default;
 
 QList<QAction*> InsertPeptide::actions() const
 {
