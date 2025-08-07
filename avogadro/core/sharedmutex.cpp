@@ -14,7 +14,7 @@ using std::shared_mutex;
 class SharedMutex::PIMPL
 {
 public:
-  PIMPL() {}
+  PIMPL() = default;
 
   shared_mutex lock;
 };

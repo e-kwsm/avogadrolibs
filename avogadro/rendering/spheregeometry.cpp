@@ -50,7 +50,7 @@ constexpr int colorOffset = static_cast<int>(offsetof(SphereColor, color));
 class SphereGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;

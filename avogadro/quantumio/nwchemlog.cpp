@@ -19,9 +19,9 @@ namespace Avogadro::QuantumIO {
 
 using Core::Atom;
 
-NWChemLog::NWChemLog() {}
+NWChemLog::NWChemLog() = default;
 
-NWChemLog::~NWChemLog() {}
+NWChemLog::~NWChemLog() = default;
 
 std::vector<std::string> NWChemLog::fileExtensions() const
 {

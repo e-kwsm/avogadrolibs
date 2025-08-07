@@ -28,7 +28,7 @@ namespace Avogadro::Rendering {
 class WideLineGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;

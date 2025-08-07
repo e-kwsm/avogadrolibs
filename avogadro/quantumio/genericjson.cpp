@@ -19,9 +19,9 @@ namespace Avogadro::QuantumIO {
 using json = nlohmann::json;
 using std::string;
 
-GenericJson::GenericJson() {}
+GenericJson::GenericJson() = default;
 
-GenericJson::~GenericJson() {}
+GenericJson::~GenericJson() = default;
 
 std::vector<std::string> GenericJson::fileExtensions() const
 {

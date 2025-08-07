@@ -49,7 +49,7 @@ ResetView::ResetView(QObject* parent_)
   registerResetViewCommands();
 }
 
-ResetView::~ResetView() {}
+ResetView::~ResetView() = default;
 
 void ResetView::registerResetViewCommands()
 {

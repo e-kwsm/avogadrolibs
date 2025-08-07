@@ -42,7 +42,7 @@ Force::Force(QObject* p) : ScenePlugin(p), m_setupWidget(nullptr)
   m_color[2] = static_cast<unsigned char>(color.blue());
 }
 
-Force::~Force() {}
+Force::~Force() = default;
 
 void Force::process(const QtGui::Molecule& molecule, Rendering::GroupNode& node)
 {

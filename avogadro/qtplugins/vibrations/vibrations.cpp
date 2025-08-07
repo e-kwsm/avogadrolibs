@@ -34,7 +34,7 @@ Vibrations::Vibrations(QObject* p)
   m_actions.push_back(action);
 }
 
-Vibrations::~Vibrations() {}
+Vibrations::~Vibrations() = default;
 
 QList<QAction*> Vibrations::actions() const
 {

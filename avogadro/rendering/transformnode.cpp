@@ -9,6 +9,6 @@ namespace Avogadro::Rendering {
 
 TransformNode::TransformNode(GroupNode* p) : GroupNode(p) {}
 
-TransformNode::~TransformNode() {}
+TransformNode::~TransformNode() = default;
 
 } // namespace Avogadro::Rendering

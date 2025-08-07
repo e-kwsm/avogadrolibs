@@ -179,7 +179,7 @@ bool Navigator::handleCommand(const QString& command,
   return commandRegistry().handle(command, options, m_molecule);
 }
 
-Navigator::~Navigator() {}
+Navigator::~Navigator() = default;
 
 QWidget* Navigator::toolWidget() const
 {

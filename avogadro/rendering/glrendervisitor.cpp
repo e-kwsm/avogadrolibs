@@ -26,7 +26,7 @@ GLRenderVisitor::GLRenderVisitor(const Camera& camera_,
 {
 }
 
-GLRenderVisitor::~GLRenderVisitor() {}
+GLRenderVisitor::~GLRenderVisitor() = default;
 
 bool GLRenderVisitor::shouldRender(const Drawable& drawable) const
 {

@@ -61,7 +61,7 @@ public:
   ContextStamp contextStamp;
 
   RenderImpl();
-  ~RenderImpl() {}
+  ~RenderImpl() = default;
 
   void setTextureData(const Array<unsigned char>& buffer,
                       const Vector2i& dimensions);

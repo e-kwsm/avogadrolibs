@@ -60,7 +60,7 @@ static_assert(colorsBOffset + 4 <= static_cast<int>(sizeof(CylinderColor)),
 class CylinderGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;

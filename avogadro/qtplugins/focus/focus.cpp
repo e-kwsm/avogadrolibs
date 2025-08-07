@@ -30,7 +30,7 @@ Focus::Focus(QObject* parent_)
   registerFocusCommands();
 }
 
-Focus::~Focus() {}
+Focus::~Focus() = default;
 
 QList<QAction*> Focus::actions() const
 {

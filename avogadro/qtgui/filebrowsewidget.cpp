@@ -48,7 +48,7 @@ FileBrowseWidget::FileBrowseWidget(QWidget* theParent)
   setMode(ExistingFile);
 }
 
-FileBrowseWidget::~FileBrowseWidget() {}
+FileBrowseWidget::~FileBrowseWidget() = default;
 
 QString FileBrowseWidget::fileName() const
 {

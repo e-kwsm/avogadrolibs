@@ -31,7 +31,7 @@ LammpsInput::LammpsInput(QObject* parent_)
   connect(m_action, &QAction::triggered, this, &LammpsInput::menuActivated);
 }
 
-LammpsInput::~LammpsInput() {}
+LammpsInput::~LammpsInput() = default;
 
 QList<QAction*> LammpsInput::actions() const
 {

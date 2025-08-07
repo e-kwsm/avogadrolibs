@@ -20,7 +20,7 @@ CoordinateEditor::CoordinateEditor(QObject* parent_)
   connect(m_action, &QAction::triggered, this, &CoordinateEditor::triggered);
 }
 
-CoordinateEditor::~CoordinateEditor() {}
+CoordinateEditor::~CoordinateEditor() = default;
 
 QList<QAction*> CoordinateEditor::actions() const
 {
