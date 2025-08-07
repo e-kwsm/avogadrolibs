@@ -84,14 +84,14 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
   }
 
   // check for 'schema_name'
-  if (root.find("schema_name") == root.end() ||
+  if (!root.contains("schema_name") ||
       root["schema_name"].get<std::string>() != "QC_JSON") {
     appendError("Error: Input is not a QC_JSON object.");
     return false;
   }
 
   // get the elements
-  if (root.find("symbols") == root.end() || !root["symbols"].is_array()) {
+  if (!root.contains("symbols") || !root["symbols"].is_array()) {
     appendError("Error: no \"symbols\" array found.");
     return false;
   }
@@ -114,7 +114,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
   // look for geometry for coordinates
   // stored as a numeric array of all coordinates
   // as [atom1x, atom1y, atom1z, atom2x, atom2y, atom2z, ...]
-  if (root.find("geometry") == root.end() || !root["geometry"].is_array()) {
+  if (!root.contains("geometry") || !root["geometry"].is_array()) {
     appendError("Error: no \"geometry\" array found.");
     return false;
   }
@@ -132,8 +132,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
   }
 
   // check for (optional) connectivity
-  if (root.find("connectivity") != root.end() &&
-      root["connectivity"].is_array()) {
+  if (root.contains("connectivity") && root["connectivity"].is_array()) {
     // read the bonds and orders
     json connectivity = root["connectivity"];
     // stored as an array of 3-value arrays start, end, order
@@ -150,23 +149,23 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
   }
 
   // check for optional comment / name
-  if (root.find("comment") != root.end())
+  if (root.contains("comment"))
     molecule.setData("name", root["comment"].get<std::string>());
 
   // check for molecular_charge and molecular_multiplicity
-  if (root.find("molecular_charge") != root.end()) {
+  if (root.contains("molecular_charge")) {
     molecule.setData("totalCharge", root["molecular_charge"].get<int>());
   }
-  if (root.find("molecular_multiplicity") != root.end()) {
+  if (root.contains("molecular_multiplicity")) {
     molecule.setData("totalSpinMultiplicity",
                      root["molecular_multiplicity"].get<int>());
   }
 
   // if the "properties object exists" look for properties
-  if (root.find("properties") != root.end() && root["properties"].is_object()) {
+  if (root.contains("properties") && root["properties"].is_object()) {
     json properties = root["properties"];
 
-    if (properties.find("dipole_moment") != properties.end()) {
+    if (properties.contains("dipole_moment")) {
       // read the numeric array
       json dipole = properties["dipole_moment"];
       if (dipole.size() == 3) {
@@ -176,7 +175,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
         molecule.setData("dipoleMoment", dipoleMoment);
       }
     }
-    if (properties.find("partial_charges") != properties.end() &&
+    if (properties.contains("partial_charges") &&
         properties["partial_charges"].is_object()) {
       // keys are types, values are arrays of charges
       json partialCharges = properties["partial_charges"];
@@ -194,22 +193,21 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
     // e.g. total_energy": {
     //         "units": "Hartree",
     //        "value": -26.173033542939
-    if (properties.find("total_energy") != properties.end() &&
+    if (properties.contains("total_energy") &&
         properties["total_energy"].is_object()) {
       json totalEnergy = properties["total_energy"];
-      if (totalEnergy.find("value") != totalEnergy.end())
+      if (totalEnergy.contains("value"))
         molecule.setData("totalEnergy", totalEnergy["value"].get<float>());
     }
 
     // trajectory or geometry optimization
-    if (properties.find("geometry_sequence") != properties.end() &&
+    if (properties.contains("geometry_sequence") &&
         properties["geometry_sequence"].is_object()) {
       json sequence = properties["geometry_sequence"];
       // energies and geometries
 
       // energies should be a numeric array
-      if (sequence.find("energies") != sequence.end() &&
-          sequence["energies"].is_array()) {
+      if (sequence.contains("energies") && sequence["energies"].is_array()) {
         std::vector<double> energies;
         for (unsigned int i = 0; i < sequence["energies"].size(); ++i) {
           energies.push_back(sequence["energies"][i].get<float>());
@@ -236,7 +234,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
     }
 
     // vibrations
-    if (properties.find("vibrations") != properties.end() &&
+    if (properties.contains("vibrations") &&
         properties["vibrations"].is_object()) {
       json vib = properties["vibrations"];
 
@@ -244,8 +242,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
       Array<Array<Vector3>> disps;
 
       // frequencies
-      if (vib.find("frequencies") != vib.end() &&
-          vib["frequencies"].is_array()) {
+      if (vib.contains("frequencies") && vib["frequencies"].is_array()) {
         json frequencies = vib["frequencies"];
         if (isNumericArray(frequencies)) {
           for (auto& frequency : frequencies) {
@@ -253,8 +250,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
           }
         }
       }
-      if (vib.find("intensities") != vib.end() &&
-          vib["intensities"].is_object()) {
+      if (vib.contains("intensities") && vib["intensities"].is_object()) {
         json ir = vib["intensities"]["IR"];
         if (isNumericArray(ir)) {
           for (auto& i : ir) {
@@ -305,18 +301,18 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
     }
 
     // excitation energies
-    if (properties.find("excited_states") != properties.end() &&
+    if (properties.contains("excited_states") &&
         properties["excited_states"].is_object()) {
       json excitedStates = properties["excited_states"];
       // check units (defaults to nm)
       std::string units = "nm";
-      if (excitedStates.find("units") != excitedStates.end()) {
+      if (excitedStates.contains("units")) {
         units = excitedStates["units"].get<std::string>();
       }
       std::vector<double> energies;
       std::vector<double> intensities;
       // transition_energies
-      if (excitedStates.find("transition_energies") != excitedStates.end() &&
+      if (excitedStates.contains("transition_energies") &&
           excitedStates["transition_energies"].is_array()) {
         json transition_energies = excitedStates["transition_energies"];
         if (isNumericArray(transition_energies)) {
@@ -331,7 +327,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
           }
         }
       }
-      if (excitedStates.find("intensities") != excitedStates.end() &&
+      if (excitedStates.contains("intensities") &&
           excitedStates["intensities"].is_array()) {
         json intensities = excitedStates["intensities"];
         if (isNumericArray(intensities)) {
@@ -358,12 +354,12 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
     }
 
     // NMR spectra
-    if (properties.find("nmr_shifts") != properties.end() &&
+    if (properties.contains("nmr_shifts") &&
         properties["nmr_shifts"].is_object()) {
       json nmrShifts = properties["nmr_shifts"];
       // get the isotropic shifts as an array
       std::vector<double> nmrShiftsIsotropic;
-      if (nmrShifts.find("isotropic") != nmrShifts.end() &&
+      if (nmrShifts.contains("isotropic") &&
           nmrShifts["isotropic"].is_array()) {
         json isotropic = nmrShifts["isotropic"];
         if (isNumericArray(isotropic)) {

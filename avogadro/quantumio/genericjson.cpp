@@ -55,10 +55,10 @@ bool GenericJson::read(std::istream& in, Core::Molecule& molecule)
   }
 
   // Okay, look for particular keys
-  if (root.find("schema_name") != root.end()) {
+  if (root.contains("schema_name")) {
     if (root["schema_name"].get<std::string>() == "QC_JSON")
       reader = new QCSchema();
-  } else if (root.find("simulation") != root.end()) {
+  } else if (root.contains("simulation")) {
     reader = new NWChemJson();
   }
 
