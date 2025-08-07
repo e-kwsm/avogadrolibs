@@ -8719,15 +8719,6 @@ msgstr ""
 #~ msgid "Partial Charge"
 #~ msgstr "部分電荷"
 
-#~ msgid "Render polygon meshes."
-#~ msgstr "ポリゴンメッシュの描画"
-
-#~ msgid "&Analysis"
-#~ msgstr "解析 (&A)"
-
-#~ msgid "Partial Charge"
-#~ msgstr "部分電荷"
-
 #~ msgid "Animation Tool"
 #~ msgstr "アニメーションツール"
 
