@@ -31,7 +31,7 @@ TEST(Hdf5Test, openCloseReadOnly)
   Hdf5DataFormat hdf5;
   std::string testfile = std::string(AVOGADRO_DATA) + "/data/hdf5file.h5";
   ASSERT_TRUE(fileExists(testfile.c_str()));
-  ASSERT_TRUE(hdf5.openFile(testfile.c_str(), Hdf5DataFormat::ReadOnly))
+  ASSERT_TRUE(hdf5.openFile(testfile, Hdf5DataFormat::ReadOnly))
     << "Failed to open " << testfile << " in read-only mode.";
 
   std::vector<std::string> refDatasets;
@@ -60,7 +60,7 @@ TEST(Hdf5Test, openCloseReadWriteAppend)
   Hdf5DataFormat hdf5;
   std::string testfile = std::string(AVOGADRO_DATA) + "/data/hdf5file.h5";
   ASSERT_TRUE(fileExists(testfile.c_str()));
-  ASSERT_TRUE(hdf5.openFile(testfile.c_str(), Hdf5DataFormat::ReadWriteAppend))
+  ASSERT_TRUE(hdf5.openFile(testfile, Hdf5DataFormat::ReadWriteAppend))
     << "Failed to open " << testfile << " in read-write (append) mode.";
 
   std::vector<std::string> refDatasets;
