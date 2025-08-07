@@ -34,7 +34,7 @@ ScriptCharges::ScriptCharges(QObject* p) : ExtensionPlugin(p)
   pm->loadRegisteredPackages(QStringLiteral("electrostatic-models"));
 }
 
-ScriptCharges::~ScriptCharges() {}
+ScriptCharges::~ScriptCharges() = default;
 
 QList<QAction*> ScriptCharges::actions() const
 {

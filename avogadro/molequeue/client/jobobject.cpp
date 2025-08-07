@@ -9,9 +9,9 @@
 
 namespace Avogadro::MoleQueue {
 
-JobObject::JobObject() {}
+JobObject::JobObject() = default;
 
-JobObject::~JobObject() {}
+JobObject::~JobObject() = default;
 
 void JobObject::setValue(const QString& key, const QVariant& value_)
 {

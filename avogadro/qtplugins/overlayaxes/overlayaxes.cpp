@@ -31,7 +31,7 @@ class OverlayArrowGeometry : public ArrowGeometry
 {
 public:
   OverlayArrowGeometry() { setRenderPass(Avogadro::Rendering::Overlay3DPass); }
-  ~OverlayArrowGeometry() override {}
+  ~OverlayArrowGeometry() override = default;
 
   void render(const Camera& camera) override;
 };

@@ -33,7 +33,7 @@ LabelEditor::LabelEditor(QObject* parent_)
   setIcon();
 }
 
-LabelEditor::~LabelEditor() {}
+LabelEditor::~LabelEditor() = default;
 
 void LabelEditor::setIcon(bool darkTheme)
 {

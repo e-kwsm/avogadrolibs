@@ -157,9 +157,9 @@ Matrix3 effectiveSteps(const Matrix3& steps, const Vector3i& dim)
 
 } // namespace
 
-GaussianCube::GaussianCube() {}
+GaussianCube::GaussianCube() = default;
 
-GaussianCube::~GaussianCube() {}
+GaussianCube::~GaussianCube() = default;
 
 std::vector<std::string> GaussianCube::fileExtensions() const
 {

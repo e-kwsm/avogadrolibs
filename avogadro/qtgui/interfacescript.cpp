@@ -97,7 +97,7 @@ InterfaceScript::InterfaceScript(QObject* parent_)
 {
 }
 
-InterfaceScript::~InterfaceScript() {}
+InterfaceScript::~InterfaceScript() = default;
 
 bool InterfaceScript::debug() const
 {
