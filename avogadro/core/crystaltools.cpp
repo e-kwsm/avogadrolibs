@@ -267,7 +267,7 @@ bool CrystalTools::niggliReduce(Molecule& molecule, Options opts)
   using std::swap;
 
   // Perform iterative reduction:
-  unsigned int iter;
+  unsigned int iter = 0;
   for (iter = 0; iter < maxIterations; ++iter) {
     // Step 1:
     if (fuzzyGreaterThan(A, B, tol) ||
