@@ -21,7 +21,7 @@ namespace Avogadro::QtGui {
 
 ScriptLoader::ScriptLoader(QObject* parent_) : QObject(parent_) {}
 
-ScriptLoader::~ScriptLoader() {}
+ScriptLoader::~ScriptLoader() = default;
 
 bool ScriptLoader::queryProgramName(const QString& scriptFilePath,
                                     QString& displayName)
