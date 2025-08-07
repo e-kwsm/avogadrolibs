@@ -55,7 +55,7 @@ bool hasMinimumRemainingBytes(std::istream& in, size_t minBytes)
 
 GaussianFchk::GaussianFchk() : m_scftype(Rhf) {}
 
-GaussianFchk::~GaussianFchk() {}
+GaussianFchk::~GaussianFchk() = default;
 
 std::vector<std::string> GaussianFchk::fileExtensions() const
 {

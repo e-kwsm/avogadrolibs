@@ -49,7 +49,7 @@ std::optional<int> arrayCount(const string& key)
 
 MopacAux::MopacAux() : m_electrons(0) {}
 
-MopacAux::~MopacAux() {}
+MopacAux::~MopacAux() = default;
 
 std::vector<std::string> MopacAux::fileExtensions() const
 {

@@ -23,7 +23,7 @@ CustomElements::CustomElements(QObject* parent_)
   updateReassignAction();
 }
 
-CustomElements::~CustomElements() {}
+CustomElements::~CustomElements() = default;
 
 QString CustomElements::description() const
 {

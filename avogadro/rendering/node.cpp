@@ -9,7 +9,7 @@ namespace Avogadro::Rendering {
 
 Node::Node() : m_parent(nullptr), m_visible(true) {}
 
-Node::~Node() {}
+Node::~Node() = default;
 
 void Node::setParent(GroupNode* parent_)
 {

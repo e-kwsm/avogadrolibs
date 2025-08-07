@@ -12,7 +12,7 @@ SdfFormat::SdfFormat()
   m_writeProperties = true;
 }
 
-SdfFormat::~SdfFormat() {}
+SdfFormat::~SdfFormat() = default;
 
 bool SdfFormat::read(std::istream& in, Core::Molecule& mol)
 {

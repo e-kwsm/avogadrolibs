@@ -119,7 +119,7 @@ Licorice::Licorice(QObject* p) : ScenePlugin(p)
   m_layerManager = PluginLayerManager(m_name);
 }
 
-Licorice::~Licorice() {}
+Licorice::~Licorice() = default;
 
 void Licorice::process(const Molecule& molecule, Rendering::GroupNode& node)
 {

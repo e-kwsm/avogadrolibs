@@ -21,8 +21,8 @@ namespace Avogadro::Rendering {
 class AVOGADRORENDERING_EXPORT QuadOutline : public LineStripGeometry
 {
 public:
-  QuadOutline() {}
-  ~QuadOutline() override {}
+  QuadOutline() = default;
+  ~QuadOutline() override = default;
 
   /**
    * @brief setQuad Set the four corners of the quad.

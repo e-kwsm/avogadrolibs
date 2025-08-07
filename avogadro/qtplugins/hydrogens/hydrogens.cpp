@@ -42,7 +42,7 @@ Hydrogens::Hydrogens(QObject* parent_)
   m_actions.append(action);
 }
 
-Hydrogens::~Hydrogens() {}
+Hydrogens::~Hydrogens() = default;
 
 QString Hydrogens::description() const
 {

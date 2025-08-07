@@ -27,7 +27,7 @@ TextProperties::TextProperties(const TextProperties& other)
   m_rgba[3] = other.m_rgba[3];
 }
 
-TextProperties::~TextProperties() {}
+TextProperties::~TextProperties() = default;
 
 TextProperties& TextProperties::operator=(TextProperties other)
 {

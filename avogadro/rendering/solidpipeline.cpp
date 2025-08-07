@@ -34,7 +34,7 @@ constexpr int TextureUnitAo = 3;
 class SolidPipeline::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   // Point a sampler uniform at a texture. The program is taken rather than
   // read back from the GL state: asking the driver which program is bound

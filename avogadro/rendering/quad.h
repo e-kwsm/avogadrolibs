@@ -21,8 +21,8 @@ namespace Avogadro::Rendering {
 class AVOGADRORENDERING_EXPORT Quad : public MeshGeometry
 {
 public:
-  Quad() {}
-  ~Quad() override {}
+  Quad() = default;
+  ~Quad() override = default;
 
   /**
    * @brief setQuad Set the four corners of the quad.
