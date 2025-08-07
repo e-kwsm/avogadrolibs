@@ -30,7 +30,7 @@ PythonScript::PythonScript(QObject* parent_)
   setDefaultPythonInterpreter();
 }
 
-PythonScript::~PythonScript() {}
+PythonScript::~PythonScript() = default;
 
 void PythonScript::setScriptFilePath(const QString& scriptFile)
 {
