@@ -224,10 +224,9 @@ class AddAtomCommand : public RWMolecule::UndoCommand
 
 public:
   AddAtomCommand(RWMolecule& m, unsigned char aN, bool usingPositions,
-                 Index atomId, Index uid,
-                 const Vector3& position3d = Vector3::Zero())
+                 Index atomId, Index uid, Vector3 position3d = Vector3::Zero())
     : UndoCommand(m), m_atomicNumber(aN), m_usingPositions(usingPositions),
-      m_atomId(atomId), m_atomUid(uid), m_position3d(position3d)
+      m_atomId(atomId), m_atomUid(uid), m_position3d(std::move(position3d))
   {
     m_layer = m_molecule.layer().activeLayer();
   }

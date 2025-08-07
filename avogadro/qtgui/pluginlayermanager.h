@@ -119,7 +119,7 @@ public:
     return snap;
   }
 
-  PluginLayerManager(const std::string& name = "undef");
+  PluginLayerManager(std::string name = "undef");
 
   ~PluginLayerManager();
 
