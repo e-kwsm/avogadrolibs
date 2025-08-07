@@ -30,7 +30,7 @@ MolecularProperties::MolecularProperties(QObject* parent_)
   connect(m_action, SIGNAL(triggered()), SLOT(showDialog()));
 }
 
-MolecularProperties::~MolecularProperties() {}
+MolecularProperties::~MolecularProperties() = default;
 
 QString MolecularProperties::description() const
 {
