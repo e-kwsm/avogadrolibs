@@ -39,7 +39,7 @@ Camera& Camera::operator=(const Camera& o)
   return *this;
 }
 
-Camera::~Camera() {}
+Camera::~Camera() = default;
 
 void Camera::translate(const Vector3f& translate_)
 {

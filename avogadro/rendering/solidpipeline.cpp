@@ -33,7 +33,7 @@ constexpr int TextureUnitAo = 3;
 class SolidPipeline::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   // Point a sampler uniform in the currently bound program at a texture.
   void bindSampler(const GLchar* name, GLuint texture, int unit)

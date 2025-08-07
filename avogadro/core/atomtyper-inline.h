@@ -19,9 +19,7 @@ AtomTyper<OutputType>::AtomTyper(const Molecule* mol) : m_molecule(mol)
 }
 
 template <typename OutputType>
-AtomTyper<OutputType>::~AtomTyper()
-{
-}
+AtomTyper<OutputType>::~AtomTyper() = default;
 
 template <typename OutputType>
 void AtomTyper<OutputType>::setMolecule(const Molecule* mol)

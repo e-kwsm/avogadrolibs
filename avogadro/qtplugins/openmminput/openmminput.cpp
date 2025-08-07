@@ -31,7 +31,7 @@ OpenMMInput::OpenMMInput(QObject* parent_)
   connect(m_action, SIGNAL(triggered()), SLOT(menuActivated()));
 }
 
-OpenMMInput::~OpenMMInput() {}
+OpenMMInput::~OpenMMInput() = default;
 
 QList<QAction*> OpenMMInput::actions() const
 {

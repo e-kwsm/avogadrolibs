@@ -138,7 +138,7 @@ OBCharges::OBCharges(const std::string& id) : ChargeModel(), m_identifier(id)
   }
 }
 
-OBCharges::~OBCharges() {}
+OBCharges::~OBCharges() = default;
 
 std::string OBCharges::name() const
 {
