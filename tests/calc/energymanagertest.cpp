@@ -11,6 +11,8 @@
 #include <avogadro/calc/energymanager.h>
 #include <avogadro/core/molecule.h>
 
+#include <utility>
+
 using namespace Avogadro::Calc;
 using namespace Avogadro::Core;
 
@@ -20,11 +22,12 @@ using Avogadro::Real;
 class MockEnergyCalculator : public EnergyCalculator
 {
 public:
-  MockEnergyCalculator(const std::string& id, const std::string& modelName,
+  MockEnergyCalculator(std::string id, std::string modelName,
                        bool unitCell = false, bool ions = false,
                        bool radicals = false)
-    : m_identifier(id), m_name(modelName), m_acceptsUnitCell(unitCell),
-      m_acceptsIons(ions), m_acceptsRadicals(radicals)
+    : m_identifier(std::move(id)), m_name(std::move(modelName)),
+      m_acceptsUnitCell(unitCell), m_acceptsIons(ions),
+      m_acceptsRadicals(radicals)
   {
   }
 
