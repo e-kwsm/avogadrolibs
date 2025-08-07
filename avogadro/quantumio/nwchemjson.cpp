@@ -48,14 +48,14 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
     return false;
   }
 
-  if (root.find("simulation") == root.end()) {
+  if (!root.contains("simulation")) {
     appendError("Error: no \"simulation\" key found.");
     return false;
   }
 
   json simulation = root["simulation"];
 
-  if (simulation.find("calculations") == simulation.end() ||
+  if (!simulation.contains("calculations") ||
       !simulation["calculations"].is_array()) {
     appendError("Error: no \"calculations\" array found.");
     return false;
@@ -81,7 +81,7 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
       json calcSetup = calcObj.value("calculationSetup", json());
       json calcMol = calcSetup.value("molecule", json());
       numberOfElectrons = calcSetup.value("numberOfElectrons", -1);
-      if (calcSetup.count("exchangeCorrelationFunctional") &&
+      if (calcSetup.contains("exchangeCorrelationFunctional") &&
           calcSetup["exchangeCorrelationFunctional"].is_array() &&
           !calcSetup["exchangeCorrelationFunctional"].empty()) {
         json functional = calcSetup["exchangeCorrelationFunctional"][0];
@@ -92,7 +92,7 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
           xcFunctional = "b3lyp";
         }
       }
-      if (calcSetup.count("waveFunctionTheory")) {
+      if (calcSetup.contains("waveFunctionTheory")) {
         theory = calcSetup["waveFunctionTheory"].get<std::string>();
         if (theory == "Density Functional Theory") {
           theory = "dft";
@@ -109,7 +109,7 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
       if (!calcMol.is_null() && calcMol.is_object())
         moleculeArray.push_back(calcMol);
       // There is currently one id for all, just get the last one we find.
-      if (calcResults.count("molecularOrbitals") &&
+      if (calcResults.contains("molecularOrbitals") &&
           calcResults["molecularOrbitals"].is_object()) {
         molecularOrbitals = calcResults["molecularOrbitals"];
       }
@@ -177,9 +177,9 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
         currentFunction = basisFunction;
 
         string elementType;
-        if (currentFunction.count("elementLabel"))
+        if (currentFunction.contains("elementLabel"))
           elementType = currentFunction["elementLabel"].get<std::string>();
-        else if (currentFunction.count("elementType"))
+        else if (currentFunction.contains("elementType"))
           elementType = currentFunction["elementType"].get<std::string>();
 
         if (elementType == symbol)
@@ -191,7 +191,7 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
       if (currentFunction.is_null())
         break;
 
-      if (currentFunction.count("basisSetName")) {
+      if (currentFunction.contains("basisSetName")) {
         if (basisSetName.empty()) {
           basisSetName = currentFunction["basisSetName"].get<std::string>();
         } else if (basisSetName != currentFunction["basisSetName"]) {
@@ -204,9 +204,9 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
         currentFunction.value("basisSetHarmonicType", "") == "spherical";
       for (auto contractionShell : contraction) {
         string shellType;
-        if (contractionShell.count("basisSetShell"))
+        if (contractionShell.contains("basisSetShell"))
           shellType = contractionShell["basisSetShell"].get<std::string>();
-        else if (contractionShell.count("basisSetShellType"))
+        else if (contractionShell.contains("basisSetShellType"))
           shellType = contractionShell["basisSetShellType"].get<std::string>();
         json exponent = contractionShell.value("basisSetExponent", json());
         json coefficient =
@@ -245,14 +245,14 @@ bool NWChemJson::read(std::istream& file, Molecule& molecule)
       json coeff = currentMO.value("moCoefficients", json());
       for (auto& j : coeff)
         coeffArray.push_back(j);
-      if (currentMO.count("orbitalEnergy")) {
+      if (currentMO.contains("orbitalEnergy")) {
         energyArray.push_back(currentMO["orbitalEnergy"].value("value", 0.0));
       }
-      if (currentMO.count("orbitalOccupancy")) {
+      if (currentMO.contains("orbitalOccupancy")) {
         occArray.push_back(
           static_cast<unsigned char>(currentMO["orbitalOccupancy"]));
       }
-      if (currentMO.count("orbitalNumber")) {
+      if (currentMO.contains("orbitalNumber")) {
         numArray.push_back(
           static_cast<unsigned int>(currentMO["orbitalNumber"]));
       }
