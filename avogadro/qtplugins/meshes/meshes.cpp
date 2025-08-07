@@ -47,7 +47,7 @@ Meshes::Meshes(QObject* p) : ScenePlugin(p), m_setupWidget(nullptr)
   m_color2[2] = static_cast<unsigned char>(color.blue());
 }
 
-Meshes::~Meshes() {}
+Meshes::~Meshes() = default;
 
 // Generator for std::generate call below:
 namespace {

@@ -526,7 +526,7 @@ namespace Avogadro::Rendering {
 class AmbientOcclusionRenderer
 {
 public:
-  virtual ~AmbientOcclusionRenderer() {}
+  virtual ~AmbientOcclusionRenderer() = default;
 
   virtual void renderDepth(const Eigen::Matrix4f& modelView,
                            const Eigen::Matrix4f& projection) = 0;

@@ -22,7 +22,7 @@ ScriptCharges::ScriptCharges(QObject* p) : ExtensionPlugin(p)
   refreshModels();
 }
 
-ScriptCharges::~ScriptCharges() {}
+ScriptCharges::~ScriptCharges() = default;
 
 QList<QAction*> ScriptCharges::actions() const
 {

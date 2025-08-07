@@ -34,7 +34,7 @@ using Core::Array;
 class SphereGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;
