@@ -28,13 +28,7 @@ public:
   {
   }
 
-  ResidueData(const ResidueData& other)
-    : m_residueName(other.m_residueName),
-      m_residueAtomNames(other.m_residueAtomNames),
-      m_residueSingleBonds(other.m_residueSingleBonds),
-      m_residueDoubleBonds(other.m_residueDoubleBonds)
-  {
-  }
+  ResidueData(const ResidueData& other) = default;
 
   ResidueData(ResidueData&& other) noexcept
     : m_residueName(std::move(other.m_residueName)),

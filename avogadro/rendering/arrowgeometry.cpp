@@ -35,7 +35,7 @@ namespace Avogadro::Rendering {
 class ArrowGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   Shader vertexShader;
   ShaderProgram program;
