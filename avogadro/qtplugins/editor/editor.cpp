@@ -81,7 +81,7 @@ Editor::Editor(QObject* parent_)
   reset();
 }
 
-Editor::~Editor() {}
+Editor::~Editor() = default;
 
 void Editor::setIcon(bool darkTheme)
 {

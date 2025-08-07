@@ -38,7 +38,7 @@ ElementItem::ElementItem(int elementNumber)
   setData(0, m_element);
 }
 
-ElementItem::~ElementItem() {}
+ElementItem::~ElementItem() = default;
 
 QRectF ElementItem::boundingRect() const
 {

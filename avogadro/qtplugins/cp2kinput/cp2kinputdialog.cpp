@@ -112,7 +112,7 @@ Cp2kInputDialog::Cp2kInputDialog(QWidget* parent_, Qt::WindowFlags f)
   updatePreviewText();
 }
 
-Cp2kInputDialog::~Cp2kInputDialog() {}
+Cp2kInputDialog::~Cp2kInputDialog() = default;
 
 void Cp2kInputDialog::setMolecule(QtGui::Molecule* mol)
 {

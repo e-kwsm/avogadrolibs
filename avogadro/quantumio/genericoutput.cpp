@@ -18,9 +18,9 @@
 
 namespace Avogadro::QuantumIO {
 
-GenericOutput::GenericOutput() {}
+GenericOutput::GenericOutput() = default;
 
-GenericOutput::~GenericOutput() {}
+GenericOutput::~GenericOutput() = default;
 
 std::string GenericOutput::identifier() const
 {

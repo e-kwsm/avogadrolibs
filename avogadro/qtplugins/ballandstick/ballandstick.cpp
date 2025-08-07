@@ -149,7 +149,7 @@ BallAndStick::BallAndStick(QObject* p) : ScenePlugin(p), m_group(nullptr)
   m_layerManager = PluginLayerManager(m_name);
 }
 
-BallAndStick::~BallAndStick() {}
+BallAndStick::~BallAndStick() = default;
 
 void BallAndStick::process(const QtGui::Molecule& molecule,
                            Rendering::GroupNode& node)

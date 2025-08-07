@@ -42,7 +42,7 @@ POVRayVisitor::POVRayVisitor(const Camera& c)
 {
 }
 
-POVRayVisitor::~POVRayVisitor() {}
+POVRayVisitor::~POVRayVisitor() = default;
 
 void POVRayVisitor::begin()
 {

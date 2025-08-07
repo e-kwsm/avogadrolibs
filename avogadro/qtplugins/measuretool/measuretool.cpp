@@ -61,7 +61,7 @@ MeasureTool::MeasureTool(QObject* parent_)
   setIcon();
 }
 
-MeasureTool::~MeasureTool() {}
+MeasureTool::~MeasureTool() = default;
 
 void MeasureTool::setIcon(bool darkTheme)
 {

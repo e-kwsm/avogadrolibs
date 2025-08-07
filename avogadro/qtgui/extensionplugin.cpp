@@ -11,14 +11,14 @@ namespace Avogadro::QtGui {
 
 ExtensionPlugin::ExtensionPlugin(QObject* parent_) : QObject(parent_) {}
 
-ExtensionPlugin::~ExtensionPlugin() {}
+ExtensionPlugin::~ExtensionPlugin() = default;
 
 QList<Io::FileFormat*> ExtensionPlugin::fileFormats() const
 {
   return QList<Io::FileFormat*>();
 }
 
-ExtensionPluginFactory::~ExtensionPluginFactory() {}
+ExtensionPluginFactory::~ExtensionPluginFactory() = default;
 
 bool ExtensionPlugin::readMolecule(Molecule&)
 {

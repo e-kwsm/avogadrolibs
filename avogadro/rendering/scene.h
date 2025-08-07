@@ -72,7 +72,7 @@ struct ColorNormalVertex
   Vector3f normal;           // 12 bytes
   Vector3f vertex;           // 12 bytes
   unsigned char padding[4];  //  4 bytes
-  ColorNormalVertex() {}
+  ColorNormalVertex() = default;
   ColorNormalVertex(const Vector3ub& c, const Vector3f& n, const Vector3f& v)
     : color(c), normal(n), vertex(v)
   {

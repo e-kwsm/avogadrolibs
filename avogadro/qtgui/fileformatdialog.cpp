@@ -24,7 +24,7 @@ namespace Avogadro::QtGui {
 
 FileFormatDialog::FileFormatDialog(QWidget* parentW) : QFileDialog(parentW) {}
 
-FileFormatDialog::~FileFormatDialog() {}
+FileFormatDialog::~FileFormatDialog() = default;
 
 FileFormatDialog::FormatFilePair FileFormatDialog::fileToRead(
   QWidget* parent, const QString& caption, const QString& dir,

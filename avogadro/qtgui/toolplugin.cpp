@@ -9,7 +9,7 @@ namespace Avogadro::QtGui {
 
 ToolPlugin::ToolPlugin(QObject* parent_) : QObject(parent_) {}
 
-ToolPlugin::~ToolPlugin() {}
+ToolPlugin::~ToolPlugin() = default;
 
 QUndoCommand* ToolPlugin::mousePressEvent(QMouseEvent*)
 {
@@ -56,6 +56,6 @@ bool ToolPlugin::handleCommand(const QString& command,
   return false;
 }
 
-ToolPluginFactory::~ToolPluginFactory() {}
+ToolPluginFactory::~ToolPluginFactory() = default;
 
 } // namespace Avogadro::QtGui

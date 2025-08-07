@@ -29,7 +29,7 @@ Dipole::Dipole(QObject* p) : ScenePlugin(p)
   m_layerManager = QtGui::PluginLayerManager(m_name);
 }
 
-Dipole::~Dipole() {}
+Dipole::~Dipole() = default;
 
 void Dipole::process(const QtGui::Molecule& molecule,
                      Rendering::GroupNode& node)

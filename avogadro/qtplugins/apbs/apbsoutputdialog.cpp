@@ -15,7 +15,7 @@ ApbsOutputDialog::ApbsOutputDialog(QWidget* parent_)
   m_ui->setupUi(this);
 }
 
-ApbsOutputDialog::~ApbsOutputDialog() {}
+ApbsOutputDialog::~ApbsOutputDialog() = default;
 
 bool ApbsOutputDialog::loadStructureFile() const
 {
