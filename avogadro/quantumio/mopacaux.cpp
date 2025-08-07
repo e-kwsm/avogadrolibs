@@ -23,7 +23,7 @@ using Core::SlaterSet;
 
 MopacAux::MopacAux() : m_electrons(0) {}
 
-MopacAux::~MopacAux() {}
+MopacAux::~MopacAux() = default;
 
 std::vector<std::string> MopacAux::fileExtensions() const
 {
