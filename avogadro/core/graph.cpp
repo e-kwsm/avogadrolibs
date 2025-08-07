@@ -569,7 +569,7 @@ size_t Graph::subgraph(size_t element) const
   // Index -1 means disconnected (its own subgraph)
   if (r < 0) {
     r = m_subgraphToVertices.size();
-    m_subgraphToVertices.push_back(std::set<size_t>());
+    m_subgraphToVertices.emplace_back();
     m_subgraphToVertices[r].insert(element);
     m_subgraphDirty[r] = false;
     return r;
