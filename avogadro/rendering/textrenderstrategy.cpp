@@ -7,8 +7,8 @@
 
 namespace Avogadro::Rendering {
 
-TextRenderStrategy::TextRenderStrategy() {}
+TextRenderStrategy::TextRenderStrategy() = default;
 
-TextRenderStrategy::~TextRenderStrategy() {}
+TextRenderStrategy::~TextRenderStrategy() = default;
 
 } // namespace Avogadro::Rendering

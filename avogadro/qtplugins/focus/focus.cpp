@@ -27,7 +27,7 @@ Focus::Focus(QObject* parent_)
   connect(m_unfocusAction, SIGNAL(triggered()), SLOT(unfocus()));
 }
 
-Focus::~Focus() {}
+Focus::~Focus() = default;
 
 QList<QAction*> Focus::actions() const
 {

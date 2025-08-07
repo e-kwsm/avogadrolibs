@@ -180,11 +180,7 @@ inline UnitCell::UnitCell(const Matrix3& cellMatrix_)
   computeFractionalMatrix();
 }
 
-inline UnitCell::UnitCell(const UnitCell& other)
-  : m_cellMatrix(other.m_cellMatrix),
-    m_fractionalMatrix(other.m_fractionalMatrix)
-{
-}
+inline UnitCell::UnitCell(const UnitCell& other) = default;
 
 inline UnitCell& UnitCell::operator=(UnitCell other)
 {

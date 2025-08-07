@@ -115,7 +115,7 @@ bool Navigator::handleCommand(const QString& command,
   return true;
 }
 
-Navigator::~Navigator() {}
+Navigator::~Navigator() = default;
 
 QWidget* Navigator::toolWidget() const
 {

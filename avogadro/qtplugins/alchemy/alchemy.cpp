@@ -29,7 +29,7 @@ Alchemy::Alchemy(QObject* parent_)
   connect(m_action, &QAction::triggered, this, &Alchemy::changeElements);
 }
 
-Alchemy::~Alchemy() {}
+Alchemy::~Alchemy() = default;
 
 QList<QAction*> Alchemy::actions() const
 {

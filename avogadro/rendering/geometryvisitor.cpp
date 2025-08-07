@@ -17,7 +17,7 @@ GeometryVisitor::GeometryVisitor()
 {
 }
 
-GeometryVisitor::~GeometryVisitor() {}
+GeometryVisitor::~GeometryVisitor() = default;
 
 void GeometryVisitor::visit(Drawable&) {}
 

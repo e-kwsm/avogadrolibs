@@ -339,9 +339,9 @@ void resample(const std::vector<float>& source, const Vector3i& dim,
 }
 } // namespace
 
-GaussianCube::GaussianCube() {}
+GaussianCube::GaussianCube() = default;
 
-GaussianCube::~GaussianCube() {}
+GaussianCube::~GaussianCube() = default;
 
 std::vector<std::string> GaussianCube::fileExtensions() const
 {
