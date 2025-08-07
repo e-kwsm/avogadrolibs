@@ -42,7 +42,7 @@ FetchPDB::FetchPDB(QObject* parent_)
   connect(m_action, SIGNAL(triggered()), SLOT(showDialog()));
 }
 
-FetchPDB::~FetchPDB() {}
+FetchPDB::~FetchPDB() = default;
 
 QList<QAction*> FetchPDB::actions() const
 {

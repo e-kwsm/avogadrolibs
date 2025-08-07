@@ -14,7 +14,7 @@ using std::mutex;
 class Mutex::PIMPL
 {
 public:
-  PIMPL() {}
+  PIMPL() = default;
 
   mutex lock;
 };

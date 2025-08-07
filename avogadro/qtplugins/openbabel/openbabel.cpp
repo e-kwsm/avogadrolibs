@@ -103,7 +103,7 @@ OpenBabel::OpenBabel(QObject* p)
   }
 }
 
-OpenBabel::~OpenBabel() {}
+OpenBabel::~OpenBabel() = default;
 
 QList<QAction*> OpenBabel::actions() const
 {

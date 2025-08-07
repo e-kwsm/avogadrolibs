@@ -31,7 +31,7 @@ POVRay::POVRay(QObject* p)
   connect(m_action, SIGNAL(triggered()), SLOT(render()));
 }
 
-POVRay::~POVRay() {}
+POVRay::~POVRay() = default;
 
 QList<QAction*> POVRay::actions() const
 {

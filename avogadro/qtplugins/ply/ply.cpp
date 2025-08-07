@@ -31,7 +31,7 @@ PLY::PLY(QObject* p)
   connect(m_action, SIGNAL(triggered()), SLOT(render()));
 }
 
-PLY::~PLY() {}
+PLY::~PLY() = default;
 
 QList<QAction*> PLY::actions() const
 {

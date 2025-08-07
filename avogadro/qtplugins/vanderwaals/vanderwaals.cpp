@@ -109,7 +109,7 @@ VanDerWaals::VanDerWaals(QObject* p) : ScenePlugin(p)
   QSettings settings;
 }
 
-VanDerWaals::~VanDerWaals() {}
+VanDerWaals::~VanDerWaals() = default;
 
 void VanDerWaals::process(const QtGui::Molecule& molecule,
                           Rendering::GroupNode& node)
