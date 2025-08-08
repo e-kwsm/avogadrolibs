@@ -79,8 +79,10 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
 {
   bool doubleStatus;
   char endian = '>';
-  std::array<char, BUFSIZ> buff;
-  std::array<char, BUFSIZ> fmt;
+  string buff;
+  buff.resize(BUFSIZ);
+  string fmt;
+  fmt.resize(BUFSIZ);
   string raw;
   raw.resize(1000);
   int magic, natoms, slen0, slen1;
@@ -117,7 +119,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   snprintf(fmt.data(), sizeof(fmt), "%c%ds", endian, slen0 - 1);
   inStream.read(buff.data(), struct_calcsize(fmt.data()));
   struct_unpack(buff.data(), fmt.data(), raw.data());
-  subs = string(raw.data()).substr(0, 12);
+  subs = raw.substr(0, 12);
   if (subs != TRRVERSION) {
     appendError("Gromacs version string mismatch.");
     return false;
@@ -279,7 +281,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     snprintf(fmt.data(), sizeof(fmt.data()), "%c%ds", endian, slen0 - 1);
     inStream.read(buff.data(), struct_calcsize(fmt.data()));
     struct_unpack(buff.data(), fmt.data(), raw.data());
-    subs = string(raw.data()).substr(0, 12);
+    subs = raw.substr(0, 12);
     if (subs != TRRVERSION) {
       appendError("Gromacs version string mismatch.");
       return false;
