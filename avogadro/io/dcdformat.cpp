@@ -57,12 +57,15 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   /** Endian type, Buffer and Format char containers for unpacking and storing
    * data using struct library */
   char endian = '>';
-  std::array<char, BUFSIZ> buff;
-  std::array<char, BUFSIZ> fmt;
+  std::string buff;
+  buff.resize(BUFSIZ);
+  std::string fmt;
+  fmt.resize(BUFSIZ);
 
   /** Variables to store various components from the binary data unpacked using
    * the struct library */
-  std::array<char, 84> raw;
+  std::string raw;
+  raw.resize(84);
   char* remarks;
   double DELTA;
   int magic;
