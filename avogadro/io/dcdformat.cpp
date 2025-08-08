@@ -104,29 +104,29 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // Determining whether the trajectory file is from CHARMM or not
-  if (*(reinterpret_cast<int*>(raw.data() + 80)) != 0) {
+  if (*(reinterpret_cast<const int*>(raw.substr(80).c_str())) != 0) {
     charmm = DCD_IS_CHARMM;
-    if (*(reinterpret_cast<int*>(raw.data() + 44)) != 0)
+    if (*(reinterpret_cast<const int*>(raw.substr(44).c_str())) != 0)
       charmm |= DCD_HAS_EXTRA_BLOCK;
 
-    if (*(reinterpret_cast<int*>(raw.data() + 48)) == 1)
+    if (*(reinterpret_cast<const int*>(raw.substr(48).c_str())) == 1)
       charmm |= DCD_HAS_4DIMS;
   } else {
     charmm = 0;
   }
 
   // number of fixed atoms
-  NAMNF = *(reinterpret_cast<int*>(raw.data() + 36));
+  NAMNF = *(reinterpret_cast<const int*>(raw.substr(36).c_str()));
 
   // DELTA (timestep) is stored as a double with X-PLOR but as a float with
   // CHARMM
   if (charmm & DCD_IS_CHARMM) {
     float ftmp;
-    ftmp = *(reinterpret_cast<float*>(raw.data() + 40));
+    ftmp = *(reinterpret_cast<const float*>(raw.substr(40).c_str()));
 
     DELTA = static_cast<double>(ftmp);
   } else {
-    (DELTA) = *(reinterpret_cast<double*>(raw.data() + 40));
+    (DELTA) = *(reinterpret_cast<const double*>(raw.substr(40).c_str()));
   }
 
   snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
