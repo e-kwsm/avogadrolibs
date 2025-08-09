@@ -10,6 +10,7 @@
 
 #include <QDialog>
 #include <QtCore/QPointer>
+#include <memory>
 
 namespace Avogadro::QtPlugins {
 
@@ -47,7 +48,7 @@ public slots:
 
 private:
   Ui::ConstraintsDialog* ui;
-  ConstraintsModel* m_model;
+  std::unique_ptr<ConstraintsModel> m_model;
   // Guarded: the molecule can be closed while the dialog stays open.
   QPointer<QtGui::Molecule> m_molecule;
   QMetaObject::Connection m_changedConnection;
