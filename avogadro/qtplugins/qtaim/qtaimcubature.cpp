@@ -182,7 +182,7 @@ static double errMax(unsigned int fdim, const esterr* ee)
 using hypercube = struct
 {
   unsigned int dim;
-  double* data; /* length 2*dim = center followed by half-widths */
+  std::vector<double> data; /* length 2*dim = center followed by half-widths */
   double vol;   /* cache volume = product of widths */
 };
 
@@ -201,9 +201,9 @@ static hypercube make_hypercube(unsigned int dim, const double* center,
   unsigned int i;
   hypercube h;
   h.dim = dim;
-  h.data = (double*)malloc(sizeof(double) * dim * 2);
+  h.data.resize(dim * 2);
   h.vol = 0;
-  if (h.data) {
+  if (!h.data.empty()) {
     for (i = 0; i < dim; ++i) {
       h.data[i] = center[i];
       h.data[i + dim] = halfwidth[i];
@@ -218,7 +218,7 @@ static hypercube make_hypercube_range(unsigned int dim, const double* xmin,
 {
   hypercube h = make_hypercube(dim, xmin, xmax);
   unsigned int i;
-  if (h.data) {
+  if (!h.data.empty()) {
     for (i = 0; i < dim; ++i) {
       h.data[i] = 0.5 * (xmin[i] + xmax[i]);
       h.data[i + dim] = 0.5 * (xmax[i] - xmin[i]);
@@ -230,7 +230,7 @@ static hypercube make_hypercube_range(unsigned int dim, const double* xmin,
 
 static void destroy_hypercube(hypercube* h)
 {
-  free(h->data);
+  h->data.clear();
   h->dim = 0;
 }
 
@@ -239,25 +239,24 @@ using region = struct
   hypercube h;
   unsigned int splitDim;
   unsigned int fdim; /* dimensionality of vector integrand */
-  esterr* ee;        /* array of length fdim */
+  std::vector<esterr> ee; /* array of length fdim */
   double errmax;     /* max ee[k].err */
 };
 
 static region make_region(const hypercube* h, unsigned int fdim)
 {
   region R;
-  R.h = make_hypercube(h->dim, h->data, h->data + h->dim);
+  R.h = make_hypercube(h->dim, h->data.data(), h->data.data() + h->dim);
   R.splitDim = 0;
   R.fdim = fdim;
-  R.ee = R.h.data ? (esterr*)malloc(sizeof(esterr) * fdim) : nullptr;
+  R.ee.resize(!R.h.data.empty() ? fdim : 0);
   return R;
 }
 
 static void destroy_region(region* R)
 {
   destroy_hypercube(&R->h);
-  free(R->ee);
-  R->ee = nullptr;
+  R->ee.clear();
 }
 
 static int cut_region(region* R, region* R2)
@@ -266,13 +265,13 @@ static int cut_region(region* R, region* R2)
   *R2 = *R;
   R->h.data[d + dim] *= 0.5;
   R->h.vol *= 0.5;
-  R2->h = make_hypercube(dim, R->h.data, R->h.data + dim);
-  if (!R2->h.data)
+  R2->h = make_hypercube(dim, R->h.data.data(), R->h.data.data() + dim);
+  if (R2->h.data.empty())
     return FAILURE;
   R->h.data[d] -= R->h.data[d + dim];
   R2->h.data[d] += R->h.data[d + dim];
-  R2->ee = (esterr*)malloc(sizeof(esterr) * R2->fdim);
-  return R2->ee == nullptr;
+  R2->ee.resize(R2->fdim);
+  return !R2->ee.empty();
 }
 
 struct rule_s; /* forward declaration */
@@ -286,8 +285,8 @@ using rule = struct rule_s
   unsigned int dim, fdim;   /* the dimensionality & number of functions */
   unsigned int num_points;  /* number of evaluation points */
   unsigned int num_regions; /* max number of regions evaluated at once */
-  double* pts;              /* points to eval: num_regions * num_points * dim */
-  double* vals;             /* num_regions * num_points * fdim */
+  std::vector<double> pts;  /* points to eval: num_regions * num_points * dim */
+  std::vector<double> vals; /* num_regions * num_points * fdim */
   evalError_func evalError;
   destroy_func destroy;
 };
@@ -297,7 +296,7 @@ static void destroy_rule(rule* r)
   if (r) {
     if (r->destroy)
       r->destroy(r);
-    free(r->pts);
+    r->pts.clear();
     free(r);
   }
 }
@@ -305,18 +304,18 @@ static void destroy_rule(rule* r)
 static int alloc_rule_pts(rule* r, unsigned int num_regions)
 {
   if (num_regions > r->num_regions) {
-    free(r->pts);
-    r->pts = r->vals = nullptr;
+    r->pts.clear();
+    r->vals.clear();
     r->num_regions = 0;
     num_regions *= 2; /* allocate extra so that
              repeatedly calling alloc_rule_pts with
              growing num_regions only needs
              a logarithmic number of allocations */
-    r->pts = (double*)malloc(
-      sizeof(double) * (num_regions * r->num_points * (r->dim + r->fdim)));
-    if (r->fdim + r->dim > 0 && !r->pts)
+    r->pts.resize(num_regions * r->num_points * (r->dim + r->fdim));
+    if (r->fdim + r->dim > 0 && r->pts.empty())
       return FAILURE;
-    r->vals = r->pts + num_regions * r->num_points * r->dim;
+    r->vals.assign(r->pts.begin() + num_regions * r->num_points * r->dim,
+                   r->pts.end());
     r->num_regions = num_regions;
   }
   return SUCCESS;
@@ -334,7 +333,8 @@ static rule* make_rule(size_t sz, /* >= sizeof(rule) */
   r = (rule*)malloc(sz);
   if (!r)
     return nullptr;
-  r->pts = r->vals = nullptr;
+  r->pts.clear();
+  r->vals.clear();
   r->num_regions = 0;
   r->dim = dim;
   r->fdim = fdim;
@@ -354,7 +354,7 @@ static int eval_regions(unsigned int nR, region* R, integrand_v f, void* fdata,
   if (r->evalError(r, R->fdim, f, fdata, nR, R))
     return FAILURE;
   for (iR = 0; iR < nR; ++iR)
-    R[iR].errmax = errMax(R->fdim, R[iR].ee);
+    R[iR].errmax = errMax(R->fdim, R[iR].ee.data());
   return SUCCESS;
 }
 
@@ -505,7 +505,8 @@ using rule75genzmalik = struct
   rule parent;
 
   /* temporary arrays of length dim */
-  double *widthLambda, *widthLambda2, *p;
+  double *widthLambda, *widthLambda2;
+  std::vector<double> p;
 
   /* dimension-dependent constants */
   double weight1, weight3, weight5;
@@ -523,7 +524,7 @@ static int isqr(int x)
 static void destroy_rule75genzmalik(rule* r_)
 {
   auto* r = (rule75genzmalik*)r_;
-  free(r->p);
+  r->p.clear();
 }
 
 static int rule75genzmalik_evalError(rule* r_, unsigned int fdim, integrand_v f,
@@ -541,7 +542,7 @@ static int rule75genzmalik_evalError(rule* r_, unsigned int fdim, integrand_v f,
 
   auto* r = (rule75genzmalik*)r_;
   unsigned int i, j, iR, dim = r_->dim, npts = 0;
-  double *diff, *pts, *vals;
+  std::vector<double> diff, pts, vals;
 
   if (alloc_rule_pts(r_, nR))
     return FAILURE;
@@ -549,8 +550,8 @@ static int rule75genzmalik_evalError(rule* r_, unsigned int fdim, integrand_v f,
   vals = r_->vals;
 
   for (iR = 0; iR < nR; ++iR) {
-    const double* center = R[iR].h.data;
-    const double* halfwidth = R[iR].h.data + dim;
+    const auto& center = R[iR].h.data;
+    const double* halfwidth = R[iR].h.data.data() + dim;
 
     for (i = 0; i < dim; ++i)
       r->p[i] = center[i];
@@ -562,23 +563,25 @@ static int rule75genzmalik_evalError(rule* r_, unsigned int fdim, integrand_v f,
 
     /* Evaluate points in the center, in (lambda2,0,...,0) and
        (lambda3=lambda4, 0,...,0).  */
-    evalR0_0fs4d(pts + npts * dim, dim, r->p, center, r->widthLambda2,
-                 r->widthLambda);
+    evalR0_0fs4d(pts.data() + npts * dim, dim, r->p.data(), center.data(),
+                 r->widthLambda2, r->widthLambda);
     npts += num0_0(dim) + 2 * numR0_0fs(dim);
 
     /* Calculate points for (lambda4, lambda4, 0, ...,0) */
-    evalRR0_0fs(pts + npts * dim, dim, r->p, center, r->widthLambda);
+    evalRR0_0fs(pts.data() + npts * dim, dim, r->p.data(), center.data(),
+                r->widthLambda);
     npts += numRR0_0fs(dim);
 
     /* Calculate points for (lambda5, lambda5, ..., lambda5) */
     for (i = 0; i < dim; ++i)
       r->widthLambda[i] = halfwidth[i] * lambda5;
-    evalR_Rfs(pts + npts * dim, dim, r->p, center, r->widthLambda);
+    evalR_Rfs(pts.data() + npts * dim, dim, r->p.data(), center.data(),
+              r->widthLambda);
     npts += numR_Rfs(dim);
   }
 
   /* Evaluate the integrand function(s) at all the points */
-  f(dim, npts, pts, fdata, fdim, vals);
+  f(dim, npts, pts.data(), fdata, fdim, vals.data());
 
   /* we are done with the points, and so we can re-use the pts
   array to store the maximum difference diff[i] in each dimension
@@ -632,7 +635,7 @@ static int rule75genzmalik_evalError(rule* r_, unsigned int fdim, integrand_v f,
       R[iR].ee[j].val = result;
       R[iR].ee[j].err = fabs(res5th - result);
 
-      vals += r_->num_points;
+      vals.erase(vals.begin(), vals.end() + r_->num_points);
     }
   }
 
@@ -681,13 +684,13 @@ static rule* make_rule75genzmalik(unsigned int dim, unsigned int fdim)
     (real(729 - 950 * to_int(dim) + 50 * isqr(to_int(dim))) / real(729));
   r->weightE3 = real(265 - 100 * to_int(dim)) / real(1458);
 
-  r->p = (double*)malloc(sizeof(double) * dim * 3);
-  if (!r->p) {
+  r->p.resize(dim * 3);
+  if (r->p.empty()) {
     destroy_rule((rule*)r);
     return nullptr;
   }
-  r->widthLambda = r->p + dim;
-  r->widthLambda2 = r->p + 2 * dim;
+  r->widthLambda = r->p.data() + dim;
+  r->widthLambda2 = r->p.data() + 2 * dim;
 
   return (rule*)r;
 }
@@ -729,7 +732,7 @@ static int rule15gauss_evalError(rule* r, unsigned int fdim, integrand_v f,
     0.204432940075298892414161999234649, 0.209482141084727828012999174891714
   };
   unsigned int j, k, iR, npts = 0;
-  double *pts, *vals;
+  std::vector<double> pts, vals;
 
   if (alloc_rule_pts(r, nR))
     return FAILURE;
@@ -758,7 +761,7 @@ static int rule15gauss_evalError(rule* r, unsigned int fdim, integrand_v f,
     R[iR].splitDim = 0; /* no choice but to divide 0th dimension */
   }
 
-  f(1, npts, pts, fdata, fdim, vals);
+  f(1, npts, pts.data(), fdata, fdim, vals.data());
 
   for (k = 0; k < fdim; ++k) {
     for (iR = 0; iR < nR; ++iR) {
@@ -822,7 +825,7 @@ static int rule15gauss_evalError(rule* r, unsigned int fdim, integrand_v f,
       R[iR].ee[k].err = err;
 
       /* increment vals to point to next batch of results */
-      vals += 15;
+      vals.erase(vals.begin(), vals.begin() + 15);
     }
   }
   return SUCCESS;
@@ -847,15 +850,16 @@ using heap_item = region;
 using heap = struct
 {
   unsigned int n, nalloc;
-  heap_item* items;
+  std::vector<heap_item> items;
   unsigned int fdim;
-  esterr* ee; /* array of length fdim of the total integrand & error */
+  std::vector<esterr>
+    ee; /* array of length fdim of the total integrand & error */
 };
 
 static void heap_resize(heap* h, unsigned int nalloc)
 {
   h->nalloc = nalloc;
-  h->items = (heap_item*)realloc(h->items, sizeof(heap_item) * nalloc);
+  h->items.resize(nalloc);
 }
 
 static heap heap_alloc(unsigned int nalloc, unsigned int fdim)
@@ -864,10 +868,9 @@ static heap heap_alloc(unsigned int nalloc, unsigned int fdim)
   unsigned int i;
   h.n = 0;
   h.nalloc = 0;
-  h.items = nullptr;
   h.fdim = fdim;
-  h.ee = (esterr*)malloc(sizeof(esterr) * fdim);
-  if (h.ee) {
+  h.ee.resize(fdim);
+  if (!h.ee.empty()) {
     for (i = 0; i < fdim; ++i)
       h.ee[i].val = h.ee[i].err = 0;
     heap_resize(&h, nalloc);
@@ -881,7 +884,7 @@ static void heap_free(heap* h)
   h->n = 0;
   heap_resize(h, 0);
   h->fdim = 0;
-  free(h->ee);
+  h->ee.clear();
 }
 
 static int heap_push(heap* h, heap_item hi)
@@ -896,7 +899,7 @@ static int heap_push(heap* h, heap_item hi)
   insert = h->n;
   if (++(h->n) > h->nalloc) {
     heap_resize(h, h->n * 2);
-    if (!h->items)
+    if (h->items.empty())
       return FAILURE;
   }
 
@@ -972,24 +975,25 @@ static int ruleadapt_integrate(rule* r, unsigned int fdim, integrand_v f,
   unsigned int numEval = 0;
   heap regions;
   unsigned int i, j;
-  region* R = nullptr; /* array of regions to evaluate */
+  std::vector<region> R; /* array of regions to evaluate */
   unsigned int nR_alloc = 0;
-  esterr* ee = nullptr;
+  std::vector<esterr> ee;
 
   regions = heap_alloc(1, fdim);
-  if (!regions.ee || !regions.items)
+  if (regions.ee.empty() || regions.items.empty())
     goto bad;
 
-  ee = (esterr*)malloc(sizeof(esterr) * fdim);
-  if (!ee)
+  ee.resize(fdim);
+  if (ee.empty())
     goto bad;
 
   nR_alloc = 2;
-  R = (region*)malloc(sizeof(region) * nR_alloc);
-  if (!R)
+  R.resize(nR_alloc);
+  if (R.empty())
     goto bad;
   R[0] = make_region(h, fdim);
-  if (!R[0].ee || eval_regions(1, R, f, fdata, r) || heap_push(&regions, R[0]))
+  if (R[0].ee.empty() || eval_regions(1, R.data(), f, fdata, r) ||
+      heap_push(&regions, R[0]))
     goto bad;
   numEval += r->num_points;
 
@@ -1035,14 +1039,14 @@ static int ruleadapt_integrate(rule* r, unsigned int fdim, integrand_v f,
       do {
         if (nR + 2 > nR_alloc) {
           nR_alloc = (nR + 2) * 2;
-          R = (region*)realloc(R, nR_alloc * sizeof(region));
-          if (!R)
+          R.resize(nR_alloc);
+          if (R.empty())
             goto bad;
         }
         R[nR] = heap_pop(&regions);
         for (j = 0; j < fdim; ++j)
           ee[j].err -= R[nR].ee[j].err;
-        if (cut_region(R + nR, R + nR + 1))
+        if (cut_region(R.data() + nR, R.data() + nR + 1))
           goto bad;
         numEval += r->num_points * 2;
         nR += 2;
@@ -1053,12 +1057,14 @@ static int ruleadapt_integrate(rule* r, unsigned int fdim, integrand_v f,
         if (j == fdim)
           break; /* other regions have small errs */
       } while (regions.n > 0 && (numEval < maxEval || !maxEval));
-      if (eval_regions(nR, R, f, fdata, r) || heap_push_many(&regions, nR, R))
+      if (eval_regions(nR, R.data(), f, fdata, r) ||
+          heap_push_many(&regions, nR, R.data()))
         goto bad;
     } else {                     /* minimize number of function evaluations */
       R[0] = heap_pop(&regions); /* get worst region */
-      if (cut_region(R, R + 1) || eval_regions(2, R, f, fdata, r) ||
-          heap_push_many(&regions, 2, R))
+      if (cut_region(R.data(), R.data() + 1) ||
+          eval_regions(2, R.data(), f, fdata, r) ||
+          heap_push_many(&regions, 2, R.data()))
         goto bad;
       numEval += r->num_points * 2;
     }
@@ -1076,15 +1082,11 @@ static int ruleadapt_integrate(rule* r, unsigned int fdim, integrand_v f,
   }
 
   /* printf("regions.nalloc = %d\n", regions.nalloc); */
-  free(ee);
   heap_free(&regions);
-  free(R);
   return SUCCESS;
 
 bad:
-  free(ee);
   heap_free(&regions);
-  free(R);
   return FAILURE;
 }
 
@@ -1115,7 +1117,7 @@ static int integrate(unsigned int fdim, integrand_v f, void* fdata,
     return FAILURE;
   }
   h = make_hypercube_range(dim, xmin, xmax);
-  status = !h.data
+  status = h.data.empty()
              ? FAILURE
              : ruleadapt_integrate(r, fdim, f, fdata, &h, maxEval, reqAbsError,
                                    reqRelError, val, err, parallel);
@@ -1138,13 +1140,13 @@ using fv_data = struct fv_data_s
 {
   integrand f;
   void* fdata;
-  double* fval1;
+  std::vector<double> fval1;
 };
 static void fv(unsigned int ndim, unsigned int npt, const double* x, void* d_,
                unsigned int fdim, double* fval)
 {
   auto* d = (fv_data*)d_;
-  double* fval1 = d->fval1;
+  double* fval1 = d->fval1.data();
   unsigned int i, k;
   /* printf("npt = %u\n", npt); */
   for (i = 0; i < npt; ++i) {
@@ -1167,8 +1169,8 @@ int adapt_integrate(unsigned int fdim, integrand f, void* fdata,
 
   d.f = f;
   d.fdata = fdata;
-  d.fval1 = (double*)malloc(sizeof(double) * fdim);
-  if (!d.fval1) {
+  d.fval1.resize(fdim);
+  if (d.fval1.empty()) {
     unsigned int i;
     for (i = 0; i < fdim; ++i) {
       val[i] = 0;
@@ -1178,7 +1180,7 @@ int adapt_integrate(unsigned int fdim, integrand f, void* fdata,
   }
   ret = integrate(fdim, fv, &d, dim, xmin, xmax, maxEval, reqAbsError,
                   reqRelError, val, err, 0);
-  free(d.fval1);
+  d.fval1.clear();
   return ret;
 }
 
@@ -2042,20 +2044,20 @@ endOfBisection:
 
   // Integration over r
   unsigned int fdim = 1;
-  double* val;
-  double* err;
-  val = (double*)malloc(sizeof(double) * fdim);
-  err = (double*)malloc(sizeof(double) * fdim);
+  std::vector<double> val;
+  std::vector<double> err;
+  val.resize(fdim);
+  err.resize(fdim);
 
   double tol = 1.e-6;
   unsigned int maxEval = 0;
 
   unsigned int dim = 1;
 
-  double* xmin;
-  double* xmax;
-  xmin = (double*)malloc(dim * sizeof(double));
-  xmax = (double*)malloc(dim * sizeof(double));
+  std::vector<double> xmin;
+  std::vector<double> xmax;
+  xmin.resize(dim);
+  xmax.resize(dim);
 
   xmin[0] = 0.0;
   xmax[0] = rf;
@@ -2075,15 +2077,10 @@ endOfBisection:
   paramVariantList.append(basinList.at(0)); // basin
 
   //  qDebug() << "Into R with rf=" << rf;
-  adapt_integrate(fdim, property_r, &paramVariantList, dim, xmin, xmax, maxEval,
-                  tol, 0, val, err);
+  adapt_integrate(fdim, property_r, &paramVariantList, dim, xmin.data(),
+                  xmax.data(), maxEval, tol, 0, val.data(), err.data());
   //  qDebug() << "Out of R with val=" << val[0] << "err=" << err[0];
   qreal Rval = val[0];
-
-  free(xmin);
-  free(xmax);
-  free(val);
-  free(err);
 
   //  QList<QVariant> variantList;
 
@@ -2237,20 +2234,20 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
   bool cartesianIntegrationLimits = false;
 
   unsigned int fdim = 1;
-  double* val;
-  double* err;
-  val = (double*)malloc(sizeof(double) * fdim);
-  err = (double*)malloc(sizeof(double) * fdim);
+  std::vector<double> val;
+  std::vector<double> err;
+  val.resize(fdim);
+  err.resize(fdim);
 
   for (qint64 i = 0; i < m_basins.length(); ++i) {
     if (threeDimensionalIntegration) {
 
       unsigned int dim = 3;
 
-      double* xmin;
-      double* xmax;
-      xmin = (double*)malloc(dim * sizeof(double));
-      xmax = (double*)malloc(dim * sizeof(double));
+      std::vector<double> xmin;
+      std::vector<double> xmax;
+      xmin.resize(dim);
+      xmax.resize(dim);
 
       if (cartesianIntegrationLimits) {
 
@@ -2277,8 +2274,8 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
         paramVariantList.append(0);            // mode
         paramVariantList.append(basins.at(i)); // basin
 
-        adapt_integrate_v(fdim, property_v, &paramVariantList, dim, xmin, xmax,
-                          maxEval, tol, 0, val, err);
+        adapt_integrate_v(fdim, property_v, &paramVariantList, dim, xmin.data(),
+                          xmax.data(), maxEval, tol, 0, val.data(), err.data());
 
       } else {
         const qreal pi = 4.0 * atan(1.0);
@@ -2303,20 +2300,17 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
         paramVariantList.append(0);            // mode
         paramVariantList.append(basins.at(i)); // basin
 
-        adapt_integrate_v(fdim, property_v_rtp, &paramVariantList, dim, xmin,
-                          xmax, maxEval, tol, 0, val, err);
+        adapt_integrate_v(fdim, property_v_rtp, &paramVariantList, dim,
+                          xmin.data(), xmax.data(), maxEval, tol, 0, val.data(),
+                          err.data());
       }
-
-      free(xmin);
-      free(xmax);
-
     } else {
       unsigned int dim = 2;
 
-      double* xmin;
-      double* xmax;
-      xmin = (double*)malloc(dim * sizeof(double));
-      xmax = (double*)malloc(dim * sizeof(double));
+      std::vector<double> xmin;
+      std::vector<double> xmax;
+      xmin.resize(dim);
+      xmax.resize(dim);
 
       const qreal pi = 4.0 * atan(1.0);
 
@@ -2338,11 +2332,9 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
       paramVariantList.append(0);            // mode
       paramVariantList.append(basins.at(i)); // basin
 
-      adapt_integrate_v(fdim, property_v_tp, &paramVariantList, dim, xmin, xmax,
-                        maxEval, tol, 0, val, err);
-
-      free(xmin);
-      free(xmax);
+      adapt_integrate_v(fdim, property_v_tp, &paramVariantList, dim,
+                        xmin.data(), xmax.data(), maxEval, tol, 0, val.data(),
+                        err.data());
     }
 
     qDebug() << "basin=" << basins.at(i) + 1 << "value= " << val[0]
@@ -2354,9 +2346,6 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
 
     value.append(thisPair);
   }
-
-  free(val);
-  free(err);
 
   return value;
 }
