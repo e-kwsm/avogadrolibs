@@ -82,18 +82,19 @@ QStringList Symmetry::menuPath(QAction*) const
 
 void Symmetry::setMolecule(QtGui::Molecule* mol)
 {
-  if (m_molecule == mol)
+  if (m_molecule.get() == mol)
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol;
+  m_molecule.reset(mol);
   if (m_symmetryWidget)
     m_symmetryWidget->setMolecule(m_molecule);
 
   if (m_molecule)
-    connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));
+    connect(m_molecule.get(), SIGNAL(changed(uint)),
+            SLOT(moleculeChanged(uint)));
 
   updateActions();
   m_dirty = true;
@@ -101,7 +102,7 @@ void Symmetry::setMolecule(QtGui::Molecule* mol)
 
 void Symmetry::moleculeChanged(unsigned int c)
 {
-  Q_ASSERT(m_molecule == qobject_cast<Molecule*>(sender()));
+  Q_ASSERT(m_molecule.get() == qobject_cast<Molecule*>(sender()));
 
   auto changes = static_cast<Molecule::MoleculeChanges>(c);
 
