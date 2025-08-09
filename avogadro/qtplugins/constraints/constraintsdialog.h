@@ -9,6 +9,7 @@
 #include "constraintsmodel.h"
 
 #include <QDialog>
+#include <memory>
 
 namespace Avogadro {
 namespace QtPlugins {
@@ -43,7 +44,7 @@ public slots:
 
 private:
   Ui::ConstraintsDialog* ui;
-  ConstraintsModel* m_model;
+  std::unique_ptr<ConstraintsModel> m_model;
   QtGui::Molecule* m_molecule = nullptr;
 };
 
