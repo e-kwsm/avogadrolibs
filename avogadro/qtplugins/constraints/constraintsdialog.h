@@ -32,7 +32,7 @@ public:
    * Show the constraints of @p molecule and follow its changes. A null
    * molecule empties the table and stops following the previous one.
    */
-  void setMolecule(QtGui::Molecule* molecule);
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& molecule);
 
 public slots:
   void acceptConstraints();
