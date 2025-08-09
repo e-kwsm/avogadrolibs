@@ -145,8 +145,10 @@ private:
 
   /* static variables for various vectors and the Jacobian. */
 
-  double **yh, **wm, *ewt, *savf, *acor;
-  int* ipvt;
+  std::vector<std::vector<double>> yh;
+  double **wm;
+  std::vector<double> ewt, savf, acor;
+  std::vector<int> ipvt;
 
   int m_lenyh;
   int m_nyh;
