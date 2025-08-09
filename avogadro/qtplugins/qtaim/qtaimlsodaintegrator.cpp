@@ -778,7 +778,7 @@ void QTAIMLSODAIntegrator::terminate2(double* y, double* t)
 {
   int i;
 
-  yp1 = yh[1];
+  yp1 = yh[1].data();
   for (i = 1; i <= n; i++)
     y[i] = yp1[i];
   *t = tn;
@@ -799,7 +799,7 @@ void QTAIMLSODAIntegrator::successreturn(double* y, double* t, int itask,
 {
   int i;
 
-  yp1 = yh[1];
+  yp1 = yh[1].data();
   for (i = 1; i <= n; i++)
     y[i] = yp1[i];
   *t = tn;
@@ -1039,18 +1039,18 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
     m_lenyh = lenyh;
     m_nyh = nyh;
 
-    yh = (double**)malloc((1 + lenyh) * sizeof(*yh));
-    if (yh == nullptr) {
+    yh.resize(1 + lenyh);
+    if (yh.empty()) {
       qDebug("lsoda -- insufficient memory for your problem");
       terminate(istate);
       return;
     }
     for (i = 1; i <= lenyh; i++)
-      yh[i] = (double*)malloc((1 + nyh) * sizeof(double));
+      yh[i].resize(1 + nyh);
 
     wm = (double**)malloc((1 + nyh) * sizeof(*wm));
     if (wm == nullptr) {
-      free(yh);
+      yh.clear();
       qDebug("lsoda -- insufficient memory for your problem");
       terminate(istate);
       return;
@@ -1058,43 +1058,43 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
     for (i = 1; i <= nyh; i++)
       wm[i] = (double*)malloc((1 + nyh) * sizeof(double));
 
-    ewt = (double*)malloc((1 + nyh) * sizeof(double));
-    if (ewt == nullptr) {
-      free(yh);
+    ewt.resize(1 + nyh);
+    if (ewt.empty()) {
+      yh.clear();
       free(wm);
       qDebug("lsoda -- insufficient memory for your problem");
       terminate(istate);
       return;
     }
 
-    savf = (double*)malloc((1 + nyh) * sizeof(double));
-    if (savf == nullptr) {
-      free(yh);
+    savf.resize(1 + nyh);
+    if (savf.empty()) {
+      yh.clear();
       free(wm);
-      free(ewt);
+      ewt.clear();
       qDebug("lsoda -- insufficient memory for your problem");
       terminate(istate);
       return;
     }
 
-    acor = (double*)malloc((1 + nyh) * sizeof(double));
-    if (acor == nullptr) {
-      free(yh);
+    acor.resize(1 + nyh);
+    if (acor.empty()) {
+      yh.clear();
       free(wm);
-      free(ewt);
-      free(savf);
+      ewt.clear();
+      savf.clear();
       qDebug("lsoda -- insufficient memory for your problem");
       terminate(istate);
       return;
     }
 
-    ipvt = (int*)malloc((1 + nyh) * sizeof(int));
-    if (ipvt == nullptr) {
-      free(yh);
+    ipvt.resize(1 + nyh);
+    if (ipvt.empty()) {
+      yh.clear();
       free(wm);
-      free(ewt);
-      free(savf);
-      free(acor);
+      ewt.clear();
+      savf.clear();
+      acor.clear();
       qDebug("lsoda -- insufficient memory for your problem");
       terminate(istate);
       return;
@@ -1170,12 +1170,12 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
     /*
    Initial call to f.
 */
-    f(neq, *t, y, yh[2]);
+    f(neq, *t, y, yh[2].data());
     nfe = 1;
     /*
    Load the initial value vector in yh.
 */
-    yp1 = yh[1];
+    yp1 = yh[1].data();
     for (i = 1; i <= n; i++)
       yp1[i] = y[i];
     /*
@@ -1240,7 +1240,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
       }
       tol = max(tol, 100. * ETA);
       tol = min(tol, 0.001);
-      sum = vmnorm(n, yh[2], ewt);
+      sum = vmnorm(n, yh[2].data(), ewt.data());
       sum = 1. / (tol * w0 * w0) + tol * sum * sum;
       h0 = 1. / sqrt(sum);
       h0 = min(h0, tdist);
@@ -1256,7 +1256,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
    Load h with h0 and scale yh[2] by h0.
 */
     h = h0;
-    yp1 = yh[2];
+    yp1 = yh[2].data();
     for (i = 1; i <= n; i++)
       yp1[i] *= h0;
   } /* if ( *istate == 1 )   */
@@ -1376,7 +1376,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
         terminate2(y, t);
         return;
       }
-      ewset(itol, rtol, atol, yh[1]);
+      ewset(itol, rtol, atol, yh[1].data());
       for (i = 1; i <= n; i++) {
         if (ewt[i] <= 0.) {
           qDebug("lsoda -- ewt[%d] = %g <= 0.", i, ewt[i]);
@@ -1387,7 +1387,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
         ewt[i] = 1. / ewt[i];
       }
     }
-    tolsf = ETA * vmnorm(n, yh[1], ewt);
+    tolsf = ETA * vmnorm(n, yh[1].data(), ewt.data());
     if (tolsf > 0.01) {
       tolsf = tolsf * 200.;
       if (nst == 0) {
@@ -1698,12 +1698,12 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
       tn += h;
       for (j = nq; j >= 1; j--)
         for (i1 = j; i1 <= nq; i1++) {
-          yp1 = yh[i1];
-          yp2 = yh[i1 + 1];
+          yp1 = yh[i1].data();
+          yp2 = yh[i1 + 1].data();
           for (i = 1; i <= n; i++)
             yp1[i] += yp2[i];
         }
-      pnorm = vmnorm(n, yh[1], ewt);
+      pnorm = vmnorm(n, yh[1].data(), ewt.data());
 
       correction(neq, y, &corflag, pnorm, &del, &delp, &told, &ncf, &rh, &m);
       if (corflag == 0)
@@ -1730,7 +1730,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
     if (m == 0)
       dsm = del / tesco[nq][2];
     if (m > 0)
-      dsm = vmnorm(n, acor, ewt) / tesco[nq][2];
+      dsm = vmnorm(n, acor.data(), ewt.data()) / tesco[nq][2];
     if (dsm <= 1.) {
       /*
    After a successful step, update the yh array.
@@ -1751,7 +1751,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
       nqu = nq;
       mused = meth;
       for (j = 1; j <= l; j++) {
-        yp1 = yh[j];
+        yp1 = yh[j].data();
         r = el[j];
         for (i = 1; i <= n; i++)
           yp1[i] += r * acor[i];
@@ -1774,10 +1774,10 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
       if (ialth == 0) {
         rhup = 0.;
         if (l != lmax) {
-          yp1 = yh[lmax];
+          yp1 = yh[lmax].data();
           for (i = 1; i <= n; i++)
             savf[i] = acor[i] - yp1[i];
-          dup = vmnorm(n, savf, ewt) / tesco[nq][3];
+          dup = vmnorm(n, savf.data(), ewt.data()) / tesco[nq][3];
           exup = 1. / (double)(l + 1);
           rhup = 1. / (1.4 * pow(dup, exup) + 0.0000014);
         }
@@ -1815,7 +1815,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
         endstoda();
         break;
       }
-      yp1 = yh[lmax];
+      yp1 = yh[lmax].data();
       for (i = 1; i <= n; i++)
         yp1[i] = acor[i];
       endstoda();
@@ -1833,8 +1833,8 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
       tn = told;
       for (j = nq; j >= 1; j--)
         for (i1 = j; i1 <= nq; i1++) {
-          yp1 = yh[i1];
-          yp2 = yh[i1 + 1];
+          yp1 = yh[i1].data();
+          yp2 = yh[i1 + 1].data();
           for (i = 1; i <= n; i++)
             yp1[i] -= yp2[i];
         }
@@ -1880,12 +1880,12 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
           rh = 0.1;
           rh = max(hmin / fabs(h), rh);
           h *= rh;
-          yp1 = yh[1];
+          yp1 = yh[1].data();
           for (i = 1; i <= n; i++)
             y[i] = yp1[i];
-          f(neq, tn, y, savf);
+          f(neq, tn, y, savf.data());
           nfe++;
-          yp1 = yh[2];
+          yp1 = yh[2].data();
           for (i = 1; i <= n; i++)
             yp1[i] = h * savf[i];
           ipup = miter;
@@ -1976,7 +1976,7 @@ static globally.  The above sum is done in reverse order.
   for (jj = l - k; jj <= nq; jj++)
     ic *= jj;
   c = (double)ic;
-  yp1 = yh[l];
+  yp1 = yh[l].data();
   for (i = 1; i <= n; i++)
     dky[i] = c * yp1[i];
   for (j = nq - 1; j >= k; j--) {
@@ -1985,7 +1985,7 @@ static globally.  The above sum is done in reverse order.
     for (jj = jp1 - k; jj <= j; jj++)
       ic *= jj;
     c = (double)ic;
-    yp1 = yh[jp1];
+    yp1 = yh[jp1].data();
     for (i = 1; i <= n; i++)
       dky[i] = c * yp1[i] + s * dky[i];
   }
@@ -2154,7 +2154,7 @@ void QTAIMLSODAIntegrator::scaleh(double* rh, double* pdh)
   r = 1.;
   for (j = 2; j <= l; j++) {
     r *= *rh;
-    yp1 = yh[j];
+    yp1 = yh[j].data();
     for (i = 1; i <= n; i++)
       yp1[i] *= r;
   }
@@ -2192,7 +2192,7 @@ void QTAIMLSODAIntegrator::prja(int neq, double* y)
   }
 
   if (miter == 2) {
-    fac = vmnorm(n, savf, ewt);
+    fac = vmnorm(n, savf.data(), ewt.data());
     r0 = 1000. * fabs(h) * ETA * ((double)n) * fac;
     if (r0 == 0.)
       r0 = 1.;
@@ -2201,7 +2201,7 @@ void QTAIMLSODAIntegrator::prja(int neq, double* y)
       r = max(sqrteta * fabs(yj), r0 / ewt[j]);
       y[j] += r;
       fac = -hl0 / r;
-      f(neq, tn, y, acor);
+      f(neq, tn, y, acor.data());
       for (i = 1; i <= n; i++)
         wm[i][j] = (acor[i] - savf[i]) * fac;
       y[j] = yj;
@@ -2210,7 +2210,7 @@ void QTAIMLSODAIntegrator::prja(int neq, double* y)
     /*
    Compute norm of Jacobian.
 */
-    pdnorm = fnorm(n, wm, ewt) / fabs(hl0);
+    pdnorm = fnorm(n, wm, ewt.data()) / fabs(hl0);
     /*
    Add identity matrix.
 */
@@ -2219,7 +2219,7 @@ void QTAIMLSODAIntegrator::prja(int neq, double* y)
     /*
    Do LU decomposition on P.
 */
-    dgefa(wm, n, ipvt, &ier);
+    dgefa(wm, n, ipvt.data(), &ier);
     if (ier != 0)
       ierpj = 1;
     return;
@@ -2301,10 +2301,10 @@ void QTAIMLSODAIntegrator::correction(int neq, double* y, int* corflag,
   *corflag = 0;
   rate = 0.;
   *del = 0.;
-  yp1 = yh[1];
+  yp1 = yh[1].data();
   for (i = 1; i <= n; i++)
     y[i] = yp1[i];
-  f(neq, tn, y, savf);
+  f(neq, tn, y, savf.data());
   nfe++;
   /*
    If indicated, the matrix P = I - h * el[1] * J is reevaluated and
@@ -2332,13 +2332,13 @@ void QTAIMLSODAIntegrator::correction(int neq, double* y, int* corflag,
    In case of functional iteration, update y directly from
    the result of the last function evaluation.
 */
-      yp1 = yh[2];
+      yp1 = yh[2].data();
       for (i = 1; i <= n; i++) {
         savf[i] = h * savf[i] - yp1[i];
         y[i] = savf[i] - acor[i];
       }
-      *del = vmnorm(n, y, ewt);
-      yp1 = yh[1];
+      *del = vmnorm(n, y, ewt.data());
+      yp1 = yh[1].data();
       for (i = 1; i <= n; i++) {
         y[i] = yp1[i] + el[1] * savf[i];
         acor[i] = savf[i];
@@ -2350,12 +2350,12 @@ void QTAIMLSODAIntegrator::correction(int neq, double* y, int* corflag,
    P as coefficient matrix.
 */
     else {
-      yp1 = yh[2];
+      yp1 = yh[2].data();
       for (i = 1; i <= n; i++)
         y[i] = h * savf[i] - (yp1[i] + acor[i]);
       solsy(y);
-      *del = vmnorm(n, y, ewt);
-      yp1 = yh[1];
+      *del = vmnorm(n, y, ewt.data());
+      yp1 = yh[1].data();
       for (i = 1; i <= n; i++) {
         acor[i] += y[i];
         y[i] = yp1[i] + el[1] * acor[i];
@@ -2411,10 +2411,10 @@ void QTAIMLSODAIntegrator::correction(int neq, double* y, int* corflag,
       *m = 0;
       rate = 0.;
       *del = 0.;
-      yp1 = yh[1];
+      yp1 = yh[1].data();
       for (i = 1; i <= n; i++)
         y[i] = yp1[i];
-      f(neq, tn, y, savf);
+      f(neq, tn, y, savf.data());
       nfe++;
     }
     /*
@@ -2422,7 +2422,7 @@ void QTAIMLSODAIntegrator::correction(int neq, double* y, int* corflag,
 */
     else {
       *delp = *del;
-      f(neq, tn, y, savf);
+      f(neq, tn, y, savf.data());
       nfe++;
     }
   } /*   end while   */
@@ -2438,8 +2438,8 @@ void QTAIMLSODAIntegrator::corfailure(double* told, double* rh, int* ncf,
   tn = *told;
   for (j = nq; j >= 1; j--)
     for (i1 = j; i1 <= nq; i1++) {
-      yp1 = yh[i1];
-      yp2 = yh[i1 + 1];
+      yp1 = yh[i1].data();
+      yp2 = yh[i1 + 1].data();
       for (i = 1; i <= n; i++)
         yp1[i] -= yp2[i];
     }
@@ -2471,7 +2471,7 @@ y = the right-hand side vector on input, and the solution vector
   }
 
   if (miter == 2)
-    dgesl(wm, n, ipvt, y, 0);
+    dgesl(wm, n, ipvt.data(), y, 0);
 
 } /*   end solsy   */
 
@@ -2520,7 +2520,7 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
         lm2 = mxords + 1;
         exm2 = 1. / (double)lm2;
         lm2p1 = lm2 + 1;
-        dm2 = vmnorm(n, yh[lm2p1], ewt) / cm2[mxords];
+        dm2 = vmnorm(n, yh[lm2p1].data(), ewt.data()) / cm2[mxords];
         rh2 = 1. / (1.2 * pow(dm2, exm2) + 0.0000012);
       } else {
         dm2 = dsm * (cm1[nq] / cm2[nq]);
@@ -2558,7 +2558,7 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
     lm1 = mxordn + 1;
     exm1 = 1. / (double)lm1;
     lm1p1 = lm1 + 1;
-    dm1 = vmnorm(n, yh[lm1p1], ewt) / cm1[mxordn];
+    dm1 = vmnorm(n, yh[lm1p1].data(), ewt.data()) / cm1[mxordn];
     rh1 = 1. / (1.2 * pow(dm1, exm1) + 0.0000012);
   } else {
     dm1 = dsm * (cm2[nq] / cm1[nq]);
@@ -2635,7 +2635,7 @@ orderflag = 0  : no change in h or nq,
 
   rhdn = 0.;
   if (nq != 1) {
-    ddn = vmnorm(n, yh[l], ewt) / tesco[nq][1];
+    ddn = vmnorm(n, yh[l].data(), ewt.data()) / tesco[nq][1];
     exdn = 1. / (double)nq;
     rhdn = 1. / (1.3 * pow(ddn, exdn) + 0.0000013);
   }
@@ -2673,7 +2673,7 @@ orderflag = 0  : no change in h or nq,
         r = el[l] / (double)l;
         nq = l;
         l = nq + 1;
-        yp1 = yh[l];
+        yp1 = yh[l].data();
         for (i = 1; i <= n; i++)
           yp1[i] = acor[i] * r;
         *orderflag = 2;
@@ -2737,20 +2737,17 @@ whenever the order nq is changed, or at the start of the problem.
 void QTAIMLSODAIntegrator::freevectors()
 {
   int i;
-  for (i = 1; i <= m_lenyh; ++i) {
-    free(yh[i]);
-  }
-  free(yh);
+  yh.clear();
 
   for (i = 1; i <= m_nyh; ++i) {
     free(wm[i]);
   }
   free(wm);
 
-  free(ewt);
-  free(savf);
-  free(acor);
-  free(ipvt);
+  ewt.clear();
+  savf.clear();
+  acor.clear();
+  ipvt.clear();
 } /*   end freevectors   */
 
 } // namespace Avogadro::QtPlugins
