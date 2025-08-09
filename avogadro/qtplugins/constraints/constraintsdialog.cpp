@@ -65,12 +65,13 @@ ConstraintsDialog::~ConstraintsDialog()
   m_model->deleteLater();
 }
 
-void ConstraintsDialog::setMolecule(QtGui::Molecule* molecule)
+void ConstraintsDialog::setMolecule(
+  const std::shared_ptr<QtGui::Molecule>& molecule)
 {
   m_molecule = molecule;
   m_model->setConstraints(molecule->constraints());
 
-  connect(m_molecule, SIGNAL(changed(unsigned int)), this,
+  connect(m_molecule.get(), SIGNAL(changed(unsigned int)), this,
           SLOT(updateConstraints()));
 }
 
