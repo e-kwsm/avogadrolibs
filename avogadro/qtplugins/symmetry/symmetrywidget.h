@@ -53,6 +53,10 @@ public:
   ~SymmetryWidget() override;
 
   void setMolecule(QtGui::Molecule* molecule);
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& molecule)
+  {
+    setMolecule(molecule.get());
+  }
 
 signals:
   void detectSymmetry();
