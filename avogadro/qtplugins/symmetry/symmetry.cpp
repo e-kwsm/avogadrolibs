@@ -179,7 +179,6 @@ void Symmetry::detectSymmetry()
 
   // interface with libmsym
   msym_error_t ret = MSYM_SUCCESS;
-  msym_element_t* elements = nullptr;
   std::array<char, 6> point_group;
   std::array<double, 3> cm;
   double radius = 0.0;
@@ -190,10 +189,8 @@ void Symmetry::detectSymmetry()
   const msym_equivalence_set_t* mes = nullptr;
   int mesl = 0, msgl = 0, msopsl = 0;
 
-  // initialize the c-style array of atom names and coordinates
-  msym_element_t* a;
-  a = (msym_element_t*)malloc(length * sizeof(msym_element_t));
-  memset(a, 0, length * sizeof(msym_element_t));
+  std::vector<msym_element_t> a(length);
+  memset(a.data(), 0, length * sizeof(msym_element_t));
 
   for (Index i = 0; i < length; ++i) {
     Vector3 ipos = m_molecule->atomPositions3d()[i];
@@ -206,7 +203,6 @@ void Symmetry::detectSymmetry()
     a[i].v[1] = ipos[1];
     a[i].v[2] = ipos[2];
   }
-  elements = a;
 
   if (m_ctx != nullptr) {
     msymReleaseContext(m_ctx);
@@ -220,8 +216,7 @@ void Symmetry::detectSymmetry()
 
   // At any point, we'll set the text to NULL which will use C1 instead
 
-  if (MSYM_SUCCESS != (ret = msymSetElements(m_ctx, length, elements))) {
-    free(elements);
+  if (MSYM_SUCCESS != (ret = msymSetElements(m_ctx, length, a.data()))) {
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
     m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -232,7 +227,6 @@ void Symmetry::detectSymmetry()
   }
 
   if (MSYM_SUCCESS != (ret = msymFindSymmetry(m_ctx))) {
-    free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
     m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -245,7 +239,6 @@ void Symmetry::detectSymmetry()
   /* Get the point group name */
   if (MSYM_SUCCESS != (ret = msymGetPointGroupName(m_ctx, sizeof(char[6]),
                                                    point_group.data()))) {
-    free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
     m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -257,7 +250,6 @@ void Symmetry::detectSymmetry()
 
   if (MSYM_SUCCESS !=
       (ret = msymGetSymmetryOperations(m_ctx, &msopsl, &msops))) {
-    free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
     m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -268,7 +260,6 @@ void Symmetry::detectSymmetry()
   }
 
   if (MSYM_SUCCESS != (ret = msymGetEquivalenceSets(m_ctx, &mesl, &mes))) {
-    free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
     m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -279,7 +270,6 @@ void Symmetry::detectSymmetry()
   }
 
   if (MSYM_SUCCESS != (ret = msymGetCenterOfMass(m_ctx, cm.data()))) {
-    free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
     m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -290,7 +280,6 @@ void Symmetry::detectSymmetry()
   }
 
   if (MSYM_SUCCESS != (ret = msymGetRadius(m_ctx, &radius))) {
-    free(elements);
     m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
     m_symmetryWidget->setEquivalenceSets(0, nullptr);
     m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -302,7 +291,6 @@ void Symmetry::detectSymmetry()
 
   if (point_group[1] != '0') {
     if (MSYM_SUCCESS != (ret = msymGetSubgroups(m_ctx, &msgl, &msg))) {
-      free(elements);
       m_symmetryWidget->setPointGroupSymbol(pointGroupSymbol(nullptr));
       m_symmetryWidget->setEquivalenceSets(0, nullptr);
       m_symmetryWidget->setSymmetryOperations(0, nullptr);
@@ -330,7 +318,6 @@ void Symmetry::detectSymmetry()
 
   qDebug() << "detected symmetry" << point_group;
 
-  free(elements);
   m_dirty = false;
 }
 
