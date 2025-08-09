@@ -35,6 +35,7 @@ public:
   QList<QAction*> actions() const override { return m_actions; }
   QStringList menuPath(QAction*) const override;
   void setMolecule(QtGui::Molecule*) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>&) override;
   bool readMolecule(QtGui::Molecule&) override;
 
 private slots:

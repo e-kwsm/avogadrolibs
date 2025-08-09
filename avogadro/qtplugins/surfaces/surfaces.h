@@ -79,6 +79,7 @@ public:
   QStringList menuPath(QAction*) const override;
 
   void setMolecule(QtGui::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) override;
 
   void registerCommands() override;
 
