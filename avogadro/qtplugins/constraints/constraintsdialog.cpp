@@ -65,7 +65,8 @@ ConstraintsDialog::~ConstraintsDialog()
   m_model->deleteLater();
 }
 
-void ConstraintsDialog::setMolecule(QtGui::Molecule* molecule)
+void ConstraintsDialog::setMolecule(
+  const std::shared_ptr<QtGui::Molecule>& molecule)
 {
   // Setting the molecule again (the extension does, each time the dialog is
   // opened) must not add another connection to it.
@@ -78,7 +79,7 @@ void ConstraintsDialog::setMolecule(QtGui::Molecule* molecule)
   }
 
   m_model->setConstraints(m_molecule->constraints());
-  m_changedConnection = connect(m_molecule, &Molecule::changed, this,
+  m_changedConnection = connect(m_molecule.get(), &Molecule::changed, this,
                                 [this](unsigned int) { updateConstraints(); });
 }
 
