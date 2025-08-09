@@ -66,7 +66,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
    * the struct library */
   std::string raw;
   raw.resize(84);
-  char* remarks;
+  std::string remarks;
   double DELTA;
   int magic;
   int charmm;
@@ -143,10 +143,10 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
     inStream.read(buff.data(), struct_calcsize(fmt.data()));
     struct_unpack(buff.data(), fmt.data(), &NTITLE);
     lenRemarks = NTITLE * 80;
-    remarks = reinterpret_cast<char*>(malloc(lenRemarks));
+    remarks.resize(lenRemarks);
     snprintf(fmt.data(), sizeof(fmt.data()), "%c%ds", endian, lenRemarks);
     inStream.read(buff.data(), struct_calcsize(fmt.data()));
-    struct_unpack(buff.data(), fmt.data(), remarks);
+    struct_unpack(buff.data(), fmt.data(), remarks.data());
 
     snprintf(fmt.data(), sizeof(fmt.data()), "%c1i", endian);
     inStream.read(buff.data(), struct_calcsize(fmt.data()));
