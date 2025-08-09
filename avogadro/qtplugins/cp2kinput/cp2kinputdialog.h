@@ -58,6 +58,10 @@ public:
   ~Cp2kInputDialog() override;
 
   void setMolecule(QtGui::Molecule* mol);
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
+  {
+    setMolecule(mol.get());
+  }
 
 signals:
   /**
