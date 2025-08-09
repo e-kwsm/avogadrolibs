@@ -52,6 +52,7 @@ public:
 
 public slots:
   void setMolecule(QtGui::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) override;
 
   bool readMolecule(QtGui::Molecule& mol) override;
 
