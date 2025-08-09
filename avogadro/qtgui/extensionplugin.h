@@ -12,6 +12,7 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QVariantMap>
+#include <memory>
 
 class QAction;
 
@@ -85,6 +86,10 @@ public slots:
   /**
    * Called when the current molecule changes.
    */
+  virtual void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
+  {
+    setMolecule(mol.get());
+  }
   virtual void setMolecule(QtGui::Molecule* mol) = 0;
 
   /**
