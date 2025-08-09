@@ -13,6 +13,8 @@
 #include <QtCore/QMap>
 #include <QtCore/QVector>
 
+#include <memory>
+
 class QAction;
 
 namespace Avogadro {
@@ -63,7 +65,7 @@ private:
 
   QList<QAction*> m_actions;
   QtGui::Molecule* m_molecule = nullptr;
-  ConstraintsDialog* m_dialog = nullptr;
+  std::unique_ptr<ConstraintsDialog> m_dialog;
 };
 } // namespace QtPlugins
 } // namespace Avogadro

@@ -47,7 +47,7 @@ public slots:
   void updateConstraints();
 
 private:
-  Ui::ConstraintsDialog* ui;
+  std::unique_ptr<Ui::ConstraintsDialog> ui;
   std::unique_ptr<ConstraintsModel> m_model;
   // Guarded: the molecule can be closed while the dialog stays open.
   QPointer<QtGui::Molecule> m_molecule;
