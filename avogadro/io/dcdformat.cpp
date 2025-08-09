@@ -67,7 +67,8 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   /** Variables to store various components from the binary data unpacked using
    * the struct library */
-  char raw[84] = {};
+  std::string raw;
+  raw.resize(84);
   double DELTA = 0.0;
   int magic = 0;
   int charmm = 0;
