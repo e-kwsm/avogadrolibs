@@ -247,7 +247,7 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
 
   // interface with libmsym
   msym_error_t ret = MSYM_SUCCESS;
-  msym_element_t* elements = nullptr;
+  std::vector<msym_element_t> elements;
   std::array<char, 6> point_group;
   std::array<double, 3> cm;
   double radius = 0.0;
@@ -271,10 +271,8 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
     return fail(message);
   };
 
-  // initialize the c-style array of atom names and coordinates
-  msym_element_t* a;
-  a = (msym_element_t*)malloc(length * sizeof(msym_element_t));
-  memset(a, 0, length * sizeof(msym_element_t));
+  std::vector<msym_element_t> a(length);
+  memset(a.data(), 0, length * sizeof(msym_element_t));
 
   for (Index i = 0; i < length; ++i) {
     Vector3 ipos = m_molecule->atomPositions3d()[i];
@@ -306,47 +304,39 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
 
   // At any point, we'll set the text to NULL which will use C1 instead
 
-  if (MSYM_SUCCESS != (ret = msymSetElements(m_ctx, length, elements))) {
-    free(elements);
+  if (MSYM_SUCCESS != (ret = msymSetElements(m_ctx, length, elements.data()))) {
     return libmsymFailed(ret);
   }
 
   if (MSYM_SUCCESS != (ret = msymFindSymmetry(m_ctx))) {
-    free(elements);
     return libmsymFailed(ret);
   }
 
   /* Get the point group name */
   if (MSYM_SUCCESS != (ret = msymGetPointGroupName(m_ctx, sizeof(char[6]),
                                                    point_group.data()))) {
-    free(elements);
     return libmsymFailed(ret);
   }
 
   if (MSYM_SUCCESS !=
       (ret = msymGetSymmetryOperations(m_ctx, &msopsl, &msops))) {
-    free(elements);
     return libmsymFailed(ret);
   }
 
   if (MSYM_SUCCESS != (ret = msymGetEquivalenceSets(m_ctx, &mesl, &mes))) {
-    free(elements);
     return libmsymFailed(ret);
   }
 
   if (MSYM_SUCCESS != (ret = msymGetCenterOfMass(m_ctx, cm.data()))) {
-    free(elements);
     return libmsymFailed(ret);
   }
 
   if (MSYM_SUCCESS != (ret = msymGetRadius(m_ctx, &radius))) {
-    free(elements);
     return libmsymFailed(ret);
   }
 
   if (point_group[1] != '0') {
     if (MSYM_SUCCESS != (ret = msymGetSubgroups(m_ctx, &msgl, &msg))) {
-      free(elements);
       return libmsymFailed(ret);
     }
   }
@@ -365,7 +355,6 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
 
   qDebug() << "detected symmetry" << point_group;
 
-  free(elements);
   m_dirty = false;
   return true;
 }
