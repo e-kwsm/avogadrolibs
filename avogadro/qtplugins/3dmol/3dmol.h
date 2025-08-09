@@ -46,6 +46,7 @@ public:
 
 public slots:
   void setMolecule(QtGui::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) override;
 
 private slots:
   void showDialog();
