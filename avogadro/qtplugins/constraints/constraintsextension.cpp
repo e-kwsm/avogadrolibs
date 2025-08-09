@@ -43,7 +43,8 @@ QStringList ConstraintsExtension::menuPath(QAction*) const
 void ConstraintsExtension::openDialog()
 {
   if (m_dialog == nullptr) {
-    m_dialog = new ConstraintsDialog(qobject_cast<QWidget*>(parent()));
+    m_dialog =
+      std::make_unique<ConstraintsDialog>(qobject_cast<QWidget*>(parent()));
   }
 
   // update the constraints before we show the dialog
