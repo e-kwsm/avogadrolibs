@@ -54,7 +54,7 @@ void Cp2kInput::setMolecule(QtGui::Molecule* mol)
 {
   if (m_dialog)
     m_dialog->setMolecule(mol);
-  m_molecule = mol;
+  m_molecule.reset(mol);
 }
 
 void Cp2kInput::openJobOutput(const JobObject& job)
