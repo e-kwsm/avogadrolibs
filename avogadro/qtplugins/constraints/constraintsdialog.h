@@ -27,7 +27,7 @@ public:
                              Qt::WindowFlags f = Qt::WindowFlags());
   ~ConstraintsDialog() override;
 
-  void setMolecule(QtGui::Molecule* molecule);
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& molecule);
 
 public slots:
   void acceptConstraints();
