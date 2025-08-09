@@ -9,6 +9,7 @@
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/extensionplugin.h>
 #include <QtCore/QMap>
+#include <memory>
 
 class QAction;
 
@@ -43,7 +44,7 @@ private slots:
 private:
   QList<QAction*> m_actions;
   QtGui::Molecule* m_molecule = nullptr;
-  ConstraintsDialog* m_dialog = nullptr;
+  std::unique_ptr<ConstraintsDialog> m_dialog;
 };
 } // namespace QtPlugins
 } // namespace Avogadro
