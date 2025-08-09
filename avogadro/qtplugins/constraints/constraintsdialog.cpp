@@ -61,7 +61,6 @@ ConstraintsDialog::ConstraintsDialog(QWidget* parent_, Qt::WindowFlags f)
 
 ConstraintsDialog::~ConstraintsDialog()
 {
-  delete ui;
   m_model->deleteLater();
 }
 
