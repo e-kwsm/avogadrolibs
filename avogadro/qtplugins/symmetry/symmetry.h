@@ -53,7 +53,7 @@ private slots:
 
 private:
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   SymmetryWidget* m_symmetryWidget;
 
   QAction* m_viewSymmetryAction;
