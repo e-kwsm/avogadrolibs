@@ -39,7 +39,7 @@ ConstraintsDialog::ConstraintsDialog(QWidget* parent_, Qt::WindowFlags f)
 
   // TODO use sort model
   auto* proxyModel = new QSortFilterProxyModel(this);
-  proxyModel->setSourceModel(m_model);
+  proxyModel->setSourceModel(m_model.get());
   proxyModel->setDynamicSortFilter(true);
   proxyModel->setSortLocaleAware(true);
   // this role will received direct floating-point numbers from the model
