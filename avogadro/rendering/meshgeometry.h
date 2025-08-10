@@ -9,6 +9,7 @@
 #include "drawable.h"
 
 #include <avogadro/core/array.h>
+#include <utility>
 
 namespace Avogadro {
 namespace Rendering {
@@ -29,8 +30,8 @@ public:
     Vector3f vertex;          // 12 bytes
     unsigned char padding[4]; //  4 bytes
 
-    PackedVertex(const Vector4ub& c, const Vector3f& n, const Vector3f& v)
-      : color(c), normal(n), vertex(v)
+    PackedVertex(Vector4ub c, Vector3f n, Vector3f v)
+      : color(std::move(c)), normal(std::move(n)), vertex(std::move(v))
     {
     }
 
