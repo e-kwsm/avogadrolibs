@@ -78,7 +78,6 @@ bool CrystalTools::rotateToStandardOrientation(Molecule& molecule, Options opts)
 
   // Used for denominators, since we want to check that they are
   // sufficiently far from 0 to keep things reasonable:
-  Real denom;
   const Real DENOM_TOL = 1e-5;
 
   // Create target matrix, fill with zeros
@@ -88,7 +87,7 @@ bool CrystalTools::rotateToStandardOrientation(Molecule& molecule, Options opts)
   newMat(0, 0) = L1;
 
   // Set components of new v2:
-  denom = L1;
+  Real denom = L1;
   if (fabs(denom) < DENOM_TOL)
     return false;
 
