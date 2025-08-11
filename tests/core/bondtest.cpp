@@ -33,7 +33,7 @@ TEST(BondTest, operators)
   Bond bond1 = molecule.addBond(atom1, atom2, 1);
   Bond bond2 = molecule.addBond(atom2, atom3, 2);
 
-  EXPECT_TRUE(bond1 == molecule.bond(0));
+  EXPECT_EQ(bond1, molecule.bond(0));
   EXPECT_FALSE(bond1 != molecule.bond(0));
   EXPECT_TRUE(bond1 != molecule.bond(1));
   EXPECT_FALSE(bond1 == molecule.bond(1));
