@@ -28,9 +28,9 @@ TEST(InputGeneratorTest, exercise)
                          "/tests/avogadro/scripts/inputgeneratortest.py");
   InputGenerator gen(scriptFilePath);
 
-  EXPECT_TRUE(gen.scriptFilePath() == scriptFilePath);
+  EXPECT_EQ(gen.scriptFilePath(), scriptFilePath);
 
-  EXPECT_TRUE(gen.displayName() == QLatin1String("Input Generator Test"))
+  EXPECT_EQ(gen.displayName(), QLatin1String("Input Generator Test"))
     << gen.errorList().join("\n").toStdString(); // catch syntax errors
 
   const QJsonObject genOptions(gen.options());
@@ -106,9 +106,9 @@ TEST(InputGeneratorTest, exercise)
 
   // Highlight styles:
   GenericHighlighter* highlighter(gen.createFileHighlighter("job.opts"));
-  EXPECT_TRUE(highlighter != nullptr);
+  EXPECT_NE(highlighter, nullptr);
   delete highlighter;
   highlighter = gen.createFileHighlighter("debug_info");
-  EXPECT_TRUE(highlighter == nullptr);
+  EXPECT_EQ(highlighter, nullptr);
   delete highlighter;
 }
