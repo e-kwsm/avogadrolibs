@@ -136,7 +136,7 @@ TEST(XyzTest, write)
   molecule.addAtom(1).setPosition3d(Vector3(-0.51336, -0.889165, -0.363));
   molecule.addAtom(1).setPosition3d(Vector3(-0.51336, 0.889165, -0.363));
   std::string output;
-  EXPECT_EQ(xyz.writeString(output, molecule), true);
+  EXPECT_TRUE(xyz.writeString(output, molecule));
 
   // this part is more of a roundtrip test
   Molecule readMolecule;
