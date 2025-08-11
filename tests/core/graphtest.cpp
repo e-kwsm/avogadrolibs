@@ -33,13 +33,13 @@ TEST(GraphTest, setSize)
 TEST(GraphTest, isEmpty)
 {
   Graph graph;
-  EXPECT_EQ(graph.isEmpty(), true);
+  EXPECT_TRUE(graph.isEmpty());
 
   graph.addVertex();
-  EXPECT_EQ(graph.isEmpty(), false);
+  EXPECT_FALSE(graph.isEmpty());
 
   graph.clear();
-  EXPECT_EQ(graph.isEmpty(), true);
+  EXPECT_TRUE(graph.isEmpty());
 }
 
 TEST(GraphTest, clear) {}
@@ -95,11 +95,11 @@ TEST(GraphTest, addEdge)
 
   graph.addEdge(0, 1);
   EXPECT_EQ(graph.edgeCount(), 1);
-  EXPECT_EQ(graph.containsEdge(0, 1), true);
+  EXPECT_TRUE(graph.containsEdge(0, 1));
 
   graph.addEdge(1, 4);
   EXPECT_EQ(graph.edgeCount(), 2);
-  EXPECT_EQ(graph.containsEdge(1, 4), true);
+  EXPECT_TRUE(graph.containsEdge(1, 4));
 }
 
 TEST(GraphTest, removeEdge)
