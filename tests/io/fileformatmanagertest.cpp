@@ -22,7 +22,7 @@ TEST(FileFormatManagerTest, readFile)
 {
   FileFormat* format =
     FileFormatManager::instance().newFormatFromIdentifier("Avogadro: CML");
-  EXPECT_TRUE(format != nullptr);
+  EXPECT_NE(format, nullptr);
   if (!format)
     return;
   Molecule molecule;
@@ -61,7 +61,7 @@ TEST(FileFormatManagerTest, emptyFile)
   for (size_t i = 0; i < ids.size(); ++i) {
     FileFormat* format =
       FileFormatManager::instance().newFormatFromIdentifier(ids[i]);
-    EXPECT_TRUE(format != nullptr);
+    EXPECT_NE(format, nullptr);
     if (!format) {
       delete format;
       continue;
@@ -220,22 +220,22 @@ TEST(FileFormatManagerTest, filtering)
   FileFormat* format = nullptr;
 
   format = manager.newFormatFromFileExtension("asdfjkl;", Format::Read);
-  ASSERT_TRUE(format != nullptr);
+  ASSERT_NE(format, nullptr);
   EXPECT_EQ(format->identifier(), std::string("readOnly"));
   delete format;
 
   format = manager.newFormatFromFileExtension("asdfjkl;", Format::Write);
-  ASSERT_TRUE(format != nullptr);
+  ASSERT_NE(format, nullptr);
   EXPECT_EQ(format->identifier(), std::string("writeOnly"));
   delete format;
 
   format = manager.newFormatFromMimeType("chemical/x-doodie", Format::Write);
-  ASSERT_TRUE(format != nullptr);
+  ASSERT_NE(format, nullptr);
   EXPECT_EQ(format->identifier(), std::string("writeOnly"));
   delete format;
 
   format = manager.newFormatFromMimeType("chemical/x-doodie", Format::Read);
-  ASSERT_TRUE(format != nullptr);
+  ASSERT_NE(format, nullptr);
   EXPECT_EQ(format->identifier(), std::string("readOnly"));
   delete format;
 }
@@ -247,11 +247,11 @@ TEST(FileFormatManagerTest, unregister)
 
   FileFormatManager& manager = FileFormatManager::instance();
   FileFormat* format = manager.newFormatFromIdentifier("testingFormat");
-  ASSERT_TRUE(format != nullptr);
+  ASSERT_NE(format, nullptr);
   EXPECT_EQ(format->identifier(), std::string("testingFormat"));
   delete format;
 
   EXPECT_TRUE(FileFormatManager::unregisterFormat("testingFormat"));
   format = manager.newFormatFromIdentifier("testingFormat");
-  ASSERT_TRUE(format == nullptr);
+  ASSERT_EQ(format, nullptr);
 }
