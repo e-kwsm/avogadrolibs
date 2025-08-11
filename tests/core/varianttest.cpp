@@ -14,43 +14,43 @@ using namespace std::string_literals;
 TEST(VariantTest, isNull)
 {
   Variant variant;
-  EXPECT_EQ(variant.isNull(), true);
+  EXPECT_TRUE(variant.isNull());
 
   variant.setValue(7);
-  EXPECT_EQ(variant.isNull(), false);
+  EXPECT_FALSE(variant.isNull());
 }
 
 TEST(VariantTest, clear)
 {
   Variant variant(62);
-  EXPECT_EQ(variant.isNull(), false);
+  EXPECT_FALSE(variant.isNull());
 
   variant.clear();
-  EXPECT_EQ(variant.isNull(), true);
+  EXPECT_TRUE(variant.isNull());
 
   variant.setValue('f');
-  EXPECT_EQ(variant.isNull(), false);
+  EXPECT_FALSE(variant.isNull());
 
   variant.clear();
-  EXPECT_EQ(variant.isNull(), true);
+  EXPECT_TRUE(variant.isNull());
 }
 
 TEST(VariantTest, toBool)
 {
   Variant variant(false);
-  EXPECT_EQ(variant.toBool(), false);
+  EXPECT_FALSE(variant.toBool());
 
   variant.setValue(true);
-  EXPECT_EQ(variant.toBool(), true);
+  EXPECT_TRUE(variant.toBool());
 
   variant.setValue(0);
-  EXPECT_EQ(variant.toBool(), false);
+  EXPECT_FALSE(variant.toBool());
 
   variant.setValue(1);
-  EXPECT_EQ(variant.toBool(), true);
+  EXPECT_TRUE(variant.toBool());
 
   variant.setValue(-5);
-  EXPECT_EQ(variant.toBool(), true);
+  EXPECT_TRUE(variant.toBool());
 }
 
 TEST(VariantTest, toChar)
