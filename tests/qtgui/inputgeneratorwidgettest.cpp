@@ -64,11 +64,11 @@ TEST(InputGeneratorWidgetTest, exercise)
             "Input Generator Test"s);
 
   // Verify that appropriate widgets are produced for each parameter type:
-  EXPECT_TRUE(widget.findChild<QComboBox*>("Test StringList") != nullptr);
-  EXPECT_TRUE(widget.findChild<QLineEdit*>("Test String") != nullptr);
-  EXPECT_TRUE(widget.findChild<QSpinBox*>("Test Integer") != nullptr);
-  EXPECT_TRUE(widget.findChild<QCheckBox*>("Test Boolean") != nullptr);
-  EXPECT_TRUE(widget.findChild<FileBrowseWidget*>("Test FilePath") != nullptr);
+  EXPECT_NE(widget.findChild<QComboBox*>("Test StringList"), nullptr);
+  EXPECT_NE(widget.findChild<QLineEdit*>("Test String"), nullptr);
+  EXPECT_NE(widget.findChild<QSpinBox*>("Test Integer"), nullptr);
+  EXPECT_NE(widget.findChild<QCheckBox*>("Test Boolean"), nullptr);
+  EXPECT_NE(widget.findChild<FileBrowseWidget*>("Test FilePath"), nullptr);
 
   // Set a test filepath
   FileBrowseWidget* testFilePathWidget(
