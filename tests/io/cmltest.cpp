@@ -22,6 +22,8 @@ using Avogadro::Core::Molecule;
 using Avogadro::Core::Variant;
 using Avogadro::Io::CmlFormat;
 
+using namespace std::literals::string_literals;
+
 TEST(CmlTest, readFile)
 {
   CmlFormat cml;
@@ -173,7 +175,7 @@ TEST(CmlTest, hdf5Matrix)
   cml.readFile("ethane.cml", readMolecule);
   if (readMolecule.data("matrix").type() == Variant::Matrix)
     EXPECT_TRUE(readMolecule.data("matrix").toMatrixRef().isApprox(matrix));
-  EXPECT_EQ(readMolecule.data("name").toString(), std::string("ethanol"));
+  EXPECT_EQ(readMolecule.data("name").toString(), "ethanol"s);
 }
 
 TEST(CmlTest, writeString)
