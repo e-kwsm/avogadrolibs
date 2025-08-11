@@ -85,13 +85,13 @@ TEST_F(MoleculeTest, addAtom)
   EXPECT_EQ(molecule.atomCount(), static_cast<Index>(0));
 
   Atom atom = molecule.addAtom(6);
-  EXPECT_EQ(atom.isValid(), true);
+  EXPECT_TRUE(atom.isValid());
   EXPECT_EQ(molecule.atomCount(), static_cast<Index>(1));
   EXPECT_EQ(atom.index(), 0);
   EXPECT_EQ(atom.atomicNumber(), static_cast<unsigned char>(6));
 
   Atom atom2 = molecule.addAtom(1);
-  EXPECT_EQ(atom2.isValid(), true);
+  EXPECT_TRUE(atom2.isValid());
   EXPECT_EQ(molecule.atomCount(), static_cast<Index>(2));
   EXPECT_EQ(atom2.index(), 1);
   EXPECT_EQ(atom2.atomicNumber(), static_cast<unsigned char>(1));
