@@ -37,12 +37,12 @@ TEST(SphereGeometryTest, removeChild)
   root.addDrawable(child2);
 
   EXPECT_EQ(child1, root.drawable(0));
-  EXPECT_EQ(root.removeDrawable(child1), true);
-  EXPECT_EQ(root.removeDrawable(child1), false);
+  EXPECT_TRUE(root.removeDrawable(child1));
+  EXPECT_FALSE(root.removeDrawable(child1));
   EXPECT_EQ(child2, root.drawable(0));
   EXPECT_EQ(nullptr, child1->parent());
   EXPECT_EQ(&root, child2->parent());
-  EXPECT_EQ(root.removeDrawable(child2), true);
+  EXPECT_TRUE(root.removeDrawable(child2));
   delete child1;
   delete child2;
 }

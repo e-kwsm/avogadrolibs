@@ -86,13 +86,13 @@ TEST_F(MoleculeTest, addAtom)
   EXPECT_EQ(molecule.atomCount(), static_cast<Index>(0));
 
   Avogadro::Core::Atom atom = molecule.addAtom(6);
-  EXPECT_EQ(atom.isValid(), true);
+  EXPECT_TRUE(atom.isValid());
   EXPECT_EQ(molecule.atomCount(), static_cast<Index>(1));
   EXPECT_EQ(atom.index(), 0);
   EXPECT_EQ(atom.atomicNumber(), static_cast<unsigned char>(6));
 
   Avogadro::Core::Atom atom2 = molecule.addAtom(1);
-  EXPECT_EQ(atom2.isValid(), true);
+  EXPECT_TRUE(atom2.isValid());
   EXPECT_EQ(molecule.atomCount(), static_cast<Index>(2));
   EXPECT_EQ(atom2.index(), 1);
   EXPECT_EQ(atom2.atomicNumber(), static_cast<unsigned char>(1));
@@ -230,8 +230,8 @@ TEST_F(MoleculeTest, dataMap)
 
   std::vector<std::string> dataNames = molecule.dataMap().names();
   EXPECT_EQ(dataNames.size(), 4);
-  EXPECT_EQ(molecule.hasData("name"), true);
-  EXPECT_EQ(molecule.hasData("invalid"), false);
+  EXPECT_TRUE(molecule.hasData("name"));
+  EXPECT_FALSE(molecule.hasData("invalid"));
   EXPECT_EQ(molecule.data("name").toString(), "ethanol");
   EXPECT_EQ(molecule.data("formula").toString(), "C2H6O");
   EXPECT_EQ(molecule.data("SMILES").toString(), "CCO");
