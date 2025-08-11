@@ -39,7 +39,7 @@ TEST(MdlTest, readFile)
   bool success =
     mdl.readFile(std::string(AVOGADRO_DATA) + "/data/sdf/ethane.mol", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
   EXPECT_EQ(molecule.data("name").type(), Variant::String);
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
 }
@@ -51,7 +51,7 @@ TEST(MdlTest, atoms)
   bool success =
     mdl.readFile(std::string(AVOGADRO_DATA) + "/data/sdf/ethane.mol", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(8));
   Atom atom = molecule.atom(0);
@@ -76,7 +76,7 @@ TEST(MdlTest, bonds)
   bool success =
     mdl.readFile(std::string(AVOGADRO_DATA) + "/data/sdf/ethane.mol", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(8));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(7));
@@ -98,16 +98,16 @@ TEST(MdlTest, saveFile)
   bool success = mdl.readFile(
     std::string(AVOGADRO_DATA) + "/data/sdf/ethane.mol", savedMolecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
 
   success = mdl.writeFile("ethanetmp.mol", savedMolecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
 
   // Now read the file back in and check a few key values are still present.
   success = mdl.readFile("ethanetmp.mol", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(8));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(7));
@@ -144,7 +144,7 @@ TEST(MdlTest, readMulti)
 
   // Read in the first structure.
   EXPECT_TRUE(multi.readMolecule(molecule));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
 
   EXPECT_EQ(molecule.data("name").toString(), "Methane");
   EXPECT_EQ(molecule.atomCount(), 5);
@@ -163,7 +163,7 @@ TEST(MdlTest, readMulti)
   // Now read in the second structure.
   Molecule molecule2;
   EXPECT_TRUE(multi.readMolecule(molecule2));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
   EXPECT_EQ(molecule2.data("name").toString(), "Caffeine");
   EXPECT_EQ(molecule2.atomCount(), 24);
   EXPECT_EQ(molecule2.bondCount(), 25);
@@ -181,9 +181,9 @@ TEST(MdlTest, writeMulti)
 
   // Read in the two structures in the file.
   EXPECT_TRUE(multi.readMolecule(mol[0]));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
   EXPECT_TRUE(multi.readMolecule(mol[1]));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
   multi.close();
 
   // Now attempt to write out a multi-molecule file.

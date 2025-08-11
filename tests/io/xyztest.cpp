@@ -29,7 +29,7 @@ TEST(XyzTest, readAtomicSymbols)
   XyzFormat xyz;
   Molecule molecule;
   EXPECT_TRUE(xyz.readFile(AVOGADRO_DATA "/data/xyz/methane.xyz", molecule));
-  ASSERT_EQ(xyz.error(), std::string());
+  ASSERT_TRUE(xyz.error().empty());
 
   EXPECT_EQ(molecule.atomCount(), 5);
 
@@ -116,7 +116,7 @@ TEST(XyzTest, readAtomicSymbolsNoBonds)
   xyz.setOptions("{ \"perceiveBonds\": false }");
   Molecule molecule;
   EXPECT_TRUE(xyz.readFile(AVOGADRO_DATA "/data/xyz/methane.xyz", molecule));
-  ASSERT_EQ(xyz.error(), std::string());
+  ASSERT_TRUE(xyz.error().empty());
 
   EXPECT_EQ(molecule.atomCount(), 5);
 
