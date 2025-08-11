@@ -18,11 +18,11 @@ TEST(VariantMapTest, size)
 TEST(VariantMapTest, isEmpty)
 {
   VariantMap map;
-  EXPECT_EQ(map.isEmpty(), true);
+  EXPECT_TRUE(map.isEmpty());
 
   map.setValue("value1", 1);
-  EXPECT_EQ(map.isEmpty(), false);
-  EXPECT_EQ(map.hasValue("value1"), true);
-  EXPECT_EQ(map.hasValue("value2"), false);
+  EXPECT_FALSE(map.isEmpty());
+  EXPECT_TRUE(map.hasValue("value1"));
+  EXPECT_FALSE(map.hasValue("value2"));
   EXPECT_EQ(map.value("value1").toInt(), 1);
 }
