@@ -33,12 +33,12 @@ TEST(NodeTest, removeChild)
   root.addChild(child2);
 
   EXPECT_EQ(child1, root.child(0));
-  EXPECT_EQ(root.removeChild(child1), true);
-  EXPECT_EQ(root.removeChild(child1), false);
+  EXPECT_TRUE(root.removeChild(child1));
+  EXPECT_FALSE(root.removeChild(child1));
   EXPECT_EQ(child2, root.child(0));
   EXPECT_EQ(nullptr, child1->parent());
   EXPECT_EQ(&root, child2->parent());
-  EXPECT_EQ(root.removeChild(child2), true);
+  EXPECT_TRUE(root.removeChild(child2));
   delete child1;
   delete child2;
 }
