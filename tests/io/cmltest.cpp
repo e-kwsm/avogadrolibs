@@ -103,22 +103,21 @@ TEST(CmlTest, readInvalidPeriodicFile)
 
 TEST(CmlTest, fractionalCoords)
 {
-  std::string cmlStr(
-    "<?xml version=\"1.0\"?>"
-    "<molecule xmlns=\"http://www.xml-cml.org/schema\">"
-    "<crystal>"
-    "<scalar title=\"a\" units=\"units:angstrom\">5.3</scalar>"
-    "<scalar title=\"b\" units=\"units:angstrom\">2.4</scalar>"
-    "<scalar title=\"c\" units=\"units:angstrom\">1.8</scalar>"
-    "<scalar title=\"alpha\" units=\"units:degree\">85.000000</scalar>"
-    "<scalar title=\"beta\" units=\"units:degree\">90.000000</scalar>"
-    "<scalar title=\"gamma\" units=\"units:degree\">105.000000</scalar>"
-    "</crystal>"
-    "<atomArray>"
-    "<atom id=\"a\" elementType=\"H\" "
-    "xFract=\"0.5\" yFract=\"0.5\" zFract=\"0.5\"/>"
-    "</atomArray>"
-    "</molecule>");
+  std::string cmlStr(R"(
+<?xml version="1.0"?>
+<molecule xmlns="http://www.xml-cml.org/schema">
+<crystal>
+<scalar title="a" units="units:angstrom">5.3</scalar>
+<scalar title="b" units="units:angstrom">2.4</scalar>
+<scalar title="c" units="units:angstrom">1.8</scalar>
+<scalar title="alpha" units="units:degree">85.000000</scalar>
+<scalar title="beta" units="units:degree">90.000000</scalar>
+<scalar title="gamma" units="units:degree">105.000000</scalar>
+</crystal>
+<atomArray>
+<atom id="a" elementType="H" xFract="0.5" yFract="0.5" zFract="0.5"/>
+</atomArray>
+</molecule>)");
   CmlFormat cml;
   Molecule molecule;
   cml.readString(cmlStr, molecule);
