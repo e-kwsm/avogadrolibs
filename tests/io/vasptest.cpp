@@ -35,7 +35,7 @@ TEST(VaspTest, readPoscar)
   Molecule molecule;
   EXPECT_TRUE(
     poscar.readFile(AVOGADRO_DATA "/data/vasp/rutile.POSCAR", molecule));
-  ASSERT_EQ(poscar.error(), std::string());
+  ASSERT_TRUE(poscar.error().empty());
 
   // First, let's check the unit cell
   UnitCell* uc = molecule.unitCell();
@@ -152,7 +152,7 @@ TEST(VaspTest, readOutcar)
 
   // Read in the structure.
   EXPECT_TRUE(multi.readMolecule(molecule));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
 
   // First, let's check the unit cell
   UnitCell* uc = molecule.unitCell();

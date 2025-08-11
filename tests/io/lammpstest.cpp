@@ -35,7 +35,7 @@ TEST(LammpsTest, read)
 
   // Read in the structure.
   EXPECT_TRUE(multi.readMolecule(molecule));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
 
   // First, let's check the unit cell
   UnitCell* uc = molecule.unitCell();
