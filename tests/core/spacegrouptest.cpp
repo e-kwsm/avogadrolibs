@@ -44,7 +44,7 @@ TEST(SpaceGroupTest, getSpaceGroup)
   mol.addAtom(22).setPosition3d(uc->toCartesian(Vector3(0.5, 0.5, 0.5)));
 
   // Now let's find the space group of this crystal!
-  double cartTol = 0.05;
+  constexpr double cartTol = 0.05;
   unsigned short hallNumber = AvoSpglib::getHallNumber(mol, cartTol);
 
   EXPECT_EQ(hallNumber, 419);
