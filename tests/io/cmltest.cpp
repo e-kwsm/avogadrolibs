@@ -197,24 +197,22 @@ TEST(CmlTest, writeString)
 {
   CmlFormat cml;
   Molecule molecule;
-  EXPECT_EQ(
-    cml.readFile(std::string(AVOGADRO_DATA) + "/data/cml/ethane.cml", molecule),
-    true);
+  EXPECT_TRUE(cml.readFile(std::string(AVOGADRO_DATA) + "/data/cml/ethane.cml",
+                           molecule));
   std::string file;
-  EXPECT_EQ(cml.writeString(file, molecule), true);
+  EXPECT_TRUE(cml.writeString(file, molecule));
 }
 
 TEST(CmlTest, readString)
 {
   CmlFormat cml;
   Molecule molecule;
-  EXPECT_EQ(
-    cml.readFile(std::string(AVOGADRO_DATA) + "/data/cml/ethane.cml", molecule),
-    true);
+  EXPECT_TRUE(cml.readFile(std::string(AVOGADRO_DATA) + "/data/cml/ethane.cml",
+                           molecule));
   std::string file;
-  EXPECT_EQ(cml.writeString(file, molecule), true);
+  EXPECT_TRUE(cml.writeString(file, molecule));
   Molecule moleculeFromString;
-  EXPECT_EQ(cml.readString(file, moleculeFromString), true);
+  EXPECT_TRUE(cml.readString(file, moleculeFromString));
 
   EXPECT_EQ(moleculeFromString.data("name").toString(), "Ethane");
   EXPECT_EQ(moleculeFromString.atomCount(), static_cast<size_t>(8));
