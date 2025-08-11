@@ -23,7 +23,7 @@ TEST(FileFormatManagerTest, readFile)
 {
   FileFormat* format =
     FileFormatManager::instance().newFormatFromIdentifier("Avogadro: CML");
-  EXPECT_TRUE(format != nullptr);
+  EXPECT_NE(format, nullptr);
   if (!format)
     return;
   Molecule molecule;
@@ -62,7 +62,7 @@ TEST(FileFormatManagerTest, emptyFile)
   for (size_t i = 0; i < ids.size(); ++i) {
     FileFormat* format =
       FileFormatManager::instance().newFormatFromIdentifier(ids[i]);
-    EXPECT_TRUE(format != nullptr);
+    EXPECT_NE(format, nullptr);
     if (!format) {
       delete format;
       continue;
@@ -254,5 +254,5 @@ TEST(FileFormatManagerTest, unregister)
 
   EXPECT_TRUE(FileFormatManager::unregisterFormat("testingFormat"));
   format = manager.newFormatFromIdentifier("testingFormat");
-  ASSERT_TRUE(format == nullptr);
+  ASSERT_EQ(format, nullptr);
 }
