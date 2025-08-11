@@ -49,11 +49,11 @@ TEST(UtilitiesTest, lexicalCastCheck)
   // Something simple that should pass.
   bool ok(false);
   lexicalCast<int>("5", ok);
-  EXPECT_EQ(ok, true);
+  EXPECT_TRUE(ok);
 
   // Pass something in that should fail.
   lexicalCast<int>("five", ok);
-  EXPECT_EQ(ok, false);
+  EXPECT_FALSE(ok);
 }
 
 TEST(UtilitiesTest, lexicalCastVector)
