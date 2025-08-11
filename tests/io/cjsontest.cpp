@@ -31,7 +31,7 @@ TEST(CjsonTest, readFile)
   bool success = cjson.readFile(
     std::string(AVOGADRO_DATA) + "/data/cjson/ethane.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(molecule.data("name").type(), Variant::String);
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
 
@@ -120,7 +120,7 @@ TEST(CjsonTest, atoms)
   bool success = cjson.readFile(
     std::string(AVOGADRO_DATA) + "/data/cjson/ethane.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(8));
   Atom atom = molecule.atom(0);
@@ -145,7 +145,7 @@ TEST(CjsonTest, bonds)
   bool success = cjson.readFile(
     std::string(AVOGADRO_DATA) + "/data/cjson/ethane.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(8));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(7));
@@ -167,7 +167,7 @@ TEST(CjsonTest, crystal)
   bool success = cjson.readFile(
     std::string(AVOGADRO_DATA) + "/data/cjson/rutile.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(molecule.data("name").toString(), "TiO2 rutile");
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(6));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(0));
@@ -218,16 +218,16 @@ TEST(CjsonTest, saveFile)
   bool success = cjson.readFile(
     std::string(AVOGADRO_DATA) + "/data/cjson/ethane.cjson", savedMolecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
 
   success = cjson.writeFile("ethanetmp.cjson", savedMolecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
 
   // Now read the file back in and check a few key values are still present.
   success = cjson.readFile("ethanetmp.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(8));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(7));
@@ -249,7 +249,7 @@ TEST(CjsonTest, conformers)
   bool success = cjson.readFile(
     std::string(AVOGADRO_DATA) + "/data/cjson/conformers.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(14));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(13));
   EXPECT_EQ(molecule.coordinate3dCount(), static_cast<size_t>(3));
@@ -257,12 +257,12 @@ TEST(CjsonTest, conformers)
   // okay now save it and make sure we still have the same number
   success = cjson.writeFile("conformertmp.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
 
   Molecule otherMolecule;
   success = cjson.readFile("conformertmp.cjson", otherMolecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(otherMolecule.atomCount(), static_cast<size_t>(14));
   EXPECT_EQ(otherMolecule.bondCount(), static_cast<size_t>(13));
   EXPECT_EQ(otherMolecule.coordinate3dCount(), static_cast<size_t>(3));

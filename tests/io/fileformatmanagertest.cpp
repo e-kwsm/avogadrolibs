@@ -168,9 +168,9 @@ TEST(FileFormatManagerTest, writeStringCjsonOptions)
 
   // If the option was respected these should now be empty.
   EXPECT_EQ(cjsonMol.data("name").type(), Variant::Null);
-  EXPECT_EQ(cjsonMol.data("name").toString(), "");
+  EXPECT_TRUE(cjsonMol.data("name").toString().empty());
   EXPECT_EQ(cjsonMol.data("inchi").type(), Variant::Null);
-  EXPECT_EQ(cjsonMol.data("inchi").toString(), "");
+  EXPECT_TRUE(cjsonMol.data("inchi").toString().empty());
 }
 
 class Format : public FileFormat
