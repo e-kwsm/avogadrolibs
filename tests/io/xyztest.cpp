@@ -29,7 +29,7 @@ TEST(XyzTest, readAtomicSymbols)
   XyzFormat xyz;
   Molecule molecule;
   EXPECT_TRUE(xyz.readFile(AVOGADRO_DATA "/data/xyz/methane.xyz", molecule));
-  ASSERT_EQ(xyz.error(), std::string());
+  ASSERT_TRUE(xyz.error().empty());
 
   EXPECT_EQ(molecule.atomCount(), 5);
 
@@ -84,7 +84,7 @@ TEST(XyzTest, readAtomicSymbolsNoBonds)
   xyz.setOptions("{ \"perceiveBonds\": false }");
   Molecule molecule;
   EXPECT_TRUE(xyz.readFile(AVOGADRO_DATA "/data/xyz/methane.xyz", molecule));
-  ASSERT_EQ(xyz.error(), std::string());
+  ASSERT_TRUE(xyz.error().empty());
 
   EXPECT_EQ(molecule.atomCount(), 5);
 
@@ -186,7 +186,7 @@ TEST(DISABLED_XyzTest, readMulti)
 
   // Read in the first structure.
   EXPECT_TRUE(multi.readMolecule(molecule));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
 
   EXPECT_EQ(molecule.data("name").toString(), "Methane");
   EXPECT_EQ(molecule.atomCount(), 5);
@@ -207,7 +207,7 @@ TEST(DISABLED_XyzTest, readMulti)
   // Now read in the second structure.
   Molecule molecule2;
   EXPECT_TRUE(multi.readMolecule(molecule2));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
   EXPECT_EQ(molecule2.data("name").toString(), "Caffeine");
   EXPECT_EQ(molecule2.atomCount(), 24);
   EXPECT_EQ(molecule2.bondCount(), 0);
@@ -225,9 +225,9 @@ TEST(DISABLED_XyzTest, writeMulti)
 
   // Read in the two structures in the file.
   EXPECT_TRUE(multi.readMolecule(mol[0]));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
   EXPECT_TRUE(multi.readMolecule(mol[1]));
-  ASSERT_EQ(multi.error(), "");
+  ASSERT_TRUE(multi.error().empty());
   multi.close();
 
   // Now attempt to write out a multi-molecule file.
