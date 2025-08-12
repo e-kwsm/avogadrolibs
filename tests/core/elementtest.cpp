@@ -105,8 +105,8 @@ TEST(ElementTest, customElements)
     std::string symbol = Elements::symbol(i);
     // These should not return the dummy labels
     EXPECT_TRUE(Avogadro::Core::isCustomElement(i));
-    EXPECT_STRNE(name.c_str(), Elements::name(0));
-    EXPECT_STRNE(symbol.c_str(), Elements::symbol(0));
+    EXPECT_NE(name, Elements::name(0));
+    EXPECT_NE(symbol, Elements::symbol(0));
     // The last two characters must match:
     EXPECT_EQ(name.substr(name.size() - 2), symbol.substr(symbol.size() - 2));
     // Round trip:
