@@ -382,14 +382,11 @@ TEST(RWMoleculeTest, setAtomPositions3d)
   gen++;
 
   mol.setAtomPositions3d(pos);
-  EXPECT_TRUE(std::equal(mol.atomPositions3d().begin(),
-                         mol.atomPositions3d().end(), pos.begin()));
+  EXPECT_EQ(mol.atomPositions3d(), pos);
   mol.undoStack().undo();
-  EXPECT_TRUE(std::equal(mol.atomPositions3d().begin(),
-                         mol.atomPositions3d().end(), oldPositions.begin()));
+  EXPECT_EQ(mol.atomPositions3d(), oldPositions);
   mol.undoStack().redo();
-  EXPECT_TRUE(std::equal(mol.atomPositions3d().begin(),
-                         mol.atomPositions3d().end(), pos.begin()));
+  EXPECT_EQ(mol.atomPositions3d(), pos);
   mol.undoStack().undo();
 
   // Test merging for interactive edits:
@@ -404,15 +401,12 @@ TEST(RWMoleculeTest, setAtomPositions3d)
   mol.setAtomPositions3d(pos);
   mol.setInteractive(false);
 
-  EXPECT_TRUE(std::equal(mol.atomPositions3d().begin(),
-                         mol.atomPositions3d().end(), pos.begin()));
+  EXPECT_EQ(mol.atomPositions3d(), pos);
   EXPECT_EQ(1, mol.undoStack().count());
   mol.undoStack().undo();
-  EXPECT_TRUE(std::equal(mol.atomPositions3d().begin(),
-                         mol.atomPositions3d().end(), oldPositions.begin()));
+  EXPECT_EQ(mol.atomPositions3d(), oldPositions);
   mol.undoStack().redo();
-  EXPECT_TRUE(std::equal(mol.atomPositions3d().begin(),
-                         mol.atomPositions3d().end(), pos.begin()));
+  EXPECT_EQ(mol.atomPositions3d(), pos);
 }
 
 TEST(RWMoleculeTest, setAtomPosition3d)
