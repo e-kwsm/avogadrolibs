@@ -88,8 +88,8 @@ TEST(ArrayTest, operators)
   }
 
   Array<int> a1c(a1);
-  EXPECT_TRUE(a1 == a1c);
-  EXPECT_TRUE(a1 != a2);
+  EXPECT_EQ(a1, a1c);
+  EXPECT_NE(a1, a2);
   EXPECT_LT(a1, a2);
   EXPECT_LE(a1, a1c);
   EXPECT_GT(a2, a1);
@@ -97,5 +97,5 @@ TEST(ArrayTest, operators)
 
   using std::swap;
   swap(a1, a2);
-  EXPECT_TRUE(a2 == a1c);
+  EXPECT_EQ(a2, a1c);
 }
