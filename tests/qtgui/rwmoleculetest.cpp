@@ -320,12 +320,10 @@ TEST(RWMoleculeTest, setAtomicNumbers)
   rep[0] = 10;
 
   mol.setAtomicNumbers(rep);
-  ASSERT_TRUE(std::equal(mol.atomicNumbers().begin(), mol.atomicNumbers().end(),
-                         rep.begin()));
+  ASSERT_EQ(mol.atomicNumbers(), rep);
 
   mol.undoStack().undo();
-  EXPECT_TRUE(std::equal(mol.atomicNumbers().begin(), mol.atomicNumbers().end(),
-                         orig.begin()));
+  EXPECT_EQ(mol.atomicNumbers(), orig);
 }
 
 TEST(RWMoleculeTest, setAtomicNumber)
