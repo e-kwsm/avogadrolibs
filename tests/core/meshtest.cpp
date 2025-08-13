@@ -52,7 +52,7 @@ void MeshTest::assertEquals(const Mesh& m1, const Mesh& m2)
   EXPECT_EQ(m1.otherMesh(), m2.otherMesh());
   EXPECT_EQ(m1.name(), m2.name());
   EXPECT_EQ(m1.isoValue(), m2.isoValue());
-  EXPECT_TRUE(m1.vertices() == m2.vertices());
+  EXPECT_EQ(m1.vertices(), m2.vertices());
 
   const Array<Color3f> colors1 = m1.colors();
   const Array<Color3f> colors2 = m1.colors();
@@ -68,7 +68,7 @@ void MeshTest::assertEquals(const Mesh& m1, const Mesh& m2)
     EXPECT_EQ(it->blue(), colors2[i].blue());
     ++i;
   }
-  EXPECT_TRUE(m1.normals() == m2.normals());
+  EXPECT_EQ(m1.normals(), m2.normals());
 }
 
 TEST_F(MeshTest, copy)
