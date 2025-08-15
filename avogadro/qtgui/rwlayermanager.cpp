@@ -29,11 +29,9 @@ class AddLayerCommand : public QUndoCommand
 {
 public:
   AddLayerCommand(shared_ptr<MoleculeInfo> mol)
-    : QUndoCommand(QObject::tr("Modify Layers")), m_moleculeInfo(mol)
+    : QUndoCommand(QObject::tr("Modify Layers")), m_moleculeInfo(mol),
+      m_visible(true), m_locked(false)
   {
-    m_visible = true;
-    m_locked = false;
-
     const auto activeLayer = m_moleculeInfo->layer.activeLayer();
     // we loop through the layers to find enabled settings for the active layer
     for (const auto& names : m_moleculeInfo->enable) {
@@ -104,9 +102,9 @@ class ActiveLayerCommand : public QUndoCommand
 public:
   ActiveLayerCommand(shared_ptr<MoleculeInfo> mol, size_t layer)
     : QUndoCommand(QObject::tr("Modify Layers")), m_moleculeInfo(mol),
+      m_oldActiveLayer(m_moleculeInfo->layer.activeLayer()),
       m_newActiveLayer(layer)
   {
-    m_oldActiveLayer = m_moleculeInfo->layer.activeLayer();
   }
 
   void redo() override
