@@ -84,9 +84,9 @@ public:
   AddAtomCommand(RWMolecule& m, unsigned char aN, bool usingPositions,
                  Index atomId, Index uid)
     : UndoCommand(m), m_atomicNumber(aN), m_usingPositions(usingPositions),
-      m_atomId(atomId), m_atomUid(uid)
+      m_atomId(atomId), m_atomUid(uid),
+      m_layer(m_molecule.layer().activeLayer())
   {
-    m_layer = m_molecule.layer().activeLayer();
   }
 
   void redo() override
