@@ -51,9 +51,8 @@ private:
     unsigned int id;
 
     SVGAtom(Vector3f m, Vector3f v, unsigned int i, unsigned int bonds)
-      : pos_model(m), pos_view(v), id(i)
+      : pos_model(m), pos_view(v), radius(bonds <= 0 ? 1 : bonds), id(i)
     {
-      radius = (bonds <= 0 ? 1 : bonds);
     }
   };
   QtGui::Molecule* m_molecule;
