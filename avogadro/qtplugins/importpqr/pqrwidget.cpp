@@ -6,9 +6,8 @@
 namespace Avogadro::QtPlugins {
 
 PQRWidget::PQRWidget(QWidget* parent, ImportPQR* p)
-  : QDialog(parent), ui(new Ui::PQRWidget)
+  : QDialog(parent), ui(new Ui::PQRWidget), plugin(p)
 {
-  plugin = p;
   ui->setupUi(this);
 
   ui->tableWidget->setColumnCount(3);
