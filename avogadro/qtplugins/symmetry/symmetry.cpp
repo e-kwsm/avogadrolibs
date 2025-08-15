@@ -31,10 +31,9 @@ namespace Avogadro::QtPlugins {
 
 Symmetry::Symmetry(QObject* parent_)
   : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
-    m_symmetryWidget(nullptr), m_viewSymmetryAction(new QAction(this))
+    m_symmetryWidget(nullptr), m_viewSymmetryAction(new QAction(this)),
+    m_ctx(msymCreateContext())
 {
-
-  m_ctx = msymCreateContext();
 
   m_viewSymmetryAction->setText(tr("Symmetry…"));
   m_viewSymmetryAction->setProperty("menu priority", -50);
