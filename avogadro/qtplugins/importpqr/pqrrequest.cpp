@@ -14,16 +14,16 @@ namespace Avogadro::QtPlugins {
  */
 PQRRequest::PQRRequest(QTableWidget* tw, QLabel* gv, QLineEdit* nd, QLabel* fd,
                        PQRWidget* w)
+  : table(tw), pngPreview(gv), nameDisplay(nd), formulaDisplay(fd), widget(w),
+    oNetworkAccessManager(new QNetworkAccessManager(this))
 {
   // set pointers to ui elements now instead of in individual functions
-  table = tw;          // pointer to ui table
-  pngPreview = gv;     // png QLabel
-  nameDisplay = nd;    // name
-  formulaDisplay = fd; // formula
+  // pointer to ui table
+  // png QLabel
+  // name
+  // formula
 
   // used to load molecule in Avogadro when downloaded
-  widget = w;
-  oNetworkAccessManager = new QNetworkAccessManager(this);
 }
 
 /**
