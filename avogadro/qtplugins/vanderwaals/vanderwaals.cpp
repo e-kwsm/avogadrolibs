@@ -46,18 +46,13 @@ struct LayerVdW : Core::LayerData
   QPointer<QWidget> widget;
   float opacity = 1.0f;
 
-  LayerVdW()
+  LayerVdW() : widget(nullptr)
   {
-    widget = nullptr;
     QSettings settings;
     opacity = settings.value("vdw/opacity", 1.0).toFloat();
   }
 
-  LayerVdW(std::string settings)
-  {
-    widget = nullptr;
-    deserialize(settings);
-  }
+  LayerVdW(std::string settings) : widget(nullptr) { deserialize(settings); }
 
   LayerData* clone() final
   {
