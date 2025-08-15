@@ -39,7 +39,7 @@ struct Point
 struct Line
 {
   Line() : dirty(true), flat(true), radius(0.0f) {}
-  explicit Line(float r) : dirty(true), radius(r) { flat = r < 0.0f; }
+  explicit Line(float r) : dirty(true), flat(r < 0.0f), radius(r) {}
 
   ~Line()
   {
