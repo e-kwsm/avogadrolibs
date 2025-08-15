@@ -40,9 +40,9 @@ struct LayerBallAndStick : Core::LayerData
   float bondRadius;
   float opacity;
 
-  LayerBallAndStick()
+  LayerBallAndStick() : widget(nullptr)
   {
-    widget = nullptr;
+
     QSettings settings;
 
     atomScale = settings.value("ballandstick/atomScale", 0.3).toDouble();
@@ -52,9 +52,9 @@ struct LayerBallAndStick : Core::LayerData
     opacity = settings.value("ballandstick/opacity", 1.0).toDouble();
   }
 
-  LayerBallAndStick(std::string settings)
+  LayerBallAndStick(std::string settings) : widget(nullptr)
   {
-    widget = nullptr;
+
     deserialize(settings);
   }
 
