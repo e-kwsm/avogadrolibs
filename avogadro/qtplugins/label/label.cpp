@@ -85,9 +85,8 @@ struct LayerLabel : Core::LayerData
   float radiusScalar;
   Vector3ub color;
 
-  LayerLabel()
+  LayerLabel() : widget(nullptr)
   {
-    widget = nullptr;
     QSettings settings;
     atomOptions =
       settings.value("label/atomoptions", LabelOptions::Name).toInt();
@@ -104,11 +103,7 @@ struct LayerLabel : Core::LayerData
     color[2] = static_cast<unsigned char>(q_color.blue());
   }
 
-  LayerLabel(std::string settings)
-  {
-    widget = nullptr;
-    deserialize(settings);
-  }
+  LayerLabel(std::string settings) : widget(nullptr) { deserialize(settings); }
 
   LayerData* clone() final { return new LayerLabel(serialize()); }
 
