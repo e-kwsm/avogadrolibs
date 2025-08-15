@@ -22,10 +22,8 @@ using namespace Avogadro::QtPlugins::SymmetryUtil;
 namespace Avogadro::QtPlugins {
 
 OperationsTableModel::OperationsTableModel(QObject* parent)
-  : QAbstractTableModel(parent)
+  : QAbstractTableModel(parent), m_operations(nullptr), m_operations_size(0)
 {
-  m_operations = nullptr;
-  m_operations_size = 0;
 }
 
 OperationsTableModel::~OperationsTableModel() {}
