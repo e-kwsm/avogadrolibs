@@ -89,9 +89,8 @@ struct LayerLabel : Core::LayerData
   float labelScale;
   Vector3ub color;
 
-  LayerLabel()
+  LayerLabel() : widget(nullptr)
   {
-    widget = nullptr;
     QSettings settings;
     // Read the current key, falling back to the pre-2.0 spelling.
     // (fallback can be dropped after a release or two)
@@ -126,11 +125,7 @@ struct LayerLabel : Core::LayerData
     color[2] = static_cast<unsigned char>(q_color.blue());
   }
 
-  LayerLabel(std::string settings)
-  {
-    widget = nullptr;
-    deserialize(settings);
-  }
+  LayerLabel(std::string settings) : widget(nullptr) { deserialize(settings); }
 
   LayerData* clone() final { return new LayerLabel(serialize()); }
 
