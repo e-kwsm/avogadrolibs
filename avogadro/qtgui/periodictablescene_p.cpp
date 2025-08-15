@@ -17,12 +17,11 @@
 namespace Avogadro::QtGui {
 
 PeriodicTableScene::PeriodicTableScene(QObject* parent_)
-  : QGraphicsScene(parent_)
+  : QGraphicsScene(parent_), m_detail(new ElementDetail(1))
 {
   int width_ = 26;
   int height_ = 26;
 
-  m_detail = new ElementDetail(1);
   m_detail->setPos(6.5 * width_, 0.75 * height_);
   addItem(m_detail);
 
