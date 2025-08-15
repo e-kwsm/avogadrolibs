@@ -87,9 +87,9 @@ private:
 
 template <typename Molecule_T>
 PersistentAtom<Molecule_T>::PersistentAtom(const AtomType& a)
-  : m_molecule(dynamic_cast<MoleculeType*>(a.molecule()))
+  : m_molecule(dynamic_cast<MoleculeType*>(a.molecule())),
+    m_uniqueId(m_molecule ? m_molecule->atomUniqueId(a) : MaxIndex)
 {
-  m_uniqueId = m_molecule ? m_molecule->atomUniqueId(a) : MaxIndex;
 }
 
 template <typename Molecule_T>
