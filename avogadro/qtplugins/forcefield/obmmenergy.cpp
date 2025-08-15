@@ -18,18 +18,17 @@
 namespace Avogadro::QtPlugins {
 
 OBMMEnergy::OBMMEnergy(const std::string& method)
-  : m_molecule(nullptr), m_process(nullptr), m_executable(
+  : m_molecule(nullptr),
+    m_inputFormat(new Io::CmlFormat), // eventually CJSON might be nice
+    m_process(nullptr), m_executable(
 #if defined(_WIN32)
-                                               "obmm.exe"
+                          "obmm.exe"
 #else
-                                               "obmm"
+                          "obmm"
 #endif
-                                               ),
+                          ),
     m_identifier(method), m_name(method)
 {
-  // eventually CJSON might be nice
-  m_inputFormat = new Io::CmlFormat;
-
   if (method == "UFF") {
     m_description = tr("Universal Force Field");
     m_elements.reset();
