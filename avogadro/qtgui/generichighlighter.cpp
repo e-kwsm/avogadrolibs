@@ -17,9 +17,9 @@ GenericHighlighter::GenericHighlighter(QObject* parent_)
 GenericHighlighter::~GenericHighlighter() {}
 
 GenericHighlighter::GenericHighlighter(const GenericHighlighter& other)
-  : QSyntaxHighlighter(static_cast<QTextDocument*>(nullptr))
+  : QSyntaxHighlighter(static_cast<QTextDocument*>(nullptr)),
+    m_rules(other.m_rules)
 {
-  m_rules = other.m_rules;
 }
 
 GenericHighlighter& GenericHighlighter::operator=(GenericHighlighter other)
