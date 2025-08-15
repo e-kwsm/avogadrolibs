@@ -45,11 +45,12 @@ void setRawHeaders(QNetworkRequest* request)
 }
 
 DownloaderWidget::DownloaderWidget(QWidget* parent)
-  : QDialog(parent), m_ui(new Ui::DownloaderWidget)
+  : QDialog(parent), m_ui(new Ui::DownloaderWidget),
+    m_NetworkAccessManager(new QNetworkAccessManager(this))
 {
   m_filePath =
     QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation);
-  m_NetworkAccessManager = new QNetworkAccessManager(this);
+
   m_ui->setupUi(this);
   // enable links in the readme to open an external browser
   m_ui->readmeBrowser->setOpenExternalLinks(true);
