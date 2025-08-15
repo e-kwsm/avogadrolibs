@@ -11,7 +11,9 @@
 
 namespace Avogadro {
 
-ConformerSearchDialog::ConformerSearchDialog(QWidget* parent) : QDialog(parent)
+ConformerSearchDialog::ConformerSearchDialog(QWidget* parent)
+  : QDialog(parent), m_method(1), // systematic
+    m_numConformers(100)
 {
   ui.setupUi(this);
 
@@ -26,9 +28,6 @@ ConformerSearchDialog::ConformerSearchDialog(QWidget* parent) : QDialog(parent)
 
   connect(ui.buttonBox, SIGNAL(clicked(QAbstractButton*)), this,
           SLOT(buttonClicked(QAbstractButton*)));
-
-  m_method = 1; // systematic
-  m_numConformers = 100;
 
   ui.numSpin->setValue(0);
   ui.systematicRadio->setChecked(true);
