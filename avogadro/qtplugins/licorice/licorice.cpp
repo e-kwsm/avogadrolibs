@@ -48,16 +48,14 @@ struct LayerLicorice : Core::LayerData
   QPointer<QWidget> widget;
   float opacity = 1.0f;
 
-  LayerLicorice()
+  LayerLicorice() : widget(nullptr)
   {
-    widget = nullptr;
     QSettings settings;
     opacity = settings.value("licorice/opacity", 1.0).toFloat();
   }
 
-  LayerLicorice(std::string settings)
+  LayerLicorice(std::string settings) : widget(nullptr)
   {
-    widget = nullptr;
     deserialize(settings);
   }
 
