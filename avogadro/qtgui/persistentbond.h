@@ -87,9 +87,9 @@ private:
 
 template <typename Molecule_T>
 PersistentBond<Molecule_T>::PersistentBond(const BondType& b)
-  : m_molecule(dynamic_cast<MoleculeType*>(b.molecule()))
+  : m_molecule(dynamic_cast<MoleculeType*>(b.molecule())),
+    m_uniqueId(m_molecule ? m_molecule->bondUniqueId(b) : MaxIndex)
 {
-  m_uniqueId = m_molecule ? m_molecule->bondUniqueId(b) : MaxIndex;
 }
 
 template <typename Molecule_T>
