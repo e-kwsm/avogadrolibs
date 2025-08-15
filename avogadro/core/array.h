@@ -127,11 +127,7 @@ public:
   }
 
   /** Copy constructor, note the copy made of the internal data of other. */
-  Array(const Array& other)
-  {
-    other.d->reref();
-    d = other.d;
-  }
+  Array(const Array& other) : d(other.d) { other.d->reref(); }
 
   ~Array();
 
