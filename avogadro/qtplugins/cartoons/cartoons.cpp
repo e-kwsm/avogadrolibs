@@ -184,9 +184,8 @@ struct LayerCartoon : Core::LayerData
                           .toBool();
   }
 
-  LayerCartoon(std::string settings)
+  LayerCartoon(std::string settings) : widget(nullptr)
   {
-    widget = nullptr;
     deserialize(settings);
   }
 
