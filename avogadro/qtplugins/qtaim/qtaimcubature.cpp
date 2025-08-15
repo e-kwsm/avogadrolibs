@@ -2203,11 +2203,8 @@ void property_v_tp(unsigned int /* ndim */, unsigned int npts,
 
 namespace Avogadro::QtPlugins {
 
-QTAIMCubature::QTAIMCubature(QTAIMWavefunction& wfn)
+QTAIMCubature::QTAIMCubature(QTAIMWavefunction& wfn) : m_wfn(&wfn)
 {
-
-  m_wfn = &wfn;
-
   m_temporaryFileName = QTAIMCubature::temporaryFileName();
   m_wfn->saveToBinaryFile(m_temporaryFileName);
 
