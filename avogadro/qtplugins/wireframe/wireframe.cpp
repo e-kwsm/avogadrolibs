@@ -55,18 +55,16 @@ struct LayerWireframe : Core::LayerData
   bool showHydrogens = true;
   float lineWidth = 1.0f;
 
-  LayerWireframe()
+  LayerWireframe() : widget(nullptr)
   {
-    widget = nullptr;
     QSettings settings;
     multiBonds = settings.value("wireframe/multiBonds", true).toBool();
     showHydrogens = settings.value("wireframe/showHydrogens", true).toBool();
     lineWidth = settings.value("wireframe/lineWidth", 1.0).toDouble();
   }
 
-  LayerWireframe(std::string settings)
+  LayerWireframe(std::string settings) : widget(nullptr)
   {
-    widget = nullptr;
     deserialize(settings);
   }
 
