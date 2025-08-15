@@ -42,10 +42,8 @@ public:
 };
 
 OBEnergy::OBEnergy(const std::string& method)
-  : m_identifier(method), m_name(method), m_molecule(nullptr)
+  : d(new Private), m_identifier(method), m_name(method), m_molecule(nullptr)
 {
-  d = new Private;
-
   // make sure we set the Open Babel variables for data files
 #ifdef _WIN32
   QByteArray dataDir =
