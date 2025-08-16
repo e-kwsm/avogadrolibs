@@ -710,7 +710,7 @@ idamax = first i, i=1 to n, to minimize fabs( dx[1-incx+i*incx] ).
 #define max(a, b) ((a) > (b) ? (a) : (b))
 #define min(a, b) ((a) < (b) ? (a) : (b))
 
-#define ETA 2.2204460492503131e-16
+static constexpr double ETA = 2.2204460492503131e-16;
 
 /*
 static void
