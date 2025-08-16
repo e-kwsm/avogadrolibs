@@ -29,7 +29,7 @@ namespace Avogadro::QtPlugins {
 using QtGui::Molecule;
 using QtGui::RWAtom;
 
-#define ROTATION_SPEED 0.5
+static constexpr double ROTATION_SPEED = 0.5;
 
 class ManipulateWidget : public QWidget, public Ui::ManipulateWidget
 {
