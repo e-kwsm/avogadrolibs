@@ -20,7 +20,7 @@
 #endif
 
 // Angle of tetrahedron
-#define M_TETRAHED 109.47122063449069389
+static constexpr double M_TETRAHED = 109.47122063449069389;
 
 using Avogadro::Vector3;
 using Avogadro::Core::Array;

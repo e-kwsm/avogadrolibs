@@ -39,10 +39,9 @@
 
 using namespace Eigen;
 
-#define HUGE_REAL_NUMBER 1.e20
-#define SMALL_GRADIENT_NORM 1.e-4
-
 namespace Avogadro::QtPlugins {
+static constexpr double HUGE_REAL_NUMBER = 1.e20;
+static constexpr double SMALL_GRADIENT_NORM = 1.e-4;
 
 namespace helper {
 template <qint64 ExpectedSignatureV>

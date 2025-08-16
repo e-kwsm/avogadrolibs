@@ -21,6 +21,18 @@ using Avogadro::Core::GaussianSet;
 using Avogadro::QtGui::Molecule;
 using QtGui::Molecule;
 
+<<<<<<< HEAD
+||||||| parent of 5b2d433a2 (refactor: cppcoreguidelines-macro-usage)
+// CODATA 2022
+// https://physics.nist.gov/cgi-bin/cuu/Value?hrev
+#define AU_TO_EV 27.211386245981
+
+=======
+// CODATA 2022
+// https://physics.nist.gov/cgi-bin/cuu/Value?hrev
+static constexpr double AU_TO_EV = 27.211386245981;
+
+>>>>>>> 5b2d433a2 (refactor: cppcoreguidelines-macro-usage)
 MolecularModel::MolecularModel(QObject* parent)
   : QAbstractTableModel(parent), m_molecule(nullptr)
 {
