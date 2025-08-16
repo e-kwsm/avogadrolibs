@@ -704,10 +704,7 @@ idamax = first i, i=1 to n, to minimize fabs( dx[1-incx+i*incx] ).
 
 // lsoda.c
 
-#define max(a, b) ((a) > (b) ? (a) : (b))
-#define min(a, b) ((a) < (b) ? (a) : (b))
-
-#define ETA 2.2204460492503131e-16
+static constexpr double ETA = 2.2204460492503131e-16;
 
 /*
 static void
@@ -983,7 +980,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
         }
         if (mxordn == 0)
           mxordn = 100;
-        mxordn = min(mxordn, mord[1]);
+        mxordn = std::min(mxordn, mord[1]);
         mxords = iwork9;
         if (mxords < 0) {
           qDebug("lsoda -- mxords = %d is less than 0", mxords);
@@ -992,7 +989,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
         }
         if (mxords == 0)
           mxords = 100;
-        mxords = min(mxords, mord[2]);
+        mxords = std::min(mxords, mord[2]);
         if ((tout - *t) * h0 < 0.) {
           qDebug("lsoda -- tout = %g behind t = %g", tout, *t);
           qDebug("         integration direction is given by %g", h0);
@@ -1030,7 +1027,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
     sqrteta = sqrt(ETA);
     meth = 1;
     nyh = n;
-    lenyh = 1 + max(mxordn, mxords);
+    lenyh = 1 + std::max(mxordn, mxords);
 
     m_lenyh = lenyh;
     m_nyh = nyh;
@@ -1212,7 +1209,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
 */
     if (h0 == 0.) {
       tdist = fabs(tout - *t);
-      w0 = max(fabs(*t), fabs(tout));
+      w0 = std::max(fabs(*t), fabs(tout));
       if (tdist < 2. * ETA * w0) {
         qDebug("lsoda -- tout too close to t to start integration ");
         terminate(istate);
@@ -1222,7 +1219,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
       tol = rtol[1];
       if (itol > 2) {
         for (i = 2; i <= n; i++)
-          tol = max(tol, rtol[i]);
+          tol = std::max(tol, rtol[i]);
       }
       if (tol <= 0.) {
         atoli = atol[1];
@@ -1231,15 +1228,15 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
             atoli = atol[i];
           ayi = fabs(y[i]);
           if (ayi != 0.)
-            tol = max(tol, atoli / ayi);
+            tol = std::max(tol, atoli / ayi);
         }
       }
-      tol = max(tol, 100. * ETA);
-      tol = min(tol, 0.001);
+      tol = std::max(tol, 100. * ETA);
+      tol = std::min(tol, 0.001);
       sum = vmnorm(n, yh[2], ewt);
       sum = 1. / (tol * w0 * w0) + tol * sum * sum;
       h0 = 1. / sqrt(sum);
-      h0 = min(h0, tdist);
+      h0 = std::min(h0, tdist);
       h0 = h0 * ((tout - *t >= 0.) ? 1. : -1.);
     } /*   end if ( h0 == 0. )   */
     /*
@@ -1705,7 +1702,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
       if (corflag == 0)
         break;
       if (corflag == 1) {
-        rh = max(rh, hmin / fabs(h));
+        rh = std::max(rh, hmin / fabs(h));
         scaleh(&rh, &pdh);
         continue;
       }
@@ -1756,7 +1753,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
       if (icount < 0) {
         methodswitch(dsm, pnorm, &pdh, &rh);
         if (meth != mused) {
-          rh = max(rh, hmin / fabs(h));
+          rh = std::max(rh, hmin / fabs(h));
           scaleh(&rh, &pdh);
           rmax = 10.;
           endstoda();
@@ -1789,7 +1786,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
    h is changed, but not nq.
 */
         if (orderflag == 1) {
-          rh = max(rh, hmin / fabs(h));
+          rh = std::max(rh, hmin / fabs(h));
           scaleh(&rh, &pdh);
           rmax = 10.;
           endstoda();
@@ -1800,7 +1797,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
 */
         if (orderflag == 2) {
           resetcoeff();
-          rh = max(rh, hmin / fabs(h));
+          rh = std::max(rh, hmin / fabs(h));
           scaleh(&rh, &pdh);
           rmax = 10.;
           endstoda();
@@ -1846,13 +1843,13 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
         orderswitch(&rhup, dsm, &pdh, &rh, &orderflag);
         if (orderflag == 1 || orderflag == 0) {
           if (orderflag == 0)
-            rh = min(rh, 0.2);
-          rh = max(rh, hmin / fabs(h));
+            rh = std::min(rh, 0.2);
+          rh = std::max(rh, hmin / fabs(h));
           scaleh(&rh, &pdh);
         }
         if (orderflag == 2) {
           resetcoeff();
-          rh = max(rh, hmin / fabs(h));
+          rh = std::max(rh, hmin / fabs(h));
           scaleh(&rh, &pdh);
         }
         continue;
@@ -1874,7 +1871,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
           break;
         } else {
           rh = 0.1;
-          rh = max(hmin / fabs(h), rh);
+          rh = std::max(hmin / fabs(h), rh);
           h *= rh;
           yp1 = yh[1];
           for (i = 1; i <= n; i++)
@@ -2131,8 +2128,8 @@ void QTAIMLSODAIntegrator::scaleh(double* rh, double* pdh)
    l = nq + 1 to prevent a change of h for that many steps, unless
    forced by a convergence or error test failure.
 */
-  *rh = min(*rh, rmax);
-  *rh = *rh / max(1., fabs(h) * hmxi * *rh);
+  *rh = std::min(*rh, rmax);
+  *rh = *rh / std::max(1., fabs(h) * hmxi * *rh);
   /*
    If meth = 1, also restrict the new step size by the stability region.
    If this reduces h, set irflag to 1 so that if there are roundoff
@@ -2140,7 +2137,7 @@ void QTAIMLSODAIntegrator::scaleh(double* rh, double* pdh)
 */
   if (meth == 1) {
     irflag = 0;
-    *pdh = max(fabs(h) * pdlast, 0.000001);
+    *pdh = std::max(fabs(h) * pdlast, 0.000001);
     if ((*rh * *pdh * 1.00001) >= sm1[nq]) {
       *rh = sm1[nq] / *pdh;
       irflag = 1;
@@ -2193,7 +2190,7 @@ void QTAIMLSODAIntegrator::prja(int neq, double* y)
       r0 = 1.;
     for (j = 1; j <= n; j++) {
       yj = y[j];
-      r = max(sqrteta * fabs(yj), r0 / ewt[j]);
+      r = std::max(sqrteta * fabs(yj), r0 / ewt[j]);
       y[j] += r;
       fac = -hl0 / r;
       f(neq, tn, y, acor);
@@ -2237,7 +2234,7 @@ vmnorm = max( i = 1, ..., n ) fabs( v[i] ) * w[i].
 
   vm = 0.;
   for (i = 1; i <= n_; i++)
-    vm = max(vm, fabs(v[i]) * w[i]);
+    vm = std::max(vm, fabs(v[i]) * w[i]);
   return vm;
 
 } /*   end vmnorm   */
@@ -2261,7 +2258,7 @@ on vectors, with weights stored in the array w.
     ap1 = a[i];
     for (j = 1; j <= n_; j++)
       sum += fabs(ap1[j]) / w[j];
-    an = max(an, sum * w[i]);
+    an = std::max(an, sum * w[i]);
   }
   return an;
 
@@ -2375,12 +2372,12 @@ void QTAIMLSODAIntegrator::correction(int neq, double* y, int* corflag,
         rm = 1024.0;
         if (*del <= (1024. * *delp))
           rm = *del / *delp;
-        rate = max(rate, rm);
-        crate = max(0.2 * crate, rm);
+        rate = std::max(rate, rm);
+        crate = std::max(0.2 * crate, rm);
       }
-      dcon = *del * min(1., 1.5 * crate) / (tesco[nq][2] * conit);
+      dcon = *del * std::min(1., 1.5 * crate) / (tesco[nq][2] * conit);
       if (dcon <= 1.) {
-        pdest = max(pdest, rate / fabs(h * el[1]));
+        pdest = std::max(pdest, rate / fabs(h * el[1]));
         if (pdest != 0.)
           pdlast = pdest;
         break;
@@ -2501,7 +2498,7 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
       if (irflag == 0)
         return;
       rh2 = 2.;
-      nqm2 = min(nq, mxords);
+      nqm2 = std::min(nq, mxords);
     } else {
       exsm = 1. / (double)l;
       rh1 = 1. / (1.2 * pow(dsm, exsm) + 0.0000012);
@@ -2509,7 +2506,7 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
       *pdh = pdlast * fabs(h);
       if ((*pdh * rh1) > 0.00001)
         rh1it = sm1[nq] / *pdh;
-      rh1 = min(rh1, rh1it);
+      rh1 = std::min(rh1, rh1it);
       if (nq > mxords) {
         nqm2 = mxords;
         lm2 = mxords + 1;
@@ -2565,11 +2562,11 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
   *pdh = pdnorm * fabs(h);
   if ((*pdh * rh1) > 0.00001)
     rh1it = sm1[nqm1] / *pdh;
-  rh1 = min(rh1, rh1it);
+  rh1 = std::min(rh1, rh1it);
   rh2 = 1. / (1.2 * pow(dsm, exsm) + 0.0000012);
   if ((rh1 * ratio) < (5. * rh2))
     return;
-  alpha = max(0.001, rh1);
+  alpha = std::max(0.001, rh1);
   dm1 *= pow(alpha, exm1);
   if (dm1 <= 1000. * ETA * pnorm)
     return;
@@ -2638,12 +2635,12 @@ orderflag = 0  : no change in h or nq,
    If meth = 1, limit rh according to the stability region also.
 */
   if (meth == 1) {
-    *pdh = max(fabs(h) * pdlast, 0.000001);
+    *pdh = std::max(fabs(h) * pdlast, 0.000001);
     if (l < lmax)
-      *rhup = min(*rhup, sm1[l] / *pdh);
-    rhsm = min(rhsm, sm1[nq] / *pdh);
+      *rhup = std::min(*rhup, sm1[l] / *pdh);
+    rhsm = std::min(rhsm, sm1[nq] / *pdh);
     if (nq > 1)
-      rhdn = min(rhdn, sm1[nq - 1] / *pdh);
+      rhdn = std::min(rhdn, sm1[nq - 1] / *pdh);
     pdest = 0.;
   }
   if (rhsm >= *rhup) {
@@ -2695,7 +2692,7 @@ orderflag = 0  : no change in h or nq,
     }
   }
   if (kflag <= -2)
-    *rh = min(*rh, 0.2);
+    *rh = std::min(*rh, 0.2);
   /*
    If there is a change of order, reset nq, l, and the coefficients.
    In any case h is reset according to rh and the yh array is rescaled.
