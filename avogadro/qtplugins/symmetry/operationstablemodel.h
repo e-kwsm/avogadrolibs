@@ -28,10 +28,9 @@ extern "C"
 #include <QStyledItemDelegate>
 #include <QTextDocument>
 
-#define OPERATIONSTABLEMODEL_COLUMN_COUNT 3
-
 namespace Avogadro {
 namespace QtPlugins {
+static constexpr int OPERATIONSTABLEMODEL_COLUMN_COUNT = 3;
 
 class OperationsTableModel : public QAbstractTableModel
 {

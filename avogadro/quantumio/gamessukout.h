@@ -13,12 +13,11 @@
 #include <string>
 #include <vector>
 
-#define BUFF_SIZE 32768
-
 class QString;
 
 namespace Avogadro {
 namespace QuantumIO {
+static constexpr unsigned BUFF_SIZE = 32768;
 
 using Quantum::GaussianSet;
 using Quantum::orbital;

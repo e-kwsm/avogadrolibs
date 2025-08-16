@@ -28,11 +28,10 @@
 #include <cmath>
 #include <sstream>
 
-// bond angles
-#define M_TETRAHEDRAL (acosf(-1.0f / 3.0f))
-#define M_TRIGONAL (2.0f * M_PI / 3.0f)
-
 namespace Avogadro::QtPlugins {
+// bond angles
+static const float M_TETRAHEDRAL = acosf(-1.0f / 3.0f);
+static constexpr float M_TRIGONAL = 2.0f * M_PI / 3.0f;
 
 using Core::Array;
 using Core::AtomHybridization;

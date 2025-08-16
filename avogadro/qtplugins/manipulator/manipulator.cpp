@@ -29,7 +29,7 @@ namespace Avogadro::QtPlugins {
 using QtGui::Molecule;
 using QtGui::RWAtom;
 
-#define ROTATION_SPEED 0.5
+constexpr double ROTATION_SPEED = 0.5;
 #ifndef DEG_TO_RAD
 #define DEG_TO_RAD 0.0174532925
 #endif
