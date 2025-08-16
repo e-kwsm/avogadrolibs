@@ -51,7 +51,7 @@ Matrix<qreal, 3, 1> cartesianToSpherical(const Matrix<qreal, 3, 1>& xyz);
 // Cerjan-Miller-Baker-Popelier Methods
 
 // A small number to prevent divide by zero in CMBP routines
-#define SMALL 1.e-10
+static constexpr qreal SMALL = 1.e-10;
 
 Matrix<qreal, 3, 1> minusThreeSignatureLocatorGradient(
   const Matrix<qreal, 3, 1>& g, const Matrix<qreal, 3, 3>& H);
