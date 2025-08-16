@@ -23,7 +23,7 @@ using QtGui::Molecule;
 
 // CODATA 2022
 // https://physics.nist.gov/cgi-bin/cuu/Value?hrev
-#define AU_TO_EV 27.211386245981
+static constexpr double AU_TO_EV = 27.211386245981;
 
 MolecularModel::MolecularModel(QObject* parent)
   : QAbstractTableModel(parent), m_molecule(nullptr)

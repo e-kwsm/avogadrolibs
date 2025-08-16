@@ -714,7 +714,7 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
 //
 {
 // ECB: originally 3000
-#define MAXNFE 1000
+static const qint64 MAXNFE = 1000;
 
   qreal ae;
   qreal dt;
@@ -1134,7 +1134,6 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
       return (-2);
     }
   }
-#undef MAXNFE
 }
 //****************************************************************************80
 
