@@ -153,8 +153,8 @@
 using namespace Avogadro::QtPlugins;
 
 /* error return codes */
-#define SUCCESS 0
-#define FAILURE 1
+static constexpr int SUCCESS = 0;
+static constexpr int FAILURE = 1;
 
 /***************************************************************************/
 /* Basic datatypes */
