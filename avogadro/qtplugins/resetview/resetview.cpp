@@ -16,9 +16,8 @@
 
 #include <limits>
 
-#define CAMERA_NEAR_DISTANCE 13.35f // Experimental number
-
 namespace Avogadro::QtPlugins {
+static constexpr float CAMERA_NEAR_DISTANCE = 13.35f; // Experimental number
 
 using Avogadro::QtGui::ExtensionPlugin;
 using Core::Array;
