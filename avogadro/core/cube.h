@@ -29,6 +29,8 @@ class AVOGADROCORE_EXPORT Cube
 {
 public:
   Cube();
+  Cube(const Cube&) = default;
+  Cube& operator=(const Cube&) = default;
   ~Cube();
 
   /**
