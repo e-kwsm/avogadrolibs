@@ -6,10 +6,6 @@ include_directories("${AvogadroLibs_BINARY_DIR}/avogadro/qtgui"
 find_package(OpenGL REQUIRED)
 include_directories(SYSTEM ${OPENGL_INCLUDE_DIR})
 
-find_package(Qt5 COMPONENTS Widgets REQUIRED)
-include_directories(SYSTEM ${Qt5Widgets_INCLUDE_DIRS})
-add_definitions(${Qt5Widgets_DEFINITIONS})
-
 # We want to find some parts of VTK in order to do image comparisons.
 find_package(VTK
   COMPONENTS vtkImagingCore vtkRenderingQt vtkIOImage
