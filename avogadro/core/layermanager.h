@@ -29,6 +29,7 @@ class Molecule;
 struct LayerData
 {
   LayerData(std::string save = "") { deserialize(save); }
+  LayerData(const LayerData&) = default;
 
   /** save custom data, base save should never be called */
   virtual std::string serialize() { return ""; }
