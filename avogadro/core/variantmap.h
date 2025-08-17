@@ -31,6 +31,9 @@ public:
   /** Creates a new variant map object. */
   VariantMap() = default;
 
+  VariantMap(const VariantMap&) = default;
+  VariantMap& operator=(const VariantMap&) = default;
+
   /** Destroys the variant map. */
   ~VariantMap() = default;
 

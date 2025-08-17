@@ -25,6 +25,8 @@ class AVOGADROCORE_EXPORT Layer
 {
 public:
   Layer() = default;
+  Layer(const Layer&) = default;
+  Layer& operator=(const Layer&) = default;
   ~Layer() = default;
 
   // att atom to param layer
