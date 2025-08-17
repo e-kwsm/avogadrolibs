@@ -247,13 +247,13 @@ TEST_F(MoleculeTest, uniqueAtom)
   // Check we can get the invalid atom, and also resolve the unique IDs to the
   // correct atom objects.
   Atom test = molecule.atomByUniqueId(uid1);
-  EXPECT_TRUE(a1 == test);
+  EXPECT_EQ(a1, test);
   test = molecule.atomByUniqueId(uid2);
   EXPECT_FALSE(test.isValid());
   test = molecule.atomByUniqueId(uid4);
-  EXPECT_FALSE(a1 == test);
-  EXPECT_TRUE(a4 == test);
-  EXPECT_TRUE(a2 != test);
+  EXPECT_NE(a1, test);
+  EXPECT_EQ(a4, test);
+  EXPECT_NE(a2, test);
   EXPECT_EQ(test.atomicNumber(), 8);
 }
 
@@ -277,7 +277,7 @@ TEST_F(MoleculeTest, uniqueAtomRestore)
   // Check we can get the invalid atom, and also resolve the unique IDs to the
   // correct atom objects.
   Atom test = molecule.atomByUniqueId(uid1);
-  EXPECT_TRUE(a1 == test);
+  EXPECT_EQ(a1, test);
   test = molecule.atomByUniqueId(uid2);
   EXPECT_FALSE(test.isValid());
   test = molecule.addAtom(8, uid2);
@@ -311,14 +311,14 @@ TEST_F(MoleculeTest, persistentAtom)
   // Check we can get the invalid atom, and also resolve the unique IDs to the
   // correct atom objects from their persistent atom containers.
   Atom test = pa1.atom();
-  EXPECT_TRUE(a1 == test);
+  EXPECT_EQ(a1, test);
   test = pa2.atom();
   EXPECT_FALSE(pa2.isValid());
   EXPECT_FALSE(test.isValid());
   test = pa4.atom();
-  EXPECT_FALSE(a1 == test);
-  EXPECT_TRUE(a4 == test);
-  EXPECT_TRUE(a2 != test);
+  EXPECT_NE(a1, test);
+  EXPECT_EQ(a4, test);
+  EXPECT_NE(a2, test);
   EXPECT_EQ(test.atomicNumber(), 8);
 }
 
@@ -342,7 +342,7 @@ TEST_F(MoleculeTest, persistentAtomRestore)
   // Check we can get the invalid atom, and also resolve the unique IDs to the
   // correct atom objects from their persistent atom containers.
   Atom test = pa1.atom();
-  EXPECT_TRUE(a1 == test);
+  EXPECT_EQ(a1, test);
   test = pa2.atom();
   EXPECT_FALSE(test.isValid());
   test = molecule.addAtom(8, pa2.uniqueIdentifier());
