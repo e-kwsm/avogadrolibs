@@ -43,6 +43,8 @@ struct LayerLicorice : Core::LayerData
     deserialize(settings);
   }
 
+  LayerLicorice(const LayerLicorice&) = default;
+
   LayerData* clone() final { return new LayerLicorice(*this); }
 
   ~LayerLicorice() override

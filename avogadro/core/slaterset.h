@@ -43,6 +43,9 @@ public:
    */
   SlaterSet() = default;
 
+  SlaterSet(const SlaterSet&) = default;
+  SlaterSet& operator=(const SlaterSet&) = default;
+
   /**
    * Destructor.
    */

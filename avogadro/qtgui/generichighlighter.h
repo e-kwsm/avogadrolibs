@@ -34,6 +34,8 @@ public:
   {
   public:
     Rule() {}
+    Rule(const Rule&) = default;
+    Rule& operator=(const Rule&) = default;
     ~Rule() {}
 
     /** Add the pattern @a regexp to this Rule. */

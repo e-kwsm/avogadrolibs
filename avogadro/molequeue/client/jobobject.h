@@ -34,6 +34,8 @@ class AVOGADROMOLEQUEUE_EXPORT JobObject
 {
 public:
   JobObject();
+  JobObject(const JobObject&) = default;
+  JobObject& operator=(const JobObject&) = default;
   ~JobObject();
 
   /** Set the @p value of the specified @p key. */

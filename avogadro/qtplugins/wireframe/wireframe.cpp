@@ -53,6 +53,8 @@ struct LayerWireframe : Core::LayerData
     deserialize(settings);
   }
 
+  LayerWireframe(const LayerWireframe&) = default;
+
   LayerData* clone() final { return new LayerWireframe(*this); }
 
   ~LayerWireframe() override

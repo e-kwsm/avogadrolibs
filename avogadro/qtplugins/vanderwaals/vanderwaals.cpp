@@ -41,6 +41,8 @@ struct LayerVdW : Core::LayerData
     deserialize(settings);
   }
 
+  LayerVdW(const LayerVdW&) = default;
+
   LayerData* clone() final { return new LayerVdW(*this); }
 
   ~LayerVdW() override

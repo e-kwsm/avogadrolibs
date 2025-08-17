@@ -54,6 +54,8 @@ public:
    */
   GaussianSet();
 
+  GaussianSet(const GaussianSet&) = default;
+
   /**
    * Destructor.
    */
