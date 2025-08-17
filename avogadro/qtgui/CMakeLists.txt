@@ -1,5 +1,5 @@
 if(QT_VERSION EQUAL 6)
-  find_package(Qt6 COMPONENTS Widgets Concurrent REQUIRED)
+  find_package(Qt6 6.8 COMPONENTS Widgets Concurrent REQUIRED)
 endif()
 
 # Provide some simple API to find the plugins, scripts, etc.
@@ -118,7 +118,7 @@ set(UIS
   customelementdialog.ui
   insertfragmentdialog.ui
 )
-qt_wrap_ui(UI_SOURCES ${UIS})
+qt_add_ui(QtGui SOURCES ${UIS})
 target_sources(QtGui PRIVATE ${UI_SOURCES})
 
 set(RCS
