@@ -1,5 +1,5 @@
-find_package(Qt${QT_VERSION} COMPONENTS Widgets Network Concurrent REQUIRED)
 if(QT_VERSION EQUAL 6)
+  find_package(Qt6 6.8 COMPONENTS Widgets Network Concurrent REQUIRED)
   find_package(Qt6 COMPONENTS OpenGLWidgets REQUIRED)
 endif()
 
@@ -42,7 +42,6 @@ function(avogadro_plugin name description type header pluginClass sources)
   if(${ARGC} GREATER 7)
     set(rcs ${ARGV7})
   endif()
-  qt_wrap_ui(ui_srcs ${uis})
   qt_add_resources(rc_srcs ${rcs})
   unset(PluginIncludes)
   foreach(_header ${header})
@@ -77,6 +76,9 @@ function(avogadro_plugin name description type header pluginClass sources)
     ${name}Plugin.cpp
   )
   target_link_libraries(${name} PRIVATE Avogadro::QtGui)
+  if(uis)
+    qt_add_ui(${name} SOURCES ${uis})
+  endif()
 
   if("${_plugin_object}" STREQUAL "STATIC")
     set_target_properties(${name} PROPERTIES COMPILE_DEFINITIONS
