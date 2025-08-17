@@ -1,5 +1,5 @@
 if(QT_VERSION EQUAL 6)
-  find_package(Qt6 COMPONENTS Widgets Network REQUIRED)
+  find_package(Qt6 6.8 COMPONENTS Widgets Network REQUIRED)
 endif()
 
 add_library(MoleQueue)
@@ -35,7 +35,7 @@ set(UIS
   molequeuedialog.ui
   molequeuewidget.ui
 )
-qt_wrap_ui(UI_SOURCES ${UIS})
+qt_add_ui(MoleQueue SOURCES ${UIS})
 target_sources(MoleQueue PRIVATE ${UI_SOURCES})
 
 avogadro_add_library(MoleQueue ${HEADERS} ${SOURCES})
