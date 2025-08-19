@@ -64,7 +64,7 @@ TEST(VariantTest, toChar)
 
 TEST(VariantTest, toShort)
 {
-  Variant variant(short(4));
+  Variant variant(static_cast<short>(4));
   EXPECT_EQ(variant.toShort(), short(4));
 }
 
