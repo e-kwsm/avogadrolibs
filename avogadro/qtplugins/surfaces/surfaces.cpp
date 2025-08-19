@@ -773,7 +773,7 @@ Core::Color3f Surfaces::chargeGradient(double value, double clamp,
     1.0 - ((scaledValue + 1.0) / 2.0); // from 0 to 1.0 red to blue
 
   auto color = tinycolormap::GetColor(scaledValue2, colormap);
-  Core::Color3f r(float(color.r()), color.g(), color.b());
+  Core::Color3f r(static_cast<float>(color.r()), color.g(), color.b());
 
   return r;
 }
