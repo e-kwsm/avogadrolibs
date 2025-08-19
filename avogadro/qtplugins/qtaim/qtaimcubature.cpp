@@ -201,7 +201,7 @@ static hypercube make_hypercube(unsigned int dim, const double* center,
   unsigned int i;
   hypercube h;
   h.dim = dim;
-  h.data = (double*)malloc(sizeof(double) * dim * 2);
+  h.data = static_cast<double*>(malloc(sizeof(double) * dim * 2));
   h.vol = 0;
   if (h.data) {
     for (i = 0; i < dim; ++i) {
@@ -249,7 +249,8 @@ static region make_region(const hypercube* h, unsigned int fdim)
   R.h = make_hypercube(h->dim, h->data, h->data + h->dim);
   R.splitDim = 0;
   R.fdim = fdim;
-  R.ee = R.h.data ? (esterr*)malloc(sizeof(esterr) * fdim) : nullptr;
+  R.ee =
+    R.h.data ? static_cast<esterr*>(malloc(sizeof(esterr) * fdim)) : nullptr;
   return R;
 }
 
@@ -271,7 +272,7 @@ static int cut_region(region* R, region* R2)
     return FAILURE;
   R->h.data[d] -= R->h.data[d + dim];
   R2->h.data[d] += R->h.data[d + dim];
-  R2->ee = (esterr*)malloc(sizeof(esterr) * R2->fdim);
+  R2->ee = static_cast<esterr*>(malloc(sizeof(esterr) * R2->fdim));
   return R2->ee == nullptr;
 }
 
@@ -312,8 +313,8 @@ static int alloc_rule_pts(rule* r, unsigned int num_regions)
              repeatedly calling alloc_rule_pts with
              growing num_regions only needs
              a logarithmic number of allocations */
-    r->pts = (double*)malloc(
-      sizeof(double) * (num_regions * r->num_points * (r->dim + r->fdim)));
+    r->pts = static_cast<double*>(malloc(
+      sizeof(double) * (num_regions * r->num_points * (r->dim + r->fdim))));
     if (r->fdim + r->dim > 0 && !r->pts)
       return FAILURE;
     r->vals = r->pts + num_regions * r->num_points * r->dim;
@@ -331,7 +332,7 @@ static rule* make_rule(size_t sz, /* >= sizeof(rule) */
 
   if (sz < sizeof(rule))
     return nullptr;
-  r = (rule*)malloc(sz);
+  r = static_cast<rule*>(malloc(sz));
   if (!r)
     return nullptr;
   r->pts = r->vals = nullptr;
@@ -522,7 +523,7 @@ static int isqr(int x)
 
 static void destroy_rule75genzmalik(rule* r_)
 {
-  auto* r = (rule75genzmalik*)r_;
+  auto* r = reinterpret_cast<rule75genzmalik*>(r_);
   free(r->p);
 }
 
@@ -539,7 +540,7 @@ static int rule75genzmalik_evalError(rule* r_, unsigned int fdim, integrand_v f,
   const double weightE4 = 25. / 729.;
   const double ratio = (lambda2 * lambda2) / (lambda4 * lambda4);
 
-  auto* r = (rule75genzmalik*)r_;
+  auto* r = reinterpret_cast<rule75genzmalik*>(r_);
   unsigned int i, j, iR, dim = r_->dim, npts = 0;
   double *diff, *pts, *vals;
 
@@ -666,10 +667,10 @@ static rule* make_rule75genzmalik(unsigned int dim, unsigned int fdim)
   if (dim >= sizeof(unsigned int) * 8)
     return nullptr;
 
-  r = (rule75genzmalik*)make_rule(
+  r = reinterpret_cast<rule75genzmalik*>(make_rule(
     sizeof(rule75genzmalik), dim, fdim,
     num0_0(dim) + 2 * numR0_0fs(dim) + numRR0_0fs(dim) + numR_Rfs(dim),
-    rule75genzmalik_evalError, destroy_rule75genzmalik);
+    rule75genzmalik_evalError, destroy_rule75genzmalik));
   if (!r)
     return nullptr;
 
@@ -681,15 +682,15 @@ static rule* make_rule75genzmalik(unsigned int dim, unsigned int fdim)
     (real(729 - 950 * to_int(dim) + 50 * isqr(to_int(dim))) / real(729));
   r->weightE3 = real(265 - 100 * to_int(dim)) / real(1458);
 
-  r->p = (double*)malloc(sizeof(double) * dim * 3);
+  r->p = static_cast<double*>(malloc(sizeof(double) * dim * 3));
   if (!r->p) {
-    destroy_rule((rule*)r);
+    destroy_rule(reinterpret_cast<rule*>(r));
     return nullptr;
   }
   r->widthLambda = r->p + dim;
   r->widthLambda2 = r->p + 2 * dim;
 
-  return (rule*)r;
+  return reinterpret_cast<rule*>(r);
 }
 
 /***************************************************************************/
@@ -855,7 +856,8 @@ using heap = struct
 static void heap_resize(heap* h, unsigned int nalloc)
 {
   h->nalloc = nalloc;
-  h->items = (heap_item*)realloc(h->items, sizeof(heap_item) * nalloc);
+  h->items =
+    static_cast<heap_item*>(realloc(h->items, sizeof(heap_item) * nalloc));
 }
 
 static heap heap_alloc(unsigned int nalloc, unsigned int fdim)
@@ -866,7 +868,7 @@ static heap heap_alloc(unsigned int nalloc, unsigned int fdim)
   h.nalloc = 0;
   h.items = nullptr;
   h.fdim = fdim;
-  h.ee = (esterr*)malloc(sizeof(esterr) * fdim);
+  h.ee = static_cast<esterr*>(malloc(sizeof(esterr) * fdim));
   if (h.ee) {
     for (i = 0; i < fdim; ++i)
       h.ee[i].val = h.ee[i].err = 0;
@@ -980,12 +982,12 @@ static int ruleadapt_integrate(rule* r, unsigned int fdim, integrand_v f,
   if (!regions.ee || !regions.items)
     goto bad;
 
-  ee = (esterr*)malloc(sizeof(esterr) * fdim);
+  ee = static_cast<esterr*>(malloc(sizeof(esterr) * fdim));
   if (!ee)
     goto bad;
 
   nR_alloc = 2;
-  R = (region*)malloc(sizeof(region) * nR_alloc);
+  R = static_cast<region*>(malloc(sizeof(region) * nR_alloc));
   if (!R)
     goto bad;
   R[0] = make_region(h, fdim);
@@ -1035,7 +1037,7 @@ static int ruleadapt_integrate(rule* r, unsigned int fdim, integrand_v f,
       do {
         if (nR + 2 > nR_alloc) {
           nR_alloc = (nR + 2) * 2;
-          R = (region*)realloc(R, nR_alloc * sizeof(region));
+          R = static_cast<region*>(realloc(R, nR_alloc * sizeof(region)));
           if (!R)
             goto bad;
         }
@@ -1143,7 +1145,7 @@ using fv_data = struct fv_data_s
 static void fv(unsigned int ndim, unsigned int npt, const double* x, void* d_,
                unsigned int fdim, double* fval)
 {
-  auto* d = (fv_data*)d_;
+  auto* d = static_cast<fv_data*>(d_);
   double* fval1 = d->fval1;
   unsigned int i, k;
   /* printf("npt = %u\n", npt); */
@@ -1167,7 +1169,7 @@ int adapt_integrate(unsigned int fdim, integrand f, void* fdata,
 
   d.f = f;
   d.fdata = fdata;
-  d.fval1 = (double*)malloc(sizeof(double) * fdim);
+  d.fval1 = static_cast<double*>(malloc(sizeof(double) * fdim));
   if (!d.fval1) {
     unsigned int i;
     for (i = 0; i < fdim; ++i) {
@@ -1337,7 +1339,7 @@ void property_v(unsigned int /* ndim */, unsigned int npts, const double* xyz,
                 void* param, unsigned int /* dim */, double* fval)
 {
 
-  auto* paramVariantListPtr = (QVariantList*)param;
+  auto* paramVariantListPtr = static_cast<QVariantList*>(param);
   QVariantList paramVariantList = *paramVariantListPtr;
 
   qint64 counter = 0;
@@ -1617,7 +1619,7 @@ void property_v_rtp(unsigned int /* ndim */, unsigned int npts,
                     double* fval)
 {
 
-  auto* paramVariantListPtr = (QVariantList*)param;
+  auto* paramVariantListPtr = static_cast<QVariantList*>(param);
   QVariantList paramVariantList = *paramVariantListPtr;
 
   qint64 counter = 0;
@@ -1727,7 +1729,7 @@ void property_r(unsigned int ndim, const double* xyz, void* param,
   ndim = ndim;
   fdim = fdim;
 
-  auto* paramVariantListPtr = (QVariantList*)param;
+  auto* paramVariantListPtr = static_cast<QVariantList*>(param);
   QVariantList paramVariantList = *paramVariantListPtr;
 
   qint64 counter = 0;
@@ -2044,8 +2046,8 @@ endOfBisection:
   unsigned int fdim = 1;
   double* val;
   double* err;
-  val = (double*)malloc(sizeof(double) * fdim);
-  err = (double*)malloc(sizeof(double) * fdim);
+  val = static_cast<double*>(malloc(sizeof(double) * fdim));
+  err = static_cast<double*>(malloc(sizeof(double) * fdim));
 
   double tol = 1.e-6;
   unsigned int maxEval = 0;
@@ -2054,8 +2056,8 @@ endOfBisection:
 
   double* xmin;
   double* xmax;
-  xmin = (double*)malloc(dim * sizeof(double));
-  xmax = (double*)malloc(dim * sizeof(double));
+  xmin = static_cast<double*>(malloc(dim * sizeof(double)));
+  xmax = static_cast<double*>(malloc(dim * sizeof(double)));
 
   xmin[0] = 0.0;
   xmax[0] = rf;
@@ -2099,7 +2101,7 @@ void property_v_tp(unsigned int /* ndim */, unsigned int npts,
                    double* fval)
 {
 
-  auto* paramVariantListPtr = (QVariantList*)param;
+  auto* paramVariantListPtr = static_cast<QVariantList*>(param);
   QVariantList paramVariantList = *paramVariantListPtr;
 
   qint64 counter = 0;
@@ -2239,8 +2241,8 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
   unsigned int fdim = 1;
   double* val;
   double* err;
-  val = (double*)malloc(sizeof(double) * fdim);
-  err = (double*)malloc(sizeof(double) * fdim);
+  val = static_cast<double*>(malloc(sizeof(double) * fdim));
+  err = static_cast<double*>(malloc(sizeof(double) * fdim));
 
   for (qint64 i = 0; i < m_basins.length(); ++i) {
     if (threeDimensionalIntegration) {
@@ -2249,8 +2251,8 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
 
       double* xmin;
       double* xmax;
-      xmin = (double*)malloc(dim * sizeof(double));
-      xmax = (double*)malloc(dim * sizeof(double));
+      xmin = static_cast<double*>(malloc(dim * sizeof(double)));
+      xmax = static_cast<double*>(malloc(dim * sizeof(double)));
 
       if (cartesianIntegrationLimits) {
 
@@ -2315,8 +2317,8 @@ QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
 
       double* xmin;
       double* xmax;
-      xmin = (double*)malloc(dim * sizeof(double));
-      xmax = (double*)malloc(dim * sizeof(double));
+      xmin = static_cast<double*>(malloc(dim * sizeof(double)));
+      xmax = static_cast<double*>(malloc(dim * sizeof(double)));
 
       const qreal pi = 4.0 * atan(1.0);
 
