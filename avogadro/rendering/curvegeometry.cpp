@@ -102,7 +102,7 @@ void CurveGeometry::update(int index)
   bool nanDetected = false;
   for (size_t i = SKIPPED; i < top && !nanDetected; ++i) {
     for (size_t j = 0; j < lineResolution; ++j) {
-      float t = (i * lineResolution + j) / float(qttySegments);
+      float t = (i * lineResolution + j) / static_cast<float>(qttySegments);
       auto p = computeCurvePoint(t, line->points);
       if (i > SKIPPED) {
         Vector3f tangent = p - previous;
