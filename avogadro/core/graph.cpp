@@ -476,7 +476,7 @@ int Graph::createNewSubgraph() const
   for (size_t i = 0; i < m_subgraphToVertices.size(); i++) {
     if (!m_subgraphToVertices[i].size()) {
       m_subgraphDirty[i] = false;
-      return int(i);
+      return static_cast<int>(i);
     }
   }
   // Otherwise, extend the list

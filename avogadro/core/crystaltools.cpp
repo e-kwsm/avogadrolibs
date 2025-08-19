@@ -357,7 +357,8 @@ bool CrystalTools::niggliReduce(Molecule& molecule, Options opts)
     // Step 5:
     if (fuzzyGreaterThan(std::fabs(xi), B, tol) ||
         (fuzzyEqual(xi, B, tol) && fuzzyLessThan(2 * eta, zeta, tol)) ||
-        (fuzzyEqual(xi, -B, tol) && fuzzyLessThan(zeta, Real(0), tol))) {
+        (fuzzyEqual(xi, -B, tol) &&
+         fuzzyLessThan(zeta, static_cast<Real>(0), tol))) {
       Real signXi = niggliSign(xi);
       // Update change of basis matrix:
       tmpMat << 1, 0, 0, 0, 1, -signXi, 0, 0, 1;
@@ -374,7 +375,8 @@ bool CrystalTools::niggliReduce(Molecule& molecule, Options opts)
     // Step 6:
     if (fuzzyGreaterThan(std::fabs(eta), A, tol) ||
         (fuzzyEqual(eta, A, tol) && fuzzyLessThan(2 * xi, zeta, tol)) ||
-        (fuzzyEqual(eta, -A, tol) && fuzzyLessThan(zeta, Real(0), tol))) {
+        (fuzzyEqual(eta, -A, tol) &&
+         fuzzyLessThan(zeta, static_cast<Real>(0), tol))) {
       Real signEta = niggliSign(eta);
       // Update change of basis matrix:
       tmpMat << 1, 0, -signEta, 0, 1, 0, 0, 0, 1;
@@ -391,7 +393,8 @@ bool CrystalTools::niggliReduce(Molecule& molecule, Options opts)
     // Step 7:
     if (fuzzyGreaterThan(std::fabs(zeta), A, tol) ||
         (fuzzyEqual(zeta, A, tol) && fuzzyLessThan(2 * xi, eta, tol)) ||
-        (fuzzyEqual(zeta, -A, tol) && fuzzyLessThan(eta, Real(0), tol))) {
+        (fuzzyEqual(zeta, -A, tol) &&
+         fuzzyLessThan(eta, static_cast<Real>(0), tol))) {
       Real signZeta = niggliSign(zeta);
       // Update change of basis matrix:
       tmpMat << 1, -signZeta, 0, 0, 1, 0, 0, 0, 1;
@@ -407,9 +410,9 @@ bool CrystalTools::niggliReduce(Molecule& molecule, Options opts)
 
     // Step 8:
     Real sumAllButC = A + B + xi + eta + zeta;
-    if (fuzzyLessThan(sumAllButC, Real(0), tol) ||
-        (fuzzyEqual(sumAllButC, Real(0), tol) &&
-         fuzzyGreaterThan(2 * (A + eta) + zeta, Real(0), tol))) {
+    if (fuzzyLessThan(sumAllButC, static_cast<Real>(0), tol) ||
+        (fuzzyEqual(sumAllButC, static_cast<Real>(0), tol) &&
+         fuzzyGreaterThan(2 * (A + eta) + zeta, static_cast<Real>(0), tol))) {
       // Update change of basis matrix:
       cob *= C8;
 
