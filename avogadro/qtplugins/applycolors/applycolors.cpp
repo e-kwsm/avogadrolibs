@@ -476,7 +476,7 @@ int residueNameToOffset(const std::string& name)
   std::string residueName(name);
   // ensure it's always in uppercase
   for (auto& c : residueName)
-    c = (unsigned char)toupper(c);
+    c = static_cast<unsigned char>(toupper(c));
 
   // used for "amino" and "shapely" color schemes
   int offset = 22; // other
