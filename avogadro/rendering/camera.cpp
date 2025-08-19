@@ -134,7 +134,7 @@ void Camera::calculatePerspective(float fieldOfView, float aspectRatio,
                                   float zNear, float zFar)
 {
   m_data->projection.setIdentity();
-  float f = 1.0f / std::tan(fieldOfView * float(M_PI) / 360.0f);
+  float f = 1.0f / std::tan(fieldOfView * static_cast<float>(M_PI) / 360.0f);
   m_data->projection(0, 0) = f / aspectRatio;
   m_data->projection(1, 1) = f;
   m_data->projection(2, 2) = (zNear + zFar) / (zNear - zFar);
