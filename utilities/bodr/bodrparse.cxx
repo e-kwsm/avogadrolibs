@@ -241,9 +241,9 @@ int main(int argc, char* argv[])
       output << ",";
     if (i % 3 == 0)
       output <<"\n ";
-    output << " {" << int(elements[i].color.c[0])
-           << ", " << int(elements[i].color.c[1])
-           << ", " << int(elements[i].color.c[2]) << "}";
+    output << " {" << static_cast<int>(elements[i].color.c[0]) << ", "
+           << static_cast<int>(elements[i].color.c[1]) << ", "
+           << static_cast<int>(elements[i].color.c[2]) << "}";
   }
   output << " };\n\n";
 
