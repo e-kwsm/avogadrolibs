@@ -65,11 +65,12 @@ QVariant OrbitalTableModel::data(const QModelIndex& index, int role) const
       if (orb->max == orb->min)
         percent = 0;
       else {
-        percent = 100 * (orb->current - orb->min) / float(orb->max - orb->min);
+        percent = 100 * (orb->current - orb->min) /
+                  static_cast<float>(orb->max - orb->min);
         // Adjust for stages
         int stages = (orb->totalStages == 0) ? 1 : orb->totalStages;
-        percent /= float(stages);
-        percent += (orb->stage - 1) * (100.0 / float(stages));
+        percent /= static_cast<float>(stages);
+        percent += (orb->stage - 1) * (100.0 / static_cast<float>(stages));
         // clamp to 100%
         if (percent > 100)
           percent = 100;
@@ -240,7 +241,8 @@ void OrbitalTableModel::setOrbitalProgressRange(int orbital, int min, int max,
   orb->stage = stage;
   orb->totalStages = totalStages;
   // Update display
-  QModelIndex status = index(orbital, int(C_Status), QModelIndex());
+  QModelIndex status =
+    index(orbital, static_cast<int>(C_Status), QModelIndex());
   emit dataChanged(status, status);
 }
 
