@@ -191,7 +191,7 @@ void Symmetry::detectSymmetry()
 
   // initialize the c-style array of atom names and coordinates
   msym_element_t* a;
-  a = (msym_element_t*)malloc(length * sizeof(msym_element_t));
+  a = static_cast<msym_element_t*>(malloc(length * sizeof(msym_element_t)));
   memset(a, 0, length * sizeof(msym_element_t));
 
   for (Index i = 0; i < length; ++i) {
