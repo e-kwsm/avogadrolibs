@@ -89,7 +89,7 @@ OBEnergy::OBEnergy(const std::string& method)
   // Ensure the plugins are loaded
   OBPlugin::LoadAllPlugins();
 
-  d->m_forceField = static_cast<OBForceField*>(
+  d->m_forceField = dynamic_cast<OBForceField*>(
     OBPlugin::GetPlugin("forcefields", method.c_str()));
 
 #ifndef NDEBUG
@@ -183,7 +183,7 @@ void OBEnergy::setMolecule(Core::Molecule* mol)
   if (d->m_forceField != nullptr) {
     d->setup = d->m_forceField->Setup(*d->m_obmol);
   } else {
-    d->m_forceField = static_cast<OBForceField*>(
+    d->m_forceField = dynamic_cast<OBForceField*>(
       OBPlugin::GetPlugin("forcefields", m_identifier.c_str()));
     if (d->m_forceField != nullptr) {
       d->setup = d->m_forceField->Setup(*d->m_obmol);
