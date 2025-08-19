@@ -6,7 +6,10 @@
 namespace Avogadro::QtPlugins {
 
 PQRWidget::PQRWidget(QWidget* parent, ImportPQR* p)
-  : QDialog(parent), ui(new Ui::PQRWidget), plugin(p)
+  : QDialog(parent), ui(new Ui::PQRWidget),
+    request(new PQRRequest(ui->tableWidget, ui->pngPreview, ui->nameDisplay,
+                           ui->formulaDisplay, this)),
+    plugin(p)
 {
   ui->setupUi(this);
 
@@ -22,9 +25,6 @@ PQRWidget::PQRWidget(QWidget* parent, ImportPQR* p)
   connect(ui->downloadButton, SIGNAL(clicked(bool)), this, SLOT(downloadMol()));
   connect(ui->tableWidget, SIGNAL(cellClicked(int, int)), this,
           SLOT(molSelected(int, int)));
-
-  request = new PQRRequest(ui->tableWidget, ui->pngPreview, ui->nameDisplay,
-                           ui->formulaDisplay, this);
 }
 
 PQRWidget::~PQRWidget()
