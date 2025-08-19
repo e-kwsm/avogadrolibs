@@ -136,7 +136,8 @@ TEST(RWMoleculeTest, removeAtom)
   Atom a3 = mol.addAtom(4); // Be
   Atom a4 = mol.addAtom(5); // B
 
-  const Vector3 pos(Real(1), Real(2), Real(3));
+  const Vector3 pos(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                    static_cast<Real>(3.0));
   mol.setAtomPosition3d(0, pos);
 
   ASSERT_EQ(5, mol.atomCount());
@@ -244,7 +245,8 @@ TEST(RWMoleculeTest, clearAtoms)
   Atom a3 = mol.addAtom(4); // Be
   Atom a4 = mol.addAtom(5); // B
 
-  const Vector3 pos(Real(1), Real(2), Real(3));
+  const Vector3 pos(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                    static_cast<Real>(3.0));
   mol.setAtomPosition3d(0, pos);
 
   ASSERT_EQ(5, mol.atomCount());
@@ -430,7 +432,9 @@ TEST(RWMoleculeTest, setAtomPosition3d)
 
   // The positions will not be empty here because they are added when
   // atoms are added.
-  mol.setAtomPosition3d(0, Vector3(Real(1), Real(2), Real(3)));
+  mol.setAtomPosition3d(0,
+                        Vector3(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                                static_cast<Real>(3.0)));
   EXPECT_EQ(mol.atomicNumbers().size(), mol.atomPositions3d().size());
   EXPECT_EQ(Real(1), mol.atomPosition3d(0).x());
   EXPECT_EQ(Real(2), mol.atomPosition3d(0).y());
@@ -454,10 +458,18 @@ TEST(RWMoleculeTest, setAtomPosition3d)
 
   // Test command merging for interactive editing:
   mol.setInteractive(true);
-  mol.setAtomPosition3d(0, Vector3(Real(1), Real(2), Real(3)));
-  mol.setAtomPosition3d(3, Vector3(Real(4), Real(5), Real(6)));
-  mol.setAtomPosition3d(0, Vector3(Real(7), Real(8), Real(9)));
-  mol.setAtomPosition3d(1, Vector3(Real(6), Real(4), Real(2)));
+  mol.setAtomPosition3d(0,
+                        Vector3(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                                static_cast<Real>(3.0)));
+  mol.setAtomPosition3d(3,
+                        Vector3(static_cast<Real>(4.0), static_cast<Real>(5.0),
+                                static_cast<Real>(6.0)));
+  mol.setAtomPosition3d(0,
+                        Vector3(static_cast<Real>(7.0), static_cast<Real>(8.0),
+                                static_cast<Real>(9.0)));
+  mol.setAtomPosition3d(1,
+                        Vector3(static_cast<Real>(6.0), static_cast<Real>(4.0),
+                                static_cast<Real>(2.0)));
   mol.setInteractive(false);
 
   Array<Vector3> pos(mol.atomPositions3d());
@@ -767,8 +779,10 @@ TEST(RWMoleculeTest, AtomType)
   EXPECT_EQ(2, a1.atomicNumber());
   EXPECT_EQ(2, mol.atomicNumber(1));
 
-  a0.setPosition3d(Vector3(Real(3), Real(4), Real(5)));
-  a1.setPosition3d(Vector3(Real(6), Real(7), Real(8)));
+  a0.setPosition3d(Vector3(static_cast<Real>(3.0), static_cast<Real>(4.0),
+                           static_cast<Real>(5.0)));
+  a1.setPosition3d(Vector3(static_cast<Real>(6.0), static_cast<Real>(7.0),
+                           static_cast<Real>(8.0)));
 
   EXPECT_EQ(Vector3(Real(3), Real(4), Real(5)), a0.position3d());
   EXPECT_EQ(Vector3(Real(3), Real(4), Real(5)), mol.atomPosition3d(0));
