@@ -230,7 +230,7 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
       return false;
     }
 
-    auto* guiMol = static_cast<QtGui::Molecule*>(mol);
+    auto* guiMol = dynamic_cast<QtGui::Molecule*>(mol);
     QtGui::Molecule newMol(guiMol->parent());
     if (m_moleculeExtension == "cjson") {
       // convert the "cjson" field to a string
