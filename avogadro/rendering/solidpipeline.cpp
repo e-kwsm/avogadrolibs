@@ -30,7 +30,7 @@ public:
   {
     prog.bind();
     GLuint programID;
-    glGetIntegerv(GL_CURRENT_PROGRAM, (GLint*)&programID);
+    glGetIntegerv(GL_CURRENT_PROGRAM, reinterpret_cast<GLint*>(&programID));
 
     GLuint attrRGB = glGetUniformLocation(programID, nameRGB);
     glActiveTexture(GL_TEXTURE0 + 1);
@@ -42,8 +42,8 @@ public:
     glBindTexture(GL_TEXTURE_2D, texDepth);
     glUniform1i(attrDepth, 2);
 
-    prog.setUniformValue("width", float(w));
-    prog.setUniformValue("height", float(h));
+    prog.setUniformValue("width", static_cast<float>(w));
+    prog.setUniformValue("height", static_cast<float>(h));
   }
 
   GLuint defaultFBO;
@@ -124,7 +124,8 @@ void SolidPipeline::initialize()
 
 void SolidPipeline::begin()
 {
-  glGetIntegerv(GL_FRAMEBUFFER_BINDING, (GLint*)&d->defaultFBO);
+  glGetIntegerv(GL_FRAMEBUFFER_BINDING,
+                reinterpret_cast<GLint*>(&d->defaultFBO));
   glBindFramebuffer(GL_FRAMEBUFFER, d->renderFBO);
   GLenum drawBuffersList[1] = { GL_COLOR_ATTACHMENT0 };
   glDrawBuffers(1, drawBuffersList);
