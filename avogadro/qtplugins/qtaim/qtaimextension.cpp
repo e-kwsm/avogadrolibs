@@ -171,7 +171,7 @@ void QTAIMExtension::triggered()
         qreal y = wfn.yNuclearCoordinate(n) * convertBohrToAngstrom;
         qreal z = wfn.zNuclearCoordinate(n) * convertBohrToAngstrom;
 
-        int Z = (int)wfn.nuclearCharge(n);
+        int Z = static_cast<int>(wfn.nuclearCharge(n));
 
         m_molecule->addAtom(static_cast<unsigned char>(Z))
           .setPosition3d(Vector3(static_cast<Real>(x), static_cast<Real>(y),
@@ -343,7 +343,7 @@ void QTAIMExtension::triggered()
         qreal y = wfn.yNuclearCoordinate(n) * convertBohrToAngstrom;
         qreal z = wfn.zNuclearCoordinate(n) * convertBohrToAngstrom;
 
-        int Z = (int)wfn.nuclearCharge(n);
+        int Z = static_cast<int>(wfn.nuclearCharge(n));
 
         m_molecule->addAtom(static_cast<unsigned char>(Z))
           .setPosition3d(Vector3(static_cast<Real>(x), static_cast<Real>(y),
@@ -551,7 +551,7 @@ void QTAIMExtension::triggered()
           qreal y = wfn.yNuclearCoordinate(n) * convertBohrToAngstrom;
           qreal z = wfn.zNuclearCoordinate(n) * convertBohrToAngstrom;
 
-          int Z = (int)wfn.nuclearCharge(n);
+          int Z = static_cast<int>(wfn.nuclearCharge(n));
 
           m_molecule->addAtom(static_cast<unsigned char>(Z))
             .setPosition3d(Vector3(static_cast<Real>(x), static_cast<Real>(y),
