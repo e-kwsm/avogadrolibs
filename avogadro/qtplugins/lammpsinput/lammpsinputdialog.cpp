@@ -384,14 +384,14 @@ void LammpsInputDialog::setTitle()
 
 void LammpsInputDialog::setUnits(int n)
 {
-  m_unitType = (LammpsInputDialog::unitType)n;
+  m_unitType = static_cast<LammpsInputDialog::unitType>(n);
   ui.unitsCombo->setEnabled(true);
   updatePreviewText();
 }
 
 void LammpsInputDialog::setAtomStyle(int n)
 {
-  m_atomStyle = (LammpsInputDialog::atomStyle)n;
+  m_atomStyle = static_cast<LammpsInputDialog::atomStyle>(n);
   ui.atomStyleCombo->setEnabled(true);
   updatePreviewText();
 }
