@@ -91,7 +91,7 @@ inline std::vector<Index> atomEquivalenceClasses(const Core::Molecule& mol)
   std::vector<Index> order(atomCount);
 
   const auto rankByKeys = [&]() -> Index {
-    std::iota(order.begin(), order.end(), Index(0));
+    std::iota(order.begin(), order.end(), static_cast<Index>(0));
     std::sort(order.begin(), order.end(), [&](Index a, Index b) {
       return std::lexicographical_compare(
         keys.begin() + a * stride, keys.begin() + (a + 1) * stride,

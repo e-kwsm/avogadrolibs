@@ -64,14 +64,14 @@ int isDouble(map<string, int>& header)
   for (auto& headerKey : headerKeys) {
     if (header[headerKey] != 0) {
       if (headerKey == "box_size") {
-        size = (int)(header[headerKey] / DIM * DIM);
+        size = header[headerKey] / DIM * DIM;
         break;
       } else {
         // natoms is read from the file, and this is integer division: a
         // declared count of zero used to raise SIGFPE right here.
         if (header["natoms"] <= 0)
           return 0;
-        size = (int)(header[headerKey] / (header["natoms"] * DIM));
+        size = header[headerKey] / (header["natoms"] * DIM);
         break;
       }
     }
