@@ -39,7 +39,8 @@ TEST(ContrastColorTest, allElements)
   for (unsigned char i = 0; i < Avogadro::Core::element_count; ++i) {
     const unsigned char* raw = Elements::color(i);
     const Vector3ub c(raw[0], raw[1], raw[2]);
-    EXPECT_GE(contrastRatio(c, contrastColor(c)), 4.5) << "element " << int(i);
+    EXPECT_GE(contrastRatio(c, contrastColor(c)), 4.5)
+      << "element " << static_cast<int>(i);
   }
 }
 

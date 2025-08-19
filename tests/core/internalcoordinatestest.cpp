@@ -909,7 +909,7 @@ TEST(InternalCoordinatesTest, preferAtomOrderGivesUpOnABadOrder)
 
   bool reordered = false;
   for (size_t row = 0; row < rowToAtom.size(); ++row)
-    reordered = reordered || rowToAtom[row] != Index(row);
+    reordered = reordered || rowToAtom[row] != static_cast<Index>(row);
   EXPECT_TRUE(reordered) << "kept an order with an unbonded row";
 
   expectSameGeometry(

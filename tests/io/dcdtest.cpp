@@ -702,7 +702,7 @@ TEST(DcdTest, truncatedLastFrameDropsOnlyThatFrame)
   const size_t frameBytes = 56 + 3 * (8 + 4 * 4);
   ASSERT_EQ((full.size() - 196) % frameBytes, static_cast<size_t>(0));
 
-  for (size_t cut : { size_t(1), size_t(4), size_t(30), frameBytes - 1 }) {
+  for (size_t cut : { 1ul, 4ul, 30ul, frameBytes - 1 }) {
     DcdFormat dcd;
     Molecule mol;
     ASSERT_TRUE(dcd.readString(full.substr(0, full.size() - cut), mol))

@@ -233,7 +233,7 @@ TEST_F(LayerModelTest, FlipRowOutOfRangeIsIgnored)
   const auto visible = info->visible;
   const auto locked = info->locked;
 
-  for (size_t row : { size_t(4), size_t(5), size_t(1000) }) {
+  for (size_t row : { 4ul, 5ul, 1000ul }) {
     model.flipVisible(row);
     model.flipLocked(row);
   }

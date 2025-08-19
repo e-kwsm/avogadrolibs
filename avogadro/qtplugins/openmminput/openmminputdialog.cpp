@@ -533,7 +533,7 @@ void OpenMMInputDialog::setTopologyName()
 
 void OpenMMInputDialog::setForceField(int n)
 {
-  m_forceFieldType = (OpenMMInputDialog::forceFieldType)n;
+  m_forceFieldType = static_cast<OpenMMInputDialog::forceFieldType>(n);
   ui.forceFieldCombo->setEnabled(true);
   updatePreviewText();
 }

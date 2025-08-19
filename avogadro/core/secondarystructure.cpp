@@ -44,7 +44,8 @@ void SecondaryStructureAssigner::assign(Molecule* mol)
   for (auto* hBond : m_hBonds) {
     if (hBond->distSquared < infinity) {
       // check to see how far apart the residues are
-      int separation = std::abs(int(hBond->residue - hBond->residuePair));
+      int separation =
+        std::abs(static_cast<int>(hBond->residue - hBond->residuePair));
 
       switch (separation) {
         case 3: { // 3-10
@@ -242,7 +243,8 @@ void SecondaryStructureAssigner::assignBackboneHydrogenBonds()
         continue;
 
       if (residueI.chainId() == residueJ.chainId() &&
-          std::abs(int(residueI.residueId() - residueJ.residueId())) < 3)
+          std::abs(
+            static_cast<int>(residueI.residueId() - residueJ.residueId())) < 3)
         continue; // either the same or too close to each other
 
       // compute the distance between the two atoms
