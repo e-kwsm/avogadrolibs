@@ -142,7 +142,7 @@ void PeriodicTableView::keyPressEvent(QKeyEvent* event_)
 
 void PeriodicTableView::resizeEvent(QResizeEvent* e)
 {
-  double scale_(double(e->size().width()) / 500.0);
+  double scale_(static_cast<double>(e->size().width()) / 500.0);
   QTransform scaleTransform(QTransform::fromScale(scale_, scale_));
   setTransform(scaleTransform);
 }
