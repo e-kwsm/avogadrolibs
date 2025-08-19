@@ -1038,16 +1038,16 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
     m_lenyh = lenyh;
     m_nyh = nyh;
 
-    yh = (double**)malloc((1 + lenyh) * sizeof(*yh));
+    yh = static_cast<double**>(malloc((1 + lenyh) * sizeof(*yh)));
     if (yh == nullptr) {
       qDebug("lsoda -- insufficient memory for your problem");
       terminate(istate);
       return;
     }
     for (i = 1; i <= lenyh; i++)
-      yh[i] = (double*)malloc((1 + nyh) * sizeof(double));
+      yh[i] = static_cast<double*>(malloc((1 + nyh) * sizeof(double)));
 
-    wm = (double**)malloc((1 + nyh) * sizeof(*wm));
+    wm = static_cast<double**>(malloc((1 + nyh) * sizeof(*wm)));
     if (wm == nullptr) {
       free(yh);
       qDebug("lsoda -- insufficient memory for your problem");
@@ -1055,9 +1055,9 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
       return;
     }
     for (i = 1; i <= nyh; i++)
-      wm[i] = (double*)malloc((1 + nyh) * sizeof(double));
+      wm[i] = static_cast<double*>(malloc((1 + nyh) * sizeof(double)));
 
-    ewt = (double*)malloc((1 + nyh) * sizeof(double));
+    ewt = static_cast<double*>(malloc((1 + nyh) * sizeof(double)));
     if (ewt == nullptr) {
       free(yh);
       free(wm);
@@ -1066,7 +1066,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
       return;
     }
 
-    savf = (double*)malloc((1 + nyh) * sizeof(double));
+    savf = static_cast<double*>(malloc((1 + nyh) * sizeof(double)));
     if (savf == nullptr) {
       free(yh);
       free(wm);
@@ -1076,7 +1076,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
       return;
     }
 
-    acor = (double*)malloc((1 + nyh) * sizeof(double));
+    acor = static_cast<double*>(malloc((1 + nyh) * sizeof(double)));
     if (acor == nullptr) {
       free(yh);
       free(wm);
@@ -1087,7 +1087,7 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
       return;
     }
 
-    ipvt = (int*)malloc((1 + nyh) * sizeof(int));
+    ipvt = static_cast<int*>(malloc((1 + nyh) * sizeof(int)));
     if (ipvt == nullptr) {
       free(yh);
       free(wm);
@@ -1777,7 +1777,7 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
           for (i = 1; i <= n; i++)
             savf[i] = acor[i] - yp1[i];
           dup = vmnorm(n, savf, ewt) / tesco[nq][3];
-          exup = 1. / (double)(l + 1);
+          exup = 1. / static_cast<double>(l + 1);
           rhup = 1. / (1.4 * pow(dup, exup) + 0.0000014);
         }
         orderswitch(&rhup, dsm, &pdh, &rh, &orderflag);
@@ -1974,7 +1974,7 @@ static globally.  The above sum is done in reverse order.
   ic = 1;
   for (jj = l - k; jj <= nq; jj++)
     ic *= jj;
-  c = (double)ic;
+  c = static_cast<double>(ic);
   yp1 = yh[l];
   for (i = 1; i <= n; i++)
     dky[i] = c * yp1[i];
@@ -1983,14 +1983,14 @@ static globally.  The above sum is done in reverse order.
     ic = 1;
     for (jj = jp1 - k; jj <= j; jj++)
       ic *= jj;
-    c = (double)ic;
+    c = static_cast<double>(ic);
     yp1 = yh[jp1];
     for (i = 1; i <= n; i++)
       dky[i] = c * yp1[i] + s * dky[i];
   }
   if (k == 0)
     return;
-  r = pow(h, (double)(-k));
+  r = pow(h, static_cast<double>(-k));
   for (i = 1; i <= n; i++)
     dky[i] *= r;
 
@@ -2050,9 +2050,9 @@ void QTAIMLSODAIntegrator::cfode(int meth_)
    Initially, p(x) = 1.
 */
       rq1fac = rqfac;
-      rqfac = rqfac / (double)nq_;
+      rqfac = rqfac / static_cast<double>(nq_);
       nqm1 = nq_ - 1;
-      fnqm1 = (double)nqm1;
+      fnqm1 = static_cast<double>(nqm1);
       nqp1 = nq_ + 1;
       /*
    Form coefficients of p(x)*(x+nq-1).
@@ -2069,8 +2069,8 @@ void QTAIMLSODAIntegrator::cfode(int meth_)
       tsign = 1.;
       for (i = 2; i <= nq_; i++) {
         tsign = -tsign;
-        pint += tsign * pc[i] / (double)i;
-        xpin += tsign * pc[i] / (double)(i + 1);
+        pint += tsign * pc[i] / static_cast<double>(i);
+        xpin += tsign * pc[i] / static_cast<double>(i + 1);
       }
       /*
    Store coefficients in elco and tesco.
@@ -2078,12 +2078,12 @@ void QTAIMLSODAIntegrator::cfode(int meth_)
       elco[nq_][1] = pint * rq1fac;
       elco[nq_][2] = 1.;
       for (i = 2; i <= nq_; i++)
-        elco[nq_][i + 1] = rq1fac * pc[i] / (double)i;
+        elco[nq_][i + 1] = rq1fac * pc[i] / static_cast<double>(i);
       agamq = rqfac * xpin;
       ragq = 1. / agamq;
       tesco[nq_][2] = ragq;
       if (nq_ < 12)
-        tesco[nqp1][1] = ragq * rqfac / (double)nqp1;
+        tesco[nqp1][1] = ragq * rqfac / static_cast<double>(nqp1);
       tesco[nqm1][3] = ragq;
     } /*   end for   */
     return;
@@ -2102,7 +2102,7 @@ void QTAIMLSODAIntegrator::cfode(int meth_)
    Initially, p(x) = 1.
 */
   for (nq_ = 1; nq_ <= 5; nq_++) {
-    fnq = (double)nq_;
+    fnq = static_cast<double>(nq_);
     nqp1 = nq_ + 1;
     /*
    Form coefficients of p(x)*(x+nq).
@@ -2118,8 +2118,8 @@ void QTAIMLSODAIntegrator::cfode(int meth_)
       elco[nq_][i] = pc[i] / pc[2];
     elco[nq_][2] = 1.;
     tesco[nq_][1] = rq1fac;
-    tesco[nq_][2] = ((double)nqp1) / elco[nq_][1];
-    tesco[nq_][3] = ((double)(nq_ + 2)) / elco[nq_][1];
+    tesco[nq_][2] = (static_cast<double>(nqp1)) / elco[nq_][1];
+    tesco[nq_][3] = (static_cast<double>(nq_ + 2)) / elco[nq_][1];
     rq1fac /= fnq;
   }
 } /*   end cfode   */
@@ -2191,7 +2191,7 @@ void QTAIMLSODAIntegrator::prja(int neq, double* y)
 
   if (miter == 2) {
     fac = vmnorm(n, savf, ewt);
-    r0 = 1000. * fabs(h) * ETA * ((double)n) * fac;
+    r0 = 1000. * fabs(h) * ETA * (static_cast<double>(n)) * fac;
     if (r0 == 0.)
       r0 = 1.;
     for (j = 1; j <= n; j++) {
@@ -2506,7 +2506,7 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
       rh2 = 2.;
       nqm2 = min(nq, mxords);
     } else {
-      exsm = 1. / (double)l;
+      exsm = 1. / static_cast<double>(l);
       rh1 = 1. / (1.2 * pow(dsm, exsm) + 0.0000012);
       rh1it = 2. * rh1;
       *pdh = pdlast * fabs(h);
@@ -2516,7 +2516,7 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
       if (nq > mxords) {
         nqm2 = mxords;
         lm2 = mxords + 1;
-        exm2 = 1. / (double)lm2;
+        exm2 = 1. / static_cast<double>(lm2);
         lm2p1 = lm2 + 1;
         dm2 = vmnorm(n, yh[lm2p1], ewt) / cm2[mxords];
         rh2 = 1. / (1.2 * pow(dm2, exm2) + 0.0000012);
@@ -2550,11 +2550,11 @@ void QTAIMLSODAIntegrator::methodswitch(double dsm, double pnorm, double* pdh,
    If the step size for Adams would be so small as to cause
    roundoff pollution, we stay with bdf.
 */
-  exsm = 1. / (double)l;
+  exsm = 1. / static_cast<double>(l);
   if (mxordn < nq) {
     nqm1 = mxordn;
     lm1 = mxordn + 1;
-    exm1 = 1. / (double)lm1;
+    exm1 = 1. / static_cast<double>(lm1);
     lm1p1 = lm1 + 1;
     dm1 = vmnorm(n, yh[lm1p1], ewt) / cm1[mxordn];
     rh1 = 1. / (1.2 * pow(dm1, exm1) + 0.0000012);
@@ -2628,13 +2628,13 @@ orderflag = 0  : no change in h or nq,
 
   *orderflag = 0;
 
-  exsm = 1. / (double)l;
+  exsm = 1. / static_cast<double>(l);
   rhsm = 1. / (1.2 * pow(dsm, exsm) + 0.0000012);
 
   rhdn = 0.;
   if (nq != 1) {
     ddn = vmnorm(n, yh[l], ewt) / tesco[nq][1];
-    exdn = 1. / (double)nq;
+    exdn = 1. / static_cast<double>(nq);
     rhdn = 1. / (1.3 * pow(ddn, exdn) + 0.0000013);
   }
   /*
@@ -2668,7 +2668,7 @@ orderflag = 0  : no change in h or nq,
     } else {
       *rh = *rhup;
       if (*rh >= 1.1) {
-        r = el[l] / (double)l;
+        r = el[l] / static_cast<double>(l);
         nq = l;
         l = nq + 1;
         yp1 = yh[l];
@@ -2728,7 +2728,7 @@ whenever the order nq is changed, or at the start of the problem.
     el[i] = ep1[i];
   rc = rc * el[1] / el0;
   el0 = el[1];
-  conit = 0.5 / (double)(nq + 2);
+  conit = 0.5 / static_cast<double>(nq + 2);
 
 } /*   end resetcoeff   */
 
