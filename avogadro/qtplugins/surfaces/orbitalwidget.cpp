@@ -129,7 +129,7 @@ void OrbitalWidget::fillTable(Core::BasisSet* basis)
 
 void OrbitalWidget::setQuality(OrbitalQuality q)
 {
-  ui.combo_quality->setCurrentIndex(int(q));
+  ui.combo_quality->setCurrentIndex(static_cast<int>(q));
 }
 
 void OrbitalWidget::selectOrbital(unsigned int orbital)
