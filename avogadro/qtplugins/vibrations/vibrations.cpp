@@ -247,13 +247,13 @@ void Vibrations::setMode(int mode)
 
   appendFrame(0.0);
   for (int i = 1; i <= frames; ++i) // out along +displacement
-    appendFrame(double(i) / frames);
+    appendFrame(static_cast<double>(i) / frames);
   for (int i = frames - 1; i >= 0; --i) // back to the original geometry
-    appendFrame(double(i) / frames);
+    appendFrame(static_cast<double>(i) / frames);
   for (int i = 1; i <= frames; ++i) // out along -displacement
-    appendFrame(-double(i) / frames);
+    appendFrame(-static_cast<double>(i) / frames);
   for (int i = frames - 1; i >= 0; --i) // and back again
-    appendFrame(-double(i) / frames);
+    appendFrame(-static_cast<double>(i) / frames);
 
   m_currentFrame = 0;
 

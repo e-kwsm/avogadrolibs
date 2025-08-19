@@ -115,7 +115,8 @@ TEST(AromaticityTest, fiveMemberedHeterocycles)
     // Pyrrole's nitrogen needs its hydrogen to reach three connections.
     if (heteroatom == N)
       mol.addBond(0, mol.addAtom(1).index(), 1);
-    EXPECT_TRUE(allAromatic(mol, 5)) << "atomic number " << int(heteroatom);
+    EXPECT_TRUE(allAromatic(mol, 5))
+      << "atomic number " << static_cast<int>(heteroatom);
   }
 }
 
