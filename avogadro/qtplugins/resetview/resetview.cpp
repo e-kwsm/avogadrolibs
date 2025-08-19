@@ -235,7 +235,7 @@ void ResetView::animationCamera(const Affine3f& goal, bool animate)
 
     for (int frame = 0; frame <= ResetView::TOTAL_FRAMES; ++frame) {
       Affine3f interpolation;
-      float alpha = frame / float(ResetView::TOTAL_FRAMES);
+      float alpha = frame / static_cast<float>(ResetView::TOTAL_FRAMES);
       interpolation.fromPositionOrientationScale(
         ((1.0f - alpha) * posStart) + (alpha * posGoal),
         rotStart.slerp(alpha, rotGoal), Vector3f(1.0f, 1.0f, 1.0f));
@@ -275,14 +275,14 @@ inline void getOBB(const Array<Vector3>& mols, Vector3d& centroid,
   for (const auto& mol : mols)
     centroid += mol;
 
-  centroid /= (double)mols.size();
+  centroid /= static_cast<double>(mols.size());
   Matrix3d covariance = Matrix3::Zero();
 
   for (const auto& mol : mols) {
     Vector3d adjusted = mol - centroid;
     covariance += adjusted * adjusted.transpose();
   }
-  covariance /= (double)mols.size();
+  covariance /= static_cast<double>(mols.size());
 
   auto solver = EigenSolver<Matrix3>(covariance);
   Eigen::Matrix3d vectors = solver.eigenvectors().real();
