@@ -205,14 +205,16 @@ void SVG::paintBonds(QPainter& painter, const SVGAtom& atom, unsigned int i,
     float L = std::hypot(from[0] - to[0], from[1] - to[1]);
     float offsetX = (to[1] - from[1]) / L;
     float offsetY = (from[0] - to[0]) / L;
-    unsigned int order = int(bond.order());
+    unsigned int order = static_cast<int>(bond.order());
     // for each bound offset it following the orthogonal direction
     for (unsigned int o = 0; o < order; ++o) {
       // if there is only one bond, don't displace
       float x = 0, y = 0;
       if (order > 1) {
-        x = (float(o) - (order / 2.0f)) * m_offSetParalel * offsetX;
-        y = (float(o) - (order / 2.0f)) * m_offSetParalel * offsetY;
+        x =
+          (static_cast<float>(o) - (order / 2.0f)) * m_offSetParalel * offsetX;
+        y =
+          (static_cast<float>(o) - (order / 2.0f)) * m_offSetParalel * offsetY;
       }
       QLineF line(from[0] + x, from[1] + y, to[0] + x, to[1] + y);
       painter.drawLine(line);

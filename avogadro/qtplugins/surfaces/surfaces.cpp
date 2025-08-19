@@ -1150,7 +1150,7 @@ Core::Color3f gradientColor(double value, double clamp, ColormapType colormap)
   scaledValue2 = std::clamp(scaledValue2, 0.0, 1.0);
 
   auto color = tinycolormap::GetColor(scaledValue2, colormap);
-  Core::Color3f r(float(color.r()), color.g(), color.b());
+  Core::Color3f r(static_cast<float>(color.r()), color.g(), color.b());
 
   return r;
 }
