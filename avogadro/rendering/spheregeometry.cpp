@@ -226,7 +226,7 @@ void SphereGeometry::render(const Camera& camera)
   // Render the loaded spheres using the shader and VAO.
   glDrawRangeElements(GL_TRIANGLES, 0, static_cast<GLuint>(d->numberOfVertices),
                       static_cast<GLsizei>(d->numberOfIndices), GL_UNSIGNED_INT,
-                      (const GLvoid*)nullptr);
+                      static_cast<const GLvoid*>(nullptr));
 
   d->vao.release();
   d->program->release();

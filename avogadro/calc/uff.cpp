@@ -122,8 +122,8 @@ public:
 
   static uint64_t pairKey(Index i, Index j)
   {
-    return i < j ? (uint64_t(i) << 32 | uint64_t(j))
-                 : (uint64_t(j) << 32 | uint64_t(i));
+    return i < j ? (static_cast<uint64_t>(i) << 32 | static_cast<uint64_t>(j))
+                 : (static_cast<uint64_t>(j) << 32 | static_cast<uint64_t>(i));
   }
 
   UFFPrivate(Core::Molecule* mol = nullptr) : m_molecule(mol), m_cell(nullptr)

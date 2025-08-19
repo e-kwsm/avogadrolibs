@@ -161,7 +161,7 @@ void CloseContacts::process(const Molecule& molecule,
         continue;
       positions.push_back(molecule.atomPosition3d(i));
       charges.push_back(molecule.formalCharge(i));
-      residues.push_back(Index(0) - 1);
+      residues.push_back(static_cast<Index>(0) - 1);
     }
   }
 
@@ -202,7 +202,8 @@ void CloseContacts::process(const Molecule& molecule,
     for (Index n : neighbors) {
       if (n <= i) // check each pair only once
         continue;
-      if (residues[n] == residues[i] && residues[i] != Index(0) - 1)
+      if (residues[n] == residues[i] &&
+          residues[i] != static_cast<Index>(0) - 1)
         continue; // ignore intra-residue interactions
 
       Vector3 npos = positions[n];
