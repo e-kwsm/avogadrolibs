@@ -51,7 +51,8 @@ Vector3f BSplineGeometry::computeCurvePoint(
   int maxStart = std::max(0, size - 2 * lookahead);
   int startIndex =
     std::clamp(static_cast<int>(size * t) - lookahead, 0, maxStart);
-  float t2 = (t - startIndex / (float)size) * size / (2 * lookahead);
+  float t2 =
+    (t - startIndex / static_cast<float>(size)) * size / (2 * lookahead);
   const int endIndex = std::min(size, startIndex + 2 * lookahead);
   float i = 0.0f;
   for (int pointIndex = startIndex; pointIndex < endIndex; ++pointIndex) {

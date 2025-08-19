@@ -55,8 +55,8 @@ public:
     prog.bind();
     bindSampler(prog, nameRGB, texRGB, TextureUnitRGB);
     bindSampler(prog, nameDepth, texDepth, TextureUnitDepth);
-    prog.setUniformValue("width", float(w));
-    prog.setUniformValue("height", float(h));
+    prog.setUniformValue("width", static_cast<float>(w));
+    prog.setUniformValue("height", static_cast<float>(h));
   }
 
   GLuint defaultFBO;
@@ -187,7 +187,8 @@ void SolidPipeline::initialize()
 
 void SolidPipeline::begin()
 {
-  glGetIntegerv(GL_FRAMEBUFFER_BINDING, (GLint*)&d->defaultFBO);
+  glGetIntegerv(GL_FRAMEBUFFER_BINDING,
+                reinterpret_cast<GLint*>(&d->defaultFBO));
   glGetIntegerv(GL_VIEWPORT, d->defaultViewport);
   glBindFramebuffer(GL_FRAMEBUFFER, d->renderFBO);
   GLenum drawBuffersList[1] = { GL_COLOR_ATTACHMENT0 };
@@ -229,8 +230,8 @@ void SolidPipeline::end(const Camera& camera)
     d->aoStageShaders.bind();
     d->bindSampler(d->aoStageShaders, "inDepthTex", d->depthTexture,
                    TextureUnitDepth);
-    d->aoStageShaders.setUniformValue("width", float(m_width));
-    d->aoStageShaders.setUniformValue("height", float(m_height));
+    d->aoStageShaders.setUniformValue("width", static_cast<float>(m_width));
+    d->aoStageShaders.setUniformValue("height", static_cast<float>(m_height));
     d->aoStageShaders.setUniformValue("inAoStrength", m_aoStrength);
     // Used to write the distance to the surface alongside the term.
     d->aoStageShaders.setUniformValue("inProjection",
