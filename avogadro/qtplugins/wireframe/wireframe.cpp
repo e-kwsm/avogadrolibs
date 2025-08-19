@@ -218,7 +218,7 @@ void Wireframe::showHydrogens(bool show)
 void Wireframe::setWidth(double width)
 {
   auto* interface = m_layerManager.getSetting<LayerWireframe>();
-  interface->lineWidth = float(width);
+  interface->lineWidth = static_cast<float>(width);
   emit drawablesChanged();
 
   QSettings settings;
