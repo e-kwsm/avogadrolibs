@@ -227,7 +227,7 @@ void ApplyColors::applyIndexColors()
     if (isSelection && !m_molecule->atomSelected(i))
       continue;
 
-    float indexFraction = float(i) / float(numAtoms);
+    float indexFraction = static_cast<float>(i) / static_cast<float>(numAtoms);
 
     m_molecule->atom(i).setColor(rainbowGradient(indexFraction, type));
   }
@@ -476,7 +476,7 @@ int residueNameToOffset(const std::string& name)
   std::string residueName(name);
   // ensure it's always in uppercase
   for (auto& c : residueName)
-    c = (unsigned char)toupper(c);
+    c = static_cast<unsigned char>(toupper(c));
 
   // used for "amino" and "shapely" color schemes
   int offset = 22; // other
