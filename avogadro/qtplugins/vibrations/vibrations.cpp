@@ -154,9 +154,9 @@ void Vibrations::setMode(int mode)
     for (int i = 1; i <= frames; ++i) {
       Core::Array<Vector3> framePositions;
       for (atom = 0; atom < m_molecule->atomCount(); ++atom) {
-        framePositions.push_back(atomPositions[atom] + atomDisplacements[atom] *
-                                                         factor *
-                                                         (double(i) / frames));
+        framePositions.push_back(atomPositions[atom] +
+                                 atomDisplacements[atom] * factor *
+                                   (static_cast<double>(i) / frames));
       }
       m_molecule->setCoordinate3d(framePositions, frameCounter++);
     }
@@ -164,9 +164,9 @@ void Vibrations::setMode(int mode)
     for (int i = frames - 1; i >= 0; --i) {
       Core::Array<Vector3> framePositions;
       for (atom = 0; atom < m_molecule->atomCount(); ++atom) {
-        framePositions.push_back(atomPositions[atom] + atomDisplacements[atom] *
-                                                         factor *
-                                                         (double(i) / frames));
+        framePositions.push_back(atomPositions[atom] +
+                                 atomDisplacements[atom] * factor *
+                                   (static_cast<double>(i) / frames));
       }
       m_molecule->setCoordinate3d(framePositions, frameCounter++);
     }
@@ -174,9 +174,9 @@ void Vibrations::setMode(int mode)
     for (int i = 1; i <= frames; ++i) {
       Core::Array<Vector3> framePositions;
       for (atom = 0; atom < m_molecule->atomCount(); ++atom) {
-        framePositions.push_back(atomPositions[atom] - atomDisplacements[atom] *
-                                                         factor *
-                                                         (double(i) / frames));
+        framePositions.push_back(atomPositions[atom] -
+                                 atomDisplacements[atom] * factor *
+                                   (static_cast<double>(i) / frames));
       }
       m_molecule->setCoordinate3d(framePositions, frameCounter++);
     }
@@ -184,9 +184,9 @@ void Vibrations::setMode(int mode)
     for (int i = frames - 1; i >= 0; --i) {
       Core::Array<Vector3> framePositions;
       for (atom = 0; atom < m_molecule->atomCount(); ++atom) {
-        framePositions.push_back(atomPositions[atom] - atomDisplacements[atom] *
-                                                         factor *
-                                                         (double(i) / frames));
+        framePositions.push_back(atomPositions[atom] -
+                                 atomDisplacements[atom] * factor *
+                                   (static_cast<double>(i) / frames));
       }
       m_molecule->setCoordinate3d(framePositions, frameCounter++);
     }
