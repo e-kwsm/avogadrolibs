@@ -158,9 +158,9 @@ unsigned int Cube::closestIndex(const Vector3& pos) const
 {
   int i, j, k;
   // Calculate how many steps each coordinate is along its axis
-  i = int((pos.x() - m_min.x()) / m_spacing.x());
-  j = int((pos.y() - m_min.y()) / m_spacing.y());
-  k = int((pos.z() - m_min.z()) / m_spacing.z());
+  i = static_cast<int>((pos.x() - m_min.x()) / m_spacing.x());
+  j = static_cast<int>((pos.y() - m_min.y()) / m_spacing.y());
+  k = static_cast<int>((pos.z() - m_min.z()) / m_spacing.z());
   return i * m_points.y() * m_points.z() + j * m_points.z() + k;
 }
 
@@ -168,17 +168,18 @@ Vector3i Cube::indexVector(const Vector3& pos) const
 {
   // Calculate how many steps each coordinate is along its axis
   int i, j, k;
-  i = int((pos.x() - m_min.x()) / m_spacing.x());
-  j = int((pos.y() - m_min.y()) / m_spacing.y());
-  k = int((pos.z() - m_min.z()) / m_spacing.z());
+  i = static_cast<int>((pos.x() - m_min.x()) / m_spacing.x());
+  j = static_cast<int>((pos.y() - m_min.y()) / m_spacing.y());
+  k = static_cast<int>((pos.z() - m_min.z()) / m_spacing.z());
   return Vector3i(i, j, k);
 }
 
 Vector3 Cube::position(unsigned int index) const
 {
   int x, y, z;
-  x = int(index / (m_points.y() * m_points.z()));
-  y = int((index - (x * m_points.y() * m_points.z())) / m_points.z());
+  x = static_cast<int>(index / (m_points.y() * m_points.z()));
+  y = static_cast<int>((index - (x * m_points.y() * m_points.z())) /
+                       m_points.z());
   z = index % m_points.z();
   return Vector3(x * m_spacing.x() + m_min.x(), y * m_spacing.y() + m_min.y(),
                  z * m_spacing.z() + m_min.z());
