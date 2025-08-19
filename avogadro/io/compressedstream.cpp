@@ -493,7 +493,7 @@ DecompressingStreamBuf::pos_type DecompressingStreamBuf::seekoff(
   off_type off, std::ios_base::seekdir dir, std::ios_base::openmode which)
 {
   if (!(which & std::ios_base::in))
-    return pos_type(off_type(-1));
+    return pos_type(static_cast<off_type>(-1));
 
   constexpr std::size_t kChunk = DecompressingStreamBufPrivate::kChunkSize;
 
@@ -522,17 +522,17 @@ DecompressingStreamBuf::pos_type DecompressingStreamBuf::seekoff(
     while (d->decodeNextChunk()) {}
     target = static_cast<std::int64_t>(d->decodedSize) + off;
   } else {
-    return pos_type(off_type(-1));
+    return pos_type(static_cast<off_type>(-1));
   }
 
   if (target < 0)
-    return pos_type(off_type(-1));
+    return pos_type(static_cast<off_type>(-1));
 
   std::uint64_t utarget = static_cast<std::uint64_t>(target);
   if (utarget > d->decodedSize) {
     while (d->decodedSize < utarget && d->decodeNextChunk()) {}
     if (utarget > d->decodedSize)
-      return pos_type(off_type(-1));
+      return pos_type(static_cast<off_type>(-1));
   }
 
   if (utarget == d->decodedSize) {

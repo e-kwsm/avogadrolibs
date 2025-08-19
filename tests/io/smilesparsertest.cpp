@@ -680,11 +680,11 @@ void expectAromaticRoundTrip(const std::string& smiles)
   EXPECT_EQ(reparsed.bondCount(), original.bondCount()) << smiles;
   for (unsigned char element : { 1, 6, 7, 8, 16 }) {
     EXPECT_EQ(countElement(reparsed, element), countElement(original, element))
-      << smiles << ", element " << int(element);
+      << smiles << ", element " << static_cast<int>(element);
   }
   for (unsigned char order : { 1, 2, 3 }) {
     EXPECT_EQ(countBondOrder(reparsed, order), countBondOrder(original, order))
-      << smiles << ", bond order " << int(order);
+      << smiles << ", bond order " << static_cast<int>(order);
   }
 
   const std::vector<unsigned int> before = valences(original);

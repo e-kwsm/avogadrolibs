@@ -210,7 +210,7 @@ float PQRRequest::getMolMass(QString formula)
         element = { str[i], str[i + 1] };
         // this might be the last element of the formula
         if (isdigit(str[i + 2])) {
-          subscript = (int)str[i + 2] - '0';
+          subscript = static_cast<int>(str[i + 2]) - '0';
           i += 2; // increment past lowercase and numeral
         } else {
           i += 1;
@@ -221,13 +221,13 @@ float PQRRequest::getMolMass(QString formula)
       else if (isdigit(str[i + 1])) {
         if (isdigit(str[i + 2])) {
           // might be 2 digit subscript
-          subscript = (int)str[i + 1] - '0';
+          subscript = static_cast<int>(str[i + 1]) - '0';
           subscript *= 10; // shift forward one decimal place
-          subscript += (int)str[i + 2] - '0';
+          subscript += static_cast<int>(str[i + 2]) - '0';
           element = { str[i] };
           i += 2;
         } else {
-          subscript = (int)str[i + 1] - '0';
+          subscript = static_cast<int>(str[i + 1]) - '0';
           element = { str[i] };
           i += 1;
         }
