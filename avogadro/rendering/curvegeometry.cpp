@@ -90,7 +90,7 @@ void CurveGeometry::update(int index)
   auto it = line->points.begin();
   for (size_t i = SKIPPED; i < top; ++i) {
     for (size_t j = 0; j < lineResolution; ++j) {
-      float t = (i * lineResolution + j) / float(qttySegments);
+      float t = (i * lineResolution + j) / static_cast<float>(qttySegments);
       auto p = computeCurvePoint(t, line->points);
       if (i > SKIPPED) {
         Eigen::Matrix3f m;
