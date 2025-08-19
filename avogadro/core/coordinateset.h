@@ -83,7 +83,7 @@ template <typename T>
 class CoordinateSet : public ArraySet
 {
 public:
-  CoordinateSet() { m_content = new Holder<T>(T()); }
+  CoordinateSet() : m_content(new Holder<T>(T())) {}
 
   ~CoordinateSet() override = default;
 
