@@ -140,12 +140,13 @@ QVector3D QTAIMODEIntegrator::integrate(QVector3D x0y0z0)
   flag = 1;
 
   for (i_step = 1; i_step <= n_step; i_step++) {
-    t =
-      ((qreal)(n_step - i_step + 1) * t_start + (qreal)(i_step - 1) * t_stop) /
-      (qreal)(n_step);
+    t = (static_cast<qreal>(n_step - i_step + 1) * t_start +
+         static_cast<qreal>(i_step - 1) * t_stop) /
+        static_cast<qreal>(n_step);
 
-    t_out = ((qreal)(n_step - i_step) * t_start + (qreal)(i_step)*t_stop) /
-            (qreal)(n_step);
+    t_out = (static_cast<qreal>(n_step - i_step) * t_start +
+             static_cast<qreal>(i_step) * t_stop) /
+            static_cast<qreal>(n_step);
 
     flag = QTAIMODEIntegrator::r8_rkf45(NEQN, y, yp, &t, t_out, &relerr, abserr,
                                         flag);
@@ -336,7 +337,7 @@ qreal QTAIMODEIntegrator::r8_epsilon()
 {
   qreal r = 1.0;
 
-  while (1.0 < (qreal)(1.0 + r)) {
+  while (1.0 < static_cast<qreal>(1.0 + r)) {
     r = r / 2.0;
   }
 
@@ -761,7 +762,7 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
     return 8;
   }
 
-  mflag = (qint64)abs((long)flag);
+  mflag = static_cast<qint64>(abs(static_cast<long>(flag)));
   //
   //  Is this a continuation call?
   //
@@ -775,7 +776,7 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
     if (mflag == 2) {
       if (kflag == 3) {
         flag = flag_save;
-        mflag = (qint64)abs((long)flag);
+        mflag = static_cast<qint64>(abs(static_cast<long>(flag)));
       } else if (init == 0) {
         flag = flag_save;
       } else if (kflag == 4) {
@@ -794,18 +795,18 @@ qint64 QTAIMODEIntegrator::r8_rkf45(qint64 neqn, qreal y[], qreal yp[],
       if (flag == 3) {
         flag = flag_save;
         if (kflag == 3) {
-          mflag = (qint64)abs((long)flag);
+          mflag = static_cast<qint64>(abs(static_cast<long>(flag)));
         }
       } else if (flag == 4) {
         nfe = 0;
         flag = flag_save;
         if (kflag == 3) {
-          mflag = (qint64)abs((long)flag);
+          mflag = static_cast<qint64>(abs(static_cast<long>(flag)));
         }
       } else if (flag == 5 && 0.0 < abserr) {
         flag = flag_save;
         if (kflag == 3) {
-          mflag = (qint64)abs((long)flag);
+          mflag = static_cast<qint64>(abs(static_cast<long>(flag)));
         }
       }
       //
