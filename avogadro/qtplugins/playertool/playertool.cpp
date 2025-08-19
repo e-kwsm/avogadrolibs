@@ -345,10 +345,10 @@ void PlayerTool::recordMovie()
       for (int j = 0; j < frameHeight; ++j) {
         for (int k = 0; k < frameWidth; ++k) {
           QColor color = exportImage.pixel(k, j);
-          imageData[imageIndex] = (uint8_t)color.red();
-          imageData[imageIndex + 1] = (uint8_t)color.green();
-          imageData[imageIndex + 2] = (uint8_t)color.blue();
-          imageData[imageIndex + 3] = (uint8_t)color.alpha();
+          imageData[imageIndex] = static_cast<uint8_t>(color.red());
+          imageData[imageIndex + 1] = static_cast<uint8_t>(color.green());
+          imageData[imageIndex + 2] = static_cast<uint8_t>(color.blue());
+          imageData[imageIndex + 3] = static_cast<uint8_t>(color.alpha());
           imageIndex += 4;
         }
       }
