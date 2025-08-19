@@ -228,7 +228,8 @@ TEST(RWMoleculeTest, removeAtom)
   Atom a3 = mol.addAtom(4); // Be
   Atom a4 = mol.addAtom(5); // B
 
-  const Vector3 pos(Real(1), Real(2), Real(3));
+  const Vector3 pos(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                    static_cast<Real>(3.0));
   mol.setAtomPosition3d(0, pos);
 
   ASSERT_EQ(5, mol.atomCount());
@@ -336,7 +337,8 @@ TEST(RWMoleculeTest, clearAtoms)
   Atom a3 = mol.addAtom(4); // Be
   Atom a4 = mol.addAtom(5); // B
 
-  const Vector3 pos(Real(1), Real(2), Real(3));
+  const Vector3 pos(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                    static_cast<Real>(3.0));
   mol.setAtomPosition3d(0, pos);
 
   ASSERT_EQ(5, mol.atomCount());
@@ -524,7 +526,9 @@ TEST(RWMoleculeTest, setAtomPosition3d)
 
   // The positions will not be empty here because they are added when
   // atoms are added.
-  mol.setAtomPosition3d(0, Vector3(Real(1), Real(2), Real(3)));
+  mol.setAtomPosition3d(0,
+                        Vector3(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                                static_cast<Real>(3.0)));
   EXPECT_EQ(mol.atomicNumbers().size(), mol.atomPositions3d().size());
   EXPECT_EQ(Real(1), mol.atomPosition3d(0).x());
   EXPECT_EQ(Real(2), mol.atomPosition3d(0).y());
@@ -548,10 +552,18 @@ TEST(RWMoleculeTest, setAtomPosition3d)
 
   // Test command merging for interactive editing:
   mol.setInteractive(true);
-  mol.setAtomPosition3d(0, Vector3(Real(1), Real(2), Real(3)));
-  mol.setAtomPosition3d(3, Vector3(Real(4), Real(5), Real(6)));
-  mol.setAtomPosition3d(0, Vector3(Real(7), Real(8), Real(9)));
-  mol.setAtomPosition3d(1, Vector3(Real(6), Real(4), Real(2)));
+  mol.setAtomPosition3d(0,
+                        Vector3(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                                static_cast<Real>(3.0)));
+  mol.setAtomPosition3d(3,
+                        Vector3(static_cast<Real>(4.0), static_cast<Real>(5.0),
+                                static_cast<Real>(6.0)));
+  mol.setAtomPosition3d(0,
+                        Vector3(static_cast<Real>(7.0), static_cast<Real>(8.0),
+                                static_cast<Real>(9.0)));
+  mol.setAtomPosition3d(1,
+                        Vector3(static_cast<Real>(6.0), static_cast<Real>(4.0),
+                                static_cast<Real>(2.0)));
   mol.setInteractive(false);
 
   Array<Vector3> pos(mol.atomPositions3d());
@@ -869,8 +881,10 @@ TEST(RWMoleculeTest, AtomType)
   EXPECT_EQ(2, a1.atomicNumber());
   EXPECT_EQ(2, mol.atomicNumber(1));
 
-  a0.setPosition3d(Vector3(Real(3), Real(4), Real(5)));
-  a1.setPosition3d(Vector3(Real(6), Real(7), Real(8)));
+  a0.setPosition3d(Vector3(static_cast<Real>(3.0), static_cast<Real>(4.0),
+                           static_cast<Real>(5.0)));
+  a1.setPosition3d(Vector3(static_cast<Real>(6.0), static_cast<Real>(7.0),
+                           static_cast<Real>(8.0)));
 
   EXPECT_EQ(Vector3(Real(3), Real(4), Real(5)), a0.position3d());
   EXPECT_EQ(Vector3(Real(3), Real(4), Real(5)), mol.atomPosition3d(0));
@@ -943,7 +957,9 @@ void buildDistinctAtoms(RWMolecule& mol, Index count)
 {
   for (Index i = 0; i < count; ++i) {
     mol.addAtom(static_cast<unsigned char>(i + 1));
-    mol.setAtomPosition3d(i, Vector3(Real(i), Real(10 * i), Real(100 * i)));
+    mol.setAtomPosition3d(i, Vector3(static_cast<Real>(i),
+                                     static_cast<Real>(10 * i),
+                                     static_cast<Real>(100 * i)));
     mol.setAtomLabel(i, "atom" + std::to_string(i));
     mol.setFormalCharge(i, static_cast<signed char>(i));
   }
@@ -1703,7 +1719,9 @@ TEST(RWMoleculeTest, snapshotRoundTripHandWrittenSequence)
   // (the closest thing RWMolecule has to a public "swap" primitive).
   mol.addAtom(1);
   mol.addBond(0, 3, 1);
-  mol.setAtomPosition3d(3, Vector3(Real(1), Real(2), Real(3)));
+  mol.setAtomPosition3d(3,
+                        Vector3(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                                static_cast<Real>(3.0)));
   mol.setAtomicNumber(2, 7);
   mol.setBondOrder(1, 1);
   mol.setAtomSelected(0, true);
@@ -1793,8 +1811,10 @@ TEST(RWMoleculeTest, removeAtomUndoRestoresEveryOptionalPerAtomField)
   m.setColor(1, Avogadro::Vector3ub(10, 20, 30));
   m.setIsotope(1, 15);
   m.setHybridization(1, Avogadro::Core::SP3);
-  m.setAtomPosition2d(1, Avogadro::Vector2(Real(4), Real(5)));
-  m.setForceVector(1, Vector3(Real(1), Real(2), Real(3)));
+  m.setAtomPosition2d(
+    1, Avogadro::Vector2(static_cast<Real>(4.0), static_cast<Real>(5.0)));
+  m.setForceVector(1, Vector3(static_cast<Real>(1.0), static_cast<Real>(2.0),
+                              static_cast<Real>(3.0)));
   m.setFrozenAtomAxis(1, 0, true);
   m.setFrozenAtomAxis(1, 2, true);
   // Axis 1 is deliberately left unfrozen, so a restore that just copied
@@ -1875,7 +1895,9 @@ TEST(RWMoleculeTest, removeLastAtomUndoRedo)
   mol.addAtom(8);
   mol.addBond(0, 1, 1);
   mol.addBond(1, 2, 2);
-  mol.setAtomPosition3d(2, Vector3(Real(4), Real(5), Real(6)));
+  mol.setAtomPosition3d(2,
+                        Vector3(static_cast<Real>(4.0), static_cast<Real>(5.0),
+                                static_cast<Real>(6.0)));
 
   const MoleculeSnapshot before = snapshot(mol);
 
@@ -1994,9 +2016,10 @@ TEST(RWMoleculeTest, randomSequenceUndoRedoRoundTrip)
       case 6:
         if (atomCount > 0) {
           std::uniform_int_distribution<Index> pick(0, atomCount - 1);
-          mol.setAtomPosition3d(pick(rng), Vector3(Real(coordPick(rng)),
-                                                   Real(coordPick(rng)),
-                                                   Real(coordPick(rng))));
+          mol.setAtomPosition3d(pick(rng),
+                                Vector3(static_cast<Real>(coordPick(rng)),
+                                        static_cast<Real>(coordPick(rng)),
+                                        static_cast<Real>(coordPick(rng))));
         }
         break;
       case 7:
@@ -2447,7 +2470,9 @@ TEST(RWMoleculeTest, changedSignalStructuralEditsEmitNothingByThemselves)
     mol.addAtom(6);
     mol.addBond(0, 1, 1);
     mol.setAtomicNumber(0, 7);
-    mol.setAtomPosition3d(0, Vector3(Real(1), Real(2), Real(3)));
+    mol.setAtomPosition3d(0, Vector3(static_cast<Real>(1.0),
+                                     static_cast<Real>(2.0),
+                                     static_cast<Real>(3.0)));
     mol.setBondOrder(0, 2);
     mol.removeBond(0);
     mol.removeAtom(1);

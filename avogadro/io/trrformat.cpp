@@ -120,7 +120,7 @@ int isDouble(map<string, int>& header)
   for (auto& headerKey : headerKeys) {
     if (header[headerKey] != 0) {
       if (headerKey == "box_size") {
-        size = (int)(header[headerKey] / (DIM * DIM));
+        size = header[headerKey] / (DIM * DIM);
         break;
       } else {
         // natoms is read from the file, and this is integer division: a

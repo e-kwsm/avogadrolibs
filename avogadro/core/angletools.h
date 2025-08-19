@@ -31,7 +31,8 @@ inline Real bondAngle(const Vector3& b0, const Vector3& b1)
   if (!(norms > 0.0))
     return 0.0;
   // rounding can push the cosine just outside [-1, 1]
-  return std::acos(std::clamp(dot / norms, Real(-1.0), Real(1.0))) *
+  return std::acos(std::clamp(dot / norms, static_cast<Real>(-1.0),
+                              static_cast<Real>(1.0))) *
          RAD_TO_DEG_D;
 }
 
