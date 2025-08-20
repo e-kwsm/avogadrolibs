@@ -24,18 +24,18 @@ bool SdfFormat::write(std::ostream& out, const Core::Molecule& mol)
   return MdlFormat::write(out, mol);
 }
 
-std::vector<std::string> SdfFormat::fileExtensions() const
+std::set<std::string> SdfFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("sdf");
-  ext.emplace_back("sd3");
+  std::set<std::string> ext;
+  ext.insert("sdf");
+  ext.insert("sd3");
   return ext;
 }
 
-std::vector<std::string> SdfFormat::mimeTypes() const
+std::set<std::string> SdfFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-mdl-molfile");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-mdl-molfile");
   return mime;
 }
 
