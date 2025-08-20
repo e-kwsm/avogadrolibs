@@ -480,7 +480,7 @@ inline std::vector<double> Variant::value() const
     return list;
   }
 
-  return std::vector<double>();
+  return {};
 }
 
 inline void Variant::clear()

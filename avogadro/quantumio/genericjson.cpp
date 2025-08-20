@@ -25,14 +25,12 @@ GenericJson::~GenericJson() {}
 
 std::vector<std::string> GenericJson::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("json");
-  return extensions;
+  return { "json" };
 }
 
 std::vector<std::string> GenericJson::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GenericJson::read(std::istream& in, Core::Molecule& molecule)
