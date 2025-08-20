@@ -11,14 +11,14 @@ namespace Avogadro::Io {
 
 std::set<std::string> CMsgPackFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
+  std::set<std::string> ext;
   ext.insert("cmpk");
   return ext;
 }
 
 std::set<std::string> CMsgPackFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
+  std::set<std::string> mime;
   mime.insert("chemical/x-cmpack");
   return mime;
 }
