@@ -923,16 +923,12 @@ bool MdlFormat::write(std::ostream& out, const Core::Molecule& mol)
 
 std::vector<std::string> MdlFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("mol");
-  return ext;
+  return { "mol" };
 }
 
 std::vector<std::string> MdlFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-mdl-molfile");
-  return mime;
+  return { "chemical/x-mdl-molfile" };
 }
 
 } // namespace Avogadro::Io

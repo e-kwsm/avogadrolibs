@@ -31,16 +31,12 @@ MoldenFile::~MoldenFile() {}
 
 std::vector<std::string> MoldenFile::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("mold");
-  extensions.emplace_back("molf");
-  extensions.emplace_back("molden");
-  return extensions;
+  return { "mold", "molf", "molden" };
 }
 
 std::vector<std::string> MoldenFile::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)

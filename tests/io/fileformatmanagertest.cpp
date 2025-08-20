@@ -197,15 +197,11 @@ public:
   std::string specificationUrl() const override { return ""; }
   std::vector<std::string> fileExtensions() const override
   {
-    std::vector<std::string> result;
-    result.push_back("asdfjkl;");
-    return result;
+    return { "asdfjkl;" };
   }
   std::vector<std::string> mimeTypes() const override
   {
-    std::vector<std::string> result;
-    result.push_back("chemical/x-doodie");
-    return result;
+    return { "chemical/x-doodie" };
   }
 };
 
