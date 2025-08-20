@@ -319,19 +319,19 @@ bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
   return true;
 }
 
-std::vector<std::string> PoscarFormat::fileExtensions() const
+std::set<std::string> PoscarFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("POSCAR");
-  ext.emplace_back("CONTCAR");
-  ext.emplace_back("vasp");
+  std::set<std::string> ext;
+  ext.insert("POSCAR");
+  ext.insert("CONTCAR");
+  ext.insert("vasp");
   return ext;
 }
 
-std::vector<std::string> PoscarFormat::mimeTypes() const
+std::set<std::string> PoscarFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("N/A");
+  std::set<std::string> mime;
+  mime.insert("N/A");
   return mime;
 }
 
