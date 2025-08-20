@@ -212,7 +212,7 @@ void FileFormatScript::readMetaData()
   const QJsonObject metaData(doc.object());
 
   // Read required inputs first.
-  std::vector<std::string> opStringsTmp;
+  std::set<std::string> opStringsTmp;
   if (!parseStringArray(metaData, "operations", opStringsTmp)) {
     qWarning() << "Error parsing metadata for file format script:"
                << scriptFilePath() << "\n"
