@@ -27,14 +27,12 @@ MopacAux::~MopacAux() {}
 
 std::vector<std::string> MopacAux::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("aux");
-  return extensions;
+  return { "aux" };
 }
 
 std::vector<std::string> MopacAux::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool MopacAux::read(std::istream& in, Core::Molecule& molecule)
