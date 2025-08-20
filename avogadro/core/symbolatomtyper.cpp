@@ -16,7 +16,7 @@ SymbolAtomTyper::SymbolAtomTyper(const Molecule* mol)
 
 std::string SymbolAtomTyper::type(const Atom& atom)
 {
-  return std::string(Elements::symbol(atom.atomicNumber()));
+  return Elements::symbol(atom.atomicNumber());
 }
 
 } // namespace Avogadro::Core
