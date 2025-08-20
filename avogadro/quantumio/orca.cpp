@@ -146,14 +146,12 @@ void ORCAOutput::flushVibrationData()
 
 std::vector<std::string> ORCAOutput::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("orca");
-  return extensions;
+  return { "orca" };
 }
 
 std::vector<std::string> ORCAOutput::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
