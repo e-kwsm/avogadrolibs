@@ -11,8 +11,8 @@
 
 #include <istream>
 #include <ostream>
+#include <set>
 #include <string>
-#include <vector>
 
 namespace Avogadro {
 
@@ -228,15 +228,15 @@ public:
 
   /**
    * @brief Get the file name extension(s) that the format supports reading.
-   * @return A vector containing a list of extensions (in lower case).
+   * @return A set containing a list of extensions (in lower case).
    */
-  virtual std::vector<std::string> fileExtensions() const = 0;
+  virtual std::set<std::string> fileExtensions() const = 0;
 
   /**
    * @brief Get the MIME type(s) that the format supports reading.
-   * @return A vector containing a list of MIME type(s) (in lower case).
+   * @return A set containing a list of MIME type(s) (in lower case).
    */
-  virtual std::vector<std::string> mimeTypes() const = 0;
+  virtual std::set<std::string> mimeTypes() const = 0;
 
 protected:
   /**
