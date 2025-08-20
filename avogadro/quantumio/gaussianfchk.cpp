@@ -33,16 +33,16 @@ GaussianFchk::GaussianFchk() : m_scftype(Rhf) {}
 
 GaussianFchk::~GaussianFchk() {}
 
-std::vector<std::string> GaussianFchk::fileExtensions() const
+std::set<std::string> GaussianFchk::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("fchk");
+  std::set<std::string> extensions;
+  extensions.insert("fchk");
   return extensions;
 }
 
-std::vector<std::string> GaussianFchk::mimeTypes() const
+std::set<std::string> GaussianFchk::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GaussianFchk::read(std::istream& in, Core::Molecule& molecule)
