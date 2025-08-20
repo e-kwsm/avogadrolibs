@@ -22,18 +22,18 @@ GenericOutput::GenericOutput() {}
 
 GenericOutput::~GenericOutput() {}
 
-std::vector<std::string> GenericOutput::fileExtensions() const
+std::set<std::string> GenericOutput::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("out");
-  extensions.emplace_back("output");
-  extensions.emplace_back("log");
+  std::set<std::string> extensions;
+  extensions.insert("out");
+  extensions.insert("output");
+  extensions.insert("log");
   return extensions;
 }
 
-std::vector<std::string> GenericOutput::mimeTypes() const
+std::set<std::string> GenericOutput::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
