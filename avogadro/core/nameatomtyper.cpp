@@ -15,7 +15,7 @@ NameAtomTyper::NameAtomTyper(const Molecule* mol) : AtomTyper<std::string>(mol)
 
 std::string NameAtomTyper::type(const Atom& atom)
 {
-  return std::string(Elements::name(atom.atomicNumber()));
+  return Elements::name(atom.atomicNumber());
 }
 
 } // namespace Avogadro::Core
