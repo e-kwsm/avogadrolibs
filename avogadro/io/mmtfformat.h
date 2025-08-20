@@ -47,8 +47,8 @@ public:
     return "http://mmtf.rcsb.org/";
   }
 
-  std::vector<std::string> fileExtensions() const override;
-  std::vector<std::string> mimeTypes() const override;
+  std::set<std::string> fileExtensions() const override;
+  std::set<std::string> mimeTypes() const override;
 
   bool read(std::istream& in, Core::Molecule& molecule) override;
 
