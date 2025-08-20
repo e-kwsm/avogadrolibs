@@ -109,7 +109,7 @@ bool OBFileFormat::read(std::istream& in, Core::Molecule& molecule)
             << "can"
             << "inchi"
             << "wln";
-  if (formats2D.contains(QString::fromStdString(m_fileExtensions.front())))
+  if (formats2D.contains(QString::fromStdString(*m_fileExtensions.begin())))
     options << "--gen3d";
 
   // Check if we have extra arguments for open babel
