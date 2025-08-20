@@ -304,16 +304,16 @@ bool NWChemJson::write(std::ostream&, const Molecule&)
   return false;
 }
 
-set<std::string> NWChemJson::fileExtensions() const
+std::set<std::string> NWChemJson::fileExtensions() const
 {
   set<std::string> ext;
   ext.insert("nwjson");
   return ext;
 }
 
-set<std::string> NWChemJson::mimeTypes() const
+std::set<std::string> NWChemJson::mimeTypes() const
 {
-  set<std::string> mime;
+  std::set<std::string> mime;
   mime.insert("chemical/x-nwjson");
   return mime;
 }
