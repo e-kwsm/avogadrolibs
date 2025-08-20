@@ -32,10 +32,7 @@ public:
 
   Dihedral begin();
 
-  Dihedral end() const
-  {
-    return std::make_tuple(MaxIndex, MaxIndex, MaxIndex, MaxIndex);
-  }
+  Dihedral end() const { return { MaxIndex, MaxIndex, MaxIndex, MaxIndex }; }
 
   Dihedral operator++();
 
