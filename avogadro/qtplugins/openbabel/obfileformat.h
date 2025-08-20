@@ -25,8 +25,8 @@ public:
   OBFileFormat(const std::string& name_, const std::string& identifier_,
                const std::string& description_,
                const std::string& specificationUrl_,
-               const std::vector<std::string> fileExtensions_,
-               const std::vector<std::string> mimeTypes_,
+               const std::set<std::string> fileExtensions_,
+               const std::set<std::string> mimeTypes_,
                const std::string& defaultFormat_, bool fileOnly_ = false);
   ~OBFileFormat() override;
 
@@ -47,11 +47,11 @@ public:
   std::string name() const override { return m_name; }
   std::string specificationUrl() const override { return m_specificationUrl; }
 
-  std::vector<std::string> fileExtensions() const override
+  std::set<std::string> fileExtensions() const override
   {
     return m_fileExtensions;
   }
-  std::vector<std::string> mimeTypes() const override { return m_mimeTypes; }
+  std::set<std::string> mimeTypes() const override { return m_mimeTypes; }
 
   /**
    * Set whether this format supports read and/or write operations.
@@ -69,8 +69,8 @@ public:
 private:
   Operations m_rwFlags;
   std::string m_description;
-  std::vector<std::string> m_fileExtensions;
-  std::vector<std::string> m_mimeTypes;
+  std::set<std::string> m_fileExtensions;
+  std::set<std::string> m_mimeTypes;
   std::string m_identifier;
   std::string m_name;
   std::string m_specificationUrl;
