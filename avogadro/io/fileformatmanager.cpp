@@ -147,11 +147,11 @@ bool FileFormatManager::addFormat(FileFormat* format)
   size_t index = m_formats.size();
   m_formats.push_back(format);
   m_identifiers[format->identifier()].push_back(index);
-  std::vector<std::string> mimes = format->mimeTypes();
+  auto mimes = format->mimeTypes();
   for (auto& mime : mimes) {
     m_mimeTypes[mime].push_back(index);
   }
-  std::vector<std::string> extensions = format->fileExtensions();
+  auto extensions = format->fileExtensions();
   for (auto& extension : extensions) {
     m_fileExtensions[extension].push_back(index);
   }
