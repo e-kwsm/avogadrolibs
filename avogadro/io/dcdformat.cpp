@@ -412,16 +412,12 @@ bool DcdFormat::write(std::ostream&, const Core::Molecule&)
 
 std::vector<std::string> DcdFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("dcd");
-  return ext;
+  return { "dcd" };
 }
 
 std::vector<std::string> DcdFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("application/octet-stream");
-  return mime;
+  return { "application/octet-stream" };
 }
 
 } // namespace Avogadro::Io

@@ -419,16 +419,12 @@ bool TrrFormat::write(std::ostream&, const Core::Molecule&)
 
 std::vector<std::string> TrrFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("trr");
-  return ext;
+  return { "trr" };
 }
 
 std::vector<std::string> TrrFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("application/octet-stream");
-  return mime;
+  return { "application/octet-stream" };
 }
 
 } // namespace Avogadro::Io
