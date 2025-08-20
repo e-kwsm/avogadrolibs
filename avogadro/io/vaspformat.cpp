@@ -419,8 +419,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
   if (!atomTypes.empty()) {
     Molecule::CustomElementMap elementMap;
     for (const auto& atomType : atomTypes) {
-      elementMap.insert(
-        std::make_pair(atomType.second, "Atom " + atomType.first));
+      elementMap.emplace(atomType.second, "Atom " + atomType.first);
     }
     mol.setCustomElementMap(elementMap);
   }
