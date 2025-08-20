@@ -9,17 +9,17 @@
 
 namespace Avogadro::Io {
 
-std::vector<std::string> CMsgPackFormat::fileExtensions() const
+std::set<std::string> CMsgPackFormat::fileExtensions() const
 {
   std::vector<std::string> ext;
-  ext.emplace_back("cmpk");
+  ext.insert("cmpk");
   return ext;
 }
 
-std::vector<std::string> CMsgPackFormat::mimeTypes() const
+std::set<std::string> CMsgPackFormat::mimeTypes() const
 {
   std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-cmpack");
+  mime.insert("chemical/x-cmpack");
   return mime;
 }
 
