@@ -30,15 +30,12 @@ GAMESSUSOutput::~GAMESSUSOutput() {}
 
 std::vector<std::string> GAMESSUSOutput::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("gamout");
-  extensions.emplace_back("gamess");
-  return extensions;
+  return { "gamout", "gamess" };
 }
 
 std::vector<std::string> GAMESSUSOutput::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GAMESSUSOutput::read(std::istream& in, Core::Molecule& molecule)
