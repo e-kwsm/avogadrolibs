@@ -89,7 +89,7 @@ public:
    */
   std::tuple<Index, Index, Index, Index> atoms() const
   {
-    return std::make_tuple(m_aIndex, m_bIndex, m_cIndex, m_dIndex);
+    return { m_aIndex, m_bIndex, m_cIndex, m_dIndex };
   }
 
   /**
