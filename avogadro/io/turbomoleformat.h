@@ -44,8 +44,8 @@ public:
            "geometry.html#turbomole-coordinate-input";
   }
 
-  std::vector<std::string> fileExtensions() const override;
-  std::vector<std::string> mimeTypes() const override;
+  std::set<std::string> fileExtensions() const override;
+  std::set<std::string> mimeTypes() const override;
 
   bool read(std::istream& inStream, Core::Molecule& molecule) override;
   bool write(std::ostream& outStream, const Core::Molecule& molecule) override;

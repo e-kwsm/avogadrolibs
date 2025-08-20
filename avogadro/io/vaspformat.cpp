@@ -467,17 +467,17 @@ bool OutcarFormat::write(std::ostream&, const Core::Molecule&)
   return false;
 }
 
-std::vector<std::string> OutcarFormat::fileExtensions() const
+std::set<std::string> OutcarFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("OUTCAR");
+  std::set<std::string> ext;
+  ext.insert("OUTCAR");
   return ext;
 }
 
-std::vector<std::string> OutcarFormat::mimeTypes() const
+std::set<std::string> OutcarFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("N/A");
+  std::set<std::string> mime;
+  mime.insert("N/A");
   return mime;
 }
 

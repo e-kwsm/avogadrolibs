@@ -408,20 +408,20 @@ bool XyzFormat::write(std::ostream& outStream, const Core::Molecule& mol)
   return true;
 }
 
-std::vector<std::string> XyzFormat::fileExtensions() const
+std::set<std::string> XyzFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("xyz");
-  ext.emplace_back("exyz");
-  ext.emplace_back("extxyz");
-  ext.emplace_back("allxyz");
+  std::set<std::string> ext;
+  ext.insert("xyz");
+  ext.insert("exyz");
+  ext.insert("extxyz");
+  ext.insert("allxyz");
   return ext;
 }
 
-std::vector<std::string> XyzFormat::mimeTypes() const
+std::set<std::string> XyzFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-xyz");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-xyz");
   return mime;
 }
 
