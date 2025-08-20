@@ -410,17 +410,17 @@ bool DcdFormat::write(std::ostream&, const Core::Molecule&)
   return false;
 }
 
-std::vector<std::string> DcdFormat::fileExtensions() const
+std::set<std::string> DcdFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("dcd");
+  std::set<std::string> ext;
+  ext.insert("dcd");
   return ext;
 }
 
-std::vector<std::string> DcdFormat::mimeTypes() const
+std::set<std::string> DcdFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("application/octet-stream");
+  std::set<std::string> mime;
+  mime.insert("application/octet-stream");
   return mime;
 }
 
