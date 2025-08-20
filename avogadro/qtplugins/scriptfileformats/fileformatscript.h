@@ -165,12 +165,12 @@ public:
 
   std::string specificationUrl() const override { return m_specificationUrl; }
 
-  std::vector<std::string> fileExtensions() const override
+  std::set<std::string> fileExtensions() const override
   {
     return m_fileExtensions;
   }
 
-  std::vector<std::string> mimeTypes() const override { return m_mimeTypes; }
+  std::set<std::string> mimeTypes() const override { return m_mimeTypes; }
 
 private:
   static Format stringToFormat(const std::string& str);
@@ -193,8 +193,8 @@ private:
   std::string m_name;
   std::string m_description;
   std::string m_specificationUrl;
-  std::vector<std::string> m_fileExtensions;
-  std::vector<std::string> m_mimeTypes;
+  std::set<std::string> m_fileExtensions;
+  std::set<std::string> m_mimeTypes;
 };
 
 } // namespace QtPlugins
