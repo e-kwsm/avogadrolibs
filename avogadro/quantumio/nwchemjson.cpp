@@ -306,17 +306,12 @@ bool NWChemJson::write(std::ostream&, const Molecule&)
 
 vector<std::string> NWChemJson::fileExtensions() const
 {
-  vector<std::string> ext;
-  ext.emplace_back("json");
-  ext.emplace_back("nwjson");
-  return ext;
+  return { "json", "nwjson" };
 }
 
 vector<std::string> NWChemJson::mimeTypes() const
 {
-  vector<std::string> mime;
-  mime.emplace_back("chemical/x-nwjson");
-  return mime;
+  return { "chemical/x-nwjson" };
 }
 
 } // namespace Avogadro::QuantumIO
