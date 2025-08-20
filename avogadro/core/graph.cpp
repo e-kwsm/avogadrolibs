@@ -245,7 +245,7 @@ size_t Graph::addEdge(size_t a, size_t b)
 std::set<size_t> Graph::checkConectivity(size_t a, size_t b) const
 {
   if (a == b) {
-    return std::set<size_t>();
+    return {};
   }
   std::set<size_t> visited;
   bool connected = false;
@@ -269,7 +269,7 @@ std::set<size_t> Graph::checkConectivity(size_t a, size_t b) const
     }
   }
   if (connected) {
-    return std::set<size_t>();
+    return {};
   }
   return visited;
 }
