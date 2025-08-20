@@ -309,18 +309,12 @@ bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
 
 std::vector<std::string> PoscarFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("POSCAR");
-  ext.emplace_back("CONTCAR");
-  ext.emplace_back("vasp");
-  return ext;
+  return { "POSCAR", "CONTCAR", "vasp" };
 }
 
 std::vector<std::string> PoscarFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("N/A");
-  return mime;
+  return { "N/A" };
 }
 
 bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
@@ -453,16 +447,12 @@ bool OutcarFormat::write(std::ostream&, const Core::Molecule&)
 
 std::vector<std::string> OutcarFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("OUTCAR");
-  return ext;
+  return { "OUTCAR" };
 }
 
 std::vector<std::string> OutcarFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("N/A");
-  return mime;
+  return { "N/A" };
 }
 
 } // namespace Avogadro::Io

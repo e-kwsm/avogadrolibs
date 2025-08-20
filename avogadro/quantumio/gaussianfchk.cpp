@@ -35,14 +35,12 @@ GaussianFchk::~GaussianFchk() {}
 
 std::vector<std::string> GaussianFchk::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("fchk");
-  return extensions;
+  return { "fchk" };
 }
 
 std::vector<std::string> GaussianFchk::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GaussianFchk::read(std::istream& in, Core::Molecule& molecule)
