@@ -311,7 +311,7 @@ bool ShaderProgram::setTextureSampler(const std::string& name,
     glActiveTexture(GL_TEXTURE0);
 
     // Mark texture unit as in-use.
-    m_textureUnitBindings.insert(std::make_pair(&texture, textureUnitId));
+    m_textureUnitBindings.emplace(&texture, textureUnitId);
     *available = true;
   } else {
     // Texture is already bound.
