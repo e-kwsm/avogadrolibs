@@ -130,8 +130,8 @@ QList<Io::FileFormat*> OpenBabel::fileFormats() const
   std::string fspecificationUrl(
     "https://openbabel.org/docs/FileFormats/Overview.html");
   // http://openbabel.org/wiki/Category:Formats
-  std::vector<std::string> fexts;
-  std::vector<std::string> fmime;
+  std::set<std::string> fexts;
+  std::set<std::string> fmime;
 
   // Simple lambda to replace toSet in QList
   auto toSet = [&](const QList<QString>& list) {
@@ -171,7 +171,7 @@ QList<Io::FileFormat*> OpenBabel::fileFormats() const
     }
 
     foreach (const QString& ext, formatExtensions)
-      fexts.push_back(ext.toStdString());
+      fexts.insert(ext.toStdString());
 
     auto* fmt =
       new OBFileFormat(fname, fidentifier, fdescription, fspecificationUrl,
