@@ -1700,17 +1700,17 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
   return true;
 }
 
-vector<std::string> CjsonFormat::fileExtensions() const
+std::set<std::string> CjsonFormat::fileExtensions() const
 {
-  vector<std::string> ext;
-  ext.emplace_back("cjson");
+  std::set<std::string> ext;
+  ext.insert("cjson");
   return ext;
 }
 
-vector<std::string> CjsonFormat::mimeTypes() const
+std::set<std::string> CjsonFormat::mimeTypes() const
 {
-  vector<std::string> mime;
-  mime.emplace_back("chemical/x-cjson");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-cjson");
   return mime;
 }
 

@@ -921,17 +921,17 @@ bool MdlFormat::write(std::ostream& out, const Core::Molecule& mol)
   return true;
 }
 
-std::vector<std::string> MdlFormat::fileExtensions() const
+std::set<std::string> MdlFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("mol");
+  std::set<std::string> ext;
+  ext.insert("mol");
   return ext;
 }
 
-std::vector<std::string> MdlFormat::mimeTypes() const
+std::set<std::string> MdlFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-mdl-molfile");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-mdl-molfile");
   return mime;
 }
 

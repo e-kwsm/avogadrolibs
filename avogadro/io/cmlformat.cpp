@@ -721,17 +721,17 @@ bool CmlFormat::write(std::ostream& out, const Core::Molecule& mol)
   return true;
 }
 
-std::vector<std::string> CmlFormat::fileExtensions() const
+std::set<std::string> CmlFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("cml");
+  std::set<std::string> ext;
+  ext.insert("cml");
   return ext;
 }
 
-std::vector<std::string> CmlFormat::mimeTypes() const
+std::set<std::string> CmlFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-cml");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-cml");
   return mime;
 }
 
