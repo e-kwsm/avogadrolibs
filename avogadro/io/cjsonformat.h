@@ -44,8 +44,8 @@ public:
     return "https://github.com/openchemistry/chemicaljson";
   }
 
-  std::vector<std::string> fileExtensions() const override;
-  std::vector<std::string> mimeTypes() const override;
+  std::set<std::string> fileExtensions() const override;
+  std::set<std::string> mimeTypes() const override;
 
   [[nodiscard]] bool read(std::istream& in, Core::Molecule& molecule) override;
   [[nodiscard]] bool write(std::ostream& out,
