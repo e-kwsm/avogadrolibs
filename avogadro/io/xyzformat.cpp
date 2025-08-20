@@ -410,19 +410,12 @@ bool XyzFormat::write(std::ostream& outStream, const Core::Molecule& mol)
 
 std::vector<std::string> XyzFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("xyz");
-  ext.emplace_back("exyz");
-  ext.emplace_back("extxyz");
-  ext.emplace_back("allxyz");
-  return ext;
+  return { "xyz", "exyz", "extxyz", "allxyz" };
 }
 
 std::vector<std::string> XyzFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-xyz");
-  return mime;
+  return { "chemical/x-xyz" };
 }
 
 } // namespace Avogadro::Io
