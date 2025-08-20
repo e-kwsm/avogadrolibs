@@ -26,17 +26,12 @@ bool SdfFormat::write(std::ostream& out, const Core::Molecule& mol)
 
 std::vector<std::string> SdfFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("sdf");
-  ext.emplace_back("sd3");
-  return ext;
+  return { "sdf", "sd3" };
 }
 
 std::vector<std::string> SdfFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-mdl-molfile");
-  return mime;
+  return { "chemical/x-mdl-molfile" };
 }
 
 } // namespace Avogadro::Io
