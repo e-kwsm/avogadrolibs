@@ -195,16 +195,16 @@ public:
   std::string name() const override { return m_ident; }
   std::string description() const override { return m_ident; }
   std::string specificationUrl() const override { return ""; }
-  std::vector<std::string> fileExtensions() const override
+  std::set<std::string> fileExtensions() const override
   {
-    std::vector<std::string> result;
-    result.push_back("asdfjkl;");
+    std::set<std::string> result;
+    result.insert("asdfjkl;");
     return result;
   }
-  std::vector<std::string> mimeTypes() const override
+  std::set<std::string> mimeTypes() const override
   {
-    std::vector<std::string> result;
-    result.push_back("chemical/x-doodie");
+    std::set<std::string> result;
+    result.insert("chemical/x-doodie");
     return result;
   }
 };
