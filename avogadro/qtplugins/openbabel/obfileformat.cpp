@@ -132,7 +132,7 @@ bool OBFileFormat::read(std::istream& in, Core::Molecule& molecule)
     }
 
     // Perform the conversion.
-    if (!proc.convert(input, QString::fromStdString(m_fileExtensions.front()),
+    if (!proc.convert(input, QString::fromStdString(*m_fileExtensions.begin()),
                       format, options)) {
       appendError("OpenBabel conversion failed!");
       return false;
@@ -171,7 +171,7 @@ bool OBFileFormat::read(std::istream& in, Core::Molecule& molecule)
 
     // Perform the conversion.
     if (!proc.convert(filename,
-                      QString::fromStdString(m_fileExtensions.front()), format,
+                      QString::fromStdString(*m_fileExtensions.begin()), format,
                       options)) {
       appendError("OpenBabel conversion failed!");
       return false;
