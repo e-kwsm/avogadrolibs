@@ -431,23 +431,22 @@ size_t Graph::edgeCount() const
 std::vector<size_t> Graph::neighbors(size_t index) const
 {
   if (index == size()) {
-    std::vector<size_t> emptyVector;
-    return std::vector<size_t>(emptyVector);
+    return {};
   }
   assert(index < size());
-  return std::vector<size_t>(m_adjacencyList[index]);
+  return m_adjacencyList[index];
 }
 
 std::vector<size_t> Graph::edges(size_t index) const
 {
   assert(index < size());
-  return std::vector<size_t>(m_edgeMap[index]);
+  return m_edgeMap[index];
 }
 
 std::pair<size_t, size_t> Graph::endpoints(size_t index) const
 {
   assert(index < edgeCount());
-  return std::pair<size_t, size_t>(m_edgePairs[index]);
+  return m_edgePairs[index];
 }
 
 size_t Graph::degree(size_t index) const
