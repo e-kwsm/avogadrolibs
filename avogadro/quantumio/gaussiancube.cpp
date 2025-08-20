@@ -27,7 +27,7 @@ std::set<std::string> GaussianCube::fileExtensions() const
 
 std::set<std::string> GaussianCube::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GaussianCube::read(std::istream& in, Core::Molecule& molecule)
