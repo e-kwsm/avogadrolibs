@@ -177,7 +177,7 @@ bool CopyPaste::copy(Io::FileFormat* format)
 
   auto* mimeData(new QMimeData);
 
-  std::vector<std::string> mimeTypes(format->mimeTypes());
+  auto mimeTypes = format->mimeTypes();
   for (auto& mimeType : mimeTypes)
     mimeData->setData(QString::fromStdString(mimeType), outputBA);
 
