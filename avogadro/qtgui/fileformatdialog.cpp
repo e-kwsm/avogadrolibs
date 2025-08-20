@@ -222,7 +222,7 @@ QString FileFormatDialog::generateFilterString(
   QMultiMap<QString, QString> formatMap;
   for (auto ff : ffs) {
     QString name(QString::fromStdString(ff->name()));
-    std::vector<std::string> exts = ff->fileExtensions();
+    auto exts = ff->fileExtensions();
     for (auto& eit : exts) {
       QString ext(QString::fromStdString(eit));
       if (!formatMap.values(name).contains(ext)) {
