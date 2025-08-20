@@ -264,7 +264,7 @@ std::vector<const FileFormat*> FileFormatManager::fileFormatsFromMimeType(
   std::vector<FileFormat*> matches =
     filteredFormatsFromFormatMap(mimeType, filter, m_mimeTypes);
 
-  return std::vector<const FileFormat*>(matches.begin(), matches.end());
+  return { matches.begin(), matches.end() };
 }
 
 std::vector<const FileFormat*> FileFormatManager::fileFormatsFromFileExtension(
@@ -273,7 +273,7 @@ std::vector<const FileFormat*> FileFormatManager::fileFormatsFromFileExtension(
   std::vector<FileFormat*> matches =
     filteredFormatsFromFormatMap(extension, filter, m_fileExtensions);
 
-  return std::vector<const FileFormat*>(matches.begin(), matches.end());
+  return { matches.begin(), matches.end() };
 }
 
 std::string FileFormatManager::error() const
