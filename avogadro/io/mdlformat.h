@@ -48,8 +48,8 @@ public:
     */
   }
 
-  std::vector<std::string> fileExtensions() const override;
-  std::vector<std::string> mimeTypes() const override;
+  std::set<std::string> fileExtensions() const override;
+  std::set<std::string> mimeTypes() const override;
 
   [[nodiscard]] bool read(std::istream& in, Core::Molecule& molecule) override;
   [[nodiscard]] bool readV3000(std::istream& in, Core::Molecule& molecule);
