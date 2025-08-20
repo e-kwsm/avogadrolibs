@@ -1702,16 +1702,12 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
 
 vector<std::string> CjsonFormat::fileExtensions() const
 {
-  vector<std::string> ext;
-  ext.emplace_back("cjson");
-  return ext;
+  return { "cjson" };
 }
 
 vector<std::string> CjsonFormat::mimeTypes() const
 {
-  vector<std::string> mime;
-  mime.emplace_back("chemical/x-cjson");
-  return mime;
+  return { "chemical/x-cjson" };
 }
 
 } // namespace Avogadro::Io

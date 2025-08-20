@@ -315,17 +315,12 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
 
 std::vector<std::string> PdbFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("pdb");
-  ext.emplace_back("ent");
-  return ext;
+  return { "pdb", "ent" };
 }
 
 std::vector<std::string> PdbFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-pdb");
-  return mime;
+  return { "chemical/x-pdb" };
 }
 
 void PdbFormat::perceiveSubstitutedCations(Core::Molecule& molecule)

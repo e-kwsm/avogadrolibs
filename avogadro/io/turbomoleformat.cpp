@@ -422,17 +422,12 @@ bool TurbomoleFormat::write(std::ostream& outStream, const Core::Molecule& mol)
 
 std::vector<std::string> TurbomoleFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("coord");
-  ext.emplace_back("tmol");
-  return ext;
+  return { "coord", "tmol" };
 }
 
 std::vector<std::string> TurbomoleFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-turbomole");
-  return mime;
+  return { "chemical/x-turbomole" };
 }
 
 } // namespace Avogadro::Io

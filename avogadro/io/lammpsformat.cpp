@@ -417,17 +417,12 @@ bool LammpsTrajectoryFormat::write(std::ostream&, const Core::Molecule&)
 
 std::vector<std::string> LammpsTrajectoryFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("dump");
-  ext.emplace_back("lammpstrj");
-  return ext;
+  return { "dump", "lammpstrj" };
 }
 
 std::vector<std::string> LammpsTrajectoryFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("text/lammps");
-  return mime;
+  return { "text/lammps" };
 }
 
 bool LammpsDataFormat::read(std::istream&, Core::Molecule&)
@@ -591,16 +586,12 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
 
 std::vector<std::string> LammpsDataFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("lmpdat");
-  return ext;
+  return { "lmpdat" };
 }
 
 std::vector<std::string> LammpsDataFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("N/A");
-  return mime;
+  return { "N/A" };
 }
 
 } // namespace Avogadro::Io

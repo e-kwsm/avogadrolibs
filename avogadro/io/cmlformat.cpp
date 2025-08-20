@@ -723,16 +723,12 @@ bool CmlFormat::write(std::ostream& out, const Core::Molecule& mol)
 
 std::vector<std::string> CmlFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("cml");
-  return ext;
+  return { "cml" };
 }
 
 std::vector<std::string> CmlFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-cml");
-  return mime;
+  return { "chemical/x-cml" };
 }
 
 } // namespace Avogadro::Io
