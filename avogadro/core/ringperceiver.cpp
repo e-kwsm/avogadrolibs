@@ -307,12 +307,10 @@ bool Sssr::isUnique(const std::vector<size_t>& path) const
   // Build the set of bonds in the path.
   std::set<std::pair<size_t, size_t>> pathBonds;
   for (size_t i = 0; i < path.size() - 1; i++) {
-    pathBonds.insert(std::make_pair(std::min(path[i], path[i + 1]),
-                                    std::max(path[i], path[i + 1])));
+    pathBonds.insert(std::minmax(path[i], path[i + 1]));
   }
 
-  pathBonds.insert(std::make_pair(std::min(path.front(), path.back()),
-                                  std::max(path.front(), path.back())));
+  pathBonds.insert(std::minmax(path.front(), path.back()));
 
   // Remove bonds from path bonds that are already in a smaller ring.
   for (const auto& ring : m_rings) {
@@ -320,12 +318,10 @@ bool Sssr::isUnique(const std::vector<size_t>& path) const
       continue;
 
     for (size_t i = 0; i < ring.size(); i++) {
-      pathBonds.erase(std::make_pair(std::min(ring[i], ring[i + 1]),
-                                     std::max(ring[i], ring[i + 1])));
+      pathBonds.erase(std::minmax(ring[i], ring[i + 1]));
     }
 
-    pathBonds.erase(std::make_pair(std::min(ring.front(), ring.back()),
-                                   std::max(ring.front(), ring.back())));
+    pathBonds.erase(std::minmax(ring.front(), ring.back()));
   }
 
   // Check if any other ring contains the same bonds.
@@ -334,13 +330,11 @@ bool Sssr::isUnique(const std::vector<size_t>& path) const
 
     // Add ring bonds.
     for (size_t i = 0; i < ring.size() - 1; i++) {
-      ringBonds.insert(std::make_pair(std::min(ring[i], ring[i + 1]),
-                                      std::max(ring[i], ring[i + 1])));
+      ringBonds.insert(std::minmax(ring[i], ring[i + 1]));
     }
 
     // Add closure bond.
-    ringBonds.insert(std::make_pair(std::min(ring.front(), ring.back()),
-                                    std::max(ring.front(), ring.back())));
+    ringBonds.insert(std::minmax(ring.front(), ring.back()));
 
     // Check intersection.
     std::set<std::pair<size_t, size_t>> intersection;
