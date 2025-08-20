@@ -420,18 +420,18 @@ bool TurbomoleFormat::write(std::ostream& outStream, const Core::Molecule& mol)
   return true;
 }
 
-std::vector<std::string> TurbomoleFormat::fileExtensions() const
+std::set<std::string> TurbomoleFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("coord");
-  ext.emplace_back("tmol");
+  std::set<std::string> ext;
+  ext.insert("coord");
+  ext.insert("tmol");
   return ext;
 }
 
-std::vector<std::string> TurbomoleFormat::mimeTypes() const
+std::set<std::string> TurbomoleFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-turbomole");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-turbomole");
   return mime;
 }
 
