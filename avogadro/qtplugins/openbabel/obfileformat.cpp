@@ -277,7 +277,7 @@ bool OBFileFormat::write(std::ostream& out, const Core::Molecule& molecule)
   }
 
   proc.convert(QByteArray(outputString.c_str()), m_defaultFormat.c_str(),
-               QString::fromStdString(m_fileExtensions.front()), options);
+               QString::fromStdString(*m_fileExtensions.begin()), options);
 
   QByteArray output;
   if (!listener.waitForOutput(output)) {

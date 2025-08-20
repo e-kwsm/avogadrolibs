@@ -166,7 +166,7 @@ private:
   void readMetaData();
   bool parseString(const QJsonObject& ob, const QString& key, std::string& str);
   bool parseStringArray(const QJsonObject& ob, const QString& key,
-                        std::vector<std::string>& array);
+                        std::set<std::string>& array);
 
 private:
   QtGui::PythonScript* m_interpreter;
