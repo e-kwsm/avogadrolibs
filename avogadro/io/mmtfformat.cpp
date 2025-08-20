@@ -253,16 +253,12 @@ bool MMTFFormat::write(std::ostream&, const Core::Molecule&)
 
 vector<std::string> MMTFFormat::fileExtensions() const
 {
-  vector<std::string> ext;
-  ext.emplace_back("mmtf");
-  return ext;
+  return { "mmtf" };
 }
 
 vector<std::string> MMTFFormat::mimeTypes() const
 {
-  vector<std::string> mime;
-  mime.emplace_back("chemical/x-mmtf");
-  return mime;
+  return { "chemical/x-mmtf" };
 }
 
 } // namespace Avogadro::Io
