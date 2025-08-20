@@ -28,17 +28,17 @@ GAMESSUSOutput::GAMESSUSOutput() : m_coordFactor(1.0), m_scftype(Rhf) {}
 
 GAMESSUSOutput::~GAMESSUSOutput() {}
 
-std::vector<std::string> GAMESSUSOutput::fileExtensions() const
+std::set<std::string> GAMESSUSOutput::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("gamout");
-  extensions.emplace_back("gamess");
+  std::set<std::string> extensions;
+  extensions.insert("gamout");
+  extensions.insert("gamess");
   return extensions;
 }
 
-std::vector<std::string> GAMESSUSOutput::mimeTypes() const
+std::set<std::string> GAMESSUSOutput::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GAMESSUSOutput::read(std::istream& in, Core::Molecule& molecule)
