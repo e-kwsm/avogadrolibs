@@ -146,7 +146,7 @@ bool GromacsFormat::read(std::istream& in, Molecule& molecule)
       } else {
         auto it = atomTypes.find(value);
         if (it == atomTypes.end()) {
-          atomTypes.insert(std::make_pair(value, customElementCounter++));
+          atomTypes.emplace(value, customElementCounter++);
           it = atomTypes.find(value);
           if (customElementCounter > CustomElementMax) {
             appendError("Custom element type limit exceeded.");
@@ -178,7 +178,7 @@ bool GromacsFormat::read(std::istream& in, Molecule& molecule)
   if (!atomTypes.empty()) {
     Molecule::CustomElementMap elementMap;
     for (const auto& atomType : atomTypes) {
-      elementMap.insert(std::make_pair(atomType.second, atomType.first));
+      elementMap.emplace(atomType.second, atomType.first);
     }
     molecule.setCustomElementMap(elementMap);
   }
