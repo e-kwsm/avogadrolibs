@@ -251,17 +251,17 @@ bool MMTFFormat::write(std::ostream&, const Core::Molecule&)
   return false;
 }
 
-vector<std::string> MMTFFormat::fileExtensions() const
+std::set<std::string> MMTFFormat::fileExtensions() const
 {
-  vector<std::string> ext;
-  ext.emplace_back("mmtf");
+  std::set<std::string> ext;
+  ext.insert("mmtf");
   return ext;
 }
 
-vector<std::string> MMTFFormat::mimeTypes() const
+std::set<std::string> MMTFFormat::mimeTypes() const
 {
-  vector<std::string> mime;
-  mime.emplace_back("chemical/x-mmtf");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-mmtf");
   return mime;
 }
 
