@@ -264,7 +264,7 @@ bool OBFileFormat::write(std::ostream& out, const Core::Molecule& molecule)
   }
 
   proc.convert(QByteArray(outputString.c_str()), m_defaultFormat.c_str(),
-               QString::fromStdString(m_fileExtensions.front()), options);
+               QString::fromStdString(*m_fileExtensions.begin()), options);
 
   // Block without running the event loop: this runs on BackgroundFileFormat's
   // worker thread and from event handlers, and processEvents() would re-enter
