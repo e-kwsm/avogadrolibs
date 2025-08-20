@@ -23,16 +23,16 @@ NWChemLog::NWChemLog() {}
 
 NWChemLog::~NWChemLog() {}
 
-std::vector<std::string> NWChemLog::fileExtensions() const
+std::set<std::string> NWChemLog::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("nwchem");
+  std::set<std::string> extensions;
+  extensions.insert("nwchem");
   return extensions;
 }
 
-std::vector<std::string> NWChemLog::mimeTypes() const
+std::set<std::string> NWChemLog::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool NWChemLog::read(std::istream& in, Core::Molecule& molecule)
