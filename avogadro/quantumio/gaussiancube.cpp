@@ -18,16 +18,16 @@ GaussianCube::GaussianCube() {}
 
 GaussianCube::~GaussianCube() {}
 
-std::vector<std::string> GaussianCube::fileExtensions() const
+std::set<std::string> GaussianCube::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("cube");
+  std::set<std::string> extensions;
+  extensions.insert("cube");
   return extensions;
 }
 
-std::vector<std::string> GaussianCube::mimeTypes() const
+std::set<std::string> GaussianCube::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GaussianCube::read(std::istream& in, Core::Molecule& molecule)
