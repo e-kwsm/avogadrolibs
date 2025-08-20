@@ -28,16 +28,16 @@ ORCAOutput::ORCAOutput() {}
 
 ORCAOutput::~ORCAOutput() {}
 
-std::vector<std::string> ORCAOutput::fileExtensions() const
+std::set<std::string> ORCAOutput::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("orca");
+  std::set<std::string> extensions;
+  extensions.insert("orca");
   return extensions;
 }
 
-std::vector<std::string> ORCAOutput::mimeTypes() const
+std::set<std::string> ORCAOutput::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
