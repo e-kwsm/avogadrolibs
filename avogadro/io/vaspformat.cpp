@@ -425,8 +425,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
           }
           if (coordSet == 0) {
             AtomTypeMap::const_iterator it;
-            atomTypes.insert(
-              std::make_pair(std::to_string(natoms), customElementCounter++));
+            atomTypes.emplace(std::to_string(natoms), customElementCounter++);
             it = atomTypes.find(std::to_string(natoms));
             // if (customElementCounter > CustomElementMax) {
             //   appendError("Custom element type limit exceeded.");
