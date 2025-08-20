@@ -1049,7 +1049,7 @@ std::pair<Vector3, Vector3> Molecule::bestFitPlane(const Array<Vector3>& pos)
                                 Eigen::ComputeThinU | Eigen::ComputeThinV);
   Vector3 plane_normal = svd.matrixU().rightCols<1>();
 
-  return std::make_pair(centroid, plane_normal);
+  return { centroid, plane_normal };
 }
 
 Array<double> Molecule::vibrationFrequencies() const
