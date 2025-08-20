@@ -34,12 +34,12 @@ using Core::UnitCell;
 
 std::set<std::string> GromacsFormat::fileExtensions() const
 {
-  return { 1, "gro"s };
+  return { "gro"s };
 }
 
 std::set<std::string> GromacsFormat::mimeTypes() const
 {
-  return { 1, "chemical/x-gro"s };
+  return { "chemical/x-gro"s };
 }
 
 bool GromacsFormat::read(std::istream& in, Molecule& molecule)
