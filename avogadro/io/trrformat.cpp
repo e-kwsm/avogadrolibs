@@ -417,17 +417,17 @@ bool TrrFormat::write(std::ostream&, const Core::Molecule&)
   return false;
 }
 
-std::vector<std::string> TrrFormat::fileExtensions() const
+std::set<std::string> TrrFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("trr");
+  std::set<std::string> ext;
+  ext.insert("trr");
   return ext;
 }
 
-std::vector<std::string> TrrFormat::mimeTypes() const
+std::set<std::string> TrrFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("application/octet-stream");
+  std::set<std::string> mime;
+  mime.insert("application/octet-stream");
   return mime;
 }
 
