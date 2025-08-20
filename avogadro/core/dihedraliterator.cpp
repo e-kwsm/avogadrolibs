@@ -26,7 +26,7 @@ Dihedral DihedralIterator::operator++()
 {
   // impossible to have a dihedral, so quit
   if (m_mol == nullptr || m_mol->atomCount() < 4 || m_mol->bondCount() < 3)
-    return std::make_tuple(MaxIndex, MaxIndex, MaxIndex, MaxIndex);
+    return { MaxIndex, MaxIndex, MaxIndex, MaxIndex };
 
   Graph graph = m_mol->graph();
   Index count = m_mol->bondCount();
@@ -179,7 +179,7 @@ Dihedral DihedralIterator::operator++()
                                 bond.atom2().index(), lIndex);
     return m_current;
   } else
-    return std::make_tuple(MaxIndex, MaxIndex, MaxIndex, MaxIndex);
+    return { MaxIndex, MaxIndex, MaxIndex, MaxIndex };
 } // end ++ operator
 
 } // namespace Avogadro::Core
