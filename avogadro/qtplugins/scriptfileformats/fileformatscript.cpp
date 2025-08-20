@@ -344,7 +344,7 @@ bool FileFormatScript::parseString(const QJsonObject& ob, const QString& key,
 
 bool FileFormatScript::parseStringArray(const QJsonObject& ob,
                                         const QString& key,
-                                        std::vector<std::string>& array)
+                                        std::set<std::string>& array)
 {
   array.clear();
 
@@ -355,9 +355,9 @@ bool FileFormatScript::parseStringArray(const QJsonObject& ob,
     if (!val.isString())
       return false;
 
-    array.push_back(val.toString().toStdString());
+    array.insert(val.toString().toStdString());
 
-    if (array.back().empty())
+    if (array.rbegin()->empty())
       return false;
   }
 
