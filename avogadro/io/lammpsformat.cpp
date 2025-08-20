@@ -124,8 +124,9 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     z_max = lexicalCast<double>(box_bounds_z[1]).value_or(0.0);
     tilt_yz = lexicalCast<double>(box_bounds_z[2]).value_or(0.0);
 
-    x_min -= std::min({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
-    x_max -= std::max({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
+    auto tmp = std::minmax({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
+    x_min -= tmp.first;
+    x_max -= tmp.second;
     y_min -= std::min(tilt_yz, 0.0);
     y_max -= std::max(tilt_yz, 0.0);
   }
@@ -390,8 +391,9 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
       z_max = lexicalCast<double>(box_bounds_z[1]).value_or(0.0);
       tilt_yz = lexicalCast<double>(box_bounds_z[2]).value_or(0.0);
 
-      x_min -= std::min({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
-      x_max -= std::max({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
+      auto tmp = std::minmax({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
+      x_min -= tmp.first;
+      x_max -= tmp.second;
       y_min -= std::min(tilt_yz, 0.0);
       y_max -= std::max(tilt_yz, 0.0);
     }
