@@ -87,8 +87,8 @@ void ScriptEnergy::setMolecule(Core::Molecule* mol)
   QString tempPath = QDir::tempPath();
   if (!tempPath.endsWith(QDir::separator()))
     tempPath += QDir::separator();
-  QString tempPattern =
-    tempPath + "avogadroenergyXXXXXX." + format->fileExtensions()[0].c_str();
+  QString tempPattern = tempPath + "avogadroenergyXXXXXX." +
+                        format->fileExtensions().begin()->c_str();
   m_tempFile.setFileTemplate(tempPattern);
   if (!m_tempFile.open()) {
     // appendError("Error creating temporary file.");
