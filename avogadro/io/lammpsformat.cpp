@@ -415,18 +415,18 @@ bool LammpsTrajectoryFormat::write(std::ostream&, const Core::Molecule&)
   return false;
 }
 
-std::vector<std::string> LammpsTrajectoryFormat::fileExtensions() const
+std::set<std::string> LammpsTrajectoryFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("dump");
-  ext.emplace_back("lammpstrj");
+  std::set<std::string> ext;
+  ext.insert("dump");
+  ext.insert("lammpstrj");
   return ext;
 }
 
-std::vector<std::string> LammpsTrajectoryFormat::mimeTypes() const
+std::set<std::string> LammpsTrajectoryFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("text/lammps");
+  std::set<std::string> mime;
+  mime.insert("text/lammps");
   return mime;
 }
 
@@ -589,17 +589,17 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
   return true;
 }
 
-std::vector<std::string> LammpsDataFormat::fileExtensions() const
+std::set<std::string> LammpsDataFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("lmpdat");
+  std::set<std::string> ext;
+  ext.insert("lmpdat");
   return ext;
 }
 
-std::vector<std::string> LammpsDataFormat::mimeTypes() const
+std::set<std::string> LammpsDataFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("N/A");
+  std::set<std::string> mime;
+  mime.insert("N/A");
   return mime;
 }
 

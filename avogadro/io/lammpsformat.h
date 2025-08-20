@@ -46,8 +46,8 @@ public:
     return "http://lammps.sandia.gov/";
   }
 
-  std::vector<std::string> fileExtensions() const override;
-  std::vector<std::string> mimeTypes() const override;
+  std::set<std::string> fileExtensions() const override;
+  std::set<std::string> mimeTypes() const override;
 
   bool read(std::istream& inStream, Core::Molecule& molecule) override;
   bool write(std::ostream& outStream, const Core::Molecule& molecule) override;
@@ -77,8 +77,8 @@ public:
     return "http://lammps.sandia.gov/";
   }
 
-  std::vector<std::string> fileExtensions() const override;
-  std::vector<std::string> mimeTypes() const override;
+  std::set<std::string> fileExtensions() const override;
+  std::set<std::string> mimeTypes() const override;
 
   bool read(std::istream& inStream, Core::Molecule& molecule) override;
   bool write(std::ostream& outStream, const Core::Molecule& molecule) override;

@@ -313,18 +313,18 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
   return true;
 } // End read
 
-std::vector<std::string> PdbFormat::fileExtensions() const
+std::set<std::string> PdbFormat::fileExtensions() const
 {
-  std::vector<std::string> ext;
-  ext.emplace_back("pdb");
-  ext.emplace_back("ent");
+  std::set<std::string> ext;
+  ext.insert("pdb");
+  ext.insert("ent");
   return ext;
 }
 
-std::vector<std::string> PdbFormat::mimeTypes() const
+std::set<std::string> PdbFormat::mimeTypes() const
 {
-  std::vector<std::string> mime;
-  mime.emplace_back("chemical/x-pdb");
+  std::set<std::string> mime;
+  mime.insert("chemical/x-pdb");
   return mime;
 }
 
