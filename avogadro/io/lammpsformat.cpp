@@ -192,8 +192,7 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     auto it = atomTypes.find(to_string(atomicNum));
     if (it == atomTypes.end()) {
-      atomTypes.insert(
-        std::make_pair(to_string(atomicNum), customElementCounter++));
+      atomTypes.emplace(to_string(atomicNum), customElementCounter++);
       it = atomTypes.find(to_string(atomicNum));
       if (customElementCounter > CustomElementMax) {
         appendError("Custom element type limit exceeded.");
@@ -208,7 +207,7 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   if (!atomTypes.empty()) {
     Molecule::CustomElementMap elementMap;
     for (const auto& atomType : atomTypes) {
-      elementMap.insert(std::make_pair(atomType.second, atomType.first));
+      elementMap.emplace(atomType.second, atomType.first);
     }
     mol.setCustomElementMap(elementMap);
   }
@@ -531,9 +530,9 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
                  static_cast<int>(b.atom1().index() + 1));
         bondStream << bondline;
       } else {
-        bondIds.insert(std::make_pair(
+        bondIds.emplace(
           std::make_pair(b.atom1().atomicNumber(), b.atom2().atomicNumber()),
-          bondItr++));
+          bondItr++);
         snprintf(bondline, lineSize - 1, "%-*d %7d %7d %7d\n",
                  static_cast<int>(log(numAtoms) + 1), static_cast<int>(i + 1),
                  bondIds[std::make_pair(b.atom1().atomicNumber(),
