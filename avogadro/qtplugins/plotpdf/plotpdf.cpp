@@ -183,7 +183,7 @@ bool PlotPdf::generatePdfPattern(QtGui::Molecule& mol, PdfData& results,
       dist = (refAtomCoords.at(i) - newAtomCoords.at(j)).norm();
       binIdx = static_cast<size_t>(dist / rStep);
       if (pdfCount.find(binIdx) == pdfCount.end()) {
-        pdfCount.insert(std::make_pair(binIdx, 1));
+        pdfCount.emplace(binIdx, 1);
       } else {
         pdfCount[binIdx]++;
       }
@@ -192,12 +192,12 @@ bool PlotPdf::generatePdfPattern(QtGui::Molecule& mol, PdfData& results,
 
   for (k = 0; k < static_cast<size_t>(maxRadius / rStep); k++) {
     if (pdfCount.find(k) == pdfCount.end()) {
-      results.push_back(std::make_pair(k * rStep, 0.0));
+      results.emplace_back(k * rStep, 0.0);
     } else {
-      results.push_back(std::make_pair(
-        k * rStep, pdfCount[k] * newMolecule.unitCell()->volume() /
-                     (4 * M_PI * pow(k * rStep, 2) * rStep *
-                      refAtomCoords.size() * newAtomCoords.size())));
+      results.emplace_back(k * rStep,
+                           pdfCount[k] * newMolecule.unitCell()->volume() /
+                             (4 * M_PI * pow(k * rStep, 2) * rStep *
+                              refAtomCoords.size() * newAtomCoords.size()));
     }
   }
 
