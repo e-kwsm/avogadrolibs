@@ -76,12 +76,12 @@ void CustomElementDialog::apply()
       // Reuse old name:
       unsigned char newId = newIdGenerator++;
       auto it = oldMap.find(oldId);
-      newMap.insert(std::make_pair(newId, it->second));
-      oldToNew.insert(std::make_pair(oldId, newId));
+      newMap.emplace(newId, it->second);
+      oldToNew.emplace(oldId, newId);
     } else {
       // New element assigned:
       auto newId = static_cast<unsigned char>(currentIndex);
-      oldToNew.insert(std::make_pair(oldId, newId));
+      oldToNew.emplace(oldId, newId);
     }
   }
 
