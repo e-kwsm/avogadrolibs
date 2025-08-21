@@ -219,8 +219,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
 
           AtomTypeMap::const_iterator it;
           // if (it == atomTypes.end()) {
-          atomTypes.insert(
-            std::make_pair(to_string(i), customElementCounter++));
+          atomTypes.emplace(to_string(i), customElementCounter++);
           it = atomTypes.find(to_string(i));
           // if (customElementCounter > CustomElementMax) {
           //   appendError("Custom element type limit exceeded.");
@@ -236,8 +235,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     if (!atomTypes.empty()) {
       Molecule::CustomElementMap elementMap;
       for (const auto& atomType : atomTypes) {
-        elementMap.insert(
-          std::make_pair(atomType.second, "Atom " + atomType.first));
+        elementMap.emplace(atomType.second, "Atom " + atomType.first);
       }
       mol.setCustomElementMap(elementMap);
     }
