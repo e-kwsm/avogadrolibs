@@ -1685,15 +1685,14 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
   }
   root["layer"] = layer;
 
-  if (isJson)
+  if (isJson) {
+    file
 #ifndef NDEBUG
-    // if debugging, pretty print
-    file << std::setw(2) << root;
-#else
-    // release mode
-    file << root;
+      // if debugging, pretty print
+      << std::setw(2)
 #endif
-  else { // write msgpack
+      << root;
+  } else { // write msgpack
     json::to_msgpack(root, file);
   }
 
