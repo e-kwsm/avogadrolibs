@@ -70,14 +70,14 @@
     <file>ligands/1-isopropyl.cjson</file>
     <file>ligands/1-t-butyl.cjson</file>
     <file>ligands/1-pyridyl.cjson</file>
-  	<file>ligands/2-acetylacetonate.cjson</file>
+    <file>ligands/2-acetylacetonate.cjson</file>
     <file>ligands/2-bipyridine.cjson</file>
     <file>ligands/2-ethylenediamine.cjson</file>
     <file>ligands/3-terpyridine.cjson</file>
     <file>ligands/4-phthalocyanine.cjson</file>
     <file>ligands/4-porphin.cjson</file>
-  	<file>ligands/4-salen.cjson</file>
-  	<file>ligands/6-edta.cjson</file>
+    <file>ligands/4-salen.cjson</file>
+    <file>ligands/6-edta.cjson</file>
     <file>ligands/amide.cjson</file>
     <file>ligands/carboxylate.cjson</file>
     <file>ligands/ester.cjson</file>
