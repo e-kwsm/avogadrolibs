@@ -23,6 +23,14 @@ using Avogadro::Core::Variant;
 using Avogadro::Io::CmlFormat;
 using namespace std::string_literals;
 
+TEST(CmlTest, readNonExistingFile)
+{
+  CmlFormat cml;
+  Molecule molecule;
+  auto x = cml.readFile("/non-existing.cml", molecule);
+  EXPECT_TRUE(x) << "this must fail";
+}
+
 TEST(CmlTest, readFile)
 {
   CmlFormat cml;
