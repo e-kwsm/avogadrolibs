@@ -307,17 +307,18 @@ std::vector<int> Hdf5DataFormat::datasetDimensions(
   }
 
   // Get actual dimensions.
-  hsize_t* hdims = new hsize_t[ndims];
-  int checkDims = H5Sget_simple_extent_dims(dataspace_id, hdims, nullptr);
+  std::vector<hsize_t> hdims;
+  hdims.resize(ndims);
+  int checkDims =
+    H5Sget_simple_extent_dims(dataspace_id, hdims.data(), nullptr);
 
   // Copy dimensions if successful.
   if (checkDims == ndims) {
     result.resize(ndims);
-    std::copy(hdims, hdims + ndims, result.begin());
+    std::copy(hdims.begin(), hdims.end(), result.begin());
   }
 
   // Cleanup.
-  delete[] hdims;
   H5Sclose(dataspace_id);
   H5Dclose(dataset_id);
 
@@ -338,14 +339,14 @@ bool Hdf5DataFormat::writeRawDataset(const std::string& path,
   }
 
   // Get dimensions of data.
-  hsize_t* hdims = new hsize_t[ndims];
+  std::vector<hsize_t> hdims;
+  hdims.resize(ndims);
   for (int i = 0; i < ndims; ++i) {
     hdims[i] = static_cast<hsize_t>(dims[i]);
   }
 
   // Create a dataspace description.
-  hid_t dataspace_id = H5Screate_simple(ndims, hdims, nullptr);
-  delete[] hdims;
+  hid_t dataspace_id = H5Screate_simple(ndims, hdims.data(), nullptr);
   if (dataspace_id < 0)
     return false;
 
@@ -435,9 +436,9 @@ std::vector<int> Hdf5DataFormat::readRawDataset(
   }
 
   // Get actual dimensions.
-  hsize_t* hdims = new hsize_t[ndims];
-  if (H5Sget_simple_extent_dims(dataspace_id, hdims, nullptr) != ndims) {
-    delete[] hdims;
+  std::vector<hsize_t> hdims;
+  hdims.resize(ndims);
+  if (H5Sget_simple_extent_dims(dataspace_id, hdims.data(), nullptr) != ndims) {
     H5Sclose(dataspace_id);
     H5Dclose(dataset_id);
     return result;
@@ -447,7 +448,6 @@ std::vector<int> Hdf5DataFormat::readRawDataset(
   for (int i = 0; i < ndims; ++i) {
     result.push_back(static_cast<int>(hdims[i]));
   }
-  delete[] hdims;
 
   // Allocate and read into data.
   if (!container.resize(result)) {
