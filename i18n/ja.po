@@ -8604,6 +8604,9 @@ msgid ""
 "Only available if we are plotting the Fermi level.</p><p><br/></"
 "p><p>Default: off</p></body></html>"
 msgstr ""
+"<html><head/><body><p>フェルミが0になるようにエネルギーを調整しますか? フェル"
+"ミ準位をプロットするときのみ有効です。</p><p><br/></p><p>デフォルト: 無効</"
+"p></body></html>"
 
 #. i18n: file: qtplugins/yaehmop/banddialog.ui:74
 #. i18n: ectx: property (text), widget (QCheckBox, cb_zeroFermi)
