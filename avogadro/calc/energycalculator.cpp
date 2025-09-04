@@ -63,8 +63,7 @@ void EnergyCalculator::setConstraints(
         m_outOfPlaneConstraints.push_back(constraint);
         break;
       default:
-        std::cerr << "Unknown constraint type: " << constraint.type()
-                  << std::endl;
+        std::cerr << "Unknown constraint type: " << constraint.type() << '\n';
     }
   }
 }
