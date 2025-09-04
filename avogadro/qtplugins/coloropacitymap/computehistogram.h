@@ -163,7 +163,7 @@ void PopulateHistogram(vtkImageData* input, vtkTable* output)
       arrayPtr->GetNumberOfTuples(), arrayPtr->GetNumberOfComponents(),
       minmax[0], minmax[1], pops, 1.0 / inc, invalid));
     default:
-      cout << "UpdateFromFile: Unknown data type" << endl;
+      cout << "UpdateFromFile: Unknown data type\n";
   }
 
 #ifndef NDEBUG
@@ -173,7 +173,7 @@ void PopulateHistogram(vtkImageData* input, vtkTable* output)
   assert(total == arrayPtr->GetNumberOfTuples());
 #endif
   if (invalid) {
-    cout << "Warning: NaN or infinite value in dataset" << endl;
+    cout << "Warning: NaN or infinite value in dataset\n";
   }
 
   output->AddColumn(extents);
