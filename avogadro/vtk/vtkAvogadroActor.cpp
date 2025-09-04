@@ -36,11 +36,11 @@ int vtkAvogadroActor::RenderOpaqueGeometry(vtkViewport*)
   if (!m_initialized) {
     GLenum result = glewInit();
     if (result != GLEW_OK && result != GLEW_ERROR_NO_GLX_DISPLAY) {
-      cout << "Error, could not initialize GLEW." << endl;
+      cout << "Error, could not initialize GLEW.\n";
       return 0;
     }
     if (!GLEW_VERSION_2_1) {
-      cout << "GL version 2.1 is not supported by your GPU." << endl;
+      cout << "GL version 2.1 is not supported by your GPU.\n";
       return 0;
     }
     m_initialized = true;
