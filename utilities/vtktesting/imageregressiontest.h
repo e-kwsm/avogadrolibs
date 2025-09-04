@@ -218,7 +218,7 @@ inline int ImageRegressionTest::imageThresholdTest(vtkImageData* imageData,
   imageDiff->SetInputConnection(producer->GetOutputPort());
   imageDiff->SetImageConnection(pngReader->GetOutputPort());
 
-  double minError = VTK_DOUBLE_MAX;
+  auto minError = VTK_DOUBLE_MAX;
   imageDiff->Update();
   minError = imageDiff->GetThresholdedError();
 
@@ -293,11 +293,11 @@ inline void ImageRegressionTest::convertImage(QImage& inputImage,
   qimage->Update();
   outputImage->SetDimensions(qimage->GetOutput()->GetDimensions());
   outputImage->AllocateScalars(VTK_UNSIGNED_CHAR, 3);
-  unsigned char* source = reinterpret_cast<unsigned char*>(
+  auto* source = reinterpret_cast<unsigned char*>(
     vtkUnsignedCharArray::SafeDownCast(
       qimage->GetOutput()->GetPointData()->GetScalars())
       ->GetVoidPointer(0));
-  unsigned char* dest = reinterpret_cast<unsigned char*>(
+  auto* dest = reinterpret_cast<unsigned char*>(
     vtkUnsignedCharArray::SafeDownCast(
       outputImage->GetPointData()->GetScalars())
       ->GetVoidPointer(0));
