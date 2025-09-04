@@ -396,7 +396,7 @@ void SpectraDialog::changeSpectra()
   m_ui->dataTable->setColumnCount(2);
   for (auto i = 0; i < m_transitions.size(); ++i) {
     // frequency or energy
-    QTableWidgetItem* item =
+    auto* item =
       new QTableWidgetItem(QString::number(m_transitions[i], 'f', 4));
     m_ui->dataTable->setItem(i, 0, item);
     // intensities
@@ -491,7 +491,7 @@ void SpectraDialog::readSettings()
 void SpectraDialog::changeBackgroundColor()
 {
   QSettings settings;
-  QColor current = settings.value("backgroundColor", white).value<QColor>();
+  auto current = settings.value("backgroundColor", white).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Background Color"));
   if (color.isValid() && color != current) {
@@ -503,7 +503,7 @@ void SpectraDialog::changeBackgroundColor()
 void SpectraDialog::changeForegroundColor()
 {
   QSettings settings;
-  QColor current =
+  auto current =
     settings.value("spectra/foregroundColor", black).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Foreground Color"));
@@ -516,7 +516,7 @@ void SpectraDialog::changeForegroundColor()
 void SpectraDialog::changeCalculatedSpectraColor()
 {
   QSettings settings;
-  QColor current =
+  auto current =
     settings.value("spectra/calculatedColor", black).value<QColor>();
   QColor color = QColorDialog::getColor(current, this,
                                         tr("Select Calculated Spectra Color"));
@@ -529,7 +529,7 @@ void SpectraDialog::changeCalculatedSpectraColor()
 void SpectraDialog::changeImportedSpectraColor()
 {
   QSettings settings;
-  QColor current = settings.value("spectra/importedColor", red).value<QColor>();
+  auto current = settings.value("spectra/importedColor", red).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Imported Spectra Color"));
   if (color.isValid() && color != current) {
@@ -737,7 +737,7 @@ void SpectraDialog::updatePlot()
   chart->setLineWidth(lineWidth);
 
   // get the spectra color
-  QColor spectraColor =
+  auto spectraColor =
     settings.value("spectra/calculatedColor", black).value<QColor>();
   VTK::color4ub calculatedColor = {
     static_cast<unsigned char>(spectraColor.red()),
