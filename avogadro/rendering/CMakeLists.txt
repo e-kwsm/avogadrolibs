@@ -127,8 +127,8 @@ foreach(file ${shader_files})
   list(APPEND shader_h_files ${resh})
   add_custom_command(
     OUTPUT ${resh}
-    DEPENDS ${src} encodefile
-    COMMAND encodefile
+    DEPENDS ${src} ${PROJECT_SOURCE_DIR}/utilities/encodefile/encodefile.py
+    COMMAND ${PROJECT_SOURCE_DIR}/utilities/encodefile/encodefile.py
     ARGS ${src} ${resh} ${file_we}
     COMMENT "Encoding ${src}"
     )
