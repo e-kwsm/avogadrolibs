@@ -9,11 +9,11 @@ def main():
     parser.add_argument("name", nargs="?")
 
     args = parser.parse_args()
-    with args.input as x, args.output as y:
-        y.write(f"const char *{args.name or 'inputvariable'} =\n")
-        for line in x:
-            y.write(f'  "{line.rstrip()}\\n"\n')
-        y.write(";")
+    with args.input as i, args.output as o:
+        o.write(f"const char *{args.name or 'inputvariable'} =\n")
+        for line in i:
+            o.write(f'  "{line.rstrip()}\\n"\n')
+        o.write('  "\\n";\n')
 
 
 if __name__ == "__main__":
