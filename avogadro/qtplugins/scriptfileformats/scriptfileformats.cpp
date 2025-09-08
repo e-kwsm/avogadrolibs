@@ -27,7 +27,10 @@ ScriptFileFormats::ScriptFileFormats(QObject* p) : ExtensionPlugin(p)
           &ScriptFileFormats::unregisterFeature);
 }
 
-ScriptFileFormats::~ScriptFileFormats() {}
+ScriptFileFormats::~ScriptFileFormats()
+{
+  qDeleteAll(m_formats);
+}
 
 QList<QAction*> ScriptFileFormats::actions() const
 {
