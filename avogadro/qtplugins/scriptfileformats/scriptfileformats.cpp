@@ -25,7 +25,10 @@ ScriptFileFormats::ScriptFileFormats(QObject* p) : ExtensionPlugin(p)
   refreshFileFormats();
 }
 
-ScriptFileFormats::~ScriptFileFormats() {}
+ScriptFileFormats::~ScriptFileFormats()
+{
+  qDeleteAll(m_formats);
+}
 
 QList<QAction*> ScriptFileFormats::actions() const
 {
