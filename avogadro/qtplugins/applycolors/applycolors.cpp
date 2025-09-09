@@ -128,7 +128,7 @@ ColormapType ApplyColors::getColormapFromString(const QString& name) const
     return ColormapType::Coolwarm;
   if (name == tr("Balance", "colormap"))
     return ColormapType::Balance;
-  else if (name == tr("Blue-DarkRed", "colormap"))
+  if (name == tr("Blue-DarkRed", "colormap"))
     return ColormapType::BlueDkRed;
   else if (name == tr("Turbo", "colormap"))
     return ColormapType::Turbo;
