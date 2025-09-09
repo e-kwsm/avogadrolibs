@@ -1501,20 +1501,20 @@ void QTAIMLSODAIntegrator::lsoda(int neq, double* y, double* t, double tout,
           illin = 0;
           freevectors();
           return;
-        } else {
-          hmx = fabs(tn) + fabs(h);
-          ihit = fabs(tn - tcrit) <= (100. * ETA * hmx);
-          if (ihit) {
-            successreturn(y, t, itask, ihit, tcrit, istate);
-            return;
-          }
-          tnext = tn + h * (1. + 4. * ETA);
-          if ((tnext - tcrit) * h <= 0.)
-            continue;
-          h = (tcrit - tn) * (1. - 4. * ETA);
-          jstart = -2;
-          continue;
         }
+        hmx = fabs(tn) + fabs(h);
+        ihit = fabs(tn - tcrit) <= (100. * ETA * hmx);
+        if (ihit) {
+          successreturn(y, t, itask, ihit, tcrit, istate);
+          return;
+        }
+        tnext = tn + h * (1. + 4. * ETA);
+        if ((tnext - tcrit) * h <= 0.)
+          continue;
+        h = (tcrit - tn) * (1. - 4. * ETA);
+        jstart = -2;
+        continue;
+
       } /*   end if ( itask == 4 )   */
       /*
    itask = 5.
@@ -1827,77 +1827,76 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
    one lower.  After 2 or more failures, h is forced to decrease
    by a factor of 0.2 or less.
 */
+    kflag--;
+    tn = told;
+    for (j = nq; j >= 1; j--)
+      for (i1 = j; i1 <= nq; i1++) {
+        yp1 = yh[i1];
+        yp2 = yh[i1 + 1];
+        for (i = 1; i <= n; i++)
+          yp1[i] -= yp2[i];
+      }
+    rmax = 2.;
+    if (fabs(h) <= hmin * 1.00001) {
+      kflag = -1;
+      hold = h;
+      jstart = 1;
+      break;
+    }
+    if (kflag > -3) {
+      rhup = 0.;
+      orderswitch(&rhup, dsm, &pdh, &rh, &orderflag);
+      if (orderflag == 1 || orderflag == 0) {
+        if (orderflag == 0)
+          rh = min(rh, 0.2);
+        rh = max(rh, hmin / fabs(h));
+        scaleh(&rh, &pdh);
+      }
+      if (orderflag == 2) {
+        resetcoeff();
+        rh = max(rh, hmin / fabs(h));
+        scaleh(&rh, &pdh);
+      }
+      continue;
+    } /*   if ( kflag > -3 )   */
+    /*
+ Control reaches this section if 3 or more failures have occurred.
+ If 10 failures have occurred, exit with kflag = -1.
+ It is assumed that the derivatives that have accumulated in the
+ yh array have errors of the wrong order.  Hence the first
+ derivative is recomputed, and the order is set to 1.  Then
+ h is reduced by a factor of 10, and the step is retried,
+ until it succeeds or h reaches hmin.
+*/
     else {
-      kflag--;
-      tn = told;
-      for (j = nq; j >= 1; j--)
-        for (i1 = j; i1 <= nq; i1++) {
-          yp1 = yh[i1];
-          yp2 = yh[i1 + 1];
-          for (i = 1; i <= n; i++)
-            yp1[i] -= yp2[i];
-        }
-      rmax = 2.;
-      if (fabs(h) <= hmin * 1.00001) {
+      if (kflag == -10) {
         kflag = -1;
         hold = h;
         jstart = 1;
         break;
-      }
-      if (kflag > -3) {
-        rhup = 0.;
-        orderswitch(&rhup, dsm, &pdh, &rh, &orderflag);
-        if (orderflag == 1 || orderflag == 0) {
-          if (orderflag == 0)
-            rh = min(rh, 0.2);
-          rh = max(rh, hmin / fabs(h));
-          scaleh(&rh, &pdh);
-        }
-        if (orderflag == 2) {
-          resetcoeff();
-          rh = max(rh, hmin / fabs(h));
-          scaleh(&rh, &pdh);
-        }
-        continue;
-      } /*   if ( kflag > -3 )   */
-      /*
-   Control reaches this section if 3 or more failures have occurred.
-   If 10 failures have occurred, exit with kflag = -1.
-   It is assumed that the derivatives that have accumulated in the
-   yh array have errors of the wrong order.  Hence the first
-   derivative is recomputed, and the order is set to 1.  Then
-   h is reduced by a factor of 10, and the step is retried,
-   until it succeeds or h reaches hmin.
-*/
-      else {
-        if (kflag == -10) {
-          kflag = -1;
-          hold = h;
-          jstart = 1;
-          break;
-        } else {
-          rh = 0.1;
-          rh = max(hmin / fabs(h), rh);
-          h *= rh;
-          yp1 = yh[1];
-          for (i = 1; i <= n; i++)
-            y[i] = yp1[i];
-          f(neq, tn, y, savf);
-          nfe++;
-          yp1 = yh[2];
-          for (i = 1; i <= n; i++)
-            yp1[i] = h * savf[i];
-          ipup = miter;
-          ialth = 5;
-          if (nq == 1)
-            continue;
-          nq = 1;
-          l = 2;
-          resetcoeff();
+      } else {
+        rh = 0.1;
+        rh = max(hmin / fabs(h), rh);
+        h *= rh;
+        yp1 = yh[1];
+        for (i = 1; i <= n; i++)
+          y[i] = yp1[i];
+        f(neq, tn, y, savf);
+        nfe++;
+        yp1 = yh[2];
+        for (i = 1; i <= n; i++)
+          yp1[i] = h * savf[i];
+        ipup = miter;
+        ialth = 5;
+        if (nq == 1)
           continue;
-        }
-      } /*   end else -- kflag <= -3 */
-    } /*   end error failure handling   */
+        nq = 1;
+        l = 2;
+        resetcoeff();
+        continue;
+      }
+    } /*   end else -- kflag <= -3 */
+    /*   end error failure handling   */
   } /*   end outer while   */
 
 } /*   end stoda   */
@@ -2676,10 +2675,9 @@ orderflag = 0  : no change in h or nq,
           yp1[i] = acor[i] * r;
         *orderflag = 2;
         return;
-      } else {
-        ialth = 3;
-        return;
       }
+      ialth = 3;
+      return;
     }
   }
   /*
