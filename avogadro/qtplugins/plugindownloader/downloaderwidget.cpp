@@ -325,7 +325,8 @@ bool DownloaderWidget::checkToInstall()
   if (msgBox.clickedButton() == neverButton) {
     settings.setValue("neverInstallRequirements", true);
     return false;
-  } else if (msgBox.clickedButton() == msgBox.button(QMessageBox::Yes)) {
+  }
+  if (msgBox.clickedButton() == msgBox.button(QMessageBox::Yes)) {
     return true;
   } else {
     return false;
