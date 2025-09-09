@@ -689,7 +689,8 @@ bool GaussianFchk::readDensityMatrix(std::istream& in, unsigned int n,
         string substring = line.substr(c * width, width);
         if (static_cast<int>(substring.length()) != width) {
           break;
-        } else if (cnt >= n) {
+        }
+        if (cnt >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
                << cnt << " of " << n << endl;
           return false;
@@ -806,7 +807,8 @@ bool GaussianFchk::readSpinDensityMatrix(std::istream& in, unsigned int n,
         string substring = line.substr(c * width, width);
         if (static_cast<int>(substring.length()) != width) {
           break;
-        } else if (cnt >= n) {
+        }
+        if (cnt >= n) {
           cout << "Too many variables read in. File may be inconsistent. "
                << cnt << " of " << n << endl;
           return false;

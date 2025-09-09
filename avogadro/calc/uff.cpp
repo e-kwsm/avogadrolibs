@@ -143,10 +143,9 @@ public:
               if (bonds.size() == 1) {
                 atomType = j; // hydrogen with one bond
                 break;
-              } else { // hydrogen with more than one bond = bridging type
-                atomType = j + 1;
-                break;
-              }
+              } // hydrogen with more than one bond = bridging type
+              atomType = j + 1;
+              break;
             }
 
             // remaining elements, we want the coordination number
@@ -160,13 +159,12 @@ public:
               if (uffparams[j].label[2] == coord) {
                 atomType = j;
                 break;
-              } else {
-                // check the next one
-                if (uffparams[j + 1].label[2] == coord) {
-                  atomType = j + 1;
-                  break;
-                }
+              } // check the next one
+              if (uffparams[j + 1].label[2] == coord) {
+                atomType = j + 1;
+                break;
               }
+
             } else {
               // count double and triple bonds
               int doubleBonds = 0;
@@ -191,14 +189,12 @@ public:
               if (uffparams[j].label[2] == coord) {
                 atomType = j;
                 break;
-              } else {
-                // bump up until we find one
-                while (j < 125 && uffparams[j].label[2] != coord) {
-                  ++j;
-                }
-                atomType = j;
-                break;
+              } // bump up until we find one
+              while (j < 125 && uffparams[j].label[2] != coord) {
+                ++j;
               }
+              atomType = j;
+              break;
             }
             break;
           }
