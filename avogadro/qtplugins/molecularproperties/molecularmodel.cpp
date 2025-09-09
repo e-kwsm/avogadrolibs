@@ -298,7 +298,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
     if (it->first == "zpe")
       return tr("Zero Point Energy (kcal/mol)",
                 "zero point vibrational energy");
-    else if (it->first == "enthalpy")
+    if (it->first == "enthalpy")
       return tr("Enthalpy (kcal/mol)");
     else if (it->first == "entropy")
       return tr("Entropy (kcal/mol•K)");
