@@ -193,7 +193,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Number of Residues");
     if (it->first == " 8chains")
       return tr("Number of Chains");
-    else if (it->first == " 9totalCharge")
+    if (it->first == " 9totalCharge")
       return tr("Net Charge");
     else if (it->first == " 9totalSpinMultiplicity")
       return tr("Net Spin Multiplicity");
