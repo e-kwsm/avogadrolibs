@@ -194,7 +194,7 @@ QString formatChargeType(QString type)
     return "QEq";
   if (type.toLower() == "mulliken")
     return "Mulliken";
-  else if (type.toLower() == "lowdin")
+  if (type.toLower() == "lowdin")
     return "Lowdin";
   else if (type.toLower() == "chelpg")
     return "CHELPG";
@@ -258,7 +258,8 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
     }
     if (m_type == ResidueType) {
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
-    } else if (m_type == ConformerType) {
+    }
+    if (m_type == ConformerType) {
       return toVariant(Qt::AlignRight |
                        Qt::AlignVCenter); // RMSD or other properties
     }
