@@ -58,7 +58,8 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
       // molden with .out extension
       reader = new MoldenFile;
       break;
-    } else if (line.find("O   R   C   A") != std::string::npos) {
+    }
+    if (line.find("O   R   C   A") != std::string::npos) {
       // ORCA reader
       reader = new ORCAOutput;
       break;
