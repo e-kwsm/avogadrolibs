@@ -144,7 +144,7 @@ std::string OBCharges::name() const
 {
   if (m_identifier == "eqeq")
     return "EQEq";
-  else if (m_identifier == "eem")
+  if (m_identifier == "eem")
     return "EEM";
   else if (m_identifier == "eem2015ba")
     return "EEM 2015";

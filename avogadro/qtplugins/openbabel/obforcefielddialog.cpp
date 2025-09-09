@@ -123,7 +123,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Energy convergence:
-    else if (*it == "--crit") {
+    if (*it == "--crit") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
