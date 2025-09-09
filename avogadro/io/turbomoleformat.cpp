@@ -150,7 +150,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         tokens_converted.push_back(tmp);
       }
 
-      const auto ntokens = tokens.size();
+      const auto ntokens = tokens_converted.size();
       auto is_line_valid = [&](unsigned n) -> bool {
         if (ntokens < n) {
           appendError("Not enough tokens in this line: " + buffer);
@@ -168,24 +168,24 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           case 1:
             if (!is_line_valid(1u))
               return false;
-            a = lexicalCast<double>(tokens[0]) * cellConversion;
+            a = tokens_converted[0] * cellConversion;
             break;
           case 2:
             if (!is_line_valid(3u))
               return false;
-            a = lexicalCast<double>(tokens[0]) * cellConversion;
-            b = lexicalCast<double>(tokens[1]) * cellConversion;
-            gamma = lexicalCast<double>(tokens[2]) * DEG_TO_RAD;
+            a = tokens_converted[0] * cellConversion;
+            b = tokens_converted[1] * cellConversion;
+            gamma = tokens_converted[2] * DEG_TO_RAD;
             break;
           case 3:
             if (!is_line_valid(6u))
               return false;
-            a = lexicalCast<double>(tokens[0]) * cellConversion;
-            b = lexicalCast<double>(tokens[1]) * cellConversion;
-            c = lexicalCast<double>(tokens[2]) * cellConversion;
-            alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD;
-            beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
-            gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
+            a = tokens_converted[0] * cellConversion;
+            b = tokens_converted[1] * cellConversion;
+            c = tokens_converted[2] * cellConversion;
+            alpha = tokens_converted[3] * DEG_TO_RAD;
+            beta = tokens_converted[4] * DEG_TO_RAD;
+            gamma = tokens_converted[5] * DEG_TO_RAD;
             break;
           default:
             assert(periodic_parsed == 0);
