@@ -611,8 +611,7 @@ std::string Forcefield::recommendedForceField() const
   }
   if (!bestOption.empty())
     return bestOption;
-  else
-    return "LJ"; // this will always work
+  return "LJ"; // this will always work
 }
 
 void Forcefield::freezeSelected()
