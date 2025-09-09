@@ -102,56 +102,49 @@ unsigned short SpaceGroups::internationalNumber(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_international_number[hallNumber];
-  else
-    return space_group_international_number[0];
+  return space_group_international_number[0];
 }
 
 const char* SpaceGroups::schoenflies(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_schoenflies[hallNumber];
-  else
-    return space_group_schoenflies[0];
+  return space_group_schoenflies[0];
 }
 
 const char* SpaceGroups::hallSymbol(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_hall_symbol[hallNumber];
-  else
-    return space_group_hall_symbol[0];
+  return space_group_hall_symbol[0];
 }
 
 const char* SpaceGroups::international(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_international[hallNumber];
-  else
-    return space_group_international[0];
+  return space_group_international[0];
 }
 
 const char* SpaceGroups::internationalFull(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_international_full[hallNumber];
-  else
-    return space_group_international_full[0];
+  return space_group_international_full[0];
 }
 
 const char* SpaceGroups::internationalShort(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_international_short[hallNumber];
-  else
-    return space_group_international_short[0];
+  return space_group_international_short[0];
 }
 
 const char* SpaceGroups::setting(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_setting[hallNumber];
-  else
-    return space_group_setting[0];
+  return space_group_setting[0];
 }
 
 unsigned short SpaceGroups::transformsCount(unsigned short hallNumber)
@@ -159,9 +152,8 @@ unsigned short SpaceGroups::transformsCount(unsigned short hallNumber)
   if (hallNumber <= 530) {
     std::string s = transformsString(hallNumber);
     return std::count(s.begin(), s.end(), ' ') + 1;
-  } else {
-    return 0;
   }
+  return 0;
 }
 
 Real readTransformCoordinate(const std::string& coordinate, const Vector3& v)
@@ -428,8 +420,7 @@ const char* SpaceGroups::transformsString(unsigned short hallNumber)
 {
   if (hallNumber <= 530)
     return space_group_transforms[hallNumber];
-  else
-    return "";
+  return "";
 }
 
 } // namespace Avogadro::Core
