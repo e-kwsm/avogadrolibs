@@ -135,7 +135,7 @@ FileFormatScript::Format FileFormatScript::stringToFormat(
     return Cml;
   if (str == "mdl" || str == "mol")
     return Mdl;
-  else if (str == "pdb")
+  if (str == "pdb")
     return Pdb;
   else if (str == "sdf")
     return Sdf;
