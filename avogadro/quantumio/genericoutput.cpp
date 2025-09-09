@@ -53,7 +53,8 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
       // GAMESS-US .. don't know if we can read Firefly or GAMESS-UK
       reader = new GAMESSUSOutput;
       break;
-    } else if (line.find("[Molden Format]") != std::string::npos) {
+    }
+    if (line.find("[Molden Format]") != std::string::npos) {
       // molden with .out extension
       reader = new MoldenFile;
       break;
