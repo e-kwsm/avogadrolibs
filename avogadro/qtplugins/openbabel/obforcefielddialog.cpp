@@ -159,7 +159,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Force field?
-    else if (*it == "--ff") {
+    if (*it == "--ff") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
