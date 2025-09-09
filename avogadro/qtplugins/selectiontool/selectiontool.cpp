@@ -347,9 +347,7 @@ bool SelectionTool::selectAtom(QMouseEvent* e, const Index& index)
     return addAtom(index);
   }
   // default toggle
-  else {
-    return toggleAtom(index);
-  }
+  return toggleAtom(index);
 }
 
 void SelectionTool::setMolecule(QtGui::Molecule* mol)
