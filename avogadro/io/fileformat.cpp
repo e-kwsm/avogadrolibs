@@ -72,20 +72,19 @@ bool FileFormat::open(const std::string& fileName_, Operation mode_)
       if (file->is_open()) {
         m_in->imbue(cLocale);
         return true;
-      } else {
-        appendError("Error opening file: " + fileName_);
-        return false;
       }
+      appendError("Error opening file: " + fileName_);
+      return false;
+
     } else if (m_mode & Write) {
       auto* file = new ofstream(m_fileName.c_str(), std::ofstream::binary);
       m_out = file;
       if (file->is_open()) {
         m_out->imbue(cLocale);
         return true;
-      } else {
-        appendError("Error opening file: " + fileName_);
-        return false;
       }
+      appendError("Error opening file: " + fileName_);
+      return false;
     }
   }
   return false;
