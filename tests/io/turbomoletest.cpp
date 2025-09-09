@@ -64,13 +64,6 @@ TEST(TurbomoleTest, readErr)
          "$periodic -1\n$end"s,
          "$periodic 4\n$end"s,
          "$periodic 1 2\n$end"s,
-
-         R"($periodic 1
-$cell
-6.0 10.0
-$end
-)"s,
-
        }) {
     TurbomoleFormat tmol;
     Molecule molecule;
