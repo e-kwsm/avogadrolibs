@@ -196,7 +196,7 @@ QString formatChargeType(QString type)
     return "Mulliken";
   if (type.toLower() == "lowdin")
     return "Lowdin";
-  else if (type.toLower() == "chelpg")
+  if (type.toLower() == "chelpg")
     return "CHELPG";
   else if (type.toLower() == "hirshfeld")
     return "Hirshfeld";
