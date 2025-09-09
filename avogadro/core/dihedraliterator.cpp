@@ -178,8 +178,8 @@ Dihedral DihedralIterator::operator++()
     m_current = std::make_tuple(iIndex, bond.atom1().index(),
                                 bond.atom2().index(), lIndex);
     return m_current;
-  } else
-    return std::make_tuple(MaxIndex, MaxIndex, MaxIndex, MaxIndex);
+  }
+  return std::make_tuple(MaxIndex, MaxIndex, MaxIndex, MaxIndex);
 } // end ++ operator
 
 } // namespace Avogadro::Core

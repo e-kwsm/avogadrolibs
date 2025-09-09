@@ -292,9 +292,8 @@ qreal QTAIMODEIntegrator::r8_abs(qreal x)
 {
   if (0.0 <= x) {
     return x;
-  } else {
-    return (-x);
   }
+  return (-x);
 }
 //****************************************************************************80
 
@@ -501,9 +500,8 @@ qreal QTAIMODEIntegrator::r8_max(qreal x, qreal y)
 {
   if (y < x) {
     return x;
-  } else {
-    return y;
   }
+  return y;
 }
 //****************************************************************************80
 
@@ -536,9 +534,8 @@ qreal QTAIMODEIntegrator::r8_min(qreal x, qreal y)
 {
   if (y < x) {
     return y;
-  } else {
-    return x;
   }
+  return x;
 }
 //****************************************************************************80
 
@@ -1164,9 +1161,8 @@ qreal QTAIMODEIntegrator::r8_sign(qreal x)
 {
   if (x < 0.0) {
     return (-1.0);
-  } else {
-    return (+1.0);
   }
+  return (+1.0);
 }
 //****************************************************************************80
 
