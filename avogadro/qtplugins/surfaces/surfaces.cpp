@@ -803,7 +803,7 @@ ColormapType Surfaces::getColormapFromString(const QString& name) const
     return ColormapType::Cividis;
   if (name == tr("Spectral", "colormap"))
     return ColormapType::Spectral;
-  else if (name == tr("Coolwarm", "colormap"))
+  if (name == tr("Coolwarm", "colormap"))
     return ColormapType::Coolwarm;
   else if (name == tr("Balance", "colormap"))
     return ColormapType::Balance;
