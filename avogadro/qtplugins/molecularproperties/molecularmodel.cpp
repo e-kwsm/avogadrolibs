@@ -201,7 +201,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Dipole Moment (Debye)");
     if (it->first == "homoEnergy")
       return tr("HOMO Energy (eV)", "highest occupied molecular orbital");
-    else if (it->first == "lumoEnergy")
+    if (it->first == "lumoEnergy")
       return tr("LUMO Energy (eV)", "lowest unoccupied molecular orbital");
     else if (it->first == "somoEnergy")
       return tr("SOMO Energy (eV)", "singly-occupied molecular orbital");

@@ -186,7 +186,7 @@ QString formatChargeType(QString type)
     return "AM1BCC";
   if (type == "mmff94")
     return "MMFF94";
-  else if (type == "gasteiger")
+  if (type == "gasteiger")
     return "Gasteiger";
   else if (type.startsWith("eem"))
     return "EEM";
@@ -240,7 +240,8 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       if (index.column() == AtomDataColor)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter);
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
-    } else if (m_type == BondType) {
+    }
+    if (m_type == BondType) {
       if (index.column() == BondDataLength)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter); // bond length
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
