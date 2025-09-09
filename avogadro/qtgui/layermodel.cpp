@@ -175,7 +175,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Dipole Moment");
   if (name == "Force")
     return tr("Force");
-  else if (name == "Labels")
+  if (name == "Labels")
     return tr("Labels");
   else if (name == "Licorice")
     return tr("Licorice", "stick / licorice rendering");
