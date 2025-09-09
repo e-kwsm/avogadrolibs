@@ -300,7 +300,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
                 "zero point vibrational energy");
     if (it->first == "enthalpy")
       return tr("Enthalpy (kcal/mol)");
-    else if (it->first == "entropy")
+    if (it->first == "entropy")
       return tr("Entropy (kcal/mol•K)");
     else if (it->first == "gibbs")
       return tr("Gibbs Free Energy (kcal/mol)");
