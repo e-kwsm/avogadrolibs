@@ -177,7 +177,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Force");
   if (name == "Labels")
     return tr("Labels");
-  else if (name == "Licorice")
+  if (name == "Licorice")
     return tr("Licorice", "stick / licorice rendering");
   else if (name == "Surfaces")
     return tr("Surfaces");
