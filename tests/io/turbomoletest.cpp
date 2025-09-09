@@ -58,24 +58,14 @@ $end
 TEST(TurbomoleTest, readErr)
 {
   for (const auto& s : {
+         // $periodic is invalid
+         "$periodic\n$end"s,
+         "$periodic F\n$end"s,
+         "$periodic -1\n$end"s,
+         "$periodic 4\n$end"s,
+         "$periodic 1 2\n$end"s,
 
-         R"($periodic
-$end
-)"s,
-
-         R"($periodic 1 2
-$end
-)"s,
-
-         R"($periodic -1
-$end
-)"s,
-
-         R"($periodic 4
-$end
-)"s,
-
-               R"($periodic 1
+         R"($periodic 1
 $cell
 6.0 10.0
 $end
