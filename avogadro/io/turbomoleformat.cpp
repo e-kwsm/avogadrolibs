@@ -148,7 +148,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       tokens = split(rstrip(buffer, '#'), ' ');
-      const auto ntokens = tokens.size();
+      bool ok;
+      const auto tokens_converted = lexicalCast<double>(tokens, ok);
+      if (!ok) {
+        appendError("Failed to parse: " + buffer);
+        return false;
+      }
+
+      const auto ntokens = tokens_converted.size();
       auto is_line_valid = [&](unsigned expected) -> bool {
         if (ntokens < expected) {
           appendError("Not enough tokens in this line: " + buffer);
@@ -189,6 +196,20 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             gamma = lexicalCast<double>(tokens[2]) * DEG_TO_RAD;
             break;
           case 3:
+            if (tokens.size() < 6u) {
+              appendError("Not enough tokens in this line: " + buffer);
+              return false;
+            }
+            if (ntokens > 6u && tokens[6][0] != '#') {
+              appendError("Extra tokens in this line: " + buffer);
+              return false;
+            }
+            a = lexicalCast<double>(tokens[0]) * cellConversion;
+            b = lexicalCast<double>(tokens[1]) * cellConversion;
+            c = lexicalCast<double>(tokens[2]) * cellConversion;
+            alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD;
+            beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
+            gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
             break;
           default:
             assert(periodic_parsed == 0);
@@ -197,16 +218,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                          "is specified\n";
         }
       }
-      if (tokens.size() < 6) {
-        appendError("Not enough tokens in this line: " + buffer);
-        return false;
-      }
-      a = lexicalCast<double>(tokens[0]) * cellConversion;
-      b = lexicalCast<double>(tokens[1]) * cellConversion;
-      c = lexicalCast<double>(tokens[2]) * cellConversion;
-      alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD;
-      beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
-      gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
 
     } else if (tokens[0] == "$lattice") {
       hasLattice = true;
