@@ -55,13 +55,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   Vector3 v1(100.0, 0.0, 0.0);
   Vector3 v2(0.0, 100.0, 0.0);
   Vector3 v3(0.0, 0.0, 100.0);
-  std::optional<int> periodic_parsed, periodic_guessed;
-
-  constexpr auto COMMENT = '#';
+  std::optional<unsigned> periodic_parsed, periodic_guessed;
 
   // we loop through each line until we hit $end or EOF
   string buffer;
   getline(inStream, buffer);
+
   while (inStream.good() && !buffer.empty()) {
     if (buffer.find("$end") != std::string::npos)
       break;
@@ -137,6 +136,20 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       std::vector<string> tokens(split(buffer, ' '));
+      std::vector<double> tokens_converted;
+      for (const auto& t : tokens) {
+        bool ok;
+        auto tmp = lexicalCast<double>(t, ok);
+        if (!ok) {
+          if (t[0] != COMMENT) {
+            appendError("Failed to parse: " + buffer);
+            return false;
+          }
+          break;
+        }
+        tokens_converted.push_back(tmp);
+      }
+
       const auto ntokens = tokens.size();
       auto is_line_valid = [&]() {
         appendError("Not enough tokens in this line: " + buffer);
@@ -145,7 +158,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (periodic_parsed) {
         switch (*periodic_parsed) {
           case 1:
-            // $lattice a
             if (ntokens < 1u) {
               appendError("Not enough tokens in this line: " + buffer);
               return false;
@@ -157,7 +169,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             a = lexicalCast<double>(tokens[0]) * cellConversion;
             break;
           case 2:
-            // $ lattice a b gamma
             if (ntokens < 3u) {
               appendError("Not enough tokens in this line: " + buffer);
               return false;
@@ -171,6 +182,20 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             gamma = lexicalCast<double>(tokens[2]) * DEG_TO_RAD;
             break;
           case 3:
+            if (tokens.size() < 6u) {
+              appendError("Not enough tokens in this line: " + buffer);
+              return false;
+            }
+            if (ntokens > 6u && tokens[6][0] != '#') {
+              appendError("Extra tokens in this line: " + buffer);
+              return false;
+            }
+            a = lexicalCast<double>(tokens[0]) * cellConversion;
+            b = lexicalCast<double>(tokens[1]) * cellConversion;
+            c = lexicalCast<double>(tokens[2]) * cellConversion;
+            alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD;
+            beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
+            gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
             break;
           default:
             assert(periodic_parsed == 0);
@@ -178,16 +203,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                          "is specified\n";
         }
       }
-      if (tokens.size() < 6) {
-        appendError("Not enough tokens in this line: " + buffer);
-        return false;
-      }
-      a = lexicalCast<double>(tokens[0]) * cellConversion;
-      b = lexicalCast<double>(tokens[1]) * cellConversion;
-      c = lexicalCast<double>(tokens[2]) * cellConversion;
-      alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD;
-      beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
-      gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
 
     } else if (buffer.find("$lattice") != std::string::npos) {
       hasLattice = true;
