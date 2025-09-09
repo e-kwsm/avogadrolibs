@@ -332,7 +332,8 @@ bool AlignTool::handleCommand(const QString& command,
         if (atomIndex < m_molecule->atomCount())
           alignAtomToAxis(atomIndex, axis);
         return true;
-      } else if (options.contains("index")) {
+      }
+      if (options.contains("index")) {
         Index atomIndex = options["index"].toInt();
         if (atomIndex < m_molecule->atomCount())
           alignAtomToAxis(atomIndex, axis);
