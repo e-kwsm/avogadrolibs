@@ -274,11 +274,9 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // ?????
-    else {
-      qWarning() << "OBForceFieldDialog::setOptions: "
-                    "Unrecognized option: "
-                 << *it;
-    }
+    qWarning() << "OBForceFieldDialog::setOptions: "
+                  "Unrecognized option: "
+               << *it;
   }
 }
 
