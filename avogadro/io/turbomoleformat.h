@@ -49,6 +49,9 @@ public:
 
   bool read(std::istream& inStream, Core::Molecule& molecule) override;
   bool write(std::ostream& outStream, const Core::Molecule& molecule) override;
+
+private:
+  static constexpr char COMMENT = '#';
 };
 
 } // namespace Avogadro::Io
