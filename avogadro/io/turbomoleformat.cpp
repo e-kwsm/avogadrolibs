@@ -15,6 +15,7 @@
 
 #include <iomanip>
 #include <istream>
+#include <optional>
 #include <ostream>
 #include <string>
 
@@ -55,6 +56,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   Vector3 v1(100.0, 0.0, 0.0);
   Vector3 v2(0.0, 100.0, 0.0);
   Vector3 v3(0.0, 0.0, 100.0);
+  std::optional<unsigned> periodic_parsed;
 
   // we loop through each line until we hit $end or EOF
   string buffer;
@@ -68,6 +70,30 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     if (tokens[0] == "$end")
       break;
+
+    if (tokens[0] == "$periodic") {
+      if (tokens.size() < 2u) {
+        appendError("Not enough tokens in this line: " + buffer);
+        return false;
+      }
+      if (tokens.size() > 2u) {
+        appendError("Extra tokens in this line: " + buffer);
+        return false;
+      }
+
+      if (auto tmp = lexicalCast<int>(tokens[1])) {
+        if (tmp < 0 || tmp > 3) {
+          appendError("Invalid dimensionality: " + buffer);
+          return false;
+        }
+        periodic_parsed = tmp;
+      } else {
+        appendError("Failed to parse: " + buffer);
+        return false;
+      }
+      getline(inStream, buffer);
+      continue;
+    }
 
     if (tokens[0] == "$coord") {
       // check if there's a conversion to be done
