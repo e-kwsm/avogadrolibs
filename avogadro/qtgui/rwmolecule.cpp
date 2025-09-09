@@ -308,8 +308,7 @@ RWMolecule::BondType RWMolecule::bond(Index atom1, Index atom2) const
   Molecule::BondType b = m_molecule.bond(atom1, atom2);
   if (b.isValid())
     return BondType(const_cast<RWMolecule*>(this), b.index());
-  else
-    return BondType();
+  return BondType();
 }
 
 bool RWMolecule::removeBond(Index bondId)

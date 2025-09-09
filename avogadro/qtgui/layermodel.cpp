@@ -173,7 +173,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Crystal Lattice");
   if (name == "Dipole Moment")
     return tr("Dipole Moment");
-  else if (name == "Force")
+  if (name == "Force")
     return tr("Force");
   else if (name == "Labels")
     return tr("Labels");
