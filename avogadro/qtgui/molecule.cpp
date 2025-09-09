@@ -100,12 +100,11 @@ Molecule::AtomType Molecule::addAtom(unsigned char number, Vector3 position3d,
   if (uniqueId >= static_cast<Index>(m_atomUniqueIds.size())) {
     m_atomUniqueIds.push_back(atomCount());
     return Core::Molecule::addAtom(number, position3d);
-  } else {
-    auto atom = Molecule::addAtom(number, uniqueId);
-    if (atom.isValid())
-      atom.setPosition3d(position3d);
-    return atom;
   }
+  auto atom = Molecule::addAtom(number, uniqueId);
+  if (atom.isValid())
+    atom.setPosition3d(position3d);
+  return atom;
 }
 
 bool Molecule::removeAtom(Index index)
@@ -141,9 +140,8 @@ Molecule::AtomType Molecule::atomByUniqueId(Index uniqueId)
   if (uniqueId >= static_cast<Index>(m_atomUniqueIds.size()) ||
       m_atomUniqueIds[uniqueId] == MaxIndex) {
     return AtomType();
-  } else {
-    return AtomType(this, m_atomUniqueIds[uniqueId]);
   }
+  return AtomType(this, m_atomUniqueIds[uniqueId]);
 }
 
 Index Molecule::atomUniqueId(const AtomType& a) const
@@ -269,9 +267,8 @@ Molecule::BondType Molecule::bondByUniqueId(Index uniqueId)
   if (uniqueId >= static_cast<Index>(m_bondUniqueIds.size()) ||
       m_bondUniqueIds[uniqueId] == MaxIndex) {
     return BondType();
-  } else {
-    return BondType(this, static_cast<Index>(m_bondUniqueIds[uniqueId]));
   }
+  return BondType(this, static_cast<Index>(m_bondUniqueIds[uniqueId]));
 }
 
 Index Molecule::bondUniqueId(const BondType& b) const
