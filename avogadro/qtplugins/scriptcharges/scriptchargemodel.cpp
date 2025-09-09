@@ -208,7 +208,7 @@ ScriptChargeModel::Format ScriptChargeModel::stringToFormat(
     return Mdl;
   if (str == "sdf")
     return Sdf;
-  else if (str == "pdb")
+  if (str == "pdb")
     return Pdb;
   else if (str == "xyz")
     return Xyz;
