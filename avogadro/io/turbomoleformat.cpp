@@ -61,6 +61,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   // we loop through each line until we hit $end or EOF
   string buffer;
   getline(inStream, buffer);
+
   while (inStream.good() && !buffer.empty()) {
     std::vector<string> tokens = split(rstrip(buffer, '#'), ' ');
     if (tokens.empty()) { // "# comment line"
@@ -164,7 +165,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
-      for (int line = 0; line < 3; ++line) {
+      for (unsigned line = 0; line < 3; ++line) {
         getline(inStream, buffer);
         tokens = split(rstrip(buffer, '#'), ' ');
         if (tokens.size() < 3)
