@@ -104,7 +104,8 @@ void CurveGeometry::update(int index)
             m.col(0) = previousAngle;
             break;
             // if angle > 90 flip it
-          } else if (angle <= 0.0f) {
+          }
+          if (angle <= 0.0f) {
             m.col(0) *= -1.0f;
           }
           angle = previousAngle.dot(m.col(0));
