@@ -219,6 +219,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
+      } else {
+        // $periodic does not appear yet
       }
 
     } else if (tokens[0] == "$lattice") {
@@ -235,7 +237,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
-      for (unsigined line = 0; line < 3; ++line) {
+      for (unsigned line = 0; line < 3; ++line) {
         getline(inStream, buffer);
         tokens = split(rstrip(buffer, '#'), ' ');
         if (tokens.size() < 3)
@@ -261,6 +263,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     getline(inStream, buffer);
   } // done reading the file
+
+  if (periodic_parsed && periodic_guessed &&
+      *periodic_parsed != *periodic_guessed) {
+    appendError("Dimensionality guessed from $lattice/$cell is " +
+                std::to_string(*periodic_guessed) +
+                " but $periodic specifies " + std::to_string(*periodic_parsed));
+    return false;
+  }
 
   Core::UnitCell* cell = nullptr;
   std::string tmp;
