@@ -180,7 +180,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Step limit?
-    else if (*it == "--steps") {
+    if (*it == "--steps") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
