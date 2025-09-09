@@ -204,23 +204,25 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
       (command.compare("renderVDW", Qt::CaseInsensitive) == 0)) {
     calculateEDT(VanDerWaals, cubeResolution);
     return true;
-  } else if (command.compare("renderSolventAccessible", Qt::CaseInsensitive) ==
-             0) {
+  }
+  if (command.compare("renderSolventAccessible", Qt::CaseInsensitive) == 0) {
     calculateEDT(SolventAccessible, cubeResolution);
     return true;
-  } else if (command.compare("renderSolventExcluded", Qt::CaseInsensitive) ==
-             0) {
+  }
+  if (command.compare("renderSolventExcluded", Qt::CaseInsensitive) == 0) {
     calculateEDT(SolventExcluded, cubeResolution);
     return true;
-  } else if ((command.compare("renderOrbital", Qt::CaseInsensitive) == 0) ||
-             (command.compare("renderMO", Qt::CaseInsensitive) == 0)) {
+  }
+  if ((command.compare("renderOrbital", Qt::CaseInsensitive) == 0) ||
+      (command.compare("renderMO", Qt::CaseInsensitive) == 0)) {
     calculateQM(MolecularOrbital, index, beta, isoValue, cubeResolution);
     return true;
-  } else if (command.compare("renderElectronDensity", Qt::CaseInsensitive) ==
-             0) {
+  }
+  if (command.compare("renderElectronDensity", Qt::CaseInsensitive) == 0) {
     calculateQM(ElectronDensity, index, beta, isoValue, cubeResolution);
     return true;
-  } else if (command.compare("renderSpinDensity", Qt::CaseInsensitive) == 0) {
+  }
+  if (command.compare("renderSpinDensity", Qt::CaseInsensitive) == 0) {
     calculateQM(SpinDensity, index, beta, isoValue, cubeResolution);
     return true;
   }
@@ -815,31 +817,31 @@ ColormapType Surfaces::getColormapFromString(const QString& name) const
   // Just do all of them, even though we won't use them all
   if (name == tr("Parula", "colormap"))
     return ColormapType::Parula;
-  else if (name == tr("Heat", "colormap"))
+  if (name == tr("Heat", "colormap"))
     return ColormapType::Heat;
-  else if (name == tr("Hot", "colormap"))
+  if (name == tr("Hot", "colormap"))
     return ColormapType::Hot;
-  else if (name == tr("Gray", "colormap"))
+  if (name == tr("Gray", "colormap"))
     return ColormapType::Gray;
-  else if (name == tr("Magma", "colormap"))
+  if (name == tr("Magma", "colormap"))
     return ColormapType::Magma;
-  else if (name == tr("Inferno", "colormap"))
+  if (name == tr("Inferno", "colormap"))
     return ColormapType::Inferno;
-  else if (name == tr("Plasma", "colormap"))
+  if (name == tr("Plasma", "colormap"))
     return ColormapType::Plasma;
-  else if (name == tr("Viridis", "colormap"))
+  if (name == tr("Viridis", "colormap"))
     return ColormapType::Viridis;
-  else if (name == tr("Cividis", "colormap"))
+  if (name == tr("Cividis", "colormap"))
     return ColormapType::Cividis;
-  else if (name == tr("Spectral", "colormap"))
+  if (name == tr("Spectral", "colormap"))
     return ColormapType::Spectral;
-  else if (name == tr("Coolwarm", "colormap"))
+  if (name == tr("Coolwarm", "colormap"))
     return ColormapType::Coolwarm;
-  else if (name == tr("Balance", "colormap"))
+  if (name == tr("Balance", "colormap"))
     return ColormapType::Balance;
-  else if (name == tr("Blue-DarkRed", "colormap"))
+  if (name == tr("Blue-DarkRed", "colormap"))
     return ColormapType::BlueDkRed;
-  else if (name == tr("Turbo", "colormap"))
+  if (name == tr("Turbo", "colormap"))
     return ColormapType::Turbo;
 
   return ColormapType::Turbo;

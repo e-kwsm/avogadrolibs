@@ -106,7 +106,8 @@ bool Vibrations::handleCommand(const QString& command,
   if (command == "showVibrations") {
     openDialog();
     return true;
-  } else if (command == "setVibrationalMode") {
+  }
+  if (command == "setVibrationalMode") {
     if (options.contains("mode")) {
       setMode(options["mode"].toInt());
       return true;

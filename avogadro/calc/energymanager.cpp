@@ -178,8 +178,7 @@ std::string EnergyManager::recommendedModel(
   }
   if (!bestOption.empty())
     return bestOption;
-  else
-    return "LJ"; // this will always work
+  return "LJ"; // this will always work
 }
 
 } // namespace Avogadro::Calc

@@ -48,19 +48,23 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
       // NWChem
       reader = new NWChemLog;
       break;
-    } else if (line.find("GAMESS VERSION") != std::string::npos) {
+    }
+    if (line.find("GAMESS VERSION") != std::string::npos) {
       // GAMESS-US .. don't know if we can read Firefly or GAMESS-UK
       reader = new GAMESSUSOutput;
       break;
-    } else if (line.find("[Molden Format]") != std::string::npos) {
+    }
+    if (line.find("[Molden Format]") != std::string::npos) {
       // molden with .out extension
       reader = new MoldenFile;
       break;
-    } else if (line.find("O   R   C   A") != std::string::npos) {
+    }
+    if (line.find("O   R   C   A") != std::string::npos) {
       // ORCA reader
       reader = new ORCAOutput;
       break;
-    } else if (line.find("xtb:") != std::string::npos) {
+    }
+    if (line.find("xtb:") != std::string::npos) {
       // xtb reader
       reader = new Io::XyzFormat;
       break;
@@ -80,7 +84,8 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
       if (r->name() == "cclib") {
         reader = r->newInstance();
         break;
-      } else if (r->identifier().compare(0, 9, "OpenBabel") == 0) {
+      }
+      if (r->identifier().compare(0, 9, "OpenBabel") == 0) {
         reader = r->newInstance();
         break;
       }
@@ -95,12 +100,11 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
     bool success = reader->readFile(fileName(), molecule);
     delete reader;
     return success;
-  } else {
-    appendError(
-      "Could not determine the program used to generate this output file.");
-    delete reader;
-    return false;
   }
+  appendError(
+    "Could not determine the program used to generate this output file.");
+  delete reader;
+  return false;
 }
 
 } // namespace Avogadro::QuantumIO

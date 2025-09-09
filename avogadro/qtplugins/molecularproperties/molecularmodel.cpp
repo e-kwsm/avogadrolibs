@@ -135,14 +135,14 @@ QVariant MolecularModel::data(const QModelIndex& index, int role) const
   auto key = it->first;
   if (key == " 6coordinateSets")
     return QVariant::fromValue(m_molecule->coordinate3dCount());
-  else if (key == " 7residues")
+  if (key == " 7residues")
     return QVariant::fromValue(m_molecule->residueCount());
-  else if (key == " 9totalCharge")
+  if (key == " 9totalCharge")
     return QVariant::fromValue(static_cast<int>(m_molecule->totalCharge()));
-  else if (key == " 9totalSpinMultiplicity")
+  if (key == " 9totalSpinMultiplicity")
     return QVariant::fromValue(
       static_cast<int>(m_molecule->totalSpinMultiplicity()));
-  else if (key == "pointgroup")
+  if (key == "pointgroup")
     return formatPointGroup(it->second.toString());
 
   return QString::fromStdString(it->second.toString());
@@ -169,62 +169,63 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
 
   if (orientation == Qt::Horizontal) {
     return tr("Property");
-  } else if (orientation == Qt::Vertical) {
+  }
+  if (orientation == Qt::Vertical) {
 
     const auto map = m_propertiesCache;
     auto it = map.begin();
     std::advance(it, section);
     if (it->first == " 1name")
       return tr("Molecule Name");
-    else if (it->first == " 2mass")
+    if (it->first == " 2mass")
       return tr("Molecular Mass (g/mol)");
-    else if (it->first == " 2monoisotopicMass")
+    if (it->first == " 2monoisotopicMass")
       return tr("Monoisotopic Mass (g/mol)");
     else if (it->first == " 3formula")
       return tr("Chemical Formula");
-    else if (it->first == " 4atoms")
+    if (it->first == " 4atoms")
       return tr("Number of Atoms");
-    else if (it->first == " 5bonds")
+    if (it->first == " 5bonds")
       return tr("Number of Bonds");
-    else if (it->first == " 6coordinateSets")
+    if (it->first == " 6coordinateSets")
       return tr("Coordinate Sets");
-    else if (it->first == " 7residues")
+    if (it->first == " 7residues")
       return tr("Number of Residues");
-    else if (it->first == " 8chains")
+    if (it->first == " 8chains")
       return tr("Number of Chains");
-    else if (it->first == " 9totalCharge")
+    if (it->first == " 9totalCharge")
       return tr("Net Charge");
-    else if (it->first == " 9totalSpinMultiplicity")
+    if (it->first == " 9totalSpinMultiplicity")
       return tr("Net Spin Multiplicity");
-    else if (it->first == "dipoleMoment")
+    if (it->first == "dipoleMoment")
       return tr("Dipole Moment (Debye)");
-    else if (it->first == "homoEnergy")
+    if (it->first == "homoEnergy")
       return tr("HOMO Energy (eV)", "highest occupied molecular orbital");
-    else if (it->first == "lumoEnergy")
+    if (it->first == "lumoEnergy")
       return tr("LUMO Energy (eV)", "lowest unoccupied molecular orbital");
-    else if (it->first == "somoEnergy")
+    if (it->first == "somoEnergy")
       return tr("SOMO Energy (eV)", "singly-occupied molecular orbital");
-    else if (it->first == "totalEnergy")
+    if (it->first == "totalEnergy")
       return tr("Total Energy (Hartree)",
                 "total electronic energy in Hartrees");
-    else if (it->first == "zpe")
+    if (it->first == "zpe")
       return tr("Zero Point Energy (kcal/mol)",
                 "zero point vibrational energy");
-    else if (it->first == "enthalpy")
+    if (it->first == "enthalpy")
       return tr("Enthalpy (kcal/mol)");
-    else if (it->first == "entropy")
+    if (it->first == "entropy")
       return tr("Entropy (kcal/mol•K)");
-    else if (it->first == "gibbs")
+    if (it->first == "gibbs")
       return tr("Gibbs Free Energy (kcal/mol)");
-    else if (it->first == "pointgroup")
+    if (it->first == "pointgroup")
       return tr("Point Group", "point group symmetry");
-    else if (it != map.end())
+    if (it != map.end())
       return QString::fromStdString(it->first);
 
     return QVariant();
 
-  } else // row headers
-    return QVariant();
+  } // row headers
+  return QVariant();
 
   return QVariant();
 }
@@ -279,7 +280,8 @@ bool MolecularModel::setData(const QModelIndex& index, const QVariant& value,
     m_molecule->setData("totalCharge", value.toInt());
     emit dataChanged(index, index);
     return true;
-  } else if (key == " 9totalSpinMultiplicity") {
+  }
+  if (key == " 9totalSpinMultiplicity") {
     int spin = value.toInt();
     if (spin < 1)
       return false;

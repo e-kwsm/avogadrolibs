@@ -888,7 +888,7 @@ void AutoOpt::translate(Vector3 delta, bool moveSelected)
   for (Index i = 0; i < m_molecule->atomCount(); ++i) {
     if (moveSelected && !m_molecule->atomSelected(i))
       continue;
-    else if (!moveSelected && m_molecule->atomSelected(i))
+    if (!moveSelected && m_molecule->atomSelected(i))
       continue;
 
     Vector3 currentPos = m_molecule->atomPosition3d(i);
@@ -918,7 +918,7 @@ void AutoOpt::rotate(Vector3 delta, Vector3 centroid, bool moveSelected)
   for (Index i = 0; i < m_molecule->atomCount(); ++i) {
     if (moveSelected && !m_molecule->atomSelected(i))
       continue;
-    else if (!moveSelected && m_molecule->atomSelected(i))
+    if (!moveSelected && m_molecule->atomSelected(i))
       continue;
 
     Vector3 currentPos = m_molecule->atomPosition3d(i);
@@ -934,7 +934,7 @@ void AutoOpt::axisRotate(Vector3 delta, Vector3 centroid, bool moveSelected)
   for (Index i = 0; i < m_molecule->atomCount(); ++i) {
     if (moveSelected && !m_molecule->atomSelected(i))
       continue;
-    else if (!moveSelected && m_molecule->atomSelected(i))
+    if (!moveSelected && m_molecule->atomSelected(i))
       continue;
 
     Vector3 currentPos = m_molecule->atomPosition3d(i);

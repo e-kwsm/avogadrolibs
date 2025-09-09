@@ -257,9 +257,8 @@ bool PlotXrd::executeGenXrdPattern(const QStringList& args,
       err = tr("Error: could not find genXrdPattern executable!");
       qDebug() << err;
       return false;
-    } else {
-      program += "/" + executable;
     }
+    program += "/" + executable;
   }
 
   QProcess p;

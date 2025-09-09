@@ -142,11 +142,10 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
       if (reader->read(in, mol)) {
         delete reader;
         return true;
-      } else {
-        in.clear();
-        in.seekg(currentPos);
-        // continue with normal parsing
       }
+      in.clear();
+      in.seekg(currentPos);
+      // continue with normal parsing
       delete reader;
     }
   }
@@ -180,7 +179,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
   string mdlVersion(trimmed(buffer.substr(33)));
   if (mdlVersion == "V3000")
     return readV3000(in, mol);
-  else if (mdlVersion != "V2000") {
+  if (mdlVersion != "V2000") {
     appendError("Unsupported MDL version: " + mdlVersion);
     return false;
   }
@@ -258,10 +257,9 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
         }
       }
       continue;
-    } else {
-      appendError("Error parsing atom block: " + buffer);
-      return false;
     }
+    appendError("Error parsing atom block: " + buffer);
+    return false;
   }
 
   // Parse the bond block.
@@ -309,7 +307,8 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     if (startsWith(buffer, "M  END") || startsWith(buffer, "M END")) {
       foundEnd = true;
       break;
-    } else if (buffer.size() >= 6 && buffer.substr(0, 6) == "M  CHG") {
+    }
+    if (buffer.size() >= 6 && buffer.substr(0, 6) == "M  CHG") {
       if (!foundChgProperty)
         chargeList.clear(); // Forget old-style charges
       size_t entryCount(lexicalCast<int>(buffer.substr(6, 3), ok));

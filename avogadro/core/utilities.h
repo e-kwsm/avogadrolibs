@@ -46,15 +46,14 @@ inline bool contains(const std::string& input, const std::string& search,
 {
   if (caseSensitive) {
     return input.find(search) != std::string::npos;
-  } else {
-    std::string inputLower = input;
-    std::string searchLower = search;
-    std::transform(inputLower.begin(), inputLower.end(), inputLower.begin(),
-                   ::tolower);
-    std::transform(searchLower.begin(), searchLower.end(), searchLower.begin(),
-                   ::tolower);
-    return inputLower.find(searchLower) != std::string::npos;
   }
+  std::string inputLower = input;
+  std::string searchLower = search;
+  std::transform(inputLower.begin(), inputLower.end(), inputLower.begin(),
+                 ::tolower);
+  std::transform(searchLower.begin(), searchLower.end(), searchLower.begin(),
+                 ::tolower);
+  return inputLower.find(searchLower) != std::string::npos;
 }
 
 /**

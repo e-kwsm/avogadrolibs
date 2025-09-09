@@ -229,15 +229,15 @@ FileFormatScript::Format FileFormatScript::stringToFormat(
 {
   if (str == "cjson")
     return Cjson;
-  else if (str == "cml")
+  if (str == "cml")
     return Cml;
-  else if (str == "mdl" || str == "mol")
+  if (str == "mdl" || str == "mol")
     return Mdl;
-  else if (str == "pdb")
+  if (str == "pdb")
     return Pdb;
-  else if (str == "sdf")
+  if (str == "sdf")
     return Sdf;
-  else if (str == "xyz")
+  if (str == "xyz")
     return Xyz;
   return NotUsed;
 }

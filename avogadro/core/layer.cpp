@@ -62,9 +62,8 @@ size_t Layer::getLayerID(Index atom) const
 {
   if (atom >= m_atomAndLayers.size()) {
     return MaxIndex;
-  } else {
-    return m_atomAndLayers[atom];
   }
+  return m_atomAndLayers[atom];
 }
 
 void Layer::clear()
