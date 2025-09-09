@@ -615,8 +615,8 @@ unsigned char MeshGenerator::calcCaseEdge(bool const& prevEdge,
     return 1;
   if (prevEdge && !currEdge)
     return 2;
-  else // !prevEdge && !currEdge
-    return 3;
+  // !prevEdge && !currEdge
+  return 3;
 }
 
 unsigned long MeshGenerator::duplicate(const Vector3i&, const Vector3f&)
