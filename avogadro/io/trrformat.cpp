@@ -47,8 +47,7 @@ char swapEndian(char endian)
 {
   if (endian == '>')
     return '<';
-  else
-    return '>';
+  return '>';
 }
 
 /* Checks whether the data stored in the binary file is of float or double type
@@ -64,10 +63,9 @@ int isDouble(map<string, int>& header)
       if (headerKey == "box_size") {
         size = (int)(header[headerKey] / DIM * DIM);
         break;
-      } else {
-        size = (int)(header[headerKey] / (header["natoms"] * DIM));
-        break;
       }
+      size = (int)(header[headerKey] / (header["natoms"] * DIM));
+      break;
     }
   }
   return size == SIZE_DOUBLE;

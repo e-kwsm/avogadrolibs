@@ -241,14 +241,13 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
         if (trimmed(buffer.substr(bCoords[i], 5)) == "")
           break;
 
-        else {
-          int b = lexicalCast<int>(buffer.substr(bCoords[i], 5), ok) - 1;
-          if (!ok) {
-            appendError("Failed to parse bond connection b" +
-                        std::to_string(i) + " " + buffer.substr(bCoords[i], 5));
-            // return false;
-            continue; // skip this invalid record
-          }
+        int b = lexicalCast<int>(buffer.substr(bCoords[i], 5), ok) - 1;
+        if (!ok) {
+          appendError("Failed to parse bond connection b" + std::to_string(i) +
+                      " " + buffer.substr(bCoords[i], 5));
+          // return false;
+          continue; // skip this invalid record
+        }
 
           for (terCount = 0; terCount < terList.size() && b > terList[terCount];
                ++terCount)
