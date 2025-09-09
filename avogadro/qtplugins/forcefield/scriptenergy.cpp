@@ -194,7 +194,7 @@ ScriptEnergy::Format ScriptEnergy::stringToFormat(const std::string& str)
 {
   if (str == "cjson")
     return Cjson;
-  else if (str == "cml")
+  if (str == "cml")
     return Cml;
   else if (str == "mdl" || str == "mol")
     return Mdl;
