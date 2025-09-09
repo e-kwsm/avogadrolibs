@@ -171,7 +171,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Close Contacts", "rendering of non-covalent close contacts");
   if (name == "Crystal Lattice")
     return tr("Crystal Lattice");
-  else if (name == "Dipole Moment")
+  if (name == "Dipole Moment")
     return tr("Dipole Moment");
   else if (name == "Force")
     return tr("Force");
