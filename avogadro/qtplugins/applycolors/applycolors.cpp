@@ -106,7 +106,7 @@ ColormapType ApplyColors::getColormapFromString(const QString& name) const
   // Just do all of them, even though we won't use them all
   if (name == tr("Parula", "colormap"))
     return ColormapType::Parula;
-  else if (name == tr("Heat", "colormap"))
+  if (name == tr("Heat", "colormap"))
     return ColormapType::Heat;
   else if (name == tr("Hot", "colormap"))
     return ColormapType::Hot;
@@ -150,7 +150,7 @@ QStringList ApplyColors::menuPath(QAction* action) const
 {
   if (action->data() == atomColors)
     return QStringList() << tr("&View") << tr("Color Atoms");
-  else if (action->data() == residueColors)
+  if (action->data() == residueColors)
     return QStringList() << tr("&View") << tr("Color Residues");
   else
     return QStringList();
