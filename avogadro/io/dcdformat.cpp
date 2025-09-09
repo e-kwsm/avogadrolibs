@@ -48,8 +48,7 @@ char swap_endian(char endian)
 {
   if (endian == '>')
     return '<';
-  else
-    return '>';
+  return '>';
 }
 
 bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
