@@ -77,6 +77,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         appendError("Not enough tokens in this line: " + buffer);
         return false;
       }
+      if (tokens.size() > 2u && tokens[2][0] != COMMENT) {
+        appendError("Extra tokens in this line: " + buffer);
+        return false;
+      }
       bool ok;
       auto tmp = lexicalCast<int>(tokens[1], ok);
       if (!ok) {
