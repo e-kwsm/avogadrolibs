@@ -354,9 +354,9 @@ inline BatchJob::JobState BatchJob::stringToState(const QString& str)
     return Accepted;
   if (str == QLatin1String("QueuedLocal"))
     return QueuedLocal;
-  else if (str == QLatin1String("Submitted"))
+  if (str == QLatin1String("Submitted"))
     return Submitted;
-  else if (str == QLatin1String("QueuedRemote"))
+  if (str == QLatin1String("QueuedRemote"))
     return QueuedRemote;
   else if (str == QLatin1String("RunningLocal"))
     return RunningLocal;
