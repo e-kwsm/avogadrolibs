@@ -282,7 +282,7 @@ inline bool Variant::value() const
 {
   if (m_type == Bool)
     return m_value._bool;
-  else if (m_type == Int)
+  if (m_type == Int)
     return m_value._int != 0;
 
   return false;
@@ -293,7 +293,7 @@ inline char Variant::value() const
 {
   if (m_type == Int)
     return static_cast<char>(m_value._int);
-  else if (m_type == String && !m_value.string->empty())
+  if (m_type == String && !m_value.string->empty())
     return m_value.string->at(0);
 
   return '\0';
@@ -304,7 +304,7 @@ inline short Variant::value() const
 {
   if (m_type == Int)
     return static_cast<short>(m_value._int);
-  else if (m_type == String)
+  if (m_type == String)
     return lexical_cast<short>(*m_value.string);
 
   return 0;
@@ -315,13 +315,13 @@ inline int Variant::value() const
 {
   if (m_type == Int)
     return m_value._int;
-  else if (m_type == Bool)
+  if (m_type == Bool)
     return static_cast<int>(m_value._bool);
-  else if (m_type == Float)
+  if (m_type == Float)
     return static_cast<int>(m_value._float);
-  else if (m_type == Double)
+  if (m_type == Double)
     return static_cast<int>(m_value._double);
-  else if (m_type == String)
+  if (m_type == String)
     return lexical_cast<int>(*m_value.string);
 
   return 0;
@@ -332,9 +332,9 @@ inline long Variant::value() const
 {
   if (m_type == Long)
     return m_value._long;
-  else if (m_type == Int)
+  if (m_type == Int)
     return static_cast<long>(m_value._int);
-  else if (m_type == String)
+  if (m_type == String)
     return lexical_cast<long>(*m_value.string);
 
   return 0;
@@ -345,11 +345,11 @@ inline float Variant::value() const
 {
   if (m_type == Float)
     return m_value._float;
-  else if (m_type == Double)
+  if (m_type == Double)
     return static_cast<float>(m_value._double);
-  else if (m_type == Int)
+  if (m_type == Int)
     return static_cast<float>(m_value._int);
-  else if (m_type == String)
+  if (m_type == String)
     return lexical_cast<float>(*m_value.string);
 
   return 0;
@@ -360,11 +360,11 @@ inline double Variant::value() const
 {
   if (m_type == Double)
     return m_value._double;
-  else if (m_type == Float)
+  if (m_type == Float)
     return static_cast<double>(m_value._float);
-  else if (m_type == Int)
+  if (m_type == Int)
     return static_cast<double>(m_value._int);
-  else if (m_type == String)
+  if (m_type == String)
     return lexical_cast<double>(*m_value.string);
 
   return 0;
