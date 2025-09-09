@@ -205,7 +205,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("LUMO Energy (eV)", "lowest unoccupied molecular orbital");
     if (it->first == "somoEnergy")
       return tr("SOMO Energy (eV)", "singly-occupied molecular orbital");
-    else if (it->first == "totalEnergy")
+    if (it->first == "totalEnergy")
       return tr("Total Energy (Hartree)",
                 "total electronic energy in Hartrees");
     else if (it->first == "zpe")
