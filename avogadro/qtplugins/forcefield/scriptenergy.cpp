@@ -198,7 +198,7 @@ ScriptEnergy::Format ScriptEnergy::stringToFormat(const std::string& str)
     return Cml;
   if (str == "mdl" || str == "mol")
     return Mdl;
-  else if (str == "pdb")
+  if (str == "pdb")
     return Pdb;
   else if (str == "sdf")
     return Sdf;
