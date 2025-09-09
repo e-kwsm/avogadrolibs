@@ -50,9 +50,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   bool fractionalCoords = false;
 
   // possible lattice constants
-  Real a, b, c, alpha, beta, gamma;
-  a = b = c = 100.0;
-  alpha = beta = gamma = 90.0;
+  Real a = 100.0, b = 100.0, c = 100.0;
+  Real alpha = 90.0, beta = 90.0, gamma = 90.0;
   // defaults if periodicity is not 3
   Vector3 v1(100.0, 0.0, 0.0);
   Vector3 v2(0.0, 100.0, 0.0);
@@ -177,10 +176,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         tokens_converted.push_back(tmp);
       }
 
-      const auto ntokens = tokens.size();
+      const auto ntokens = tokens_converted.size();
       auto is_line_valid = [&](unsigned expected) -> bool {
         if (ntokens < expected) {
           appendError("Not enough tokens in this line: " + buffer);
+          return false;
+        }
+        if (ntokens > expected && tokens[expected][0] != COMMENT) {
+          appendError("Extra tokens in this line: " + buffer);
           return false;
         }
         return true;
@@ -190,38 +193,20 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         // $periodic appeared
         switch (*periodic_parsed) {
           case 1:
-            if (ntokens < 1u) {
-              appendError("Not enough tokens in this line: " + buffer);
+            if (!is_line_valid(1))
               return false;
-            }
-            if (ntokens > 1u && tokens[1][0] != '#') {
-              appendError("Extra tokens in this line: " + buffer);
-              return false;
-            }
             a = lexicalCast<double>(tokens[0]) * cellConversion;
             break;
           case 2:
-            if (ntokens < 3u) {
-              appendError("Not enough tokens in this line: " + buffer);
+            if (!is_line_valid(3))
               return false;
-            }
-            if (ntokens > 3u && tokens[3][0] != '#') {
-              appendError("Extra tokens in this line: " + buffer);
-              return false;
-            }
             a = lexicalCast<double>(tokens[0]) * cellConversion;
             b = lexicalCast<double>(tokens[1]) * cellConversion;
             gamma = lexicalCast<double>(tokens[2]) * DEG_TO_RAD;
             break;
           case 3:
-            if (tokens.size() < 6u) {
-              appendError("Not enough tokens in this line: " + buffer);
+            if (!is_line_valid(6))
               return false;
-            }
-            if (ntokens > 6u && tokens[6][0] != '#') {
-              appendError("Extra tokens in this line: " + buffer);
-              return false;
-            }
             a = lexicalCast<double>(tokens[0]) * cellConversion;
             b = lexicalCast<double>(tokens[1]) * cellConversion;
             c = lexicalCast<double>(tokens[2]) * cellConversion;
