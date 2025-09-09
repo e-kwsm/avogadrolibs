@@ -127,10 +127,10 @@ void Symmetry::updateActions()
     foreach (QAction* action, m_actions)
       action->setEnabled(false);
     return;
-  } else {
-    foreach (QAction* action, m_actions)
-      action->setEnabled(true);
   }
+  foreach (QAction* action, m_actions)
+    action->setEnabled(true);
+
   /*
     if (m_molecule->unitCell()) {
       foreach (QAction *action, m_actions)

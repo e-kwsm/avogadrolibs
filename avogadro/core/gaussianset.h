@@ -232,32 +232,28 @@ public:
   {
     if (type == Paired || type == Alpha)
       return m_moMatrix[0];
-    else
-      return m_moMatrix[1];
+    return m_moMatrix[1];
   }
 
   MatrixX moMatrix(ElectronType type = Paired) const
   {
     if (type == Paired || type == Alpha)
       return m_moMatrix[0];
-    else
-      return m_moMatrix[1];
+    return m_moMatrix[1];
   }
 
   std::vector<unsigned int>& moNumber(ElectronType type = Paired)
   {
     if (type == Paired || type == Alpha)
       return m_moNumber[0];
-    else
-      return m_moNumber[1];
+    return m_moNumber[1];
   }
 
   std::vector<unsigned int> moNumber(ElectronType type = Paired) const
   {
     if (type == Paired || type == Alpha)
       return m_moNumber[0];
-    else
-      return m_moNumber[1];
+    return m_moNumber[1];
   }
 
   MatrixX& densityMatrix() { return m_density; }

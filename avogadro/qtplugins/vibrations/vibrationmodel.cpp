@@ -23,8 +23,7 @@ int VibrationModel::rowCount(const QModelIndex& p) const
 {
   if (p.isValid() || !m_molecule)
     return 0;
-  else
-    return m_molecule->vibrationFrequencies().size();
+  return m_molecule->vibrationFrequencies().size();
 }
 
 int VibrationModel::columnCount(const QModelIndex&) const

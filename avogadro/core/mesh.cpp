@@ -87,9 +87,8 @@ bool Mesh::addVertices(const Core::Array<Vector3f>& values)
     for (const auto& value : values)
       m_vertices.push_back(value);
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 const Core::Array<Vector3f>& Mesh::normals() const
@@ -117,9 +116,8 @@ bool Mesh::addNormals(const Core::Array<Vector3f>& values)
     for (const auto& value : values)
       m_normals.push_back(value);
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 const Core::Array<Color3f>& Mesh::colors() const
@@ -132,8 +130,7 @@ const Color3f* Mesh::color(int n) const
   // If there is only one color return that, otherwise colored by vertex.
   if (m_colors.size() == 1)
     return m_colors.data();
-  else
-    return &(m_colors[n * 3]);
+  return &(m_colors[n * 3]);
 }
 
 bool Mesh::setColors(const Core::Array<Color3f>& values)
@@ -151,9 +148,8 @@ bool Mesh::addColors(const Core::Array<Color3f>& values)
     for (auto value : values)
       m_colors.push_back(value);
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 bool Mesh::valid() const

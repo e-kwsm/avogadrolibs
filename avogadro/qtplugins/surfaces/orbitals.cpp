@@ -517,8 +517,8 @@ void Orbitals::meshComplete()
     m_nextMeshCalculation = -1;
     calculatePosMesh();
     return;
-  } else
-    m_currentMeshCalculation = -1;
+  }
+  m_currentMeshCalculation = -1;
 }
 
 void Orbitals::calculationComplete()

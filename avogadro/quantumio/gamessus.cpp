@@ -112,7 +112,7 @@ void GAMESSUSOutput::readAtomBlock(std::istream& in, Core::Molecule& molecule,
   while (getline(in, buffer)) {
     if (Core::contains(buffer, "CHARGE") || Core::contains(buffer, "------"))
       continue;
-    else if (buffer.length() == 0 || buffer == "\n") // Our work here is done.
+    if (buffer.length() == 0 || buffer == "\n") // Our work here is done.
       return;
     vector<string> parts = Core::split(buffer, ' ');
     if (parts.size() != 5) {
@@ -164,7 +164,8 @@ void GAMESSUSOutput::readBasisSet(std::istream& in)
     if (Core::contains(buffer, "TOTAL NUMBER OF BASIS SET SHELLS")) {
       // End of the basis set block.
       return;
-    } else if (parts.size() == 1) {
+    }
+    if (parts.size() == 1) {
       // Currently just incrememt the current atom, we should probably at least
       // verify the element matches in the future too.
       ++currentAtom;

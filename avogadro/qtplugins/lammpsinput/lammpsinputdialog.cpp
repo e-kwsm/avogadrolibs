@@ -894,16 +894,14 @@ QString LammpsInputDialog::getZeroMOM()
 {
   if (m_zeroMOM)
     return "yes";
-  else
-    return "no";
+  return "no";
 }
 
 QString LammpsInputDialog::getZeroL()
 {
   if (m_zeroL)
     return "yes";
-  else
-    return "no";
+  return "no";
 }
 
 QString LammpsInputDialog::getThermoStyle(thermoStyle t)

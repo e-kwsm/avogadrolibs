@@ -132,9 +132,8 @@ bool Cube::setData(const std::vector<float>& values)
         m_maxValue = value;
     }
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 bool Cube::addData(const std::vector<float>& values)
@@ -189,8 +188,7 @@ float Cube::value(int i, int j, int k) const
   unsigned int index = i * m_points.y() * m_points.z() + j * m_points.z() + k;
   if (index < m_data.size())
     return m_data[index];
-  else
-    return 0.0;
+  return 0.0;
 }
 
 std::array<float, 3> Cube::computeGradient(int i, int j, int k) const
@@ -346,8 +344,7 @@ float Cube::value(const Vector3i& pos) const
     pos.x() * m_points.y() * m_points.z() + pos.y() * m_points.z() + pos.z();
   if (index < m_data.size())
     return m_data[index];
-  else
-    return 6969.0;
+  return 6969.0;
 }
 
 float Cube::valuef(const Vector3f& pos) const
