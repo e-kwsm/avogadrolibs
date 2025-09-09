@@ -408,7 +408,7 @@ QWidget* JsonWidget::createOptionWidget(const QJsonValue& option)
     return createIntegerWidget(obj);
   if (type == QLatin1String("float"))
     return createFloatWidget(obj);
-  else if (type == QLatin1String("boolean"))
+  if (type == QLatin1String("boolean"))
     return createBooleanWidget(obj);
   else if (type == QLatin1String("text"))
     return createTextWidget(obj);
@@ -695,7 +695,7 @@ void JsonWidget::setOption(const QString& name, const QJsonValue& defaultValue)
     return setIntegerOption(name, defaultValue);
   if (type == QLatin1String("float"))
     return setFloatOption(name, defaultValue);
-  else if (type == QLatin1String("boolean"))
+  if (type == QLatin1String("boolean"))
     return setBooleanOption(name, defaultValue);
   else if (type == QLatin1String("text"))
     return setTextOption(name, defaultValue);
