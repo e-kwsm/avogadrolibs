@@ -74,8 +74,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       break;
 
     if (tokens[0] == "$periodic") {
-      if (tokens.size() != 2u) {
-        appendError("Not enough or extra tokens in this line: " + buffer);
+      if (tokens.size() < 2u) {
+        appendError("Not enough tokens in this line: " + buffer);
         return false;
       }
 
