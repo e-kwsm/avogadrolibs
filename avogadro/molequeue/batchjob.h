@@ -362,9 +362,9 @@ inline BatchJob::JobState BatchJob::stringToState(const QString& str)
     return RunningLocal;
   if (str == QLatin1String("RunningRemote"))
     return RunningRemote;
-  else if (str == QLatin1String("Finished"))
+  if (str == QLatin1String("Finished"))
     return Finished;
-  else if (str == QLatin1String("Canceled"))
+  if (str == QLatin1String("Canceled"))
     return Canceled;
   else if (str == QLatin1String("Error"))
     return Error;
