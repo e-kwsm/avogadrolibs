@@ -204,8 +204,8 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
       (command.compare("renderVDW", Qt::CaseInsensitive) == 0)) {
     calculateEDT(VanDerWaals, cubeResolution);
     return true;
-  } else if (command.compare("renderSolventAccessible", Qt::CaseInsensitive) ==
-             0) {
+  }
+  if (command.compare("renderSolventAccessible", Qt::CaseInsensitive) == 0) {
     calculateEDT(SolventAccessible, cubeResolution);
     return true;
   } else if (command.compare("renderSolventExcluded", Qt::CaseInsensitive) ==
@@ -783,7 +783,7 @@ ColormapType Surfaces::getColormapFromString(const QString& name) const
   // Just do all of them, even though we won't use them all
   if (name == tr("Parula", "colormap"))
     return ColormapType::Parula;
-  else if (name == tr("Heat", "colormap"))
+  if (name == tr("Heat", "colormap"))
     return ColormapType::Heat;
   else if (name == tr("Hot", "colormap"))
     return ColormapType::Hot;
