@@ -206,7 +206,7 @@ const char* Elements::name(unsigned char atomicNumber)
 {
   if (atomicNumber < element_count)
     return element_names[atomicNumber];
-  else if (isCustomElement(atomicNumber))
+  if (isCustomElement(atomicNumber))
     return customElementName(atomicNumber);
   else
     return element_names[0];
@@ -216,7 +216,7 @@ const char* Elements::symbol(unsigned char atomicNumber)
 {
   if (atomicNumber < element_count)
     return element_symbols[atomicNumber];
-  else if (isCustomElement(atomicNumber))
+  if (isCustomElement(atomicNumber))
     return customElementSymbol(atomicNumber);
   else
     return element_symbols[0];
@@ -226,15 +226,14 @@ double Elements::mass(unsigned char atomicNumber)
 {
   if (atomicNumber < element_count)
     return element_masses[atomicNumber];
-  else
-    return element_masses[0];
+  return element_masses[0];
 }
 
 double Elements::radiusVDW(unsigned char atomicNumber)
 {
   if (atomicNumber < element_count)
     return element_VDW[atomicNumber];
-  else if (isCustomElement(atomicNumber))
+  if (isCustomElement(atomicNumber))
     return CustomElementVDWRadius;
   else
     return element_VDW[0];
@@ -244,7 +243,7 @@ double Elements::radiusCovalent(unsigned char atomicNumber)
 {
   if (atomicNumber < element_count)
     return element_covalent[atomicNumber];
-  else if (isCustomElement(atomicNumber))
+  if (isCustomElement(atomicNumber))
     return CustomElementCovalentRadius;
   else
     return element_covalent[0];
@@ -254,7 +253,7 @@ const unsigned char* Elements::color(unsigned char atomicNumber)
 {
   if (atomicNumber < element_count)
     return element_color[atomicNumber];
-  else if (isCustomElement(atomicNumber))
+  if (isCustomElement(atomicNumber))
     return customElementColor(atomicNumber);
   else
     return element_color[0];
@@ -264,8 +263,7 @@ unsigned char Elements::valenceElectrons(unsigned char atomicNumber)
 {
   if (atomicNumber < element_count)
     return valence_electrons[atomicNumber];
-  else
-    return valence_electrons[0];
+  return valence_electrons[0];
 }
 
 double Elements::isotopeMass(unsigned char atomicNumber, unsigned short isotope)
