@@ -112,7 +112,7 @@ ColormapType ApplyColors::getColormapFromString(const QString& name) const
     return ColormapType::Hot;
   if (name == tr("Gray", "colormap"))
     return ColormapType::Gray;
-  else if (name == tr("Magma", "colormap"))
+  if (name == tr("Magma", "colormap"))
     return ColormapType::Magma;
   else if (name == tr("Inferno", "colormap"))
     return ColormapType::Inferno;
