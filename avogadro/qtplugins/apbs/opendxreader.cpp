@@ -37,10 +37,12 @@ bool OpenDxReader::readFile(const QString& fileName)
     if (line.isEmpty()) {
       // skip empty line
       continue;
-    } else if (line[0] == '#') {
+    }
+    if (line[0] == '#') {
       // skip comment line
       continue;
-    } else if (line.startsWith("object")) {
+    }
+    if (line.startsWith("object")) {
       if (dim[0] != 0)
         continue;
       QString unused;

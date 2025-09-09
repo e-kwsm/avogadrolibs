@@ -169,7 +169,8 @@ void GAMESSUSOutput::readBasisSet(std::istream& in)
     if (Core::contains(buffer, "TOTAL NUMBER OF BASIS SET SHELLS")) {
       // End of the basis set block.
       return;
-    } else if (parts.size() == 1) {
+    }
+    if (parts.size() == 1) {
       // Currently just incrememt the current atom, we should probably at least
       // verify the element matches in the future too.
       ++currentAtom;
