@@ -394,7 +394,7 @@ ScriptChargeModel::Format ScriptChargeModel::stringToFormat(
     return Cml;
   if (str == "mdl" || str == "mol")
     return Mdl;
-  else if (str == "sdf")
+  if (str == "sdf")
     return Sdf;
   else if (str == "pdb")
     return Pdb;
