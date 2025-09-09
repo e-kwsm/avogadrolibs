@@ -51,6 +51,9 @@ public:
                           Core::Molecule& molecule) override;
   [[nodiscard]] bool write(std::ostream& outStream,
                            const Core::Molecule& molecule) override;
+
+private:
+  static constexpr char COMMENT = '#';
 };
 
 } // namespace Avogadro::Io
