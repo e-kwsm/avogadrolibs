@@ -208,7 +208,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
     if (it->first == "totalEnergy")
       return tr("Total Energy (Hartree)",
                 "total electronic energy in Hartrees");
-    else if (it->first == "zpe")
+    if (it->first == "zpe")
       return tr("Zero Point Energy (kcal/mol)",
                 "zero point vibrational energy");
     else if (it->first == "enthalpy")

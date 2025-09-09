@@ -194,7 +194,7 @@ QString formatChargeType(QString type)
     return "EEM";
   if (type == "qeq")
     return "QEq";
-  else if (type.toLower() == "mulliken")
+  if (type.toLower() == "mulliken")
     return "Mulliken";
   else if (type.toLower() == "lowdin")
     return "Löwdin";
@@ -277,7 +277,8 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       if (index.column() == TorsionDataValue)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter); // dihedral angle
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
-    } else if (m_type == ResidueType) {
+    }
+    if (m_type == ResidueType) {
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
     } else if (m_type == ConformerType) {
       return toVariant(Qt::AlignRight |
