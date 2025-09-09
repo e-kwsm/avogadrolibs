@@ -212,8 +212,7 @@ BondTemplate<Molecule_T>::getOtherAtom(Index index) const
 {
   if (atom1().index() == index)
     return atom2();
-  else
-    return atom1();
+  return atom1();
 }
 
 template <class Molecule_T>
