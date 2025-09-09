@@ -56,7 +56,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   Vector3 v1(100.0, 0.0, 0.0);
   Vector3 v2(0.0, 100.0, 0.0);
   Vector3 v3(0.0, 0.0, 100.0);
-  std::optional<unsigned> periodic_parsed;
+  std::optional<unsigned> periodic_parsed, periodic_guessed;
 
   // we loop through each line until we hit $end or EOF
   string buffer;
@@ -217,6 +217,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
+      } else {
+        // $periodic does not appear yet
       }
       if (tokens.size() < 6) {
         appendError("Not enough tokens in this line: " + buffer);
@@ -281,6 +283,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     getline(inStream, buffer);
   } // done reading the file
+
+  if (periodic_parsed && periodic_guessed &&
+      *periodic_parsed != *periodic_guessed) {
+    appendError("Dimensionality guessed from $lattice/$cell is " +
+                std::to_string(*periodic_guessed) +
+                " but $periodic specifies " + std::to_string(*periodic_parsed));
+    return false;
+  }
 
   Core::UnitCell* cell = nullptr;
   std::string tmp;
