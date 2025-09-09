@@ -202,7 +202,7 @@ QString formatChargeType(QString type)
     return "Löwdin";
   else if (type.toLower() == "chelpg")
     return "CHELPG";
-  else if (type.toLower() == "hirshfeld")
+  if (type.toLower() == "hirshfeld")
     return "Hirshfeld";
   else if (type.toLower() == "resp")
     return "RESP";
