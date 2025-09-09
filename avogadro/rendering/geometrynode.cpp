@@ -57,8 +57,7 @@ Drawable* GeometryNode::drawable(size_t index)
 {
   if (index >= m_drawables.size())
     return nullptr;
-  else
-    return m_drawables[index];
+  return m_drawables[index];
 }
 
 void GeometryNode::clearDrawables()

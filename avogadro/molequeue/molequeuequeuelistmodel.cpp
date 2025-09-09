@@ -153,8 +153,7 @@ Qt::ItemFlags MoleQueueQueueListModel::flags(const QModelIndex& idx) const
 
   if (isQueueIndex(idx))
     return Qt::ItemIsEnabled;
-  else
-    return Qt::ItemIsSelectable | Qt::ItemIsEnabled;
+  return Qt::ItemIsSelectable | Qt::ItemIsEnabled;
 }
 
 QVariant MoleQueueQueueListModel::headerData(int, Qt::Orientation, int) const
@@ -173,7 +172,7 @@ QModelIndex MoleQueueQueueListModel::index(int row, int column,
     return createIndex(row, column, QueueInternalId);
   }
   // Program index
-  else if (isQueueIndex(parent_)) {
+  if (isQueueIndex(parent_)) {
     const QStringList& progs(m_programList[parent_.row()]);
     if (row < progs.size() && column == 0) {
       const QString& queue(m_queueList[parent_.row()]);
@@ -210,7 +209,7 @@ int MoleQueueQueueListModel::rowCount(const QModelIndex& parent_) const
   // Queue count:
   if (!parent_.isValid())
     return m_queueList.size();
-  else if (isQueueIndex(parent_))
+  if (isQueueIndex(parent_))
     return m_programList[parent_.row()].size();
   return 0;
 }

@@ -49,8 +49,7 @@ protected:
   {
     if (m_HOMOFirst)
       return left.row() < right.row();
-    else
-      return left.row() > right.row();
+    return left.row() > right.row();
   }
 
 private:

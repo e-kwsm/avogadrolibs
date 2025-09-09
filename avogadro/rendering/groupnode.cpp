@@ -68,12 +68,10 @@ Node* GroupNode::child(size_t index)
 {
   if (index >= m_children.size())
     return nullptr;
-  else {
-    // this is only used in test so we can us a O(n) function
-    auto it = m_children.begin();
-    it = std::next(it, index);
-    return it->node;
-  }
+  // this is only used in test so we can us a O(n) function
+  auto it = m_children.begin();
+  it = std::next(it, index);
+  return it->node;
 }
 
 void GroupNode::clear(NodeType ui)
