@@ -205,8 +205,7 @@ QString TemplateToolWidget::ligandString() const
     // check if it's "other"
     if (index == m_ui->groupComboBox->count() - 1)
       return m_ligandPath;
-    else
-      return m_groups[index];
+    return m_groups[index];
   }
 
   // tell us if we are using the clipboard
