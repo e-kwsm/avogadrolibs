@@ -429,7 +429,7 @@ QWidget* JsonWidget::createOptionWidget(const QJsonValue& option)
     return createBooleanWidget(obj);
   if (type == QLatin1String("text"))
     return createTextWidget(obj);
-  else if (type == QLatin1String("table"))
+  if (type == QLatin1String("table"))
     return createTableWidget(obj);
 
   qDebug() << "Unrecognized option type:" << type;
@@ -716,7 +716,7 @@ void JsonWidget::setOption(const QString& name, const QJsonValue& defaultValue)
     return setBooleanOption(name, defaultValue);
   if (type == QLatin1String("text"))
     return setTextOption(name, defaultValue);
-  else if (type == QLatin1String("table"))
+  if (type == QLatin1String("table"))
     return setTableOption(name, defaultValue);
 
   qWarning()
