@@ -217,7 +217,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Entropy (kcal/mol•K)");
     if (it->first == "gibbs")
       return tr("Gibbs Free Energy (kcal/mol)");
-    else if (it->first == "pointgroup")
+    if (it->first == "pointgroup")
       return tr("Point Group", "point group symmetry");
     else if (it != map.end())
       return QString::fromStdString(it->first);
