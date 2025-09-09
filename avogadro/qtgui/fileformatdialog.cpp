@@ -322,7 +322,8 @@ const Io::FileFormat* FileFormatDialog::selectFileFormat(
       }
       if (idents[i].startsWith("Avogadro")) {
         return ffs[i];
-      } else if (idents[i].startsWith("OpenBabel")) {
+      }
+      if (idents[i].startsWith("OpenBabel")) {
         return ffs[i];
       }
     }
