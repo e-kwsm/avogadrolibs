@@ -27,8 +27,7 @@ int MoleculeModel::rowCount(const QModelIndex& p) const
 {
   if (p.isValid())
     return 0;
-  else
-    return m_molecules.size();
+  return m_molecules.size();
 }
 
 int MoleculeModel::columnCount(const QModelIndex&) const
@@ -40,8 +39,7 @@ Qt::ItemFlags MoleculeModel::flags(const QModelIndex& idx) const
 {
   if (idx.column() == 0)
     return static_cast<Qt::ItemFlags>(Qt::ItemIsEditable | Qt::ItemIsEnabled);
-  else
-    return Qt::ItemIsEnabled;
+  return Qt::ItemIsEnabled;
 }
 
 bool MoleculeModel::setData(const QModelIndex& idx, const QVariant& value,
@@ -105,8 +103,7 @@ QVariant MoleculeModel::data(const QModelIndex& idx, int role) const
           return QString("%1 (%2)")
             .arg(QString::fromStdString(name))
             .arg(mol->formattedFormula());
-        else
-          return tr("Edit molecule");
+        return tr("Edit molecule");
       }
       case Qt::EditRole:
         return mol->data("name").toString().c_str();
