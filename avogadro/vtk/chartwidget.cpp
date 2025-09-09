@@ -249,7 +249,7 @@ vtkAxis* ChartWidget::axis(Axis a)
 {
   if (a == Axis::x)
     return m_chart->GetAxis(vtkAxis::BOTTOM);
-  else if (a == Axis::y)
+  if (a == Axis::y)
     return m_chart->GetAxis(vtkAxis::LEFT);
 
   return nullptr;
