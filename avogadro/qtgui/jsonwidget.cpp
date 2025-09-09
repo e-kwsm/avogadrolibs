@@ -423,7 +423,7 @@ QWidget* JsonWidget::createOptionWidget(const QJsonValue& option)
     return createFilePathWidget(obj);
   if (type == QLatin1String("integer"))
     return createIntegerWidget(obj);
-  else if (type == QLatin1String("float"))
+  if (type == QLatin1String("float"))
     return createFloatWidget(obj);
   else if (type == QLatin1String("boolean"))
     return createBooleanWidget(obj);
@@ -710,7 +710,7 @@ void JsonWidget::setOption(const QString& name, const QJsonValue& defaultValue)
     return setFilePathOption(name, defaultValue);
   if (type == QLatin1String("integer"))
     return setIntegerOption(name, defaultValue);
-  else if (type == QLatin1String("float"))
+  if (type == QLatin1String("float"))
     return setFloatOption(name, defaultValue);
   else if (type == QLatin1String("boolean"))
     return setBooleanOption(name, defaultValue);
