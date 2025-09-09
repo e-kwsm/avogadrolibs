@@ -202,7 +202,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Use cutoff?
-    else if (*it == "--cut") {
+    if (*it == "--cut") {
       ui->enableCutoffs->setChecked(true);
       continue;
     }
