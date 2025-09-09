@@ -328,9 +328,8 @@ bool DownloaderWidget::checkToInstall()
   }
   if (msgBox.clickedButton() == msgBox.button(QMessageBox::Yes)) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // The download url for Github is always a redirect to the actual zip
