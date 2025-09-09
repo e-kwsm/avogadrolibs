@@ -195,7 +195,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Number of Chains");
     if (it->first == " 9totalCharge")
       return tr("Net Charge");
-    else if (it->first == " 9totalSpinMultiplicity")
+    if (it->first == " 9totalSpinMultiplicity")
       return tr("Net Spin Multiplicity");
     else if (it->first == "dipoleMoment")
       return tr("Dipole Moment (Debye)");
