@@ -72,8 +72,7 @@ int LayerModel::rowCount(const QModelIndex& p) const
 {
   if (p.isValid())
     return 0;
-  else
-    return m_item;
+  return m_item;
 }
 
 int LayerModel::columnCount(const QModelIndex&) const
@@ -134,15 +133,13 @@ QVariant LayerModel::data(const QModelIndex& idx, int role) const
       if (role == Qt::DecorationRole) {
         if (visible(layer))
           return m_previewIcon;
-        else
-          return m_previewDashedIcon;
+        return m_previewDashedIcon;
       }
     } else if (idx.column() == ColumnType::Lock) {
       if (role == Qt::DecorationRole) {
         if (locked(layer))
           return m_lockIcon;
-        else
-          return m_openLockIcon;
+        return m_openLockIcon;
       }
     } else if (idx.column() == ColumnType::Remove) {
       if (role == Qt::DecorationRole)
@@ -168,7 +165,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
 
   if (name == "Ball and Stick")
     return tr("Ball and Stick");
-  else if (name == "Cartoons")
+  if (name == "Cartoons")
     return tr("Cartoons", "protein ribbon / cartoon rendering");
   else if (name == "Close Contacts")
     return tr("Close Contacts", "rendering of non-covalent close contacts");
