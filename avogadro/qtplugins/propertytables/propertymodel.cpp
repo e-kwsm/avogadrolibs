@@ -188,7 +188,7 @@ QString formatChargeType(QString type)
     return "MMFF94";
   if (type == "gasteiger")
     return "Gasteiger";
-  else if (type.startsWith("eem"))
+  if (type.startsWith("eem"))
     return "EEM";
   else if (type == "qeq")
     return "QEq";
@@ -245,7 +245,8 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       if (index.column() == BondDataLength)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter); // bond length
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
-    } else if (m_type == AngleType) {
+    }
+    if (m_type == AngleType) {
       if (index.column() == AngleDataValue)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter); // angle
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
