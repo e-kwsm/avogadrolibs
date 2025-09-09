@@ -252,7 +252,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Pair update frequency:
-    else if (*it == "--freq") {
+    if (*it == "--freq") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
