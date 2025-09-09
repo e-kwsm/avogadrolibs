@@ -15,6 +15,7 @@
 
 #include <iomanip>
 #include <istream>
+#include <optional>
 #include <ostream>
 #include <string>
 
@@ -54,6 +55,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   Vector3 v1(100.0, 0.0, 0.0);
   Vector3 v2(0.0, 100.0, 0.0);
   Vector3 v3(0.0, 0.0, 100.0);
+  std::optional<unsigned> periodic;
 
   // we loop through each line until we hit $end or EOF
   string buffer;
@@ -61,7 +63,13 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   while (inStream.good() && !buffer.empty()) {
     if (buffer.find("$end") != std::string::npos)
       break;
-    else if (buffer.find("$coord") != std::string::npos) {
+
+    if (buffer.find("$periodic") != std::string::npos) {
+      getline(inStream, buffer);
+      continue;
+    }
+
+    if (buffer.find("$coord") != std::string::npos) {
       // check if there's a conversion to be done
       Real coordConversion = BOHR_TO_ANGSTROM; // default is Bohr
       if (buffer.find("ang") != std::string::npos)
