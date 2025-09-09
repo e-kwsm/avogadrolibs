@@ -147,7 +147,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Use steepest descent?
-    else if (*it == "--sd") {
+    if (*it == "--sd") {
       ui->algorithm->setCurrentIndex(SteepestDescent);
       continue;
     }
