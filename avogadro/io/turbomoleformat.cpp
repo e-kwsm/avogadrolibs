@@ -57,13 +57,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   Vector3 v1(100.0, 0.0, 0.0);
   Vector3 v2(0.0, 100.0, 0.0);
   Vector3 v3(0.0, 0.0, 100.0);
-  std::optional<int> periodic;
+  std::optional<unsigned> periodic_parsed, periodic_guessed;
 
   constexpr auto COMMENT = '#';
 
   // we loop through each line until we hit $end or EOF
   string buffer;
   getline(inStream, buffer);
+
   while (inStream.good() && !buffer.empty()) {
     std::vector<string> tokens = split(rstrip(buffer, '#'), ' ');
     if (tokens.empty()) { // "# comment line"
@@ -85,12 +86,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         return false;
       }
       bool ok;
-      periodic = lexicalCast<int>(tokens[1], ok);
+      periodic_parsed = lexicalCast<unsigned>(tokens[1], ok);
       if (!ok) {
         appendError("Failed to parse: " + buffer);
         return false;
       }
-      if (periodic_parsed < 0 || periodic_parsed > 3) {
+      if (*periodic_parsed > 3u) {
         appendError("Invalid dimensionality: " + buffer);
         return false;
       }
@@ -189,7 +190,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
-      for (int line = 0; line < 3; ++line) {
+      for (unsigined line = 0; line < 3; ++line) {
         getline(inStream, buffer);
         tokens = split(rstrip(buffer, '#'), ' ');
         if (tokens.size() < 3)
