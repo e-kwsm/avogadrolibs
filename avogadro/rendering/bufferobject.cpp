@@ -53,8 +53,7 @@ BufferObject::ObjectType BufferObject::type() const
 {
   if (d->type == GL_ARRAY_BUFFER)
     return ArrayBuffer;
-  else
-    return ElementArrayBuffer;
+  return ElementArrayBuffer;
 }
 
 Index BufferObject::handle() const
