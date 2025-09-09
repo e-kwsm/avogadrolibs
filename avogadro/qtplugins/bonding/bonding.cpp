@@ -89,7 +89,8 @@ bool Bonding::handleCommand(const QString& command,
   if (command == "createBonds") {
     bond();
     return true;
-  } else if (command == "addBondOrders") {
+  }
+  if (command == "addBondOrders") {
     bondOrders();
     return true;
   }
