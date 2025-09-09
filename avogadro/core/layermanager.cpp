@@ -61,10 +61,9 @@ Layer& LayerManager::getMoleculeLayer(const Molecule* original,
     m_molToInfo[original] = molecule;
     m_molToInfo[copy] = molecule;
     return m_molToInfo[original]->layer;
-  } else {
-    m_molToInfo[copy] = it->second;
-    return it->second->layer;
   }
+  m_molToInfo[copy] = it->second;
+  return it->second->layer;
 }
 
 void LayerManager::deleteMolecule(const Molecule* mol)
