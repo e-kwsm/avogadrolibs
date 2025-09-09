@@ -309,11 +309,10 @@ MatrixX Molecule::partialCharges(const std::string& type) const
   auto search = m_partialCharges.find(type);
   if (search != m_partialCharges.end()) {
     return search->second; // value from the map
-  } else {
-    MatrixX charges(atomCount(), 1);
-    charges.fill(0.0);
-    return charges;
   }
+  MatrixX charges(atomCount(), 1);
+  charges.fill(0.0);
+  return charges;
 }
 
 std::set<std::string> Molecule::partialChargeTypes() const
@@ -363,8 +362,8 @@ void Molecule::removeConstraint(Index a, Index b, Index c, Index d)
         it->dIndex() == d) {
       it = m_constraints.erase(it);
       return;
-    } else
-      ++it;
+    }
+    ++it;
   }
 }
 
@@ -842,16 +841,14 @@ Mesh* Molecule::mesh(Index index)
 {
   if (index < static_cast<Index>(m_meshes.size()))
     return m_meshes[index];
-  else
-    return nullptr;
+  return nullptr;
 }
 
 const Mesh* Molecule::mesh(Index index) const
 {
   if (index < static_cast<Index>(m_meshes.size()))
     return m_meshes[index];
-  else
-    return nullptr;
+  return nullptr;
 }
 
 void Molecule::clearMeshes()
@@ -872,16 +869,14 @@ Cube* Molecule::cube(Index index)
 {
   if (index < static_cast<Index>(m_cubes.size()))
     return m_cubes[index];
-  else
-    return nullptr;
+  return nullptr;
 }
 
 const Cube* Molecule::cube(Index index) const
 {
   if (index < static_cast<Index>(m_cubes.size()))
     return m_cubes[index];
-  else
-    return nullptr;
+  return nullptr;
 }
 
 void Molecule::clearCubes()
