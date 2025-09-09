@@ -231,7 +231,7 @@ QVariant MolecularModel::data(const QModelIndex& index, int role) const
   if (key == " 9totalSpinMultiplicity")
     return QVariant::fromValue(
       static_cast<int>(m_molecule->totalSpinMultiplicity()));
-  else if (key == "pointgroup")
+  if (key == "pointgroup")
     return formatPointGroup(it->second.toString());
 
   return QString::fromStdString(it->second.toString());
@@ -270,7 +270,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Molecular Mass (g/mol)");
     if (it->first == " 3formula")
       return tr("Chemical Formula");
-    else if (it->first == " 4atoms")
+    if (it->first == " 4atoms")
       return tr("Number of Atoms");
     else if (it->first == " 5bonds")
       return tr("Number of Bonds");
