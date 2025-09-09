@@ -61,7 +61,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   while (inStream.good() && !buffer.empty()) {
     if (buffer.find("$end") != std::string::npos)
       break;
-    else if (buffer.find("$coord") != std::string::npos) {
+    if (buffer.find("$coord") != std::string::npos) {
       // check if there's a conversion to be done
       Real coordConversion = BOHR_TO_ANGSTROM; // default is Bohr
       if (buffer.find("ang") != std::string::npos)
