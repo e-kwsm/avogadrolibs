@@ -82,8 +82,7 @@ QVariant ConstraintsModel::data(const QModelIndex& index, int role) const
           return QString("%1 Å").arg(currentConstraint.value(), 0, 'f', 3);
         if (currentConstraint.type() == 2 || currentConstraint.type() == 3)
           return QString("%1 °").arg(currentConstraint.value(), 0, 'f', 3);
-        else
-          return "--";
+        return "--";
         break;
       case 2:
         if (aIndex != MaxIndex)
