@@ -350,9 +350,9 @@ inline BatchJob::JobState BatchJob::stringToState(const QString& str)
     return None;
   if (str == QLatin1String("Rejected"))
     return Rejected;
-  else if (str == QLatin1String("Accepted"))
+  if (str == QLatin1String("Accepted"))
     return Accepted;
-  else if (str == QLatin1String("QueuedLocal"))
+  if (str == QLatin1String("QueuedLocal"))
     return QueuedLocal;
   else if (str == QLatin1String("Submitted"))
     return Submitted;
