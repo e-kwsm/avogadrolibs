@@ -186,7 +186,8 @@ bool Crystal::handleCommand(const QString& command,
   if (command == "wrapUnitCell") {
     wrapAtomsToCell();
     return true;
-  } else if (command == "standardCrystalOrientation") {
+  }
+  if (command == "standardCrystalOrientation") {
     standardOrientation();
     return true;
   }
