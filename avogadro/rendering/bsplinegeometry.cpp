@@ -17,9 +17,8 @@ float B(float i, float k, float t, float knot)
   if (k == 1) {
     if (ti <= t && t < ti1) {
       return 1.0f;
-    } else {
-      return 0.0f;
     }
+    return 0.0f;
   }
 
   float tik = knot * (i + k);         // t_(i+k)
