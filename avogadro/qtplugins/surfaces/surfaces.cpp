@@ -208,8 +208,8 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
   if (command.compare("renderSolventAccessible", Qt::CaseInsensitive) == 0) {
     calculateEDT(SolventAccessible, cubeResolution);
     return true;
-  } else if (command.compare("renderSolventExcluded", Qt::CaseInsensitive) ==
-             0) {
+  }
+  if (command.compare("renderSolventExcluded", Qt::CaseInsensitive) == 0) {
     calculateEDT(SolventExcluded, cubeResolution);
     return true;
   } else if ((command.compare("renderOrbital", Qt::CaseInsensitive) == 0) ||
@@ -785,7 +785,7 @@ ColormapType Surfaces::getColormapFromString(const QString& name) const
     return ColormapType::Parula;
   if (name == tr("Heat", "colormap"))
     return ColormapType::Heat;
-  else if (name == tr("Hot", "colormap"))
+  if (name == tr("Hot", "colormap"))
     return ColormapType::Hot;
   else if (name == tr("Gray", "colormap"))
     return ColormapType::Gray;
