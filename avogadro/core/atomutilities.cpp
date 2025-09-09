@@ -92,7 +92,8 @@ Vector3 AtomUtilities::generateNewBondVector(
   if (currentValence == 0) {
     newPos = Vector3::Random().normalized();
     return newPos;
-  } else if (currentValence == 1) {
+  }
+  if (currentValence == 1) {
     // One bonded atom
     const Vector3& bond1 = allVectors[0];
 
