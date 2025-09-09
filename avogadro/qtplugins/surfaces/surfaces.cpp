@@ -221,7 +221,8 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
   if (command.compare("renderElectronDensity", Qt::CaseInsensitive) == 0) {
     calculateQM(ElectronDensity, index, beta, isoValue, cubeResolution);
     return true;
-  } else if (command.compare("renderSpinDensity", Qt::CaseInsensitive) == 0) {
+  }
+  if (command.compare("renderSpinDensity", Qt::CaseInsensitive) == 0) {
     calculateQM(SpinDensity, index, beta, isoValue, cubeResolution);
     return true;
   }
@@ -792,7 +793,7 @@ ColormapType Surfaces::getColormapFromString(const QString& name) const
     return ColormapType::Gray;
   if (name == tr("Magma", "colormap"))
     return ColormapType::Magma;
-  else if (name == tr("Inferno", "colormap"))
+  if (name == tr("Inferno", "colormap"))
     return ColormapType::Inferno;
   else if (name == tr("Plasma", "colormap"))
     return ColormapType::Plasma;
