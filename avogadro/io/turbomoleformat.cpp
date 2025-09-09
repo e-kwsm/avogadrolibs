@@ -148,6 +148,55 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       tokens = split(rstrip(buffer, '#'), ' ');
+      const auto ntokens = tokens.size();
+      auto is_line_valid = [&](unsigned expected) -> bool {
+        if (ntokens < expected) {
+          appendError("Not enough tokens in this line: " + buffer);
+          return false;
+        }
+        if (ntokens > expected) {
+          appendError("Extra tokens in this line: " + buffer);
+          return false;
+        }
+        return true;
+      };
+
+      if (periodic_parsed) {
+        // $periodic appeared
+        switch (*periodic_parsed) {
+          case 1:
+            if (ntokens < 1u) {
+              appendError("Not enough tokens in this line: " + buffer);
+              return false;
+            }
+            if (ntokens > 1u && tokens[1][0] != '#') {
+              appendError("Extra tokens in this line: " + buffer);
+              return false;
+            }
+            a = lexicalCast<double>(tokens[0]) * cellConversion;
+            break;
+          case 2:
+            if (ntokens < 3u) {
+              appendError("Not enough tokens in this line: " + buffer);
+              return false;
+            }
+            if (ntokens > 3u && tokens[3][0] != '#') {
+              appendError("Extra tokens in this line: " + buffer);
+              return false;
+            }
+            a = lexicalCast<double>(tokens[0]) * cellConversion;
+            b = lexicalCast<double>(tokens[1]) * cellConversion;
+            gamma = lexicalCast<double>(tokens[2]) * DEG_TO_RAD;
+            break;
+          case 3:
+            break;
+          default:
+            assert(periodic_parsed == 0);
+            hasCell = false;
+            std::cerr << "Ignore $cell since '$periodic 0' (non periodic) "
+                         "is specified\n";
+        }
+      }
       if (tokens.size() < 6) {
         appendError("Not enough tokens in this line: " + buffer);
         return false;
