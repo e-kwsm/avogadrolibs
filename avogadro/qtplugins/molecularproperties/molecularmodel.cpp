@@ -185,7 +185,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Chemical Formula");
     if (it->first == " 4atoms")
       return tr("Number of Atoms");
-    else if (it->first == " 5bonds")
+    if (it->first == " 5bonds")
       return tr("Number of Bonds");
     else if (it->first == " 6coordinateSets")
       return tr("Coordinate Sets");
