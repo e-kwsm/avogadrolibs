@@ -210,7 +210,7 @@ ScriptChargeModel::Format ScriptChargeModel::stringToFormat(
     return Sdf;
   if (str == "pdb")
     return Pdb;
-  else if (str == "xyz")
+  if (str == "xyz")
     return Xyz;
   return NotUsed;
 }

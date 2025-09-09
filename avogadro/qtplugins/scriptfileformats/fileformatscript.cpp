@@ -139,7 +139,7 @@ FileFormatScript::Format FileFormatScript::stringToFormat(
     return Pdb;
   if (str == "sdf")
     return Sdf;
-  else if (str == "xyz")
+  if (str == "xyz")
     return Xyz;
   return NotUsed;
 }
