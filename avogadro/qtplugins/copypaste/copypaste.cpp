@@ -83,8 +83,7 @@ QStringList CopyPaste::menuPath(QAction* action) const
   if (action->text() != tr("SMILES") && action->text() != tr("InChI") &&
       action->text() != tr("XYZ"))
     return QStringList() << tr("&Edit");
-  else
-    return QStringList() << tr("&Edit") << tr("Copy As");
+  return QStringList() << tr("&Edit") << tr("Copy As");
 }
 
 void CopyPaste::setMolecule(QtGui::Molecule* mol)
