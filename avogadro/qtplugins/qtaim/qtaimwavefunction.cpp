@@ -38,9 +38,8 @@ bool QTAIMWavefunction::initializeWithWFNFile(const QString& fileName)
     m_initializationSuccessful = false;
     m_fileDoesNotExist = true;
     return m_initializationSuccessful;
-  } else {
-    m_fileDoesNotExist = false;
   }
+  m_fileDoesNotExist = false;
 
   bool success = file.open(QIODevice::ReadOnly | QIODevice::Text);
 
@@ -48,9 +47,8 @@ bool QTAIMWavefunction::initializeWithWFNFile(const QString& fileName)
     m_initializationSuccessful = false;
     m_ioError = true;
     return m_initializationSuccessful;
-  } else {
-    m_ioError = false;
   }
+  m_ioError = false;
 
   m_fileName = fileName;
 
@@ -79,9 +77,8 @@ bool QTAIMWavefunction::initializeWithWFNFile(const QString& fileName)
     m_initializationSuccessful = false;
     m_tooManyNuclei = true;
     return m_initializationSuccessful;
-  } else {
-    m_tooManyNuclei = false;
   }
+  m_tooManyNuclei = false;
 
   m_xNuclearCoordinates.resize(m_numberOfNuclei);
   m_yNuclearCoordinates.resize(m_numberOfNuclei);

@@ -313,14 +313,16 @@ bool AlignTool::handleCommand(const QString& command,
       if (atomIndex < m_molecule->atomCount())
         shiftAtomToOrigin(atomIndex);
       return true;
-    } else if (options.contains("index")) {
+    }
+    if (options.contains("index")) {
       Index atomIndex = options["index"].toInt();
       if (atomIndex < m_molecule->atomCount())
         shiftAtomToOrigin(atomIndex);
       return true;
     }
     return false;
-  } else if (command == "alignAtom") {
+  }
+  if (command == "alignAtom") {
     int axis = -1;
     if (options.contains("axis")) {
       QVariant axisData = options["axis"];
@@ -347,7 +349,8 @@ bool AlignTool::handleCommand(const QString& command,
         if (atomIndex < m_molecule->atomCount())
           alignAtomToAxis(atomIndex, axis);
         return true;
-      } else if (options.contains("index")) {
+      }
+      if (options.contains("index")) {
         Index atomIndex = options["index"].toInt();
         if (atomIndex < m_molecule->atomCount())
           alignAtomToAxis(atomIndex, axis);

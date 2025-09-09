@@ -140,8 +140,7 @@ public:
   {
     if (type == Paired || type == Alpha)
       return m_symmetryLabels[0];
-    else
-      return m_symmetryLabels[1];
+    return m_symmetryLabels[1];
   }
 
   /**
@@ -171,32 +170,28 @@ public:
   {
     if (type == Paired || type == Alpha)
       return m_moEnergy[0];
-    else
-      return m_moEnergy[1];
+    return m_moEnergy[1];
   }
 
   std::vector<double> moEnergy(ElectronType type = Paired) const
   {
     if (type == Paired || type == Alpha)
       return m_moEnergy[0];
-    else
-      return m_moEnergy[1];
+    return m_moEnergy[1];
   }
 
   std::vector<unsigned char>& moOccupancy(ElectronType type = Paired)
   {
     if (type == Paired || type == Alpha)
       return m_moOccupancy[0];
-    else
-      return m_moOccupancy[1];
+    return m_moOccupancy[1];
   }
 
   std::vector<unsigned char> moOccupancy(ElectronType type = Paired) const
   {
     if (type == Paired || type == Alpha)
       return m_moOccupancy[0];
-    else
-      return m_moOccupancy[1];
+    return m_moOccupancy[1];
   }
 
 protected:
