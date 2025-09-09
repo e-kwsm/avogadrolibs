@@ -80,7 +80,7 @@ QVariant ConstraintsModel::data(const QModelIndex& index, int role) const
 
         if (currentConstraint.type() == 1)
           return QString("%1 Å").arg(currentConstraint.value(), 0, 'f', 3);
-        else if (currentConstraint.type() == 2 || currentConstraint.type() == 3)
+        if (currentConstraint.type() == 2 || currentConstraint.type() == 3)
           return QString("%1 °").arg(currentConstraint.value(), 0, 'f', 3);
         else
           return "--";
@@ -177,8 +177,7 @@ Core::Constraint ConstraintsModel::constraint(int index)
 {
   if (index < 0 || index >= m_constraints.size())
     return Constraint(MaxIndex, MaxIndex, MaxIndex, MaxIndex, 0.0);
-  else
-    return m_constraints[index];
+  return m_constraints[index];
 }
 
 } // namespace QtPlugins

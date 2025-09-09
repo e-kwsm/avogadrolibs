@@ -57,8 +57,7 @@ qint64 signOfARealNumber(qreal x)
     return 1;
   if (x == 0.)
     return 0;
-  else
-    return -1;
+  return -1;
 }
 
 qint64 signatureOfASymmetricThreeByThreeMatrix(const Matrix<qreal, 3, 3>& A)
