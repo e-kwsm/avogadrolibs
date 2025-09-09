@@ -293,7 +293,7 @@ const Io::FileFormat* FileFormatDialog::selectFileFormat(
 {
   if (ffs.empty())
     return nullptr;
-  else if (ffs.size() == 1)
+  if (ffs.size() == 1)
     return ffs[0];
 
   // If more than one format found, prompt user to select one.
@@ -319,7 +319,8 @@ const Io::FileFormat* FileFormatDialog::selectFileFormat(
     for (int i = 0; i < static_cast<int>(ffs.size()); ++i) {
       if (idents[i].startsWith("User")) {
         return ffs[i];
-      } else if (idents[i].startsWith("Avogadro")) {
+      }
+      if (idents[i].startsWith("Avogadro")) {
         return ffs[i];
       } else if (idents[i].startsWith("OpenBabel")) {
         return ffs[i];
