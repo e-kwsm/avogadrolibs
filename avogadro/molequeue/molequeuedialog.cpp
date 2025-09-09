@@ -130,15 +130,13 @@ MoleQueueDialog::SubmitStatus MoleQueueDialog::submitJob(
         tr("The job has been rejected by MoleQueue: %1", "%1 = error")
           .arg(dlg.widget().submissionError()));
       continue;
-
-    } else {
-      if (requestId >= 0) {
-        if (submissionRequestId != nullptr)
-          *submissionRequestId = requestId;
-        return SubmissionAttempted;
-      }
-      return SubmissionFailed;
     }
+    if (requestId >= 0) {
+      if (submissionRequestId != nullptr)
+        *submissionRequestId = requestId;
+      return SubmissionAttempted;
+    }
+    return SubmissionFailed;
   }
 }
 
