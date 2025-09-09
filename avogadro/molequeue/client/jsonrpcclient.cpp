@@ -103,20 +103,19 @@ void JsonRpcClient::readPacket(const QByteArray message)
     // We need a valid object, something bad happened.
     emit badPacketReceived("Packet did not contain a valid JSON object.");
     return;
-  } else {
-    QJsonObject root = reader.object();
-    if (root["method"] != QJsonValue::Null) {
-      if (root["id"] != QJsonValue::Null)
-        emit badPacketReceived("Received a request packet for the client.");
-      else
-        emit notificationReceived(root);
-    }
-    if (root["result"] != QJsonValue::Null) {
-      // This is a result packet, and should emit a signal.
-      emit resultReceived(root);
-    } else if (root["error"] != QJsonValue::Null) {
-      emit errorReceived(root);
-    }
+  }
+  QJsonObject root = reader.object();
+  if (root["method"] != QJsonValue::Null) {
+    if (root["id"] != QJsonValue::Null)
+      emit badPacketReceived("Received a request packet for the client.");
+    else
+      emit notificationReceived(root);
+  }
+  if (root["result"] != QJsonValue::Null) {
+    // This is a result packet, and should emit a signal.
+    emit resultReceived(root);
+  } else if (root["error"] != QJsonValue::Null) {
+    emit errorReceived(root);
   }
 }
 

@@ -366,10 +366,9 @@ inline BatchJob::JobState BatchJob::stringToState(const QString& str)
     return Finished;
   if (str == QLatin1String("Canceled"))
     return Canceled;
-  else if (str == QLatin1String("Error"))
+  if (str == QLatin1String("Error"))
     return Error;
-  else
-    return Unknown;
+  return Unknown;
 }
 
 inline QString BatchJob::stateToString(BatchJob::JobState state)
