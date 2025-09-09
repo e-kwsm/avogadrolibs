@@ -20,8 +20,7 @@ bool Client::isConnected() const
 {
   if (!m_jsonRpcClient)
     return false;
-  else
-    return m_jsonRpcClient->isConnected();
+  return m_jsonRpcClient->isConnected();
 }
 
 bool Client::connectToServer(const QString& serverName)
