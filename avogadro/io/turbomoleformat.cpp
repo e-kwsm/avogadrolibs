@@ -192,6 +192,32 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
+      } else { // $periodic does not appear yet
+        switch (ntokens) {
+          case 1:
+            periodic_guessed = 1;
+            a = tokens_converted[0] * cellConversion;
+            break;
+          case 3:
+            periodic_guessed = 2;
+            a = tokens_converted[0] * cellConversion;
+            b = tokens_converted[1] * cellConversion;
+            gamma = tokens_converted[2] * DEG_TO_RAD;
+            break;
+          case 6:
+            periodic_guessed = 3;
+            a = tokens_converted[0] * cellConversion;
+            b = tokens_converted[1] * cellConversion;
+            c = tokens_converted[2] * cellConversion;
+            alpha = tokens_converted[3] * DEG_TO_RAD;
+            beta = tokens_converted[4] * DEG_TO_RAD;
+            gamma = tokens_converted[5] * DEG_TO_RAD;
+            break;
+          default:
+            appendError("Cannot determine dimensionality from $cell: " +
+                        buffer);
+            return false;
+        }
       }
 
     } else if (buffer.find("$lattice") != std::string::npos) {
@@ -224,6 +250,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     getline(inStream, buffer);
   } // done reading the file
+
+  if (periodic_parsed && periodic_guessed &&
+      *periodic_parsed != *periodic_guessed) {
+    appendError("Dimensionality guessed from $lattice/$cell is " +
+                std::to_string(*periodic_guessed) +
+                " but $periodic specifies " + std::to_string(*periodic_parsed));
+    return false;
+  }
 
   Core::UnitCell* cell = nullptr;
   std::string tmp;
