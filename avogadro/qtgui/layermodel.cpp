@@ -189,7 +189,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Symmetry Elements");
   if (name == "Van der Waals")
     return tr("Van der Waals");
-  else if (name == "Wireframe")
+  if (name == "Wireframe")
     return tr("Wireframe");
 
   qDebug() << "LayerModel: name didn't match: " << name.c_str();
