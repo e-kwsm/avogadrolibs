@@ -137,7 +137,7 @@ FileFormatScript::Format FileFormatScript::stringToFormat(
     return Mdl;
   if (str == "pdb")
     return Pdb;
-  else if (str == "sdf")
+  if (str == "sdf")
     return Sdf;
   else if (str == "xyz")
     return Xyz;
