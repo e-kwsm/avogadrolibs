@@ -135,7 +135,7 @@ QVariant MolecularModel::data(const QModelIndex& index, int role) const
   auto key = it->first;
   if (key == " 6coordinateSets")
     return QVariant::fromValue(m_molecule->coordinate3dCount());
-  else if (key == " 7residues")
+  if (key == " 7residues")
     return QVariant::fromValue(m_molecule->residueCount());
   else if (key == " 9totalCharge")
     return QVariant::fromValue(static_cast<int>(m_molecule->totalCharge()));
@@ -169,7 +169,8 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
 
   if (orientation == Qt::Horizontal) {
     return tr("Property");
-  } else if (orientation == Qt::Vertical) {
+  }
+  if (orientation == Qt::Vertical) {
 
     const auto map = m_propertiesCache;
     auto it = map.begin();
@@ -279,7 +280,8 @@ bool MolecularModel::setData(const QModelIndex& index, const QVariant& value,
     m_molecule->setData("totalCharge", value.toInt());
     emit dataChanged(index, index);
     return true;
-  } else if (key == " 9totalSpinMultiplicity") {
+  }
+  if (key == " 9totalSpinMultiplicity") {
     int spin = value.toInt();
     if (spin < 1)
       return false;
