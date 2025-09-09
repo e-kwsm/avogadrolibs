@@ -185,7 +185,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("QTAIM", "quantum theory of atoms in molecules");
   if (name == "Symmetry Elements")
     return tr("Symmetry Elements");
-  else if (name == "Van der Waals")
+  if (name == "Van der Waals")
     return tr("Van der Waals");
   else if (name == "Van der Waals (AO)")
     return tr("Van der Waals (AO)", "ambient occlusion");
