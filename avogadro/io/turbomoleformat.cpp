@@ -152,20 +152,72 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       tokens = split(rstrip(buffer, '#'), ' ');
-      if (tokens.size() < 6) {
-        appendError("Not enough tokens in this line: " + buffer);
+      const auto tokens_converted =
+        lexicalCast<double>(tokens.begin(), tokens.end());
+      if (!tokens_converted) {
+        appendError("Failed to parse: " + buffer);
         return false;
       }
-      if (auto tmp = lexicalCast<double>(tokens.begin(), tokens.begin() + 6)) {
-        a = tmp->at(0) * cellConversion;
-        b = tmp->at(1) * cellConversion;
-        c = tmp->at(2) * cellConversion;
-        alpha = tmp->at(3) * DEG_TO_RAD;
-        beta = tmp->at(4) * DEG_TO_RAD;
-        gamma = tmp->at(5) * DEG_TO_RAD;
+
+      const auto ntokens = tokens_converted->size();
+      auto is_line_valid = [&](unsigned expected) -> bool {
+        if (ntokens < expected) {
+          appendError("Not enough tokens in this line: " + buffer);
+          return false;
+        }
+        if (ntokens > expected) {
+          appendError("Extra tokens in this line: " + buffer);
+          return false;
+        }
+        return true;
+      };
+
+      auto set_cell_vars = [&](unsigned periodic) {
+        switch (periodic) {
+          case 1:
+            a = tokens_converted->at(0) * cellConversion;
+            break;
+          case 2:
+            a = tokens_converted->at(0) * cellConversion;
+            b = tokens_converted->at(1) * cellConversion;
+            gamma = tokens_converted->at(2) * DEG_TO_RAD;
+            break;
+          case 3:
+            a = tokens_converted->at(0) * cellConversion;
+            b = tokens_converted->at(1) * cellConversion;
+            c = tokens_converted->at(2) * cellConversion;
+            alpha = tokens_converted->at(3) * DEG_TO_RAD;
+            beta = tokens_converted->at(4) * DEG_TO_RAD;
+            gamma = tokens_converted->at(5) * DEG_TO_RAD;
+            break;
+          default:
+            assert(periodic == 0);
+        }
+      };
+
+      if (periodic_parsed) {
+        // $periodic appeared
+        switch (*periodic_parsed) {
+          case 1:
+            if (!is_line_valid(1))
+              return false;
+            break;
+          case 2:
+            if (!is_line_valid(3))
+              return false;
+            break;
+          case 3:
+            if (!is_line_valid(6))
+              return false;
+            break;
+          default:
+            hasCell = false;
+            std::cerr << "Ignore $cell since '$periodic 0' (non periodic) "
+                         "is specified\n";
+        }
+        set_cell_vars(*periodic_parsed);
       } else {
-        appendError("Failed to parse this line: " + buffer);
-        return false;
+        // $periodic does not appear yet
       }
 
     } else if (tokens[0] == "$lattice") {
