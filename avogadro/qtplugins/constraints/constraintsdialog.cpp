@@ -359,13 +359,11 @@ void ConstraintsDialog::addConstraint()
   Index a, b, c, d;
   if (atomIdA < 1 || atomIdA > m_molecule->atomCount())
     return;
-  else
-    a = atomIdA - 1;
+  a = atomIdA - 1;
 
   if (atomIdB < 1 || atomIdB > m_molecule->atomCount())
     return;
-  else
-    b = atomIdB - 1;
+  b = atomIdB - 1;
 
   if (atomIdC < 1 || atomIdC > m_molecule->atomCount())
     c = MaxIndex;
