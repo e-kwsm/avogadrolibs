@@ -1873,27 +1873,27 @@ void QTAIMLSODAIntegrator::stoda(int neq, double* y)
       hold = h;
       jstart = 1;
       break;
-    } else {
-      rh = 0.1;
-      rh = max(hmin / fabs(h), rh);
-      h *= rh;
-      yp1 = yh[1];
-      for (i = 1; i <= n; i++)
-        y[i] = yp1[i];
-      f(neq, tn, y, savf);
-      nfe++;
-      yp1 = yh[2];
-      for (i = 1; i <= n; i++)
-        yp1[i] = h * savf[i];
-      ipup = miter;
-      ialth = 5;
-      if (nq == 1)
-        continue;
-      nq = 1;
-      l = 2;
-      resetcoeff();
-      continue;
     }
+    rh = 0.1;
+    rh = max(hmin / fabs(h), rh);
+    h *= rh;
+    yp1 = yh[1];
+    for (i = 1; i <= n; i++)
+      y[i] = yp1[i];
+    f(neq, tn, y, savf);
+    nfe++;
+    yp1 = yh[2];
+    for (i = 1; i <= n; i++)
+      yp1[i] = h * savf[i];
+    ipup = miter;
+    ialth = 5;
+    if (nq == 1)
+      continue;
+    nq = 1;
+    l = 2;
+    resetcoeff();
+    continue;
+
     /*   end else -- kflag <= -3 */
     /*   end error failure handling   */
   } /*   end outer while   */
