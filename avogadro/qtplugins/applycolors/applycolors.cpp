@@ -108,7 +108,7 @@ ColormapType ApplyColors::getColormapFromString(const QString& name) const
     return ColormapType::Parula;
   if (name == tr("Heat", "colormap"))
     return ColormapType::Heat;
-  else if (name == tr("Hot", "colormap"))
+  if (name == tr("Hot", "colormap"))
     return ColormapType::Hot;
   else if (name == tr("Gray", "colormap"))
     return ColormapType::Gray;
@@ -152,8 +152,7 @@ QStringList ApplyColors::menuPath(QAction* action) const
     return QStringList() << tr("&View") << tr("Color Atoms");
   if (action->data() == residueColors)
     return QStringList() << tr("&View") << tr("Color Residues");
-  else
-    return QStringList();
+  return QStringList();
 }
 
 void ApplyColors::setMolecule(QtGui::Molecule* mol)
