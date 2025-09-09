@@ -137,6 +137,47 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       std::vector<string> tokens(split(buffer, ' '));
+      const auto ntokens = tokens.size();
+      auto is_line_valid = [&]() {
+        appendError("Not enough tokens in this line: " + buffer);
+      };
+
+      if (periodic_parsed) {
+        switch (*periodic_parsed) {
+          case 1:
+            // $lattice a
+            if (ntokens < 1u) {
+              appendError("Not enough tokens in this line: " + buffer);
+              return false;
+            }
+            if (ntokens > 1u && tokens[1][0] != '#') {
+              appendError("Extra tokens in this line: " + buffer);
+              return false;
+            }
+            a = lexicalCast<double>(tokens[0]) * cellConversion;
+            break;
+          case 2:
+            // $ lattice a b gamma
+            if (ntokens < 3u) {
+              appendError("Not enough tokens in this line: " + buffer);
+              return false;
+            }
+            if (ntokens > 3u && tokens[3][0] != '#') {
+              appendError("Extra tokens in this line: " + buffer);
+              return false;
+            }
+            a = lexicalCast<double>(tokens[0]) * cellConversion;
+            b = lexicalCast<double>(tokens[1]) * cellConversion;
+            gamma = lexicalCast<double>(tokens[2]) * DEG_TO_RAD;
+            break;
+          case 3:
+            break;
+          default:
+            assert(periodic_parsed == 0);
+            std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
+                         "is specified\n";
+        }
+      }
       if (tokens.size() < 6) {
         appendError("Not enough tokens in this line: " + buffer);
         return false;
