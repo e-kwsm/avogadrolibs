@@ -137,7 +137,7 @@ QVariant MolecularModel::data(const QModelIndex& index, int role) const
     return QVariant::fromValue(m_molecule->coordinate3dCount());
   if (key == " 7residues")
     return QVariant::fromValue(m_molecule->residueCount());
-  else if (key == " 9totalCharge")
+  if (key == " 9totalCharge")
     return QVariant::fromValue(static_cast<int>(m_molecule->totalCharge()));
   else if (key == " 9totalSpinMultiplicity")
     return QVariant::fromValue(
@@ -177,7 +177,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
     std::advance(it, section);
     if (it->first == " 1name")
       return tr("Molecule Name");
-    else if (it->first == " 2mass")
+    if (it->first == " 2mass")
       return tr("Molecular Mass (g/mol)");
     else if (it->first == " 2monoisotopicMass")
       return tr("Monoisotopic Mass (g/mol)");
@@ -224,8 +224,8 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
 
     return QVariant();
 
-  } else // row headers
-    return QVariant();
+  } // row headers
+  return QVariant();
 
   return QVariant();
 }
