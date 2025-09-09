@@ -189,7 +189,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Number of Bonds");
     if (it->first == " 6coordinateSets")
       return tr("Coordinate Sets");
-    else if (it->first == " 7residues")
+    if (it->first == " 7residues")
       return tr("Number of Residues");
     else if (it->first == " 8chains")
       return tr("Number of Chains");
