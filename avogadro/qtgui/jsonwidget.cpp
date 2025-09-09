@@ -417,7 +417,7 @@ QWidget* JsonWidget::createOptionWidget(const QJsonValue& option)
 
   if (type == QLatin1String("stringList"))
     return createStringListWidget(obj);
-  else if (type == QLatin1String("string"))
+  if (type == QLatin1String("string"))
     return createStringWidget(obj);
   else if (type == QLatin1String("filePath"))
     return createFilePathWidget(obj);
@@ -704,7 +704,7 @@ void JsonWidget::setOption(const QString& name, const QJsonValue& defaultValue)
 
   if (type == QLatin1String("stringList"))
     return setStringListOption(name, defaultValue);
-  else if (type == QLatin1String("string"))
+  if (type == QLatin1String("string"))
     return setStringOption(name, defaultValue);
   else if (type == QLatin1String("filePath"))
     return setFilePathOption(name, defaultValue);
