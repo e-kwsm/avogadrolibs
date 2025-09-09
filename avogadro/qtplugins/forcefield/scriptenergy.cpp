@@ -572,7 +572,7 @@ ScriptEnergy::Format ScriptEnergy::stringToFormat(const std::string& str)
     return Pdb;
   if (str == "sdf")
     return Sdf;
-  else if (str == "xyz")
+  if (str == "xyz")
     return Xyz;
   return NotUsed;
 }
