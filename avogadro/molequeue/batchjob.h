@@ -348,7 +348,7 @@ inline BatchJob::JobState BatchJob::stringToState(const QString& str)
 {
   if (str == QLatin1String("None"))
     return None;
-  else if (str == QLatin1String("Rejected"))
+  if (str == QLatin1String("Rejected"))
     return Rejected;
   else if (str == QLatin1String("Accepted"))
     return Accepted;

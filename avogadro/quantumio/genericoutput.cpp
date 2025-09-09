@@ -63,7 +63,8 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
       // ORCA reader
       reader = new ORCAOutput;
       break;
-    } else if (line.find("xtb:") != std::string::npos) {
+    }
+    if (line.find("xtb:") != std::string::npos) {
       // xtb reader
       reader = new Io::XyzFormat;
       break;
