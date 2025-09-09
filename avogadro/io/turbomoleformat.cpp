@@ -151,45 +151,35 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       }
 
       const auto ntokens = tokens.size();
-      auto is_line_valid = [&]() {
-        appendError("Not enough tokens in this line: " + buffer);
+      auto is_line_valid = [&](unsigned n) -> bool {
+        if (ntokens < n) {
+          appendError("Not enough tokens in this line: " + buffer);
+          return false;
+        }
+        if (ntokens > n && tokens[n][0] != COMMENT) {
+          appendError("Extra tokens in this line: " + buffer);
+          return false;
+        }
+        return true;
       };
 
-      if (periodic_parsed) {
+      if (periodic_parsed) { // $periodic appeared
         switch (*periodic_parsed) {
           case 1:
-            if (ntokens < 1u) {
-              appendError("Not enough tokens in this line: " + buffer);
+            if (!is_line_valid(1u))
               return false;
-            }
-            if (ntokens > 1u && tokens[1][0] != '#') {
-              appendError("Extra tokens in this line: " + buffer);
-              return false;
-            }
             a = lexicalCast<double>(tokens[0]) * cellConversion;
             break;
           case 2:
-            if (ntokens < 3u) {
-              appendError("Not enough tokens in this line: " + buffer);
+            if (!is_line_valid(3u))
               return false;
-            }
-            if (ntokens > 3u && tokens[3][0] != '#') {
-              appendError("Extra tokens in this line: " + buffer);
-              return false;
-            }
             a = lexicalCast<double>(tokens[0]) * cellConversion;
             b = lexicalCast<double>(tokens[1]) * cellConversion;
             gamma = lexicalCast<double>(tokens[2]) * DEG_TO_RAD;
             break;
           case 3:
-            if (tokens.size() < 6u) {
-              appendError("Not enough tokens in this line: " + buffer);
+            if (!is_line_valid(6u))
               return false;
-            }
-            if (ntokens > 6u && tokens[6][0] != '#') {
-              appendError("Extra tokens in this line: " + buffer);
-              return false;
-            }
             a = lexicalCast<double>(tokens[0]) * cellConversion;
             b = lexicalCast<double>(tokens[1]) * cellConversion;
             c = lexicalCast<double>(tokens[2]) * cellConversion;
