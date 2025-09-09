@@ -208,7 +208,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Van der Waals cutoff
-    else if (*it == "--rvdw") {
+    if (*it == "--rvdw") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
