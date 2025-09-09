@@ -63,6 +63,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   // we loop through each line until we hit $end or EOF
   string buffer;
   getline(inStream, buffer);
+
   while (inStream.good() && !buffer.empty()) {
     std::vector<string> tokens = split(rstrip(buffer, '#'), ' ');
     if (tokens.empty()) { // "# comment line"
