@@ -204,7 +204,7 @@ ScriptChargeModel::Format ScriptChargeModel::stringToFormat(
     return Cjson;
   if (str == "cml")
     return Cml;
-  else if (str == "mdl" || str == "mol")
+  if (str == "mdl" || str == "mol")
     return Mdl;
   else if (str == "sdf")
     return Sdf;
