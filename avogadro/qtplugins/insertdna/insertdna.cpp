@@ -80,9 +80,8 @@ void InsertDna::showDialog()
 
   if (fmt == nullptr) {
     return;
-  } else {
-    m_reader = fmt->newInstance();
   }
+  m_reader = fmt->newInstance();
 
   // Prompt user for input:
   if (m_dialog == nullptr) {

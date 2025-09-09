@@ -120,9 +120,8 @@ inline float getZDistance(const Affine3f& projection, float x,
     // float aspect = projection(1,1) / projection(0,0);
     // tan (fov/2) = (x/2) / z -> z =  (x/2) / tan (fov/2)
     return std::max(CAMERA_NEAR_DISTANCE, (x / 2.0f) / std::tan(fov / 2.0f));
-  } else {
-    return 3.0f * CAMERA_NEAR_DISTANCE;
   }
+  return 3.0f * CAMERA_NEAR_DISTANCE;
 }
 inline void getBB(const Array<Vector3>& mols, Vector3& min, Vector3& max)
 {

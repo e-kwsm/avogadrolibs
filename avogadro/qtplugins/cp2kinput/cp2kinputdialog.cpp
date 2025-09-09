@@ -759,9 +759,8 @@ void Cp2kInputDialog::updatePreviewText()
         if (iat == atom.atomicNumber()) {
           inlist = false;
           break;
-        } else {
-          inlist = true;
         }
+        inlist = true;
       }
       if (inlist) {
         atomList.push_back(atom.atomicNumber());
