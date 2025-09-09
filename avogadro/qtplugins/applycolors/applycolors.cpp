@@ -122,7 +122,7 @@ ColormapType ApplyColors::getColormapFromString(const QString& name) const
     return ColormapType::Viridis;
   if (name == tr("Cividis", "colormap"))
     return ColormapType::Cividis;
-  else if (name == tr("Spectral", "colormap"))
+  if (name == tr("Spectral", "colormap"))
     return ColormapType::Spectral;
   else if (name == tr("Coolwarm", "colormap"))
     return ColormapType::Coolwarm;
