@@ -172,25 +172,25 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Ball and Stick");
   else if (name == "Cartoons")
     return tr("Cartoons", "protein ribbon / cartoon rendering");
-  else if (name == "Close Contacts")
+  if (name == "Close Contacts")
     return tr("Close Contacts", "rendering of non-covalent close contacts");
-  else if (name == "Crystal Lattice")
+  if (name == "Crystal Lattice")
     return tr("Crystal Lattice");
   else if (name == "Force")
     return tr("Force");
-  else if (name == "Labels")
+  if (name == "Labels")
     return tr("Labels");
-  else if (name == "Licorice")
+  if (name == "Licorice")
     return tr("Licorice", "stick / licorice rendering");
-  else if (name == "Surfaces")
+  if (name == "Surfaces")
     return tr("Surfaces");
-  else if (name == "Non-Covalent")
+  if (name == "Non-Covalent")
     return tr("Non-Covalent");
-  else if (name == "QTAIM")
+  if (name == "QTAIM")
     return tr("QTAIM", "quantum theory of atoms in molecules");
-  else if (name == "Symmetry Elements")
+  if (name == "Symmetry Elements")
     return tr("Symmetry Elements");
-  else if (name == "Van der Waals")
+  if (name == "Van der Waals")
     return tr("Van der Waals");
   else if (name == "Van der Waals (AO)")
     return tr("Van der Waals (AO)", "ambient occlusion");
@@ -198,7 +198,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Volumes", "volumetric clouds");
   else if (name == "Wireframe")
     return tr("Wireframe");
-  else if (name == "Reference Axes")
+  if (name == "Reference Axes")
     return tr("Reference Axes");
 
   qDebug() << "LayerModel: name didn't match: " << name.c_str();

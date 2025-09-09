@@ -221,7 +221,8 @@ void Select::selectWater()
     if (atomicNumber == 8 && isWaterOxygen(i)) {
       m_molecule->undoMolecule()->setAtomSelected(i, evalSelect(true, i));
       continue;
-    } else if (atomicNumber == 1) {
+    }
+    if (atomicNumber == 1) {
       // check if it's attached to a water oxygen
       auto bonds = m_molecule->bonds(i);
       bool isWater = false;

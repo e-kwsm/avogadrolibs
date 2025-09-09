@@ -56,8 +56,7 @@ QStringList InsertFragment::menuPath(QAction* action) const
 {
   if (action->data() == "crystals")
     return QStringList() << tr("&File") << tr("&Import");
-  else
-    return QStringList() << tr("&Build") << tr("&Insert");
+  return QStringList() << tr("&Build") << tr("&Insert");
 }
 
 void InsertFragment::setMolecule(QtGui::Molecule* mol)

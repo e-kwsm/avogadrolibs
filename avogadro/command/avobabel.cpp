@@ -32,10 +32,12 @@ int main(int argc, char* argv[])
     if (current == "--help" || current == "-h") {
       printHelp();
       return 0;
-    } else if (current == "--version" || current == "-v") {
+    }
+    if (current == "--version" || current == "-v") {
       cout << "Version: " << Avogadro::version() << endl;
       return 0;
-    } else if (current == "-i" && i + 1 < argc) {
+    }
+    if (current == "-i" && i + 1 < argc) {
       inFormat = argv[++i];
       cout << "input format " << inFormat << endl;
     } else if (current == "-o" && i + 1 < argc) {
