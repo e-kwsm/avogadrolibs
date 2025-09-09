@@ -167,7 +167,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
     return tr("Ball and Stick");
   if (name == "Cartoons")
     return tr("Cartoons", "protein ribbon / cartoon rendering");
-  else if (name == "Close Contacts")
+  if (name == "Close Contacts")
     return tr("Close Contacts", "rendering of non-covalent close contacts");
   else if (name == "Crystal Lattice")
     return tr("Crystal Lattice");
