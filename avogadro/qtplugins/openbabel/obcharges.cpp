@@ -152,8 +152,7 @@ std::string OBCharges::name() const
     return "Gasteiger";
   if (m_identifier == "mmff94")
     return "MMFF94";
-  else
-    return "";
+  return "";
 }
 
 MatrixX OBCharges::partialCharges(const Core::Molecule& molecule) const

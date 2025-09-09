@@ -191,7 +191,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Coordinate Sets");
     if (it->first == " 7residues")
       return tr("Number of Residues");
-    else if (it->first == " 8chains")
+    if (it->first == " 8chains")
       return tr("Number of Chains");
     else if (it->first == " 9totalCharge")
       return tr("Net Charge");
