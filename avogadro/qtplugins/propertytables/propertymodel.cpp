@@ -200,8 +200,7 @@ QString formatChargeType(QString type)
     return "CHELPG";
   if (type.toLower() == "hirshfeld")
     return "Hirshfeld";
-  else
-    return type;
+  return type;
 }
 
 QString partialCharge(Molecule* molecule, int atom)
