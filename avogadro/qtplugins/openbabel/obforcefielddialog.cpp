@@ -123,7 +123,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Energy convergence:
-    else if (*it == "--crit") {
+    if (*it == "--crit") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -147,19 +147,19 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Use steepest descent?
-    else if (*it == "--sd") {
+    if (*it == "--sd") {
       ui->algorithm->setCurrentIndex(SteepestDescent);
       continue;
     }
 
     // Use newton linesearch?
-    else if (*it == "--newton") {
+    if (*it == "--newton") {
       ui->lineSearch->setCurrentIndex(Newton);
       continue;
     }
 
     // Force field?
-    else if (*it == "--ff") {
+    if (*it == "--ff") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -180,7 +180,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Step limit?
-    else if (*it == "--steps") {
+    if (*it == "--steps") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -202,13 +202,13 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Use cutoff?
-    else if (*it == "--cut") {
+    if (*it == "--cut") {
       ui->enableCutoffs->setChecked(true);
       continue;
     }
 
     // Van der Waals cutoff
-    else if (*it == "--rvdw") {
+    if (*it == "--rvdw") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -230,7 +230,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // electrostatic cutoff
-    else if (*it == "--rele") {
+    if (*it == "--rele") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -252,7 +252,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Pair update frequency:
-    else if (*it == "--freq") {
+    if (*it == "--freq") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -274,11 +274,9 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // ?????
-    else {
-      qWarning() << "OBForceFieldDialog::setOptions: "
-                    "Unrecognized option: "
-                 << *it;
-    }
+    qWarning() << "OBForceFieldDialog::setOptions: "
+                  "Unrecognized option: "
+               << *it;
   }
 }
 
