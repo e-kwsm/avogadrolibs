@@ -64,8 +64,7 @@ QString ApbsDialog::pqrFileName() const
 {
   if (m_ui->generateFromPdbButton->isChecked())
     return m_generatedPqrFileName;
-  else
-    return m_ui->pqrFileLineEdit->text();
+  return m_ui->pqrFileLineEdit->text();
 }
 
 QString ApbsDialog::cubeFileName() const

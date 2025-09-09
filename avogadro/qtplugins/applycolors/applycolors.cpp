@@ -107,31 +107,31 @@ ColormapType ApplyColors::getColormapFromString(const QString& name) const
   // Just do all of them, even though we won't use them all
   if (name == tr("Parula", "colormap"))
     return ColormapType::Parula;
-  else if (name == tr("Heat", "colormap"))
+  if (name == tr("Heat", "colormap"))
     return ColormapType::Heat;
-  else if (name == tr("Hot", "colormap"))
+  if (name == tr("Hot", "colormap"))
     return ColormapType::Hot;
-  else if (name == tr("Gray", "colormap"))
+  if (name == tr("Gray", "colormap"))
     return ColormapType::Gray;
-  else if (name == tr("Magma", "colormap"))
+  if (name == tr("Magma", "colormap"))
     return ColormapType::Magma;
-  else if (name == tr("Inferno", "colormap"))
+  if (name == tr("Inferno", "colormap"))
     return ColormapType::Inferno;
-  else if (name == tr("Plasma", "colormap"))
+  if (name == tr("Plasma", "colormap"))
     return ColormapType::Plasma;
-  else if (name == tr("Viridis", "colormap"))
+  if (name == tr("Viridis", "colormap"))
     return ColormapType::Viridis;
-  else if (name == tr("Cividis", "colormap"))
+  if (name == tr("Cividis", "colormap"))
     return ColormapType::Cividis;
-  else if (name == tr("Spectral", "colormap"))
+  if (name == tr("Spectral", "colormap"))
     return ColormapType::Spectral;
-  else if (name == tr("Coolwarm", "colormap"))
+  if (name == tr("Coolwarm", "colormap"))
     return ColormapType::Coolwarm;
-  else if (name == tr("Balance", "colormap"))
+  if (name == tr("Balance", "colormap"))
     return ColormapType::Balance;
-  else if (name == tr("Blue-DarkRed", "colormap"))
+  if (name == tr("Blue-DarkRed", "colormap"))
     return ColormapType::BlueDkRed;
-  else if (name == tr("Turbo", "colormap"))
+  if (name == tr("Turbo", "colormap"))
     return ColormapType::Turbo;
 
   return ColormapType::Turbo;
@@ -151,10 +151,9 @@ QStringList ApplyColors::menuPath(QAction* action) const
 {
   if (action->data() == atomColors)
     return QStringList() << tr("&View") << tr("Color Atoms");
-  else if (action->data() == residueColors)
+  if (action->data() == residueColors)
     return QStringList() << tr("&View") << tr("Color Residues");
-  else
-    return QStringList();
+  return QStringList();
 }
 
 void ApplyColors::setMolecule(QtGui::Molecule* mol)

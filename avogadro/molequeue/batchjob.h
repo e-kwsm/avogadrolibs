@@ -348,28 +348,27 @@ inline BatchJob::JobState BatchJob::stringToState(const QString& str)
 {
   if (str == QLatin1String("None"))
     return None;
-  else if (str == QLatin1String("Rejected"))
+  if (str == QLatin1String("Rejected"))
     return Rejected;
-  else if (str == QLatin1String("Accepted"))
+  if (str == QLatin1String("Accepted"))
     return Accepted;
-  else if (str == QLatin1String("QueuedLocal"))
+  if (str == QLatin1String("QueuedLocal"))
     return QueuedLocal;
-  else if (str == QLatin1String("Submitted"))
+  if (str == QLatin1String("Submitted"))
     return Submitted;
-  else if (str == QLatin1String("QueuedRemote"))
+  if (str == QLatin1String("QueuedRemote"))
     return QueuedRemote;
-  else if (str == QLatin1String("RunningLocal"))
+  if (str == QLatin1String("RunningLocal"))
     return RunningLocal;
-  else if (str == QLatin1String("RunningRemote"))
+  if (str == QLatin1String("RunningRemote"))
     return RunningRemote;
-  else if (str == QLatin1String("Finished"))
+  if (str == QLatin1String("Finished"))
     return Finished;
-  else if (str == QLatin1String("Canceled"))
+  if (str == QLatin1String("Canceled"))
     return Canceled;
-  else if (str == QLatin1String("Error"))
+  if (str == QLatin1String("Error"))
     return Error;
-  else
-    return Unknown;
+  return Unknown;
 }
 
 inline QString BatchJob::stateToString(BatchJob::JobState state)

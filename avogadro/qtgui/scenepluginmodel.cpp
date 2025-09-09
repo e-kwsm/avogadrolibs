@@ -23,8 +23,7 @@ int ScenePluginModel::rowCount(const QModelIndex& parent_) const
 {
   if (parent_.isValid())
     return 0;
-  else
-    return m_scenePlugins.size();
+  return m_scenePlugins.size();
 }
 
 int ScenePluginModel::columnCount(const QModelIndex&) const
@@ -45,8 +44,7 @@ Qt::ItemFlags ScenePluginModel::flags(const QModelIndex& index_) const
 
   if (index_.column() == 0)
     return flags | Qt::ItemIsEditable | Qt::ItemIsUserCheckable;
-  else
-    return flags;
+  return flags;
 }
 
 bool ScenePluginModel::setData(const QModelIndex& index_, const QVariant& value,
@@ -133,8 +131,7 @@ QModelIndex ScenePluginModel::index(int row, int column,
 {
   if (!parent_.isValid() && row >= 0 && row < m_scenePlugins.size())
     return createIndex(row, column, m_scenePlugins[row]);
-  else
-    return QModelIndex();
+  return QModelIndex();
 }
 
 void ScenePluginModel::clear()
