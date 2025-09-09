@@ -28,8 +28,7 @@ bool JsonRpcClient::isConnected() const
 {
   if (!m_socket)
     return false;
-  else
-    return m_socket->isOpen();
+  return m_socket->isOpen();
 }
 
 bool JsonRpcClient::connectToServer(const QString& serverName_)
@@ -37,11 +36,10 @@ bool JsonRpcClient::connectToServer(const QString& serverName_)
   if (m_socket && m_socket->isOpen()) {
     if (m_socket->serverName() == serverName_) {
       return false;
-    } else {
-      m_socket->close();
-      delete m_socket;
-      m_socket = nullptr;
     }
+    m_socket->close();
+    delete m_socket;
+    m_socket = nullptr;
   }
 
   // New connection.
@@ -52,18 +50,16 @@ bool JsonRpcClient::connectToServer(const QString& serverName_)
 
   if (serverName_.isEmpty()) {
     return false;
-  } else {
-    m_socket->connectToServer(serverName_);
-    return isConnected();
   }
+  m_socket->connectToServer(serverName_);
+  return isConnected();
 }
 
 QString JsonRpcClient::serverName() const
 {
   if (m_socket)
     return m_socket->serverName();
-  else
-    return QString();
+  return QString();
 }
 
 void JsonRpcClient::flush()
@@ -102,7 +98,8 @@ void JsonRpcClient::readPacket(const QByteArray message)
     emit badPacketReceived("Unparsable message received\n:" +
                            error.errorString() + "\nContent: " + message);
     return;
-  } else if (!reader.isObject()) {
+  }
+  if (!reader.isObject()) {
     // We need a valid object, something bad happened.
     emit badPacketReceived("Packet did not contain a valid JSON object.");
     return;
