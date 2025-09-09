@@ -343,7 +343,7 @@ bool SelectionTool::selectAtom(QMouseEvent* e, const Index& index)
     return toggleAtom(index);
   }
   // shift and default selection adds
-  else if (e->modifiers() & Qt::ShiftModifier || m_drawSelectionBox) {
+  if (e->modifiers() & Qt::ShiftModifier || m_drawSelectionBox) {
     return addAtom(index);
   }
   // default toggle
