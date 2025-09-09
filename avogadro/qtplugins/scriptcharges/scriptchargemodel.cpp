@@ -130,8 +130,7 @@ double ScriptChargeModel::potential(Core::Molecule& mol,
   Core::Array<double> results = potentials(mol, points);
   if (results.size() == 1)
     return results[0];
-  else
-    return 0.0;
+  return 0.0;
 }
 
 Core::Array<double> ScriptChargeModel::potentials(
@@ -203,7 +202,7 @@ ScriptChargeModel::Format ScriptChargeModel::stringToFormat(
 {
   if (str == "cjson")
     return Cjson;
-  else if (str == "cml")
+  if (str == "cml")
     return Cml;
   else if (str == "mdl" || str == "mol")
     return Mdl;
