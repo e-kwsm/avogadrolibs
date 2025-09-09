@@ -189,7 +189,7 @@ Vector3 AtomUtilities::generateNewBondVector(
     //      std::cout << " two bonds " << newPos.normalized() << std::endl;
     return -1.0 * newPos.normalized();
   } // end two bonds
-  else if (currentValence == 3) {
+  if (currentValence == 3) {
     const Vector3& bond1 = allVectors[0];
     const Vector3& bond2 = allVectors[1];
     const Vector3& bond3 = allVectors[2];
