@@ -230,7 +230,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // electrostatic cutoff
-    else if (*it == "--rele") {
+    if (*it == "--rele") {
       ++it;
       if (it == itEnd) {
         qWarning() << "OBForceFieldDialog::setOptions: "
