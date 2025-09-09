@@ -208,8 +208,7 @@ const char* Elements::name(unsigned char atomicNumber)
     return element_names[atomicNumber];
   if (isCustomElement(atomicNumber))
     return customElementName(atomicNumber);
-  else
-    return element_names[0];
+  return element_names[0];
 }
 
 const char* Elements::symbol(unsigned char atomicNumber)
@@ -218,8 +217,7 @@ const char* Elements::symbol(unsigned char atomicNumber)
     return element_symbols[atomicNumber];
   if (isCustomElement(atomicNumber))
     return customElementSymbol(atomicNumber);
-  else
-    return element_symbols[0];
+  return element_symbols[0];
 }
 
 double Elements::mass(unsigned char atomicNumber)
@@ -235,8 +233,7 @@ double Elements::radiusVDW(unsigned char atomicNumber)
     return element_VDW[atomicNumber];
   if (isCustomElement(atomicNumber))
     return CustomElementVDWRadius;
-  else
-    return element_VDW[0];
+  return element_VDW[0];
 }
 
 double Elements::radiusCovalent(unsigned char atomicNumber)
@@ -245,8 +242,7 @@ double Elements::radiusCovalent(unsigned char atomicNumber)
     return element_covalent[atomicNumber];
   if (isCustomElement(atomicNumber))
     return CustomElementCovalentRadius;
-  else
-    return element_covalent[0];
+  return element_covalent[0];
 }
 
 const unsigned char* Elements::color(unsigned char atomicNumber)
@@ -255,8 +251,7 @@ const unsigned char* Elements::color(unsigned char atomicNumber)
     return element_color[atomicNumber];
   if (isCustomElement(atomicNumber))
     return customElementColor(atomicNumber);
-  else
-    return element_color[0];
+  return element_color[0];
 }
 
 unsigned char Elements::valenceElectrons(unsigned char atomicNumber)
