@@ -217,8 +217,8 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
       (command.compare("renderMO", Qt::CaseInsensitive) == 0)) {
     calculateQM(MolecularOrbital, index, beta, isoValue, cubeResolution);
     return true;
-  } else if (command.compare("renderElectronDensity", Qt::CaseInsensitive) ==
-             0) {
+  }
+  if (command.compare("renderElectronDensity", Qt::CaseInsensitive) == 0) {
     calculateQM(ElectronDensity, index, beta, isoValue, cubeResolution);
     return true;
   } else if (command.compare("renderSpinDensity", Qt::CaseInsensitive) == 0) {
@@ -790,7 +790,7 @@ ColormapType Surfaces::getColormapFromString(const QString& name) const
     return ColormapType::Hot;
   if (name == tr("Gray", "colormap"))
     return ColormapType::Gray;
-  else if (name == tr("Magma", "colormap"))
+  if (name == tr("Magma", "colormap"))
     return ColormapType::Magma;
   else if (name == tr("Inferno", "colormap"))
     return ColormapType::Inferno;
