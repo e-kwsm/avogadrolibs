@@ -184,7 +184,7 @@ QString formatChargeType(QString type)
     return "GFN2";
   else if (type == "am1bcc")
     return "AM1BCC";
-  else if (type == "mmff94")
+  if (type == "mmff94")
     return "MMFF94";
   else if (type == "gasteiger")
     return "Gasteiger";
@@ -239,23 +239,19 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
     } else if (m_type == AtomType) {
       if (index.column() == AtomDataColor)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter);
-      else
-        return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
+      return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
     } else if (m_type == BondType) {
       if (index.column() == BondDataLength)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter); // bond length
-      else
-        return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
+      return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
     } else if (m_type == AngleType) {
       if (index.column() == AngleDataValue)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter); // angle
-      else
-        return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
+      return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
     } else if (m_type == TorsionType) {
       if (index.column() == TorsionDataValue)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter); // dihedral angle
-      else
-        return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
+      return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
     } else if (m_type == ResidueType) {
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
     } else if (m_type == ConformerType) {
