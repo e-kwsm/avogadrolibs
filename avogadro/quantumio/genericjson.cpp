@@ -75,7 +75,8 @@ bool GenericJson::read(std::istream& in, Core::Molecule& molecule)
       if (r->name() == "cclib") {
         reader = r->newInstance();
         break;
-      } else if (r->identifier().compare(0, 9, "OpenBabel") == 0) {
+      }
+      if (r->identifier().compare(0, 9, "OpenBabel") == 0) {
         reader = r->newInstance();
         break;
       }
@@ -90,11 +91,10 @@ bool GenericJson::read(std::istream& in, Core::Molecule& molecule)
     bool success = reader->readFile(fileName(), molecule);
     delete reader;
     return success;
-  } else {
-    appendError("Could not determine the program used to generate this file.");
-    delete reader;
-    return false;
   }
+  appendError("Could not determine the program used to generate this file.");
+  delete reader;
+  return false;
 }
 
 } // namespace Avogadro::QuantumIO
