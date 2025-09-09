@@ -153,7 +153,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
     }
 
     // Use newton linesearch?
-    else if (*it == "--newton") {
+    if (*it == "--newton") {
       ui->lineSearch->setCurrentIndex(Newton);
       continue;
     }
