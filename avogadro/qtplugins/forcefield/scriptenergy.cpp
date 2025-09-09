@@ -200,7 +200,7 @@ ScriptEnergy::Format ScriptEnergy::stringToFormat(const std::string& str)
     return Mdl;
   if (str == "pdb")
     return Pdb;
-  else if (str == "sdf")
+  if (str == "sdf")
     return Sdf;
   else if (str == "xyz")
     return Xyz;
