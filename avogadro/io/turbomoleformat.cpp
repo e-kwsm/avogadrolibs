@@ -262,11 +262,15 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
-      for (unsigned line = 0; line < 3; ++line) {
-        getline(inStream, buffer);
-        tokens = split(rstrip(buffer, '#'), ' ');
-        if (tokens.size() < 3)
-          break;
+      if (periodic_parsed) {
+        // $periodic appeared
+        for (unsigned line = 0; line < *periodic_parsed; ++line) {
+          getline(inStream, buffer);
+          tokens = split(rstrip(buffer, '#'), ' ');
+          bool ok;
+          const auto tokens_converted = lexicalCast<double>(tokens, ok);
+          if (tokens_converted.size() < 3)
+            break;
 
         if (auto tmp =
               lexicalCast<double>(tokens.begin(), tokens.begin() + 3)) {
