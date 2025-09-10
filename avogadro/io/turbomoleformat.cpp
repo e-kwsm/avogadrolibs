@@ -36,6 +36,23 @@ using Core::rstrip;
 using std::isalpha;
 #endif
 
+std::pair<std::vector<double>, bool> TurbomoleFormat::hoge(
+  const std::vector<std::string>& tokens)
+{
+  assert(!tokens.empty());
+  std::vector<double> tokens_converted;
+  bool ok;
+  for (const auto& t : tokens) {
+    auto tmp = lexicalCast<double>(t, ok);
+    if (!ok) {              // not numeric data
+      ok = t[0] == COMMENT; // is it comment?
+      break;
+    }
+    tokens_converted.push_back(tmp);
+  }
+  return { tokens_converted, ok };
+}
+
 bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 {
   json opts;
@@ -162,18 +179,17 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       tokens = split(rstrip(buffer, '#'), ' ');
+
+#if __cplusplus >= 202002L
+      const auto [tokens_converted, ok] = hoge(tokens);
+#else
       std::vector<double> tokens_converted;
-      for (const auto& t : tokens) {
-        bool ok;
-        auto tmp = lexicalCast<double>(t, ok);
-        if (!ok) {
-          if (t[0] != COMMENT) {
-            appendError("Failed to parse: " + buffer);
-            return false;
-          }
-          break;
-        }
-        tokens_converted.push_back(tmp);
+      bool ok;
+      std::tie(tokens_converted, ok) = hoge(tokens);
+#endif
+      if (!ok) {
+        appendError("Failed to parse: " + buffer);
+        return false;
       }
 
       const auto ntokens = tokens_converted.size();
@@ -256,6 +272,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
           v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
         }
+      } else {
+        // $periodic does not appear yet
       }
     } else if (tokens[0][0] != '#') {
       std::cerr << "Ignore unknown token: " << buffer << '\n';

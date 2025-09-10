@@ -51,6 +51,12 @@ public:
   bool write(std::ostream& outStream, const Core::Molecule& molecule) override;
 
 private:
+  // Try to convert each string of the parameter to double, while ignoring
+  // trailing comment.
+  // @return (numeric values, whether conversion is successful or not)
+  static std::pair<std::vector<double>, bool> hoge(
+    const std::vector<std::string>& tokens);
+
   static constexpr char COMMENT = '#';
 };
 
