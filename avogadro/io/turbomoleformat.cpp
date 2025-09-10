@@ -333,6 +333,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             appendError("Failed to parse: " + buffer);
             return false;
           }
+
           periodic_guessed = tokens_converted.size();
           if (*periodic_guessed == 0u || *periodic_guessed > 3u) {
             appendError("Could not determine dimensionality from lines "
