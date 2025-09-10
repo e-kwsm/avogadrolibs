@@ -172,6 +172,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         return true;
       };
 
+      auto set_vars = [&](unsigned periodic) {};
+
       if (periodic_parsed) {
         // $periodic appeared
         switch (*periodic_parsed) {

@@ -48,6 +48,9 @@ TEST(TurbomoleTest, readPeriodicErr)
          "$periodic 1\n$end"s,
          "$periodic 2\n$end"s,
          "$periodic 3\n$end"s,
+
+         "$periodic 1\n$cellang\n1.0"s
+         "$periodic 1\n$latticeang\n1.0"s
        }) {
     TurbomoleFormat tmol;
     Molecule molecule;
