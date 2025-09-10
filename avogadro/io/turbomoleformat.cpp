@@ -220,24 +220,34 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
-      for (unsigned line = 0; line < 3; ++line) {
-        getline(inStream, buffer);
-        tokens = split(rstrip(buffer, '#'), ' ');
-        if (tokens.size() < 3)
-          break;
+      if (periodic_parsed) {
+        // $periodic appeared
+        if (*periodic_parsed == 0) {
+          hasLattice = false;
+          std::cerr << "Ignore $lattice since '$periodic 0' (non periodic) "
+                       "is specified\n";
+        }
+        for (unsigned line = 0; line < *periodic_parsed; ++line) {
+          getline(inStream, buffer);
+          tokens = split(rstrip(buffer, '#'), ' ');
+          bool ok;
+          const auto tokens_converted = lexicalCast<double>(tokens, ok);
+          if (tokens_converted.size() < 3)
+            break;
 
-        if (line == 0) {
-          v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v1.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v1.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
-        } else if (line == 1) {
-          v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v2.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
-        } else if (line == 2) {
-          v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          if (line == 0) {
+            v1.x() = tokens_converted[0] * latticeConversion;
+            v1.y() = tokens_converted[1] * latticeConversion;
+            v1.z() = tokens_converted[2] * latticeConversion;
+          } else if (line == 1) {
+            v2.x() = tokens_converted[0] * latticeConversion;
+            v2.y() = tokens_converted[1] * latticeConversion;
+            v2.z() = tokens_converted[2] * latticeConversion;
+          } else if (line == 2) {
+            v3.x() = tokens_converted[0] * latticeConversion;
+            v3.y() = tokens_converted[1] * latticeConversion;
+            v3.z() = tokens_converted[2] * latticeConversion;
+          }
         }
       }
     } else {
