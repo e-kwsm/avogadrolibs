@@ -293,6 +293,26 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                         buffer);
             return false;
           }
+
+          if (line == 0) {
+            v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            if (*periodic_guessed == 1)
+              break;
+            v1.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            v1.z() = *periodic_guessed != 3
+                       ? 0.0
+                       : lexicalCast<double>(tokens[2]) * latticeConversion;
+          } else if (line == 1) {
+            v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            if (*periodic_guessed == 2)
+              break;
+            v2.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          } else if (line == 2) {
+            v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          }
         }
       }
     }
