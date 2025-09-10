@@ -34,7 +34,7 @@ TEST(TurbomoleTest, readPeriodic)
   }
 }
 
-TEST(TurbomoleTest, readErr)
+TEST(TurbomoleTest, readPeriodicErr)
 {
   for (const auto& s : {
          // $periodic is invalid
@@ -57,13 +57,15 @@ TEST(TurbomoleTest, readErr)
 
   for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
     for (unsigned j = 1u; j <= 3u; j++) {
-      if (periodic == j)
-        continue;
       TurbomoleFormat tmol;
       Molecule molecule;
-      auto s = "$periodic "s + std::to_string(periodic) + "\n$cell\n"s +
+      auto s = "$periodic "s + std::to_string(periodic) + "\n$cell"s +
                CELLS.at(j) + "\n$end"s;
-      EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+      if (periodic == j) {
+        EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
+      } else {
+        EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+      }
     }
   }
 }
