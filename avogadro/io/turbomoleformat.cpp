@@ -230,7 +230,33 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                          "is specified\n";
         }
       } else {
-        // $periodic does not appear yet
+        // $periodic does not appear yet, so guess it from the number of the
+        // elements
+        switch (ntokens) {
+          case 1:
+            periodic_guessed = 1;
+            a = tokens_converted[0] * cellConversion;
+            break;
+          case 3:
+            periodic_guessed = 2;
+            a = tokens_converted[0] * cellConversion;
+            b = tokens_converted[1] * cellConversion;
+            gamma = tokens_converted[2] * DEG_TO_RAD;
+            break;
+          case 6:
+            periodic_guessed = 3;
+            a = tokens_converted[0] * cellConversion;
+            b = tokens_converted[1] * cellConversion;
+            c = tokens_converted[2] * cellConversion;
+            alpha = tokens_converted[3] * DEG_TO_RAD;
+            beta = tokens_converted[4] * DEG_TO_RAD;
+            gamma = tokens_converted[5] * DEG_TO_RAD;
+            break;
+          default:
+            appendError("Cannot determine dimensionality from $cell: " +
+                        buffer);
+            return false;
+        }
       }
       if (tokens.size() < 6) {
         appendError("Not enough tokens in this line: " + buffer);
@@ -269,19 +295,35 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           tokens = split(rstrip(buffer, '#'), ' ');
           bool ok;
           const auto tokens_converted = lexicalCast<double>(tokens, ok);
-          if (tokens_converted.size() < 3)
-            break;
+          if (!ok) {
+            appendError("Failed to parse: " + buffer);
+            return false;
+          }
+          if(tokens_converted.size() < *periodic_parsed){
+            appendError("Not enough tokens in this line: " + buffer);
+            return false;
+          }
+          if(tokens_converted.size() > *periodic_parsed){
+            appendError("Extra tokens in this line: " + buffer);
+            return false;
+          }
 
         if (auto tmp =
               lexicalCast<double>(tokens.begin(), tokens.begin() + 3)) {
           if (line == 0) {
-            v1.x() = tmp->at(0) * latticeConversion;
-            v1.y() = tmp->at(1) * latticeConversion;
-            v1.z() = tmp->at(2) * latticeConversion;
+            v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v1.y() = *periodic_parsed == 1
+                       ? 0.0
+                       : lexicalCast<double>(tokens[1]) * latticeConversion;
+            v1.z() = *periodic_parsed != 3
+                       ? 0.0
+                       : lexicalCast<double>(tokens[2]) * latticeConversion;
           } else if (line == 1) {
-            v2.x() = tmp->at(0) * latticeConversion;
-            v2.y() = tmp->at(1) * latticeConversion;
-            v2.z() = tmp->at(2) * latticeConversion;
+            v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            v2.z() = *periodic_parsed == 2
+                       ? 0.0
+                       : lexicalCast<double>(tokens[2]) * latticeConversion;
           } else if (line == 2) {
             v3.x() = tmp->at(0) * latticeConversion;
             v3.y() = tmp->at(1) * latticeConversion;
