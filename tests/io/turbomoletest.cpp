@@ -14,25 +14,19 @@
 
 #include <avogadro/io/turbomoleformat.h>
 
+#include <map>
 #include <string>
 
 using Avogadro::Core::Molecule;
 using Avogadro::Io::TurbomoleFormat;
 using namespace std::string_literals;
 
-TEST(TurbomoleTest, readOk)
+TEST(TurbomoleTest, readPeriodic)
 {
   for (const auto& s : {
          "$periodic 1\n$cell\n6.0\n$end"s,
          "$periodic 2\n$cell\n6.0 8.0 90.0\n$end"s,
          "$periodic 3\n$cell\n6.0 8.0 10.0 90.0 89.0 78.0\n$end"s,
-
-         R"($periodic 0
-$cell
-  6.0 8.0 10.0 90.0 89.0 78.0
-$end
-)"s,
-
        }) {
     TurbomoleFormat tmol;
     Molecule molecule;
@@ -53,5 +47,23 @@ TEST(TurbomoleTest, readErr)
     TurbomoleFormat tmol;
     Molecule molecule;
     EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+  }
+
+  const std::map<unsigned, std::string> CELLS = {
+    { 1, "6.0"s },
+    { 2, "6.0 8.0 90.0"s },
+    { 3, "6.0 8.0 10.0 90.0 90.0 90.0"s },
+  };
+
+  for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
+    for (unsigned j = 1u; j <= 3u; j++) {
+      if (periodic == j)
+        continue;
+      TurbomoleFormat tmol;
+      Molecule molecule;
+      auto s = "$periodic "s + std::to_string(periodic) + "\n$cell\n"s +
+               CELLS.at(j) + "\n$end"s;
+      EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+    }
   }
 }
