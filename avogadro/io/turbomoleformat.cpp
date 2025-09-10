@@ -295,7 +295,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           return false;
         }
       } else {
-        // $periodic does not appear yet
+        // $periodic does not appear yet, so guess dimensionality from line(s)
+        // following $lattice
         for (unsigned line = 0; line < 3; ++line) {
           getline(inStream, buffer);
           tokens = split(rstrip(buffer, '#'), ' ');
@@ -305,7 +306,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             appendError("Failed to parse: " + buffer);
             return false;
           }
-<<<<<<< HEAD
 
           const auto n = tokens_converted.size();
           if (line == 0) {
