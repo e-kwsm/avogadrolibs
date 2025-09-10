@@ -207,6 +207,89 @@ TEST(TurbomoleTest, readErr)
   }
 }
 
+TEST(TurbomoleTest, readPeriodic)
+{
+  for (const auto& s : {
+         "$periodic 1\n$cell\n6.0\n$end"s,
+         "$periodic 2\n$cell\n6.0 8.0 90.0\n$end"s,
+         "$periodic 3\n$cell\n6.0 8.0 10.0 90.0 89.0 78.0\n$end"s,
+       }) {
+    TurbomoleFormat tmol;
+    Molecule molecule;
+    EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
+  }
+
+  for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
+    for (unsigned j = 1u; j <= 3u; j++) {
+      for (const auto& s : {
+             "$periodic "s + std::to_string(periodic) + "\n"s + cells.at(j) +
+               "\n$end"s,
+             cells.at(j) + "\n$periodic "s + std::to_string(periodic) +
+               "\n$end"s,
+           }) {
+        TurbomoleFormat tmol;
+        Molecule molecule;
+        if (periodic == j) {
+          EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n'
+                                                    << tmol.error();
+        } else {
+          EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+        }
+      }
+    }
+  }
+}
+
+TEST(TurbomoleTest, readPeriodicErr)
+{
+  for (const auto& s : {
+         // $periodic is invalid
+         "$periodic\n$end"s,
+         "$periodic F\n$end"s,
+         "$periodic -1\n$end"s,
+         "$periodic 4\n$end"s,
+         "$periodic 1 2\n$end"s,
+
+         // $cell/$lattice is missed
+         "$periodic 1\n$end"s,
+         "$periodic 2\n$end"s,
+         "$periodic 3\n$end"s,
+
+         "$periodic 1\n$cellang\n1.0"s
+         "$periodic 1\n$latticeang\n1.0"s
+       }) {
+    TurbomoleFormat tmol;
+    Molecule molecule;
+    EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+  }
+
+  const std::map<unsigned, std::string> cells = {
+    { 1, "6.0"s },
+    { 2, "6.0 8.0 90.0"s },
+    { 3, "6.0 8.0 10.0 90.0 90.0 90.0"s },
+  };
+
+  const std::map<unsigned, std::string> lattices = {
+    { 1, "6.0"s },
+    { 2, "6.0 0.0\n0.0 8.0"s },
+    { 3, "6.0 0.0 0.0\n0.0 8.0 0.0\n0.0 0.0 10.0"s },
+  };
+
+  for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
+    for (unsigned j = 1u; j <= 3u; j++) {
+      TurbomoleFormat tmol;
+      Molecule molecule;
+      auto s = "$periodic "s + std::to_string(periodic) + "\n$cell\n"s +
+               cells.at(j) + "\n$end"s;
+      if (periodic == j) {
+        EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
+      } else {
+        EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+      }
+    }
+  }
+}
+
 TEST(TurbomoleTest, writeString)
 {
   {
