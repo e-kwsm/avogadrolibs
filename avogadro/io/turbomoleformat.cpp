@@ -271,8 +271,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           getline(inStream, buffer);
           tokens = split(rstrip(buffer, '#'), ' ');
           const auto [tokens_converted, ok] = hoge(tokens);
-          if (tokens_converted.size() < 3)
-            break;
+          if (!ok || tokens_converted.size() != *periodic_parsed) {}
 
           if (line == 0) {
             v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
