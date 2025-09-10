@@ -277,7 +277,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           }
         }
       } else {
-        // TODO
+        // $periodic does not appear yet, so guess dimensionality from line(s)
+        // following $lattice
         for (unsigned line = 0; line < 3; ++line) {
           getline(inStream, buffer);
           std::vector<string> tokens(split(buffer, ' '));
@@ -296,6 +297,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
               return false;
             }
             periodic_guessed = n;
+          } else if (*periodic_guessed != n) {
+            appendError("The previous and current lines respectively have " +
+                        std::to_string(*periodic_guessed) + " and " +
+                        std::to_string(n) + " element(s)\n" +
+                        buffer);
+            return false;
           }
 
           if (line == 0) {
