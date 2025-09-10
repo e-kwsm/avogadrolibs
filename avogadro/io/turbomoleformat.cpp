@@ -322,7 +322,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           }
         }
       } else {
-        // $periodic does not appear yet
+        // $periodic does not appear yet, so guess dimensionality from line(s)
+        // following $lattice
         for (unsigned line = 0; line < 3; ++line) {
           getline(inStream, buffer);
           std::vector<string> tokens(split(buffer, ' '));
@@ -341,6 +342,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
               return false;
             }
             periodic_guessed = n;
+          } else if (*periodic_guessed != n) {
+            appendError("The previous and current lines respectively have " +
+                        std::to_string(*periodic_guessed) + " and " +
+                        std::to_string(n) + " element(s)\n" +
+                        buffer);
+            return false;
           }
 
           if (line == 0) {
@@ -359,24 +366,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             v3.x() = tokens_converted[0] * latticeConversion;
             v3.y() = tokens_converted[1] * latticeConversion;
             v3.z() = tokens_converted[2] * latticeConversion;
-          }
-        }
-      } else {
-        // $periodic does not appear yet
-        for (unsigned line = 0; line < 3; ++line) {
-          getline(inStream, buffer);
-          std::vector<string> tokens(split(buffer, ' '));
-          auto [tokens_converted, ok] = hoge(tokens);
-          if (!ok) {
-            appendError("Failed to parse: " + buffer);
-            return false;
-          }
-          periodic_guessed = tokens_converted.size();
-          if (*periodic_guessed == 0u || *periodic_guessed > 3u) {
-            appendError("Could not determine dimensionality from lines "
-                        "following $lattice:\n" +
-                        buffer);
-            return false;
           }
         }
       }
