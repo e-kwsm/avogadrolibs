@@ -172,7 +172,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         return true;
       };
 
-      if (periodic_parsed) { // $periodic appeared
+      if (periodic_parsed) {
+        // $periodic appeared
         switch (*periodic_parsed) {
           case 1:
             if (!is_line_valid(1u))
@@ -236,10 +237,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         latticeConversion = 1.0; // leave as Angstrom
 
       if (periodic_parsed) {
-        for (int line = 0; line < *periodic_parsed; ++line) {
+        // $periodic appeared
+        for (unsigned line = 0; line < *periodic_parsed; ++line) {
           getline(inStream, buffer);
           std::vector<string> tokens(split(buffer, ' '));
-          if (tokens.size() < 3)
+          const auto [tokens_converted, ok] = hoge(tokens);
+          if (tokens_converted.size() < 3)
             break;
 
           if (line == 0) {
