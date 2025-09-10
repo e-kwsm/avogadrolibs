@@ -23,7 +23,6 @@ using namespace std::string_literals;
 TEST(TurbomoleTest, readOk)
 {
   for (const auto& s : {
-
          "$periodic 1\n$cell\n6.0\n$end"s,
          "$periodic 2\n$cell\n6.0 8.0 90.0\n$end"s,
          "$periodic 3\n$cell\n6.0 8.0 10.0 90.0 89.0 78.0\n$end"s,
