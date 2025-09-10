@@ -49,10 +49,16 @@ TEST(TurbomoleTest, readPeriodicErr)
     EXPECT_FALSE(tmol.readString(s, molecule)) << s;
   }
 
-  const std::map<unsigned, std::string> CELLS = {
+  const std::map<unsigned, std::string> cells = {
     { 1, "6.0"s },
     { 2, "6.0 8.0 90.0"s },
     { 3, "6.0 8.0 10.0 90.0 90.0 90.0"s },
+  };
+
+  const std::map<unsigned, std::string> lattices = {
+    { 1, "6.0"s },
+    { 2, "6.0 0.0\n0.0 8.0"s },
+    { 3, "6.0 0.0 0.0\n0.0 8.0 0.0\n0.0 0.0 10.0"s },
   };
 
   for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
