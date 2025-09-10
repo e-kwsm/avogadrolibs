@@ -332,6 +332,21 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         }
       } else {
         // $periodic does not appear yet
+        for (unsigned line = 0; line < 3; ++line) {
+          getline(inStream, buffer);
+          std::vector<string> tokens(split(buffer, ' '));
+          auto [tokens_converted, ok] = hoge(tokens);
+          if (!ok) {
+            appendError("Failed to parse: " + buffer);
+            return false;
+          }
+          periodic_guessed = tokens_converted.size();
+          if (*periodic_guessed == 0u || *periodic_guessed > 3u) {
+            appendError("Could not determine dimensionality from $lattice: " +
+                        buffer);
+            return false;
+          }
+        }
       }
     } else if (tokens[0][0] != '#') {
       std::cerr << "Ignore unknown token: " << buffer << '\n';
