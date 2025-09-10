@@ -93,12 +93,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         return false;
       }
       bool ok;
-      periodic_parsed = lexicalCast<int>(tokens[1], ok);
+      periodic_parsed = lexicalCast<unsigned>(tokens[1], ok);
       if (!ok) {
         appendError("Failed to parse: " + buffer);
         return false;
       }
-      if (periodic_parsed < 0 || periodic_parsed > 3) {
+      if (*periodic_parsed > 3u) {
         appendError("Invalid dimensionality: " + buffer);
         return false;
       }
@@ -242,8 +242,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           getline(inStream, buffer);
           std::vector<string> tokens(split(buffer, ' '));
           const auto [tokens_converted, ok] = hoge(tokens);
-          if (tokens_converted.size() < 3)
-            break;
+          if (!ok || tokens_converted.size() != *periodic_parsed) {}
 
           if (line == 0) {
             v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
