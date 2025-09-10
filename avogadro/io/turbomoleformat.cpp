@@ -202,7 +202,9 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
-      } else { // $periodic does not appear yet
+      } else {
+        // $periodic does not appear yet, so guess it from the number of the
+        // elements
         switch (ntokens) {
           case 1:
             periodic_guessed = 1;
@@ -277,6 +279,21 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         }
       } else {
         // TODO
+        for (unsigned line = 0; line < 3; ++line) {
+          getline(inStream, buffer);
+          std::vector<string> tokens(split(buffer, ' '));
+          auto [tokens_converted, ok] = hoge(tokens);
+          if (!ok) {
+            appendError("Failed to parse: " + buffer);
+            return false;
+          }
+          periodic_guessed = tokens_converted.size();
+          if (*periodic_guessed == 0u || *periodic_guessed > 3u) {
+            appendError("Could not determine dimensionality from $lattice: " +
+                        buffer);
+            return false;
+          }
+        }
       }
     }
 
