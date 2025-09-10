@@ -222,22 +222,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         switch (ntokens) {
           case 1:
             periodic_guessed = 1;
-            a = tokens_converted[0] * cellConversion;
             break;
           case 3:
             periodic_guessed = 2;
-            a = tokens_converted[0] * cellConversion;
-            b = tokens_converted[1] * cellConversion;
-            gamma = tokens_converted[2] * DEG_TO_RAD;
             break;
           case 6:
             periodic_guessed = 3;
-            a = tokens_converted[0] * cellConversion;
-            b = tokens_converted[1] * cellConversion;
-            c = tokens_converted[2] * cellConversion;
-            alpha = tokens_converted[3] * DEG_TO_RAD;
-            beta = tokens_converted[4] * DEG_TO_RAD;
-            gamma = tokens_converted[5] * DEG_TO_RAD;
             break;
           default:
             appendError("Cannot determine dimensionality from $cell: " +
@@ -315,6 +305,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             appendError("Failed to parse: " + buffer);
             return false;
           }
+<<<<<<< HEAD
 
           const auto n = tokens_converted.size();
           if (line == 0) {
@@ -331,6 +322,24 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                         std::to_string(n) + " element(s)\n" +
                         buffer);
             return false;
+          }
+
+          if (line == 0) {
+            v1.x() = tokens_converted[0] * latticeConversion;
+            if (n == 1)
+              break;
+            v1.y() = tokens_converted[1] * latticeConversion;
+            v1.z() = n != 3 ? 0.0 : tokens_converted[2] * latticeConversion;
+          } else if (line == 1) {
+            v2.x() = tokens_converted[0] * latticeConversion;
+            v2.y() = tokens_converted[1] * latticeConversion;
+            if (n == 2)
+              break;
+            v2.z() = tokens_converted[2] * latticeConversion;
+          } else if (line == 2) {
+            v3.x() = tokens_converted[0] * latticeConversion;
+            v3.y() = tokens_converted[1] * latticeConversion;
+            v3.z() = tokens_converted[2] * latticeConversion;
           }
         }
       }
