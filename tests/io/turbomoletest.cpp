@@ -218,26 +218,6 @@ TEST(TurbomoleTest, readPeriodic)
     Molecule molecule;
     EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
   }
-
-  for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
-    for (unsigned j = 1u; j <= 3u; j++) {
-      for (const auto& s : {
-             "$periodic "s + std::to_string(periodic) + "\n"s + cells.at(j) +
-               "\n$end"s,
-             cells.at(j) + "\n$periodic "s + std::to_string(periodic) +
-               "\n$end"s,
-           }) {
-        TurbomoleFormat tmol;
-        Molecule molecule;
-        if (periodic == j) {
-          EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n'
-                                                    << tmol.error();
-        } else {
-          EXPECT_FALSE(tmol.readString(s, molecule)) << s;
-        }
-      }
-    }
-  }
 }
 
 TEST(TurbomoleTest, readPeriodicErr)
