@@ -242,16 +242,33 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           getline(inStream, buffer);
           std::vector<string> tokens(split(buffer, ' '));
           const auto [tokens_converted, ok] = hoge(tokens);
-          if (!ok || tokens_converted.size() != *periodic_parsed) {}
+          if (!ok) {
+            appendError("Failed to parse: " + buffer);
+            return false;
+          }
+          if(tokens_converted.size() < *periodic_parsed){
+            appendError("Not enough tokens in this line: " + buffer);
+            return false;
+          }
+          if(tokens_converted.size() > *periodic_parsed){
+            appendError("Extra tokens in this line: " + buffer);
+            return false;
+          }
 
           if (line == 0) {
             v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-            v1.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-            v1.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+            v1.y() = *periodic_parsed == 1
+                       ? 0.0
+                       : lexicalCast<double>(tokens[1]) * latticeConversion;
+            v1.z() = *periodic_parsed != 3
+                       ? 0.0
+                       : lexicalCast<double>(tokens[2]) * latticeConversion;
           } else if (line == 1) {
             v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
             v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-            v2.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+            v2.z() = *periodic_parsed == 2
+                       ? 0.0
+                       : lexicalCast<double>(tokens[2]) * latticeConversion;
           } else if (line == 2) {
             v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
             v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
