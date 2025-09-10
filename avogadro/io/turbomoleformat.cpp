@@ -35,6 +35,23 @@ using Core::split;
 using std::isalpha;
 #endif
 
+std::pair<std::vector<double>, bool> TurbomoleFormat::hoge(
+  const std::vector<std::string>& tokens)
+{
+  assert(!tokens.empty());
+  std::vector<double> tokens_converted;
+  bool ok;
+  for (const auto& t : tokens) {
+    auto tmp = lexicalCast<double>(t, ok);
+    if (!ok) {              // not numeric data
+      ok = t[0] == COMMENT; // is it comment?
+      break;
+    }
+    tokens_converted.push_back(tmp);
+  }
+  return { tokens_converted, ok };
+}
+
 bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 {
   json opts;
@@ -136,27 +153,19 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       std::vector<string> tokens(split(buffer, ' '));
-      std::vector<double> tokens_converted;
-      for (const auto& t : tokens) {
-        bool ok;
-        auto tmp = lexicalCast<double>(t, ok);
-        if (!ok) {
-          if (t[0] != COMMENT) {
-            appendError("Failed to parse: " + buffer);
-            return false;
-          }
-          break;
-        }
-        tokens_converted.push_back(tmp);
+      const auto [tokens_converted, ok] = hoge(tokens);
+      if (!ok) {
+        appendError("Failed to parse: " + buffer);
+        return false;
       }
 
       const auto ntokens = tokens_converted.size();
-      auto is_line_valid = [&](unsigned n) -> bool {
-        if (ntokens < n) {
+      auto is_line_valid = [&](unsigned expected) -> bool {
+        if (ntokens < expected) {
           appendError("Not enough tokens in this line: " + buffer);
           return false;
         }
-        if (ntokens > n && tokens[n][0] != COMMENT) {
+        if (ntokens > expected && tokens[expected][0] != COMMENT) {
           appendError("Extra tokens in this line: " + buffer);
           return false;
         }
@@ -226,25 +235,29 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (buffer.find("ang") != std::string::npos)
         latticeConversion = 1.0; // leave as Angstrom
 
-      for (int line = 0; line < 3; ++line) {
-        getline(inStream, buffer);
-        std::vector<string> tokens(split(buffer, ' '));
-        if (tokens.size() < 3)
-          break;
+      if (periodic_parsed) {
+        for (int line = 0; line < *periodic_parsed; ++line) {
+          getline(inStream, buffer);
+          std::vector<string> tokens(split(buffer, ' '));
+          if (tokens.size() < 3)
+            break;
 
-        if (line == 0) {
-          v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v1.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v1.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
-        } else if (line == 1) {
-          v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v2.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
-        } else if (line == 2) {
-          v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          if (line == 0) {
+            v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v1.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            v1.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          } else if (line == 1) {
+            v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            v2.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          } else if (line == 2) {
+            v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          }
         }
+      } else {
+        // TODO
       }
     }
 
