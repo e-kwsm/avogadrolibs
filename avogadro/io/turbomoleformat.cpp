@@ -231,7 +231,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             return false;
         }
       }
-
     } else if (buffer.find("$lattice") != std::string::npos) {
       hasLattice = true;
       Real latticeConversion = BOHR_TO_ANGSTROM; // default
@@ -258,23 +257,23 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           }
 
           if (line == 0) {
-            v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
+            v1.x() = tokens_converted[0] * latticeConversion;
             v1.y() = *periodic_parsed == 1
                        ? 0.0
-                       : lexicalCast<double>(tokens[1]) * latticeConversion;
+                       : tokens_converted[1] * latticeConversion;
             v1.z() = *periodic_parsed != 3
                        ? 0.0
-                       : lexicalCast<double>(tokens[2]) * latticeConversion;
+                       : tokens_converted[2] * latticeConversion;
           } else if (line == 1) {
-            v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-            v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
+            v2.x() = tokens_converted[0] * latticeConversion;
+            v2.y() = tokens_converted[1] * latticeConversion;
             v2.z() = *periodic_parsed == 2
                        ? 0.0
-                       : lexicalCast<double>(tokens[2]) * latticeConversion;
+                       : tokens_converted[2] * latticeConversion;
           } else if (line == 2) {
-            v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-            v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-            v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+            v3.x() = tokens_converted[0] * latticeConversion;
+            v3.y() = tokens_converted[1] * latticeConversion;
+            v3.z() = tokens_converted[2] * latticeConversion;
           }
         }
       } else {
@@ -282,36 +281,39 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         for (unsigned line = 0; line < 3; ++line) {
           getline(inStream, buffer);
           std::vector<string> tokens(split(buffer, ' '));
-          auto [tokens_converted, ok] = hoge(tokens);
+          const auto [tokens_converted, ok] = hoge(tokens);
           if (!ok) {
             appendError("Failed to parse: " + buffer);
             return false;
           }
-          periodic_guessed = tokens_converted.size();
-          if (*periodic_guessed == 0u || *periodic_guessed > 3u) {
-            appendError("Could not determine dimensionality from $lattice: " +
-                        buffer);
-            return false;
+
+          const auto n = tokens_converted.size();
+          if (line == 0) {
+            if (n == 0u || n > 3u) {
+              appendError("Could not determine dimensionality from lines "
+                          "following $lattice:\n" +
+                          buffer);
+              return false;
+            }
+            periodic_guessed = n;
           }
 
           if (line == 0) {
-            v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-            if (*periodic_guessed == 1)
+            v1.x() = tokens_converted[0] * latticeConversion;
+            if (n == 1)
               break;
-            v1.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-            v1.z() = *periodic_guessed != 3
-                       ? 0.0
-                       : lexicalCast<double>(tokens[2]) * latticeConversion;
+            v1.y() = tokens_converted[1] * latticeConversion;
+            v1.z() = n != 3 ? 0.0 : tokens_converted[2] * latticeConversion;
           } else if (line == 1) {
-            v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-            v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-            if (*periodic_guessed == 2)
+            v2.x() = tokens_converted[0] * latticeConversion;
+            v2.y() = tokens_converted[1] * latticeConversion;
+            if (n == 2)
               break;
-            v2.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+            v2.z() = tokens_converted[2] * latticeConversion;
           } else if (line == 2) {
-            v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-            v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-            v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+            v3.x() = tokens_converted[0] * latticeConversion;
+            v3.y() = tokens_converted[1] * latticeConversion;
+            v3.z() = tokens_converted[2] * latticeConversion;
           }
         }
       }
