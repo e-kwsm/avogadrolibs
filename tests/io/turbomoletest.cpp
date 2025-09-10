@@ -54,6 +54,27 @@ $end
   }
 }
 
+TEST(TurbomoleTest, readPeriodic)
+{
+  for (const auto& s : {
+         // $periodic is invalid
+         "$periodic\n$end"s,
+         "$periodic F\n$end"s,
+         "$periodic -1\n$end"s,
+         "$periodic 4\n$end"s,
+         "$periodic 1 2\n$end"s,
+
+         // $periodic is valid but $cell/$lattice is missed
+         "$periodic 1\n$end"s,
+         "$periodic 2\n$end"s,
+         "$periodic 3\n$end"s,
+       }) {
+    TurbomoleFormat tmol;
+    Molecule molecule;
+    EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+  }
+}
+
 TEST(TurbomoleTest, readCellParameters)
 {
   const auto periodic = "$periodic 3\n"s;
@@ -105,6 +126,81 @@ TEST(TurbomoleTest, readCellParameters)
         EXPECT_NEAR(b[2], 0.0, EPS);
         EXPECT_NEAR(c[0], 0.0, EPS);
         EXPECT_NEAR(c[1], 0.0, EPS);
+      }
+    }
+  }
+}
+
+TEST(TurbomoleTest, readPeriodic2)
+{
+  const std::map<unsigned, std::string> cells = {
+    { 1, "6.0"s }, { 2, "6.0 8.0 90.0"s }, { 3, "6.0 8.0 10.0 90.0 90.0 90.0"s }
+  };
+
+  std::map<unsigned, std::vector<std::string>> hoge = {
+    { 1, { "6.0"s } },
+    { 2, { "6.0 0.0"s, "0.0 8.0"s } },
+    { 3, { "6.0 0.0 0.0"s, "0.0 8.0 0.0"s, "0.0 0.0 10.0"s } }
+  };
+
+  const std::map<unsigned, std::string> lattices = {
+    { 1, hoge.at(1)[0] },
+    { 2, hoge.at(2)[0] + '\n' + hoge.at(2)[1] },
+    { 3, hoge.at(3)[0] + '\n' + hoge.at(3)[1] + '\n' + hoge.at(3)[2] }
+  };
+
+  for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
+    for (unsigned j = 1u; j <= 3u; j++) {
+      for (const auto& s : {
+             "$periodic "s + std::to_string(periodic) + "\n"s + cells.at(j) +
+               "\n$end"s,
+             cells.at(j) + "\n$periodic "s + std::to_string(periodic) +
+               "\n$end"s,
+           }) {
+        TurbomoleFormat tmol;
+        Molecule molecule;
+        if (periodic == j) {
+          EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n'
+                                                    << tmol.error();
+        } else {
+          EXPECT_FALSE(tmol.readString(s, molecule)) << s;
+        }
+      }
+    }
+  }
+}
+
+TEST(TurbomoleTest, readPeriodicErr)
+{
+  const std::map<unsigned, std::string> cells = {
+    { 1, "6.0"s },
+    { 2, "6.0 8.0 90.0"s },
+    { 3, "6.0 8.0 10.0 90.0 90.0 90.0"s },
+  };
+
+  const std::map<unsigned, std::string> lattices = {
+    { 1, "6.0"s },
+    { 2, "6.0 0.0\n0.0 8.0"s },
+    { 3, "6.0 0.0 0.0\n0.0 8.0 0.0\n0.0 0.0 10.0"s },
+  };
+
+  for (unsigned periodic = 0u; periodic <= 3u; periodic++) {
+    for (unsigned j = 1u; j <= 3u; j++) {
+      TurbomoleFormat tmol;
+      Molecule molecule;
+      auto s = "$periodic "s + std::to_string(periodic) + "\n$cell\n"s +
+               cells.at(j) + "\n$end"s;
+      bool ok = tmol.readString(s, molecule);
+      const auto* const uc = molecule.unitCell();
+      if (periodic == 0) {
+        EXPECT_TRUE(ok) << s << '\n' << tmol.error();
+        EXPECT_EQ(uc, nullptr) << s;
+      } else if (periodic == j) {
+        EXPECT_TRUE(ok) << s << '\n' << tmol.error();
+        EXPECT_NE(uc, nullptr) << s;
+      } else {
+        EXPECT_FALSE(ok) << s;
+        EXPECT_EQ(uc, nullptr) << s;
       }
     }
   }
