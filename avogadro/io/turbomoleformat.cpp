@@ -153,7 +153,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       getline(inStream, buffer);
       std::vector<string> tokens(split(buffer, ' '));
+
+#if __cplusplus >= 202002L
       const auto [tokens_converted, ok] = hoge(tokens);
+#else
+      std::vector<double> tokens_converted;
+      bool ok;
+      std::tie(tokens_converted, ok) = hoge(tokens);
+#endif
       if (!ok) {
         appendError("Failed to parse: " + buffer);
         return false;
@@ -172,26 +179,17 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         return true;
       };
 
-      auto set_vars = [&](unsigned periodic) {};
-
-      if (periodic_parsed) {
-        // $periodic appeared
-        switch (*periodic_parsed) {
+      auto set_vars = [&](unsigned periodic) {
+        switch (periodic) {
           case 1:
-            if (!is_line_valid(1u))
-              return false;
             a = tokens_converted[0] * cellConversion;
             break;
           case 2:
-            if (!is_line_valid(3u))
-              return false;
             a = tokens_converted[0] * cellConversion;
             b = tokens_converted[1] * cellConversion;
             gamma = tokens_converted[2] * DEG_TO_RAD;
             break;
           case 3:
-            if (!is_line_valid(6u))
-              return false;
             a = tokens_converted[0] * cellConversion;
             b = tokens_converted[1] * cellConversion;
             c = tokens_converted[2] * cellConversion;
@@ -200,38 +198,49 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             gamma = tokens_converted[5] * DEG_TO_RAD;
             break;
           default:
-            assert(periodic_parsed == 0);
+            assert(periodic == 0);
+        }
+      };
+
+      if (periodic_parsed) {
+        // $periodic appeared
+        switch (*periodic_parsed) {
+          case 1:
+            if (!is_line_valid(1))
+              return false;
+            break;
+          case 2:
+            if (!is_line_valid(3))
+              return false;
+            break;
+          case 3:
+            if (!is_line_valid(6))
+              return false;
+            break;
+          default:
             std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
+        set_vars(*periodic_parsed);
       } else {
         // $periodic does not appear yet, so guess it from the number of the
         // elements
         switch (ntokens) {
           case 1:
             periodic_guessed = 1;
-            a = tokens_converted[0] * cellConversion;
             break;
           case 3:
             periodic_guessed = 2;
-            a = tokens_converted[0] * cellConversion;
-            b = tokens_converted[1] * cellConversion;
-            gamma = tokens_converted[2] * DEG_TO_RAD;
             break;
           case 6:
             periodic_guessed = 3;
-            a = tokens_converted[0] * cellConversion;
-            b = tokens_converted[1] * cellConversion;
-            c = tokens_converted[2] * cellConversion;
-            alpha = tokens_converted[3] * DEG_TO_RAD;
-            beta = tokens_converted[4] * DEG_TO_RAD;
-            gamma = tokens_converted[5] * DEG_TO_RAD;
             break;
           default:
             appendError("Cannot determine dimensionality from $cell: " +
                         buffer);
             return false;
         }
+        set_vars(*periodic_guessed);
       }
     } else if (buffer.find("$lattice") != std::string::npos) {
       hasLattice = true;
