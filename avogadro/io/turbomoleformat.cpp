@@ -205,6 +205,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           appendError("Not enough or extra tokens in this line: " + buffer);
           return false;
         }
+        set_cell_vars(*periodic_parsed);
       } else {
         // $periodic does not appear yet, so guess it from the number of the
         // elements
