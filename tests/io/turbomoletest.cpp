@@ -205,3 +205,58 @@ TEST(TurbomoleTest, readPeriodicErr)
     }
   }
 }
+
+TEST(TurbomoleTest, readPeriodicErr2)
+{
+  std::map<std::string, std::vector<std::string>> invalid_inputs = {
+    {
+      "1"s,
+      {
+        "$cell\nFF"s, "$cell\n6.0 10.0"s,
+        // "$cell\n6.0\n10.0"s, // TODO extra line
+        "$lattice\nFF"s, "$lattice\n6.0 10.0"s,
+        // "$lattice\n6.0\n10.0\n$end"s, // TODO extra line
+      },
+    },
+    {
+      "2"s,
+      {
+        "$cell\n6.0 8.0"s,
+        "$cell\n6.0 8.0 90.0 90.0"s,
+        // "$cell\n6.0 8.0 90.0\n90.0"s, // TODO extra line
+        "$lattice\n6.0\n0.0 8.0"s,
+        "$lattice\n6.0 0.0"s,
+        "$lattice\n6.0 0.0\n0.0"s,
+        "$lattice\n6.0 0.0\n0.0 8.0 0.0"s,
+        // "$lattice\n6.0 0.0\n0.0 8.0\n0.0 0.0"s, // TODO extra line
+        "$lattice\n6.0 0.0 0.0\n0.0 8.0"s,
+      },
+    },
+    { "3"s,
+      {
+        "$cell\n6.0 8.0 10.0 90.0 90.0"s,
+        "$cell\n6.0 8.0 10.0 90.0 90.0 90.0 90.0"s, "$lattice\n6.0"s,
+        "$lattice\n6.0 0.0\n0.0 8.0"s, "$lattice\n6.0 0.0 0.0"s,
+        "$lattice\n6.0 0.0 0.0\n0.0 8.0 0.0"s,
+        "$lattice\n6.0 0.0 0.0\n0.0 8.0 0.0\n0.0 0.0"s,
+        "$lattice\n6.0 0.0 0.0\n0.0 8.0\n0.0 0.0 10.0"s,
+        "$lattice\n6.0 0.0 0.0 0.0\n0.0 8.0 0.0\n0.0 0.0 10.0"s,
+        // "$lattice\n6.0 0.0 0.0 0.0\n0.0 8.0 0.0\n0.0 0.0 10.0\n1.0"s, // TODO
+        // // extra line
+      } }
+  };
+
+  for (const auto& [periodic, strs] : invalid_inputs) {
+    for (const auto& s : strs) {
+      for (const auto& [pre, post] : {
+             std::make_pair("$periodic "s + periodic + "\n"s, "\n$end"s),
+             std::make_pair(""s, "\n$periodic "s + periodic + "\n$end"s),
+           }) {
+        TurbomoleFormat tmol;
+        Molecule molecule;
+        auto t = pre + s + post;
+        EXPECT_FALSE(tmol.readString(t, molecule)) << t;
+      }
+    }
+  }
+}
