@@ -158,6 +158,17 @@ TEST(TurbomoleTest, readCellParameters)
       }
     }
   }
+
+  for (const auto& str : {
+         periodic + cell() + cell(" angs"s) + "$end"s,
+         periodic + cell(" angs"s) + lattice() + "$end"s,
+         periodic + lattice() + cell(" angs"s) + "$end"s,
+         periodic + lattice(" angs"s) + lattice() + "$end"s,
+       }) {
+    TurbomoleFormat tmol;
+    Molecule molecule;
+    EXPECT_FALSE(tmol.readString(str, molecule)) << str;
+  }
 }
 
 TEST(TurbomoleTest, writeString)
