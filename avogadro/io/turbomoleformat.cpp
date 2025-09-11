@@ -154,7 +154,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         // next line
         getline(inStream, buffer);
       }
-    } else if (buffer.find("$cell") != std::string::npos) {
+    } else if (first_token == "$cell") {
       hasCell = true;
       Real cellConversion = BOHR_TO_ANGSTROM;
       if (buffer.find("ang") != std::string::npos)
@@ -251,7 +251,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         }
         set_vars(*periodic_guessed);
       }
-    } else if (buffer.find("$lattice") != std::string::npos) {
+    } else if (first_token == "$lattice") {
       hasLattice = true;
       Real latticeConversion = BOHR_TO_ANGSTROM; // default
       if (buffer.find("ang") != std::string::npos)
