@@ -247,6 +247,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
+        set_vars(*periodic_parsed);
       } else {
         // $periodic does not appear yet, so guess it from the number of the
         // elements
