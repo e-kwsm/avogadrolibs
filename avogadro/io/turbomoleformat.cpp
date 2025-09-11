@@ -82,7 +82,11 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
     if (buffer.find("$end") != std::string::npos)
       break;
 
-    if (buffer.find("$periodic") != std::string::npos) {
+    std::istringstream stream{ buffer };
+    std::string first_token;
+    stream >> first_token;
+
+    if (first_token == "$periodic") {
       const auto tokens = split(buffer, ' ');
       if (tokens.size() < 2u) {
         appendError("Not enough tokens in this line: " + buffer);
@@ -106,14 +110,19 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       continue;
     }
 
-    if (buffer.find("$coord") != std::string::npos) {
+    if (first_token == "$coord") {
       // check if there's a conversion to be done
       Real coordConversion = BOHR_TO_ANGSTROM; // default is Bohr
-      if (buffer.find("ang") != std::string::npos)
+      std::string tmp;
+      stream >> tmp;
+      if (tmp == "ang")
         coordConversion = 1.0; // leave as Angstrom
-      else if (buffer.find("frac") != std::string::npos) {
+      else if (tmp == "frac") {
         fractionalCoords = true;
         coordConversion = 1.0; // we may not know the lattice constants yet
+      } else if (!tmp.empty() && tmp[0] != COMMENT) {
+        // XXX ignore unknown parameter
+        std::cerr << "Failed to parse: " << buffer << '\n';
       }
 
       getline(inStream, buffer);
