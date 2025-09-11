@@ -21,6 +21,15 @@ using Avogadro::Core::Molecule;
 using Avogadro::Io::TurbomoleFormat;
 using namespace std::string_literals;
 
+TEST(TurbomoleTest, readNonPeriodic)
+{
+  for (const auto& s : { "$coord\n0.0 0.0 0.0 pt # $comment\n4.0 0.0 0.0 h\n$end"s }) {
+    TurbomoleFormat tmol;
+    Molecule molecule;
+    EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
+  }
+}
+
 TEST(TurbomoleTest, readPeriodic)
 {
   for (const auto& s : {
