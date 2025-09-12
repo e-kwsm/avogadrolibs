@@ -59,16 +59,24 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   string buffer;
   getline(inStream, buffer);
   while (inStream.good() && !buffer.empty()) {
-    if (buffer.find("$end") != std::string::npos)
+    std::istringstream stream{ buffer };
+    std::string first_token, second_token;
+    stream >> first_token >> second_token;
+
+    if (first_token == "$end")
       break;
-    else if (buffer.find("$coord") != std::string::npos) {
+
+    if (first_token == "$coord") {
       // check if there's a conversion to be done
       Real coordConversion = BOHR_TO_ANGSTROM; // default is Bohr
-      if (buffer.find("ang") != std::string::npos)
+      if (second_token == "ang")
         coordConversion = 1.0; // leave as Angstrom
-      else if (buffer.find("frac") != std::string::npos) {
+      else if (second_token == "frac") {
         fractionalCoords = true;
         coordConversion = 1.0; // we may not know the lattice constants yet
+      } else if (!second_token.empty() && second_token[0] != '#') {
+        std::cerr << "Ignore trailing token and assume bohr: " << buffer
+                  << '\n';
       }
 
       getline(inStream, buffer);
@@ -100,10 +108,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         // next line
         getline(inStream, buffer);
       }
-    } else if (buffer.find("$cell") != std::string::npos) {
+    } else if (first_token == "$cell") {
       hasCell = true;
       Real cellConversion = BOHR_TO_ANGSTROM;
-      if (buffer.find("angs") != std::string::npos)
+      if (second_token == "angs")
         cellConversion = 1.0; // leave as Angstrom
 
       getline(inStream, buffer);
@@ -119,10 +127,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
       gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
 
-    } else if (buffer.find("$lattice") != std::string::npos) {
+    } else if (first_token == "$lattice") {
       hasLattice = true;
       Real latticeConversion = BOHR_TO_ANGSTROM; // default
-      if (buffer.find("angs") != std::string::npos)
+      if (second_token == "angs")
         latticeConversion = 1.0; // leave as Angstrom
 
       for (int line = 0; line < 3; ++line) {
@@ -145,6 +153,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
         }
       }
+    } else if (first_token[0] != '#') {
+      std::cerr << "Ignore unknown token: " << buffer << '\n';
     }
 
     getline(inStream, buffer);
