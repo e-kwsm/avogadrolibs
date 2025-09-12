@@ -101,6 +101,13 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         getline(inStream, buffer);
       }
     } else if (buffer.find("$cell") != std::string::npos) {
+      if (hasLattice) {
+        std::cerr << "$lattice and $cell appear" << std::endl; // valid?
+      }
+      if (hasCell) {
+        appendError("$cell appears twice");
+        return false;
+      }
       hasCell = true;
       Real cellConversion = BOHR_TO_ANGSTROM;
       if (buffer.find("angs") != std::string::npos)
@@ -120,6 +127,13 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
 
     } else if (buffer.find("$lattice") != std::string::npos) {
+      if (hasCell) {
+        std::cerr << "$cell and $lattice appear" << std::endl; // valid?
+      }
+      if (hasLattice) {
+        appendError("$lattice appears twice");
+        return false;
+      }
       hasLattice = true;
       Real latticeConversion = BOHR_TO_ANGSTROM; // default
       if (buffer.find("angs") != std::string::npos)
