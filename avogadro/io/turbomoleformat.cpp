@@ -143,7 +143,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       }
     } else if (tokens[0] == "$cell") {
       if (hasLattice) {
-        appendError("Both of $cell and $lattice are specified");
+        std::cerr << "$lattice and $cell appear" << std::endl; // valid?
+      }
+      if (hasCell) {
+        appendError("$cell appears twice");
         return false;
       }
       hasCell = true;
@@ -211,7 +214,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     } else if (tokens[0] == "$lattice") {
       if (hasCell) {
-        appendError("Both of $cell and $lattice are specified");
+        std::cerr << "$cell and $lattice appear" << std::endl; // valid?
+      }
+      if (hasLattice) {
+        appendError("$lattice appears twice");
         return false;
       }
       hasLattice = true;
