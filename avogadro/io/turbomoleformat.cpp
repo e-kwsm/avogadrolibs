@@ -109,6 +109,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         getline(inStream, buffer);
       }
     } else if (first_token == "$cell") {
+      if (hasLattice) {
+        appendError("$cell and $lattice appear");
+        return false;
+      }
+      if (hasCell) {
+        appendError("$cell appears twice");
+        return false;
+      }
       hasCell = true;
       Real cellConversion = BOHR_TO_ANGSTROM;
       if (second_token == "angs")
@@ -128,6 +136,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
 
     } else if (first_token == "$lattice") {
+      if (hasLattice) {
+        appendError("$cell and $lattice appear");
+        return false;
+      }
+      if (hasLattice) {
+        appendError("$lattice appears twice");
+        return false;
+      }
       hasLattice = true;
       Real latticeConversion = BOHR_TO_ANGSTROM; // default
       if (second_token == "angs")
