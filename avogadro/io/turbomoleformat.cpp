@@ -119,6 +119,13 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         tokens = split(rstrip(buffer, '#'), ' ');
       }
     } else if (tokens[0] == "$cell") {
+      if (hasLattice) {
+        std::cerr << "$lattice and $cell appear" << std::endl; // valid?
+      }
+      if (hasCell) {
+        appendError("$cell appears twice");
+        return false;
+      }
       hasCell = true;
       Real cellConversion = BOHR_TO_ANGSTROM;
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
@@ -143,6 +150,13 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       }
 
     } else if (tokens[0] == "$lattice") {
+      if (hasCell) {
+        std::cerr << "$cell and $lattice appear" << std::endl; // valid?
+      }
+      if (hasLattice) {
+        appendError("$lattice appears twice");
+        return false;
+      }
       hasLattice = true;
       Real latticeConversion = BOHR_TO_ANGSTROM; // default
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
