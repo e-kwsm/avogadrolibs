@@ -6,6 +6,12 @@
 #include "spheregeometry.h"
 
 #include "camera.h"
+#include "core/array.h"
+#include "rendering/avogadrorendering.h"
+#include "core/types.h"
+#include "rendering/primitive.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
 #include "scene.h"
 
 #include "bufferobject.h"
@@ -14,6 +20,13 @@
 #include "shaderprogram.h"
 
 #include "visitor.h"
+#include <cstddef>
+#include <vector>
+#include <map>
+#include <cmath>
+#include <algorithm>
+#include <cstdlib>
+#include <utility>
 
 namespace {
 #include "spheres_fs.h"
