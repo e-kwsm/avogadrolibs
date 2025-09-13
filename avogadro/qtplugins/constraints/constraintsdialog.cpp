@@ -4,12 +4,22 @@
 ******************************************************************************/
 
 #include "constraintsdialog.h"
+#include "core/constraint.h"
+#include "qtgui/molecule.h"
+#include "constraintsmodel.h"
+#include "core/avogadrocore.h"
 #include "ui_constraintsdialog.h"
 
 #include <QDebug>
 #include <QtCore/QSortFilterProxyModel>
 
 #include <avogadro/qtgui/rwmolecule.h>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qabstractitemview.h>
+#include <qabstractitemmodel.h>
 
 using Avogadro::Core::Constraint;
 using Avogadro::QtGui::Molecule;
