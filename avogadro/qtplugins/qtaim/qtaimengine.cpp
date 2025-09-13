@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "qtaimengine.h"
+#include "qtgui/sceneplugin.h"
+#include "core/vector.h"
 
 #include <avogadro/qtgui/molecule.h>
 
@@ -14,6 +16,9 @@
 
 #include <QDebug>
 #include <QtCore/QVariant>
+#include <qobject.h>
+#include <qcontainerfwd.h>
+#include <qtypes.h>
 
 using namespace Avogadro;
 using namespace Avogadro::Rendering;
