@@ -4,6 +4,9 @@
 ******************************************************************************/
 
 #include "rwlayermanager.h"
+#include "core/array.h"
+#include "core/layermanager.h"
+#include "core/avogadrocore.h"
 #include "rwmolecule.h"
 
 #include <avogadro/core/molecule.h>
@@ -12,6 +15,14 @@
 #include <QUndoCommand>
 #include <QUndoStack>
 #include <cassert>
+#include <map>
+#include <set>
+#include <memory>
+#include <string>
+#include <vector>
+#include <cstddef>
+#include <iterator>
+#include <utility>
 
 namespace Avogadro::QtGui {
 
