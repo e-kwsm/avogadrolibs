@@ -4,6 +4,9 @@
 ******************************************************************************/
 
 #include "mdlformat.h"
+#include "core/matrix.h"
+#include "core/avogadrocore.h"
+#include "io/fileformat.h"
 
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
@@ -11,6 +14,8 @@
 #include <avogadro/core/vector.h>
 
 #include <chrono>
+#include <cstddef>
+#include <ctime>
 #include <iomanip>
 #include <iostream>
 #include <istream>
@@ -18,6 +23,7 @@
 #include <sstream>
 #include <string>
 #include <utility>
+#include <vector>
 
 using Avogadro::Core::Atom;
 using Avogadro::Core::Bond;
