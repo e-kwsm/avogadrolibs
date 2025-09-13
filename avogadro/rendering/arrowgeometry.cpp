@@ -6,18 +6,17 @@
 #include "arrowgeometry.h"
 
 #include "avogadrogl.h"
-#include "bufferobject.h"
 #include "camera.h"
-#include "scene.h"
 #include "shader.h"
 #include "shaderprogram.h"
 #include "visitor.h"
 
-#include <avogadro/core/matrix.h>
 #include <avogadro/core/vector.h>
 
+#include <cmath>
 #include <iostream>
-#include <limits>
+#include <math.h>
+#include <utility>
 
 namespace {
 #include "arrow_vs.h"
