@@ -6,6 +6,7 @@
 #include "avospglib.h"
 
 #include "array.h"
+#include "core/avogadrocore.h"
 #include "matrix.h"
 #include "molecule.h"
 #include "unitcell.h"
