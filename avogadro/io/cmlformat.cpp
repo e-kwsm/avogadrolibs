@@ -4,6 +4,15 @@
 ******************************************************************************/
 
 #include "cmlformat.h"
+#include <string>
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include <vector>
+#include <cstring>
+#include <istream>
+#include <ostream>
+#include "core/variantmap.h"
+#include <bits/basic_string.h>
 
 #ifdef AVO_USE_HDF5
 #include "hdf5dataformat.h"
