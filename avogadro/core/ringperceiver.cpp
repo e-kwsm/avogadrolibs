@@ -5,6 +5,8 @@
 
 #include "ringperceiver.h"
 
+#include "core/array.h"
+#include "core/graph.h"
 #include "molecule.h"
 
 #include <algorithm>
@@ -12,6 +14,7 @@
 #include <iterator>
 #include <limits>
 #include <set>
+#include <utility>
 #include <vector>
 
 namespace Avogadro::Core {
