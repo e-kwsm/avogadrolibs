@@ -6,6 +6,7 @@
 #include "configurepython.h"
 
 #include "configurepythondialog.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/qtgui/avogadropython.h>
 #include <avogadro/qtgui/filebrowsewidget.h>
@@ -22,6 +23,12 @@
 #include <QtCore/QUrl>
 #include <QtGui/QDesktopServices>
 #include <QtWidgets/QMessageBox>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qlist.h>
+#include <qtenvironmentvariables.h>
+#include <qforeach.h>
 
 namespace Avogadro::QtPlugins {
 
