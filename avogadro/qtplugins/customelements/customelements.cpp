@@ -4,11 +4,17 @@
 ******************************************************************************/
 
 #include "customelements.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/qtgui/customelementdialog.h>
 #include <avogadro/qtgui/molecule.h>
 
 #include <QAction>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
 
 using Avogadro::QtGui::Molecule;
 
