@@ -5,6 +5,7 @@
 
 #include "propertyview.h"
 #include "core/avogadrocore.h"
+#include "propertymodel.h"
 
 #include <avogadro/core/array.h>
 #include <avogadro/core/residue.h>
@@ -42,6 +43,12 @@
 #include <QtWidgets/QVBoxLayout>
 
 #include <QtCore/QDebug>
+#include <qtableview.h>
+#include <qnamespace.h>
+#include <qabstractitemview.h>
+#include <qforeach.h>
+#include <qkeysequence.h>
+#include <qitemselectionmodel.h>
 
 #include <algorithm>
 #include <numeric>

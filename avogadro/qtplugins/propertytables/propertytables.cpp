@@ -6,6 +6,7 @@
 #include "propertytables.h"
 #include "propertymodel.h"
 #include "propertyview.h"
+#include "qtgui/extensionplugin.h"
 
 #include <QAction>
 #include <QtWidgets/QDialog>
@@ -17,6 +18,13 @@
 #include <QtCore/QStringList>
 
 #include <avogadro/qtgui/molecule.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qsize.h>
 
 namespace Avogadro::QtPlugins {
 
