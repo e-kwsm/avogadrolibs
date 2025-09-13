@@ -4,9 +4,30 @@
 ******************************************************************************/
 
 #include "label.h"
+#include "core/array.h"
+#include "qtgui/pluginlayermanager.h"
+#include "rendering/groupnode.h"
+#include "core/vector.h"
+#include "rendering/textproperties.h"
+#include "rendering/avogadrorendering.h"
+#include "core/layermanager.h"
+#include "qtgui/sceneplugin.h"
+#include "core/matrix.h"
+#include "core/avogadrocore.h"
+#include "core/molecule.h"
 
+#include <cmath>
+#include <cstddef>
 #include <iomanip>
 #include <iostream>
+#include <map>
+#include <qnamespace.h>
+#include <qcolor.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <set>
+#include <qtmetamacros.h>
 #include <sstream>
 
 // for partial charges
@@ -28,6 +49,7 @@
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <string>
 
 namespace Avogadro::QtPlugins {
 
