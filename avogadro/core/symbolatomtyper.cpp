@@ -5,7 +5,10 @@
 
 #include "symbolatomtyper.h"
 
+#include "core/molecule.h"
+#include "core/atomtyper.h"
 #include "elements.h"
+#include <string>
 
 namespace Avogadro::Core {
 
