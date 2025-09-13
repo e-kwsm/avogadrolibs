@@ -5,8 +5,12 @@
 
 #include "obfileformat.h"
 
+#include "io/fileformat.h"
 #include "obprocess.h"
 
+#include <istream>
+#include <ios>
+#include <bits/basic_string.h>
 #include <nlohmann/json.hpp>
 
 #include <QtCore/QCoreApplication>
@@ -14,6 +18,17 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QTemporaryFile>
 #include <QtCore/QTimer>
+#include <nlohmann/json_fwd.hpp>
+#include <qobject.h>
+#include <qtmetamacros.h>
+#include <qstringview.h>
+#include <qeventloop.h>
+#include <string>
+#include <vector>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <ostream>
+#include <qlogging.h>
 
 using namespace std::string_literals;
 using json = nlohmann::json;
