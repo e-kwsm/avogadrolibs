@@ -4,7 +4,11 @@
 ******************************************************************************/
 
 #include "overlayaxes.h"
+#include "rendering/avogadrorendering.h"
+#include "qtgui/extensionplugin.h"
 
+#include <Eigen/src/Geometry/Transform.h>
+#include <algorithm>
 #include <avogadro/rendering/avogadrogl.h>
 #include <avogadro/rendering/camera.h>
 #include <avogadro/rendering/geometrynode.h>
@@ -18,7 +22,11 @@
 
 #include <QSettings>
 
-#include <Eigen/Geometry>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qtmetamacros.h>
 
 using Avogadro::Vector3f;
 using Avogadro::Core::Array;
