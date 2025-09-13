@@ -6,9 +6,13 @@
 #include "geometryvisitor.h"
 
 #include "ambientocclusionspheregeometry.h"
+#include "core/array.h"
 #include "curvegeometry.h"
 #include "linestripgeometry.h"
+#include "rendering/drawable.h"
 #include "spheregeometry.h"
+#include <cmath>
+#include <vector>
 
 namespace Avogadro::Rendering {
 
