@@ -5,8 +5,7 @@
 
 #include "plugindownloader.h"
 #include "downloaderwidget.h"
-#include <avogadro/io/fileformatmanager.h>
-#include <avogadro/qtgui/molecule.h>
+#include "qtgui/extensionplugin.h"
 
 #include <QAction>
 #include <QSettings>
@@ -16,6 +15,10 @@
 #include <QtWidgets/QInputDialog>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QProgressDialog>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
 
 namespace Avogadro::QtPlugins {
 

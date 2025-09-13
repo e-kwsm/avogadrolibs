@@ -26,6 +26,17 @@
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkReply>
 #include <QtNetwork/QNetworkRequest>
+#include <nlohmann/json_fwd.hpp>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qabstractitemview.h>
+#include <string>
+#include <qdatetime.h>
+#include <qnamespace.h>
+#include <qtversionchecks.h>
+#include <cstddef>
+#include <qlist.h>
 
 using json = nlohmann::json;
 

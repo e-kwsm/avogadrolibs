@@ -6,6 +6,13 @@
 #include "zipextracter.h"
 
 #include <QtCore/QString>
+#include <archive.h>
+#include <cstddef>
+#include <cstdio>
+#include <string>
+#include <cstring>
+#include <qlist.h>
+#include <archive_entry.h>
 namespace Avogadro::QtPlugins {
 
 ZipExtracter::ZipExtracter() {}
