@@ -6,10 +6,11 @@
 #include "scriptfileformats.h"
 
 #include "fileformatscript.h"
+#include "qtgui/extensionplugin.h"
+#include "io/fileformat.h"
 
 #include <avogadro/io/fileformatmanager.h>
 #include <avogadro/qtgui/scriptloader.h>
-#include <avogadro/qtgui/utilities.h>
 
 #include <QtCore/QCoreApplication>
 #include <QtCore/QDebug>
@@ -17,6 +18,13 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QStandardPaths>
 #include <QtCore/QTimer>
+#include <qobject.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qalgorithms.h>
+#include <qmap.h>
+#include <qforeach.h>
+#include <qlogging.h>
 
 namespace Avogadro::QtPlugins {
 
