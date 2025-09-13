@@ -5,7 +5,11 @@
 
 #include "drawable.h"
 
+#include "core/array.h"
+#include "rendering/avogadrorendering.h"
+#include "core/vector.h"
 #include "visitor.h"
+#include <map>
 
 namespace Avogadro::Rendering {
 
