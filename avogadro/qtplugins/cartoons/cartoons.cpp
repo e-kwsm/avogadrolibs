@@ -4,6 +4,15 @@
 ******************************************************************************/
 
 #include "cartoons.h"
+#include "core/atom.h"
+#include "qtgui/molecule.h"
+#include "qtgui/pluginlayermanager.h"
+#include "core/layermanager.h"
+#include "core/vector.h"
+#include "qtgui/sceneplugin.h"
+#include "core/avogadrocore.h"
+#include "rendering/primitive.h"
+#include "rendering/curvegeometry.h"
 
 #include <QtCore/QSettings>
 #include <QtWidgets/QCheckBox>
@@ -11,7 +20,6 @@
 #include <QtWidgets/QWidget>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/residue.h>
-#include <avogadro/qtgui/rwmolecule.h>
 #include <avogadro/rendering/beziergeometry.h>
 #include <avogadro/rendering/bsplinegeometry.h>
 #include <avogadro/rendering/cartoongeometry.h>
@@ -20,7 +28,16 @@
 #include <avogadro/rendering/groupnode.h>
 #include <avogadro/rendering/spheregeometry.h>
 
+#include <cstddef>
 #include <functional>
+#include <list>
+#include <map>
+#include <string>
+#include <sstream>
+#include <qcontainerfwd.h>
+#include <qobject.h>
+#include <iterator>
+#include <qtmetamacros.h>
 #include <utility>
 #include <vector>
 
