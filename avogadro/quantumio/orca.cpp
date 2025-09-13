@@ -4,16 +4,26 @@
 ******************************************************************************/
 
 #include "orca.h"
+#include "core/array.h"
+#include "core/gaussianset.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
+#include "core/matrix.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/utilities.h>
 
 #include <algorithm>
+#include <cctype>
+#include <cmath>
 #include <cstddef>
 #include <iostream>
 #include <fstream>
 #include <regex>
+#include <string>
+#include <vector>
 
 using std::regex;
 using std::string;
