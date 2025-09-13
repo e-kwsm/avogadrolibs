@@ -5,9 +5,12 @@
 
 #include "qtaimextension.h"
 
+#include "core/avogadrocore.h"
 #include "qtaimcriticalpointlocator.h"
 #include "qtaimcubature.h"
+#include "qtaimwavefunction.h"
 #include "qtaimwavefunctionevaluator.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/qtgui/molecule.h>
 
@@ -21,6 +24,12 @@
 #include <QThread>
 #include <QTime>
 #include <QVector3D>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <qlogging.h>
+#include <qtypes.h>
+#include <qtmetamacros.h>
 
 using namespace Eigen;
 
