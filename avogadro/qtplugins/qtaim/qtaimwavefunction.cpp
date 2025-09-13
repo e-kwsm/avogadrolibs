@@ -15,12 +15,17 @@
 ******************************************************************************/
 
 #include "qtaimwavefunction.h"
+#include "qtgui/molecule.h"
 
 #include <QDebug>
 #include <QFile>
 #include <QString>
 #include <QStringList>
 #include <QTextStream>
+#include <qcontainerfwd.h>
+#include <qtypes.h>
+#include <qlist.h>
+#include <qnamespace.h>
 
 namespace Avogadro::QtPlugins {
 
