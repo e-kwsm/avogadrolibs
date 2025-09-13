@@ -15,6 +15,8 @@
 ******************************************************************************/
 
 #include "symmetryutil.h"
+#include <qobject.h>
+#include <libmsym/msym.h>
 
 #define _ORIENT_HORIZONTAL                                                     \
   msym::_msym_symmetry_operation::MSYM_SYMMETRY_OPERATION_ORIENTATION_HORIZONTAL

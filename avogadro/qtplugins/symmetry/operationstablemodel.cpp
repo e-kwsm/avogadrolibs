@@ -16,6 +16,12 @@
 
 #include "operationstablemodel.h"
 #include "symmetryutil.h"
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <libmsym/msym.h>
+#include <qvariant.h>
+#include <qnamespace.h>
+#include <qhashfunctions.h>
 
 using namespace Avogadro::QtPlugins::SymmetryUtil;
 
