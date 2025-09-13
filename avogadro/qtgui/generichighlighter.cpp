@@ -6,6 +6,12 @@
 #include "generichighlighter.h"
 
 #include <cassert>
+#include <qobject.h>
+#include <qsyntaxhighlighter.h>
+#include <qtextdocument.h>
+#include <qlist.h>
+#include <qregularexpression.h>
+#include <qtextformat.h>
 
 namespace Avogadro::QtGui {
 
