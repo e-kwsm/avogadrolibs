@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "qttextrenderstrategy.h"
+#include "rendering/textrenderstrategy.h"
+#include "core/vector.h"
 
 #include <avogadro/rendering/textproperties.h>
 
@@ -22,6 +24,13 @@
 #include <QtCore/QSysInfo>
 
 #include <cmath>
+#include <qnamespace.h>
+#include <qlogging.h>
+#include <qtypes.h>
+#include <string>
+#include <qrgb.h>
+#include <qtpreprocessorsupport.h>
+#include <cstddef>
 
 using Avogadro::Rendering::TextProperties;
 
