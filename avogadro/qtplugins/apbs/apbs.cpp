@@ -7,6 +7,7 @@
 
 #include "apbsdialog.h"
 #include "opendxreader.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/core/cube.h>
 #include <avogadro/core/mesh.h>
@@ -19,6 +20,12 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QProgressDialog>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
