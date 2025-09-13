@@ -3,18 +3,16 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "io/fileformat.h"
 #include "iotests.h"
 
 #include <gtest/gtest.h>
 
-#include <avogadro/core/atom.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/vector.h>
 
 #include <avogadro/io/xyzformat.h>
 
-#include <fstream>
-#include <sstream>
 #include <string>
 
 using Avogadro::Vector3;
