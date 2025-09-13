@@ -17,9 +17,15 @@
 #include "3dmol.h"
 
 #include "3dmoldialog.h"
+#include "qtgui/extensionplugin.h"
 
 #include <QAction>
 #include <QStringList>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
 
 namespace Avogadro::QtPlugins {
 
