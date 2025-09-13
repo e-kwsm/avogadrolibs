@@ -1,6 +1,9 @@
-#include <pybind11/eigen.h>
+#include "core/atom.h"
+#include "core/bond.h"
+#include "core/avogadrocore.h"
+#include <pybind11/cast.h>
+#include <pybind11/detail/common.h>
 #include <pybind11/pybind11.h>
-#include <pybind11/stl.h>
 
 #include <avogadro/core/cube.h>
 #include <avogadro/core/gaussiansettools.h>
