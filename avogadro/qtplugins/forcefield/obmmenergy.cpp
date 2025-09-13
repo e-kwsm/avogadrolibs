@@ -4,7 +4,11 @@
 ******************************************************************************/
 
 #include "obmmenergy.h"
+#include "calc/energycalculator.h"
+#include "core/avogadrocore.h"
 
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Core/util/Meta.h>
 #include <avogadro/core/molecule.h>
 
 #include <avogadro/io/cmlformat.h>
@@ -14,6 +18,14 @@
 #include <QtCore/QScopedPointer>
 #include <QtCore/QThread>
 #include <QtCore/QTimer>
+#include <string>
+#include <qstringview.h>
+#include <qtenvironmentvariables.h>
+#include <qcoreapplication.h>
+#include <qprocess.h>
+#include <qcontainerfwd.h>
+#include <qlogging.h>
+#include <qnamespace.h>
 
 namespace Avogadro::QtPlugins {
 
