@@ -4,12 +4,17 @@
 ******************************************************************************/
 
 #include "molden.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
 
 #include <avogadro/core/gaussianset.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/utilities.h>
 
+#include <iosfwd>
 #include <iostream>
+#include <string>
+#include <vector>
 
 using std::cout;
 using std::endl;
