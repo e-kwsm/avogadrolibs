@@ -13,6 +13,12 @@
 #include <QtGui/QTextDocument>
 #include <QtGui/QTextDocumentFragment>
 #include <QtGui/QTextLayout>
+#include <qassert.h>
+#include <qnamespace.h>
+#include <qforeach.h>
+#include <qminmax.h>
+#include <qregularexpression.h>
+#include <qobject.h>
 
 using Avogadro::QtGui::GenericHighlighter;
 
