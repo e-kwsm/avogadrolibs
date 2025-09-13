@@ -11,6 +11,7 @@
 
 #include <algorithm>
 #include <cctype>
+#include <string>
 #include <vector>
 
 using Avogadro::Core::isCustomElement;
