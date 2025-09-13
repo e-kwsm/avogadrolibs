@@ -9,6 +9,13 @@
 #include "jsonrpcclient.h"
 
 #include <QtCore/QJsonDocument>
+#include <qobject.h>
+#include <qregularexpression.h>
+#include <qobjectdefs.h>
+#include <qlatin1stringview.h>
+#include <qlist.h>
+#include <qtmetamacros.h>
+#include <qforeach.h>
 
 namespace Avogadro::MoleQueue {
 

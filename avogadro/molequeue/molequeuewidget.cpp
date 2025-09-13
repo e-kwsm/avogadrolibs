@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "molequeuewidget.h"
+#include "molequeue/client/jobobject.h"
 #include "ui_molequeuewidget.h"
 
 #include "molequeuemanager.h"
@@ -13,6 +14,13 @@
 #include <QtCore/QTimer>
 
 #include <limits>
+#include <qwidget.h>
+#include <qobjectdefs.h>
+#include <qabstractitemmodel.h>
+#include <qforeach.h>
+#include <qjsonobject.h>
+#include <qtmetamacros.h>
+#include <qlatin1stringview.h>
 
 namespace Avogadro::MoleQueue {
 
