@@ -5,7 +5,13 @@
 
 #include "editor.h"
 
+#include "core/avogadrocore.h"
+#include "core/array.h"
+#include "core/molecule.h"
 #include "editortoolwidget.h"
+#include "rendering/primitive.h"
+#include "qtgui/toolplugin.h"
+#include "rendering/avogadrorendering.h"
 
 #include <avogadro/core/atom.h>
 #include <avogadro/core/bond.h>
@@ -25,7 +31,6 @@
 
 #include <avogadro/rendering/groupnode.h>
 #include <avogadro/rendering/textlabel2d.h>
-#include <avogadro/rendering/textlabel3d.h>
 #include <avogadro/rendering/textproperties.h>
 
 #include <QAction>
@@ -41,7 +46,15 @@
 
 #include <QDebug>
 
+#include <cmath>
 #include <limits>
+#include <qobject.h>
+#include <qnamespace.h>
+#include <qundostack.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
+#include <map>
+#include <qlogging.h>
 
 namespace {
 const unsigned char INVALID_ATOMIC_NUMBER =
