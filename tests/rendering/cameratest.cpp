@@ -3,11 +3,11 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/vector.h"
+#include <Eigen/src/Core/Matrix.h>
 #include <gtest/gtest.h>
 
 #include <avogadro/rendering/camera.h>
-
-#include <Eigen/Geometry>
 
 #include <iostream>
 

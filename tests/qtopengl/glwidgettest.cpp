@@ -3,9 +3,11 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/vector.h"
 #include <avogadro/qtopengl/glwidget.h>
 #include <avogadro/rendering/geometrynode.h>
 #include <avogadro/rendering/spheregeometry.h>
+#include <qobjectdefs.h>
 #include <utilities/vtktesting/imageregressiontest.h>
 
 #include <QtCore/QTimer>
