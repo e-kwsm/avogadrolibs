@@ -4,17 +4,22 @@
 ******************************************************************************/
 
 #include "trrformat.h"
+#include "core/array.h"
+#include "core/avogadrocore.h"
 #include "struct.h"
 
-#include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
-#include <avogadro/core/utilities.h>
 #include <avogadro/core/vector.h>
 
+#include <cstdio>
+#include <cstring>
 #include <istream>
+#include <map>
 #include <ostream>
 #include <string>
+#include <utility>
+#include <vector>
 
 using std::map;
 using std::pair;
