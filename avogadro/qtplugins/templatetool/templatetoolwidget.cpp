@@ -19,6 +19,13 @@
 #include <QtCore/QSettings>
 
 #include <QtGui/QClipboard>
+#include <qwidget.h>
+#include <qobjectdefs.h>
+#include <qicon.h>
+#include <qforeach.h>
+#include <qcontainerfwd.h>
+#include <vector>
+#include <cstddef>
 
 namespace {
 // The ItemData of the "Other" entry in the combo box
