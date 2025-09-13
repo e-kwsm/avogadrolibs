@@ -15,6 +15,8 @@
 #include "orca.h"
 
 #include <iostream>
+#include <vector>
+#include <string>
 
 namespace Avogadro::QuantumIO {
 
