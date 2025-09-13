@@ -4,8 +4,14 @@
 ******************************************************************************/
 
 #include "labeleditor.h"
+#include "core/elements.h"
+#include "qtgui/rwmolecule.h"
+#include "qtgui/toolplugin.h"
+#include "core/vector.h"
+#include "rendering/textproperties.h"
+#include "rendering/avogadrorendering.h"
+#include "rendering/groupnode.h"
 
-#include <avogadro/qtopengl/glwidget.h>
 #include <avogadro/rendering/geometrynode.h>
 #include <avogadro/rendering/primitive.h>
 #include <avogadro/rendering/textlabel3d.h>
@@ -14,6 +20,12 @@
 #include <QKeyEvent>
 
 #include <QDebug>
+#include <qobject.h>
+#include <qicon.h>
+#include <qundostack.h>
+#include <qnamespace.h>
+#include <qtmetamacros.h>
+#include <string>
 
 namespace Avogadro::QtPlugins {
 
