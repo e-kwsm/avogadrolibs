@@ -4,6 +4,10 @@
 ******************************************************************************/
 
 #include "select.h"
+#include "qtgui/extensionplugin.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "core/layermanager.h"
 
 #include <avogadro/core/residue.h>
 #include <avogadro/qtgui/molecule.h>
@@ -19,6 +23,14 @@
 #include <QtWidgets/QInputDialog>
 
 #include <QtCore/QStringList>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <cmath>
+#include <qlineedit.h>
+#include <qforeach.h>
 
 using Avogadro::QtGui::Molecule;
 
