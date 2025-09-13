@@ -4,7 +4,13 @@
 ******************************************************************************/
 
 #include "propertymodel.h"
+#include "qtgui/rwmolecule.h"
+#include "core/vector.h"
+#include "core/matrix.h"
+#include "core/avogadrocore.h"
 
+#include <algorithm>
+#include <Eigen/src/Geometry/AngleAxis.h>
 #include <avogadro/calc/chargemanager.h>
 #include <avogadro/core/array.h>
 #include <avogadro/core/atom.h>
@@ -20,9 +26,20 @@
 #include <QtCore/QDebug>
 #include <QtGui/QColor>
 
+#include <cstddef>
+#include <cmath>
 #include <limits>
 
-#include <Eigen/Geometry>
+#include <utility>
+#include <vector>
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <qtpreprocessorsupport.h>
+#include <set>
+#include <qnamespace.h>
+#include <qtmetamacros.h>
+#include <math.h>
+#include <qobjectdefs.h>
 
 namespace Avogadro {
 
