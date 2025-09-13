@@ -4,7 +4,32 @@
 ******************************************************************************/
 
 #include "surfaces.h"
+#include "core/array.h"
+#include "qtgui/extensionplugin.h"
+#include "core/elements.h"
+#include "core/avogadrocore.h"
 #include "surfacedialog.h"
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
+#include <qcontainerfwd.h>
+#include <qnamespace.h>
+#include <qlist.h>
+#include <qwidget.h>
+#include <set>
+#include <utility>
+#include <cmath>
+#include <algorithm>
+#include <qfuture.h>
+#include <vector>
+#include <cstddef>
+#include <string>
+#include <qlogging.h>
+#include <tinycolormap.hpp>
+#include <cstdlib>
+#include <qfileinfo.h>
+#include <qimage.h>
+#include <cstdint>
+#include <qcolor.h>
 
 // Header only, but duplicate symbols if included globally...
 namespace {
