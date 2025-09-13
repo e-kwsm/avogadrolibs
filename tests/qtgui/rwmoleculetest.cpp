@@ -3,6 +3,11 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "core/array.h"
+#include <cstddef>
+#include <bits/basic_string.h>
 #include <gtest/gtest.h>
 
 #include <avogadro/qtgui/molecule.h>
