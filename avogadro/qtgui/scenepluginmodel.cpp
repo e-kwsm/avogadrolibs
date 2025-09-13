@@ -6,6 +6,14 @@
 #include "scenepluginmodel.h"
 
 #include "sceneplugin.h"
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <qnamespace.h>
+#include <qvariant.h>
+#include <qtmetamacros.h>
+#include <qlist.h>
+#include <qforeach.h>
+#include <qobjectdefs.h>
 
 namespace Avogadro::QtGui {
 
