@@ -18,10 +18,10 @@
 
 #include "qtaimlsodaintegrator.h"
 #include "qtaimmathutilities.h"
+#include "qtaimwavefunction.h"
 #include "qtaimwavefunctionevaluator.h"
 
-#include <Eigen/Core>
-
+#include <Eigen/src/Core/Matrix.h>
 #include <QList>
 
 #include <QtConcurrent/QtConcurrentMap>
@@ -36,6 +36,11 @@
 #include <QFuture>
 #include <QFutureWatcher>
 #include <QProgressDialog>
+#include <qtypes.h>
+#include <qvectornd.h>
+#include <qcontainerfwd.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
 
 using namespace Eigen;
 
