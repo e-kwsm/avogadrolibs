@@ -9,6 +9,12 @@
 #include <QtCore/QDataStream>
 #include <QtCore/QTimer>
 #include <QtNetwork/QLocalSocket>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qnamespace.h>
+#include <qlatin1stringview.h>
+#include <qjsonparseerror.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::MoleQueue {
 
