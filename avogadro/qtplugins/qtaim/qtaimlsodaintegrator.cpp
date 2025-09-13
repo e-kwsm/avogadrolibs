@@ -39,6 +39,13 @@ tam@wri.com
 
 #include "qtaimlsodaintegrator.h"
 #include "qtaimmathutilities.h"
+#include "qtaimwavefunctionevaluator.h"
+#include <qtypes.h>
+#include <qvectornd.h>
+#include <Eigen/src/Core/Matrix.h>
+#include <qlogging.h>
+#include <cmath>
+#include <cstdlib>
 
 namespace Avogadro::QtPlugins {
 
