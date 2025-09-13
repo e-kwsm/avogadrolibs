@@ -4,8 +4,16 @@
 ******************************************************************************/
 
 #include "cartoongeometry.h"
+#include "core/residue.h"
+#include "rendering/bsplinegeometry.h"
+#include "rendering/scene.h"
+#include "core/vector.h"
 
+#include <Eigen/src/Geometry/Transform.h>
 #include <cmath>
+#include <vector>
+#include <math.h>
+#include <cstddef>
 
 namespace Avogadro::Rendering {
 

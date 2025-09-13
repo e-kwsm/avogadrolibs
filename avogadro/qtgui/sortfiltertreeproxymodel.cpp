@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "sortfiltertreeproxymodel.h"
+#include <qabstractitemmodel.h>
+#include <qhashfunctions.h>
 
 namespace Avogadro::QtGui {
 
