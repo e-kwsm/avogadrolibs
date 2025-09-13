@@ -3,29 +3,43 @@
 
 #include "vtkglwidget.h"
 
+#include <Eigen/src/Core/Matrix.h>
+#include <algorithm>
+#include <QVTKOpenGLStereoWidget.h>
 #include <avogadro/core/cube.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/sceneplugin.h>
 #include <avogadro/qtgui/scenepluginmodel.h>
 #include <avogadro/qtgui/toolplugin.h>
 
+#include "vtk/qvtkwidget.h"
+#include "core/avogadrocore.h"
 #include "vtkAvogadroActor.h"
 #include <QVTKInteractor.h>
+#include <vector>
+#include <cmath>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qforeach.h>
+#include <qtmetamacros.h>
+#include <qassert.h>
+#include <qobject.h>
 #include <vtkColorTransferFunction.h>
 #include <vtkFlyingEdges3D.h>
 #include <vtkGenericOpenGLRenderWindow.h>
 #include <vtkImageData.h>
-#include <vtkImageShiftScale.h>
 #include <vtkInteractorStyleTrackballCamera.h>
-#include <vtkLookupTable.h>
 #include <vtkMolecule.h>
 #include <vtkMoleculeMapper.h>
+#include <vtkNew.h>
 #include <vtkPiecewiseFunction.h>
 #include <vtkPolyDataMapper.h>
 #include <vtkProperty.h>
 #include <vtkRenderViewBase.h>
 #include <vtkRenderer.h>
 #include <vtkSmartVolumeMapper.h>
+#include <vtkType.h>
 #include <vtkVolume.h>
 #include <vtkVolumeProperty.h>
 
