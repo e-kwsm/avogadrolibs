@@ -4,8 +4,12 @@
 ******************************************************************************/
 
 #include "applycolors.h"
+#include "qtgui/extensionplugin.h"
+#include "core/avogadrocore.h"
+#include "core/elements.h"
 #include "ui_chargedialog.h"
 
+#include <algorithm>
 #include <avogadro/calc/chargemanager.h>
 #include <avogadro/core/residue.h>
 #include <avogadro/core/residuecolors.h>
@@ -18,6 +22,17 @@
 #include <QStringList>
 
 #include <QDebug>
+#include <qdialog.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <tinycolormap.hpp>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <cstdlib>
+#include <qcolor.h>
+#include <cctype>
 
 using namespace tinycolormap;
 
