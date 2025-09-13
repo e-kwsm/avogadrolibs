@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "fileformatscript.h"
+#include "io/fileformat.h"
 
 #include <avogadro/core/molecule.h>
 #include <avogadro/qtgui/pythonscript.h>
@@ -18,10 +19,18 @@
 #include <QtCore/QDebug>
 #include <QtCore/QScopedPointer>
 
+#include <istream>
+#include <qforeach.h>
+#include <ostream>
+#include <bits/basic_string.h>
 #include <qjsonarray.h>
 #include <qjsondocument.h>
 #include <qjsonobject.h>
+#include <qjsonparseerror.h>
 #include <qjsonvalue.h>
+#include <qstringview.h>
+#include <qlogging.h>
+#include <vector>
 
 using namespace std::string_literals;
 
