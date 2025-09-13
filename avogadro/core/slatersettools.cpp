@@ -5,8 +5,15 @@
 
 #include "slatersettools.h"
 
+#include "core/vector.h"
+#include "core/matrix.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
 #include "molecule.h"
 #include "slaterset.h"
+#include <vector>
+#include <cstdlib>
+#include <cmath>
 
 namespace Avogadro::Core {
 
