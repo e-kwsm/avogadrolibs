@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "chargemodel.h"
+#include "core/vector.h"
+#include "core/matrix.h"
 
 #include <Eigen/src/Core/util/Meta.h>
 #include <avogadro/core/array.h>
@@ -11,6 +13,7 @@
 
 #include <cstddef>
 #include <iostream>
+#include <string>
 
 namespace Avogadro {
 
