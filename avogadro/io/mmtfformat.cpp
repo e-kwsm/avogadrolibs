@@ -4,20 +4,27 @@
 ******************************************************************************/
 
 #include "mmtfformat.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
 #include <avogadro/core/array.h>
 #include <avogadro/core/crystaltools.h>
 #include <avogadro/core/cube.h>
 #include <avogadro/core/elements.h>
-#include <avogadro/core/gaussianset.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/residue.h>
 #include <avogadro/core/spacegroups.h>
 #include <avogadro/core/unitcell.h>
 #include <avogadro/core/utilities.h>
 
+#include <cstddef>
 #include <mmtf.hpp>
 
 #include <iostream>
+#include <string>
+#include <vector>
+#include <mmtf/structure_data.hpp>
+#include <mmtf/decoder.hpp>
+#include <set>
 
 namespace Avogadro::Io {
 
