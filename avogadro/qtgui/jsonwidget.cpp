@@ -28,6 +28,19 @@
 #include <QtCore/QTimer>
 
 #include <QRegularExpression>
+#include <qcborvalue.h>
+#include <qlogging.h>
+#include <qtabwidget.h>
+#include <qboxlayout.h>
+#include <qformlayout.h>
+#include <qmap.h>
+#include <utility>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qstringliteral.h>
+#include <qlatin1stringview.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
 
 namespace Avogadro::QtGui {
 
