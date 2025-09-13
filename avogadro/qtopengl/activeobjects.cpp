@@ -6,6 +6,7 @@
 #include "glwidget.h"
 
 #include <avogadro/qtgui/molecule.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtOpenGL {
 
