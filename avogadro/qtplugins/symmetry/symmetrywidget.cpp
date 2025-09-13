@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "symmetrywidget.h"
+#include "operationstablemodel.h"
+#include "core/avogadrocore.h"
 #include "symmetryutil.h"
 #include "ui_symmetrywidget.h"
 
@@ -13,6 +15,15 @@
 #include <QtCore/QDebug>
 
 #include <QtWidgets/QPlainTextEdit>
+#include <libmsym/msym.h>
+#include <qwidget.h>
+#include <qstandarditemmodel.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qitemselectionmodel.h>
+#include <qabstractitemmodel.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
 
 using Avogadro::QtGui::Molecule;
 using Avogadro::QtGui::RichTextDelegate;
