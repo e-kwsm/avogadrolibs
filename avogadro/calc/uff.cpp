@@ -4,15 +4,21 @@
 ******************************************************************************/
 
 #include "uff.h"
+#include "core/avogadrocore.h"
 #include "uffdata.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <Eigen/src/Core/util/Meta.h>
+#include <algorithm>
 #include <avogadro/core/angleiterator.h>
 #include <avogadro/core/angletools.h>
 #include <avogadro/core/array.h>
 #include <avogadro/core/dihedraliterator.h>
-#include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
+#include <vector>
+#include <cmath>
+#include <math.h>
+#include <cstdlib>
 
 namespace Avogadro::Calc {
 
