@@ -4,8 +4,11 @@
 ******************************************************************************/
 
 #include "force.h"
+#include "qtgui/sceneplugin.h"
+#include "core/avogadrocore.h"
+#include "core/molecule.h"
+#include "core/vector.h"
 
-#include <avogadro/core/elements.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/rendering/arrowgeometry.h>
 #include <avogadro/rendering/geometrynode.h>
@@ -17,6 +20,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <qobject.h>
 
 namespace Avogadro::QtPlugins {
 
