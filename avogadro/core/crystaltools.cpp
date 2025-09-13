@@ -5,11 +5,17 @@
 
 #include "crystaltools.h"
 
+#include "core/vector.h"
+#include "core/matrix.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
 #include "molecule.h"
 #include "unitcell.h"
 
 #include <algorithm>
+#include <cmath>
 #include <iostream>
+#include <utility>
 
 namespace Avogadro::Core {
 

@@ -4,14 +4,18 @@
 ******************************************************************************/
 
 #include "coordinateblockgenerator.h"
+#include "core/vector.h"
 
-#include <avogadro/core/atom.h>
 #include <avogadro/core/avogadrocore.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
 
+#include <cmath>
 #include <iomanip>
+#include <string>
+#include <ios>
+#include <vector>
 
 namespace Avogadro::Core {
 

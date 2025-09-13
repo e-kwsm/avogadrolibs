@@ -5,10 +5,15 @@
 
 #include "gaussianset.h"
 
+#include "core/array.h"
+#include "core/basisset.h"
+#include "core/avogadrocore.h"
 #include "molecule.h"
 
 #include <cmath>
 #include <iostream>
+#include <vector>
+#include <math.h>
 
 using std::cout;
 using std::endl;
