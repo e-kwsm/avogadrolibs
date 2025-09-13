@@ -4,6 +4,12 @@
 ******************************************************************************/
 
 #include "sdfformat.h"
+#include "io/mdlformat.h"
+#include <istream>
+#include "io/fileformat.h"
+#include <ostream>
+#include <vector>
+#include <string>
 
 namespace Avogadro::Io {
 
