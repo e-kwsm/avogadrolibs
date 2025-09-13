@@ -6,8 +6,6 @@
 #include "editortoolwidget.h"
 #include "ui_editortoolwidget.h"
 
-#include <avogadro/core/elements.h>
-
 #include <avogadro/qtgui/elementtranslator.h>
 #include <avogadro/qtgui/periodictableview.h>
 
@@ -16,6 +14,11 @@
 #include <QSignalBlocker>
 
 #include <algorithm>
+#include <qwidget.h>
+#include <qobjectdefs.h>
+#include <qvariant.h>
+#include <qforeach.h>
+#include <qcontainerfwd.h>
 
 namespace {
 // The ItemData of the "Other" entry in the combo box

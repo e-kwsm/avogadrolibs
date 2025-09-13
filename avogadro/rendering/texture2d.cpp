@@ -6,6 +6,9 @@
 #include "texture2d.h"
 
 #include "avogadrogl.h"
+#include "core/types.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
 
 namespace Avogadro::Rendering {
 

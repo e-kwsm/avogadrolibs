@@ -4,6 +4,10 @@
 ******************************************************************************/
 
 #include "centroid.h"
+#include "core/array.h"
+#include "qtgui/extensionplugin.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/qtgui/commandregistry.h>
 #include <avogadro/core/elements.h>
@@ -11,6 +15,10 @@
 #include <avogadro/qtgui/rwmolecule.h>
 
 #include <QAction>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
 
 namespace Avogadro::QtPlugins {
 

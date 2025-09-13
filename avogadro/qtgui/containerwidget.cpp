@@ -9,6 +9,9 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
 
 namespace Avogadro::QtGui {
 

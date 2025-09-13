@@ -13,7 +13,6 @@
 #include <avogadro/core/aromaticity.h>
 #include <avogadro/core/array.h>
 #include <avogadro/core/dihedraliterator.h>
-#include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
 

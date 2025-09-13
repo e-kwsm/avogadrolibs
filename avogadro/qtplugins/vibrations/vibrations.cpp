@@ -4,11 +4,12 @@
 ******************************************************************************/
 
 #include "vibrations.h"
+#include "qtgui/extensionplugin.h"
+#include "core/avogadrocore.h"
 #include "vibrationdialog.h"
 #include "vibrationframes.h"
 
 #include <avogadro/core/array.h>
-#include <avogadro/core/variant.h>
 #include <avogadro/core/vector.h>
 #include <avogadro/qtgui/molecule.h>
 
@@ -16,6 +17,12 @@
 #include <QDebug>
 #include <QtCore/QTimer>
 #include <QtWidgets/QFileDialog>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qtmetamacros.h>
+#include <qwidget.h>
 
 #include <algorithm>
 #include <cmath>

@@ -4,8 +4,14 @@
 ******************************************************************************/
 
 #include "manipulator.h"
+#include "qtgui/toolplugin.h"
+#include "core/avogadrocore.h"
+#include "rendering/primitive.h"
+#include "core/molecule.h"
 #include "ui_manipulatewidget.h"
 
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Geometry/Transform.h>
 #include <avogadro/core/vector.h>
 
 #include <avogadro/qtgui/molecule.h>
@@ -21,6 +27,11 @@
 #include <QtGui/QKeyEvent>
 #include <QtGui/QMouseEvent>
 #include <QtGui/QWheelEvent>
+#include <qobject.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qabstractbutton.h>
+#include <qundostack.h>
 
 using Avogadro::QtGui::Molecule;
 

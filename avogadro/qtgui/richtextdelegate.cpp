@@ -6,6 +6,13 @@
 #include "richtextdelegate.h"
 
 #include <cmath>
+#include <qobject.h>
+#include <qstyleditemdelegate.h>
+#include <qsize.h>
+#include <qstyleoption.h>
+#include <qabstractitemmodel.h>
+#include <qtextdocument.h>
+#include <qpainter.h>
 
 namespace Avogadro::QtGui {
 

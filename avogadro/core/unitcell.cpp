@@ -4,6 +4,9 @@
 ******************************************************************************/
 
 #include "unitcell.h"
+#include "core/avogadrocore.h"
+#include "core/matrix.h"
+#include "core/vector.h"
 
 #include <cmath>
 

@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "vrml.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/rendering/camera.h>
@@ -19,8 +20,13 @@
 #include <QtWidgets/QFileDialog>
 #include <QtWidgets/QMessageBox>
 
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qdir.h>
 #include <string>
-#include <vector>
 
 namespace Avogadro::QtPlugins {
 

@@ -15,6 +15,11 @@
 
 #include <QFileInfo>
 #include <QProcessEnvironment>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qobject.h>
+#include <qpalette.h>
+#include <qforeach.h>
 
 namespace Avogadro::QtGui {
 

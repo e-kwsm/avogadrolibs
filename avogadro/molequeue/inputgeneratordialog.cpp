@@ -7,6 +7,9 @@
 #include "ui_inputgeneratordialog.h"
 
 #include "inputgeneratorwidget.h"
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qhashfunctions.h>
 
 namespace Avogadro::MoleQueue {
 

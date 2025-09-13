@@ -16,6 +16,15 @@
 #include <avogadro/molequeue/inputgenerator.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/utilities.h>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qcoreapplication.h>
+#include <qobjectdefs.h>
+#include <qobject.h>
+#include <qcontainerfwd.h>
+#include <qdir.h>
+#include <qjsonobject.h>
+#include <qforeach.h>
 
 namespace Avogadro::QtPlugins {
 
