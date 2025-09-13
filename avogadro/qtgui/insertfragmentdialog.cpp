@@ -21,6 +21,22 @@
 #include <QCloseEvent>
 
 #include <QtCore/QDebug>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qnamespace.h>
+#include <qlatin1stringview.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
+#include <qcoreapplication.h>
+#include <qlogging.h>
+#include <qabstractitemview.h>
+#include <qobjectdefs.h>
+#include <qabstractitemmodel.h>
+#include <qtpreprocessorsupport.h>
+#include <qfileinfo.h>
+#include <qicon.h>
+#include <qregularexpression.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtGui {
 
