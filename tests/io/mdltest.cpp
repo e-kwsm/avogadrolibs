@@ -3,14 +3,18 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/variant.h"
+#include "io/fileformat.h"
 #include "iotests.h"
 
+#include <cstddef>
 #include <gtest/gtest.h>
 
 #include <avogadro/core/atom.h>
 #include <avogadro/core/molecule.h>
 
 #include <avogadro/io/mdlformat.h>
+#include <string>
 
 using Avogadro::Core::Atom;
 using Avogadro::Core::Bond;
