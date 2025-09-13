@@ -6,6 +6,7 @@
 #include "crystal.h"
 
 #include "importcrystaldialog.h"
+#include "qtgui/extensionplugin.h"
 #include "supercelldialog.h"
 #include "unitcelldialog.h"
 #include "volumescalingdialog.h"
@@ -19,6 +20,16 @@
 #include <QAction>
 #include <QMessageBox>
 #include <QStringList>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qalgorithms.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qassert.h>
+#include <qforeach.h>
+#include <qtmetamacros.h>
+#include <qwidget.h>
+#include <qdialog.h>
 
 using Avogadro::Core::CrystalTools;
 using Avogadro::QtGui::Molecule;
