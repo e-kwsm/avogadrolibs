@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "elementtranslator.h"
+#include <qobject.h>
 
 namespace Avogadro::QtGui {
 
