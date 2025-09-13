@@ -9,6 +9,15 @@
 
 #include <QtCore/QTimer>
 #include <QtGui/QKeyEvent>
+#include <qwidget.h>
+#include <qgraphicsview.h>
+#include <qnamespace.h>
+#include <qgraphicsscene.h>
+#include <qpainter.h>
+#include <qobjectdefs.h>
+#include <qobject.h>
+#include <qtmetamacros.h>
+#include <qtransform.h>
 
 namespace Avogadro::QtGui {
 
