@@ -4,11 +4,17 @@
 ******************************************************************************/
 
 #include "atomutilities.h"
+#include "core/array.h"
+#include "core/molecule.h"
+#include "core/atom.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/elements.h>
 
 #include <algorithm>
 #include <cmath>
+#include <math.h>
 #include <vector>
 
 constexpr double M_TETRAHED = 109.47122063449069389;
