@@ -4,12 +4,16 @@
 ******************************************************************************/
 
 #include "opendxreader.h"
+#include "core/vector.h"
 
 #include <avogadro/core/cube.h>
 
 #include <QtCore/QFile>
 #include <QtCore/QTextStream>
 #include <QtCore/QVector>
+#include <qcontainerfwd.h>
+#include <vector>
+#include <qstringview.h>
 
 namespace Avogadro::QtPlugins {
 

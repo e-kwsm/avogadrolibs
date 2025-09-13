@@ -6,6 +6,8 @@
 #include "apbsoutputdialog.h"
 
 #include "ui_apbsoutputdialog.h"
+#include <qwidget.h>
+#include <qdialog.h>
 
 namespace Avogadro::QtPlugins {
 
