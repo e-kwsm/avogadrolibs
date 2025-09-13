@@ -4,17 +4,33 @@
 ******************************************************************************/
 
 #include "svg.h"
+#include "core/vector.h"
+#include "qtgui/extensionplugin.h"
+#include "core/array.h"
 
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Core/util/Constants.h>
 #include <QDir>
 #include <QFile>
 #include <QFileDialog>
 #include <QSvgGenerator>
 #include <QAction>
+#include <algorithm>
 #include <avogadro/qtopengl/glwidget.h>
 #include <avogadro/rendering/camera.h>
 #include <avogadro/rendering/scene.h>
-#include <iostream>
-#include <string>
+#include <cmath>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qpainter.h>
+#include <qline.h>
+#include <qhashfunctions.h>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qfiledevice.h>
+#include <vector>
 
 namespace Avogadro::QtPlugins {
 
