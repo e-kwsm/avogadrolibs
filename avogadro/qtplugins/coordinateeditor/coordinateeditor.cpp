@@ -6,8 +6,14 @@
 #include "coordinateeditor.h"
 
 #include "coordinateeditordialog.h"
+#include "qtgui/extensionplugin.h"
 
 #include <QAction>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
 
 namespace Avogadro::QtPlugins {
 
