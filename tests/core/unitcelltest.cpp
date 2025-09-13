@@ -3,13 +3,20 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/avogadrocore.h"
+#include <cmath>
+#include "core/vector.h"
+#include "core/matrix.h"
 #include <gtest/gtest.h>
+#include <iostream>
 #include <limits>
 
 #include <avogadro/core/array.h>
 #include <avogadro/core/crystaltools.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
+#include <ostream>
+#include <vector>
 
 using namespace Avogadro;
 using namespace Avogadro::Core;
