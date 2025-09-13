@@ -5,13 +5,17 @@
 
 #include "constraintsextension.h"
 #include "constraintsdialog.h"
-#include "constraintsmodel.h"
+#include "qtgui/extensionplugin.h"
+#include "qtgui/molecule.h"
 
 #include <QAction>
 #include <QDebug>
 
-#include <string>
-#include <iostream>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
 
 namespace Avogadro {
 namespace QtPlugins {
