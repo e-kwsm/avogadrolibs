@@ -12,8 +12,22 @@
 #include <QDialog>
 #include <QSettings>
 
+#include <qobject.h>
+#include <qkeysequence.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qtmetamacros.h>
+#include <qwidget.h>
+#include <cstddef>
+#include <cmath>
 #include <vector>
 
+#include "core/array.h"
+#include "core/molecule.h"
+#include "qtgui/extensionplugin.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
 #include "ui_bondingdialog.h"
 
 namespace Avogadro::QtPlugins {
