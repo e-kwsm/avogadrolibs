@@ -3,10 +3,13 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "qtgui/molecule.h"
+#include <bits/basic_string.h>
 #include <gtest/gtest.h>
 
 #include <avogadro/qtgui/hydrogentools.h>
 #include <avogadro/qtgui/rwmolecule.h>
+#include <string>
 
 using Avogadro::QtGui::HydrogenTools;
 using Avogadro::QtGui::Molecule;
