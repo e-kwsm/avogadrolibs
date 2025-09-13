@@ -6,12 +6,19 @@
 #include "hydrogentools.h"
 
 #include "../core/mdlvalence_p.h"
+#include "core/vector.h"
+#include "core/array.h"
+#include "qtgui/rwmolecule.h"
+#include "core/elements.h"
+#include "core/atom.h"
+#include "core/avogadrocore.h"
 #include <avogadro/core/atomutilities.h>
 
 #include <QtCore/QDebug>
 
 #include <algorithm>
-#include <cmath>
+#include <cstddef>
+#include <iterator>
 #include <vector>
 
 // C'mon windows....
