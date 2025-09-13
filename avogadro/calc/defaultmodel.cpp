@@ -4,9 +4,10 @@
 ******************************************************************************/
 
 #include "defaultmodel.h"
+#include "core/matrix.h"
 
-#include <avogadro/core/array.h>
 #include <avogadro/core/molecule.h>
+#include <string>
 
 namespace Avogadro::Calc {
 
