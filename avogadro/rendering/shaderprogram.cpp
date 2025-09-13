@@ -6,12 +6,17 @@
 #include "shaderprogram.h"
 
 #include "avogadrogl.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
 #include "shader.h"
 #include "texture2d.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/core/types.h>
 
 #include <algorithm>
+#include <cstddef>
+#include <utility>
 
 namespace Avogadro::Rendering {
 
