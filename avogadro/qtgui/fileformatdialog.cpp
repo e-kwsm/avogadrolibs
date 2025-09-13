@@ -4,8 +4,8 @@
 ******************************************************************************/
 
 #include "fileformatdialog.h"
+#include "io/fileformat.h"
 
-#include <avogadro/core/molecule.h>
 #include <avogadro/io/fileformatmanager.h>
 
 #include <QtWidgets/QApplication>
@@ -14,6 +14,16 @@
 
 #include <QtCore/QSettings>
 
+#include <qwidget.h>
+#include <qfiledialog.h>
+#include <qdir.h>
+#include <qlatin1stringview.h>
+#include <qmap.h>
+#include <string>
+#include <qcontainerfwd.h>
+#include <qstringliteral.h>
+#include <qforeach.h>
+#include <qnamespace.h>
 #include <vector>
 
 using Avogadro::Io::FileFormat;
