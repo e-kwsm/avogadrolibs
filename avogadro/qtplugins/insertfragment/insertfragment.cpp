@@ -4,13 +4,12 @@
 ******************************************************************************/
 
 #include "insertfragment.h"
+#include "qtgui/extensionplugin.h"
 
-#include <avogadro/qtgui/fileformatdialog.h>
 #include <avogadro/qtgui/insertfragmentdialog.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/rwmolecule.h>
 
-#include <avogadro/io/fileformat.h>
 #include <avogadro/io/fileformatmanager.h>
 
 #include <QtCore/QFileInfo>
@@ -18,6 +17,12 @@
 #include <QAction>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QProgressDialog>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qtmetamacros.h>
 
 using Avogadro::Io::FileFormatManager;
 using Avogadro::QtGui::InsertFragmentDialog;
