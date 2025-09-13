@@ -16,6 +16,14 @@
 #include <QtCore/QJsonDocument>
 #include <QtCore/QSettings>
 #include <QtCore/QStandardPaths>
+#include <qobject.h>
+#include <qlogging.h>
+#include <qmap.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
+#include <qfileinfo.h>
+#include <qstringview.h>
+#include <qnamespace.h>
 
 namespace Avogadro::QtGui {
 

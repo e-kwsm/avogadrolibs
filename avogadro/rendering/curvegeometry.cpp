@@ -6,8 +6,21 @@
 #include "curvegeometry.h"
 
 #include "camera.h"
+#include "core/array.h"
+#include "rendering/avogadrorendering.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
+#include "core/types.h"
+#include "rendering/primitive.h"
 #include "scene.h"
 #include "visitor.h"
+#include <cstddef>
+#include <Eigen/src/Geometry/Transform.h>
+#include <math.h>
+#include <cmath>
+#include <Eigen/src/Core/Matrix.h>
+#include <iterator>
+#include <string>
 
 namespace {
 #include "cylinders_fs.h"

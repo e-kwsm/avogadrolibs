@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "sceneplugin.h"
+#include <qobject.h>
 
 namespace Avogadro::QtGui {
 

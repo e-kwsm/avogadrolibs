@@ -4,6 +4,10 @@
 ******************************************************************************/
 
 #include "bsplinegeometry.h"
+#include "rendering/curvegeometry.h"
+#include "core/vector.h"
+#include <list>
+#include <cstddef>
 
 namespace Avogadro::Rendering {
 
