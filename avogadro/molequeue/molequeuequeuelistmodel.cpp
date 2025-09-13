@@ -8,6 +8,14 @@
 #include <QtCore/QDebug>
 
 #include <limits>
+#include <qtypes.h>
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qlogging.h>
+#include <qnamespace.h>
+#include <qforeach.h>
 
 namespace Avogadro::MoleQueue {
 

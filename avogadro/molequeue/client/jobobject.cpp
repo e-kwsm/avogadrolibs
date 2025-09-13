@@ -6,6 +6,9 @@
 #include "jobobject.h"
 
 #include <QtCore/QJsonArray>
+#include <qhashfunctions.h>
+#include <qvariant.h>
+#include <qjsonvalue.h>
 
 namespace Avogadro::MoleQueue {
 
