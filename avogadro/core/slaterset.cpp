@@ -4,11 +4,14 @@
 ******************************************************************************/
 
 #include "slaterset.h"
+#include "core/avogadrocore.h"
 
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h>
 #include <cmath>
+#include <cstddef>
 #include <iostream>
-
-#include <Eigen/LU>
+#include <vector>
 
 namespace Avogadro::Core {
 
