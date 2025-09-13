@@ -4,7 +4,11 @@
 ******************************************************************************/
 
 #include "lammpsformat.h"
+#include "core/array.h"
+#include "core/avogadrocore.h"
+#include "core/matrix.h"
 
+#include <algorithm>
 #include <avogadro/core/crystaltools.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
@@ -12,10 +16,16 @@
 #include <avogadro/core/utilities.h>
 #include <avogadro/core/vector.h>
 
+#include <cstddef>
+#include <cstdio>
+#include <cmath>
 #include <istream>
+#include <map>
 #include <ostream>
 #include <sstream>
 #include <string>
+#include <vector>
+#include <utility>
 
 using std::getline;
 using std::map;
