@@ -4,17 +4,23 @@
 ******************************************************************************/
 
 #include "qcschema.h"
+#include "core/array.h"
+#include "core/avogadrocore.h"
+#include "core/matrix.h"
 
 #include <avogadro/io/fileformat.h>
 #include <avogadro/io/fileformatmanager.h>
 
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
-#include <avogadro/core/unitcell.h>
 #include <avogadro/core/vector.h>
 
+#include <cstddef>
 #include <nlohmann/json.hpp>
 #include <iostream>
+#include <nlohmann/json_fwd.hpp>
+#include <string>
+#include <vector>
 
 using json = nlohmann::json;
 using std::string;
