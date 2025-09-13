@@ -2,6 +2,11 @@
 #include "importpqr.h"
 #include "pqrrequest.h"
 #include "ui_pqrwidget.h"
+#include <qwidget.h>
+#include <qabstractitemview.h>
+#include <qobjectdefs.h>
+#include <qstringview.h>
+#include <qpixmap.h>
 
 namespace Avogadro::QtPlugins {
 
