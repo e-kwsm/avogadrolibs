@@ -4,9 +4,9 @@
 ******************************************************************************/
 
 #include "cp2kinputdialog.h"
+#include "core/molecule.h"
+#include "core/vector.h"
 
-#include <avogadro/core/atom.h>
-#include <avogadro/core/bond.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/unitcell.h>
 
@@ -15,8 +15,10 @@
 #include <avogadro/qtgui/molecule.h>
 
 #include <avogadro/molequeue/client/jobobject.h>
-#include <qjsonarray.h>
-#include <qjsonobject.h>
+#include <qdialog.h>
+#include <qforeach.h>
+#include <cstddef>
+#include <qdir.h>
 #include <qjsonvalue.h>
 
 #include <QtWidgets/QFileDialog>
@@ -29,6 +31,11 @@
 #include <QtCore/QTimer>
 
 #include <map>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qstringliteral.h>
+#include <qtmetamacros.h>
 #include <vector>
 
 using Avogadro::MoleQueue::JobObject;
