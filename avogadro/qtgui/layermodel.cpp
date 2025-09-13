@@ -4,7 +4,9 @@
 ******************************************************************************/
 
 #include "layermodel.h"
+#include "core/layermanager.h"
 #include "molecule.h"
+#include "qtgui/rwlayermanager.h"
 #include "rwmolecule.h"
 
 #include <QtCore/QDebug>
@@ -12,6 +14,14 @@
 #include <QtGui/QColor>
 #include <QtGui/QIcon>
 #include <QtGui/QPalette>
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <qnamespace.h>
+#include <string>
+#include <qlogging.h>
+#include <qtmetamacros.h>
+#include <cassert>
+#include <cstddef>
 
 namespace Avogadro::QtGui {
 
