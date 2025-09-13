@@ -6,13 +6,21 @@
 #include "povrayvisitor.h"
 
 #include "ambientocclusionspheregeometry.h"
+#include "core/vector.h"
+#include "core/array.h"
 #include "cylindergeometry.h"
 #include "linestripgeometry.h"
 #include "meshgeometry.h"
+#include "rendering/camera.h"
+#include "rendering/drawable.h"
 #include "spheregeometry.h"
 
+#include <fstream>
+#include <cstddef>
 #include <iostream>
 #include <ostream>
+#include <sstream>
+#include <string>
 
 namespace Avogadro::Rendering {
 
