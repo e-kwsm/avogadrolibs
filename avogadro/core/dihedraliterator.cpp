@@ -4,9 +4,11 @@
 ******************************************************************************/
 
 #include "dihedraliterator.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/graph.h>
 #include <avogadro/core/molecule.h>
+#include <tuple>
 
 namespace Avogadro::Core {
 
