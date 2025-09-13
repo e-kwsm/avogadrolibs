@@ -15,6 +15,11 @@
 ******************************************************************************/
 
 #include "gamesshighlighter.h"
+#include <qsyntaxhighlighter.h>
+#include <qnamespace.h>
+#include <qfont.h>
+#include <qforeach.h>
+#include <qregularexpression.h>
 
 namespace Avogadro::QtPlugins {
 
