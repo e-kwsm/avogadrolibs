@@ -4,17 +4,23 @@
 ******************************************************************************/
 
 #include "nwchemjson.h"
+#include "core/array.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/crystaltools.h>
-#include <avogadro/core/elements.h>
 #include <avogadro/core/gaussianset.h>
 #include <avogadro/core/molecule.h>
-#include <avogadro/core/unitcell.h>
 #include <avogadro/core/utilities.h>
 
+#include <cassert>
+#include <cstddef>
 #include <nlohmann/json.hpp>
 
 #include <iostream>
+#include <string>
+#include <vector>
+#include <nlohmann/json_fwd.hpp>
 
 namespace Avogadro::QuantumIO {
 
