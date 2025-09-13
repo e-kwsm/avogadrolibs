@@ -16,10 +16,10 @@
 
 #include "qtaimmathutilities.h"
 
-#include <Eigen/Eigenvalues>
-#include <Eigen/QR>
-
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h>
 #include <cmath>
+#include <qtypes.h>
 
 namespace Avogadro::QtPlugins::QTAIMMathUtilities {
 
