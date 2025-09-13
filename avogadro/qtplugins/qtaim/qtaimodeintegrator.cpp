@@ -21,6 +21,13 @@
 #include "qtaimodeintegrator.h"
 
 #include "qtaimmathutilities.h"
+#include "qtaimwavefunctionevaluator.h"
+#include <qtypes.h>
+#include <qvectornd.h>
+#include <cmath>
+#include <qlogging.h>
+#include <Eigen/src/Core/Matrix.h>
+#include <cstdlib>
 
 namespace Avogadro::QtPlugins {
 
