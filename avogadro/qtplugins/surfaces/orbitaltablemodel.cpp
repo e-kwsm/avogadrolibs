@@ -6,10 +6,19 @@
 #include "orbitaltablemodel.h"
 #include "orbitalwidget.h"
 
+#include <algorithm>
 #include <avogadro/core/basisset.h>
 #include <avogadro/core/gaussianset.h>
 
 #include <QDebug>
+#include <qwidget.h>
+#include <qabstractitemmodel.h>
+#include <qvariant.h>
+#include <qnamespace.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <string>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
