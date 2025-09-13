@@ -4,11 +4,10 @@
 ******************************************************************************/
 
 #include "spacegroup.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/core/avospglib.h>
-#include <avogadro/core/crystaltools.h>
 #include <avogadro/core/spacegroups.h>
-#include <avogadro/core/unitcell.h>
 
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/rwmolecule.h>
@@ -29,7 +28,18 @@
 
 #include <QtGui/QStandardItemModel>
 
+#include <qobject.h>
+#include <qlist.h>
+#include <qobjectdefs.h>
+#include <qalgorithms.h>
+#include <qcontainerfwd.h>
+#include <qtmetamacros.h>
+#include <qassert.h>
+#include <qforeach.h>
+#include <qdialog.h>
+#include <qnamespace.h>
 #include <sstream>
+#include <string>
 
 using Avogadro::Core::AvoSpglib;
 using Avogadro::QtGui::Molecule;
