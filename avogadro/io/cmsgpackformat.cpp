@@ -4,8 +4,12 @@
 ******************************************************************************/
 
 #include "cmsgpackformat.h"
+#include "io/fileformat.h"
+#include "io/cjsonformat.h"
 
 #include <iostream>
+#include <vector>
+#include <string>
 
 namespace Avogadro::Io {
 
