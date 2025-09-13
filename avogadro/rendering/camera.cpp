@@ -4,10 +4,13 @@
 ******************************************************************************/
 
 #include "camera.h"
+#include "core/vector.h"
 
-#include <Eigen/LU>
-
+#include <Eigen/src/Core/Matrix.h>
 #include <cmath>
+#include <utility>
+#include <memory>
+#include <math.h>
 
 namespace Avogadro::Rendering {
 
