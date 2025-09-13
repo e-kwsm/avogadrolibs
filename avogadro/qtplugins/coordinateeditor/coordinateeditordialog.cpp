@@ -32,6 +32,17 @@
 #include <QtCore/QRegularExpression>
 #include <QtCore/QString>
 #include <QtCore/QTimer>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qtypes.h>
+#include <qnamespace.h>
+#include <qtmetamacros.h>
+#include <string>
+#include <qlogging.h>
+#include <qforeach.h>
+#include <cstddef>
 
 // Define this to print out details of the format detection algorithm.
 #undef ENABLE_FORMAT_DEBUG
