@@ -4,6 +4,10 @@
 ******************************************************************************/
 
 #include "variantmap.h"
+#include <cstddef>
+#include <vector>
+#include <string>
+#include "core/variant.h"
 
 namespace Avogadro::Core {
 
