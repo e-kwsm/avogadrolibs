@@ -54,7 +54,10 @@
 #include "qtaimcriticalpointlocator.h"
 #include "qtaimlsodaintegrator.h"
 #include "qtaimmathutilities.h"
+#include "qtaimwavefunction.h"
+#include "qtaimwavefunctionevaluator.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <QDataStream>
 #include <QDebug>
 #include <QDir>
@@ -74,11 +77,16 @@
 #include <QtConcurrent/QtConcurrentMap>
 
 #include <cfloat>
-#include <climits>
 #include <cmath>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <qtypes.h>
+#include <qset.h>
+#include <qcontainerfwd.h>
+#include <qlogging.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
 
 /* Adaptive multidimensional integration on hypercubes (or, really,
    hyper-rectangles) using cubature rules.
