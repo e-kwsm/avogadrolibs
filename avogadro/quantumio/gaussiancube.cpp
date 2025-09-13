@@ -4,13 +4,19 @@
 ******************************************************************************/
 
 #include "gaussiancube.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/cube.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/utilities.h>
 
+#include <cstdlib>
+#include <cstddef>
 #include <iomanip>
 #include <iostream>
+#include <vector>
+#include <string>
 
 namespace Avogadro::QuantumIO {
 

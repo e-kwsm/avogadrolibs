@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "gaussianfchk.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
 
 #include <avogadro/core/gaussianset.h>
 #include <avogadro/core/molecule.h>
@@ -11,6 +13,8 @@
 
 #include <cstddef>
 #include <iostream>
+#include <string>
+#include <vector>
 
 using std::cout;
 using std::endl;
