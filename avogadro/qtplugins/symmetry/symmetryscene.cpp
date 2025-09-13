@@ -4,13 +4,15 @@
 ******************************************************************************/
 
 #include "symmetryscene.h"
+#include "qtgui/sceneplugin.h"
+#include "core/vector.h"
+#include "rendering/primitive.h"
+#include "rendering/avogadrorendering.h"
 
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/rwmolecule.h>
 
 #include <avogadro/core/array.h>
-#include <avogadro/core/molecule.h>
-#include <avogadro/core/unitcell.h>
 #include <avogadro/rendering/arcsector.h>
 #include <avogadro/rendering/cylindergeometry.h>
 #include <avogadro/rendering/geometrynode.h>
@@ -22,6 +24,9 @@
 #include <QtCore/QVariant>
 
 #include <QVector3D>
+#include <qobject.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
 
 using namespace Avogadro;
 
