@@ -3,6 +3,8 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "rendering/avogadrorendering.h"
+#include <qobjectdefs.h>
 #include <utilities/vtktesting/imageregressiontest.h>
 
 #include <avogadro/qtopengl/glwidget.h>
