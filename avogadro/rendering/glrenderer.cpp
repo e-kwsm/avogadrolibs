@@ -7,18 +7,21 @@
 
 #include "avogadrogl.h"
 
+#include "core/array.h"
+#include "core/vector.h"
 #include "geometrynode.h"
 #include "glrendervisitor.h"
-#include "shader.h"
+#include "rendering/avogadrorendering.h"
+#include "rendering/camera.h"
+#include "rendering/primitive.h"
 #include "shaderprogram.h"
 #include "textlabel2d.h"
 #include "textlabel3d.h"
 #include "textrenderstrategy.h"
 #include "visitor.h"
 
-#include <avogadro/core/matrix.h>
-
-#include <iostream>
+#include <map>
+#include <limits>
 
 namespace Avogadro::Rendering {
 

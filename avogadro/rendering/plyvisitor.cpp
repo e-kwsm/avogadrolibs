@@ -4,6 +4,22 @@
 ******************************************************************************/
 
 #include "plyvisitor.h"
+#include <fstream>
+#include <ostream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include "core/vector.h"
+#include "rendering/camera.h"
+#include "rendering/drawable.h"
+#include "rendering/spheregeometry.h"
+#include <cmath>
+#include "rendering/ambientocclusionspheregeometry.h"
+#include "rendering/cylindergeometry.h"
+#include "rendering/meshgeometry.h"
+#include "core/array.h"
+#include <cstddef>
+#include "rendering/linestripgeometry.h"
 
 namespace Avogadro::Rendering {
 using std::ofstream;
