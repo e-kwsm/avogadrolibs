@@ -4,6 +4,10 @@
 ******************************************************************************/
 
 #include "scriptchargemodel.h"
+#include "calc/chargemodel.h"
+#include "core/matrix.h"
+#include "core/vector.h"
+#include "core/array.h"
 
 #include <avogadro/core/molecule.h>
 #include <avogadro/qtgui/pythonscript.h>
@@ -19,10 +23,17 @@
 #include <QtCore/QDebug>
 #include <QtCore/QScopedPointer>
 
+#include <cstdlib>
+#include <qforeach.h>
 #include <qjsonarray.h>
 #include <qjsondocument.h>
 #include <qjsonobject.h>
+#include <qjsonparseerror.h>
 #include <qjsonvalue.h>
+#include <string>
+#include <qstringview.h>
+#include <qlogging.h>
+#include <qnamespace.h>
 
 namespace Avogadro::QtPlugins {
 
