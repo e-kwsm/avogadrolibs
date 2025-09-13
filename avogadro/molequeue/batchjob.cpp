@@ -4,11 +4,19 @@
 ******************************************************************************/
 
 #include "batchjob.h"
+#include "molequeue/client/jobobject.h"
 #include "molequeuemanager.h"
 
 #include <QtCore/QDebug>
 
 #include <limits>
+#include <qobject.h>
+#include <qlogging.h>
+#include <qforeach.h>
+#include <qvariant.h>
+#include <qtmetamacros.h>
+#include <qjsonvalue.h>
+#include <qobjectdefs.h>
 
 namespace Avogadro::MoleQueue {
 
