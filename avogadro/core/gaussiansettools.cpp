@@ -9,8 +9,6 @@
 #include "gaussianset.h"
 #include "molecule.h"
 
-#include <iostream>
-
 using std::vector;
 
 namespace Avogadro::Core {
