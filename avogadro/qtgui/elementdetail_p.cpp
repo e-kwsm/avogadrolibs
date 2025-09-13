@@ -13,6 +13,11 @@
 #include <QtGui/QPainter>
 #include <QtWidgets/QGraphicsSceneMouseEvent>
 #include <QtWidgets/QStyleOption>
+#include <qgraphicsitem.h>
+#include <qstringliteral.h>
+#include <qobject.h>
+#include <qcolor.h>
+#include <qnamespace.h>
 
 namespace Avogadro::QtGui {
 
