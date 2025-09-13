@@ -6,9 +6,11 @@
 #include "fileformat.h"
 
 #include <algorithm>
+#include <cctype>
 #include <fstream>
 #include <locale>
 #include <sstream>
+#include <string>
 
 namespace Avogadro::Io {
 
