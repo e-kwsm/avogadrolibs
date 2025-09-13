@@ -8,6 +8,11 @@
 #include <QButtonGroup>
 #include <QDebug>
 #include <QPushButton>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
+#include <qcontainerfwd.h>
 
 namespace Avogadro {
 
