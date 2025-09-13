@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "transformnode.h"
+#include "rendering/groupnode.h"
 
 namespace Avogadro::Rendering {
 
