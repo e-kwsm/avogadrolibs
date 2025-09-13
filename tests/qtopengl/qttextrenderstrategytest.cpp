@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "qtopengltests.h"
+#include "rendering/textrenderstrategy.h"
+#include <algorithm>
 #include <avogadro/qtopengl/qttextrenderstrategy.h>
 
 #include <avogadro/rendering/textproperties.h>
@@ -15,7 +17,12 @@
 
 #include <QtCore/QDebug>
 
+#include <qtpreprocessorsupport.h>
+#include <qlogging.h>
+#include <cstdlib>
+#include <cstddef>
 #include <string>
+#include <vector>
 
 typedef Avogadro::QtOpenGL::QtTextRenderStrategy Strategy;
 typedef Avogadro::Rendering::TextRenderStrategy Interface;
