@@ -4,16 +4,15 @@
 ******************************************************************************/
 
 #include "quantuminput.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/molequeue/inputgenerator.h>
 #include <avogadro/molequeue/inputgeneratordialog.h>
 #include <avogadro/molequeue/inputgeneratorwidget.h>
 #include <avogadro/qtgui/avogadropython.h>
-#include <avogadro/qtgui/filebrowsewidget.h>
 #include <avogadro/qtgui/fileformatdialog.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/scriptloader.h>
-#include <avogadro/qtgui/utilities.h>
 
 #include <avogadro/molequeue/client/jobobject.h>
 
@@ -31,6 +30,15 @@
 #include <QtCore/QStandardPaths>
 #include <QtCore/QStringList>
 #include <QtCore/QtPlugin>
+#include <qobject.h>
+#include <qalgorithms.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
+#include <qwidget.h>
+#include <qtmetamacros.h>
+#include <qobjectdefs.h>
+#include <qlogging.h>
 
 namespace Avogadro::QtPlugins {
 
