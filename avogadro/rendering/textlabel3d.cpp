@@ -5,6 +5,8 @@
 
 #include "textlabel3d.h"
 
+#include "rendering/avogadrorendering.h"
+#include "core/vector.h"
 #include "visitor.h"
 
 namespace Avogadro::Rendering {
