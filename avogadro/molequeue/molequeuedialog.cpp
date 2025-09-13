@@ -12,6 +12,12 @@
 
 #include <QtCore/QEventLoop>
 #include <QtCore/QTimer>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobject.h>
+#include <qlist.h>
+#include <qobjectdefs.h>
+#include <qforeach.h>
 
 namespace Avogadro::MoleQueue {
 
