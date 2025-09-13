@@ -4,7 +4,11 @@
 ******************************************************************************/
 
 #include "layermanager.h"
+#include "core/layer.h"
+#include "core/array.h"
 #include <cassert>
+#include <map>
+#include <memory>
 
 namespace Avogadro::Core {
 
