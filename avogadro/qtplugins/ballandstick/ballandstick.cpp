@@ -4,7 +4,17 @@
 ******************************************************************************/
 
 #include "ballandstick.h"
+#include "qtgui/pluginlayermanager.h"
+#include "core/layermanager.h"
+#include "qtgui/sceneplugin.h"
+#include "rendering/primitive.h"
+#include "rendering/avogadrorendering.h"
+#include "core/avogadrocore.h"
+#include "core/molecule.h"
+#include "core/vector.h"
 
+#include <algorithm>
+#include <Eigen/src/Geometry/Quaternion.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/rendering/cylindergeometry.h>
@@ -21,7 +31,11 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
-#include <iostream>
+#include <string>
+#include <sstream>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
