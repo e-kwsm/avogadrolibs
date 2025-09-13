@@ -1,6 +1,7 @@
 Checks: 'bugprone*,
         clang-analyzer*,
         cppcoreguidelines*,
+        misc-include-cleaner,
         misc-uniqueptr-reset-release,
         misc-unused*,
         misc-redundant-expression,
@@ -28,3 +29,5 @@ Checks: 'bugprone*,
         -portability-restrict-system-includes,
         -modernize-use-trailing-return-type'
 FormatStyle:     file
+CheckOptions:
+  misc-include-cleaner.MissingIncludes: 'false'
