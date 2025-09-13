@@ -3,6 +3,7 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "rendering/node.h"
 #include <gtest/gtest.h>
 
 #include <avogadro/rendering/groupnode.h>
