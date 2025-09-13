@@ -4,10 +4,10 @@
 ******************************************************************************/
 
 #include "gromacsformat.h"
+#include "core/vector.h"
 
 #include <avogadro/core/avogadrocore.h>
 
-#include <avogadro/core/atom.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/matrix.h>
 #include <avogadro/core/molecule.h>
@@ -15,9 +15,14 @@
 #include <avogadro/core/unitcell.h>
 #include <avogadro/core/utilities.h>
 
+#include <bits/basic_string.h>
+#include <cstddef>
 #include <iostream>
 
+#include <map>
 #include <string>
+#include <vector>
+#include <utility>
 
 using namespace std::string_literals;
 
