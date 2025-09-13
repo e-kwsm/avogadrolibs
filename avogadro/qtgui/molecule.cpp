@@ -4,12 +4,19 @@
 ******************************************************************************/
 
 #include "molecule.h"
+#include "core/molecule.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "core/array.h"
 #include "rwmolecule.h"
 
-#include <iostream>
+#include <cassert>
 
 // for HTML-formatted formulas
 #include <QtCore/QRegularExpression>
+#include <qobject.h>
+#include <utility>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtGui {
 
