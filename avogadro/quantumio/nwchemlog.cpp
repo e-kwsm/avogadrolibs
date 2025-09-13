@@ -4,12 +4,18 @@
 ******************************************************************************/
 
 #include "nwchemlog.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "core/array.h"
 
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/utilities.h>
 
+#include <cstddef>
 #include <iostream>
+#include <string>
+#include <vector>
 
 using std::string;
 using std::vector;
