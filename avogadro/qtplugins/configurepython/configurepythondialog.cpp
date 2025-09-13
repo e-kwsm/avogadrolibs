@@ -14,6 +14,13 @@
 #include <QFileInfo>
 #include <QtCore/QProcess>
 #include <QtCore/QSettings>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
+#include <qlogging.h>
+#include <qtmetamacros.h>
 
 using Avogadro::QtGui::Utilities::findExecutablePaths;
 
