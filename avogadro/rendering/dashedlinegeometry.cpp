@@ -8,16 +8,15 @@
 #include "avogadrogl.h"
 #include "bufferobject.h"
 #include "camera.h"
-#include "scene.h"
+#include "core/types.h"
 #include "shader.h"
 #include "shaderprogram.h"
 #include "visitor.h"
 
-#include <avogadro/core/matrix.h>
 #include <avogadro/core/vector.h>
 
+#include <cstddef>
 #include <iostream>
-#include <limits>
 
 namespace {
 #include "dashedline_fs.h"

@@ -6,6 +6,10 @@
 #include "cylindergeometry.h"
 
 #include "camera.h"
+#include "rendering/avogadrorendering.h"
+#include "core/vector.h"
+#include "core/types.h"
+#include "rendering/primitive.h"
 #include "scene.h"
 #include "visitor.h"
 
@@ -13,6 +17,14 @@
 
 #include "shader.h"
 #include "shaderprogram.h"
+#include <cstddef>
+#include <math.h>
+#include <vector>
+#include <Eigen/src/Geometry/AngleAxis.h>
+#include <map>
+#include <algorithm>
+#include <cmath>
+#include <utility>
 
 namespace {
 #include "cylinders_fs.h"
