@@ -5,8 +5,12 @@
 
 #include "mesh.h"
 
+#include "core/array.h"
+#include "core/vector.h"
+#include "core/color3f.h"
 #include "mutex.h"
-#include "neighborperceiver.h"
+#include <vector>
+#include <algorithm>
 
 namespace Avogadro::Core {
 
