@@ -4,14 +4,23 @@
 ******************************************************************************/
 
 #include "focus.h"
+#include "qtgui/extensionplugin.h"
+#include "rendering/scene.h"
+#include "core/avogadrocore.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtopengl/glwidget.h>
 #include <avogadro/rendering/camera.h>
 
 #include <QAction>
 
-#include <iostream>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <vector>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
