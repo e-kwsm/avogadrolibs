@@ -4,11 +4,17 @@
 ******************************************************************************/
 
 #include "gamessus.h"
+#include "core/gaussianset.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
 
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/utilities.h>
 
+#include <cstddef>
 #include <iostream>
+#include <string>
+#include <vector>
 
 using std::cout;
 using std::endl;
