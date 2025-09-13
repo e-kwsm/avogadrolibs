@@ -6,6 +6,9 @@
 #include "chartwidget.h"
 
 #include <QVBoxLayout>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qsize.h>
 
 namespace Avogadro::VTK {
 
