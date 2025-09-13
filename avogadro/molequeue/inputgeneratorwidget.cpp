@@ -7,6 +7,7 @@
 #include "batchjob.h"
 #include "molequeuedialog.h"
 #include "molequeuemanager.h"
+#include "qtgui/jsonwidget.h"
 #include "ui_inputgeneratorwidget.h"
 
 #include <avogadro/qtgui/filebrowsewidget.h>
@@ -29,6 +30,21 @@
 #include <QtCore/QPointer>
 #include <QtCore/QSettings>
 #include <QtCore/QTimer>
+#include <qobjectdefs.h>
+#include <qlatin1stringview.h>
+#include <qforeach.h>
+#include <qevent.h>
+#include <qcontainerfwd.h>
+#include <qmap.h>
+#include <qtmetamacros.h>
+#include <qobject.h>
+#include <qdialog.h>
+#include <qlogging.h>
+#include <qwidget.h>
+#include <qboxlayout.h>
+#include <qsize.h>
+#include <qfontmetrics.h>
+#include <qdir.h>
 
 namespace Avogadro::MoleQueue {
 
