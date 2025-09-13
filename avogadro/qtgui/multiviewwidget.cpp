@@ -13,6 +13,14 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSplitter>
 #include <QtWidgets/QVBoxLayout>
+#include <qtmetamacros.h>
+#include <qwidget.h>
+#include <qassert.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qforeach.h>
+#include <qlist.h>
 
 namespace Avogadro::QtGui {
 

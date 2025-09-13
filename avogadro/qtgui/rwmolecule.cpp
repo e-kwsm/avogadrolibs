@@ -4,6 +4,15 @@
 ******************************************************************************/
 
 #include "rwmolecule.h"
+#include "core/array.h"
+#include "core/atom.h"
+#include "core/crystaltools.h"
+#include "core/unitcell.h"
+#include "qtgui/molecule.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "core/molecule.h"
+#include "core/matrix.h"
 #include "rwmolecule_undo.h"
 
 #include "gaussiansetconcurrent.h"
@@ -12,6 +21,10 @@
 
 #include <algorithm>
 #include <cassert>
+#include <qobject.h>
+#include <string>
+#include <cstddef>
+#include <utility>
 
 #ifdef USE_SPGLIB
 #include <avogadro/core/avospglib.h>
