@@ -6,6 +6,8 @@
 #include "shader.h"
 
 #include "avogadrogl.h"
+#include <string>
+#include "core/avogadrocore.h"
 
 namespace Avogadro::Rendering {
 
