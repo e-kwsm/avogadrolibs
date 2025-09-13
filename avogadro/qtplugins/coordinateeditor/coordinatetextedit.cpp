@@ -11,6 +11,11 @@
 #include <QtWidgets/QToolTip>
 
 #include <QtCore/QListIterator>
+#include <qwidget.h>
+#include <qtextedit.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qcoreevent.h>
 
 namespace Avogadro::QtPlugins {
 
