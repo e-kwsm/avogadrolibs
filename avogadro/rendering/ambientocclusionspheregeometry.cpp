@@ -6,6 +6,10 @@
 #include "ambientocclusionspheregeometry.h"
 
 #include "camera.h"
+#include "core/vector.h"
+#include "core/types.h"
+#include "rendering/primitive.h"
+#include "core/avogadrocore.h"
 #include "scene.h"
 
 #include "bufferobject.h"
@@ -14,6 +18,14 @@
 #include "shaderprogram.h"
 
 #include "visitor.h"
+#include <Eigen/src/Core/Matrix.h>
+#include <cmath>
+#include <cstddef>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <cstdlib>
+#include <utility>
 
 namespace {
 #include "sphere_ao_bake_fs.h"
