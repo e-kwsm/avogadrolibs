@@ -4,9 +4,17 @@
 ******************************************************************************/
 
 #include "templatetool.h"
+#include "rendering/primitive.h"
+#include "qtgui/toolplugin.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
+#include "io/fileformat.h"
+#include "core/matrix.h"
 #include "templatetoolwidget.h"
 
-#include <avogadro/core/atom.h>
+#include <Eigen/src/SVD/JacobiSVD.h>
+#include <Eigen/src/Core/util/Constants.h>
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/core/bond.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
@@ -45,7 +53,21 @@
 #include <QtCore/QMimeData>
 #include <QtCore/QTimer>
 
+#include <cstddef>
+#include <cstdlib>
+#include <cmath>
+#include <cassert>
 #include <limits>
+#include <qobject.h>
+#include <qnamespace.h>
+#include <qundostack.h>
+#include <qobjectdefs.h>
+#include <utility>
+#include <qtmetamacros.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
+#include <math.h>
+#include <vector>
 
 namespace {
 const unsigned char INVALID_ATOMIC_NUMBER =
