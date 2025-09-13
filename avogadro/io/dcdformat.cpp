@@ -4,21 +4,35 @@
 ******************************************************************************/
 
 #include "dcdformat.h"
+<<<<<<< HEAD
 #include "binaryblock_p.h"
+||||||| parent of c9eb2b967 (avogadro/io/cmlformat.cpp)
+=======
+#include "core/array.h"
+#include "core/avogadrocore.h"
+>>>>>>> c9eb2b967 (avogadro/io/cmlformat.cpp)
 #include "struct.h"
 
-#include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
-#include <avogadro/core/utilities.h>
 #include <avogadro/core/vector.h>
 
 #include <algorithm>
 #include <cmath>
+#include <cstdio>
+#include <cstdlib>
 #include <istream>
+#include <map>
+#include <math.h>
 #include <ostream>
 #include <string>
+<<<<<<< HEAD
 #include <vector>
+||||||| parent of c9eb2b967 (avogadro/io/cmlformat.cpp)
+=======
+#include <vector>
+#include <utility>
+>>>>>>> c9eb2b967 (avogadro/io/cmlformat.cpp)
 
 using std::map;
 using std::string;
