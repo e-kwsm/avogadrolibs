@@ -5,7 +5,17 @@
 
 #include "surfacedialog.h"
 
+#include "surfaces.h"
 #include "ui_surfacedialog.h"
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qcontainerfwd.h>
+#include <set>
+#include <utility>
+#include <string>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
