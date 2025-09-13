@@ -10,6 +10,7 @@
 #include "utilities.h"
 
 #include <cctype>
+#include <string>
 #include <vector>
 
 using Avogadro::Core::isCustomElement;
