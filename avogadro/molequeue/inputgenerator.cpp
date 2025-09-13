@@ -18,6 +18,19 @@
 #include <QtCore/QFile>
 #include <QtCore/QJsonArray>
 #include <QtCore/QJsonDocument>
+#include <qobject.h>
+#include <qalgorithms.h>
+#include <qstringview.h>
+#include <qlogging.h>
+#include <qforeach.h>
+#include <qjsonparseerror.h>
+#include <qscopedpointer.h>
+#include <string>
+#include <qregularexpression.h>
+#include <qnamespace.h>
+#include <qfont.h>
+#include <qlatin1stringview.h>
+#include <qstringliteral.h>
 
 namespace Avogadro::MoleQueue {
 
