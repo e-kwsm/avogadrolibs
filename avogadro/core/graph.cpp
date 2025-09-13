@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "graph.h"
+#include "core/array.h"
 
 #include <algorithm>
 #include <array>
@@ -11,6 +12,7 @@
 #include <set>
 #include <stack>
 #include <utility>
+#include <vector>
 
 namespace Avogadro::Core {
 

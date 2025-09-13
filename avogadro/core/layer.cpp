@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "layer.h"
+#include "core/array.h"
+#include "core/avogadrocore.h"
 #include <cassert>
 
 namespace Avogadro::Core {
