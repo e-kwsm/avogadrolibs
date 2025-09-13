@@ -5,6 +5,9 @@
 
 #include "spacegroups.h"
 
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "core/array.h"
 #include "crystaltools.h"
 #include "molecule.h"
 #include "spacegroupdata.h"
@@ -14,7 +17,10 @@
 #include <algorithm> // for std::count()
 #include <cassert>
 #include <cctype> // for isdigit()
+#include <cmath>
 #include <iostream>
+#include <string>
+#include <vector>
 
 namespace Avogadro::Core {
 
