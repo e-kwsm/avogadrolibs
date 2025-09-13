@@ -5,6 +5,9 @@
 
 #include "condadialog.h"
 #include "ui_condadialog.h"
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobject.h>
 
 namespace Avogadro::QtPlugins {
 
