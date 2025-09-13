@@ -5,6 +5,9 @@
 
 #include "symmetry.h"
 
+#include "qtgui/extensionplugin.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
 #include "symmetrywidget.h"
 
 #include "symmetryutil.h"
@@ -19,6 +22,19 @@
 
 #include <QtCore/QDebug>
 #include <QtCore/QStringList>
+#include <qobject.h>
+#include <libmsym/msym.h>
+#include <qobjectdefs.h>
+#include <qalgorithms.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qassert.h>
+#include <qforeach.h>
+#include <qwidget.h>
+#include <libmsym/msym_error.h>
+#include <cstdlib>
+#include <cstring>
+#include <qlogging.h>
 
 // using Avogadro::Core::CrystalTools;
 // using Avogadro::Core::UnitCell;
