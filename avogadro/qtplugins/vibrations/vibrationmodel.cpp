@@ -6,6 +6,11 @@
 #include "vibrationmodel.h"
 
 #include <avogadro/qtgui/molecule.h>
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <qnamespace.h>
+#include <qvariant.h>
+#include <qhashfunctions.h>
 
 namespace Avogadro::QtPlugins {
 
