@@ -4,6 +4,14 @@
 ******************************************************************************/
 
 #include "vanderwaals.h"
+#include "qtgui/pluginlayermanager.h"
+#include "core/layermanager.h"
+#include "qtgui/sceneplugin.h"
+#include "rendering/primitive.h"
+#include "rendering/avogadrorendering.h"
+#include "core/avogadrocore.h"
+#include "core/molecule.h"
+#include "core/vector.h"
 
 #include <avogadro/core/elements.h>
 #include <avogadro/core/utilities.h>
@@ -15,6 +23,13 @@
 #include <QtCore/QSettings>
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QSlider>
+#include <qwidget.h>
+#include <string>
+#include <sstream>
+#include <qnamespace.h>
+#include <cmath>
+#include <qobject.h>
+#include <qtmetamacros.h>
 
 #include <algorithm>
 #include <locale>
