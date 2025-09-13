@@ -5,6 +5,8 @@
 
 #include "groupnode.h"
 #include "visitor.h"
+#include <cstddef>
+#include <iterator>
 
 namespace Avogadro::Rendering {
 

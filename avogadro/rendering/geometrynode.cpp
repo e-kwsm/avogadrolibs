@@ -5,10 +5,14 @@
 
 #include "geometrynode.h"
 
+#include "core/array.h"
+#include "core/vector.h"
 #include "drawable.h"
+#include "rendering/primitive.h"
 #include "visitor.h"
 
-#include <iostream>
+#include <cstddef>
+#include <map>
 
 namespace Avogadro::Rendering {
 

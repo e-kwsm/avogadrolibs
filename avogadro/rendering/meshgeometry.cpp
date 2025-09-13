@@ -8,15 +8,18 @@
 #include "avogadrogl.h"
 #include "bufferobject.h"
 #include "camera.h"
-#include "scene.h"
+#include "core/types.h"
+#include "core/array.h"
 #include "shader.h"
 #include "shaderprogram.h"
 #include "vertexarrayobject.h"
 #include "visitor.h"
 
+#include <algorithm>
 #include <avogadro/core/matrix.h>
 #include <avogadro/core/vector.h>
 
+#include <cstddef>
 #include <iostream>
 #include <iterator>
 #include <limits>
