@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "hydrogens.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/qtgui/hydrogentools.h>
 #include <avogadro/qtgui/molecule.h>
@@ -12,6 +13,10 @@
 #include <QAction>
 
 #include <QtCore/QStringList>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
 
 namespace Avogadro::QtPlugins {
 

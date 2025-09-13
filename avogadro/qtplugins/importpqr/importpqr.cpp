@@ -6,13 +6,22 @@
 #include "importpqr.h"
 
 #include "pqrwidget.h"
+#include "qtgui/extensionplugin.h"
 
-#include <avogadro/io/fileformat.h>
-#include <avogadro/qtgui/fileformatdialog.h>
 #include <avogadro/qtgui/molecule.h>
 
 #include <QAction>
 #include <QMessageBox>
+#include <qobject.h>
+#include <qnetworkaccessmanager.h>
+#include <qobjectdefs.h>
+#include <qnetworkrequest.h>
+#include <qurl.h>
+#include <qnetworkreply.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
