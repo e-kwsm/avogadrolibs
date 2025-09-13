@@ -3,7 +3,9 @@
 
 #include "qvtkwidget.h"
 
-#include <QVTKInteractorAdapter.h>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <QVTKOpenGLStereoWidget.h>
 #include <vtkGenericOpenGLRenderWindow.h>
 #include <vtkNew.h>
 
