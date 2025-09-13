@@ -4,9 +4,14 @@
 ******************************************************************************/
 
 #include "residue.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
 #include "molecule.h"
 #include "residuecolors.h"
 #include "residuedata.h"
+#include <string>
+#include <utility>
+#include <vector>
 
 namespace Avogadro::Core {
 
