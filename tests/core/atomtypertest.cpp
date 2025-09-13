@@ -3,14 +3,17 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/atomtyper.h"
+#include "core/avogadrocore.h"
+#include <cstddef>
 #include <gtest/gtest.h>
 
 #include <avogadro/core/array.h>
-#include <avogadro/core/atom.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/nameatomtyper.h>
 #include <avogadro/core/symbolatomtyper.h>
+#include <string>
 
 using namespace Avogadro::Core;
 
