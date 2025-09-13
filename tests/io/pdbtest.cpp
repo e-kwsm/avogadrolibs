@@ -11,6 +11,7 @@
 #include <avogadro/core/residue.h>
 
 #include <avogadro/io/pdbformat.h>
+#include <string>
 
 using Avogadro::Core::Molecule;
 using Avogadro::Io::PdbFormat;

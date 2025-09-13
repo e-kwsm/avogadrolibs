@@ -3,11 +3,12 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "io/fileformat.h"
 #include "iotests.h"
 
+#include <bits/basic_string.h>
 #include <gtest/gtest.h>
 
-#include <avogadro/core/atom.h>
 #include <avogadro/core/matrix.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
@@ -16,6 +17,7 @@
 #include <avogadro/io/vaspformat.h>
 
 #include <fstream>
+#include <ios>
 #include <sstream>
 #include <string>
 
