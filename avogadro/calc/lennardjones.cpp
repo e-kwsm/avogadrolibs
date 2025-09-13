@@ -5,10 +5,13 @@
 
 #include "lennardjones.h"
 #include "avogadro/core/avogadrocore.h"
+#include "core/vector.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
+#include <cmath>
 
 namespace Avogadro::Calc {
 

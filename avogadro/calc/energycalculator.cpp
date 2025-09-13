@@ -4,10 +4,15 @@
 ******************************************************************************/
 
 #include "energycalculator.h"
+#include "core/constraint.h"
+#include "core/avogadrocore.h"
 #include "gradients.h"
 
+#include <Eigen/src/Core/Matrix.h>
+#include <cmath>
 #include <iostream>
 #include <avogadro/core/angletools.h>
+#include <vector>
 
 using Eigen::Vector3d;
 
