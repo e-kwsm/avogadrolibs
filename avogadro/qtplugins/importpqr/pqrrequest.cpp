@@ -3,7 +3,21 @@
 
 #include <avogadro/core/elements.h>
 
+#include <cctype>
+#include <cstddef>
 #include <nlohmann/json.hpp>
+#include <nlohmann/json_fwd.hpp>
+#include <qtablewidget.h>
+#include <qlabel.h>
+#include <qlineedit.h>
+#include <qnetworkaccessmanager.h>
+#include <qhashfunctions.h>
+#include <qnetworkrequest.h>
+#include <qurl.h>
+#include <qobjectdefs.h>
+#include <qstringview.h>
+#include <string>
+#include <qnamespace.h>
 
 using json = nlohmann::json;
 
