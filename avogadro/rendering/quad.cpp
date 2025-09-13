@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "quad.h"
+#include "core/array.h"
+#include "core/vector.h"
 
 using Avogadro::Core::Array;
 
