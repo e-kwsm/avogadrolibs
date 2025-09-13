@@ -4,6 +4,11 @@
 ******************************************************************************/
 
 #include "aligntool.h"
+#include "core/elements.h"
+#include "rendering/primitive.h"
+#include "qtgui/toolplugin.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
 
 #include <avogadro/core/contrastcolor.h>
 #include <avogadro/core/vector.h>
@@ -13,12 +18,9 @@
 
 #include <avogadro/qtopengl/glwidget.h>
 
-#include <avogadro/rendering/camera.h>
 #include <avogadro/rendering/geometrynode.h>
 #include <avogadro/rendering/glrenderer.h>
 #include <avogadro/rendering/groupnode.h>
-#include <avogadro/rendering/scene.h>
-#include <avogadro/rendering/textlabel2d.h>
 #include <avogadro/rendering/textlabel3d.h>
 #include <avogadro/rendering/textproperties.h>
 
@@ -33,6 +35,15 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <qobject.h>
+#include <qsizepolicy.h>
+#include <qobjectdefs.h>
+#include <qnamespace.h>
+#include <cmath>
+#include <qundostack.h>
+#include <qtmetamacros.h>
+#include <qassert.h>
+#include <qcontainerfwd.h>
 
 using Avogadro::Core::contrastColor;
 using Avogadro::Core::Elements;
