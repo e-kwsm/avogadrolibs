@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "crystalscene.h"
+#include "core/vector.h"
+#include "qtgui/sceneplugin.h"
 
 #include <avogadro/core/array.h>
 #include <avogadro/core/unitcell.h>
@@ -20,6 +22,12 @@
 #include <QtWidgets/QVBoxLayout>
 
 #include <QDebug>
+#include <qobject.h>
+#include <qnamespace.h>
+#include <qcolor.h>
+#include <qtmetamacros.h>
+#include <qwidget.h>
+#include <qobjectdefs.h>
 
 namespace Avogadro::QtPlugins {
 
