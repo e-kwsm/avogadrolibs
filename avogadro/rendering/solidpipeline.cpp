@@ -14,6 +14,7 @@
 
 #include "solid_first_fs.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <iostream>
 
 #include <cmath>

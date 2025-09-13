@@ -7,7 +7,7 @@
 
 #include "geometryvisitor.h"
 
-#include <Eigen/Geometry>
+#include <algorithm>
 
 namespace Avogadro::Rendering {
 
