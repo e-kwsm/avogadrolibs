@@ -4,16 +4,25 @@
 ******************************************************************************/
 
 #include "customelementdialog.h"
+#include "core/avogadrocore.h"
+#include "core/array.h"
 #include "ui_customelementdialog.h"
 
 #include "elementtranslator.h"
 #include "molecule.h"
 
+#include <algorithm>
 #include <avogadro/core/elements.h>
 
 #include <QtWidgets/QComboBox>
 
+#include <qwidget.h>
+#include <qdialog.h>
+#include <map>
+#include <qforeach.h>
+#include <qobject.h>
 #include <set>
+#include <utility>
 
 using Avogadro::Core::Elements;
 
