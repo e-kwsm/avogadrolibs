@@ -3,14 +3,23 @@
 
 #include "chartwidget.h"
 
+#include "core/avogadrocore.h"
 #include "qvtkwidget.h"
 
+#include <qwidget.h>
+#include <vector>
+#include <array>
+#include <cstddef>
+#include <string>
+#include <cmath>
 #include <vtkAxis.h>
+#include <vtkChart.h>
 #include <vtkChartXY.h>
 #include <vtkContextScene.h>
 #include <vtkContextView.h>
 #include <vtkDoubleArray.h>
 #include <vtkFloatArray.h>
+#include <vtkNew.h>
 #include <vtkPlot.h>
 #include <vtkRenderWindow.h>
 #include <vtkStringArray.h>
