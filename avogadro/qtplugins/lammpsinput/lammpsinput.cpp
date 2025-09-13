@@ -6,15 +6,20 @@
 #include "lammpsinput.h"
 
 #include "lammpsinputdialog.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/io/fileformat.h>
-#include <avogadro/qtgui/fileformatdialog.h>
 #include <avogadro/qtgui/molecule.h>
 
 #include <QtCore/QDebug>
 
 #include <QAction>
 #include <QtWidgets/QMessageBox>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
 
 namespace Avogadro {
 namespace Core {
