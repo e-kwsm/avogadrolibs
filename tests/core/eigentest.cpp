@@ -3,9 +3,8 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include <Eigen/src/Core/Matrix.h>
 #include <gtest/gtest.h>
-
-#include <Eigen/Core>
 
 TEST(EigenTest, vector3d)
 {
