@@ -4,11 +4,17 @@
 ******************************************************************************/
 
 #include "closecontacts.h"
+#include "core/molecule.h"
+#include "qtgui/pluginlayermanager.h"
+#include "qtgui/sceneplugin.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "rendering/primitive.h"
 
+#include <array>
+#include <algorithm>
 #include <avogadro/core/array.h>
-#include <avogadro/core/atom.h>
 #include <avogadro/core/bond.h>
-#include <avogadro/core/elements.h>
 #include <avogadro/core/neighborperceiver.h>
 #include <avogadro/core/residue.h>
 #include <avogadro/qtgui/molecule.h>
@@ -22,6 +28,11 @@
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <qobject.h>
+#include <qcolor.h>
+#include <vector>
+#include <qoverload.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
