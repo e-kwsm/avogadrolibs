@@ -4,9 +4,16 @@
 ******************************************************************************/
 
 #include "constraintsmodel.h"
+#include "core/constraint.h"
+#include "core/avogadrocore.h"
 
 #include <QtCore/QDebug>
 #include <QtCore/QString>
+#include <qtmetamacros.h>
+#include <vector>
+#include <qvariant.h>
+#include <qnamespace.h>
+#include <qtypes.h>
 
 using namespace std;
 
