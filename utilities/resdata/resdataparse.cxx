@@ -17,9 +17,11 @@
 #include <avogadro/core/utilities.h>
 
 #include <algorithm>
+#include <cstddef>
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <utility>
 #include <vector>
 
 using std::cout;
