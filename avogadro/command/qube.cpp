@@ -2,6 +2,7 @@
   This source file is part of the Avogadro project.
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/io/fileformatmanager.h>
 #include <avogadro/quantumio/gamessus.h>
 #include <avogadro/quantumio/gaussianfchk.h>
@@ -13,6 +14,8 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/version.h>
 
+#include <cstdlib>
+#include <cstdio>
 #include <iostream>
 #include <sstream>
 #include <string>
