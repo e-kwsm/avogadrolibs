@@ -7,6 +7,10 @@
 #include "ui_lineformatinputdialog.h"
 
 #include <QtCore/QSettings>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobject.h>
+#include <qcontainerfwd.h>
 
 namespace Avogadro::QtPlugins {
 
