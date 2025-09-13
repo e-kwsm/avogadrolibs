@@ -5,10 +5,17 @@
 
 #include "vibrationdialog.h"
 
+#include "core/array.h"
 #include "ui_vibrationdialog.h"
 #include "vibrationmodel.h"
 
-#include <avogadro/core/molecule.h>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qdialog.h>
+#include <qabstractitemview.h>
+#include <qobjectdefs.h>
+#include <cstddef>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
