@@ -4,16 +4,25 @@
 ******************************************************************************/
 
 #include "obcharges.h"
+#include "calc/chargemodel.h"
+#include "core/matrix.h"
 #include "obprocess.h"
 
+#include <Eigen/src/Core/util/Meta.h>
 #include <avogadro/core/array.h>
 #include <avogadro/core/molecule.h>
 
-#include <nlohmann/json.hpp>
+#include <cstdlib>
 
 #include <QtCore/QCoreApplication>
 #include <QtCore/QDebug>
 #include <QtCore/QTimer>
+#include <qobject.h>
+#include <qtmetamacros.h>
+#include <qeventloop.h>
+#include <string>
+#include <qstringview.h>
+#include <qlogging.h>
 
 namespace Avogadro {
 
