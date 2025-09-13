@@ -15,6 +15,7 @@
 ******************************************************************************/
 
 #include "3dmoldialog.h"
+#include "core/molecule.h"
 #include "ui_3dmoldialog.h"
 
 #include <avogadro/core/elements.h>
@@ -22,6 +23,12 @@
 
 #include <avogadro/io/fileformatmanager.h>
 
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qobject.h>
+#include <cstddef>
+#include <qapplication.h>
 #include <string>
 
 #include <QtGui/QClipboard>
