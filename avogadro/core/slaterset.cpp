@@ -11,6 +11,7 @@
 #include <cmath>
 #include <cstddef>
 #include <iostream>
+#include <math.h>
 #include <vector>
 
 namespace Avogadro::Core {
