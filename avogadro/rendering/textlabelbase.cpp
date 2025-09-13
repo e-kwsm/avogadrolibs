@@ -9,6 +9,7 @@
 #include "blendstateguard_p.h"
 #include "bufferobject.h"
 #include "camera.h"
+#include "core/types.h"
 #include "shader.h"
 #include "shaderprogram.h"
 #include "textrenderstrategy.h"
@@ -19,6 +20,7 @@
 #include <avogadro/core/array.h>
 #include <avogadro/core/matrix.h>
 #include <avogadro/core/vector.h>
+#include <cstddef>
 
 namespace {
 #include "textlabelbase_fs.h"
