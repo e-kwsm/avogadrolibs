@@ -4,9 +4,29 @@
 ******************************************************************************/
 
 #include "forcefield.h"
+#include "core/array.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
+#include "core/constraint.h"
 #include "forcefielddialog.h"
-#include "obmmenergy.h"
+#include "qtgui/extensionplugin.h"
 #include "scriptenergy.h"
+#include <qobject.h>
+#include <qkeysequence.h>
+#include <qobjectdefs.h>
+#include <qlogging.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
+#include <Eigen/src/Core/util/Meta.h>
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Core/Map.h>
+#include <qnamespace.h>
+#include <qcoreapplication.h>
+#include <qeventloop.h>
+#include <cmath>
+#include <qalgorithms.h>
+#include <qmap.h>
 
 #ifdef BUILD_GPL_PLUGINS
 #include "obenergy.h"
@@ -27,12 +47,10 @@
 #include <avogadro/qtgui/avogadropython.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/rwmolecule.h>
-#include <avogadro/qtgui/utilities.h>
 
 #include <avogadro/qtgui/scriptloader.h>
 
 #include <avogadro/calc/energymanager.h>
-#include <avogadro/calc/lennardjones.h>
 
 #include <cppoptlib/meta.h>
 #include <cppoptlib/problem.h>

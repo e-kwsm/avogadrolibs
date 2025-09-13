@@ -12,6 +12,10 @@
 #include <QtCore/QStringList>
 
 #include <cmath> // for log10
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
 
 namespace Avogadro {
 namespace QtPlugins {

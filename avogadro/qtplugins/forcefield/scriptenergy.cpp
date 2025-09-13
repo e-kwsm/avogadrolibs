@@ -4,7 +4,11 @@
 ******************************************************************************/
 
 #include "scriptenergy.h"
+#include "calc/energycalculator.h"
+#include "core/avogadrocore.h"
 
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Core/util/Meta.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/qtgui/pythonscript.h>
 
@@ -22,10 +26,16 @@
 
 #include <QRegularExpression>
 
+#include <qcontainerfwd.h>
+#include <qforeach.h>
 #include <qjsonarray.h>
 #include <qjsondocument.h>
 #include <qjsonobject.h>
+#include <qjsonparseerror.h>
 #include <qjsonvalue.h>
+#include <qnamespace.h>
+#include <string>
+#include <qlogging.h>
 
 namespace Avogadro::QtPlugins {
 
