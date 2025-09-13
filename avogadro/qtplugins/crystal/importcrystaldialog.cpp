@@ -15,6 +15,11 @@
 #include <QtWidgets/QMessageBox>
 
 #include <QtGui/QClipboard>
+#include <string>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <sstream>
+#include <qlogging.h>
 
 using std::string;
 

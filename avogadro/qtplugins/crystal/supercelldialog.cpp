@@ -6,11 +6,10 @@
 #include "supercelldialog.h"
 #include "ui_supercelldialog.h"
 
-#include <avogadro/core/crystaltools.h>
-#include <avogadro/core/molecule.h>
-
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/rwmolecule.h>
+#include <qwidget.h>
+#include <qdialog.h>
 
 namespace Avogadro::QtPlugins {
 
