@@ -4,8 +4,10 @@
 ******************************************************************************/
 
 #include "molecularmodel.h"
+#include "core/basisset.h"
+#include "core/avogadrocore.h"
 
-#include <avogadro/core/elements.h>
+#include <algorithm>
 #include <avogadro/core/gaussianset.h>
 #include <avogadro/core/residue.h>
 #include <avogadro/io/fileformatmanager.h>
@@ -23,7 +25,15 @@
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkReply>
 
-#include <limits>
+#include <iterator>
+#include <cstdlib>
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <qobjectdefs.h>
+#include <qnetworkrequest.h>
+#include <qtmetamacros.h>
+#include <qtpreprocessorsupport.h>
+#include <qnamespace.h>
 
 namespace Avogadro {
 
