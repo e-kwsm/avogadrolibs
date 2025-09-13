@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "networkdatabases.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/io/fileformatmanager.h>
 #include <avogadro/qtgui/molecule.h>
@@ -15,6 +16,14 @@
 #include <QtWidgets/QInputDialog>
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QProgressDialog>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qlineedit.h>
+#include <qnetworkrequest.h>
+#include <qtmetamacros.h>
 
 #include <cmath>
 
