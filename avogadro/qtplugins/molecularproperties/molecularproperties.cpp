@@ -6,6 +6,7 @@
 #include "molecularproperties.h"
 #include "molecularmodel.h"
 #include "molecularview.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/io/fileformatmanager.h>
 #include <avogadro/qtgui/molecule.h>
@@ -24,6 +25,13 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QVBoxLayout>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qfont.h>
+#include <qnamespace.h>
 
 using Avogadro::QtGui::RichTextDelegate;
 

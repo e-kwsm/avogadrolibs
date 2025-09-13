@@ -4,8 +4,12 @@
 ******************************************************************************/
 
 #include "measuretool.h"
+#include "rendering/primitive.h"
+#include "qtgui/toolplugin.h"
+#include "core/avogadrocore.h"
+#include "rendering/avogadrorendering.h"
 
-#include <avogadro/qtopengl/glwidget.h>
+#include <algorithm>
 
 #include <avogadro/rendering/geometrynode.h>
 #include <avogadro/rendering/glrenderer.h>
@@ -15,12 +19,9 @@
 #include <avogadro/rendering/textlabel3d.h>
 #include <avogadro/rendering/textproperties.h>
 
-#include <avogadro/core/atom.h>
 #include <avogadro/core/contrastcolor.h>
 #include <avogadro/core/elements.h>
 #include <avogadro/core/vector.h>
-#include <avogadro/qtgui/molecule.h>
-#include <avogadro/qtgui/rwmolecule.h>
 
 #include <avogadro/core/angletools.h>
 
@@ -31,7 +32,11 @@
 
 #include <QDebug>
 
-#include <cmath>
+#include <qobject.h>
+#include <qundostack.h>
+#include <qnamespace.h>
+#include <qtmetamacros.h>
+#include <qassert.h>
 
 using Avogadro::Core::contrastColor;
 using Avogadro::Core::Elements;
