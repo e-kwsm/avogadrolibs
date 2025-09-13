@@ -13,8 +13,6 @@
 #include <avogadro/qtgui/scenepluginmodel.h>
 #include <avogadro/qtgui/toolplugin.h>
 
-#include <avogadro/rendering/camera.h>
-
 #include <QAction>
 #include <QtCore/QSettings>
 #include <QtCore/QTimer>
@@ -22,6 +20,12 @@
 #include <QtGui/QMouseEvent>
 #include <QtGui/QWheelEvent>
 #include <QtWidgets/QApplication>
+#include <qopenglwidget.h>
+#include <qnamespace.h>
+#include <qforeach.h>
+#include <qlist.h>
+#include <qhashfunctions.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtOpenGL {
 
