@@ -4,9 +4,7 @@
 ******************************************************************************/
 
 #include "interfacewidget.h"
-
-#include <avogadro/qtgui/filebrowsewidget.h>
-#include <avogadro/qtgui/molecule.h>
+#include "qtgui/jsonwidget.h"
 
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
@@ -26,6 +24,13 @@
 #include <QtCore/QPointer>
 #include <QtCore/QSettings>
 #include <QtCore/QTimer>
+#include <qlogging.h>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qboxlayout.h>
+#include <qsize.h>
+#include <qfontmetrics.h>
+#include <qstringliteral.h>
 
 namespace Avogadro::QtGui {
 
