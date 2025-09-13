@@ -6,6 +6,7 @@
 #include "lineformatinput.h"
 
 #include "lineformatinputdialog.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/qtgui/fileformatdialog.h>
 #include <avogadro/qtgui/molecule.h>
@@ -17,6 +18,15 @@
 #include <QAction>
 #include <QMessageBox>
 #include <QProgressDialog>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <bits/basic_string.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qforeach.h>
+#include <string>
+#include <qtmetamacros.h>
 
 using Avogadro::Io::FileFormat;
 using Avogadro::Io::FileFormatManager;
