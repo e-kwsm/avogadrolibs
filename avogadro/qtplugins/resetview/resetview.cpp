@@ -4,7 +4,16 @@
 ******************************************************************************/
 
 #include "resetview.h"
+#include "qtgui/extensionplugin.h"
+#include "core/array.h"
+#include "core/vector.h"
+#include "core/matrix.h"
 
+#include <Eigen/src/Geometry/Transform.h>
+#include <Eigen/src/Eigenvalues/EigenSolver.h>
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Geometry/Quaternion.h>
+#include <algorithm>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtopengl/glwidget.h>
 #include <avogadro/rendering/camera.h>
@@ -14,7 +23,14 @@
 #include <QOpenGLWidget>
 #include <QTimer>
 
+#include <cmath>
+#include <cstddef>
 #include <limits>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
+#include <qcontainerfwd.h>
+#include <qlist.h>
 
 #define CAMERA_NEAR_DISTANCE 13.35f // Experimental number
 
