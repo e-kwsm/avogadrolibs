@@ -6,6 +6,8 @@
 #include "bufferobject.h"
 
 #include "avogadrogl.h"
+#include "core/avogadrocore.h"
+#include <cstddef>
 
 namespace Avogadro::Rendering {
 
