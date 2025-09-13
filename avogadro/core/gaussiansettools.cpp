@@ -5,9 +5,18 @@
 
 #include "gaussiansettools.h"
 
+#include "core/array.h"
+#include "core/vector.h"
+#include "core/matrix.h"
+#include "core/avogadrocore.h"
 #include "cube.h"
 #include "gaussianset.h"
 #include "molecule.h"
+
+#include <cstdlib>
+#include <algorithm>
+#include <cmath>
+#include <vector>
 
 using std::vector;
 
