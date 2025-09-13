@@ -5,12 +5,24 @@
 
 #include "hdf5dataformat.h"
 
-#include "hdf5.h"
+#include "core/matrix.h"
 
+#include <H5Ipublic.h>
+#include <H5public.h>
+#include <H5version.h>
+#include <H5Opublic.h>
+#include <H5Fpublic.h>
+#include <H5Lpublic.h>
+#include <H5Dpublic.h>
+#include <H5Spublic.h>
+#include <H5Ppublic.h>
+#include <H5Tpublic.h>
 #include <avogadro/core/array.h>
 
 #include <algorithm>
 #include <cstdio>
+#include <vector>
+#include <string>
 
 namespace Avogadro {
 namespace Io {
