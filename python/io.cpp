@@ -1,5 +1,6 @@
+#include <pybind11/detail/common.h>
+#include <pybind11/cast.h>
 #include <pybind11/pybind11.h>
-#include <pybind11/stl.h>
 
 #include <avogadro/core/molecule.h>
 #include <avogadro/io/fileformatmanager.h>
@@ -12,6 +13,7 @@
 #include <avogadro/quantumio/nwchemjson.h>
 #include <avogadro/quantumio/nwchemlog.h>
 #include <avogadro/quantumio/orca.h>
+#include <string>
 
 namespace py = pybind11;
 
