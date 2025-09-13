@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "unitcelldialog.h"
+#include "core/avogadrocore.h"
 #include "ui_unitcelldialog.h"
 
 #include <avogadro/qtgui/molecule.h>
@@ -17,6 +18,17 @@
 #include <QtWidgets/QPlainTextEdit>
 
 #include <QRegularExpression>
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <cassert>
+#include <qfont.h>
+#include <qfontmetrics.h>
+#include <qsizepolicy.h>
+#include <qpalette.h>
+#include <qnamespace.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
 
 using Avogadro::QtGui::Molecule;
 
