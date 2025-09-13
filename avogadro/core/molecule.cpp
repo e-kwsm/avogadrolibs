@@ -6,6 +6,13 @@
 #include "molecule.h"
 
 #include "basisset.h"
+#include "core/avogadrocore.h"
+#include "core/matrix.h"
+#include "core/constraint.h"
+#include "core/variant.h"
+#include "core/array.h"
+#include "core/atom.h"
+#include "core/vector.h"
 #include "cube.h"
 #include "elements.h"
 #include "gaussianset.h"
@@ -17,10 +24,22 @@
 #include "slaterset.h"
 #include "unitcell.h"
 
+#include <Eigen/src/Core/util/Meta.h>
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Core/util/Constants.h>
 #include <algorithm>
 #include <cassert>
+#include <cmath>
+#include <cstdint>
 #include <iostream>
+#include <string>
+#include <set>
+#include <map>
+#include <sstream>
+#include <list>
+#include <limits>
 #include <utility>
+#include <vector>
 
 namespace Avogadro::Core {
 
