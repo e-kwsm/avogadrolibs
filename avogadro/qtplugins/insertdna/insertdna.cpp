@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "insertdna.h"
+#include "qtgui/extensionplugin.h"
 #include "ui_insertdnadialog.h"
 
 #include <avogadro/qtgui/fileformatdialog.h>
@@ -11,7 +12,6 @@
 #include <avogadro/qtgui/rwmolecule.h>
 
 #include <avogadro/io/fileformat.h>
-#include <avogadro/io/fileformatmanager.h>
 
 #include <QAction>
 #include <QButtonGroup>
@@ -19,6 +19,16 @@
 #include <QProgressDialog>
 
 #include <nlohmann/json.hpp>
+#include <nlohmann/json_fwd.hpp>
+#include <qdialog.h>
+#include <qnamespace.h>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qforeach.h>
+#include <qtmetamacros.h>
 
 using json = nlohmann::json;
 using Avogadro::Io::FileFormat;
