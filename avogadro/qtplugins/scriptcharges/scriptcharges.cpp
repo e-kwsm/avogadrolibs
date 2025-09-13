@@ -5,15 +5,22 @@
 
 #include "scriptcharges.h"
 
+#include "qtgui/extensionplugin.h"
 #include "scriptchargemodel.h"
 
 #include <avogadro/calc/chargemanager.h>
 #include <avogadro/calc/chargemodel.h>
 
 #include <avogadro/qtgui/scriptloader.h>
-#include <avogadro/qtgui/utilities.h>
 
 #include <QtCore/QDebug>
+#include <qobject.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qalgorithms.h>
+#include <qmap.h>
+#include <qforeach.h>
+#include <qlogging.h>
 
 namespace Avogadro::QtPlugins {
 
