@@ -21,6 +21,7 @@
 
 #include <algorithm>
 #include <cassert>
+#include <qlogging.h>
 #include <qobject.h>
 #include <string>
 #include <cstddef>
