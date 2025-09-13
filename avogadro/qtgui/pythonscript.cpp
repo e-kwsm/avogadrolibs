@@ -13,6 +13,14 @@
 #include <QtCore/QLocale>
 #include <QtCore/QProcess>
 #include <QtCore/QSettings>
+#include <qobject.h>
+#include <qtenvironmentvariables.h>
+#include <qstringliteral.h>
+#include <qlogging.h>
+#include <qcontainerfwd.h>
+#include <qtypes.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtGui {
 
