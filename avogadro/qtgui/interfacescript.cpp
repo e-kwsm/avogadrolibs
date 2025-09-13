@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "interfacescript.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/coordinateblockgenerator.h>
 #include <avogadro/core/molecule.h>
@@ -29,6 +30,21 @@
 #include <QtGui/QColor>
 
 #include <QtWidgets/QMessageBox>
+#include <qobject.h>
+#include <qstringliteral.h>
+#include <qalgorithms.h>
+#include <qstringview.h>
+#include <qlogging.h>
+#include <qlatin1stringview.h>
+#include <qtmetamacros.h>
+#include <qforeach.h>
+#include <qscopedpointer.h>
+#include <qwidget.h>
+#include <qjsonparseerror.h>
+#include <qtypes.h>
+#include <qregularexpression.h>
+#include <qnamespace.h>
+#include <qfont.h>
 
 #include <map>
 #include <string>
