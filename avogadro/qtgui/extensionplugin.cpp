@@ -8,6 +8,10 @@
 #include "commandregistry.h"
 
 #include <QWidget>
+#include <qobject.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qtpreprocessorsupport.h>
 
 namespace Avogadro::QtGui {
 
