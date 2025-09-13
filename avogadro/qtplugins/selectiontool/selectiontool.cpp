@@ -5,6 +5,12 @@
 
 #include "selectiontool.h"
 
+#include "core/molecule.h"
+#include "rendering/primitive.h"
+#include "qtgui/toolplugin.h"
+#include "core/avogadrocore.h"
+#include "rendering/avogadrorendering.h"
+#include "core/layermanager.h"
 #include "selectiontoolwidget.h"
 
 #include <avogadro/qtopengl/glwidget.h>
@@ -13,10 +19,8 @@
 #include <avogadro/rendering/glrenderer.h>
 #include <avogadro/rendering/groupnode.h>
 #include <avogadro/rendering/meshgeometry.h>
-#include <avogadro/rendering/scene.h>
 
 #include <avogadro/core/array.h>
-#include <avogadro/core/atom.h>
 #include <avogadro/core/vector.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/rwlayermanager.h>
@@ -27,8 +31,14 @@
 #include <QtGui/QIcon>
 #include <QtGui/QMouseEvent>
 
-#include <queue>
-#include <set>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qnamespace.h>
+#include <cmath>
+#include <qtmetamacros.h>
+#include <cstddef>
+#include <qwidget.h>
+#include <qundostack.h>
 
 using Avogadro::Core::Array;
 using Avogadro::Core::Atom;
