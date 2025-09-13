@@ -28,6 +28,12 @@
 #include <QtWidgets/QVBoxLayout>
 
 #include <QtCore/QDebug>
+#include <qtableview.h>
+#include <qabstractitemview.h>
+#include <qkeysequence.h>
+#include <qcontainerfwd.h>
+#include <qitemselectionmodel.h>
+#include <qnamespace.h>
 
 namespace Avogadro {
 

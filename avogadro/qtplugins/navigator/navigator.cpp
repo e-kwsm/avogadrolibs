@@ -4,14 +4,15 @@
 ******************************************************************************/
 
 #include "navigator.h"
+#include "qtgui/toolplugin.h"
 
+#include <Eigen/src/Geometry/Transform.h>
 #include <avogadro/core/vector.h>
 
 #include <avogadro/qtopengl/glwidget.h>
 
 #include <avogadro/rendering/camera.h>
 #include <avogadro/rendering/glrenderer.h>
-#include <avogadro/rendering/scene.h>
 
 #include <QAction>
 #include <QDebug>
@@ -23,7 +24,14 @@
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QVBoxLayout>
 
-#include <Eigen/Geometry>
+#include <qobject.h>
+#include <qnamespace.h>
+#include <qicon.h>
+#include <qtmetamacros.h>
+#include <qcontainerfwd.h>
+#include <qlogging.h>
+#include <qwidget.h>
+#include <qobjectdefs.h>
 
 namespace Avogadro::QtPlugins {
 
