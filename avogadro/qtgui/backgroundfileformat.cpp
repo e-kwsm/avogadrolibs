@@ -6,6 +6,8 @@
 #include "backgroundfileformat.h"
 
 #include <avogadro/io/fileformat.h>
+#include <qobject.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtGui {
 
