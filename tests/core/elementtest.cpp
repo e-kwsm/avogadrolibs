@@ -3,11 +3,11 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include <bits/basic_string.h>
 #include <gtest/gtest.h>
 
 #include <avogadro/core/avogadrocore.h>
 #include <avogadro/core/elements.h>
-#include <avogadro/core/utilities.h>
 
 using Avogadro::Core::Elements;
 using namespace std::string_literals;
