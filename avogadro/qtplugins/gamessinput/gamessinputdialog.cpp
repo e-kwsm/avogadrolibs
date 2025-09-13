@@ -4,10 +4,9 @@
 ******************************************************************************/
 
 #include "gamessinputdialog.h"
+#include "core/molecule.h"
 #include "gamesshighlighter.h"
 
-#include <avogadro/core/atom.h>
-#include <avogadro/core/bond.h>
 #include <avogadro/core/elements.h>
 
 #include <avogadro/molequeue/molequeuedialog.h>
@@ -15,8 +14,11 @@
 #include <avogadro/qtgui/molecule.h>
 
 #include <avogadro/molequeue/client/jobobject.h>
-#include <qjsonarray.h>
-#include <qjsonobject.h>
+#include <qdialog.h>
+#include <qevent.h>
+#include <qforeach.h>
+#include <cstddef>
+#include <qdir.h>
 #include <qjsonvalue.h>
 
 #include <QtWidgets/QFileDialog>
@@ -27,6 +29,10 @@
 #include <QtCore/QSettings>
 #include <QtCore/QString>
 #include <QtCore/QTimer>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
 
 using Avogadro::MoleQueue::JobObject;
 using Avogadro::MoleQueue::MoleQueueDialog;
