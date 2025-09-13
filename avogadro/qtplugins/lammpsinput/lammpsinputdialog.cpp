@@ -4,12 +4,10 @@
 ******************************************************************************/
 
 #include "lammpsinputdialog.h"
+#include "core/molecule.h"
 
-#include <avogadro/core/atom.h>
-#include <avogadro/core/bond.h>
 #include <avogadro/core/elements.h>
 
-#include <avogadro/io/fileformat.h>
 #include <avogadro/io/fileformatmanager.h>
 
 #include <avogadro/qtgui/molecule.h>
@@ -25,6 +23,16 @@
 #include <QtCore/QPointer>
 #include <QtCore/QString>
 #include <QtCore/QTextStream>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qsettings.h>
+#include <string>
+#include <qobject.h>
+#include <qcontainerfwd.h>
+#include <qfileinfo.h>
+#include <cstddef>
 
 namespace Avogadro::QtPlugins {
 
