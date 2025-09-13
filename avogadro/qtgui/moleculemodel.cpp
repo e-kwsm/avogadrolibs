@@ -10,6 +10,12 @@
 #include <QtGui/QColor>
 #include <QtGui/QIcon>
 #include <QtGui/QPalette>
+#include <qobject.h>
+#include <qabstractitemmodel.h>
+#include <qnamespace.h>
+#include <qtmetamacros.h>
+#include <qlist.h>
+#include <qforeach.h>
 
 namespace Avogadro::QtGui {
 
