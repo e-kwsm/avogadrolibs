@@ -4,7 +4,14 @@
 ******************************************************************************/
 
 #include "cjsonformat.h"
+#include "core/array.h"
+#include "core/variant.h"
+#include "core/matrix.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
 
+#include <Eigen/src/Core/util/Meta.h>
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/core/crystaltools.h>
 #include <avogadro/core/cube.h>
 #include <avogadro/core/elements.h>
@@ -14,12 +21,15 @@
 #include <avogadro/core/residue.h>
 #include <avogadro/core/spacegroups.h>
 #include <avogadro/core/unitcell.h>
-#include <avogadro/core/utilities.h>
 
+#include <cstddef>
 #include <nlohmann/json.hpp>
 
 #include <iomanip>
 #include <iostream>
+#include <nlohmann/json_fwd.hpp>
+#include <string>
+#include <vector>
 
 using json = nlohmann::json;
 
