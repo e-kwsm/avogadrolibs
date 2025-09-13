@@ -8,6 +8,7 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QProcessEnvironment>
 #include <QtCore/QStringList>
+#include <qcontainerfwd.h>
 
 namespace Avogadro::QtGui::Utilities {
 
