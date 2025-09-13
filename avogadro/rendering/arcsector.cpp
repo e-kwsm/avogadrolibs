@@ -4,6 +4,12 @@
 ******************************************************************************/
 
 #include "arcsector.h"
+#include "core/array.h"
+#include "core/vector.h"
+#include <cmath>
+#include <cstddef>
+#include "core/avogadrocore.h"
+#include <Eigen/src/Geometry/AngleAxis.h>
 
 using Avogadro::Core::Array;
 

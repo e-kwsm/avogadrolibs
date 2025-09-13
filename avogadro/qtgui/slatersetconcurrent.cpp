@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "slatersetconcurrent.h"
+#include "core/vector.h"
 
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/slaterset.h>
@@ -13,6 +14,9 @@
 #include <avogadro/core/mutex.h>
 
 #include <QtConcurrent/QtConcurrentMap>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtGui {
 

@@ -4,6 +4,9 @@
 ******************************************************************************/
 
 #include "toolplugin.h"
+#include <qobject.h>
+#include <qcontainerfwd.h>
+#include <qtpreprocessorsupport.h>
 
 namespace Avogadro::QtGui {
 
