@@ -5,6 +5,10 @@
 
 #include "volumescalingdialog.h"
 #include "ui_volumescalingdialog.h"
+#include <qwidget.h>
+#include <qdialog.h>
+#include <qobjectdefs.h>
+#include <qobject.h>
 
 namespace Avogadro::QtPlugins {
 
