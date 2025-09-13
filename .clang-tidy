@@ -1,3 +1,4 @@
+---
 Checks: 'bugprone*,
         clang-analyzer*,
         cppcoreguidelines*,
@@ -30,4 +31,6 @@ Checks: 'bugprone*,
         -modernize-use-trailing-return-type'
 FormatStyle:     file
 CheckOptions:
-  misc-include-cleaner.MissingIncludes: 'false'
+  misc-include-cleaner.MissingIncludes: false
+...
+
