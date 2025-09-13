@@ -14,6 +14,8 @@
 
 ******************************************************************************/
 
+#include <cstdlib>
+#include <cstddef>
 #include <pugixml.hpp>
 
 #include <avogadro/core/utilities.h>
