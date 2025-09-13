@@ -4,11 +4,13 @@
 ******************************************************************************/
 
 #include "playertool.h"
+#include "qtgui/toolplugin.h"
 
+#include <algorithm>
+#include <cstdint>
 #include <gif.h>
 #include <gwavi.h>
 
-#include <avogadro/core/vector.h>
 #include <avogadro/qtgui/molecule.h>
 
 #include <QAction>
@@ -35,6 +37,17 @@
 
 #include <algorithm>
 #include <cmath>
+#include <qobject.h>
+#include <qwidget.h>
+#include <qobjectdefs.h>
+#include <qnamespace.h>
+#include <qtversionchecks.h>
+#include <qtypes.h>
+#include <qfileinfo.h>
+#include <qimage.h>
+#include <qguiapplication.h>
+#include <qcolor.h>
+#include <qcontainerfwd.h>
 
 namespace Avogadro::QtPlugins {
 
