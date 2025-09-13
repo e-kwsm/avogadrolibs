@@ -4,7 +4,14 @@
 ******************************************************************************/
 
 #include "noncovalent.h"
+#include "core/molecule.h"
+#include "qtgui/pluginlayermanager.h"
+#include "qtgui/sceneplugin.h"
+#include "core/avogadrocore.h"
+#include "core/vector.h"
+#include "rendering/primitive.h"
 
+#include <array>
 #include <avogadro/core/array.h>
 #include <avogadro/core/atom.h>
 #include <avogadro/core/atomutilities.h>
@@ -26,7 +33,12 @@
 
 #include <algorithm>
 #include <cmath>
-#include <sstream>
+#include <math.h>
+#include <qobject.h>
+#include <cstddef>
+#include <qoverload.h>
+#include <qtmetamacros.h>
+#include <vector>
 
 // bond angles
 #define M_TETRAHEDRAL (acosf(-1.0f / 3.0f))
