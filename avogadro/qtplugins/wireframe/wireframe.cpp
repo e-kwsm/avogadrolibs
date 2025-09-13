@@ -4,6 +4,14 @@
 ******************************************************************************/
 
 #include "wireframe.h"
+#include "core/array.h"
+#include "qtgui/pluginlayermanager.h"
+#include "core/layermanager.h"
+#include "qtgui/sceneplugin.h"
+#include "rendering/primitive.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
+#include "core/molecule.h"
 
 #include <avogadro/core/elements.h>
 #include <avogadro/core/utilities.h>
@@ -21,6 +29,11 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include <string>
+#include <sstream>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
 
 #include <algorithm>
 #include <cmath>
