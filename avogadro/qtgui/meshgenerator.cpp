@@ -5,12 +5,16 @@
 
 #include "meshgenerator.h"
 
+#include <array>
+#include <algorithm>
 #include <avogadro/core/cube.h>
 #include <avogadro/core/mesh.h>
-#include <avogadro/core/mutex.h>
 
 #include <QDebug>
 #include <QReadWriteLock>
+#include <qobject.h>
+#include <qthread.h>
+#include <qlogging.h>
 
 namespace Avogadro::QtGui {
 
