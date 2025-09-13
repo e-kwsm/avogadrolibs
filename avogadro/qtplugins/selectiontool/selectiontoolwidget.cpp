@@ -4,9 +4,17 @@
 ******************************************************************************/
 
 #include "selectiontoolwidget.h"
+#include "core/vector.h"
 #include "ui_selectiontoolwidget.h"
 
 #include <QtWidgets/QColorDialog>
+#include <qwidget.h>
+#include <qobjectdefs.h>
+#include <cstddef>
+#include <qobject.h>
+#include <qpalette.h>
+#include <qcolor.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
