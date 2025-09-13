@@ -4,6 +4,9 @@
 ******************************************************************************/
 
 #include "alchemy.h"
+#include "core/array.h"
+#include "qtgui/extensionplugin.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/elements.h>
 #include <avogadro/qtgui/molecule.h>
@@ -13,7 +16,10 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QInputDialog>
 
-#include <vector>
+#include <qobject.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
 
 namespace Avogadro::QtPlugins {
 
