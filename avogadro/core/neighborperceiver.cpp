@@ -4,6 +4,13 @@
 ******************************************************************************/
 
 #include "neighborperceiver.h"
+#include "core/array.h"
+#include "core/vector.h"
+#include "core/avogadrocore.h"
+#include <algorithm>
+#include <cmath>
+#include <vector>
+#include <array>
 
 namespace Avogadro::Core {
 
