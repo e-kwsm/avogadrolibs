@@ -4,6 +4,13 @@
 ******************************************************************************/
 
 #include "molequeuemanager.h"
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qjsonobject.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qforeach.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::MoleQueue {
 
