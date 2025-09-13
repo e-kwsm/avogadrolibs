@@ -3,6 +3,9 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/avogadrocore.h"
+#include "core/variant.h"
+#include "core/variantmap.h"
 #include "utils.h"
 
 #include <gtest/gtest.h>
@@ -15,6 +18,7 @@
 #include <avogadro/core/residue.h>
 #include <avogadro/core/unitcell.h>
 #include <avogadro/core/vector.h>
+#include <vector>
 
 using Avogadro::Index;
 using Avogadro::MatrixX;

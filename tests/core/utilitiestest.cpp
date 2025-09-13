@@ -6,6 +6,7 @@
 #include <gtest/gtest.h>
 
 #include <avogadro/core/utilities.h>
+#include <string>
 
 using Avogadro::Core::contains;
 using Avogadro::Core::lexicalCast;
