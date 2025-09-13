@@ -6,10 +6,14 @@
 #include "openbabel.h"
 
 #include "conformersearchdialog.h"
+#include "io/fileformat.h"
+#include "core/molecule.h"
+#include "core/avogadrocore.h"
 #include "obcharges.h"
 #include "obfileformat.h"
 #include "obforcefielddialog.h"
 #include "obprocess.h"
+#include "qtgui/extensionplugin.h"
 
 #include <avogadro/calc/chargemanager.h>
 #include <avogadro/io/fileformatmanager.h>
@@ -30,7 +34,23 @@
 
 #include <QRegularExpression>
 
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qlogging.h>
+#include <qforeach.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qset.h>
+#include <bits/basic_string.h>
+#include <qwidget.h>
+#include <qstringview.h>
+#include <qmap.h>
+#include <qtmetamacros.h>
+#include <cmath>
+#include <cstddef>
+#include <qnamespace.h>
 #include <string>
+#include <vector>
 
 using Avogadro::QtGui::Molecule;
 using namespace std::string_literals;
