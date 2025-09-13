@@ -10,6 +10,13 @@
 
 #include <QDebug>
 #include <QSettings>
+#include <qwidget.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qabstractitemmodel.h>
+#include <qabstractitemview.h>
+#include <qitemselectionmodel.h>
+#include <qtmetamacros.h>
 
 using Avogadro::QtGui::RichTextDelegate;
 
