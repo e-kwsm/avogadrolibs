@@ -20,6 +20,9 @@
 #include "turbomoleformat.h"
 #include "vaspformat.h"
 #include "xyzformat.h"
+#include <string>
+#include <cstddef>
+#include <vector>
 
 #ifdef AVO_USE_MMTF
 #include "mmtfformat.h"

@@ -8,9 +8,11 @@
 #include <nlohmann/json.hpp>
 
 #include <algorithm>
+#include <cctype>
 #include <fstream>
 #include <locale>
 #include <sstream>
+#include <string>
 
 namespace Avogadro::Io {
 
