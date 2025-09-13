@@ -6,6 +6,7 @@
 #include "pdbformat.h"
 
 #include "avogadro/core/avogadrocore.h"
+#include "core/array.h"
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/residue.h>
@@ -15,9 +16,13 @@
 #include <avogadro/core/vector.h>
 
 #include <cctype>
+#include <cstddef>
 #include <iostream>
 #include <istream>
+#include <sstream>
+#include <set>
 #include <string>
+#include <vector>
 
 using Avogadro::Core::Array;
 using Avogadro::Core::Atom;

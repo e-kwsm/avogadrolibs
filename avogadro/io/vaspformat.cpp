@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "vaspformat.h"
+#include "core/array.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/elements.h> // for atomicNumberFromSymbol()
 #include <avogadro/core/matrix.h>   // for matrix3
@@ -13,8 +15,15 @@
 #include <avogadro/core/vector.h>    // for Vector3
 
 #include <algorithm> // for std::count()
+#include <cstddef>
+#include <cctype>
 #include <iomanip>
 #include <iostream>
+#include <map>
+#include <string>
+#include <iterator>
+#include <vector>
+#include <utility>
 
 namespace Avogadro::Io {
 
