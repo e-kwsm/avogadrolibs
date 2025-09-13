@@ -15,8 +15,13 @@
 ******************************************************************************/
 
 #include "qtaimwavefunctionevaluator.h"
+#include "qtaimwavefunction.h"
 
+#include <Eigen/src/Core/Map.h>
+#include <Eigen/src/Core/Matrix.h>
+#include <Eigen/src/Core/util/Constants.h>
 #include <cmath>
+#include <qtypes.h>
 
 namespace Avogadro::QtPlugins {
 
