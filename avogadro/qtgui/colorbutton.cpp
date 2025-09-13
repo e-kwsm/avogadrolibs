@@ -10,6 +10,12 @@
 
 #include <QColorDialog>
 #include <QPainter>
+#include <qwidget.h>
+#include <qabstractbutton.h>
+#include <qnamespace.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
+#include <qobject.h>
 
 namespace Avogadro::QtGui {
 
