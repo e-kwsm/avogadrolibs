@@ -3,8 +3,12 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/avogadrocore.h"
+#include "core/variant.h"
 #include "iotests.h"
 
+#include <cstddef>
+#include <bits/basic_string.h>
 #include <gtest/gtest.h>
 
 #include <avogadro/core/matrix.h>
@@ -13,6 +17,9 @@
 #include <avogadro/core/vector.h>
 
 #include <avogadro/io/cmlformat.h>
+#include <string>
+#include <iostream>
+#include <ostream>
 
 using Avogadro::MatrixX;
 using Avogadro::Real;
