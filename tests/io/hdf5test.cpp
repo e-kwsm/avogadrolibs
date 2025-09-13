@@ -5,11 +5,15 @@
 
 #include "iotests.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <gtest/gtest.h>
 
 #include <avogadro/io/hdf5dataformat.h>
 
 #include <cstdio>
+#include <string>
+#include <vector>
+#include <stdio.h>
 
 using Avogadro::Io::Hdf5DataFormat;
 
