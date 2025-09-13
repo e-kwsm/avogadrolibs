@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "obprocess.h"
+#include "core/array.h"
 
 #include <QtCore/QCoreApplication>
 #include <QtCore/QDebug>
@@ -12,6 +13,15 @@
 #include <QtCore/QProcess>
 
 #include <QRegularExpression>
+#include <qobject.h>
+#include <qstringview.h>
+#include <qtenvironmentvariables.h>
+#include <qcontainerfwd.h>
+#include <qlogging.h>
+#include <qtmetamacros.h>
+#include <qobjectdefs.h>
+#include <qmap.h>
+#include <string>
 
 namespace Avogadro::QtPlugins {
 
