@@ -4,6 +4,7 @@
 ******************************************************************************/
 
 #include "turbomoleformat.h"
+#include "core/avogadrocore.h"
 
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
@@ -11,12 +12,17 @@
 #include <avogadro/core/utilities.h>
 #include <avogadro/core/vector.h>
 
+#include <cctype>
+#include <cstddef>
+#include <ios>
 #include <nlohmann/json.hpp>
 
 #include <iomanip>
 #include <istream>
+#include <nlohmann/json_fwd.hpp>
 #include <ostream>
 #include <string>
+#include <vector>
 
 using json = nlohmann::json;
 
