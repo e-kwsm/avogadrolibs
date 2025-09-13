@@ -5,7 +5,15 @@
 
 #include "chargemanager.h"
 #include "chargemodel.h"
+#include "core/matrix.h"
+#include "core/vector.h"
+#include "core/array.h"
 #include "defaultmodel.h"
+#include <string>
+#include <algorithm>
+#include <cctype>
+#include <cstddef>
+#include <set>
 
 namespace Avogadro::Calc {
 
