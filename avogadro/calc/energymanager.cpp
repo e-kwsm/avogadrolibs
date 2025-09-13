@@ -7,6 +7,9 @@
 #include "energycalculator.h"
 #include "lennardjones.h"
 #include "uff.h"
+#include <string>
+#include <cstddef>
+#include <set>
 
 namespace Avogadro::Calc {
 
