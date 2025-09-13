@@ -4,18 +4,24 @@
 ******************************************************************************/
 
 #include "dcdformat.h"
+#include "core/array.h"
+#include "core/avogadrocore.h"
 #include "struct.h"
 
-#include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
-#include <avogadro/core/utilities.h>
 #include <avogadro/core/vector.h>
 
 #include <cmath>
+#include <cstdio>
+#include <cstdlib>
 #include <istream>
+#include <map>
+#include <math.h>
 #include <ostream>
 #include <string>
+#include <vector>
+#include <utility>
 
 using std::map;
 using std::string;
