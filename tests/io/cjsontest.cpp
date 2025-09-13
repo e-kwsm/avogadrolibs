@@ -3,8 +3,13 @@
   This source code is released under the 3-Clause BSD License, (see "LICENSE").
 ******************************************************************************/
 
+#include "core/avogadrocore.h"
+#include "core/variant.h"
 #include "iotests.h"
 
+#include <bits/basic_string.h>
+#include <cstddef>
+#include <cmath>
 #include <gtest/gtest.h>
 
 #include <avogadro/core/constraint.h>
@@ -18,6 +23,8 @@
 #include <avogadro/core/unitcell.h>
 
 #include <avogadro/io/cjsonformat.h>
+#include <string>
+#include <utility>
 
 #include <nlohmann/json.hpp>
 
