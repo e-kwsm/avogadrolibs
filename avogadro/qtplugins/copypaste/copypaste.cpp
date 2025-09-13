@@ -4,6 +4,9 @@
 ******************************************************************************/
 
 #include "copypaste.h"
+#include "qtgui/extensionplugin.h"
+#include "core/avogadrocore.h"
+#include "core/molecule.h"
 
 #include <avogadro/io/cjsonformat.h>
 #include <avogadro/io/fileformatmanager.h>
@@ -18,6 +21,15 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMessageBox>
 
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qtversionchecks.h>
+#include <qlist.h>
+#include <qcontainerfwd.h>
+#include <qwidget.h>
+#include <qstringview.h>
+#include <qforeach.h>
+#include <qtmetamacros.h>
 #include <string>
 #include <vector>
 
