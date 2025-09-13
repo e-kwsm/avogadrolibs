@@ -4,11 +4,11 @@
 ******************************************************************************/
 
 #include "dipole.h"
+#include "qtgui/sceneplugin.h"
+#include "core/vector.h"
 
 #include <avogadro/calc/chargemanager.h>
-#include <avogadro/core/elements.h>
 #include <avogadro/qtgui/molecule.h>
-#include <avogadro/qtgui/rwmolecule.h>
 #include <avogadro/rendering/arrowgeometry.h>
 #include <avogadro/rendering/geometrynode.h>
 #include <avogadro/rendering/groupnode.h>
@@ -16,6 +16,9 @@
 #include <QDebug>
 #include <QTimer>
 #include <QtWidgets/QWidget>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtPlugins {
 
