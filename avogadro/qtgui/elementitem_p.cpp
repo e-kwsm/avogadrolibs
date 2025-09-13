@@ -4,7 +4,6 @@
 ******************************************************************************/
 
 #include "elementitem_p.h"
-#include "elementtranslator.h"
 
 #include <avogadro/core/elements.h>
 
@@ -13,6 +12,8 @@
 #include <QtGui/QPainter>
 #include <QtWidgets/QGraphicsSceneMouseEvent>
 #include <QtWidgets/QStyleOption>
+#include <qnamespace.h>
+#include <qgraphicsitem.h>
 
 namespace Avogadro::QtGui {
 
