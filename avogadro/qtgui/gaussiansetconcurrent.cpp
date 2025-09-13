@@ -4,6 +4,8 @@
 ******************************************************************************/
 
 #include "gaussiansetconcurrent.h"
+#include "core/matrix.h"
+#include "core/vector.h"
 
 #include <avogadro/core/gaussianset.h>
 #include <avogadro/core/gaussiansettools.h>
@@ -13,6 +15,9 @@
 #include <avogadro/core/cube.h>
 
 #include <QtConcurrent/QtConcurrentMap>
+#include <qobject.h>
+#include <qobjectdefs.h>
+#include <qtmetamacros.h>
 
 namespace Avogadro::QtGui {
 
