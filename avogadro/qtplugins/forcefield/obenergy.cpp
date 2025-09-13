@@ -5,22 +5,29 @@
 ******************************************************************************/
 
 #include "obenergy.h"
+#include "calc/energycalculator.h"
+#include "core/avogadrocore.h"
 
+#include <Eigen/src/Core/Matrix.h>
 #include <avogadro/core/molecule.h>
 
+#include <cstddef>
 #include <openbabel/babelconfig.h>
 
 #include <openbabel/atom.h>
-#include <openbabel/base.h>
 #include <openbabel/forcefield.h>
 #include <openbabel/math/vector3.h>
 #include <openbabel/mol.h>
-#include <openbabel/obconversion.h>
 #include <openbabel/obiter.h>
 
 #include <QCoreApplication>
 #include <QDebug>
 #include <QDir>
+#include <string>
+#include <qcontainerfwd.h>
+#include <qtenvironmentvariables.h>
+#include <qlogging.h>
+#include <openbabel/plugin.h>
 
 using namespace OpenBabel;
 
