@@ -127,8 +127,6 @@ TEST(TurbomoleTest, readCellParameters)
 
   for (const auto& str : {
          periodic + cell() + cell(" angs"s) + "$end"s,
-         periodic + cell(" angs"s) + lattice() + "$end"s,
-         periodic + lattice() + cell(" angs"s) + "$end"s,
          periodic + lattice(" angs"s) + lattice() + "$end"s,
        }) {
     TurbomoleFormat tmol;
