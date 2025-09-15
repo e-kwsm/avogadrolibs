@@ -43,6 +43,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   else
     opts = json::object();
 
+  bool hasCoord = false;
   bool hasCell = false;
   bool hasLattice = false;
   bool fractionalCoords = false;
@@ -70,6 +71,12 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       break;
 
     if (tokens[0] == "$coord") {
+      if (hasCoord) {
+        appendError("$coord appears twice");
+        return false;
+      }
+      hasCoord = true;
+
       // check if there's a conversion to be done
       Real coordConversion = BOHR_TO_ANGSTROM; // default is Bohr
       if (std::find(tokens.begin(), tokens.end(), "ang") != tokens.end())
