@@ -94,6 +94,7 @@ target_sources(Core PRIVATE
   angleiterator.cpp
   angletools.cpp
   aromaticity.cpp
+  atom.cpp
   atomutilities.cpp
   bondordersolver_p.cpp
   bondordersolver_p.h
