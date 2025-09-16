@@ -6,7 +6,6 @@
 #ifndef AVOGADRO_CORE_UTILITIES_H
 #define AVOGADRO_CORE_UTILITIES_H
 
-#include <algorithm>
 #include <optional>
 #include <sstream>
 #include <string>
@@ -21,19 +20,9 @@ namespace Avogadro::Core {
  * @param skipEmpty If true any empty items will be skipped.
  * @return A vector containing the items.
  */
-inline std::vector<std::string> split(const std::string& string, char delimiter,
-                                      bool skipEmpty = true)
-{
-  std::vector<std::string> elements;
-  std::stringstream stringStream(string);
-  std::string item;
-  while (std::getline(stringStream, item, delimiter)) {
-    if (skipEmpty && item.empty())
-      continue;
-    elements.push_back(item);
-  }
-  return elements;
-}
+AVOGADROCORE_EXPORT std::vector<std::string> split(const std::string& string,
+                                                   char delimiter,
+                                                   bool skipEmpty = true);
 
 /**
  * @brief Search the input string for the search string.
@@ -41,21 +30,9 @@ inline std::vector<std::string> split(const std::string& string, char delimiter,
  * @param search String that will be searched for.
  * @return True if the string contains search, false otherwise.
  */
-inline bool contains(const std::string& input, const std::string& search,
-                     bool caseSensitive = true)
-{
-  if (caseSensitive) {
-    return input.find(search) != std::string::npos;
-  } else {
-    std::string inputLower = input;
-    std::string searchLower = search;
-    std::transform(inputLower.begin(), inputLower.end(), inputLower.begin(),
-                   ::tolower);
-    std::transform(searchLower.begin(), searchLower.end(), searchLower.begin(),
-                   ::tolower);
-    return inputLower.find(searchLower) != std::string::npos;
-  }
-}
+AVOGADROCORE_EXPORT bool contains(const std::string& input,
+                                  const std::string& search,
+                                  bool caseSensitive = true);
 
 /**
  * @brief Efficient method to confirm input starts with the search string.
@@ -63,11 +40,8 @@ inline bool contains(const std::string& input, const std::string& search,
  * @param search String that will be searched for.
  * @return True if the string starts with search, false otherwise.
  */
-inline bool startsWith(const std::string& input, const std::string& search)
-{
-  return input.size() >= search.size() &&
-         input.compare(0, search.size(), search) == 0;
-}
+AVOGADROCORE_EXPORT bool startsWith(const std::string& input,
+                                    const std::string& search);
 
 /**
  * @brief Efficient method to confirm input ends with the ending string.
@@ -75,24 +49,13 @@ inline bool startsWith(const std::string& input, const std::string& search)
  * @param ending String that will be searched for.
  * @return True if the string ends with ending, false otherwise.
  */
-inline bool endsWith(std::string const& input, std::string const& ending)
-{
-  if (ending.size() > input.size())
-    return false;
-  return std::equal(ending.rbegin(), ending.rend(), input.rbegin());
-}
+AVOGADROCORE_EXPORT bool endsWith(std::string const& input,
+                                  std::string const& ending);
 
 /**
  * @brief Trim a string of whitespace from the left and right.
  */
-inline std::string trimmed(const std::string& input)
-{
-  size_t start = input.find_first_not_of(" \n\r\t");
-  size_t end = input.find_last_not_of(" \n\r\t");
-  if (start == std::string::npos && end == std::string::npos)
-    return "";
-  return input.substr(start, end - start + 1);
-}
+AVOGADROCORE_EXPORT std::string trimmed(const std::string& input);
 
 /**
  * @brief Remove trailing part of `str` after `c`
