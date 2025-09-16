@@ -174,7 +174,7 @@ void removeFromMap(Map& map, const VectorOfKeys& keys, const ValueType& val)
       map.erase(*key);
     } else {
       auto newEnd = std::remove(vec.begin(), vec.end(), val);
-      vec.resize(newEnd - vec.begin());
+      vec.erase(newEnd, vec.begin());
     }
   }
 }
