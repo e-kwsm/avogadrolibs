@@ -72,7 +72,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       }
 
       getline(inStream, buffer);
-      while (buffer.find("$") == std::string::npos) {
+      while (buffer.find('$') == std::string::npos) {
         // parse atoms until we see another '$' section
         // e.g. 0.0000      0.000000     -0.73578      o
         std::vector<string> tokens(split(buffer, ' '));
