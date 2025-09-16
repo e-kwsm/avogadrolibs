@@ -109,6 +109,7 @@ target_sources(Core PRIVATE
   stereo.cpp
   symbolatomtyper.cpp
   unitcell.cpp
+  utilities.cpp
   variantmap.cpp
   version.cpp
 )
