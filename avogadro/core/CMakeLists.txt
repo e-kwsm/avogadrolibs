@@ -79,6 +79,7 @@ target_sources(Core PRIVATE
   angletools.cpp
   atom.cpp
   atomutilities.cpp
+  basisset.cpp
   coordinateblockgenerator.cpp
   crystaltools.cpp
   cube.cpp
