@@ -94,6 +94,7 @@ target_sources(Core PRIVATE
   bondordersolver_p.cpp
   bondordersolver_p.h
   conformerquantity.cpp
+  constraint.cpp
   coordinateblockgenerator.cpp
   crystaltools.cpp
   cube.cpp
