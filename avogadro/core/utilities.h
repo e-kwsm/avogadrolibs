@@ -110,7 +110,13 @@ inline std::string rstrip(const std::string& str, char c)
  * @retval std::nullopt otherwise
  */
 template <typename T>
-std::optional<T> lexicalCast(const std::string& inputString)
+std::optional<T> lexicalCast(
+#if __cplusplus > 201703L
+  std::string_view
+#else
+  const std::string&
+#endif
+    inputString)
 {
   T value;
   std::istringstream stream(inputString);
@@ -127,7 +133,14 @@ std::optional<T> lexicalCast(const std::string& inputString)
  * converted to the specified type.
  */
 template <typename T>
-T lexicalCast(const std::string& inputString, bool& ok)
+T lexicalCast(
+#if __cplusplus > 201703L
+  std::string_view
+#else
+  const std::string&
+#endif
+    inputString,
+  bool& ok)
 {
   if (auto value = lexicalCast<T>(inputString)) {
     ok = true;
