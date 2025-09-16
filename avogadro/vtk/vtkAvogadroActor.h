@@ -8,6 +8,7 @@
 
 #include "avogadrovtkexport.h"
 #include <vtkActor.h>
+#include <array>
 
 namespace Avogadro {
 namespace Rendering {
@@ -60,7 +61,7 @@ protected:
   ~vtkAvogadroActor();
 
   Avogadro::Rendering::Scene* m_scene;
-  double m_bounds[6];
+  std::array<double, 6> m_bounds;
 
   bool m_initialized;
 

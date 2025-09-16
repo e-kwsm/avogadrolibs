@@ -90,7 +90,7 @@ int vtkAvogadroActor::HasTranslucentPolygonalGeometry()
 double* vtkAvogadroActor::GetBounds()
 {
   if (!m_scene)
-    return m_bounds;
+    return m_bounds.data();
 
   Vector3f center = m_scene->center();
   float radius = m_scene->radius();
@@ -101,7 +101,7 @@ double* vtkAvogadroActor::GetBounds()
   m_bounds[4] = center[2] - radius;
   m_bounds[5] = center[2] + radius;
 
-  return m_bounds;
+  return m_bounds.data();
 }
 
 void vtkAvogadroActor::setScene(Avogadro::Rendering::Scene* scene)
