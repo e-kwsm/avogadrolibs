@@ -80,6 +80,7 @@ target_sources(Core PRIVATE
   atom.cpp
   atomutilities.cpp
   basisset.cpp
+  constraint.cpp
   coordinateblockgenerator.cpp
   crystaltools.cpp
   cube.cpp
