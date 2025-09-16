@@ -90,6 +90,7 @@ target_sources(Core PRIVATE
   aromaticity.cpp
   atom.cpp
   atomutilities.cpp
+  basisset.cpp
   bondordersolver_p.cpp
   bondordersolver_p.h
   conformerquantity.cpp
