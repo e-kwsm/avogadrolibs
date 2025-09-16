@@ -105,6 +105,7 @@ target_sources(Core PRIVATE
   symbolatomtyper.cpp
   unitcell.cpp
   utilities.cpp
+  variant-inline.cpp
   variantmap.cpp
   version.cpp
 )
