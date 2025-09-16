@@ -862,8 +862,8 @@ void ORCAOutput::processLine(std::istream& in,
           nShells = 0;
           m_basisFunctions.push_back(
             new std::vector<std::vector<Eigen::Vector2d>*>);
-          shellFunctions.resize(0);
-          shellTypes.resize(0);
+          shellFunctions.clear();
+          shellTypes.clear();
           while (Core::trimmed(list[0]) != "end;") {
 
             int nFunc =
