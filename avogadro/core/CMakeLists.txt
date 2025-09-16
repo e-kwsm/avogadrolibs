@@ -83,6 +83,7 @@ target_sources(Core PRIVATE
   aromaticity.cpp
   atom.cpp
   atomutilities.cpp
+  basisset.cpp
   coordinateblockgenerator.cpp
   crystaltools.cpp
   cube.cpp
