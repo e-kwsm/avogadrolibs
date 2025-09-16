@@ -163,7 +163,7 @@ inline bool contains(const std::string& input, const std::string& search,
  * @param search String that will be searched for.
  * @return True if the string starts with search, false otherwise.
  */
-inline bool startsWith(const std::string& input, const std::string& search)
+inline bool startsWith(std::string_view input, std::string_view search)
 {
   return input.size() >= search.size() &&
          input.compare(0, search.size(), search) == 0;
@@ -175,7 +175,7 @@ inline bool startsWith(const std::string& input, const std::string& search)
  * @param ending String that will be searched for.
  * @return True if the string ends with ending, false otherwise.
  */
-inline bool endsWith(std::string const& input, std::string const& ending)
+inline bool endsWith(std::string_view input, std::string_view ending)
 {
   if (ending.size() > input.size())
     return false;
