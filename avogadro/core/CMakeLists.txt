@@ -99,6 +99,7 @@ target_sources(Core PRIVATE
   spacegroups.cpp
   symbolatomtyper.cpp
   unitcell.cpp
+  utilities.cpp
   variantmap.cpp
   version.cpp
 )
