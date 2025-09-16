@@ -76,6 +76,7 @@ avogadro_headers(Core
 target_sources(Core PRIVATE
   angleiterator.cpp
   angletools.cpp
+  atom.cpp
   atomutilities.cpp
   coordinateblockgenerator.cpp
   crystaltools.cpp
