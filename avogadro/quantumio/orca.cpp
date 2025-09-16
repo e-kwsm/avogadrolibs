@@ -1000,15 +1000,15 @@ void ORCAOutput::processLine(std::istream& in,
         int nShells;
         // init all vectors etc.
         m_basisAtomLabel.clear();
-        m_orcaNumShells.resize(0);
+        m_orcaNumShells.clear();
         clearBasisFunctions();
-        m_orcaShellTypes.resize(0);
+        m_orcaShellTypes.clear();
 
-        m_a.resize(0);
-        m_c.resize(0);
-        m_shellNums.resize(0);
-        m_shellTypes.resize(0);
-        m_shelltoAtom.resize(0);
+        m_a.clear();
+        m_c.clear();
+        m_shellNums.clear();
+        m_shellTypes.clear();
+        m_shelltoAtom.clear();
         while (!list.empty() && Core::trimmed(list[0]) == "NewGTO") {
           // "NewGTO <label>" - without the label there is no basis to read
           if (list.size() < 2)
@@ -1023,8 +1023,8 @@ void ORCAOutput::processLine(std::istream& in,
           nShells = 0;
           m_basisFunctions.push_back(
             new std::vector<std::vector<Eigen::Vector2d>*>);
-          shellFunctions.resize(0);
-          shellTypes.resize(0);
+          shellFunctions.clear();
+          shellTypes.clear();
           while (!list.empty() && Core::trimmed(list[0]) != "end;") {
             // "<shell type> <number of primitives>"
             if (list.size() < 2)
