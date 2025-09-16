@@ -112,6 +112,7 @@ target_sources(Core PRIVATE
   kekulize.cpp
   layer.cpp
   layermanager.cpp
+  mdlvalence_p.cpp
   mesh.cpp
   mdlvalence_p.h
   molecule.cpp
