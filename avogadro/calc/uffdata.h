@@ -30,7 +30,7 @@ struct parameter
   float Radius;
 };
 
-std::array<parameter, 128> uffparams{
+std::array<parameter, 128> uffparams = {
   { { 0, "Du", 0.01, 180, 0.4, 5000, 12, 10, 0, 0, 9.66, 14.92, 0.7 },
     { 1, "H_", 0.354, 180, 2.886, 0.044, 12, 0.712, 0, 0, 4.528, 6.9452,
       0.371 },
