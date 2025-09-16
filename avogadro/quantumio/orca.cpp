@@ -842,15 +842,15 @@ void ORCAOutput::processLine(std::istream& in,
         int nShells;
         // init all vectors etc.
         m_basisAtomLabel.clear();
-        m_orcaNumShells.resize(0);
-        m_basisFunctions.resize(0);
-        m_orcaShellTypes.resize(0);
+        m_orcaNumShells.clear();
+        m_basisFunctions.clear();
+        m_orcaShellTypes.clear();
 
-        m_a.resize(0);
-        m_c.resize(0);
-        m_shellNums.resize(0);
-        m_shellTypes.resize(0);
-        m_shelltoAtom.resize(0);
+        m_a.clear();
+        m_c.clear();
+        m_shellNums.clear();
+        m_shellTypes.clear();
+        m_shelltoAtom.clear();
         while (Core::trimmed(list[0]) == "NewGTO") {
           m_basisAtomLabel.push_back(Core::trimmed(list[1]));
 
