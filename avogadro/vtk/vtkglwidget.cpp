@@ -83,8 +83,8 @@ void vtkGLWidget::cubeVolume(Core::Cube* cube)
   auto color = m_lut.Get();
   if (color->GetSize() == 0) {
     // Initialize the color and opacity function.
-    double range[2];
-    m_imageData->GetScalarRange(range);
+    std::array<double, 2> range;
+    m_imageData->GetScalarRange(range.data());
     if (range[0] < 0.0) {
       // Likely a molecular orbital, let's make something symmetric.
       auto magnitude = std::max(std::fabs(range[0]), std::fabs(range[1]));
