@@ -87,6 +87,7 @@ target_sources(Core PRIVATE
   atomutilities.cpp
   basisset.cpp
   conformerquantity.cpp
+  constraint.cpp
   coordinateblockgenerator.cpp
   crystaltools.cpp
   cube.cpp
