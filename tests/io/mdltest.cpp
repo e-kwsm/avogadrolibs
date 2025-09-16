@@ -150,7 +150,7 @@ TEST(MdlTest, writeMulti)
   MdlFormat multi;
   multi.open(AVOGADRO_DATA "/data/sdf/multi.sdf",
              FileFormat::Read | FileFormat::MultiMolecule);
-  Molecule mol[2];
+  std::array<Molecule, 2> mol;
 
   // Read in the two structures in the file.
   EXPECT_TRUE(multi.readMolecule(mol[0]));
@@ -167,7 +167,7 @@ TEST(MdlTest, writeMulti)
 
   // Finally, let's read them back in and check the basic properties match.
   multi.open("multitmp.sdf", FileFormat::Read | FileFormat::MultiMolecule);
-  Molecule ref[2];
+  std::array<Molecule, 2> ref;
   EXPECT_TRUE(multi.readMolecule(ref[0]));
   EXPECT_TRUE(multi.readMolecule(ref[1]));
   // Compare some properties and see if they made it all the way back to us.
@@ -183,7 +183,7 @@ TEST(MdlTest, readSdfData)
   MdlFormat multi;
   multi.open(AVOGADRO_DATA "/data/sdf/pubchem3.sdf",
              FileFormat::Read | FileFormat::MultiMolecule);
-  Molecule mol[2];
+  std::array<Molecule, 2> mol;
   EXPECT_TRUE(multi.readMolecule(mol[0]));
   EXPECT_TRUE(multi.readMolecule(mol[1]));
 
