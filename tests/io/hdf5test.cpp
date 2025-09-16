@@ -125,11 +125,11 @@ TEST(Hdf5Test, readWriteDoubleVector)
     << "Opening test file '" << tmpFileName << "' failed.";
 
   std::vector<double> vec(100);
-  size_t dims[2] = { 10, 10 };
+  std::array<size_t, 2> dims = { 10, 10 };
   for (int i = 0; i < 100; ++i)
     vec[i] = i / 10.0 + i / 5.0;
 
-  EXPECT_TRUE(hdf5.writeDataset("/Group1/Group2/Data", vec, 2, dims))
+  EXPECT_TRUE(hdf5.writeDataset("/Group1/Group2/Data", vec, 2, dims.data()))
     << "Writing std::vector<double> failed.";
 
   std::vector<double> vecRead;
@@ -195,9 +195,9 @@ TEST(Hdf5Test, datasetInteraction)
 
   std::vector<double> vec(27);
   int ndim_vec = 3;
-  size_t dims_vec[3] = { 3, 3, 3 };
+  std::array<size_t, 3> dims_vec = { 3, 3, 3 };
 
-  EXPECT_TRUE(hdf5.writeDataset("/TLDData", vec, ndim_vec, dims_vec))
+  EXPECT_TRUE(hdf5.writeDataset("/TLDData", vec, ndim_vec, dims_vec.data()))
     << "Writing Eigen::MatrixXd failed.";
   EXPECT_TRUE(hdf5.writeDataset("/Group1/DeeperData", mat))
     << "Writing Eigen::MatrixXd failed.";
