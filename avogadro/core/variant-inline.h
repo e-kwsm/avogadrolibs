@@ -43,7 +43,7 @@ inline Variant::Variant() : m_type(Null) {}
 inline Variant::Variant(double x, double y, double z) : m_type(Vector)
 {
   Vector3* v = new Vector3(x, y, z);
-  m_value.vector = v;
+  m_value = v;
 }
 
 template <typename T>
@@ -56,13 +56,13 @@ inline Variant::Variant(T v) : m_type(Null)
 template <>
 inline Variant::Variant(char v) : m_type(Int)
 {
-  m_value._int = static_cast<unsigned char>(v);
+  m_value = static_cast<unsigned char>(v);
 }
 
 template <>
 inline Variant::Variant(const char* v) : m_type(String)
 {
-  m_value.string = new std::string(v);
+  m_value = new std::string(v);
 }
 
 template <>
@@ -70,21 +70,21 @@ inline Variant::Variant(const MatrixXf& v) : m_type(Matrix)
 {
   MatrixX* m = new MatrixX(v.rows(), v.cols());
   *m = v.cast<double>();
-  m_value.matrix = m;
+  m_value = m;
 }
 
 template <>
 inline Variant::Variant(const Vector3& v) : m_type(Vector)
 {
   Vector3* _v = new Vector3(v);
-  m_value.vector = _v;
+  m_value = _v;
 }
 
 template <>
 inline Variant::Variant(const Vector3f& v) : m_type(Vector)
 {
   Vector3* _v = new Vector3(v.x(), v.y(), v.z());
-  m_value.vector = _v;
+  m_value = _v;
 }
 
 template <>
@@ -93,17 +93,17 @@ inline Variant::Variant(const std::vector<double>& v) : m_type(Matrix)
   MatrixX* m = new MatrixX(v.size(), 1);
   for (size_t i = 0; i < v.size(); ++i)
     m->coeffRef(i, 0) = v[i];
-  m_value.matrix = m;
+  m_value = m;
 }
 
 inline Variant::Variant(const Variant& variant) : m_type(variant.type())
 {
   if (m_type == String)
-    m_value.string = new std::string(variant.toString());
+    m_value = new std::string(variant.toString());
   else if (m_type == Matrix)
-    m_value.matrix = new MatrixX(*variant.m_value.matrix);
+    m_value = new MatrixX(*std::get<MatrixX*>(variant.m_value));
   else if (m_type == Vector)
-    m_value.vector = new Vector3(*variant.m_value.vector);
+    m_value = new Vector3(*std::get<Vector3*>(variant.m_value));
   else if (m_type != Null)
     m_value = variant.m_value;
 }
@@ -128,7 +128,7 @@ inline bool Variant::setValue(double x, double y, double z)
   clear();
 
   m_type = Vector;
-  m_value.vector = new Vector3(x, y, z);
+  m_value = new Vector3(x, y, z);
 
   return true;
 }
@@ -137,10 +137,11 @@ inline bool Variant::setValue(const std::vector<double>& v)
 {
   clear();
 
-  m_type = Matrix;
-  m_value.matrix = new MatrixX(v.size(), 1);
+  auto* tmp = new MatrixX(v.size(), 1);
   for (size_t i = 0; i < v.size(); ++i)
-    m_value.matrix->coeffRef(i, 0) = v[i];
+    tmp->coeffRef(i, 0) = v[i];
+  m_type = Matrix;
+  m_value = tmp;
 
   return true;
 }
@@ -171,7 +172,7 @@ inline bool Variant::setValue(bool v)
   clear();
 
   m_type = Bool;
-  m_value._bool = v;
+  m_value = v;
 
   return true;
 }
@@ -182,7 +183,7 @@ inline bool Variant::setValue(char v)
   clear();
 
   m_type = Int;
-  m_value._int = static_cast<unsigned char>(v);
+  m_value = static_cast<unsigned char>(v);
 
   return true;
 }
@@ -193,7 +194,7 @@ inline bool Variant::setValue(short v)
   clear();
 
   m_type = Int;
-  m_value._int = v;
+  m_value = v;
 
   return true;
 }
@@ -204,7 +205,7 @@ inline bool Variant::setValue(int v)
   clear();
 
   m_type = Int;
-  m_value._int = v;
+  m_value = v;
 
   return true;
 }
@@ -215,7 +216,7 @@ inline bool Variant::setValue(long v)
   clear();
 
   m_type = Long;
-  m_value._long = v;
+  m_value = v;
 
   return true;
 }
@@ -226,7 +227,7 @@ inline bool Variant::setValue(float v)
   clear();
 
   m_type = Float;
-  m_value._float = v;
+  m_value = v;
 
   return true;
 }
@@ -237,7 +238,7 @@ inline bool Variant::setValue(double v)
   clear();
 
   m_type = Double;
-  m_value._double = v;
+  m_value = v;
 
   return true;
 }
@@ -248,7 +249,7 @@ inline bool Variant::setValue(std::string string)
   clear();
 
   m_type = String;
-  m_value.string = new std::string(std::move(string));
+  m_value = new std::string(std::move(string));
 
   return true;
 }
@@ -265,7 +266,7 @@ inline bool Variant::setValue(void* pointer)
   clear();
 
   m_type = Pointer;
-  m_value.pointer = pointer;
+  m_value = pointer;
 
   return true;
 }
@@ -276,7 +277,7 @@ inline bool Variant::setValue(MatrixX matrix)
   clear();
 
   m_type = Matrix;
-  m_value.matrix = new MatrixX(std::move(matrix));
+  m_value = new MatrixX(std::move(matrix));
 
   return true;
 }
@@ -287,7 +288,7 @@ inline bool Variant::setValue(Vector3 vector)
   clear();
 
   m_type = Vector;
-  m_value.vector = new Vector3(vector);
+  m_value = new Vector3(vector);
 
   return true;
 }
@@ -298,7 +299,7 @@ inline bool Variant::setValue(Vector3f vector)
   clear();
 
   m_type = Vector;
-  m_value.vector = new Vector3(vector.x(), vector.y(), vector.z());
+  m_value = new Vector3(vector.x(), vector.y(), vector.z());
 
   return true;
 }
@@ -313,9 +314,9 @@ template <>
 inline bool Variant::value() const
 {
   if (m_type == Bool)
-    return m_value._bool;
+    return std::get<bool>(m_value);
   else if (m_type == Int)
-    return m_value._int != 0;
+    return std::get<int>(m_value) != 0;
 
   return false;
 }
@@ -324,9 +325,9 @@ template <>
 inline char Variant::value() const
 {
   if (m_type == Int)
-    return static_cast<char>(m_value._int);
-  else if (m_type == String && !m_value.string->empty())
-    return m_value.string->at(0);
+    return static_cast<char>(std::get<int>(m_value));
+  else if (m_type == String && !std::get<std::string*>(m_value)->empty())
+    return std::get<std::string*>(m_value)->at(0);
 
   return '\0';
 }
@@ -335,9 +336,9 @@ template <>
 inline short Variant::value() const
 {
   if (m_type == Int)
-    return static_cast<short>(m_value._int);
+    return static_cast<short>(std::get<int>(m_value));
   else if (m_type == String)
-    return lexical_cast<short>(*m_value.string);
+    return lexical_cast<short>(*std::get<std::string*>(m_value));
 
   return 0;
 }
@@ -346,15 +347,15 @@ template <>
 inline int Variant::value() const
 {
   if (m_type == Int)
-    return m_value._int;
+    return std::get<int>(m_value);
   else if (m_type == Bool)
-    return static_cast<int>(m_value._bool);
+    return static_cast<int>(std::get<bool>(m_value));
   else if (m_type == Float)
-    return detail::floatToInteger<int>(static_cast<double>(m_value._float));
+    return detail::floatToInteger<int>(std::get<double>(m_value));
   else if (m_type == Double)
-    return detail::floatToInteger<int>(m_value._double);
+    return detail::floatToInteger<int>(std::get<double>(m_value));
   else if (m_type == String)
-    return lexical_cast<int>(*m_value.string);
+    return lexical_cast<int>(*std::get<std::string*>(m_value));
 
   return 0;
 }
@@ -363,11 +364,11 @@ template <>
 inline long Variant::value() const
 {
   if (m_type == Long)
-    return m_value._long;
+    return std::get<long>(m_value);
   else if (m_type == Int)
-    return static_cast<long>(m_value._int);
+    return static_cast<long>(std::get<int>(m_value));
   else if (m_type == String)
-    return lexical_cast<long>(*m_value.string);
+    return lexical_cast<long>(*std::get<std::string*>(m_value));
 
   return 0;
 }
@@ -376,13 +377,13 @@ template <>
 inline float Variant::value() const
 {
   if (m_type == Float)
-    return m_value._float;
+    return std::get<float>(m_value);
   else if (m_type == Double)
-    return static_cast<float>(m_value._double);
+    return static_cast<float>(std::get<double>(m_value));
   else if (m_type == Int)
-    return static_cast<float>(m_value._int);
+    return static_cast<float>(std::get<int>(m_value));
   else if (m_type == String)
-    return lexical_cast<float>(*m_value.string);
+    return lexical_cast<float>(*std::get<std::string*>(m_value));
 
   return 0;
 }
@@ -391,13 +392,13 @@ template <>
 inline double Variant::value() const
 {
   if (m_type == Double)
-    return m_value._double;
+    return std::get<double>(m_value);
   else if (m_type == Float)
-    return static_cast<double>(m_value._float);
+    return static_cast<double>(std::get<float>(m_value));
   else if (m_type == Int)
-    return static_cast<double>(m_value._int);
+    return static_cast<double>(std::get<int>(m_value));
   else if (m_type == String)
-    return lexical_cast<double>(*m_value.string);
+    return lexical_cast<double>(*std::get<std::string*>(m_value));
 
   return 0;
 }
@@ -406,7 +407,7 @@ template <>
 inline void* Variant::value() const
 {
   if (m_type == Pointer)
-    return m_value.pointer;
+    return std::get<void*>(m_value);
 
   return nullptr;
 }
@@ -415,16 +416,16 @@ template <>
 inline std::string Variant::value() const
 {
   if (m_type == String)
-    return *m_value.string;
+    return *std::get<std::string*>(m_value);
 
   std::stringstream string;
 
   if (m_type == Int)
-    string << m_value._int;
+    string << std::get<int>(m_value);
   else if (m_type == Float)
-    string << m_value._float;
+    string << std::get<float>(m_value);
   else if (m_type == Double)
-    string << m_value._double;
+    string << std::get<double>(m_value);
 
   return string.str();
 }
@@ -433,7 +434,7 @@ template <>
 inline MatrixX Variant::value() const
 {
   if (m_type == Matrix)
-    return *m_value.matrix;
+    return *std::get<MatrixX*>(m_value);
 
   return MatrixX();
 }
@@ -442,7 +443,7 @@ template <>
 inline const MatrixX& Variant::value() const
 {
   if (m_type == Matrix)
-    return *m_value.matrix;
+    return *std::get<MatrixX*>(m_value);
 
   // Use a static null matrix for the reference.
   static MatrixX nullMatrix(0, 0);
@@ -453,7 +454,7 @@ template <>
 inline Vector3 Variant::value() const
 {
   if (m_type == Vector)
-    return *m_value.vector;
+    return *std::get<Vector3*>(m_value);
 
   // Matches every other value<T>() specialization above, which return a
   // zero-equivalent default (0, false, nullptr, ...) on a type mismatch, and
@@ -466,7 +467,7 @@ template <>
 inline const Vector3& Variant::value() const
 {
   if (m_type == Vector)
-    return *m_value.vector;
+    return *std::get<Vector3*>(m_value);
 
   static Vector3 nullVector(0, 0, 0);
   return nullVector;
@@ -475,10 +476,10 @@ inline const Vector3& Variant::value() const
 template <>
 inline std::vector<double> Variant::value() const
 {
-  if (m_type == Matrix && m_value.matrix->cols() == 1) {
-    std::vector<double> list(m_value.matrix->rows());
-    for (int i = 0; i < m_value.matrix->rows(); ++i)
-      list[i] = m_value.matrix->coeff(i, 0);
+  if (m_type == Matrix && std::get<MatrixX*>(m_value)->cols() == 1) {
+    std::vector<double> list(std::get<MatrixX*>(m_value)->rows());
+    for (int i = 0; i < std::get<MatrixX*>(m_value)->rows(); ++i)
+      list[i] = std::get<MatrixX*>(m_value)->coeff(i, 0);
     return list;
   }
 
@@ -488,14 +489,14 @@ inline std::vector<double> Variant::value() const
 inline void Variant::clear()
 {
   if (m_type == String) {
-    delete m_value.string;
-    m_value.string = nullptr;
+    delete std::get<std::string*>(m_value);
+    std::get<std::string*>(m_value) = nullptr;
   } else if (m_type == Matrix) {
-    delete m_value.matrix;
-    m_value.matrix = nullptr;
+    delete std::get<MatrixX*>(m_value);
+    std::get<MatrixX*>(m_value) = nullptr;
   } else if (m_type == Vector) {
-    delete m_value.vector;
-    m_value.vector = nullptr;
+    delete std::get<Vector3*>(m_value);
+    std::get<Vector3*>(m_value) = nullptr;
   }
 
   m_type = Null;
@@ -603,11 +604,11 @@ inline Variant& Variant::operator=(const Variant& variant)
 
     // Set the new value,
     if (m_type == String)
-      m_value.string = new std::string(variant.toString());
+      m_value = new std::string(variant.toString());
     else if (m_type == Matrix)
-      m_value.matrix = new MatrixX(*variant.m_value.matrix);
+      m_value = new MatrixX(*std::get<MatrixX*>(variant.m_value));
     else if (m_type == Vector)
-      m_value.vector = new Vector3(*variant.m_value.vector);
+      m_value = new Vector3(*std::get<Vector3*>(variant.m_value));
     else if (m_type != Null)
       m_value = variant.m_value;
   }
