@@ -7,7 +7,7 @@
 
 namespace Avogadro::Core {
 
-inline unsigned int BasisSet::lumo(ElectronType type) const
+unsigned int BasisSet::lumo(ElectronType type) const
 {
   if (type == Beta) {
     // check if we have occupancy data
@@ -36,7 +36,7 @@ inline unsigned int BasisSet::lumo(ElectronType type) const
   }
 }
 
-inline void BasisSet::setElectronCount(unsigned int n, ElectronType type)
+void BasisSet::setElectronCount(unsigned int n, ElectronType type)
 {
   switch (type) {
     case Paired:
@@ -55,7 +55,7 @@ inline void BasisSet::setElectronCount(unsigned int n, ElectronType type)
   }
 }
 
-inline unsigned int BasisSet::electronCount(ElectronType type) const
+unsigned int BasisSet::electronCount(ElectronType type) const
 {
   switch (type) {
     case Paired:
@@ -69,8 +69,8 @@ inline unsigned int BasisSet::electronCount(ElectronType type) const
   }
 }
 
-inline void BasisSet::setSymmetryLabels(const std::vector<std::string>& labels,
-                                        ElectronType type)
+void BasisSet::setSymmetryLabels(const std::vector<std::string>& labels,
+                                 ElectronType type)
 {
   if (type == Paired || type == Alpha)
     m_symmetryLabels[0] = labels;
@@ -78,8 +78,8 @@ inline void BasisSet::setSymmetryLabels(const std::vector<std::string>& labels,
     m_symmetryLabels[1] = labels;
 }
 
-inline void BasisSet::setMolecularOrbitalEnergy(
-  const std::vector<double>& energies, ElectronType type)
+void BasisSet::setMolecularOrbitalEnergy(const std::vector<double>& energies,
+                                         ElectronType type)
 {
   if (type == Beta)
     m_moEnergy[1] = energies;
@@ -87,7 +87,7 @@ inline void BasisSet::setMolecularOrbitalEnergy(
     m_moEnergy[0] = energies;
 }
 
-inline void BasisSet::setMolecularOrbitalOccupancy(
+void BasisSet::setMolecularOrbitalOccupancy(
   const std::vector<unsigned char>& occ, ElectronType type)
 {
   if (type == Beta)
