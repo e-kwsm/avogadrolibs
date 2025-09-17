@@ -13,6 +13,7 @@
 #include "vector.h"
 
 #include <string>
+#include <variant>
 
 namespace Avogadro::Core {
 
@@ -148,19 +149,9 @@ private:
 
 private:
   Type m_type;
-  union
-  {
-    bool _bool;
-    char _char;
-    int _int;
-    long _long;
-    float _float;
-    double _double;
-    void* pointer;
-    std::string* string;
-    Vector3* vector;
-    MatrixX* matrix;
-  } m_value;
+  std::variant<bool, char, int, long, float, double, void*, std::string*,
+               Vector3*, MatrixX*>
+    m_value;
 };
 
 } // namespace Avogadro::Core
