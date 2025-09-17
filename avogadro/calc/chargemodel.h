@@ -70,7 +70,7 @@ public:
    * Set the dielectric constant for the model.
    * @param dielectric constant.
    */
-  virtual void setDielectric(float dielectric) { m_dielectric = dielectric; };
+  virtual void setDielectric(float dielectric) { m_dielectric = dielectric; }
 
   /**
    * @return The dielectric constant.
