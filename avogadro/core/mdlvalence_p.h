@@ -18,8 +18,8 @@ namespace Avogadro::Core {
  * @return The total number of expected bonds to the atom to satisfy valency.
  * May be less than @a numBonds if atom is overbonded.
  */
-static unsigned int atomValence(const unsigned char atomicNumber,
-                                const int charge, const unsigned int numBonds);
+unsigned int atomValence(const unsigned char atomicNumber, const int charge,
+                         const unsigned int numBonds);
 
 } // end namespace Avogadro::Core
 
