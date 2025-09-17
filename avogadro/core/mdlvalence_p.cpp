@@ -2,8 +2,8 @@
 
 namespace Avogadro::Core {
 
-static unsigned int atomValence(const unsigned char atomicNumber,
-                                const int charge, const unsigned int numBonds)
+unsigned int atomValence(const unsigned char atomicNumber, const int charge,
+                         const unsigned int numBonds)
 {
   switch (atomicNumber) {
     case 1:  // H
