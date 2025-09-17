@@ -37,10 +37,12 @@ class OrbitalSortingProxyModel : public QSortFilterProxyModel
 
 public:
   OrbitalSortingProxyModel(QObject* parent = nullptr)
-    : QSortFilterProxyModel(parent), m_HOMOFirst(false){};
+    : QSortFilterProxyModel(parent), m_HOMOFirst(false)
+  {
+  }
 
-  bool isHOMOFirst() { return m_HOMOFirst; };
-  void HOMOFirst(bool b) { m_HOMOFirst = b; };
+  bool isHOMOFirst() { return m_HOMOFirst; }
+  void HOMOFirst(bool b) { m_HOMOFirst = b; }
 
 protected:
   // Compare orbital values
@@ -78,7 +80,7 @@ public:
   //! Deconstructor
   ~OrbitalTableModel() override;
 
-  int rowCount(const QModelIndex&) const override { return m_orbitals.size(); };
+  int rowCount(const QModelIndex&) const override { return m_orbitals.size(); }
   int columnCount(const QModelIndex&) const override;
 
   QVariant data(const QModelIndex& index,

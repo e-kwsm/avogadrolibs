@@ -61,7 +61,7 @@ public:
   void setMolecule(QtGui::Molecule* molecule);
 
   // Return what type of model this is
-  PropertyType type() const { return m_type; };
+  PropertyType type() const { return m_type; }
   bool isColorIndex(const QModelIndex& index) const;
 
   // Value type for a new user-created custom property column.

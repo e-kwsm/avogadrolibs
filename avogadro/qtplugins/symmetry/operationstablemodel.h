@@ -48,11 +48,11 @@ public:
   explicit OperationsTableModel(QObject* parent = nullptr);
   ~OperationsTableModel() override;
 
-  int rowCount(const QModelIndex&) const override { return m_operations_size; };
+  int rowCount(const QModelIndex&) const override { return m_operations_size; }
   int columnCount(const QModelIndex&) const override
   {
     return OPERATIONSTABLEMODEL_COLUMN_COUNT;
-  };
+  }
 
   QVariant data(const QModelIndex& index,
                 int role = Qt::DisplayRole) const override;
