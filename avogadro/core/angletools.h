@@ -6,6 +6,7 @@
 #ifndef AVOGADRO_CORE_ANGLETOOLS_H
 #define AVOGADRO_CORE_ANGLETOOLS_H
 
+#include "avogadrocoreexport.h"
 #include <avogadro/core/vector.h>
 
 #include <cmath>
