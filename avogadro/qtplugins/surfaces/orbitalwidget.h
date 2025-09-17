@@ -40,7 +40,7 @@ public:
   //! Deconstructor
   ~OrbitalWidget() override;
 
-  double isovalue() { return m_isovalue; };
+  double isovalue() { return m_isovalue; }
   OrbitalQuality quality() const;
 
   bool precalcLimit() { return m_precalc_limit; }
@@ -50,7 +50,7 @@ public:
   static double OrbitalQualityToDouble(int i)
   {
     return OrbitalQualityToDouble(OrbitalQuality(i));
-  };
+  }
 
 public slots:
   void readSettings();
