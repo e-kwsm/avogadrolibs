@@ -833,7 +833,7 @@ public:
   {
     m_constraints = constraints;
   }
-  std::vector<Core::Constraint>& constraints() { return m_constraints; };
+  std::vector<Core::Constraint>& constraints() { return m_constraints; }
   const std::vector<Core::Constraint>& constraints() const
   {
     return m_constraints;
