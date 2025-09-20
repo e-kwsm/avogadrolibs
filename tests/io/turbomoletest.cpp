@@ -191,12 +191,8 @@ TEST(TurbomoleTest, readOk)
          "$periodic 2\n$cell\n6.0 8.0 90.0\n$end"s,
          "$periodic 3\n$cell\n6.0 8.0 10.0 90.0 89.0 78.0\n$end"s,
 
-         R"($periodic 0
-$cell
-  6.0 8.0 10.0 90.0 89.0 78.0
-$end
-)"s,
-
+         // ignore $cell
+         "$periodic 0\n$cell\n6.0 8.0 10.0 90.0 89.0 78.0\n$end"s,
        }) {
     TurbomoleFormat tmol;
     Molecule molecule;
