@@ -184,7 +184,7 @@ TEST(TurbomoleTest, readCellParameters)
   }
 }
 
-TEST(TurbomoleTest, readOk)
+TEST(TurbomoleTest, readPeriodic3)
 {
   for (const auto& s : {
          "$periodic 1\n$cell\n6.0\n$end"s,
@@ -198,10 +198,7 @@ TEST(TurbomoleTest, readOk)
     Molecule molecule;
     EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
   }
-}
 
-TEST(TurbomoleTest, readErr)
-{
   for (const auto& s : {
          // $periodic is invalid
          "$periodic\n$end"s,
