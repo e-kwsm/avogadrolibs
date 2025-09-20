@@ -152,10 +152,14 @@ TEST(TurbomoleTest, readPeriodic2)
   for (unsigned periodic = 1u; periodic <= 3u; periodic++) {
     for (unsigned j = 1u; j <= 3u; j++) {
       for (const auto& s : {
-             "$periodic "s + std::to_string(periodic) + "\n"s + cells.at(j) +
-               "\n$end"s,
-             cells.at(j) + "\n$periodic "s + std::to_string(periodic) +
-               "\n$end"s,
+             "$periodic "s + std::to_string(periodic) + "\n$cell\n"s +
+               cells.at(j) + "\n$end"s,
+             "$cell\n"s + cells.at(j) + "\n$periodic "s +
+               std::to_string(periodic) + "\n$end"s,
+             "$periodic "s + std::to_string(periodic) + "\n$lattice\n"s +
+               lattices.at(j) + "\n$end"s,
+             "$lattice\n"s + lattices.at(j) + "\n$periodic "s +
+               std::to_string(periodic) + "\n$end"s,
            }) {
         TurbomoleFormat tmol;
         Molecule molecule;
