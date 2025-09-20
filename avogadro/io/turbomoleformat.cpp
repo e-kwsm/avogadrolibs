@@ -205,7 +205,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         return true;
       };
 
-      auto set_vars = [&](unsigned periodic) {
+      auto set_cell_vars = [&](unsigned periodic) {
         switch (periodic) {
           case 1:
             a = tokens_converted[0] * cellConversion;
@@ -247,7 +247,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             std::cerr << "ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
-        set_vars(*periodic_parsed);
+        set_cell_vars(*periodic_parsed);
       } else {
         // $periodic does not appear yet, so guess it from the number of the
         // elements
@@ -266,7 +266,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                         buffer);
             return false;
         }
-        set_vars(*periodic_guessed);
+        set_cell_vars(*periodic_guessed);
       }
 
     } else if (tokens[0] == "$lattice") {
