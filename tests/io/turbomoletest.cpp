@@ -70,6 +70,19 @@ $end
   }
 }
 
+TEST(TurbomoleTest, readPeriodic)
+{
+  for (const auto& s : {
+         "$periodic 1\n$cell\n6.0\n$end"s,
+         "$periodic 2\n$cell\n6.0 8.0 90.0\n$end"s,
+         "$periodic 3\n$cell\n6.0 8.0 10.0 90.0 89.0 78.0\n$end"s,
+       }) {
+    TurbomoleFormat tmol;
+    Molecule molecule;
+    EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
+  }
+}
+
 TEST(TurbomoleTest, readCellParameters)
 {
   const auto periodic = "$periodic 3\n"s;
@@ -170,19 +183,6 @@ TEST(TurbomoleTest, readErr)
     TurbomoleFormat tmol;
     Molecule molecule;
     EXPECT_FALSE(tmol.readString(s, molecule)) << s;
-  }
-}
-
-TEST(TurbomoleTest, readPeriodic)
-{
-  for (const auto& s : {
-         "$periodic 1\n$cell\n6.0\n$end"s,
-         "$periodic 2\n$cell\n6.0 8.0 90.0\n$end"s,
-         "$periodic 3\n$cell\n6.0 8.0 10.0 90.0 89.0 78.0\n$end"s,
-       }) {
-    TurbomoleFormat tmol;
-    Molecule molecule;
-    EXPECT_TRUE(tmol.readString(s, molecule)) << s << '\n' << tmol.error();
   }
 }
 
