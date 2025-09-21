@@ -38,12 +38,12 @@ ScriptCharges::~ScriptCharges() {}
 
 QList<QAction*> ScriptCharges::actions() const
 {
-  return QList<QAction*>();
+  return {};
 }
 
 QStringList ScriptCharges::menuPath(QAction*) const
 {
-  return QStringList();
+  return {};
 }
 
 void ScriptCharges::setMolecule(QtGui::Molecule*) {}

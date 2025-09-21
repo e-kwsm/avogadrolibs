@@ -49,7 +49,7 @@ void MolecularModel::setMolecule(QtGui::Molecule* molecule)
 QString MolecularModel::name() const
 {
   if (!m_molecule || m_molecule->atomCount() == 0)
-    return QString();
+    return {};
 
   // check if we have a markup_name
   if (!m_molecule->data("markup_name").toString().empty())
@@ -93,7 +93,7 @@ QString formatPointGroup(std::string pointgroup)
 QVariant MolecularModel::data(const QModelIndex& index, int role) const
 {
   if (!index.isValid() || m_molecule == nullptr)
-    return QVariant();
+    return {};
 
   int row = index.row();
   [[maybe_unused]] int col = index.column();
@@ -109,7 +109,7 @@ QVariant MolecularModel::data(const QModelIndex& index, int role) const
   }
 
   if (role != Qt::UserRole && role != Qt::DisplayRole && role != Qt::EditRole)
-    return QVariant();
+    return {};
 
   const auto map = m_propertiesCache;
   auto it = map.begin();
@@ -163,7 +163,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
   }
 
   if (role != Qt::DisplayRole)
-    return QVariant();
+    return {};
 
   if (orientation == Qt::Horizontal) {
     return tr("Property");
@@ -219,12 +219,12 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
     else if (it != map.end())
       return QString::fromStdString(it->first);
 
-    return QVariant();
+    return {};
 
   } else // row headers
-    return QVariant();
+    return {};
 
-  return QVariant();
+  return {};
 }
 
 Qt::ItemFlags MolecularModel::flags(const QModelIndex& index) const
