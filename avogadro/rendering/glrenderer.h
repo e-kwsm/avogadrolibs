@@ -191,7 +191,7 @@ inline Identifier GLRenderer::hit(int x, int y) const
   std::multimap<float, Identifier> results = hits(x, y);
   if (results.size())
     return results.begin()->second;
-  return Identifier();
+  return {};
 }
 
 } // namespace Rendering
