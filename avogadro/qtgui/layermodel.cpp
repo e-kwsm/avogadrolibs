@@ -65,7 +65,7 @@ void LayerModel::loadIcons(bool darkMode)
 
 QModelIndex LayerModel::parent(const QModelIndex&) const
 {
-  return QModelIndex();
+  return {};
 }
 
 int LayerModel::rowCount(const QModelIndex& p) const
@@ -94,7 +94,7 @@ bool LayerModel::setData(const QModelIndex&, const QVariant&, int)
 QVariant LayerModel::data(const QModelIndex& idx, int role) const
 {
   if (!idx.isValid() || idx.column() > QTTY_COLUMNS)
-    return QVariant();
+    return {};
   auto names = activeMoleculeNames();
   if (idx.row() == static_cast<int>(names.size())) {
     if (idx.column() == 0) {
@@ -102,10 +102,10 @@ QVariant LayerModel::data(const QModelIndex& idx, int role) const
         case Qt::DecorationRole:
           return m_plusIcon;
         default:
-          return QVariant();
+          return {};
       }
     }
-    return QVariant();
+    return {};
   }
   auto name = names[idx.row()].second;
   auto layer = names[idx.row()].first;
@@ -125,7 +125,7 @@ QVariant LayerModel::data(const QModelIndex& idx, int role) const
             return QVariant(defaultPalette.color(QPalette::WindowText));
           }
         default:
-          return QVariant();
+          return {};
       }
     } else if (idx.column() == ColumnType::Menu) {
       if (role == Qt::DecorationRole)
@@ -158,7 +158,7 @@ QVariant LayerModel::data(const QModelIndex& idx, int role) const
     }
   }
 
-  return QVariant();
+  return {};
 }
 
 QString LayerModel::getTranslatedName(const std::string& name) const
@@ -199,7 +199,7 @@ QString LayerModel::getTranslatedName(const std::string& name) const
 
   qDebug() << "LayerModel: name didn't match: " << name.c_str();
 
-  return QString(name.c_str());
+  return { name.c_str() };
 }
 
 QModelIndex LayerModel::index(int row, int column, const QModelIndex& p) const
@@ -207,7 +207,7 @@ QModelIndex LayerModel::index(int row, int column, const QModelIndex& p) const
   if (!p.isValid())
     if (row >= 0 && row <= static_cast<int>(m_item))
       return createIndex(row, column);
-  return QModelIndex();
+  return {};
 }
 
 void LayerModel::addLayer(RWMolecule* rwmolecule)

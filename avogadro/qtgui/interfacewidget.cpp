@@ -57,7 +57,7 @@ void InterfaceWidget::setWarningText(const QString& warn)
 
 QString InterfaceWidget::warningText() const
 {
-  return QString();
+  return {};
 }
 
 void InterfaceWidget::showError(const QString& err)
