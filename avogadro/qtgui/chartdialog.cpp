@@ -28,12 +28,12 @@ ChartWidget* ChartDialog::chartWidget()
 
 QSize ChartDialog::sizeHint() const
 {
-  return QSize(600, 400);
+  return { 600, 400 };
 }
 
 QSize ChartDialog::minimumSizeHint() const
 {
-  return QSize(200, 200);
+  return { 200, 200 };
 }
 
 } // namespace Avogadro::QtGui

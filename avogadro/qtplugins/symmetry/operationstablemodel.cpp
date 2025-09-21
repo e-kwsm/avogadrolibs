@@ -47,7 +47,7 @@ QVariant OperationsTableModel::headerData(int section,
 {
 
   if (role != Qt::DisplayRole)
-    return QVariant();
+    return {};
 
   QString name;
 
@@ -60,7 +60,7 @@ QVariant OperationsTableModel::headerData(int section,
       case ColumnVector:
         return tr("Element");
       default:
-        return QVariant();
+        return {};
     }
   } else {
     return QString::number(section + 1);
@@ -70,7 +70,7 @@ QVariant OperationsTableModel::headerData(int section,
 QVariant OperationsTableModel::data(const QModelIndex& index, int role) const
 {
   if (role != Qt::DisplayRole || !index.isValid())
-    return QVariant();
+    return {};
 
   const msym::msym_symmetry_operation_t* operation = &m_operations[index.row()];
 
@@ -82,7 +82,7 @@ QVariant OperationsTableModel::data(const QModelIndex& index, int role) const
     case ColumnVector:
       return QString("NA");
     default:
-      return QVariant();
+      return {};
   }
 }
 } // namespace Avogadro::QtPlugins

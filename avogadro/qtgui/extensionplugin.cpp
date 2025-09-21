@@ -41,7 +41,7 @@ CommandRegistry& ExtensionPlugin::commandRegistry()
 
 QList<Io::FileFormat*> ExtensionPlugin::fileFormats() const
 {
-  return QList<Io::FileFormat*>();
+  return {};
 }
 
 QList<QDockWidget*> ExtensionPlugin::dockWidgets() const
