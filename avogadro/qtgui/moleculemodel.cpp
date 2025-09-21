@@ -20,7 +20,7 @@ MoleculeModel::MoleculeModel(QObject* p)
 
 QModelIndex MoleculeModel::parent(const QModelIndex&) const
 {
-  return QModelIndex();
+  return {};
 }
 
 int MoleculeModel::rowCount(const QModelIndex& p) const
@@ -81,12 +81,12 @@ bool MoleculeModel::setData(const QModelIndex& idx, const QVariant& value,
 QVariant MoleculeModel::data(const QModelIndex& idx, int role) const
 {
   if (!idx.isValid() || idx.column() > 2)
-    return QVariant();
+    return {};
 
   auto* object = static_cast<QObject*>(idx.internalPointer());
   auto* mol = qobject_cast<Molecule*>(object);
   if (!mol)
-    return QVariant();
+    return {};
 
   if (idx.column() == 0) {
     switch (role) {
@@ -124,13 +124,13 @@ QVariant MoleculeModel::data(const QModelIndex& idx, int role) const
           return QVariant(defaultPalette.color(QPalette::WindowText));
         }
       default:
-        return QVariant();
+        return {};
     }
   } else if (idx.column() == 1) {
     if (role == Qt::DecorationRole)
       return QIcon::fromTheme("document-close");
   }
-  return QVariant();
+  return {};
 }
 
 QModelIndex MoleculeModel::index(int row, int column,
@@ -139,7 +139,7 @@ QModelIndex MoleculeModel::index(int row, int column,
   if (!p.isValid())
     if (row >= 0 && row < m_molecules.size())
       return createIndex(row, column, m_molecules[row]);
-  return QModelIndex();
+  return {};
 }
 
 void MoleculeModel::clear()
