@@ -140,7 +140,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                     .arg(m_pythonInterpreter,
                          realArgs.join(QStringLiteral(" ")),
                          processErrorString(proc));
-      return QByteArray();
+      return {};
     }
 
     qint64 len = proc.write(scriptStdin);
@@ -152,7 +152,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                     .arg(scriptStdin.size())
                     .arg(len)
                     .arg(processErrorString(proc));
-      return QByteArray();
+      return {};
     }
     proc.closeWriteChannel();
   }
@@ -162,7 +162,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                    "finish (%3).")
                   .arg(m_pythonInterpreter, realArgs.join(QStringLiteral(" ")),
                        processErrorString(proc));
-    return QByteArray();
+    return {};
   }
 
   if (proc.exitStatus() != QProcess::NormalExit || proc.exitCode() != 0) {
@@ -177,7 +177,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                     .arg(QString(proc.readAll()));
     else
       m_errors << tr("Warning '%1'").arg(proc.errorString());
-    return QByteArray();
+    return {};
   }
 
   QByteArray result(proc.readAll());
@@ -268,7 +268,7 @@ void PythonScript::asyncTerminate()
 QByteArray PythonScript::asyncWriteAndResponse(QByteArray input)
 {
   if (m_process == nullptr) {
-    return QByteArray(); // wait
+    return {}; // wait
   }
 
   m_process->write(input);
@@ -287,7 +287,7 @@ QByteArray PythonScript::asyncWriteAndResponse(QByteArray input)
 QByteArray PythonScript::asyncResponse()
 {
   if (m_process == nullptr || m_process->state() == QProcess::Running) {
-    return QByteArray(); // wait
+    return {}; // wait
   }
 
   return m_process->readAll();
