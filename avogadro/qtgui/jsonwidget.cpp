@@ -86,7 +86,7 @@ QString JsonWidget::lookupOptionType(const QString& name) const
 {
   if (!m_options.contains("userOptions")) {
     qWarning() << tr("'userOptions' missing.");
-    return QString();
+    return {};
   }
 
   QJsonObject userOptions;
@@ -117,21 +117,21 @@ QString JsonWidget::lookupOptionType(const QString& name) const
 
     if (!userOptions.value(name).isObject()) {
       qWarning() << tr("Option '%1' does not refer to an object.").arg(name);
-      return QString();
+      return {};
     }
 
     QJsonObject obj = userOptions[name].toObject();
 
     if (!obj.contains("type") || !obj.value("type").isString()) {
       qWarning() << tr("'type' is not a string for option '%1'.").arg(name);
-      return QString();
+      return {};
     }
 
     return obj["type"].toString();
   }
 
   qWarning() << tr("Could not find option '%1'.").arg(name);
-  return QString();
+  return {};
 }
 
 void JsonWidget::updateOptions()
