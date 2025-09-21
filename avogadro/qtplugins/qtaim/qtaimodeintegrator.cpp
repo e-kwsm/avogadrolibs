@@ -160,7 +160,7 @@ QVector3D QTAIMODEIntegrator::integrate(QVector3D x0y0z0)
 
     if (flag != 2) {
       m_status = flag;
-      return QVector3D(y[0], y[1], y[2]);
+      return { y[0], y[1], y[2] };
     }
 
     if (m_betaSpheres.length() > 0) {
@@ -175,16 +175,16 @@ QVector3D QTAIMODEIntegrator::integrate(QVector3D x0y0z0)
         if (distance < m_betaSpheres.at(n).second) {
           m_status = 0;
           m_associatedSphere = n;
-          return QVector3D(m_betaSpheres.at(n).first.x(),
-                           m_betaSpheres.at(n).first.y(),
-                           m_betaSpheres.at(n).first.z());
+          return { m_betaSpheres.at(n).first.x(), m_betaSpheres.at(n).first.y(),
+                   m_betaSpheres.at(n).first.z() };
         }
       }
     } // beta spheres
 
   } // ODE step
 
-  return QVector3D(y[0], y[1], y[2]);
+  return { static_cast<float>(y[0]), static_cast<float>(y[1]),
+           static_cast<float>(y[2]) };
 }
 
 void QTAIMODEIntegrator::r8_f(qreal t, qreal y[], qreal yp[])

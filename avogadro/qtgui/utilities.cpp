@@ -103,12 +103,12 @@ QStringList executableSearchPaths()
 
 QString libraryDirectory()
 {
-  return QString(AvogadroLibs_LIB_DIR);
+  return { AvogadroLibs_LIB_DIR };
 }
 
 QString dataDirectory()
 {
-  return QString(AvogadroLibs_DATA_DIR);
+  return { AvogadroLibs_DATA_DIR };
 }
 
 QString openBabelDataDirectory()
@@ -157,7 +157,7 @@ QString findExecutablePath(QString program)
     }
   }
 
-  return QString();
+  return {};
 }
 
 QStringList findExecutablePaths(QStringList programs)

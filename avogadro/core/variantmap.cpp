@@ -35,7 +35,7 @@ Variant VariantMap::value(const std::string& name) const
 {
   auto iter = m_map.find(name);
   if (iter == m_map.end())
-    return Variant();
+    return {};
 
   return iter->second;
 }

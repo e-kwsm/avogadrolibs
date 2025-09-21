@@ -31,12 +31,12 @@ ScriptFileFormats::~ScriptFileFormats() {}
 
 QList<QAction*> ScriptFileFormats::actions() const
 {
-  return QList<QAction*>();
+  return {};
 }
 
 QStringList ScriptFileFormats::menuPath(QAction*) const
 {
-  return QStringList();
+  return {};
 }
 
 void ScriptFileFormats::setMolecule(QtGui::Molecule*) {}
