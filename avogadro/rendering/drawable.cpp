@@ -35,12 +35,12 @@ std::multimap<float, Identifier> Drawable::hits(const Vector3f&,
                                                 const Vector3f&,
                                                 const Vector3f&) const
 {
-  return std::multimap<float, Identifier>();
+  return {};
 }
 
 Array<Identifier> Drawable::areaHits(const Frustrum&) const
 {
-  return Array<Identifier>();
+  return {};
 }
 
 void Drawable::clear() {}

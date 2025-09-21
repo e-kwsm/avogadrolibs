@@ -42,7 +42,8 @@ ElementItem::~ElementItem() {}
 
 QRectF ElementItem::boundingRect() const
 {
-  return QRectF(-m_width / 2, -m_height / 2, m_width, m_height);
+  return { static_cast<qreal>(-m_width / 2), static_cast<qreal>(-m_height / 2),
+           static_cast<qreal>(m_width), static_cast<qreal>(m_height) };
 }
 
 QPainterPath ElementItem::shape() const
