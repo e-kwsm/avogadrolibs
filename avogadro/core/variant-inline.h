@@ -409,7 +409,7 @@ inline MatrixX Variant::value() const
   if (m_type == Matrix)
     return *m_value.matrix;
 
-  return MatrixX();
+  return {};
 }
 
 template <>
@@ -429,7 +429,7 @@ inline Vector3 Variant::value() const
   if (m_type == Vector)
     return *m_value.vector;
 
-  return Vector3();
+  return {};
 }
 
 template <>
@@ -452,7 +452,7 @@ inline std::vector<double> Variant::value() const
     return list;
   }
 
-  return std::vector<double>();
+  return {};
 }
 
 inline void Variant::clear()
