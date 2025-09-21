@@ -63,7 +63,7 @@ public:
    * @brief Return a JSON object string describing optional user-editable
    * settings for this model. Empty string means no user options.
    */
-  virtual std::string userOptions() const { return std::string(); }
+  virtual std::string userOptions() const { return {}; }
 
   /**
    * @brief Set user-selected options serialized as a JSON object string.

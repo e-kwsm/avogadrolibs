@@ -358,10 +358,10 @@ std::vector<std::vector<size_t>> perceiveRings(const Graph& graph)
   size_t n = graph.size();
 
   if (graph.edgeCount() < graph.vertexCount())
-    return std::vector<std::vector<size_t>>();
+    return {};
   size_t ringCount = graph.edgeCount() - graph.vertexCount() + 1;
   if (ringCount == 0)
-    return std::vector<std::vector<size_t>>();
+    return {};
 
   // Algorithm 1 - create the distance and pid matrices.
   DistanceMatrix D(n);

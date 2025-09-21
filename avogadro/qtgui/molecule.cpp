@@ -87,7 +87,7 @@ Molecule::AtomType Molecule::addAtom(unsigned char number, Index uniqueId)
 {
   if (uniqueId >= static_cast<Index>(m_atomUniqueIds.size()) ||
       m_atomUniqueIds[uniqueId] != MaxIndex) {
-    return AtomType();
+    return {};
   }
   m_atomUniqueIds[uniqueId] = atomCount();
   AtomType a = Core::Molecule::addAtom(number);
@@ -145,9 +145,9 @@ Molecule::AtomType Molecule::atomByUniqueId(Index uniqueId)
 {
   if (uniqueId >= static_cast<Index>(m_atomUniqueIds.size()) ||
       m_atomUniqueIds[uniqueId] == MaxIndex) {
-    return AtomType();
+    return {};
   } else {
-    return AtomType(this, m_atomUniqueIds[uniqueId]);
+    return { this, m_atomUniqueIds[uniqueId] };
   }
 }
 
@@ -217,7 +217,7 @@ Molecule::BondType Molecule::addBond(Index a, Index b, unsigned char order,
 {
   if (uniqueId >= static_cast<Index>(m_bondUniqueIds.size()) ||
       m_bondUniqueIds[uniqueId] != MaxIndex) {
-    return BondType();
+    return {};
   }
 
   m_bondUniqueIds[uniqueId] = bondCount();
@@ -229,7 +229,7 @@ Molecule::BondType Molecule::addBond(const AtomType& a, const AtomType& b,
 {
   if (uniqueId >= static_cast<Index>(m_bondUniqueIds.size()) ||
       m_bondUniqueIds[uniqueId] != MaxIndex) {
-    return BondType();
+    return {};
   }
 
   m_bondUniqueIds[uniqueId] = bondCount();
@@ -275,9 +275,9 @@ Molecule::BondType Molecule::bondByUniqueId(Index uniqueId)
 {
   if (uniqueId >= static_cast<Index>(m_bondUniqueIds.size()) ||
       m_bondUniqueIds[uniqueId] == MaxIndex) {
-    return BondType();
+    return {};
   } else {
-    return BondType(this, static_cast<Index>(m_bondUniqueIds[uniqueId]));
+    return { this, static_cast<Index>(m_bondUniqueIds[uniqueId]) };
   }
 }
 

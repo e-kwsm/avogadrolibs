@@ -243,7 +243,7 @@ QString ConfigurePythonDialog::currentOption() const
       settings.value("interpreters/condaPath", "conda").toString();
     // check if conda is executable
     if (!QFileInfo(condaPath).isExecutable())
-      return QString();
+      return {};
     condaProcess.start(condaPath, QStringList()
                                     << "run"
                                     << "-n" << environment << "which"

@@ -124,7 +124,7 @@ QString PythonScript::resolveCommand(QStringList& realArgs, QProcess& proc)
   if (m_packageMode) {
     if (m_pixi.isEmpty()) {
       m_errors << tr("Package mode requires pixi but it was not found.");
-      return QString();
+      return {};
     }
 
     realArgs.prepend(m_packageIdentifier);
@@ -181,7 +181,7 @@ QString PythonScript::resolveCommand(QStringList& realArgs, QProcess& proc)
       qDebug() << "No valid pixi manifest configuration found for"
                << m_scriptFilePath;
     }
-    return QString();
+    return {};
   }
 
   realArgs.prepend("run");
@@ -208,7 +208,7 @@ QByteArray PythonScript::execute(const QStringList& args,
 
   QString program = resolveCommand(realArgs, proc);
   if (program.isEmpty())
-    return QByteArray();
+    return {};
 
   if (m_debug) {
     qDebug() << "Executing" << program << realArgs.join(QStringLiteral(" "))
@@ -225,7 +225,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                      "start (%3).")
                     .arg(program, realArgs.join(QStringLiteral(" ")),
                          processErrorString(proc));
-      return QByteArray();
+      return {};
     }
 
     qint64 len = proc.write(scriptStdin);
@@ -237,7 +237,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                     .arg(scriptStdin.size())
                     .arg(len)
                     .arg(processErrorString(proc));
-      return QByteArray();
+      return {};
     }
     proc.closeWriteChannel();
   }
@@ -249,7 +249,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                     .arg(program, realArgs.join(QStringLiteral(" ")),
                          processErrorString(proc));
     proc.kill();
-    return QByteArray();
+    return {};
   }
 
   if (proc.exitStatus() != QProcess::NormalExit || proc.exitCode() != 0) {
@@ -265,7 +265,7 @@ QByteArray PythonScript::execute(const QStringList& args,
                          QString(proc.readAllStandardError()));
     else
       m_errors << tr("Warning '%1'").arg(proc.errorString());
-    return QByteArray();
+    return {};
   }
 
   QByteArray result(proc.readAllStandardOutput());
@@ -363,7 +363,7 @@ void PythonScript::asyncTerminate()
 QByteArray PythonScript::asyncWriteAndResponse(QByteArray input)
 {
   if (m_process == nullptr)
-    return QByteArray();
+    return {};
 
   m_process->write(input);
   QByteArray buffer;
@@ -378,7 +378,7 @@ QByteArray PythonScript::asyncWriteAndResponseRaw(const QByteArray& input,
                                                   int timeoutMs)
 {
   if (m_process == nullptr) {
-    return QByteArray(); // wait
+    return {}; // wait
   }
 
   if (!input.isEmpty()) {
@@ -389,7 +389,7 @@ QByteArray PythonScript::asyncWriteAndResponseRaw(const QByteArray& input,
                     .arg(input.size())
                     .arg(len)
                     .arg(processErrorString(*m_process));
-      return QByteArray();
+      return {};
     }
   }
 
@@ -409,7 +409,7 @@ QByteArray PythonScript::asyncWriteAndResponseRaw(const QByteArray& input,
 QByteArray PythonScript::asyncResponse()
 {
   if (m_process == nullptr || m_process->state() == QProcess::Running)
-    return QByteArray();
+    return {};
 
   return m_process->readAll();
 }

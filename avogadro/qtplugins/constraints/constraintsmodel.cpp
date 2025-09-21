@@ -42,10 +42,10 @@ int ConstraintsModel::columnCount(const QModelIndex&) const
 QVariant ConstraintsModel::data(const QModelIndex& index, int role) const
 {
   if (!index.isValid())
-    return QVariant();
+    return {};
 
   if (index.row() >= m_constraints.size())
-    return QVariant();
+    return {};
 
   Constraint currentConstraint = m_constraints[index.row()];
   Index aIndex = currentConstraint.aIndex();
