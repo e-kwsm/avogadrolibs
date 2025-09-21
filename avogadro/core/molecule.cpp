@@ -595,7 +595,7 @@ Molecule::AtomType Molecule::addAtom(unsigned char number)
 
   m_layers.addAtomToActiveLayer(atomCount() - 1);
   m_partialCharges.clear();
-  return AtomType(this, static_cast<Index>(atomCount() - 1));
+  return { this, static_cast<Index>(atomCount() - 1) };
 }
 
 Molecule::AtomType Molecule::addAtom(unsigned char number, Vector3 position3d)
@@ -711,7 +711,7 @@ void Molecule::clearAtoms()
 Molecule::AtomType Molecule::atom(Index index) const
 {
   assert(index < atomCount());
-  return AtomType(const_cast<Molecule*>(this), index);
+  return { const_cast<Molecule*>(this), index };
 }
 
 Molecule::BondType Molecule::addBond(Index atom1, Index atom2,
@@ -729,7 +729,7 @@ Molecule::BondType Molecule::addBond(Index atom1, Index atom2,
   }
   // any existing charges are invalidated
   m_partialCharges.clear();
-  return BondType(this, index);
+  return { this, index };
 }
 
 Molecule::BondType Molecule::addBond(const AtomType& a, const AtomType& b,
@@ -789,7 +789,7 @@ Molecule::BondType Molecule::bond(Index index) const
 {
   assert(index < bondCount());
 
-  return BondType(const_cast<Molecule*>(this), index);
+  return { const_cast<Molecule*>(this), index };
 }
 
 Molecule::BondType Molecule::bond(const AtomType& a, const AtomType& b) const
@@ -809,15 +809,15 @@ Molecule::BondType Molecule::bond(Index atomId1, Index atomId2) const
   for (unsigned long index : edgeIndices) {
     const std::pair<Index, Index>& pair = m_graph.endpoints(index);
     if (pair.first == atomId2 || pair.second == atomId2)
-      return BondType(const_cast<Molecule*>(this), index);
+      return { const_cast<Molecule*>(this), index };
   }
-  return BondType();
+  return {};
 }
 
 Array<Molecule::BondType> Molecule::bonds(const AtomType& a)
 {
   if (!a.isValid())
-    return Array<BondType>();
+    return {};
 
   return bonds(a.index());
 }
@@ -1086,7 +1086,7 @@ Array<Vector3> Molecule::vibrationLx(int mode) const
 {
   if (mode >= 0 && mode < static_cast<int>(m_vibrationLx.size()))
     return m_vibrationLx[mode];
-  return Array<Vector3>();
+  return {};
 }
 
 void Molecule::setVibrationLx(const Array<Array<Vector3>>& lx)
