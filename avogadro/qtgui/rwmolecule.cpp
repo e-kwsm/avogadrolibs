@@ -42,7 +42,7 @@ RWMolecule::AtomType RWMolecule::addAtom(unsigned char num, bool usingPositions)
   auto* comm = new AddAtomCommand(*this, num, usingPositions, atomId, atomUid);
   comm->setText(tr("Add Atom"));
   m_undoStack.push(comm);
-  return AtomType(this, atomId);
+  return { this, atomId };
 }
 
 RWMolecule::AtomType RWMolecule::addAtom(unsigned char num,
@@ -364,7 +364,7 @@ RWMolecule::BondType RWMolecule::addBond(Index atom1, Index atom2,
                                          unsigned char order)
 {
   if (atom1 == atom2 || std::max(atom1, atom2) >= atomCount())
-    return BondType();
+    return {};
 
   // Two atoms that are already bonded do not get a second bond:
   // Core::Molecule::addBond() updates the order and returns the existing bond,
@@ -385,16 +385,16 @@ RWMolecule::BondType RWMolecule::addBond(Index atom1, Index atom2,
     *this, order, Molecule::makeBondPair(atom1, atom2), bondId, bondUid);
   comm->setText(tr("Add Bond"));
   m_undoStack.push(comm);
-  return BondType(this, bondId);
+  return { this, bondId };
 }
 
 RWMolecule::BondType RWMolecule::bond(Index atom1, Index atom2) const
 {
   Molecule::BondType b = m_molecule.bond(atom1, atom2);
   if (b.isValid())
-    return BondType(const_cast<RWMolecule*>(this), b.index());
+    return { const_cast<RWMolecule*>(this), b.index() };
   else
-    return BondType();
+    return {};
 }
 
 bool RWMolecule::removeBond(Index bondId)
