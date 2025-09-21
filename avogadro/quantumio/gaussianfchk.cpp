@@ -69,7 +69,7 @@ std::vector<std::string> GaussianFchk::fileExtensions() const
 
 std::vector<std::string> GaussianFchk::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GaussianFchk::read(std::istream& in, Core::Molecule& molecule)

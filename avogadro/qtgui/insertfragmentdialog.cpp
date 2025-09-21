@@ -156,14 +156,14 @@ InsertFragmentDialog::~InsertFragmentDialog()
 QString InsertFragmentDialog::fileName()
 {
   if (m_implementation == nullptr || m_implementation->model == nullptr)
-    return QString();
+    return {};
 
   // The selected model index is in the proxy
   QModelIndexList selected =
     m_ui->directoryTreeView->selectionModel()->selectedIndexes();
 
   if (selected.isEmpty()) {
-    return QString();
+    return {};
   }
 
   // Remember to map to the source model
