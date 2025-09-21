@@ -751,7 +751,7 @@ public:
 
 inline RWMolecule::AtomType RWMolecule::atom(Index atomId) const
 {
-  return AtomType(const_cast<RWMolecule*>(this), atomId);
+  return { const_cast<RWMolecule*>(this), atomId };
 }
 
 inline RWMolecule::AtomType RWMolecule::atomByUniqueId(Index atomUId) const
@@ -842,13 +842,13 @@ inline RWMolecule::BondType RWMolecule::addBond(const AtomType& atom1,
                                                 unsigned char order)
 {
   if (atom1.molecule() != atom2.molecule() || atom1.molecule() != this)
-    return BondType();
+    return {};
   return addBond(atom1.index(), atom2.index(), order);
 }
 
 inline RWMolecule::BondType RWMolecule::bond(Index bondId) const
 {
-  return BondType(const_cast<RWMolecule*>(this), bondId);
+  return { const_cast<RWMolecule*>(this), bondId };
 }
 
 inline RWMolecule::BondType RWMolecule::bond(
@@ -856,7 +856,7 @@ inline RWMolecule::BondType RWMolecule::bond(
 {
   if (atom1.molecule() == atom2.molecule() && atom1.molecule() == this)
     return bond(atom1.index(), atom2.index());
-  return BondType();
+  return {};
 }
 
 inline RWMolecule::BondType RWMolecule::bondByUniqueId(Index bondUid) const
