@@ -64,7 +64,7 @@ QString JsonRpcClient::serverName() const
   if (m_socket)
     return m_socket->serverName();
   else
-    return QString();
+    return {};
 }
 
 void JsonRpcClient::flush()

@@ -32,7 +32,7 @@ std::vector<std::string> NWChemLog::fileExtensions() const
 
 std::vector<std::string> NWChemLog::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool NWChemLog::read(std::istream& in, Core::Molecule& molecule)

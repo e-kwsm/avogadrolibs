@@ -114,7 +114,7 @@ bool MoleQueueQueueListModel::lookupProgram(const QModelIndex& idx,
 QVariant MoleQueueQueueListModel::data(const QModelIndex& idx, int role) const
 {
   if (!idx.isValid() || (role != Qt::DisplayRole && role != QueueProgramRole)) {
-    return QVariant();
+    return {};
   }
 
   if (isQueueIndex(idx)) {
@@ -143,7 +143,7 @@ QVariant MoleQueueQueueListModel::data(const QModelIndex& idx, int role) const
       }
     }
   }
-  return QVariant();
+  return {};
 }
 
 Qt::ItemFlags MoleQueueQueueListModel::flags(const QModelIndex& idx) const
@@ -159,14 +159,14 @@ Qt::ItemFlags MoleQueueQueueListModel::flags(const QModelIndex& idx) const
 
 QVariant MoleQueueQueueListModel::headerData(int, Qt::Orientation, int) const
 {
-  return QVariant();
+  return {};
 }
 
 QModelIndex MoleQueueQueueListModel::index(int row, int column,
                                            const QModelIndex& parent_) const
 {
   if (!hasIndex(row, column, parent_))
-    return QModelIndex();
+    return {};
 
   // Queue Index -- parent is invalid.
   if (!parent_.isValid() && row < m_queueList.size() && column == 0) {
@@ -185,7 +185,7 @@ QModelIndex MoleQueueQueueListModel::index(int row, int column,
     }
   }
   // fail.
-  return QModelIndex();
+  return {};
 }
 
 QModelIndex MoleQueueQueueListModel::parent(const QModelIndex& child) const
@@ -195,14 +195,14 @@ QModelIndex MoleQueueQueueListModel::parent(const QModelIndex& child) const
 
     // Child is queue -- return invalid parent.
     if (childId == QueueInternalId)
-      return QModelIndex();
+      return {};
 
     // Child is program -- lookup and return queue index.
     const int queueRow = programUidToQueueRow(childId);
     if (queueRow >= 0)
       return createIndex(queueRow, 0, QueueInternalId);
   }
-  return QModelIndex();
+  return {};
 }
 
 int MoleQueueQueueListModel::rowCount(const QModelIndex& parent_) const
