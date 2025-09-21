@@ -42,10 +42,10 @@ int ConstraintsModel::columnCount(const QModelIndex&) const
 QVariant ConstraintsModel::data(const QModelIndex& index, int role) const
 {
   if (!index.isValid())
-    return QVariant();
+    return {};
 
   if (index.row() >= m_constraints.size())
-    return QVariant();
+    return {};
 
   Constraint currentConstraint = m_constraints[index.row()];
   Index aIndex = currentConstraint.aIndex();
@@ -87,38 +87,38 @@ QVariant ConstraintsModel::data(const QModelIndex& index, int role) const
         break;
       case 2:
         if (aIndex != MaxIndex)
-          return QVariant(static_cast<qulonglong>(aIndex) + 1);
+          return { static_cast<qulonglong>(aIndex) + 1 };
         else
           return "--";
         break;
       case 3:
         if (bIndex != MaxIndex)
-          return QVariant(static_cast<qulonglong>(bIndex) + 1);
+          return { static_cast<qulonglong>(bIndex) + 1 };
         else
           return "--";
         break;
       case 4:
         if (cIndex != MaxIndex)
-          return QVariant(static_cast<qulonglong>(cIndex) + 1);
+          return { static_cast<qulonglong>(cIndex) + 1 };
         else
           return "--";
         break;
       case 5:
         if (dIndex != MaxIndex)
-          return QVariant(static_cast<qulonglong>(dIndex) + 1);
+          return { static_cast<qulonglong>(dIndex) + 1 };
         else
           return "--";
         break;
     }
 
-  return QVariant();
+  return {};
 }
 
 QVariant ConstraintsModel::headerData(int section, Qt::Orientation orientation,
                                       int role) const
 {
   if (role != Qt::DisplayRole)
-    return QVariant();
+    return {};
 
   if (orientation == Qt::Horizontal) {
     switch (section) {
@@ -176,7 +176,7 @@ void ConstraintsModel::deleteConstraint(int index)
 Core::Constraint ConstraintsModel::constraint(int index)
 {
   if (index < 0 || index >= m_constraints.size())
-    return Constraint(MaxIndex, MaxIndex, MaxIndex, MaxIndex, 0.0);
+    return { MaxIndex, MaxIndex, MaxIndex, MaxIndex, 0.0 };
   else
     return m_constraints[index];
 }

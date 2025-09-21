@@ -36,7 +36,8 @@ QSize RichTextDelegate::sizeHint(const QStyleOptionViewItem& o,
   doc.setTextWidth(ov.rect.width());
   doc.setDefaultFont(ov.font);
 
-  return QSize(std::ceil(doc.idealWidth()), std::ceil(doc.size().height()));
+  return { static_cast<int>(std::ceil(doc.idealWidth())),
+           static_cast<int>(std::ceil(doc.size().height())) };
 }
 
 void RichTextDelegate::paint(QPainter* p, const QStyleOptionViewItem& o,

@@ -34,7 +34,7 @@ QString SpecialKPoints::getSpecialKPoints(Molecule& mol)
       hallNumber = AvoSpglib::getHallNumber(mol);
       // If we still can't find the hall number, just return
       if (!hallNumber)
-        return QString();
+        return {};
     }
 
     unsigned short spgNum = SpaceGroups::internationalNumber(hallNumber);
@@ -47,7 +47,7 @@ QString SpecialKPoints::getSpecialKPoints(Molecule& mol)
   }
 
   // If we made it here, we failed
-  return QString();
+  return {};
 }
 
 void SpecialKPoints::processConditionKPoints(QString& specialKPoints,

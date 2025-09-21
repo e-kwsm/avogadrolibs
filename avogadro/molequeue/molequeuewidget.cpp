@@ -141,7 +141,7 @@ MoleQueue::JobObject MoleQueueWidget::configuredJob() const
     QMessageBox::information(parentWidget(), tr("No program selected."),
                              tr("Please select the target program from the "
                                 "\"Queue and Program\" list."));
-    return MoleQueue::JobObject();
+    return {};
   }
 
   QString queue;
@@ -150,7 +150,7 @@ MoleQueue::JobObject MoleQueueWidget::configuredJob() const
     QMessageBox::critical(parentWidget(), tr("Internal error."),
                           tr("Unable to resolve program selection. This is "
                              "a bug."));
-    return MoleQueue::JobObject();
+    return {};
   }
 
   MoleQueue::JobObject job(m_jobTemplate);
