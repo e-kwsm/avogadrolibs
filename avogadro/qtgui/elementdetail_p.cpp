@@ -25,7 +25,7 @@ ElementDetail::ElementDetail(int elementNumber)
 
 QRectF ElementDetail::boundingRect() const
 {
-  return QRectF(-m_width / 2, -m_height / 2, m_width, m_height);
+  return { -m_width / 2, -m_height / 2, m_width, m_height };
 }
 
 QPainterPath ElementDetail::shape() const
