@@ -495,14 +495,14 @@ std::vector<int> Hdf5DataFormat::readDataset(const std::string& path,
 std::vector<std::string> Hdf5DataFormat::datasets() const
 {
   if (!isOpen())
-    return std::vector<std::string>();
+    return {};
 
   ListDatasetsVisitor visitor;
   herr_t code = H5Ovisit(d->fileId, H5_INDEX_NAME, H5_ITER_INC,
                          &visitor.operation, &visitor);
 
   if (code < 0)
-    return std::vector<std::string>();
+    return {};
   return visitor.datasets;
 }
 
