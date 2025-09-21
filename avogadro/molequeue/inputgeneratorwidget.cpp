@@ -609,7 +609,7 @@ QJsonObject InputGeneratorWidget::promptForBatchJobOptions() const
                              tr("Cannot connect to MoleQueue"),
                              tr("Cannot connect to MoleQueue server. Please "
                                 "ensure that it is running and try again."));
-    return QJsonObject();
+    return {};
   }
 
   QString coresString;
@@ -622,7 +622,7 @@ QJsonObject InputGeneratorWidget::promptForBatchJobOptions() const
 
   if (!MoleQueueDialog::promptForJobOptions(this->parentWidget(),
                                             tr("Configure Job"), job)) {
-    return QJsonObject();
+    return {};
   }
 
   return job.json();

@@ -33,7 +33,7 @@ std::vector<std::string> GenericOutput::fileExtensions() const
 
 std::vector<std::string> GenericOutput::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)

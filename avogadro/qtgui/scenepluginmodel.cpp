@@ -16,7 +16,7 @@ ScenePluginModel::ScenePluginModel(QObject* parent_)
 
 QModelIndex ScenePluginModel::parent(const QModelIndex&) const
 {
-  return QModelIndex();
+  return {};
 }
 
 int ScenePluginModel::rowCount(const QModelIndex& parent_) const
@@ -78,12 +78,12 @@ bool ScenePluginModel::setData(const QModelIndex& index_, const QVariant& value,
 QVariant ScenePluginModel::data(const QModelIndex& index_, int role) const
 {
   if (!index_.isValid() || index_.column() > 2)
-    return QVariant();
+    return {};
 
   auto* object = static_cast<QObject*>(index_.internalPointer());
   auto* item = qobject_cast<ScenePlugin*>(object);
   if (!item)
-    return QVariant();
+    return {};
 
   // Simple lambda to convert QFlags to variant as in Qt 6 this needs help.
   auto toVariant = [&](auto flags) {
@@ -102,7 +102,7 @@ QVariant ScenePluginModel::data(const QModelIndex& index_, int role) const
       case Qt::TextAlignmentRole:
         return toVariant(Qt::AlignLeft | Qt::AlignVCenter);
       default:
-        return QVariant();
+        return {};
     }
   }
 
@@ -122,10 +122,10 @@ QVariant ScenePluginModel::data(const QModelIndex& index_, int role) const
       case Qt::TextAlignmentRole:
         return toVariant(Qt::AlignLeft);
       default:
-        return QVariant();
+        return {};
     }
   }
-  return QVariant();
+  return {};
 }
 
 QModelIndex ScenePluginModel::index(int row, int column,
@@ -134,7 +134,7 @@ QModelIndex ScenePluginModel::index(int row, int column,
   if (!parent_.isValid() && row >= 0 && row < m_scenePlugins.size())
     return createIndex(row, column, m_scenePlugins[row]);
   else
-    return QModelIndex();
+    return {};
 }
 
 void ScenePluginModel::clear()

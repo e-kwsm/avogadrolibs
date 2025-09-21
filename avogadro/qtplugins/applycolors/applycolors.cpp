@@ -154,7 +154,7 @@ QStringList ApplyColors::menuPath(QAction* action) const
   else if (action->data() == residueColors)
     return QStringList() << tr("&View") << tr("Color Residues");
   else
-    return QStringList();
+    return {};
 }
 
 void ApplyColors::setMolecule(QtGui::Molecule* mol)

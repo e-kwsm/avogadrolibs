@@ -64,7 +64,7 @@ std::vector<std::string> QCSchema::fileExtensions() const
 
 std::vector<std::string> QCSchema::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
