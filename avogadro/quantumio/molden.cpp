@@ -40,7 +40,7 @@ std::vector<std::string> MoldenFile::fileExtensions() const
 
 std::vector<std::string> MoldenFile::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
