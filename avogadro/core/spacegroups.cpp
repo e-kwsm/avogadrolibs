@@ -238,7 +238,7 @@ Array<Vector3> SpaceGroups::getTransforms(unsigned short hallNumber,
                                           const Vector3& v)
 {
   if (hallNumber == 0 || hallNumber > 530)
-    return Array<Vector3>();
+    return {};
 
   Array<Vector3> ret;
 
