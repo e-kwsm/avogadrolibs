@@ -109,7 +109,7 @@ std::vector<std::string> GaussianCube::fileExtensions() const
 
 std::vector<std::string> GaussianCube::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool GaussianCube::read(std::istream& in, Core::Molecule& molecule)

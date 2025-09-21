@@ -75,7 +75,7 @@ void PQRRequest::sendPNGRequest(QString url)
 QString PQRRequest::molSelected(int num)
 {
   if (results.empty() || num > static_cast<int>(results.size()))
-    return QString("N/A");
+    return "N/A";
 
   QString mol2 = results[num].mol2url;
   QString url = "https://pqr.pitt.edu/static/data/png/" + mol2 + ".png";

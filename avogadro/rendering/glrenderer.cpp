@@ -273,7 +273,7 @@ std::multimap<float, Identifier> GLRenderer::hits(
   const Vector3f& rayEnd, const Vector3f& rayDirection) const
 {
   if (!geometry)
-    return std::multimap<float, Identifier>();
+    return {};
   return geometry->hits(rayOrigin, rayEnd, rayDirection);
 }
 
