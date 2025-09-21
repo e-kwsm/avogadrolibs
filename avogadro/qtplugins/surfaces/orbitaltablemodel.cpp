@@ -33,7 +33,7 @@ int OrbitalTableModel::columnCount(const QModelIndex&) const
 QVariant OrbitalTableModel::data(const QModelIndex& index, int role) const
 {
   if (!index.isValid())
-    return QVariant();
+    return {};
 
   const Orbital* orb = m_orbitals.at(index.row());
 
@@ -58,7 +58,7 @@ QVariant OrbitalTableModel::data(const QModelIndex& index, int role) const
         return QBrush(base.darker(120));
       }
     }
-    return QVariant();
+    return {};
   }
 
   if (role == Qt::TextAlignmentRole) {
@@ -75,7 +75,7 @@ QVariant OrbitalTableModel::data(const QModelIndex& index, int role) const
   }
 
   if (role != Qt::DisplayRole)
-    return QVariant();
+    return {};
   QString symbol; // use subscripts
   int subscriptStart;
 
@@ -117,7 +117,7 @@ QVariant OrbitalTableModel::data(const QModelIndex& index, int role) const
       return static_cast<int>(orb->electronType);
     default:
     case COUNT:
-      return QVariant();
+      return {};
   }
 }
 
@@ -125,7 +125,7 @@ QVariant OrbitalTableModel::headerData(int section, Qt::Orientation orientation,
                                        int role) const
 {
   if (role != Qt::DisplayRole)
-    return QVariant();
+    return {};
 
   if (orientation == Qt::Horizontal) {
     switch (Column(section)) {
@@ -141,7 +141,7 @@ QVariant OrbitalTableModel::headerData(int section, Qt::Orientation orientation,
         return tr("Spin");
       default:
       case COUNT:
-        return QVariant();
+        return {};
     }
   } else
     return QString::number(section + 1);
@@ -156,7 +156,7 @@ QModelIndex OrbitalTableModel::HOMO() const
     if (desc == homoStr || desc == QString::fromUtf8("α-") + homoStr)
       return index(i, 0);
   }
-  return QModelIndex();
+  return {};
 }
 
 QModelIndex OrbitalTableModel::LUMO() const
@@ -168,7 +168,7 @@ QModelIndex OrbitalTableModel::LUMO() const
     if (desc == lumoStr || desc == QString::fromUtf8("α-") + lumoStr)
       return index(i, 0);
   }
-  return QModelIndex();
+  return {};
 }
 
 int OrbitalTableModel::orbitalIndex(int row) const
