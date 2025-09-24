@@ -544,7 +544,7 @@ Matrix3 applyKabsch(std::vector<Vector3> templatePoints,
     MP.row(i) = moleculePoints[i];
   }
   Matrix3 H = TP.transpose() * MP;
-  Eigen::JacobiSVD<MatrixX> svd(H, Eigen::ComputeFullU | Eigen::ComputeFullV);
+  Eigen::JacobiSVD<MatrixX, Eigen::ComputeFullU | Eigen::ComputeFullV> svd(H);
   MatrixX U = svd.matrixU();
   Matrix3 V = svd.matrixV();
   Matrix3 Idd = Matrix3::Identity();
