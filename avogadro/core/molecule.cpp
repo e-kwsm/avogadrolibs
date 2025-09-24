@@ -1045,8 +1045,8 @@ std::pair<Vector3, Vector3> Molecule::bestFitPlane(const Array<Vector3>& pos)
   coord.colwise() -= centroid;
 
   // we only need the left-singular matrix
-  Eigen::JacobiSVD<MatrixX> svd(coord,
-                                Eigen::ComputeThinU | Eigen::ComputeThinV);
+  Eigen::JacobiSVD<MatrixX, Eigen::ComputeThinU | Eigen::ComputeThinV> svd(
+    coord);
   Vector3 plane_normal = svd.matrixU().rightCols<1>();
 
   return std::make_pair(centroid, plane_normal);
