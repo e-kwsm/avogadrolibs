@@ -123,24 +123,21 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
 
       auto atomName = buffer.substr(12, 4);
 
+      auto tmp = lexicalCast<Real>(
+        {
+          buffer.substr(30, 8),
+          buffer.substr(38, 8),
+          buffer.substr(46, 8),
+        },
+        ok);
+      if (!ok) {
+        appendError("Failed to parse coordinate: " + buffer.substr(46, 8));
+        return false;
+      }
       Vector3 pos; // Coordinates
-      pos.x() = lexicalCast<Real>(buffer.substr(30, 8), ok);
-      if (!ok) {
-        appendError("Failed to parse x coordinate: " + buffer.substr(30, 8));
-        return false;
-      }
-
-      pos.y() = lexicalCast<Real>(buffer.substr(38, 8), ok);
-      if (!ok) {
-        appendError("Failed to parse y coordinate: " + buffer.substr(38, 8));
-        return false;
-      }
-
-      pos.z() = lexicalCast<Real>(buffer.substr(46, 8), ok);
-      if (!ok) {
-        appendError("Failed to parse z coordinate: " + buffer.substr(46, 8));
-        return false;
-      }
+      pos.x() = tmp[0];
+      pos.y() = tmp[1];
+      pos.z() = tmp[2];
 
       auto altLoc = buffer.substr(16, 1);
       if (altLoc == " ")
