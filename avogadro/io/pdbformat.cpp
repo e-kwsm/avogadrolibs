@@ -109,14 +109,10 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
       if (residueId != currentResidueId) {
         currentResidueId = residueId;
 
-        auto residueName = lexicalCast<string>(buffer.substr(17, 3), ok);
-        if (!ok) {
-          appendError("Failed to parse residue name: " + buffer.substr(17, 3));
-          return false;
-        }
+        auto residueName = buffer.substr(17, 3);
 
-        char chainId = lexicalCast<char>(buffer.substr(21, 1), ok);
-        if (!ok) {
+        char chainId = buffer.at(21);
+        if (chainId == ' ') {
           chainId = 'A'; // it's a non-standard "PDB"-like file
         }
 
@@ -125,11 +121,7 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
           r->setHeterogen(true);
       }
 
-      auto atomName = lexicalCast<string>(buffer.substr(12, 4), ok);
-      if (!ok) {
-        appendError("Failed to parse atom name: " + buffer.substr(12, 4));
-        return false;
-      }
+      auto atomName = buffer.substr(12, 4);
 
       Vector3 pos; // Coordinates
       pos.x() = lexicalCast<Real>(buffer.substr(30, 8), ok);
@@ -150,7 +142,9 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
         return false;
       }
 
-      auto altLoc = lexicalCast<string>(buffer.substr(16, 1), ok);
+      auto altLoc = buffer.substr(16, 1);
+      if (altLoc == " ")
+        altLoc = "";
 
       string element; // Element symbol, right justified
       unsigned char atomicNum = 255;
