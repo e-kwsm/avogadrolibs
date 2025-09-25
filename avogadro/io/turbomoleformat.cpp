@@ -104,7 +104,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                tokens.end()) {
         fractionalCoords = true;
         coordConversion = 1.0; // we may not know the lattice constants yet
-      } else if (tokens.size() > 1u && tokens[1][0] != '#') {
+      } else if (tokens.size() > 1u) {
         std::cerr << "Ignore unknown trailing token and assume bohr: " << buffer
                   << '\n';
       }
@@ -184,7 +184,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
         }
       }
-    } else if (tokens[0][0] != '#') {
+    } else {
       std::cerr << "Ignore unknown token: " << buffer << '\n';
     }
 
