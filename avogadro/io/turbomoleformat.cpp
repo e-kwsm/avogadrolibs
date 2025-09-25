@@ -60,6 +60,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
   // we loop through each line until we hit $end or EOF
   string buffer;
   getline(inStream, buffer);
+
   while (inStream.good() && !buffer.empty()) {
     std::vector<string> tokens = split(rstrip(buffer, '#'), ' ');
     if (tokens.empty()) { // "# comment line"
@@ -103,7 +104,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                tokens.end()) {
         fractionalCoords = true;
         coordConversion = 1.0; // we may not know the lattice constants yet
-      } else if (tokens.size() > 1u && tokens[1][0] != '#') {
+      } else if (tokens.size() > 1u) {
         std::cerr << "Ignore unknown trailing token and assume bohr: " << buffer
                   << '\n';
       }
@@ -225,7 +226,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
-      for (int line = 0; line < 3; ++line) {
+      for (unsigned line = 0; line < 3; ++line) {
         getline(inStream, buffer);
         tokens = split(rstrip(buffer, '#'), ' ');
         if (tokens.size() < 3)
@@ -252,7 +253,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           return false;
         }
       }
-    } else if (tokens[0][0] != '#') {
+    } else {
       std::cerr << "Ignore unknown token: " << buffer << '\n';
     }
 
