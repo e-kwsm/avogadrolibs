@@ -117,12 +117,15 @@ bool XyzFormat::read(std::istream& inStream, Core::Molecule& mol)
     std::cout << "Lattice size: " << tokens.size() << std::endl;
 
     if (tokens.size() >= 9) {
-      Vector3 v1(lexicalCast<double>(tokens[0]), lexicalCast<double>(tokens[1]),
-                 lexicalCast<double>(tokens[2]));
-      Vector3 v2(lexicalCast<double>(tokens[3]), lexicalCast<double>(tokens[4]),
-                 lexicalCast<double>(tokens[5]));
-      Vector3 v3(lexicalCast<double>(tokens[6]), lexicalCast<double>(tokens[7]),
-                 lexicalCast<double>(tokens[8]));
+      bool ok;
+      auto tmp = lexicalCast<double>(
+        std::vector<std::string>{ tokens.begin(), tokens.begin() + 9 }, ok);
+      if (!ok) {
+        return false;
+      }
+      Vector3 v1(tmp[0], tmp[1], tmp[2]);
+      Vector3 v2(tmp[3], tmp[4], tmp[5]);
+      Vector3 v3(tmp[6], tmp[7], tmp[8]);
 
       auto* cell = new Core::UnitCell(v1, v2, v3);
       std::cout << " Lattice: " << cell->aVector() << " " << cell->bVector()

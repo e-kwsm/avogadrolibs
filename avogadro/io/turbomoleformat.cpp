@@ -98,13 +98,25 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         if (isalpha(tokens[3][0])) {
           tokens[3][0] = toupper(tokens[3][0]);
           atomicNum = Elements::atomicNumberFromSymbol(tokens[3]);
-        } else
+        } else {
+          bool ok;
           atomicNum =
-            static_cast<unsigned char>(lexicalCast<short int>(tokens[3]));
+            static_cast<unsigned char>(lexicalCast<short int>(tokens[3], ok));
+          if (!ok) {
+            appendError("Failed to parse this line following $coord: " +
+                        buffer);
+            return false;
+          }
+        }
 
-        Vector3 pos(lexicalCast<double>(tokens[0]),
-                    lexicalCast<double>(tokens[1]),
-                    lexicalCast<double>(tokens[2]));
+        bool ok;
+        const auto tmp = lexicalCast<double>(
+          std::vector<std::string>{ tokens.begin(), tokens.begin() + 3 }, ok);
+        if (!ok) {
+          appendError("Failed to parse this line following $coord: " + buffer);
+          return false;
+        }
+        Vector3 pos(tmp[0], tmp[1], tmp[2]);
 
         Atom newAtom = mol.addAtom(atomicNum);
         newAtom.setPosition3d(pos * coordConversion);
@@ -125,12 +137,18 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         appendError("Not enough tokens in this line: " + buffer);
         return false;
       }
-      a = lexicalCast<double>(tokens[0]) * cellConversion;
-      b = lexicalCast<double>(tokens[1]) * cellConversion;
-      c = lexicalCast<double>(tokens[2]) * cellConversion;
-      alpha = lexicalCast<double>(tokens[3]) * DEG_TO_RAD;
-      beta = lexicalCast<double>(tokens[4]) * DEG_TO_RAD;
-      gamma = lexicalCast<double>(tokens[5]) * DEG_TO_RAD;
+      bool ok;
+      auto tmp = lexicalCast<double>(
+        std::vector<std::string>{ tokens.begin(), tokens.begin() + 6 }, ok);
+      if (!ok) {
+        return false;
+      }
+      a = tmp[0] * cellConversion;
+      b = tmp[1] * cellConversion;
+      c = tmp[2] * cellConversion;
+      alpha = tmp[3] * DEG_TO_RAD;
+      beta = tmp[4] * DEG_TO_RAD;
+      gamma = tmp[5] * DEG_TO_RAD;
 
     } else if (tokens[0] == "$lattice") {
       hasLattice = true;
@@ -144,18 +162,24 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         if (tokens.size() < 3)
           break;
 
+        bool ok;
+        auto tmp = lexicalCast<double>(
+          std::vector<std::string>{ tokens.begin(), tokens.begin() + 3 }, ok);
+        if (!ok) {
+          return false;
+        }
         if (line == 0) {
-          v1.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v1.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v1.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          v1.x() = tmp[0] * latticeConversion;
+          v1.y() = tmp[1] * latticeConversion;
+          v1.z() = tmp[2] * latticeConversion;
         } else if (line == 1) {
-          v2.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v2.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v2.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          v2.x() = tmp[0] * latticeConversion;
+          v2.y() = tmp[1] * latticeConversion;
+          v2.z() = tmp[2] * latticeConversion;
         } else if (line == 2) {
-          v3.x() = lexicalCast<double>(tokens[0]) * latticeConversion;
-          v3.y() = lexicalCast<double>(tokens[1]) * latticeConversion;
-          v3.z() = lexicalCast<double>(tokens[2]) * latticeConversion;
+          v3.x() = tmp[0] * latticeConversion;
+          v3.y() = tmp[1] * latticeConversion;
+          v3.z() = tmp[2] * latticeConversion;
         }
       }
     } else if (tokens[0][0] != '#') {

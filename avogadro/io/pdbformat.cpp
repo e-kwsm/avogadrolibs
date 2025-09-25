@@ -69,12 +69,26 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
     else if (startsWith(buffer, "CRYST1") && buffer.length() >= 55) {
       // PDB reports in degrees and Angstroms
       //   Avogadro uses radians internally
-      Real a = lexicalCast<Real>(buffer.substr(6, 9), ok);
-      Real b = lexicalCast<Real>(buffer.substr(15, 9), ok);
-      Real c = lexicalCast<Real>(buffer.substr(24, 9), ok);
-      Real alpha = lexicalCast<Real>(buffer.substr(33, 7), ok) * DEG_TO_RAD;
-      Real beta = lexicalCast<Real>(buffer.substr(40, 7), ok) * DEG_TO_RAD;
-      Real gamma = lexicalCast<Real>(buffer.substr(47, 8), ok) * DEG_TO_RAD;
+      const auto tmp = lexicalCast<Real>(
+        {
+          buffer.substr(6, 9),
+          buffer.substr(15, 9),
+          buffer.substr(24, 9),
+          buffer.substr(33, 7),
+          buffer.substr(40, 7),
+          buffer.substr(47, 8),
+        },
+        ok);
+      if (!ok) {
+        appendError(buffer);
+        return false;
+      }
+      auto a = tmp[0];
+      auto b = tmp[1];
+      auto c = tmp[2];
+      auto alpha = tmp[3] * DEG_TO_RAD;
+      auto beta = tmp[4] * DEG_TO_RAD;
+      auto gamma = tmp[5] * DEG_TO_RAD;
 
       auto* cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
       if (!cell->isRegular()) {
@@ -116,24 +130,21 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
 
       auto atomName = buffer.substr(12, 4);
 
+      auto tmp = lexicalCast<Real>(
+        {
+          buffer.substr(30, 8),
+          buffer.substr(38, 8),
+          buffer.substr(46, 8),
+        },
+        ok);
+      if (!ok) {
+        appendError("Failed to parse coordinate: " + buffer.substr(46, 8));
+        return false;
+      }
       Vector3 pos; // Coordinates
-      pos.x() = lexicalCast<Real>(buffer.substr(30, 8), ok);
-      if (!ok) {
-        appendError("Failed to parse x coordinate: " + buffer.substr(30, 8));
-        return false;
-      }
-
-      pos.y() = lexicalCast<Real>(buffer.substr(38, 8), ok);
-      if (!ok) {
-        appendError("Failed to parse y coordinate: " + buffer.substr(38, 8));
-        return false;
-      }
-
-      pos.z() = lexicalCast<Real>(buffer.substr(46, 8), ok);
-      if (!ok) {
-        appendError("Failed to parse z coordinate: " + buffer.substr(46, 8));
-        return false;
-      }
+      pos.x() = tmp[0];
+      pos.y() = tmp[1];
+      pos.z() = tmp[2];
 
       auto altLoc = buffer.substr(16, 1);
       if (altLoc == " ")

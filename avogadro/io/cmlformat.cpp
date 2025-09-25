@@ -201,9 +201,13 @@ public:
           xml_attribute z3 = node.attribute("z3");
           if (y3 && z3) {
             // It looks like we have a valid 3D position.
-            Vector3 position(lexicalCast<double>(x3Att.value()),
-                             lexicalCast<double>(y3.value()),
-                             lexicalCast<double>(z3.value()));
+            bool ok;
+            auto tmp = lexicalCast<double>(
+              { x3Att.value(), y3.value(), z3.value() }, ok);
+            if (!ok) {
+              return false;
+            }
+            Vector3 position(tmp[0], tmp[1], tmp[2]);
             atom.setPosition3d(position);
           } else {
             // Corrupt 3D position supplied for atom.
@@ -237,8 +241,13 @@ public:
         if (x2Att) {
           xml_attribute y2 = node.attribute("y2");
           if (y2) {
-            Vector2 position(lexicalCast<double>(x2Att.value()),
-                             lexicalCast<double>(y2.value()));
+            bool ok;
+            auto tmp = lexicalCast<double>(
+              std::vector<std::string>{ x2Att.value(), y2.value() }, ok);
+            if (!ok) {
+              return false;
+            }
+            Vector2 position(tmp[0], tmp[1]);
             atom.setPosition2d(position);
           } else {
             // Corrupt 2D position supplied for atom.
@@ -252,7 +261,12 @@ public:
         /* Formal Charge Attribute Check */
         xml_attribute formalChargeAtt = node.attribute("formalCharge");
         if (formalChargeAtt) {
-          auto formalCharge = lexicalCast<signed int>(formalChargeAtt.value());
+          bool ok;
+          auto formalCharge =
+            lexicalCast<signed int>(formalChargeAtt.value(), ok);
+          if (!ok) {
+            return false;
+          }
           atom.setFormalCharge(formalCharge);
         }
       }

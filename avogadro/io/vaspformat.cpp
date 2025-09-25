@@ -80,9 +80,13 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
       return false;
     }
     // UnitCell expects a matrix of this form
-    cellMat(0, i) = lexicalCast<double>(stringSplit.at(0)) * scalingFactor;
-    cellMat(1, i) = lexicalCast<double>(stringSplit.at(1)) * scalingFactor;
-    cellMat(2, i) = lexicalCast<double>(stringSplit.at(2)) * scalingFactor;
+    auto tmp = lexicalCast<double>(stringSplit, ok);
+    if (!ok) {
+      return false;
+    }
+    cellMat(0, i) = tmp[0] * scalingFactor;
+    cellMat(1, i) = tmp[1] * scalingFactor;
+    cellMat(2, i) = tmp[2] * scalingFactor;
   }
 
   // Sometimes, atomic symbols go here.
@@ -129,7 +133,10 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   stringSplit = split(line, ' ');
   std::vector<unsigned int> atomCounts;
   for (auto& i : stringSplit) {
-    auto atomCount = lexicalCast<unsigned int>(i);
+    auto atomCount = lexicalCast<unsigned int>(i, ok);
+    if (!ok) {
+      return false;
+    }
     atomCounts.push_back(atomCount);
   }
 
@@ -180,9 +187,14 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
         appendError("Error reading atomic coordinates in POSCAR");
         return false;
       }
-      Vector3 tmpAtom(lexicalCast<double>(stringSplit.at(0)),
-                      lexicalCast<double>(stringSplit.at(1)),
-                      lexicalCast<double>(stringSplit.at(2)));
+      auto tmp =
+        lexicalCast<double>(std::vector<std::string>{ stringSplit.begin(),
+                                                      stringSplit.begin() + 3 },
+                            ok);
+      if (!ok) {
+        return false;
+      }
+      Vector3 tmpAtom(tmp[0], tmp[1], tmp[2]);
       atoms.push_back(tmpAtom);
     }
   }
@@ -350,29 +362,23 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
         for (int i = 0; i < 3; ++i) {
           getline(inStream, buffer);
           stringSplit = split(buffer, ' ');
+          bool ok;
+          auto tmp = lexicalCast<double>(
+            { stringSplit.at(3).substr(0, stringSplit.at(3).size() - 1),
+              stringSplit.at(4).substr(0, stringSplit.at(4).size() - 1),
+              stringSplit.at(5).substr(0, stringSplit.at(5).size() - 1) },
+            ok);
+          if (!ok) {
+            return false;
+          }
           if (stringSplit[0] == "A1") {
-            ax1 = Vector3(lexicalCast<double>(stringSplit.at(3).substr(
-                            0, stringSplit.at(3).size() - 1)),
-                          lexicalCast<double>(stringSplit.at(4).substr(
-                            0, stringSplit.at(4).size() - 1)),
-                          lexicalCast<double>(stringSplit.at(5).substr(
-                            0, stringSplit.at(5).size() - 1)));
+            ax1 = Vector3(tmp[0], tmp[1], tmp[2]);
             ax1Set = true;
           } else if (stringSplit[0] == "A2") {
-            ax2 = Vector3(lexicalCast<double>(stringSplit.at(3).substr(
-                            0, stringSplit.at(3).size() - 1)),
-                          lexicalCast<double>(stringSplit.at(4).substr(
-                            0, stringSplit.at(4).size() - 1)),
-                          lexicalCast<double>(stringSplit.at(5).substr(
-                            0, stringSplit.at(5).size() - 1)));
+            ax2 = Vector3(tmp[0], tmp[1], tmp[2]);
             ax2Set = true;
           } else if (stringSplit[0] == "A3") {
-            ax3 = Vector3(lexicalCast<double>(stringSplit.at(3).substr(
-                            0, stringSplit.at(3).size() - 1)),
-                          lexicalCast<double>(stringSplit.at(4).substr(
-                            0, stringSplit.at(4).size() - 1)),
-                          lexicalCast<double>(stringSplit.at(5).substr(
-                            0, stringSplit.at(5).size() - 1)));
+            ax3 = Vector3(tmp[0], tmp[1], tmp[2]);
             ax3Set = true;
           }
         }
@@ -410,9 +416,16 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
           }
           // Parsing the coordinates
           stringSplit = split(buffer, ' ');
-          Vector3 tmpAtom(lexicalCast<double>(stringSplit.at(0)),
-                          lexicalCast<double>(stringSplit.at(1)),
-                          lexicalCast<double>(stringSplit.at(2)));
+          bool ok;
+          auto tmp = lexicalCast<double>(
+            std::vector<std::string>{ stringSplit.begin(),
+                                      stringSplit.begin() + 3 },
+            ok);
+          if (!ok) {
+            return false;
+          }
+          Vector3 tmpAtom(tmp[0], tmp[1], tmp[2]);
+
           if (coordSet == 0) {
             AtomTypeMap::const_iterator it;
             atomTypes.insert(
