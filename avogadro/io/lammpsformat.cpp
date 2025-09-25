@@ -56,7 +56,12 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
   getline(inStream, buffer);
   if (!buffer.empty()) {
-    timestep = lexicalCast<size_t>(buffer);
+    bool ok;
+    timestep = lexicalCast<size_t>(buffer, ok);
+    if (!ok) {
+      appendError("Failed to parse timestep: " + buffer);
+      return false;
+    }
     mol.setTimeStep(timestep, 0);
   }
 
@@ -67,8 +72,14 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     return false;
   }
   getline(inStream, buffer);
-  if (!buffer.empty())
-    numAtoms = lexicalCast<size_t>(buffer);
+  if (!buffer.empty()) {
+    bool ok;
+    numAtoms = lexicalCast<size_t>(buffer, ok);
+    if (!ok) {
+      appendError("Error");
+      return false;
+    }
+  }
 
   // If unit cell is triclinic, tilt factors are needed to define the supercell
   getline(inStream, buffer);
@@ -76,6 +87,9 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     // Read x_min, x_max, tiltfactor_xy
     getline(inStream, buffer);
     std::vector<string> box_bounds_x(split(buffer, ' '));
+    bool ok;
+    auto tmp =
+      lexicalCast<double>(box_bounds_x.cbegin(), box_bounds_x.cend(), ok);
     x_min = lexicalCast<double>(box_bounds_x.at(0));
     x_max = lexicalCast<double>(box_bounds_x.at(1));
     tilt_xy = lexicalCast<double>(box_bounds_x.at(2));

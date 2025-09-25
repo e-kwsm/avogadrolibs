@@ -69,12 +69,23 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
     else if (startsWith(buffer, "CRYST1") && buffer.length() >= 55) {
       // PDB reports in degrees and Angstroms
       //   Avogadro uses radians internally
+      bool tmp = true;
       Real a = lexicalCast<Real>(buffer.substr(6, 9), ok);
+      tmp &= ok;
       Real b = lexicalCast<Real>(buffer.substr(15, 9), ok);
+      tmp &= ok;
       Real c = lexicalCast<Real>(buffer.substr(24, 9), ok);
+      tmp &= ok;
       Real alpha = lexicalCast<Real>(buffer.substr(33, 7), ok) * DEG_TO_RAD;
+      tmp &= ok;
       Real beta = lexicalCast<Real>(buffer.substr(40, 7), ok) * DEG_TO_RAD;
+      tmp &= ok;
       Real gamma = lexicalCast<Real>(buffer.substr(47, 8), ok) * DEG_TO_RAD;
+      tmp &= ok;
+      if (!tmp) {
+        appendError("Error reading CRYST1");
+        return false;
+      }
 
       auto* cell = new Core::UnitCell(a, b, c, alpha, beta, gamma);
       if (!cell->isRegular()) {
