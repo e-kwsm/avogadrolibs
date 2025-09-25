@@ -157,6 +157,27 @@ std::optional<std::vector<T>> lexicalCast(Iterator first, Iterator last)
   return values;
 }
 
+/**
+ * @brief Cast the inputString to the specified type.
+ * @param inputStrings Strings to cast to the specified type.
+ * @param ok Set to true on success for all the elements, and false if one of
+ * the strings could not be converted to the specified type.
+ * @note If cast failed, the remaining elements are discarded.
+ */
+template <typename T>
+std::vector<T> lexicalCast(const std::vector<std::string>& inputStrings, bool& ok)
+{
+  std::vector<T> values;
+  for (const auto& v : inputStrings) {
+    auto value = lexicalCast<T>(v, ok);
+    if (ok)
+      values.push_back(value);
+    else
+      break;
+  }
+  return values;
+}
+
 } // namespace Avogadro::Core
 
 #endif // AVOGADRO_CORE_UTILITIES_H
