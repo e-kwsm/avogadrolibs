@@ -129,6 +129,42 @@ T lexicalCast(const std::string& inputString, bool& ok)
   return value;
 }
 
+/**
+ * @brief Cast the range to the specified type.
+ * @param first Start of the range
+ * @param last End of the range
+ * @param ok Set to true on success for ALL the elements, and false if one of
+ * the strings could not be converted to the specified type.
+ * @note If cast failed, the remaining elements are discarded.
+ */
+template <typename T, typename Iterator>
+std::vector<T> lexicalCast(Iterator first, Iterator last, bool& ok)
+{
+  std::vector<T> values;
+  for (; first != last; ++first) {
+    auto value = lexicalCast<T>(*first, ok);
+    if (ok)
+      values.push_back(value);
+    else
+      break;
+  }
+  return values;
+}
+
+/**
+ * @brief Cast the inputStrings to the specified type.
+ * @param inputStrings Strings to cast to the specified type.
+ * @param ok Set to true on success for ALL the elements, and false if one of
+ * the strings could not be converted to the specified type.
+ * @note If cast failed, the remaining elements are discarded.
+ */
+template <typename T>
+std::vector<T> lexicalCast(const std::vector<std::string>& inputStrings,
+                           bool& ok)
+{
+  return lexicalCast<T>(inputStrings.cbegin(), inputStrings.cend(), ok);
+}
+
 } // namespace Avogadro::Core
 
 #endif // AVOGADRO_CORE_UTILITIES_H

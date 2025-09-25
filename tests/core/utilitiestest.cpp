@@ -56,6 +56,26 @@ TEST(UtilitiesTest, lexicalCastCheck)
   EXPECT_EQ(ok, false);
 }
 
+TEST(UtilitiesTest, lexicalCastVector)
+{
+  {
+    const std::vector<std::string> strings{ "8.314", "6.02e23" };
+    bool ok = false;
+    const auto values = lexicalCast<double>(strings, ok);
+    EXPECT_TRUE(ok);
+    EXPECT_EQ(values.size(), 2);
+  }
+
+  {
+    // only the first element is converted as cast of "XYZ" fails
+    const std::vector<std::string> strings{ "96485", "XYZ", "137" };
+    bool ok = false;
+    const auto values = lexicalCast<int>(strings, ok);
+    EXPECT_FALSE(ok);
+    EXPECT_EQ(values.size(), 1);
+  }
+}
+
 TEST(UtilitiesTest, contains)
 {
   EXPECT_TRUE(contains("hasFoo", "has"));
