@@ -57,7 +57,12 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
   getline(inStream, buffer);
   if (!buffer.empty()) {
-    timestep = lexicalCast<size_t>(buffer).value_or(0);
+    bool ok;
+    timestep = lexicalCast<size_t>(buffer, ok);
+    if (!ok) {
+      appendError("Failed to parse timestep: " + buffer);
+      return false;
+    }
     mol.setTimeStep(timestep, 0);
   }
 
@@ -69,10 +74,10 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
   getline(inStream, buffer);
   if (!buffer.empty()) {
-    if (auto n = lexicalCast<size_t>(buffer)) {
-      numAtoms = *n;
-    } else {
-      appendError("Error to read number of atoms");
+    bool ok;
+    numAtoms = lexicalCast<size_t>(buffer, ok);
+    if (!ok) {
+      appendError("Error");
       return false;
     }
   }
@@ -83,21 +88,24 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     // Read x_min, x_max, tiltfactor_xy
     getline(inStream, buffer);
     std::vector<string> box_bounds_x(split(buffer, ' '));
-    x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-    x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
-    tilt_xy = lexicalCast<double>(box_bounds_x.at(2)).value_or(0.0);
+    bool ok;
+    auto tmp =
+      lexicalCast<double>(box_bounds_x.cbegin(), box_bounds_x.cend(), ok);
+    x_min = lexicalCast<double>(box_bounds_x.at(0));
+    x_max = lexicalCast<double>(box_bounds_x.at(1));
+    tilt_xy = lexicalCast<double>(box_bounds_x.at(2));
     // Read y_min, y_max, tiltfactor_xz
     getline(inStream, buffer);
     std::vector<string> box_bounds_y(split(buffer, ' '));
-    y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-    y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
-    tilt_xz = lexicalCast<double>(box_bounds_y.at(2)).value_or(0.0);
+    y_min = lexicalCast<double>(box_bounds_y.at(0));
+    y_max = lexicalCast<double>(box_bounds_y.at(1));
+    tilt_xz = lexicalCast<double>(box_bounds_y.at(2));
     getline(inStream, buffer);
     // Read z_min, z_max, tiltfactor_yz
     std::vector<string> box_bounds_z(split(buffer, ' '));
-    z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-    z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
-    tilt_yz = lexicalCast<double>(box_bounds_z.at(2)).value_or(0.0);
+    z_min = lexicalCast<double>(box_bounds_z.at(0));
+    z_max = lexicalCast<double>(box_bounds_z.at(1));
+    tilt_yz = lexicalCast<double>(box_bounds_z.at(2));
 
     x_min -= std::min({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
     x_max -= std::max({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
@@ -110,18 +118,18 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     // Read x_min, x_max
     getline(inStream, buffer);
     std::vector<string> box_bounds_x(split(buffer, ' '));
-    x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-    x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
+    x_min = lexicalCast<double>(box_bounds_x.at(0));
+    x_max = lexicalCast<double>(box_bounds_x.at(1));
     // Read y_min, y_max
     getline(inStream, buffer);
     std::vector<string> box_bounds_y(split(buffer, ' '));
-    y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-    y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
+    y_min = lexicalCast<double>(box_bounds_y.at(0));
+    y_max = lexicalCast<double>(box_bounds_y.at(1));
     // Read z_min, z_max
     getline(inStream, buffer);
     std::vector<string> box_bounds_z(split(buffer, ' '));
-    z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-    z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
+    z_min = lexicalCast<double>(box_bounds_z.at(0));
+    z_max = lexicalCast<double>(box_bounds_z.at(1));
   }
 
   typedef map<string, unsigned char> AtomTypeMap;
@@ -176,24 +184,20 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
       return false;
     }
 
-    unsigned char atomicNum =
-      lexicalCast<short int>(tokens[type_idx - 2]).value_or(0);
+    unsigned char atomicNum(0);
+    atomicNum = lexicalCast<short int>(tokens[type_idx - 2]);
 
     // If parsed coordinates are fractional, the corresponding unscaling is
     // done. Else the positions are assigned as parsed.
-    Vector3 pos(
-      (1 - scale_x) * lexicalCast<double>(tokens[x_idx - 2]).value_or(0.0) +
-        scale_x *
-          (x_min + (x_max - x_min) *
-                     lexicalCast<double>(tokens[x_idx - 2]).value_or(0.0)),
-      (1 - scale_y) * lexicalCast<double>(tokens[y_idx - 2]).value_or(0.0) +
-        scale_y *
-          (y_min + (y_max - y_min) *
-                     lexicalCast<double>(tokens[y_idx - 2]).value_or(0.0)),
-      (1 - scale_z) * lexicalCast<double>(tokens[z_idx - 2]).value_or(0.0) +
-        scale_z *
-          (z_min + (z_max - z_min) *
-                     lexicalCast<double>(tokens[z_idx - 2]).value_or(0.0)));
+    Vector3 pos((1 - scale_x) * lexicalCast<double>(tokens[x_idx - 2]) +
+                  scale_x * (x_min + (x_max - x_min) *
+                                       lexicalCast<double>(tokens[x_idx - 2])),
+                (1 - scale_y) * lexicalCast<double>(tokens[y_idx - 2]) +
+                  scale_y * (y_min + (y_max - y_min) *
+                                       lexicalCast<double>(tokens[y_idx - 2])),
+                (1 - scale_z) * lexicalCast<double>(tokens[z_idx - 2]) +
+                  scale_z * (z_min + (z_max - z_min) *
+                                       lexicalCast<double>(tokens[z_idx - 2])));
 
     auto it = atomTypes.find(to_string(atomicNum));
     if (it == atomTypes.end()) {
@@ -263,7 +267,7 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     getline(inStream, buffer);
     if (!buffer.empty()) {
-      timestep = lexicalCast<size_t>(buffer).value_or(0);
+      timestep = lexicalCast<size_t>(buffer);
       mol.setTimeStep(timestep, coordSet);
     }
 
@@ -275,7 +279,7 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     }
     getline(inStream, buffer);
     if (!buffer.empty())
-      numAtoms2 = lexicalCast<size_t>(buffer).value_or(0);
+      numAtoms2 = lexicalCast<size_t>(buffer);
 
     if (numAtoms2 != numAtoms) {
       appendError("Number of atoms isn't constant in the trajectory.");
@@ -288,21 +292,21 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
       // Read x_min, x_max, tiltfactor_xy
       getline(inStream, buffer);
       std::vector<string> box_bounds_x(split(buffer, ' '));
-      x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-      x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
-      tilt_xy = lexicalCast<double>(box_bounds_x.at(2)).value_or(0.0);
+      x_min = lexicalCast<double>(box_bounds_x.at(0));
+      x_max = lexicalCast<double>(box_bounds_x.at(1));
+      tilt_xy = lexicalCast<double>(box_bounds_x.at(2));
       // Read y_min, y_max, tiltfactor_xz
       getline(inStream, buffer);
       std::vector<string> box_bounds_y(split(buffer, ' '));
-      y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-      y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
-      tilt_xz = lexicalCast<double>(box_bounds_y.at(2)).value_or(0.0);
+      y_min = lexicalCast<double>(box_bounds_y.at(0));
+      y_max = lexicalCast<double>(box_bounds_y.at(1));
+      tilt_xz = lexicalCast<double>(box_bounds_y.at(2));
       getline(inStream, buffer);
       // Read z_min, z_max, tiltfactor_yz
       std::vector<string> box_bounds_z(split(buffer, ' '));
-      z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-      z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
-      tilt_yz = lexicalCast<double>(box_bounds_z.at(2)).value_or(0.0);
+      z_min = lexicalCast<double>(box_bounds_z.at(0));
+      z_max = lexicalCast<double>(box_bounds_z.at(1));
+      tilt_yz = lexicalCast<double>(box_bounds_z.at(2));
 
       x_min -= std::min({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
       x_max -= std::max({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
@@ -315,18 +319,18 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
       // Read x_min, x_max
       getline(inStream, buffer);
       std::vector<string> box_bounds_x(split(buffer, ' '));
-      x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-      x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
+      x_min = lexicalCast<double>(box_bounds_x.at(0));
+      x_max = lexicalCast<double>(box_bounds_x.at(1));
       // Read y_min, y_max
       getline(inStream, buffer);
       std::vector<string> box_bounds_y(split(buffer, ' '));
-      y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-      y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
+      y_min = lexicalCast<double>(box_bounds_y.at(0));
+      y_max = lexicalCast<double>(box_bounds_y.at(1));
       // Read z_min, z_max
       getline(inStream, buffer);
       std::vector<string> box_bounds_z(split(buffer, ' '));
-      z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-      z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
+      z_min = lexicalCast<double>(box_bounds_z.at(0));
+      z_max = lexicalCast<double>(box_bounds_z.at(1));
     }
 
     // x,y,z stand for the coordinate axes
@@ -380,18 +384,15 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
       // If parsed coordinates are fractional, the corresponding unscaling is
       // done. Else the positions are assigned as parsed.
       Vector3 pos(
-        (1 - scale_x) * lexicalCast<double>(tokens[x_idx - 2]).value_or(0.0) +
+        (1 - scale_x) * lexicalCast<double>(tokens[x_idx - 2]) +
           scale_x *
-            (x_min + (x_max - x_min) *
-                       lexicalCast<double>(tokens[x_idx - 2]).value_or(0.0)),
-        (1 - scale_y) * lexicalCast<double>(tokens[y_idx - 2]).value_or(0.0) +
+            (x_min + (x_max - x_min) * lexicalCast<double>(tokens[x_idx - 2])),
+        (1 - scale_y) * lexicalCast<double>(tokens[y_idx - 2]) +
           scale_y *
-            (y_min + (y_max - y_min) *
-                       lexicalCast<double>(tokens[y_idx - 2]).value_or(0.0)),
-        (1 - scale_z) * lexicalCast<double>(tokens[z_idx - 2]).value_or(0.0) +
+            (y_min + (y_max - y_min) * lexicalCast<double>(tokens[y_idx - 2])),
+        (1 - scale_z) * lexicalCast<double>(tokens[z_idx - 2]) +
           scale_z *
-            (z_min + (z_max - z_min) *
-                       lexicalCast<double>(tokens[z_idx - 2]).value_or(0.0)));
+            (z_min + (z_max - z_min) * lexicalCast<double>(tokens[z_idx - 2])));
       positions.push_back(pos);
     }
 

@@ -61,9 +61,9 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   // Next line is scaling factor
   getline(inStream, line);
-  const auto scalingFactor = lexicalCast<double>(line);
+  auto scalingFactor = lexicalCast<double>(line, ok);
 
-  if (!scalingFactor) {
+  if (!ok) {
     appendError("Error: Could not convert scaling factor to double in POSCAR");
     return false;
   }
@@ -80,15 +80,14 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
       return false;
     }
     // UnitCell expects a matrix of this form
-    if (auto tmp =
-          lexicalCast<double>(stringSplit.begin(), stringSplit.end())) {
-      cellMat(0, i) = tmp->at(0) * *scalingFactor;
-      cellMat(1, i) = tmp->at(1) * *scalingFactor;
-      cellMat(2, i) = tmp->at(2) * *scalingFactor;
-    } else {
-      appendError("Error reading a lattice vector");
+    auto tmp = lexicalCast<double>(stringSplit, ok);
+    if (!ok) {
+      appendError("Error reading a lattice vector: " + line);
       return false;
     }
+    cellMat(0, i) = tmp[0] * scalingFactor;
+    cellMat(1, i) = tmp[1] * scalingFactor;
+    cellMat(2, i) = tmp[2] * scalingFactor;
   }
 
   // Sometimes, atomic symbols go here.
@@ -133,11 +132,8 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   stringSplit = split(line, ' ');
-  std::vector<unsigned int> atomCounts;
-  if (auto tmp =
-        lexicalCast<unsigned int>(stringSplit.begin(), stringSplit.end())) {
-    atomCounts = std::move(*tmp);
-  } else {
+  const auto atomCounts = lexicalCast<unsigned int>(stringSplit, ok);
+  if (!ok) {
     appendError("Error reading numbers of atoms: " + line);
     return false;
   }
@@ -189,13 +185,14 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
         appendError("Error reading atomic coordinates in POSCAR");
         return false;
       }
-      if (auto tmp =
-            lexicalCast<double>(stringSplit.begin(), stringSplit.begin() + 3)) {
-        atoms.emplace_back(tmp->at(0), tmp->at(1), tmp->at(2));
-      } else {
-        appendError("Error reading atomic coordinates in POSCAR");
+      auto tmp =
+        lexicalCast<double>(stringSplit.begin(), stringSplit.begin() + 3, ok);
+      if (!ok) {
+        appendError("Error reading atom position: " + line);
         return false;
       }
+      Vector3 tmpAtom(tmp[0], tmp[1], tmp[2]);
+      atoms.push_back(tmpAtom);
     }
   }
 
@@ -216,7 +213,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   // If they're cartesian, we just need to apply the scaling factor
   else {
     for (auto& atom : atoms)
-      atom *= *scalingFactor;
+      atom *= scalingFactor;
   }
 
   // If we made it this far, the read was a success!
@@ -362,28 +359,24 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
         for (int i = 0; i < 3; ++i) {
           getline(inStream, buffer);
           stringSplit = split(buffer, ' ');
-
-          auto x = lexicalCast<double>(
-            stringSplit.at(3).substr(0, stringSplit.at(3).size() - 1));
-          auto y = lexicalCast<double>(
-            stringSplit.at(4).substr(0, stringSplit.at(4).size() - 1));
-          auto z = lexicalCast<double>(
-            stringSplit.at(5).substr(0, stringSplit.at(5).size() - 1));
-
-          if (!x || !y || !z) {
+          bool ok;
+          auto tmp = lexicalCast<double>(
+            { stringSplit.at(3).substr(0, stringSplit.at(3).size() - 1),
+              stringSplit.at(4).substr(0, stringSplit.at(4).size() - 1),
+              stringSplit.at(5).substr(0, stringSplit.at(5).size() - 1) },
+            ok);
+          if (!ok) {
             appendError("Error reading a lattice vector");
             return false;
           }
-          Vector3 tmp(*x, *y, *z);
-
           if (stringSplit[0] == "A1") {
-            ax1 = std::move(tmp);
+            ax1 = Vector3(tmp[0], tmp[1], tmp[2]);
             ax1Set = true;
           } else if (stringSplit[0] == "A2") {
-            ax2 = std::move(tmp);
+            ax2 = Vector3(tmp[0], tmp[1], tmp[2]);
             ax2Set = true;
           } else if (stringSplit[0] == "A3") {
-            ax3 = std::move(tmp);
+            ax3 = Vector3(tmp[0], tmp[1], tmp[2]);
             ax3Set = true;
           }
         }
@@ -421,14 +414,15 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
           }
           // Parsing the coordinates
           stringSplit = split(buffer, ' ');
-          Vector3 tmpAtom;
-          if (auto tmp = lexicalCast<double>(stringSplit.begin(),
-                                             stringSplit.begin() + 3)) {
-            tmpAtom << tmp->at(0), tmp->at(1), tmp->at(2);
-          } else {
+          bool ok;
+          auto tmp = lexicalCast<double>(stringSplit.begin(),
+                                         stringSplit.begin() + 3, ok);
+          if (!ok) {
             appendError("Error reading atom position");
             return false;
           }
+          Vector3 tmpAtom(tmp[0], tmp[1], tmp[2]);
+
           if (coordSet == 0) {
             AtomTypeMap::const_iterator it;
             atomTypes.insert(
