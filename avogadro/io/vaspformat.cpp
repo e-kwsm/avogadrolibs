@@ -339,13 +339,14 @@ std::vector<std::string> PoscarFormat::mimeTypes() const
 
 bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
 {
-  std::string buffer, dashedStr, positionStr, latticeStr, directLatticeStr;
-  positionStr = " POSITION";
-  latticeStr = "  Lattice vectors:";
-  directLatticeStr = "  direct lattice vectors"; // VASP 6.x format
-  dashedStr = " -----------";
-  std::string vrhfinStr = "   VRHFIN =";
-  std::string ionsPerTypeStr = "   ions per type =";
+  std::string buffer;
+  const std::string positionStr = " POSITION";
+  const std::string latticeStr = "  Lattice vectors:";
+  const std::string directLatticeStr =
+    "  direct lattice vectors"; // VASP 6.x format
+  const std::string dashedStr = " -----------";
+  const std::string vrhfinStr = "   VRHFIN =";
+  const std::string ionsPerTypeStr = "   ions per type =";
   std::vector<std::string> stringSplit;
   int coordSet = 0, natoms = 0;
   Array<Vector3> positions;
