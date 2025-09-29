@@ -72,7 +72,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   Matrix3 cellMat;
 
   // Next comes the matrix
-  for (size_t i = 0; i < 3; ++i) {
+  for (Eigen::Index i = 0; i < 3; ++i) {
     Core::getLine(inStream, line);
     stringSplit = split(line, ' ');
     // If this is not three, then there is some kind of error in the line
