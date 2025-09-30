@@ -124,7 +124,9 @@ bool XyzFormat::read(std::istream& inStream, Core::Molecule& mol)
     // check for size
     std::cout << "Lattice size: " << tokens.size() << std::endl;
 
-    if (tokens.size() >= 9) {
+    if (tokens.size() < 9) {
+      appendError("Not enough tokens for Lattice");
+    } else {
       if (auto tmp = lexicalCast<double>(tokens.begin(), tokens.begin() + 9)) {
         Vector3 v1(tmp->at(0), tmp->at(1), tmp->at(2));
         Vector3 v2(tmp->at(3), tmp->at(4), tmp->at(5));
