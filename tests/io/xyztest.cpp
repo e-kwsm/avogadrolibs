@@ -77,6 +77,18 @@ TEST(XyzTest, readTotalEnergy)
   }
 }
 
+TEST(XyzTest, readLattice){
+  XyzFormat xyz;
+  Molecule molecule;
+  std::string str = R"(1
+Lattice="4.0 0.0 0.0 0.0 5.0 0.0 0.0 0.0 6.0"
+Pt 2.0 2.5 3.0
+)";
+  ASSERT_TRUE(xyz.readString(str, molecule));
+  const auto* const uc = molecule.unitCell();
+  ASSERT_NE(uc, nullptr);
+}
+
 // Turn off the option to perceive bonds
 TEST(XyzTest, readAtomicSymbolsNoBonds)
 {
