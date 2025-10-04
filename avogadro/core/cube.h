@@ -300,10 +300,10 @@ protected:
   std::vector<float> m_data;
   Vector3 m_min, m_max, m_spacing;
   Vector3i m_points;
-  float m_minValue, m_maxValue;
+  float m_minValue = 0.0, m_maxValue = 0.0;
   std::string m_name;
-  Type m_cubeType;
-  Mutex* m_lock;
+  Type m_cubeType = None;
+  Mutex* m_lock = nullptr;
 };
 
 inline bool Cube::setValue(unsigned int i, float value_)
