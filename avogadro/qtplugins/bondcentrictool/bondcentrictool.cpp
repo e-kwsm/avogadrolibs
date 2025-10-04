@@ -110,9 +110,7 @@ inline float vectorAngleDegrees(const Vector3f& v1, const Vector3f& v2,
 } // namespace
 
 BondCentricTool::BondCentricTool(QObject* parent_)
-  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_renderer(nullptr), m_moveState(IgnoreMove),
-    m_planeSnapIncr(10.f), m_snapPlaneToBonds(true)
+  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this))
 {
   QString shortcut = tr("Ctrl+6", "control-key 6");
   m_activateAction->setText(tr("Bond-Centric Manipulation"));
