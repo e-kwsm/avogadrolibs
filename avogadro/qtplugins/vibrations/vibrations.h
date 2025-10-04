@@ -62,16 +62,16 @@ private slots:
 private:
   QList<QAction*> m_actions;
 
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 
-  VibrationDialog* m_dialog;
+  VibrationDialog* m_dialog = nullptr;
 
-  QTimer* m_timer;
+  QTimer* m_timer = nullptr;
 
   int m_currentFrame;
   int m_totalFrames;
-  int m_mode;
-  int m_amplitude;
+  int m_mode = 0;
+  int m_amplitude = 20;
 };
 
 } // namespace QtPlugins

@@ -18,9 +18,7 @@
 
 namespace Avogadro::QtPlugins {
 
-Vibrations::Vibrations(QObject* p)
-  : ExtensionPlugin(p), m_molecule(nullptr), m_dialog(nullptr),
-    m_timer(nullptr), m_mode(0), m_amplitude(20)
+Vibrations::Vibrations(QObject* p) : ExtensionPlugin(p)
 {
   auto* action = new QAction(this);
   action->setEnabled(false);
