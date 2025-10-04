@@ -63,10 +63,10 @@ private:
   QFuture<void> m_future;
   QFutureWatcher<void> m_watcher;
   Core::Cube* m_cube;
-  QVector<SlaterShell>* m_shells;
+  QVector<SlaterShell>* m_shells = nullptr;
 
-  Core::SlaterSet* m_set;
-  Core::SlaterSetTools* m_tools;
+  Core::SlaterSet* m_set = nullptr;
+  Core::SlaterSetTools* m_tools = nullptr;
 
   bool setUpCalculation(Core::Cube* cube, unsigned int state,
                         void (*func)(SlaterShell&));

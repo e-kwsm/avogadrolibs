@@ -28,8 +28,7 @@ struct SlaterShell
   unsigned int state;    // The MO number to calculate
 };
 
-SlaterSetConcurrent::SlaterSetConcurrent(QObject* p)
-  : QObject(p), m_shells(nullptr), m_set(nullptr), m_tools(nullptr)
+SlaterSetConcurrent::SlaterSetConcurrent(QObject* p) : QObject(p)
 {
   // Watch for the future
   connect(&m_watcher, SIGNAL(finished()), this, SLOT(calculationComplete()));
