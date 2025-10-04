@@ -33,8 +33,7 @@ namespace Avogadro {
 
 using QtGui::Molecule;
 
-MolecularView::MolecularView(QWidget* parent)
-  : QTableView(parent), m_molecule(nullptr), m_model(nullptr)
+MolecularView::MolecularView(QWidget* parent) : QTableView(parent)
 {
   this->setWindowTitle(tr("Molecule Properties"));
 
