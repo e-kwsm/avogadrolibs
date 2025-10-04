@@ -144,16 +144,16 @@ private:
   Core::Array<Identifier> hits(const GroupNode* group,
                                const Frustrum& frustrum) const;
 
-  bool m_valid;
+  bool m_valid = false;
   std::string m_error;
   Camera m_camera;
   Camera m_overlayCamera;
   Scene m_scene;
-  TextRenderStrategy* m_textRenderStrategy;
+  TextRenderStrategy* m_textRenderStrategy = nullptr;
   SolidPipeline m_solidPipeline;
 
-  Vector3f m_center;
-  float m_radius;
+  Vector3f m_center = Vector3f::Zero();
+  float m_radius = 20.0;
 };
 
 inline const Camera& GLRenderer::camera() const
