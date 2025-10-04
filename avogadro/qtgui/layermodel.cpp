@@ -21,7 +21,7 @@ namespace {
 const int QTTY_COLUMNS = 6;
 }
 
-LayerModel::LayerModel(QObject* p) : QAbstractItemModel(p), m_item(0)
+LayerModel::LayerModel(QObject* p) : QAbstractItemModel(p)
 {
   // determine if need dark mode or light mode icons
   // e.g. https://www.qt.io/blog/dark-mode-on-windows-11-with-qt-6.5
