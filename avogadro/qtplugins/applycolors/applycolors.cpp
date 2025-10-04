@@ -38,8 +38,7 @@ public:
 };
 
 ApplyColors::ApplyColors(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
-    m_dialog(nullptr)
+  : Avogadro::QtGui::ExtensionPlugin(parent_)
 {
   QAction* action;
 
