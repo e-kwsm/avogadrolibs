@@ -121,9 +121,9 @@ protected:
    */
   void setParent(GeometryNode* parent);
 
-  GeometryNode* m_parent;
-  bool m_visible;
-  RenderPass m_renderPass;
+  GeometryNode* m_parent = nullptr;
+  bool m_visible = true;
+  RenderPass m_renderPass = OpaquePass;
   Identifier m_identifier;
 };
 
