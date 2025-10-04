@@ -72,7 +72,7 @@ public:
 
 private:
   PropertyType m_type;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 
   mutable bool m_validCache;
   mutable std::vector<Core::Angle> m_angles;
