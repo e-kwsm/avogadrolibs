@@ -12,8 +12,7 @@
 namespace Avogadro::QtPlugins {
 
 CoordinateEditor::CoordinateEditor(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_dialog(nullptr),
-    m_molecule(nullptr),
+  : Avogadro::QtGui::ExtensionPlugin(parent_),
     m_action(new QAction(tr("Atomic &Coordinate Editor…"), this))
 {
   m_action->setProperty("menu priority", 900);
