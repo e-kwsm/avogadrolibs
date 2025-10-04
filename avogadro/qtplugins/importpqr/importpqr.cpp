@@ -17,8 +17,7 @@
 namespace Avogadro::QtPlugins {
 
 ImportPQR::ImportPQR(QObject* parent_)
-  : ExtensionPlugin(parent_), m_action(new QAction(this)), m_molecule(nullptr),
-    m_dialog(nullptr), m_outputFormat(nullptr),
+  : ExtensionPlugin(parent_), m_action(new QAction(this)),
     m_manager(new QNetworkAccessManager(this))
 {
   m_action->setEnabled(false);
