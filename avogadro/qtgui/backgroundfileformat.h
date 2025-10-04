@@ -90,10 +90,10 @@ public slots:
 
 private:
   Io::FileFormat* m_format;
-  Core::Molecule* m_molecule;
+  Core::Molecule* m_molecule = nullptr;
   QString m_fileName;
   QString m_error;
-  bool m_success;
+  bool m_success = false;
 };
 
 } // namespace QtGui
