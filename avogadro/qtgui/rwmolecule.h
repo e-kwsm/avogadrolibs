@@ -716,7 +716,7 @@ protected:
    * an undo/redo stack that can be used to offer undo and redo.
    */
   Molecule& m_molecule;
-  bool m_interactive;
+  bool m_interactive = false;
 
   QUndoStack m_undoStack;
 
