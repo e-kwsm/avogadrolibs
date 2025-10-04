@@ -50,13 +50,13 @@ public:
   VertexArrayObject vao;
 
   // Sentinels:
-  bool shadersInvalid;
-  bool textureInvalid;
-  bool vboInvalid;
+  bool shadersInvalid = true;
+  bool textureInvalid = true;
+  bool vboInvalid = true;
 
   // Uniforms:
   Vector3f anchor;
-  float radius;
+  float radius = 0.0;
   Texture2D texture;
 
   // Shaders
@@ -78,9 +78,7 @@ public:
   void uploadVbo();
 };
 
-TextLabelBase::RenderImpl::RenderImpl()
-  : vertices(4), shadersInvalid(true), textureInvalid(true), vboInvalid(true),
-    radius(0.0)
+TextLabelBase::RenderImpl::RenderImpl() : vertices(4)
 {
   texture.setMinFilter(Texture2D::Linear);
   texture.setMagFilter(Texture2D::Linear);
