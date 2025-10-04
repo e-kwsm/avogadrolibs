@@ -44,17 +44,14 @@ struct Color {
 };
 
 struct Element {
-  Element(const string &_id) : symbol(_id), atomicNumber(0), mass(-1.0),
-    radiusCovalent(-1.0), radiusVDW(-1.0)
-  {
-  }
+  Element(const string& _id) : symbol(_id) {}
   string id; // This is the symbol normally.
   string symbol;
   string name;
-  unsigned char atomicNumber;
-  double mass;
-  double radiusCovalent;
-  double radiusVDW;
+  unsigned char atomicNumber = 0;
+  double mass = -1.0;
+  double radiusCovalent = -1.0;
+  double radiusVDW = -1.0;
   Color color;
 };
 
