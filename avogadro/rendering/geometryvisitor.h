@@ -68,9 +68,9 @@ private:
    */
   void average();
 
-  Vector3f m_center;
-  float m_radius;
-  bool m_dirty;
+  Vector3f m_center = Vector3f::Zero();
+  float m_radius = 0.0f;
+  bool m_dirty = false;
 
   std::vector<Vector3f> m_centers;
   std::vector<float> m_radii;

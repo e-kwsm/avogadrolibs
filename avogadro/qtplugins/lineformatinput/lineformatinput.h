@@ -44,8 +44,8 @@ private:
   /// Maps identifier to extension:
   QMap<QString, std::string> m_formats;
 
-  QtGui::Molecule* m_molecule;
-  Io::FileFormat* m_reader;
+  QtGui::Molecule* m_molecule = nullptr;
+  Io::FileFormat* m_reader = nullptr;
   std::string m_descriptor;
 };
 

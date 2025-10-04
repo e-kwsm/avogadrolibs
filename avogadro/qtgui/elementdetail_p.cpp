@@ -18,10 +18,7 @@ namespace Avogadro::QtGui {
 
 using Core::Elements;
 
-ElementDetail::ElementDetail(int elementNumber)
-  : m_width(100), m_height(70), m_element(elementNumber)
-{
-}
+ElementDetail::ElementDetail(int elementNumber) : m_element(elementNumber) {}
 
 QRectF ElementDetail::boundingRect() const
 {

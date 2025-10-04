@@ -31,7 +31,7 @@ using Avogadro::QtGui::Molecule;
 namespace Avogadro::QtPlugins {
 
 ThreeDMolDialog::ThreeDMolDialog(QtGui::Molecule* mol, QWidget* parent_)
-  : QDialog(parent_), m_molecule(nullptr), m_ui(new Ui::ThreeDMolDialog)
+  : QDialog(parent_), m_ui(new Ui::ThreeDMolDialog)
 {
   m_ui->setupUi(this);
   setMolecule(mol);

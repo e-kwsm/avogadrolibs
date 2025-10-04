@@ -134,7 +134,7 @@ private:
   QList<QStringList> m_programList;
   // maps program index internal id to [queueName, programName] QStringList
   QMap<quint32, QStringList> m_uidLookup;
-  quint32 m_uidCounter;
+  quint32 m_uidCounter = 0;
 };
 
 } // namespace Avogadro::MoleQueue

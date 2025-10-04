@@ -69,8 +69,8 @@ constexpr float kExportScale = 0.1f;
 } // namespace
 
 PLY::PLY(QObject* p)
-  : Avogadro::QtGui::ExtensionPlugin(p), m_molecule(nullptr), m_scene(nullptr),
-    m_camera(nullptr), m_action(new QAction(tr("PLY Render…"), this))
+  : Avogadro::QtGui::ExtensionPlugin(p),
+    m_action(new QAction(tr("PLY Render…"), this))
 {
   connect(m_action, SIGNAL(triggered()), SLOT(render()));
 }

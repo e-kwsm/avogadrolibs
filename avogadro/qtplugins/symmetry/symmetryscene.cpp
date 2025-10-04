@@ -35,10 +35,7 @@ using Rendering::GroupNode;
 using Rendering::MeshGeometry;
 using Rendering::SphereGeometry;
 
-SymmetryScene::SymmetryScene(QObject* p)
-  : QtGui::ScenePlugin(p), m_enabled(true)
-{
-}
+SymmetryScene::SymmetryScene(QObject* p) : QtGui::ScenePlugin(p) {}
 
 SymmetryScene::~SymmetryScene() {}
 

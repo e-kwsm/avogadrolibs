@@ -192,7 +192,7 @@ private:
   JobObject m_jobTemplate;
   QString m_jobState;
   QString m_submissionError;
-  int m_requestId;
+  int m_requestId = -1;
   unsigned int m_moleQueueId;
 };
 
