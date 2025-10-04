@@ -94,9 +94,9 @@ private:
 
 private:
   Ui::UnitCellDialog* m_ui;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   Core::UnitCell m_tempCell;
-  Mode m_mode;
+  Mode m_mode = Invalid;
 };
 
 } // namespace QtPlugins
