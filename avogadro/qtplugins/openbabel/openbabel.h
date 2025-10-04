@@ -96,20 +96,20 @@ private:
   void showProcessInUseError(const QString& title) const;
   QString autoDetectForceField() const;
 
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   OBProcess* m_process;
   QList<QAction*> m_actions;
   QList<QByteArray> m_moleculeQueue;
-  bool m_readFormatsPending;
-  bool m_writeFormatsPending;
+  bool m_readFormatsPending = true;
+  bool m_writeFormatsPending = true;
   QMultiMap<QString, QString> m_readFormats;
   QMultiMap<QString, QString> m_writeFormats;
   QMultiMap<QString, QString> m_forceFields;
   QMultiMap<QString, QString> m_charges;
   std::string m_defaultFormat;
-  QProgressDialog* m_progress;
+  QProgressDialog* m_progress = nullptr;
 
-  ConformerSearchDialog* m_conformerSearchDialog;
+  ConformerSearchDialog* m_conformerSearchDialog = nullptr;
 };
 
 } // namespace QtPlugins
