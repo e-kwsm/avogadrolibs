@@ -41,8 +41,7 @@ namespace Avogadro::QtPlugins {
 using MoleQueue::InputGeneratorDialog;
 using MoleQueue::JobObject;
 
-QuantumInput::QuantumInput(QObject* parent_)
-  : ExtensionPlugin(parent_), m_molecule(nullptr), m_outputFormat(nullptr)
+QuantumInput::QuantumInput(QObject* parent_) : ExtensionPlugin(parent_)
 {
   refreshGenerators();
 

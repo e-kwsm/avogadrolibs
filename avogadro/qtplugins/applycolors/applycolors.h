@@ -73,8 +73,8 @@ private:
                          tinycolormap::ColormapType type, QString& error);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
-  QColorDialog* m_dialog;
+  QtGui::Molecule* m_molecule = nullptr;
+  QColorDialog* m_dialog = nullptr;
 
   tinycolormap::ColormapType getColormapFromString(const QString& name) const;
 

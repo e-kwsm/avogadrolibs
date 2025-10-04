@@ -223,7 +223,7 @@ private:
   void connectButtons();
 
   Ui::InputGeneratorWidget* m_ui;
-  bool m_updatePending;
+  bool m_updatePending = false;
   QList<QTextEdit*> m_dirtyTextEdits;
   QtGui::InterfaceScript m_inputGenerator;
 };

@@ -21,7 +21,7 @@
 namespace Avogadro::QtPlugins {
 
 PropertyTables::PropertyTables(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr)
+  : Avogadro::QtGui::ExtensionPlugin(parent_)
 {
   auto* action = new QAction(this);
   action->setText(tr("Atom Properties…"));

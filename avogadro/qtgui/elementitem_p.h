@@ -50,7 +50,7 @@ public:
 
 private:
   /** Indicates if element is well-formed (e.g., has non-empty symbol). */
-  bool m_valid;
+  bool m_valid = false;
 
   /** The element numbers symbol. */
   QString m_symbol;
@@ -59,12 +59,12 @@ private:
    * The color of the element which will also be used as the background color
    * for the item box.
    */
-  QColor m_color;
+  QColor m_color = Qt::white;
 
   /**
    * Width and height of the elements.
    */
-  int m_width, m_height;
+  int m_width = 26, m_height = 26;
 
   /**
    * The proton number of the item - all other attributes are derived from this.
