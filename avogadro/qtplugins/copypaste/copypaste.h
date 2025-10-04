@@ -56,7 +56,7 @@ private slots:
 private:
   // Cached between emitting moleculeReady() and calling readMolecule().
   QByteArray m_pastedData;
-  Io::FileFormat* m_pastedFormat;
+  Io::FileFormat* m_pastedFormat = nullptr;
 
   QtGui::Molecule* m_molecule;
 
