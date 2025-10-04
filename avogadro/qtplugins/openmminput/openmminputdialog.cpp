@@ -29,34 +29,7 @@
 namespace Avogadro::QtPlugins {
 
 OpenMMInputDialog::OpenMMInputDialog(QWidget* parent, Qt::WindowFlags flag)
-  : QDialog(parent, flag), m_molecule(nullptr),
-
-    m_forceFieldType(amber99sbildn), m_title("Title"), m_savePath(""),
-    m_waterModelType(tip3p), m_nonBondedType(PME),
-
-    m_constraintType(HBonds), m_integratorType(Langevin),
-    m_barostatType(NoBarostat),
-
-    m_deviceIndex(1), m_openclPlatformIndex(1), m_rigidWater(0),
-    m_temperature(298.15), m_generationTemperature(298.15),
-    m_nonBondedCutoff(1.0),
-
-    m_timeStep(2.0), m_ewaldTolerance(0.0005), m_constraintTolerance(0.00001),
-    m_reportInterval(1000), m_equilibriationSteps(100), m_productionSteps(1000),
-    m_errorTolerance(0.0001), m_collisionRate(1.0), m_pressure(1.0),
-    m_barostatInterval(25),
-
-    m_dumpStep(1),
-
-    m_velocityDistRandom(0), m_platformType(CUDA),
-    m_precisionType(mixedPrecision), m_thermoInterval(50),
-
-    m_minimize(0), m_minimizeSteps(1000), m_DCDReporter(true),
-    m_PDBReporter(false), m_stateDataReporter(true),
-
-    m_output(), m_dirty(false), m_warned(false), readData(false),
-
-    m_jobEdit(nullptr), m_moleculeEdit(nullptr)
+  : QDialog(parent, flag), m_title("Title"), m_savePath(""), m_output()
 {
   ui.setupUi(this);
   m_jobFileName =

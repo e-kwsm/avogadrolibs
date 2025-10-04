@@ -22,7 +22,7 @@ namespace Avogadro::QuantumIO {
 using Core::Atom;
 using Core::SlaterSet;
 
-MopacAux::MopacAux() : m_electrons(0) {}
+MopacAux::MopacAux() = default;
 
 MopacAux::~MopacAux() {}
 

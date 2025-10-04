@@ -59,7 +59,7 @@ private:
   Camera m_camera;
   Vector3ub m_backgroundColor;
   Vector3ub m_ambientColor;
-  float m_aspectRatio;
+  float m_aspectRatio = 800.0f / 600.0f;
   std::string m_sceneData;
 };
 

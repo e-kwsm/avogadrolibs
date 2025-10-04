@@ -36,9 +36,7 @@ public:
   }
 };
 
-InsertDna::InsertDna(QObject* p)
-  : Avogadro::QtGui::ExtensionPlugin(p), m_molecule(nullptr), m_reader(nullptr),
-    m_dialog(nullptr)
+InsertDna::InsertDna(QObject* p) : Avogadro::QtGui::ExtensionPlugin(p)
 {
   auto* action = new QAction(tr("DNA/RNA…"), this);
   action->setProperty("menu priority", 870);

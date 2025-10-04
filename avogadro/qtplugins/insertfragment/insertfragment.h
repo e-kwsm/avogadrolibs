@@ -46,13 +46,13 @@ private slots:
 
 private:
   QList<QAction*> m_actions;
-  QtGui::InsertFragmentDialog* m_moleculeDialog;
-  QtGui::InsertFragmentDialog* m_crystalDialog;
+  QtGui::InsertFragmentDialog* m_moleculeDialog = nullptr;
+  QtGui::InsertFragmentDialog* m_crystalDialog = nullptr;
   /// Maps identifier to extension:
   QMap<QString, std::string> m_formats;
 
-  QtGui::Molecule* m_molecule;
-  Io::FileFormat* m_reader;
+  QtGui::Molecule* m_molecule = nullptr;
+  Io::FileFormat* m_reader = nullptr;
 };
 
 inline QString InsertFragment::description() const

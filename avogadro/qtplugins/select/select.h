@@ -58,8 +58,8 @@ private slots:
 
 private:
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
-  QtGui::PeriodicTableView* m_elements;
+  QtGui::Molecule* m_molecule = nullptr;
+  QtGui::PeriodicTableView* m_elements = nullptr;
   QtGui::PluginLayerManager m_layerManager;
 
   bool evalSelect(bool input, Index index) const;

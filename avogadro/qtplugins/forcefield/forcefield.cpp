@@ -57,7 +57,7 @@ const int batchEnergyAction = 9;
 const int batchForcesAction = 10;
 
 Forcefield::Forcefield(QObject* parent_)
-  : ExtensionPlugin(parent_), m_method(nullptr)
+  : ExtensionPlugin(parent_)
 {
   QSettings settings;
   settings.beginGroup("forcefield");

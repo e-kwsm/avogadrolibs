@@ -66,8 +66,8 @@ private:
   QAction* m_configAction;
   QAction* m_createBondsAction;
 
-  QDialog* m_dialog;
-  Ui::BondingDialog* m_ui;
+  QDialog* m_dialog = nullptr;
+  Ui::BondingDialog* m_ui = nullptr;
 };
 
 } // namespace Avogadro::QtPlugins

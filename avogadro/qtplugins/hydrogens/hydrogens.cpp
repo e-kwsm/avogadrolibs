@@ -16,7 +16,7 @@
 namespace Avogadro::QtPlugins {
 
 Hydrogens::Hydrogens(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr)
+  : Avogadro::QtGui::ExtensionPlugin(parent_)
 {
   auto* action = new QAction(tr("&Adjust Hydrogens"), this);
   action->setShortcut(QKeySequence("Ctrl+Alt+H"));

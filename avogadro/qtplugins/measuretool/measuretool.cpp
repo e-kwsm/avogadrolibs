@@ -45,8 +45,7 @@ using Avogadro::Rendering::TextProperties;
 namespace Avogadro::QtPlugins {
 
 MeasureTool::MeasureTool(QObject* parent_)
-  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_rwMolecule(nullptr), m_renderer(nullptr)
+  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this))
 {
   QString shortcut = tr("Ctrl+8", "control-key 8");
   m_activateAction->setText(tr("Measure"));

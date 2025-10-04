@@ -198,12 +198,12 @@ protected:
 private:
   QPointer<QtGui::Molecule> m_molecule;
   QList<QtGui::ToolPlugin*> m_tools;
-  QtGui::ToolPlugin* m_activeTool;
-  QtGui::ToolPlugin* m_defaultTool;
+  QtGui::ToolPlugin* m_activeTool = nullptr;
+  QtGui::ToolPlugin* m_defaultTool = nullptr;
   Rendering::GLRenderer m_renderer;
   QtGui::ScenePluginModel m_scenePlugins;
 
-  QTimer* m_renderTimer;
+  QTimer* m_renderTimer = nullptr;
 };
 
 } // namespace QtOpenGL

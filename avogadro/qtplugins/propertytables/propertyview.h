@@ -38,8 +38,8 @@ protected:
 
 private:
   PropertyType m_type;
-  QtGui::Molecule* m_molecule;
-  PropertyModel* m_model;
+  QtGui::Molecule* m_molecule = nullptr;
+  PropertyModel* m_model = nullptr;
   bool m_updatingSelection = false;
   bool m_inColorEdit = false;
   void copySelectedRowsToClipboard();

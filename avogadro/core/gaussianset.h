@@ -298,10 +298,10 @@ private:
   MatrixX m_density;     //! Density matrix
   MatrixX m_spinDensity; //! Spin Density matrix
 
-  unsigned int m_numMOs; //! The number of GTOs (not always!)
-  bool m_init;           //! Has the calculation been initialised?
+  unsigned int m_numMOs = 0; //! The number of GTOs (not always!)
+  bool m_init = false;       //! Has the calculation been initialised?
 
-  ScfType m_scfType;
+  ScfType m_scfType{ Rhf };
 
   std::string m_functionalName;
 };

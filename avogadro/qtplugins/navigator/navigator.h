@@ -71,10 +71,10 @@ private:
   void translate(const Vector3f& ref, const Vector2f& from, const Vector2f& to);
 
   QAction* m_activateAction;
-  QtGui::Molecule* m_molecule;
-  QtOpenGL::GLWidget* m_glWidget;
-  mutable QWidget* m_toolWidget;
-  Rendering::GLRenderer* m_renderer;
+  QtGui::Molecule* m_molecule = nullptr;
+  QtOpenGL::GLWidget* m_glWidget = nullptr;
+  mutable QWidget* m_toolWidget = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
   Qt::MouseButtons m_pressedButtons;
   QPoint m_lastMousePosition;
   int m_zoomDirection;
@@ -87,7 +87,7 @@ private:
     ZoomTilt,
     Zoom
   };
-  ToolAction m_currentAction;
+  ToolAction m_currentAction = Nothing;
 };
 
 } // namespace QtPlugins

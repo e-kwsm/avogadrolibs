@@ -9,10 +9,7 @@
 
 namespace Avogadro::QtPlugins {
 
-VibrationModel::VibrationModel(QObject* p)
-  : QAbstractItemModel(p), m_molecule(nullptr), m_hasRaman(false)
-{
-}
+VibrationModel::VibrationModel(QObject* p) : QAbstractItemModel(p) {}
 
 QModelIndex VibrationModel::parent(const QModelIndex&) const
 {

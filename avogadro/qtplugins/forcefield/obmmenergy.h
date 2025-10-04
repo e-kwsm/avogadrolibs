@@ -76,9 +76,9 @@ public:
   QByteArray writeAndRead(const QByteArray& input);
 
 private:
-  Core::Molecule* m_molecule;
+  Core::Molecule* m_molecule = nullptr;
   Io::FileFormat* m_inputFormat;
-  QProcess* m_process;
+  QProcess* m_process = nullptr;
   QString m_executable;
 
   Core::Molecule::ElementMask m_elements;

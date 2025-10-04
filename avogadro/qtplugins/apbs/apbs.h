@@ -50,10 +50,10 @@ private:
   bool loadOpenDxFile(const QString& fileName, QtGui::Molecule& molecule);
 
 private:
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   QList<QAction*> m_actions;
-  QProgressDialog* m_progressDialog;
-  ApbsDialog* m_dialog;
+  QProgressDialog* m_progressDialog = nullptr;
+  ApbsDialog* m_dialog = nullptr;
   QString m_pqrFileName;
   QString m_cubeFileName;
 };

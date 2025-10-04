@@ -132,8 +132,7 @@ enum DispersionCorrectionOption
 };
 
 GamessInputDialog::GamessInputDialog(QWidget* parent_, Qt::WindowFlags f)
-  : QDialog(parent_, f), m_molecule(nullptr), m_highlighter(nullptr),
-    m_updatePending(false)
+  : QDialog(parent_, f)
 {
   ui.setupUi(this);
   m_highlighter = new GamessHighlighter(ui.previewText->document());

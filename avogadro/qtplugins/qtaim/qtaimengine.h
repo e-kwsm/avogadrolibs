@@ -30,7 +30,7 @@ public:
   }
 
 private:
-  bool m_enabled;
+  bool m_enabled = false;
   std::string m_name = "QTAIM";
 };
 

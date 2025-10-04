@@ -100,9 +100,9 @@ private:
 
   Core::Array<Arrow> m_arrows;
   Vector3ub m_color;
-  float m_radiusScale;
+  float m_radiusScale = 1.0f;
 
-  bool m_dirty;
+  bool m_dirty = false;
 
   class Private;
   Private* d;

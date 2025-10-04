@@ -32,9 +32,7 @@ const float ROTATION_SPEED = 0.005f;
 
 Navigator::Navigator(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_glWidget(nullptr), m_toolWidget(nullptr),
-    m_renderer(nullptr), m_pressedButtons(Qt::NoButton),
-    m_currentAction(Nothing)
+    m_pressedButtons(Qt::NoButton)
 {
   QString shortcut = tr("Ctrl+1", "control-key 1");
   m_activateAction->setText(tr("Navigate"));

@@ -15,7 +15,7 @@ using Avogadro::QtGui::Molecule;
 namespace Avogadro::QtPlugins {
 
 CustomElements::CustomElements(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
+  : Avogadro::QtGui::ExtensionPlugin(parent_),
     m_reassignAction(new QAction(tr("Reassign &Custom Elements…"), this))
 {
   connect(m_reassignAction, SIGNAL(triggered()), SLOT(reassign()));

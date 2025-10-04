@@ -60,7 +60,7 @@ public:
 };
 
 OBEnergy::OBEnergy(const std::string& method)
-  : m_identifier(method), m_name(method), m_molecule(nullptr)
+  : m_identifier(method), m_name(method)
 {
   d = new Private;
 
