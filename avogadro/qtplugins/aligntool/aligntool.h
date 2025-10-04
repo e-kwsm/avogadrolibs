@@ -78,14 +78,14 @@ public Q_SLOTS:
 
 private:
   QAction* m_activateAction;
-  QtGui::RWMolecule* m_molecule;
-  Rendering::GLRenderer* m_renderer;
+  QtGui::RWMolecule* m_molecule = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
   QVector<Rendering::Identifier> m_atoms;
 
-  int m_axis;
-  int m_alignType;
+  int m_axis = 0;
+  int m_alignType = 0;
 
-  mutable QWidget* m_toolWidget;
+  mutable QWidget* m_toolWidget = nullptr;
 
 private Q_SLOTS:
   void toolWidgetDestroyed();

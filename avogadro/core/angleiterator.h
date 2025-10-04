@@ -48,7 +48,7 @@ public:
 private:
   // m_b is the current vertex
   // m_a and m_c are instead index into the neighbors of m_b
-  Index m_a, m_b, m_c;
+  Index m_a = MaxIndex, m_b = 0, m_c = MaxIndex;
   Angle m_current;
   const Molecule* m_mol;
 };

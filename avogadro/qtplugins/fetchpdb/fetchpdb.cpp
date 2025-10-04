@@ -20,8 +20,7 @@
 namespace Avogadro::QtPlugins {
 
 FetchPDB::FetchPDB(QObject* parent_)
-  : ExtensionPlugin(parent_), m_action(new QAction(this)), m_molecule(nullptr),
-    m_network(nullptr), m_progressDialog(nullptr)
+  : ExtensionPlugin(parent_), m_action(new QAction(this))
 {
   m_action->setEnabled(true);
   m_action->setText("Fetch from &PDB…");

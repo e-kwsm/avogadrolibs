@@ -108,13 +108,13 @@ private:
   void update();
 
   Core::Array<PackedVertex> m_vertices;
-  float m_lineWidth;
-  int m_lineCount;
+  float m_lineWidth = 1.0;
+  int m_lineCount = 0;
 
   Vector3ub m_color;
-  unsigned char m_opacity;
+  unsigned char m_opacity = 255;
 
-  bool m_dirty;
+  bool m_dirty = false;
 
   class Private;
   Private* d;

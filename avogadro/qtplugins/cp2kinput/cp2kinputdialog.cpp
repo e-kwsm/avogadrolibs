@@ -94,9 +94,8 @@ enum OTMinimizerOption
 };
 
 Cp2kInputDialog::Cp2kInputDialog(QWidget* parent_, Qt::WindowFlags f)
-  : QDialog(parent_, f), m_molecule(nullptr),
-    // m_highlighter(NULL),
-    m_updatePending(false)
+  : QDialog(parent_, f)
+// , m_highlighter(NULL),
 {
   ui.setupUi(this);
   //  m_highlighter = new Cp2kHighlighter(ui.previewText->document());

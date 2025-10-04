@@ -312,15 +312,15 @@ private:
   std::string m_options;
 
   // Streams for reading/writing data, especially streaming data in/out.
-  Operation m_mode;
-  std::istream* m_in;
-  std::ostream* m_out;
+  Operation m_mode = None;
+  std::istream* m_in = nullptr;
+  std::ostream* m_out = nullptr;
 
   // Non-owning aliases of m_in/m_out when those streams were wrapped for
   // compression; never delete these separately from m_in/m_out.
-  DecompressingIStream* m_decompressor;
-  CompressingOStream* m_compressor;
-  bool m_outputError;
+  DecompressingIStream* m_decompressor = nullptr;
+  CompressingOStream* m_compressor = nullptr;
+  bool m_outputError = false;
 };
 
 inline FileFormat::Operation operator|(FileFormat::Operation a,

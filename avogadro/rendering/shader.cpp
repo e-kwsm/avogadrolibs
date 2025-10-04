@@ -10,7 +10,7 @@
 namespace Avogadro::Rendering {
 
 Shader::Shader(Type type_, const std::string& source_)
-  : m_type(type_), m_handle(0), m_dirty(true), m_source(source_)
+  : m_type(type_), m_source(source_)
 {
 }
 
