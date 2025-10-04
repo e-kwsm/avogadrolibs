@@ -29,8 +29,7 @@ Bonding::Bonding(QObject* parent_)
     m_orderAction(new QAction(tr("Perceive Bond Orders"), this)),
     m_clearAction(new QAction(tr("Remove Bonds"), this)),
     m_configAction(new QAction(tr("Configure Bonding…"), this)),
-    m_createBondsAction(new QAction(tr("Bond Selected Atoms"), this)),
-    m_dialog(nullptr), m_ui(nullptr)
+    m_createBondsAction(new QAction(tr("Bond Selected Atoms"), this))
 {
   QSettings settings;
   m_tolerance = settings.value("bonding/tolerance", 0.45).toDouble();
