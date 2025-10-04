@@ -108,18 +108,14 @@ namespace Avogadro::QtPlugins {
 class CoordinateEditorDialog::ValidateStorage
 {
 public:
-  ValidateStorage()
-    : isValidating(false), restartWhenFinished(false), collectAtoms(false),
-      convertDistance(false), latticePositions(false), distanceConversion(1.f)
-  {
-  }
+  ValidateStorage() = default;
 
-  bool isValidating;
-  bool restartWhenFinished;
-  bool collectAtoms;
-  bool convertDistance;
-  bool latticePositions;
-  float distanceConversion;
+  bool isValidating = false;
+  bool restartWhenFinished = false;
+  bool collectAtoms = false;
+  bool convertDistance = false;
+  bool latticePositions = false;
+  float distanceConversion = 1.f;
 
   // Format specification
   QString spec;
@@ -133,7 +129,7 @@ public:
 };
 
 CoordinateEditorDialog::CoordinateEditorDialog(QWidget* parent_)
-  : QDialog(parent_), m_ui(new Ui::CoordinateEditorDialog), m_molecule(nullptr),
+  : QDialog(parent_), m_ui(new Ui::CoordinateEditorDialog),
     m_validate(new ValidateStorage), m_defaultSpec("SZxyz#N")
 {
   m_ui->setupUi(this);
