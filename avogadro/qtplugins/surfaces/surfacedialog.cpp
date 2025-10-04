@@ -10,8 +10,7 @@
 namespace Avogadro::QtPlugins {
 
 SurfaceDialog::SurfaceDialog(QWidget* parent_, Qt::WindowFlags f)
-  : QDialog(parent_, f), m_ui(new Ui::SurfaceDialog),
-    m_automaticResolution(true)
+  : QDialog(parent_, f), m_ui(new Ui::SurfaceDialog)
 {
   m_ui->setupUi(this);
 
