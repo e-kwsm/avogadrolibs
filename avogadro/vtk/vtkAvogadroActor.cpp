@@ -23,7 +23,6 @@ using Eigen::Affine3f;
 vtkStandardNewMacro(vtkAvogadroActor)
 
   vtkAvogadroActor::vtkAvogadroActor()
-  : m_scene(nullptr), m_initialized(false)
 {
   for (double& m_bound : m_bounds)
     m_bound = 0.0;
