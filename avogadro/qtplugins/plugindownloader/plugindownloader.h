@@ -53,10 +53,10 @@ private slots:
 private:
   QAction* m_downloadAction;
 
-  QtGui::Molecule* m_molecule;
-  QNetworkAccessManager* m_network;
+  QtGui::Molecule* m_molecule = nullptr;
+  QNetworkAccessManager* m_network = nullptr;
   QString m_moleculeName;
-  DownloaderWidget* m_widget;
+  DownloaderWidget* m_widget = nullptr;
 };
 
 } // namespace QtPlugins
