@@ -62,12 +62,12 @@ private:
   void selectLinkedMolecule(QMouseEvent* e, Index atom);
 
   QAction* m_activateAction;
-  QtGui::Molecule* m_molecule;
-  Rendering::GLRenderer* m_renderer;
-  mutable SelectionToolWidget* m_toolWidget;
-  bool m_drawSelectionBox;
-  bool m_doubleClick;
-  bool m_initSelectionBox;
+  QtGui::Molecule* m_molecule = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
+  mutable SelectionToolWidget* m_toolWidget = nullptr;
+  bool m_drawSelectionBox = false;
+  bool m_doubleClick = false;
+  bool m_initSelectionBox = false;
   Vector2 m_start;
   Vector2 m_end;
   QtGui::PluginLayerManager m_layerManager;
