@@ -20,8 +20,7 @@ using Avogadro::QtGui::RichTextDelegate;
 namespace Avogadro::QtPlugins {
 
 MolecularProperties::MolecularProperties(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_action(new QAction(this)),
-    m_molecule(nullptr)
+  : Avogadro::QtGui::ExtensionPlugin(parent_), m_action(new QAction(this))
 {
   m_action->setEnabled(true);
   m_action->setText(tr("&Molecular…"));
