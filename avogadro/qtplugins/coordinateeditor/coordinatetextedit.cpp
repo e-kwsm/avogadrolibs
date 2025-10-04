@@ -14,8 +14,7 @@
 
 namespace Avogadro::QtPlugins {
 
-CoordinateTextEdit::CoordinateTextEdit(QWidget* p)
-  : QTextEdit(p), m_hasInvalidMarks(false)
+CoordinateTextEdit::CoordinateTextEdit(QWidget* p) : QTextEdit(p)
 {
   setMouseTracking(true);
 
