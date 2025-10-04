@@ -56,9 +56,9 @@ private:
       radius = (bonds <= 0 ? 1 : bonds);
     }
   };
-  QtGui::Molecule* m_molecule;
-  Rendering::Scene* m_scene;
-  Rendering::Camera* m_camera;
+  QtGui::Molecule* m_molecule = nullptr;
+  Rendering::Scene* m_scene = nullptr;
+  Rendering::Camera* m_camera = nullptr;
 
   QAction* m_action;
   int m_width, m_height;

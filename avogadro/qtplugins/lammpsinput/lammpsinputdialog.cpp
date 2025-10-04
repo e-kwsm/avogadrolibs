@@ -29,28 +29,7 @@
 namespace Avogadro::QtPlugins {
 
 LammpsInputDialog::LammpsInputDialog(QWidget* parent, Qt::WindowFlags flag)
-  : QDialog(parent, flag), m_molecule(nullptr),
-
-    m_unitType(real), m_title("Title"), m_savePath(""), m_dimensionType(d3),
-    m_xBoundaryType(p), m_yBoundaryType(p), m_zBoundaryType(p),
-
-    m_atomStyle(full),
-
-    m_waterPotential(NONE),
-
-    m_ensemble(NVT), m_temperature(298.15), m_nhChain(1),
-
-    m_timeStep(2.0), m_runSteps(50), m_xReplicate(1), m_yReplicate(1),
-    m_zReplicate(1),
-
-    m_dumpStep(1),
-
-    m_velocityDist(gaussian), m_velocityTemp(298.15), m_zeroMOM(true),
-    m_zeroL(true), m_thermoStyle(one), m_thermoInterval(50),
-
-    m_output(), m_dirty(false), m_warned(false), readData(false),
-
-    m_jobEdit(nullptr), m_moleculeEdit(nullptr)
+  : QDialog(parent, flag), m_title("Title"), m_savePath(""), m_output()
 {
   ui.setupUi(this);
   // Connect the GUI elements to the correct slots

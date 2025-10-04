@@ -67,7 +67,7 @@ private:
   QList<QVector3D> m_path;
 
   QList<QPair<QVector3D, qreal>> m_betaSpheres;
-  qint64 m_associatedSphere;
+  qint64 m_associatedSphere = 0;
 
   // ODE integrator
   qreal r8_abs(qreal x);

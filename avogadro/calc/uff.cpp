@@ -118,7 +118,7 @@ public:
   Eigen::VectorXd m_lastVdWPositions; // positions when VdW list was last built
   int m_vdwCallCount = 0;             // counter for rebuild check interval
   Core::Molecule* m_molecule;
-  Core::UnitCell* m_cell;
+  Core::UnitCell* m_cell = nullptr;
 
   static uint64_t pairKey(Index i, Index j)
   {
@@ -126,7 +126,7 @@ public:
                  : (uint64_t(j) << 32 | uint64_t(i));
   }
 
-  UFFPrivate(Core::Molecule* mol = nullptr) : m_molecule(mol), m_cell(nullptr)
+  UFFPrivate(Core::Molecule* mol = nullptr) : m_molecule(mol)
   {
     if (mol == nullptr || mol->atomCount() < 2) {
       return; // nothing to do
@@ -1065,7 +1065,7 @@ public:
   }
 };
 
-UFF::UFF() : d(nullptr)
+UFF::UFF()
 {
   // defined for 1-102
   for (unsigned int i = 0; i <= 102; ++i) {

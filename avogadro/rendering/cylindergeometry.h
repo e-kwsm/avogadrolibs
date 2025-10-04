@@ -149,7 +149,7 @@ private:
   std::map<size_t, size_t> m_indexMap;
   float m_opacity = 1.0f;
 
-  bool m_dirty;
+  bool m_dirty = false;
 
   class Private;
   Private* d;

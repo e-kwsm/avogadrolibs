@@ -48,7 +48,7 @@ namespace Avogadro::Rendering {
 class ArrowGeometry::Private
 {
 public:
-  Private() : numberOfVertices(0), numberOfIndices(0) {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;
@@ -61,14 +61,11 @@ public:
   Core::Array<PackedVertex> meshVertices;
   Core::Array<unsigned int> meshIndices;
 
-  size_t numberOfVertices;
-  size_t numberOfIndices;
+  size_t numberOfVertices = 0;
+  size_t numberOfIndices = 0;
 };
 
-ArrowGeometry::ArrowGeometry()
-  : m_color(0, 255, 0), m_radiusScale(1.0f), m_dirty(false), d(new Private)
-{
-}
+ArrowGeometry::ArrowGeometry() : m_color(0, 255, 0), d(new Private) {}
 
 ArrowGeometry::ArrowGeometry(const ArrowGeometry& other)
   : Drawable(other), m_arrows(other.m_arrows), m_color(other.m_color),

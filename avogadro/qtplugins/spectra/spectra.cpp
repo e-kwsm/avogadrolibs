@@ -21,8 +21,7 @@
 
 namespace Avogadro::QtPlugins {
 
-Spectra::Spectra(QObject* p)
-  : ExtensionPlugin(p), m_molecule(nullptr), m_dialog(nullptr)
+Spectra::Spectra(QObject* p) : ExtensionPlugin(p)
 {
   auto* action = new QAction(this);
   action->setEnabled(false);

@@ -10,10 +10,7 @@
 
 namespace Avogadro::Core {
 
-AngleIterator::AngleIterator(const Molecule* mol)
-  : m_a(MaxIndex), m_b(0), m_c(MaxIndex), m_mol(mol)
-{
-}
+AngleIterator::AngleIterator(const Molecule* mol) : m_mol(mol) {}
 
 Angle AngleIterator::begin()
 {

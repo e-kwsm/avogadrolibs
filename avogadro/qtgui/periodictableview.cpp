@@ -14,8 +14,7 @@ namespace Avogadro::QtGui {
 
 using Core::Elements;
 
-PeriodicTableView::PeriodicTableView(QWidget* parent_)
-  : QGraphicsView(parent_), m_element(6) // Everyone loves carbon.
+PeriodicTableView::PeriodicTableView(QWidget* parent_) : QGraphicsView(parent_)
 {
   // Make the periodic table view a standard dialog.
   setWindowFlags(Qt::Dialog);

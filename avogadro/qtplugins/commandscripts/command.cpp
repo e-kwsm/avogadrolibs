@@ -39,10 +39,7 @@ using Avogadro::QtGui::InterfaceScript;
 using Avogadro::QtGui::InterfaceWidget;
 using Avogadro::QtGui::TimedProgressDialog;
 
-Command::Command(QObject* parent_)
-  : ExtensionPlugin(parent_), m_molecule(nullptr), m_currentDialog(nullptr),
-    m_currentInterface(nullptr), m_currentScript(nullptr), m_progress(nullptr),
-    m_outputFormat(nullptr)
+Command::Command(QObject* parent_) : ExtensionPlugin(parent_)
 {
   refreshScripts();
 

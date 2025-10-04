@@ -20,7 +20,7 @@ using Avogadro::QtGui::Utilities::findExecutablePaths;
 namespace Avogadro::QtPlugins {
 
 ConfigurePythonDialog::ConfigurePythonDialog(QWidget* aParent)
-  : QDialog(aParent), m_ui(new Ui::ConfigurePythonDialog), m_condaUi(nullptr)
+  : QDialog(aParent), m_ui(new Ui::ConfigurePythonDialog)
 {
   m_ui->setupUi(this);
   m_ui->browseWidget->hide();

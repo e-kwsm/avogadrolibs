@@ -68,11 +68,11 @@ private:
   void reportCommandSuccess(const QString& name, const QString& source);
 
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
-  QNetworkAccessManager* m_network;
+  QtGui::Molecule* m_molecule = nullptr;
+  QNetworkAccessManager* m_network = nullptr;
   QString m_moleculeName;
   QByteArray m_moleculeData;
-  QProgressDialog* m_progressDialog;
+  QProgressDialog* m_progressDialog = nullptr;
   bool m_triedPubChem = false;
   /// True while a fetchByName command is waiting on a download, so that
   /// replyFinished() reports through commandFinished()/commandFailed()

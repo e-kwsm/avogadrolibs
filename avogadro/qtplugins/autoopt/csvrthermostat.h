@@ -62,9 +62,9 @@ private:
     coupling_time; // Coupling time constant - MUST BE IN SAME UNITS AS dt (fs)
   double dt;       // Timestep (fs)
   unsigned int n_dof;      // Number of degrees of freedom
-  bool auto_dof;           // Automatically calculate DOF from atom count
-  bool remove_com;         // Remove COM motion during velocity initialization
-  bool enable_diagnostics; // Enable diagnostic output
+  bool auto_dof = true;    // Automatically calculate DOF from atom count
+  bool remove_com = true;  // Remove COM motion during velocity initialization
+  bool enable_diagnostics = false; // Enable diagnostic output
 
   std::mt19937 rng;
   std::normal_distribution<double> normal_dist;
@@ -87,8 +87,7 @@ public:
   CSVRThermostat(double T_target = 300.0, double timestep = 1.0,
                  double tau = 100.0, int ndof = 3, unsigned seed = 12345)
     : target_temp(T_target), coupling_time(tau), dt(timestep), n_dof(ndof),
-      auto_dof(true), remove_com(true), enable_diagnostics(false), rng(seed),
-      normal_dist(0.0, 1.0)
+      rng(seed), normal_dist(0.0, 1.0)
   {
     // IMPORTANT: Default coupling_time is now 100 fs (0.1 ps)
     // Previously was 10, which if interpreted as ps would be 10000 fs

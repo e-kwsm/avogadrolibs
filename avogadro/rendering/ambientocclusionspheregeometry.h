@@ -94,7 +94,7 @@ private:
   Core::Array<SphereColor> m_spheres;
   Core::Array<size_t> m_indices;
 
-  bool m_dirty;
+  bool m_dirty = false;
 
   class Private;
   Private* d;

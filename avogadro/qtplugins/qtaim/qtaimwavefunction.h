@@ -248,7 +248,7 @@ public:
   qreal virialRatio() const { return m_virialRatio; }
 
 private:
-  bool m_initializationSuccessful;
+  bool m_initializationSuccessful = false;
   bool m_fileDoesNotExist;
   bool m_ioError;
   bool m_tooManyNuclei;

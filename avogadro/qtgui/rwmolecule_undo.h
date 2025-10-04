@@ -61,10 +61,10 @@ enum MergeIds
 template <int Id>
 class MergeUndoCommand : public RWMolecule::UndoCommand
 {
-  bool m_canMerge;
+  bool m_canMerge = false;
 
 public:
-  MergeUndoCommand(RWMolecule& m) : UndoCommand(m), m_canMerge(false) {}
+  MergeUndoCommand(RWMolecule& m) : UndoCommand(m) {}
   void setCanMerge(bool merge) { m_canMerge = merge; }
   bool canMerge() const { return m_canMerge; }
   int id() const override { return m_canMerge ? Id : -1; }

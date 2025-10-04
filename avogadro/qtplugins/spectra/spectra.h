@@ -48,8 +48,8 @@ private:
   void gatherSpectra();
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
-  SpectraDialog* m_dialog;
+  QtGui::Molecule* m_molecule = nullptr;
+  SpectraDialog* m_dialog = nullptr;
 };
 
 } // namespace QtPlugins

@@ -43,8 +43,7 @@ protected:
 };
 
 MultiViewWidget::MultiViewWidget(QWidget* p, Qt::WindowFlags f)
-  : QWidget(p, f), m_factory(nullptr), m_activeWidget(nullptr),
-    m_activeFilter(new ActiveWidgetFilter(this))
+  : QWidget(p, f), m_activeFilter(new ActiveWidgetFilter(this))
 {
 }
 
