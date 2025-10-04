@@ -24,8 +24,7 @@ const int ELEMENT_SELECTOR_TAG = 255;
 namespace Avogadro::QtPlugins {
 
 EditorToolWidget::EditorToolWidget(QWidget* parent_)
-  : QWidget(parent_), m_ui(new Ui::EditorToolWidget),
-    m_elementSelector(nullptr), m_currentElement(6)
+  : QWidget(parent_), m_ui(new Ui::EditorToolWidget)
 {
   m_ui->setupUi(this);
 
