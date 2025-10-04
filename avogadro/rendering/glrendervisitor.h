@@ -77,7 +77,7 @@ public:
 private:
   Camera m_camera;
   const TextRenderStrategy* m_textRenderStrategy;
-  RenderPass m_renderPass;
+  RenderPass m_renderPass = NotRendering;
 };
 
 } // End namespace Rendering
