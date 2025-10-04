@@ -46,7 +46,7 @@ private slots:
 private:
   std::string m_name = "Crystal Lattice";
 
-  QWidget* m_setupWidget;
+  QWidget* m_setupWidget = nullptr;
   float m_lineWidth;
   Vector3ub m_color;
   bool m_multiColor;
