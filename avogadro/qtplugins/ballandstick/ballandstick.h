@@ -48,7 +48,7 @@ public slots:
   void opacityChanged(int value);
 
 private:
-  Rendering::GroupNode* m_group;
+  Rendering::GroupNode* m_group = nullptr;
   std::string m_name = "Ball and Stick";
   float m_atomScale = 0.3f;
   float m_bondRadius = 0.1f;

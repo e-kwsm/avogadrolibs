@@ -11,21 +11,17 @@
 namespace Avogadro::Core {
 
 Residue::Residue(std::string& name)
-  : m_residueName(name), m_residueId(0), m_chainId('A'), m_heterogen(false),
-    m_color(0, 0, 0), m_customColorSet(false), m_secondaryStructure(undefined)
+  : m_residueName(name), m_residueId(0), m_color(0, 0, 0)
 {
 }
 
 Residue::Residue(std::string& name, Index& number)
-  : m_residueName(name), m_residueId(number), m_chainId('A'),
-    m_heterogen(false), m_color(0, 0, 0), m_customColorSet(false),
-    m_secondaryStructure(undefined)
+  : m_residueName(name), m_residueId(number), m_color(0, 0, 0)
 {
 }
 
 Residue::Residue(std::string& name, Index& number, char& id)
-  : m_residueName(name), m_residueId(number), m_chainId(id), m_heterogen(false),
-    m_color(0, 0, 0), m_customColorSet(false), m_secondaryStructure(undefined)
+  : m_residueName(name), m_residueId(number), m_chainId(id), m_color(0, 0, 0)
 {
 }
 

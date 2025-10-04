@@ -434,8 +434,8 @@ executeObabel(options, this, SLOT(mySlot()));
 
   void releaseProcess() { m_processLocked = false; }
 
-  bool m_processLocked;
-  bool m_aborted;
+  bool m_processLocked = false;
+  bool m_aborted = false;
   QProcess* m_process;
   QString m_obabelExecutable;
 
@@ -445,7 +445,7 @@ executeObabel(options, this, SLOT(mySlot()));
   QString m_optimizeGeometryLog;
 
   // Conformer searches write their molecules here rather than to stdout.
-  QTemporaryFile* m_conformerOutputFile;
+  QTemporaryFile* m_conformerOutputFile = nullptr;
 };
 
 } // namespace QtPlugins

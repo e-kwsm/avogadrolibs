@@ -24,12 +24,12 @@ inline GLenum convertType(BufferObject::ObjectType type)
 
 struct BufferObject::Private
 {
-  Private() : handle(0) {}
+  Private() = default;
   GLenum type;
-  GLuint handle;
+  GLuint handle = 0;
 };
 
-BufferObject::BufferObject(ObjectType type_) : d(new Private), m_dirty(true)
+BufferObject::BufferObject(ObjectType type_) : d(new Private)
 {
   if (type_ == ArrayBuffer)
     d->type = GL_ARRAY_BUFFER;

@@ -230,10 +230,11 @@ private:
   Core::Array<Color3f> m_colors;
   Core::Array<Vector3f> m_triangles;
   std::string m_name;
-  bool m_stable;
+  bool m_stable = true;
   float m_isoValue;
-  unsigned int m_other; // Unique id of the other mesh if this is part of a pair
-  unsigned int m_cube;  // Unique id of the cube this mesh was generated from
+  unsigned int m_other =
+    0; // Unique id of the other mesh if this is part of a pair
+  unsigned int m_cube = 0; // Unique id of the cube this mesh was generated from
   Mutex* m_lock;
 };
 
