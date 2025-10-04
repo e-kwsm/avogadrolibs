@@ -80,12 +80,12 @@ private:
    */
   void load(Core::GaussianSet* basis);
 
-  double m_coordFactor;
+  double m_coordFactor = 1.0;
   int m_electrons;
   int m_electronsA;
   int m_electronsB;
   int m_nMOs;
-  Core::ScfType m_scftype;
+  Core::ScfType m_scftype = Core::Rhf;
   unsigned int m_numBasisFunctions;
   std::vector<Core::GaussianSet::orbital> m_shellTypes;
   std::vector<int> m_shellNums;

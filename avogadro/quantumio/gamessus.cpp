@@ -24,7 +24,7 @@ using Core::Rhf;
 using Core::Rohf;
 using Core::Uhf;
 
-GAMESSUSOutput::GAMESSUSOutput() : m_coordFactor(1.0), m_scftype(Rhf) {}
+GAMESSUSOutput::GAMESSUSOutput() = default;
 
 GAMESSUSOutput::~GAMESSUSOutput() {}
 
