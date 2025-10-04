@@ -54,9 +54,9 @@ private slots:
 
 private:
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
-  LammpsInputDialog* m_dialog;
-  const Io::FileFormat* m_outputFormat;
+  QtGui::Molecule* m_molecule = nullptr;
+  LammpsInputDialog* m_dialog = nullptr;
+  const Io::FileFormat* m_outputFormat = nullptr;
   QString m_outputFileName;
 };
 } // namespace QtPlugins
