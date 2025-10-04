@@ -39,8 +39,7 @@ struct GaussianShell
   unsigned int state;      // The MO number to calculate
 };
 
-GaussianSetConcurrent::GaussianSetConcurrent(QObject* p)
-  : QObject(p), m_gaussianShells(nullptr), m_set(nullptr), m_tools(nullptr)
+GaussianSetConcurrent::GaussianSetConcurrent(QObject* p) : QObject(p)
 {
   // Watch for the future
   connect(&m_watcher, SIGNAL(finished()), this, SLOT(calculationComplete()));
