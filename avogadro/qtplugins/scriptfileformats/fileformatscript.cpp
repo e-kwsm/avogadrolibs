@@ -28,8 +28,7 @@ using namespace std::string_literals;
 namespace Avogadro::QtPlugins {
 
 FileFormatScript::FileFormatScript(const QString& scriptFileName_)
-  : m_interpreter(new QtGui::PythonScript(scriptFileName_)), m_valid(false),
-    m_bondOnRead(false), m_inputFormat(NotUsed), m_outputFormat(NotUsed)
+  : m_interpreter(new QtGui::PythonScript(scriptFileName_))
 {
   readMetaData();
 }
