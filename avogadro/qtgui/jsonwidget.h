@@ -128,15 +128,15 @@ protected:
    */
   QString generateJobTitle() const;
 
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   QJsonObject m_options;
   QJsonObject m_optionCache; // For reverting changes
   QList<QTextEdit*> m_dirtyTextEdits;
 
-  bool m_empty;
-  bool m_batchMode;
-  QFormLayout* m_currentLayout;
-  QWidget* m_centralWidget;
+  bool m_empty = true;
+  bool m_batchMode = false;
+  QFormLayout* m_currentLayout = nullptr;
+  QWidget* m_centralWidget = nullptr;
   QMap<QString, QWidget*> m_widgets;
   QMap<QString, QTextEdit*> m_textEdits;
 };
