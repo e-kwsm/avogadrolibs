@@ -36,10 +36,7 @@ public:
   ContextStamp contextStamp;
 };
 
-WideLineGeometry::WideLineGeometry()
-  : m_color(255, 0, 0), m_opacity(255), m_dirty(false), d(new Private)
-{
-}
+WideLineGeometry::WideLineGeometry() : m_color(255, 0, 0), d(new Private) {}
 
 WideLineGeometry::WideLineGeometry(const WideLineGeometry& other)
   : Drawable(other), m_vertices(other.m_vertices), m_indices(other.m_indices),

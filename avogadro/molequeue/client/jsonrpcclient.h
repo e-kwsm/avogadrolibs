@@ -132,8 +132,8 @@ signals:
   void newPacket(const QByteArray& packet);
 
 protected:
-  unsigned int m_packetCounter;
-  QLocalSocket* m_socket;
+  unsigned int m_packetCounter = 0;
+  QLocalSocket* m_socket = nullptr;
 };
 
 } // namespace Avogadro::MoleQueue

@@ -27,9 +27,7 @@ namespace Avogadro::QtPlugins {
 
 using Core::Mesh;
 
-Apbs::Apbs(QObject* parent_)
-  : QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
-    m_progressDialog(nullptr), m_dialog(nullptr)
+Apbs::Apbs(QObject* parent_) : QtGui::ExtensionPlugin(parent_)
 {
   auto* action = new QAction(this);
   action->setText(tr("Run APBS…"));

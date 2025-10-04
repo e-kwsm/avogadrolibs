@@ -21,7 +21,7 @@ const unsigned int MoleQueueWidget::InvalidMoleQueueId(
 
 MoleQueueWidget::MoleQueueWidget(QWidget* parent_)
   : QWidget(parent_), m_ui(new Ui::MoleQueueWidget), m_jobState("Unknown"),
-    m_requestId(-1), m_moleQueueId(InvalidMoleQueueId)
+    m_moleQueueId(InvalidMoleQueueId)
 {
   m_ui->setupUi(this);
 

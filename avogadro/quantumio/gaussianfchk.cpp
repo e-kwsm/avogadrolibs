@@ -54,7 +54,7 @@ bool hasMinimumRemainingBytes(std::istream& in, size_t minBytes)
 }
 } // namespace
 
-GaussianFchk::GaussianFchk() : m_scftype(Rhf) {}
+GaussianFchk::GaussianFchk() = default;
 
 GaussianFchk::~GaussianFchk() {}
 

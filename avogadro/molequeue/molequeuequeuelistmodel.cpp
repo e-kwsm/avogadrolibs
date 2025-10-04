@@ -23,7 +23,7 @@ static const quint32 MaxInternalId(std::numeric_limits<quint32>::max() - 2);
 } // namespace
 
 MoleQueueQueueListModel::MoleQueueQueueListModel(QObject* parent_)
-  : QAbstractItemModel(parent_), m_uidCounter(0)
+  : QAbstractItemModel(parent_)
 {
 }
 

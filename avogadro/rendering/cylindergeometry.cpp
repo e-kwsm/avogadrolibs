@@ -73,7 +73,7 @@ public:
   CachedBounds bounds;
 };
 
-CylinderGeometry::CylinderGeometry() : m_dirty(false), d(new Private)
+CylinderGeometry::CylinderGeometry() : d(new Private)
 {
   setRenderPass(SolidPass);
 }

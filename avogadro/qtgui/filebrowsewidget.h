@@ -71,8 +71,8 @@ private slots:
   void fileNameNoMatch();
 
 private:
-  Mode m_mode;
-  bool m_valid;
+  Mode m_mode{};
+  bool m_valid = false;
   QFileSystemModel* m_fileSystemModel;
   QPushButton* m_button;
   QLineEdit* m_edit;

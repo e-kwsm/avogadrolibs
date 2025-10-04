@@ -63,7 +63,7 @@ public:
   CachedBounds bounds;
 };
 
-SphereGeometry::SphereGeometry() : m_dirty(false), d(new Private)
+SphereGeometry::SphereGeometry() : d(new Private)
 {
   setRenderPass(SolidPass);
 }

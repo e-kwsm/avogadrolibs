@@ -12,7 +12,7 @@
 
 namespace Avogadro::MoleQueue {
 
-Client::Client(QObject* parent_) : QObject(parent_), m_jsonRpcClient(nullptr) {}
+Client::Client(QObject* parent_) : QObject(parent_) {}
 
 Client::~Client() {}
 

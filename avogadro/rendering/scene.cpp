@@ -11,11 +11,7 @@
 
 namespace Avogadro::Rendering {
 
-Scene::Scene()
-  : m_backgroundColor(0, 0, 0, 0), m_dirty(true), m_center(Vector3f::Zero()),
-    m_radius(4.0f)
-{
-}
+Scene::Scene() : m_backgroundColor(0, 0, 0, 0) {}
 
 Scene::~Scene() {}
 

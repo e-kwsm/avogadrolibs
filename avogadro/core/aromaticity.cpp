@@ -185,7 +185,7 @@ std::vector<bool> findRingBonds(const Molecule& mol)
 } // namespace
 
 AromaticityPerceiver::AromaticityPerceiver(const Molecule* m, Model model)
-  : m_molecule(m), m_model(model), m_perceived(false)
+  : m_molecule(m), m_model(model)
 {
 }
 

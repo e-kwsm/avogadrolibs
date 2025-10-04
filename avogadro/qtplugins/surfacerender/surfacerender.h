@@ -60,7 +60,7 @@ private:
 
   std::string m_name = "Surfaces";
 
-  QWidget* m_setupWidget;
+  QWidget* m_setupWidget = nullptr;
   unsigned char m_opacity;
   // intensity of the volume rendering, saved separately from m_opacity
   unsigned char m_volumeOpacity;

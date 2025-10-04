@@ -75,8 +75,8 @@ private:
   void tilt(Vector3 delta, Vector3 centroid);
 
   QAction* m_activateAction;
-  QtGui::RWMolecule* m_molecule;
-  Rendering::GLRenderer* m_renderer;
+  QtGui::RWMolecule* m_molecule = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
   Rendering::Identifier m_object;
   QPoint m_lastMousePosition;
   Vector3f m_lastMouse3D;
@@ -91,7 +91,7 @@ private:
     ZoomTilt,
     Zoom
   };
-  ToolAction m_currentAction;
+  ToolAction m_currentAction = Nothing;
 };
 
 } // namespace Avogadro::QtPlugins

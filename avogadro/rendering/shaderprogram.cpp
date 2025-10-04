@@ -89,7 +89,6 @@ inline GLenum lookupTextureUnit(GLint index)
 } // namespace
 
 ShaderProgram::ShaderProgram()
-  : m_handle(0), m_vertexShader(0), m_fragmentShader(0), m_linked(false)
 {
   // Scene objects may be constructed before a viewport has a GL context.
   // Query capabilities when linking, when a context must be current.
