@@ -92,7 +92,7 @@ inline QString torsionTypeString(unsigned char a, unsigned char b,
 }
 
 PropertyModel::PropertyModel(PropertyType type, QObject* parent)
-  : QAbstractTableModel(parent), m_type(type), m_molecule(nullptr)
+  : QAbstractTableModel(parent), m_type(type)
 {
 }
 
