@@ -904,7 +904,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
   }
   if (partialCharges.is_object()) {
     // keys are types, values are arrays of charges
-    for (auto& kv : partialCharges.items()) {
+    for (const auto& kv : partialCharges.items()) {
       MatrixX charges(atomCount, 1);
       if (isNumericArray(kv.value()) && kv.value().size() == atomCount) {
         for (size_t i = 0; i < kv.value().size(); ++i) {
