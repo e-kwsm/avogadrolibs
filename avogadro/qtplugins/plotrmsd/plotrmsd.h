@@ -53,7 +53,7 @@ private:
   void generateRmsdPattern(RmsdData& results);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 
   std::unique_ptr<QAction> m_displayDialogAction;
   QScopedPointer<QtGui::ChartDialog> m_chartDialog;
