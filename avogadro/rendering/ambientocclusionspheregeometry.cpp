@@ -539,8 +539,7 @@ class AmbientOcclusionBaker
 {
 public:
   AmbientOcclusionBaker(AmbientOcclusionRenderer* renderer, GLint textureSize_)
-    : m_renderer(renderer), m_textureSize(textureSize_), m_depthTexture(0),
-      m_depthFBO(0), m_aoTexture(0), m_aoFBO(0)
+    : m_renderer(renderer), m_textureSize(textureSize_)
   {
     initialize();
   }
@@ -854,10 +853,10 @@ private:
 
   GLint m_textureSize;
 
-  GLuint m_depthTexture;
-  GLuint m_depthFBO;
-  GLuint m_aoTexture;
-  GLuint m_aoFBO;
+  GLuint m_depthTexture = 0;
+  GLuint m_depthFBO = 0;
+  GLuint m_aoTexture = 0;
+  GLuint m_aoFBO = 0;
 };
 
 class SphereAmbientOcclusionRenderer : public AmbientOcclusionRenderer
@@ -1062,7 +1061,7 @@ private:
 class AmbientOcclusionSphereGeometry::Private
 {
 public:
-  Private() : aoTextureSize(1024) {}
+  Private() = default;
 
   BufferObject vbo;
   BufferObject ibo;
@@ -1075,12 +1074,12 @@ public:
   size_t numberOfIndices;
 
   Eigen::Matrix4f translate;
-  int aoTextureSize;
+  int aoTextureSize = 1024;
   int aoTexture;
 };
 
 AmbientOcclusionSphereGeometry::AmbientOcclusionSphereGeometry()
-  : m_dirty(false), d(new Private)
+  : d(new Private)
 {
 }
 
