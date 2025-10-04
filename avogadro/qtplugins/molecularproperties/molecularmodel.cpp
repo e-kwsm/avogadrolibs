@@ -26,7 +26,7 @@ using QtGui::Molecule;
 #define AU_TO_EV 27.211386245981
 
 MolecularModel::MolecularModel(QObject* parent)
-  : QAbstractTableModel(parent), m_molecule(nullptr)
+  : QAbstractTableModel(parent)
 {
 }
 
