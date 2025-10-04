@@ -19,8 +19,7 @@
 namespace Avogadro::QtGui {
 
 FileBrowseWidget::FileBrowseWidget(QWidget* theParent)
-  : QWidget(theParent), m_mode(), // use the setter to initialize filters.
-    m_valid(false), m_fileSystemModel(new QFileSystemModel(this)),
+  : QWidget(theParent), m_fileSystemModel(new QFileSystemModel(this)),
     m_button(new QPushButton(tr("Browse"))), m_edit(new QLineEdit)
 {
   auto* hbox = new QHBoxLayout;
