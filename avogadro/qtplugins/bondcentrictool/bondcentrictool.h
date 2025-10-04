@@ -137,9 +137,9 @@ private:
   void transformFragment() const;
 
   QAction* m_activateAction;
-  QtGui::RWMolecule* m_molecule;
-  Rendering::GLRenderer* m_renderer;
-  MoveState m_moveState;
+  QtGui::RWMolecule* m_molecule = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
+  MoveState m_moveState = IgnoreMove;
   QPoint m_clickedPoint;
   QPoint m_lastDragPoint;
   Vector3f m_bondVector;
@@ -153,9 +153,9 @@ private:
   // Snap angles for RotatePlane. Angles are relative to m_planeSnapRef and
   // follow a right-hand rule around m_bondVector. Range is [-180, 180).
   std::set<float> m_planeSnapAngles;
-  float m_planeSnapIncr;
+  float m_planeSnapIncr = 10.f;
   Vector3f m_planeSnapRef;
-  bool m_snapPlaneToBonds;
+  bool m_snapPlaneToBonds = true;
   void updatePlaneSnapAngles();
   void updateSnappedPlaneNormal();
 
