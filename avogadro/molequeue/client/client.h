@@ -236,7 +236,7 @@ protected:
     UnregisterOpenWith
   };
 
-  JsonRpcClient* m_jsonRpcClient;
+  JsonRpcClient* m_jsonRpcClient = nullptr;
   QHash<unsigned int, MessageType> m_requests;
 
 private:

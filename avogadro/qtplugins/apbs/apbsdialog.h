@@ -68,11 +68,11 @@ private:
 private:
   Ui::ApbsDialog* m_ui;
   QString m_generatedPqrFileName;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   MoleQueue::InputGenerator* m_inputGenerator;
   QString m_cubeFileName;
-  bool m_loadStructureFile;
-  bool m_loadCubeFile;
+  bool m_loadStructureFile = false;
+  bool m_loadCubeFile = false;
 };
 } // namespace QtPlugins
 } // namespace Avogadro

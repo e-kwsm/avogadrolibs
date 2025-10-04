@@ -101,12 +101,11 @@ private:
     QString name;
     QString mol2url;
     QString formula;
-    float mass;
+    float mass = -1.0;
 
     // Default constructor
     result()
-      : inchikey("Error"), name("Error"), mol2url("Error"), formula("Error"),
-        mass(-1.0)
+      : inchikey("Error"), name("Error"), mol2url("Error"), formula("Error")
     {
     }
   };

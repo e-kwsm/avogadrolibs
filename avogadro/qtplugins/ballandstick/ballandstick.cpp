@@ -170,7 +170,7 @@ struct LayerBallAndStick : Core::LayerData
   }
 };
 
-BallAndStick::BallAndStick(QObject* p) : ScenePlugin(p), m_group(nullptr)
+BallAndStick::BallAndStick(QObject* p) : ScenePlugin(p)
 {
   m_layerManager = PluginLayerManager(m_name);
 }

@@ -137,9 +137,9 @@ private:
   GroupNode m_rootNode;
   Vector4ub m_backgroundColor;
 
-  mutable bool m_dirty;
-  mutable Vector3f m_center;
-  mutable float m_radius;
+  mutable bool m_dirty = true;
+  mutable Vector3f m_center = Vector3f::Zero();
+  mutable float m_radius = 4.0f;
 };
 
 } // namespace Rendering

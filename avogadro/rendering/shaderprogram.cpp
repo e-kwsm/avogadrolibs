@@ -84,7 +84,6 @@ inline GLenum lookupTextureUnit(GLint index)
 } // namespace
 
 ShaderProgram::ShaderProgram()
-  : m_handle(0), m_vertexShader(0), m_fragmentShader(0), m_linked(false)
 {
   initializeTextureUnits();
 }

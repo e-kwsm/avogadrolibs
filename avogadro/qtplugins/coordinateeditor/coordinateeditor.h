@@ -44,8 +44,8 @@ private slots:
   void pastedMolecule();
 
 private:
-  CoordinateEditorDialog* m_dialog;
-  QtGui::Molecule* m_molecule;
+  CoordinateEditorDialog* m_dialog = nullptr;
+  QtGui::Molecule* m_molecule = nullptr;
   QAction* m_action;
 };
 

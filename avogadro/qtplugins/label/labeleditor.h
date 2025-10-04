@@ -54,10 +54,10 @@ private:
   void save();
 
   QAction* m_activateAction;
-  QtGui::RWMolecule* m_molecule;
-  QtOpenGL::GLWidget* m_glWidget;
-  Rendering::GLRenderer* m_renderer;
-  bool m_selected;
+  QtGui::RWMolecule* m_molecule = nullptr;
+  QtOpenGL::GLWidget* m_glWidget = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
+  bool m_selected = false;
   QtGui::RWAtom m_selectedAtom;
   QString m_text;
 };

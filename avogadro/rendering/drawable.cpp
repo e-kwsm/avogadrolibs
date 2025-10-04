@@ -11,10 +11,7 @@ namespace Avogadro::Rendering {
 
 using Core::Array;
 
-Drawable::Drawable()
-  : m_parent(nullptr), m_visible(true), m_renderPass(OpaquePass)
-{
-}
+Drawable::Drawable() = default;
 
 Drawable::Drawable(const Drawable& other)
   : m_parent(other.m_parent), m_visible(other.m_visible),

@@ -18,9 +18,7 @@ namespace Avogadro::QtGui {
 
 using Core::Elements;
 
-ElementItem::ElementItem(int elementNumber)
-  : m_valid(false), m_color(Qt::white), m_width(26), m_height(26),
-    m_element(elementNumber)
+ElementItem::ElementItem(int elementNumber) : m_element(elementNumber)
 {
   // Want these items to be selectable
   setFlags(QGraphicsItem::ItemIsSelectable);
