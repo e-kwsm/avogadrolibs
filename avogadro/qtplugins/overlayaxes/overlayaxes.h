@@ -51,14 +51,14 @@ private:
   void process(const Core::Molecule& molecule, Rendering::GroupNode& node);
 
   bool m_enabled;
-  bool m_initialized;
+  bool m_initialized = false;
 
   class RenderImpl;
   RenderImpl* const m_render;
   std::map<QWidget*, Rendering::GroupNode*> m_widgetToNode;
   QtGui::Molecule* m_molecule = nullptr;
   Rendering::Scene* m_scene;
-  QWidget* m_glWidget;
+  QWidget* m_glWidget = nullptr;
   QAction* m_axesAction;
 };
 
