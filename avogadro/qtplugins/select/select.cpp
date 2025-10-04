@@ -25,8 +25,7 @@ using Avogadro::QtGui::Molecule;
 namespace Avogadro::QtPlugins {
 
 Select::Select(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
-    m_elements(nullptr), m_layerManager("Select")
+  : Avogadro::QtGui::ExtensionPlugin(parent_), m_layerManager("Select")
 {
   auto* action = new QAction(tr("Select All"), this);
   action->setShortcut(QKeySequence("Ctrl+A"));
