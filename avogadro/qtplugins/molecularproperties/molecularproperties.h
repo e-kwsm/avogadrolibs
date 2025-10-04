@@ -40,7 +40,7 @@ private slots:
 
 private:
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 };
 
 } // namespace QtPlugins
