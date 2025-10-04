@@ -55,7 +55,7 @@ private:
   /**
    * Width and height of the item.
    */
-  int m_width, m_height;
+  int m_width = 100, m_height = 70;
 
   /**
    * The proton number of the item - all other attributes are derived from this.
