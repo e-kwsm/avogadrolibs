@@ -49,10 +49,7 @@ public:
   ShaderProgram program;
 };
 
-LineStripGeometry::LineStripGeometry()
-  : m_color(255, 0, 0), m_opacity(255), m_dirty(false), d(new Private)
-{
-}
+LineStripGeometry::LineStripGeometry() : m_color(255, 0, 0), d(new Private) {}
 
 LineStripGeometry::LineStripGeometry(const LineStripGeometry& other)
   : Drawable(other), m_vertices(other.m_vertices),
