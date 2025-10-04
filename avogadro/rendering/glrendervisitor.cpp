@@ -18,7 +18,7 @@ namespace Avogadro::Rendering {
 
 GLRenderVisitor::GLRenderVisitor(const Camera& camera_,
                                  const TextRenderStrategy* trs)
-  : m_camera(camera_), m_textRenderStrategy(trs), m_renderPass(NotRendering)
+  : m_camera(camera_), m_textRenderStrategy(trs)
 {
 }
 
