@@ -427,8 +427,8 @@ executeObabel(options, this, SLOT(mySlot()));
 
   void releaseProcess() { m_processLocked = false; }
 
-  bool m_processLocked;
-  bool m_aborted;
+  bool m_processLocked = false;
+  bool m_aborted = false;
   QProcess* m_process;
   QString m_obabelExecutable;
 
