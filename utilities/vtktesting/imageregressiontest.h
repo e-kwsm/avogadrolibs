@@ -154,13 +154,12 @@ private:
   std::string m_baselinePath;
   std::string m_temporaryPath;
   std::string m_name;
-  double m_threshold;
+  double m_threshold = 15.0;
 
-  bool m_valid;
+  bool m_valid = false;
 };
 
 inline ImageRegressionTest::ImageRegressionTest(int argc, char* argv[])
-  : m_threshold(15.0), m_valid(false)
 {
   if (argc < 2) {
     m_valid = false;
