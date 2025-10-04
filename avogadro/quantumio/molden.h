@@ -54,8 +54,8 @@ private:
   void readAtom(const std::vector<std::string>& list);
   void load(Core::GaussianSet* basis);
 
-  double m_coordFactor;
-  int m_electrons;
+  double m_coordFactor = 1.0;
+  int m_electrons = 0;
   unsigned int m_numBasisFunctions;
   std::vector<int> m_aNums;
   std::vector<double> m_aPos;
@@ -84,7 +84,7 @@ private:
     Intensities,
     Unrecognized
   };
-  Mode m_mode;
+  Mode m_mode = Unrecognized;
 };
 
 } // namespace QuantumIO
