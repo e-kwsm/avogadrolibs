@@ -79,7 +79,7 @@ private:
   Core::Array<unsigned int> m_lineStarts;
   Vector3ub m_color;
 
-  bool m_dirty;
+  bool m_dirty = false;
 
   class Private;
   Private* d;
