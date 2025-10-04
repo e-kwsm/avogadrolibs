@@ -12,10 +12,7 @@
 
 namespace Avogadro::Rendering {
 
-GeometryVisitor::GeometryVisitor()
-  : m_center(Vector3f::Zero()), m_radius(0.0f), m_dirty(false)
-{
-}
+GeometryVisitor::GeometryVisitor() = default;
 
 GeometryVisitor::~GeometryVisitor() {}
 
