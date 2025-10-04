@@ -45,11 +45,7 @@ public:
   ShaderProgram program;
 };
 
-DashedLineGeometry::DashedLineGeometry()
-  : m_lineWidth(1.0), m_lineCount(0), m_color(255, 0, 0), m_opacity(255),
-    m_dirty(false), d(new Private)
-{
-}
+DashedLineGeometry::DashedLineGeometry() : m_color(255, 0, 0), d(new Private) {}
 
 DashedLineGeometry::DashedLineGeometry(const DashedLineGeometry& other)
   : Drawable(other), m_vertices(other.m_vertices),
