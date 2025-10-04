@@ -41,7 +41,7 @@ class CmlFormatPrivate
 {
 public:
   CmlFormatPrivate(Molecule* mol, xml_document& document, std::string filename_)
-    : success(false), molecule(mol), moleculeNode(nullptr), filename(filename_)
+    : molecule(mol), moleculeNode(nullptr), filename(filename_)
   {
     // Parse the CML document, and create molecules/elements as necessary.
     moleculeNode = document.child("molecule");
@@ -443,7 +443,7 @@ public:
   }
 #endif
 
-  bool success;
+  bool success = false;
   Molecule* molecule;
   xml_node moleculeNode;
   std::map<std::string, Index> atomIds;
