@@ -75,14 +75,14 @@ private:
   bool queryProgramName(const QString& scriptFilePath, QString& displayName);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   // keyed on script file path
   QMap<QString, MoleQueue::InputGeneratorDialog*> m_dialogs;
 
   // maps program name --> script file path
   QMultiMap<QString, QString> m_inputGeneratorScripts;
 
-  const Io::FileFormat* m_outputFormat;
+  const Io::FileFormat* m_outputFormat = nullptr;
   QString m_outputFileName;
 };
 } // namespace QtPlugins
