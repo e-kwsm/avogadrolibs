@@ -68,11 +68,11 @@ private:
   void saveElements();
 
   Ui::TemplateToolWidget* m_ui;
-  QtGui::InsertFragmentDialog* m_fragmentDialog;
-  QtGui::PeriodicTableView* m_elementSelector;
+  QtGui::InsertFragmentDialog* m_fragmentDialog = nullptr;
+  QtGui::PeriodicTableView* m_elementSelector = nullptr;
   QList<unsigned char> m_defaultElements;
   QList<unsigned char> m_userElements;
-  unsigned char m_currentElement;
+  unsigned char m_currentElement = 26;
   QStringList m_centers;
   QStringList m_ligands;
   QStringList m_groups;
