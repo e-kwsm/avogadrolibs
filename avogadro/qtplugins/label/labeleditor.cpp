@@ -24,9 +24,7 @@ using Rendering::Identifier;
 using Rendering::TextLabel3D;
 
 LabelEditor::LabelEditor(QObject* parent_)
-  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_glWidget(nullptr), m_renderer(nullptr),
-    m_selected(false), m_text("")
+  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)), m_text("")
 {
   QString shortcut = tr("Ctrl+4", "control-key 4");
   m_activateAction->setText(tr("Edit Labels"));
