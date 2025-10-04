@@ -18,12 +18,12 @@ class Molecule;
 
 struct MoleculeSystem
 {
-  MoleculeSystem() : m_molecule(nullptr), m_dirty(false), m_active(false) {}
+  MoleculeSystem() = default;
 
-  Molecule* m_molecule;
+  Molecule* m_molecule = nullptr;
   Eigen::Affine3f m_modelView;
-  bool m_dirty;
-  bool m_active;
+  bool m_dirty = false;
+  bool m_active = false;
 };
 
 /**
@@ -70,7 +70,7 @@ public slots:
 
 private:
   QList<Molecule*> m_molecules;
-  QObject* m_activeMolecule;
+  QObject* m_activeMolecule = nullptr;
 };
 
 } // namespace QtGui
