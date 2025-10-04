@@ -44,9 +44,7 @@ using Avogadro::Rendering::TextProperties;
 namespace Avogadro::QtPlugins {
 
 AlignTool::AlignTool(QObject* parent_)
-  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_renderer(nullptr), m_axis(0), m_alignType(0),
-    m_toolWidget(nullptr)
+  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this))
 {
   m_activateAction->setText(tr("Align"));
   m_activateAction->setToolTip(
