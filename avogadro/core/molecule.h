@@ -946,8 +946,8 @@ protected:
   std::vector<Mesh*> m_meshes;
   std::vector<Cube*> m_cubes;
 
-  BasisSet* m_basisSet;
-  UnitCell* m_unitCell;
+  BasisSet* m_basisSet = nullptr;
+  UnitCell* m_unitCell = nullptr;
   Array<Residue> m_residues;
 
   // This will be stored from the last space group operation

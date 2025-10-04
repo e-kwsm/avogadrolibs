@@ -25,9 +25,7 @@
 
 namespace Avogadro::Core {
 
-Molecule::Molecule()
-  : m_basisSet(nullptr), m_unitCell(nullptr),
-    m_layers(LayerManager::getMoleculeLayer(this))
+Molecule::Molecule() : m_layers(LayerManager::getMoleculeLayer(this))
 {
   m_elements.reset();
 }
