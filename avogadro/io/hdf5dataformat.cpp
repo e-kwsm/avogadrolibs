@@ -40,12 +40,12 @@ protected:
 class Hdf5DataFormat::Private
 {
 public:
-  Private() : fileId(H5I_INVALID_HID), threshold(1024) {}
+  Private() = default;
 
   std::string filename;
-  hid_t fileId;
+  hid_t fileId = H5I_INVALID_HID;
 
-  size_t threshold;
+  size_t threshold = 1024;
 };
 
 namespace {
