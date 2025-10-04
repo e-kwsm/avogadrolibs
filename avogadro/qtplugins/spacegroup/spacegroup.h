@@ -53,8 +53,8 @@ private:
   // Returns 0 if the user canceled.
   unsigned short selectSpaceGroup();
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
-  double m_spgTol;
+  QtGui::Molecule* m_molecule = nullptr;
+  double m_spgTol = 1e-5;
 
   QAction* m_perceiveSpaceGroupAction;
   QAction* m_reduceToPrimitiveAction;
