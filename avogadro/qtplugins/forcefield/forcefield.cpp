@@ -56,7 +56,7 @@ const int fuseAction = 7;
 const int unfuseAction = 8;
 
 Forcefield::Forcefield(QObject* parent_)
-  : ExtensionPlugin(parent_), m_method(nullptr)
+  : ExtensionPlugin(parent_)
 {
   QSettings settings;
   settings.beginGroup("forcefield");
