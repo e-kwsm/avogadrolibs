@@ -16,7 +16,7 @@ using std::ifstream;
 using std::locale;
 using std::ofstream;
 
-FileFormat::FileFormat() : m_mode(None), m_in(nullptr), m_out(nullptr) {}
+FileFormat::FileFormat() {}
 
 FileFormat::~FileFormat()
 {

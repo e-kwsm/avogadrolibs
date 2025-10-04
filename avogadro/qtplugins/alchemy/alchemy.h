@@ -46,7 +46,7 @@ private slots:
   void changeElements();
 
 private:
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 
   QAction* m_action;
 };

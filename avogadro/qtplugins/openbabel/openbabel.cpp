@@ -38,10 +38,7 @@ using namespace std::string_literals;
 namespace Avogadro::QtPlugins {
 
 OpenBabel::OpenBabel(QObject* p)
-  : ExtensionPlugin(p), m_molecule(nullptr), m_process(new OBProcess(this)),
-    m_readFormatsPending(true), m_writeFormatsPending(true),
-    m_defaultFormat("cml"), m_progress(nullptr),
-    m_conformerSearchDialog(nullptr)
+  : ExtensionPlugin(p), m_process(new OBProcess(this)), m_defaultFormat("cml")
 {
   auto* action = new QAction(this);
   action->setEnabled(true);

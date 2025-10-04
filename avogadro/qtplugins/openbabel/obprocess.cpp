@@ -16,8 +16,7 @@
 namespace Avogadro::QtPlugins {
 
 OBProcess::OBProcess(QObject* parent_)
-  : QObject(parent_), m_processLocked(false), m_aborted(false),
-    m_process(new QProcess(this)),
+  : QObject(parent_), m_process(new QProcess(this)),
 #if defined(_WIN32)
     m_obabelExecutable("obabel.exe")
 #else

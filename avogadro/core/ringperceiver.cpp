@@ -480,10 +480,7 @@ std::vector<std::vector<size_t>> perceiveRings(const Graph& graph)
 
 } // end anonymous namespace
 
-RingPerceiver::RingPerceiver(const Molecule* m)
-  : m_ringsPerceived(false), m_molecule(m)
-{
-}
+RingPerceiver::RingPerceiver(const Molecule* m) : m_molecule(m) {}
 
 void RingPerceiver::setMolecule(const Molecule* m)
 {

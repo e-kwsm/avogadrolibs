@@ -25,11 +25,8 @@ namespace Avogadro::Rendering {
 using Core::Array;
 
 GLRenderer::GLRenderer()
-  : m_valid(false), m_textRenderStrategy(nullptr), m_center(Vector3f::Zero()),
-    m_radius(20.0)
 #ifdef _3DCONNEXION
-    ,
-    m_drawIcon(false), m_iconData(nullptr), m_iconWidth(0u), m_iconHeight(0u),
+  : m_drawIcon(false), m_iconData(nullptr), m_iconWidth(0u), m_iconHeight(0u),
     m_iconPosition(Eigen::Vector3f::Zero())
 #endif
 {

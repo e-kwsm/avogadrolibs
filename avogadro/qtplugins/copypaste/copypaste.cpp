@@ -26,7 +26,7 @@ namespace Avogadro::QtPlugins {
 using namespace Avogadro::QtGui;
 
 CopyPaste::CopyPaste(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_pastedFormat(nullptr),
+  : Avogadro::QtGui::ExtensionPlugin(parent_),
     m_copyAction(new QAction(tr("Copy"), this)),
     // don't translate SMILES, InChI, or XYZ
     m_copySMILES(new QAction("SMILES", this)),

@@ -43,8 +43,6 @@ namespace Avogadro::QtPlugins {
 
 SelectionTool::SelectionTool(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_renderer(nullptr), m_toolWidget(nullptr),
-    m_drawSelectionBox(false), m_doubleClick(false), m_initSelectionBox(false),
     m_layerManager("Selection Tool")
 {
   QString shortcut = tr("Ctrl+4", "control-key 4");

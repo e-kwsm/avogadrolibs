@@ -37,8 +37,7 @@ ostream& operator<<(ostream& os, const Vector3ub& color)
 } // namespace
 
 POVRayVisitor::POVRayVisitor(const Camera& c)
-  : m_camera(c), m_backgroundColor(255, 255, 255),
-    m_ambientColor(100, 100, 100), m_aspectRatio(800.0f / 600.0f)
+  : m_camera(c), m_backgroundColor(255, 255, 255), m_ambientColor(100, 100, 100)
 {
 }
 

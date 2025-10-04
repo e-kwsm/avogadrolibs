@@ -30,7 +30,7 @@ public:
   std::vector<std::vector<size_t>>& rings();
 
 private:
-  bool m_ringsPerceived;
+  bool m_ringsPerceived = false;
   const Molecule* m_molecule;
   std::vector<std::vector<size_t>> m_rings;
 };

@@ -79,10 +79,10 @@ private:
   QString generateJobTitle() const;
 
   Ui::GamessInputDialog ui;
-  QtGui::Molecule* m_molecule;
-  GamessHighlighter* m_highlighter;
+  QtGui::Molecule* m_molecule = nullptr;
+  GamessHighlighter* m_highlighter = nullptr;
 
-  bool m_updatePending;
+  bool m_updatePending = false;
   QMap<QComboBox*, int> m_optionCache;
 };
 

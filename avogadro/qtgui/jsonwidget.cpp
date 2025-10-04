@@ -33,11 +33,7 @@ using namespace Qt::StringLiterals;
 
 namespace Avogadro::QtGui {
 
-JsonWidget::JsonWidget(QWidget* parent_)
-  : QWidget(parent_), m_molecule(nullptr), m_empty(true), m_batchMode(false),
-    m_currentLayout(nullptr), m_centralWidget(nullptr)
-{
-}
+JsonWidget::JsonWidget(QWidget* parent_) : QWidget(parent_) {}
 
 JsonWidget::~JsonWidget() {}
 

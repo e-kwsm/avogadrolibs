@@ -156,11 +156,11 @@ protected:
   bool setAttributeArrayInternal(const std::string& name, void* buffer,
                                  Avogadro::Type type, int tupleSize,
                                  NormalizeOption normalize);
-  Index m_handle;
-  Index m_vertexShader;
-  Index m_fragmentShader;
+  Index m_handle = 0;
+  Index m_vertexShader = 0;
+  Index m_fragmentShader = 0;
 
-  bool m_linked;
+  bool m_linked = false;
 
   std::string m_error;
 

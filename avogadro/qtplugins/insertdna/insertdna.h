@@ -51,9 +51,9 @@ private slots:
 private:
   QList<QAction*> m_actions;
 
-  QtGui::Molecule* m_molecule;
-  Io::FileFormat* m_reader;
-  InsertDNADialog* m_dialog;
+  QtGui::Molecule* m_molecule = nullptr;
+  Io::FileFormat* m_reader = nullptr;
+  InsertDNADialog* m_dialog = nullptr;
 
   void constructDialog();
 };

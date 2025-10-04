@@ -54,9 +54,9 @@ private:
                     QVector<Vector3>& positions);
 
   QAction* m_activateAction;
-  QtGui::Molecule* m_molecule;
-  QtGui::RWMolecule* m_rwMolecule;
-  Rendering::GLRenderer* m_renderer;
+  QtGui::Molecule* m_molecule = nullptr;
+  QtGui::RWMolecule* m_rwMolecule = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
   QVector<Rendering::Identifier> m_atoms;
 };
 

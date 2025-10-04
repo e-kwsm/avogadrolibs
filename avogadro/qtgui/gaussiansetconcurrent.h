@@ -64,10 +64,10 @@ private:
   QFuture<void> m_future;
   QFutureWatcher<void> m_watcher;
   Core::Cube* m_cube;
-  QVector<GaussianShell>* m_gaussianShells;
+  QVector<GaussianShell>* m_gaussianShells = nullptr;
 
-  Core::GaussianSet* m_set;
-  Core::GaussianSetTools* m_tools;
+  Core::GaussianSet* m_set = nullptr;
+  Core::GaussianSetTools* m_tools = nullptr;
 
   bool setUpCalculation(Core::Cube* cube, unsigned int state,
                         void (*func)(GaussianShell&));

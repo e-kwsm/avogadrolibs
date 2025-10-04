@@ -184,13 +184,13 @@ private:
 
 private:
   QtGui::PythonScript* m_interpreter;
-  bool m_valid;
-  bool m_bondOnRead;
-  bool m_inputModeFile;
-  bool m_outputModeFile;
+  bool m_valid = false;
+  bool m_bondOnRead = false;
+  bool m_inputModeFile = false;
+  bool m_outputModeFile = false;
   Operations m_operations;
-  Format m_inputFormat;
-  Format m_outputFormat;
+  Format m_inputFormat = NotUsed;
+  Format m_outputFormat = NotUsed;
   std::string m_identifier;
   std::string m_name;
   std::string m_description;

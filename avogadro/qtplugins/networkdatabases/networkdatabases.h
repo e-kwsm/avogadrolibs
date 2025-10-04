@@ -55,11 +55,11 @@ private:
   static bool sdfHasThreeDCoordinates(const QByteArray& data);
 
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
-  QNetworkAccessManager* m_network;
+  QtGui::Molecule* m_molecule = nullptr;
+  QNetworkAccessManager* m_network = nullptr;
   QString m_moleculeName;
   QByteArray m_moleculeData;
-  QProgressDialog* m_progressDialog;
+  QProgressDialog* m_progressDialog = nullptr;
   bool m_triedPubChem = false;
 };
 } // namespace QtPlugins

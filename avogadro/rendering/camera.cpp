@@ -11,9 +11,7 @@
 
 namespace Avogadro::Rendering {
 
-Camera::Camera()
-  : m_width(0), m_height(0), m_projectionType(Perspective),
-    m_orthographicScale(1.0), m_data(new EigenData), m_focus(NAN, NAN, NAN)
+Camera::Camera() : m_data(new EigenData), m_focus(NAN, NAN, NAN)
 {
   m_data->projection.setIdentity();
   m_data->modelView.setIdentity();

@@ -37,7 +37,7 @@ private slots:
 
 private:
   Ui::VolumeScalingDialog* m_ui;
-  double m_currentVolume;
+  double m_currentVolume = 0.0;
 };
 
 } // namespace QtPlugins

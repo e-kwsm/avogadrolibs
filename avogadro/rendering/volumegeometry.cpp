@@ -204,51 +204,43 @@ void initializePositionFramebuffer(GLuint* outFBO, GLuint* texRGB,
 class VolumeGeometry::Private
 {
 public:
-  Private()
-    : vertexShader(nullptr), fragmentShader(nullptr), program(nullptr), vao(0),
-      vbo(0), defaultFBO(0), renderFBO(0), renderTexture(0), depthTexture(0),
-      frontFBO(0), frontColorTexture(0), frontDepthTexture(0), backFBO(0),
-      backColorTexture(0), backDepthTexture(0), boxVertexShader(nullptr),
-      boxFragmentShader(nullptr), boxShaders(nullptr), transferTexture(0),
-      volumeBoxVao(0), volumeBoxVbo(0), volumeBoxEbo(0), volumeTexture(0)
-  {
-  }
+  Private() {}
 
   // GL resources
-  Shader* vertexShader;
-  Shader* fragmentShader;
-  ShaderProgram* program;
+  Shader* vertexShader = nullptr;
+  Shader* fragmentShader = nullptr;
+  ShaderProgram* program = nullptr;
 
-  GLuint vao;
-  GLuint vbo;
+  GLuint vao = 0;
+  GLuint vbo = 0;
 
-  GLuint frontFBO;
-  GLuint frontColorTexture;
-  GLuint frontDepthTexture;
+  GLuint frontFBO = 0;
+  GLuint frontColorTexture = 0;
+  GLuint frontDepthTexture = 0;
 
-  GLuint backFBO;
-  GLuint backColorTexture;
-  GLuint backDepthTexture;
+  GLuint backFBO = 0;
+  GLuint backColorTexture = 0;
+  GLuint backDepthTexture = 0;
 
-  Shader* boxVertexShader;
-  Shader* boxFragmentShader;
-  ShaderProgram* boxShaders;
+  Shader* boxVertexShader = nullptr;
+  Shader* boxFragmentShader = nullptr;
+  ShaderProgram* boxShaders = nullptr;
 
-  GLuint transferTexture;
-  GLuint volumeBoxVao;
-  GLuint volumeBoxVbo;
-  GLuint volumeBoxEbo;
-  GLuint volumeTexture;
+  GLuint transferTexture = 0;
+  GLuint volumeBoxVao = 0;
+  GLuint volumeBoxVbo = 0;
+  GLuint volumeBoxEbo = 0;
+  GLuint volumeTexture = 0;
 
-  GLuint defaultFBO;
-  GLuint renderFBO;
-  GLuint renderTexture;
-  GLuint depthTexture;
+  GLuint defaultFBO = 0;
+  GLuint renderFBO = 0;
+  GLuint renderTexture = 0;
+  GLuint depthTexture = 0;
 };
 
 VolumeGeometry::VolumeGeometry()
-  : m_cube(nullptr), m_dirty(true), m_positiveColor(255, 0, 0),
-    m_negativeColor(0, 0, 255), d(new Private)
+  : m_dirty(true), m_positiveColor(255, 0, 0), m_negativeColor(0, 0, 255),
+    d(new Private)
 {
 }
 

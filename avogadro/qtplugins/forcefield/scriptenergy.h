@@ -120,18 +120,18 @@ private:
 
 private:
   QtGui::PythonScript* m_interpreter;
-  Format m_inputFormat;
-  Protocol m_protocol;
-  Core::Molecule* m_molecule;
+  Format m_inputFormat = NotUsed;
+  Protocol m_protocol = Protocol::TextV1;
+  Core::Molecule* m_molecule = nullptr;
 
   // what's supported by this script
   Core::Molecule::ElementMask m_elements;
-  bool m_valid;
-  bool m_gradients;
-  bool m_hessians;
-  bool m_ions;
-  bool m_radicals;
-  bool m_unitCells;
+  bool m_valid = true;
+  bool m_gradients = false;
+  bool m_hessians = false;
+  bool m_ions = false;
+  bool m_radicals = false;
+  bool m_unitCells = false;
 
   std::string m_identifier;
   std::string m_name;

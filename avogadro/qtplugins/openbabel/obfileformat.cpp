@@ -27,7 +27,7 @@ class OBFileFormat::ProcessListener : public QObject
 {
   Q_OBJECT
 public:
-  ProcessListener() : QObject(), m_finished(false) {}
+  ProcessListener() : QObject() {}
 
   bool waitForOutput(QByteArray& output, int msTimeout = 120000)
   {
@@ -59,7 +59,7 @@ private:
   }
 
   OBProcess* m_process;
-  bool m_finished;
+  bool m_finished = false;
   QByteArray m_output;
 };
 
