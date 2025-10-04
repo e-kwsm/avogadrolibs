@@ -64,11 +64,9 @@ using Avogadro::Rendering::TextProperties;
 
 Editor::Editor(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_glWidget(nullptr), m_renderer(nullptr),
     m_toolWidget(new EditorToolWidget(qobject_cast<QWidget*>(parent_))),
     m_pressedButtons(Qt::NoButton),
-    m_clickedAtomicNumber(INVALID_ATOMIC_NUMBER), m_bondAdded(false),
-    m_fixValenceLater(false), m_layerManager("Editor")
+    m_clickedAtomicNumber(INVALID_ATOMIC_NUMBER), m_layerManager("Editor")
 {
   QString shortcut = tr("Ctrl+2", "control-key 2");
   m_activateAction->setText(tr("Draw"));
