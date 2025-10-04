@@ -41,10 +41,7 @@ public:
   ShaderProgram program;
 };
 
-ArrowGeometry::ArrowGeometry()
-  : m_color(0, 255, 0), m_dirty(false), d(new Private)
-{
-}
+ArrowGeometry::ArrowGeometry() : m_color(0, 255, 0), d(new Private) {}
 
 ArrowGeometry::ArrowGeometry(const ArrowGeometry& other)
   : Drawable(other), m_vertices(other.m_vertices),
