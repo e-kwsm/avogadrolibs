@@ -96,8 +96,8 @@ private:
   Qt::MouseButtons m_pressedButtons;
   QPoint m_clickPosition;
   unsigned char m_clickedAtomicNumber;
-  bool m_bondAdded;
-  bool m_fixValenceLater;
+  bool m_bondAdded = false;
+  bool m_fixValenceLater = false;
   QString m_keyPressBuffer;
 
   Real m_bondDistance;
