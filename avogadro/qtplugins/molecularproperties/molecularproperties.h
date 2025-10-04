@@ -48,13 +48,13 @@ private slots:
 
 private:
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
-  QDialog* m_dialog;
+  QtGui::Molecule* m_molecule = nullptr;
+  QDialog* m_dialog = nullptr;
   QNetworkAccessManager* m_network;
   QNetworkReply* m_pendingReply = nullptr;
   bool m_nameRequestPending = false;
 
-  MolecularModel* m_model;
+  MolecularModel* m_model = nullptr;
 };
 
 } // namespace QtPlugins

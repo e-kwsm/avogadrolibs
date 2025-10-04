@@ -33,7 +33,7 @@ json parseOptions(const std::string& options)
 
 } // namespace
 
-FileFormat::FileFormat() : m_mode(None), m_in(nullptr), m_out(nullptr) {}
+FileFormat::FileFormat() = default;
 
 FileFormat::~FileFormat()
 {

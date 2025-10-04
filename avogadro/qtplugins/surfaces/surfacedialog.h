@@ -87,7 +87,7 @@ signals:
 
 private:
   Ui::SurfaceDialog* m_ui;
-  bool m_automaticResolution;
+  bool m_automaticResolution = true;
   std::set<std::pair<std::string, std::string>> m_chargeModels;
 };
 

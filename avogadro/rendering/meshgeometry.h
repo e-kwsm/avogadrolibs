@@ -126,9 +126,9 @@ private:
   Core::Array<PackedVertex> m_vertices;
   Core::Array<unsigned int> m_indices;
   Vector3ub m_color;
-  unsigned char m_opacity;
+  unsigned char m_opacity = 255;
 
-  bool m_dirty;
+  bool m_dirty = false;
 
   class Private;
   Private* d;

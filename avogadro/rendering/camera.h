@@ -222,10 +222,10 @@ public:
   Vector3f focus() const { return m_focus; }
 
 private:
-  int m_width;
-  int m_height;
-  Projection m_projectionType;
-  float m_orthographicScale;
+  int m_width = 0;
+  int m_height = 0;
+  Projection m_projectionType = Perspective;
+  float m_orthographicScale = 1.0;
   std::unique_ptr<EigenData> m_data;
   Eigen::Vector3f m_focus;
 };

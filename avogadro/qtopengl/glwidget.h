@@ -211,13 +211,13 @@ private:
 
   QPointer<QtGui::Molecule> m_molecule;
   QList<QtGui::ToolPlugin*> m_tools;
-  QtGui::ToolPlugin* m_activeTool;
-  QtGui::ToolPlugin* m_defaultTool;
+  QtGui::ToolPlugin* m_activeTool = nullptr;
+  QtGui::ToolPlugin* m_defaultTool = nullptr;
   Rendering::GLRenderer m_renderer;
   float m_pixelRatio = 0.0f;
   QtGui::ScenePluginModel m_scenePlugins;
 
-  QTimer* m_renderTimer;
+  QTimer* m_renderTimer = nullptr;
 
   Qt::KeyboardModifiers m_navigationModifier;
   bool m_navigationDrag = false;

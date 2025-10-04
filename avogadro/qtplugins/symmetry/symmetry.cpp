@@ -30,8 +30,8 @@ using namespace Avogadro::QtPlugins::SymmetryUtil;
 namespace Avogadro::QtPlugins {
 
 Symmetry::Symmetry(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
-    m_symmetryWidget(nullptr), m_viewSymmetryAction(new QAction(this))
+  : Avogadro::QtGui::ExtensionPlugin(parent_),
+    m_viewSymmetryAction(new QAction(this))
 {
 
   m_ctx = msymCreateContext();

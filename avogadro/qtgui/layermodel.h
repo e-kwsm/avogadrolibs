@@ -71,7 +71,7 @@ public slots:
 
 private:
   QString getTranslatedName(const std::string& name) const;
-  size_t m_item;
+  size_t m_item = 0;
 
   QIcon m_plusIcon;
   QIcon m_dotsIcon;

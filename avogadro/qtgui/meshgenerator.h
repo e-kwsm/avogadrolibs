@@ -88,18 +88,18 @@ public:
    */
   struct gridEdge
   {
-    gridEdge() : xl(0), xr(0), xstart(0), ystart(0), zstart(0) {}
+    gridEdge() = default;
 
     // trim values
     // set on pass 1
-    int xl;
-    int xr;
+    int xl = 0;
+    int xr = 0;
 
     // modified on pass 2
     // set on pass 3
-    int xstart;
-    int ystart;
-    int zstart;
+    int xstart = 0;
+    int ystart = 0;
+    int zstart = 0;
   };
 
   /**

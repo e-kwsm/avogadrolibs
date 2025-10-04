@@ -22,12 +22,11 @@ namespace Avogadro::QtPlugins {
 using MoleQueue::InputGenerator;
 
 ApbsDialog::ApbsDialog(QWidget* parent_)
-  : QDialog(parent_), m_ui(new Ui::ApbsDialog), m_molecule(nullptr),
+  : QDialog(parent_), m_ui(new Ui::ApbsDialog),
     m_inputGenerator(
       new InputGenerator(QCoreApplication::applicationDirPath() + "/../" +
                          QtGui::Utilities::libraryDirectory() +
-                         "/avogadro2/scripts/inputGenerators/apbs.py")),
-    m_loadStructureFile(false), m_loadCubeFile(false)
+                         "/avogadro2/scripts/inputGenerators/apbs.py"))
 {
   m_ui->setupUi(this);
 

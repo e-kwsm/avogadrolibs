@@ -104,45 +104,45 @@ protected:
 
 private:
   Ui::LammpsInputDialog ui;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 
   // QString m_title;
   QString m_readData;
-  unitType m_unitType;
+  unitType m_unitType = real;
   QString m_title;
   QString m_savePath;
-  dimensionType m_dimensionType;
-  boundaryType m_xBoundaryType;
-  boundaryType m_yBoundaryType;
-  boundaryType m_zBoundaryType;
-  atomStyle m_atomStyle;
-  waterPotential m_waterPotential;
+  dimensionType m_dimensionType = d3;
+  boundaryType m_xBoundaryType = p;
+  boundaryType m_yBoundaryType = p;
+  boundaryType m_zBoundaryType = p;
+  atomStyle m_atomStyle = full;
+  waterPotential m_waterPotential = NONE;
 
   // coordType m_coordType;
-  ensemble m_ensemble;
-  double m_temperature;
-  int m_nhChain;
-  double m_timeStep;
-  int m_runSteps;
-  int m_xReplicate;
-  int m_yReplicate;
-  int m_zReplicate;
+  ensemble m_ensemble = NVT;
+  double m_temperature = 298.15;
+  int m_nhChain = 1;
+  double m_timeStep = 2.0;
+  int m_runSteps = 50;
+  int m_xReplicate = 1;
+  int m_yReplicate = 1;
+  int m_zReplicate = 1;
   QString m_dumpXYZ;
-  int m_dumpStep;
-  velocityDist m_velocityDist;
-  double m_velocityTemp;
-  bool m_zeroMOM;
-  bool m_zeroL;
-  thermoStyle m_thermoStyle;
-  int m_thermoInterval;
+  int m_dumpStep = 1;
+  velocityDist m_velocityDist = gaussian;
+  double m_velocityTemp = 298.15;
+  bool m_zeroMOM = true;
+  bool m_zeroL = true;
+  thermoStyle m_thermoStyle = one;
+  int m_thermoInterval = 50;
 
   QString m_output;
-  bool m_dirty;
-  bool m_warned;
-  bool readData;
+  bool m_dirty = false;
+  bool m_warned = false;
+  bool readData = false;
 
-  QTextEdit* m_jobEdit;
-  QTextEdit* m_moleculeEdit;
+  QTextEdit* m_jobEdit = nullptr;
+  QTextEdit* m_moleculeEdit = nullptr;
   QString m_moleculeFileName;
   QString m_jobFileName;
 

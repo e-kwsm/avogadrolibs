@@ -10,8 +10,6 @@
 namespace Avogadro::Rendering {
 
 TextProperties::TextProperties()
-  : m_pixelHeight(24), m_hAlign(HLeft), m_vAlign(VTop),
-    m_rotationDegreesCW(0.f), m_fontFamily(SansSerif), m_fontStyles(NoFontStyle)
 {
   setColorRgba(255, 255, 255, 255);
 }

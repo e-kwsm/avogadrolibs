@@ -68,8 +68,8 @@ public:
 
 protected:
   Type m_type;
-  Index m_handle;
-  bool m_dirty;
+  Index m_handle = 0;
+  bool m_dirty = true;
 
   std::string m_source;
   std::string m_error;

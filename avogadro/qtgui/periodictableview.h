@@ -84,7 +84,7 @@ private:
   /**
    * Proton number of the active element.
    */
-  int m_element;
+  int m_element = 6; // Everyone loves carbon.
 
   QString m_keyPressBuffer;
 };

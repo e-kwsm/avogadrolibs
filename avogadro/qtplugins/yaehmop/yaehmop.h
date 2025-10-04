@@ -70,7 +70,7 @@ private:
 
   QString m_programPath;
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 
   YaehmopSettings m_yaehmopSettings;
 
