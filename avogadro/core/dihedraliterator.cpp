@@ -10,8 +10,7 @@
 
 namespace Avogadro::Core {
 
-DihedralIterator::DihedralIterator(const Molecule* mol)
-  : m_i(MaxIndex), m_jk(0), m_l(MaxIndex), m_mol(mol)
+DihedralIterator::DihedralIterator(const Molecule* mol) : m_mol(mol)
 {
   m_current = std::make_tuple(MaxIndex, MaxIndex, MaxIndex, MaxIndex);
 }

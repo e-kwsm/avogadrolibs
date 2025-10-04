@@ -52,8 +52,8 @@ private slots:
 
 private:
   QAction* m_action;
-  ThreeDMolDialog* m_dialog;
-  QtGui::Molecule* m_molecule;
+  ThreeDMolDialog* m_dialog = nullptr;
+  QtGui::Molecule* m_molecule = nullptr;
 };
 
 } // namespace QtPlugins

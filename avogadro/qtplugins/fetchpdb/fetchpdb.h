@@ -80,11 +80,11 @@ private:
   void reportCommandSuccess(const QString& pdbCode);
 
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
-  QNetworkAccessManager* m_network;
+  QtGui::Molecule* m_molecule = nullptr;
+  QNetworkAccessManager* m_network = nullptr;
   QString m_moleculeName;
   QByteArray m_moleculeData;
-  QProgressDialog* m_progressDialog;
+  QProgressDialog* m_progressDialog = nullptr;
   QString m_tempFileName;
   /// The suffix of the download being handled: ".pdb.gz" where gzip can be
   /// decoded, ".pdb" otherwise. Set on the request and read back off the

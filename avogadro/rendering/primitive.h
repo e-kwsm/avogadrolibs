@@ -22,7 +22,7 @@ enum Type
 /** Used to identify the primitive during picking. */
 struct Identifier
 {
-  Identifier() : molecule(nullptr), type(InvalidType), index(MaxIndex) {}
+  Identifier() = default;
 
   bool operator==(const Identifier& other) const
   {
@@ -34,9 +34,9 @@ struct Identifier
 
   bool isValid() const { return type != InvalidType && molecule != nullptr; }
 
-  const void* molecule;
-  Type type;
-  Index index;
+  const void* molecule = nullptr;
+  Type type = InvalidType;
+  Index index = MaxIndex;
 };
 
 class Primitive
@@ -53,7 +53,7 @@ public:
   /** Used to identify the primitive during picking. */
   struct Identifier
   {
-    Identifier() : molecule(nullptr), type(Invalid), index(MaxIndex) {}
+    Identifier() = default;
 
     bool operator==(const Identifier& other) const
     {
@@ -68,9 +68,9 @@ public:
 
     bool isValid() const { return type != Invalid; }
 
-    const void* molecule;
-    Type type;
-    Index index;
+    const void* molecule = nullptr;
+    Type type = Invalid;
+    Index index = MaxIndex;
   };
 
   Primitive(Identifier id, const Vector3ub& color_)

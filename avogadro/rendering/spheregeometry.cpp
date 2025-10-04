@@ -49,7 +49,7 @@ public:
   size_t numberOfIndices;
 };
 
-SphereGeometry::SphereGeometry() : m_dirty(false), d(new Private)
+SphereGeometry::SphereGeometry() : d(new Private)
 {
   setRenderPass(SolidPass);
 }

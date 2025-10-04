@@ -26,7 +26,7 @@ class OBCharges::ProcessListener : public QObject
 {
   Q_OBJECT
 public:
-  ProcessListener() : QObject(), m_finished(false) {}
+  ProcessListener() : QObject() {}
 
   bool waitForOutput(Array<double>& output, int msTimeout = 120000)
   {
@@ -58,7 +58,7 @@ private:
   }
 
   // OBProcess* m_process;
-  bool m_finished;
+  bool m_finished = false;
   Array<double> m_output;
 };
 

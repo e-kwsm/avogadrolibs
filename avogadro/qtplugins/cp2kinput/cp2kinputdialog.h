@@ -107,10 +107,10 @@ private:
   QString generateJobTitle() const;
 
   Ui::Cp2kInputDialog ui;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   // GamessHighlighter *m_highlighter;
 
-  bool m_updatePending;
+  bool m_updatePending = false;
   QMap<QComboBox*, int> m_optionCache;
 };
 

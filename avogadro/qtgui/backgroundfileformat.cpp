@@ -11,7 +11,7 @@ namespace Avogadro::QtGui {
 
 BackgroundFileFormat::BackgroundFileFormat(Io::FileFormat* format,
                                            QObject* parent)
-  : QObject(parent), m_format(format), m_molecule(nullptr), m_success(false)
+  : QObject(parent), m_format(format)
 {
 }
 

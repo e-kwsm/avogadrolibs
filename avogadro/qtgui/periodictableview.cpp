@@ -14,8 +14,7 @@ namespace Avogadro::QtGui {
 
 using Core::Elements;
 
-PeriodicTableView::PeriodicTableView(QWidget* parent_)
-  : QGraphicsView(parent_), m_element(6) // Everyone loves carbon.
+PeriodicTableView::PeriodicTableView(QWidget* parent_) : QGraphicsView(parent_)
 {
   // Clears the key buffer after a pause between keys (multi-character symbols)
   m_keyPressTimer = new QTimer(this);

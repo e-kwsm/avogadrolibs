@@ -59,7 +59,7 @@ private slots:
   void copyToClipboard();
 
 private:
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   Ui::ThreeDMolDialog* m_ui;
 };
 

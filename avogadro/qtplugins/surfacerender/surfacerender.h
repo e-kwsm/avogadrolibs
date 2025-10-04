@@ -58,7 +58,7 @@ private slots:
 private:
   std::string m_name = "Surfaces";
 
-  QWidget* m_setupWidget;
+  QWidget* m_setupWidget = nullptr;
   unsigned char m_opacity;
   Vector3ub m_color1;
   Vector3ub m_color2;

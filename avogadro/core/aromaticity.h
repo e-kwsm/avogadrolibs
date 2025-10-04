@@ -85,7 +85,7 @@ private:
   const Molecule* m_molecule;
   Model m_model;
 
-  mutable bool m_perceived;
+  mutable bool m_perceived = false;
   mutable std::vector<std::vector<Index>> m_ringSystems;
   mutable std::vector<signed char> m_piContributions;
   mutable std::vector<bool> m_aromaticAtoms;

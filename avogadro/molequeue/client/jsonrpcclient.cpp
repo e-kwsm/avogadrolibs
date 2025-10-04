@@ -12,8 +12,7 @@
 
 namespace Avogadro::MoleQueue {
 
-JsonRpcClient::JsonRpcClient(QObject* parent_)
-  : QObject(parent_), m_packetCounter(0), m_socket(nullptr)
+JsonRpcClient::JsonRpcClient(QObject* parent_) : QObject(parent_)
 {
   connect(this, SIGNAL(newPacket(QByteArray)), SLOT(readPacket(QByteArray)),
           Qt::QueuedConnection);

@@ -68,7 +68,7 @@ private:
   QString detectInputFormat() const;
 
   Ui::CoordinateEditorDialog* m_ui;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
 
   // State storage for validateInput methods. PIMPL'd for organization.
   class ValidateStorage;
