@@ -63,7 +63,7 @@ private:
   bool readVibrationIntensities(std::istream& in, unsigned int n);
   bool readNormalModes(std::istream& in, unsigned int n);
 
-  int m_electrons;
+  int m_electrons = 0;
   int m_charge = 0;
   int m_spin = 1;
   Vector3 m_dipoleMoment;
