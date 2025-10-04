@@ -22,10 +22,7 @@ using Core::Atom;
 using Core::BasisSet;
 using Core::GaussianSet;
 
-MoldenFile::MoldenFile()
-  : m_coordFactor(1.0), m_electrons(0), m_mode(Unrecognized)
-{
-}
+MoldenFile::MoldenFile() = default;
 
 MoldenFile::~MoldenFile() {}
 
