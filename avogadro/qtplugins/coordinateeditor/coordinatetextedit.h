@@ -47,7 +47,7 @@ private:
     bool contains(int i) const { return i >= start && i <= end; }
   };
   QList<Mark> m_marks;
-  bool m_hasInvalidMarks;
+  bool m_hasInvalidMarks = false;
 
   QTextCharFormat m_unmarkedFormat;
   QTextCharFormat m_invalidFormat;
