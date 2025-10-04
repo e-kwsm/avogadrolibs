@@ -1223,7 +1223,7 @@ public:
   }
 };
 
-UFF::UFF() : d(nullptr)
+UFF::UFF()
 {
   // defined for 1-102
   for (unsigned int i = 0; i <= 102; ++i) {
