@@ -74,9 +74,7 @@ TemplateTool::TemplateTool(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
     m_molecule(NULL), m_glWidget(NULL), m_renderer(NULL),
     m_toolWidget(new TemplateToolWidget(qobject_cast<QWidget*>(parent_))),
-    m_pressedButtons(Qt::NoButton),
-    m_clickedAtomicNumber(INVALID_ATOMIC_NUMBER), m_bondAdded(false),
-    m_fixValenceLater(false)
+    m_pressedButtons(Qt::NoButton), m_clickedAtomicNumber(INVALID_ATOMIC_NUMBER)
 {
   QString shortcut = tr("Ctrl+3", "control-key 3");
   m_activateAction->setText(tr("Template"));
