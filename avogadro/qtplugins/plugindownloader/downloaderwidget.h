@@ -57,13 +57,13 @@ private:
     QString zipballUrl;
     QString baseUrl;
     QString readmeUrl;
-    bool hasRelease;
+    bool hasRelease = false;
 
     // Default constructor
     repo()
       : name("Error"), description("Error"), releaseVersion("Error"),
         type("other"), updatedAt("Error"), zipballUrl("Error"),
-        baseUrl("Error"), readmeUrl("Error"), hasRelease(false)
+        baseUrl("Error"), readmeUrl("Error")
     {
     }
   };
