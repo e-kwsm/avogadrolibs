@@ -50,12 +50,12 @@ public:
   void setMolecule(Core::Molecule* mol) override;
 
 protected:
-  Core::Molecule* m_molecule;
-  Core::UnitCell* m_cell;
+  Core::Molecule* m_molecule = nullptr;
+  Core::UnitCell* m_cell = nullptr;
   Eigen::MatrixXd m_radii;
-  bool m_vdw;
-  Real m_depth;
-  int m_exponent;
+  bool m_vdw = true;
+  Real m_depth = 100.0;
+  int m_exponent = 6;
 
   Core::Molecule::ElementMask m_elements;
 };
