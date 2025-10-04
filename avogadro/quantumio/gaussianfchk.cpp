@@ -29,7 +29,7 @@ using Core::Uhf;
 // https://physics.nist.gov/cgi-bin/cuu/Value?hrev
 const double hartreeToEV = 27.211386245981;
 
-GaussianFchk::GaussianFchk() : m_scftype(Rhf) {}
+GaussianFchk::GaussianFchk() = default;
 
 GaussianFchk::~GaussianFchk() {}
 
