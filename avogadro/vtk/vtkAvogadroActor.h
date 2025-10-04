@@ -59,10 +59,10 @@ protected:
   vtkAvogadroActor();
   ~vtkAvogadroActor();
 
-  Avogadro::Rendering::Scene* m_scene;
+  Avogadro::Rendering::Scene* m_scene = nullptr;
   double m_bounds[6];
 
-  bool m_initialized;
+  bool m_initialized = false;
 
 private:
   vtkAvogadroActor(const vtkAvogadroActor&); // Not implemented.
