@@ -84,16 +84,16 @@ private:
 
 private:
   QtGui::PythonScript* m_interpreter;
-  Format m_inputFormat;
+  Format m_inputFormat = NotUsed;
   Core::Molecule* m_molecule;
 
   // what's supported by this script
   Core::Molecule::ElementMask m_elements;
-  bool m_valid;
-  bool m_gradients;
-  bool m_ions;
-  bool m_radicals;
-  bool m_unitCells;
+  bool m_valid = true;
+  bool m_gradients = false;
+  bool m_ions = false;
+  bool m_radicals = false;
+  bool m_unitCells = false;
 
   std::string m_identifier;
   std::string m_name;
