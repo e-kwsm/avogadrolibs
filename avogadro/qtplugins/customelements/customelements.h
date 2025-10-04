@@ -34,7 +34,7 @@ private slots:
   void reassign();
 
 private:
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   QAction* m_reassignAction;
 
   void updateReassignAction();
