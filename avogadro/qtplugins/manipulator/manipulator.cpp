@@ -42,9 +42,8 @@ public:
 
 Manipulator::Manipulator(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_renderer(nullptr), m_pressedButtons(Qt::NoButton),
-    m_toolWidget(new ManipulateWidget(dynamic_cast<QWidget*>(parent_))),
-    m_currentAction(Nothing)
+    m_pressedButtons(Qt::NoButton),
+    m_toolWidget(new ManipulateWidget(dynamic_cast<QWidget*>(parent_)))
 {
   QString shortcut = tr("Ctrl+5", "control-key 5");
   m_activateAction->setText(tr("Manipulate"));
