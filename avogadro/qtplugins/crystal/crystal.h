@@ -50,8 +50,8 @@ private slots:
 
 private:
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
-  UnitCellDialog* m_unitCellDialog;
+  QtGui::Molecule* m_molecule = nullptr;
+  UnitCellDialog* m_unitCellDialog = nullptr;
 
   QAction* m_importCrystalClipboardAction;
   QAction* m_editUnitCellAction;

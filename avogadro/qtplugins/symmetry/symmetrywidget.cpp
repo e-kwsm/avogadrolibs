@@ -66,9 +66,7 @@ SymmetryWidget::SymmetryWidget(QWidget* parent_)
   : QWidget(parent_), m_ui(new Ui::SymmetryWidget),
     m_equivalenceTreeModel(new QStandardItemModel(this)),
     m_operationsTableModel(new OperationsTableModel(this)),
-    m_subgroupsTreeModel(new QStandardItemModel(this)), m_molecule(nullptr),
-    m_es(nullptr), m_sops(nullptr), m_sg(nullptr), m_sopsl(0), m_sgl(0),
-    m_radius(0.0)
+    m_subgroupsTreeModel(new QStandardItemModel(this))
 {
   setWindowFlags(Qt::Dialog);
   m_ui->setupUi(this);

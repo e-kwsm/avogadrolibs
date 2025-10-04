@@ -24,7 +24,7 @@ namespace Avogadro::Core {
 class ArraySet
 {
 public:
-  ArraySet() : m_content(nullptr), m_data(nullptr) {}
+  ArraySet() = default;
   virtual ~ArraySet() { delete m_content; }
 
   /** @return true if the type of the array matches the input type. */
@@ -67,8 +67,8 @@ protected:
     ValueType m_content;
   };
 
-  PlaceHolder* m_content;
-  void* m_data;
+  PlaceHolder* m_content = nullptr;
+  void* m_data = nullptr;
 };
 
 /**

@@ -42,9 +42,9 @@ signals:
   void closeView();
 
 private:
-  QWidget* m_viewWidget;
+  QWidget* m_viewWidget = nullptr;
   QLabel* m_label;
-  bool m_active;
+  bool m_active = false;
 };
 
 } // namespace Avogadro::QtGui

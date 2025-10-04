@@ -43,7 +43,7 @@ public:
   void setEnabled(bool enable) override;
 
 private:
-  bool m_enabled;
+  bool m_enabled = true;
 };
 
 } // namespace Avogadro::QtPlugins

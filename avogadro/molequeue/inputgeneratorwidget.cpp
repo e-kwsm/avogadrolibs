@@ -76,7 +76,7 @@ QString moleculeFilenameBase(const QtGui::Molecule* molecule)
 
 InputGeneratorWidget::InputGeneratorWidget(QWidget* parent_)
   : QtGui::JsonWidget(parent_), m_ui(new Ui::InputGeneratorWidget),
-    m_updatePending(false), m_inputGenerator(QString())
+    m_inputGenerator(QString())
 {
   m_ui->setupUi(this);
   m_ui->warningTextButton->setIcon(QIcon::fromTheme("dialog-warning"));

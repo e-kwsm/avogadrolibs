@@ -71,13 +71,13 @@ bool OBMMEnergy::isAvailable()
 }
 
 OBMMEnergy::OBMMEnergy(const std::string& method)
-  : m_molecule(nullptr), m_process(nullptr), m_executable(
+  : m_executable(
 #if defined(_WIN32)
-                                               "obmm.exe"
+      "obmm.exe"
 #else
-                                               "obmm"
+      "obmm"
 #endif
-                                               ),
+      ),
     m_identifier(method), m_name(method)
 {
   // eventually CJSON might be nice

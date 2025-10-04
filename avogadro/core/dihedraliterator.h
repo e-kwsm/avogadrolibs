@@ -46,7 +46,7 @@ public:
 
 private:
   Dihedral m_current;
-  Index m_i, m_jk, m_l;
+  Index m_i = MaxIndex, m_jk = 0, m_l = MaxIndex;
   const Molecule* m_mol;
 };
 
