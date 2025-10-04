@@ -252,9 +252,9 @@ private:
   std::string m_options;
 
   // Streams for reading/writing data, especially streaming data in/out.
-  Operation m_mode;
-  std::istream* m_in;
-  std::ostream* m_out;
+  Operation m_mode = None;
+  std::istream* m_in = nullptr;
+  std::ostream* m_out = nullptr;
 };
 
 inline FileFormat::Operation operator|(FileFormat::Operation a,
