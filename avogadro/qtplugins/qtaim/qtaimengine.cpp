@@ -20,8 +20,7 @@ using namespace Avogadro::Rendering;
 
 namespace Avogadro::QtPlugins {
 
-QTAIMEngine::QTAIMEngine(QObject* aParent)
-  : QtGui::ScenePlugin(aParent), m_enabled(false)
+QTAIMEngine::QTAIMEngine(QObject* aParent) : QtGui::ScenePlugin(aParent)
 {
   m_layerManager = QtGui::PluginLayerManager(m_name);
 }

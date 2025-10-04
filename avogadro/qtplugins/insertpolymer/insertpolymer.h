@@ -36,8 +36,8 @@ public slots:
   void buildPolymer(const QString& smiles);
 
 private:
-  QtGui::Molecule* m_molecule;
-  InsertPolymerDialog* m_dialog;
+  QtGui::Molecule* m_molecule = nullptr;
+  InsertPolymerDialog* m_dialog = nullptr;
   QList<QAction*> m_actions;
 };
 

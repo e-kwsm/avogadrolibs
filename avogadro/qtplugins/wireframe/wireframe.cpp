@@ -139,7 +139,7 @@ struct LayerWireframe : Core::LayerData
   }
 };
 
-Wireframe::Wireframe(QObject* p) : ScenePlugin(p), m_group(nullptr)
+Wireframe::Wireframe(QObject* p) : ScenePlugin(p)
 {
   m_layerManager = PluginLayerManager(m_name);
 }

@@ -26,8 +26,7 @@ using namespace std::string_literals;
 namespace Avogadro::QtPlugins {
 
 LineFormatInput::LineFormatInput(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
-    m_reader(nullptr)
+  : Avogadro::QtGui::ExtensionPlugin(parent_)
 {
   auto* action = new QAction(tr("SMILES…"), this);
   action->setProperty("menu priority", 710);

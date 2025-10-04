@@ -22,10 +22,7 @@ using Avogadro::Core::GaussianSet;
 using Avogadro::QtGui::Molecule;
 using QtGui::Molecule;
 
-MolecularModel::MolecularModel(QObject* parent)
-  : QAbstractTableModel(parent), m_molecule(nullptr)
-{
-}
+MolecularModel::MolecularModel(QObject* parent) : QAbstractTableModel(parent) {}
 
 void MolecularModel::setMolecule(QtGui::Molecule* molecule)
 {

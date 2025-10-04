@@ -226,7 +226,7 @@ struct BackboneResidue
 
 using AtomsPairList = list<BackboneResidue>;
 
-Cartoons::Cartoons(QObject* parent) : ScenePlugin(parent), m_group(nullptr)
+Cartoons::Cartoons(QObject* parent) : ScenePlugin(parent)
 {
   m_layerManager = PluginLayerManager(m_name);
 }

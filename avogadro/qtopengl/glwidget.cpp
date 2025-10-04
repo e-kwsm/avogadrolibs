@@ -25,9 +25,7 @@
 
 namespace Avogadro::QtOpenGL {
 
-GLWidget::GLWidget(QWidget* p)
-  : QOpenGLWidget(p), m_activeTool(nullptr), m_defaultTool(nullptr),
-    m_renderTimer(nullptr)
+GLWidget::GLWidget(QWidget* p) : QOpenGLWidget(p)
 {
   setFocusPolicy(Qt::ClickFocus);
   connect(&m_scenePlugins, &QtGui::ScenePluginModel::pluginStateChanged, this,

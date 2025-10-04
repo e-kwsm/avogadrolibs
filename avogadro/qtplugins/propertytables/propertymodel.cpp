@@ -83,7 +83,7 @@ inline QString torsionTypeString(unsigned char a, unsigned char b,
 }
 
 PropertyModel::PropertyModel(PropertyType type, QObject* parent)
-  : QAbstractTableModel(parent), m_type(type), m_molecule(nullptr)
+  : QAbstractTableModel(parent), m_type(type)
 {
   // The energy unit is application-wide, so it can change while this table is
   // open -- from this table's own context menu, or from the conformer plot's

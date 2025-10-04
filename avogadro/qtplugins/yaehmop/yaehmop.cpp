@@ -42,7 +42,7 @@ namespace Avogadro::QtPlugins {
 
 Yaehmop::Yaehmop(QObject* parent_)
   : Avogadro::QtGui::ExtensionPlugin(parent_), m_actions(QList<QAction*>()),
-    m_molecule(nullptr), m_yaehmopSettings(),
+    m_yaehmopSettings(),
     m_bandDialog(
       new BandDialog(qobject_cast<QWidget*>(parent()), m_yaehmopSettings)),
     m_displayBandDialogAction(new QAction(this))

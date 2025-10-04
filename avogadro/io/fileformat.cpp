@@ -78,11 +78,7 @@ json parseOptions(const std::string& options)
 
 } // namespace
 
-FileFormat::FileFormat()
-  : m_mode(None), m_in(nullptr), m_out(nullptr), m_decompressor(nullptr),
-    m_compressor(nullptr), m_outputError(false)
-{
-}
+FileFormat::FileFormat() {}
 
 FileFormat::~FileFormat()
 {

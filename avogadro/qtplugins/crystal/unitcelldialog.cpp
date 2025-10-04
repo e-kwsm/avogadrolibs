@@ -34,8 +34,7 @@ const static QRegularExpression MATRIX_SEP(
 namespace Avogadro::QtPlugins {
 
 UnitCellDialog::UnitCellDialog(QWidget* p)
-  : QDialog(p), m_ui(new Ui::UnitCellDialog), m_molecule(nullptr),
-    m_mode(Invalid)
+  : QDialog(p), m_ui(new Ui::UnitCellDialog)
 {
   m_ui->setupUi(this);
 

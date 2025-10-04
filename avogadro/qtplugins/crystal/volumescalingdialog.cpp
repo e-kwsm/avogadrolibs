@@ -9,7 +9,7 @@
 namespace Avogadro::QtPlugins {
 
 VolumeScalingDialog::VolumeScalingDialog(QWidget* p)
-  : QDialog(p), m_ui(new Ui::VolumeScalingDialog), m_currentVolume(0.)
+  : QDialog(p), m_ui(new Ui::VolumeScalingDialog)
 {
   m_ui->setupUi(this);
   connect(m_ui->newVolume, SIGNAL(valueChanged(double)), SLOT(volumeEdited()));

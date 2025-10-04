@@ -26,8 +26,7 @@ namespace QtPlugins {
 using Avogadro::MoleQueue::JobObject;
 
 Cp2kInput::Cp2kInput(QObject* parent_)
-  : ExtensionPlugin(parent_), m_action(new QAction(this)), m_molecule(nullptr),
-    m_dialog(nullptr), m_outputFormat(nullptr)
+  : ExtensionPlugin(parent_), m_action(new QAction(this))
 {
   m_action->setEnabled(true);
   m_action->setText(tr("&CP2K…"));

@@ -163,12 +163,12 @@ public:
   /** @} */
 
 private:
-  size_t m_pixelHeight;
-  HAlign m_hAlign;
-  VAlign m_vAlign;
-  float m_rotationDegreesCW;
-  FontFamily m_fontFamily;
-  FontStyles m_fontStyles;
+  size_t m_pixelHeight = 24;
+  HAlign m_hAlign = HLeft;
+  VAlign m_vAlign = VTop;
+  float m_rotationDegreesCW = 0.f;
+  FontFamily m_fontFamily = SansSerif;
+  FontStyles m_fontStyles = NoFontStyle;
   unsigned char m_rgba[4];
 };
 

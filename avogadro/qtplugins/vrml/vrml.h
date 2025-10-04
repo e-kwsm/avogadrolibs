@@ -42,9 +42,9 @@ private slots:
   void render();
 
 private:
-  QtGui::Molecule* m_molecule;
-  Rendering::Scene* m_scene;
-  Rendering::Camera* m_camera;
+  QtGui::Molecule* m_molecule = nullptr;
+  Rendering::Scene* m_scene = nullptr;
+  Rendering::Camera* m_camera = nullptr;
 
   QAction* m_action;
 };
