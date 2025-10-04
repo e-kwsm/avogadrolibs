@@ -40,9 +40,7 @@ namespace Avogadro::QtPlugins {
 using QtGui::Molecule;
 
 PlayerTool::PlayerTool(QObject* parent_)
-  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_renderer(nullptr), m_currentFrame(0),
-    m_toolWidget(nullptr), m_frameIdx(nullptr), m_slider(nullptr)
+  : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this))
 {
   QString shortcut = tr("Ctrl+9", "control-key 9");
   m_activateAction->setText(tr("Player"));
