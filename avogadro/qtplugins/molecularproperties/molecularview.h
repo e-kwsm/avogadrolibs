@@ -34,8 +34,8 @@ protected:
   void keyPressEvent(QKeyEvent* event) override;
 
 private:
-  QtGui::Molecule* m_molecule;
-  MolecularModel* m_model;
+  QtGui::Molecule* m_molecule = nullptr;
+  MolecularModel* m_model = nullptr;
   void copySelectedRowsToClipboard();
   void openExportDialogBox();
 };
