@@ -83,14 +83,14 @@ private:
   QStandardItemModel* m_equivalenceTreeModel;
   OperationsTableModel* m_operationsTableModel;
   QStandardItemModel* m_subgroupsTreeModel;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   QVector3D m_cm;
 
-  const msym::msym_equivalence_set_t* m_es;
-  const msym::msym_symmetry_operation_t* m_sops;
-  const msym::msym_subgroup_t* m_sg;
-  int m_esl, m_sopsl, m_sgl;
-  double m_radius;
+  const msym::msym_equivalence_set_t* m_es = nullptr;
+  const msym::msym_symmetry_operation_t* m_sops = nullptr;
+  const msym::msym_subgroup_t* m_sg = nullptr;
+  int m_esl, m_sopsl = 0, m_sgl = 0;
+  double m_radius = 0.0;
 
   void addSubgroup(QStandardItem*, msym::msym_subgroup_t*);
 };
