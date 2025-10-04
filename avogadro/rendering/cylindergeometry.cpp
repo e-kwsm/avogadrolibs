@@ -46,7 +46,7 @@ public:
   size_t numberOfIndices;
 };
 
-CylinderGeometry::CylinderGeometry() : m_dirty(false), d(new Private)
+CylinderGeometry::CylinderGeometry() : d(new Private)
 {
   setRenderPass(SolidPass);
 }
