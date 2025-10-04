@@ -75,18 +75,18 @@ private:
   void addAction(const QString& label, const QString& scriptFilePath);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  QtGui::Molecule* m_molecule = nullptr;
   // keyed on script file path
   QMap<QString, QtGui::InterfaceWidget*> m_dialogs;
-  QDialog* m_currentDialog;
-  QtGui::InterfaceWidget* m_currentInterface;
-  QtGui::InterfaceScript* m_currentScript;
-  QProgressDialog* m_progress;
+  QDialog* m_currentDialog = nullptr;
+  QtGui::InterfaceWidget* m_currentInterface = nullptr;
+  QtGui::InterfaceScript* m_currentScript = nullptr;
+  QProgressDialog* m_progress = nullptr;
 
   // maps program name --> script file path
   QMultiMap<QString, QString> m_commandScripts;
 
-  const Io::FileFormat* m_outputFormat;
+  const Io::FileFormat* m_outputFormat = nullptr;
   QString m_outputFileName;
 };
 } // namespace QtPlugins
