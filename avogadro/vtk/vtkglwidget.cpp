@@ -108,8 +108,7 @@ void vtkGLWidget::cubeVolume(Core::Cube* cube)
   m_volume->SetProperty(volumeProperty);
 }
 
-vtkGLWidget::vtkGLWidget(QWidget* p, Qt::WindowFlags f)
-  : QVTKWidget(p, f), m_activeTool(nullptr), m_defaultTool(nullptr)
+vtkGLWidget::vtkGLWidget(QWidget* p, Qt::WindowFlags f) : QVTKWidget(p, f)
 {
   setFocusPolicy(Qt::ClickFocus);
   connect(&m_scenePlugins,
