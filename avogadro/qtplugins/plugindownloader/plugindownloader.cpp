@@ -20,8 +20,7 @@
 namespace Avogadro::QtPlugins {
 
 PluginDownloader::PluginDownloader(QObject* parent_)
-  : ExtensionPlugin(parent_), m_downloadAction(new QAction(this)),
-    m_molecule(nullptr), m_network(nullptr), m_widget(nullptr)
+  : ExtensionPlugin(parent_), m_downloadAction(new QAction(this))
 {
   m_downloadAction->setEnabled(true);
   m_downloadAction->setText(tr("Download Plugins…"));
