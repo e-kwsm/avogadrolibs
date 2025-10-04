@@ -29,8 +29,7 @@ using QtGui::FileBrowseWidget;
 using QtGui::Utilities::findExecutablePaths;
 
 ConfigurePython::ConfigurePython(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_action(new QAction(this)),
-    m_dialog(nullptr)
+  : Avogadro::QtGui::ExtensionPlugin(parent_), m_action(new QAction(this))
 {
   m_action->setEnabled(true);
   m_action->setText(tr("Python Settings…"));
