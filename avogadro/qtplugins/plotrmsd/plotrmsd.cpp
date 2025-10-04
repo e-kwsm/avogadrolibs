@@ -25,7 +25,7 @@ using Core::Array;
 
 PlotRmsd::PlotRmsd(QObject* parent_)
   : Avogadro::QtGui::ExtensionPlugin(parent_), m_actions(QList<QAction*>()),
-    m_molecule(nullptr), m_displayDialogAction(new QAction(this))
+    m_displayDialogAction(new QAction(this))
 {
   m_displayDialogAction->setText(tr("Plot RMSD curve…"));
   connect(m_displayDialogAction.get(), &QAction::triggered, this,
