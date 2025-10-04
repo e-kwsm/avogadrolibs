@@ -26,8 +26,7 @@ using Avogadro::QtGui::Molecule;
 namespace Avogadro::QtPlugins {
 
 Crystal::Crystal(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
-    m_unitCellDialog(nullptr),
+  : Avogadro::QtGui::ExtensionPlugin(parent_),
     m_importCrystalClipboardAction(new QAction(this)),
     m_editUnitCellAction(new QAction(this)),
     m_buildSupercellAction(new QAction(this)),

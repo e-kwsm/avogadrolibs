@@ -145,14 +145,14 @@ GLenum convertTypeToGL(Type type)
 class Texture2D::Private
 {
 public:
-  Private() : textureId(0) {}
+  Private() = default;
   ~Private()
   {
     if (textureId > 0)
       glDeleteTextures(1, &textureId);
   }
 
-  mutable GLuint textureId;
+  mutable GLuint textureId = 0;
 };
 
 Texture2D::Texture2D() : d(new Private), m_dirty(true) {}

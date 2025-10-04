@@ -33,7 +33,7 @@ const Vector3ub red = { 255, 0, 0 };
 const Vector3ub green = { 0, 255, 0 };
 const Vector3ub blue = { 0, 0, 255 };
 
-CrystalScene::CrystalScene(QObject* p) : ScenePlugin(p), m_setupWidget(nullptr)
+CrystalScene::CrystalScene(QObject* p) : ScenePlugin(p)
 {
   m_layerManager = QtGui::PluginLayerManager(m_name);
 

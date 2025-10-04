@@ -34,8 +34,7 @@ using Rendering::MeshGeometry;
 using Rendering::VolumeGeometry;
 using Rendering::WideLineGeometry;
 
-SurfaceRender::SurfaceRender(QObject* p)
-  : ScenePlugin(p), m_setupWidget(nullptr)
+SurfaceRender::SurfaceRender(QObject* p) : ScenePlugin(p)
 {
   m_layerManager = QtGui::PluginLayerManager(m_name);
 

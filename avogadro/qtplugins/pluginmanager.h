@@ -91,7 +91,7 @@ private:
   QStringList m_pluginDirs;
   QString m_relativeToApp;
 
-  bool m_staticPluginsLoaded;
+  bool m_staticPluginsLoaded = false;
 
   // Storage for the loaded plugin instances.
   QList<QObject*> m_plugins;

@@ -54,7 +54,7 @@ public:
 private:
   class Private;
 
-  Core::Molecule* m_molecule;
+  Core::Molecule* m_molecule = nullptr;
   Private* d;
 
   Core::Molecule::ElementMask m_elements;

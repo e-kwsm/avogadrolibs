@@ -93,9 +93,7 @@ static bool parseJsonNumericArray(const QByteArray& result,
 }
 
 ScriptChargeModel::ScriptChargeModel(const QString& scriptFileName_)
-  : m_interpreter(new QtGui::PythonScript(scriptFileName_)),
-    m_inputFormat(NotUsed), m_valid(false), m_partialCharges(false),
-    m_electrostatics(false), m_inputCjson(false)
+  : m_interpreter(new QtGui::PythonScript(scriptFileName_))
 {
   m_elements.reset();
   if (!scriptFileName_.isEmpty())

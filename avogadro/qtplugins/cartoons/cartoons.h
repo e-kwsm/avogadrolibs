@@ -62,7 +62,7 @@ public slots:
   void showRope(bool show);
 
 private:
-  Rendering::GroupNode* m_group;
+  Rendering::GroupNode* m_group = nullptr;
   std::string m_name = "Cartoons";
 
   std::map<size_t, AtomsPairList> getBackboneByResidues(

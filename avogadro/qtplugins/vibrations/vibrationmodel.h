@@ -44,8 +44,8 @@ signals:
 public slots:
 
 private:
-  QtGui::Molecule* m_molecule;
-  bool m_hasRaman;
+  QtGui::Molecule* m_molecule = nullptr;
+  bool m_hasRaman = false;
 };
 } // namespace QtPlugins
 } // namespace Avogadro

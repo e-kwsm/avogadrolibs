@@ -71,8 +71,8 @@ protected:
    */
   void setParent(GroupNode* parent);
 
-  GroupNode* m_parent;
-  bool m_visible;
+  GroupNode* m_parent = nullptr;
+  bool m_visible = true;
 };
 
 template <typename T>
