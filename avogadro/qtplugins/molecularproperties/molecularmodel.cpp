@@ -37,7 +37,7 @@ using QtGui::Molecule;
 #define AU_TO_EV 27.211386245981
 
 MolecularModel::MolecularModel(QObject* parent)
-  : QAbstractTableModel(parent), m_molecule(nullptr)
+  : QAbstractTableModel(parent)
 {
   m_network = new QNetworkAccessManager(this);
   connect(m_network, SIGNAL(finished(QNetworkReply*)), this,
