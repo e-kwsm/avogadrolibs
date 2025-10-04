@@ -81,11 +81,11 @@ private:
 
 private:
   QtGui::PythonScript* m_interpreter;
-  Format m_inputFormat;
+  Format m_inputFormat = NotUsed;
   Core::Molecule::ElementMask m_elements;
-  bool m_valid;
-  bool m_partialCharges;
-  bool m_electrostatics;
+  bool m_valid = false;
+  bool m_partialCharges = false;
+  bool m_electrostatics = false;
 
   std::string m_identifier;
   std::string m_name;
