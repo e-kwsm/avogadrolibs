@@ -57,9 +57,9 @@ public slots:
 
 private:
   QList<ContainerWidget*> m_children;
-  ViewFactory* m_factory;
+  ViewFactory* m_factory = nullptr;
   QString m_defaultView;
-  QWidget* m_activeWidget;
+  QWidget* m_activeWidget = nullptr;
   ActiveWidgetFilter* m_activeFilter;
 
   ContainerWidget* createContainer(QWidget* widget = nullptr);

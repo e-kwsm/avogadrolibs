@@ -29,7 +29,6 @@ using Core::Array;
 
 PlotPdf::PlotPdf(QObject* parent_)
   : Avogadro::QtGui::ExtensionPlugin(parent_), m_actions(QList<QAction*>()),
-    m_molecule(nullptr),
     m_pdfOptionsDialog(new PdfOptionsDialog(qobject_cast<QWidget*>(parent()))),
     m_displayDialogAction(new QAction(this))
 {

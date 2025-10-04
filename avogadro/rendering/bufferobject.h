@@ -75,7 +75,7 @@ private:
 
   struct Private;
   Private* d;
-  bool m_dirty;
+  bool m_dirty = true;
 
   std::string m_error;
 };

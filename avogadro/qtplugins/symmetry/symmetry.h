@@ -82,8 +82,8 @@ private:
   static msym::msym_thresholds_t* thresholdsForName(const QString& name);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
-  SymmetryWidget* m_symmetryWidget;
+  QtGui::Molecule* m_molecule = nullptr;
+  SymmetryWidget* m_symmetryWidget = nullptr;
 
   QAction* m_viewSymmetryAction;
 
