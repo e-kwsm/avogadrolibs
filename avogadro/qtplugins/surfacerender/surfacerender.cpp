@@ -32,8 +32,7 @@ using Rendering::GroupNode;
 using Rendering::LineStripGeometry;
 using Rendering::MeshGeometry;
 
-SurfaceRender::SurfaceRender(QObject* p)
-  : ScenePlugin(p), m_setupWidget(nullptr)
+SurfaceRender::SurfaceRender(QObject* p) : ScenePlugin(p)
 {
   m_layerManager = QtGui::PluginLayerManager(m_name);
 
@@ -63,10 +62,10 @@ SurfaceRender::~SurfaceRender() {}
 namespace {
 struct Sequence
 {
-  Sequence() : i(0) {}
+  Sequence() = default;
   unsigned int operator()() { return i++; }
   void reset() { i = 0; }
-  unsigned int i;
+  unsigned int i = 0;
 };
 } // namespace
 
