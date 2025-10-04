@@ -53,10 +53,7 @@ public:
   size_t numberOfIndices;
 };
 
-MeshGeometry::MeshGeometry()
-  : m_color(255, 0, 0), m_opacity(255), m_dirty(false), d(new Private)
-{
-}
+MeshGeometry::MeshGeometry() : m_color(255, 0, 0), d(new Private) {}
 
 MeshGeometry::MeshGeometry(const MeshGeometry& other)
   : Drawable(other), m_vertices(other.m_vertices), m_indices(other.m_indices),
