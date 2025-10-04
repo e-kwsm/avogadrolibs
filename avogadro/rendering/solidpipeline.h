@@ -120,21 +120,21 @@ public:
   void setEdStrength(float strength) { m_edStrength = strength; }
 
 private:
-  float m_pixelRatio;
-  bool m_aoEnabled;
-  float m_dofStrength;
-  float m_dofPosition;
-  bool m_dofEnabled;
-  float m_fogPosition;
+  float m_pixelRatio = 1.0f;
+  bool m_aoEnabled = false;
+  float m_dofStrength = 1.0f;
+  float m_dofPosition = 1.0;
+  bool m_dofEnabled = false;
+  float m_fogPosition = 1.0;
   Vector4ub m_backgroundColor;
   Eigen::Affine3f modelView;
-  bool m_fogEnabled;
-  float m_aoStrength;
-  float m_fogStrength;
-  bool m_edEnabled;
-  float m_edStrength;
-  int m_width;
-  int m_height;
+  bool m_fogEnabled = true;
+  float m_aoStrength = 1.0f;
+  float m_fogStrength = 1.0f;
+  bool m_edEnabled = false;
+  float m_edStrength = 1.0f;
+  int m_width = 0;
+  int m_height = 0;
 
   class Private;
   Private* d;
