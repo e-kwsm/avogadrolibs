@@ -9432,16 +9432,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Tablice za prikaz i uređivanje svojstva atoma, veze, kuta i torzije."
 
-#, qt-format
-#~ msgid ""
-#~ "Atom Label Tool \t(%1)\n"
-#~ "\n"
-#~ "Left Mouse: \tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Alat za oznake atoma \t(%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: \tKlikni na atome za dodavanje prilagođenih oznaka"
-
 #~ msgid "0"
 #~ msgstr "0"
 
