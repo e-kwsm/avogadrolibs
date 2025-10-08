@@ -8214,8 +8214,9 @@ msgstr ""
 
 #. i18n: file: qtplugins/plotxrd/xrdoptionsdialog.ui:141
 #. i18n: ectx: property (text), widget (QLabel, label_4)
+#, fuzzy
 msgid "Max 2θ:"
-msgstr ""
+msgstr "Maksimuma 2θ:"
 
 #. i18n: file: qtplugins/plugindownloader/downloaderwidget.ui:20
 #. i18n: ectx: property (text), widget (QPushButton, downloadButton)
@@ -9019,9 +9020,6 @@ msgstr "phlostically"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "phlostically@example.com"
-
-#~ msgid "Max 2*theta:"
-#~ msgstr "Maksimuma 2θ:"
 
 #~ msgid ""
 #~ "Tables for displaying and editng atom, bond, angle and torsion properties."
