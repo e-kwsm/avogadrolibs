@@ -180,7 +180,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             gamma = tokens_converted->at(5) * DEG_TO_RAD;
             break;
           default:
-            assert(periodic == 0);
+            assert(false);
         }
       };
 
