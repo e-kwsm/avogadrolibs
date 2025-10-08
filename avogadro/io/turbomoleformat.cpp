@@ -300,14 +300,14 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         for (unsigned line = 0; line < 3; ++line) {
           getline(inStream, buffer);
           tokens = split(rstrip(buffer, '#'), ' ');
-          bool ok;
-          const auto tokens_converted = lexicalCast<double>(tokens, ok);
-          if (!ok) {
+          const auto tokens_converted =
+            lexicalCast<double>(tokens.begin(), tokens.end());
+          if (!tokens_converted) {
             appendError("Failed to parse: " + buffer);
             return false;
           }
 
-          const auto n = tokens_converted.size();
+          const auto n = tokens_converted->size();
           if (line == 0) {
             if (n == 0u || n > 3u) {
               appendError("Could not determine dimensionality from lines "
@@ -325,21 +325,21 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           }
 
           if (line == 0) {
-            v1.x() = tokens_converted[0] * latticeConversion;
+            v1.x() = tokens_converted->at(0) * latticeConversion;
             if (n == 1)
               break;
-            v1.y() = tokens_converted[1] * latticeConversion;
-            v1.z() = n != 3 ? 0.0 : tokens_converted[2] * latticeConversion;
+            v1.y() = tokens_converted->at(1) * latticeConversion;
+            v1.z() = n != 3 ? 0.0 : tokens_converted->at(2) * latticeConversion;
           } else if (line == 1) {
-            v2.x() = tokens_converted[0] * latticeConversion;
-            v2.y() = tokens_converted[1] * latticeConversion;
+            v2.x() = tokens_converted->at(0) * latticeConversion;
+            v2.y() = tokens_converted->at(1) * latticeConversion;
             if (n == 2)
               break;
-            v2.z() = tokens_converted[2] * latticeConversion;
+            v2.z() = tokens_converted->at(2) * latticeConversion;
           } else if (line == 2) {
-            v3.x() = tokens_converted[0] * latticeConversion;
-            v3.y() = tokens_converted[1] * latticeConversion;
-            v3.z() = tokens_converted[2] * latticeConversion;
+            v3.x() = tokens_converted->at(0) * latticeConversion;
+            v3.y() = tokens_converted->at(1) * latticeConversion;
+            v3.z() = tokens_converted->at(2) * latticeConversion;
           }
         }
       }
