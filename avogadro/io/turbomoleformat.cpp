@@ -201,20 +201,15 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       } else {
         // $periodic does not appear yet, so guess it from the number of the
         // elements
-        switch (ntokens) {
-          case 1:
-            periodic_guessed = 1;
-            break;
-          case 3:
-            periodic_guessed = 2;
-            break;
-          case 6:
-            periodic_guessed = 3;
-            break;
-          default:
-            appendError("Cannot determine dimensionality from $cell: " +
-                        buffer);
-            return false;
+        if (ntokens == 1) {
+          periodic_guessed = 1;
+        } else if (ntokens == 3) {
+          periodic_guessed = 2;
+        } else if (ntokens == 6) {
+          periodic_guessed = 3;
+        } else {
+          appendError("Cannot determine dimensionality from $cell: " + buffer);
+          return false;
         }
         set_cell_vars(*periodic_guessed);
       }
