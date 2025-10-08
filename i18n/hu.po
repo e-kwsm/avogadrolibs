@@ -8979,16 +8979,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "E-mail-címek"
 
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Atom Label Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Atom címkeeszköz\t(%1)\n"
-#~ "\n"
-#~ "Bal egérgomb:\tEgyedi címkék hozzáadásához kattintson az atomokra"
-
 #~ msgid "Max 2*theta:"
 #~ msgstr "Legnagyobb 2θ:"
 
