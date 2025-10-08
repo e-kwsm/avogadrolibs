@@ -8881,16 +8881,6 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Atom Label Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "원자 레이블 도구\t(%1)\n"
-#~ "\n"
-#~ "왼쪽 마우스:\t사용자 정의 레이블을 추가하려면 원자 클릭"
-
 #~ msgid "Max 2*theta:"
 #~ msgstr "최대 2*세타:"
 
