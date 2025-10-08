@@ -220,6 +220,9 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
+      auto set_cell_vars = [&](unsigned periodic) {
+      };
+
       if (periodic_parsed) {
         // $periodic appeared
         if (*periodic_parsed == 0) {
