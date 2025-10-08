@@ -9354,16 +9354,6 @@ msgstr "Sähköpostisi"
 #~ msgid "Generate and plot an RMSD curve."
 #~ msgstr "Luo ja piirrä RMSD-käyrä."
 
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Atom Label Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Atominimiötyökalu\t(%1)\n"
-#~ "\n"
-#~ "Vasen-hiiri:\tNapsauta atomit lisätäksesi mukautettuja nimiöitä"
-
 #~ msgid ""
 #~ "Tables for displaying and editng atom, bond, angle and torsion properties."
 #~ msgstr ""
