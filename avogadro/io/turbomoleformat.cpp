@@ -197,23 +197,16 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       if (periodic_parsed) {
         // $periodic appeared
-        switch (*periodic_parsed) {
-          case 1:
-            if (!is_line_valid(1))
-              return false;
-            break;
-          case 2:
-            if (!is_line_valid(3))
-              return false;
-            break;
-          case 3:
-            if (!is_line_valid(6))
-              return false;
-            break;
-          default:
+        if (!(*periodic_parsed == 1 && is_line_valid(1)) &&
+            !(*periodic_parsed == 2 && is_line_valid(3)) &&
+            !(*periodic_parsed == 3 && is_line_valid(6))) {
+          if (*periodic_parsed == 0) {
             hasCell = false;
             std::cerr << "Ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
+          } else {
+            return false;
+          }
         }
         set_cell_vars(*periodic_parsed);
       } else {
