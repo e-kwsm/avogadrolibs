@@ -215,7 +215,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             std::cerr << "Ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
         }
-        set_cell_vars(*periodic_parsed);
       } else {
         // $periodic does not appear yet, so guess it from the number of the
         // elements
@@ -234,8 +233,8 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
                         buffer);
             return false;
         }
-        set_cell_vars(*periodic_guessed);
       }
+      set_cell_vars(*periodic_parsed);
 
     } else if (tokens[0] == "$lattice") {
       hasLattice = true;
