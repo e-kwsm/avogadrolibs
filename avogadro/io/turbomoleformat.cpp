@@ -242,6 +242,36 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
         latticeConversion = 1.0; // leave as Angstrom
 
+      auto set_cell_vars = [&](unsigned line, unsigned periodic,
+                               const auto& tokens_converted) {
+        switch (line) {
+          case 0:
+            v1.x() = tokens_converted.at(0) * latticeConversion;
+            if (tokens_converted.size() == 1)
+              return;
+            v1.y() =
+              periodic == 1 ? 0.0 : tokens_converted.at(1) * latticeConversion;
+            v1.z() =
+              periodic != 3 ? 0.0 : tokens_converted.at(2) * latticeConversion;
+            break;
+          case 1:
+            assert(periodic >= 2);
+            v2.x() = tokens_converted.at(0) * latticeConversion;
+            v2.y() = tokens_converted.at(1) * latticeConversion;
+            v2.z() =
+              periodic == 2 ? 0.0 : tokens_converted.at(2) * latticeConversion;
+            break;
+          case 2:
+            assert(periodic == 3);
+            v3.x() = tokens_converted.at(0) * latticeConversion;
+            v3.y() = tokens_converted.at(1) * latticeConversion;
+            v3.z() = tokens_converted.at(2) * latticeConversion;
+            break;
+          default:
+            throw;
+        }
+      };
+
       if (periodic_parsed) {
         // $periodic appeared
         if (*periodic_parsed == 0) {
@@ -267,25 +297,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             return false;
           }
 
-          if (line == 0) {
-            v1.x() = tokens_converted->at(0) * latticeConversion;
-            v1.y() = *periodic_parsed == 1
-                       ? 0.0
-                       : tokens_converted->at(1) * latticeConversion;
-            v1.z() = *periodic_parsed != 3
-                       ? 0.0
-                       : tokens_converted->at(2) * latticeConversion;
-          } else if (line == 1) {
-            v2.x() = tokens_converted->at(0) * latticeConversion;
-            v2.y() = tokens_converted->at(1) * latticeConversion;
-            v2.z() = *periodic_parsed == 2
-                       ? 0.0
-                       : tokens_converted->at(2) * latticeConversion;
-          } else if (line == 2) {
-            v3.x() = tokens_converted->at(0) * latticeConversion;
-            v3.y() = tokens_converted->at(1) * latticeConversion;
-            v3.z() = tokens_converted->at(2) * latticeConversion;
-          }
+          set_cell_vars(line, *periodic_parsed, *tokens_converted);
         }
       } else {
         // $periodic does not appear yet, so guess dimensionality from line(s)
