@@ -253,17 +253,17 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         for (unsigned line = 0; line < *periodic_parsed; ++line) {
           getline(inStream, buffer);
           tokens = split(rstrip(buffer, '#'), ' ');
-          bool ok;
-          const auto tokens_converted = lexicalCast<double>(tokens, ok);
-          if (!ok) {
+          const auto tokens_converted =
+            lexicalCast<double>(tokens.begin(), tokens.end());
+          if (!tokens_converted) {
             appendError("Failed to parse: " + buffer);
             return false;
           }
-          if(tokens_converted.size() < *periodic_parsed){
+          if (tokens_converted->size() < *periodic_parsed) {
             appendError("Not enough tokens in this line: " + buffer);
             return false;
           }
-          if(tokens_converted.size() > *periodic_parsed){
+          if (tokens_converted->size() > *periodic_parsed) {
             appendError("Extra tokens in this line: " + buffer);
             return false;
           }
