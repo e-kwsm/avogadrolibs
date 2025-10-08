@@ -160,17 +160,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
       }
 
       const auto ntokens = tokens_converted->size();
-      auto is_line_valid = [&](unsigned expected) -> bool {
-        if (ntokens < expected) {
-          appendError("Not enough tokens in this line: " + buffer);
-          return false;
-        }
-        if (ntokens > expected) {
-          appendError("Extra tokens in this line: " + buffer);
-          return false;
-        }
-        return true;
-      };
 
       auto set_cell_vars = [&](unsigned periodic) {
         switch (periodic) {
@@ -197,14 +186,15 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       if (periodic_parsed) {
         // $periodic appeared
-        if (!(*periodic_parsed == 1 && is_line_valid(1)) &&
-            !(*periodic_parsed == 2 && is_line_valid(3)) &&
-            !(*periodic_parsed == 3 && is_line_valid(6))) {
+        if (!(*periodic_parsed == 1 && ntokens == 1) &&
+            !(*periodic_parsed == 2 && ntokens == 3) &&
+            !(*periodic_parsed == 3 && ntokens == 6)) {
           if (*periodic_parsed == 0) {
             hasCell = false;
             std::cerr << "Ignore $cell since '$periodic 0' (non periodic) "
                          "is specified\n";
           } else {
+            appendError("Not enough or extra tokens in this line: " + buffer);
             return false;
           }
         }
