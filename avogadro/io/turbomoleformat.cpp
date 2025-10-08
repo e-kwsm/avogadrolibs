@@ -313,8 +313,7 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
           } else if (*periodic_guessed != n) {
             appendError("The previous and current lines respectively have " +
                         std::to_string(*periodic_guessed) + " and " +
-                        std::to_string(n) + " element(s)\n" +
-                        buffer);
+                        std::to_string(n) + " element(s)\n" + buffer);
             return false;
           }
 
