@@ -268,8 +268,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             return false;
           }
 
-        if (auto tmp =
-              lexicalCast<double>(tokens.begin(), tokens.begin() + 3)) {
           if (line == 0) {
             v1.x() = tokens_converted->at(0) * latticeConversion;
             v1.y() = *periodic_parsed == 1
@@ -289,10 +287,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             v3.y() = tokens_converted->at(1) * latticeConversion;
             v3.z() = tokens_converted->at(2) * latticeConversion;
           }
-        } else {
-          appendError("Failed to parse this line following $lattice: " +
-                      buffer);
-          return false;
         }
       } else {
         // $periodic does not appear yet, so guess dimensionality from line(s)
