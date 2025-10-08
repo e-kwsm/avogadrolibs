@@ -186,19 +186,18 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
 
       if (periodic_parsed) {
         // $periodic appeared
-        if (!(*periodic_parsed == 1 && ntokens == 1) &&
-            !(*periodic_parsed == 2 && ntokens == 3) &&
-            !(*periodic_parsed == 3 && ntokens == 6)) {
-          if (*periodic_parsed == 0) {
-            hasCell = false;
-            std::cerr << "Ignore $cell since '$periodic 0' (non periodic) "
-                         "is specified\n";
-          } else {
-            appendError("Not enough or extra tokens in this line: " + buffer);
-            return false;
-          }
+        if ((*periodic_parsed == 1 && ntokens == 1) ||
+            (*periodic_parsed == 2 && ntokens == 3) ||
+            (*periodic_parsed == 3 && ntokens == 6)) {
+          set_cell_vars(*periodic_parsed);
+        } else if (*periodic_parsed == 0) {
+          hasCell = false;
+          std::cerr << "Ignore $cell since '$periodic 0' (non periodic) "
+                       "is specified\n";
+        } else {
+          appendError("Not enough or extra tokens in this line: " + buffer);
+          return false;
         }
-        set_cell_vars(*periodic_parsed);
       } else {
         // $periodic does not appear yet, so guess it from the number of the
         // elements
