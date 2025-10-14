@@ -2055,6 +2055,7 @@ msgid "Ctrl+7"
 msgstr "Ctrl+7"
 
 #: qtplugins/autoopt/autoopt.cpp:67
+#, fuzzy
 msgid "Auto Optimize"
 msgstr "自動最適化"
 
