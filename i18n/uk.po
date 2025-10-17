@@ -9455,9 +9455,6 @@ msgstr "Ваші електронні листи"
 #~ msgid "Filename"
 #~ msgstr "Назва файла:"
 
-#~ msgid "OK"
-#~ msgstr "Гаразд"
-
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Усі файли"
