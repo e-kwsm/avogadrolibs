@@ -8926,9 +8926,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Nome do ficheiro:"
 
-#~ msgid "OK"
-#~ msgstr "Aceptar"
-
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os ficheiros"

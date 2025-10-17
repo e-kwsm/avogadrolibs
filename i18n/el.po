@@ -9213,9 +9213,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Όνομα αρχείου:"
 
-#~ msgid "OK"
-#~ msgstr "Εντάξει"
-
 #, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Όνομα στοιχείου"

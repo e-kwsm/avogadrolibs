@@ -9294,12 +9294,6 @@ msgstr ""
 #~ msgid "By Atomic Index"
 #~ msgstr "By Atomic Index"
 
-#~ msgid "Select Water…"
-#~ msgstr "Select Water…"
-
-#~ msgid "&Copy"
-#~ msgstr "&Copy"
-
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "All files"
