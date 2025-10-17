@@ -9206,9 +9206,6 @@ msgstr ""
 #~ msgid "Other..."
 #~ msgstr "Drugo ..."
 
-#~ msgid "OK"
-#~ msgstr "V redu"
-
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Vse datoteke"

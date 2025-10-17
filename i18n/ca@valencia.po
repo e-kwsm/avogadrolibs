@@ -8954,9 +8954,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Nom de fitxer:"
 
-#~ msgid "OK"
-#~ msgstr "D'acord"
-
 #, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Nom d'element"

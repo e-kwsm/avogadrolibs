@@ -8855,9 +8855,6 @@ msgstr ""
 #~ msgid "&Hostname:"
 #~ msgstr "&Vertsnavn:"
 
-#~ msgid "Files of type:"
-#~ msgstr "Filer av type:"
-
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "Tous les fichiers"
