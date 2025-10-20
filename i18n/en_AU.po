@@ -12499,10 +12499,6 @@ msgstr ""
 #~ msgid "Connection failed"
 #~ msgstr "Connection failed"
 
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
 #~ msgid "Fragment..."
 #~ msgstr "Fragment..."
 
