@@ -8867,9 +8867,6 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "檔名"
 
-#~ msgid "Cancel"
-#~ msgstr "取消"
-
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "所有檔案"
