@@ -9360,10 +9360,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Torsion Properties..."
 #~ msgstr "扭轉的特性..."
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "分子性質..."
-
 #~ msgid "Create Surfaces..."
 #~ msgstr "產生外觀..."
 
@@ -9373,37 +9369,12 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Theory:"
 #~ msgstr "理論:"
 
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "距離 (1->2): %L1 %2"
-
 #~ msgid "Rotatable"
 #~ msgstr "可旋轉"
-
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "構形異構物 %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "構形異構物 %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "角度 %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "構形異構物 %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
@@ -9414,7 +9385,7 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "能量 (kJ/mol):"
+#~ msgstr "能量 (kJ/mol)"
 
 #~ msgid "Yes"
 #~ msgstr "Yes"
@@ -9449,10 +9420,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #, fuzzy
 #~ msgid "Optimize geometry"
 #~ msgstr "最佳化幾何結構"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "幾何構形最適化"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
