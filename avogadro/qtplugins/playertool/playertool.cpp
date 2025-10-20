@@ -211,11 +211,10 @@ void PlayerTool::play()
   if (m_timer.isActive()) {
     stop();
     return;
-  } else {
-    // change the button to stop / pause
-    playButton->setText(tr("Pause"));
-    playButton->setIcon(QIcon::fromTheme("media-playback-pause"));
   }
+  // change the button to stop / pause
+  playButton->setText(tr("Pause"));
+  playButton->setIcon(QIcon::fromTheme("media-playback-pause"));
 
   auto fps = static_cast<double>(m_animationFPS->value());
   if (fps < 0.00001)
