@@ -9938,42 +9938,6 @@ msgstr ""
 #~ msgid "Connection failed"
 #~ msgstr "Connection failed"
 
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Load File"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element name"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "All files"
-
-#, fuzzy
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "No molecule set"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
 #~ msgid "Fragment..."
 #~ msgstr "Fragment..."
 
