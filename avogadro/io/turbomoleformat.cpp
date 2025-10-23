@@ -250,21 +250,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         }
         set_cell_vars(*periodic_guessed);
       }
-      if (tokens.size() < 6) {
-        appendError("Not enough tokens in this line: " + buffer);
-        return false;
-      }
-      if (auto tmp = lexicalCast<double>(tokens.begin(), tokens.begin() + 6)) {
-        a = tmp->at(0) * cellConversion;
-        b = tmp->at(1) * cellConversion;
-        c = tmp->at(2) * cellConversion;
-        alpha = tmp->at(3) * DEG_TO_RAD;
-        beta = tmp->at(4) * DEG_TO_RAD;
-        gamma = tmp->at(5) * DEG_TO_RAD;
-      } else {
-        appendError("Failed to parse this line: " + buffer);
-        return false;
-      }
 
     } else if (tokens[0] == "$lattice") {
       if (hasCell) {
@@ -300,8 +285,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             return false;
           }
 
-        if (auto tmp =
-              lexicalCast<double>(tokens.begin(), tokens.begin() + 3)) {
           if (line == 0) {
             v1.x() = tokens_converted[0] * latticeConversion;
             v1.y() = *periodic_parsed == 1
@@ -321,10 +304,6 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
             v3.y() = tokens_converted[1] * latticeConversion;
             v3.z() = tokens_converted[2] * latticeConversion;
           }
-        } else {
-          appendError("Failed to parse this line following $lattice: " +
-                      buffer);
-          return false;
         }
       } else {
         // $periodic does not appear yet, so guess dimensionality from line(s)
