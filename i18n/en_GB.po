@@ -8942,19 +8942,25 @@ msgstr ""
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
-",,Nathan_chud@hotmail.com,diegojromerolopez@gmail.com,medeshago@gmail.com,patricio.oshee@gmail.com,federsaiz@googlemail.com,,debianmaster@gmail.com,,,,,pczoido@gmail.com,,jalvarezrom@gmail.com,,,debianmaster@gmail.com,,jenfraggleubuntu@googlemail.com,,,,,avogadro-"
-"devel@lists.sourceforge.net,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,joseph.odell@googlemail.com,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,joseph.odell@googlemail.com,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,joseph.odell@googlemail.com,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,,joseph.odell@googlemail.com,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,,joseph.odell@googlemail.com,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,,joseph.odell@googlemail.com,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,,,,joseph.odell@googlemail.com,,,,untaintableangel@ubuntu.com,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,cwoollard@gmail.com,,,,joseph.odell@googlemail.com,,,,untaintableangel@ubuntu.com,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,cwoollard@gmail.com,,,,joseph.odell@googlemail.com,,,,,avogadro-"
-"devel@lists.sourceforge.net,bburns@aundae.com,cwoollard@gmail.com,,,,joseph.odell@googlemail.com"
+",,Nathan_chud@hotmail.com,diegojromerolopez@gmail.com,medeshago@gmail.com,"
+"patricio.oshee@gmail.com,federsaiz@googlemail.com,,debianmaster@gmail."
+"com,,,,,pczoido@gmail.com,,jalvarezrom@gmail.com,,,debianmaster@gmail.com,,"
+"jenfraggleubuntu@googlemail.com,,,,,avogadro-devel@lists.sourceforge.net,,,"
+"avogadro-devel@lists.sourceforge.net,bburns@aundae.com,,,,,avogadro-"
+"devel@lists.sourceforge.net,bburns@aundae.com,,,joseph.odell@googlemail."
+"com,,,avogadro-devel@lists.sourceforge.net,bburns@aundae.com,,,joseph."
+"odell@googlemail.com,,,avogadro-devel@lists.sourceforge.net,bburns@aundae."
+"com,,,joseph.odell@googlemail.com,,,avogadro-devel@lists.sourceforge.net,"
+"bburns@aundae.com,,,,joseph.odell@googlemail.com,,,avogadro-devel@lists."
+"sourceforge.net,bburns@aundae.com,,,,joseph.odell@googlemail.com,,,avogadro-"
+"devel@lists.sourceforge.net,bburns@aundae.com,,,,joseph.odell@googlemail."
+"com,,,avogadro-devel@lists.sourceforge.net,bburns@aundae.com,,,,joseph."
+"odell@googlemail.com,,,,untaintableangel@ubuntu.com,avogadro-devel@lists."
+"sourceforge.net,bburns@aundae.com,cwoollard@gmail.com,,,,joseph."
+"odell@googlemail.com,,,,untaintableangel@ubuntu.com,avogadro-devel@lists."
+"sourceforge.net,bburns@aundae.com,cwoollard@gmail.com,,,,joseph."
+"odell@googlemail.com,,,,,avogadro-devel@lists.sourceforge.net,bburns@aundae."
+"com,cwoollard@gmail.com,,,,joseph.odell@googlemail.com"
 
 #~ msgid "Max 2*theta:"
 #~ msgstr "Max 2*theta:"
@@ -9372,204 +9378,11 @@ msgstr ""
 #~ msgstr "Record Movie..."
 
 #~ msgid ""
-#~ "The file name contains invalid characters. Please choose another file name."
+#~ "The file name contains invalid characters. Please choose another file "
+#~ "name."
 #~ msgstr ""
-#~ "The file name contains invalid characters. Please choose another file name."
-
-#~ msgid "Other..."
-#~ msgstr "Other..."
-
-#~ msgid "Connection failed"
-#~ msgstr "Connection failed"
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filename:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Load File"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigate"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element name"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "All files"
-
-#, fuzzy
-#~ msgid "octahedral"
-#~ msgstr "Rhombohedral"
-
-#, fuzzy
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "No molecule set"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Crystal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Add Hydrogens for pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Atom Properties..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Bond Properties..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Angle Properties..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Torsion Properties..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molecule Properties..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Create Surfaces..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Symmetry"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Insert Fragment..."
-
-#~ msgid "Theory:"
-#~ msgstr "Theory:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Distance (1->2): %L1 %2"
-
-#~ msgid "Rotatable"
-#~ msgstr "Rotatable"
-
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
-
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energy (kJ/mol)"
-
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
-
-#, fuzzy
-#~ msgid "Input Generators"
-#~ msgstr "Input Generator..."
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Import"
-
-#~ msgid "Insert SMILES"
-#~ msgstr "Insert SMILES"
-
-#~ msgid "Insert SMILES fragment:"
-#~ msgstr "Insert SMILES fragment:"
-
-#~ msgid "Insert Crystal"
-#~ msgstr "Insert Crystal"
-
-#~ msgid "Insert molecular fragments for building larger molecules"
-#~ msgstr "Insert molecular fragments for building larger molecules"
-
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
-
-#~ msgid "Symmetry Properties..."
-#~ msgstr "Symmetry Properties..."
-
-#, fuzzy
-#~ msgid "Optimize geometry"
-#~ msgstr "&Optimise Geometry"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometry Optimization"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Add Hydrogens"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Surfaces"
-
-#~ msgid "Color by Index"
-#~ msgstr "Colour by Index"
-
-#~ msgid "Color by Index (red, orange, yellow, green, blue, violet)."
-#~ msgstr "Colour by Index (red, orange, yellow, green, blue, violet)."
-
-#~ msgid "Color by Partial Charge"
-#~ msgstr "Colour by Partial Charge"
+#~ "The file name contains invalid characters. Please choose another file "
+#~ "name."
 
 #~ msgid "Color by atomic partial charge (blue = positive, red = negative."
 #~ msgstr "Colour by atomic partial charge (blue = positive, red = negative."
@@ -9619,74 +9432,28 @@ msgstr ""
 #~ msgid "Select Bond Labels Color"
 #~ msgstr "Select Bond Labels Colour"
 
+#~ msgid "Ununoctium"
+#~ msgstr "Ununoctium"
+
+#~ msgid "Engines"
+#~ msgstr "Engines"
+
+#~ msgid "Axes"
+#~ msgstr "Axes"
+
+=======
+>>>>>>> 506f6ec7b7aa (i18n/en_GB.po (case))
+#~ msgid "Renders the x, y, and z axes at the origin"
+#~ msgstr "Renders the x, y and z axes at the origin"
+
+#~ msgid "Select Bond Labels Color"
+#~ msgstr "Select Bond Labels Colour"
+
+#~ msgid "Renders rings with colored planes"
+#~ msgstr "Renders rings with coloured planes"
+
 #~ msgid "GL widget was not correctly initialized in order to save video"
 #~ msgstr "GL widget was not correctly initialised in order to save video"
-
-#~ msgid "Cartesian editor"
-#~ msgstr "Cartesian editor"
-
-#~ msgid "Number of atoms: %1"
-#~ msgstr "Number of atoms: %1"
-
-#~ msgid "Number of rotatable bonds: %1"
-#~ msgstr "Number of rotatable bonds: %1"
-
-#~ msgid "Add constraint"
-#~ msgstr "Add constraint"
-
-#~ msgid "Your molecule must contain at least one atom to add a constraint"
-#~ msgstr "Your molecule must contain at least one atom to add a constraint"
-
-#~ msgid "Your molecule must contain at least two atoms to add a bond constraint"
-#~ msgstr ""
-#~ "Your molecule must contain at least two atoms to add a bond constraint"
-
-#~ msgid ""
-#~ "Your molecule must contain at least three atoms to add an angle constraint"
-#~ msgstr ""
-#~ "Your molecule must contain at least three atoms to add an angle constraint"
-
-#~ msgid ""
-#~ "Your molecule must contain at least four atoms to add a torsion constraint"
-#~ msgstr ""
-#~ "Your molecule must contain at least four atoms to add a torsion constraint"
-
-#~ msgid "&Crystallography"
-#~ msgstr "&Crystallography"
-
-#~ msgid "&Reduce"
-#~ msgstr "&Reduce"
-
-#~ msgid "&Length Unit"
-#~ msgstr "&Length Unit"
-
-#~ msgid "&Angle Unit"
-#~ msgstr "&Angle Unit"
-
-#~ msgid "&Coordinate Display"
-#~ msgstr "&Coordinate Display"
-
-#~ msgid "Coordinate &Preservation"
-#~ msgstr "Coordinate &Preservation"
-
-#~ msgid "&Matrix Display"
-#~ msgstr "&Matrix Display"
-
-#~ msgid "Hide &Editors"
-#~ msgstr "Hide &Editors"
-
-#~ msgid "Show &Editors"
-#~ msgstr "Show &Editors"
-
-#~ msgid "Hide &Property Display"
-#~ msgstr "Hide &Property Display"
-
-#~ msgid "Show &Property Display"
-#~ msgstr "Show &Property Display"
-
-#~ msgctxt "Unit cell lattice"
-#~ msgid "Lattice Type: %1"
-#~ msgstr "Lattice Type: %1"
 
 #~ msgid "Spacegroup: %1"
 #~ msgstr "Space group: %1"
@@ -9760,6 +9527,9 @@ msgstr ""
 
 #~ msgid "Invert chiral centers"
 #~ msgstr "Invert chiral centres"
+
+#~ msgid "VASP Format\n"
+#~ msgstr "VASP Format\n"
 
 #~ msgid "Bad Compostion"
 #~ msgstr "Bad Compostion"
@@ -13075,84 +12845,6 @@ msgstr ""
 
 #~ msgid "Purify Hessian"
 #~ msgstr "Purify Hessian"
-
-#~ msgid "Frequency Scale Factor:"
-#~ msgstr "Frequency Scale Factor:"
-
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
-#~ msgid "Initial Hessian"
-#~ msgstr "Initial Hessian"
-
-#~ msgid "Guess (+ define)"
-#~ msgstr "Guess (+ define)"
-
-#~ msgid "Read (from $HESS)"
-#~ msgstr "Read (from $HESS)"
-
-#~ msgid "Update Step Size"
-#~ msgstr "Update Step Size"
-
-#~ msgid "Print Orbs at Each Iteration"
-#~ msgstr "Print Orbs at Each Iteration"
-
-#~ msgid "Jump Size:"
-#~ msgstr "Jump Size:"
-
-#~ msgid "Stationary Point"
-#~ msgstr "Stationary Point"
-
-#~ msgid "Initial:"
-#~ msgstr "Initial:"
-
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
-#~ msgid "Rational Function Optimization"
-#~ msgstr "Rational Function Optimisation"
-
-#~ msgid "Quadratic Approximation"
-#~ msgstr "Quadratic Approximation"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
-
-#~ msgid "Constrained Optimization"
-#~ msgstr "Constrained Optimisation"
-
-#~ msgid "Recalculate Hessian Every:"
-#~ msgstr "Recalculate Hessian Every:"
-
-#~ msgid "Follow Mode:"
-#~ msgstr "Follow Mode:"
-
-#~ msgid "GAMESS-UK Input"
-#~ msgstr "GAMESS-UK Input"
-
-#~ msgid "GAMESS-UK input generated by Avogadro"
-#~ msgstr "GAMESS-UK input generated by Avogadro"
-
-#~ msgid "Transition State Search"
-#~ msgstr "Transition State Search"
-
-#~ msgid "Basis:"
-#~ msgstr "Basis:"
-
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
-#~ msgid "Z-matrix"
-#~ msgstr "Z-matrix"
 
 #~ msgid ""
 #~ "In direct mode, integrals are not stored on disk, but recalculated as needed.\n"
