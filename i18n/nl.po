@@ -8893,11 +8893,6 @@ msgstr ""
 #~ msgstr "gedeeltelijke verandering"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
-
-#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "Geometrie"
 
@@ -8909,11 +8904,6 @@ msgstr ""
 
 #~ msgid "By Distance"
 #~ msgstr "Op afstand"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molecule Lading:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -8950,44 +8940,6 @@ msgstr ""
 #~ msgstr "Bestandsnaam"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Structuur:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigeren"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigeren"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element naam"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Alle bestanden"
-
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Dihedrale hoek:"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Geen molecule geset"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "&Crystallography"
 
@@ -9022,7 +8974,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Afstand (1->2): %L1 %2"
+#~ msgstr "Afstand: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Roteerbaar"
@@ -9067,10 +9019,6 @@ msgstr ""
 #~ msgstr "Nee"
 
 #, fuzzy
-#~ msgid "Input Generators"
-#~ msgstr "Input Generator..."
-
-#, fuzzy
 #~ msgid "Import"
 #~ msgstr "Importeren"
 
@@ -9092,11 +9040,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimaliseer geometrie"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrie Optimalisation"
+#~ msgstr "Optimaliseer geometrie"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -9153,9 +9097,6 @@ msgstr ""
 
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markeer particuliere functies die aan een SMARTS patroon voldoen."
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
 
 #~ msgid "Axes"
 #~ msgstr "Assen"
@@ -10337,47 +10278,14 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Raman Intensiteit"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "Maak EFP"
 
 #~ msgid "None (CI)"
 #~ msgstr "Geen (CI)"
 
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
-
-#~ msgid "SCF Type:"
-#~ msgstr "SCF Type:"
-
 #~ msgid "Localization Method:"
 #~ msgstr "Localisatie Methode:"
-
-#~ msgid "Exec Type:"
-#~ msgstr "Exec Type:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
 
 #~ msgid "CI Singles"
 #~ msgstr "CI Singels"

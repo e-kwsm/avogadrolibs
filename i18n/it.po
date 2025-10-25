@@ -9009,7 +9009,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Ottimizza la geometria"
+#~ msgstr "Geometria"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
@@ -9031,11 +9031,6 @@ msgstr ""
 #~| msgid "Copy"
 #~ msgid "&Copy"
 #~ msgstr "Copia"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nome della molecola IUPAC:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9064,10 +9059,6 @@ msgstr ""
 #~ msgstr "Ottimizzazione"
 
 #, fuzzy
-#~ msgid "In."
-#~ msgstr "In:"
-
-#, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
 #~ msgstr "Frammento..."
@@ -9086,46 +9077,8 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "Nome del file"
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Carica file struttura"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Naviga"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Naviga"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nome elemento."
-
-#~ msgid "'c' coordinate."
-#~ msgstr "Coordinata 'c'."
-
 #~ msgid "All files (*);;"
 #~ msgstr "Tutti i file(*);;"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboidale"
-
-#, fuzzy
-#~| msgid "Insert Molecule..."
-#~ msgid "Insert Molecule..."
-#~ msgstr "Inserisci molecola..."
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Nessuna molecola impostata"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #, fuzzy
 #~ msgid "Crystal..."
@@ -9236,7 +9189,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Ottimizza la geometria"
+#~ msgstr "Ottimizza la geometria"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -9245,14 +9198,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "Aggiungi idrogeni"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Ferma"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Superfici"
 
 #~ msgid "Color by Index"
 #~ msgstr "Colore per Indice"
@@ -9298,12 +9243,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Evidenzia caratteristiche particolari che corrispondono a uno schema "
 #~ "SMARTS"
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrio"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentio"
 
 #~ msgid "Engines"
 #~ msgstr "Motori"
@@ -10190,9 +10129,6 @@ msgstr ""
 
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Il file CD Turbomole è formattato impropriamente: %1"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format (TIFF)"
 
 #~ msgid "Windows Bitmap"
 #~ msgstr "Bitmap di Windows"
@@ -11209,29 +11145,8 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Intensità Raman"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
-#~ msgid "None (CI)"
-#~ msgstr "None (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
+#~ msgid "Make EFP"
+#~ msgstr "Costruisci EFP"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Tipo di SCF:"
@@ -11241,51 +11156,6 @@ msgstr ""
 
 #~ msgid "Exec Type:"
 #~ msgstr "Tipo Di Eseguibile:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
-
-#~ msgid "Occupation Restricted Multiple Active Space"
-#~ msgstr "Occupation Restricted Multiple Active Space"
-
-#~ msgid "CI Singles"
-#~ msgstr "CI Singles"
-
-#~ msgid "Full Second Order CI"
-#~ msgstr "Full Second Order CI"
-
-#~ msgid "General CI"
-#~ msgstr "General CI"
-
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
-#~ msgid "LCCD: Linearized CC"
-#~ msgstr "LCCD: Linearized CC"
-
-#~ msgid "CCD: CC with Doubles"
-#~ msgstr "CCD: CC with Doubles"
-
-#~ msgid "CCSD: CC with Singles and Doubles"
-#~ msgstr "CCSD: CC with Singles and Doubles"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Esecuzione Normale"

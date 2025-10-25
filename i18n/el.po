@@ -9240,15 +9240,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Όνομα αρχείου:"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Όνομα στοιχείου"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Όλα τα αρχεία"
+#~ msgstr "Όνομα αρχείου"
 
 #, fuzzy
 #~ msgid "Generating 3D molecule..."
@@ -9368,10 +9360,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Optimize geometry"
 #~ msgstr "Βελτιστοποίηση Γεωμετρίας"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Γεωμετρική βελτιστοποίηση"
 
 #, fuzzy
 #~ msgid "Add hydrogens"

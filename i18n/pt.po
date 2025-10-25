@@ -9050,23 +9050,17 @@ msgstr ""
 
 #, fuzzy, qt-format
 #~ msgid ""
-#~ "Navigation Tool \t(%1)\n"
+#~ "Navigation Tool\t(%1)\n"
 #~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
+#~ "Left Mouse:\tClick and drag to rotate the view.\n"
+#~ "Middle Mouse:\tClick and drag to zoom in or out.\n"
+#~ "Right Mouse:\tClick and drag to move the view.\n"
 #~ msgstr ""
 #~ "Ferramenta de Navegação (%1)\n"
 #~ "\n"
 #~ "Mouse Esquerdo: Clique e arraste para girar a visualização.\n"
 #~ "Mouse do Meio: Clique e arraste para ampliar ou reduzir.\n"
 #~ "Mouse Direito: Clique e arraste para mover a visualização.\n"
-
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "&Importar..."
@@ -9103,28 +9097,6 @@ msgstr ""
 #~ msgid "Add Unit Cell"
 #~ msgstr "Adicionar Célula Unitária"
 
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Número Atômico."
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Distância:"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Número Atômico."
-
-#, fuzzy
-#~| msgid "Copy"
-#~ msgid "&Copy"
-#~ msgstr "Copiar"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Carga Molecular:"
-
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Massa Molecular (g/mol):"
 
@@ -9137,15 +9109,6 @@ msgstr ""
 #~ msgid "Number of Bonds:"
 #~ msgstr "Número de Ligações:"
 
-#, fuzzy
-#~| msgid "Optimize Geometry"
-#~ msgid "Optimize"
-#~ msgstr "Otimizar Geometria"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Em:"
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "Entrada ABPS (*.in)"
 
@@ -9156,21 +9119,6 @@ msgstr ""
 #~ "Selecionar o interpretador python usado para executar scripts de criador "
 #~ "de entrada.\n"
 #~ "O Avogadro deve ser reiniciado para que as alterações tenham efeito."
-
-#, fuzzy
-#~| msgid "Set Python Path..."
-#~ msgid "Set Python Path…"
-#~ msgstr "Definir Caminho Python..."
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragmento..."
-
-#, fuzzy
-#~| msgid "Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "Funcional"
 
 #~ msgid "Help..."
 #~ msgstr "Ajuda..."
@@ -9229,9 +9177,8 @@ msgstr ""
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interface com Servidor Mongo Chem."
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Estrutura:"
+#~ msgid "Energy (eV)"
+#~ msgstr "Energia (eV)"
 
 #~ msgid "Server settings"
 #~ msgstr "Configurações de servidor"
@@ -9275,21 +9222,8 @@ msgstr ""
 #~ msgid "Input Parameters:"
 #~ msgstr "Parâmetros de Entrada:"
 
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nome do Elemento."
-
-#~ msgid "'c' coordinate."
-#~ msgstr "coordenada de rede 'c'."
-
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os ficheiros (*);;"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboédrico"
 
 #~ msgid "Insert Molecule..."
 #~ msgstr "Inserir Molécula..."
@@ -9325,10 +9259,6 @@ msgstr ""
 
 #~ msgid "Edit Unit Cell..."
 #~ msgstr "Editar Célula Unitária..."
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
 
 #~ msgid "&Import From PQR"
 #~ msgstr "&Importar de PQR"
@@ -9409,6 +9339,10 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "Ângulo %1"
 
+#, fuzzy
+#~ msgid "Angle"
+#~ msgstr "Ângulo"
+
 #~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
@@ -9460,7 +9394,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimizar Geometria"
+#~ msgstr "Optimizar Geometria"
 
 #, fuzzy
 #~ msgid "Configure geometry optimization..."
@@ -9521,18 +9455,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr ""
 #~ "Realçar funcionalidades particulares que coincidem com o padrão SMARTS."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrio"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentio"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununséptio"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununóctio"
 
 #~ msgid "Engines"
 #~ msgstr "Motores"
@@ -10479,12 +10401,6 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Carregando Dados do Espectro"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Formato PNG"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Formato TIFF"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "Imagem do Windows"
 
@@ -11075,17 +10991,8 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Intensidades Raman"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "Construir EFP"
 
 #~ msgid "None (CI)"
 #~ msgstr "Nenhum (CI)"
