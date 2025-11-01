@@ -433,7 +433,7 @@ void VolumeGeometry::initialize()
                  GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat),
-                          (GLvoid*)0);
+                          (GLvoid*)nullptr);
 
     glGenBuffers(1, &d->volumeBoxEbo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, d->volumeBoxEbo);
@@ -569,7 +569,7 @@ void VolumeGeometry::render(const Camera& camera)
     d->boxShaders->setUniformValue("uBoxMax", boxMax);
 
     glBindVertexArray(d->volumeBoxVao);
-    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
     glBindVertexArray(0);
 
     d->boxShaders->release();
@@ -598,7 +598,7 @@ void VolumeGeometry::render(const Camera& camera)
     d->boxShaders->setUniformValue("uBoxMax", boxMax);
 
     glBindVertexArray(d->volumeBoxVao);
-    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
     glBindVertexArray(0);
 
     d->boxShaders->release();
