@@ -13,8 +13,7 @@
 
 namespace Avogadro::QtGui {
 
-MoleculeModel::MoleculeModel(QObject* p)
-  : QAbstractItemModel(p), m_activeMolecule(nullptr)
+MoleculeModel::MoleculeModel(QObject* p) : QAbstractItemModel(p)
 {
   const QPalette defaultPalette;
   bool darkMode = (defaultPalette.color(QPalette::WindowText).lightness() >
