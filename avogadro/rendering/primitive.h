@@ -23,7 +23,7 @@ enum Type
 /** Used to identify the primitive during picking. */
 struct Identifier
 {
-  Identifier() : molecule(0), type(InvalidType), index(MaxIndex) {}
+  Identifier() : molecule(nullptr), type(InvalidType), index(MaxIndex) {}
 
   bool operator==(const Identifier& other) const
   {
@@ -54,7 +54,7 @@ public:
   /** Used to identify the primitive during picking. */
   struct Identifier
   {
-    Identifier() : molecule(0), type(Invalid), index(MaxIndex) {}
+    Identifier() : molecule(nullptr), type(Invalid), index(MaxIndex) {}
 
     bool operator==(const Identifier& other) const
     {
