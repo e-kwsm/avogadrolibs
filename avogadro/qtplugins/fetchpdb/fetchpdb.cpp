@@ -139,7 +139,9 @@ void FetchPDB::replyFinished(QNetworkReply* reply)
   m_tempFileName =
     QDir::tempPath() + QDir::separator() + m_moleculeName + ".pdb";
   QFile out(m_tempFileName);
-  out.open(QIODevice::WriteOnly);
+  if (!out.open(QIODevice::WriteOnly)) {
+    throw;
+  }
   out.write(m_moleculeData);
   out.close();
 

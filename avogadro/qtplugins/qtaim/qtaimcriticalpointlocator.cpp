@@ -157,7 +157,9 @@ QList<QVariant> QTAIMLocateBondCriticalPoint(QList<QVariant> input)
 
   QList<QVector3D> nuclearCriticalPoints;
   QFile nuclearCriticalPointsFile(nuclearCriticalPointsFileName);
-  nuclearCriticalPointsFile.open(QIODevice::ReadOnly);
+  if (!nuclearCriticalPointsFile.open(QIODevice::ReadOnly)) {
+    throw;
+  }
   QDataStream nuclearCriticalPointsFileIn(&nuclearCriticalPointsFile);
   nuclearCriticalPointsFileIn >> nuclearCriticalPoints;
   nuclearCriticalPointsFile.close();
@@ -441,7 +443,9 @@ void QTAIMCriticalPointLocator::locateBondCriticalPoints()
   QString nuclearCriticalPointsFileName =
     QTAIMCriticalPointLocator::temporaryFileName();
   QFile nuclearCriticalPointsFile(nuclearCriticalPointsFileName);
-  nuclearCriticalPointsFile.open(QIODevice::WriteOnly);
+  if (!nuclearCriticalPointsFile.open(QIODevice::WriteOnly)) {
+    throw;
+  }
   QDataStream nuclearCriticalPointsOut(&nuclearCriticalPointsFile);
   nuclearCriticalPointsOut << m_nuclearCriticalPoints;
   nuclearCriticalPointsFile.close();
@@ -841,7 +845,9 @@ void QTAIMCriticalPointLocator::locateElectronDensitySinks()
 QString QTAIMCriticalPointLocator::temporaryFileName()
 {
   QTemporaryFile temporaryFile;
-  temporaryFile.open();
+  if (!temporaryFile.open()) {
+    throw;
+  }
   QString tempFileName = temporaryFile.fileName();
   temporaryFile.close();
   temporaryFile.remove();

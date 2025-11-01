@@ -185,7 +185,9 @@ void ApbsDialog::saveInputFile(const QString& fileName)
   QString contents = m_inputGenerator->fileContents("apbs.in");
 
   QFile file(fileName);
-  file.open(QFile::WriteOnly);
+  if (!file.open(QFile::WriteOnly)) {
+    throw;
+  }
   file.write(contents.toLocal8Bit());
   file.close();
 }

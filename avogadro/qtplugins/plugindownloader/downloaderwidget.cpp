@@ -404,7 +404,9 @@ void DownloaderWidget::unzipPlugin()
     tr("Downloading %1 to %2\n").arg(filename).arg(m_filePath));
 
   QFile out(absolutePath);
-  out.open(QIODevice::WriteOnly);
+  if (!out.open(QIODevice::WriteOnly)) {
+    throw;
+  }
   out.write(fileData);
   out.close();
 
