@@ -64,19 +64,19 @@ protected slots:
 
 private:
   QAction* m_activateAction;
-  QtGui::Molecule* m_molecule;
-  Rendering::GLRenderer* m_renderer;
-  int m_currentFrame;
-  mutable QWidget* m_toolWidget;
+  QtGui::Molecule* m_molecule = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
+  int m_currentFrame = 0;
+  mutable QWidget* m_toolWidget = nullptr;
   QTimer m_timer;
-  mutable QSpinBox* m_animationFPS;
-  mutable QSpinBox* m_frameIdx;
-  mutable QSpinBox* m_firstFrameIdx;
-  mutable QSpinBox* m_lastFrameIdx;
-  mutable QCheckBox* m_dynamicBonding;
-  mutable QOpenGLWidget* m_glWidget;
-  mutable QSlider* m_slider;
-  mutable QPushButton* playButton;
+  mutable QSpinBox* m_animationFPS = nullptr;
+  mutable QSpinBox* m_frameIdx = nullptr;
+  mutable QSpinBox* m_firstFrameIdx = nullptr;
+  mutable QSpinBox* m_lastFrameIdx = nullptr;
+  mutable QCheckBox* m_dynamicBonding = nullptr;
+  mutable QOpenGLWidget* m_glWidget = nullptr;
+  mutable QSlider* m_slider = nullptr;
+  mutable QPushButton* playButton = nullptr;
 };
 
 inline void PlayerTool::setMolecule(QtGui::Molecule* mol)
