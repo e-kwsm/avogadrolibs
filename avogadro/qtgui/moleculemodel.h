@@ -72,7 +72,7 @@ public slots:
 
 private:
   QList<Molecule*> m_molecules;
-  QObject* m_activeMolecule;
+  QObject* m_activeMolecule = nullptr;
   QIcon m_plusIcon;
   QIcon m_closeIcon;
 };
