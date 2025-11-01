@@ -91,8 +91,8 @@ private:
   void tilt(Vector3 delta, Vector3 centroid);
 
   QAction* m_activateAction;
-  QtGui::RWMolecule* m_molecule;
-  Rendering::GLRenderer* m_renderer;
+  QtGui::RWMolecule* m_molecule = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
   Rendering::Identifier m_object;
   QPoint m_lastMousePosition;
   Vector3f m_lastMouse3D;
@@ -102,7 +102,7 @@ private:
   Real m_energy;
   Real m_deltaE;
 
-  mutable QWidget* m_toolWidget;
+  mutable QWidget* m_toolWidget = nullptr;
 
   bool m_running = false;
   qint64 m_oneStepTime = 0;
