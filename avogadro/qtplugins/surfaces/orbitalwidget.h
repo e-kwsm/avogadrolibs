@@ -78,12 +78,12 @@ private slots:
 
 private:
   Ui::OrbitalWidget ui;
-  OrbitalSettingsDialog* m_settings;
-  OrbitalQuality m_quality;
-  double m_isovalue;
+  OrbitalSettingsDialog* m_settings = nullptr;
+  OrbitalQuality m_quality = OQ_Low;
+  double m_isovalue = 0.03;
 
-  bool m_precalc_limit;
-  int m_precalc_range;
+  bool m_precalc_limit = true;
+  int m_precalc_range = 10;
 
   OrbitalTableModel* m_tableModel;
   OrbitalSortingProxyModel* m_sortedTableModel;
