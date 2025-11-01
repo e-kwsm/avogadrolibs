@@ -23,8 +23,7 @@ class TestEnergyCalculator : public EnergyCalculator
 public:
   TestEnergyCalculator(const std::string& id = "test_calc",
                        const std::string& modelName = "Test Calculator")
-    : m_identifier(id), m_name(modelName), m_acceptsUnitCell(false),
-      m_acceptsIons(false), m_acceptsRadicals(false), m_configCalled(false)
+    : m_identifier(id), m_name(modelName)
   {
   }
 
@@ -77,10 +76,10 @@ private:
   std::string m_identifier;
   std::string m_name;
   Molecule* m_molecule = nullptr;
-  bool m_acceptsUnitCell;
-  bool m_acceptsIons;
-  bool m_acceptsRadicals;
-  bool m_configCalled;
+  bool m_acceptsUnitCell = false;
+  bool m_acceptsIons = false;
+  bool m_acceptsRadicals = false;
+  bool m_configCalled = false;
   VariantMap m_config;
 };
 
