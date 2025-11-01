@@ -67,7 +67,7 @@ private:
   Camera m_camera;
   Vector3ub m_backgroundColor;
   Vector3ub m_ambientColor;
-  float m_aspectRatio;
+  float m_aspectRatio = 800.0f / 600.0f;
   long m_vertexCount = 0;
   long m_faceCount = 0;
   std::string m_sceneVertices = "";

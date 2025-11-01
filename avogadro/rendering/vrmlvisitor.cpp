@@ -44,8 +44,7 @@ ostream& operator<<(ostream& os, const Vector4ub& color)
 } // namespace
 
 VRMLVisitor::VRMLVisitor(const Camera& c)
-  : m_camera(c), m_backgroundColor(255, 255, 255),
-    m_ambientColor(100, 100, 100), m_aspectRatio(800.0f / 600.0f)
+  : m_camera(c), m_backgroundColor(255, 255, 255), m_ambientColor(100, 100, 100)
 {
 }
 
