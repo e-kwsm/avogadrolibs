@@ -60,8 +60,7 @@ using QtGui::RWAtom;
 
 AutoOpt::AutoOpt(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_renderer(nullptr), m_pressedButtons(Qt::NoButton),
-    m_toolWidget(nullptr), m_currentMethod("LJ")
+    m_pressedButtons(Qt::NoButton), m_currentMethod("LJ")
 {
   QString shortcut = tr("Ctrl+7", "control-key 7");
   m_activateAction->setText(tr("Auto Optimize"));
