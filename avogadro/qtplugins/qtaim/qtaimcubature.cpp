@@ -2376,7 +2376,9 @@ void QTAIMCubature::setMode(qint64 mode)
 QString QTAIMCubature::temporaryFileName()
 {
   QTemporaryFile temporaryFile;
-  temporaryFile.open();
+  if (!temporaryFile.open()) {
+    throw;
+  }
   QString tempFileName = temporaryFile.fileName();
   temporaryFile.close();
   temporaryFile.remove();

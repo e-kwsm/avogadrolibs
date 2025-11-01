@@ -42,7 +42,9 @@ public:
   void saveToBinaryFile(const QString& fileName)
   {
     QFile file(fileName);
-    file.open(QIODevice::WriteOnly);
+    if (!file.open(QIODevice::WriteOnly)) {
+      throw;
+    }
     QDataStream out(&file);
     out << m_fileName;
     out << m_comment;
@@ -70,7 +72,9 @@ public:
   void loadFromBinaryFile(const QString& fileName)
   {
     QFile file(fileName);
-    file.open(QIODevice::ReadOnly);
+    if (!file.open(QIODevice::ReadOnly)) {
+      throw;
+    }
     QDataStream in(&file);
     in >> m_fileName;
     in >> m_comment;
