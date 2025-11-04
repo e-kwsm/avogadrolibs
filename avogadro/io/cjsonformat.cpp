@@ -313,8 +313,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
     }
   }
 
-  if (atoms.find("layer") != atoms.end()) {
-    json layerJson = atoms["layer"];
+  if (auto itr = atoms.find("layer"); itr != atoms.end()) {
+    json layerJson = *itr;
     if (isNumericArray(layerJson)) {
       auto& layer = LayerManager::getMoleculeInfo(&molecule)->layer;
       for (Index i = 0; i < atomCount && i < layerJson.size(); ++i) {
@@ -789,8 +789,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
   }
 
   // constraints
-  if (jsonRoot.find("constraints") != jsonRoot.end()) {
-    json constraints = jsonRoot["constraints"];
+  if (auto itr = jsonRoot.find("constraints"); itr != jsonRoot.end()) {
+    json constraints = *itr;
     if (constraints.is_array()) {
       for (auto& constraint : constraints) {
         if (isNumericArray(constraint)) {
@@ -810,20 +810,19 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
   }
 
   // properties
-  if (jsonRoot.find("properties") != jsonRoot.end()) {
-    json properties = jsonRoot["properties"];
+  if (auto itr = jsonRoot.find("properties"); itr != jsonRoot.end()) {
+    json properties = *itr;
     if (properties.is_object()) {
-      if (properties.find("totalCharge") != properties.end()) {
-        molecule.setData("totalCharge",
-                         static_cast<int>(properties["totalCharge"]));
+      if (auto j = properties.find("totalCharge"); j != properties.end()) {
+        molecule.setData("totalCharge", static_cast<int>(*j));
       }
-      if (properties.find("totalSpinMultiplicity") != properties.end()) {
-        molecule.setData("totalSpinMultiplicity",
-                         static_cast<int>(properties["totalSpinMultiplicity"]));
+      if (auto j = properties.find("totalSpinMultiplicity");
+          j != properties.end()) {
+        molecule.setData("totalSpinMultiplicity", static_cast<int>(*j));
       }
-      if (properties.find("dipoleMoment") != properties.end()) {
+      if (auto j = properties.find("dipoleMoment"); j != properties.end()) {
         // read the numeric array
-        json dipole = properties["dipoleMoment"];
+        json dipole = *j;
         if (isNumericArray(dipole) && dipole.size() == 3) {
           Core::Variant dipoleMoment(dipole[0], dipole[1], dipole[2]);
           molecule.setData("dipoleMoment", dipoleMoment);
@@ -894,8 +893,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
   }
 
   // inputParameters are calculation metadata
-  if (jsonRoot.find("inputParameters") != jsonRoot.end()) {
-    json inputParameters = jsonRoot["inputParameters"];
+  if (auto itr = jsonRoot.find("inputParameters"); itr != jsonRoot.end()) {
+    json inputParameters = *itr;
     // add this as a string to the molecule data
     molecule.setData("inputParameters", inputParameters.dump());
   }
@@ -923,8 +922,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
   }
 
   // look for possible cube data
-  if (jsonRoot.find("cube") != jsonRoot.end()) {
-    json cubeObj = jsonRoot["cube"];
+  if (auto itr = jsonRoot.find("cube"); itr != jsonRoot.end()) {
+    json cubeObj = *itr;
     // get the limits
     Vector3 min, max, delta;
     Vector3i points;
@@ -956,8 +955,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
       else
         cube->setCubeType(Cube::FromFile);
 
-      if (cubeObj.find("name") != cubeObj.end())
-        cube->setName(cubeObj["name"]);
+      if (auto j = cubeObj.find("name"); j != cubeObj.end())
+        cube->setName(*j);
 
       min = Vector3(origin[0], origin[1], origin[2]);
       points = Vector3i(dimensions[0], dimensions[1], dimensions[2]);
@@ -976,22 +975,22 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
     }
   }
 
-  if (jsonRoot.find("layer") != jsonRoot.end()) {
+  if (auto itr = jsonRoot.find("layer"); itr != jsonRoot.end()) {
     auto names = LayerManager::getMoleculeInfo(&molecule);
-    json visible = jsonRoot["layer"]["visible"];
+    json visible = (*itr)["visible"];
     if (isBooleanArray(visible)) {
       for (const auto& v : visible) {
         names->visible.push_back(v);
       }
     }
-    json locked = jsonRoot["layer"]["locked"];
+    json locked = (*itr)["locked"];
     if (isBooleanArray(locked)) {
       for (const auto& l : locked) {
         names->locked.push_back(l);
       }
     }
 
-    json enables = jsonRoot["layer"]["enable"];
+    json enables = (*itr)["enable"];
     if (enables.is_object()) {
       for (const auto& enable : enables.items()) {
         if (isBooleanArray(enable.value())) {
@@ -1003,7 +1002,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
       }
     }
 
-    json settings = jsonRoot["layer"]["settings"];
+    json settings = (*itr)["settings"];
     if (settings.is_object()) {
       for (const auto& setting : settings.items()) {
         if (isBooleanArray(setting.value())) {
