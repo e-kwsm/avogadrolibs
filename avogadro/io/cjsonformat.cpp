@@ -829,6 +829,11 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
     // "connections" is not itself an object.
     const json& connections = member(member(bonds, "connections"), "index");
     if (bonds.is_object() && isNumericArray(connections)) {
+      json connections = bonds["connections"]["index"];
+      if (connections.size() % 2 != 0) {
+        appendError("Error: .bonds.connections.index: length is not even");
+        return false;
+      }
       for (unsigned int i = 0; i < connections.size() / 2; ++i) {
         auto atom1 = toInteger<Index>(connections[2 * i]);
         auto atom2 = toInteger<Index>(connections[2 * i + 1]);
