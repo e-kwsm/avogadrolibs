@@ -340,6 +340,10 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
     json bonds = jsonRoot["bonds"];
     if (bonds.is_object() && isNumericArray(bonds["connections"]["index"])) {
       json connections = bonds["connections"]["index"];
+      if (connections.size() % 2 != 0) {
+        appendError("Error: .bonds.connections.index: length is not even");
+        return false;
+      }
       for (unsigned int i = 0; i < connections.size() / 2; ++i) {
         Index atom1 = static_cast<Index>(connections[2 * i]);
         Index atom2 = static_cast<Index>(connections[2 * i + 1]);
