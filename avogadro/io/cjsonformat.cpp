@@ -347,8 +347,11 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
       for (unsigned int i = 0; i < connections.size() / 2; ++i) {
         Index atom1 = static_cast<Index>(connections[2 * i]);
         Index atom2 = static_cast<Index>(connections[2 * i + 1]);
-        if (atom1 < atomCount && atom2 < atomCount &&
-            atom1 != atom2) { // avoid self-bonds
+        if (atom1 >= atomCount || atom2 >= atomCount) {
+          std::cerr << "Error: .bonds.connections.index: ignore out of range\n";
+        } else if (atom1 == atom2) { // avoid self-bonds
+          std::cerr << "Error: .bonds.connections.index: ignore self-bond\n";
+        } else {
           molecule.addBond(atom1, atom2, 1);
         }
       }
