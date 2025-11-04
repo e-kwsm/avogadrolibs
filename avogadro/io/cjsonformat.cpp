@@ -779,8 +779,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
     }
   }
 
-  if (atoms.find("layer") != atoms.end()) {
-    json layerJson = atoms["layer"];
+  if (auto itr = atoms.find("layer") != atoms.end()) {
+    json layerJson = *itr;
     if (layerJson.is_array()) {
       auto& layer = LayerManager::getMoleculeInfo(&molecule)->layer;
       for (Index i = 0; i < atomCount && i < layerJson.size(); ++i) {
@@ -1368,8 +1368,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
   }
 
   // constraints
-  if (jsonRoot.find("constraints") != jsonRoot.end()) {
-    json constraints = jsonRoot["constraints"];
+  if (auto itr = jsonRoot.find("constraints"); itr != jsonRoot.end()) {
+    json constraints = *itr;
     if (constraints.is_array()) {
       for (auto& constraint : constraints) {
         if (!isNumericArray(constraint))
@@ -1402,8 +1402,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
   }
 
   // properties
-  if (jsonRoot.find("properties") != jsonRoot.end()) {
-    json properties = jsonRoot["properties"];
+  if (auto itr = jsonRoot.find("properties"); itr != jsonRoot.end()) {
+    json properties = *itr;
     if (properties.is_object()) {
       if (auto totalCharge = toInteger<int>(member(properties, "totalCharge")))
         molecule.setData("totalCharge", *totalCharge);
@@ -1412,7 +1412,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
         molecule.setData("totalSpinMultiplicity", *totalSpin);
       if (properties.find("dipoleMoment") != properties.end()) {
         // read the numeric array
-        json dipole = properties["dipoleMoment"];
+        json dipole = *j;
         if (isNumericArray(dipole) && dipole.size() == 3) {
           Core::Variant dipoleMoment(dipole[0], dipole[1], dipole[2]);
           molecule.setData("dipoleMoment", dipoleMoment);
@@ -1489,8 +1489,8 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
   }
 
   // inputParameters are calculation metadata
-  if (jsonRoot.find("inputParameters") != jsonRoot.end()) {
-    json inputParameters = jsonRoot["inputParameters"];
+  if (auto itr = jsonRoot.find("inputParameters"); itr != jsonRoot.end()) {
+    json inputParameters = *itr;
     // add this as a string to the molecule data
     molecule.setData("inputParameters", inputParameters.dump());
   }
@@ -1518,12 +1518,12 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
   }
 
   // look for possible cube data
-  if (jsonRoot.find("cube") != jsonRoot.end()) {
+  if (auto itr = jsonRoot.find("cube"); itr != jsonRoot.end()) {
     // "cube" itself may be anything in a hand-edited file (a fuzzer found
     // "cube": "caffeine"), so every lookup below goes through member()
     // rather than operator[], which throws once the parent turns out not to
     // be an object.
-    const json& cubeObj = jsonRoot["cube"];
+    const json& cubeObj = *itr;
     const json& origin = member(cubeObj, "origin");
     const json& spacing = member(cubeObj, "spacing");
     const json& dimensions = member(cubeObj, "dimensions");
@@ -1610,7 +1610,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
     }
   }
 
-  if (jsonRoot.find("layer") != jsonRoot.end()) {
+  if (auto itr = jsonRoot.find("layer"); itr != jsonRoot.end()) {
     auto names = LayerManager::getMoleculeInfo(&molecule);
     // "layer" itself may not be an object at all (e.g. "layer": 5), so look
     // its children up with member() rather than jsonRoot["layer"]["visible"],
@@ -1619,14 +1619,14 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
     // MoleculeInfo starts with one default entry in each of these, so drop it
     // before appending the file's -- otherwise every layer's flags come back
     // shifted by one, with a spurious extra entry on the end.
-    const json& visible = member(layerRoot, "visible");
+    json visible = (*itr)["visible"];
     if (isBooleanArray(visible)) {
       names->visible.clear();
       for (const auto& v : visible) {
         names->visible.push_back(v);
       }
     }
-    const json& locked = member(layerRoot, "locked");
+    json locked = (*itr)["locked"];
     if (isBooleanArray(locked)) {
       names->locked.clear();
       for (const auto& l : locked) {
