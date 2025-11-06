@@ -55,6 +55,8 @@ void main()
   // note: v_corner is in range [-1, 1] so we add 2 / (tile size in pixels)
   v_corner = corner * (1.0 + 2.0 / (u_textureSize * u_tileSize));
 
-  // NDC are in range [-1, 1], the  * 2 - 1  translates and scales the position to [0, 1]
-  gl_Position = vec4(a_tileOffset * 2.0 - vec2(1.0) + corner * u_tileSize, 0.0, 1.0);
+  // NDC are in range [-1, 1], the  * 2 - 1  translates and scales the position
+  // to [0, 1]
+  gl_Position =
+    vec4(a_tileOffset * 2.0 - vec2(1.0) + corner * u_tileSize, 0.0, 1.0);
 }

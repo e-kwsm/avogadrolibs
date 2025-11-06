@@ -1,5 +1,5 @@
 #version 400
-precision highp float;    
+precision highp float;
 in vec4 vertex;
 
 out vec4 outColor;
