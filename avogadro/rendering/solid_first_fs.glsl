@@ -129,108 +129,116 @@ float blurredAo(vec2 texCoord)
   return total / weight;
 }
 
-float rand(vec2 co) {
-    return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);
+float rand(vec2 co)
+{
+  return fract(sin(dot(co.xy, vec2(12.9898, 78.233))) * 43758.5453);
 }
 
 // Legacy depth linearization for the depth-of-field path only. Its near and far
 // are hardcoded and do not match the actual camera; calcBlur's focus distance
 // and SolidPipeline::adjustOffset are both curve-fitted against that error, so
 // the three only make sense together. Use linearDepth() for anything new.
-float depthToZ(float depth) {
-    float near = 2.0;
-    float far = 8000.0;
-    float depthNormalized = 2.0 * depth - 1.0;
-    return 2.0 * near * far / (far + near - depthNormalized * (far - near));
+float depthToZ(float depth)
+{
+  float near = 2.0;
+  float far = 8000.0;
+  float depthNormalized = 2.0 * depth - 1.0;
+  return 2.0 * near * far / (far + near - depthNormalized * (far - near));
 }
 
-float calcBlur(float z, float pixelScale) {
-    return clamp(abs(z - 39.0), 0.0, 0.5 * pixelScale);
+float calcBlur(float z, float pixelScale)
+{
+  return clamp(abs(z - 39.0), 0.0, 0.5 * pixelScale);
 }
 
-vec4 applyBlur(vec2 texCoord) {
-    float pixelScale = max(width, height);
-    float origZ = depthToZ(texture(inDepthTex, texCoord).x);
-    float blurAmt = calcBlur(origZ, pixelScale);
-    // Skip blurring if the original depth is less than the threshold
-    if (origZ < uoffset * inDofPosition) {
-        return texture(inRGBTex, texCoord);
-    }
-    float total = 1.0;
-    vec4 color = texture(inRGBTex, texCoord);
-    for (int i = 0; i < 32; i++) {
-        float t = (float(i) / float(64));
-        float angle = (t * 4.0) * 6.28319;
-        float radius = (t * 2. - 1.);
-        angle += 1.0 * rand(gl_FragCoord.xy);
-        vec2 offset = (vec2(cos(angle), sin(angle)) * radius * 0.05 * inDofStrength) / pixelScale;
-        float z = depthToZ(texture(inDepthTex, texCoord + offset).x);
-        float weight = 1.0 - smoothstep(0.0, 1.0, abs(z - origZ) / blurAmt);
-        vec4 texSample = texture(inRGBTex, texCoord+offset);
-        color += weight * texSample;
-        total += weight;
-}
-return color / total;
+vec4 applyBlur(vec2 texCoord)
+{
+  float pixelScale = max(width, height);
+  float origZ = depthToZ(texture(inDepthTex, texCoord).x);
+  float blurAmt = calcBlur(origZ, pixelScale);
+  // Skip blurring if the original depth is less than the threshold
+  if (origZ < uoffset * inDofPosition) {
+    return texture(inRGBTex, texCoord);
+  }
+  float total = 1.0;
+  vec4 color = texture(inRGBTex, texCoord);
+  for (int i = 0; i < 32; i++) {
+    float t = (float(i) / float(64));
+    float angle = (t * 4.0) * 6.28319;
+    float radius = (t * 2. - 1.);
+    angle += 1.0 * rand(gl_FragCoord.xy);
+    vec2 offset =
+      (vec2(cos(angle), sin(angle)) * radius * 0.05 * inDofStrength) /
+      pixelScale;
+    float z = depthToZ(texture(inDepthTex, texCoord + offset).x);
+    float weight = 1.0 - smoothstep(0.0, 1.0, abs(z - origZ) / blurAmt);
+    vec4 texSample = texture(inRGBTex, texCoord + offset);
+    color += weight * texSample;
+    total += weight;
+  }
+  return color / total;
 }
 
-vec4 applyFog(vec2 texCoord) {
-    vec4 finalColor = mix(
-            texture(inRGBTex, texCoord),
-            vec4(vec3(fogR, fogG, fogB), 1.),
-            pow(texture(inDepthTex, texCoord.xy).r, uoffset * inFogPosition / 10.0)
-        ) + inFogStrength / 100.0;
-    return finalColor;
+vec4 applyFog(vec2 texCoord)
+{
+  vec4 finalColor =
+    mix(
+      texture(inRGBTex, texCoord), vec4(vec3(fogR, fogG, fogB), 1.),
+      pow(texture(inDepthTex, texCoord.xy).r, uoffset * inFogPosition / 10.0)) +
+    inFogStrength / 100.0;
+  return finalColor;
 }
 
 float computeEdgeLuminosity(vec3 normal)
 {
-    return max(0.0, pow(normal.z - 0.1, 1.0 / 3.0));
+  return max(0.0, pow(normal.z - 0.1, 1.0 / 3.0));
 }
 
-void main() {
-    float luminosity = 1.0;
-    vec4 color = texture(inRGBTex, UV);
-    vec4 finalColor = color; // Initialize finalColor with base color
+void main()
+{
+  float luminosity = 1.0;
+  vec4 color = texture(inRGBTex, UV);
+  vec4 finalColor = color; // Initialize finalColor with base color
 
-    // Compute luminosity based on Ambient Occlusion (AO) and Edge Detection
-    if (inAoEnabled != 0.0) {
-        luminosity *= max(1.2 * (1.0 - inAoEnabled), blurredAo(UV));
-    }
-    if (inEdStrength != 0.0) {
-        // Below 1.0 the outline fades in at its original one-pixel width, which
-        // is what the checkbox used to switch between. From 1.0 up it is fully
-        // dark and the value becomes its half-width in pixels, so 2.5 draws a
-        // markedly bolder line than 1.0 without changing its colour.
-        float edgeFade = min(inEdStrength, 1.0);
-        float edgeRadius = max(inEdStrength, 1.0);
-        luminosity *= max(1.0 - edgeFade,
-                          computeEdgeLuminosity(getNormalAt(UV, edgeRadius)));
-    }
+  // Compute luminosity based on Ambient Occlusion (AO) and Edge Detection
+  if (inAoEnabled != 0.0) {
+    luminosity *= max(1.2 * (1.0 - inAoEnabled), blurredAo(UV));
+  }
+  if (inEdStrength != 0.0) {
+    // Below 1.0 the outline fades in at its original one-pixel width, which
+    // is what the checkbox used to switch between. From 1.0 up it is fully
+    // dark and the value becomes its half-width in pixels, so 2.5 draws a
+    // markedly bolder line than 1.0 without changing its colour.
+    float edgeFade = min(inEdStrength, 1.0);
+    float edgeRadius = max(inEdStrength, 1.0);
+    luminosity *=
+      max(1.0 - edgeFade, computeEdgeLuminosity(getNormalAt(UV, edgeRadius)));
+  }
 
-    // Compute foggedColor if Fog is enabled
-    vec4 foggedColor = color;
-    if (inFogStrength != 0.0) {
-        foggedColor = applyFog(UV);
-    }
+  // Compute foggedColor if Fog is enabled
+  vec4 foggedColor = color;
+  if (inFogStrength != 0.0) {
+    foggedColor = applyFog(UV);
+  }
 
-    // Compute blurredColor if DOF is enabled
-    vec4 blurredColor = color;
-    if (inDofStrength != 0.0) {
-        blurredColor = applyBlur(UV);
-    }
+  // Compute blurredColor if DOF is enabled
+  vec4 blurredColor = color;
+  if (inDofStrength != 0.0) {
+    blurredColor = applyBlur(UV);
+  }
 
-    // Pick what the colour comes from, then shade it. Luminosity is already
-    // 1.0 when neither AO nor edge detection ran, so it applies unconditionally.
-    if (inFogStrength != 0.0 && inDofStrength != 0.0) {
-        finalColor = mix(foggedColor, blurredColor, 0.5);
-    } else if (inFogStrength != 0.0) {
-        finalColor = foggedColor;
-    } else if (inDofStrength != 0.0) {
-        finalColor = blurredColor;
-    }
-    finalColor = vec4(finalColor.rgb * luminosity, finalColor.a);
+  // Pick what the colour comes from, then shade it. Luminosity is already
+  // 1.0 when neither AO nor edge detection ran, so it applies unconditionally.
+  if (inFogStrength != 0.0 && inDofStrength != 0.0) {
+    finalColor = mix(foggedColor, blurredColor, 0.5);
+  } else if (inFogStrength != 0.0) {
+    finalColor = foggedColor;
+  } else if (inDofStrength != 0.0) {
+    finalColor = blurredColor;
+  }
+  finalColor = vec4(finalColor.rgb * luminosity, finalColor.a);
 
-    // Set the final fragment color
-    outColor = finalColor;
-    gl_FragDepth = texture(inDepthTex, UV).x;
+  // Set the final fragment color
+  outColor = finalColor;
+  gl_FragDepth = texture(inDepthTex, UV).x;
 }

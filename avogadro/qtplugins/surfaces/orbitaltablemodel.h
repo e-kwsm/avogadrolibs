@@ -37,7 +37,7 @@ class OrbitalSortingProxyModel : public QSortFilterProxyModel
 
 public:
   OrbitalSortingProxyModel(QObject* parent = nullptr)
-    : QSortFilterProxyModel(parent), m_HOMOFirst(false){};
+    : QSortFilterProxyModel(parent), m_HOMOFirst(false) {};
 
   bool isHOMOFirst() { return m_HOMOFirst; };
   void HOMOFirst(bool b) { m_HOMOFirst = b; };
