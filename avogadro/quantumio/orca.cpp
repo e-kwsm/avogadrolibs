@@ -376,7 +376,8 @@ void ORCAOutput::processLine(std::istream& in,
     m_currentMode = VCD;
     // look for "Mode" and "Freq"
     int maxLines = 10; // reasonable limit for header lines
-    while (!Core::contains(key, "Mode") && !Core::contains(key, "Freq") && maxLines-- > 0 && !in.eof())
+    while (!Core::contains(key, "Mode") && !Core::contains(key, "Freq") &&
+           maxLines-- > 0 && !in.eof())
       getline(in, key);
     if (maxLines <= 0 || in.eof()) {
       m_currentMode = NotParsing;
@@ -1121,7 +1122,7 @@ void ORCAOutput::processLine(std::istream& in,
 
             if (Core::trimmed(key).empty())
               getline(in, key); // skip the blank line after the MOs
-          }                     // finished parsing 2nd. MOs
+          } // finished parsing 2nd. MOs
           if (m_MOcoeffs.size() != numRows * numRows) {
             m_orcaSuccess = false;
           }
@@ -1133,7 +1134,7 @@ void ORCAOutput::processLine(std::istream& in,
       }
       default:;
     } // end switch
-  }   // end if (mode)
+  } // end if (mode)
 }
 
 void ORCAOutput::load(GaussianSet* basis)
