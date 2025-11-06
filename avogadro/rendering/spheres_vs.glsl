@@ -1,5 +1,5 @@
 #version 400
-precision highp float;  
+precision highp float;
 in vec4 vertex;
 in vec3 color;
 in vec2 texCoordinate;
@@ -27,8 +27,7 @@ void main()
     // If not, calculate clip coordinate
     gl_Position.xy += texCoordinate;
     gl_Position = projection * gl_Position;
-  }
-  else {
+  } else {
     // If so, invalidate the clip coordinate to ensure that it will be clipped.
     gl_Position.w = 0.0;
   }
