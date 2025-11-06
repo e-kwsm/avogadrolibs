@@ -931,8 +931,7 @@ void PlayerTool::recordMovie()
     QStringList args;
     args << "-y"
          << "-r" << QString::number(m_animationFPS->value()) << "-i"
-         << baseName + "%0" + QString::number(numberLength) + "d.png"
-         << "-c:v"
+         << baseName + "%0" + QString::number(numberLength) + "d.png" << "-c:v"
          << "libx264"
          << "-r"
          << "30"

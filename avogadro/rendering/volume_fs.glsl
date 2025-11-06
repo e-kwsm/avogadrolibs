@@ -22,7 +22,7 @@ uniform mat4 uBoxInverse;
 uniform float uBoxDiagonal;
 
 // Ray-march parameters:
-uniform int numSteps;   // reference steps across uBoxDiagonal (e.g. 150)
+uniform int numSteps;     // reference steps across uBoxDiagonal (e.g. 150)
 uniform float alphaScale; // overall alpha multiplier
 
 out vec4 colorOut;

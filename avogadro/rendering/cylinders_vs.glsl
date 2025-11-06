@@ -31,7 +31,8 @@ const float sines[8] =
 vec3 unitOrthogonal(vec3 src)
 {
   const float prec = 1e-5;
-  if (!(abs(src.x) <= abs(src.z) * prec) || !(abs(src.y) <= abs(src.z) * prec)) {
+  if (!(abs(src.x) <= abs(src.z) * prec) ||
+      !(abs(src.y) <= abs(src.z) * prec)) {
     float invnm = 1.0 / sqrt(src.x * src.x + src.y * src.y);
     return vec3(-src.y * invnm, src.x * invnm, 0.0);
   }

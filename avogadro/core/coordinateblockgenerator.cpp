@@ -282,7 +282,7 @@ std::string CoordinateBlockGenerator::generateCoordinateBlock()
       writeSeparator(m_stream, specChar, haveNext,
                      haveNext ? m_specification[i + 1] : '\0');
     } // end spec char
-  }   // end for atom
+  } // end for atom
 
   return m_stream.str();
 }

@@ -46,12 +46,14 @@ Crystal::Crystal(QObject* parent_)
 
   // this will be changed when the molecule is set:
   m_toggleUnitCellAction->setText(tr("Toggle Unit Cell"));
-  connect(m_toggleUnitCellAction, &QAction::triggered, this, &Crystal::toggleUnitCell);
+  connect(m_toggleUnitCellAction, &QAction::triggered, this,
+          &Crystal::toggleUnitCell);
   m_actions.push_back(m_toggleUnitCellAction);
   m_toggleUnitCellAction->setProperty("menu priority", 210);
 
   m_editUnitCellAction->setText(tr("Edit Unit Cell…"));
-  connect(m_editUnitCellAction,  &QAction::triggered, this, &Crystal::editUnitCell);
+  connect(m_editUnitCellAction, &QAction::triggered, this,
+          &Crystal::editUnitCell);
   m_actions.push_back(m_editUnitCellAction);
   m_editUnitCellAction->setProperty("menu priority", 190);
 
@@ -68,17 +70,20 @@ Crystal::Crystal(QObject* parent_)
   m_standardOrientationAction->setProperty("menu priority", 170);
 
   m_scaleVolumeAction->setText(tr("Scale Cell &Volume…"));
-  connect(m_scaleVolumeAction, &QAction::triggered, this, &Crystal::scaleVolume);
+  connect(m_scaleVolumeAction, &QAction::triggered, this,
+          &Crystal::scaleVolume);
   m_actions.push_back(m_scaleVolumeAction);
   m_scaleVolumeAction->setProperty("menu priority", 160);
 
   m_buildSupercellAction->setText(tr("Build &Supercell…"));
-  connect(m_buildSupercellAction, &QAction::triggered, this,  &Crystal::buildSupercell);
+  connect(m_buildSupercellAction, &QAction::triggered, this,
+          &Crystal::buildSupercell);
   m_actions.push_back(m_buildSupercellAction);
   m_buildSupercellAction->setProperty("menu priority", 150);
 
   m_niggliReduceAction->setText(tr("Reduce Cell (&Niggli)"));
-  connect(m_niggliReduceAction, &QAction::triggered, this,  &Crystal::niggliReduce);
+  connect(m_niggliReduceAction, &QAction::triggered, this,
+          &Crystal::niggliReduce);
   m_actions.push_back(m_niggliReduceAction);
   m_niggliReduceAction->setProperty("menu priority", 140);
 

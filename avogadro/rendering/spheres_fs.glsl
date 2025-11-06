@@ -13,7 +13,7 @@ out vec4 outColor;
 void main()
 {
   // Figure out if we are inside our sphere.
-  float zz = 1.0 - v_texCoord.x*v_texCoord.x - v_texCoord.y*v_texCoord.y;
+  float zz = 1.0 - v_texCoord.x * v_texCoord.x - v_texCoord.y * v_texCoord.y;
   if (zz <= 0.0)
     discard;
 
@@ -31,7 +31,7 @@ void main()
 
   // determine fragment depth
   vec4 pos = eyePosition;
-  pos.z += N.z * radius;//The radius is 1.0
+  pos.z += N.z * radius; // The radius is 1.0
   pos = projection * pos;
   gl_FragDepth = (pos.z / pos.w + 1.0) / 2.0;
 }

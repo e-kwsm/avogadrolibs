@@ -142,14 +142,16 @@ QWidget* CrystalScene::setupWidget()
     spin->setSingleStep(0.25);
     spin->setDecimals(2);
     spin->setValue(m_lineWidth);
-    connect(spin, &QDoubleSpinBox::valueChanged, this, &CrystalScene::setLineWidth);
+    connect(spin, &QDoubleSpinBox::valueChanged, this,
+            &CrystalScene::setLineWidth);
     auto* form = new QFormLayout;
     form->addRow(tr("Line width:"), spin);
 
     auto* multiColor = new QCheckBox;
     multiColor->setChecked(m_multiColor);
     form->addRow(tr("Color axes:"), multiColor);
-    connect(multiColor, &QCheckBox::toggled, this, &CrystalScene::setMultiColor);
+    connect(multiColor, &QCheckBox::toggled, this,
+            &CrystalScene::setMultiColor);
 
     auto* color = new QtGui::ColorButton;
     connect(color, &QtGui::ColorButton::colorChanged, this,

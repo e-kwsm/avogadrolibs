@@ -110,10 +110,10 @@ const float DEPTH_EPSILON = 1e-6;
 // range need no assumption about the near and far planes.
 float viewDistance(vec2 texCoord, float depth)
 {
-    vec4 view = inverseProjection *
-                vec4(texCoord * 2.0 - 1.0, depth * 2.0 - 1.0, 1.0);
-    float w = abs(view.w) > DEPTH_EPSILON ? view.w : DEPTH_EPSILON;
-    return -view.z / w;
+  vec4 view =
+    inverseProjection * vec4(texCoord * 2.0 - 1.0, depth * 2.0 - 1.0, 1.0);
+  float w = abs(view.w) > DEPTH_EPSILON ? view.w : DEPTH_EPSILON;
+  return -view.z / w;
 }
 
 // The occlusion term at a pixel, upsampled from the half-resolution buffer the
@@ -145,8 +145,8 @@ float upsampledAo(vec2 texCoord, float depth)
   float z = viewDistance(texCoord, depth);
   float wClip = projection[2][3] * -z + projection[3][3];
   float scale = abs(float(aoSize.y) * projection[1][1]);
-  float tolerance = AO_BLUR_SLOPE_LIMIT * 2.0 * abs(wClip) /
-                    max(scale, DEPTH_EPSILON);
+  float tolerance =
+    AO_BLUR_SLOPE_LIMIT * 2.0 * abs(wClip) / max(scale, DEPTH_EPSILON);
 
   float total = 0.0;
   float weight = 0.0;
@@ -177,7 +177,7 @@ float upsampledAo(vec2 texCoord, float depth)
 // The scene's center, as a distance in front of the camera.
 float sceneCenterDistance()
 {
-    return -(modelView * vec4(sceneBounds.xyz, 1.0)).z;
+  return -(modelView * vec4(sceneBounds.xyz, 1.0)).z;
 }
 
 // Linear fog: nothing in front of the ramp's start, rising to inFogAmount at
@@ -185,41 +185,36 @@ float sceneCenterDistance()
 // start is capped at 0.95 radii, so the ramp keeps a minimum length.
 float fogFactor(float viewDist, float centerDistance, float sceneRadius)
 {
-    float start = centerDistance + min(inFogStartRadii, 0.95) * sceneRadius;
-    float end = centerDistance + sceneRadius;
-    float rampLength = max(end - start, 0.05 * sceneRadius);
-    return inFogAmount * clamp((viewDist - start) / rampLength, 0.0, 1.0);
+  float start = centerDistance + min(inFogStartRadii, 0.95) * sceneRadius;
+  float end = centerDistance + sceneRadius;
+  float rampLength = max(end - start, 0.05 * sceneRadius);
+  return inFogAmount * clamp((viewDist - start) / rampLength, 0.0, 1.0);
 }
 
 // The depth of field's circle of confusion radius at a distance from the
 // camera, in device pixels.
 float circleOfConfusion(float viewDist, float centerDistance, float sceneRadius)
 {
-    float focus = centerDistance + inDofFocusRadii * sceneRadius;
-    float blur = inDofBlur * abs(viewDist - focus) / sceneRadius;
-    return min(blur, inDofMaxBlur) * cameraParams.x;
+  float focus = centerDistance + inDofFocusRadii * sceneRadius;
+  float blur = inDofBlur * abs(viewDist - focus) / sceneRadius;
+  return min(blur, inDofMaxBlur) * cameraParams.x;
 }
 
 // 32 taps on a golden-angle spiral (Vogel disk) of the unit disk. A fixed
 // pattern: no per-pixel or per-frame noise, so a still image is still.
 const int DOF_TAPS = 32;
-const vec2 DOF_KERNEL[DOF_TAPS] = vec2[](
-    vec2(0.1250, 0.0000), vec2(-0.1596, 0.1462),
-    vec2(0.0244, -0.2784), vec2(0.2012, 0.2625),
-    vec2(-0.3693, -0.0653), vec2(0.3498, -0.2225),
-    vec2(-0.1170, 0.4352), vec2(-0.2231, -0.4296),
-    vec2(0.4841, 0.1768), vec2(-0.5036, 0.2079),
-    vec2(0.2428, -0.5188), vec2(0.1794, 0.5720),
-    vec2(-0.5408, -0.3134), vec2(0.6344, -0.1395),
-    vec2(-0.3871, 0.5507), vec2(-0.0894, -0.6902),
-    vec2(0.5491, 0.4628), vec2(-0.7389, 0.0306),
-    vec2(0.5390, -0.5363), vec2(-0.0361, 0.7798),
-    vec2(-0.5128, -0.6145), vec2(0.8124, 0.1093),
-    vec2(-0.6883, 0.4789), vec2(0.1881, -0.8361),
-    vec2(0.4350, 0.7592), vec2(-0.8504, -0.2713),
-    vec2(0.8261, -0.3817), vec2(-0.3579, 0.8552),
-    vec2(-0.3194, -0.8880), vec2(0.8499, 0.4467),
-    vec2(-0.9440, 0.2488), vec2(0.5366, -0.8345));
+const vec2 DOF_KERNEL[DOF_TAPS] =
+  vec2[](vec2(0.1250, 0.0000), vec2(-0.1596, 0.1462), vec2(0.0244, -0.2784),
+         vec2(0.2012, 0.2625), vec2(-0.3693, -0.0653), vec2(0.3498, -0.2225),
+         vec2(-0.1170, 0.4352), vec2(-0.2231, -0.4296), vec2(0.4841, 0.1768),
+         vec2(-0.5036, 0.2079), vec2(0.2428, -0.5188), vec2(0.1794, 0.5720),
+         vec2(-0.5408, -0.3134), vec2(0.6344, -0.1395), vec2(-0.3871, 0.5507),
+         vec2(-0.0894, -0.6902), vec2(0.5491, 0.4628), vec2(-0.7389, 0.0306),
+         vec2(0.5390, -0.5363), vec2(-0.0361, 0.7798), vec2(-0.5128, -0.6145),
+         vec2(0.8124, 0.1093), vec2(-0.6883, 0.4789), vec2(0.1881, -0.8361),
+         vec2(0.4350, 0.7592), vec2(-0.8504, -0.2713), vec2(0.8261, -0.3817),
+         vec2(-0.3579, 0.8552), vec2(-0.3194, -0.8880), vec2(0.8499, 0.4467),
+         vec2(-0.9440, 0.2488), vec2(0.5366, -0.8345));
 
 // Depth of field by gathering: average the taps within the pixel's circle of
 // confusion, each weighted by whether its own circle reaches back to this
@@ -229,37 +224,36 @@ const vec2 DOF_KERNEL[DOF_TAPS] = vec2[](
 vec4 applyBlur(vec2 texCoord, float viewDist, float centerDistance,
                float sceneRadius)
 {
-    ivec2 size = textureSize(inDepthTex, 0);
-    ivec2 last = size - ivec2(1);
-    ivec2 pixel = clamp(ivec2(texCoord * vec2(size)), ivec2(0), last);
-    vec4 color = texelFetch(inRGBTex, pixel, 0);
-    float radius = circleOfConfusion(viewDist, centerDistance, sceneRadius);
-    // Under half a pixel the taps all land on this pixel.
-    if (radius < 0.5)
-        return color;
-    float total = 1.0;
-    for (int i = 0; i < DOF_TAPS; i++) {
-        vec2 offset = DOF_KERNEL[i] * radius;
-        ivec2 tap = clamp(pixel + ivec2(floor(offset + 0.5)), ivec2(0), last);
-        float tapDepth = texelFetch(inDepthTex, tap, 0).x;
-        if (tapDepth >= 1.0)
-            continue;
-        vec2 tapUV = (vec2(tap) + 0.5) / vec2(size);
-        float tapRadius = circleOfConfusion(viewDistance(tapUV, tapDepth),
-                                            centerDistance, sceneRadius);
-        // Soft over one pixel, measured to the texel that was sampled, so the
-        // weight does not flicker at the edge.
-        float weight =
-            clamp(tapRadius - length(vec2(tap - pixel)) + 1.0, 0.0, 1.0);
-        color += weight * texelFetch(inRGBTex, tap, 0);
-        total += weight;
-    }
-    return color / total;
+  ivec2 size = textureSize(inDepthTex, 0);
+  ivec2 last = size - ivec2(1);
+  ivec2 pixel = clamp(ivec2(texCoord * vec2(size)), ivec2(0), last);
+  vec4 color = texelFetch(inRGBTex, pixel, 0);
+  float radius = circleOfConfusion(viewDist, centerDistance, sceneRadius);
+  // Under half a pixel the taps all land on this pixel.
+  if (radius < 0.5)
+    return color;
+  float total = 1.0;
+  for (int i = 0; i < DOF_TAPS; i++) {
+    vec2 offset = DOF_KERNEL[i] * radius;
+    ivec2 tap = clamp(pixel + ivec2(floor(offset + 0.5)), ivec2(0), last);
+    float tapDepth = texelFetch(inDepthTex, tap, 0).x;
+    if (tapDepth >= 1.0)
+      continue;
+    vec2 tapUV = (vec2(tap) + 0.5) / vec2(size);
+    float tapRadius = circleOfConfusion(viewDistance(tapUV, tapDepth),
+                                        centerDistance, sceneRadius);
+    // Soft over one pixel, measured to the texel that was sampled, so the
+    // weight does not flicker at the edge.
+    float weight = clamp(tapRadius - length(vec2(tap - pixel)) + 1.0, 0.0, 1.0);
+    color += weight * texelFetch(inRGBTex, tap, 0);
+    total += weight;
+  }
+  return color / total;
 }
 
 float computeEdgeLuminosity(vec3 normal)
 {
-    return max(0.0, pow(normal.z - 0.1, 1.0 / 3.0));
+  return max(0.0, pow(normal.z - 0.1, 1.0 / 3.0));
 }
 
 // Anti-aliased edge term. The test above is binary per pixel: at a silhouette
@@ -277,68 +271,69 @@ const vec2 EDGE_SS[4] = vec2[](vec2(-0.125, -0.375), vec2(0.375, -0.125),
 
 float edgeLuminosity(vec2 uv, float radius)
 {
-    float sum = 0.0;
-    for (int i = 0; i < 4; i++) {
-        sum += computeEdgeLuminosity(
-            getNormalAt(uv + EDGE_SS[i] / vec2(width, height), radius));
-    }
-    return 0.25 * sum;
+  float sum = 0.0;
+  for (int i = 0; i < 4; i++) {
+    sum += computeEdgeLuminosity(
+      getNormalAt(uv + EDGE_SS[i] / vec2(width, height), radius));
+  }
+  return 0.25 * sum;
 }
 
-void main() {
-    float depth = texture(inDepthTex, UV).x;
-    // Background pixels (depth == 1.0) would fail the GL_LESS depth test
-    // anyway; discarding upfront skips AO blur, edge detection, fog and DoF.
-    if (depth >= 1.0)
-        discard;
+void main()
+{
+  float depth = texture(inDepthTex, UV).x;
+  // Background pixels (depth == 1.0) would fail the GL_LESS depth test
+  // anyway; discarding upfront skips AO blur, edge detection, fog and DoF.
+  if (depth >= 1.0)
+    discard;
 
-    float luminosity = 1.0;
-    vec4 color = texture(inRGBTex, UV);
+  float luminosity = 1.0;
+  vec4 color = texture(inRGBTex, UV);
 
-    // Luminosity from Ambient Occlusion (AO) and Edge Detection
-    if (inAoEnabled != 0.0) {
-        luminosity *= max(1.2 * (1.0 - inAoEnabled), upsampledAo(UV, depth));
-    }
-    if (inEdStrength != 0.0) {
-        // Below 1.0 the outline fades in at its original one-pixel width, which
-        // is what the checkbox used to switch between. From 1.0 up it is fully
-        // dark and the value becomes its half-width in pixels, so 2.5 draws a
-        // markedly bolder line than 1.0 without changing its colour.
-        float edgeFade = min(inEdStrength, 1.0);
-        float edgeRadius = max(inEdStrength, 1.0);
-        float edge = (inEdgeSupersample != 0.0)
-                       ? edgeLuminosity(UV, edgeRadius)
-                       : computeEdgeLuminosity(getNormalAt(UV, edgeRadius));
-        luminosity *= max(1.0 - edgeFade, edge);
-    }
+  // Luminosity from Ambient Occlusion (AO) and Edge Detection
+  if (inAoEnabled != 0.0) {
+    luminosity *= max(1.2 * (1.0 - inAoEnabled), upsampledAo(UV, depth));
+  }
+  if (inEdStrength != 0.0) {
+    // Below 1.0 the outline fades in at its original one-pixel width, which
+    // is what the checkbox used to switch between. From 1.0 up it is fully
+    // dark and the value becomes its half-width in pixels, so 2.5 draws a
+    // markedly bolder line than 1.0 without changing its colour.
+    float edgeFade = min(inEdStrength, 1.0);
+    float edgeRadius = max(inEdStrength, 1.0);
+    float edge = (inEdgeSupersample != 0.0)
+                   ? edgeLuminosity(UV, edgeRadius)
+                   : computeEdgeLuminosity(getNormalAt(UV, edgeRadius));
+    luminosity *= max(1.0 - edgeFade, edge);
+  }
 
-    // Depth of field first, since it only redistributes the surface color; the
-    // luminosity of the pixel it lands on then applies; fog comes last.
-    bool useFog = inFogAmount > 0.0;
-    bool useDof = inDofBlur > 0.0;
-    float sceneRadius = sceneBounds.w;
-    // Without a scene extent there is nothing to measure the depths against.
-    if (sceneRadius <= DEPTH_EPSILON) {
-        useFog = false;
-        useDof = false;
-    }
-    float viewDist = 0.0;
-    float centerDistance = 0.0;
-    if (useFog || useDof) {
-        viewDist = viewDistance(UV, depth);
-        centerDistance = sceneCenterDistance();
-    }
-    if (useDof)
-        color = applyBlur(UV, viewDist, centerDistance, sceneRadius);
+  // Depth of field first, since it only redistributes the surface color; the
+  // luminosity of the pixel it lands on then applies; fog comes last.
+  bool useFog = inFogAmount > 0.0;
+  bool useDof = inDofBlur > 0.0;
+  float sceneRadius = sceneBounds.w;
+  // Without a scene extent there is nothing to measure the depths against.
+  if (sceneRadius <= DEPTH_EPSILON) {
+    useFog = false;
+    useDof = false;
+  }
+  float viewDist = 0.0;
+  float centerDistance = 0.0;
+  if (useFog || useDof) {
+    viewDist = viewDistance(UV, depth);
+    centerDistance = sceneCenterDistance();
+  }
+  if (useDof)
+    color = applyBlur(UV, viewDist, centerDistance, sceneRadius);
 
-    vec4 finalColor = vec4(color.rgb * luminosity, color.a);
+  vec4 finalColor = vec4(color.rgb * luminosity, color.a);
 
-    if (useFog) {
-        float fog = fogFactor(viewDist, centerDistance, sceneRadius);
-        finalColor = mix(finalColor, vec4(fogR, fogG, fogB, fogA), fog);
-    }
+  if (useFog) {
+    float fog = fogFactor(viewDist, centerDistance, sceneRadius);
+    finalColor = mix(finalColor, vec4(fogR, fogG, fogB, fogA), fog);
+  }
 
-    // Set the final fragment color
-    outColor = finalColor;
-    gl_FragDepth = depth;
+  // Set the final fragment color
+  outColor = finalColor;
+  gl_FragDepth = depth;
 }

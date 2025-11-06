@@ -25,8 +25,8 @@ void alignToPixelCenter(inout vec4 clipCoord)
 
   // Fix up coordinates -- pixel centers are at xy = (-w + (2*i + 1) * inc)
   // for the i'th pixel. First find i and floor it. Just solve the above for i:
-  ivec2 pixels = ivec2(floor((clipCoord.xy + abs(clipCoord.ww) - inc)
-                             / (2. * inc)));
+  ivec2 pixels =
+    ivec2(floor((clipCoord.xy + abs(clipCoord.ww) - inc) / (2. * inc)));
 
   // Now reapply the equation to obtain a pixel centered offset.
   clipCoord.xy = -abs(clipCoord.ww) + (2. * vec2(pixels) + vec2(1., 1.)) * inc;
@@ -52,7 +52,7 @@ void main(void)
   float MIN_DEPTH = 1.0e-06;
   if (projection[3][3] != 0.0) {
     eyeAnchor.z += radius;
-  } else if(-eyeAnchor.z > MIN_DEPTH) {
+  } else if (-eyeAnchor.z > MIN_DEPTH) {
     float scale = 1.0 + radius / eyeAnchor.z;
     eyeAnchor *= vec4(scale, scale, scale, 1.0);
   }
