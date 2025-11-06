@@ -101,7 +101,6 @@ public:
   const SolidPipeline& solidPipeline() const { return m_solidPipeline; }
   SolidPipeline& solidPipeline() { return m_solidPipeline; }
 
-
   const VolumeGeometry& volume() const { return m_volume; }
   VolumeGeometry& volume() { return m_volume; }
   /**

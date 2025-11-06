@@ -6,7 +6,6 @@ in vec4 outColor;
 
 out vec4 colorOut;
 
-
 uniform float opacity;
 
 void main()

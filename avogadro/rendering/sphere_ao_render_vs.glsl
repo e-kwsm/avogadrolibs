@@ -41,7 +41,6 @@ uniform mat4 u_projection;
 const float contourWidth = 0.3;
 #endif
 
-
 void main()
 {
   // pass through AO tile offset & color
@@ -51,7 +50,8 @@ void main()
   v_radius = abs(a_corner.x);
   // normalize corner to be in [-1, 1] range
 #ifdef CONTOUR_LINES
-  v_corner = a_corner / v_radius + sign(a_corner) * vec2(contourWidth, contourWidth);
+  v_corner =
+    a_corner / v_radius + sign(a_corner) * vec2(contourWidth, contourWidth);
 #else
   v_corner = a_corner / v_radius;
 #endif
@@ -68,8 +68,9 @@ void main()
     // not clipped, calculate clip coordinate
     gl_Position = v_eyePos;
 #ifdef CONTOUR_LINES
-    gl_Position.xy += a_corner + sign(a_corner) * vec2(contourWidth, contourWidth);
-    //gl_Position.xy += a_corner;
+    gl_Position.xy +=
+      a_corner + sign(a_corner) * vec2(contourWidth, contourWidth);
+    // gl_Position.xy += a_corner;
 #else
     gl_Position.xy += a_corner;
 #endif
