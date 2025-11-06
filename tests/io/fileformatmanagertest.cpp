@@ -91,8 +91,8 @@ TEST(FileFormatManagerTest, readFileGuessCml)
 TEST(FileFormatManagerTest, readFileGuessCjson)
 {
   Molecule molecule;
-  FileFormatManager::instance().readFile(molecule, std::string(AVOGADRO_DATA) +
-                                                     "/data/cjson/ethane.cjson");
+  FileFormatManager::instance().readFile(
+    molecule, std::string(AVOGADRO_DATA) + "/data/cjson/ethane.cjson");
   EXPECT_EQ(molecule.data("name").type(), Variant::String);
   EXPECT_EQ(molecule.data("name").toString(), "Ethane");
   EXPECT_EQ(molecule.data("inchi").type(), Variant::String);
@@ -125,8 +125,8 @@ TEST(FileFormatManagerTest, writeFileGuessCml)
 TEST(FileFormatManagerTest, writeStringCjson)
 {
   Molecule molecule;
-  FileFormatManager::instance().readFile(molecule, std::string(AVOGADRO_DATA) +
-                                                     "/data/cjson/ethane.cjson");
+  FileFormatManager::instance().readFile(
+    molecule, std::string(AVOGADRO_DATA) + "/data/cjson/ethane.cjson");
   std::string cjson;
   FileFormatManager::instance().writeString(molecule, cjson, "cjson");
   std::string cml;
@@ -155,8 +155,8 @@ TEST(FileFormatManagerTest, writeStringCjsonOptions)
 {
   Molecule molecule;
   std::string options = "{ \"properties\": false }";
-  FileFormatManager::instance().readFile(molecule, std::string(AVOGADRO_DATA) +
-                                                     "/data/cjson/ethane.cjson");
+  FileFormatManager::instance().readFile(
+    molecule, std::string(AVOGADRO_DATA) + "/data/cjson/ethane.cjson");
   std::string cjson;
   FileFormatManager::instance().writeString(molecule, cjson, "cjson", options);
 

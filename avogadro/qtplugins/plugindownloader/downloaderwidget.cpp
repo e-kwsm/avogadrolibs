@@ -474,7 +474,7 @@ void DownloaderWidget::unzipPlugin()
           }
         }
       } // end install requirements
-    }   // we have new files
+    } // we have new files
   } else {
     m_ui->readmeBrowser->append(
       tr("Error while extracting: %1").arg(ret.first()));
