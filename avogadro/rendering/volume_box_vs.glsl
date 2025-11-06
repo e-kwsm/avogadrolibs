@@ -12,9 +12,9 @@ uniform mat4 uBoxMatrix;
 
 void main()
 {
-    // Transform unit cube [-1,1] to [0,1], then to the world-space box
-    vec3 worldPos = (uBoxMatrix * vec4(vertexPosition * 0.5 + 0.5, 1.0)).xyz;
-    vWorldPos = worldPos;
+  // Transform unit cube [-1,1] to [0,1], then to the world-space box
+  vec3 worldPos = (uBoxMatrix * vec4(vertexPosition * 0.5 + 0.5, 1.0)).xyz;
+  vWorldPos = worldPos;
 
-    gl_Position = uProjection * uModelView * vec4(worldPos, 1.0);
+  gl_Position = uProjection * uModelView * vec4(worldPos, 1.0);
 }

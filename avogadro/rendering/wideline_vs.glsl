@@ -1,11 +1,11 @@
 #version 400
 
 // Per-vertex attributes
-in vec3 position;     // this endpoint
-in vec3 otherEnd;     // the other endpoint of the line segment
-in vec4 color;        // RGBA color at this endpoint
-in float widthSide;   // half-width * side (-1 or +1)
-in float lineParam;   // dash parameter (0 for solid lines)
+in vec3 position;   // this endpoint
+in vec3 otherEnd;   // the other endpoint of the line segment
+in vec4 color;      // RGBA color at this endpoint
+in float widthSide; // half-width * side (-1 or +1)
+in float lineParam; // dash parameter (0 for solid lines)
 
 uniform mat4 modelView;
 uniform mat4 projection;
