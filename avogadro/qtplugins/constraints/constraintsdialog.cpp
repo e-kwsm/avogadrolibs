@@ -28,8 +28,7 @@ ConstraintsDialog::ConstraintsDialog(QWidget* parent_, Qt::WindowFlags f)
           SLOT(changeType(int)));
   connect(ui->okButton, SIGNAL(clicked()), this, SLOT(acceptConstraints()));
   connect(ui->addConstraint, SIGNAL(clicked()), this, SLOT(addConstraint()));
-  connect(ui->getConstraint, SIGNAL(clicked()), this,
-          SLOT(getConstraint()));
+  connect(ui->getConstraint, SIGNAL(clicked()), this, SLOT(getConstraint()));
   connect(ui->deleteConstraint, SIGNAL(clicked()), this,
           SLOT(deleteConstraint()));
   connect(ui->deleteAllConstraints, SIGNAL(clicked()), this,
@@ -159,8 +158,7 @@ void ConstraintsDialog::updateConstraints()
         i1 = selectedAtoms[bonded[i][0]];
         i3 = selectedAtoms[bonded[i][1]];
         assigned = true;
-      }
-      else if (degree[i] == 0) {
+      } else if (degree[i] == 0) {
         return;
       }
       if (assigned)
@@ -185,24 +183,20 @@ void ConstraintsDialog::updateConstraints()
         if (degree[bonded[i][0]] == 2) {
           i1 = selectedAtoms[bonded[i][1]];
           i3 = bonded[i][0];
-        }
-        else if (degree[bonded[i][1]] == 2) {
+        } else if (degree[bonded[i][1]] == 2) {
           i1 = selectedAtoms[bonded[i][0]];
           i3 = bonded[i][1];
-        }
-        else {
+        } else {
           return;
         }
         if (selectedAtoms[bonded[i3][0]] == i2) {
           i4 = selectedAtoms[bonded[i3][1]];
-        }
-        else {
+        } else {
           i4 = selectedAtoms[bonded[i3][0]];
         }
         i3 = selectedAtoms[i3];
         assigned = true;
-      }
-      else if (degree[i] == 0) {
+      } else if (degree[i] == 0) {
         return;
       }
       if (assigned)
@@ -284,14 +278,12 @@ void ConstraintsDialog::changeType(int newType)
     ui->editValue->setMinimum(0.0);
     ui->editValue->setMaximum(1000.0);
     ui->comboType->setCurrentIndex(0);
-  }
-  else if (newType == 1) {
+  } else if (newType == 1) {
     ui->editValue->setSuffix("°");
     ui->editValue->setMinimum(0.0);
     ui->editValue->setMaximum(180.0);
     ui->comboType->setCurrentIndex(1);
-  }
-  else {
+  } else {
     ui->editValue->setSuffix("°");
     ui->editValue->setMinimum(-180.0);
     ui->editValue->setMaximum(180.0);

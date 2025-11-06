@@ -50,7 +50,8 @@ vec3 textureToSphereSurfaceCoord(in vec2 coord)
 {
   vec2 absCoord = abs(coord);
   float h = 1.0 - absCoord.s - absCoord.t;
-  return (h >= 0.0) ? vec3(coord.st, -h) : vec3(sign(coord.st) * (1.0 - absCoord.ts), -h);
+  return (h >= 0.0) ? vec3(coord.st, -h)
+                    : vec3(sign(coord.st) * (1.0 - absCoord.ts), -h);
 }
 
 void main()
@@ -68,12 +69,15 @@ void main()
   pos = u_projection * pos;
   // clip coords -> [0, 1] for xy and [near, far] for z
   pos.xy = (pos.xy + vec2(1.0, 1.0)) / 2.0;
-  pos.z = ((gl_DepthRange.diff * pos.z) + gl_DepthRange.near + gl_DepthRange.far) / 2.0;
+  pos.z =
+    ((gl_DepthRange.diff * pos.z) + gl_DepthRange.near + gl_DepthRange.far) /
+    2.0;
 
   // compute angle between sphere surface and light direction
   float cos_alpha = dot(N, vec3(0, 0, 1));
 
-  // since we are using flat impostors in the depth texture, cos_alpha needs to be positive
+  // since we are using flat impostors in the depth texture, cos_alpha needs to
+  // be positive
   if (cos_alpha > 0.0 && texture(u_depthTex, pos.xy).r > pos.z) {
     // the texel is visible from the light source
     outColor = vec4(vec3(1.0, 1.0, 1.0) * cos_alpha * u_intensity, 1.0);
@@ -81,5 +85,4 @@ void main()
     // texel not visible
     outColor = vec4(0.0, 0.0, 0.0, 0.0);
   }
-
 }
