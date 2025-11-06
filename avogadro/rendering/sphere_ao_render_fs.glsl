@@ -1,7 +1,7 @@
-//#define CONTOUR_LINES
-//#define TOON_SHADING
+// #define CONTOUR_LINES
+// #define TOON_SHADING
 #version 400
-precision highp float; 
+precision highp float;
 // normalized corner
 in vec2 v_corner;
 // color
@@ -35,7 +35,8 @@ vec2 sphereSurfaceToTextureCoord(in vec3 coord)
 {
   vec3 absCoord = abs(coord);
   float d = absCoord.x + absCoord.y + absCoord.z;
-  return (coord.z <= 0.0) ? coord.xy / d : sign(coord.xy) * (1.0 - absCoord.yx / d);
+  return (coord.z <= 0.0) ? coord.xy / d
+                          : sign(coord.xy) * (1.0 - absCoord.yx / d);
 }
 
 float cosine(in vec3 a, in vec3 b)
@@ -85,10 +86,9 @@ void main()
   // determine (u, v) texture coordinates using gnomonic projection
   vec2 uv = sphereSurfaceToTextureCoord(modelN); // [-1, 1]
 
-
   uv = v_tileOffset + uv * u_texScale;
 
-  //gl_FragColor = vec4(v_color, 1.0) * texture2D(u_tex, uv);
+  // gl_FragColor = vec4(v_color, 1.0) * texture2D(u_tex, uv);
 
   // direction of light source
   vec3 L = normalize(vec3(0, 1, 1));
@@ -105,12 +105,13 @@ void main()
   // compute specular color (approximate Fresnel reflection)
   vec3 H = normalize(L + E); // halfway vector between N and E
   float cos_beta = cosine(N, H);
-  vec3 specular = 0.5 * (vec3(1, 1, 1) - v_color)* pow(cos_beta, 20.0);
+  vec3 specular = 0.5 * (vec3(1, 1, 1) - v_color) * pow(cos_beta, 20.0);
 
   // final color
   vec3 color = ambient + diffuse + specular;
-  outColor = 1.2 * vec4(color, 1.0) * texture(u_tex, uv); // AO + Phong reflection [+ contours]
-  //gl_FragColor = vec4(color, 1.0); // Phong reflection [+ contours]
-  //gl_FragColor = 1.2 * texture2D(u_tex, uv); // AO [+ contours]
-  //gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0); // contours + white atoms
+  outColor = 1.2 * vec4(color, 1.0) *
+             texture(u_tex, uv); // AO + Phong reflection [+ contours]
+  // gl_FragColor = vec4(color, 1.0); // Phong reflection [+ contours]
+  // gl_FragColor = 1.2 * texture2D(u_tex, uv); // AO [+ contours]
+  // gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0); // contours + white atoms
 }
