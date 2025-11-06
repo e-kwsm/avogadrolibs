@@ -104,7 +104,7 @@ private:
   void processElementString(const QString& str);
   bool parseElements(const QJsonObject& ob);
   void copyMetaDataFrom(const ScriptEnergy& other);
-  
+
   QByteArray writeCoordinatesText(const Eigen::VectorXd& x);
   QByteArray writeCoordinatesBinary(const Eigen::VectorXd& x,
                                     bool requestGradient) const;

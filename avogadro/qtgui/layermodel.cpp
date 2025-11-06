@@ -86,8 +86,7 @@ Qt::ItemFlags LayerModel::flags(const QModelIndex&) const
   return Qt::ItemIsEnabled;
 }
 
-bool LayerModel::setData(const QModelIndex&, const QVariant&,
-                         int)
+bool LayerModel::setData(const QModelIndex&, const QVariant&, int)
 {
   return false;
 }
@@ -115,7 +114,8 @@ QVariant LayerModel::data(const QModelIndex& idx, int role) const
     if (idx.column() == ColumnType::Name) {
       switch (role) {
         case Qt::DisplayRole: {
-          return QString(tr("Layer %1")).arg(layer + 1); // count starts at 0 internally
+          return QString(tr("Layer %1"))
+            .arg(layer + 1); // count starts at 0 internally
         }
         case Qt::ForegroundRole:
           if (layer == getMoleculeLayer().activeLayer())
@@ -286,4 +286,4 @@ size_t LayerModel::layerCount() const
   return LayerManager::layerCount();
 }
 
-} // namespace Avogadro
+} // namespace Avogadro::QtGui

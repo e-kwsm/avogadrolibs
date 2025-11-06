@@ -11,9 +11,9 @@ uniform vec3 uBoxMax;
 
 void main()
 {
-    // Transform unit cube [-1,1] to world-space cube bounds
-    vec3 worldPos = uBoxMin + (vertexPosition * 0.5 + 0.5) * (uBoxMax - uBoxMin);
-    vWorldPos = worldPos;
+  // Transform unit cube [-1,1] to world-space cube bounds
+  vec3 worldPos = uBoxMin + (vertexPosition * 0.5 + 0.5) * (uBoxMax - uBoxMin);
+  vWorldPos = worldPos;
 
-    gl_Position = uProjection * uModelView * vec4(worldPos, 1.0);
+  gl_Position = uProjection * uModelView * vec4(worldPos, 1.0);
 }
