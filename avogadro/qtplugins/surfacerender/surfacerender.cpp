@@ -180,7 +180,7 @@ void SurfaceRender::process(const QtGui::Molecule& mol, GroupNode& node)
         }
       }
     } // if style == Wireframe
-  }   // if meshCount != 0
+  } // if meshCount != 0
 }
 
 void SurfaceRender::setOpacity(int opacity)
