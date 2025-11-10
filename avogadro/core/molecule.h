@@ -213,7 +213,7 @@ public:
 
   /**
    * Replace the current array of isotopes.
-   * @param charges The new isotope array. Must be of length atomCount().
+   * @param isotopes The new isotope array. Must be of length atomCount().
    * @return True on success, false otherwise.
    */
   bool setIsotopes(const Core::Array<unsigned short>& isotopes);
