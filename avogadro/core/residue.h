@@ -56,7 +56,7 @@ public:
 
   Residue(const Residue& other);
 
-  Residue& operator=(const Residue& other);
+  Residue& operator=(Residue other);
 
   virtual ~Residue() = default;
 
@@ -95,12 +95,12 @@ public:
   /**
    * \return the atom with the name specified (e.g., "CA")
    */
-  Atom atomByName(const std::string& name) const;
+  Atom atomByName(std::string name) const;
   /**
    * \return the atomic number of the atom with the name specified (e.g., "CA" =
    * "C")
    */
-  int atomicNumber(const std::string& name) const;
+  int atomicNumber(std::string name) const;
 
   /**
    * \return the name of @p atom or an empty string if not in this residue
@@ -123,7 +123,7 @@ public:
 
   /** Set a custom color for this residue
    */
-  void setColor(const Vector3ub& color);
+  void setColor(const Vector3ub color);
 
   /** \return the color set for this residue, or a default from the chain id
    */
