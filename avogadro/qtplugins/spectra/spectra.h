@@ -49,7 +49,7 @@ private:
 
   QList<QAction*> m_actions;
   QtGui::Molecule* m_molecule;
-  SpectraDialog* m_dialog;
+  std::unique_ptr<SpectraDialog> m_dialog;
 };
 
 } // namespace QtPlugins
