@@ -52,7 +52,7 @@ private slots:
 
 private:
   QAction* m_action;
-  ThreeDMolDialog* m_dialog;
+  std::unique_ptr<ThreeDMolDialog> m_dialog;
   QtGui::Molecule* m_molecule;
 };
 
