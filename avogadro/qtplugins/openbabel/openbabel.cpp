@@ -469,7 +469,7 @@ void OpenBabel::onOptimizeGeometry()
   // Connect process
   disconnect(m_process);
   m_process->disconnect(this);
-  connect(m_progress, SIGNAL(canceled()), m_process, SLOT(abort()));
+  connect(m_progress.get(), SIGNAL(canceled()), m_process, SLOT(abort()));
   connect(m_process,
           SIGNAL(optimizeGeometryStatusUpdate(int, int, double, double)),
           SLOT(onOptimizeGeometryStatusUpdate(int, int, double, double)));
@@ -622,7 +622,7 @@ void OpenBabel::onGenerateConformers()
   // Connect process
   disconnect(m_process);
   m_process->disconnect(this);
-  connect(m_progress, SIGNAL(canceled()), m_process, SLOT(abort()));
+  connect(m_progress.get(), SIGNAL(canceled()), m_process, SLOT(abort()));
   connect(m_process, SIGNAL(conformerStatusUpdate(int, int, double, double)),
           SLOT(onConformerStatusUpdate(int, int, double, double)));
   connect(m_process, SIGNAL(generateConformersFinished(QByteArray)),
@@ -755,7 +755,7 @@ void OpenBabel::onPerceiveBonds()
   // Connect process
   disconnect(m_process);
   m_process->disconnect(this);
-  connect(m_progress, SIGNAL(canceled()), m_process, SLOT(abort()));
+  connect(m_progress.get(), SIGNAL(canceled()), m_process, SLOT(abort()));
   connect(m_process, SIGNAL(convertFinished(QByteArray)),
           SLOT(onPerceiveBondsFinished(QByteArray)));
 
@@ -843,7 +843,7 @@ void OpenBabel::onAddHydrogens()
   // Connect process
   disconnect(m_process);
   m_process->disconnect(this);
-  connect(m_progress, SIGNAL(canceled()), m_process, SLOT(abort()));
+  connect(m_progress.get(), SIGNAL(canceled()), m_process, SLOT(abort()));
   connect(m_process, SIGNAL(convertFinished(QByteArray)),
           SLOT(onHydrogenOperationFinished(QByteArray)));
 
@@ -893,7 +893,7 @@ void OpenBabel::onAddHydrogensPh()
   // Connect process
   disconnect(m_process);
   m_process->disconnect(this);
-  connect(m_progress, SIGNAL(canceled()), m_process, SLOT(abort()));
+  connect(m_progress.get(), SIGNAL(canceled()), m_process, SLOT(abort()));
   connect(m_process, SIGNAL(convertFinished(QByteArray)),
           SLOT(onHydrogenOperationFinished(QByteArray)));
 
@@ -935,7 +935,7 @@ void OpenBabel::onRemoveHydrogens()
   // Connect process
   disconnect(m_process);
   m_process->disconnect(this);
-  connect(m_progress, SIGNAL(canceled()), m_process, SLOT(abort()));
+  connect(m_progress.get(), SIGNAL(canceled()), m_process, SLOT(abort()));
   connect(m_process, SIGNAL(convertFinished(QByteArray)),
           SLOT(onHydrogenOperationFinished(QByteArray)));
 
@@ -999,7 +999,8 @@ void OpenBabel::initializeProgressDialog(const QString& title,
                                          int value, bool showDialog)
 {
   if (!m_progress)
-    m_progress = new QProgressDialog(qobject_cast<QWidget*>(parent()));
+    m_progress =
+      std::make_unique<QProgressDialog>(qobject_cast<QWidget*>(parent()));
 
   m_progress->setWindowTitle(title);
   m_progress->setLabelText(label);
