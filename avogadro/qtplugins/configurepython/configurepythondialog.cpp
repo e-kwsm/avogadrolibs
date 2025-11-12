@@ -88,7 +88,7 @@ void ConfigurePythonDialog::setupCondaEnvironment()
 {
   // suggest the user create a new environment through a dialog
   if (m_condaUi == nullptr) {
-    m_condaUi = new CondaDialog(qobject_cast<QWidget*>(parent()));
+    m_condaUi = std::make_unique<CondaDialog>(qobject_cast<QWidget*>(parent()));
   }
   int choice = m_condaUi->exec();
   if (choice == QDialog::Rejected)
