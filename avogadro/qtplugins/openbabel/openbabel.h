@@ -12,8 +12,6 @@
 
 #include <QtCore/QMultiMap>
 
-#include <memory>
-
 class QAction;
 class QProgressDialog;
 
