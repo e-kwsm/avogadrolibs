@@ -391,9 +391,10 @@ void TemplateToolWidget::groupChanged(int index)
     if (m_fragmentDialog != nullptr)
       m_fragmentDialog->deleteLater();
 
-    m_fragmentDialog = new QtGui::InsertFragmentDialog(this, path);
-    connect(m_fragmentDialog, SIGNAL(performInsert(const QString&, bool)), this,
-            SLOT(otherLigandInsert(const QString&, bool)));
+    m_fragmentDialog =
+      std::make_unique<QtGui::InsertFragmentDialog>(this, path);
+    connect(m_fragmentDialog.get(), SIGNAL(performInsert(const QString&, bool)),
+            this, SLOT(otherLigandInsert(const QString&, bool)));
     m_fragmentDialog->show();
     m_fragmentDialog->raise();
     m_fragmentDialog->activateWindow();
@@ -444,9 +445,10 @@ void TemplateToolWidget::ligandChanged(int index)
     if (m_fragmentDialog != nullptr)
       m_fragmentDialog->deleteLater();
 
-    m_fragmentDialog = new QtGui::InsertFragmentDialog(this, path);
-    connect(m_fragmentDialog, SIGNAL(performInsert(const QString&, bool)), this,
-            SLOT(otherLigandInsert(const QString&, bool)));
+    m_fragmentDialog =
+      std::make_unique<QtGui::InsertFragmentDialog>(this, path);
+    connect(m_fragmentDialog.get(), SIGNAL(performInsert(const QString&, bool)),
+            this, SLOT(otherLigandInsert(const QString&, bool)));
     m_fragmentDialog->show();
     m_fragmentDialog->raise();
     m_fragmentDialog->activateWindow();
