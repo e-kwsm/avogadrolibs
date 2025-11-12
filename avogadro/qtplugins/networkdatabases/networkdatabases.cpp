@@ -81,7 +81,8 @@ void NetworkDatabases::showDialog()
 
   m_moleculeName = structureName;
   if (!m_progressDialog) {
-    m_progressDialog = new QProgressDialog(qobject_cast<QWidget*>(parent()));
+    m_progressDialog =
+      std::make_unique<QProgressDialog>(qobject_cast<QWidget*>(parent()));
   }
   m_progressDialog->setLabelText(tr("Querying for %1").arg(structureName));
   m_progressDialog->setRange(0, 0);
