@@ -70,7 +70,7 @@ private slots:
 private:
   void updateRecommendedForceField();
 
-  Ui::ForceFieldDialog* ui;
+  std::unique_ptr<Ui::ForceFieldDialog> ui;
   QString m_recommendedForceField;
 };
 
