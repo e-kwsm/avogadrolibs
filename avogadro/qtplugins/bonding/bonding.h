@@ -25,7 +25,7 @@ class Bonding : public QtGui::ExtensionPlugin
   Q_OBJECT
 public:
   explicit Bonding(QObject* parent_ = nullptr);
-  ~Bonding() override = default;
+  ~Bonding() override;
 
   QString name() const override { return tr("Bonding"); }
 
@@ -67,7 +67,7 @@ private:
   QAction* m_createBondsAction;
 
   std::unique_ptr<QDialog> m_dialog;
-  Ui::BondingDialog* m_ui;
+  std::unique_ptr<Ui::BondingDialog> m_ui;
 };
 
 } // namespace Avogadro::QtPlugins
