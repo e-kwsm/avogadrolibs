@@ -112,7 +112,7 @@ private:
   std::string m_defaultFormat;
   QProgressDialog* m_progress;
 
-  ConformerSearchDialog* m_conformerSearchDialog;
+  std::unique_ptr<ConformerSearchDialog> m_conformerSearchDialog;
 };
 
 } // namespace QtPlugins
