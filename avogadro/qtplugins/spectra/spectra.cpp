@@ -102,7 +102,8 @@ void Spectra::openDialog()
     return;
 
   if (m_dialog == nullptr) {
-    m_dialog = new SpectraDialog(qobject_cast<QWidget*>(this->parent()));
+    m_dialog =
+      std::make_unique<SpectraDialog>(qobject_cast<QWidget*>(this->parent()));
   }
 
   gatherSpectra();
