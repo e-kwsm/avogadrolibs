@@ -102,16 +102,16 @@ bool Bonding::handleCommand(const QString& command,
 void Bonding::configure()
 {
   if (!m_ui) {
-    m_dialog = new QDialog(qobject_cast<QWidget*>(parent()));
+    m_dialog = std::make_unique<QDialog>(qobject_cast<QWidget*>(parent()));
     m_ui = new Ui::BondingDialog;
-    m_ui->setupUi(m_dialog);
+    m_ui->setupUi(m_dialog.get());
 
     m_ui->toleranceSpinBox->setValue(m_tolerance);
     m_ui->minimumSpinBox->setValue(m_minDistance);
 
     connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this,
             &Bonding::setValues);
-    connect(m_ui->buttonBox, &QDialogButtonBox::rejected, m_dialog,
+    connect(m_ui->buttonBox, &QDialogButtonBox::rejected, m_dialog.get(),
             &QDialog::close);
   }
 
