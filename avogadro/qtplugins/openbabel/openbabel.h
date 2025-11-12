@@ -12,6 +12,8 @@
 
 #include <QtCore/QMultiMap>
 
+#include <memory>
+
 class QAction;
 class QProgressDialog;
 
@@ -46,7 +48,7 @@ public:
 
   QStringList menuPath(QAction*) const override;
 
-  QList<Io::FileFormat*> fileFormats() const override;
+  QList<std::unique_ptr<Io::FileFormat>> fileFormats() const override;
 
   QString openBabelInfo() const;
 
