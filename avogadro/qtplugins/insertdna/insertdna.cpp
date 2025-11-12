@@ -96,9 +96,10 @@ void InsertDna::showDialog()
 void InsertDna::constructDialog()
 {
   if (m_dialog == nullptr) {
-    m_dialog = new InsertDNADialog(qobject_cast<QWidget*>(parent()));
+    m_dialog =
+      std::make_unique<InsertDNADialog>(qobject_cast<QWidget*>(parent()));
 
-    auto* numStrands = new QButtonGroup(m_dialog);
+    auto* numStrands = new QButtonGroup(m_dialog.get());
     numStrands->addButton(m_dialog->singleStrandRadio, 0);
     numStrands->addButton(m_dialog->doubleStrandRadio, 1);
     numStrands->setExclusive(true);
@@ -116,7 +117,8 @@ void InsertDna::constructDialog()
     foreach (const QToolButton* child, m_dialog->findChildren<QToolButton*>()) {
       connect(child, &QToolButton::clicked, this, &InsertDna::updateText);
     }
-    connect(m_dialog, &QObject::destroyed, this, &InsertDna::dialogDestroyed);
+    connect(m_dialog.get(), &QObject::destroyed, this,
+            &InsertDna::dialogDestroyed);
   }
   m_dialog->sequenceText->setPlainText(QString());
 }
