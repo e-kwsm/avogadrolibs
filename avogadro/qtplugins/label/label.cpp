@@ -287,7 +287,7 @@ void Label::processResidue(const Core::Molecule& molecule,
   node.addChild(geometry);
 
   for (const auto& residue : molecule.residues()) {
-    Atom caAtom = residue.getAtomByName("CA");
+    Atom caAtom = residue.atomByName("CA");
     if (!caAtom.isValid() ||
         !m_layerManager.atomEnabled(layer, caAtom.index())) {
       continue;
@@ -394,8 +394,16 @@ void Label::processAtom(const Core::Molecule& molecule,
       text += (text == "" ? "" : " / ") + std::to_string(atom.index() + 1);
     }
     if (interface->atomOptions & LayerLabel::LabelOptions::Name) {
-      text +=
-        (text == "" ? "" : " / ") + std::string(Elements::symbol(atomicNumber));
+      std::string name = std::string(Elements::symbol(atomicNumber));
+      // D or T for hydrogen isotopes
+      if (atomicNumber == 1) {
+        if (atom.isotope() == 2) {
+          name = "D";
+        } else if (atom.isotope() == 3) {
+          name = "T";
+        }
+      }
+      text += (text == "" ? "" : " / ") + name;
     }
     if (interface->atomOptions & LayerLabel::LabelOptions::Ordinal) {
       text += (text == "" ? "" : " / ") +
