@@ -97,9 +97,11 @@ bool Cp2kInput::readMolecule(QtGui::Molecule& mol)
 void Cp2kInput::menuActivated()
 {
   if (!m_dialog) {
-    m_dialog = new Cp2kInputDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_dialog, SIGNAL(openJobOutput(Avogadro::MoleQueue::JobObject)),
-            this, SLOT(openJobOutput(Avogadro::MoleQueue::JobObject)));
+    m_dialog =
+      std::make_unique<Cp2kInputDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_dialog.get(),
+            SIGNAL(openJobOutput(Avogadro::MoleQueue::JobObject)), this,
+            SLOT(openJobOutput(Avogadro::MoleQueue::JobObject)));
   }
   m_dialog->setMolecule(m_molecule);
   m_dialog->show();

@@ -58,7 +58,7 @@ private slots:
 private:
   QAction* m_action;
   QtGui::Molecule* m_molecule;
-  Cp2kInputDialog* m_dialog;
+  std::unique_ptr<Cp2kInputDialog> m_dialog;
   const Io::FileFormat* m_outputFormat;
   QString m_outputFileName;
 };
