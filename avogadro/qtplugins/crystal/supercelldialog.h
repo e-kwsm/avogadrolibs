@@ -48,7 +48,7 @@ private slots:
 private:
   AVO_DISABLE_COPY(SupercellDialog)
 
-  Ui::SupercellDialog* m_ui;
+  std::unique_ptr<Ui::SupercellDialog> m_ui;
 
   /** Atom count of the molecule being expanded, used to size the request. */
   Index m_atomCount = 0;
