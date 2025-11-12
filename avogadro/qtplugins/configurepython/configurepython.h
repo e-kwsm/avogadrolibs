@@ -41,7 +41,7 @@ private slots:
 
 private:
   QAction* m_action;
-  ConfigurePythonDialog* m_dialog;
+  std::unique_ptr<ConfigurePythonDialog> m_dialog;
 };
 
 } // namespace QtPlugins

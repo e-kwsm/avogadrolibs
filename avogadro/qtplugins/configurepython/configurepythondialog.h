@@ -47,7 +47,7 @@ protected slots:
   void reject() override;
 
 private:
-  Ui::ConfigurePythonDialog* m_ui;
+  std::unique_ptr<Ui::ConfigurePythonDialog> m_ui;
   std::unique_ptr<CondaDialog> m_condaUi;
   QStringList m_condaEnvironments;
 };
