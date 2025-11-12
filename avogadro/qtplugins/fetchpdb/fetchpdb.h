@@ -84,7 +84,7 @@ private:
   QNetworkAccessManager* m_network;
   QString m_moleculeName;
   QByteArray m_moleculeData;
-  QProgressDialog* m_progressDialog;
+  std::unique_ptr<QProgressDialog> m_progressDialog;
   QString m_tempFileName;
   /// The suffix of the download being handled: ".pdb.gz" where gzip can be
   /// decoded, ".pdb" otherwise. Set on the request and read back off the
