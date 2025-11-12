@@ -180,10 +180,7 @@ CoordinateEditorDialog::CoordinateEditorDialog(QWidget* parent_)
   listenForTextEditChanges(true);
 }
 
-CoordinateEditorDialog::~CoordinateEditorDialog()
-{
-  delete m_ui;
-}
+CoordinateEditorDialog::~CoordinateEditorDialog() = default;
 
 void CoordinateEditorDialog::setMolecule(QtGui::Molecule* mol)
 {
