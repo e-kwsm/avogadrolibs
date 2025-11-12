@@ -43,7 +43,7 @@ private slots:
 private:
   QList<QAction*> m_actions;
   QtGui::Molecule* m_molecule = nullptr;
-  ConstraintsDialog* m_dialog = nullptr;
+  std::unique_ptr<ConstraintsDialog> m_dialog = nullptr;
 };
 } // namespace QtPlugins
 } // namespace Avogadro

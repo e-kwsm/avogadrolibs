@@ -42,7 +42,7 @@ public slots:
   void updateConstraints();
 
 private:
-  Ui::ConstraintsDialog* ui;
+  std::unique_ptr<Ui::ConstraintsDialog> ui;
   ConstraintsModel* m_model;
   QtGui::Molecule* m_molecule = nullptr;
 };
