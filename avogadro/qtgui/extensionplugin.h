@@ -95,7 +95,7 @@ public:
    *
    * The caller takes ownership of the objects in the returned list.
    */
-  virtual QList<Io::FileFormat*> fileFormats() const;
+  virtual QList<std::unique_ptr<Io::FileFormat>> fileFormats() const;
 
   /**
    * Called by the app to tell the extension to register commands.
