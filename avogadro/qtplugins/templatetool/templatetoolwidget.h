@@ -68,7 +68,7 @@ private:
   void saveElements();
 
   Ui::TemplateToolWidget* m_ui;
-  QtGui::InsertFragmentDialog* m_fragmentDialog;
+  std::unique_ptr<QtGui::InsertFragmentDialog> m_fragmentDialog;
   QtGui::PeriodicTableView* m_elementSelector;
   QList<unsigned char> m_defaultElements;
   QList<unsigned char> m_userElements;
