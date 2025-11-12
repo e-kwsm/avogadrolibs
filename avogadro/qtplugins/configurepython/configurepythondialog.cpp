@@ -79,10 +79,7 @@ ConfigurePythonDialog::ConfigurePythonDialog(QWidget* aParent)
   }
 }
 
-ConfigurePythonDialog::~ConfigurePythonDialog()
-{
-  delete m_ui;
-}
+ConfigurePythonDialog::~ConfigurePythonDialog() = default;
 
 void ConfigurePythonDialog::setupCondaEnvironment()
 {
