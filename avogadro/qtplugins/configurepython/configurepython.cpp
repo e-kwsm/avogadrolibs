@@ -270,8 +270,9 @@ QStringList ConfigurePython::pythonPaths() const
 void ConfigurePython::showDialog()
 {
   if (m_dialog == nullptr) {
-    m_dialog = new ConfigurePythonDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_dialog, SIGNAL(accepted()), SLOT(accept()));
+    m_dialog =
+      std::make_unique<ConfigurePythonDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_dialog.get(), SIGNAL(accepted()), SLOT(accept()));
   }
 
   // Populate the dialog with the current settings
