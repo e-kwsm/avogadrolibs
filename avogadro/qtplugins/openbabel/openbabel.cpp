@@ -113,15 +113,15 @@ QStringList OpenBabel::menuPath(QAction*) const
   return QStringList() << tr("&Extensions") << tr("&Open Babel");
 }
 
-QList<Io::FileFormat*> OpenBabel::fileFormats() const
+QList<std::unique_ptr<Io::FileFormat>> OpenBabel::fileFormats() const
 {
   // Return empty list if not ready yet, and print a warning.
   if (m_readFormatsPending || m_writeFormatsPending) {
     qDebug() << tr("The Open Babel file formats are not ready to be added.");
-    return QList<Io::FileFormat*>();
+    return {};
   }
 
-  QList<Io::FileFormat*> result;
+  QList<std::unique_ptr<Io::FileFormat>> result;
 
   std::string mapDesc;
   std::string fname;
@@ -171,12 +171,12 @@ QList<Io::FileFormat*> OpenBabel::fileFormats() const
     foreach (const QString& ext, formatExtensions)
       fexts.push_back(ext.toStdString());
 
-    auto* fmt =
-      new OBFileFormat(fname, fidentifier, fdescription, fspecificationUrl,
-                       fexts, fmime, m_defaultFormat, fileOnly);
+    auto fmt = std::make_unique<OBFileFormat>(fname, fidentifier, fdescription,
+                                              fspecificationUrl, fexts, fmime,
+                                              m_defaultFormat, fileOnly);
 
     fmt->setReadWriteFlags(rw);
-    result.append(fmt);
+    result.append(std::move(fmt));
   }
 
   qDebug() << "Open Babel formats ready: " << result.size();
