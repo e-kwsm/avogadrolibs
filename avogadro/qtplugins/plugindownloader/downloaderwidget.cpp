@@ -508,13 +508,13 @@ QString DownloaderWidget::findRequirementFile(const QString& destination)
 // Install dependencies using pixi
 void DownloaderWidget::installWithPixi(const QString& requirementFile)
 {
-  m_progressDialog = new QProgressDialog(
+  m_progressDialog = std::make_unique<QProgressDialog>(
     tr("Installing dependencies with %1…", "argument is program name")
       .arg("pixi"),
     tr("Cancel"), 0, 0, this);
   m_progressDialog->setWindowModality(Qt::WindowModal);
 
-  connect(m_progressDialog, SIGNAL(canceled()), this,
+  connect(m_progressDialog.get(), SIGNAL(canceled()), this,
           SLOT(cancelInstallation()));
 
   QStringList arguments;
@@ -571,13 +571,13 @@ void DownloaderWidget::installWithConda(const QString& requirementFile)
     return; // pyproject.toml not supported by conda
   }
 
-  m_progressDialog = new QProgressDialog(
+  m_progressDialog = std::make_unique<QProgressDialog>(
     tr("Installing dependencies with %1…", "argument is program name")
       .arg("conda"),
     tr("Cancel"), 0, 0, this);
   m_progressDialog->setWindowModality(Qt::WindowModal);
 
-  connect(m_progressDialog, SIGNAL(canceled()), this,
+  connect(m_progressDialog.get(), SIGNAL(canceled()), this,
           SLOT(cancelInstallation()));
 
   QSettings settings;
@@ -608,13 +608,13 @@ void DownloaderWidget::installWithPip(const QString& requirementFile)
     return; // nothing to do, please migrate to pyproject.toml
   }
 
-  m_progressDialog = new QProgressDialog(
+  m_progressDialog = std::make_unique<QProgressDialog>(
     tr("Installing dependencies with %1…", "argument is program name")
       .arg("pip"),
     tr("Cancel"), 0, 0, this);
   m_progressDialog->setWindowModality(Qt::WindowModal);
 
-  connect(m_progressDialog, SIGNAL(canceled()), this,
+  connect(m_progressDialog.get(), SIGNAL(canceled()), this,
           SLOT(cancelInstallation()));
 
   QSettings settings;
