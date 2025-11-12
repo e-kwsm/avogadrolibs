@@ -98,9 +98,11 @@ bool GamessInput::readMolecule(QtGui::Molecule& mol)
 void GamessInput::menuActivated()
 {
   if (!m_dialog) {
-    m_dialog = new GamessInputDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_dialog, SIGNAL(openJobOutput(Avogadro::MoleQueue::JobObject)),
-            this, SLOT(openJobOutput(Avogadro::MoleQueue::JobObject)));
+    m_dialog =
+      std::make_unique<GamessInputDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_dialog.get(),
+            SIGNAL(openJobOutput(Avogadro::MoleQueue::JobObject)), this,
+            SLOT(openJobOutput(Avogadro::MoleQueue::JobObject)));
   }
   m_dialog->setMolecule(m_molecule);
   m_dialog->show();
