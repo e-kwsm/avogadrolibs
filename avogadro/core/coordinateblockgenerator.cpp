@@ -107,8 +107,8 @@ std::string CoordinateBlockGenerator::generateCoordinateBlock()
       case Bohr:
         pos3d *= ANGSTROM_TO_BOHR_F;
         break;
-      default:
       case Angstrom:
+      default:
         break;
     }
 
