@@ -48,7 +48,7 @@ protected slots:
 
 private:
   Ui::ConfigurePythonDialog* m_ui;
-  CondaDialog* m_condaUi;
+  std::unique_ptr<CondaDialog> m_condaUi;
   QStringList m_condaEnvironments;
 };
 
