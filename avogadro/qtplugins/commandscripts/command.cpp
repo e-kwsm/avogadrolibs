@@ -377,7 +377,7 @@ void Command::menuActivated()
     return;
   }
 
-  m_currentDialog = new QDialog(theParent);
+  m_currentDialog = std::make_unique<QDialog>(theParent);
   m_currentDialog->setWindowTitle(theSender->text());
 
   auto* vbox = new QVBoxLayout();
@@ -387,7 +387,7 @@ void Command::menuActivated()
     new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
 
   connect(buttonBox, &QDialogButtonBox::accepted, this, &Command::run);
-  connect(buttonBox, &QDialogButtonBox::rejected, m_currentDialog,
+  connect(buttonBox, &QDialogButtonBox::rejected, m_currentDialog.get(),
           &QDialog::reject);
   vbox->addWidget(buttonBox);
   m_currentDialog->setLayout(vbox);
