@@ -78,17 +78,19 @@ void InsertFragment::showDialog()
   if (crystal) {
     // create the dialog if it doesn't exist
     if (!m_crystalDialog) {
-      m_crystalDialog = new InsertFragmentDialog(parentAsWidget, "crystals");
-      connect(m_crystalDialog, &InsertFragmentDialog::performInsert, this,
+      m_crystalDialog =
+        std::make_unique<InsertFragmentDialog>(parentAsWidget, "crystals");
+      connect(m_crystalDialog.get(), &InsertFragmentDialog::performInsert, this,
               &InsertFragment::performInsert);
     }
     m_crystalDialog->show();
   } else {
     // fragments - create the dialog if it doesn't exist
     if (!m_moleculeDialog) {
-      m_moleculeDialog = new InsertFragmentDialog(parentAsWidget, "molecules");
-      connect(m_moleculeDialog, &InsertFragmentDialog::performInsert, this,
-              &InsertFragment::performInsert);
+      m_moleculeDialog =
+        std::make_unique<InsertFragmentDialog>(parentAsWidget, "molecules");
+      connect(m_moleculeDialog.get(), &InsertFragmentDialog::performInsert,
+              this, &InsertFragment::performInsert);
     }
     m_moleculeDialog->show();
   }
