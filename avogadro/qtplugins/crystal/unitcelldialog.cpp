@@ -62,10 +62,7 @@ UnitCellDialog::UnitCellDialog(QWidget* p)
   connect(m_ui->revert, &QPushButton::clicked, this, &UnitCellDialog::revert);
 }
 
-UnitCellDialog::~UnitCellDialog()
-{
-  delete m_ui;
-}
+UnitCellDialog::~UnitCellDialog() = default;
 
 void UnitCellDialog::setMolecule(QtGui::Molecule* molecule)
 {
