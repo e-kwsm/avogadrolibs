@@ -144,7 +144,7 @@ private:
   QString m_baseFileName;
   int m_numberLength = 1;
 
-  SurfaceDialog* m_dialog = nullptr;
+  std::unique_ptr<SurfaceDialog> m_dialog = nullptr;
 
   class PIMPL;
   PIMPL* d = nullptr;

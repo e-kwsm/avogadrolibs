@@ -277,11 +277,12 @@ QStringList Surfaces::menuPath(QAction*) const
 void Surfaces::surfacesActivated()
 {
   if (!m_dialog) {
-    m_dialog = new SurfaceDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_dialog, SIGNAL(calculateClickedSignal()),
+    m_dialog =
+      std::make_unique<SurfaceDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_dialog.get(), SIGNAL(calculateClickedSignal()),
             SLOT(calculateSurface()));
-    connect(m_dialog, SIGNAL(recordClicked()), SLOT(recordMovie()));
-    connect(m_dialog, SIGNAL(stepChanged(int)), SLOT(stepChanged(int)));
+    connect(m_dialog.get(), SIGNAL(recordClicked()), SLOT(recordMovie()));
+    connect(m_dialog.get(), SIGNAL(stepChanged(int)), SLOT(stepChanged(int)));
   }
 
   if (m_basis) {

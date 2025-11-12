@@ -86,7 +86,7 @@ signals:
   void recordClicked();
 
 private:
-  Ui::SurfaceDialog* m_ui;
+  std::unique_ptr<Ui::SurfaceDialog> m_ui;
   bool m_automaticResolution;
   std::set<std::pair<std::string, std::string>> m_chargeModels;
 };
