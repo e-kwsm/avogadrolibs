@@ -131,7 +131,7 @@ private:
   std::unique_ptr<QDialog> m_currentDialog;
   QtGui::InterfaceWidget* m_currentInterface;
   QtGui::InterfaceScript* m_currentScript;
-  QtGui::TimedProgressDialog* m_progress;
+  std::unique_ptr<QtGui::TimedProgressDialog> m_progress;
 
   QMultiHash<QString, QAction*> m_packageActions;
 
