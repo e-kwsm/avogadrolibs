@@ -36,7 +36,7 @@ private slots:
   void factorEdited();
 
 private:
-  Ui::VolumeScalingDialog* m_ui;
+  std::unique_ptr<Ui::VolumeScalingDialog> m_ui;
   double m_currentVolume;
 };
 
