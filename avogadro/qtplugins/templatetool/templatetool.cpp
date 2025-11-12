@@ -809,7 +809,6 @@ void TemplateTool::atomRightClick(QMouseEvent* e)
 void TemplateTool::atomLeftDrag(QMouseEvent*)
 {
   // by default, don't allow drags for bonds
-  return;
 }
 
 } // namespace QtPlugins
