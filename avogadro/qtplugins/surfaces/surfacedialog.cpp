@@ -41,10 +41,7 @@ SurfaceDialog::SurfaceDialog(QWidget* parent_, Qt::WindowFlags f)
   connect(m_ui->recordButton, SIGNAL(clicked()), SLOT(record()));
 }
 
-SurfaceDialog::~SurfaceDialog()
-{
-  delete m_ui;
-}
+SurfaceDialog::~SurfaceDialog() = default;
 
 void SurfaceDialog::surfaceComboChanged(int n)
 {
