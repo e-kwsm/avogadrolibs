@@ -333,8 +333,8 @@ void Command::run()
     // Starts indeterminate; a script that reports progress switches it to a
     // determinate bar. See InterfaceScript for the script-side protocol.
     QString title = tr("Processing %1").arg(iface.displayName());
-    m_progress = new QProgressDialog(title, tr("Cancel"), 0, 0,
-                                     qobject_cast<QWidget*>(parent()));
+    m_progress = std::make_unique<QProgressDialog>(
+      title, tr("Cancel"), 0, 0, qobject_cast<QWidget*>(parent()));
     m_progress->setMinimumDuration(1000); // 1 second
     // Don't let a script that reports its final step and then keeps working
     // (writing files, etc.) make the dialog vanish early.
