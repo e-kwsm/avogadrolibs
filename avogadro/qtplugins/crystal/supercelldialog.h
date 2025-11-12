@@ -41,7 +41,7 @@ public:
 private:
   AVO_DISABLE_COPY(SupercellDialog)
 
-  Ui::SupercellDialog* m_ui;
+  std::unique_ptr<Ui::SupercellDialog> m_ui;
 };
 
 } // namespace QtPlugins
