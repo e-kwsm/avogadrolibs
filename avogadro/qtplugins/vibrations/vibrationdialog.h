@@ -71,7 +71,7 @@ private:
   /** Human-readable list of @p modes, for the displacement dialog. */
   QString modeSummary(const QList<int>& modes) const;
 
-  Ui::VibrationDialog* m_ui;
+  std::unique_ptr<Ui::VibrationDialog> m_ui;
 };
 
 } // End namespace QtPlugins
