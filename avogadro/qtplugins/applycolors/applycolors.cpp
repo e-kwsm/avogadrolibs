@@ -261,8 +261,8 @@ void ApplyColors::setMolecule(QtGui::Molecule* mol)
 void ApplyColors::openColorDialog()
 {
   if (m_dialog == nullptr) {
-    m_dialog = new QColorDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_dialog, &QColorDialog::currentColorChanged, this,
+    m_dialog = std::make_unique<QColorDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_dialog.get(), &QColorDialog::currentColorChanged, this,
             &ApplyColors::applyCustomColor);
   }
 
