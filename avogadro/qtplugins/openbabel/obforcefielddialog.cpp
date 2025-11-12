@@ -29,7 +29,7 @@ enum LineSearchMethod
 
 OBForceFieldDialog::OBForceFieldDialog(const QStringList& forceFields,
                                        QWidget* parent_)
-  : QDialog(parent_), ui(new Ui::OBForceFieldDialog)
+  : QDialog(parent_), ui(std::make_unique<Ui::OBForceFieldDialog>())
 {
   ui->setupUi(this);
   ui->forceField->addItems(forceFields);
@@ -44,10 +44,7 @@ OBForceFieldDialog::OBForceFieldDialog(const QStringList& forceFields,
   ui->useRecommended->setChecked(autoDetect);
 }
 
-OBForceFieldDialog::~OBForceFieldDialog()
-{
-  delete ui;
-}
+OBForceFieldDialog::~OBForceFieldDialog() = default;
 
 QStringList OBForceFieldDialog::prompt(QWidget* parent_,
                                        const QStringList& forceFields,
