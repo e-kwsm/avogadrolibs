@@ -229,12 +229,15 @@ void Vibrations::stopVibrationAnimation()
 void Vibrations::openDialog()
 {
   if (!m_dialog) {
-    m_dialog = new VibrationDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_dialog, SIGNAL(modeChanged(int)), SLOT(setMode(int)));
-    connect(m_dialog, SIGNAL(amplitudeChanged(int)), SLOT(setAmplitude(int)));
-    connect(m_dialog, SIGNAL(startAnimation()),
+    m_dialog =
+      std::make_unique<VibrationDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_dialog.get(), SIGNAL(modeChanged(int)), SLOT(setMode(int)));
+    connect(m_dialog.get(), SIGNAL(amplitudeChanged(int)),
+            SLOT(setAmplitude(int)));
+    connect(m_dialog.get(), SIGNAL(startAnimation()),
             SLOT(startVibrationAnimation()));
-    connect(m_dialog, SIGNAL(stopAnimation()), SLOT(stopVibrationAnimation()));
+    connect(m_dialog.get(), SIGNAL(stopAnimation()),
+            SLOT(stopVibrationAnimation()));
   }
   if (m_molecule)
     m_dialog->setMolecule(m_molecule);
