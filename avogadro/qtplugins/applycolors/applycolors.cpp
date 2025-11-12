@@ -382,10 +382,10 @@ void ApplyColors::applyCustomColor(const QColor& new_color)
 void ApplyColors::openColorDialogResidue()
 {
   if (m_dialog == nullptr) {
-    m_dialog = new QColorDialog(qobject_cast<QWidget*>(parent()));
+    m_dialog = std::make_unique<QColorDialog>(qobject_cast<QWidget*>(parent()));
   }
   m_dialog->disconnect();
-  connect(m_dialog, SIGNAL(currentColorChanged(const QColor&)),
+  connect(m_dialog.get(), SIGNAL(currentColorChanged(const QColor&)),
           SLOT(applyCustomColorResidue(const QColor&)));
 
   m_dialog->exec();
