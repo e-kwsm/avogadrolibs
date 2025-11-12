@@ -14,10 +14,7 @@ CondaDialog::CondaDialog(QWidget* aParent)
   m_ui->setupUi(this);
 }
 
-CondaDialog::~CondaDialog()
-{
-  delete m_ui;
-}
+CondaDialog::~CondaDialog() = default;
 
 QString CondaDialog::environmentName() const
 {

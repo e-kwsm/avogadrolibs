@@ -29,7 +29,7 @@ public:
   QString environmentName() const;
 
 private:
-  Ui::CondaDialog* m_ui;
+  std::unique_ptr<Ui::CondaDialog> m_ui;
 };
 
 } // namespace QtPlugins
