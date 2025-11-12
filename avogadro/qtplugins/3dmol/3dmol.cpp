@@ -60,8 +60,8 @@ void ThreeDMol::setMolecule(QtGui::Molecule* mol)
 void ThreeDMol::showDialog()
 {
   if (!m_dialog) {
-    m_dialog =
-      new ThreeDMolDialog(m_molecule, qobject_cast<QWidget*>(this->parent()));
+    m_dialog = std::make_unique<ThreeDMolDialog>(
+      m_molecule, qobject_cast<QWidget*>(this->parent()));
   }
   m_dialog->show();
 }
