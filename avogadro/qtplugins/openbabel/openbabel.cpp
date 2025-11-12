@@ -409,8 +409,8 @@ void OpenBabel::onConfigureConformerSearch()
 
   if (m_conformerSearchDialog == nullptr) {
     m_conformerSearchDialog =
-      new ConformerSearchDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_conformerSearchDialog, SIGNAL(accepted()), this,
+      std::make_unique<ConformerSearchDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_conformerSearchDialog.get(), SIGNAL(accepted()), this,
             SLOT(onGenerateConformers()));
   }
   // todo set options from last run
