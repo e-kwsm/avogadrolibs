@@ -178,7 +178,7 @@ void SecondaryStructureAssigner::assignBackboneHydrogenBonds()
   if (m_molecule == nullptr)
     return;
 
-  const float maxDist = 3.2;                 // in Angstroms
+  const float maxDist = 3.2f;                // in Angstroms
   const float maxDistSq = maxDist * maxDist; // 10.24
 
   // delete any previous records
