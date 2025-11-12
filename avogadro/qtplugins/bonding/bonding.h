@@ -73,7 +73,7 @@ private:
   QAction* m_configAction;
   QAction* m_createBondsAction;
 
-  QDialog* m_dialog;
+  std::unique_ptr<QDialog> m_dialog;
   Ui::BondingDialog* m_ui;
 };
 
