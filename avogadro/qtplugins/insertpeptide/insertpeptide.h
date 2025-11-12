@@ -55,7 +55,7 @@ private:
 
   QList<QAction*> m_actions;
   QtGui::Molecule* m_molecule;
-  InsertPeptideDialog* m_dialog;
+  std::unique_ptr<InsertPeptideDialog> m_dialog;
   QString m_directory; // directory to amino acid fragments
 };
 
