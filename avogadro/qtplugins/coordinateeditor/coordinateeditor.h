@@ -43,7 +43,7 @@ private slots:
   void pastedMolecule();
 
 private:
-  CoordinateEditorDialog* m_dialog;
+  std::unique_ptr<CoordinateEditorDialog> m_dialog;
   QtGui::Molecule* m_molecule;
   QAction* m_action;
 };
