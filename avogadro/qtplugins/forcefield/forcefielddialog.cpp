@@ -70,10 +70,7 @@ ForceFieldDialog::ForceFieldDialog(const QStringList& forceFields,
   updateOptionsButton();
 }
 
-ForceFieldDialog::~ForceFieldDialog()
-{
-  delete ui;
-}
+ForceFieldDialog::~ForceFieldDialog() = default;
 
 QVariantMap ForceFieldDialog::prompt(QWidget* parent_,
                                      const QStringList& forceFields,
