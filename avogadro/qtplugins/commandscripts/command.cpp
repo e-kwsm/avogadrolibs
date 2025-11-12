@@ -385,7 +385,7 @@ void Command::run()
     // determinate bar, and the dialog then estimates the time remaining from
     // the steps it has seen. See InterfaceScript for the script-side protocol.
     QString title = tr("Processing %1").arg(iface.displayName());
-    m_progress = new TimedProgressDialog(title, tr("Cancel"), 0, 0,
+    m_progress = std::make_unique<TimedProgressDialog>(title, tr("Cancel"), 0, 0,
                                          qobject_cast<QWidget*>(parent()));
     m_progress->setMinimumDuration(1000); // 1 second
     // Don't let a script that reports its final step and then keeps working
