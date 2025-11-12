@@ -82,7 +82,8 @@ void InsertPeptide::showDialog()
     return;
 
   if (m_dialog == nullptr) {
-    m_dialog = new InsertPeptideDialog(qobject_cast<QWidget*>(parent()));
+    m_dialog =
+      std::make_unique<InsertPeptideDialog>(qobject_cast<QWidget*>(parent()));
 
     connect(m_dialog->insertButton, SIGNAL(clicked()), this,
             SLOT(performInsert()));
