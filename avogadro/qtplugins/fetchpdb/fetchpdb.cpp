@@ -102,7 +102,8 @@ void FetchPDB::showDialog()
     QUrl("https://files.rcsb.org/download/" + pdbCode + ".pdb")));
 
   if (!m_progressDialog) {
-    m_progressDialog = new QProgressDialog(qobject_cast<QWidget*>(parent()));
+    m_progressDialog =
+      std::make_unique<QProgressDialog>(qobject_cast<QWidget*>(parent()));
   }
 
   m_moleculeName = pdbCode;
