@@ -42,7 +42,7 @@ public:
 private:
   AVO_DISABLE_COPY(ImportCrystalDialog)
 
-  Ui::ImportCrystalDialog* m_ui;
+  std::unique_ptr<Ui::ImportCrystalDialog> m_ui;
 };
 
 } // namespace QtPlugins
