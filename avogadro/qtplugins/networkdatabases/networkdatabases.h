@@ -57,7 +57,7 @@ private:
   QNetworkAccessManager* m_network;
   QString m_moleculeName;
   QByteArray m_moleculeData;
-  QProgressDialog* m_progressDialog;
+  std::unique_ptr<QProgressDialog> m_progressDialog;
 };
 } // namespace QtPlugins
 } // namespace Avogadro
