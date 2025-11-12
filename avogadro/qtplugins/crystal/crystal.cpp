@@ -215,7 +215,8 @@ bool Crystal::handleCommand(const QString& command, const QVariantMap& options)
 void Crystal::editUnitCell()
 {
   if (!m_unitCellDialog) {
-    m_unitCellDialog = new UnitCellDialog(qobject_cast<QWidget*>(parent()));
+    m_unitCellDialog =
+      std::make_unique<UnitCellDialog>(qobject_cast<QWidget*>(parent()));
     m_unitCellDialog->setMolecule(m_molecule);
   }
 
