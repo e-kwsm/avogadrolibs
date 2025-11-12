@@ -47,7 +47,7 @@ public:
   bool loadCubeFile() const;
 
 private:
-  Ui::ApbsOutputDialog* m_ui;
+  std::unique_ptr<Ui::ApbsOutputDialog> m_ui;
 };
 } // namespace Avogadro::QtPlugins
 
