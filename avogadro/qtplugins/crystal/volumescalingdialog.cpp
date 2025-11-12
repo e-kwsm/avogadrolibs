@@ -18,10 +18,7 @@ VolumeScalingDialog::VolumeScalingDialog(QWidget* p)
           &VolumeScalingDialog::factorEdited);
 }
 
-VolumeScalingDialog::~VolumeScalingDialog()
-{
-  delete m_ui;
-}
+VolumeScalingDialog::~VolumeScalingDialog() = default;
 
 void VolumeScalingDialog::setCurrentVolume(double vol)
 {
