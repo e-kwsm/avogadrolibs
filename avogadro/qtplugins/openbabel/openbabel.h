@@ -107,7 +107,7 @@ private:
   QMultiMap<QString, QString> m_forceFields;
   QMultiMap<QString, QString> m_charges;
   std::string m_defaultFormat;
-  QProgressDialog* m_progress;
+  std::unique_ptr<QProgressDialog> m_progress;
 
   std::unique_ptr<ConformerSearchDialog> m_conformerSearchDialog;
 };
