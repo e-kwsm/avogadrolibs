@@ -38,7 +38,7 @@ Residue::Residue(const Residue& other)
 {
 }
 
-Residue& Residue::operator=(const Residue& other)
+Residue& Residue::operator=(Residue other)
 {
   m_residueName = other.m_residueName;
   m_residueId = other.m_residueId;
@@ -65,7 +65,7 @@ std::vector<Atom> Residue::residueAtoms() const
   return res;
 }
 
-Atom Residue::atomByName(const std::string& name) const
+Atom Residue::atomByName(std::string name) const
 {
   Atom empty;
   auto search = m_atomNameMap.find(name);
@@ -120,7 +120,7 @@ void Residue::resolveResidueBonds(Molecule& mol)
   }
 }
 
-int Residue::atomicNumber(const std::string& name) const
+int Residue::atomicNumber(std::string name) const
 {
   auto search = m_atomNameMap.find(name);
   if (search != m_atomNameMap.end()) {
@@ -130,7 +130,7 @@ int Residue::atomicNumber(const std::string& name) const
   return 0;
 }
 
-void Residue::setColor(const Vector3ub& color)
+void Residue::setColor(const Vector3ub color)
 {
   m_customColorSet = true;
   m_color = color;
