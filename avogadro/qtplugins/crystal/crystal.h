@@ -52,7 +52,7 @@ private slots:
 private:
   QList<QAction*> m_actions;
   QtGui::Molecule* m_molecule;
-  UnitCellDialog* m_unitCellDialog;
+  std::unique_ptr<UnitCellDialog> m_unitCellDialog;
 
   QAction* m_importCrystalClipboardAction;
   QAction* m_editUnitCellAction;
