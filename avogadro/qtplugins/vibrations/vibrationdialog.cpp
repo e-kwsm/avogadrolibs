@@ -46,10 +46,7 @@ VibrationDialog::VibrationDialog(QWidget* parent_, Qt::WindowFlags f)
           &VibrationDialog::changeAnimation);
 }
 
-VibrationDialog::~VibrationDialog()
-{
-  delete m_ui;
-}
+VibrationDialog::~VibrationDialog() = default;
 
 void VibrationDialog::changeAnimation()
 {

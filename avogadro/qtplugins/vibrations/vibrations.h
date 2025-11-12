@@ -129,7 +129,7 @@ private:
 
   QtGui::Molecule* m_molecule;
 
-  VibrationDialog* m_dialog;
+  std::unique_ptr<VibrationDialog> m_dialog;
 
   QTimer* m_timer;
 

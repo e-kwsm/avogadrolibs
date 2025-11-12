@@ -500,23 +500,24 @@ void Vibrations::stopVibrationAnimation()
 void Vibrations::openDialog()
 {
   if (!m_dialog) {
-    m_dialog = new VibrationDialog(qobject_cast<QWidget*>(parent()));
-    connect(m_dialog, &VibrationDialog::modeChanged, this,
+    m_dialog =
+      std::make_unique<VibrationDialog>(qobject_cast<QWidget*>(parent()));
+    connect(m_dialog.get(), &VibrationDialog::modeChanged, this,
             &Vibrations::setMode);
-    connect(m_dialog, &VibrationDialog::amplitudeChanged, this,
+    connect(m_dialog.get(), &VibrationDialog::amplitudeChanged, this,
             &Vibrations::setAmplitude);
-    connect(m_dialog, &VibrationDialog::framesPerCycleChanged, this,
+    connect(m_dialog.get(), &VibrationDialog::framesPerCycleChanged, this,
             &Vibrations::setFramesPerCycle);
-    connect(m_dialog, &VibrationDialog::goToFrame, this,
+    connect(m_dialog.get(), &VibrationDialog::goToFrame, this,
             &Vibrations::goToFrame);
-    connect(m_dialog, &VibrationDialog::startAnimation, this,
+    connect(m_dialog.get(), &VibrationDialog::startAnimation, this,
             &Vibrations::startVibrationAnimation);
-    connect(m_dialog, &VibrationDialog::stopAnimation, this,
+    connect(m_dialog.get(), &VibrationDialog::stopAnimation, this,
             &Vibrations::stopVibrationAnimation);
     // Checked at compile time: the old-style macro form cannot verify a
     // signature carrying a template argument.
-    connect(m_dialog, &VibrationDialog::generateDisplacedCoordinates, this,
-            &Vibrations::generateDisplacedCoordinates);
+    connect(m_dialog.get(), &VibrationDialog::generateDisplacedCoordinates,
+            this, &Vibrations::generateDisplacedCoordinates);
   }
   // Show first: reloadDialog() skips a hidden dialog.
   m_dialog->show();
