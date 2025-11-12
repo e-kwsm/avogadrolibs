@@ -42,9 +42,10 @@ void CoordinateEditor::setMolecule(QtGui::Molecule* mol)
 void CoordinateEditor::triggered()
 {
   if (!m_dialog) {
-    m_dialog = new CoordinateEditorDialog(qobject_cast<QWidget*>(parent()));
+    m_dialog = std::make_unique<CoordinateEditorDialog>(
+      qobject_cast<QWidget*>(parent()));
     m_dialog->setMolecule(m_molecule);
-    connect(m_dialog, SIGNAL(pastedMolecule()), SLOT(pastedMolecule()));
+    connect(m_dialog.get(), SIGNAL(pastedMolecule()), SLOT(pastedMolecule()));
   }
 
   m_dialog->show();
