@@ -57,6 +57,8 @@ Bonding::Bonding(QObject* parent_)
   registerBondingCommands();
 }
 
+Bonding::~Bonding() = default;
+
 QList<QAction*> Bonding::actions() const
 {
   QList<QAction*> result;
@@ -116,7 +118,7 @@ void Bonding::configure()
 {
   if (!m_ui) {
     m_dialog = std::make_unique<QDialog>(qobject_cast<QWidget*>(parent()));
-    m_ui = new Ui::BondingDialog;
+    m_ui = std::make_unique<Ui::BondingDialog>();
     m_ui->setupUi(m_dialog.get());
 
     m_ui->toleranceSpinBox->setValue(m_tolerance);
