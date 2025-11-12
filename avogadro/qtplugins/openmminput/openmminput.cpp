@@ -74,7 +74,8 @@ bool OpenMMInput::readMolecule(QtGui::Molecule& mol)
 void OpenMMInput::menuActivated()
 {
   if (!m_dialog) {
-    m_dialog = new OpenMMInputDialog(qobject_cast<QWidget*>(parent()));
+    m_dialog =
+      std::make_unique<OpenMMInputDialog>(qobject_cast<QWidget*>(parent()));
   }
   m_dialog->setMolecule(m_molecule);
   m_dialog->show();
