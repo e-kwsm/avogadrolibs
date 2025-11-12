@@ -94,7 +94,7 @@ private:
   QPointer<QtGui::Molecule> m_runningMolecule;
   // keyed on script file path or package feature key
   QMap<QString, QtGui::InterfaceWidget*> m_dialogs;
-  QDialog* m_currentDialog;
+  std::unique_ptr<QDialog> m_currentDialog;
   QtGui::InterfaceWidget* m_currentInterface;
   QtGui::InterfaceScript* m_currentScript;
   QProgressDialog* m_progress;
