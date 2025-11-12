@@ -75,7 +75,7 @@ private:
   void updateRecommendedForceField();
   void updateOptionsButton();
 
-  Ui::ForceFieldDialog* ui;
+  std::unique_ptr<Ui::ForceFieldDialog> ui;
   QString m_recommendedForceField;
   QVariantMap m_modelUserOptionSchemas;
   QVariantMap m_modelUserOptions;
