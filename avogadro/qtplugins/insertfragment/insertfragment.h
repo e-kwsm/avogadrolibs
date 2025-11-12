@@ -46,8 +46,8 @@ private slots:
 
 private:
   QList<QAction*> m_actions;
-  QtGui::InsertFragmentDialog* m_moleculeDialog;
-  QtGui::InsertFragmentDialog* m_crystalDialog;
+  std::unique_ptr<QtGui::InsertFragmentDialog> m_moleculeDialog;
+  std::unique_ptr<QtGui::InsertFragmentDialog> m_crystalDialog;
   /// Maps identifier to extension:
   QMap<QString, std::string> m_formats;
 
