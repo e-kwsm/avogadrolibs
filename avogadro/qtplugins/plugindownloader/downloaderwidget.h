@@ -93,7 +93,7 @@ private:
   QNetworkAccessManager* m_NetworkAccessManager = nullptr;
   QNetworkReply* m_reply = nullptr;
   QProcess* m_installerProcess = nullptr;
-  QProgressDialog* m_progressDialog = nullptr;
+  std::unique_ptr<QProgressDialog> m_progressDialog = nullptr;
 
   /** Holds a node of JSON results */
   nlohmann::json m_root;
