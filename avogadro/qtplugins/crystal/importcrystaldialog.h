@@ -43,7 +43,7 @@ public:
   void displayInvalidFormatMessage();
 
 private:
-  Ui::ImportCrystalDialog* m_ui;
+  std::unique_ptr<Ui::ImportCrystalDialog> m_ui;
 };
 
 } // namespace QtPlugins
