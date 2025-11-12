@@ -72,7 +72,7 @@ private:
   QNetworkAccessManager* m_network;
   QString m_moleculeName;
   QByteArray m_moleculeData;
-  QProgressDialog* m_progressDialog;
+  std::unique_ptr<QProgressDialog> m_progressDialog;
   bool m_triedPubChem = false;
   /// True while a fetchByName command is waiting on a download, so that
   /// replyFinished() reports through commandFinished()/commandFailed()
