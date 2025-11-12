@@ -46,7 +46,7 @@ signals:
   void stopAnimation();
 
 private:
-  Ui::VibrationDialog* m_ui;
+  std::unique_ptr<Ui::VibrationDialog> m_ui;
 };
 
 } // End namespace QtPlugins
