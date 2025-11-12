@@ -8,6 +8,8 @@
 
 #include <QDialog>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -94,7 +96,7 @@ private slots:
 private:
   void updateRecommendedForceField();
 
-  Ui::OBForceFieldDialog* ui;
+  std::unique_ptr<Ui::OBForceFieldDialog> ui;
   QString m_recommendedForceField;
 };
 
