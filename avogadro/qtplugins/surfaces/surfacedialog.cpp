@@ -56,10 +56,7 @@ SurfaceDialog::SurfaceDialog(QWidget* parent_, Qt::WindowFlags f)
   surfaceComboChanged(m_ui->surfaceCombo->currentIndex());
 }
 
-SurfaceDialog::~SurfaceDialog()
-{
-  delete m_ui;
-}
+SurfaceDialog::~SurfaceDialog() = default;
 
 void SurfaceDialog::surfaceComboChanged(int n)
 {
