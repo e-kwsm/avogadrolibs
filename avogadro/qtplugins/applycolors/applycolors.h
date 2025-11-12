@@ -54,7 +54,7 @@ private slots:
 private:
   QList<QAction*> m_actions;
   QtGui::Molecule* m_molecule;
-  QColorDialog* m_dialog;
+  std::unique_ptr<QColorDialog> m_dialog;
 
   tinycolormap::ColormapType getColormapFromString(const QString& name) const;
 };
