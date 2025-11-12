@@ -33,10 +33,7 @@ ForceFieldDialog::ForceFieldDialog(const QStringList& forceFields,
   ui->useRecommended->setChecked(autoDetect);
 }
 
-ForceFieldDialog::~ForceFieldDialog()
-{
-  delete ui;
-}
+ForceFieldDialog::~ForceFieldDialog() = default;
 
 QVariantMap ForceFieldDialog::prompt(QWidget* parent_,
                                      const QStringList& forceFields,
