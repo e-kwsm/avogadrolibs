@@ -81,7 +81,7 @@ private:
   std::unique_ptr<QDialog> m_currentDialog;
   QtGui::InterfaceWidget* m_currentInterface;
   QtGui::InterfaceScript* m_currentScript;
-  QProgressDialog* m_progress;
+  std::unique_ptr<QProgressDialog> m_progress;
 
   // maps program name --> script file path
   QMultiMap<QString, QString> m_commandScripts;

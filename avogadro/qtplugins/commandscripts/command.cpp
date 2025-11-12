@@ -227,8 +227,8 @@ void Command::run()
 
     // no cancel button - just an indication we're waiting...
     QString title = tr("Processing %1").arg(m_currentScript->displayName());
-    m_progress = new QProgressDialog(title, QString(), 0, 0,
-                                     qobject_cast<QWidget*>(parent()));
+    m_progress = std::make_unique<QProgressDialog>(
+      title, QString(), 0, 0, qobject_cast<QWidget*>(parent()));
     m_progress->setMinimumDuration(1000); // 1 second
 
     m_currentScript->runCommand(options, m_molecule);
