@@ -462,7 +462,7 @@ bool OBProcess::generateConformers(const QByteArray& mol,
 
   // Initialize the log reader ivars
   m_optimizeGeometryLog.clear();
-  m_maxConformers = -1;
+  m_maxConformers = UINT_MAX;
 
   // Start the optimization
   executeObabel(realOptions, this, SLOT(conformerPrepare()), mol);
