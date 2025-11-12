@@ -29,10 +29,7 @@ VibrationDialog::VibrationDialog(QWidget* parent_, Qt::WindowFlags f)
   connect(m_ui->stopButton, SIGNAL(clicked(bool)), SIGNAL(stopAnimation()));
 }
 
-VibrationDialog::~VibrationDialog()
-{
-  delete m_ui;
-}
+VibrationDialog::~VibrationDialog() = default;
 
 void VibrationDialog::setMolecule(QtGui::Molecule* molecule)
 {
