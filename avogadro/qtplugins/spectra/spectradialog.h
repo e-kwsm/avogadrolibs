@@ -90,7 +90,7 @@ private:
   std::vector<double> m_importedIntensities;
 
   QString m_currentSpectraType;
-  Ui::SpectraDialog* m_ui;
+  std::unique_ptr<Ui::SpectraDialog> m_ui;
 };
 
 } // namespace QtPlugins
