@@ -9557,10 +9557,6 @@ msgstr ""
 #~ msgstr "Artxibo-Izena:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Kargatu fitxategia"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Nabigatu"
 
@@ -9589,9 +9585,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Kristal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9851,9 +9844,6 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Trajektoria Fitxategia ireki"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Gehitzen .avi estentzioa"
 
@@ -10053,9 +10043,6 @@ msgstr ""
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Gelaxka Murriztu (&Jatorrizkoa)"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanometro"
 
@@ -10248,9 +10235,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Ohiko bektore irudi formatuak"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Bektore grafikoen exportaketa"
 
@@ -10309,9 +10293,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "Deskargatzeko PDB sarbidea"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "Deskargatzeko molekularen URL-a"
 
@@ -10369,9 +10350,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Orca-ren inputa analizatu..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Orca Test Adibidea"
 
@@ -10400,9 +10378,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Argazki-artxiboak (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Ez da hornitu artxibo izen onargarririk."
@@ -10447,9 +10422,6 @@ msgstr ""
 
 #~ msgid "Python Terminal"
 #~ msgstr "Python Terminala"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
 
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Python idazteko terminal interaktiboa"
@@ -10525,21 +10497,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Formatu Bihurriketa Eskuraezina!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
@@ -10628,30 +10585,6 @@ msgstr ""
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "Gaussian ez da ondo ibili. Agian ez da ongi instalatu."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Lammps Input Atalal Generadorearen Ohartarazpena"
@@ -10854,10 +10787,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Espektru Infragorriaren Ezarpenak"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR Espektruaren Ezarpenak"
 
@@ -10914,9 +10843,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Komaz Bereizitako Baloreak"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Espektru Inportazioa"
 
@@ -10956,9 +10882,6 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Sareko Grafiko Eramangarriak"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Etiketaturiko Argazkien Artxiboen Formatua"
 
@@ -10991,9 +10914,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Ikusi datu espektralak mekanika kimikoko kalkulutetatik"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Bibrazio-Analisi"
@@ -11030,10 +10950,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Ezer ez"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Elektroien Dentsitatea"
@@ -11048,9 +10964,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Kalkulatzen %1 Orbital Molekularra"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr ""
@@ -11127,9 +11040,6 @@ msgstr ""
 
 #~ msgid "Save VRML rendered files"
 #~ msgstr "Gorde VRML errenderizaturiko fitxategiak"
-
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
 
 #~ msgid "Connect"
 #~ msgstr "Konektatu"
@@ -11244,10 +11154,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "%1 Molekula"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Python Engine Ezezaguna"
 
@@ -11295,9 +11201,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt.: ezin izan da indar-eremua konfiguratu..."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Mugen Kopurua: %1"
@@ -11385,22 +11288,6 @@ msgstr ""
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Angelu Diedroa: %1º"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Distantzia(k):"
@@ -11523,15 +11410,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Errepikatu"
 
@@ -11553,12 +11431,6 @@ msgstr ""
 #~ msgid "Rendering Engine:"
 #~ msgstr "Errenderizazio Motorra:"
 
-#~ msgid "TextRenderer"
-#~ msgstr "TextRenderer"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Testua:"
 
@@ -11579,15 +11451,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Aldatu Letra-Tipoa"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Marka Aldatu:"
@@ -11642,9 +11505,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Ibilbidea Animatu"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -11777,15 +11637,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Translazio bektorea:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "&Bektore unitateak:"
 
@@ -11816,18 +11667,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "Ikuspegi lehenetsia"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Miller Indizeak"
 
@@ -11840,29 +11679,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Indar-Eremua Konfiguratu"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Urrats Kopurua"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmoa"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Alfa Helizea"
@@ -11875,15 +11696,6 @@ msgstr ""
 
 #~ msgid "Phi:"
 #~ msgstr "Fi:"
-
-#~ msgid "Psi:"
-#~ msgstr "Psi:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Hondakin Kopurua:"
@@ -11906,18 +11718,6 @@ msgstr ""
 #~ msgid "Frequency"
 #~ msgstr "Maiztasuna"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Format"
 #~ msgstr "Formatua"
 
@@ -11933,12 +11733,6 @@ msgstr ""
 #~ msgid "Basis Set"
 #~ msgstr "Oinarri multzo"
 
-#~ msgid "SCF"
-#~ msgstr "SCF"
-
-#~ msgid "RijCosX"
-#~ msgstr "RijCosX"
-
 #~ msgid "Aux. Basis Set"
 #~ msgstr "Oinarri multzo Aux."
 
@@ -11947,15 +11741,6 @@ msgstr ""
 
 #~ msgid "Relativistic"
 #~ msgstr "Errelatibista"
-
-#~ msgid "ZORA"
-#~ msgstr "ZORA"
-
-#~ msgid "IORA"
-#~ msgstr "IORA"
-
-#~ msgid "DKH"
-#~ msgstr "DKH"
 
 #~ msgid "Order"
 #~ msgstr "Ordena"
@@ -11991,20 +11776,8 @@ msgstr ""
 #~ msgid "Accuracy"
 #~ msgstr "Zehaztasuna"
 
-#~ msgid "KDIIS"
-#~ msgstr "KDIIS"
-
 #~ msgid "2nd Order"
 #~ msgstr "2. Ordena"
-
-#~ msgid "SOSCF"
-#~ msgstr "SOSCF"
-
-#~ msgid "NRSCF"
-#~ msgstr "NRSCF"
-
-#~ msgid "AHSCF"
-#~ msgstr "AHSCF"
 
 #~ msgid "max. SCF iterations"
 #~ msgstr "SCF iterazio kopuru maximoa"
@@ -12029,9 +11802,6 @@ msgstr ""
 
 #~ msgid "Select..."
 #~ msgstr "Hautatu..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Erabili eszena osoko antialiasing-a"
@@ -12060,9 +11830,6 @@ msgstr ""
 #~ msgid "Abinit Input"
 #~ msgstr "Abinit-en input-a"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "Kartesiar (Angstrom)"
 
@@ -12072,26 +11839,14 @@ msgstr ""
 #~ msgid "Plane Wave cutoff (Ha):"
 #~ msgstr "Uhin Lauen mozketa erizpidea (Ha):"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
-#~ msgid "1.05"
-#~ msgstr "1.05"
-
 #~ msgid "k-point shift:"
 #~ msgstr "k-puntuen desplazamendua:"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
 
 #~ msgid "Number of bands:"
 #~ msgstr "Banda kopurua:"
 
 #~ msgid "# k-point shifts:"
 #~ msgstr "#k-puntuen desplazamenduak:"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Occupation scheme:"
 #~ msgstr "Okupazio eskema:"
@@ -12111,23 +11866,11 @@ msgstr ""
 #~ msgid "1 - semiconducting"
 #~ msgstr "1 - Erdieroalea"
 
-#~ msgid "3 - Fermi Dirac"
-#~ msgstr "3 - Fermi Dirac"
-
-#~ msgid "0.01"
-#~ msgstr "0.01"
-
 #~ msgid "# Geometrical time steps:"
 #~ msgstr "# Geometriazko denbora pausoak:"
 
-#~ msgid "1.e-10"
-#~ msgstr "1.e-10"
-
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "Energia Zinetikoaren leunketa (Ha):"
-
-#~ msgid "0.5"
-#~ msgstr "0.5"
 
 #~ msgid "Compute..."
 #~ msgstr "Konputatzen..."
@@ -12145,32 +11888,8 @@ msgstr ""
 #~ "Gehitzen du idatzitakoa input artxiboaren izenburu lerroa zeure\n"
 #~ "asmo berriemailetzat."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
 #~ msgid "Basis Set:"
 #~ msgstr "Oinarriak ezarri:"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
 
 #~ msgid "Pople-style"
 #~ msgstr "Pople-estiloa"
@@ -12181,167 +11900,11 @@ msgstr ""
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Dunning-en korrelazio kontsekuentea"
 
-#~ msgid "aug-cc-pVDZ"
-#~ msgstr "aug-cc-pVDZ"
-
-#~ msgid "aug-cc-pVTZ"
-#~ msgstr "aug-cc-pVTZ"
-
-#~ msgid "aug-cc-pVQZ"
-#~ msgstr "aug-cc-pVQZ"
-
-#~ msgid "aug-cc-pV5Z"
-#~ msgstr "aug-cc-pV5Z"
-
-#~ msgid "aug-cc-pV6Z"
-#~ msgstr "aug-cc-pV6Z"
-
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ"
-
-#~ msgid "cc-pCVTZ"
-#~ msgstr "cc-pCVTZ"
-
-#~ msgid "cc-pCVQZ"
-#~ msgstr "cc-pCVQZ"
-
-#~ msgid "cc-pCV5Z"
-#~ msgstr "cc-pCV5Z"
-
-#~ msgid "cc-pwCVDZ"
-#~ msgstr "cc-pwCVDZ"
-
-#~ msgid "cc-pwCVTZ"
-#~ msgstr "cc-pwCVTZ"
-
-#~ msgid "cc-pwCVQZ"
-#~ msgstr "cc-pwCVQZ"
-
-#~ msgid "cc-pwCV5Z"
-#~ msgstr "cc-pwCV5Z"
-
 #~ msgid "Core correlating functions"
 #~ msgstr "Nukleoaren funtzio korrelatzaileak"
 
 #~ msgid "Diffuse functions"
 #~ msgstr "Hedatzeko funtzioak"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "3-21++G"
-#~ msgstr "3-21++G"
-
-#~ msgid "6-31+G"
-#~ msgstr "6-31+G"
-
-#~ msgid "6-31++G"
-#~ msgstr "6-31++G"
-
-#~ msgid "3-21G*"
-#~ msgstr "3-21G*"
-
-#~ msgid "6-31G*"
-#~ msgstr "6-31G*"
-
-#~ msgid "6-31G**"
-#~ msgstr "6-31G**"
-
-#~ msgid "6-31G(3df,3pd)"
-#~ msgstr "6-31G(3df,3pd)"
-
-#~ msgid "6-311G*"
-#~ msgstr "6-311G*"
-
-#~ msgid "6-311G**"
-#~ msgstr "6-311G**"
-
-#~ msgid "6-311G(2df,2pd)"
-#~ msgstr "6-311G(2df,2pd)"
-
-#~ msgid "3-21++G*"
-#~ msgstr "3-21++G*"
-
-#~ msgid "6-31+G*"
-#~ msgstr "6-31+G*"
-
-#~ msgid "6-31++G*"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G**"
-
-#~ msgid "6-311+G*"
-#~ msgstr "6-311+G*"
-
-#~ msgid "6-311++G**"
-#~ msgstr "6-311++G**"
-
-#~ msgid "6-311++G(2d,2p)"
-#~ msgstr "6-311++G(2d,2p)"
-
-#~ msgid "6-311++G(3df,3pd)"
-#~ msgstr "6-311++G(3df,3pd)"
-
-#~ msgid "pc-0"
-#~ msgstr "pc-0"
-
-#~ msgid "pc-1"
-#~ msgstr "pc-1"
-
-#~ msgid "pc-2"
-#~ msgstr "pc-2"
-
-#~ msgid "pc-3"
-#~ msgstr "pc-3"
-
-#~ msgid "pc-4"
-#~ msgstr "pc-4"
-
-#~ msgid "apc-0"
-#~ msgstr "apc-0"
-
-#~ msgid "apc-1"
-#~ msgstr "apc-1"
-
-#~ msgid "apc-2"
-#~ msgstr "apc-2"
-
-#~ msgid "apc-3"
-#~ msgstr "apc-3"
-
-#~ msgid "apc-4"
-#~ msgstr "apc-4"
-
-#~ msgid "aug-cc-pCVDZ"
-#~ msgstr "aug-cc-pCVDZ"
-
-#~ msgid "aug-cc-pCVTZ"
-#~ msgstr "aug-cc-pCVTZ"
-
-#~ msgid "aug-cc-pCVQZ"
-#~ msgstr "aug-cc-pCVQZ"
-
-#~ msgid "aug-cc-pCV5Z"
-#~ msgstr "aug-cc-pCV5Z"
 
 #~ msgid "Direct"
 #~ msgstr "Zuzen"
@@ -12362,227 +11925,14 @@ msgstr ""
 #~ msgid "Parallel"
 #~ msgstr "Paraleloa"
 
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
-
 #~ msgid "Grid Specification"
 #~ msgstr "Sarearen espezifikazioa:"
 
 #~ msgid "Partitioning Scheme:"
 #~ msgstr "Eskema partizionala:"
 
-#~ msgid "Becke"
-#~ msgstr "Becke"
-
 #~ msgid "Becke (original)"
 #~ msgstr "Becke (originala)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "Sarearen Kalitatea"
@@ -12602,12 +11952,6 @@ msgstr ""
 #~ msgid "Radial Scheme:"
 #~ msgstr "Eskema Erradiala:"
 
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
-
 #~ msgid "Show all functionals"
 #~ msgstr "Erakutsi funtzional guztiak"
 
@@ -12625,33 +11969,6 @@ msgstr ""
 
 #~ msgid "Group Label:"
 #~ msgstr "Taldearen Marka:"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "&Konfigurazio Aurreratua"
@@ -12677,41 +11994,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Irakurri"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Hedatu S-Shell Atomo Pisudunetan"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Hedatu L-Shell Atomo Pisudunetan"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Balentzia Zeta Bikoitza"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "Binning/Curtiss DZ"
-#~ msgstr "Binning/Curtiss DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Balentzia Zeta Hirukoitza"
@@ -12722,26 +12012,11 @@ msgstr ""
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Hay/Wadt Balentzia"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "ECP Mota:"
 
 #~ msgid "Default"
 #~ msgstr "Lehenetsia"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Atomo Pisudunaren Polarizazio Funtzioak:"
@@ -12758,23 +12033,11 @@ msgstr ""
 #~ msgid "Gradient"
 #~ msgstr "Gradientea"
 
-#~ msgid "Trudge"
-#~ msgstr "Trudge"
-
 #~ msgid "Saddle Point"
 #~ msgstr "Zela-Puntua"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Kanpo-Gradientea"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "Higidura-Kantitatearen Trantsizio Erradioaktiboa."
@@ -12785,14 +12048,8 @@ msgstr ""
 #~ msgid "Finite Electric Field"
 #~ msgstr "Zelai Elektriko Finitoa"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Optimizazio Orokorra"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO Optimizazioa"
@@ -12812,12 +12069,6 @@ msgstr ""
 #~ msgid "Exec Type:"
 #~ msgstr "Exek. Mota:"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Ames Lab. Determinantea"
 
@@ -12833,9 +12084,6 @@ msgstr ""
 #~ msgid "General CI"
 #~ msgstr "CI Orokorra"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: CC Lerrorizatua"
 
@@ -12844,18 +12092,6 @@ msgstr ""
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC Bakar eta Bikoitzekin"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Ibili Normalki"
@@ -12881,56 +12117,11 @@ msgstr ""
 #~ msgid "# of Z-Matrix Variables"
 #~ msgstr "# Z-Matrize Bariableetik"
 
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
-
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Ardatz Printzipalen Ordena:"
 
 #~ msgid "Coordinate Type:"
 #~ msgstr "Koordenatu Mota:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Koordenatu kartesiar esklusiboa"
@@ -12983,18 +12174,6 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "\"Nukleo\"-artxiboa eratu abortatzerakoan"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Memoria:"
 
@@ -13018,12 +12197,6 @@ msgstr ""
 #~ msgid "Initial Guess:"
 #~ msgstr "Hasierako Susmoa:"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "OM Irakurrita ($VEC)"
 
@@ -13042,32 +12215,11 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "GAMESS Interfazea Beste Kodeentzat"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Bortxatu Egiaztatzeko Ibilera Mota Bat"
 
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (Erresuma Batuko Bertsioa)"
-
-#~ msgid "Gaussian 9x"
-#~ msgstr "Gaussian 9x"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Disolbatu Uretan"
@@ -13219,17 +12371,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Hasierakoa:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Funtzio Arrazionalaren Optimizazioa"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Hurbilketa Kuadratikoa"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "Optimizazio Mugatua"
@@ -13252,35 +12398,14 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "Oinarrizkoak:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Z-Matrizea"
 
 #~ msgid "Gaussian Input"
 #~ msgstr "Gaussian Sarrera"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Estandar"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Jarraipen Puntua:"
@@ -13291,26 +12416,8 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO Sarrera"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Molpro Bersioa:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "MOPAC Input"
 #~ msgstr "MOPAC Sarrera"
@@ -13321,62 +12428,17 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Boskote"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "NWChem-entzako Input-a"
-
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem-entzako Input-a"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "TeraChem Input"
 #~ msgstr "TeraChem-entzako Input-a"
 
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Mugagabea"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "ez"
@@ -13423,26 +12485,14 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Eskemak:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Zabalera:"
 
 #~ msgid "&Height"
 #~ msgstr "&Altuera"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "hazb"
-
-#~ msgid "px"
-#~ msgstr "px"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -13506,9 +12556,6 @@ msgstr ""
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Laser Uhin-Zenbakia:"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
 #~ msgid "Nucleus:"
 #~ msgstr "Nukleoa:"
 
@@ -13521,23 +12568,11 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Gailur-Markak:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Bibrazio Molekularrak"
 
 #~ msgid "Filter: "
 #~ msgstr "Iragazkia: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Jarduera (A^4/mau)"
@@ -13606,12 +12641,6 @@ msgstr ""
 #~ msgid "Advanced..."
 #~ msgstr "Aurreratua..."
 
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
-
 #~ msgid "&Length:"
 #~ msgstr "&Luzeera"
 
@@ -13620,9 +12649,6 @@ msgstr ""
 
 #~ msgid "periodic units"
 #~ msgstr "unitate periodikoak"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "bohr radii"
 #~ msgstr "bohr eradioak"

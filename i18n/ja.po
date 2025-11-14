@@ -9725,9 +9725,6 @@ msgstr ""
 #~ msgid "Number of Bonds:"
 #~ msgstr "結合数:"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
 #, fuzzy
 #~| msgid "Line width:"
 #~ msgid "Line Size:"
@@ -9761,14 +9758,6 @@ msgstr ""
 #~ msgid "Connection failed"
 #~ msgstr "接続に失敗しました"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "クライアントサーバ"
 
@@ -9780,9 +9769,6 @@ msgstr ""
 
 #~ msgid "Formula"
 #~ msgstr "化学式"
-
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
 
 #~ msgid "YAeHMOP Band Structure"
 #~ msgstr "YAeHMOPバンド構造"
@@ -9802,23 +9788,11 @@ msgstr ""
 #~ msgid "File name:"
 #~ msgstr "ファイル名:"
 
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
-
 #~ msgid "Config"
 #~ msgstr "設定"
 
 #~ msgid "Upload"
 #~ msgstr "アップロード"
-
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
-#~ msgid "Singularity"
-#~ msgstr "Singularity"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid "All files (*);;"
 #~ msgstr "すべてのファイル (*);;"
@@ -9845,9 +9819,6 @@ msgstr ""
 #~ msgid "Crystal..."
 #~ msgstr "結晶..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "pHを指定して水素を付加..."
@@ -9866,13 +9837,6 @@ msgstr ""
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "サーフェスを作成..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "対称性"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "フラグメントを挿入..."
@@ -10103,9 +10067,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "トラジェクトリファイルを開く"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "拡張子 .avi を追加"
@@ -10511,9 +10472,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "一般的なベクタ画像フォーマット"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "ベクタ画像のエクスポート"
 
@@ -10571,9 +10529,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "ダウンロードするPDBエントリ"
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "ダウンロードする分子のURL"
@@ -10644,9 +10599,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Orcaアウトプットを解析..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "ORCA Input Deck"
 #~ msgstr "ORCAインプット"
 
@@ -10686,9 +10638,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "イメージファイル (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "有効なファイル名が入力されていません"
@@ -10809,21 +10758,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES記法変換は利用できません"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "GAMESSのインプットファイルを作る"
 
@@ -10911,30 +10845,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussianは適切に実行しませんでした。おそらく、適切にインストールされていま"
 #~ "せん。"
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "Dalton(&D)..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "Gaussian(&G)..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "MOLPRO(&M)..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "NSChem(&N)..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "Q-Chem*&Q)..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "LAMMPSインプットジェネレータからの警告"
@@ -11139,16 +11049,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "赤外線スペクトルの設定(&I)"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "NMRスペクトルの設定(&N)"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
 
 #~ msgctxt "Ultra-Violet spectrum"
 #~ msgid "UV"
@@ -11202,9 +11104,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "カンマ区切りフォーマット (CSV)"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "スペクトルのインポート"
 
@@ -11240,23 +11139,8 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Turbomole CDファイルのフォーマットが不正です: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "PNG 画像:"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "Tagged Image File Format(TIFF)"
-
 #~ msgid "Windows Bitmap"
 #~ msgstr "ウィンドウズビットマップ"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap (PPM)"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap (XBM)"
 
 #~ msgid "X11 Pixmap"
 #~ msgstr "X11 Pixmap (XPM)"
@@ -11278,9 +11162,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "量子化学計算によるスペクトルデータを可視化"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "振動解析"
@@ -11429,9 +11310,6 @@ msgstr ""
 #~ msgid "Debug Information"
 #~ msgstr "デバッグ情報"
 
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
-
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "表示サイズ: %L1 x %L2"
 
@@ -11510,15 +11388,8 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "分子%1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "未知の Python Engine"
-
-#~ msgid "N/A"
-#~ msgstr "N/A"
 
 #~ msgid "PythonEngine: checking "
 #~ msgstr "PythonEngine: チェック中 "
@@ -11675,22 +11546,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "二面角: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "距離"
 
@@ -11812,15 +11667,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "形状"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "ループ"
 
@@ -11847,9 +11693,6 @@ msgstr ""
 
 #~ msgid "TextRenderer"
 #~ msgstr "テキストレンダラ"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
 
 #~ msgid "Text:"
 #~ msgstr "テキスト:"
@@ -11931,9 +11774,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "トラジェクトリをアニメーションで表示"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -12072,15 +11912,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "平行移動ベクトル"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "エネルギー単位:"
 
@@ -12114,18 +11945,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "デフォルトの表示"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "ミラー指数"
 
@@ -12138,32 +11957,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "力場をセットアップ"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "ステップ数"
 
 #~ msgid "Algorithm"
 #~ msgstr "アルゴリズム"
-
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "αヘリックス"
@@ -12179,12 +11977,6 @@ msgstr ""
 
 #~ msgid "Psi:"
 #~ msgstr "ψ:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "残基の数:"
@@ -12207,18 +11999,6 @@ msgstr ""
 #~ msgid "Frequency"
 #~ msgstr "振動解析"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Format"
 #~ msgstr "フォーマット"
 
@@ -12234,12 +12014,6 @@ msgstr ""
 #~ msgid "Basis Set"
 #~ msgstr "基底"
 
-#~ msgid "SCF"
-#~ msgstr "SCF"
-
-#~ msgid "RijCosX"
-#~ msgstr "RijCosX"
-
 #~ msgid "Aux. Basis Set"
 #~ msgstr "補助基底"
 
@@ -12248,15 +12022,6 @@ msgstr ""
 
 #~ msgid "Relativistic"
 #~ msgstr "相対論的"
-
-#~ msgid "ZORA"
-#~ msgstr "ZORA"
-
-#~ msgid "IORA"
-#~ msgstr "IORA"
-
-#~ msgid "DKH"
-#~ msgstr "DKH"
 
 #~ msgid "Order"
 #~ msgstr "オーダー"
@@ -12310,9 +12075,6 @@ msgstr ""
 #~ msgid "Extreme SCF"
 #~ msgstr "最高精度SCF"
 
-#~ msgid "KDIIS"
-#~ msgstr "KDIIS"
-
 #~ msgid "Levelshift "
 #~ msgstr "レベルシフト "
 
@@ -12321,15 +12083,6 @@ msgstr ""
 
 #~ msgid "2nd Order"
 #~ msgstr "２次計算"
-
-#~ msgid "SOSCF"
-#~ msgstr "SOSCF"
-
-#~ msgid "NRSCF"
-#~ msgstr "NRSCF"
-
-#~ msgid "AHSCF"
-#~ msgstr "AHSCF"
 
 #~ msgid "max. SCF iterations"
 #~ msgstr "SCF最大反復"
@@ -12358,9 +12111,6 @@ msgstr ""
 #~ msgid "Select..."
 #~ msgstr "選択..."
 
-#~ msgid "povray"
-#~ msgstr "povray"
-
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "全シーンにアンチエイリアス"
 
@@ -12388,9 +12138,6 @@ msgstr ""
 #~ msgid "Abinit Input"
 #~ msgstr "Abinit インプット"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "デカルト座標(オングストローム)"
 
@@ -12400,23 +12147,14 @@ msgstr ""
 #~ msgid "Plane Wave cutoff (Ha):"
 #~ msgstr "平面波基底のカットオフ(Ha)"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
 #~ msgid "Tolerance on forces(Ha/bohr):"
 #~ msgstr "力の許容値(Ha/bohr)"
 
 #~ msgid "Max lattice expansion:"
 #~ msgstr "最大格子展開:"
 
-#~ msgid "1.05"
-#~ msgstr "1.05"
-
 #~ msgid "k-point shift:"
 #~ msgstr "k点シフト"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
 
 #~ msgid "Number of bands:"
 #~ msgstr "バンド数"
@@ -12426,9 +12164,6 @@ msgstr ""
 
 #~ msgid "Double grid PW cutoff (Ha):"
 #~ msgstr "ダブルグリッド PW カットオフ (Ha):"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Occupation scheme:"
 #~ msgstr "占有方法:"
@@ -12454,17 +12189,11 @@ msgstr ""
 #~ msgid "3 - Fermi Dirac"
 #~ msgstr "3 - フェルミ・ディラック分布"
 
-#~ msgid "4 - Cold Smearing (Marzari)"
-#~ msgstr "4 - Cold Smearing (Marzari)"
-
 #~ msgid "7 - Gaussian smearing"
 #~ msgstr "Gaussianが実行中です"
 
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Smearing幅(Ha)"
-
-#~ msgid "0.01"
-#~ msgstr "0.01"
 
 #~ msgid "0 - no moving ions "
 #~ msgstr "0 - イオンを動かさない "
@@ -12481,14 +12210,8 @@ msgstr ""
 #~ msgid "# Geometrical time steps:"
 #~ msgstr "構造最適化のステップ数:"
 
-#~ msgid "1.e-10"
-#~ msgstr "1.e-10"
-
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "運動エネルギースムージング (Ha):"
-
-#~ msgid "0.5"
-#~ msgstr "0.5"
 
 #~ msgid "Compute..."
 #~ msgstr "計算..."
@@ -12504,32 +12227,8 @@ msgstr ""
 #~ "informative purposes."
 #~ msgstr "入力ファイルのタイトル行に入力した文を注釈のために追加"
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
 #~ msgid "Basis Set:"
 #~ msgstr "基底:"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
 
 #~ msgid "Pople-style"
 #~ msgstr "Pople 方式"
@@ -12540,167 +12239,11 @@ msgstr ""
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Dunning の correlation consistent"
 
-#~ msgid "aug-cc-pVDZ"
-#~ msgstr "aug-cc-pVDZ"
-
-#~ msgid "aug-cc-pVTZ"
-#~ msgstr "aug-cc-pVTZ"
-
-#~ msgid "aug-cc-pVQZ"
-#~ msgstr "aug-cc-pVQZ"
-
-#~ msgid "aug-cc-pV5Z"
-#~ msgstr "aug-cc-pV5Z"
-
-#~ msgid "aug-cc-pV6Z"
-#~ msgstr "aug-cc-pV6Z"
-
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ"
-
-#~ msgid "cc-pCVTZ"
-#~ msgstr "cc-pCVTZ"
-
-#~ msgid "cc-pCVQZ"
-#~ msgstr "cc-pCVQZ"
-
-#~ msgid "cc-pCV5Z"
-#~ msgstr "cc-pCV5Z"
-
-#~ msgid "cc-pwCVDZ"
-#~ msgstr "cc-pwCVDZ"
-
-#~ msgid "cc-pwCVTZ"
-#~ msgstr "cc-pwCVTZ"
-
-#~ msgid "cc-pwCVQZ"
-#~ msgstr "cc-pwCVQZ"
-
-#~ msgid "cc-pwCV5Z"
-#~ msgstr "cc-pwCV5Z"
-
 #~ msgid "Core correlating functions"
 #~ msgstr "内殻相関関数"
 
 #~ msgid "Diffuse functions"
 #~ msgstr "Diffuse 関数"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "3-21++G"
-#~ msgstr "3-21++G"
-
-#~ msgid "6-31+G"
-#~ msgstr "6-31+G"
-
-#~ msgid "6-31++G"
-#~ msgstr "6-31++G"
-
-#~ msgid "3-21G*"
-#~ msgstr "3-21G*"
-
-#~ msgid "6-31G*"
-#~ msgstr "6-31G*"
-
-#~ msgid "6-31G**"
-#~ msgstr "6-31G**"
-
-#~ msgid "6-31G(3df,3pd)"
-#~ msgstr "6-31G(3df,3pd)"
-
-#~ msgid "6-311G*"
-#~ msgstr "6-311G*"
-
-#~ msgid "6-311G**"
-#~ msgstr "6-311G**"
-
-#~ msgid "6-311G(2df,2pd)"
-#~ msgstr "6-311G(2df,2pd)"
-
-#~ msgid "3-21++G*"
-#~ msgstr "3-21++G*"
-
-#~ msgid "6-31+G*"
-#~ msgstr "6-31+G*"
-
-#~ msgid "6-31++G*"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-311+G*"
-#~ msgstr "6-311+G*"
-
-#~ msgid "6-311++G**"
-#~ msgstr "6-311++G**"
-
-#~ msgid "6-311++G(2d,2p)"
-#~ msgstr "6-311++G(2d,2p)"
-
-#~ msgid "6-311++G(3df,3pd)"
-#~ msgstr "6-311++G(3df,3pd)"
-
-#~ msgid "pc-0"
-#~ msgstr "pc-0"
-
-#~ msgid "pc-1"
-#~ msgstr "pc-1"
-
-#~ msgid "pc-2"
-#~ msgstr "pc-2"
-
-#~ msgid "pc-3"
-#~ msgstr "pc-3"
-
-#~ msgid "pc-4"
-#~ msgstr "pc-4"
-
-#~ msgid "apc-0"
-#~ msgstr "apc-0"
-
-#~ msgid "apc-1"
-#~ msgstr "apc-1"
-
-#~ msgid "apc-2"
-#~ msgstr "apc-2"
-
-#~ msgid "apc-3"
-#~ msgstr "apc-3"
-
-#~ msgid "apc-4"
-#~ msgstr "apc-4"
-
-#~ msgid "aug-cc-pCVDZ"
-#~ msgstr "aug-cc-pCVDZ"
-
-#~ msgid "aug-cc-pCVTZ"
-#~ msgstr "aug-cc-pCVTZ"
-
-#~ msgid "aug-cc-pCVQZ"
-#~ msgstr "aug-cc-pCVQZ"
-
-#~ msgid "aug-cc-pCV5Z"
-#~ msgstr "aug-cc-pCV5Z"
 
 #~ msgid "Direct"
 #~ msgstr "直接計算"
@@ -12720,227 +12263,14 @@ msgstr ""
 #~ msgid "Parallel"
 #~ msgstr "並列計算"
 
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
-
 #~ msgid "Grid Specification"
 #~ msgstr "グリッドの指定"
 
 #~ msgid "Partitioning Scheme:"
 #~ msgstr "分配スキーム"
 
-#~ msgid "Becke"
-#~ msgstr "Becke"
-
 #~ msgid "Becke (original)"
 #~ msgstr "Becke (オリジナル)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "グリッドの品質:"
@@ -12960,12 +12290,6 @@ msgstr ""
 #~ msgid "Radial Scheme:"
 #~ msgstr "動径スキーム"
 
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
-
 #~ msgid "Show all functionals"
 #~ msgstr "すべての汎関数を表示"
 
@@ -12983,33 +12307,6 @@ msgstr ""
 
 #~ msgid "Group Label:"
 #~ msgstr "グループラベル:"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "詳細セットアップ (&A)"
@@ -13035,71 +12332,17 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "読み込み"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "重原子のS殻を diffuse"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "重原子のL殻を diffuse"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
-#~ msgid "Double Zeta Valence"
-#~ msgstr "Double Zeta Valence"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "Binning/Curtiss DZ"
-#~ msgstr "Binning/Curtiss DZ"
-
-#~ msgid "Triple Zeta Valence"
-#~ msgstr "Triple Zeta Valence"
-
-#~ msgid "SBKJA Valence"
-#~ msgstr "SBKJA Valence"
-
-#~ msgid "Hay/Wadt Valence"
-#~ msgstr "Hay/Wadt Valence"
-
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "ECP タイプ"
 
 #~ msgid "Default"
 #~ msgstr "デフォルト"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "重原子Fタイプ分極関数の数:"
@@ -13131,9 +12374,6 @@ msgstr ""
 #~ msgid "DRC"
 #~ msgstr "動的反応座標 (DRC)"
 
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
-
 #~ msgid "Radiative Transition mom."
 #~ msgstr "光遷移モーメント"
 
@@ -13143,14 +12383,8 @@ msgstr ""
 #~ msgid "Finite Electric Field"
 #~ msgstr "有限電場"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "グローバル最適化"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO 最適化"
@@ -13173,50 +12407,11 @@ msgstr ""
 #~ msgid "Exec Type:"
 #~ msgstr "実行タイプ:"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "Ames Lab. Determinant"
-#~ msgstr "Ames Lab. Determinant"
-
-#~ msgid "Occupation Restricted Multiple Active Space"
-#~ msgstr "Occupation Restricted Multiple Active Space"
-
-#~ msgid "CI Singles"
-#~ msgstr "CI Singles"
-
 #~ msgid "Full Second Order CI"
 #~ msgstr "完全二次CI"
 
 #~ msgid "General CI"
 #~ msgstr "一般的 CI"
-
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
-#~ msgid "LCCD: Linearized CC"
-#~ msgstr "LCCD: Linearized CC"
-
-#~ msgid "CCD: CC with Doubles"
-#~ msgstr "CCD: CC with Doubles"
-
-#~ msgid "CCSD: CC with Singles and Doubles"
-#~ msgstr "CCSD: CC with Singles and Doubles"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "通常の計算"
@@ -13251,53 +12446,8 @@ msgstr ""
 #~ msgid "Coordinate Type:"
 #~ msgstr "座標タイプ:"
 
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
-
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "一意なデカルト座標"
-
-#~ msgid "Hilderbrant internals"
-#~ msgstr "Hilderbrant internals"
 
 #~ msgid "MOPAC Z-Matrix"
 #~ msgstr "MOPACのZ-マトリックス"
@@ -13344,17 +12494,8 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "中止時にコアファイルを生成"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
 #~ msgid "JACOBI"
 #~ msgstr "ヤコビ"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
 
 #~ msgid "Memory:"
 #~ msgstr "メモリ:"
@@ -13382,15 +12523,6 @@ msgstr ""
 #~ msgid "Hückel"
 #~ msgstr "ヒュッケル"
 
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
-#~ msgid "MO Read ($VEC)"
-#~ msgstr "MO Read ($VEC)"
-
-#~ msgid "MO Saved (DICTNRY)"
-#~ msgstr "MO Saved (DICTNRY)"
-
 #~ msgid "Skip"
 #~ msgstr "スキップ"
 
@@ -13403,32 +12535,11 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "他のコードとの GAMESS インターフェース"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "必ず CHECK ランを実行"
 
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK 版)"
-
-#~ msgid "Gaussian 9x"
-#~ msgstr "Gaussian 9x"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "水で溶媒和する"
@@ -13499,9 +12610,6 @@ msgstr ""
 #~ msgid "BHHLYP: HF and BECKE exchange + LYP correlation"
 #~ msgstr "BHHLYP: HF and BECKE 交換 + LYP 相関汎関数"
 
-#~ msgid "Grid-Free"
-#~ msgstr "Grid-Free"
-
 #~ msgid "DFT Functional:"
 #~ msgstr "DFT 汎関数"
 
@@ -13513,9 +12621,6 @@ msgstr ""
 
 #~ msgid "Distributed Across All Nodes"
 #~ msgstr "すべてのノードに分散させる"
-
-#~ msgid "words"
-#~ msgstr "words"
 
 #~ msgid "Compute MP2 Properties"
 #~ msgstr "MP2特性を計算する"
@@ -13556,14 +12661,8 @@ msgstr ""
 #~ msgid "Frequency Scale Factor:"
 #~ msgstr "振動数のスケーリング因子:"
 
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial Hessian"
 #~ msgstr "初期ヘシアン行列"
-
-#~ msgid "Guess (+ define)"
-#~ msgstr "Guess (+ define)"
 
 #~ msgid "Read (from $HESS)"
 #~ msgstr "$HESSから読み込む"
@@ -13574,17 +12673,11 @@ msgstr ""
 #~ msgid "Print Orbs at Each Iteration"
 #~ msgstr "繰り返しごとに軌道を印刷する"
 
-#~ msgid "Jump Size:"
-#~ msgstr "Jump Size:"
-
 #~ msgid "Stationary Point"
 #~ msgstr "定留点"
 
 #~ msgid "Initial:"
 #~ msgstr "初期値:"
-
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
 
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Newton-Raphson"
@@ -13616,18 +12709,6 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "基底関数:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Z-マトリックス"
 
@@ -13648,17 +12729,8 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Gaussianの入力"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "標準"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "チェックポイント:"
@@ -13669,26 +12741,8 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPROの入力"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Molpro バージョン:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "MOPAC Input"
 #~ msgstr "MOPAC インプット"
@@ -13699,62 +12753,17 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "クインテット"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "NWChem インプット"
-
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP5"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem インプット"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "TeraChem Input"
 #~ msgstr "TeraChem インプット"
 
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP5"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "非制限"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "なし"
@@ -13809,18 +12818,6 @@ msgstr ""
 
 #~ msgid "&Height"
 #~ msgstr "高さ(&H)"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
-#~ msgid "px"
-#~ msgstr "px"
 
 #~ msgid "&Save Image..."
 #~ msgstr "画像を保存(&S)..."
@@ -13889,12 +12886,6 @@ msgstr ""
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "レーザー波数:"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Nucleus:"
 #~ msgstr "核:"
 
@@ -13907,23 +12898,11 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "ピークをラベル:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "分子振動"
 
 #~ msgid "Filter: "
 #~ msgstr "フィルタ: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "アクティビティ (A^4/amu)"
@@ -13991,12 +12970,6 @@ msgstr ""
 
 #~ msgid "Advanced..."
 #~ msgstr "詳細..."
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
 
 #~ msgid "&Length:"
 #~ msgstr "長さ(&L):"

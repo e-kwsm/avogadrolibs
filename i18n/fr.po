@@ -9679,41 +9679,11 @@ msgstr ""
 #~ "Sélectionner un ligand ou un groupe fonctionnel et cliquer sur un atome "
 #~ "d'hydrogène pour le lier."
 
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "+1"
-#~ msgstr "+ 1"
-
-#~ msgid "+2"
-#~ msgstr "+2"
-
-#~ msgid "+3"
-#~ msgstr "+3"
-
-#~ msgid "+4"
-#~ msgstr "+4"
-
-#~ msgid "+5"
-#~ msgstr "+5"
-
-#~ msgid "+6"
-#~ msgstr "+6"
-
-#~ msgid "+7"
-#~ msgstr "+7"
-
 #~ msgid "Render polygon meshes."
 #~ msgstr "Faire un rendu du maillage des polygones."
 
 #~ msgid "&Analysis"
 #~ msgstr "&Analyse"
-
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "&Importer..."
@@ -9726,9 +9696,6 @@ msgstr ""
 
 #~ msgid "&Load data..."
 #~ msgstr "&Lire les données..."
-
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Charge partielle"
@@ -9917,17 +9884,11 @@ msgstr ""
 #~ msgid "Optimize"
 #~ msgstr "Optimiser"
 
-#~ msgid "In."
-#~ msgstr "In."
-
 #~ msgid "El."
 #~ msgstr "Él."
 
 #~ msgid "El.&No."
 #~ msgstr "Él.&No."
-
-#~ msgid ", "
-#~ msgstr ", "
 
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "Fichier d'entrée APBS (*.in)"
@@ -9942,14 +9903,6 @@ msgstr ""
 
 #~ msgid "Set Python Path…"
 #~ msgstr "Définir le chemin d'accès à python…"
-
-#~ msgid "Fragment…"
-#~ msgstr "Fragment…"
-
-#, fuzzy
-#~| msgid "Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "Fonctionnel"
 
 #~ msgid "Help..."
 #~ msgstr "Aide..."
@@ -9979,18 +9932,6 @@ msgstr ""
 #~ msgid "Connection failed with: %1"
 #~ msgstr "Échec de connexion avec : %1"
 
-#, qt-format
-#~ msgid "clientServer/%1:%2/lastOpenDir"
-#~ msgstr "clientServer/%1:%2/lastOpenDir"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Client serveur"
 
@@ -10003,24 +9944,11 @@ msgstr ""
 #~ msgid "Formula"
 #~ msgstr "Formule"
 
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
-
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Ouvrir le fichier"
-
 #~ msgid "Server settings"
 #~ msgstr "Préférences du serveur"
 
 #~ msgid "&Hostname:"
 #~ msgstr "&Hôte :"
-
-#~ msgid "Port"
-#~ msgstr "Port"
 
 #~ msgid "Test C&onnection..."
 #~ msgstr "Tester la &connexion..."
@@ -10037,9 +9965,6 @@ msgstr ""
 #~ msgid "File name:"
 #~ msgstr "Nom de fichier :"
 
-#~ msgid "http://localhost:8080/api/v1"
-#~ msgstr "http://localhost:8080/api/v1"
-
 #~ msgid "API Key:"
 #~ msgstr "Clé de l'API :"
 
@@ -10052,9 +9977,6 @@ msgstr ""
 #~ msgid "Upload"
 #~ msgstr "Envoi"
 
-#~ msgid "Docker"
-#~ msgstr "Docker"
-
 #~ msgid "Singularity"
 #~ msgstr "Singularité"
 
@@ -10063,9 +9985,6 @@ msgstr ""
 
 #~ msgid "Image:"
 #~ msgstr "Image :"
-
-#~ msgid "openchemistry/psi4:latest"
-#~ msgstr "openchemistry/psi4:latest"
 
 #~ msgid "Input Parameters:"
 #~ msgstr "Paramètres d'entrée :"
@@ -10079,32 +9998,13 @@ msgstr ""
 #~ msgid "Layer"
 #~ msgstr "Calque"
 
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molécule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Pas de molécule définie"
-
 #, qt-format
 #~ msgid "%1: File exists and is not writable."
 #~ msgstr "%1 : Ce fichier existe déjà et n'est pas inscriptible."
 
 #, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Cristal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -10122,26 +10022,14 @@ msgstr ""
 #~ msgid "Torsion Properties..."
 #~ msgstr "Propriétés de torsion..."
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Propriétés de la molécule..."
-
 #~ msgid "Create Surfaces..."
 #~ msgstr "Générer les surfaces..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Symétrie"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Insérer un fragment..."
 
 #~ msgid "Theory:"
 #~ msgstr "Théorie :"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Distance (1->2) : %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Tournable"
@@ -10163,10 +10051,6 @@ msgstr ""
 #~ "Angle %2"
 
 #~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
-
-#~ msgctxt "Degree symbol"
 #~ msgid ""
 #~ "Conformer %1\n"
 #~ "Torsion %2"
@@ -10177,9 +10061,6 @@ msgstr ""
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
 #~ msgstr "Angle de torsion %1"
-
-#~ msgid "Torsion"
-#~ msgstr "Torsion"
 
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Énergie (kJ/mol)"
@@ -10212,18 +10093,11 @@ msgstr ""
 #~ "Insérer des fragments moléculaires pour construire de plus grandes "
 #~ "molécules"
 
-#~ msgid "E&xtensions"
-#~ msgstr "E&xtensions"
-
 #~ msgid "Symmetry Properties..."
 #~ msgstr "Propriétés de symétrie..."
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimisation de la géométrie"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
 #~ msgstr "Optimisation de la géométrie"
 
 #, fuzzy
@@ -10233,10 +10107,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Arrêter"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Surfaces"
 
 #~ msgid "Color by Index"
 #~ msgstr "Colorier selon l'indice"
@@ -10289,9 +10159,6 @@ msgstr ""
 
 #~ msgid "Engines"
 #~ msgstr "Moteurs"
-
-#~ msgid "Axes"
-#~ msgstr "Axes"
 
 #~ msgid "Renders the x, y, and z axes at the origin"
 #~ msgstr "Affiche les axes x, y et z à l'origine"
@@ -10369,14 +10236,8 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Ouvrir un fichier de trajectoire"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "L'extension .avi sera ajoutée"
-
-#~ msgid "Animation..."
-#~ msgstr "Animation..."
 
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Impossible de lire le format du fichier %1."
@@ -10520,10 +10381,6 @@ msgstr ""
 #~ msgstr "Quadratique"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cubique"
 
@@ -10581,9 +10438,6 @@ msgstr ""
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Réduire la maille (&primitive)"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanomètre"
 
@@ -10592,9 +10446,6 @@ msgstr ""
 
 #~ msgid "&Degree"
 #~ msgstr "&Degré"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Display &cartesian coordinates"
 #~ msgstr "Afficher les coordonnées cartésiennes"
@@ -10799,9 +10650,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Format d'image vectorielle usuel"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Exportation des graphismes vectoriels"
 
@@ -10810,9 +10658,6 @@ msgstr ""
 
 #~ msgid "H to Methyl"
 #~ msgstr "Changer H en Méthyl"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Transformer les hydrogènes en méthyles"
@@ -10859,9 +10704,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "Entrée PDB à télécharger"
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL de la molécule à télécharger."
@@ -10938,9 +10780,6 @@ msgstr ""
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Analyser le fichier de résultat d'Orca..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Exemple test d'Orca"
 
@@ -10990,9 +10829,6 @@ msgstr ""
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Fichier d'images (*.png *.pbm)"
 
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Aucun nom de fichier valide n'est fourni."
 
@@ -11037,9 +10873,6 @@ msgstr ""
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal Python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Terminal de script python interactif"
 
@@ -11072,11 +10905,6 @@ msgstr ""
 
 #~ msgid "The abinit executable cannot be found."
 #~ msgstr "Impossible de trouver l'exécutable abinit."
-
-#~ msgid ""
-#~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
-#~ msgstr ""
-#~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
 
 #~ msgid "abinit did not start. Perhaps it is not installed correctly."
 #~ msgstr ""
@@ -11122,20 +10950,8 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Conversion de format SMILES non disponible !"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
 #~ msgid "efp"
 #~ msgstr "pfe"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Créer les fichiers d'entrée pour GAMESS"
@@ -11228,30 +11044,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussian n'a pas fonctionné correctement. Il n'est peut être pas "
 #~ "correctement installé."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWCHEM..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Avertissement du générateur de fichier de données Lammps"
@@ -11432,12 +11224,6 @@ msgstr ""
 #~ msgid "Density of States (states/valence electron)"
 #~ msgstr "Densité d'états (états/électron de valence)"
 
-#~ msgid "Transmittance (%)"
-#~ msgstr "Transmittance (%)"
-
-#~ msgid "Absorbance (%)"
-#~ msgstr "Absorbance (%)"
-
 #~ msgid "No intensities"
 #~ msgstr "Aucune intensité"
 
@@ -11473,10 +11259,6 @@ msgstr ""
 #~ msgid "DOS"
 #~ msgstr "DEE"
 
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
-
 #~ msgid "&UV Settings"
 #~ msgstr "&Paramètres UV"
 
@@ -11491,9 +11273,6 @@ msgstr ""
 
 #~ msgid "Dark"
 #~ msgstr "Sombre"
-
-#~ msgid "Publication"
-#~ msgstr "Publication"
 
 #~ msgid "Handdrawn"
 #~ msgstr "Dessiné à main levée"
@@ -11521,9 +11300,6 @@ msgstr ""
 
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valeurs séparées par des virgules"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
 
 #~ msgid "Spectra Import"
 #~ msgstr "Importation de spectres"
@@ -11560,27 +11336,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Le fichier DC de Trubomole n'est pas correctement formaté : %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "png"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "tiff"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "bmp"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "ppm"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "xbm"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "xpm"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Enregistrer le spectre"
 
@@ -11598,9 +11353,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualiser les données spectrales de calculs de chimie quantique"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Analyse vibrationnelle"
@@ -11637,10 +11389,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Vide"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Densité électronique"
@@ -11655,9 +11403,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Calcul de l'OM %L1 en cours"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr ""
@@ -11737,17 +11482,11 @@ msgstr ""
 #~ msgid "Save VRML rendered files"
 #~ msgstr "Enregistrer les fichiers de rendu VRML"
 
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
-
 #~ msgid "Connect"
 #~ msgstr "Connecter"
 
 #~ msgid "Disconnect"
 #~ msgstr "Déconnecter"
-
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
 
 #~ msgid "Wii Tracking"
 #~ msgstr "Suivi Wii"
@@ -11852,10 +11591,6 @@ msgstr ""
 
 #~ msgid "Molecule %1"
 #~ msgstr "Molécule %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Moteur Python inconnu"
@@ -12020,22 +11755,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Angle dièdre : %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Distance(s) :"
 
@@ -12160,15 +11879,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Forme"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Boucle"
 
@@ -12195,9 +11905,6 @@ msgstr ""
 
 #~ msgid "TextRenderer"
 #~ msgstr "Rendu textuel"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
 
 #~ msgid "Text:"
 #~ msgstr "Texte :"
@@ -12262,9 +11969,6 @@ msgstr ""
 #~ msgid "Fill"
 #~ msgstr "Remplissage"
 
-#~ msgid "Points"
-#~ msgstr "Points"
-
 #~ msgid "Draw Box:"
 #~ msgstr "Boîte de dessin :"
 
@@ -12283,21 +11987,12 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Trajectoire d'animation"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Boucle"
 
 #~ msgid "Save as .avi..."
 #~ msgstr "Enregistrer en .avi..."
-
-#~ msgid "Angstroms"
-#~ msgstr "Angstroms"
-
-#~ msgid "Bohrs"
-#~ msgstr "Bohrs"
 
 #~ msgid "Fractional"
 #~ msgstr "Fractionnaire"
@@ -12489,32 +12184,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Configurer champ de force"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Nombre d'étapes"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algorithme"
-
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "L"
-#~ msgstr "G"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Hélice alpha"
@@ -12524,18 +12198,6 @@ msgstr ""
 
 #~ msgid "Pi Helix"
 #~ msgstr "Hélice pi"
-
-#~ msgid "Phi:"
-#~ msgstr "Phi :"
-
-#~ msgid "Psi:"
-#~ msgstr "Psi :"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Nombre de résidus :"
@@ -12558,21 +12220,6 @@ msgstr ""
 #~ msgid "Frequency"
 #~ msgstr "Fréquence"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
-#~ msgid "Format"
-#~ msgstr "Format"
-
 #~ msgid "z-Matrix"
 #~ msgstr "Matrice Z"
 
@@ -12588,9 +12235,6 @@ msgstr ""
 #~ msgid "Control"
 #~ msgstr "Contrôle"
 
-#~ msgid "SCF"
-#~ msgstr "SCF"
-
 #~ msgid "RijCosX"
 #~ msgstr "RijCosX"
 
@@ -12602,15 +12246,6 @@ msgstr ""
 
 #~ msgid "Relativistic"
 #~ msgstr "Relativiste"
-
-#~ msgid "ZORA"
-#~ msgstr "ZORA"
-
-#~ msgid "IORA"
-#~ msgstr "IORA"
-
-#~ msgid "DKH"
-#~ msgstr "DKH"
 
 #~ msgid "Order"
 #~ msgstr "Ordre"
@@ -12656,35 +12291,11 @@ msgstr ""
 #~ msgid "Accuracy"
 #~ msgstr "Précision"
 
-#~ msgid "Tight SCF"
-#~ msgstr "Tight SCF"
-
-#~ msgid "Very Tight SCF"
-#~ msgstr "Very Tight SCF"
-
-#~ msgid "Extreme SCF"
-#~ msgstr "Extreme SCF"
-
-#~ msgid "KDIIS"
-#~ msgstr "KDIIS"
-
 #~ msgid "Levelshift "
 #~ msgstr "Convergers "
 
-#~ msgid "Levelshift"
-#~ msgstr "Levelshift"
-
 #~ msgid "2nd Order"
 #~ msgstr "Deuxième ordre"
-
-#~ msgid "SOSCF"
-#~ msgstr "SOSCF"
-
-#~ msgid "NRSCF"
-#~ msgstr "NRSCF"
-
-#~ msgid "AHSCF"
-#~ msgstr "AHSCF"
 
 #~ msgid "max. SCF iterations"
 #~ msgstr "Itérations SCF max."
@@ -12700,9 +12311,6 @@ msgstr ""
 
 #~ msgid "restricted open-shell"
 #~ msgstr "couche ouverte restreinte"
-
-#~ msgid "SFitting"
-#~ msgstr "SFitting"
 
 #~ msgid "GridX"
 #~ msgstr "Grille X"
@@ -12724,9 +12332,6 @@ msgstr ""
 
 #~ msgid "Select..."
 #~ msgstr "Sélectionner..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Utiliser le lissage complet de la scène"
@@ -12755,9 +12360,6 @@ msgstr ""
 #~ msgid "Abinit Input"
 #~ msgstr "Entrée Abinit"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "Cartésiennes (Angstrom)"
 
@@ -12767,17 +12369,11 @@ msgstr ""
 #~ msgid "Plane Wave cutoff (Ha):"
 #~ msgstr "Limite des ondes planes (Ha) :"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
 #~ msgid "Tolerance on forces(Ha/bohr):"
 #~ msgstr "Tolérance sur les forces (Ha/bohr) :"
 
 #~ msgid "Max lattice expansion:"
 #~ msgstr "Expansion max de la maille :"
-
-#~ msgid "1.05"
-#~ msgstr "1.05"
 
 #~ msgid "k-point shift:"
 #~ msgstr "décalage k-point :"
@@ -12793,9 +12389,6 @@ msgstr ""
 
 #~ msgid "Double grid PW cutoff (Ha):"
 #~ msgstr "Limite grille double PW (Ha) :"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Occupation scheme:"
 #~ msgstr "Type d'occupation :"
@@ -12815,9 +12408,6 @@ msgstr ""
 #~ msgid "1 - semiconducting"
 #~ msgstr "1 - semicondutrice"
 
-#~ msgid "3 - Fermi Dirac"
-#~ msgstr "3 - Fermi Dirac"
-
 #~ msgid "4 - Cold Smearing (Marzari)"
 #~ msgstr "4 - Étalement froid (Marzari)"
 
@@ -12827,17 +12417,11 @@ msgstr ""
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Largeur d'étalement (Ha) :"
 
-#~ msgid "0.01"
-#~ msgstr "0.01"
-
 #~ msgid "0 - no moving ions "
 #~ msgstr "0 - pas d'ions mobiles "
 
 #~ msgid "1 - viscous damping"
 #~ msgstr "1 - amortissement visqueux"
-
-#~ msgid "2 - BFGS "
-#~ msgstr "2 - BFGS "
 
 #~ msgid "3 - BFGS with energy"
 #~ msgstr "3 - BFGS avec énergie"
@@ -12845,14 +12429,8 @@ msgstr ""
 #~ msgid "# Geometrical time steps:"
 #~ msgstr "# Intervalles de temps géométriques :"
 
-#~ msgid "1.e-10"
-#~ msgstr "1.e-10"
-
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "Lissage de l'énergie cinétique (Ha) :"
-
-#~ msgid "0.5"
-#~ msgstr "0.5"
 
 #~ msgid "Compute..."
 #~ msgstr "Calculer..."
@@ -12871,32 +12449,8 @@ msgstr ""
 #~ "pour\n"
 #~ "votre information personnelle."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
 #~ msgid "Basis Set:"
 #~ msgstr "Base :"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
 
 #~ msgid "Pople-style"
 #~ msgstr "Style Pople"
@@ -12907,167 +12461,11 @@ msgstr ""
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Corrélations consistantes de Dunning"
 
-#~ msgid "aug-cc-pVDZ"
-#~ msgstr "aug-cc-pVDZ"
-
-#~ msgid "aug-cc-pVTZ"
-#~ msgstr "aug-cc-pVTZ"
-
-#~ msgid "aug-cc-pVQZ"
-#~ msgstr "aug-cc-pVQZ"
-
-#~ msgid "aug-cc-pV5Z"
-#~ msgstr "aug-cc-pV5Z"
-
-#~ msgid "aug-cc-pV6Z"
-#~ msgstr "aug-cc-pV6Z"
-
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ \tDeveloper note:"
-
-#~ msgid "cc-pCVTZ"
-#~ msgstr "cc-pCVTZ"
-
-#~ msgid "cc-pCVQZ"
-#~ msgstr "cc-pCVQZ"
-
-#~ msgid "cc-pCV5Z"
-#~ msgstr "cc-pCV5Z"
-
-#~ msgid "cc-pwCVDZ"
-#~ msgstr "cc-pwCVDZ"
-
-#~ msgid "cc-pwCVTZ"
-#~ msgstr "cc-pwCVTZ"
-
-#~ msgid "cc-pwCVQZ"
-#~ msgstr "cc-pwCVQZ"
-
-#~ msgid "cc-pwCV5Z"
-#~ msgstr "cc-pwCV5Z"
-
 #~ msgid "Core correlating functions"
 #~ msgstr "Fonctions de corrélation de cœur"
 
 #~ msgid "Diffuse functions"
 #~ msgstr "Fonctions diffuses"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "3-21++G"
-#~ msgstr "3-21++G"
-
-#~ msgid "6-31+G"
-#~ msgstr "6-31+G"
-
-#~ msgid "6-31++G"
-#~ msgstr "6-31++G"
-
-#~ msgid "3-21G*"
-#~ msgstr "3-21G*"
-
-#~ msgid "6-31G*"
-#~ msgstr "6-31G*"
-
-#~ msgid "6-31G**"
-#~ msgstr "6-31G**"
-
-#~ msgid "6-31G(3df,3pd)"
-#~ msgstr "6-31G(3df,3pd)"
-
-#~ msgid "6-311G*"
-#~ msgstr "6-311G*"
-
-#~ msgid "6-311G**"
-#~ msgstr "6-311G**"
-
-#~ msgid "6-311G(2df,2pd)"
-#~ msgstr "6-311G(2df,2pd)"
-
-#~ msgid "3-21++G*"
-#~ msgstr "3-21++G*"
-
-#~ msgid "6-31+G*"
-#~ msgstr "6-31+G*"
-
-#~ msgid "6-31++G*"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G**"
-
-#~ msgid "6-311+G*"
-#~ msgstr "6-311+G*"
-
-#~ msgid "6-311++G**"
-#~ msgstr "6-311++G**"
-
-#~ msgid "6-311++G(2d,2p)"
-#~ msgstr "6-311++G(2d,2p)"
-
-#~ msgid "6-311++G(3df,3pd)"
-#~ msgstr "6-311++G(3df,3pd)"
-
-#~ msgid "pc-0"
-#~ msgstr "pc-0"
-
-#~ msgid "pc-1"
-#~ msgstr "pc-1"
-
-#~ msgid "pc-2"
-#~ msgstr "pc-2"
-
-#~ msgid "pc-3"
-#~ msgstr "pc-3"
-
-#~ msgid "pc-4"
-#~ msgstr "pc-4"
-
-#~ msgid "apc-0"
-#~ msgstr "apc-0"
-
-#~ msgid "apc-1"
-#~ msgstr "apc-1"
-
-#~ msgid "apc-2"
-#~ msgstr "apc-2"
-
-#~ msgid "apc-3"
-#~ msgstr "apc-3"
-
-#~ msgid "apc-4"
-#~ msgstr "apc-4"
-
-#~ msgid "aug-cc-pCVDZ"
-#~ msgstr "aug-cc-pCVDZ"
-
-#~ msgid "aug-cc-pCVTZ"
-#~ msgstr "aug-cc-pCVTZ"
-
-#~ msgid "aug-cc-pCVQZ"
-#~ msgstr "aug-cc-pCVQZ"
-
-#~ msgid "aug-cc-pCV5Z"
-#~ msgstr "aug-cc-pCV5Z"
 
 #~ msgid "Direct"
 #~ msgstr "Directe"
@@ -13089,227 +12487,11 @@ msgstr ""
 #~ msgid "Parallel"
 #~ msgstr "Parallèle"
 
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
-
 #~ msgid "Grid Specification"
 #~ msgstr "Pas de la grille :"
 
 #~ msgid "Partitioning Scheme:"
 #~ msgstr "Méthode de paritionnement :"
-
-#~ msgid "Becke"
-#~ msgstr "Becke"
-
-#~ msgid "Becke (original)"
-#~ msgstr "Becke (original)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "Finesse de la grille :"
@@ -13320,20 +12502,11 @@ msgstr ""
 #~ msgid "normal"
 #~ msgstr "normale"
 
-#~ msgid "fine"
-#~ msgstr "fine"
-
 #~ msgid "ultrafine"
 #~ msgstr "très fine"
 
 #~ msgid "Radial Scheme:"
 #~ msgstr "Méthode radiale :"
-
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
 
 #~ msgid "Show all functionals"
 #~ msgstr "Afficher toutes les fonctionnelles"
@@ -13355,33 +12528,6 @@ msgstr ""
 
 #~ msgid "Group Label:"
 #~ msgstr "Étiquette du groupe :"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "Configuration &avancée"
@@ -13407,41 +12553,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Lire"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Couche S diffuse sur les atomes lourds"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Couche L diffuse sur les atomes lourds"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Valence zeta double"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "Binning/Curtiss DZ"
-#~ msgstr "Binning/Curtiss DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Valence zeta triple"
@@ -13452,26 +12571,11 @@ msgstr ""
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Valence Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Type ECP :"
 
 #~ msgid "Default"
 #~ msgstr "Par défaut"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Fonctions de polarisation des atomes lourds :"
@@ -13485,26 +12589,14 @@ msgstr ""
 #~ msgid "Max SCF Iterations:"
 #~ msgstr "Itérations SCF maximum :"
 
-#~ msgid "Gradient"
-#~ msgstr "Gradient"
-
 #~ msgid "Trudge"
 #~ msgstr "Marche"
 
 #~ msgid "Saddle Point"
 #~ msgstr "Point selle"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Gradient extrémal"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "Moment de transition radiative"
@@ -13515,14 +12607,8 @@ msgstr ""
 #~ msgid "Finite Electric Field"
 #~ msgstr "Champ électrique fini"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Optimisation globale"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "Optimisation FMO"
@@ -13566,9 +12652,6 @@ msgstr ""
 #~ msgid "CI:"
 #~ msgstr "CI :"
 
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Déterminant Ames Lab"
 
@@ -13595,18 +12678,6 @@ msgstr ""
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD : CC avec singletons et paires"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Exécution normale"
@@ -13641,48 +12712,6 @@ msgstr ""
 #~ msgid "Coordinate Type:"
 #~ msgstr "Type de coordonnées :"
 
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
-
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Coordonnées cartésiennes uniques"
 
@@ -13697,9 +12726,6 @@ msgstr ""
 
 #~ msgid "Point Group:"
 #~ msgstr "Groupe ponctuel :"
-
-#~ msgid "Minutes"
-#~ msgstr "Minutes"
 
 #~ msgid "Hours"
 #~ msgstr "Heures"
@@ -13734,15 +12760,6 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Produire un fichier « core » lors d'un plantage"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
 #~ msgid "MemDDI:"
 #~ msgstr "MemDDI :"
 
@@ -13769,12 +12786,6 @@ msgstr ""
 #~ msgid "Initial Guess:"
 #~ msgstr "Estimation initiale :"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "Lecture MO ($VEC)"
 
@@ -13793,26 +12804,8 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Interface GAMESS pour autres codes"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forcer une vérification de type"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (Version UK)"
@@ -13946,9 +12939,6 @@ msgstr ""
 #~ msgid "Frequency Scale Factor:"
 #~ msgstr "Facteur d'échelle de fréquence :"
 
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial Hessian"
 #~ msgstr "Hessienne initiale"
 
@@ -13973,17 +12963,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Initial :"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Optimisation par fonction rationnelle"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Approximation quadratique"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "Optimisation contrainte"
@@ -14006,18 +12990,6 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "Base :"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Matrice Z"
 
@@ -14039,18 +13011,6 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Entrée Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
-#~ msgid "Standard"
-#~ msgstr "Standard"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
-
 #~ msgid "Checkpoint:"
 #~ msgstr "Checkpoint :"
 
@@ -14060,41 +13020,14 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "Données MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Version de Molpro :"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "MOPAC Input"
 #~ msgstr "Données MOPAC"
 
-#~ msgid "Quartet"
-#~ msgstr "Quartet"
-
 #~ msgid "Quintet"
 #~ msgstr "Quintuplet"
-
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
 
 #~ msgid "RM1"
 #~ msgstr "PM1"
@@ -14102,44 +13035,11 @@ msgstr ""
 #~ msgid "NWChem Input"
 #~ msgstr "Entrée NWChem"
 
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Entrée Q-Chem"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "TeraChem Input"
 #~ msgstr "Données TeraChem"
-
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
 
 #~ msgid "Unrestricted"
 #~ msgstr "Couche ouverte"
@@ -14201,18 +13101,6 @@ msgstr ""
 #~ msgid "&Height"
 #~ msgstr "&Hauteur"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
-#~ msgid "px"
-#~ msgstr "px"
-
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
 #~ "value (screen to image point sizes don't translate well!)"
@@ -14263,23 +13151,14 @@ msgstr ""
 #~ msgid "Show integrated DOS"
 #~ msgstr "Afficher la DEE intégrée"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Unités de l'axe des Y :"
 
 #~ msgid "Scaling Type:"
 #~ msgstr "Type de mise à l'échelle :"
 
-#~ msgid "Relative"
-#~ msgstr "Relative"
-
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Nombre d'onde du laser :"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
 
 #~ msgid "tab_NMR"
 #~ msgstr "tab_RMN"
@@ -14296,23 +13175,8 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Étiqueter les pics :"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
-#~ msgid "Molecular Vibrations"
-#~ msgstr "Fréquences"
-
 #~ msgid "Filter: "
 #~ msgstr "Filtre : "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Activité (A^4/amu)"
@@ -14382,12 +13246,6 @@ msgstr ""
 #~ msgid "Advanced..."
 #~ msgstr "Avancé..."
 
-#~ msgid "&n:"
-#~ msgstr "&n :"
-
-#~ msgid "&m:"
-#~ msgstr "&m :"
-
 #~ msgid "&Length:"
 #~ msgstr "&Longueur :"
 
@@ -14399,9 +13257,6 @@ msgstr ""
 
 #~ msgid "angstrom"
 #~ msgstr "angström"
-
-#~ msgid "bohr radii"
-#~ msgstr "bohr"
 
 #~ msgid "nanometers"
 #~ msgstr "nanomètres"

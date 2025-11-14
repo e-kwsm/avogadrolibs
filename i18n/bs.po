@@ -9369,31 +9369,6 @@ msgstr ""
 #~ msgstr "Ostalo..."
 
 #, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Ime datoteke:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktura:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigacija"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigacija"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Ime elementa"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekul"
-
-#, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "Nema postavljene molekule"
 
@@ -9416,10 +9391,6 @@ msgstr ""
 
 #~ msgid "Torsion Properties..."
 #~ msgstr "Postavke torzije..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Postavke molekule..."
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "Kreiraj površine..."
@@ -10514,9 +10485,6 @@ msgstr ""
 #~ msgid "Orbital:"
 #~ msgstr "Orbite:"
 
-#~ msgid "Render:"
-#~ msgstr "Render:"
-
 #~ msgid "Fill"
 #~ msgstr "Popuna"
 
@@ -10540,9 +10508,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animiraj putanju"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -10605,53 +10570,17 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritam"
 
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Alpha Helix"
 #~ msgstr "Alfa helix"
 
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta komad"
 
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Broj ostataka:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipolni moment (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Napredno"
@@ -10664,9 +10593,6 @@ msgstr ""
 
 #~ msgid "Select..."
 #~ msgstr "Izaberi..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Koristi antialiasing pune scene"
@@ -10695,68 +10621,8 @@ msgstr ""
 #~ msgid "Compute..."
 #~ msgstr "Računaj..."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
 #~ msgid "EFP Matches"
 #~ msgstr "EFP poklapanja"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "&Napredne postavke"
@@ -10782,38 +10648,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Čitaj"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Difuzija S-Školjka na teškim atomima"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Difuzija L-Školjka na teškim atomima"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Dvostruka Zeta valencija"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Trostruka Zeta valencija"
@@ -10823,9 +10665,6 @@ msgstr ""
 
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Hay/Wadt Valencija"
-
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
 
 #~ msgid "ECP Type:"
 #~ msgstr "ECP Tip:"
@@ -10839,20 +10678,11 @@ msgstr ""
 #~ msgid "Pople N311"
 #~ msgstr "Popl N311"
 
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
-
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Funkcije polarizacije teških atoma:"
 
 #~ msgid "#light Atom Polarization Functions:"
 #~ msgstr "#lagano funkcije polarizacije atoma:"
-
-#~ msgid "Polar:"
-#~ msgstr "Polar:"
 
 #~ msgid "Max SCF Iterations:"
 #~ msgstr "Maksimalne SCF iteracije:"
@@ -10866,14 +10696,8 @@ msgstr ""
 #~ msgid "Saddle Point"
 #~ msgstr "Sedlasta tačka"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "extremni gradijent"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "Radiativni tranzitivni mom."
@@ -10884,14 +10708,8 @@ msgstr ""
 #~ msgid "Finite Electric Field"
 #~ msgstr "Konačno električno polje"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Globalna optimizacija"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO Optimizacija"
@@ -10899,29 +10717,11 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Ramanovi intenziteti"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Ništa (CI)"
 
 #~ msgid "Foster-Boys"
 #~ msgstr "Foster-Momci"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "SCF Tip:"
@@ -10931,12 +10731,6 @@ msgstr ""
 
 #~ msgid "Exec Type:"
 #~ msgstr "Exec tip:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
 
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Ames Lab. determinanta"
@@ -10953,9 +10747,6 @@ msgstr ""
 #~ msgid "General CI"
 #~ msgstr "Generalni CI"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: linarizirani CC"
 
@@ -10964,18 +10755,6 @@ msgstr ""
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC sa jednorkama i dvojkama"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Normalno pokretanje"
@@ -11000,48 +10779,6 @@ msgstr ""
 
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Red glavnih osa:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Jedinstvene kartezijeve koordinate."
@@ -11088,18 +10825,6 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Napravi \"jezgro\" datoteku nakon kraja"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Memorija:"
 
@@ -11120,12 +10845,6 @@ msgstr ""
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Koristiti externu reprezentaciju podatka za poruke"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO pročitano ($VEC)"
 
@@ -11144,26 +10863,8 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "GAMESS interfece za druge kodove"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forsiraj  tip trčeče provjere"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (UK Verzija)"
@@ -11282,9 +10983,6 @@ msgstr ""
 #~ msgid "Purify Hessian"
 #~ msgstr "Pročišćeni Hessian"
 
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial Hessian"
 #~ msgstr "Inicijalni Hessian"
 
@@ -11306,17 +11004,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Inicijalni:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Optimizacija racionalne funkcije"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Kvadratna aproksimacija"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "Limitirana optimizacija"
@@ -11336,17 +11028,8 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Gaussian ulaz"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Uobičajeno"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "kontrolna tačka:"
@@ -11357,44 +11040,14 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO ulaz"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "Kvartet"
 
 #~ msgid "Quintet"
 #~ msgstr "Kvintet"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem ulaz"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "Sjenčenja opterećenja"
@@ -11426,23 +11079,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Sheme:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "Širi&na:"
 
 #~ msgid "&Height"
 #~ msgstr "&Visina"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -11464,9 +11105,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y jedinice ose:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gausova &Širina:"
 
@@ -11475,9 +11113,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Vrhovi labele:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekularne vibracije"

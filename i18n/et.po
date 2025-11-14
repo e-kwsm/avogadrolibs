@@ -9152,39 +9152,6 @@ msgstr ""
 "devel@lists.sourceforge.net,,,aennok@gmail.com,avogadro-"
 "devel@lists.sourceforge.net"
 
-#~ msgid "..."
-#~ msgstr "..."
-
-#, fuzzy
-#~| msgid "Partial charge"
-#~ msgid "Partial Charge"
-#~ msgstr "Osalaeng"
-
-#, fuzzy
-#~ msgctxt "ambient occlusion"
-#~ msgid "Van der Waals (AO)"
-#~ msgstr "Van der Waals"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Aatomi number"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Värv kauguse järgi"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Aatomi number"
-
-#, fuzzy
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekulaarsed omadused..."
-
-#, fuzzy
-#~ msgid "Molecular Mass (g/mol):"
-#~ msgstr "Molekulaarmass (g/mol):"
-
 #~ msgid "Chemical Formula:"
 #~ msgstr "Keemiline valem:"
 
@@ -9195,40 +9162,8 @@ msgstr ""
 #~ msgstr "Sidemete arv:"
 
 #, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Jäägi nimi"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktuur:"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Elemendi nimi"
-
-#, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Lisa pH jaoks vesinikke"
-
-#, fuzzy
-#~ msgid "Atom Properties..."
-#~ msgstr "Sidemete omadused"
-
-#, fuzzy
-#~ msgid "Bond Properties..."
-#~ msgstr "Sidemete omadused"
-
-#, fuzzy
-#~ msgid "Angle Properties..."
-#~ msgstr "Nurkade omadused"
-
-#, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Sidemete omadused"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molekuli omadused..."
 
 #~ msgid "Rotatable"
 #~ msgstr "Roteeritav"
@@ -9240,23 +9175,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energia (kJ/mol):"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Neoon"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geomeetriline optimeerimine"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Lisa pH jaoks vesinikke"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Pinnad"
+#~ msgstr "Energia (kJ/mol)"
 
 #~ msgid "Color by Index (red, orange, yellow, green, blue, violet)."
 #~ msgstr ""
@@ -9280,9 +9199,6 @@ msgstr ""
 
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Värv jäägi järgi (aminohappe tüüp, hüdrofoobsus, ..."
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoktium"
 
 #~ msgid "Engines"
 #~ msgstr "Mootorid"
@@ -9313,14 +9229,8 @@ msgstr ""
 #~ msgid "Chemical files (*.xyz)"
 #~ msgstr "Keemiafailid (*.xyz)"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "Allalaaditava molekuli URL."
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Vali aatomid, sidemed, jäägid..."
@@ -9330,9 +9240,6 @@ msgstr ""
 
 #~ msgid "Dark"
 #~ msgstr "Tume"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Residue"
 #~ msgstr "Jääk"
@@ -9349,50 +9256,11 @@ msgstr ""
 #~ msgid "Radius:"
 #~ msgstr "Raadius:"
 
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Jääkide arv:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipoolmoment (D):"
 
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "toll"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"

@@ -9332,15 +9332,6 @@ msgstr ""
 #~ msgstr "gedeeltelijke verandering"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
-
-#~ msgctxt "ambient occlusion"
-#~ msgid "Van der Waals (AO)"
-#~ msgstr "Van der Waals (AO)"
-
-#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "Geometrie"
 
@@ -9352,11 +9343,6 @@ msgstr ""
 
 #~ msgid "By Distance"
 #~ msgstr "Op afstand"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molecule Lading:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9371,9 +9357,6 @@ msgstr ""
 #~ msgid "Number of Bonds:"
 #~ msgstr "Aantal bindingen:"
 
-#~ msgid "TODO"
-#~ msgstr "TODO"
-
 #, fuzzy
 #~| msgid "Jump Size:"
 #~ msgid "Line Size:"
@@ -9383,9 +9366,6 @@ msgstr ""
 #~| msgid "Optimization"
 #~ msgid "Optimize"
 #~ msgstr "Optimalisatie"
-
-#~ msgid "In."
-#~ msgstr "In."
 
 #, fuzzy
 #~| msgid "Fragment..."
@@ -9399,44 +9379,8 @@ msgstr ""
 #~ msgstr "Bestandsnaam"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Structuur:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigeren"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigeren"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element naam"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Alle bestanden"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Geen molecule geset"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "&Crystallography"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9469,7 +9413,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Afstand (1->2): %L1 %2"
+#~ msgstr "Afstand: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Roteerbaar"
@@ -9514,10 +9458,6 @@ msgstr ""
 #~ msgstr "Nee"
 
 #, fuzzy
-#~ msgid "Input Generators"
-#~ msgstr "Input Generator..."
-
-#, fuzzy
 #~ msgid "Import"
 #~ msgstr "Importeren"
 
@@ -9539,11 +9479,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimaliseer geometrie"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrie Optimalisation"
+#~ msgstr "Optimaliseer geometrie"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -9601,9 +9537,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markeer particuliere functies die aan een SMARTS patroon voldoen."
 
-#~ msgid "Engines"
-#~ msgstr "Engines"
-
 #~ msgid "Axes"
 #~ msgstr "Assen"
 
@@ -9635,9 +9568,6 @@ msgstr ""
 
 #~ msgid "Renders protein backbones as ribbons"
 #~ msgstr "Geef proteïne hoofdketens als lintjes weer"
-
-#~ msgid "Ring"
-#~ msgstr "Ring"
 
 #~ msgid "Renders rings with colored planes"
 #~ msgstr "Geef ringen met gekleurde vlakken weer"
@@ -9673,9 +9603,6 @@ msgstr ""
 
 #~ msgid "DL-POLY HISTORY files"
 #~ msgstr "DL-POLY HISTORY bestanden"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi extensie aan het toevoegen"
@@ -9757,9 +9684,6 @@ msgstr ""
 #~ "Je molecule moet minimum vier atomen bevatten om een torsie beperking toe "
 #~ "te voegen"
 
-#~ msgid "&Reduce"
-#~ msgstr "&Reduce"
-
 #~ msgid "Show &Editors"
 #~ msgstr "Toon &Editors"
 
@@ -9769,15 +9693,8 @@ msgstr ""
 #~ msgid "Show &Property Display"
 #~ msgstr "Toon &Eigenschappen Scherm"
 
-#~ msgctxt "Unit cell lattice"
-#~ msgid "Lattice Type: %1"
-#~ msgstr "Lattice Type: %1"
-
 #~ msgid "Spacegroup: %1"
 #~ msgstr "Ruimtegroep: %1"
-
-#~ msgid "Unit cell volume: %L1%2"
-#~ msgstr "Unit cell volume: %L1%2"
 
 #~ msgid "Undefined"
 #~ msgstr "Ongedefinieerd"
@@ -9817,9 +9734,6 @@ msgstr ""
 #~ "Gefaald om cel na 1000 pogingen van het verkleiningsalgoritme te "
 #~ "verkleinen. Taak afbreken."
 
-#~ msgid "&Slab..."
-#~ msgstr "&Slab..."
-
 #~ msgid "Set Spacegroup"
 #~ msgstr "Verander Ruimtegroep"
 
@@ -9856,9 +9770,6 @@ msgstr ""
 #~ msgid "Calculate Energy"
 #~ msgstr "Bereken Energie"
 
-#~ msgid "Constraints..."
-#~ msgstr "Constraints..."
-
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
 #~ "Switching to UFF."
@@ -9876,26 +9787,17 @@ msgstr ""
 #~ "Optimaliseer molecules en genereer conformers die moleculaire "
 #~ "krachtvelden gebruiken"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Change H to Methyl"
 #~ msgstr "Wijzig H naar Methyl"
 
 #~ msgid "H to Methyl"
 #~ msgstr "H naar Methyl"
 
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
-
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Transformeer waterstof naar methyl groepen"
 
 #~ msgid "Add or remove hydrogens"
 #~ msgstr "Voeg waterstoffen toe of verwijder ze"
-
-#~ msgid "Peptide..."
-#~ msgstr "Peptide..."
 
 #~ msgid "Insert oligopeptide sequences"
 #~ msgstr "Voeg oligopeptide sequenties in"
@@ -9906,14 +9808,8 @@ msgstr ""
 #~ msgid "Fetch from URL..."
 #~ msgstr "Haal vanURL..."
 
-#~ msgid "PDB Entry"
-#~ msgstr "PDB Entry"
-
 #~ msgid "PDB entry to download."
 #~ msgstr "PDB entry om te downloaden."
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL van de te downloaden molecule."
@@ -9938,9 +9834,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Beeld bestand (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Geen geldige bestandsnaam is voorzien."
@@ -9983,12 +9876,6 @@ msgstr ""
 #~ msgid "Conformer Properties..."
 #~ msgstr "conformer Eigenschappen..."
 
-#~ msgid "Python Terminal"
-#~ msgstr "Python Terminal"
-
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "interactieve python scripting terminal"
 
@@ -10012,12 +9899,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Conversie Onbeschikbaar"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Creëer input bestanden voor het GAMESS quantum chemistry pakket"
@@ -10079,29 +9960,11 @@ msgstr ""
 #~ msgid "Running Gaussian calculation..."
 #~ msgstr "Bezig met Gaussiaanse berekening..."
 
-#~ msgid "G03 Crashed."
-#~ msgstr "G03 Crashed."
-
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Gaussian is niet correct gestart. Misschien is het niet correct "
 #~ "geïnstalleerd."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC Input Waarschuwing"
@@ -10180,9 +10043,6 @@ msgstr ""
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Selecteer atomen, bindingen, residuen..."
 
-#~ msgid "GLSL Shaders..."
-#~ msgstr "GLSL Shaders..."
-
 #~ msgid "Open a vertex shader source file"
 #~ msgstr "Open een vertex shader bronbestand"
 
@@ -10200,9 +10060,6 @@ msgstr ""
 
 #~ msgid "Shader parameters files (*.params)"
 #~ msgstr "Shader parameters bestanden (*.params)"
-
-#~ msgid "GLSL Shaders"
-#~ msgstr "GLSL Shaders"
 
 #~ msgid "Load and use OpenGL 2.0 GLSL shaders"
 #~ msgstr "Laad en gebruik OpenGL 2.0 GLSL shaders"
@@ -10240,10 +10097,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Infrarood Spectra instellingen"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR Spectra instellingen"
 
@@ -10277,28 +10130,11 @@ msgstr ""
 #~ msgid "Enter new name for current scheme:"
 #~ msgstr "Voeg een nieuwe naam toe aan het huidige schema"
 
-#~ msgid "Tab Separated Values (*.tsv)"
-#~ msgstr "Tab Separated Values (*.tsv)"
-
 #~ msgid "Tab Separated Values"
 #~ msgstr "Tab gescheiden waarden"
 
-#~ msgid "Comma Separated Values"
-#~ msgstr "Comma Separated Values"
-
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Onbekende extentie: %1"
-
-#~ msgctxt "Do not remove 'IR' or '(*.out)' -- needed for parsing later"
-#~ msgid "PWscf IR data (*.out)"
-#~ msgstr "PWscf IR data (*.out)"
-
-#~ msgctxt "Do not remove 'IR' or '(control)' -- needed for parsing later"
-#~ msgid "Turbomole IR data (control)"
-#~ msgstr "Turbomole IR data (control)"
 
 #~ msgid "Data Format"
 #~ msgstr "Data Formaat"
@@ -10310,32 +10146,11 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "laad Spectraal Data"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Getagged beeld Bestandsformaat"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Sla Spectra Beeld op"
-
-#~ msgid "&Spectra..."
-#~ msgstr "&Spectra..."
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualiseer spectraal data van kwantum chemie berekeningen"
@@ -10365,10 +10180,6 @@ msgstr ""
 #~ msgid "Orbitals"
 #~ msgstr "Orbitalen"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Elektronen Dichtheid"
@@ -10383,9 +10194,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "MO berekenen %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr "GL widget is niet correct geïnitialiseerd om een video te maken"
@@ -10425,12 +10233,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Verbinding verbreken"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
-#~ msgid "Wii Tracking"
-#~ msgstr "Wii Tracking"
-
 #~ msgid "Track motion using Wii remotes"
 #~ msgstr "Volg beweging door Wii remotes te gebruiken"
 
@@ -10445,9 +10247,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Debug informatie"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Beeld Grootte: %L1 x %L2"
@@ -10512,13 +10311,6 @@ msgstr ""
 #~ msgid "Writing conformers to file '%1' failed."
 #~ msgstr "Conformers schrijven naar bestand '%1' mislukt."
 
-#~ msgid "Molecule %1"
-#~ msgstr "Molecule %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Onbekende Python Engine"
 
@@ -10549,9 +10341,6 @@ msgstr ""
 #~ msgid "  - script has no 'Tool' class defined"
 #~ msgstr "  - script heeft geen 'Tool' klasse gedefinieerd"
 
-#~ msgid "Tools"
-#~ msgstr "Tools"
-
 #~ msgid "Align:"
 #~ msgstr "Uitlijning:"
 
@@ -10560,9 +10349,6 @@ msgstr ""
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Kon het krachtveld niet instellen...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Steps per Update:"
 #~ msgstr "Stappen per Update:"
@@ -10581,9 +10367,6 @@ msgstr ""
 
 #~ msgid "Ignored atoms are movable"
 #~ msgstr "Genegeerde atomen zijn beweegbaar"
-
-#~ msgid "AutoOpt Molecule"
-#~ msgstr "AutoOpt Molecule"
 
 #~ msgid "Automatic optimization of molecular geometry"
 #~ msgstr "Automatische optimalisatie van de moleculaire geometrie"
@@ -10645,22 +10428,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Dihedrale Hoek: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Afstand(en):"
 
@@ -10709,12 +10476,6 @@ msgstr ""
 #~ msgid "Dihedral Angle"
 #~ msgstr "Dihedrale Hoek"
 
-#~ msgid "Z Matrix Editor..."
-#~ msgstr "Z Matrix Editor..."
-
-#~ msgid "Z-Matrix"
-#~ msgstr "Z-Matrix"
-
 #~ msgid "Create/edit a z-matrix"
 #~ msgstr "Creëer/bewerk een z-matrix"
 
@@ -10735,15 +10496,6 @@ msgstr ""
 
 #~ msgid "Shape"
 #~ msgstr "Vorm"
-
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
 
 #~ msgid "Loop"
 #~ msgstr "Lus"
@@ -10805,9 +10557,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animeer Baan"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Herhaling"
@@ -10857,29 +10606,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Stel Krachtveld In"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Aantal stappen"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algorithme"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Alfa Helix"
@@ -10887,32 +10618,11 @@ msgstr ""
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta Blad"
 
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Aantal Residuen"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipool Moment (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Geavanceerd"
@@ -10920,14 +10630,8 @@ msgstr ""
 #~ msgid "Grid"
 #~ msgstr "Rooster"
 
-#~ msgid "POV-Ray Export"
-#~ msgstr "POV-Ray Export"
-
 #~ msgid "Select..."
 #~ msgstr "Selecteer..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Zet de achtergrondkleur transparant"
@@ -10938,74 +10642,11 @@ msgstr ""
 #~ msgid "Path:"
 #~ msgstr "Pad"
 
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
 #~ msgid "Compute..."
 #~ msgstr "Bereken..."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
 #~ msgid "EFP Matches"
 #~ msgstr "EFP Overeenkomsten"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "Ge&avanceerde Setup"
@@ -11022,53 +10663,11 @@ msgstr ""
 #~ msgid "MO Guess"
 #~ msgstr "MO Gok"
 
-#~ msgid "Misc"
-#~ msgstr "Misc"
-
 #~ msgid "Read"
 #~ msgstr "Lees"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
-#~ msgid "ECP Type:"
-#~ msgstr "ECP Type:"
-
 #~ msgid "Default"
 #~ msgstr "Standaard"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Zware Atoom Polarisatie Functies:"
@@ -11079,29 +10678,14 @@ msgstr ""
 #~ msgid "Polar:"
 #~ msgstr "Polair:"
 
-#~ msgid "Gradient"
-#~ msgstr "Gradient"
-
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Gradient Extremum"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
 
 #~ msgid "Finite Electric Field"
 #~ msgstr "Eindig Elektrisch Veld"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Globale Optimalisatie"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "FMO Optimalisatie"
@@ -11127,35 +10711,14 @@ msgstr ""
 #~ msgid "General CI"
 #~ msgstr "Algemene CI"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: Gelineariseerde CC"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Normale Uitvoering"
 
 #~ msgid "Check"
 #~ msgstr "Controle"
-
-#~ msgid "Debug"
-#~ msgstr "Debug"
-
-#~ msgid "Run Type:"
-#~ msgstr "Run Type:"
 
 #~ msgid "Use MP2"
 #~ msgstr "Gebruik MP2"
@@ -11168,48 +10731,6 @@ msgstr ""
 
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Orde van de Hoofdassen:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Unieke cartesische Coördinaten"
@@ -11232,29 +10753,11 @@ msgstr ""
 #~ msgid "Years"
 #~ msgstr "Jaren"
 
-#~ msgid "Millenia"
-#~ msgstr "Millenia"
-
 #~ msgid "MegaWords"
 #~ msgstr "MegaWoorden"
 
-#~ msgid "MegaBytes"
-#~ msgstr "MegaBytes"
-
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Forceer Parallelle Methoden"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
 
 #~ msgid "Memory:"
 #~ msgstr "Geheugen:"
@@ -11264,12 +10767,6 @@ msgstr ""
 
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Gebruik Externe Data Representatie voor Berichten"
-
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
 
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO Lees ($VEC)"
@@ -11289,29 +10786,8 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "GAMESS Interface naar Andere Codes"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forceer een Check Run Type"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
-#~ msgid "GAMESS (UK Version)"
-#~ msgstr "GAMESS (UK Version)"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Solveer met water"
@@ -11319,17 +10795,8 @@ msgstr ""
 #~ msgid "Generate UHF Natural Orbitals"
 #~ msgstr "Genereer UHF Natuurlijke Orbitalen"
 
-#~ msgid "Direct SCF"
-#~ msgstr "Direct SCF"
-
 #~ msgid "Compute Only Changed in Fock Matrix"
 #~ msgstr "Bereken Enkel Gewijzigde in Fock Matrix"
-
-#~ msgid "Slater exchange"
-#~ msgstr "Slater exchange"
-
-#~ msgid "Becke 1988 exchange"
-#~ msgstr "Becke 1988 exchange"
 
 #~ msgid "LYP: Lee-Yang-Parr correlation"
 #~ msgstr "LYP: Lee-Yang-Parr correlatie"
@@ -11436,17 +10903,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Initieel:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Rationale Functie Optimelisatie"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Quadratische Benadering"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Recalculate Hessian Every:"
 #~ msgstr "Herbereken de Hessiaan Elke:"
@@ -11454,74 +10915,14 @@ msgstr ""
 #~ msgid "Follow Mode:"
 #~ msgstr "Volg Mode"
 
-#~ msgid "Basis:"
-#~ msgstr "Basis:"
-
-#~ msgid "Z-matrix"
-#~ msgstr "Z-matrix"
-
 #~ msgid "Gaussian Input"
 #~ msgstr "Gaussiaanse Input"
-
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
 
 #~ msgid "Standard"
 #~ msgstr "Standaard"
 
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
-
-#~ msgid "Checkpoint:"
-#~ msgstr "Checkpoint:"
-
-#~ msgid "Z-matrix (compact)"
-#~ msgstr "Z-matrix (compact)"
-
-#~ msgid "MOLPRO Input"
-#~ msgstr "MOLPRO Input"
-
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "kwartet"
-
-#~ msgid "Quintet"
-#~ msgstr "Quintet"
-
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
-#~ msgid "Q-Chem Input"
-#~ msgstr "Q-Chem Input"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "Laad Shaders"
@@ -11529,17 +10930,8 @@ msgstr ""
 #~ msgid "Shader Name:"
 #~ msgstr "Shader Naam:"
 
-#~ msgid "Vertex Shader:"
-#~ msgstr "Vertex Shader:"
-
-#~ msgid "Fragment Shader:"
-#~ msgstr "Fragment Shader:"
-
 #~ msgid "Assign Shader"
 #~ msgstr "Wijs Shader toe"
-
-#~ msgid "Display Type:"
-#~ msgstr "Display Type:"
 
 #~ msgid "Change Font..."
 #~ msgstr "Wijzig Font..."
@@ -11553,23 +10945,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Schema's:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Breedte:"
 
 #~ msgid "&Height"
 #~ msgstr "&Hoogte:"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -11591,9 +10971,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y As eenheden:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "&Gaussiaanse breedte:"
 
@@ -11602,9 +10979,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Label Toppen:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Moleculaire Vibraties"
@@ -11625,10 +10999,6 @@ msgstr ""
 #~ msgid "Low"
 #~ msgstr "Laag"
 
-#~ msgctxt "medium resolution"
-#~ msgid "Medium"
-#~ msgstr "Medium"
-
 #~ msgctxt "high resolution"
 #~ msgid "High"
 #~ msgstr "Hoog"
@@ -11636,12 +11006,6 @@ msgstr ""
 #~ msgctxt "very high resolution"
 #~ msgid "Very High"
 #~ msgstr "Zeer Hoog"
-
-#~ msgctxt ""
-#~ "Add the new surface to this particular display type (i.e., orbital or "
-#~ "surface)"
-#~ msgid "In Display Type:"
-#~ msgstr "In Display Type:"
 
 #~ msgid "New Display"
 #~ msgstr "Nieuwe Display"
@@ -11651,6 +11015,3 @@ msgstr ""
 
 #~ msgid "Python Settings"
 #~ msgstr "Python instellingen"
-
-#~ msgid "Z Matrix Editor"
-#~ msgstr "Z Matrix Editor"

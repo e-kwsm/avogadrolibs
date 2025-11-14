@@ -9232,69 +9232,16 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analytisk"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#, fuzzy
-#~| msgid "&Import"
-#~ msgid "&Import..."
-#~ msgstr "&Importer ..."
-
-#, fuzzy
-#~| msgid "&Export"
-#~ msgid "&Export..."
-#~ msgstr "&Eksporter ..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
-
 #, fuzzy
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "Partiell ladning"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animasjon"
-
-#, fuzzy
-#~ msgctxt "ambient occlusion"
-#~ msgid "Van der Waals (AO)"
-#~ msgstr "Van der Waals"
-
-#, fuzzy
-#~| msgid "Optimize Geometry"
-#~ msgid "Geometry"
-#~ msgstr "Geometri"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Avstand(er):"
 
 #~ msgid "Number of Atoms:"
 #~ msgstr "Antall atomer:"
 
 #~ msgid "Number of Bonds:"
 #~ msgstr "Antall bindinger:"
-
-#, fuzzy
-#~| msgid "Optimization"
-#~ msgid "Optimize"
-#~ msgstr "Optimalisering"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Inn:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragment …"
 
 #~ msgid "Download Plugins..."
 #~ msgstr "Laster ned programtillegg …"
@@ -9305,43 +9252,12 @@ msgstr ""
 #~ msgid "Connection failed"
 #~ msgstr "Tilkobling mislyktes"
 
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Filnavn:"
-
 #~ msgid "&Hostname:"
 #~ msgstr "&Vertsnavn:"
-
-#~ msgid "Port"
-#~ msgstr "Port"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Naviger"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Naviger"
-
-#~ msgid "Files of type:"
-#~ msgstr "Filer av type:"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Grunnstoff"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Tous les fichiers"
 
 #, fuzzy
 #~ msgid "Layer"
 #~ msgstr "Spiller"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekyl"
 
 #, fuzzy
 #~| msgid "Generating 3D molecule..."
@@ -9371,14 +9287,6 @@ msgstr ""
 #~ msgstr "Vinkelegenskaper …"
 
 #, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Atomegenskaper"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molekylegenskaper..."
-
-#, fuzzy
 #~ msgid "Symmetry..."
 #~ msgstr "Symmetri …"
 
@@ -9401,15 +9309,6 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "Vinkel %1"
 
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid "Torsion %1"
-#~ msgstr "Torsion"
-
-#, fuzzy
-#~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energi (eV)"
-
 #~ msgid "Yes"
 #~ msgstr "Ja"
 
@@ -9419,14 +9318,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Import"
 #~ msgstr "Importer"
-
-#, fuzzy
-#~ msgid "Insert SMILES fragment:"
-#~ msgstr "Sett inn fragment"
-
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "&Krystallografi"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -9473,14 +9364,8 @@ msgstr ""
 #~ msgid "Polygon"
 #~ msgstr "Mangekant"
 
-#~ msgid "Ring"
-#~ msgstr "Ring"
-
 #~ msgid "Van der Waals Spheres"
 #~ msgstr "Van der Waals-kuler"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Legger til .avi-utvidelse"
@@ -9551,9 +9436,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Format d'image vectorielle usuel"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Peptide..."
 #~ msgstr "Peptid …"
 
@@ -9582,12 +9464,6 @@ msgstr ""
 #~ msgid "Python Terminal"
 #~ msgstr "Python-terminal"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Gaussian Running."
 #~ msgstr "Gaussian kjører."
 
@@ -9599,21 +9475,6 @@ msgstr ""
 
 #~ msgid "Gaussian Not Installed."
 #~ msgstr "Gaussian er ikke installert."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton …"
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "MOPAC Running."
-#~ msgstr "MOPAC kjører."
 
 #~ msgid ""
 #~ "MOPAC is already running. Wait until the previous calculation is finished."
@@ -9652,15 +9513,8 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Dataformat"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Last inn spektraldata"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Lagre spektralbilde"
@@ -9671,10 +9525,6 @@ msgstr ""
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Ingenting"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgid "Connect"
 #~ msgstr "Koble til"
@@ -9690,10 +9540,6 @@ msgstr ""
 
 #~ msgid "Molecule %1"
 #~ msgstr "Molekyl %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Ukjent Python-motor"
@@ -9737,22 +9583,6 @@ msgstr ""
 #~ msgid "z rotation"
 #~ msgstr "z rotasjon"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Draw Bond"
 #~ msgstr "Tegn binding"
 
@@ -9768,9 +9598,6 @@ msgstr ""
 #~ msgctxt "in Angstrom"
 #~ msgid "New Radius, %1:"
 #~ msgstr "Ny radius, %1:"
-
-#~ msgid "Symbol"
-#~ msgstr "Symbol"
 
 #~ msgid "Bond Length"
 #~ msgstr "Bindingslengde"
@@ -9796,9 +9623,6 @@ msgstr ""
 #~ msgid "Axis 3:"
 #~ msgstr "Akse 3:"
 
-#~ msgid "Norm"
-#~ msgstr "Norm"
-
 #~ msgid "Bond Radius:"
 #~ msgstr "Bindingsradius:"
 
@@ -9811,9 +9635,6 @@ msgstr ""
 #~ msgid "Bond number"
 #~ msgstr "Bindingsnummer"
 
-#~ msgid "Radius:"
-#~ msgstr "Radius:"
-
 #~ msgid "Positive"
 #~ msgstr "Positiv"
 
@@ -9822,9 +9643,6 @@ msgstr ""
 
 #~ msgid "Show Atoms"
 #~ msgstr "Vis atomer"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgid "Number of atoms:"
 #~ msgstr "Antall atomer:"
@@ -9864,9 +9682,6 @@ msgstr ""
 
 #~ msgid "Property:"
 #~ msgstr "Egenskap:"
-
-#~ msgid "System"
-#~ msgstr "System"
 
 #~ msgid "Misc"
 #~ msgstr "Diverse"
@@ -9909,9 +9724,6 @@ msgstr ""
 
 #~ msgid "Rename..."
 #~ msgstr "Endre navn …"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "Relative"
 #~ msgstr "Relativ"

@@ -9674,10 +9674,6 @@ msgstr "phlostically@example.com"
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interfaco al MongoChem-Servilo."
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Ŝargi Strukturan Dosieron"
-
 #~ msgid "&Hostname:"
 #~ msgstr "Servilonomo (&H):"
 

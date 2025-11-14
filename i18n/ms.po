@@ -9400,19 +9400,19 @@ msgstr ""
 #~ msgid ""
 #~ "Align Molecules\n"
 #~ "\n"
-#~ "Left Mouse: \tSelect up to two atoms.\n"
+#~ "Left Mouse:\tSelect up to two atoms.\n"
 #~ "\tThe first atom is centered at the origin.\n"
 #~ "\tThe second atom is aligned to the selected axis.\n"
-#~ "Right Mouse: \tReset alignment.\n"
-#~ "Double-Click: \tCenter the atom at the origin."
+#~ "Right Mouse:\tReset alignment.\n"
+#~ "Double-Click:\tCenter the atom at the origin."
 #~ msgstr ""
 #~ "Jajar Molekul\n"
 #~ "\n"
-#~ "Butang Kiri Tetikus: \tPilih sehingga dua atom.\n"
+#~ "Butang Kiri Tetikus:\tPilih sehingga dua atom.\n"
 #~ "\tAtom pertama berada dipusat.\n"
 #~ "\tAtom kedua dijajar mengikut paksi yang dipilih.\n"
-#~ "Butang Kanan Tetikus: \tTetap semula jajaran.\n"
-#~ "Dwi-Klik: \tTengah atom dipusat."
+#~ "Butang Kanan Tetikus:\tTetap semula jajaran.\n"
+#~ "Dwi-Klik:\tTengah atom dipusat."
 
 #, fuzzy
 #~ msgid "&Analysis"
@@ -9444,10 +9444,10 @@ msgstr ""
 #~| msgid ""
 #~| "Bond Centric Manipulation Tool\n"
 #~| "\n"
-#~| "Left Mouse: \tClick and drag to rotate the view.\n"
+#~| "Left Mouse:\tClick and drag to rotate the view.\n"
 #~| "Middle Mouse: Click and drag to zoom in or out.\n"
-#~| "Right Mouse: \tClick and drag to move the view.\n"
-#~| "Double-Click: \tReset the view.\n"
+#~| "Right Mouse:\tClick and drag to move the view.\n"
+#~| "Double-Click:\tReset the view.\n"
 #~| "\n"
 #~| "Left Click & Drag on a Bond to set the Manipulation Plane:\n"
 #~| "Left Click & Drag one of the Atoms in the Bond to change the angle\n"
@@ -9455,10 +9455,10 @@ msgstr ""
 #~ msgid ""
 #~ "Bond Centric Manipulation Tool\n"
 #~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ "Double-Click: \tReset the view.\n"
+#~ "Left Mouse:\tClick and drag to rotate the view.\n"
+#~ "Middle Mouse:\tClick and drag to zoom in or out.\n"
+#~ "Right Mouse:\tClick and drag to move the view.\n"
+#~ "Double-Click:\tReset the view.\n"
 #~ "\n"
 #~ "Left Click & Drag on a Bond to set the Manipulation Plane:\n"
 #~ "Left Click & Drag one of the Atoms in the Bond to change the angle\n"
@@ -9466,10 +9466,10 @@ msgstr ""
 #~ msgstr ""
 #~ "Alat Manipulasi Pusat Ikatan\n"
 #~ "\n"
-#~ "Butang Kiri Tetikus: \tKlik dan seret untuk putar pandangan.\n"
+#~ "Butang Kiri Tetikus:\tKlik dan seret untuk putar pandangan.\n"
 #~ "Butang Tengah Tetikus: Klik dan seret untuk zum masuk dan keluar.\n"
-#~ "Butang Kanan Tetikus: \tKlik dan seret untuk alih pandangan.\n"
-#~ "Dwi-Klik: \tTetap semula pandangan.\n"
+#~ "Butang Kanan Tetikus:\tKlik dan seret untuk alih pandangan.\n"
+#~ "Dwi-Klik:\tTetap semula pandangan.\n"
 #~ "\n"
 #~ "Klik Kiri & Seret pada Ikatan untuk tetapkan Satah Manipulasi:\n"
 #~ "Klik Kiri & Seret pada salah satu Atom dalam Ikatan untuk mengubah sudut\n"
@@ -9480,65 +9480,65 @@ msgstr ""
 #~| msgid ""
 #~| "Draw Tool (F8)\n"
 #~| "\n"
-#~| "Left Mouse: \tClick and Drag to create Atoms and Bonds\n"
-#~| "Right Mouse: \tDelete Atom"
+#~| "Left Mouse:\tClick and Drag to create Atoms and Bonds\n"
+#~| "Right Mouse:\tDelete Atom"
 #~ msgid ""
 #~ "Draw Tool\n"
 #~ "\n"
-#~ "Left Mouse: \tClick and Drag to create Atoms and Bond\n"
-#~ "Right Mouse: \tDelete Atom"
+#~ "Left Mouse:\tClick and Drag to create Atoms and Bond\n"
+#~ "Right Mouse:\tDelete Atom"
 #~ msgstr ""
 #~ "Alat Lukis (F8)\n"
 #~ "\n"
-#~ "Butang Kiri Tetikus: \tKlik dan Seret untuk cipta Atom dan Ikatan\n"
-#~ "Butang Kanan Tetikus: \tPadam Atom"
+#~ "Butang Kiri Tetikus:\tKlik dan Seret untuk cipta Atom dan Ikatan\n"
+#~ "Butang Kanan Tetikus:\tPadam Atom"
 
 #, fuzzy
 #~| msgid ""
 #~| "Click to Measure (F12)\n"
 #~| "\n"
-#~| "Left Mouse: \tSelect up to three Atoms.\n"
+#~| "Left Mouse:\tSelect up to three Atoms.\n"
 #~| "\tDistances are measured between 1-2 and 2-3\n"
 #~| "\tAngle is measured between 1-3 using 2 as the common point\n"
-#~| "Right Mouse: \tReset the measurements.Double-Click: \tReset the view."
+#~| "Right Mouse:\tReset the measurements.Double-Click:\tReset the view."
 #~ msgid ""
 #~ "Measure Tool\n"
 #~ "\n"
-#~ "Left Mouse: \tSelect up to four Atoms.\n"
+#~ "Left Mouse:\tSelect up to four Atoms.\n"
 #~ "\tDistances are measured between 1-2 and 2-3\n"
 #~ "\tAngle is measured between 1-3 using 2 as the common point\n"
 #~ "\tDihedral is measured between 1-2-3-4\n"
-#~ "Right Mouse: \tReset the measurements."
+#~ "Right Mouse:\tReset the measurements."
 #~ msgstr ""
 #~ "Klik untuk Ukur (F12)\n"
 #~ "\n"
-#~ "Butang Kiri Tetikus: \tPilih sehingga tiga Atom.\n"
+#~ "Butang Kiri Tetikus:\tPilih sehingga tiga Atom.\n"
 #~ "\tJarak diukur diantara 1-2 dan 2-3\n"
 #~ "\tSudut diukur diantara 1-3 menggunakan 2 sebagai titik umum\n"
-#~ "Butang Kanan Tetikus: \tTetap semula pengukuran.Dwi-Klik: \tTetap semula "
+#~ "Butang Kanan Tetikus:\tTetap semula pengukuran.Dwi-Klik:\tTetap semula "
 #~ "pandangan."
 
 #, fuzzy
 #~| msgid ""
 #~| "Navigation Tool (F9)\n"
 #~| "\n"
-#~| "Left Mouse: \tClick and drag to rotate the view.\n"
+#~| "Left Mouse:\tClick and drag to rotate the view.\n"
 #~| "Middle Mouse: Click and drag to zoom in or out.\n"
-#~| "Right Mouse: \tClick and drag to move the view.\n"
-#~| "Double-Click: \tReset the view."
+#~| "Right Mouse:\tClick and drag to move the view.\n"
+#~| "Double-Click:\tReset the view."
 #~ msgid ""
 #~ "Navigation Tool\n"
 #~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
+#~ "Left Mouse:\tClick and drag to rotate the view.\n"
+#~ "Middle Mouse:\tClick and drag to zoom in or out.\n"
+#~ "Right Mouse:\tClick and drag to move the view.\n"
 #~ msgstr ""
 #~ "Alat Navigasi (F9)\n"
 #~ "\n"
-#~ "Butang Kiri Tetikus: \tKlik dan seret untuk putar pandangan.\n"
+#~ "Butang Kiri Tetikus:\tKlik dan seret untuk putar pandangan.\n"
 #~ "Butang Tengah Tetikus: Klik dan seret untuk zum masuk atau keluar.\n"
-#~ "Butang Kanan Tetikus: \tKlik dan seret untuk alih pandangan.\n"
-#~ "Dwi-Klik: \tTetap semula pandangan."
+#~ "Butang Kanan Tetikus:\tKlik dan seret untuk alih pandangan.\n"
+#~ "Dwi-Klik:\tTetap semula pandangan."
 
 #, fuzzy
 #~| msgid "Animation"
@@ -9549,28 +9549,28 @@ msgstr ""
 #~| msgid ""
 #~| "Selection Tool (F11)\n"
 #~| "\n"
-#~| "Left Mouse: \tClick to pick individual atoms, residues, or fragments\n"
+#~| "Left Mouse:\tClick to pick individual atoms, residues, or fragments\n"
 #~| "\tDrag to select a range of atoms\n"
-#~| "Right Mouse: \tClick outside the molecule to clear selection\n"
+#~| "Right Mouse:\tClick outside the molecule to clear selection\n"
 #~| "Use Ctrl to toggle the selection and shift to add to the selection.\n"
-#~| "Double-Click: \tSelect an entire fragment."
+#~| "Double-Click:\tSelect an entire fragment."
 #~ msgid ""
 #~ "Selection Tool\n"
 #~ "\n"
-#~ "Left Mouse: \tClick to pick individual atoms, residues, or fragments\n"
+#~ "Left Mouse:\tClick to pick individual atoms, residues, or fragments\n"
 #~ "\tDrag to select a range of atoms\n"
-#~ "Right Mouse: \tClick outside the molecule to clear selection\n"
+#~ "Right Mouse:\tClick outside the molecule to clear selection\n"
 #~ "Use Ctrl to toggle the selection and shift to add to the selection.\n"
-#~ "Double-Click: \tSelect an entire fragment."
+#~ "Double-Click:\tSelect an entire fragment."
 #~ msgstr ""
 #~ "Alat Pemilihan (F11)\n"
 #~ "\n"
-#~ "Butang Kiri Tetikus: \tKlik untuk ambil atom, baki, atau cebisan secara "
+#~ "Butang Kiri Tetikus:\tKlik untuk ambil atom, baki, atau cebisan secara "
 #~ "individu\n"
 #~ "\tSeret untuk pilih julat atom\n"
-#~ "Butang Kanan Tetikus: \tKlik diluar molekul untuk batalkan pemilihan\n"
+#~ "Butang Kanan Tetikus:\tKlik diluar molekul untuk batalkan pemilihan\n"
 #~ "Guna Ctrl untuk togol pemilihan dan shift untuk tambah pemilihan.\n"
-#~ "Dwi-Klik: \tPilih keseluruhan cebisan."
+#~ "Dwi-Klik:\tPilih keseluruhan cebisan."
 
 #, fuzzy
 #~ msgctxt "ambient occlusion"
@@ -9581,23 +9581,23 @@ msgstr ""
 #~| msgid ""
 #~| "Manipulation Tool (F10)\n"
 #~| "\n"
-#~| "Left Mouse: \tClick and drag to move atoms\n"
+#~| "Left Mouse:\tClick and drag to move atoms\n"
 #~| "Middle Mouse: Click and drag to move atoms further away or closer\n"
-#~| "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-#~| "Double-Click: \tReset the view."
+#~| "Right Mouse:\tClick and drag to rotate selected atoms.\n"
+#~| "Double-Click:\tReset the view."
 #~ msgid ""
 #~ "Manipulation Tool\n"
 #~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
+#~ "Left Mouse:\tClick and drag to move atoms\n"
+#~ "Right Mouse:\tClick and drag to rotate selected atoms.\n"
 #~ msgstr ""
 #~ "Alat Manipulasi (F10)\n"
 #~ "\n"
-#~ "Butang Kiri Tetikus \tKlik dan seret untuk alih atom\n"
+#~ "Butang Kiri Tetikus\tKlik dan seret untuk alih atom\n"
 #~ "Butang Tengah Tetikus: Klik dan seret untuk alih atom lebih jauh atau "
 #~ "lebih dekat\n"
-#~ "Butang Kanan Tetikus: \tKlik dan seret untuk putar atom terpilih.\n"
-#~ "Dwi-Klik: \tTetap semula pandangan."
+#~ "Butang Kanan Tetikus:\tKlik dan seret untuk putar atom terpilih.\n"
+#~ "Dwi-Klik:\tTetap semula pandangan."
 
 #~ msgid "Geometry"
 #~ msgstr "Geometri"
@@ -9623,11 +9623,6 @@ msgstr ""
 #~ msgstr "Salin Semua"
 
 #, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nama Molekul IUPAC:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Berat Molekul (g/mol):"
 
@@ -9639,9 +9634,6 @@ msgstr ""
 
 #~ msgid "Number of Bonds:"
 #~ msgstr "Bilangan Ikatan:"
-
-#~ msgid "TODO"
-#~ msgstr "TODO"
 
 #, fuzzy
 #~| msgid "Jump Size:"
@@ -9662,63 +9654,12 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "Cebisan..."
 
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Kefungsian DFT:"
-
 #~ msgid "Other..."
 #~ msgstr "Lain-lain..."
 
 #, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Nama Fail:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktur:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigasi"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigasi"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nama unsur"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Semua fail"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Rombohedron"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekul"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Tiada molekul ditetapkan"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#, fuzzy
 #~ msgid "Crystal..."
 #~ msgstr "Hablur"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9742,10 +9683,6 @@ msgstr ""
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "Cipta Permukaan..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Simetri"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Sisip Cebisan..."
@@ -9808,10 +9745,6 @@ msgstr ""
 #~ msgid "Input Generators"
 #~ msgstr "Penjana Input..."
 
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Import"
-
 #~ msgid "Insert SMILES"
 #~ msgstr "Sisip SMILES"
 
@@ -9829,11 +9762,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimumkan Geometri"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Pengoptimuman Geometri"
+#~ msgstr "Optimumkan Geometri"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -9888,9 +9817,6 @@ msgstr ""
 
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Sorot fitur tertentu yang sepadan dengan corak SMARTS."
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoktium"
 
 #~ msgid "Engines"
 #~ msgstr "Enjin"
@@ -9971,9 +9897,6 @@ msgstr ""
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Buka Fail Trajektori"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Menambah sambungan .avi"
@@ -10171,20 +10094,11 @@ msgstr ""
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Kurangkan Sel (&Primitif)"
 
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
-
-#~ msgid "&Nanometer"
-#~ msgstr "&Nanometer"
-
 #~ msgid "&Picometer"
 #~ msgstr "&Pikometer"
 
 #~ msgid "&Degree"
 #~ msgstr "&Darjah"
-
-#~ msgid "&Radian"
-#~ msgstr "&Radian"
 
 #~ msgid "Display &cartesian coordinates"
 #~ msgstr "Papar koordinat &cartes"
@@ -10362,9 +10276,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Format imej vektor umum"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Grafik Vektor dieksport"
 
@@ -10422,9 +10333,6 @@ msgstr ""
 
 #~ msgid "PDB entry to download."
 #~ msgstr "Masukan PDB untuk dimuat turun."
-
-#~ msgid "URL"
-#~ msgstr "URL"
 
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL molekul untuk dimuat turun."
@@ -10486,9 +10394,6 @@ msgstr ""
 
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Analisis Output Orca..."
-
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
 
 #~ msgid "Orca Test Example"
 #~ msgstr "Contoh Ujian Orca"
@@ -10631,21 +10536,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Penukaran Format SMILES Tidak Tersedia!"
 
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Cipta fail input untuk pakej kimia kuantum GAMESS"
 
@@ -10734,30 +10624,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussian tidak dijalankan dengan betul. Mungkin ia tidak dipasang dengan "
 #~ "betul."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Amaran Penjana Dek Input Lammps"
@@ -10961,20 +10827,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Tetapan Spektrum Ter&infra Merah"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Tetapan Spektrum &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
 
 #~ msgid "&UV Settings"
 #~ msgstr "Tetapan &UV"
@@ -11021,9 +10875,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Nilai Dipisah Koma"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Spektrum Diimport"
 
@@ -11049,10 +10900,6 @@ msgstr ""
 #~ msgid "Data Format"
 #~ msgstr "Format Data"
 
-#~ msgctxt "noun, not verb"
-#~ msgid "Format:"
-#~ msgstr "Format:"
-
 #~ msgid "Load Spectral Data"
 #~ msgstr "Muat Data Spektrum"
 
@@ -11061,9 +10908,6 @@ msgstr ""
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Grafik Rangkaian Mudahalih"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Format Fail Imej Bertag"
@@ -11097,9 +10941,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualkan data spektrum dari pengiraan kimia kuantum"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Analisis Getaran"
@@ -11136,10 +10977,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Tiada apa"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Ketumpatan Elektron"
@@ -11154,9 +10991,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Mengira MO %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr "Permukaan keupayaan elektrostatik belum lagi disokong."
@@ -11255,9 +11089,6 @@ msgstr ""
 #~ msgid "Debug Information"
 #~ msgstr "Maklumat Nyah Pepijat"
 
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
-
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Saiz Pandangan: %L1 x %L2"
 
@@ -11339,10 +11170,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molekul %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Enjin Python Tidak Diketahui"
 
@@ -11392,30 +11219,27 @@ msgstr ""
 #~ "Auto Optimization Tool\n"
 #~ "\n"
 #~ "Navigation Functions when clicking in empty space.\n"
-#~ "Left Mouse: \tRotate Space\n"
+#~ "Left Mouse:\tRotate Space\n"
 #~ "Middle Mouse: Zoom Space\n"
-#~ "Right Mouse: \tMove Space\n"
-#~ "Double-Click: \t Reset View\n"
+#~ "Right Mouse:\tMove Space\n"
+#~ "Double-Click:\tReset View\n"
 #~ "\n"
 #~ "When running:\n"
-#~ "Left Mouse: \tClick and drag atoms to move them."
+#~ "Left Mouse:\tClick and drag atoms to move them."
 #~ msgstr ""
 #~ "Alat Pengoptimuman Automatik\n"
 #~ "\n"
 #~ "Fungsi Navigasi bila mengklik dalam ruang kosong.\n"
-#~ "Butang Kiri Tetikus: \tPutar Ruang\n"
+#~ "Butang Kiri Tetikus:\tPutar Ruang\n"
 #~ "Butang Tengah Tetikus: Zum Ruang\n"
-#~ "Butang Kanan Tetikus: \tGerak Ruang\n"
-#~ "Dwi-Klik: \t Tetap Semula Pandangan\n"
+#~ "Butang Kanan Tetikus:\tGerak Ruang\n"
+#~ "Dwi-Klik:\tTetap Semula Pandangan\n"
 #~ "\n"
 #~ "Bila berjalan:\n"
-#~ "Butang Kiri Tetikus: \tKlik dan seret atom untuk gerakkannya."
+#~ "Butang Kiri Tetikus:\tKlik dan seret atom untuk gerakkannya."
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Tidak dapat sediakan medan daya..."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Bil Kekangan: %1"
@@ -11503,22 +11327,6 @@ msgstr ""
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Sudut Dwihedron: %1 °"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Jarak:"
@@ -11641,15 +11449,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Bentuk"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Gelung"
 
@@ -11673,9 +11472,6 @@ msgstr ""
 
 #~ msgid "TextRenderer"
 #~ msgstr "Penerap Teks"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
 
 #~ msgid "Text:"
 #~ msgstr "Teks:"
@@ -11731,9 +11527,6 @@ msgstr ""
 #~ msgid "VdW Opacity:"
 #~ msgstr "Kelegapan VdW:"
 
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
-
 #~ msgid "Render:"
 #~ msgstr "Terap:"
 
@@ -11760,9 +11553,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animasikan Trajektori"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -11901,15 +11691,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "Vektor terjemahan:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "Unit &vektor:"
 
@@ -11943,18 +11724,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "Paparan Lalai"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Indeks Miller"
 
@@ -11967,29 +11736,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Persediaan Medan Daya"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Bilangan langkah"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algoritma"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Heliks Alfa"
@@ -12003,15 +11754,6 @@ msgstr ""
 #~ msgid "Phi:"
 #~ msgstr "Fi:"
 
-#~ msgid "Psi:"
-#~ msgstr "Psi:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Bilangan Baki:"
 
@@ -12021,26 +11763,8 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momen Dwikutub (D):"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Advanced"
 #~ msgstr "Lanjutan"
-
-#~ msgid "SCF"
-#~ msgstr "SCF"
-
-#~ msgid "Grid"
-#~ msgstr "Grid"
 
 #~ msgid "POV-Ray Export"
 #~ msgstr "Eksport POV-Ray"
@@ -12048,14 +11772,8 @@ msgstr ""
 #~ msgid "Select..."
 #~ msgstr "Pilih..."
 
-#~ msgid "povray"
-#~ msgstr "povray"
-
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Guna antialias adegan penuh"
-
-#~ msgid "Antialias"
-#~ msgstr "Antialias"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Tetapkan warna latar belakang kepada lutsinar"
@@ -12078,9 +11796,6 @@ msgstr ""
 #~ msgid "Abinit Input"
 #~ msgstr "Input Abinit"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "Cartes (Angstrom)"
 
@@ -12090,23 +11805,14 @@ msgstr ""
 #~ msgid "Plane Wave cutoff (Ha):"
 #~ msgstr "Keratan Gelombang Satah (Ha):"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
 #~ msgid "Tolerance on forces(Ha/bohr):"
 #~ msgstr "Toleransi terhadap daya(Ha/bohr):"
 
 #~ msgid "Max lattice expansion:"
 #~ msgstr "Pengembangan kekisi maksimum:"
 
-#~ msgid "1.05"
-#~ msgstr "1.05"
-
 #~ msgid "k-point shift:"
 #~ msgstr "Anjak titik-k:"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
 
 #~ msgid "Number of bands:"
 #~ msgstr "Bilangan jalur:"
@@ -12116,9 +11822,6 @@ msgstr ""
 
 #~ msgid "Double grid PW cutoff (Ha):"
 #~ msgstr "Keratan PW grid dubel (Ha):"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Occupation scheme:"
 #~ msgstr "Skema kerjaan:"
@@ -12135,9 +11838,6 @@ msgstr ""
 #~ msgid "1 - semiconducting"
 #~ msgstr "1 - bersemikonduktor"
 
-#~ msgid "3 - Fermi Dirac"
-#~ msgstr "3 - Fermi Dirac"
-
 #~ msgid "4 - Cold Smearing (Marzari)"
 #~ msgstr "4 - Kabusisi Sejuk (Marzari)"
 
@@ -12147,17 +11847,11 @@ msgstr ""
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Lebar kabusisi (Ha):"
 
-#~ msgid "0.01"
-#~ msgstr "0.01"
-
 #~ msgid "0 - no moving ions "
 #~ msgstr "0 - tiada ion bergerak "
 
 #~ msgid "1 - viscous damping"
 #~ msgstr "1 - peredaman ganas"
-
-#~ msgid "2 - BFGS "
-#~ msgstr "2 - BFGS "
 
 #~ msgid "3 - BFGS with energy"
 #~ msgstr "3 - BFGS dengan tenaga"
@@ -12165,14 +11859,8 @@ msgstr ""
 #~ msgid "# Geometrical time steps:"
 #~ msgstr "# Langkah masa geometri"
 
-#~ msgid "1.e-10"
-#~ msgstr "1.e-10"
-
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "Pelicinan Tenaga Kinetik (Ha):"
-
-#~ msgid "0.5"
-#~ msgstr "0.5"
 
 #~ msgid "Compute..."
 #~ msgstr "Kira..."
@@ -12190,30 +11878,6 @@ msgstr ""
 #~ "Tambah apa yang anda taip di dalam baris taju fail input untuk tujuan\n"
 #~ "maklumat anda sendiri."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
-
 #~ msgid "Pople-style"
 #~ msgstr "Gaya-Pople"
 
@@ -12223,167 +11887,11 @@ msgstr ""
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Konsisten kolerasi Dunning"
 
-#~ msgid "aug-cc-pVDZ"
-#~ msgstr "aug-cc-pVDZ"
-
-#~ msgid "aug-cc-pVTZ"
-#~ msgstr "aug-cc-pVTZ"
-
-#~ msgid "aug-cc-pVQZ"
-#~ msgstr "aug-cc-pVQZ"
-
-#~ msgid "aug-cc-pV5Z"
-#~ msgstr "aug-cc-pV5Z"
-
-#~ msgid "aug-cc-pV6Z"
-#~ msgstr "aug-cc-pV6Z"
-
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ"
-
-#~ msgid "cc-pCVTZ"
-#~ msgstr "cc-pCVTZ"
-
-#~ msgid "cc-pCVQZ"
-#~ msgstr "cc-pCVQZ"
-
-#~ msgid "cc-pCV5Z"
-#~ msgstr "cc-pCV5Z"
-
-#~ msgid "cc-pwCVDZ"
-#~ msgstr "cc-pwCVDZ"
-
-#~ msgid "cc-pwCVTZ"
-#~ msgstr "cc-pwCVTZ"
-
-#~ msgid "cc-pwCVQZ"
-#~ msgstr "cc-pwCVQZ"
-
-#~ msgid "cc-pwCV5Z"
-#~ msgstr "cc-pwCV5Z"
-
 #~ msgid "Core correlating functions"
 #~ msgstr "Fungsi kolerasi teras"
 
 #~ msgid "Diffuse functions"
 #~ msgstr "Fungsi pembauran"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "3-21++G"
-#~ msgstr "3-21++G"
-
-#~ msgid "6-31+G"
-#~ msgstr "6-31+G"
-
-#~ msgid "6-31++G"
-#~ msgstr "6-31++G"
-
-#~ msgid "3-21G*"
-#~ msgstr "3-21G*"
-
-#~ msgid "6-31G*"
-#~ msgstr "6-31G*"
-
-#~ msgid "6-31G**"
-#~ msgstr "6-31G**"
-
-#~ msgid "6-31G(3df,3pd)"
-#~ msgstr "6-31G(3df,3pd)"
-
-#~ msgid "6-311G*"
-#~ msgstr "6-311G*"
-
-#~ msgid "6-311G**"
-#~ msgstr "6-311G**"
-
-#~ msgid "6-311G(2df,2pd)"
-#~ msgstr "6-311G(2df,2pd)"
-
-#~ msgid "3-21++G*"
-#~ msgstr "3-21++G*"
-
-#~ msgid "6-31+G*"
-#~ msgstr "6-31+G*"
-
-#~ msgid "6-31++G*"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G**"
-
-#~ msgid "6-311+G*"
-#~ msgstr "6-311+G*"
-
-#~ msgid "6-311++G**"
-#~ msgstr "6-311++G**"
-
-#~ msgid "6-311++G(2d,2p)"
-#~ msgstr "6-311++G(2d,2p)"
-
-#~ msgid "6-311++G(3df,3pd)"
-#~ msgstr "6-311++G(3df,3pd)"
-
-#~ msgid "pc-0"
-#~ msgstr "pc-0"
-
-#~ msgid "pc-1"
-#~ msgstr "pc-1"
-
-#~ msgid "pc-2"
-#~ msgstr "pc-2"
-
-#~ msgid "pc-3"
-#~ msgstr "pc-3"
-
-#~ msgid "pc-4"
-#~ msgstr "pc-4"
-
-#~ msgid "apc-0"
-#~ msgstr "apc-0"
-
-#~ msgid "apc-1"
-#~ msgstr "apc-1"
-
-#~ msgid "apc-2"
-#~ msgstr "apc-2"
-
-#~ msgid "apc-3"
-#~ msgstr "apc-3"
-
-#~ msgid "apc-4"
-#~ msgstr "apc-4"
-
-#~ msgid "aug-cc-pCVDZ"
-#~ msgstr "aug-cc-pCVDZ"
-
-#~ msgid "aug-cc-pCVTZ"
-#~ msgstr "aug-cc-pCVTZ"
-
-#~ msgid "aug-cc-pCVQZ"
-#~ msgstr "aug-cc-pCVQZ"
-
-#~ msgid "aug-cc-pCV5Z"
-#~ msgstr "aug-cc-pCV5Z"
 
 #~ msgid "Direct"
 #~ msgstr "Terus"
@@ -12404,227 +11912,14 @@ msgstr ""
 #~ msgid "Parallel"
 #~ msgstr "Selari"
 
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
-
 #~ msgid "Grid Specification"
 #~ msgstr "Spesifikasi Grid"
 
 #~ msgid "Partitioning Scheme:"
 #~ msgstr "Skema Penyekatan:"
 
-#~ msgid "Becke"
-#~ msgstr "Becke"
-
 #~ msgid "Becke (original)"
 #~ msgstr "Becke (asal)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "Kualiti Grid:"
@@ -12643,12 +11938,6 @@ msgstr ""
 
 #~ msgid "Radial Scheme:"
 #~ msgstr "Skemia Jejari:"
-
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
 
 #~ msgid "Show all functionals"
 #~ msgstr "Papar semua kefungsian"
@@ -12670,33 +11959,6 @@ msgstr ""
 
 #~ msgid "Group Label:"
 #~ msgstr "Label Kumpulan:"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "Persediaan &Lanjutan"
@@ -12722,41 +11984,14 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Baca"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Baurkan Shell-S pada Atom Berat"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Baur Shell-L pada Atom Berat"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Valens Dwi Zeta"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "Binning/Curtiss DZ"
-#~ msgstr "Binning/Curtiss DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Valens Tripel Zeta"
@@ -12767,26 +12002,11 @@ msgstr ""
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Valens Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Jenis ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Lalai"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Fungsi Pengutuban Atom Berat:"
@@ -12809,17 +12029,8 @@ msgstr ""
 #~ msgid "Saddle Point"
 #~ msgstr "Titik Tunggang"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Ekstrumum Gradien"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "mom. Peralihan Radiasi"
@@ -12830,14 +12041,8 @@ msgstr ""
 #~ msgid "Finite Electric Field"
 #~ msgstr "Medan Elektrik Terhingga"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Pengoptimuman Sejagat"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "Pengoptimuman FMO"
@@ -12845,29 +12050,11 @@ msgstr ""
 #~ msgid "Raman Intensities"
 #~ msgstr "Keamatan Raman"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
+#~ msgid "Make EFP"
+#~ msgstr "Buat EFP"
 
 #~ msgid "None (CI)"
 #~ msgstr "Tiada (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Jenis SCF:"
@@ -12877,12 +12064,6 @@ msgstr ""
 
 #~ msgid "Exec Type:"
 #~ msgstr "Jenis Boleh Laku:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
 
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Penentu Mak. Ames"
@@ -12899,9 +12080,6 @@ msgstr ""
 #~ msgid "General CI"
 #~ msgstr "CI Am"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: CC Terlinear"
 
@@ -12910,18 +12088,6 @@ msgstr ""
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC dengan Tunggal dan Dubel"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Jalan Biasa"
@@ -12947,56 +12113,11 @@ msgstr ""
 #~ msgid "# of Z-Matrix Variables"
 #~ msgstr "# dari Pembolehubah Matriks-Z"
 
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
-
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Tertib Paksi Prinsipal:"
 
 #~ msgid "Coordinate Type:"
 #~ msgstr "Jenis Koordinat:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Koord. cartes Unik"
@@ -13031,14 +12152,8 @@ msgstr ""
 #~ msgid "Millenia"
 #~ msgstr "Millenium"
 
-#~ msgid "MegaWords"
-#~ msgstr "MegaWords"
-
 #~ msgid "MegaBytes"
 #~ msgstr "MegaBait"
-
-#~ msgid "GigaWords"
-#~ msgstr "GigaWords"
 
 #~ msgid "GigaBytes"
 #~ msgstr "GigaBait"
@@ -13048,18 +12163,6 @@ msgstr ""
 
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Hasilkan fail \"Teras\" bila henti paksa"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
 
 #~ msgid "Memory:"
 #~ msgstr "Ingatan:"
@@ -13084,12 +12187,6 @@ msgstr ""
 #~ msgid "Initial Guess:"
 #~ msgstr "Tekaan Awal:"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "MO Dibaca ($VEC)"
 
@@ -13108,32 +12205,11 @@ msgstr ""
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Antarmuka GAMESS untuk Kod Lain"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Paksa Jenis Jalan Semakan"
 
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (Versi UK)"
-
-#~ msgid "Gaussian 9x"
-#~ msgstr "Gaussian 9x"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Larutkan dengan Air"
@@ -13255,9 +12331,6 @@ msgstr ""
 #~ msgid "Purify Hessian"
 #~ msgstr "Hesian Tulen"
 
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial Hessian"
 #~ msgstr "Hesian Awalan"
 
@@ -13279,17 +12352,11 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Awalan:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Pengotimuman Fungsi Rasional"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Penghampiran Kuadratik"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "Pengoptimuman Kekangan"
@@ -13312,18 +12379,6 @@ msgstr ""
 #~ msgid "Basis:"
 #~ msgstr "Asas:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Matriks-Z"
 
@@ -13345,17 +12400,8 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Input Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Piawai"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Titik Semak:"
@@ -13366,26 +12412,8 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "Input MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Versi Molpro:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "MOPAC Input"
 #~ msgstr "Input MOPAC"
@@ -13396,62 +12424,17 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Kuintet"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Input NWChem"
-
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Input Q-Chem"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "TeraChem Input"
 #~ msgstr "Input TeraChem"
 
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Tidak disekat"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "tidak"
@@ -13510,15 +12493,6 @@ msgstr ""
 #~ msgid "cm"
 #~ msgstr "sm"
 
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
-#~ msgid "px"
-#~ msgstr "px"
-
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
 #~ "value (screen to image point sizes don't translate well!)"
@@ -13568,9 +12542,6 @@ msgstr ""
 #~ msgid "Show integrated DOS"
 #~ msgstr "Papar DOS tersepadu"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Unit Paksi &Y:"
 
@@ -13582,12 +12553,6 @@ msgstr ""
 
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Bilangan Gelombang Laser:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
 
 #~ msgid "Nucleus:"
 #~ msgstr "Nukleus:"
@@ -13601,23 +12566,11 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Puncak Label:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Getaran Molekul"
 
 #~ msgid "Filter: "
 #~ msgstr "Penapis: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "AKtivitI (A^4/amu)"
@@ -13687,12 +12640,6 @@ msgstr ""
 #~ msgid "Advanced..."
 #~ msgstr "Lanjutan..."
 
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
-
 #~ msgid "&Length:"
 #~ msgstr "&Panjang:"
 
@@ -13701,9 +12648,6 @@ msgstr ""
 
 #~ msgid "periodic units"
 #~ msgstr "unit berkala"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "bohr radii"
 #~ msgstr "jejari bohr"

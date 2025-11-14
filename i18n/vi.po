@@ -9360,10 +9360,6 @@ msgstr ""
 #~ msgstr "Tên file:"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Vẽ cấu trúc thứ cấp của prô-tê-in"
-
-#, fuzzy
 #~ msgid "Navigate Back"
 #~ msgstr "Di chuyển"
 
@@ -9383,13 +9379,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "Không có phân tử nào được đặt"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9440,10 +9429,6 @@ msgstr ""
 #~ "Conformer %1\n"
 #~ "Angle %2"
 #~ msgstr "Đồng phân %1"
-
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr "Angle %1"
 
 #, fuzzy
 #~ msgctxt "Degree symbol"
@@ -9505,10 +9490,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Dừng"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Mặt"
 
 #~ msgid "Color by Index"
 #~ msgstr "Chọn màu theo chỉ số"
@@ -9610,9 +9591,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Vẽ liên kết như các sợi dây (đường thẳng), phù hợp với các (sinh) phân tử "
 #~ "lớn"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Thêm phần mở rộng .avi"
@@ -9767,9 +9745,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "Mục PDB để tải xuống."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL của phân tử cần tải xuống."
 
@@ -9790,9 +9765,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Các file ảnh (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Chưa có tên file hợp lệ nào được nhập vào."
@@ -9836,9 +9808,6 @@ msgstr ""
 #~ msgid "Python Terminal"
 #~ msgstr "Cửa sổ lệnh Python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Cửa sổ lệnh tương tác Python"
 
@@ -9859,12 +9828,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Không có chuyển đổi định dạng SMILES!"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Tạo file đầu vào cho gói phần mềm hóa lượng tử GAMESS"
@@ -9918,20 +9881,8 @@ msgstr ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "G03 bị lỗi và dừng chạy. Có lẽ nó đã không được cài đặt thành công."
 
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gauss..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck"
 #~ msgstr "Bảng nhập số liệu Molpro"
@@ -10047,16 +9998,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Đặt thuộc tính phổ &hồng ngoại"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Đặt thuộc tính &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
 
 #~ msgid "&CD Settings"
 #~ msgstr "Cài đặt &CD"
@@ -10100,9 +10043,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Dạng giá trị ngăn cách bởi dấu phảy"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Không rõ phần mở rộng: %1"
 
@@ -10120,26 +10060,8 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Tải số liệu phổ"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics (PNG)"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Dạng thức tập tin ảnh có thẻ (TIFF)"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap (BMP)"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Lưu ảnh phổ"
@@ -10155,9 +10077,6 @@ msgstr ""
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Hiển thị số liệu phổ từ kết quả tính toán hóa lượng tử"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Tính toán rung động"
@@ -10181,10 +10100,6 @@ msgstr ""
 #~ msgid "Nothing"
 #~ msgstr "Không có gì"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Mật độ electron"
@@ -10199,9 +10114,6 @@ msgstr ""
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Tính MO %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Calculate molecular orbitals and other surfaces"
 #~ msgstr "Tính mật độ orbital phân tử và các mặt khác"
@@ -10239,9 +10151,6 @@ msgstr ""
 #~ msgid "Disconnect"
 #~ msgstr "Ngắt kết nối"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Dò Wii"
 
@@ -10250,9 +10159,6 @@ msgstr ""
 
 #~ msgid "Debug Information"
 #~ msgstr "Thông tin gỡ lỗi"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Kích thước khung nhìn: %L1 x %L2"
@@ -10315,10 +10221,6 @@ msgstr ""
 
 #~ msgid "Molecule %1"
 #~ msgstr "Phân tử %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Không rõ loại máy Python"
@@ -10441,22 +10343,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Góc nhị diện: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Khoảng cách:"
 
@@ -10566,15 +10452,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Hình"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Vòng"
 
@@ -10596,9 +10473,6 @@ msgstr ""
 #~ msgid "TextRenderer"
 #~ msgstr "Phần mềm hiện chữ"
 
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Đoạn chữ :"
 
@@ -10613,15 +10487,6 @@ msgstr ""
 
 #~ msgid "Change Font"
 #~ msgstr "Thay đổi phông chữ"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Dịch chuyển nhãn:"
@@ -10643,9 +10508,6 @@ msgstr ""
 
 #~ msgid "VdW Opacity:"
 #~ msgstr "Độ đục VdW:"
-
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
 
 #~ msgid "Render:"
 #~ msgstr "Lên hình:"
@@ -10670,9 +10532,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Qũy đạo chuyển động"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -10750,38 +10609,17 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Thiết lập trường lực"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Số bước"
 
 #~ msgid "Algorithm"
 #~ msgstr "Thuật toán"
 
-#~ msgid "L"
-#~ msgstr "T"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Alpha Helix"
 #~ msgstr "Xoắn an-pha"
 
 #~ msgid "Pi Helix"
 #~ msgstr "Xoắn Pi"
-
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
 
 #~ msgid "E"
 #~ msgstr "Đ"
@@ -10792,15 +10630,6 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Mô-men lưỡng cực (D):"
 
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Advanced"
 #~ msgstr "Nâng cao"
 
@@ -10809,9 +10638,6 @@ msgstr ""
 
 #~ msgid "POV-Ray Export"
 #~ msgstr "Xuất dưới dạng POV-Ray"
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Làm trơn hình toàn cảnh"
@@ -10837,36 +10663,6 @@ msgstr ""
 #~ msgid "Basics"
 #~ msgstr "Cơ bản"
 
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "Cài đặt &nâng cao"
 
@@ -10882,27 +10678,6 @@ msgstr ""
 #~ msgid "Read"
 #~ msgstr "Đọc"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Hoá trị zeta kép"
 
@@ -10915,20 +10690,11 @@ msgstr ""
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Hoá trị Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Kiểu ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Mặc định"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "Polar:"
 #~ msgstr "Cực:"
@@ -10936,23 +10702,11 @@ msgstr ""
 #~ msgid "Max SCF Iterations:"
 #~ msgstr "Số lần lặp SCF cực đại:"
 
-#~ msgid "Gradient"
-#~ msgstr "Gradient"
-
 #~ msgid "Saddle Point"
 #~ msgstr "Điểm yên ngựa"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Cực trị gradient"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Spin Orbit"
 #~ msgstr "Quỹ đạo spin"
@@ -10960,14 +10714,8 @@ msgstr ""
 #~ msgid "Finite Electric Field"
 #~ msgstr "Trường điện tích hữu hạn"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Tối ưu hoá toàn cục"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "Tối ưu hoá FMO"
@@ -10990,29 +10738,8 @@ msgstr ""
 #~ msgid "Exec Type:"
 #~ msgstr "Kiểu thực thi:"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: CC tuyến tính hoá"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Chạy bình thường"
@@ -11034,51 +10761,6 @@ msgstr ""
 
 #~ msgid "# of Z-Matrix Variables"
 #~ msgstr "# của biến ma trận Z"
-
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Toạ độ Đề-các duy nhất"
@@ -11122,18 +10804,6 @@ msgstr ""
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Tạo file \"lõi\" khi huỷ bỏ công việc"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Bộ nhớ :"
 
@@ -11154,12 +10824,6 @@ msgstr ""
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Dùng cách thể hiện dữ liệu ngoài cho các thông báo"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "Đọc MO ($VEC)"
 
@@ -11177,24 +10841,6 @@ msgstr ""
 
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Giao diện GAMESS với các mã khác"
-
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (Phiên bản nước Anh)"
@@ -11265,9 +10911,6 @@ msgstr ""
 #~ msgid "Initial:"
 #~ msgstr "Ban đầu:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Tối ưu hàm số phân thức"
 
@@ -11292,9 +10935,6 @@ msgstr ""
 #~ msgid "Gaussian Input"
 #~ msgstr "Đầu vào Gauss"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Tiêu chuẩn"
 
@@ -11303,18 +10943,6 @@ msgstr ""
 
 #~ msgid "Z-matrix (compact)"
 #~ msgstr "ma trận Z (thu gọn)"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Display Type:"
 #~ msgstr "Kiểu hiển thị:"
@@ -11331,20 +10959,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Sơ đồ:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "Bề &rộng:"
 
 #~ msgid "&Height"
 #~ msgstr "Chiều &cao"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "in"
 #~ msgstr "inch"
@@ -11368,9 +10987,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Đơn vị trục &Y:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "&Bề rộng Gauss:"
 
@@ -11379,9 +10995,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Đặt nhãn cho các đỉnh:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Rung động của phân tử"

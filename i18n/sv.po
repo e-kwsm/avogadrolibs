@@ -9212,10 +9212,6 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgstr "&Arkiv"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Renderar proteinets sekundära struktur"
-
-#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Gundämne:"
 
