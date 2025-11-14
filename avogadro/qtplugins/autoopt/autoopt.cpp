@@ -157,7 +157,7 @@ QWidget* AutoOpt::toolWidget() const
     form->addRow(tr("Task:"), taskComboBox);
 
     // method combo box
-    QComboBox* methodComboBox = new QComboBox();
+    auto* methodComboBox = new QComboBox();
     methodComboBox->setObjectName("methodComboBox");
     // check the methods for this molecule
     auto mol = m_molecule->molecule();
@@ -210,7 +210,7 @@ QWidget* AutoOpt::toolWidget() const
     timeStepSpinBox->setEnabled(false);
 
     // start stop button
-    QPushButton* startStopButton = new QPushButton(tr("Start"));
+    auto* startStopButton = new QPushButton(tr("Start"));
     startStopButton->setObjectName("startStopButton");
     startStopButton->setIcon(QIcon::fromTheme("go-down"));
     connect(startStopButton, &QPushButton::clicked, this, &AutoOpt::startStop);
@@ -266,7 +266,7 @@ void AutoOpt::startStop()
 void AutoOpt::start()
 {
   // get the button from the widget
-  QPushButton* startStopButton =
+  auto* startStopButton =
     m_toolWidget->findChild<QPushButton*>("startStopButton");
   startStopButton->setText(tr("Stop"));
   startStopButton->setIcon(QIcon::fromTheme("process-stop"));
@@ -340,7 +340,7 @@ void AutoOpt::start()
 void AutoOpt::stop()
 {
   // get the button from the widget
-  QPushButton* startStopButton =
+  auto* startStopButton =
     m_toolWidget->findChild<QPushButton*>("startStopButton");
   startStopButton->setText(tr("Start"));
   startStopButton->setIcon(QIcon::fromTheme("go-down"));
