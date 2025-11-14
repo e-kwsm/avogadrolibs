@@ -10476,10 +10476,6 @@ msgstr "nordinalex@gmail.com, yeager@ubuntu.com"
 #~ msgstr "&Arkiv"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Renderar proteinets sekundära struktur"
-
-#, fuzzy
 #~ msgid "Element & Ordinal"
 #~ msgstr "Gundämne:"
 
