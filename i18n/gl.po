@@ -9660,36 +9660,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os ficheiros (*);;"
 
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Engadir hidróxenos para o pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Propiedades do átomo..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Propiedades do enlace..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Propiedades do ángulo..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Propiedades da torsión..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Propiedades da molécula..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Crear superficies..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Simetria"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Inserir un fragmento..."
-
 #~ msgid "Theory:"
 #~ msgstr "Teoría:"
 
@@ -11399,6 +11369,12 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Pi Helix"
 #~ msgstr "Hélice Pi"
+
+#~ msgid "Chain Number:"
+#~ msgstr "Número da cadea:"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "O número da cadea do novo péptido"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Número de residuos:"

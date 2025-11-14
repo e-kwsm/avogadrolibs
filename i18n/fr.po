@@ -10319,32 +10319,6 @@ msgstr ""
 #~ msgid "%1: File exists and is not writable."
 #~ msgstr "%1 : Ce fichier existe déjà et n'est pas inscriptible."
 
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Cristal..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Ajouter les hydrogènes selon le pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Propriétés des atomes..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Propriétés des liaisons..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Propriétés des angles..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Propriétés de torsion..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Générer les surfaces..."
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Insérer un fragment..."
-
 #~ msgid "Theory:"
 #~ msgstr "Théorie :"
 
@@ -11661,9 +11635,6 @@ msgstr ""
 #~ msgid "&Advanced >>"
 #~ msgstr "&Avancés >>"
 
-#~ msgid "&Spectra..."
-#~ msgstr "&Spectres..."
-
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualiser les données spectrales de calculs de chimie quantique"
 
@@ -12512,6 +12483,18 @@ msgstr ""
 #~ msgid "Pi Helix"
 #~ msgstr "Hélice pi"
 
+#~ msgid "Phi:"
+#~ msgstr "Phi :"
+
+#~ msgid "Psi:"
+#~ msgstr "Psi :"
+
+#~ msgid "Chain Number:"
+#~ msgstr "Chaîne numéro :"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Le numéro de chaîne du nouveau peptide"
+
 #~ msgid "Number of Residues:"
 #~ msgstr "Nombre de résidus :"
 
@@ -12547,9 +12530,6 @@ msgstr ""
 
 #~ msgid "Control"
 #~ msgstr "Contrôle"
-
-#~ msgid "RijCosX"
-#~ msgstr "RijCosX"
 
 #~ msgid "Aux. Basis Set"
 #~ msgstr "Base auxiliaire"

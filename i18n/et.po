@@ -9524,6 +9524,66 @@ msgstr ""
 #~ msgid "Radius:"
 #~ msgstr "Raadius:"
 
+#~ msgid "Arginine"
+#~ msgstr "Arginiin"
+
+#~ msgid "Asparagine"
+#~ msgstr "Asparagiin"
+
+#~ msgid "Aspartic acid"
+#~ msgstr "Aspartiinhape"
+
+#~ msgid "Cysteine"
+#~ msgstr "Tsüsteiin"
+
+#~ msgid "Glutamic acid"
+#~ msgstr "Glutamiinhape"
+
+#~ msgid "Glutamine"
+#~ msgstr "Glutamiin"
+
+#~ msgid "Glycine"
+#~ msgstr "Glütsiin"
+
+#~ msgid "Histidine"
+#~ msgstr "Histidiin"
+
+#~ msgid "Isoleucine"
+#~ msgstr "Isoleutsiin"
+
+#~ msgid "Tryptophan"
+#~ msgstr "Trüptofaan"
+
+#~ msgid "Threonine"
+#~ msgstr "Treoniin"
+
+#~ msgid "Serine"
+#~ msgstr "Seriin"
+
+#~ msgid "Proline"
+#~ msgstr "Proliin"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "Fenüülalaniin"
+
+#~ msgid "Lysine"
+#~ msgstr "Lüsiin"
+
+#~ msgid "Leucine"
+#~ msgstr "Leutsiin"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "Stereokeemia:"
+
+#~ msgid "Straight Chain"
+#~ msgstr "Sirge agel"
+
+#~ msgid "Chain Number:"
+#~ msgstr "Ahela number:"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Uue peptiidi ahelanumber"
+
 #~ msgid "Number of Residues:"
 #~ msgstr "Jääkide arv:"
 
