@@ -114,7 +114,6 @@ public:
    * @param a The axis
    * @param tickPositions The tick positions
    * @param tickLabels The tick labels
-   * @return True if successful
    */
   void setTickLabels(Axis a, const std::vector<float>& tickPositions,
                      const QStringList& tickLabels);
@@ -124,7 +123,6 @@ public:
    * @param a The axis
    * @param min The minimum value
    * @param max The maximum value
-   * @return True if successful
    *
    * If minimum is bigger than maximum, the axis will be reversed
    */
@@ -134,7 +132,6 @@ public:
    * @brief Set the default x-axis limits
    * @param min The minimum value
    * @param max The maximum value
-   * @return True if successful
    *
    * If minimum is bigger than maximum, the axis will be reversed
    */
@@ -143,7 +140,6 @@ public:
    * @brief Set the default y-axis limits
    * @param min The minimum value
    * @param max The maximum value
-   * @return True if successful
    *
    * If minimum is bigger than maximum, the axis will be reversed
    */
@@ -152,13 +148,11 @@ public:
   /**
    * @brief Set the font size for the ticks and axis titles
    * @param size The font size
-   * @return True if successful
    */
   void setFontSize(int size = 14);
   /**
    * @brief Set the line width of the graph lines (in pt)
    * @param width The line width
-   * @return True if successful
    */
   void setLineWidth(float width = 1.0);
 
@@ -166,7 +160,6 @@ public:
    * @brief Set to logarithmic scale
    * @param a The axis
    * @param logScale True for log scale, false for linear
-   * @return True if successful
    */
   void setAxisLogScale(Axis a, bool logScale);
 
@@ -174,7 +167,6 @@ public:
    * @brief Set the number of digits to display in tick labels
    * @param a The axis
    * @param digits The number of digits
-   * @return True if successful
    */
   void setAxisDigits(Axis a, int digits = 2);
 
