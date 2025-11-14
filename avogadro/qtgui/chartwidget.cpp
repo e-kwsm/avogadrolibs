@@ -20,10 +20,10 @@ class ChartWidget::ChartWidgetImpl
 public:
   ChartWidgetImpl()
   {
-    plot = new JKQTPlotter;
+    plot = std::make_shared<JKQTPlotter>();
     updateAxisColorsForTheme();
   }
-  ~ChartWidgetImpl() { delete plot; }
+  ~ChartWidgetImpl() = default;
 
   ChartWidgetImpl(const ChartWidgetImpl&) = delete;
   ChartWidgetImpl& operator=(const ChartWidgetImpl&) = delete;
@@ -40,7 +40,7 @@ public:
     plot->getYAxis()->setLabelColor(textColor);
   }
 
-  JKQTPlotter* plot; // widget
+  std::shared_ptr<JKQTPlotter> plot; // widget
 };
 
 ChartWidget::ChartWidget(QWidget* p) : QWidget(p), m_impl(new ChartWidgetImpl)
@@ -72,7 +72,7 @@ bool ChartWidget::addPlot(const std::vector<float>& x,
   if (x.size() != y.size())
     return false;
 
-  auto* plot = m_impl->plot;
+  auto plot = m_impl->plot;
   if (plot == nullptr)
     return false;
 
@@ -149,7 +149,7 @@ bool ChartWidget::addSeries(const std::vector<float>& newSeries,
   if (newSeries.empty())
     return false;
 
-  auto* plot = m_impl->plot;
+  auto plot = m_impl->plot;
   if (plot == nullptr)
     return false;
 
@@ -197,7 +197,7 @@ bool ChartWidget::addPlots(const std::vector<std::vector<float>>& plotData,
   if (names.size() != plotData.size())
     return false;
 
-  auto* plot = m_impl->plot;
+  auto plot = m_impl->plot;
   if (plot == nullptr)
     return false;
 
@@ -270,7 +270,7 @@ void ChartWidget::setYAxisTitle(const QString& title)
 
 void ChartWidget::setFontSize(int size)
 {
-  auto* plot = m_impl->plot;
+  auto plot = m_impl->plot;
   plot->getXAxis()->setTickLabelFontSize(size);
   plot->getYAxis()->setTickLabelFontSize(size);
 
