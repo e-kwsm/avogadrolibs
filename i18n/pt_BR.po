@@ -9704,14 +9704,6 @@ msgstr "Seus e-mails"
 #~ msgid "Connection failed with: %1"
 #~ msgstr "A conexão falhou com: %1"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Servidor cliente"
 
@@ -9728,18 +9720,11 @@ msgstr "Seus e-mails"
 #~ msgid "Formula"
 #~ msgstr "Fórmula"
 
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
-
 #~ msgid "Mongo Chem Server"
 #~ msgstr "Servidor Mongo Chem"
 
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interface com Servidor Mongo Chem."
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Carregar Arquivo de Estrutura"
 
 #~ msgid "Server settings"
 #~ msgstr "Configurações de servidor"
@@ -9841,12 +9826,6 @@ msgstr "Seus e-mails"
 #, fuzzy
 #~ msgid "Write"
 #~ msgstr "escrevem"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#~ msgid "InChI..."
-#~ msgstr "InChI..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -9951,9 +9930,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "No"
 #~ msgstr "Não"
-
-#~ msgid "&Quantum"
-#~ msgstr "&Quantum"
 
 #~ msgid "Input Generators"
 #~ msgstr "Geradores de Entrada"
@@ -10100,10 +10076,6 @@ msgstr "Seus e-mails"
 #~ msgid "Electron density, isosurface = %L1"
 #~ msgstr "Densidade eletrônica, isosurface = %L1"
 
-#~ msgctxt "%1 is mesh name, %2 is the isosurface cutoff"
-#~ msgid "%1, isosurface = %L2"
-#~ msgstr "%1, isosurface = %L2"
-
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
 #~ msgstr ""
 #~ "Renderiza moléculas como arames (linhas), ideal para (bio)moléculas muito "
@@ -10117,9 +10089,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Abrir Arquiv de Trajetória"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Acrescentando extensão .avi"
@@ -10258,14 +10227,6 @@ msgstr "Seus e-mails"
 #~ msgstr "Ortorômbico"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cúbico"
 
@@ -10304,9 +10265,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Reduzir Célula (&Primitiva)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanômetro"
@@ -10402,9 +10360,6 @@ msgstr "Seus e-mails"
 #~ msgid "Common vector image formats"
 #~ msgstr "Formatos comuns de imagens vetoriais"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Change H to Methyl"
 #~ msgstr "Trocar H por Metil"
 
@@ -10457,9 +10412,6 @@ msgstr "Seus e-mails"
 #~ msgid "PDB entry to download."
 #~ msgstr "Entrada PDB para download."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL da molécula para baixar."
 
@@ -10499,9 +10451,6 @@ msgstr "Seus e-mails"
 #~ msgid "Analyse Orca Output..."
 #~ msgstr "Analisar Saída Orca..."
 
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Exemplo de Teste Orca"
 
@@ -10519,9 +10468,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Arquivos de imagem (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Não foi indicado nome válido de arquivo."
@@ -10568,9 +10514,6 @@ msgstr "Seus e-mails"
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal Python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Console Interativo do Python"
 
@@ -10601,15 +10544,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Conversão para o Formato SMILES Não Disponível!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
@@ -10678,20 +10612,8 @@ msgstr "Seus e-mails"
 #~ msgstr ""
 #~ "Gaussian não rodou corretamente. Talvez não esteja corretamente instalado."
 
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
 #~ msgid "&Gaussian..."
 #~ msgstr "&Gaussiano..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "Alerta Holerite MOPAC"
@@ -10795,16 +10717,8 @@ msgstr "Seus e-mails"
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Configurações do Espectro de &Infravermelho"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Configurações do Espectro &RMN"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
 
 #~ msgid "No data"
 #~ msgstr "Sem dados"
@@ -10839,9 +10753,6 @@ msgstr "Seus e-mails"
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valores Separados por Vírgula"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Extensão desconhecida: %1"
 
@@ -10855,26 +10766,8 @@ msgstr "Seus e-mails"
 #~ msgid "Load Spectral Data"
 #~ msgstr "Carregar Dados Espectrais"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Formato TIFF"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "salvar Imagem do Espectro"
@@ -10909,10 +10802,6 @@ msgstr "Seus e-mails"
 #~ msgid "Orbitals"
 #~ msgstr "Orbitais"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Densidade Eletrônica"
@@ -10923,9 +10812,6 @@ msgstr "Seus e-mails"
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Calculando OM %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "GL widget was not correctly initialized in order to make a video"
 #~ msgstr ""
@@ -10975,9 +10861,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Debug Information"
 #~ msgstr "Informações de Debug"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Tamanho da Visualização: %L1 x %L2"
@@ -11039,10 +10922,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Molecule %1"
 #~ msgstr "Molécula %1"
-
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
 
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Motor Python Desconhecido"
@@ -11152,22 +11031,6 @@ msgstr "Seus e-mails"
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Ângulo Diédrico: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Distância(s):"
 
@@ -11264,15 +11127,6 @@ msgstr "Seus e-mails"
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Repetir"
 
@@ -11303,15 +11157,6 @@ msgstr "Seus e-mails"
 #~ msgid "Change Font"
 #~ msgstr "Alterar Fonte"
 
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
-
 #~ msgid "Bond length"
 #~ msgstr "Comprimento da ligação"
 
@@ -11329,9 +11174,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "VdW Opacity:"
 #~ msgstr "Opacidade VdW"
-
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
 
 #~ msgid "Render:"
 #~ msgstr "Renderizar:"
@@ -11360,17 +11202,8 @@ msgstr "Seus e-mails"
 #~ msgid "Animate Trajectory"
 #~ msgstr "Trajetória animada"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgid "Save as .avi..."
 #~ msgstr "Salvar como .avi..."
-
-#~ msgid "Angstroms"
-#~ msgstr "Angstroms"
-
-#~ msgid "Bohrs"
-#~ msgstr "Bohrs"
 
 #~ msgid "Apply Changes"
 #~ msgstr "Aplicar Alterações"
@@ -11426,44 +11259,17 @@ msgstr "Seus e-mails"
 #~ msgid "Setup Force Field"
 #~ msgstr "Configurar Campo de Força"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Número de passos"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmo"
 
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "L"
-#~ msgstr "E"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Alpha Helix"
 #~ msgstr "Alfa Hélice"
 
 #~ msgid "Beta Sheet"
 #~ msgstr "Folha Beta"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Número de Resíduos:"
@@ -11473,18 +11279,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momento Dipolar (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Avançado"
@@ -11500,9 +11294,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Select..."
 #~ msgstr "Selecionar..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Antialias"
 #~ msgstr "Suavizar"
@@ -11525,56 +11316,14 @@ msgstr "Seus e-mails"
 #~ msgid "Path:"
 #~ msgstr "Caminho:"
 
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
 #~ msgid "Compute..."
 #~ msgstr "Computar..."
 
 #~ msgid "Basics"
 #~ msgstr "Informações Básicas"
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
 #~ msgid "Parallel"
 #~ msgstr "Paralelo"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "normal"
-#~ msgstr "normal"
 
 #~ msgid "fine"
 #~ msgstr "fino"
@@ -11591,30 +11340,6 @@ msgstr "Seus e-mails"
 #~ msgid "EFP Matches"
 #~ msgstr "Resultados para EFP"
 
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "Configurações &Avançadas"
 
@@ -11627,38 +11352,11 @@ msgstr "Seus e-mails"
 #~ msgid "MO Guess"
 #~ msgstr "Estimar OM"
 
-#~ msgid "Misc"
-#~ msgstr "Misc"
-
 #~ msgid "Read"
 #~ msgstr "Ler"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Valência Duplo Zeta"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Valência Triplo Zeta"
@@ -11669,29 +11367,11 @@ msgstr "Seus e-mails"
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Valência Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Tipo ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Padrão"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
-
-#~ msgid "Polar:"
-#~ msgstr "Polar:"
 
 #~ msgid "Max SCF Iterations:"
 #~ msgstr "Iterações Max SCF"
@@ -11702,14 +11382,8 @@ msgstr "Seus e-mails"
 #~ msgid "Trudge"
 #~ msgstr "Arrastar"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Extremo gradiente"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "Transição radiativa mãe."
@@ -11720,14 +11394,8 @@ msgstr "Seus e-mails"
 #~ msgid "Finite Electric Field"
 #~ msgstr "Campo Elétrico Finito"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Otimização Global"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "Otimização de FMO"
@@ -11743,12 +11411,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Foster-Boys"
 #~ msgstr "Meninos adotivos"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "Localization Method:"
 #~ msgstr "Método de Localização:"
@@ -11774,18 +11436,6 @@ msgstr "Seus e-mails"
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC Simples ou Duplos"
 
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
-
 #~ msgid "Normal Run"
 #~ msgstr "Execução Normal"
 
@@ -11807,56 +11457,11 @@ msgstr "Seus e-mails"
 #~ msgid "# of Z-Matrix Variables"
 #~ msgstr "# Variaveis da Z-Matrix"
 
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
-
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Ordem do Eixo Principal:"
 
 #~ msgid "Coordinate Type:"
 #~ msgstr "Tipo de Coordenada:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Hilderbrant internals"
 #~ msgstr "Hilderbrant internos"
@@ -11882,21 +11487,6 @@ msgstr "Seus e-mails"
 #~ msgid "Millenia"
 #~ msgstr "Milênio"
 
-#~ msgid "MegaBytes"
-#~ msgstr "MegaBytes"
-
-#~ msgid "GigaBytes"
-#~ msgstr "GigaBytes"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
 #~ msgid "Memory:"
 #~ msgstr "Memória:"
 
@@ -11907,29 +11497,14 @@ msgstr "Seus e-mails"
 #~ msgid "Next Value"
 #~ msgstr "Próximo Valor"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
 #~ msgid "Skip"
 #~ msgstr "Pular"
 
 #~ msgid "Print the Initial Guess"
 #~ msgstr "Mostre a Estimativa Inicial"
 
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forçar uma verificação de tipo de execução"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
 
 #~ msgid "MELDF"
 #~ msgstr "MELDF"
@@ -12021,9 +11596,6 @@ msgstr "Seus e-mails"
 #~ msgid "Numeric"
 #~ msgstr "Numérica"
 
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial Hessian"
 #~ msgstr "Inicial de Héssios"
 
@@ -12039,14 +11611,8 @@ msgstr "Seus e-mails"
 #~ msgid "Initial:"
 #~ msgstr "Inicial:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Aproximação Quadrática"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Z-matrix"
 #~ msgstr "Matriz-Z"
@@ -12054,50 +11620,17 @@ msgstr "Seus e-mails"
 #~ msgid "Gaussian Input"
 #~ msgstr "Entrada Gaussiana"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Padrão"
 
 #~ msgid "MOLPRO Input"
 #~ msgstr "Entrada MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "Quarteto"
 
 #~ msgid "Quintet"
 #~ msgstr "Quinteto"
-
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Fragment Shader:"
 #~ msgstr "Sombreador de fragmentos"
@@ -12120,20 +11653,11 @@ msgstr "Seus e-mails"
 #~ msgid "&Schemes:"
 #~ msgstr "E&squemas:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Largura:"
 
 #~ msgid "&Height"
 #~ msgstr "&Altura"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "in"
 #~ msgstr "pol"
@@ -12153,9 +11677,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Unidades do Eixo &Y:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Vibrações Moleculares"
