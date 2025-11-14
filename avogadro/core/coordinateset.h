@@ -94,7 +94,7 @@ public:
   const std::vector<T>& coordinates() const { return m_coordinates; }
 
   // Inline operator methods.
-  /** Returns the element at \index _index. */
+  /** Returns the element at \c _index. */
   T operator()(Index _index) const { return m_coordinates.at(_index); }
   T& operator[](Index _index) { return m_coordinates[_index]; }
   const T& operator[](Index _index) const { return m_coordinates[_index]; }
