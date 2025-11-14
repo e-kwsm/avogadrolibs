@@ -102,8 +102,8 @@ void SurfaceRender::process(const QtGui::Molecule& mol, GroupNode& node)
       }
 
       // Add the triangles for the first mesh
-      for (size_t i = 0; i < triangles.size(); ++i) {
-        mesh1->addTriangle(triangles[i][0], triangles[i][1], triangles[i][2]);
+      for (const auto& triangle : triangles) {
+        mesh1->addTriangle(triangle[0], triangle[1], triangle[2]);
       }
 
       mesh1->setRenderPass(m_opacity == 255 ? Rendering::SolidPass
@@ -124,9 +124,8 @@ void SurfaceRender::process(const QtGui::Molecule& mol, GroupNode& node)
         mesh2->addVertices(mesh->vertices(), mesh->normals());
 
         // Add the correct triangles for the second mesh
-        for (size_t i = 0; i < triangles2.size(); ++i) {
-          mesh2->addTriangle(triangles2[i][0], triangles2[i][1],
-                             triangles2[i][2]);
+        for (const auto& i : triangles2) {
+          mesh2->addTriangle(i[0], i[1], i[2]);
         }
 
         mesh2->setRenderPass(m_opacity == 255 ? Rendering::SolidPass
@@ -147,11 +146,11 @@ void SurfaceRender::process(const QtGui::Molecule& mol, GroupNode& node)
         ls1->addLineStrip(mesh->vertices(), colorsRGB, m_lineWidth);
       } else {
         auto vertices = mesh->vertices();
-        for (size_t i = 0; i < triangles.size(); ++i) {
+        for (const auto& i : triangles) {
           Core::Array<Vector3f> triangle(3);
-          triangle[0] = vertices[triangles[i][0]];
-          triangle[1] = vertices[triangles[i][1]];
-          triangle[2] = vertices[triangles[i][2]];
+          triangle[0] = vertices[i[0]];
+          triangle[1] = vertices[i[1]];
+          triangle[2] = vertices[i[2]];
 
           ls1->addLineStrip(triangle,
                             Vector3ub(m_color1[0], m_color1[1], m_color1[2]),
@@ -168,11 +167,11 @@ void SurfaceRender::process(const QtGui::Molecule& mol, GroupNode& node)
 
         auto vertices2 = mesh->vertices();
         triangles = mesh->triangles();
-        for (size_t i = 0; i < triangles.size(); ++i) {
+        for (const auto& i : triangles) {
           Core::Array<Vector3f> triangle(3);
-          triangle[0] = vertices2[triangles[i][0]];
-          triangle[1] = vertices2[triangles[i][1]];
-          triangle[2] = vertices2[triangles[i][2]];
+          triangle[0] = vertices2[i[0]];
+          triangle[1] = vertices2[i[1]];
+          triangle[2] = vertices2[i[2]];
 
           ls1->addLineStrip(triangle,
                             Vector3ub(m_color2[0], m_color2[1], m_color2[2]),
