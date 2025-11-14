@@ -9740,25 +9740,6 @@ msgstr ""
 #~ msgid "%L1 Å"
 #~ msgstr "%L1 Å"
 
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
-#~ msgid "Angles:"
-#~ msgstr "Angles:"
-
-#~ msgid " °"
-#~ msgstr " °"
-
-#~ msgid "Hartree"
-#~ msgstr "Hartree"
-
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "kcal/mol"
 #~ msgstr "kcal/mol"
 
