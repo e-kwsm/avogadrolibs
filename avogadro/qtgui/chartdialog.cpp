@@ -13,7 +13,7 @@ namespace Avogadro::QtGui {
 ChartDialog::ChartDialog(QWidget* p)
   : QDialog(p), m_chartWidget(new ChartWidget(this))
 {
-  auto* layout = new QVBoxLayout();
+  auto layout = std::make_unique<QVBoxLayout>();
   layout->addWidget(m_chartWidget);
   layout->setContentsMargins(0, 0, 0, 0);
   setLayout(layout);
