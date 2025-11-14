@@ -13619,18 +13619,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekularne vibracije"
 
-#~ msgid "Filter: "
-#~ msgstr "Filter: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
-
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Aktivnost (A^4/amu)"
 
@@ -13697,12 +13685,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 
 #~ msgid "Advanced..."
 #~ msgstr "Napredno ..."
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
 
 #~ msgid "&Length:"
 #~ msgstr "&Dolžina:"
