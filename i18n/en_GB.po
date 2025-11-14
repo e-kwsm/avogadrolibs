@@ -10991,19 +10991,6 @@ msgstr ""
 #~ msgid "%L1 Å"
 #~ msgstr "%L1 Å"
 
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
-#~ msgid "Angles:"
-#~ msgstr "Angles:"
-
-#~ msgid " °"
-#~ msgstr " °"
-
-#~ msgid "Hartree"
-#~ msgstr "Hartree"
-
 #~ msgid "eV"
 #~ msgstr "eV"
 
@@ -11017,48 +11004,6 @@ msgstr ""
 #~ msgctxt "argument is program name"
 #~ msgid "Installing dependencies with %1…"
 #~ msgstr "Installing dependencies with %1…"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #, qt-format
 #~ msgid "%1 ΔE = %L2 kcal/mol"
