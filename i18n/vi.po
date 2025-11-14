@@ -13694,17 +13694,19 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Sơ đồ:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Height"
 #~ msgstr "Chiều &cao"
 
-#~ msgid "cm"
-#~ msgstr "cm"
+#~ msgid "&Width:"
+#~ msgstr "Bề &rộng:"
 
-#~ msgid "mm"
-#~ msgstr "mm"
+=======
+#~ msgid "&Width:"
+#~ msgstr "Bề &rộng:"
+
+>>>>>>> 5ca17b162 ([skip ci])
+#~ msgid "&Height"
+#~ msgstr "Chiều &cao"
 
 #~ msgid "in"
 #~ msgstr "inch"
@@ -13728,9 +13730,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Đơn vị trục &Y:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "&Bề rộng Gauss:"
 
@@ -13739,9 +13738,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Đặt nhãn cho các đỉnh:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Rung động của phân tử"

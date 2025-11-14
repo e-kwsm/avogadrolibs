@@ -12233,9 +12233,6 @@ msgstr ""
 #~ msgid "Check the box next to an installed plugin to remove it."
 #~ msgstr "Check the box next to an installed plugin to remove it."
 
-#~ msgid "Update"
-#~ msgstr "Update"
-
 #~ msgid "Error downloading plugin data."
 #~ msgstr "Error downloading plugin data."
 
@@ -12248,12 +12245,6 @@ msgstr ""
 #~ msgstr ""
 #~ "This plugin requires certain packages to be installed.\n"
 #~ "Do you want to install them?"
-
-#~ msgid "Always"
-#~ msgstr "Always"
-
-#~ msgid "Never"
-#~ msgstr "Never"
 
 #, qt-format
 #~ msgctxt ""
@@ -12280,25 +12271,12 @@ msgstr ""
 #~ msgid "Installation canceled\n"
 #~ msgstr "Installation canceled\n"
 
-#~ msgid "Download Plugins…"
-#~ msgstr "Download Plugins…"
-
-#~ msgid "Download Plugins"
-#~ msgstr "Download Plugins"
-
 #~ msgid "Download plugins from GitHub repositories."
 #~ msgstr "Download plugins from GitHub repositories."
-
-#~ msgid "Download Selected"
-#~ msgstr "Download Selected"
 
 #, qt-format
 #~ msgid "Option '%1' does not refer to an object."
 #~ msgstr "Option '%1' does not refer to an object."
-
-#, qt-format
-#~ msgid "Tab %1"
-#~ msgstr "Tab %1"
 
 #, qt-format
 #~ msgid "Error: value must be object for key '%1'."
@@ -16965,228 +16943,200 @@ msgstr ""
 #~ "Use an optimised value for the font size instead of the scheme-specified "
 #~ "value (screen to image point sizes don't translate well!)"
 
-#~ msgid "Auto-adjust F&ont Size"
-#~ msgstr "Auto-adjust F&ont Size"
+#~ msgid "Transition State Search"
+#~ msgstr "Transition State Search"
 
-#~ msgid "Spectra Tab"
-#~ msgstr "Spectra Tab"
+#~ msgid "Basis:"
+#~ msgstr "Basis:"
 
-#~ msgid "&Gaussian Width:"
-#~ msgstr "&Gaussian Width:"
 
-#~ msgid "&Label peaks"
-#~ msgstr "&Label peaks"
+#~ msgid ""
+#~ "In direct mode, integrals are not stored on disk, but recalculated as "
+#~ "needed.\n"
+#~ "On modern systems with fast processors and slow disks, direct is often "
+#~ "faster."
+#~ msgstr ""
+#~ "In direct mode, integrals are not stored on disk, but recalculated as "
+#~ "needed.\n"
+#~ "On modern systems with fast processors and slow disks, direct is often "
+#~ "faster."
 
-#~ msgid "Rotatory Strength type:"
-#~ msgstr "Rotatory Strength type:"
+#~ msgid "Molekel"
+#~ msgstr "Molekel"
 
-#~ msgid "Energy units:"
-#~ msgstr "Energy units:"
+#~ msgid "Checkpoint:"
+#~ msgstr "Checkpoint:"
 
-#~ msgid "Density units"
-#~ msgstr "Density units"
+#~ msgid "Z-matrix (compact)"
+#~ msgstr "Z-matrix (compact)"
 
-#~ msgid "Fermi Energy: "
-#~ msgstr "Fermi Energy: "
+#~ msgid "MOLPRO Input"
+#~ msgstr "MOLPRO Input"
 
-#~ msgid "States / Cell"
-#~ msgstr "States / Cell"
+#~ msgid "6-31+G(d)"
+#~ msgstr "6-31+G(d)"
 
-#~ msgid "States / Atom"
-#~ msgstr "States / Atom"
+#~ msgid "6-311G(d)"
+#~ msgstr "6-311G(d)"
 
-#~ msgid "States / Valence electron"
-#~ msgstr "States / Valence electron"
+#~ msgid "AUG-cc-pVDZ"
+#~ msgstr "AUG-cc-pVDZ"
 
-#~ msgid "Fermi energy at zero"
-#~ msgstr "Fermi energy at zero"
+#~ msgid "AUG-cc-pVTZ"
+#~ msgstr "AUG-cc-pVTZ"
 
-#~ msgid "Scale integrated DOS"
-#~ msgstr "Scale integrated DOS"
+#~ msgid "Molpro Version:"
+#~ msgstr "Molpro Version:"
 
-#~ msgid "Show integrated DOS"
-#~ msgstr "Show integrated DOS"
+#~ msgid "< 2009.1"
+#~ msgstr "< 2009.1"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
+#~ msgid "2009.1"
+#~ msgstr "2009.1"
 
-#~ msgid "&Y Axis Units:"
-#~ msgstr "&Y Axis Units:"
+#~ msgid "MOPAC Input"
+#~ msgstr "MOPAC Input"
 
-#~ msgid "Scaling Type:"
-#~ msgstr "Scaling Type:"
+#~ msgid "Quartet"
+#~ msgstr "Quartet"
 
-#~ msgid "Relative"
-#~ msgstr "Relative"
+#~ msgid "Quintet"
+#~ msgstr "Quintet"
 
-#~ msgid "Laser Wavenumber:"
-#~ msgstr "Laser Wavenumber:"
+#~ msgid "MNDO-d"
+#~ msgstr "MNDO-d"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
+#~ msgid "PM6"
+#~ msgstr "PM6"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
+#~ msgid "RM1"
+#~ msgstr "RM1"
 
-#~ msgid "Nucleus:"
-#~ msgstr "Nucleus:"
+#~ msgid "NWChem Input"
+#~ msgstr "NWChem Input"
 
-#~ msgid "Gaussian &Width:"
-#~ msgstr "Gaussian &Width:"
+#~ msgid "SAPT0"
+#~ msgstr "SAPT0"
 
-#~ msgid "Reset &Plot Axes"
-#~ msgstr "Reset &Plot Axes"
+#~ msgid "SAPT2"
+#~ msgstr "SAPT2"
 
-#~ msgid "Label Peaks:"
-#~ msgstr "Label Peaks:"
+#~ msgid "B3LYP-D"
+#~ msgstr "B3LYP-D"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
+#~ msgid "B97-D"
+#~ msgstr "B97-D"
 
-#~ msgid "Molecular Vibrations"
-#~ msgstr "Molecular Vibrations"
+#~ msgid "M05-2X"
+#~ msgstr "M05-2X"
 
-#~ msgid "Filter: "
-#~ msgstr "Filter: "
+#~ msgid "jun-cc-pVDZ"
+#~ msgstr "jun-cc-pVDZ"
 
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
+#~ msgid "Q-Chem Input"
+#~ msgstr "Q-Chem Input"
 
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
+#~ msgid "B3LYP5"
+#~ msgstr "B3LYP5"
 
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
+#~ msgid "M06-2X"
+#~ msgstr "M06-2X"
 
-#~ msgid "Activity (A^4/amu)"
-#~ msgstr "Activity (A^4/amu)"
+#~ msgid "LACVP"
+#~ msgstr "LACVP"
 
-#~ msgid "&Show Spectra..."
-#~ msgstr "&Show Spectra..."
+#~ msgid "TeraChem Input"
+#~ msgstr "TeraChem Input"
 
-#~ msgid "higher frequency vibrations will show faster movement"
-#~ msgstr "higher frequency vibrations will show faster movement"
+#~ msgid "B3LYP1"
+#~ msgstr "B3LYP1"
 
-#~ msgid "Animation speed set by frequency"
-#~ msgstr "Animation speed set by frequency"
+#~ msgid "REVPBE"
+#~ msgstr "REVPBE"
 
-#~ msgid "Display force &vectors"
-#~ msgstr "Display force &vectors"
+#~ msgid "Unrestricted"
+#~ msgstr "Unrestricted"
+
+#~ msgid "PBD"
+#~ msgstr "PBD"
+
+#~ msgid "no"
+#~ msgstr "no"
+
+#~ msgid "yes"
+#~ msgstr "yes"
+
+#~ msgid "Dispersion:"
+#~ msgstr "Dispersion:"
+
+#~ msgid "Load Shaders"
+#~ msgstr "Load Shaders"
+
+#~ msgid "Shader Name:"
+#~ msgstr "Shader Name:"
+
+#~ msgid "Vertex Shader:"
+#~ msgstr "Vertex Shader:"
+
+#~ msgid "Fragment Shader:"
+#~ msgstr "Fragment Shader:"
+
+#~ msgid "Assign Shader"
+#~ msgstr "Assign Shader"
+
+#~ msgid "Display Type:"
+#~ msgstr "Display Type:"
+
+#~ msgid "Font:"
+#~ msgstr "Font:"
+
+#~ msgid "Change Font..."
+#~ msgstr "Change Font..."
+
+#~ msgid "Foreground:"
+#~ msgstr "Foreground:"
+
+#~ msgid "New..."
+#~ msgstr "New..."
+
+#~ msgid "Rename..."
+#~ msgstr "Rename..."
+
+#~ msgid "&Schemes:"
+#~ msgstr "&Schemes:"
+
+#~ msgid "&DPI:"
+#~ msgstr "&DPI:"
+
+#~ msgid "&Width:"
+#~ msgstr "&Width:"
+
+#~ msgid "&Height"
+#~ msgstr "&Height"
+
+#~ msgid "cm"
+#~ msgstr "cm"
+
+#~ msgid "mm"
+#~ msgstr "mm"
+
+#~ msgid "in"
+#~ msgstr "in"
+
+#~ msgid "px"
+#~ msgstr "px"
+
+=======
+>>>>>>> 5ca17b162 ([skip ci])
+#~ msgid ""
+#~ "Use an optimized value for the font size instead of the scheme-specified "
+#~ "value (screen to image point sizes don't translate well!)"
+#~ msgstr ""
+#~ "Use an optimised value for the font size instead of the scheme-specified "
+#~ "value (screen to image point sizes don't translate well!)"
 
 #~ msgid "&Normalize displacements"
 #~ msgstr "&Normalise displacements"
 
-#~ msgid "&Recalculate All"
-#~ msgstr "&Recalculate All"
-
-#~ msgid "Default &Quality:"
-#~ msgstr "Default &Quality:"
-
-#~ msgid "Show occupied orbitals first"
-#~ msgstr "Show occupied orbitals first"
-
-#~ msgid "Limit orbital precalculations to "
-#~ msgstr "Limit orbital precalculations to "
-
-#~ msgid "orbitals around HOMO/LUMO"
-#~ msgstr "orbitals around HOMO/LUMO"
-
-#~ msgid "Surface Type:"
-#~ msgstr "Surface Type:"
-
-#~ msgctxt "low resolution"
-#~ msgid "Low"
-#~ msgstr "Low"
-
-#~ msgctxt "medium resolution"
-#~ msgid "Medium"
-#~ msgstr "Medium"
-
-#~ msgctxt "high resolution"
-#~ msgid "High"
-#~ msgstr "High"
-
-#~ msgctxt "very high resolution"
-#~ msgid "Very High"
-#~ msgstr "Very High"
-
-#~ msgid "Isosurface cutoff value"
-#~ msgstr "Isosurface cutoff value"
-
-#~ msgctxt ""
-#~ "Add the new surface to this particular display type (i.e., orbital or "
-#~ "surface)"
-#~ msgid "In Display Type:"
-#~ msgstr "In Display Type:"
-
-#~ msgid "New Display"
-#~ msgstr "New Display"
-
-#~ msgid "Advanced..."
-#~ msgstr "Advanced..."
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
-
-#~ msgid "&Length:"
-#~ msgstr "&Length:"
-
-#~ msgid "Uni&t:"
-#~ msgstr "Uni&t:"
-
-#~ msgid "periodic units"
-#~ msgstr "periodic units"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
-
-#~ msgid "bohr radii"
-#~ msgstr "bohr radii"
-
 #~ msgid "nanometers"
 #~ msgstr "nanometres"
-
-#~ msgid "&Cap with hydrogen"
-#~ msgstr "&Cap with hydrogen"
-
-#~ msgid ""
-#~ "This may take a while. If only the atomic coordinates\n"
-#~ "are needed (say, for a quantum mechanical calculation),\n"
-#~ "a single-bond-only representation should suffice."
-#~ msgstr ""
-#~ "This may take a while. If only the atomic coordinates\n"
-#~ "are needed (say, for a quantum mechanical calculation),\n"
-#~ "a single-bond-only representation should suffice."
-
-#~ msgid "Find &double bonds"
-#~ msgstr "Find &double bonds"
-
-#~ msgid "Molecular Symmetry"
-#~ msgstr "Molecular Symmetry"
-
-#~ msgid "VRML Export"
-#~ msgstr "VRML Export"
-
-#~ msgid "Scale (mm/Å):"
-#~ msgstr "Scale (mm/Å):"
-
-#~ msgid "Smallest sphere (mm): "
-#~ msgstr "Smallest sphere (mm): "
-
-#~ msgid "Thinnest cylinder (mm): "
-#~ msgstr "Thinnest cylinder (mm): "
-
-#~ msgid "Calculate Size..."
-#~ msgstr "Calculate Size..."
-
-#~ msgid "Display visual cues"
-#~ msgstr "Display visual cues"
-
-#~ msgid "Python Settings"
-#~ msgstr "Python Settings"
-
-#~ msgid "Z Matrix Editor"
-#~ msgstr "Z Matrix Editor"
