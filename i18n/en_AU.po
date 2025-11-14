@@ -9739,21 +9739,6 @@ msgstr ""
 #~ msgid "Line Size:"
 #~ msgstr "Line width:"
 
-#~ msgid "In."
-#~ msgstr "In."
-
-#~ msgid "El."
-#~ msgstr "El."
-
-#~ msgid "El.&No."
-#~ msgstr "El.&No."
-
-#~ msgid ", "
-#~ msgstr ", "
-
-#~ msgid "ABPS Input (*.in)"
-#~ msgstr "ABPS Input (*.in)"
-
 #~ msgid ""
 #~ "Select the python interpreter used to run input generator scripts.\n"
 #~ "Avogadro must be restarted for any changes to take effect."

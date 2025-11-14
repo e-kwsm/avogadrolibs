@@ -9221,48 +9221,16 @@ msgstr ""
 #~ msgid "Angles:"
 #~ msgstr "Uhol:"
 
-#, fuzzy
-#~ msgid " °"
-#~ msgstr " °"
-
 #~ msgid "Cancel"
 #~ msgstr "Zrušiť"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
 
 #, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analytický"
 
 #, fuzzy
-#~| msgid "Color by Partial Charge"
-#~ msgid "Partial Charge"
-#~ msgstr "Farba podľa čiastkového náboja"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Atómové číslo"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Vzdialenosť"
-
-#, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Nesprávny názov súboru"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Názov prvku"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Všetky súbory (*);;"
 
 #~ msgid "Theory:"
 #~ msgstr "Teória:"
@@ -9282,23 +9250,8 @@ msgstr ""
 #~ msgid "Torsion %1"
 #~ msgstr "Krútenie %1"
 
-#, fuzzy
-#~ msgid "Yes"
-#~ msgstr "Roky"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Neón"
-
 #~ msgid "Insert SMILES"
 #~ msgstr "Vložiť SMILES"
-
-#~ msgid "Insert SMILES fragment:"
-#~ msgstr "Vložiť zlomky SMILES..."
-
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "Vložiť fragment"
 
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr "Vložiť fragmenty molekúl na stavbu väčších molekúl"
@@ -9317,10 +9270,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Povrchy"
 
 #~ msgid "Color by Index"
 #~ msgstr "Farba podľa indexu"
