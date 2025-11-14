@@ -9447,9 +9447,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "&Analysis"
 #~ msgstr "Αναλυτική"
 
-#~ msgid "..."
-#~ msgstr "..."
-
 #~ msgid "&Import..."
 #~ msgstr "&Εισαγωγή..."
 
@@ -9461,10 +9458,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "&Load data..."
 #~ msgstr "&Φόρτωση δεδομένων..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Μερικό φορτίου"
@@ -9748,9 +9741,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Crystal..."
 #~ msgstr "Κρύσταλλος..."
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Προσθήκη υδρογόνων για pH..."
@@ -10012,9 +10002,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Άνοιγμα αρχείου τροχιάς"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Προσθήκη κατάληξης .avi"
@@ -10433,9 +10420,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Common vector image formats"
 #~ msgstr "Κοινοί τύποι διανυσματικών εικόνων"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Εξαγωγή διανυσματικών γραφικών"
 
@@ -10494,9 +10478,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "PDB entry to download."
 #~ msgstr "Καταχώριση PDB για μεταφόρτωση."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL του μορίου για μεταφόρτωση."
 
@@ -10520,9 +10501,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Αρχεία εικόνας (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Δεν δόθηκε κανένα έγκυρο όνομα αρχείου."
@@ -10584,9 +10562,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ "Θα θέλατε να ενημερώσετε το κείμενο προεπισκόπησης, χάνοντας όλες τις "
 #~ "αλλαγές που έγιναν στο παράθυρο προεπισκόπησης κάρτας εισόδου Abinit;"
 
-#~ msgid "Abinit_Input_Deck"
-#~ msgstr "Abinit_Input_Deck"
-
 #~ msgid "Abinit Running."
 #~ msgstr "Το Abinit εκτελείται."
 
@@ -10644,21 +10619,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Η μετατροπή μορφής SMILES δεν είναι διαθέσιμη!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Δημιουργία αρχείων εισόδου για το πακέτο κβαντικής χημείας GAMESS"
@@ -10748,30 +10708,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Το Gaussian δεν εκτελέστηκε σωστά. Ίσως δεν έχει εγκατασταθεί σωστά."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Προειδοποίηση γεννήτριας κάρτας εισόδου Lammps"
@@ -10975,16 +10911,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Ρυθμίσεις &υπέρυθρων φασμάτων"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Ρυθμίσεις φασμάτων &NMR"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
 
 #~ msgctxt "Ultra-Violet spectrum"
 #~ msgid "UV"
@@ -11035,9 +10963,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Comma Separated Values"
 #~ msgstr "Τιμές χωριζόμενες με κόμμα"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Εισαγωγή φασμάτων"
 
@@ -11076,23 +11001,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Φορητά Δικτυακά Γραφικά (PNG)"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Μορφή αρχείου εικόνας με ετικέτες"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
-
 #~ msgid "Portable Pixmap"
 #~ msgstr "Φορητό Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmap"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmap"
 
 #~ msgid "Save Spectra Image"
 #~ msgstr "Αποθήκευση εικόνας φασμάτων"
@@ -11112,9 +11025,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr ""
 #~ "Οπτικοποίηση φασματικών δεδομένων από υπολογισμούς κβαντικής χημείας"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Ανάλυση δονήσεων"
@@ -11151,10 +11061,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgctxt "A cube type of nothing - empty cube"
 #~ msgid "Nothing"
 #~ msgstr "Κανένας"
-
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
 
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
@@ -11250,9 +11156,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Disconnect"
 #~ msgstr "Αποσύνδεση"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Εντοπισμός Wii"
 
@@ -11270,9 +11173,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Debug Information"
 #~ msgstr "Πληροφορίες αποσφαλμάτωσης"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Μέγεθος προβολής: %L1 x %L2"
@@ -11354,10 +11254,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Molecule %1"
 #~ msgstr "Μόριο %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Άγνωστη μηχανή Python"
 
@@ -11428,9 +11324,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "Αυτόματη βελτιστοποίηση: Αδύνατη η ρύθμιση του δυναμικού πεδίου...."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Αριθμός περιορισμών: %1"
@@ -11518,22 +11411,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Δίεδρη γωνία: %1 °"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Αποστάσεις:"
@@ -11656,15 +11533,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Shape"
 #~ msgstr "Σχήμα"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Βρόχος"
 
@@ -11689,9 +11557,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "TextRenderer"
 #~ msgstr "Απόδοση κειμένου"
 
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Κείμενο:"
 
@@ -11712,15 +11577,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Change Font"
 #~ msgstr "Αλλαγή γραμματοσειράς"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Μετατόπιση ετικέτας:"
@@ -11775,9 +11631,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Παραγωγή τροχιάς"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -11916,15 +11769,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Translation vector:"
 #~ msgstr "Διάνυσμα μετακίνησης:"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "Μονάδες &διανύσματος:"
 
@@ -11958,18 +11802,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Default View"
 #~ msgstr "Προεπιλεγμένη προβολή"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "Δείκτες Μίλερ"
 
@@ -11982,29 +11814,89 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Setup Force Field"
 #~ msgstr "Ρύθμιση δυναμικού πεδίου"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Αριθμός βημάτων"
 
 #~ msgid "Algorithm"
 #~ msgstr "Αλγόριθμος"
 
+#~ msgid "Alanine"
+#~ msgstr "Αλανίνη"
+
+#~ msgid "Arginine"
+#~ msgstr "Αργινίνη"
+
+#~ msgid "Asparagine"
+#~ msgstr "Ασπαραγίνη"
+
+#~ msgid "Aspartic acid"
+#~ msgstr "Ασπαρτικό Οξύ"
+
+#~ msgid "Cysteine"
+#~ msgstr "Κυστεΐνη"
+
+#~ msgid "Glutamic acid"
+#~ msgstr "Γλουταμικό Οξύ"
+
+#~ msgid "Glutamine"
+#~ msgstr "Γλουταμίνη"
+
+#~ msgid "Glycine"
+#~ msgstr "Γλυκίνη"
+
+#~ msgid "Histidine"
+#~ msgstr "Ιστιδίνη"
+
+#~ msgid "Isoleucine"
+#~ msgstr "Ισολευκίνη"
+
+#~ msgid "Valine"
+#~ msgstr "Βαλίνη"
+
+#~ msgid "Tyrosine"
+#~ msgstr "Τυροσίνη"
+
+#~ msgid "Tryptophan"
+#~ msgstr "Τρυπτοφάνη"
+
+#~ msgid "Threonine"
+#~ msgstr "Θρεονίνη"
+
+#~ msgid "Serine"
+#~ msgstr "Σερίνη"
+
+#~ msgid "Proline"
+#~ msgstr "Προλίνη"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "Φαινυλαλανίνη"
+
+#~ msgid "Methionine"
+#~ msgstr "Μεθειονίνη"
+
+#~ msgid "Lysine"
+#~ msgstr "Λυσίνη"
+
+#~ msgid "Leucine"
+#~ msgstr "Λευκίνη"
+
+#~ msgid "Sequence (N to C):"
+#~ msgstr "Αλληλουχία (Ν προς C):"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "Στερεοχημεία:"
+
 #~ msgid "L"
 #~ msgstr "ΑΡ"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
+#~ msgid "N Terminus:"
+#~ msgstr "Τέλος Ν:"
 
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
+#~ msgid "C Terminus:"
+#~ msgstr "Τέλος C:"
 
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
+#~ msgid "Straight Chain"
+#~ msgstr "Ευθεία αλυσίδα"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Άλφα έλικα"
@@ -12021,11 +11913,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Psi:"
 #~ msgstr "Ψι:"
 
-#~ msgid "E"
-#~ msgstr "E"
+#~ msgid "Chain Number:"
+#~ msgstr "Αριθμός αλυσίδας:"
 
-#~ msgid "F"
-#~ msgstr "F"
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Ο αριθμός αλυσίδας για το νέο πεπτίδιο"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Αριθμός υπολοίπων:"
@@ -12036,23 +11928,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Ροπή διπόλου (D):"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Advanced"
 #~ msgstr "Προχωρημένη"
-
-#~ msgid "SCF"
-#~ msgstr "SCF"
 
 #~ msgid "Grid"
 #~ msgstr "Πλέγμα"
@@ -12062,9 +11939,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Select..."
 #~ msgstr "Επιλογή..."
-
-#~ msgid "povray"
-#~ msgstr "povray"
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Χρήση πλήρους εξομάλυνσης σκηνής"
@@ -12093,9 +11967,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Abinit Input"
 #~ msgstr "Είσοδος Abinit"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "Καρτεσιανή (άνγκστρομ)"
 
@@ -12105,23 +11976,14 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Plane Wave cutoff (Ha):"
 #~ msgstr "Αποκοπή επιπέδου κύματος (Ha):"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
 #~ msgid "Tolerance on forces(Ha/bohr):"
 #~ msgstr "Ανοχή στις δυνάμεις (Ha/bohr):"
 
 #~ msgid "Max lattice expansion:"
 #~ msgstr "Μέγιστη επέκταση πλέγματος:"
 
-#~ msgid "1.05"
-#~ msgstr "1.05"
-
 #~ msgid "k-point shift:"
 #~ msgstr "μετατόπιση σημείου k:"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
 
 #~ msgid "Number of bands:"
 #~ msgstr "Αριθμός ζωνών:"
@@ -12131,9 +11993,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Double grid PW cutoff (Ha):"
 #~ msgstr "Αποκοπή PW διπλού πλέγματος (Ha):"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Occupation scheme:"
 #~ msgstr "Σχήμα κατάληψης:"
@@ -12162,17 +12021,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Smearing width (Ha):"
 #~ msgstr "Πλάτος επάλειψης (Ha):"
 
-#~ msgid "0.01"
-#~ msgstr "0.01"
-
 #~ msgid "0 - no moving ions "
 #~ msgstr "0 - χωρίς ιόντα μετακίνησης "
 
 #~ msgid "1 - viscous damping"
 #~ msgstr "1 - ιξώδης απόσβεση"
-
-#~ msgid "2 - BFGS "
-#~ msgstr "2 - BFGS "
 
 #~ msgid "3 - BFGS with energy"
 #~ msgstr "3 - BFGS με ενέργεια"
@@ -12180,14 +12033,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "# Geometrical time steps:"
 #~ msgstr "# Γεωμετρικά βήματα χρόνου:"
 
-#~ msgid "1.e-10"
-#~ msgstr "1.e-10"
-
 #~ msgid "Kinetic Energy smoothing (Ha):"
 #~ msgstr "Εξομάλυνση κινητικής ενέργειας (Ha):"
-
-#~ msgid "0.5"
-#~ msgstr "0.5"
 
 #~ msgid "Compute..."
 #~ msgstr "Υπολογίζεται..."
@@ -12205,30 +12052,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ "Προσθέτει ό,τι πληκτρολογείτε στη γραμμή τίτλου του αρχείου εισόδου για\n"
 #~ "τους δικούς σας σκοπούς πληροφόρησης."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
-
 #~ msgid "Pople-style"
 #~ msgstr "Τεχνοτροπία Pople"
 
@@ -12238,167 +12061,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Ομοιόμορφη συσχέτιση Dunning"
 
-#~ msgid "aug-cc-pVDZ"
-#~ msgstr "aug-cc-pVDZ"
-
-#~ msgid "aug-cc-pVTZ"
-#~ msgstr "aug-cc-pVTZ"
-
-#~ msgid "aug-cc-pVQZ"
-#~ msgstr "aug-cc-pVQZ"
-
-#~ msgid "aug-cc-pV5Z"
-#~ msgstr "aug-cc-pV5Z"
-
-#~ msgid "aug-cc-pV6Z"
-#~ msgstr "aug-cc-pV6Z"
-
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ"
-
-#~ msgid "cc-pCVTZ"
-#~ msgstr "cc-pCVTZ"
-
-#~ msgid "cc-pCVQZ"
-#~ msgstr "cc-pCVQZ"
-
-#~ msgid "cc-pCV5Z"
-#~ msgstr "cc-pCV5Z"
-
-#~ msgid "cc-pwCVDZ"
-#~ msgstr "cc-pwCVDZ"
-
-#~ msgid "cc-pwCVTZ"
-#~ msgstr "cc-pwCVTZ"
-
-#~ msgid "cc-pwCVQZ"
-#~ msgstr "cc-pwCVQZ"
-
-#~ msgid "cc-pwCV5Z"
-#~ msgstr "cc-pwCV5Z"
-
 #~ msgid "Core correlating functions"
 #~ msgstr "Συναρτήσεις συσχέτισης πυρήνα"
 
 #~ msgid "Diffuse functions"
 #~ msgstr "Συναρτήσεις διάχυσης"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "3-21++G"
-#~ msgstr "3-21++G"
-
-#~ msgid "6-31+G"
-#~ msgstr "6-31+G"
-
-#~ msgid "6-31++G"
-#~ msgstr "6-31++G"
-
-#~ msgid "3-21G*"
-#~ msgstr "3-21G*"
-
-#~ msgid "6-31G*"
-#~ msgstr "6-31G*"
-
-#~ msgid "6-31G**"
-#~ msgstr "6-31G**"
-
-#~ msgid "6-31G(3df,3pd)"
-#~ msgstr "6-31G(3df,3pd)"
-
-#~ msgid "6-311G*"
-#~ msgstr "6-311G*"
-
-#~ msgid "6-311G**"
-#~ msgstr "6-311G**"
-
-#~ msgid "6-311G(2df,2pd)"
-#~ msgstr "6-311G(2df,2pd)"
-
-#~ msgid "3-21++G*"
-#~ msgstr "3-21++G*"
-
-#~ msgid "6-31+G*"
-#~ msgstr "6-31+G*"
-
-#~ msgid "6-31++G*"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G**"
-
-#~ msgid "6-311+G*"
-#~ msgstr "6-311+G*"
-
-#~ msgid "6-311++G**"
-#~ msgstr "6-311++G**"
-
-#~ msgid "6-311++G(2d,2p)"
-#~ msgstr "6-311++G(2d,2p)"
-
-#~ msgid "6-311++G(3df,3pd)"
-#~ msgstr "6-311++G(3df,3pd)"
-
-#~ msgid "pc-0"
-#~ msgstr "pc-0"
-
-#~ msgid "pc-1"
-#~ msgstr "pc-1"
-
-#~ msgid "pc-2"
-#~ msgstr "pc-2"
-
-#~ msgid "pc-3"
-#~ msgstr "pc-3"
-
-#~ msgid "pc-4"
-#~ msgstr "pc-4"
-
-#~ msgid "apc-0"
-#~ msgstr "apc-0"
-
-#~ msgid "apc-1"
-#~ msgstr "apc-1"
-
-#~ msgid "apc-2"
-#~ msgstr "apc-2"
-
-#~ msgid "apc-3"
-#~ msgstr "apc-3"
-
-#~ msgid "apc-4"
-#~ msgstr "apc-4"
-
-#~ msgid "aug-cc-pCVDZ"
-#~ msgstr "aug-cc-pCVDZ"
-
-#~ msgid "aug-cc-pCVTZ"
-#~ msgstr "aug-cc-pCVTZ"
-
-#~ msgid "aug-cc-pCVQZ"
-#~ msgstr "aug-cc-pCVQZ"
-
-#~ msgid "aug-cc-pCV5Z"
-#~ msgstr "aug-cc-pCV5Z"
 
 #~ msgid "Direct"
 #~ msgstr "Άμεση"
@@ -12419,227 +12086,14 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Parallel"
 #~ msgstr "Παράλληλα"
 
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
-
 #~ msgid "Grid Specification"
 #~ msgstr "Προδιαγραφή πλέγματος"
 
 #~ msgid "Partitioning Scheme:"
 #~ msgstr "Σχήμα διαμέρισης:"
 
-#~ msgid "Becke"
-#~ msgstr "Becke"
-
 #~ msgid "Becke (original)"
 #~ msgstr "Becke (αρχικό)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "Ποιότητα πλέγματος:"
@@ -12658,12 +12112,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Radial Scheme:"
 #~ msgstr "Ακτινικό σχήμα:"
-
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
 
 #~ msgid "Show all functionals"
 #~ msgstr "Εμφάνιση όλων των συναρτήσεων"
@@ -12686,38 +12134,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Group Label:"
 #~ msgstr "Ετικέτα ομάδας:"
 
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
-
 #~ msgid "&Advanced Setup"
 #~ msgstr "&Προχωρημένη ρύθμιση"
-
-#~ msgid "Hessian"
-#~ msgstr "Hessian"
 
 #~ msgid "Stat Point"
 #~ msgstr "Στατιστικό σημείο"
@@ -12737,41 +12155,14 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Read"
 #~ msgstr "Ανάγνωση"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Διάχυση φλοιού S σε βαριά άτομα"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Διάχυση φλοιού L σε βαριά άτομα"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Διπλό σθένος ζήτα"
-
-#~ msgid "Dunning/Hay DZ"
-#~ msgstr "Dunning/Hay DZ"
-
-#~ msgid "Binning/Curtiss DZ"
-#~ msgstr "Binning/Curtiss DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Τριπλό σθένος ζήτα"
@@ -12782,26 +12173,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Σθένος Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Τύπος ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Προεπιλογή"
-
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
 
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Συναρτήσεις πόλωσης βαρέως ατόμου:"
@@ -12824,14 +12200,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Saddle Point"
 #~ msgstr "Σαγματικό σημείο"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Ακρότατο βαθμίδας"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
 
 #~ msgid "Morokuma"
 #~ msgstr "Μοροκούμα"
@@ -12845,14 +12215,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Finite Electric Field"
 #~ msgstr "Πεπερασμένο ηλεκτρικό πεδίο"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Γενική βελτιστοποίηση"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "Βελτιστοποίηση FMO"
@@ -12860,29 +12224,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Raman Intensities"
 #~ msgstr "Εντάσεις Ράμαν"
 
-#~ msgid "UHF"
-#~ msgstr "UHF"
-
-#~ msgid "ROHF"
-#~ msgstr "ROHF"
-
-#~ msgid "GVB"
-#~ msgstr "GVB"
-
-#~ msgid "MCSCF"
-#~ msgstr "MCSCF"
-
 #~ msgid "None (CI)"
 #~ msgstr "Κανένα (CI)"
-
-#~ msgid "Foster-Boys"
-#~ msgstr "Foster-Boys"
-
-#~ msgid "Edmistron-Ruedenberg"
-#~ msgstr "Edmistron-Ruedenberg"
-
-#~ msgid "Pipek-Mezey"
-#~ msgstr "Pipek-Mezey"
 
 #~ msgid "SCF Type:"
 #~ msgstr "Τύπος SCF:"
@@ -12892,12 +12235,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Exec Type:"
 #~ msgstr "Τύπος εκτέλεσης:"
-
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
 
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Ορίζουσα Ames Lab."
@@ -12914,9 +12251,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "General CI"
 #~ msgstr "Γενική CI"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: Γραμμικοποιημένα CC"
 
@@ -12925,18 +12259,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC με απλές και διπλές"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Κανονική εκτέλεση"
@@ -12971,48 +12293,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Coordinate Type:"
 #~ msgstr "Τύπος συντεταγμένων:"
 
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
-
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Μοναδικές καρτεσιανές συντεταγμένες."
 
@@ -13046,35 +12326,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Millenia"
 #~ msgstr "Χιλιετίες"
 
-#~ msgid "MegaWords"
-#~ msgstr "MegaWords"
-
-#~ msgid "MegaBytes"
-#~ msgstr "MegaBytes"
-
-#~ msgid "GigaWords"
-#~ msgstr "GigaWords"
-
-#~ msgid "GigaBytes"
-#~ msgstr "GigaBytes"
-
 #~ msgid "Force Parallel Methods"
 #~ msgstr "Εξαναγκασμός παράλληλων μεθόδων"
 
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Παραγωγή αρχείου \"πυρήνα\" κατά την διακοπή"
-
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
 
 #~ msgid "Memory:"
 #~ msgstr "Μνήμη:"
@@ -13099,12 +12355,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Initial Guess:"
 #~ msgstr "Αρχική πρόβλεψη:"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "Ανάγνωση μοριακών τροχιακών ($VEC)"
 
@@ -13123,32 +12373,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Διεπαφή GAMESS σε άλλους κώδικες"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Εξαναγκασμός ελέγχου τύπου εκτέλεσης"
 
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (Έκδοση UK)"
-
-#~ msgid "Gaussian 9x"
-#~ msgstr "Gaussian 9x"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Επιδιαλυτωμένο με νερό"
@@ -13294,9 +12523,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Initial:"
 #~ msgstr "Αρχικά:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Βελτιστοποίηση ρητής συνάρτησης"
 
@@ -13327,18 +12553,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Basis:"
 #~ msgstr "Βάση:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Πίνακας Ζ"
 
@@ -13359,17 +12573,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Gaussian Input"
 #~ msgstr "Εισαγωγή Γκάους"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Τυπικό"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Σημείο ελέγχου:"
@@ -13380,26 +12585,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "MOLPRO Input"
 #~ msgstr "Είσοδος MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Έκδοση Molpro:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "MOPAC Input"
 #~ msgstr "Είσοδος MOPAC"
@@ -13410,62 +12597,17 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Quintet"
 #~ msgstr "Πενταπλή"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Είσοδος NWChem"
-
-#~ msgid "SAPT0"
-#~ msgstr "SAPT0"
-
-#~ msgid "SAPT2"
-#~ msgstr "SAPT2"
-
-#~ msgid "B3LYP-D"
-#~ msgstr "B3LYP-D"
-
-#~ msgid "B97-D"
-#~ msgstr "B97-D"
-
-#~ msgid "M05-2X"
-#~ msgstr "M05-2X"
-
-#~ msgid "jun-cc-pVDZ"
-#~ msgstr "jun-cc-pVDZ"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Είσοδος Q-Chem"
 
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
 #~ msgid "TeraChem Input"
 #~ msgstr "Είσοδος TeraChem"
 
-#~ msgid "B3LYP1"
-#~ msgstr "B3LYP1"
-
-#~ msgid "REVPBE"
-#~ msgstr "REVPBE"
-
 #~ msgid "Unrestricted"
 #~ msgstr "Απεριόριστο"
-
-#~ msgid "PBD"
-#~ msgstr "PBD"
 
 #~ msgid "no"
 #~ msgstr "όχι"
@@ -13512,26 +12654,14 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "&Schemes:"
 #~ msgstr "&Σχήματα:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Πλάτος:"
 
 #~ msgid "&Height"
 #~ msgstr "Ύ&ψος"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "ιν"
-
-#~ msgid "px"
-#~ msgstr "px"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -13598,9 +12728,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Κυματαριθμός λέιζερ"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
 #~ msgid "tab_NMR"
 #~ msgstr "καρτέλα NMR"
 
@@ -13616,23 +12743,11 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Label Peaks:"
 #~ msgstr "Κορυφές ετικέτας:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Μοριακές δονήσεις"
 
 #~ msgid "Filter: "
 #~ msgstr "Φίλτρο: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Ενεργότητα (A^4/amu)"
@@ -13700,12 +12815,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "Advanced..."
 #~ msgstr "Για Προχωρημένους..."
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
 
 #~ msgid "&Length:"
 #~ msgstr "&Μήκος:"

@@ -10928,29 +10928,11 @@ msgstr ""
 #~ msgid "Quintet"
 #~ msgstr "Quintuplet"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Entrada NWChem"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Entrada Q-Chem"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Shader Name:"
 #~ msgstr "Nom de l'ombratge :"
@@ -10979,38 +10961,14 @@ msgstr ""
 #~ msgid "&Height"
 #~ msgstr "&Nautor"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "po"
 
 #~ msgid "States / Atom"
 #~ msgstr "Estats/atòm"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "Relative"
 #~ msgstr "Relatiu"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Activitat (A^4/amu)"

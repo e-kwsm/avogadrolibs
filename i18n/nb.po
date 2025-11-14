@@ -9794,9 +9794,6 @@ msgstr ""
 #~ msgid "New Radius, %1:"
 #~ msgstr "Ny radius, %1:"
 
-#~ msgid "Symbol"
-#~ msgstr "Symbol"
-
 #~ msgid "Bond Length"
 #~ msgstr "Bindingslengde"
 
@@ -9821,9 +9818,6 @@ msgstr ""
 #~ msgid "Axis 3:"
 #~ msgstr "Akse 3:"
 
-#~ msgid "Norm"
-#~ msgstr "Norm"
-
 #~ msgid "Bond Radius:"
 #~ msgstr "Bindingsradius:"
 
@@ -9836,9 +9830,6 @@ msgstr ""
 #~ msgid "Bond number"
 #~ msgstr "Bindingsnummer"
 
-#~ msgid "Radius:"
-#~ msgstr "Radius:"
-
 #~ msgid "Positive"
 #~ msgstr "Positiv"
 
@@ -9847,9 +9838,6 @@ msgstr ""
 
 #~ msgid "Show Atoms"
 #~ msgstr "Vis atomer"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgid "Number of atoms:"
 #~ msgstr "Antall atomer:"
@@ -9889,9 +9877,6 @@ msgstr ""
 
 #~ msgid "Property:"
 #~ msgstr "Egenskap:"
-
-#~ msgid "System"
-#~ msgstr "System"
 
 #~ msgid "Misc"
 #~ msgstr "Diverse"
@@ -9934,9 +9919,6 @@ msgstr ""
 
 #~ msgid "Rename..."
 #~ msgstr "Endre navn …"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "Relative"
 #~ msgstr "Relativ"

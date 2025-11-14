@@ -9616,7 +9616,9 @@ msgstr ""
 #~ msgstr "Ununseptium"
 
 #~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
+#~ msgstr ""
+#~ "Copy text \n"
+#~ "  Ununoctium"
 
 #~ msgid "Engines"
 #~ msgstr "Engines"
@@ -11612,15 +11614,6 @@ msgstr ""
 #~ msgid "&Height"
 #~ msgstr "&Hoogte:"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
 #~ "value (screen to image point sizes don't translate well!)"
@@ -11641,9 +11634,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y As eenheden:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "&Gaussiaanse breedte:"
 
@@ -11652,9 +11642,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Label Toppen:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Moleculaire Vibraties"
@@ -11675,10 +11662,6 @@ msgstr ""
 #~ msgid "Low"
 #~ msgstr "Laag"
 
-#~ msgctxt "medium resolution"
-#~ msgid "Medium"
-#~ msgstr "Medium"
-
 #~ msgctxt "high resolution"
 #~ msgid "High"
 #~ msgstr "Hoog"
@@ -11686,12 +11669,6 @@ msgstr ""
 #~ msgctxt "very high resolution"
 #~ msgid "Very High"
 #~ msgstr "Zeer Hoog"
-
-#~ msgctxt ""
-#~ "Add the new surface to this particular display type (i.e., orbital or "
-#~ "surface)"
-#~ msgid "In Display Type:"
-#~ msgstr "In Display Type:"
 
 #~ msgid "New Display"
 #~ msgstr "Nieuwe Display"
@@ -11701,6 +11678,3 @@ msgstr ""
 
 #~ msgid "Python Settings"
 #~ msgstr "Python instellingen"
-
-#~ msgid "Z Matrix Editor"
-#~ msgstr "Z Matrix Editor"

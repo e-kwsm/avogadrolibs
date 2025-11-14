@@ -11421,15 +11421,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Ciclo"
 
@@ -11469,9 +11460,6 @@ msgstr ""
 #~ msgid "Include Nitrogens"
 #~ msgstr "Incluir os Azotos"
 
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
-
 #~ msgid "Fill"
 #~ msgstr "Preencher"
 
@@ -11495,9 +11483,6 @@ msgstr ""
 
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animar Trajectória"
-
-#~ msgid "0/0"
-#~ msgstr "0/0"
 
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
@@ -11536,26 +11521,11 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmo"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
 #~ msgid "Energy (kJ/mol):"
 #~ msgstr "Energia (kJ/mol):"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momento Dipolar (D):"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
 
 #~ msgid "Advanced"
 #~ msgstr "Avançadas"
@@ -11565,24 +11535,6 @@ msgstr ""
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Seleccionar a cor do fundo para transparente"
-
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "Configurações &Avançadas"

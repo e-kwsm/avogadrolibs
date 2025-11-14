@@ -13082,9 +13082,6 @@ msgstr ""
 #~ msgid "Shader Name:"
 #~ msgstr "Nama Shader:"
 
-#~ msgid "Vertex Shader:"
-#~ msgstr "Vertex Shader:"
-
 #~ msgid "Fragment Shader:"
 #~ msgstr "Fragmen Shader:"
 
@@ -13109,23 +13106,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Skema:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "Lebar:"
 
 #~ msgid "&Height"
 #~ msgstr "Tinggi"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
@@ -13143,9 +13128,6 @@ msgstr ""
 #~ msgid "&Gaussian Width:"
 #~ msgstr "Lebar &Gaussian:"
 
-#~ msgid "&Label peaks"
-#~ msgstr "&Label peaks"
-
 #~ msgid "Rotatory Strength type:"
 #~ msgstr "Tipe Rotatory Strength:"
 
@@ -13161,9 +13143,6 @@ msgstr ""
 #~ msgid "States / Cell"
 #~ msgstr "States / Sel"
 
-#~ msgid "States / Atom"
-#~ msgstr "States / Atom"
-
 #~ msgid "States / Valence electron"
 #~ msgstr "States / Elektron valensi"
 
@@ -13176,9 +13155,6 @@ msgstr ""
 #~ msgid "Show integrated DOS"
 #~ msgstr "Tampilan terintegrasi DOS"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Satuan Sumbu &Y:"
 
@@ -13188,38 +13164,14 @@ msgstr ""
 #~ msgid "Relative"
 #~ msgstr "Relatif"
 
-#~ msgid "Laser Wavenumber:"
-#~ msgstr "Laser Wavenumber:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Le&bar Gaussian:"
 
 #~ msgid "Reset &Plot Axes"
 #~ msgstr "Tata Ulan Sumbu &Plot"
 
-#~ msgid "Label Peaks:"
-#~ msgstr "Label Peaks:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Getaran molekuler"
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Aktivitas (A^4/amu)"

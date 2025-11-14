@@ -14249,12 +14249,6 @@ msgstr ""
 #~ msgid "Advanced..."
 #~ msgstr "Напредно..."
 
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
-
 #~ msgid "&Length:"
 #~ msgstr "&Дужина:"
 

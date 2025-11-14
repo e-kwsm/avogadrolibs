@@ -9281,15 +9281,6 @@ msgstr ""
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Värv jäägi järgi (aminohappe tüüp, hüdrofoobsus, ..."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
 #~ msgid "Ununoctium"
 #~ msgstr "Ununoktium"
 
@@ -9322,14 +9313,8 @@ msgstr ""
 #~ msgid "Chemical files (*.xyz)"
 #~ msgstr "Keemiafailid (*.xyz)"
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "Allalaaditava molekuli URL."
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Select atoms, bonds, residues..."
 #~ msgstr "Vali aatomid, sidemed, jäägid..."
@@ -9339,9 +9324,6 @@ msgstr ""
 
 #~ msgid "Dark"
 #~ msgstr "Tume"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
 
 #~ msgid "Residue"
 #~ msgstr "Jääk"
@@ -9358,26 +9340,65 @@ msgstr ""
 #~ msgid "Radius:"
 #~ msgstr "Raadius:"
 
-#~ msgid "L"
-#~ msgstr "L"
+#~ msgid "Arginine"
+#~ msgstr "Arginiin"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
+#~ msgid "Asparagine"
+#~ msgstr "Asparagiin"
 
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
+#~ msgid "Aspartic acid"
+#~ msgstr "Aspartiinhape"
 
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
+#~ msgid "Cysteine"
+#~ msgstr "Tsüsteiin"
 
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
+#~ msgid "Glutamic acid"
+#~ msgstr "Glutamiinhape"
 
-#~ msgid "E"
-#~ msgstr "E"
+#~ msgid "Glutamine"
+#~ msgstr "Glutamiin"
 
-#~ msgid "F"
-#~ msgstr "F"
+#~ msgid "Glycine"
+#~ msgstr "Glütsiin"
+
+#~ msgid "Histidine"
+#~ msgstr "Histidiin"
+
+#~ msgid "Isoleucine"
+#~ msgstr "Isoleutsiin"
+
+#~ msgid "Tryptophan"
+#~ msgstr "Trüptofaan"
+
+#~ msgid "Threonine"
+#~ msgstr "Treoniin"
+
+#~ msgid "Serine"
+#~ msgstr "Seriin"
+
+#~ msgid "Proline"
+#~ msgstr "Proliin"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "Fenüülalaniin"
+
+#~ msgid "Lysine"
+#~ msgstr "Lüsiin"
+
+#~ msgid "Leucine"
+#~ msgstr "Leutsiin"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "Stereokeemia:"
+
+#~ msgid "Straight Chain"
+#~ msgstr "Sirge agel"
+
+#~ msgid "Chain Number:"
+#~ msgstr "Ahela number:"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Uue peptiidi ahelanumber"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Jääkide arv:"
@@ -9385,23 +9406,5 @@ msgstr ""
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipoolmoment (D):"
 
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
 #~ msgid "in"
 #~ msgstr "toll"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"

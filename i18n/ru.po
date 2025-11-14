@@ -11329,9 +11329,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Анимировать траекторию"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Зациклить"
@@ -11414,15 +11411,6 @@ msgstr ""
 #~ msgid "length"
 #~ msgstr "длина"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "Cartesian"
 #~ msgstr "Декартовы"
 
@@ -11447,29 +11435,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "Настроить силовое поле"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Число шагов"
 
 #~ msgid "Algorithm"
 #~ msgstr "Алгоритм"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Альфа-спираль"
@@ -11479,15 +11449,6 @@ msgstr ""
 
 #~ msgid "Pi Helix"
 #~ msgstr "Пи-спираль"
-
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Количество аминокислотных остатков:"

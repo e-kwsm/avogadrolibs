@@ -10153,9 +10153,6 @@ msgstr ""
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Resim Dosyaları (*.png *.pbm)"
 
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
-
 #~ msgid "No valid filename was supplied."
 #~ msgstr "HErhangi bir geçerli dosya adı belirtilmedi."
 
@@ -10223,12 +10220,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES Biçim Dönüşümü Mevcut Değil"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "GAMESS kuantum kimya paketi için girdi dosyası oluştur"
@@ -10421,12 +10412,6 @@ msgstr ""
 
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Taşınabilir Ağ Grafikleri"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows Bitmap"
 
 #~ msgid "No vibrational displacements exist."
 #~ msgstr "Hiçbir titreşimsel yerdeğişimi yok."

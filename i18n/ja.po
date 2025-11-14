@@ -11366,6 +11366,9 @@ msgstr ""
 #~ msgid "Calculating MO %L1"
 #~ msgstr "第%L1分子軌道を計算中"
 
+#~ msgid "VdW"
+#~ msgstr "vdW"
+
 #~ msgid "Electrostatic potential surfaces are not yet supported."
 #~ msgstr "静電ポテンシャルサーフェスはサポートされていません。"
 
@@ -12103,15 +12106,6 @@ msgstr ""
 #~ msgid "Translation vector:"
 #~ msgstr "平行移動ベクトル"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "エネルギー単位:"
 
@@ -12145,18 +12139,6 @@ msgstr ""
 #~ msgid "Default View"
 #~ msgstr "デフォルトの表示"
 
-#~ msgid "h: "
-#~ msgstr "h: "
-
-#~ msgid "k: "
-#~ msgstr "k: "
-
-#~ msgid "i: "
-#~ msgstr "i: "
-
-#~ msgid "l: "
-#~ msgstr "l: "
-
 #~ msgid "Miller Indices"
 #~ msgstr "ミラー指数"
 
@@ -12169,32 +12151,11 @@ msgstr ""
 #~ msgid "Setup Force Field"
 #~ msgstr "力場をセットアップ"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "ステップ数"
 
 #~ msgid "Algorithm"
 #~ msgstr "アルゴリズム"
-
-#~ msgid "10e-"
-#~ msgstr "10e-"
-
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "αヘリックス"
@@ -12210,12 +12171,6 @@ msgstr ""
 
 #~ msgid "Psi:"
 #~ msgstr "ψ:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "残基の数:"
@@ -12238,18 +12193,6 @@ msgstr ""
 #~ msgid "Frequency"
 #~ msgstr "振動解析"
 
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
-
 #~ msgid "Format"
 #~ msgstr "フォーマット"
 
@@ -12264,12 +12207,6 @@ msgstr ""
 
 #~ msgid "Basis Set"
 #~ msgstr "基底"
-
-#~ msgid "SCF"
-#~ msgstr "SCF"
-
-#~ msgid "RijCosX"
-#~ msgstr "RijCosX"
 
 #~ msgid "Aux. Basis Set"
 #~ msgstr "補助基底"

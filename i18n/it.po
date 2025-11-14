@@ -12907,23 +12907,11 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "&Schemi:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Larghezza:"
 
 #~ msgid "&Height"
 #~ msgstr "&Altezza"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
 
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "Regola automaticamente la dimensione del c&arattere"
@@ -12967,9 +12955,6 @@ msgstr ""
 #~ msgid "Show integrated DOS"
 #~ msgstr "Mostra il DOS integrato"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Unità di asse &Y:"
 
@@ -12978,12 +12963,6 @@ msgstr ""
 
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Numero di onde laser:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
 
 #~ msgid "Nucleus:"
 #~ msgstr "Nucleo:"
@@ -12994,26 +12973,11 @@ msgstr ""
 #~ msgid "Label Peaks:"
 #~ msgstr "Cime dell'etichetta:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Vibrazioni molecolari"
 
 #~ msgid "Filter: "
 #~ msgstr "Filtro: "
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
-
-#~ msgid "Activity (A^4/amu)"
-#~ msgstr "Activity (A^4/amu)"
 
 #~ msgid "&Show Spectra..."
 #~ msgstr "&Mostra spettri..."
@@ -13073,9 +13037,6 @@ msgstr ""
 
 #~ msgid "periodic units"
 #~ msgstr "unità periodiche"
-
-#~ msgid "angstrom"
-#~ msgstr "angstrom"
 
 #~ msgid "nanometers"
 #~ msgstr "nanometri"

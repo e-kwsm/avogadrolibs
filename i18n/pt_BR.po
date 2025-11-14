@@ -11973,23 +11973,8 @@ msgstr "Seus e-mails"
 #~ msgid "Print the Initial Guess"
 #~ msgstr "Mostre a Estimativa Inicial"
 
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forçar uma verificação de tipo de execução"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "Solvate with Water"
 #~ msgstr "Solvatar com Água"
@@ -12078,9 +12063,6 @@ msgstr "Seus e-mails"
 #~ msgid "Numeric"
 #~ msgstr "Numérica"
 
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial Hessian"
 #~ msgstr "Inicial de Héssios"
 
@@ -12096,14 +12078,8 @@ msgstr "Seus e-mails"
 #~ msgid "Initial:"
 #~ msgstr "Inicial:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Aproximação Quadrática"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Z-matrix"
 #~ msgstr "Matriz-Z"
@@ -12111,50 +12087,17 @@ msgstr "Seus e-mails"
 #~ msgid "Gaussian Input"
 #~ msgstr "Entrada Gaussiana"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Padrão"
 
 #~ msgid "MOLPRO Input"
 #~ msgstr "Entrada MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "Quarteto"
 
 #~ msgid "Quintet"
 #~ msgstr "Quinteto"
-
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Fragment Shader:"
 #~ msgstr "Sombreador de fragmentos"
@@ -12177,20 +12120,11 @@ msgstr "Seus e-mails"
 #~ msgid "&Schemes:"
 #~ msgstr "E&squemas:"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "&Largura:"
 
 #~ msgid "&Height"
 #~ msgstr "&Altura"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "in"
 #~ msgstr "pol"
@@ -12210,9 +12144,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Unidades do Eixo &Y:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Vibrações Moleculares"

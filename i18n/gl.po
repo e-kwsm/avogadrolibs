@@ -9479,9 +9479,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Crystal..."
 #~ msgstr "Pegar cristal"
 
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
 #~ msgstr "Engadir hidróxenos para o pH..."
@@ -9656,18 +9653,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Realza características concretas cun padrón de SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Motores"
 
@@ -9745,9 +9730,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Open Trajectory File"
 #~ msgstr "Abrir un ficheiro de traxectoria"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Engadindo a extensión .avi"
@@ -9880,14 +9862,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgstr "Ortorrómbico"
 
 #~ msgctxt "Lattice type"
-#~ msgid "Tetragonal"
-#~ msgstr "Tetragonal"
-
-#~ msgctxt "Lattice type"
-#~ msgid "Hexagonal"
-#~ msgstr "Hexagonal"
-
-#~ msgctxt "Lattice type"
 #~ msgid "Cubic"
 #~ msgstr "Cúbico"
 
@@ -9918,9 +9892,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Reduce Cell (&Primitive)"
 #~ msgstr "Reducir a cela (&Primitivo)"
-
-#~ msgid "&Bohr"
-#~ msgstr "&Bohr"
 
 #~ msgid "&Nanometer"
 #~ msgstr "&Nanometro"
@@ -10081,9 +10052,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Common vector image formats"
 #~ msgstr "Formatos de imaxe vectorial habituais"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Exportar gráficos de vectores"
 
@@ -10092,9 +10060,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "H to Methyl"
 #~ msgstr "H para metilo"
-
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
 
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Transforma hidróxenos en grupos metilo"
@@ -10110,9 +10075,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Invert Chirality"
 #~ msgstr "Inverter a quiralidade"
-
-#~ msgid "InvertChiral"
-#~ msgstr "InvertChiral"
 
 #~ msgid "Invert chiral centers"
 #~ msgstr "Inverte os centros de quiralidade"
@@ -10139,9 +10101,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "PDB entry to download."
 #~ msgstr "A entrada PDB que se vai obter."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "O URL da molécula que se vai obter."
 
@@ -10165,9 +10124,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Ficheiros de imaxe (*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Non se indicou ningún nome válido de ficheiro."
@@ -10214,9 +10170,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Python Terminal"
 #~ msgstr "Terminal de Python"
 
-#~ msgid "pythonTerminalDock"
-#~ msgstr "pythonTerminalDock"
-
 #~ msgid "Interactive python scripting terminal"
 #~ msgstr "Terminal interactiva de scripting con Python"
 
@@ -10228,11 +10181,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "The abinit executable cannot be found."
 #~ msgstr "Non é posíbel atopar o executábel de Abinit."
-
-#~ msgid ""
-#~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
-#~ msgstr ""
-#~ "Pseudos (*.hgh *.gth *.pspgth *.fhi *.pspnc *.paw *.mt *.UPF *.upf *.psp)"
 
 #~ msgid "abinit did not start. Perhaps it is not installed correctly."
 #~ msgstr ""
@@ -10275,18 +10223,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "A conversión do formato SMILES non está dispoñíbel!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr ""
@@ -10372,24 +10308,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgstr ""
 #~ "Gaussian non se executou correctamente, talvez non estea correctamente "
 #~ "instalado."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "Molpro Input Deck Generator Warning"
 #~ msgstr "Aviso do xerador de ficheiros de entrada do Molpro"
@@ -10625,9 +10543,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Comma Separated Values"
 #~ msgstr "Valores separados por vírgulas"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Extensión descoñecida: %1"
 
@@ -10660,12 +10575,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "O ficheiro CD do Turbomole está formatado incorrectamente: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "Portable Network Graphics"
-
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Formato TIFF"
 
@@ -10696,9 +10605,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Visualiza datos espectrais obtidos de cálculos químicos cuánticos"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Análise vibracional"
@@ -10736,10 +10642,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Nothing"
 #~ msgstr "Nada"
 
-#~ msgctxt "Van der Waals surface type"
-#~ msgid "Van der Waals"
-#~ msgstr "Van der Waals"
-
 #~ msgctxt "Electron density surface type"
 #~ msgid "Electron Density"
 #~ msgstr "Densidade electrónica"
@@ -10754,9 +10656,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgctxt "Molecular Orbital"
 #~ msgid "Calculating MO %L1"
 #~ msgstr "Calculando o OM %L1"
-
-#~ msgid "VdW"
-#~ msgstr "VdW"
 
 #~ msgid "Calculate molecular orbitals and other surfaces"
 #~ msgstr "Calcula orbitais moleculares e outras superficies"
@@ -10800,9 +10699,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Disconnect"
 #~ msgstr "Desconectar"
 
-#~ msgid "&WiiTrack"
-#~ msgstr "&WiiTrack"
-
 #~ msgid "Wii Tracking"
 #~ msgstr "Seguimento coa Wii"
 
@@ -10820,9 +10716,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Debug Information"
 #~ msgstr "Información de depuración"
-
-#~ msgid "FPS: %L1"
-#~ msgstr "FPS: %L1"
 
 #~ msgid "View Size: %L1 x %L2"
 #~ msgstr "Tamaño da vista: %L1 x %L2"
@@ -10892,10 +10785,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Molecule %1"
 #~ msgstr "Molécula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Motor de Python descoñecido"
 
@@ -10937,9 +10826,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "AutoOpt: Could not setup force field...."
 #~ msgstr "AutoOpt: Non foi posíbel configurar o campo de forzas..."
-
-#~ msgid "AutoOpt: E = %1 %2 (dE = %3)"
-#~ msgstr "AutoOpt: E = %1 %2 (dE = %3)"
 
 #~ msgid "Num Constraints: %1"
 #~ msgstr "Núm. de restricións: %1"
@@ -11027,22 +10913,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Ángulo diedro: %1 °"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Distancia(s):"
@@ -11159,15 +11029,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Shape"
 #~ msgstr "Forma"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Bucle"
 
@@ -11189,12 +11050,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Rendering Engine:"
 #~ msgstr "Motor de renderización:"
 
-#~ msgid "TextRenderer"
-#~ msgstr "TextRenderer"
-
-#~ msgid "QPainter"
-#~ msgstr "QPainter"
-
 #~ msgid "Text:"
 #~ msgstr "Texto:"
 
@@ -11212,15 +11067,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Change Font"
 #~ msgstr "Cambiar o tipo de letra"
-
-#~ msgid "x : "
-#~ msgstr "x : "
-
-#~ msgid "y : "
-#~ msgstr "y : "
-
-#~ msgid "z : "
-#~ msgstr "z : "
 
 #~ msgid "Label Shift:"
 #~ msgstr "Cambio de etiqueta:"
@@ -11242,9 +11088,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "VdW Opacity:"
 #~ msgstr "Opacidade de VdW:"
-
-#~ msgid "Orbital:"
-#~ msgstr "Orbital:"
 
 #~ msgid "Render:"
 #~ msgstr "Debuxar:"
@@ -11273,21 +11116,12 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animas a traxectoria"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Bucle"
 
 #~ msgid "Save as .avi..."
 #~ msgstr "Gardar como .avi..."
-
-#~ msgid "Angstroms"
-#~ msgstr "Angstroms"
-
-#~ msgid "Bohrs"
-#~ msgstr "Bohrs"
 
 #~ msgid "XYZ, coords only"
 #~ msgstr "XYX, só as coordenadas"
@@ -11352,15 +11186,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Translation vector:"
 #~ msgstr "Vector de translación :"
 
-#~ msgid "&X:"
-#~ msgstr "&X:"
-
-#~ msgid "&Y:"
-#~ msgstr "&Y:"
-
-#~ msgid "&Z:"
-#~ msgstr "&Z:"
-
 #~ msgid "&Vector units:"
 #~ msgstr "&Unidades do vector :"
 
@@ -11382,29 +11207,77 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Setup Force Field"
 #~ msgstr "Configurar o campo de forzas"
 
-#~ msgid "Ghemical"
-#~ msgstr "Ghemical"
-
 #~ msgid "Number of steps"
 #~ msgstr "Cantidade de pasos:"
 
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmo"
 
-#~ msgid "L"
-#~ msgstr "L"
+#~ msgid "Arginine"
+#~ msgstr "Arxinina"
 
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
+#~ msgid "Asparagine"
+#~ msgstr "Asparaxina"
 
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
+#~ msgid "Aspartic acid"
+#~ msgstr "Ácido aspártico"
 
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
+#~ msgid "Cysteine"
+#~ msgstr "Cisteína"
 
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
+#~ msgid "Glutamic acid"
+#~ msgstr "Ácido glutámico"
+
+#~ msgid "Glutamine"
+#~ msgstr "Glutamina"
+
+#~ msgid "Glycine"
+#~ msgstr "Glicina"
+
+#~ msgid "Histidine"
+#~ msgstr "Histidina"
+
+#~ msgid "Isoleucine"
+#~ msgstr "Isoleucina"
+
+#~ msgid "Tryptophan"
+#~ msgstr "Triptofano"
+
+#~ msgid "Threonine"
+#~ msgstr "Treonina"
+
+#~ msgid "Serine"
+#~ msgstr "Serina"
+
+#~ msgid "Proline"
+#~ msgstr "Prolina"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "Fenilalanina"
+
+#~ msgid "Methionine"
+#~ msgstr "Metionina"
+
+#~ msgid "Lysine"
+#~ msgstr "Lisina"
+
+#~ msgid "Leucine"
+#~ msgstr "Leucina"
+
+#~ msgid "Sequence (N to C):"
+#~ msgstr "Secuencia (de N até C):"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "Estereoquímica:"
+
+#~ msgid "N Terminus:"
+#~ msgstr "N terminal:"
+
+#~ msgid "C Terminus:"
+#~ msgstr "C terminal:"
+
+#~ msgid "Straight Chain"
+#~ msgstr "Cadea recta"
 
 #~ msgid "Alpha Helix"
 #~ msgstr "Hélice alfa"
@@ -11415,32 +11288,17 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Pi Helix"
 #~ msgstr "Hélice Pi"
 
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
+#~ msgid "Chain Number:"
+#~ msgstr "Número da cadea:"
 
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "O número da cadea do novo péptido"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Número de residuos:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Momento dipolar (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Avanzado"
@@ -11454,14 +11312,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Select..."
 #~ msgstr "Escoller..."
 
-#~ msgid "povray"
-#~ msgstr "povray"
-
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "qwe,+ r¡v153"
-
-#~ msgid "Antialias"
-#~ msgstr "Antialias"
 
 #~ msgid "Set the background color to be transparent"
 #~ msgstr "Define a cor de fondo como transparente"
@@ -11485,32 +11337,17 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Abinit Input"
 #~ msgstr "Entrada de Abinit"
 
-#~ msgid "10.0"
-#~ msgstr "10.0"
-
 #~ msgid "Cartesian (Angstrom)"
 #~ msgstr "Cartesiano (Angstrom)"
 
 #~ msgid "Reduced"
 #~ msgstr "Reducido"
 
-#~ msgid "5.e-5"
-#~ msgstr "5.e-5"
-
 #~ msgid "Tolerance on forces(Ha/bohr):"
 #~ msgstr "Tolerancia nas forzas (Ha/bohr) :"
 
-#~ msgid "1.05"
-#~ msgstr "1.05"
-
-#~ msgid "0.0"
-#~ msgstr "0.0"
-
 #~ msgid "Number of bands:"
 #~ msgstr "Número de bandas:"
-
-#~ msgid "20.0"
-#~ msgstr "20.0"
 
 #~ msgid "Wave Function norm"
 #~ msgstr "Norma da función de onda"
@@ -11521,17 +11358,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "1 - semiconducting"
 #~ msgstr "1 - semiconductor"
 
-#~ msgid "3 - Fermi Dirac"
-#~ msgstr "3 - Fermi Dirac"
-
-#~ msgid "0.01"
-#~ msgstr "0.01"
-
 #~ msgid "0 - no moving ions "
 #~ msgstr "0 - ningún ión móbil "
-
-#~ msgid "2 - BFGS "
-#~ msgstr "2 - BFGS "
 
 #~ msgid "3 - BFGS with energy"
 #~ msgstr "3 - BFGS con enerxía"
@@ -11553,30 +11381,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ "servirlle\n"
 #~ "de información."
 
-#~ msgid "HF"
-#~ msgstr "HF"
-
-#~ msgid "KS-DFT"
-#~ msgstr "KS-DFT"
-
-#~ msgid "cc-pVDZ"
-#~ msgstr "cc-pVDZ"
-
-#~ msgid "cc-pVTZ"
-#~ msgstr "cc-pVTZ"
-
-#~ msgid "cc-pVQZ"
-#~ msgstr "cc-pVQZ"
-
-#~ msgid "cc-pV5Z"
-#~ msgstr "cc-pV5Z"
-
-#~ msgid "cc-pV6Z"
-#~ msgstr "cc-pV6Z"
-
-#~ msgid "STO-nG"
-#~ msgstr "STO-nG"
-
 #~ msgid "Pople-style"
 #~ msgstr "Estilo Pople"
 
@@ -11586,167 +11390,11 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Dunning's correlation consistent"
 #~ msgstr "Consistente coa correlación de Dunning"
 
-#~ msgid "aug-cc-pVDZ"
-#~ msgstr "aug-cc-pVDZ"
-
-#~ msgid "aug-cc-pVTZ"
-#~ msgstr "aug-cc-pVTZ"
-
-#~ msgid "aug-cc-pVQZ"
-#~ msgstr "aug-cc-pVQZ"
-
-#~ msgid "aug-cc-pV5Z"
-#~ msgstr "aug-cc-pV5Z"
-
-#~ msgid "aug-cc-pV6Z"
-#~ msgstr "aug-cc-pV6Z"
-
-#~ msgid "cc-pCVDZ"
-#~ msgstr "cc-pCVDZ"
-
-#~ msgid "cc-pCVTZ"
-#~ msgstr "cc-pCVTZ"
-
-#~ msgid "cc-pCVQZ"
-#~ msgstr "cc-pCVQZ"
-
-#~ msgid "cc-pCV5Z"
-#~ msgstr "cc-pCV5Z"
-
-#~ msgid "cc-pwCVDZ"
-#~ msgstr "cc-pwCVDZ"
-
-#~ msgid "cc-pwCVTZ"
-#~ msgstr "cc-pwCVTZ"
-
-#~ msgid "cc-pwCVQZ"
-#~ msgstr "cc-pwCVQZ"
-
-#~ msgid "cc-pwCV5Z"
-#~ msgstr "cc-pwCV5Z"
-
 #~ msgid "Core correlating functions"
 #~ msgstr "Funcións de correlación do core"
 
 #~ msgid "Diffuse functions"
 #~ msgstr "Funcións difusas"
-
-#~ msgid "STO-2G"
-#~ msgstr "STO-2G"
-
-#~ msgid "STO-3G"
-#~ msgstr "STO-3G"
-
-#~ msgid "STO-6G"
-#~ msgstr "STO-6G"
-
-#~ msgid "3-21G"
-#~ msgstr "3-21G"
-
-#~ msgid "4-31G"
-#~ msgstr "4-31G"
-
-#~ msgid "6-31G"
-#~ msgstr "6-31G"
-
-#~ msgid "6-311G"
-#~ msgstr "6-311G"
-
-#~ msgid "3-21++G"
-#~ msgstr "3-21++G"
-
-#~ msgid "6-31+G"
-#~ msgstr "6-31+G"
-
-#~ msgid "6-31++G"
-#~ msgstr "6-31++G"
-
-#~ msgid "3-21G*"
-#~ msgstr "3-21G*"
-
-#~ msgid "6-31G*"
-#~ msgstr "6-31G*"
-
-#~ msgid "6-31G**"
-#~ msgstr "6-31G**"
-
-#~ msgid "6-31G(3df,3pd)"
-#~ msgstr "6-31G(3df,3pd)"
-
-#~ msgid "6-311G*"
-#~ msgstr "6-311G*"
-
-#~ msgid "6-311G**"
-#~ msgstr "6-311G**"
-
-#~ msgid "6-311G(2df,2pd)"
-#~ msgstr "6-311G(2df,2pd)"
-
-#~ msgid "3-21++G*"
-#~ msgstr "3-21++G*"
-
-#~ msgid "6-31+G*"
-#~ msgstr "6-31+G*"
-
-#~ msgid "6-31++G*"
-#~ msgstr "6-31++G*"
-
-#~ msgid "6-31++G**"
-#~ msgstr "6-31++G**"
-
-#~ msgid "6-311+G*"
-#~ msgstr "6-311+G*"
-
-#~ msgid "6-311++G**"
-#~ msgstr "6-311++G**"
-
-#~ msgid "6-311++G(2d,2p)"
-#~ msgstr "6-311++G(2d,2p)"
-
-#~ msgid "6-311++G(3df,3pd)"
-#~ msgstr "6-311++G(3df,3pd)"
-
-#~ msgid "pc-0"
-#~ msgstr "pc-0"
-
-#~ msgid "pc-1"
-#~ msgstr "pc-1"
-
-#~ msgid "pc-2"
-#~ msgstr "pc-2"
-
-#~ msgid "pc-3"
-#~ msgstr "pc-3"
-
-#~ msgid "pc-4"
-#~ msgstr "pc-4"
-
-#~ msgid "apc-0"
-#~ msgstr "apc-0"
-
-#~ msgid "apc-1"
-#~ msgstr "apc-1"
-
-#~ msgid "apc-2"
-#~ msgstr "apc-2"
-
-#~ msgid "apc-3"
-#~ msgstr "apc-3"
-
-#~ msgid "apc-4"
-#~ msgstr "apc-4"
-
-#~ msgid "aug-cc-pCVDZ"
-#~ msgstr "aug-cc-pCVDZ"
-
-#~ msgid "aug-cc-pCVTZ"
-#~ msgstr "aug-cc-pCVTZ"
-
-#~ msgid "aug-cc-pCVQZ"
-#~ msgstr "aug-cc-pCVQZ"
-
-#~ msgid "aug-cc-pCV5Z"
-#~ msgstr "aug-cc-pCV5Z"
 
 #~ msgid "Direct"
 #~ msgstr "Directo"
@@ -11768,236 +11416,20 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Parallel"
 #~ msgstr "Paralelo"
 
-#~ msgid "d-"
-#~ msgstr "d-"
-
-#~ msgid "t-"
-#~ msgstr "t-"
-
-#~ msgid "q-"
-#~ msgstr "q-"
-
-#~ msgid "B3LYP"
-#~ msgstr "B3LYP"
-
-#~ msgid "B3LYPg"
-#~ msgstr "B3LYPg"
-
-#~ msgid "B3P86"
-#~ msgstr "B3P86"
-
-#~ msgid "B3P86g"
-#~ msgstr "B3P86g"
-
-#~ msgid "B3PW91"
-#~ msgstr "B3PW91"
-
-#~ msgid "B1LYP"
-#~ msgstr "B1LYP"
-
-#~ msgid "B1PW91"
-#~ msgstr "B1PW91"
-
-#~ msgid "BHandH"
-#~ msgstr "BHandH"
-
-#~ msgid "BHandHLYP"
-#~ msgstr "BHandHLYP"
-
-#~ msgid "B86VWN"
-#~ msgstr "B86VWN"
-
-#~ msgid "B86LYP"
-#~ msgstr "B86LYP"
-
-#~ msgid "B86P86"
-#~ msgstr "B86P86"
-
-#~ msgid "B86PW91"
-#~ msgstr "B86PW91"
-
-#~ msgid "BVWN"
-#~ msgstr "BVWN"
-
-#~ msgid "BLYP"
-#~ msgstr "BLYP"
-
-#~ msgid "BP86"
-#~ msgstr "BP86"
-
-#~ msgid "BPW91"
-#~ msgstr "BPW91"
-
-#~ msgid "BW"
-#~ msgstr "BW"
-
-#~ msgid "BFW"
-#~ msgstr "BFW"
-
-#~ msgid "CAMB3LYP"
-#~ msgstr "CAMB3LYP"
-
-#~ msgid "DBLYP"
-#~ msgstr "DBLYP"
-
-#~ msgid "DBP86"
-#~ msgstr "DBP86"
-
-#~ msgid "DBPW91"
-#~ msgstr "DBPW91"
-
-#~ msgid "EDF1"
-#~ msgstr "EDF1"
-
-#~ msgid "EDF2"
-#~ msgstr "EDF2"
-
-#~ msgid "G96VWN"
-#~ msgstr "G96VWN"
-
-#~ msgid "G96LYP"
-#~ msgstr "G96LYP"
-
-#~ msgid "G96P86"
-#~ msgstr "G96P86"
-
-#~ msgid "G96PW91"
-#~ msgstr "G96PW91"
-
-#~ msgid "G961LYP"
-#~ msgstr "G961LYP"
-
-#~ msgid "KMLYP"
-#~ msgstr "KMLYP"
-
-#~ msgid "KT1"
-#~ msgstr "KT1"
-
-#~ msgid "KT2"
-#~ msgstr "KT2"
-
-#~ msgid "KT3"
-#~ msgstr "KT3"
-
-#~ msgid "LG1LYP"
-#~ msgstr "LG1LYP"
-
-#~ msgid "OVWN"
-#~ msgstr "OVWN"
-
-#~ msgid "OLYP"
-#~ msgstr "OLYP"
-
-#~ msgid "OP86"
-#~ msgstr "OP86"
-
-#~ msgid "OPW91"
-#~ msgstr "OPW91"
-
-#~ msgid "mPWVWN"
-#~ msgstr "mPWVWN"
-
-#~ msgid "mPWLYP"
-#~ msgstr "mPWLYP"
-
-#~ msgid "mPWP86"
-#~ msgstr "mPWP86"
-
-#~ msgid "mPWPW91"
-#~ msgstr "mPWPW91"
-
-#~ msgid "mPW91"
-#~ msgstr "mPW91"
-
-#~ msgid "mPW1PW91"
-#~ msgstr "mPW1PW91"
-
-#~ msgid "mPW3PW91"
-#~ msgstr "mPW3PW91"
-
-#~ msgid "mPW1K"
-#~ msgstr "mPW1K"
-
-#~ msgid "mPW1N"
-#~ msgstr "mPW1N"
-
-#~ msgid "mPW1S"
-#~ msgstr "mPW1S"
-
-#~ msgid "PBE0"
-#~ msgstr "PBE0"
-
-#~ msgid "PBE0PBE"
-#~ msgstr "PBE0PBE"
-
-#~ msgid "PBE1PBE"
-#~ msgstr "PBE1PBE"
-
-#~ msgid "PBEPBE"
-#~ msgstr "PBEPBE"
-
-#~ msgid "RPBE"
-#~ msgstr "RPBE"
-
-#~ msgid "revPBE"
-#~ msgstr "revPBE"
-
-#~ msgid "mPBE"
-#~ msgstr "mPBE"
-
-#~ msgid "PW91"
-#~ msgstr "PW91"
-
-#~ msgid "PW91VWN"
-#~ msgstr "PW91VWN"
-
-#~ msgid "PW91LYP"
-#~ msgstr "PW91LYP"
-
-#~ msgid "PW91P86"
-#~ msgstr "PW91P86"
-
-#~ msgid "PW91PW91"
-#~ msgstr "PW91PW91"
-
-#~ msgid "SVWN3"
-#~ msgstr "SVWN3"
-
-#~ msgid "SVWN5"
-#~ msgstr "SVWN5"
-
-#~ msgid "XLYP"
-#~ msgstr "XLYP"
-
-#~ msgid "X3LYP"
-#~ msgstr "X3LYP"
-
-#~ msgid "1.0D-"
-#~ msgstr "1.0D-"
-
 #~ msgid "Grid Specification"
 #~ msgstr "Especificación da grella"
 
 #~ msgid "Partitioning Scheme:"
 #~ msgstr "Esquema de particionamento:"
 
-#~ msgid "Becke"
-#~ msgstr "Becke"
-
 #~ msgid "Becke (original)"
 #~ msgstr "Becke (orixinal)"
-
-#~ msgid "SSF"
-#~ msgstr "SSF"
 
 #~ msgid "Grid Quality:"
 #~ msgstr "Calidade da grella:"
 
 #~ msgid "coarse"
 #~ msgstr "groseira"
-
-#~ msgid "normal"
-#~ msgstr "normal"
 
 #~ msgid "fine"
 #~ msgstr "fino"
@@ -12007,12 +11439,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Radial Scheme:"
 #~ msgstr "Esquema radial:"
-
-#~ msgid "LMG"
-#~ msgstr "LMG"
-
-#~ msgid "GC2"
-#~ msgstr "GC2"
 
 #~ msgid "Show all functionals"
 #~ msgstr "Mostrar todas as funcionais"
@@ -12034,33 +11460,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "Group Label:"
 #~ msgstr "Etiqueta do grupo:"
-
-#~ msgid "AM1"
-#~ msgstr "AM1"
-
-#~ msgid "PM3"
-#~ msgstr "PM3"
-
-#~ msgid "CCSD(T)"
-#~ msgstr "CCSD(T)"
-
-#~ msgid "MINI"
-#~ msgstr "MINI"
-
-#~ msgid "6-31G(d)"
-#~ msgstr "6-31G(d)"
-
-#~ msgid "6-31G(d,p)"
-#~ msgstr "6-31G(d,p)"
-
-#~ msgid "6-31+G(d,p)"
-#~ msgstr "6-31+G(d,p)"
-
-#~ msgid "6-31+G(2d,p)"
-#~ msgstr "6-31+G(2d,p)"
-
-#~ msgid "6-311++G(2d,p)"
-#~ msgstr "6-311++G(2d,p)"
 
 #~ msgid "&Advanced Setup"
 #~ msgstr "Configuración &avanzada"
@@ -12086,41 +11485,17 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Read"
 #~ msgstr "Ler"
 
-#~ msgid "SBKJC"
-#~ msgstr "SBKJC"
-
-#~ msgid "Hay-Wadt"
-#~ msgstr "Hay-Wadt"
-
 #~ msgid "Diffuse S-Shell on Heavy Atoms"
 #~ msgstr "Orbital S difuso nos átomos pesados"
 
 #~ msgid "Diffuse L-Shell on Heavy Atoms"
 #~ msgstr "Orbital L difuso nos átomos pesados"
 
-#~ msgid "MIDI"
-#~ msgstr "MIDI"
-
-#~ msgid "STO-4G"
-#~ msgstr "STO-4G"
-
-#~ msgid "STO-5G"
-#~ msgstr "STO-5G"
-
-#~ msgid "6-21G"
-#~ msgstr "6-21G"
-
-#~ msgid "5-31G"
-#~ msgstr "5-31G"
-
 #~ msgid "Double Zeta Valence"
 #~ msgstr "Valencia dupla zeta"
 
 #~ msgid "Dunning/Hay DZ"
 #~ msgstr "DZ de Dunning/Hay"
-
-#~ msgid "Binning/Curtiss DZ"
-#~ msgstr "Binning/Curtiss DZ"
 
 #~ msgid "Triple Zeta Valence"
 #~ msgstr "Valencia tripla zeta"
@@ -12131,35 +11506,17 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Hay/Wadt Valence"
 #~ msgstr "Valencia de Hay/Wadt"
 
-#~ msgid "MNDO"
-#~ msgstr "MNDO"
-
 #~ msgid "ECP Type:"
 #~ msgstr "Tipo de ECP:"
 
 #~ msgid "Default"
 #~ msgstr "Predeterminado"
 
-#~ msgid "Pople"
-#~ msgstr "Pople"
-
-#~ msgid "Pople N311"
-#~ msgstr "Pople N311"
-
-#~ msgid "Huzinaga"
-#~ msgstr "Huzinaga"
-
-#~ msgid "Hondo7"
-#~ msgstr "Hondo7"
-
 #~ msgid "#F Heavy Atom Polarization Functions:"
 #~ msgstr "#F Funcións de polarización de átomos pesados:"
 
 #~ msgid "#light Atom Polarization Functions:"
 #~ msgstr "#Funcións de polarización dos átomos lixeiros:"
-
-#~ msgid "Polar:"
-#~ msgstr "Polar:"
 
 #~ msgid "Max SCF Iterations:"
 #~ msgstr "Número máximo de iteracións SCF:"
@@ -12173,17 +11530,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Saddle Point"
 #~ msgstr "Punto de cadeira"
 
-#~ msgid "IRC"
-#~ msgstr "IRC"
-
 #~ msgid "Gradient Extremal"
 #~ msgstr "Gradiente extremo"
-
-#~ msgid "DRC"
-#~ msgstr "DRC"
-
-#~ msgid "Morokuma"
-#~ msgstr "Morokuma"
 
 #~ msgid "Radiative Transition mom."
 #~ msgstr "Momento de transición radiativa"
@@ -12194,14 +11542,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Finite Electric Field"
 #~ msgstr "Campo eléctrico finito"
 
-#~ msgid "TDHF"
-#~ msgstr "TDHF"
-
 #~ msgid "Global Optimization"
 #~ msgstr "Optimización global"
-
-#~ msgid "VSCF"
-#~ msgstr "VSCF"
 
 #~ msgid "FMO Optimization"
 #~ msgstr "Optimización FMO"
@@ -12242,12 +11584,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Exec Type:"
 #~ msgstr "Tipo de execución:"
 
-#~ msgid "CI:"
-#~ msgstr "CI:"
-
-#~ msgid "GUGA"
-#~ msgstr "GUGA"
-
 #~ msgid "Ames Lab. Determinant"
 #~ msgstr "Determinante do Lab. de Ames"
 
@@ -12263,9 +11599,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "General CI"
 #~ msgstr "CI xeral"
 
-#~ msgid "CC:"
-#~ msgstr "CC:"
-
 #~ msgid "LCCD: Linearized CC"
 #~ msgstr "LCCD: CC linearizada"
 
@@ -12274,18 +11607,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "CCSD: CC with Singles and Doubles"
 #~ msgstr "CCSD: CC con individuais e pares"
-
-#~ msgid "R-CC"
-#~ msgstr "R-CC"
-
-#~ msgid "CR-CC"
-#~ msgstr "CR-CC"
-
-#~ msgid "EOM-CCSD"
-#~ msgstr "EOM-CCSD"
-
-#~ msgid "CR-EOM"
-#~ msgstr "CR-EOM"
 
 #~ msgid "Normal Run"
 #~ msgstr "Execución normal"
@@ -12311,53 +11632,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "# of Z-Matrix Variables"
 #~ msgstr "Número de variábeis da matriz Z"
 
-#~ msgid "Ǻngstrom"
-#~ msgstr "Ǻngstrom"
-
 #~ msgid "Order of Principal Axis:"
 #~ msgstr "Ordo do eixo principal:"
-
-#~ msgid "C1"
-#~ msgstr "C1"
-
-#~ msgid "CS"
-#~ msgstr "CS"
-
-#~ msgid "CI"
-#~ msgstr "CI"
-
-#~ msgid "CnH"
-#~ msgstr "CnH"
-
-#~ msgid "CnV"
-#~ msgstr "CnV"
-
-#~ msgid "Cn"
-#~ msgstr "Cn"
-
-#~ msgid "S2n"
-#~ msgstr "S2n"
-
-#~ msgid "DnD"
-#~ msgstr "DnD"
-
-#~ msgid "DnH"
-#~ msgstr "DnH"
-
-#~ msgid "Dn"
-#~ msgstr "Dn"
-
-#~ msgid "TD"
-#~ msgstr "TD"
-
-#~ msgid "TH"
-#~ msgstr "TH"
-
-#~ msgid "OH"
-#~ msgstr "OH"
-
-#~ msgid "O"
-#~ msgstr "O"
 
 #~ msgid "Unique cartesian Coords."
 #~ msgstr "Coordenadas cartesiana únicas"
@@ -12404,18 +11680,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Produce \"core\" file upon abort"
 #~ msgstr "Producir ficheiros «core» ao interromper"
 
-#~ msgid "EVVRSP"
-#~ msgstr "EVVRSP"
-
-#~ msgid "GIVEIS"
-#~ msgstr "GIVEIS"
-
-#~ msgid "JACOBI"
-#~ msgstr "JACOBI"
-
-#~ msgid "MemDDI:"
-#~ msgstr "MemDDI:"
-
 #~ msgid "Memory:"
 #~ msgstr "Memoria:"
 
@@ -12436,12 +11700,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Use External Data Representation for Messages"
 #~ msgstr "Usar a representación externa dos datos nas mensaxes"
 
-#~ msgid "Hückel"
-#~ msgstr "Hückel"
-
-#~ msgid "HCore"
-#~ msgstr "HCore"
-
 #~ msgid "MO Read ($VEC)"
 #~ msgstr "OM lido ($VEC)"
 
@@ -12460,26 +11718,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "GAMESS Interface to Other Codes"
 #~ msgstr "Interface de GAMESS para outros códigos"
 
-#~ msgid "MolPlt"
-#~ msgstr "MolPlt"
-
-#~ msgid "PltOrb"
-#~ msgstr "PltOrb"
-
-#~ msgid "AIMPAC"
-#~ msgstr "AIMPAC"
-
-#~ msgid "RPAC"
-#~ msgstr "RPAC"
-
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forzar unha verificación do tipo de execución"
-
-#~ msgid "Hondo 8.2"
-#~ msgstr "Hondo 8.2"
-
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
 
 #~ msgid "GAMESS (UK Version)"
 #~ msgstr "GAMESS (Versión do UK)"
@@ -12604,9 +11844,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Purify Hessian"
 #~ msgstr "Purificar a hessiana"
 
-#~ msgid "bohrs"
-#~ msgstr "bohrs"
-
 #~ msgid "Initial Hessian"
 #~ msgstr "Hessiana inicial"
 
@@ -12628,17 +11865,11 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Initial:"
 #~ msgstr "Inicial:"
 
-#~ msgid "Newton-Raphson"
-#~ msgstr "Newton-Raphson"
-
 #~ msgid "Rational Function Optimization"
 #~ msgstr "Optimización da función racional"
 
 #~ msgid "Quadratic Approximation"
 #~ msgstr "Aproximación cadrática"
-
-#~ msgid "Schlegel (quasi-NR)"
-#~ msgstr "Schlegel (quasi-NR)"
 
 #~ msgid "Constrained Optimization"
 #~ msgstr "Optimización restrinxida"
@@ -12661,18 +11892,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Basis:"
 #~ msgstr "Base:"
 
-#~ msgid "SVWN"
-#~ msgstr "SVWN"
-
-#~ msgid "B97"
-#~ msgstr "B97"
-
-#~ msgid "HCTH"
-#~ msgstr "HCTH"
-
-#~ msgid "FT97"
-#~ msgstr "FT97"
-
 #~ msgid "Z-matrix"
 #~ msgstr "Matriz Z"
 
@@ -12693,17 +11912,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Gaussian Input"
 #~ msgstr "Entrada do Gaussian"
 
-#~ msgid "LANL2DZ"
-#~ msgstr "LANL2DZ"
-
 #~ msgid "Standard"
 #~ msgstr "Estándar"
-
-#~ msgid "Molden"
-#~ msgstr "Molden"
-
-#~ msgid "Molekel"
-#~ msgstr "Molekel"
 
 #~ msgid "Checkpoint:"
 #~ msgstr "Punto de control:"
@@ -12714,26 +11924,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "MOLPRO Input"
 #~ msgstr "Entrada do MOLPRO"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Molpro Version:"
 #~ msgstr "Versión do Molpro:"
-
-#~ msgid "< 2009.1"
-#~ msgstr "< 2009.1"
-
-#~ msgid "2009.1"
-#~ msgstr "2009.1"
 
 #~ msgid "Quartet"
 #~ msgstr "Cuarteto"
@@ -12741,29 +11933,11 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Quintet"
 #~ msgstr "Quinteto"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "NWChem Input"
 #~ msgstr "Entrada de NWChem"
 
 #~ msgid "Q-Chem Input"
 #~ msgstr "Entrada do Q-Chem"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "Cargar sombreadores"
@@ -12806,12 +11980,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 
 #~ msgid "&Height"
 #~ msgstr "&Altura"
-
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
 
 #~ msgid "in"
 #~ msgstr "polg"
@@ -12865,9 +12033,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Show integrated DOS"
 #~ msgstr "Mostrar o DOS integrado"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Unidades do eixo &Y:"
 
@@ -12880,12 +12045,6 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "Número de onda do láser:"
 
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Largura do &Gaussian:"
 
@@ -12895,20 +12054,8 @@ msgstr ",,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbouzada@gmail.com,,,,mbou
 #~ msgid "Label Peaks:"
 #~ msgstr "Etiquetar os picos:"
 
-#~ msgid "ppm"
-#~ msgstr "ppm"
-
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Vibracións moleculares"
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
-
-#~ msgid "ν (cm⁻¹)"
-#~ msgstr "ν (cm⁻¹)"
-
-#~ msgid "I (km/mol)"
-#~ msgstr "I (km/mol)"
 
 #~ msgid "Activity (A^4/amu)"
 #~ msgstr "Actividade (A^4/amu)"

@@ -11873,44 +11873,14 @@ msgstr ""
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO输入"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "四重"
 
 #~ msgid "Quintet"
 #~ msgstr "五重"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem导入"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
-
-#~ msgid "LACVP"
-#~ msgstr "LACVP"
 
 #~ msgid "Load Shaders"
 #~ msgstr "载入着色器"
@@ -11945,9 +11915,6 @@ msgstr ""
 #~ msgid "&Schemes:"
 #~ msgstr "原理图(&S):"
 
-#~ msgid "&DPI:"
-#~ msgstr "&DPI:"
-
 #~ msgid "&Width:"
 #~ msgstr "宽度(&W):"
 
@@ -11981,9 +11948,6 @@ msgstr ""
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y轴单位:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "高斯宽度(&W):"
 
@@ -11992,9 +11956,6 @@ msgstr ""
 
 #~ msgid "Label Peaks:"
 #~ msgstr "标记谱峰:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "分子振动"
