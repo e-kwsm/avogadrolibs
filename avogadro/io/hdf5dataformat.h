@@ -230,8 +230,8 @@ public:
                     int ndims = 1, size_t* dims = nullptr) const;
 
   /**
-   * @brief readDataset Populate the data container @data with data at from the
-   * specified path in the currently opened HDF5 file.
+   * @brief readDataset Populate the data container \c data with data at from
+   * the specified path in the currently opened HDF5 file.
    * @param path An absolute path into the HDF5 data.
    * @param data The data container to into which the HDF5 data shall be
    * deserialized. @a data will be resized to fit the data.
@@ -241,8 +241,8 @@ public:
   bool readDataset(const std::string& path, MatrixX& data) const;
 
   /**
-   * @brief readDataset Populate the data container @data with data at from the
-   * specified path in the currently opened HDF5 file.
+   * @brief readDataset Populate the data container \c data with data at from
+   * the specified path in the currently opened HDF5 file.
    * @param path An absolute path into the HDF5 data.
    * @param data The data container to into which the HDF5 data shall be
    * deserialized. @a data will be resized to fit the data.
@@ -254,8 +254,8 @@ public:
                                std::vector<double>& data) const;
 
   /**
-   * @brief readDataset Populate the data container @data with data at from the
-   * specified path in the currently opened HDF5 file.
+   * @brief readDataset Populate the data container \c data with data at from
+   * the specified path in the currently opened HDF5 file.
    * @param path An absolute path into the HDF5 data.
    * @param data The data container to into which the HDF5 data shall be
    * deserialized. @a data will be resized to fit the data.
@@ -296,8 +296,8 @@ private:
                        size_t dims[]) const;
 
   /**
-   * @brief readRawDataset Populate the data container @data with data from the
-   * specified path in the currently opened HDF5 file.
+   * @brief readRawDataset Populate the data container \c data with data from
+   * the specified path in the currently opened HDF5 file.
    * @param path An absolute path into the HDF5 data.
    * @param container A subclass of ResizeContainer with the container to read
    * data into.
