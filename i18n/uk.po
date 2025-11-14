@@ -11990,6 +11990,9 @@ msgstr "Ваші електронні листи"
 #~ msgid "Portable Network Graphics"
 #~ msgstr "PNG (Portable Network Graphics)"
 
+#~ msgid "jpeg"
+#~ msgstr "JPEG"
+
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Формат файла зображення з мітками (TIFF)"
 
@@ -14667,9 +14670,6 @@ msgstr "Ваші електронні листи"
 #~ msgid "Show integrated DOS"
 #~ msgstr "Показувати інтегровану щільність станів"
 
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
-
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Одиниці в&иміру за Y:"
 
@@ -14684,9 +14684,6 @@ msgstr "Ваші електронні листи"
 
 #~ msgid " cm⁻¹"
 #~ msgstr " см⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
 
 #~ msgid "Nucleus:"
 #~ msgstr "Ядро:"
@@ -14784,12 +14781,6 @@ msgstr "Ваші електронні листи"
 
 #~ msgid "Advanced..."
 #~ msgstr "Додатково…"
-
-#~ msgid "&n:"
-#~ msgstr "&n:"
-
-#~ msgid "&m:"
-#~ msgstr "&m:"
 
 #~ msgid "&Length:"
 #~ msgstr "&Довжина:"
