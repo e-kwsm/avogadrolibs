@@ -10552,6 +10552,12 @@ msgstr ""
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta komad"
 
+#~ msgid "Chain Number:"
+#~ msgstr "Broj lanca"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Broj lanca za novi peptid"
+
 #~ msgid "Number of Residues:"
 #~ msgstr "Broj ostataka:"
 

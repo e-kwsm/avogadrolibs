@@ -11703,6 +11703,12 @@ msgstr ""
 #~ msgid "Phi:"
 #~ msgstr "Fi:"
 
+#~ msgid "Chain Number:"
+#~ msgstr "Kate-Zenbakia:"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Peptido berriaren kate-zenbakia"
+
 #~ msgid "Number of Residues:"
 #~ msgstr "Hondakin Kopurua:"
 
@@ -11805,9 +11811,6 @@ msgstr ""
 
 #~ msgid "POV-Ray Export"
 #~ msgstr "POV-Ray Esportazioa"
-
-#~ msgid "Select..."
-#~ msgstr "Hautatu..."
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Erabili eszena osoko antialiasing-a"

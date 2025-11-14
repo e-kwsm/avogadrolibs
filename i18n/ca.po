@@ -11130,6 +11130,93 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritme"
 
+#~ msgid "Arginine"
+#~ msgstr "Arginina"
+
+#~ msgid "Asparagine"
+#~ msgstr "Asparagina"
+
+#~ msgid "Aspartic acid"
+#~ msgstr "Àcid aspartic"
+
+#~ msgid "Cysteine"
+#~ msgstr "Cisteina"
+
+#~ msgid "Glutamic acid"
+#~ msgstr "Àcid glutàmic"
+
+#~ msgid "Glutamine"
+#~ msgstr "Glutamina"
+
+#~ msgid "Glycine"
+#~ msgstr "Glicina"
+
+#~ msgid "Histidine"
+#~ msgstr "Histidina"
+
+#~ msgid "Isoleucine"
+#~ msgstr "Isoleucina"
+
+#~ msgid "Valine"
+#~ msgstr "Valina"
+
+#~ msgid "Tyr"
+#~ msgstr "Tir"
+
+#~ msgid "Tryptophan"
+#~ msgstr "Triptòfan"
+
+#~ msgid "Threonine"
+#~ msgstr "Treonina"
+
+#~ msgid "Serine"
+#~ msgstr "Serina"
+
+#~ msgid "Proline"
+#~ msgstr "Prolina"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "Fenilalanina"
+
+#~ msgid "Methionine"
+#~ msgstr "Metionina"
+
+#~ msgid "Lysine"
+#~ msgstr "Lisina"
+
+#~ msgid "Leucine"
+#~ msgstr "Leucina"
+
+#~ msgid "Sequence (N to C):"
+#~ msgstr "Seqüència (N a C):"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "Estereoquímica:"
+
+#~ msgid "N Terminus:"
+#~ msgstr "N-terminal"
+
+#~ msgid "C Terminus:"
+#~ msgstr "C-terminal"
+
+#~ msgid "Straight Chain"
+#~ msgstr "Cadena recta"
+
+#~ msgid "Alpha Helix"
+#~ msgstr "Hèlix alfa"
+
+#~ msgid "Beta Sheet"
+#~ msgstr "Làmina beta"
+
+#~ msgid "Pi Helix"
+#~ msgstr "Hèlix Pi"
+
+#~ msgid "Chain Number:"
+#~ msgstr "Cadena número:"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "El nombre de cadena per al següent pèptid"
+
 #~ msgid "Number of Residues:"
 #~ msgstr "Número de residus:"
 

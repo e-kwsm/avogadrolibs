@@ -11700,6 +11700,72 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Algorithm"
 #~ msgstr "Αλγόριθμος"
 
+#~ msgid "Alanine"
+#~ msgstr "Αλανίνη"
+
+#~ msgid "Arginine"
+#~ msgstr "Αργινίνη"
+
+#~ msgid "Asparagine"
+#~ msgstr "Ασπαραγίνη"
+
+#~ msgid "Aspartic acid"
+#~ msgstr "Ασπαρτικό Οξύ"
+
+#~ msgid "Cysteine"
+#~ msgstr "Κυστεΐνη"
+
+#~ msgid "Glutamic acid"
+#~ msgstr "Γλουταμικό Οξύ"
+
+#~ msgid "Glutamine"
+#~ msgstr "Γλουταμίνη"
+
+#~ msgid "Glycine"
+#~ msgstr "Γλυκίνη"
+
+#~ msgid "Histidine"
+#~ msgstr "Ιστιδίνη"
+
+#~ msgid "Isoleucine"
+#~ msgstr "Ισολευκίνη"
+
+#~ msgid "Valine"
+#~ msgstr "Βαλίνη"
+
+#~ msgid "Tyrosine"
+#~ msgstr "Τυροσίνη"
+
+#~ msgid "Tryptophan"
+#~ msgstr "Τρυπτοφάνη"
+
+#~ msgid "Threonine"
+#~ msgstr "Θρεονίνη"
+
+#~ msgid "Serine"
+#~ msgstr "Σερίνη"
+
+#~ msgid "Proline"
+#~ msgstr "Προλίνη"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "Φαινυλαλανίνη"
+
+#~ msgid "Methionine"
+#~ msgstr "Μεθειονίνη"
+
+#~ msgid "Lysine"
+#~ msgstr "Λυσίνη"
+
+#~ msgid "Leucine"
+#~ msgstr "Λευκίνη"
+
+#~ msgid "Sequence (N to C):"
+#~ msgstr "Αλληλουχία (Ν προς C):"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "Στερεοχημεία:"
+
 #~ msgid "L"
 #~ msgstr "ΑΡ"
 
@@ -11718,6 +11784,12 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Psi:"
 #~ msgstr "Ψι:"
 
+#~ msgid "Chain Number:"
+#~ msgstr "Αριθμός αλυσίδας:"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Ο αριθμός αλυσίδας για το νέο πεπτίδιο"
+
 #~ msgid "Number of Residues:"
 #~ msgstr "Αριθμός υπολοίπων:"
 
@@ -11735,9 +11807,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #~ msgid "POV-Ray Export"
 #~ msgstr "Εξαγωγή POV-Ray"
-
-#~ msgid "Select..."
-#~ msgstr "Επιλογή..."
 
 #~ msgid "Use full scene antialiasing"
 #~ msgstr "Χρήση πλήρους εξομάλυνσης σκηνής"

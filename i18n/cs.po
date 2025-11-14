@@ -11801,6 +11801,84 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritmus"
 
+#~ msgid "Alanine"
+#~ msgstr "Alanin"
+
+#~ msgid "Arginine"
+#~ msgstr "Arginin"
+
+#~ msgid "Asparagine"
+#~ msgstr "Asparagin"
+
+#~ msgid "Aspartic acid"
+#~ msgstr "Kyselina aspartová"
+
+#~ msgid "Cysteine"
+#~ msgstr "Cystein"
+
+#~ msgid "Glutamic acid"
+#~ msgstr "Kyselina glutamová"
+
+#~ msgid "Glutamine"
+#~ msgstr "Glutamin"
+
+#~ msgid "Glycine"
+#~ msgstr "Glycin"
+
+#~ msgid "Histidine"
+#~ msgstr "Histidin"
+
+#~ msgid "Isoleucine"
+#~ msgstr "Izoleucin"
+
+#~ msgid "Valine"
+#~ msgstr "Valin"
+
+#~ msgid "Tyrosine"
+#~ msgstr "Tyrozin"
+
+#~ msgid "Tryptophan"
+#~ msgstr "Tryptofan"
+
+#~ msgid "Threonine"
+#~ msgstr "T(h)reonin"
+
+#~ msgid "Serine"
+#~ msgstr "Serin"
+
+#~ msgid "Proline"
+#~ msgstr "Prolin"
+
+#~ msgid "Phenylalanine"
+#~ msgstr "Fenylalanin"
+
+#~ msgid "Methionine"
+#~ msgstr "Metionin"
+
+#~ msgid "Lysine"
+#~ msgstr "Lyzin"
+
+#~ msgid "Leucine"
+#~ msgstr "Leucin"
+
+#~ msgid "Sequence (N to C):"
+#~ msgstr "Posloupnost (N k C):"
+
+#~ msgid "Stereochemistry:"
+#~ msgstr "Stereochemie:"
+
+#~ msgid "N Terminus:"
+#~ msgstr "Koncový bod N:"
+
+#~ msgid "C Terminus:"
+#~ msgstr "Koncový bod C:"
+
+#~ msgid "Structure:"
+#~ msgstr "Stavba:"
+
+#~ msgid "Straight Chain"
+#~ msgstr "Přímý (nerozvětvený) řetězec"
+
 #~ msgid "Alpha Helix"
 #~ msgstr "Pravotočivá (alfa) šroubovice (alfa helix)"
 
@@ -11809,6 +11887,18 @@ msgstr ""
 
 #~ msgid "Pi Helix"
 #~ msgstr "Šroubovice Pi"
+
+#~ msgid "Phi:"
+#~ msgstr "Fí:"
+
+#~ msgid "Psi:"
+#~ msgstr "Psí:"
+
+#~ msgid "Chain Number:"
+#~ msgstr "Číslo řetězce"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "Číslo řetězce pro nový peptid"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Počet zbytků:"

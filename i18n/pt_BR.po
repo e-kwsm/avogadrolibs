@@ -11554,9 +11554,6 @@ msgstr "Seus e-mails"
 #~ msgid "Force a Check Run Type"
 #~ msgstr "Forçar uma verificação de tipo de execução"
 
-#~ msgid "MELDF"
-#~ msgstr "MELDF"
-
 #~ msgid "Solvate with Water"
 #~ msgstr "Solvatar com Água"
 

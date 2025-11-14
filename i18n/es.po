@@ -12154,6 +12154,12 @@ msgstr ""
 #~ msgid "Beta Sheet"
 #~ msgstr "Hoja beta"
 
+#~ msgid "Chain Number:"
+#~ msgstr "Cadena de número:"
+
+#~ msgid "The chain number for the new peptide"
+#~ msgstr "La cadena para el nuevo número de péptidos"
+
 #~ msgid "Number of Residues:"
 #~ msgstr "Número de residuos:"
 

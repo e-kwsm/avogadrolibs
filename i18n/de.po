@@ -11820,8 +11820,8 @@ msgstr ""
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta Blatt"
 
-#~ msgid "Pi Helix"
-#~ msgstr "Pi Helix"
+#~ msgid "Chain Number:"
+#~ msgstr "Ketten-Nummer"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "Anzahl der Residuen:"
