@@ -11917,9 +11917,6 @@ msgstr ""
 #~ msgid "Load Spectral Data"
 #~ msgstr "Indlæs spektrum data:"
 
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows-bitmap"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Gem spektrumbillede"
 
