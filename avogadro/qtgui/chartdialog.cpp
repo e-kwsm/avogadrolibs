@@ -11,10 +11,10 @@
 namespace Avogadro::QtGui {
 
 ChartDialog::ChartDialog(QWidget* p)
-  : QDialog(p), m_chartWidget(new ChartWidget(this))
+  : QDialog(p), m_chartWidget(std::make_unique<ChartWidget>(this))
 {
   auto* layout = new QVBoxLayout();
-  layout->addWidget(m_chartWidget);
+  layout->addWidget(m_chartWidget.get());
   layout->setContentsMargins(0, 0, 0, 0);
   setLayout(layout);
 }
@@ -23,7 +23,7 @@ ChartDialog::~ChartDialog() = default;
 
 ChartWidget* ChartDialog::chartWidget()
 {
-  return m_chartWidget;
+  return m_chartWidget.get();
 }
 
 QSize ChartDialog::sizeHint() const
