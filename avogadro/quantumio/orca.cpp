@@ -166,9 +166,8 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
 
   // add the partial charges
   if (m_partialCharges.size() > 0) {
-    for (auto it = m_partialCharges.begin(); it != m_partialCharges.end();
-         ++it) {
-      molecule.setPartialCharges(it->first, it->second);
+    for (const auto& m_partialCharge : m_partialCharges) {
+      molecule.setPartialCharges(m_partialCharge.first, m_partialCharge.second);
     }
   }
 
@@ -941,10 +940,10 @@ void ORCAOutput::processLine(std::istream& in,
           getline(in, key); // energies
           list = Core::split(key, ' ');
           // convert these all to double and add to m_orbitalEnergy
-          for (unsigned int i = 0; i < list.size(); i++) {
+          for (const auto& i : list) {
             // convert from Hartree to eV
             m_orbitalEnergy.push_back(
-              Core::lexicalCast<double>(list[i]).value_or(0.0) * HARTREE_TO_EV);
+              Core::lexicalCast<double>(i).value_or(0.0) * HARTREE_TO_EV);
           }
 
           getline(in, key); // occupations
@@ -1038,11 +1037,10 @@ void ORCAOutput::processLine(std::istream& in,
 
             list = Core::split(key, ' ');
             // convert these all to double and add to m_orbitalEnergy
-            for (unsigned int i = 0; i < list.size(); i++) {
+            for (const auto& i : list) {
               // convert from Hartree to eV
               m_orbitalEnergy.push_back(
-                Core::lexicalCast<double>(list[i]).value_or(0.0) *
-                HARTREE_TO_EV);
+                Core::lexicalCast<double>(i).value_or(0.0) * HARTREE_TO_EV);
             }
 
             getline(in, key); // symmetries
