@@ -98,7 +98,7 @@ bool ChartWidget::addPlot(const std::vector<float>& x,
   size_t columnX = ds->addCopiedColumn(x, xName);
   size_t columnY = ds->addCopiedColumn(y, yName);
 
-  JKQTPXYLineGraph* graph = new JKQTPXYLineGraph(plot);
+  auto* graph = new JKQTPXYLineGraph(plot);
   graph->setXColumn(columnX);
   graph->setYColumn(columnY);
   if (!m_showPoints)
@@ -135,7 +135,7 @@ bool ChartWidget::addSeries(const std::vector<float>& newSeries,
 
   size_t columnY = ds->addCopiedColumn(newSeries, name);
 
-  JKQTPXYLineGraph* graph = new JKQTPXYLineGraph(plot);
+  auto* graph = new JKQTPXYLineGraph(plot);
   graph->setXColumn(0);
   graph->setYColumn(columnY);
   if (!m_showPoints)
@@ -185,7 +185,7 @@ bool ChartWidget::addPlots(const std::vector<std::vector<float>>& plotData,
     const QString yName = names[i];
     size_t columnY = ds->addCopiedColumn(plotData[i], yName);
 
-    JKQTPXYLineGraph* graph = new JKQTPXYLineGraph(plot);
+    auto* graph = new JKQTPXYLineGraph(plot);
     graph->setXColumn(columnX);
     graph->setYColumn(columnY);
     if (!m_showPoints)

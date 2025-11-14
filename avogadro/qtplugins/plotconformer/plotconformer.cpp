@@ -128,7 +128,7 @@ void PlotConformer::displayDialog()
     m_dialog->resize(600, 500);
 
     // Create main layout
-    QVBoxLayout* mainLayout = new QVBoxLayout(m_dialog.get());
+    auto* mainLayout = new QVBoxLayout(m_dialog.get());
 
     // Create chart widget
     m_chartWidget = new QtGui::ChartWidget(m_dialog.get());
@@ -137,8 +137,8 @@ void PlotConformer::displayDialog()
     mainLayout->addWidget(m_chartWidget);
 
     // Create property selection layout
-    QHBoxLayout* propertyLayout = new QHBoxLayout();
-    QLabel* propertyLabel = new QLabel(tr("Plot Type:"), m_dialog.get());
+    auto* propertyLayout = new QHBoxLayout();
+    auto* propertyLabel = new QLabel(tr("Plot Type:"), m_dialog.get());
     m_propertyCombo = new QComboBox(m_dialog.get());
     m_propertyCombo->addItem(tr("RMSD"), "rmsd");
     if (hasEnergies)
@@ -154,8 +154,8 @@ void PlotConformer::displayDialog()
     mainLayout->addLayout(propertyLayout);
 
     // Create energy conversion layout
-    QHBoxLayout* conversionLayout = new QHBoxLayout();
-    QLabel* conversionLabel = new QLabel(tr("Energy Units:"), m_dialog.get());
+    auto* conversionLayout = new QHBoxLayout();
+    auto* conversionLabel = new QLabel(tr("Energy Units:"), m_dialog.get());
     m_unitsCombo = new QComboBox(m_dialog.get());
     m_unitsCombo->addItem(tr("Hartree"), HartreeToKcal);
     m_unitsCombo->addItem(tr("eV"), EvToKcal);
@@ -164,7 +164,7 @@ void PlotConformer::displayDialog()
     if (!hasEnergies)
       m_unitsCombo->setEnabled(false);
 
-    QLabel* targetLabel = new QLabel(tr("to"), m_dialog.get());
+    auto* targetLabel = new QLabel(tr("to"), m_dialog.get());
     m_targetUnitsCombo = new QComboBox(m_dialog.get());
     m_targetUnitsCombo->addItem(tr("kcal/mol"), 1.0);
     m_targetUnitsCombo->addItem(tr("kJ/mol"), KcalToKJ);

@@ -177,7 +177,7 @@ void InsertPeptide::setStructureType(int index)
 
 void InsertPeptide::updateText()
 {
-  QToolButton* button = qobject_cast<QToolButton*>(sender());
+  auto* button = qobject_cast<QToolButton*>(sender());
   if (button) {
     QString sequenceText = m_dialog->sequenceText->toPlainText();
     sequenceText += '-' + button->text();
