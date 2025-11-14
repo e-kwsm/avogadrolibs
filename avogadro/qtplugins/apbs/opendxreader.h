@@ -33,7 +33,7 @@ public:
   ~OpenDxReader() = default;
 
   /**
-   * Reads the file with the given @fileName. Returns false if an error
+   * Reads the file with the given @c fileName. Returns false if an error
    * occurs.
    */
   bool readFile(const QString& fileName);
