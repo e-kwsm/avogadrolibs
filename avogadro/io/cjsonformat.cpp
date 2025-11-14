@@ -1407,8 +1407,8 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
     if (axisFrozen) {
       // iterate through the mask as an array
       json frozenAtomMaskArray;
-      for (Index i = 0; i < frozenAtomMask.size(); ++i) {
-        frozenAtomMaskArray.push_back(frozenAtomMask[i]);
+      for (double i : frozenAtomMask) {
+        frozenAtomMaskArray.push_back(i);
       }
       atoms["frozen"] = frozenAtomMaskArray;
     }
