@@ -12661,15 +12661,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "&Height"
 #~ msgstr "高"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
 #~ msgid ""
 #~ "Use an optimized value for the font size instead of the scheme-specified "
 #~ "value (screen to image point sizes don't translate well!)"
@@ -12711,14 +12702,8 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Fermi energy at zero"
 #~ msgstr "費米能為零"
 
-#~ msgid "Scale integrated DOS"
-#~ msgstr "Scale integrated DOS"
-
 #~ msgid "Show integrated DOS"
 #~ msgstr "顯示 integrated DOS"
-
-#~ msgid "tab_IR_Raman"
-#~ msgstr "tab_IR_Raman"
 
 #~ msgid "&Y Axis Units:"
 #~ msgstr "Y 軸單位:"
@@ -12731,12 +12716,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Laser Wavenumber:"
 #~ msgstr "雷射波數:"
-
-#~ msgid " cm⁻¹"
-#~ msgstr " cm⁻¹"
-
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
 
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gaussian 寬度:"
@@ -12752,9 +12731,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "分子振動"
-
-#~ msgid "km/mol"
-#~ msgstr "km/mol"
 
 #~ msgid "ν (cm⁻¹)"
 #~ msgstr "ν (cm⁻¹)"
