@@ -42,7 +42,7 @@ public:
   QSize minimumSizeHint() const override;
 
 private:
-  ChartWidget* m_chartWidget;
+  std::unique_ptr<ChartWidget> m_chartWidget;
 };
 
 } // namespace Avogadro::QtGui
