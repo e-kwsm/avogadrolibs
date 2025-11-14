@@ -405,7 +405,7 @@ void SpectraDialog::changeSpectra()
   m_ui->dataTable->setColumnCount(2);
   for (auto i = 0; i < m_transitions.size(); ++i) {
     // frequency or energy
-    QTableWidgetItem* item =
+    auto* item =
       new QTableWidgetItem(QString::number(m_transitions[i], 'f', 4));
     m_ui->dataTable->setItem(i, 0, item);
     // intensities
@@ -503,7 +503,7 @@ void SpectraDialog::readSettings()
 void SpectraDialog::changeBackgroundColor()
 {
   QSettings settings;
-  QColor current =
+  auto current =
     settings.value("spectra/backgroundColor", white).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Background Color"),
@@ -527,7 +527,7 @@ void SpectraDialog::exportData() {}
 void SpectraDialog::changeForegroundColor()
 {
   QSettings settings;
-  QColor current =
+  auto current =
     settings.value("spectra/foregroundColor", black).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Foreground Color"));
@@ -540,7 +540,7 @@ void SpectraDialog::changeForegroundColor()
 void SpectraDialog::changeCalculatedSpectraColor()
 {
   QSettings settings;
-  QColor current =
+  auto current =
     settings.value("spectra/calculatedColor", black).value<QColor>();
   QColor color = QColorDialog::getColor(current, this,
                                         tr("Select Calculated Spectra Color"));
@@ -553,7 +553,7 @@ void SpectraDialog::changeCalculatedSpectraColor()
 void SpectraDialog::changeImportedSpectraColor()
 {
   QSettings settings;
-  QColor current = settings.value("spectra/importedColor", red).value<QColor>();
+  auto current = settings.value("spectra/importedColor", red).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Imported Spectra Color"));
   if (color.isValid() && color != current) {
@@ -761,7 +761,7 @@ void SpectraDialog::updatePlot()
   float lineWidth = m_ui->lineWidthSpinBox->value();
   chart->setLineWidth(lineWidth);
   // background color
-  QColor backgroundColor =
+  auto backgroundColor =
     settings.value("spectra/backgroundColor", white).value<QColor>();
   QtGui::color4ub ubColor = {
     static_cast<unsigned char>(backgroundColor.red()),
@@ -771,7 +771,7 @@ void SpectraDialog::updatePlot()
   };
   chart->setBackgroundColor(ubColor);
   // axis color
-  QColor axisColor =
+  auto axisColor =
     settings.value("spectra/foregroundColor", black).value<QColor>();
   QtGui::color4ub axisColor4ub = {
     static_cast<unsigned char>(axisColor.red()),
@@ -783,7 +783,7 @@ void SpectraDialog::updatePlot()
   chart->setAxisColor(QtGui::ChartWidget::Axis::y, axisColor4ub);
 
   // get the spectra color
-  QColor spectraColor =
+  auto spectraColor =
     settings.value("spectra/calculatedColor", black).value<QColor>();
   QtGui::color4ub calculatedColor = {
     static_cast<unsigned char>(spectraColor.red()),
@@ -796,7 +796,7 @@ void SpectraDialog::updatePlot()
   QtGui::color4ub rawColor = { 255, 0, 0, 255 };
   chart->addSeries(yStick, rawColor, tr("Raw"));
 
-  QColor importedColor =
+  auto importedColor =
     settings.value("spectra/importedColor", red).value<QColor>();
   QtGui::color4ub importedColor4ub = {
     static_cast<unsigned char>(importedColor.red()),
