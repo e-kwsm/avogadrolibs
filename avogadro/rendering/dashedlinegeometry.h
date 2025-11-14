@@ -57,11 +57,8 @@ public:
 
   /**
    * Add a complete line strip to the object.
-   * @param vertices The 3D vertices which will be connected to form the line
-   * strip.
    * @param color Vertex color. If not specified, use the current color() and
    * opacity(). If the 3 component color is set, the current opacity() is used.
-   * @param lineWidth The width of the line strip.
    * @note All arrays must be the same length, or this function call will fail,
    * returning InvalidIndex.
    * @return The index of the first vertex added by this call.
