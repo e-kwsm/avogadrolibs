@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Avogadro 1.102.1\n"
 "Report-Msgid-Bugs-To: avogadro-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2025-11-12 17:29+0000\n"
+"POT-Creation-Date: 2025-11-23 03:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1223,6 +1223,10 @@ msgstr ""
 msgid "Wireframe"
 msgstr ""
 
+#: qtgui/layermodel.cpp:198 qtplugins/overlayaxes/overlayaxes.h:28
+msgid "Reference Axes"
+msgstr ""
+
 #: qtgui/moleculemodel.cpp:120
 msgid "Untitled"
 msgstr ""
@@ -1926,7 +1930,6 @@ msgstr ""
 
 #: qtplugins/applycolors/applycolors.cpp:152
 #: qtplugins/applycolors/applycolors.cpp:154 qtplugins/focus/focus.cpp:42
-#: qtplugins/overlayaxes/overlayaxes.cpp:265
 #: qtplugins/resetview/resetview.cpp:76
 msgid "&View"
 msgstr ""
@@ -2115,7 +2118,7 @@ msgid "Bond Selected Atoms"
 msgstr ""
 
 #: qtplugins/bonding/bonding.cpp:62
-#: qtplugins/propertytables/propertymodel.cpp:649
+#: qtplugins/propertytables/propertymodel.cpp:651
 msgid "Bond"
 msgstr ""
 
@@ -2421,9 +2424,9 @@ msgid "Freeze Z Axis"
 msgstr ""
 
 #: qtplugins/constraints/constraintsmodel.cpp:126
-#: qtplugins/propertytables/propertymodel.cpp:635
-#: qtplugins/propertytables/propertymodel.cpp:676
-#: qtplugins/propertytables/propertymodel.cpp:693
+#: qtplugins/propertytables/propertymodel.cpp:637
+#: qtplugins/propertytables/propertymodel.cpp:680
+#: qtplugins/propertytables/propertymodel.cpp:697
 #: qtplugins/symmetry/operationstablemodel.cpp:57
 msgid "Type"
 msgstr ""
@@ -2433,24 +2436,24 @@ msgid "Value"
 msgstr ""
 
 #: qtplugins/constraints/constraintsmodel.cpp:132
-#: qtplugins/propertytables/propertymodel.cpp:678
-#: qtplugins/propertytables/propertymodel.cpp:695
+#: qtplugins/propertytables/propertymodel.cpp:682
+#: qtplugins/propertytables/propertymodel.cpp:699
 msgid "Atom 1"
 msgstr ""
 
 #: qtplugins/constraints/constraintsmodel.cpp:135
-#: qtplugins/propertytables/propertymodel.cpp:697
+#: qtplugins/propertytables/propertymodel.cpp:701
 msgid "Atom 2"
 msgstr ""
 
 #: qtplugins/constraints/constraintsmodel.cpp:138
-#: qtplugins/propertytables/propertymodel.cpp:682
-#: qtplugins/propertytables/propertymodel.cpp:699
+#: qtplugins/propertytables/propertymodel.cpp:686
+#: qtplugins/propertytables/propertymodel.cpp:703
 msgid "Atom 3"
 msgstr ""
 
 #: qtplugins/constraints/constraintsmodel.cpp:141
-#: qtplugins/propertytables/propertymodel.cpp:701
+#: qtplugins/propertytables/propertymodel.cpp:705
 msgid "Atom 4"
 msgstr ""
 
@@ -2572,7 +2575,8 @@ msgstr ""
 #. i18n: file: qtplugins/surfaces/surfacedialog.ui:390
 #. i18n: ectx: property (text), item, widget (QComboBox, smoothingCombo)
 #: qtplugins/coordinateeditor/coordinateeditordialog.cpp:638
-#: qtplugins/label/label.cpp:192 qtplugins/label/label.cpp:215 :2100
+#: qtplugins/label/label.cpp:192 qtplugins/label/label.cpp:215
+#: qtplugins/label/label.cpp:230 :2100 rc.cpp:2130
 msgid "Custom"
 msgstr ""
 
@@ -3517,7 +3521,7 @@ msgstr ""
 msgid "Unique ID"
 msgstr ""
 
-#: qtplugins/label/label.cpp:185 qtplugins/propertytables/propertymodel.cpp:603
+#: qtplugins/label/label.cpp:185 qtplugins/propertytables/propertymodel.cpp:605
 #: qtplugins/symmetry/operationstablemodel.cpp:61
 msgid "Element"
 msgstr ""
@@ -3547,21 +3551,21 @@ msgstr ""
 msgid "Bond Label:"
 msgstr ""
 
-#: qtplugins/label/label.cpp:230 qtplugins/propertytables/propertymodel.cpp:658
+#: qtplugins/label/label.cpp:226 qtplugins/propertytables/propertymodel.cpp:660
 msgid "ID"
 msgstr ""
 
-#: qtplugins/label/label.cpp:234
+#: qtplugins/label/label.cpp:227
 #: qtplugins/plugindownloader/downloaderwidget.cpp:65
-#: qtplugins/propertytables/propertymodel.cpp:656
+#: qtplugins/propertytables/propertymodel.cpp:658
 msgid "Name"
 msgstr ""
 
-#: qtplugins/label/label.cpp:238
-msgid " & "
+#: qtplugins/label/label.cpp:228
+msgid "Name & ID"
 msgstr ""
 
-#: qtplugins/label/label.cpp:250
+#: qtplugins/label/label.cpp:235
 msgid "Residue Label:"
 msgstr ""
 
@@ -3729,7 +3733,7 @@ msgid "unknown molecule"
 msgstr ""
 
 #: qtplugins/molecularproperties/molecularmodel.cpp:262
-#: qtplugins/propertytables/propertymodel.cpp:717
+#: qtplugins/propertytables/propertymodel.cpp:721
 msgid "Property"
 msgstr ""
 
@@ -4250,15 +4254,7 @@ msgstr ""
 msgid "True"
 msgstr ""
 
-#: qtplugins/overlayaxes/overlayaxes.cpp:237
-msgid "Reference Axes"
-msgstr ""
-
-#: qtplugins/overlayaxes/overlayaxes.h:30
-msgid "Reference Axes Overlay"
-msgstr ""
-
-#: qtplugins/overlayaxes/overlayaxes.h:33
+#: qtplugins/overlayaxes/overlayaxes.h:31
 msgid "Render reference axes in the corner of the display."
 msgstr ""
 
@@ -4653,137 +4649,138 @@ msgstr ""
 msgid "Render the scene using POV-Ray."
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:605
+#: qtplugins/propertytables/propertymodel.cpp:607
 msgid "Valence"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:607
+#: qtplugins/propertytables/propertymodel.cpp:609
 msgid "Formal Charge"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:610
+#: qtplugins/propertytables/propertymodel.cpp:612
 #, qt-format
 msgctxt "e.g. MMFF94 Partial Charge or Gasteiger Partial Charge"
 msgid "%1 Partial Charge"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:615
+#: qtplugins/propertytables/propertymodel.cpp:617
 msgid "X (Å)"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:617
+#: qtplugins/propertytables/propertymodel.cpp:619
 msgid "Y (Å)"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:619
+#: qtplugins/propertytables/propertymodel.cpp:621
 msgid "Z (Å)"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:621
-#: qtplugins/propertytables/propertymodel.cpp:643
+#: qtplugins/propertytables/propertymodel.cpp:623
+#: qtplugins/propertytables/propertymodel.cpp:645
+#: qtplugins/propertytables/propertymodel.cpp:668
 msgid "Label"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:623
+#: qtplugins/propertytables/propertymodel.cpp:625
 msgid "Isotope"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:625
-#: qtplugins/propertytables/propertymodel.cpp:666
+#: qtplugins/propertytables/propertymodel.cpp:627
+#: qtplugins/propertytables/propertymodel.cpp:670
 msgid "Color"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:628
+#: qtplugins/propertytables/propertymodel.cpp:630
 msgid "Atom"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:637
+#: qtplugins/propertytables/propertymodel.cpp:639
 msgid "Start Atom"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:639
+#: qtplugins/propertytables/propertymodel.cpp:641
 msgid "End Atom"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:641
+#: qtplugins/propertytables/propertymodel.cpp:643
 msgid "Bond Order"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:645
+#: qtplugins/propertytables/propertymodel.cpp:647
 msgctxt "in Angstrom"
 msgid "Length (Å)"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:660
+#: qtplugins/propertytables/propertymodel.cpp:662
 msgid "Chain"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:662
+#: qtplugins/propertytables/propertymodel.cpp:664
 msgid "Secondary Structure"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:664
+#: qtplugins/propertytables/propertymodel.cpp:666
 msgid "Heterogen"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:680
+#: qtplugins/propertytables/propertymodel.cpp:684
 msgid "Vertex"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:684
-#: qtplugins/propertytables/propertymodel.cpp:703
+#: qtplugins/propertytables/propertymodel.cpp:688
+#: qtplugins/propertytables/propertymodel.cpp:707
 msgid "Angle (°)"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:714
+#: qtplugins/propertytables/propertymodel.cpp:718
 msgctxt "root mean squared displacement in Angstrom"
 msgid "RMSD (Å)"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:717
+#: qtplugins/propertytables/propertymodel.cpp:721
 msgid "Energy (kcal/mol)"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:916
+#: qtplugins/propertytables/propertymodel.cpp:929
 msgid "Adjust Fragment"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1042
+#: qtplugins/propertytables/propertymodel.cpp:1055
 msgctxt "pi helix"
 msgid "π Helix"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1044
+#: qtplugins/propertytables/propertymodel.cpp:1057
 msgctxt "protein bend secondary structure"
 msgid "Bend"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1046
+#: qtplugins/propertytables/propertymodel.cpp:1059
 msgctxt "alpha helix"
 msgid "α Helix"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1048
+#: qtplugins/propertytables/propertymodel.cpp:1061
 msgctxt "beta sheet"
 msgid "β Sheet"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1050
+#: qtplugins/propertytables/propertymodel.cpp:1063
 msgctxt "3-10 helix"
 msgid "3-10 helix"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1052
+#: qtplugins/propertytables/propertymodel.cpp:1065
 msgctxt "beta bridge"
 msgid "β Bridge"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1054
+#: qtplugins/propertytables/propertymodel.cpp:1067
 msgctxt "protein turn secondary structure"
 msgid "Turn"
 msgstr ""
 
-#: qtplugins/propertytables/propertymodel.cpp:1056
+#: qtplugins/propertytables/propertymodel.cpp:1069
 msgctxt "protein coil secondary structure"
 msgid "Coil"
 msgstr ""
