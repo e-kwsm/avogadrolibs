@@ -428,7 +428,7 @@ void DownloaderWidget::unzipPlugin()
     m_ui->readmeBrowser->append(tr("Extraction successful\n"));
 
     // we should have multiple files or we grabbed an empty zip
-    if (newFiles.length() > 0) {
+    if (!newFiles.empty()) {
       // Extract component name and handle previous version
       // e.g. we extracted to a path like User-Repo-GitHash
       //     OpenChemistry-crystals-a7c672d
