@@ -300,13 +300,13 @@ void Label::processResidue(const Core::Molecule& molecule,
     Vector3ub color = interface->color;
     std::string text = "";
     if (interface->residueOptions & LayerLabel::LabelOptions::Name) {
-      text = (text == "" ? "" : " / ") + name;
+      text = (text.empty() ? "" : " / ") + name;
     }
     if (interface->residueOptions & LayerLabel::LabelOptions::Index) {
       text += std::to_string(residue.residueId());
     }
     if (interface->residueOptions & LayerLabel::LabelOptions::Custom) {
-      text += (text == "" ? "" : " / ") + customLabel;
+      text += (text.empty() ? "" : " / ") + customLabel;
     }
     TextLabel3D* residueLabel = createLabel(text, pos, radius, color);
     geometry->addDrawable(residueLabel);
