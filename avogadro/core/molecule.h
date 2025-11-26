@@ -1266,7 +1266,7 @@ inline std::string Molecule::bondLabel(Index bondId) const
 
 inline bool Molecule::setBondLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == bondCount() || labels.size() == 0) {
+  if (labels.size() == bondCount() || labels.empty()) {
     m_bondLabels = labels;
     return true;
   }
