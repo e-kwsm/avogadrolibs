@@ -94,9 +94,9 @@ bool MopacAux::read(std::istream& in, Core::Molecule& molecule)
   molecule.setData("DeltaH", m_heatOfFormation);
   molecule.setData("Area", m_area);
   molecule.setData("Volume", m_volume);
-  if (m_energies.size() > 0)
+  if (!m_energies.empty())
     molecule.setData("energies", m_energies);
-  if (m_forces.size() > 0)
+  if (!m_forces.empty())
     molecule.setData("forces", m_forces);
 
   if (!m_partialCharges.empty()) {
