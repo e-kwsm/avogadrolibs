@@ -1400,7 +1400,7 @@ std::string Molecule::residueLabel(Index residueId) const
 
 bool Molecule::setResidueLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == residueCount() || labels.size() == 0) {
+  if (labels.size() == residueCount() || labels.empty()) {
     m_residueLabels = labels;
     return true;
   }
