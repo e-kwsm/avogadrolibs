@@ -109,7 +109,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
       molecule.setVibrationRamanIntensities(m_RamanIntensities);
   }
 
-  if (m_vcdIntensities.size() > 0 &&
+  if (!m_vcdIntensities.empty() &&
       m_vcdIntensities.size() == m_frequencies.size()) {
     MatrixX vcdData(m_frequencies.size(), 2);
     for (size_t i = 0; i < m_frequencies.size(); ++i) {
@@ -119,7 +119,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
     molecule.setSpectra("VibrationalCD", vcdData);
   }
 
-  if (m_electronicTransitions.size() > 0 &&
+  if (!m_electronicTransitions.empty() &&
       m_electronicTransitions.size() == m_electronicIntensities.size()) {
     MatrixX electronicData(m_electronicTransitions.size(), 2);
     for (size_t i = 0; i < m_electronicTransitions.size(); ++i) {
@@ -138,7 +138,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
     }
   }
 
-  if (m_magneticTransitions.size() > 0 &&
+  if (!m_magneticTransitions.empty() &&
       m_magneticTransitions.size() == m_magneticCD.size()) {
     MatrixX magneticData(m_magneticTransitions.size(), 2);
     for (size_t i = 0; i < m_magneticTransitions.size(); ++i) {
@@ -148,7 +148,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
     molecule.setSpectra("MagneticCD", magneticData);
   }
 
-  if (m_nmrShifts.size() > 0) {
+  if (!m_nmrShifts.empty()) {
     MatrixX nmrData(m_nmrShifts.size(), 2);
     // nmr_shifts has an entry for every atom even if not computed
     for (size_t i = 0; i < m_nmrShifts.size(); ++i) {
@@ -1235,7 +1235,7 @@ void ORCAOutput::load(GaussianSet* basis)
   // TODO: set vibrational symmetries
 
   m_homo = ceil(m_electrons / 2.0);
-  if (m_MOcoeffs.size() > 0)
+  if (!m_MOcoeffs.empty())
     basis->generateDensityMatrix();
 }
 
@@ -1268,7 +1268,7 @@ void ORCAOutput::parseMCD()
 
     // if frequency goes down, we are done
     // (or we hit the end of the file)
-    if (m_magneticTransitions.size() > 0 &&
+    if (!m_magneticTransitions.empty() &&
         frequency < m_magneticTransitions.back())
       break;
 
