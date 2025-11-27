@@ -125,7 +125,6 @@ private:
   QList<qint64> m_basins;
 
   QString m_temporaryFileName;
-  QString temporaryFileName();
 
   QList<QVector3D> m_ncpList;
 };
