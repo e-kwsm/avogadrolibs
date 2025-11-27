@@ -57,7 +57,7 @@ public:
   void setMolecule(QtGui::Molecule* molecule);
 
   // Return what type of model this is
-  PropertyType type() const { return m_type; };
+  PropertyType type() const { return m_type; }
 
   // Generate all data pertaining to angles and torsions
   void updateCache() const;
