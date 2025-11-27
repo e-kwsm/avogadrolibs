@@ -39,12 +39,13 @@ class ProgressBarDelegate : public QStyledItemDelegate
 {
   Q_OBJECT
 public:
-  ProgressBarDelegate(QObject* parent = nullptr)
-    : QStyledItemDelegate(parent) {};
+  ProgressBarDelegate(QObject* parent = nullptr) : QStyledItemDelegate(parent)
+  {
+  }
   QSize sizeHint(const QStyleOptionViewItem&, const QModelIndex&) const override
   {
     return QSize(60, 30);
-  };
+  }
 
   void paint(QPainter* p, const QStyleOptionViewItem& o,
              const QModelIndex& ind) const override
