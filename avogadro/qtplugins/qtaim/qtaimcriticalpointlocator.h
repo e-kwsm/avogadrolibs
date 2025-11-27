@@ -81,8 +81,6 @@ private:
 
   QList<QVector3D> m_electronDensitySources;
   QList<QVector3D> m_electronDensitySinks;
-
-  QString temporaryFileName();
 };
 
 } // namespace Avogadro::QtPlugins
