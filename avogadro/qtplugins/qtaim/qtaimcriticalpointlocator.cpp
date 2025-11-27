@@ -372,7 +372,7 @@ QTAIMCriticalPointLocator::QTAIMCriticalPointLocator(QTAIMWavefunction& wfn)
 void QTAIMCriticalPointLocator::locateNuclearCriticalPoints()
 {
 
-  QString tempFileName = QTAIMCriticalPointLocator::temporaryFileName();
+  QTemporaryFile tempFile;
 
   QList<QList<QVariant>> inputList;
 
@@ -380,7 +380,7 @@ void QTAIMCriticalPointLocator::locateNuclearCriticalPoints()
 
   for (qint64 n = 0; n < numberOfNuclei; ++n) {
     QList<QVariant> input;
-    input.append(tempFileName);
+    input.append(tempFile.fileName());
     input.append(n);
     input.append(m_wfn->xNuclearCoordinate(n));
     input.append(m_wfn->yNuclearCoordinate(n));
@@ -389,7 +389,7 @@ void QTAIMCriticalPointLocator::locateNuclearCriticalPoints()
     inputList.append(input);
   }
 
-  m_wfn->saveToBinaryFile(tempFileName);
+  m_wfn->saveToBinaryFile(tempFile);
 
   QProgressDialog dialog;
   dialog.setWindowTitle("QTAIM");
@@ -416,9 +416,6 @@ void QTAIMCriticalPointLocator::locateNuclearCriticalPoints()
     results = future.results();
   }
 
-  QFile file;
-  file.remove(tempFileName);
-
   for (const auto& n : results) {
     if (n.at(0).toBool()) {
       QVector3D result(n.at(1).toReal(), n.at(2).toReal(), n.at(3).toReal());
@@ -441,12 +438,10 @@ void QTAIMCriticalPointLocator::locateBondCriticalPoints()
     return;
   }
 
-  QString tempFileName = QTAIMCriticalPointLocator::temporaryFileName();
+  QTemporaryFile tempFile;
 
-  QString nuclearCriticalPointsFileName =
-    QTAIMCriticalPointLocator::temporaryFileName();
-  QFile nuclearCriticalPointsFile(nuclearCriticalPointsFileName);
-  if (!nuclearCriticalPointsFile.open(QIODevice::WriteOnly)) {
+  QTemporaryFile nuclearCriticalPointsFile;
+  if (!nuclearCriticalPointsFile.open()) {
     QMessageBox::critical(nullptr, QObject::tr("Error"),
                           QObject::tr("Failed to create a temporary file."));
     return;
@@ -477,8 +472,8 @@ void QTAIMCriticalPointLocator::locateBondCriticalPoints()
           (m_wfn->zNuclearCoordinate(M) + m_wfn->zNuclearCoordinate(N)) / 2.0);
 
         QList<QVariant> input;
-        input.append(tempFileName);
-        input.append(nuclearCriticalPointsFileName);
+        input.append(tempFile.fileName());
+        input.append(nuclearCriticalPointsFile.fileName());
         input.append(M);
         input.append(N);
         input.append(x0y0z0.x());
@@ -490,7 +485,7 @@ void QTAIMCriticalPointLocator::locateBondCriticalPoints()
     } // end N
   }   // end M
 
-  m_wfn->saveToBinaryFile(tempFileName);
+  m_wfn->saveToBinaryFile(tempFile);
 
   QProgressDialog dialog;
   dialog.setWindowTitle("QTAIM");
@@ -517,10 +512,6 @@ void QTAIMCriticalPointLocator::locateBondCriticalPoints()
   } else {
     results = future.results();
   }
-
-  QFile file;
-  file.remove(tempFileName);
-  file.remove(nuclearCriticalPointsFileName);
 
   for (const auto& thisCriticalPoint : results) {
     bool success = thisCriticalPoint.at(0).toBool();
@@ -560,7 +551,7 @@ void QTAIMCriticalPointLocator::locateBondCriticalPoints()
 void QTAIMCriticalPointLocator::locateElectronDensitySources()
 {
 
-  QString tempFileName = QTAIMCriticalPointLocator::temporaryFileName();
+  QTemporaryFile tempFile;
 
   QList<QList<QVariant>> inputList;
 
@@ -626,7 +617,7 @@ void QTAIMCriticalPointLocator::locateElectronDensitySources()
     for (qreal y = ymin; y < ymax + ystep; y = y + ystep) {
       for (qreal z = zmin; z < zmax + zstep; z = z + zstep) {
         QList<QVariant> input;
-        input.append(tempFileName);
+        input.append(tempFile.fileName());
         //          input.append( n );
         input.append(x);
         input.append(y);
@@ -637,7 +628,7 @@ void QTAIMCriticalPointLocator::locateElectronDensitySources()
     }
   }
 
-  m_wfn->saveToBinaryFile(tempFileName);
+  m_wfn->saveToBinaryFile(tempFile);
 
   QProgressDialog dialog;
   dialog.setWindowTitle("QTAIM");
@@ -663,9 +654,6 @@ void QTAIMCriticalPointLocator::locateElectronDensitySources()
   } else {
     results = future.results();
   }
-
-  QFile file;
-  file.remove(tempFileName);
 
   for (const auto& n : results) {
     if (n.at(0).toBool()) {
@@ -705,7 +693,7 @@ void QTAIMCriticalPointLocator::locateElectronDensitySources()
 void QTAIMCriticalPointLocator::locateElectronDensitySinks()
 {
 
-  QString tempFileName = QTAIMCriticalPointLocator::temporaryFileName();
+  QTemporaryFile tempFile;
 
   QList<QList<QVariant>> inputList;
 
@@ -771,7 +759,7 @@ void QTAIMCriticalPointLocator::locateElectronDensitySinks()
     for (qreal y = ymin; y < ymax + ystep; y = y + ystep) {
       for (qreal z = zmin; z < zmax + zstep; z = z + zstep) {
         QList<QVariant> input;
-        input.append(tempFileName);
+        input.append(tempFile.fileName());
         //          input.append( n );
         input.append(x);
         input.append(y);
@@ -782,7 +770,7 @@ void QTAIMCriticalPointLocator::locateElectronDensitySinks()
     }
   }
 
-  m_wfn->saveToBinaryFile(tempFileName);
+  m_wfn->saveToBinaryFile(tempFile);
 
   QProgressDialog dialog;
   dialog.setWindowTitle("QTAIM");
@@ -808,9 +796,6 @@ void QTAIMCriticalPointLocator::locateElectronDensitySinks()
   } else {
     results = future.results();
   }
-
-  QFile file;
-  file.remove(tempFileName);
 
   for (const auto& n : results) {
     if (n.at(0).toBool()) {
@@ -845,23 +830,6 @@ void QTAIMCriticalPointLocator::locateElectronDensitySinks()
     }
   }
   //    qDebug() << "SINKS" << m_electronDensitySinks;
-}
-
-QString QTAIMCriticalPointLocator::temporaryFileName()
-{
-  QTemporaryFile temporaryFile;
-  temporaryFile.open();
-  QString tempFileName = temporaryFile.fileName();
-  temporaryFile.close();
-  temporaryFile.remove();
-
-  // wait for temporary file to be deleted
-  QDir dir;
-  do {
-    // Nothing
-  } while (dir.exists(tempFileName));
-
-  return tempFileName;
 }
 
 } // namespace Avogadro::QtPlugins
