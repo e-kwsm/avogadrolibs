@@ -43,6 +43,11 @@ public:
   void saveToBinaryFile(const QString& fileName)
   {
     QFile file(fileName);
+    saveToBinaryFile(file);
+  }
+
+  void saveToBinaryFile(QFile& file)
+  {
     if (!file.open(QIODevice::WriteOnly)) {
       QMessageBox::critical(
         nullptr, QObject::tr("Error"),
@@ -76,6 +81,11 @@ public:
   void loadFromBinaryFile(const QString& fileName)
   {
     QFile file(fileName);
+    loadFromBinaryFile(file);
+  }
+
+  void loadFromBinaryFile(QFile& file)
+  {
     if (!file.open(QIODevice::ReadOnly)) {
       QMessageBox::critical(
         nullptr, QObject::tr("Error"),
