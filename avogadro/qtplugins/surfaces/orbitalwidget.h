@@ -40,8 +40,8 @@ public:
   //! Deconstructor
   ~OrbitalWidget() override;
 
-  double isovalue() { return m_isovalue; };
-  OrbitalQuality defaultQuality() { return m_quality; };
+  double isovalue() { return m_isovalue; }
+  OrbitalQuality defaultQuality() { return m_quality; }
 
   bool precalcLimit() { return m_precalc_limit; }
   int precalcRange() { return m_precalc_range; }
@@ -50,7 +50,7 @@ public:
   static double OrbitalQualityToDouble(int i)
   {
     return OrbitalQualityToDouble(OrbitalQuality(i));
-  };
+  }
 
 public slots:
   void readSettings();
