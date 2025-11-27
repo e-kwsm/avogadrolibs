@@ -80,7 +80,7 @@ public:
   //! Deconstructor
   ~OrbitalTableModel() override;
 
-  int rowCount(const QModelIndex&) const override { return m_orbitals.size(); };
+  int rowCount(const QModelIndex&) const override { return m_orbitals.size(); }
   int columnCount(const QModelIndex&) const override;
 
   QVariant data(const QModelIndex& index,
