@@ -2208,7 +2208,7 @@ QTAIMCubature::QTAIMCubature(QTAIMWavefunction& wfn)
 
   m_wfn = &wfn;
 
-  m_temporaryFileName = QTAIMCubature::temporaryFileName();
+  m_temporaryFileName = QTemporaryFile().fileName();
   m_wfn->saveToBinaryFile(m_temporaryFileName);
 
   // Instantiate a Critical Point Locator
@@ -2371,23 +2371,6 @@ QTAIMCubature::~QTAIMCubature()
 void QTAIMCubature::setMode(qint64 mode)
 {
   m_mode = mode;
-}
-
-QString QTAIMCubature::temporaryFileName()
-{
-  QTemporaryFile temporaryFile;
-  temporaryFile.open();
-  QString tempFileName = temporaryFile.fileName();
-  temporaryFile.close();
-  temporaryFile.remove();
-
-  // wait for temporary file to be deleted
-  QDir dir;
-  do {
-    // Nothing
-  } while (dir.exists(tempFileName));
-
-  return tempFileName;
 }
 
 } // namespace Avogadro::QtPlugins
