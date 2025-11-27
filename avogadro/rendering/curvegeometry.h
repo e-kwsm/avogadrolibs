@@ -80,7 +80,7 @@ public:
 
   void addPoint(const Vector3f& pos, const Vector3ub& color, float radius,
                 size_t group, size_t id);
-  const std::vector<Line*>& lines() const { return m_lines; };
+  const std::vector<Line*>& lines() const { return m_lines; }
 
   const static size_t SKIPPED;
 
