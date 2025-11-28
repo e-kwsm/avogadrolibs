@@ -176,7 +176,7 @@ void AutoOpt::start()
 
   // make sure method is set
   if (m_toolWidget) {
-    auto comboBox = m_toolWidget->findChild<QComboBox*>("methodComboBox");
+    auto* comboBox = m_toolWidget->findChild<QComboBox*>("methodComboBox");
     QString currentMethod = comboBox->currentText();
     m_currentMethod = currentMethod.toStdString();
   }
