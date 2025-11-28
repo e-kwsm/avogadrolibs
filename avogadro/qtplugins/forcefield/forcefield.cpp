@@ -181,7 +181,7 @@ Forcefield::Forcefield(QObject* parent_)
   water.addBond(0, 1);
   water.addBond(0, 2);
 
-  auto ob = new OBEnergy("MMFF94");
+  auto* ob = new OBEnergy("MMFF94");
   ob->setMolecule(&water);
   Eigen::VectorXd positions(3 * 3);
   positions << 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0;
