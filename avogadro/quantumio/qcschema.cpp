@@ -55,16 +55,16 @@ QCSchema::QCSchema() {}
 
 QCSchema::~QCSchema() {}
 
-std::vector<std::string> QCSchema::fileExtensions() const
+std::set<std::string> QCSchema::fileExtensions() const
 {
-  std::vector<std::string> extensions;
-  extensions.emplace_back("qcjson");
+  std::set<std::string> extensions;
+  extensions.insert("qcjson");
   return extensions;
 }
 
-std::vector<std::string> QCSchema::mimeTypes() const
+std::set<std::string> QCSchema::mimeTypes() const
 {
-  return std::vector<std::string>();
+  return {};
 }
 
 bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
