@@ -616,7 +616,7 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
     massStream << iter->second << "   " << Elements::mass(iter->first) << "\n";
     ++iter;
   }
-  massStream << '\n' << '\n' << '\n';
+  massStream << "\n\n\n";
 
   if (numAtoms) {
     // Atomic coordinates
@@ -656,7 +656,7 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
       ++outputIdx;
     }
 
-    atomStream << '\n' << '\n';
+    atomStream << "\n\n";
   }
 
   if (numBonds) {
@@ -734,7 +734,7 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
              zmax - 0.5, 0.0, 0.0, 0.0);
     outStream << simBoxBlock;
   }
-  outStream << '\n' << '\n' << '\n';
+  outStream << "\n\n\n";
   outStream << massStream.str();
   outStream << atomStream.str();
   outStream << bondStream.str();
