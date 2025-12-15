@@ -75,7 +75,7 @@ void ThreeDMolDialog::updateLabels()
 void ThreeDMolDialog::updateTextBrowser()
 {
   QString text =
-    "<script src='http://3Dmol.csb.pitt.edu/build/3Dmol-min.js'></script>\n";
+    "<script src='https://3Dmol.csb.pitt.edu/build/3Dmol-min.js'></script>\n";
   // MDL representation
   std::string mol;
   bool writeSDF =
