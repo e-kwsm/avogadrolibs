@@ -1124,7 +1124,7 @@ public:
         continue;
 
       // Using the BallView / Open Babel formula
-      // http://dx.doi.org/10.22028/D291-25896 (Appendix A)
+      // https://doi.org/10.22028/D291-25896 (Appendix A)
       // Thanks to Andreas Moll
       // for the derivation of the gradients
 
