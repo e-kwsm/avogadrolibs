@@ -555,15 +555,19 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
   if (unitcell) {
     const Matrix3& mat = unitcell->cellMatrix().transpose();
     snprintf(simBoxBlock, lineSize - 1,
-             "%10f %10f xlo xhi\n%10f %10f ylo yhi\n%10f %10f zlo zhi\n%10f "
-             "%10f %10f xy xz yz",
+             "%10f %10f xlo xhi\n"
+             "%10f %10f ylo yhi\n"
+             "%10f %10f zlo zhi\n"
+             "%10f %10f %10f xy xz yz",
              0.0, mat(0, 0), 0.0, mat(1, 1), 0.0, mat(2, 2), mat(1, 0),
              mat(2, 0), mat(2, 1));
     outStream << simBoxBlock;
   } else {
     snprintf(simBoxBlock, lineSize - 1,
-             "%10f %10f xlo xhi\n%10f %10f ylo yhi\n%10f %10f zlo zhi\n%10f "
-             "%10f %10f xy xz yz",
+             "%10f %10f xlo xhi\n"
+             "%10f %10f ylo yhi\n"
+             "%10f %10f zlo zhi\n"
+             "%10f %10f %10f xy xz yz",
              xmin - 0.5, xmax - 0.5, ymin - 0.5, ymax - 0.5, zmin - 0.5,
              zmax - 0.5, 0.0, 0.0, 0.0);
     outStream << simBoxBlock;
