@@ -1812,6 +1812,12 @@ void Molecule::setUnitCell(UnitCell* uc)
     m_unitCell.reset(uc);
 }
 
+void Molecule::rightHandedUnitCell(Eigen::Index idx)
+{
+  if (m_unitCell && m_unitCell->isLeftHanded())
+    m_unitCell->reflect(idx);
+}
+
 double Molecule::mass() const
 {
   double m(0.0);

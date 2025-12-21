@@ -806,6 +806,8 @@ public:
   const UnitCell* unitCell() const { return m_unitCell.get(); }
   /** @} */
 
+  void rightHandedUnitCell(Eigen::Index idx);
+
   /**
    * The space group for this molecule. It is updated after every
    * space group operation.
