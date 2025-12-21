@@ -138,8 +138,8 @@ public:
   /**
    * @return if @a m is regular, i.e. its determinant is nonzero
    */
-  static bool isRegular(const Matrix3& m);
-  bool isRegular() const { return isRegular(m_cellMatrix); }
+  [[nodicard]] static bool isRegular(const Matrix3& m);
+  [[nodicard]] bool isRegular() const { return isRegular(m_cellMatrix); }
 
 private:
   static Real signedAngleRadians(const Vector3& v1, const Vector3& v2,
