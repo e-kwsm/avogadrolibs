@@ -17,8 +17,6 @@ using std::vector;
 
 namespace Avogadro::QuantumIO {
 
-using Core::Atom;
-
 NWChemLog::NWChemLog() {}
 
 NWChemLog::~NWChemLog() {}
