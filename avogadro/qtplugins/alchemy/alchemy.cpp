@@ -17,7 +17,6 @@
 
 namespace Avogadro::QtPlugins {
 
-using Core::Array;
 using Core::Elements;
 
 Alchemy::Alchemy(QObject* parent_)
