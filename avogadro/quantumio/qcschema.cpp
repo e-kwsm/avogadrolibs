@@ -31,7 +31,6 @@ using std::string;
 namespace Avogadro::QuantumIO {
 
 using Core::Array;
-using Core::Atom;
 using Core::Elements;
 
 bool isNumericArray(json& j)
