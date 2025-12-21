@@ -19,10 +19,8 @@
 
 namespace Avogadro::QtPlugins {
 
-using QtGui::Molecule;
 using Rendering::ArrowGeometry;
 using Rendering::GeometryNode;
-using Rendering::GroupNode;
 
 Dipole::Dipole(QObject* p) : ScenePlugin(p)
 {
