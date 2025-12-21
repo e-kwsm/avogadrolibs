@@ -77,6 +77,11 @@ public:
    * plane spanned by the other vectors.
    */
   void reflect(int i);
+  /**
+   * Swap the lattice vectors @a i and @a j, which changes the left-handed
+   * system to right-handed, and vice versa.
+   */
+  void swapLatticeVectors(int i, int j);
 
   /**
    * @return A vector pointing to the origin of the translational image that is
