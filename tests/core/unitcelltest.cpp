@@ -14,6 +14,7 @@
 using namespace Avogadro;
 using namespace Avogadro::Core;
 
+namespace {
 // use alpha, beta, gamma in degrees
 Molecule createCrystal(Real a, Real b, Real c, Real alpha, Real beta,
                        Real gamma)
@@ -54,6 +55,7 @@ bool checkParams(const UnitCell& cell, Real a, Real b, Real c, Real alpha,
   }
   return true;
 }
+} // namespace
 
 TEST(UnitCellTest, cellParameters)
 {
@@ -344,6 +346,7 @@ TEST(UnitCellTest, wrapAtomsToUnitCell)
   }
 }
 
+namespace {
 // Helper function to compare vectors with tolerance
 bool vectorsEqual(const Vector3& v1, const Vector3& v2, Real tol = 1e-5)
 {
@@ -356,6 +359,7 @@ struct CrystalSystemParams
   Real a, b, c, alpha, beta, gamma;
   std::string name;
 };
+} // namespace
 
 // ============================================================================
 // Test all 7 crystal systems (Bravais lattices)
