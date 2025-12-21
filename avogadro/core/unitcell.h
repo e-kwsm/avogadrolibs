@@ -77,6 +77,10 @@ public:
    * plane spanned by the other vectors.
    */
   void reflect(int i);
+  /**
+   * Swap the lattice vectors @a i and @a j.
+   */
+  void swapLatticeVectors(int i, int j);
 
   /**
    * @return A vector pointing to the origin of the translational image that is
