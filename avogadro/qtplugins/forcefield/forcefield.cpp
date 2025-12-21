@@ -44,7 +44,6 @@ namespace Avogadro::QtPlugins {
 
 using Avogadro::Calc::EnergyCalculator;
 using Avogadro::QtGui::Molecule;
-using Avogadro::QtGui::RWMolecule;
 
 const int energyAction = 0;
 const int optimizeAction = 1;
