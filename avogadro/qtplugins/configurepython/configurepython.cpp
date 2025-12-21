@@ -25,7 +25,6 @@
 
 namespace Avogadro::QtPlugins {
 
-using QtGui::FileBrowseWidget;
 using QtGui::Utilities::findExecutablePaths;
 
 ConfigurePython::ConfigurePython(QObject* parent_)
