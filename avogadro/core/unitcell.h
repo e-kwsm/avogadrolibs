@@ -68,6 +68,11 @@ public:
   Real volume() const;
 
   /**
+   * @return whether the cell is left-handed or not
+   */
+  bool isLeftHanded() const;
+
+  /**
    * @return A vector pointing to the origin of the translational image that is
    * @a i images in the a() direction, @a j images in the b() direction, and
    * @a k images in the c() direction.
@@ -236,6 +241,11 @@ inline Real UnitCell::gamma() const
 inline Real UnitCell::volume() const
 {
   return std::fabs(aVector().cross(bVector()).dot(cVector()));
+}
+
+inline bool UnitCell::isLeftHanded() const
+{
+  return m_cellMatrix.determinant() < 0.0;
 }
 
 inline Vector3 UnitCell::imageOffset(int i, int j, int k) const
