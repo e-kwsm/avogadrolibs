@@ -26,8 +26,6 @@
 
 #include <QtGui/QClipboard>
 
-using Avogadro::QtGui::Molecule;
-
 namespace Avogadro::QtPlugins {
 
 ThreeDMolDialog::ThreeDMolDialog(QtGui::Molecule* mol, QWidget* parent_)
