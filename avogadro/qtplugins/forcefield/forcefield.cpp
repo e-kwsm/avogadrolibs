@@ -44,17 +44,20 @@ using Avogadro::Calc::EnergyCalculator;
 using Avogadro::QtGui::Molecule;
 using Avogadro::QtGui::RWMolecule;
 
-const int energyAction = 0;
-const int optimizeAction = 1;
-const int configureAction = 2;
-const int freezeAction = 3;
-const int unfreezeAction = 4;
-const int constraintAction = 5;
-const int forcesAction = 6;
-const int fuseAction = 7;
-const int unfuseAction = 8;
-const int batchEnergyAction = 9;
-const int batchForcesAction = 10;
+enum
+{
+  energyAction = 0,
+  optimizeAction = 1,
+  configureAction = 2,
+  freezeAction = 3,
+  unfreezeAction = 4,
+  constraintAction = 5,
+  forcesAction = 6,
+  fuseAction = 7,
+  unfuseAction = 8,
+  batchEnergyAction = 9,
+  batchForcesAction = 10,
+};
 
 Forcefield::Forcefield(QObject* parent_)
   : ExtensionPlugin(parent_), m_method(nullptr)
