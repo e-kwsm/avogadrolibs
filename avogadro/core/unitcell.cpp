@@ -44,6 +44,14 @@ void UnitCell::reflect(int i)
   computeFractionalMatrix();
 }
 
+void UnitCell::swapLatticeVectors(int i, int j)
+{
+  if (i == j)
+    throw std::invalid_argument{ __func__ };
+  swap(m_cellMatrix.col(i), m_cellMatrix.col(j));
+  swap(m_fractionalMatrix.row(i), m_fractionalMatrix.row(j));
+}
+
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
                                  Real ga)
 {
