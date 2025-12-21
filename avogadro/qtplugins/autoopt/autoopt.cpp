@@ -45,10 +45,7 @@
 
 using Avogadro::QtGui::Molecule;
 using Avogadro::Rendering::GeometryNode;
-using Avogadro::Rendering::GroupNode;
-using Avogadro::Rendering::Identifier;
 using Avogadro::Rendering::TextLabel2D;
-using Avogadro::Rendering::TextLabel3D;
 using Avogadro::Rendering::TextProperties;
 
 namespace Avogadro::QtPlugins {
