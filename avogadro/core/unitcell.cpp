@@ -15,8 +15,9 @@ bool UnitCell::isRegular(const Matrix3& m)
   const auto a = m.col(0).norm();
   const auto b = m.col(1).norm();
   const auto c = m.col(2).norm();
-  const auto w = a * b * c;
-  return w > 0.0 && std::fabs(m.determinant()) > tiny * w;
+  const auto w = a * b * c; // volume if alpha=beta=gamma=90°
+  const auto v = std::fabs(m.determinant()); // actual volume
+  return w > 0.0 && v > tiny * w;
 }
 
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
