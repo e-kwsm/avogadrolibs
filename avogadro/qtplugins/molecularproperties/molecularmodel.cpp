@@ -27,7 +27,6 @@
 
 namespace Avogadro {
 
-using Avogadro::Core::BasisSet;
 using Avogadro::Core::GaussianSet;
 using Avogadro::QtGui::Molecule;
 using QtGui::Molecule;
