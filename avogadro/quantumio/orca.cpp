@@ -22,7 +22,6 @@ using std::vector;
 namespace Avogadro::QuantumIO {
 
 using Core::Array;
-using Core::Atom;
 using Core::GaussianSet;
 
 ORCAOutput::ORCAOutput() {}
