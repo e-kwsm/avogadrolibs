@@ -57,7 +57,7 @@ Real UnitCell::signedAngleRadians(const Vector3& v1, const Vector3& v2,
   const Real dotProduct(v1.dot(v2));
   const Real signDet(crossProduct.dot(axis));
   const Real angle(std::atan2(crossProductNorm, dotProduct));
-  return signDet > 0.f ? angle : -angle;
+  return signDet > 0.0 ? angle : -angle;
 }
 
 } // namespace Avogadro::Core
