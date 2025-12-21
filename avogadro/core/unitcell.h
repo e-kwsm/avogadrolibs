@@ -73,6 +73,12 @@ public:
   bool isLeftHanded() const;
 
   /**
+   * Reflect the cell vector @a i (a, b, or c for 0, 1, or 2, resp.) in the
+   * plane spanned by the other vectors.
+   */
+  void reflect(int i);
+
+  /**
    * @return A vector pointing to the origin of the translational image that is
    * @a i images in the a() direction, @a j images in the b() direction, and
    * @a k images in the c() direction.
