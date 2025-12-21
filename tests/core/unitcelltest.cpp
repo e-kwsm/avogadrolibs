@@ -295,8 +295,8 @@ TEST(UnitCellTest, fractionalCoordinates)
   mol.atomPositions3d().clear();
   EXPECT_TRUE(CrystalTools::setFractionalCoordinates(mol, fcoords));
   Array<Vector3> ccoords = mol.atomPositions3d();
-  for (int i = 0; i < 6; ++i) {
-    for (int j = 0; j < 3; ++j) {
+  for (unsigned i = 0; i < 6; ++i) {
+    for (unsigned j = 0; j < 3; ++j) {
       EXPECT_FLOAT_EQ(static_cast<float>(ccoords_ref[i][j]),
                       static_cast<float>(ccoords[i][j]))
         << " (i=" << i << "j=" << j << ")";
