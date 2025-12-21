@@ -22,7 +22,6 @@
 namespace Avogadro::QtGui {
 
 using Core::Array;
-using Core::AtomHybridization;
 using Core::CrystalTools;
 using Core::UnitCell;
 using std::swap;
