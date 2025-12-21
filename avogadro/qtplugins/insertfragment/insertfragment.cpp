@@ -19,7 +19,6 @@
 #include <QtWidgets/QMessageBox>
 #include <QtWidgets/QProgressDialog>
 
-using Avogadro::Io::FileFormatManager;
 using Avogadro::QtGui::InsertFragmentDialog;
 using Avogadro::QtGui::Molecule;
 

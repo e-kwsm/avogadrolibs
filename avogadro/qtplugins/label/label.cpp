@@ -39,7 +39,6 @@ using Core::Elements;
 using Core::Molecule;
 using QtGui::PluginLayerManager;
 using Rendering::GeometryNode;
-using Rendering::GroupNode;
 using std::map;
 
 typedef Array<Molecule::BondType> NeighborListType;
