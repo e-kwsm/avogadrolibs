@@ -305,6 +305,45 @@ TEST(UnitCellTest, fractionalCoordinates)
   }
 }
 
+TEST(UnitCellTest, reflect)
+{
+  // silicon primitive cell
+  const Vector3 A{ 3.0, 3.0, 0.0 }, B{ 0.0, 3.0, 3.0 }, C{ 3.0, 0.0, 3.0 };
+
+  {
+    UnitCell uc{ A, B, C };
+    ASSERT_FALSE(uc.isLeftHanded());
+    // reflect A in BC
+    uc.reflect(0);
+    EXPECT_TRUE(uc.isLeftHanded());
+    EXPECT_TRUE(uc.aVector().isApprox(Vector3(-1.0, -1.0, 4.0)));
+    EXPECT_EQ(uc.bVector(), B);
+    EXPECT_EQ(uc.cVector(), C);
+  }
+
+  {
+    UnitCell uc{ A, B, -C };
+    ASSERT_TRUE(uc.isLeftHanded());
+    // reflect B in CA
+    uc.reflect(1);
+    EXPECT_FALSE(uc.isLeftHanded());
+    EXPECT_EQ(uc.aVector(), A);
+    EXPECT_TRUE(uc.bVector().isApprox(Vector3(4.0, -1.0, -1.0)));
+    EXPECT_EQ(uc.cVector(), -C);
+  }
+
+  {
+    UnitCell uc{ B, A, C };
+    ASSERT_TRUE(uc.isLeftHanded());
+    // reflect C in AB
+    uc.reflect(2);
+    EXPECT_FALSE(uc.isLeftHanded());
+    EXPECT_EQ(uc.aVector(), B);
+    EXPECT_EQ(uc.bVector(), A);
+    EXPECT_TRUE(uc.cVector().isApprox(Vector3(-1.0, 4.0, -1.0)));
+  }
+}
+
 TEST(UnitCellTest, wrapAtomsToUnitCell)
 {
   Molecule mol = createCrystal(
