@@ -19,6 +19,31 @@ bool UnitCell::isRegular(const Matrix3& m)
   return w > 0.0 && std::fabs(m.determinant()) > tiny * w;
 }
 
+void UnitCell::reflect(int i)
+{
+  int j, k;
+  switch (i) {
+    case 0:
+      j = 1;
+      k = 2;
+      break;
+    case 1:
+      j = 2;
+      k = 0;
+      break;
+    case 2:
+      j = 0;
+      k = 1;
+      break;
+    default:
+      throw std::invalid_argument{ __func__ };
+  }
+  Vector3 normal = m_cellMatrix.col(j).cross(m_cellMatrix.col(k));
+  normal.normalize();
+  m_cellMatrix.col(i) -= 2.0 * normal.dot(m_cellMatrix.col(i)) * normal;
+  computeFractionalMatrix();
+}
+
 void UnitCell::setCellParameters(Real a_, Real b_, Real c_, Real al, Real be,
                                  Real ga)
 {
