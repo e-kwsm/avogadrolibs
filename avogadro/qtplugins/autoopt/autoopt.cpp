@@ -58,7 +58,7 @@ namespace Avogadro::QtPlugins {
 using QtGui::Molecule;
 using QtGui::RWAtom;
 
-#define ROTATION_SPEED 0.5
+static constexpr double ROTATION_SPEED = 0.5;
 
 AutoOpt::AutoOpt(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
