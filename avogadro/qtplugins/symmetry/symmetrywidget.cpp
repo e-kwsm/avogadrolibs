@@ -14,7 +14,6 @@
 
 #include <QtWidgets/QPlainTextEdit>
 
-using Avogadro::QtGui::Molecule;
 using Avogadro::QtGui::RichTextDelegate;
 
 using namespace msym;
