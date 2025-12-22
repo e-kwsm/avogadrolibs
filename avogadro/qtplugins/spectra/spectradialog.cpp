@@ -20,9 +20,6 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/qtgui/chartwidget.h>
 
-using Avogadro::Core::Molecule;
-using Avogadro::QtGui::ChartWidget;
-
 namespace Avogadro::QtPlugins {
 
 constexpr QColor black(0, 0, 0);
