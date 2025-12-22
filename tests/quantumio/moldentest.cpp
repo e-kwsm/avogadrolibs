@@ -18,7 +18,6 @@
 #include <string>
 
 using Avogadro::Vector3;
-using Avogadro::Core::Atom;
 using Avogadro::Core::Molecule;
 using Avogadro::Io::FileFormat;
 using Avogadro::QuantumIO::MoldenFile;
