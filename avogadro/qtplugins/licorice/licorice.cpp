@@ -28,7 +28,6 @@ using QtGui::Molecule;
 using QtGui::PluginLayerManager;
 using Rendering::CylinderGeometry;
 using Rendering::GeometryNode;
-using Rendering::GroupNode;
 using Rendering::SphereGeometry;
 
 namespace {
