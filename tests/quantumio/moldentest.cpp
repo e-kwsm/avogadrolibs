@@ -19,7 +19,6 @@
 
 using Avogadro::Vector3;
 using Avogadro::Core::Molecule;
-using Avogadro::Io::FileFormat;
 using Avogadro::QuantumIO::MoldenFile;
 
 // does the basic read work
