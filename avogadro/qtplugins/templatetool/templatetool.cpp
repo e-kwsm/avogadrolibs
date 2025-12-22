@@ -56,16 +56,10 @@ namespace Avogadro {
 namespace QtPlugins {
 
 using QtGui::Molecule;
-using QtOpenGL::GLWidget;
 
 using Avogadro::Core::Elements;
 using Avogadro::Io::CjsonFormat;
-using Avogadro::Rendering::GeometryNode;
-using Avogadro::Rendering::GroupNode;
 using Avogadro::Rendering::Identifier;
-using Avogadro::Rendering::TextLabel2D;
-using Avogadro::Rendering::TextLabel3D;
-using Avogadro::Rendering::TextProperties;
 
 TemplateTool::TemplateTool(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
