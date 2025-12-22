@@ -25,7 +25,6 @@ using namespace Avogadro::Core;
 using namespace Avogadro;
 
 using Avogadro::Vector3;
-using Avogadro::Core::Atom;
 using Avogadro::Core::Molecule;
 using Avogadro::Io::XyzFormat;
 
