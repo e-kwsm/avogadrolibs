@@ -21,7 +21,6 @@
 
 using Avogadro::Matrix3;
 using Avogadro::Vector3;
-using Avogadro::Core::Atom;
 using Avogadro::Core::Molecule;
 using Avogadro::Core::UnitCell;
 using Avogadro::Io::FileFormat;
