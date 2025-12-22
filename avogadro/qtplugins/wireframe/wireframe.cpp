@@ -27,7 +27,6 @@ using Core::Array;
 using Core::Elements;
 using QtGui::PluginLayerManager;
 using Rendering::GeometryNode;
-using Rendering::GroupNode;
 using Rendering::LineStripGeometry;
 using Rendering::SphereGeometry;
 
