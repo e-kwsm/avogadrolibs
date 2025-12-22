@@ -24,7 +24,6 @@ using Avogadro::Vector3f;
 using Avogadro::Core::Array;
 using Avogadro::Rendering::Camera;
 using Avogadro::Rendering::GeometryNode;
-using Avogadro::Rendering::GroupNode;
 using Avogadro::Rendering::MeshGeometry;
 using Eigen::Affine3f;
 
