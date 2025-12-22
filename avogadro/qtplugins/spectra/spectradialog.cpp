@@ -22,9 +22,6 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/qtgui/chartwidget.h>
 
-using Avogadro::Core::Molecule;
-using Avogadro::QtGui::ChartWidget;
-
 namespace Avogadro::QtPlugins {
 
 // Detect dark mode: text lighter than window background
