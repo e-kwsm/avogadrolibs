@@ -60,9 +60,6 @@ const unsigned char INVALID_ATOMIC_NUMBER =
 namespace Avogadro::QtPlugins {
 
 using QtGui::Molecule;
-using QtGui::RWAtom;
-using QtGui::RWBond;
-using QtGui::RWMolecule;
 using QtOpenGL::GLWidget;
 
 using Avogadro::Core::Elements;
