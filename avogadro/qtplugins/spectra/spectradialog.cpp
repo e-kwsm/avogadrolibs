@@ -22,9 +22,6 @@
 #include <avogadro/qtgui/chartwidget.h>
 #include <avogadro/qtgui/colortheme.h>
 
-using Avogadro::Core::Molecule;
-using Avogadro::QtGui::ChartWidget;
-
 namespace Avogadro::QtPlugins {
 
 // Default colors that adapt to dark/light mode
