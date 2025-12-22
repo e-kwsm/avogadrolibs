@@ -20,7 +20,6 @@ namespace Avogadro::QtPlugins {
 using Core::Elements;
 using QtGui::PluginLayerManager;
 using Rendering::GeometryNode;
-using Rendering::GroupNode;
 using Rendering::SphereGeometry;
 
 struct LayerVdW : Core::LayerData
