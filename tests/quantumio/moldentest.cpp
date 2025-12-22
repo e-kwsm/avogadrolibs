@@ -25,7 +25,6 @@ using Avogadro::Core::Atom;
 using Avogadro::Core::BasisSet;
 using Avogadro::Core::GaussianSet;
 using Avogadro::Core::Molecule;
-using Avogadro::Io::FileFormat;
 using Avogadro::QuantumIO::MoldenFile;
 
 // does the basic read work
