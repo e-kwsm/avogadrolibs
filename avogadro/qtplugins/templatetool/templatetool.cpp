@@ -61,9 +61,6 @@ namespace Avogadro {
 namespace QtPlugins {
 
 using QtGui::Molecule;
-using QtGui::RWAtom;
-using QtGui::RWBond;
-using QtGui::RWMolecule;
 using QtOpenGL::GLWidget;
 
 using Avogadro::Core::Elements;
