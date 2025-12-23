@@ -194,21 +194,18 @@ TEST(CjsonTest, crystal)
 
   const UnitCell* otherUnitCell = otherMolecule.unitCell();
   ASSERT_NE(otherUnitCell, (UnitCell*)nullptr);
-  EXPECT_FLOAT_EQ((float)otherUnitCell->a(), (float)unitCell->a());
-  EXPECT_FLOAT_EQ((float)otherUnitCell->b(), (float)unitCell->b());
-  EXPECT_FLOAT_EQ((float)otherUnitCell->c(), (float)unitCell->c());
-  EXPECT_FLOAT_EQ((float)otherUnitCell->alpha(), (float)unitCell->alpha());
-  EXPECT_FLOAT_EQ((float)otherUnitCell->beta(), (float)unitCell->beta());
-  EXPECT_FLOAT_EQ((float)otherUnitCell->gamma(), (float)unitCell->gamma());
+  EXPECT_DOUBLE_EQ(otherUnitCell->a(), unitCell->a());
+  EXPECT_DOUBLE_EQ(otherUnitCell->b(), unitCell->b());
+  EXPECT_DOUBLE_EQ(otherUnitCell->c(), unitCell->c());
+  EXPECT_DOUBLE_EQ(otherUnitCell->alpha(), unitCell->alpha());
+  EXPECT_DOUBLE_EQ(otherUnitCell->beta(), unitCell->beta());
+  EXPECT_DOUBLE_EQ(otherUnitCell->gamma(), unitCell->gamma());
 
   Atom otherAtom = otherMolecule.atom(5);
   EXPECT_EQ(otherAtom.atomicNumber(), atom.atomicNumber());
-  EXPECT_FLOAT_EQ((float)otherAtom.position3d().x(),
-                  (float)atom.position3d().x());
-  EXPECT_FLOAT_EQ((float)otherAtom.position3d().y(),
-                  (float)atom.position3d().y());
-  EXPECT_FLOAT_EQ((float)otherAtom.position3d().z(),
-                  (float)atom.position3d().z());
+  EXPECT_DOUBLE_EQ(otherAtom.position3d().x(), atom.position3d().x());
+  EXPECT_DOUBLE_EQ(otherAtom.position3d().y(), atom.position3d().y());
+  EXPECT_DOUBLE_EQ(otherAtom.position3d().z(), atom.position3d().z());
 }
 
 TEST(CjsonTest, saveFile)

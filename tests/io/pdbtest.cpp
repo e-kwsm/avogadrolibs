@@ -33,12 +33,12 @@ TEST(PdbTest, altLoc)
 
   EXPECT_EQ(molecule.coordinate3dCount(), 2);
 
-  EXPECT_FLOAT_EQ(molecule.atomPosition3d(264).x(),
-                  molecule.coordinate3d(1)[264].x());
-  EXPECT_FLOAT_EQ(molecule.atomPosition3d(264).y(),
-                  molecule.coordinate3d(1)[264].y());
-  EXPECT_FLOAT_EQ(molecule.atomPosition3d(264).z(),
-                  molecule.coordinate3d(1)[264].z());
+  EXPECT_DOUBLE_EQ(molecule.atomPosition3d(264).x(),
+                   molecule.coordinate3d(1)[264].x());
+  EXPECT_DOUBLE_EQ(molecule.atomPosition3d(264).y(),
+                   molecule.coordinate3d(1)[264].y());
+  EXPECT_DOUBLE_EQ(molecule.atomPosition3d(264).z(),
+                   molecule.coordinate3d(1)[264].z());
 
   EXPECT_TRUE(
     molecule.atomPosition3d(265).x() != molecule.coordinate3d(1)[265].x() ||
