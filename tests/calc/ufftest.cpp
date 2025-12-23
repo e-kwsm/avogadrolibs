@@ -98,6 +98,11 @@ TEST_P(UffGradientTest, GradientComparison)
     EXPECT_TRUE(std::isfinite(numeric[3 * i + 2]));
   }
 
+  for (int i = 0, n = analytical.size() / 3; i < n; ++i) {
+    EXPECT_NEAR(analytical[3 * i], numeric[3 * i] + 1, 0);
+    EXPECT_NEAR(analytical[3 * i + 1], numeric[3 * i + 1], 1);
+    EXPECT_NEAR(analytical[3 * i + 2], numeric[3 * i + 2], 1);
+  }
   EXPECT_TRUE(checkGradients(analytical, numeric));
 }
 
