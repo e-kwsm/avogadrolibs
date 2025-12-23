@@ -51,75 +51,23 @@ bool CrystalTools::rotateToStandardOrientation(Molecule& molecule, Options opts)
 
   const Matrix3& before = cell.cellMatrix();
 
-  // Extract vector components:
-  const Real& x1 = before(0, 0);
-  const Real& y1 = before(1, 0);
-  const Real& z1 = before(2, 0);
-
-  const Real& x2 = before(0, 1);
-  const Real& y2 = before(1, 1);
-  const Real& z2 = before(2, 1);
-
-  const Real& x3 = before(0, 2);
-  const Real& y3 = before(1, 2);
-  const Real& z3 = before(2, 2);
-
-  // Cache some frequently used values:
-  // Length of v1
-  const Real L1 = std::hypot(x1, y1, z1);
-  // Squared norm of v1's yz projection
-  const Real sqrdnorm1yz = y1 * y1 + z1 * z1;
-  // Squared norm of v2's yz projection
-  const Real sqrdnorm2yz = y2 * y2 + z2 * z2;
-  // Determinant of v1 and v2's projections in yz plane
-  const Real detv1v2yz = y2 * z1 - y1 * z2;
-  // Scalar product of v1 and v2's projections in yz plane
-  const Real dotv1v2yz = y1 * y2 + z1 * z2;
-
-  // Used for denominators, since we want to check that they are
-  // sufficiently far from 0 to keep things reasonable:
-  Real denom;
+  Eigen::HouseholderQR<Matrix3> qr{ before };
+  Matrix3 q = qr.householderQ();
+  Matrix3 newMat = q.transpose() * before;
+  const Real L1 = fabs(newMat(0, 0));
+  if (newMat(0, 0) < 0.0) {
+    // rotate around z-axis so that newMat(0, 0) > 0
+    newMat.row(0) *= -1.0;
+    newMat.row(1) *= -1.0;
+  }
+  if (newMat(1, 1) < 0.0) {
+    // rotate around x-axis so that newMat(1, 1) > 0
+    newMat.row(1) *= -1.0;
+    newMat.row(2) *= -1.0;
+  }
   const Real DENOM_TOL = 1e-5;
-
-  // Create target matrix, fill with zeros
-  Matrix3 newMat(Matrix3::Zero());
-
-  // Set components of new v1:
-  newMat(0, 0) = L1;
-
-  // Set components of new v2:
-  denom = L1;
-  if (fabs(denom) < DENOM_TOL)
+  if (L1 < DENOM_TOL || L1 * fabs(newMat(1, 1)) < DENOM_TOL)
     return false;
-
-  newMat(0, 1) = (x1 * x2 + y1 * y2 + z1 * z2) / denom;
-
-  newMat(1, 1) = sqrt(x2 * x2 * sqrdnorm1yz + detv1v2yz * detv1v2yz -
-                      2 * x1 * x2 * dotv1v2yz + x1 * x1 * sqrdnorm2yz) /
-                 denom;
-
-  // Set components of new v3
-  newMat(0, 2) = (x1 * x3 + y1 * y3 + z1 * z3) / denom;
-
-  denom = L1 * L1 * newMat(1, 1);
-  if (fabs(denom) < DENOM_TOL)
-    return false;
-
-  newMat(1, 2) = (x1 * x1 * (y2 * y3 + z2 * z3) +
-                  x2 * (x3 * sqrdnorm1yz - x1 * (y1 * y3 + z1 * z3)) +
-                  detv1v2yz * (y3 * z1 - y1 * z3) - x1 * x3 * dotv1v2yz) /
-                 denom;
-
-  denom = L1 * newMat(1, 1);
-  if (fabs(denom) < DENOM_TOL)
-    return false;
-
-  // Numerator is determinant of original cell:
-  newMat(2, 2) = before.determinant() / denom;
-
-  if (opts & RightHanded && newMat(2, 2) < 0.0)
-    newMat(2, 2) *= -1.0;
-
   return setCellMatrix(molecule, newMat, opts & TransformAtoms);
 }
 
