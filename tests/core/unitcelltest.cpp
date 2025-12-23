@@ -149,18 +149,17 @@ TEST(UnitCellTest, niggliReduce_GK1976)
   beta = mol.unitCell()->beta();                                               \
   gamma = mol.unitCell()->gamma();                                             \
   EXPECT_TRUE(CrystalTools::rotateToStandardOrientation(mol));                 \
-  EXPECT_FLOAT_EQ(static_cast<float>(a),                                       \
-                  static_cast<float>(mol.unitCell()->a()));                    \
-  EXPECT_FLOAT_EQ(static_cast<float>(b),                                       \
-                  static_cast<float>(mol.unitCell()->b()));                    \
-  EXPECT_FLOAT_EQ(static_cast<float>(c),                                       \
-                  static_cast<float>(mol.unitCell()->c()));                    \
-  EXPECT_FLOAT_EQ(static_cast<float>(alpha),                                   \
-                  static_cast<float>(mol.unitCell()->alpha()));                \
-  EXPECT_FLOAT_EQ(static_cast<float>(beta),                                    \
-                  static_cast<float>(mol.unitCell()->beta()));                 \
-  EXPECT_FLOAT_EQ(static_cast<float>(gamma),                                   \
-                  static_cast<float>(mol.unitCell()->gamma()))
+  EXPECT_DOUBLE_EQ(a, mol.unitCell()->a());                                    \
+  EXPECT_GT(mol.unitCell()->aVector()[0], 0.0);                                \
+  EXPECT_NEAR(mol.unitCell()->aVector()[1], 0.0, 1e-10);                       \
+  EXPECT_NEAR(mol.unitCell()->aVector()[2], 0.0, 1e-10);                       \
+  EXPECT_DOUBLE_EQ(b, mol.unitCell()->b());                                    \
+  EXPECT_GT(mol.unitCell()->bVector()[1], 0.0);                                \
+  EXPECT_NEAR(mol.unitCell()->bVector()[2], 0.0, 1e-10);                       \
+  EXPECT_DOUBLE_EQ(c, mol.unitCell()->c());                                    \
+  EXPECT_DOUBLE_EQ(alpha, mol.unitCell()->alpha());                            \
+  EXPECT_DOUBLE_EQ(beta, mol.unitCell()->beta());                              \
+  EXPECT_DOUBLE_EQ(gamma, mol.unitCell()->gamma())
 #define RTSO_TEST_PARAMS(a_, b_, c_, alpha_, beta_, gamma_)                    \
   mol = createCrystal(static_cast<Real>(a_), static_cast<Real>(b_),            \
                       static_cast<Real>(c_), static_cast<Real>(alpha_),        \
