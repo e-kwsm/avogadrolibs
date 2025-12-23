@@ -85,15 +85,12 @@ TEST(UnitCellTest, cellParameters)
 
   UnitCell unitCell;
   unitCell.setCellParameters(a, b, c, alpha, beta, gamma);
-  EXPECT_FLOAT_EQ(static_cast<float>(a), static_cast<float>(unitCell.a()));
-  EXPECT_FLOAT_EQ(static_cast<float>(b), static_cast<float>(unitCell.b()));
-  EXPECT_FLOAT_EQ(static_cast<float>(c), static_cast<float>(unitCell.c()));
-  EXPECT_FLOAT_EQ(static_cast<float>(alpha),
-                  static_cast<float>(unitCell.alpha()));
-  EXPECT_FLOAT_EQ(static_cast<float>(beta),
-                  static_cast<float>(unitCell.beta()));
-  EXPECT_FLOAT_EQ(static_cast<float>(gamma),
-                  static_cast<float>(unitCell.gamma()));
+  EXPECT_DOUBLE_EQ(a, unitCell.a());
+  EXPECT_DOUBLE_EQ(b, unitCell.b());
+  EXPECT_DOUBLE_EQ(c, unitCell.c());
+  EXPECT_DOUBLE_EQ(alpha, unitCell.alpha());
+  EXPECT_DOUBLE_EQ(beta, unitCell.beta());
+  EXPECT_DOUBLE_EQ(gamma, unitCell.gamma());
 }
 
 TEST(UnitCellTest, niggliReduce_G1973)
@@ -142,18 +139,12 @@ TEST(UnitCellTest, niggliReduce_GK1976)
   beta = mol.unitCell()->beta();                                               \
   gamma = mol.unitCell()->gamma();                                             \
   EXPECT_TRUE(CrystalTools::rotateToStandardOrientation(mol));                 \
-  EXPECT_FLOAT_EQ(static_cast<float>(a),                                       \
-                  static_cast<float>(mol.unitCell()->a()));                    \
-  EXPECT_FLOAT_EQ(static_cast<float>(b),                                       \
-                  static_cast<float>(mol.unitCell()->b()));                    \
-  EXPECT_FLOAT_EQ(static_cast<float>(c),                                       \
-                  static_cast<float>(mol.unitCell()->c()));                    \
-  EXPECT_FLOAT_EQ(static_cast<float>(alpha),                                   \
-                  static_cast<float>(mol.unitCell()->alpha()));                \
-  EXPECT_FLOAT_EQ(static_cast<float>(beta),                                    \
-                  static_cast<float>(mol.unitCell()->beta()));                 \
-  EXPECT_FLOAT_EQ(static_cast<float>(gamma),                                   \
-                  static_cast<float>(mol.unitCell()->gamma()))
+  EXPECT_DOUBLE_EQ(a, mol.unitCell()->a());                                    \
+  EXPECT_DOUBLE_EQ(b, mol.unitCell()->b());                                    \
+  EXPECT_DOUBLE_EQ(c, mol.unitCell()->c());                                    \
+  EXPECT_DOUBLE_EQ(alpha, mol.unitCell()->alpha());                            \
+  EXPECT_DOUBLE_EQ(beta, mol.unitCell()->beta());                              \
+  EXPECT_DOUBLE_EQ(gamma, mol.unitCell()->gamma())
 #define RTSO_TEST_PARAMS(a_, b_, c_, alpha_, beta_, gamma_)                    \
   mol = createCrystal(static_cast<Real>(a_), static_cast<Real>(b_),            \
                       static_cast<Real>(c_), static_cast<Real>(alpha_),        \
@@ -186,13 +177,10 @@ TEST(UnitCellTest, setVolume)
     static_cast<Real>(3.0), static_cast<Real>(3.0), static_cast<Real>(3.0),
     static_cast<Real>(90.0), static_cast<Real>(120.0), static_cast<Real>(77.0));
   EXPECT_TRUE(CrystalTools::setVolume(mol, static_cast<Real>(1.0)));
-  EXPECT_FLOAT_EQ(1.f, static_cast<float>(mol.unitCell()->volume()));
-  EXPECT_FLOAT_EQ(90.f,
-                  static_cast<float>(mol.unitCell()->alpha() * RAD_TO_DEG));
-  EXPECT_FLOAT_EQ(120.f,
-                  static_cast<float>(mol.unitCell()->beta() * RAD_TO_DEG));
-  EXPECT_FLOAT_EQ(77.f,
-                  static_cast<float>(mol.unitCell()->gamma() * RAD_TO_DEG));
+  EXPECT_DOUBLE_EQ(1.0, mol.unitCell()->volume());
+  EXPECT_DOUBLE_EQ(90.0, mol.unitCell()->alpha() * RAD_TO_DEG);
+  EXPECT_DOUBLE_EQ(120.0, mol.unitCell()->beta() * RAD_TO_DEG);
+  EXPECT_DOUBLE_EQ(77.0, mol.unitCell()->gamma() * RAD_TO_DEG);
 }
 
 TEST(UnitCellTest, fractionalCoordinates)
@@ -245,8 +233,7 @@ TEST(UnitCellTest, fractionalCoordinates)
   Array<Vector3> ccoords = mol.atomPositions3d();
   for (int i = 0; i < 6; ++i) {
     for (int j = 0; j < 3; ++j) {
-      EXPECT_FLOAT_EQ(static_cast<float>(ccoords_ref[i][j]),
-                      static_cast<float>(ccoords[i][j]))
+      EXPECT_DOUBLE_EQ(ccoords_ref[i][j], ccoords[i][j])
         << " (i=" << i << "j=" << j << ")";
     }
   }
@@ -315,13 +302,13 @@ TEST(UnitCellTest, CubicSystem)
   Real a = static_cast<Real>(5.0);
   UnitCell cubic(a, a, a, M_PI_2, M_PI_2, M_PI_2);
 
-  EXPECT_FLOAT_EQ(a, cubic.a());
-  EXPECT_FLOAT_EQ(a, cubic.b());
-  EXPECT_FLOAT_EQ(a, cubic.c());
-  EXPECT_FLOAT_EQ(M_PI_2, cubic.alpha());
-  EXPECT_FLOAT_EQ(M_PI_2, cubic.beta());
-  EXPECT_FLOAT_EQ(M_PI_2, cubic.gamma());
-  EXPECT_FLOAT_EQ(a * a * a, cubic.volume());
+  EXPECT_DOUBLE_EQ(a, cubic.a());
+  EXPECT_DOUBLE_EQ(a, cubic.b());
+  EXPECT_DOUBLE_EQ(a, cubic.c());
+  EXPECT_DOUBLE_EQ(M_PI_2, cubic.alpha());
+  EXPECT_DOUBLE_EQ(M_PI_2, cubic.beta());
+  EXPECT_DOUBLE_EQ(M_PI_2, cubic.gamma());
+  EXPECT_DOUBLE_EQ(a * a * a, cubic.volume());
   EXPECT_TRUE(cubic.isRegular());
 }
 
@@ -332,10 +319,10 @@ TEST(UnitCellTest, TetragonalSystem)
   Real c = static_cast<Real>(6.0);
   UnitCell tetragonal(a, a, c, M_PI_2, M_PI_2, M_PI_2);
 
-  EXPECT_FLOAT_EQ(a, tetragonal.a());
-  EXPECT_FLOAT_EQ(a, tetragonal.b());
-  EXPECT_FLOAT_EQ(c, tetragonal.c());
-  EXPECT_FLOAT_EQ(a * a * c, tetragonal.volume());
+  EXPECT_DOUBLE_EQ(a, tetragonal.a());
+  EXPECT_DOUBLE_EQ(a, tetragonal.b());
+  EXPECT_DOUBLE_EQ(c, tetragonal.c());
+  EXPECT_DOUBLE_EQ(a * a * c, tetragonal.volume());
   EXPECT_TRUE(tetragonal.isRegular());
 }
 
@@ -347,10 +334,10 @@ TEST(UnitCellTest, OrthorhombicSystem)
   Real c = static_cast<Real>(5.0);
   UnitCell orthorhombic(a, b, c, M_PI_2, M_PI_2, M_PI_2);
 
-  EXPECT_FLOAT_EQ(a, orthorhombic.a());
-  EXPECT_FLOAT_EQ(b, orthorhombic.b());
-  EXPECT_FLOAT_EQ(c, orthorhombic.c());
-  EXPECT_FLOAT_EQ(a * b * c, orthorhombic.volume());
+  EXPECT_DOUBLE_EQ(a, orthorhombic.a());
+  EXPECT_DOUBLE_EQ(b, orthorhombic.b());
+  EXPECT_DOUBLE_EQ(c, orthorhombic.c());
+  EXPECT_DOUBLE_EQ(a * b * c, orthorhombic.volume());
   EXPECT_TRUE(orthorhombic.isRegular());
 }
 
@@ -362,12 +349,12 @@ TEST(UnitCellTest, HexagonalSystem)
   Real gamma = static_cast<Real>(120.0 * M_PI / 180.0);
   UnitCell hexagonal(a, a, c, M_PI_2, M_PI_2, gamma);
 
-  EXPECT_FLOAT_EQ(a, hexagonal.a());
-  EXPECT_FLOAT_EQ(a, hexagonal.b());
-  EXPECT_FLOAT_EQ(c, hexagonal.c());
-  EXPECT_FLOAT_EQ(M_PI_2, hexagonal.alpha());
-  EXPECT_FLOAT_EQ(M_PI_2, hexagonal.beta());
-  EXPECT_FLOAT_EQ(gamma, hexagonal.gamma());
+  EXPECT_DOUBLE_EQ(a, hexagonal.a());
+  EXPECT_DOUBLE_EQ(a, hexagonal.b());
+  EXPECT_DOUBLE_EQ(c, hexagonal.c());
+  EXPECT_DOUBLE_EQ(M_PI_2, hexagonal.alpha());
+  EXPECT_DOUBLE_EQ(M_PI_2, hexagonal.beta());
+  EXPECT_DOUBLE_EQ(gamma, hexagonal.gamma());
 
   // Volume = a²c·sin(120°) = a²c·√3/2
   Real expected_vol = a * a * c * std::sin(gamma);
@@ -382,12 +369,12 @@ TEST(UnitCellTest, RhombohedralSystem)
   Real alpha = static_cast<Real>(75.0 * M_PI / 180.0);
   UnitCell rhombohedral(a, a, a, alpha, alpha, alpha);
 
-  EXPECT_FLOAT_EQ(a, rhombohedral.a());
-  EXPECT_FLOAT_EQ(a, rhombohedral.b());
-  EXPECT_FLOAT_EQ(a, rhombohedral.c());
-  EXPECT_FLOAT_EQ(alpha, rhombohedral.alpha());
-  EXPECT_FLOAT_EQ(alpha, rhombohedral.beta());
-  EXPECT_FLOAT_EQ(alpha, rhombohedral.gamma());
+  EXPECT_DOUBLE_EQ(a, rhombohedral.a());
+  EXPECT_DOUBLE_EQ(a, rhombohedral.b());
+  EXPECT_DOUBLE_EQ(a, rhombohedral.c());
+  EXPECT_DOUBLE_EQ(alpha, rhombohedral.alpha());
+  EXPECT_DOUBLE_EQ(alpha, rhombohedral.beta());
+  EXPECT_DOUBLE_EQ(alpha, rhombohedral.gamma());
   EXPECT_TRUE(rhombohedral.isRegular());
 }
 
@@ -400,12 +387,12 @@ TEST(UnitCellTest, MonoclinicSystem)
   Real beta = static_cast<Real>(110.0 * M_PI / 180.0);
   UnitCell monoclinic(a, b, c, M_PI_2, beta, M_PI_2);
 
-  EXPECT_FLOAT_EQ(a, monoclinic.a());
-  EXPECT_FLOAT_EQ(b, monoclinic.b());
-  EXPECT_FLOAT_EQ(c, monoclinic.c());
-  EXPECT_FLOAT_EQ(M_PI_2, monoclinic.alpha());
-  EXPECT_FLOAT_EQ(beta, monoclinic.beta());
-  EXPECT_FLOAT_EQ(M_PI_2, monoclinic.gamma());
+  EXPECT_DOUBLE_EQ(a, monoclinic.a());
+  EXPECT_DOUBLE_EQ(b, monoclinic.b());
+  EXPECT_DOUBLE_EQ(c, monoclinic.c());
+  EXPECT_DOUBLE_EQ(M_PI_2, monoclinic.alpha());
+  EXPECT_DOUBLE_EQ(beta, monoclinic.beta());
+  EXPECT_DOUBLE_EQ(M_PI_2, monoclinic.gamma());
   EXPECT_TRUE(monoclinic.isRegular());
 }
 
@@ -420,12 +407,12 @@ TEST(UnitCellTest, TriclinicSystem)
   Real gamma = static_cast<Real>(95.0 * M_PI / 180.0);
   UnitCell triclinic(a, b, c, alpha, beta, gamma);
 
-  EXPECT_FLOAT_EQ(a, triclinic.a());
-  EXPECT_FLOAT_EQ(b, triclinic.b());
-  EXPECT_FLOAT_EQ(c, triclinic.c());
-  EXPECT_FLOAT_EQ(alpha, triclinic.alpha());
-  EXPECT_FLOAT_EQ(beta, triclinic.beta());
-  EXPECT_FLOAT_EQ(gamma, triclinic.gamma());
+  EXPECT_DOUBLE_EQ(a, triclinic.a());
+  EXPECT_DOUBLE_EQ(b, triclinic.b());
+  EXPECT_DOUBLE_EQ(c, triclinic.c());
+  EXPECT_DOUBLE_EQ(alpha, triclinic.alpha());
+  EXPECT_DOUBLE_EQ(beta, triclinic.beta());
+  EXPECT_DOUBLE_EQ(gamma, triclinic.gamma());
   EXPECT_TRUE(triclinic.isRegular());
 }
 
@@ -444,9 +431,9 @@ TEST(UnitCellTest, VectorConstructor)
   EXPECT_TRUE(vectorsEqual(a, cell.aVector()));
   EXPECT_TRUE(vectorsEqual(b, cell.bVector()));
   EXPECT_TRUE(vectorsEqual(c, cell.cVector()));
-  EXPECT_FLOAT_EQ(3.0, cell.a());
-  EXPECT_FLOAT_EQ(4.0, cell.b());
-  EXPECT_FLOAT_EQ(5.0, cell.c());
+  EXPECT_DOUBLE_EQ(3.0, cell.a());
+  EXPECT_DOUBLE_EQ(4.0, cell.b());
+  EXPECT_DOUBLE_EQ(5.0, cell.c());
 }
 
 TEST(UnitCellTest, MatrixConstructor)
@@ -468,15 +455,15 @@ TEST(UnitCellTest, CopyConstructorAndAssignment)
   UnitCell cell1(3.0, 4.0, 5.0, M_PI_2, M_PI_2, M_PI_2);
   UnitCell cell2(cell1);
 
-  EXPECT_FLOAT_EQ(cell1.a(), cell2.a());
-  EXPECT_FLOAT_EQ(cell1.b(), cell2.b());
-  EXPECT_FLOAT_EQ(cell1.c(), cell2.c());
+  EXPECT_DOUBLE_EQ(cell1.a(), cell2.a());
+  EXPECT_DOUBLE_EQ(cell1.b(), cell2.b());
+  EXPECT_DOUBLE_EQ(cell1.c(), cell2.c());
 
   UnitCell cell3;
   cell3 = cell1;
-  EXPECT_FLOAT_EQ(cell1.a(), cell3.a());
-  EXPECT_FLOAT_EQ(cell1.b(), cell3.b());
-  EXPECT_FLOAT_EQ(cell1.c(), cell3.c());
+  EXPECT_DOUBLE_EQ(cell1.a(), cell3.a());
+  EXPECT_DOUBLE_EQ(cell1.b(), cell3.b());
+  EXPECT_DOUBLE_EQ(cell1.c(), cell3.c());
 }
 
 // ============================================================================
@@ -867,9 +854,9 @@ TEST(UnitCellTest, SetVectors)
   cell.setBVector(Vector3(0.0, 4.0, 0.0));
   cell.setCVector(Vector3(0.0, 0.0, 5.0));
 
-  EXPECT_FLOAT_EQ(3.0, cell.a());
-  EXPECT_FLOAT_EQ(4.0, cell.b());
-  EXPECT_FLOAT_EQ(5.0, cell.c());
+  EXPECT_DOUBLE_EQ(3.0, cell.a());
+  EXPECT_DOUBLE_EQ(4.0, cell.b());
+  EXPECT_DOUBLE_EQ(5.0, cell.c());
 }
 
 // ============================================================================
@@ -880,7 +867,7 @@ TEST(UnitCellTest, VerySmallCell)
 {
   UnitCell tiny(0.1, 0.1, 0.1, M_PI_2, M_PI_2, M_PI_2);
 
-  EXPECT_FLOAT_EQ(0.1, tiny.a());
+  EXPECT_DOUBLE_EQ(0.1, tiny.a());
   EXPECT_NEAR(0.001, tiny.volume(), 1e-6);
   EXPECT_TRUE(tiny.isRegular());
 
@@ -895,7 +882,7 @@ TEST(UnitCellTest, VeryLargeCell)
 {
   UnitCell large(100.0, 100.0, 100.0, M_PI_2, M_PI_2, M_PI_2);
 
-  EXPECT_FLOAT_EQ(100.0, large.a());
+  EXPECT_DOUBLE_EQ(100.0, large.a());
   EXPECT_NEAR(1000000.0, large.volume(), 1.0);
   EXPECT_TRUE(large.isRegular());
 }
