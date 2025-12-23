@@ -56,12 +56,12 @@ bool CrystalTools::rotateToStandardOrientation(Molecule& molecule, Options opts)
   Matrix3 newMat = q.transpose() * before;
   const Real L1 = fabs(newMat(0, 0));
   if (newMat(0, 0) < 0.0) {
-    // rotate around z-axis
+    // rotate around z-axis so that newMat(0, 0) > 0
     newMat.row(0) *= -1.0;
     newMat.row(1) *= -1.0;
   }
   if (newMat(1, 1) < 0.0) {
-    // rotate around x-axis
+    // rotate around x-axis so that newMat(1, 1) > 0
     newMat.row(1) *= -1.0;
     newMat.row(2) *= -1.0;
   }
