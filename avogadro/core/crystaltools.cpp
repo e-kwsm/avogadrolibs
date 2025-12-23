@@ -123,6 +123,19 @@ bool CrystalTools::rotateToStandardOrientation(Molecule& molecule, Options opts)
   return setCellMatrix(molecule, newMat, opts & TransformAtoms);
 }
 
+bool CrystalTools::reflectCellVector(Molecule& molecule, int i, Options opts)
+{
+  if (!molecule.unitCell())
+    return false;
+  auto cell = *molecule.unitCell();
+  if (opts & RightHanded && !cell.isLeftHanded()) {
+    // the cell is already right-handed
+    return false;
+  }
+  cell.reflect(i);
+  return setCellMatrix(molecule, cell.cellMatrix(), opts & TransformAtoms);
+}
+
 bool CrystalTools::setVolume(Molecule& molecule, Real newVolume, Options opts)
 {
   if (!molecule.unitCell())

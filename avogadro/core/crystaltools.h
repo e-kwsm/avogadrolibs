@@ -63,6 +63,16 @@ public:
                                           Options opts = None);
 
   /**
+   * Reflect the cell vector @a i in base plane.
+   * @param opts If TransformAtoms is specified, the atoms in @a molecule are
+   * rotated along with the unit cell.
+   * If RightHanded is not specified, always modify the cell vector @a i; if
+   * RightHanded is specified but the cell is already right-handed, do nothing
+   * and return false.
+   */
+  static bool reflectCellVector(Molecule& molecule, int i, Options opts = None);
+
+  /**
    * Isotropically scale the volume of the unit cell in @a molecule to @a
    * newVolume (in cubic angstrom).
    * @param opts If TransformAtoms is specified, the atoms in @a molecule are
