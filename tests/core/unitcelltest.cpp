@@ -32,29 +32,6 @@ Molecule createCrystal(const Vector3& a, const Vector3& b, const Vector3& c)
   return mol;
 }
 
-// use alpha, beta, gamma in degrees
-bool checkParams(const UnitCell& cell, Real a, Real b, Real c, Real alpha,
-                 Real beta, Real gamma)
-{
-  Real aRad = alpha * DEG_TO_RAD;
-  Real bRad = beta * DEG_TO_RAD;
-  Real gRad = gamma * DEG_TO_RAD;
-  if (std::fabs(cell.a() - a) > 1e-3 || std::fabs(cell.b() - b) > 1e-3 ||
-      std::fabs(cell.c() - c) > 1e-3 || std::fabs(cell.alpha() - aRad) > 1e-3 ||
-      std::fabs(cell.beta() - bRad) > 1e-3 ||
-      std::fabs(cell.gamma() - gRad) > 1e-3) {
-    std::cerr << "Actual cell: "
-              << "a=" << cell.a() << " "
-              << "b=" << cell.b() << " "
-              << "c=" << cell.c() << " "
-              << "alpha=" << cell.alpha() * RAD_TO_DEG << " "
-              << "beta=" << cell.beta() * RAD_TO_DEG << " "
-              << "gamma=" << cell.gamma() * RAD_TO_DEG << std::endl;
-    return false;
-  }
-  return true;
-}
-
 TEST(UnitCellTest, cellParameters)
 {
   Real a = static_cast<Real>(2.0);
@@ -110,10 +87,13 @@ TEST(UnitCellTest, niggliReduce_G1973)
   EXPECT_FALSE(CrystalTools::isNiggliReduced(mol));
   EXPECT_TRUE(CrystalTools::niggliReduce(mol));
   EXPECT_TRUE(CrystalTools::isNiggliReduced(mol));
-  EXPECT_TRUE(
-    checkParams(*mol.unitCell(), static_cast<Real>(2.0), static_cast<Real>(4.0),
-                static_cast<Real>(4.0), static_cast<Real>(60.0000),
-                static_cast<Real>(79.1931), static_cast<Real>(75.5225)));
+  const auto& cell = *mol.unitCell();
+  EXPECT_NEAR(cell.a(), 2.0, 1e-3);
+  EXPECT_NEAR(cell.b(), 4.0, 1e-3);
+  EXPECT_NEAR(cell.c(), 4.0, 1e-3);
+  EXPECT_NEAR(cell.alpha() * RAD_TO_DEG, 60.0000, 1e-3);
+  EXPECT_NEAR(cell.beta() * RAD_TO_DEG, 79.1931, 1e-3);
+  EXPECT_NEAR(cell.gamma() * RAD_TO_DEG, 75.5225, 1e-3);
 }
 
 TEST(UnitCellTest, niggliReduce_GK1976)
@@ -126,10 +106,13 @@ TEST(UnitCellTest, niggliReduce_GK1976)
   EXPECT_FALSE(CrystalTools::isNiggliReduced(mol));
   EXPECT_TRUE(CrystalTools::niggliReduce(mol));
   EXPECT_TRUE(CrystalTools::isNiggliReduced(mol));
-  EXPECT_TRUE(
-    checkParams(*mol.unitCell(), static_cast<Real>(2.0), static_cast<Real>(3.0),
-                static_cast<Real>(3.0), static_cast<Real>(60.0000),
-                static_cast<Real>(75.5225), static_cast<Real>(70.5288)));
+  const auto& cell = *mol.unitCell();
+  EXPECT_NEAR(cell.a(), 2.0, 1e-3);
+  EXPECT_NEAR(cell.b(), 3.0, 1e-3);
+  EXPECT_NEAR(cell.c(), 3.0, 1e-3);
+  EXPECT_NEAR(cell.alpha() * RAD_TO_DEG, 60.0000, 1e-3);
+  EXPECT_NEAR(cell.beta() * RAD_TO_DEG, 75.5225, 1e-3);
+  EXPECT_NEAR(cell.gamma() * RAD_TO_DEG, 70.5288, 1e-3);
 }
 
 // For the rotate test, just make sure that the cell parameters are the same
@@ -261,24 +244,24 @@ TEST(UnitCellTest, fractionalCoordinates)
   Array<Vector3> fcoords;
   EXPECT_TRUE(CrystalTools::fractionalCoordinates(mol, fcoords));
   EXPECT_EQ(mol.atomCount(), fcoords.size());
-  EXPECT_TRUE(std::fabs(fcoords[0][0] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[0][1] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[0][2] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[1][0] - static_cast<Real>(0.5)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[1][1] - static_cast<Real>(0.5)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[1][2] - static_cast<Real>(0.5)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[2][0] - static_cast<Real>(0.75)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[2][1] - static_cast<Real>(0.5)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[2][2] - static_cast<Real>(0.25)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[3][0] - static_cast<Real>(1)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[3][1] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[3][2] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[4][0] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[4][1] - static_cast<Real>(1)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[4][2] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[5][0] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[5][1] - static_cast<Real>(0)) < 1e-4);
-  EXPECT_TRUE(std::fabs(fcoords[5][2] - static_cast<Real>(1)) < 1e-4);
+  EXPECT_NEAR(fcoords[0][0], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[0][1], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[0][2], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[1][0], static_cast<Real>(0.5), 1e-4);
+  EXPECT_NEAR(fcoords[1][1], static_cast<Real>(0.5), 1e-4);
+  EXPECT_NEAR(fcoords[1][2], static_cast<Real>(0.5), 1e-4);
+  EXPECT_NEAR(fcoords[2][0], static_cast<Real>(0.75), 1e-4);
+  EXPECT_NEAR(fcoords[2][1], static_cast<Real>(0.5), 1e-4);
+  EXPECT_NEAR(fcoords[2][2], static_cast<Real>(0.25), 1e-4);
+  EXPECT_NEAR(fcoords[3][0], static_cast<Real>(1), 1e-4);
+  EXPECT_NEAR(fcoords[3][1], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[3][2], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[4][0], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[4][1], static_cast<Real>(1), 1e-4);
+  EXPECT_NEAR(fcoords[4][2], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[5][0], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[5][1], static_cast<Real>(0), 1e-4);
+  EXPECT_NEAR(fcoords[5][2], static_cast<Real>(1), 1e-4);
 
   mol.atomPositions3d().clear();
   EXPECT_TRUE(CrystalTools::setFractionalCoordinates(mol, fcoords));
