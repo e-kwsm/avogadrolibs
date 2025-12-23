@@ -150,9 +150,11 @@ TEST(UnitCellTest, niggliReduce_GK1976)
   gamma = mol.unitCell()->gamma();                                             \
   EXPECT_TRUE(CrystalTools::rotateToStandardOrientation(mol));                 \
   EXPECT_FLOAT_EQ(static_cast<float>(a),                                       \
-                  static_cast<float>(mol.unitCell()->a()));                    \
+                  static_cast<float>(mol.unitCell()->aVector()[0]));           \
   EXPECT_FLOAT_EQ(static_cast<float>(b),                                       \
                   static_cast<float>(mol.unitCell()->b()));                    \
+  EXPECT_GT(static_cast<float>(mol.unitCell()->bVector()[1]), 0.0);            \
+  EXPECT_FLOAT_EQ(static_cast<float>(mol.unitCell()->bVector()[2]), 0.0);      \
   EXPECT_FLOAT_EQ(static_cast<float>(c),                                       \
                   static_cast<float>(mol.unitCell()->c()));                    \
   EXPECT_FLOAT_EQ(static_cast<float>(alpha),                                   \
