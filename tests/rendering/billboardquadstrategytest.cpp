@@ -58,21 +58,21 @@ TEST(BillboardQuadStrategyTest, exercise)
 
   ASSERT_EQ(4, quad.size());
 
-  EXPECT_FLOAT_EQ(243.83968f, quad[0][0]);
-  EXPECT_FLOAT_EQ(-185.99776f, quad[0][1]);
-  EXPECT_FLOAT_EQ(730.30627f, quad[0][2]);
+  EXPECT_DOUBLE_EQ(243.83968, quad[0][0]);
+  EXPECT_DOUBLE_EQ(-185.99776, quad[0][1]);
+  EXPECT_DOUBLE_EQ(730.30627, quad[0][2]);
 
-  EXPECT_FLOAT_EQ(389.97992f, quad[1][0]);
-  EXPECT_FLOAT_EQ(194.00380f, quad[1][1]);
-  EXPECT_FLOAT_EQ(437.99942f, quad[1][2]);
+  EXPECT_DOUBLE_EQ(389.97992, quad[1][0]);
+  EXPECT_DOUBLE_EQ(194.00380, quad[1][1]);
+  EXPECT_DOUBLE_EQ(437.99942, quad[1][2]);
 
-  EXPECT_FLOAT_EQ(-134.35634f, quad[2][0]);
-  EXPECT_FLOAT_EQ(-379.83984f, quad[2][1]);
-  EXPECT_FLOAT_EQ(289.22885f, quad[2][2]);
+  EXPECT_DOUBLE_EQ(-134.35634, quad[2][0]);
+  EXPECT_DOUBLE_EQ(-379.83984, quad[2][1]);
+  EXPECT_DOUBLE_EQ(289.22885, quad[2][2]);
 
-  EXPECT_FLOAT_EQ(11.783905f, quad[3][0]);
-  EXPECT_FLOAT_EQ(0.16171265f, quad[3][1]);
-  EXPECT_FLOAT_EQ(-3.0780029f, quad[3][2]);
+  EXPECT_DOUBLE_EQ(11.783905, quad[3][0]);
+  EXPECT_DOUBLE_EQ(0.16171265, quad[3][1]);
+  EXPECT_DOUBLE_EQ(-3.0780029, quad[3][2]);
 
   // Test the useCameraUp options:
   useCameraUp = true;
@@ -83,21 +83,21 @@ TEST(BillboardQuadStrategyTest, exercise)
 
   ASSERT_EQ(4, quad.size());
 
-  EXPECT_FLOAT_EQ(538.01459f, quad[0][0]);
-  EXPECT_FLOAT_EQ(371.01038f, quad[0][1]);
-  EXPECT_FLOAT_EQ(457.25916f, quad[0][2]);
+  EXPECT_DOUBLE_EQ(538.01459, quad[0][0]);
+  EXPECT_DOUBLE_EQ(371.01038, quad[0][1]);
+  EXPECT_DOUBLE_EQ(457.25916, quad[0][2]);
 
-  EXPECT_FLOAT_EQ(387.27307f, quad[1][0]);
-  EXPECT_FLOAT_EQ(484.04947f, quad[1][1]);
-  EXPECT_FLOAT_EQ(-7.1766663f, quad[1][2]);
+  EXPECT_DOUBLE_EQ(387.27307, quad[1][0]);
+  EXPECT_DOUBLE_EQ(484.04947, quad[1][1]);
+  EXPECT_DOUBLE_EQ(-7.1766663, quad[1][2]);
 
-  EXPECT_FLOAT_EQ(162.52542f, quad[2][0]);
-  EXPECT_FLOAT_EQ(-112.87738f, quad[2][1]);
-  EXPECT_FLOAT_EQ(461.35785f, quad[2][2]);
+  EXPECT_DOUBLE_EQ(162.52542, quad[2][0]);
+  EXPECT_DOUBLE_EQ(-112.87738, quad[2][1]);
+  EXPECT_DOUBLE_EQ(461.35785, quad[2][2]);
 
-  EXPECT_FLOAT_EQ(11.783905f, quad[3][0]);
-  EXPECT_FLOAT_EQ(0.16171265f, quad[3][1]);
-  EXPECT_FLOAT_EQ(-3.0779662f, quad[3][2]);
+  EXPECT_DOUBLE_EQ(11.783905, quad[3][0]);
+  EXPECT_DOUBLE_EQ(0.16171265, quad[3][1]);
+  EXPECT_DOUBLE_EQ(-3.0779662, quad[3][2]);
 
   // Rotating the camera should update the quad:
   camera.preRotate(36.f, Vector3f::UnitY());
@@ -106,19 +106,19 @@ TEST(BillboardQuadStrategyTest, exercise)
 
   ASSERT_EQ(4, quad.size());
 
-  EXPECT_FLOAT_EQ(727.31494f, quad[0][0]);
-  EXPECT_FLOAT_EQ(218.08212f, quad[0][1]);
-  EXPECT_FLOAT_EQ(-255.12888f, quad[0][2]);
+  EXPECT_DOUBLE_EQ(727.31494, quad[0][0]);
+  EXPECT_DOUBLE_EQ(218.08212, quad[0][1]);
+  EXPECT_DOUBLE_EQ(-255.12888, quad[0][2]);
 
-  EXPECT_FLOAT_EQ(383.45709f, quad[1][0]);
-  EXPECT_FLOAT_EQ(486.99631f, quad[1][1]);
-  EXPECT_FLOAT_EQ(-8.8598633f, quad[1][2]);
+  EXPECT_DOUBLE_EQ(383.45709, quad[1][0]);
+  EXPECT_DOUBLE_EQ(486.99631, quad[1][1]);
+  EXPECT_DOUBLE_EQ(-8.8598633, quad[1][2]);
 
-  EXPECT_FLOAT_EQ(351.82578f, quad[2][0]);
-  EXPECT_FLOAT_EQ(-265.80563f, quad[2][1]);
-  EXPECT_FLOAT_EQ(-251.03018f, quad[2][2]);
+  EXPECT_DOUBLE_EQ(351.82578, quad[2][0]);
+  EXPECT_DOUBLE_EQ(-265.80563, quad[2][1]);
+  EXPECT_DOUBLE_EQ(-251.03018, quad[2][2]);
 
-  EXPECT_FLOAT_EQ(7.967926f, quad[3][0]);
-  EXPECT_FLOAT_EQ(3.108551f, quad[3][1]);
-  EXPECT_FLOAT_EQ(-4.7611632f, quad[3][2]);
+  EXPECT_DOUBLE_EQ(7.967926, quad[3][0]);
+  EXPECT_DOUBLE_EQ(3.108551, quad[3][1]);
+  EXPECT_DOUBLE_EQ(-4.7611632, quad[3][2]);
 }
