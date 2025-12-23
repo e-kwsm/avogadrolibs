@@ -174,18 +174,18 @@ TEST(CjsonTest, crystal)
 
   const UnitCell* unitCell = molecule.unitCell();
   ASSERT_NE(unitCell, (UnitCell*)nullptr);
-  EXPECT_TRUE(std::fabs((float)unitCell->a() - 2.95812f) < 1e-5f);
-  EXPECT_TRUE(std::fabs((float)unitCell->b() - 4.59373f) < 1e-5f);
-  EXPECT_TRUE(std::fabs((float)unitCell->c() - 4.59373f) < 1e-5f);
-  EXPECT_TRUE(std::fabs((float)unitCell->alpha() - (.5f * PI_F)) < 1e-5f);
-  EXPECT_TRUE(std::fabs((float)unitCell->beta() - (.5f * PI_F)) < 1e-5f);
-  EXPECT_TRUE(std::fabs((float)unitCell->gamma() - (.5f * PI_F)) < 1e-5f);
+  EXPECT_NEAR((float)unitCell->a(), 2.95812f, 1e-5f);
+  EXPECT_NEAR((float)unitCell->b(), 4.59373f, 1e-5f);
+  EXPECT_NEAR((float)unitCell->c(), 4.59373f, 1e-5f);
+  EXPECT_NEAR((float)unitCell->alpha(), .5f * PI_F, 1e-5f);
+  EXPECT_NEAR((float)unitCell->beta(), .5f * PI_F, 1e-5f);
+  EXPECT_NEAR((float)unitCell->gamma(), .5f * PI_F, 1e-5f);
 
   Atom atom = molecule.atom(5);
   EXPECT_EQ(atom.atomicNumber(), 8);
-  EXPECT_TRUE(std::fabs((float)atom.position3d().x() - 1.479060f) < 1e-5f);
-  EXPECT_TRUE(std::fabs((float)atom.position3d().y() - 3.699331f) < 1e-5f);
-  EXPECT_TRUE(std::fabs((float)atom.position3d().z() - 0.894399f) < 1e-5f);
+  EXPECT_NEAR((float)atom.position3d().x(), 1.479060f, 1e-5f);
+  EXPECT_NEAR((float)atom.position3d().y(), 3.699331f, 1e-5f);
+  EXPECT_NEAR((float)atom.position3d().z(), 0.894399f, 1e-5f);
 
   std::string cjsonStr;
   cjson.writeString(cjsonStr, molecule);
