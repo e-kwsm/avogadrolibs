@@ -137,50 +137,52 @@ TEST(UnitCellTest, niggliReduce_GK1976)
 
 // For the rotate test, just make sure that the cell parameters are the same
 // before and after the rotation.
-#define RTSO_INIT                                                              \
-  Real a, b, c, alpha, beta, gamma;                                            \
-  Matrix3 mat;                                                                 \
-  Molecule mol
-#define RTSO_DO_TEST                                                           \
-  a = mol.unitCell()->a();                                                     \
-  b = mol.unitCell()->b();                                                     \
-  c = mol.unitCell()->c();                                                     \
-  alpha = mol.unitCell()->alpha();                                             \
-  beta = mol.unitCell()->beta();                                               \
-  gamma = mol.unitCell()->gamma();                                             \
-  EXPECT_TRUE(CrystalTools::rotateToStandardOrientation(mol));                 \
-  EXPECT_FLOAT_EQ(static_cast<float>(a),                                       \
-                  static_cast<float>(mol.unitCell()->aVector()[0]));           \
-  EXPECT_FLOAT_EQ(static_cast<float>(b),                                       \
-                  static_cast<float>(mol.unitCell()->b()));                    \
-  EXPECT_GT(static_cast<float>(mol.unitCell()->bVector()[1]), 0.0);            \
-  EXPECT_FLOAT_EQ(static_cast<float>(mol.unitCell()->bVector()[2]), 0.0);      \
-  EXPECT_FLOAT_EQ(static_cast<float>(c),                                       \
-                  static_cast<float>(mol.unitCell()->c()));                    \
-  EXPECT_FLOAT_EQ(static_cast<float>(alpha),                                   \
-                  static_cast<float>(mol.unitCell()->alpha()));                \
-  EXPECT_FLOAT_EQ(static_cast<float>(beta),                                    \
-                  static_cast<float>(mol.unitCell()->beta()));                 \
-  EXPECT_FLOAT_EQ(static_cast<float>(gamma),                                   \
-                  static_cast<float>(mol.unitCell()->gamma()))
-#define RTSO_TEST_PARAMS(a_, b_, c_, alpha_, beta_, gamma_)                    \
-  mol = createCrystal(static_cast<Real>(a_), static_cast<Real>(b_),            \
-                      static_cast<Real>(c_), static_cast<Real>(alpha_),        \
-                      static_cast<Real>(beta_), static_cast<Real>(gamma_));    \
-  RTSO_DO_TEST
-#define RTSO_TEST_MATRIX(v1x, v1y, v1z, v2x, v2y, v2z, v3x, v3y, v3z)          \
-  mat.col(0) = Vector3(static_cast<Real>(v1x), static_cast<Real>(v1y),         \
-                       static_cast<Real>(v1z));                                \
-  mat.col(1) = Vector3(static_cast<Real>(v2x), static_cast<Real>(v2y),         \
-                       static_cast<Real>(v2z));                                \
-  mat.col(2) = Vector3(static_cast<Real>(v3x), static_cast<Real>(v3y),         \
-                       static_cast<Real>(v3z));                                \
-  CrystalTools::setCellMatrix(mol, mat);                                       \
-  RTSO_DO_TEST
+void RTSO_DO_TEST(Molecule& mol)
+{
+  const Real a = mol.unitCell()->a();
+  const Real b = mol.unitCell()->b();
+  const Real c = mol.unitCell()->c();
+  const Real alpha = mol.unitCell()->alpha();
+  const Real beta = mol.unitCell()->beta();
+  const Real gamma = mol.unitCell()->gamma();
+  EXPECT_TRUE(CrystalTools::rotateToStandardOrientation(mol));
+  EXPECT_FLOAT_EQ(static_cast<float>(a),
+                  static_cast<float>(mol.unitCell()->aVector()[0]));
+  EXPECT_FLOAT_EQ(static_cast<float>(b),
+                  static_cast<float>(mol.unitCell()->b()));
+  EXPECT_GT(static_cast<float>(mol.unitCell()->bVector()[1]), 0.0);
+  EXPECT_FLOAT_EQ(static_cast<float>(mol.unitCell()->bVector()[2]), 0.0);
+  EXPECT_FLOAT_EQ(static_cast<float>(c),
+                  static_cast<float>(mol.unitCell()->c()));
+  EXPECT_FLOAT_EQ(static_cast<float>(alpha),
+                  static_cast<float>(mol.unitCell()->alpha()));
+  EXPECT_FLOAT_EQ(static_cast<float>(beta),
+                  static_cast<float>(mol.unitCell()->beta()));
+  EXPECT_FLOAT_EQ(static_cast<float>(gamma),
+                  static_cast<float>(mol.unitCell()->gamma()));
+}
+
+void RTSO_TEST_PARAMS(Real a_, Real b_, Real c_, Real alpha_, Real beta_,
+                      Real gamma_)
+{
+  Molecule mol = createCrystal(a_, b_, c_, alpha_, beta_, gamma_);
+  RTSO_DO_TEST(mol);
+}
+
+void RTSO_TEST_MATRIX(Real v1x, Real v1y, Real v1z, Real v2x, Real v2y,
+                      Real v2z, Real v3x, Real v3y, Real v3z)
+{
+  Molecule mol;
+  Matrix3 mat;
+  mat.col(0) = Vector3(v1x, v1y, v1z);
+  mat.col(1) = Vector3(v2x, v2y, v2z);
+  mat.col(2) = Vector3(v3x, v3y, v3z);
+  CrystalTools::setCellMatrix(mol, mat);
+  RTSO_DO_TEST(mol);
+}
 
 TEST(UnitCellTest, rotateToStandardOrientation)
 {
-  RTSO_INIT;
   RTSO_TEST_PARAMS(3, 3, 3, 90, 90, 90);
   RTSO_TEST_PARAMS(3, 3, 3, 70, 90, 80);
   RTSO_TEST_PARAMS(3, 3, 3, 120, 123, 100);
