@@ -233,6 +233,55 @@ TEST(UnitCellTest, rotateToStandardOrientation_rightHanded)
   }
 }
 
+TEST(UnitCellTest, swapCellVectors)
+{
+  // left-handed systems
+  {
+    // [j, -k, i]
+    auto mol =
+      createCrystal({ 0.0, 4.0, 0.0 }, { 0.0, 0.0, -5.0 }, { 6.0, 0.0, 0.0 });
+    mol.addAtom(2).setPosition3d({ 1.0, 2.0, -3.0 });
+    EXPECT_TRUE(CrystalTools::swapCellVectors(mol, 0, 1));
+    const auto& uc = *mol.unitCell();
+    EXPECT_EQ(uc.aVector(), Vector3(0.0, 0.0, -5.0));
+    EXPECT_EQ(uc.bVector(), Vector3(0.0, 4.0, 0.0));
+    EXPECT_EQ(uc.cVector(), Vector3(6.0, 0.0, 0.0));
+    const auto& hoge = mol.atomPosition3d(0);
+    EXPECT_EQ(hoge, Vector3(2.0, 1.0, -3.0)) << hoge;
+  }
+
+  {
+    // [k, j, i]
+    auto mol =
+      createCrystal({ 0.0, 0.0, 4.0 }, { 0.0, 5.0, 0.0 }, { 6.0, 0.0, 0.0 });
+    mol.addAtom(2).setPosition3d({ 1.0, 2.0, 3.0 });
+    EXPECT_TRUE(CrystalTools::swapCellVectors(mol, 1, 0));
+    const auto& uc = *mol.unitCell();
+    EXPECT_EQ(uc.aVector(), Vector3(0.0, 5.0, 0.0));
+    EXPECT_EQ(uc.bVector(), Vector3(0.0, 0.0, 4.0));
+    EXPECT_EQ(uc.cVector(), Vector3(6.0, 0.0, 0.0));
+    const auto& hoge = mol.atomPosition3d(0);
+    EXPECT_EQ(hoge, Vector3(2.0, 1.0, 3.0)) << hoge;
+  }
+
+  {
+    // silicon primitive cell
+    auto mol =
+      createCrystal({ 4.0, 4.0, 0.0 }, { 4.0, 0.0, 4.0 }, { 0.0, 4.0, 4.0 });
+    mol.addAtom(2).setPosition3d({ 1.0, 2.0, 3.0 });
+    EXPECT_TRUE(CrystalTools::swapCellVectors(mol, 1, 2));
+    const auto& uc = *mol.unitCell();
+    const auto& a = uc.aVector();
+    EXPECT_EQ(a, Vector3(4.0, 4.0, 0.0));
+    const auto& b = uc.bVector();
+    EXPECT_EQ(b, Vector3(0.0, 4.0, 4.0));
+    const auto& c = uc.cVector();
+    EXPECT_EQ(c, Vector3(4.0, 0.0, 4.0));
+    const auto& hoge = mol.atomPosition3d(0);
+    EXPECT_EQ(hoge, Vector3(1.0, 3.0, 2.0)) << hoge;
+  }
+}
+
 TEST(UnitCellTest, setVolume)
 {
   Molecule mol = createCrystal(
