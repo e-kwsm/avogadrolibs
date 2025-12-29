@@ -136,6 +136,28 @@ bool CrystalTools::reflectCellVector(Molecule& molecule, int i, Options opts)
   return setCellMatrix(molecule, cell.cellMatrix(), opts & TransformAtoms);
 }
 
+bool CrystalTools::swapCellVectors(Molecule& molecule, int i, int j,
+                                   Options opts)
+{
+  using std::swap;
+
+  if (i == j)
+    return false;
+  if (!molecule.unitCell())
+    return false;
+  auto cell = *molecule.unitCell();
+  if (opts & RightHanded && !cell.isLeftHanded()) {
+    // the cell is already right-handed
+    return false;
+  }
+  cell.swapLatticeVectors(i, j);
+  for (auto& p : molecule.atomPositions3d()) {
+    swap(p[i], p[j]);
+  }
+  molecule.unitCell()->setCellMatrix(cell.cellMatrix());
+  return true;
+}
+
 bool CrystalTools::setVolume(Molecule& molecule, Real newVolume, Options opts)
 {
   if (!molecule.unitCell())
