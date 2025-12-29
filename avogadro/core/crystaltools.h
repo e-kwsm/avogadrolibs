@@ -73,6 +73,18 @@ public:
   static bool reflectCellVector(Molecule& molecule, int i, Options opts = None);
 
   /**
+   * Swap the cell vectors @a i and @ j (0, 1 and 2 for a, b and c,
+   * respectively) to reverse handedness.
+   * @param opts If RightHanded is not specified, always swap the cell vectors;
+   * if RightHanded is specified but the cell is already right-handed, do
+   * nothing and return false.
+   * TransformAtoms is enforced.
+   * @return True on success, false otherwise.
+   */
+  static bool swapCellVectors(Molecule& molecule, int i, int j,
+                              Options opts = None);
+
+  /**
    * Isotropically scale the volume of the unit cell in @a molecule to @a
    * newVolume (in cubic angstrom).
    * @param opts If TransformAtoms is specified, the atoms in @a molecule are
