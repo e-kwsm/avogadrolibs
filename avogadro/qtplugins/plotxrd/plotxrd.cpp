@@ -185,7 +185,7 @@ bool PlotXrd::generateXrdPattern(const QtGui::Molecule& mol, XrdData& results,
   std::string cifData;
   if (!Io::FileFormatManager::instance().writeString(mol, cifData, "cif")) {
     err = tr("Failed to convert molecule to CIF format.");
-    qDebug() << "Error in" << __FUNCTION__ << ":" << err;
+    qDebug() << "Error in" << __func__ << ":" << err;
     return false;
   }
 
@@ -199,7 +199,7 @@ bool PlotXrd::generateXrdPattern(const QtGui::Molecule& mol, XrdData& results,
 
   QByteArray output;
   if (!executeGenXrdPattern(args, cifData.c_str(), output, err)) {
-    qDebug() << "Error in" << __FUNCTION__ << ":" << err;
+    qDebug() << "Error in" << __func__ << ":" << err;
     return false;
   }
 
@@ -220,7 +220,7 @@ bool PlotXrd::generateXrdPattern(const QtGui::Molecule& mol, XrdData& results,
       QStringList rowData = line.split(" ", Qt::SkipEmptyParts);
       if (rowData.size() != 2) {
         err = tr("Data read from genXrdPattern appears to be corrupt!");
-        qDebug() << "Error in" << __FUNCTION__ << err;
+        qDebug() << "Error in" << __func__ << err;
         qDebug() << "Data is:";
         for (const auto& lineTmp : lines)
           qDebug() << lineTmp;
