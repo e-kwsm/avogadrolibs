@@ -199,14 +199,14 @@ void Yaehmop::writeSettings()
 void Yaehmop::displayBandDialog()
 {
   if (!m_molecule) {
-    qDebug() << "Error in " << __FUNCTION__ << ": the molecule is not set";
+    qDebug() << "Error in " << __func__ << ": the molecule is not set";
     return;
   }
 
   if (!m_molecule->unitCell()) {
     QMessageBox::warning(nullptr, tr("Avogadro2"),
                          tr("Cannot calculate band structure: no unit cell!"));
-    qDebug() << "Error in " << __FUNCTION__ << ": there is no unit cell";
+    qDebug() << "Error in " << __func__ << ": there is no unit cell";
     return;
   }
 
@@ -231,13 +231,13 @@ void Yaehmop::displayBandDialog()
 double Yaehmop::kpointDistance(const Vector3& a, const Vector3& b)
 {
   if (!m_molecule) {
-    qDebug() << "Error in" << __FUNCTION__ << ": the molecule is not set";
+    qDebug() << "Error in" << __func__ << ": the molecule is not set";
     return -1.0;
   }
 
   UnitCell* cell = m_molecule->unitCell();
   if (!cell) {
-    qDebug() << "Error in " << __FUNCTION__ << ": there is no unit cell";
+    qDebug() << "Error in " << __func__ << ": there is no unit cell";
     return -1.0;
   }
 
@@ -423,7 +423,7 @@ void Yaehmop::calculateBandStructure()
 QString Yaehmop::createGeometryAndLatticeInput() const
 {
   if (!m_molecule) {
-    qDebug() << "Error in " << __FUNCTION__ << ": the molecule is not set";
+    qDebug() << "Error in " << __func__ << ": the molecule is not set";
     return "";
   }
 
@@ -431,7 +431,7 @@ QString Yaehmop::createGeometryAndLatticeInput() const
   if (!cell) {
     QMessageBox::warning(nullptr, tr("Avogadro2"),
                          tr("Cannot calculate band structure: no unit cell!"));
-    qDebug() << "Error in " << __FUNCTION__ << ": there is no unit cell";
+    qDebug() << "Error in " << __func__ << ": there is no unit cell";
     return "";
   }
 

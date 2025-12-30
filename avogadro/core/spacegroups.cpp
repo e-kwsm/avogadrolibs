@@ -809,7 +809,7 @@ Real readTransformCoordinate(const std::string& coordinate, const Vector3& v)
 {
   std::vector<CoordinateTerm> terms;
   if (!parseCoordinate(coordinate, terms)) {
-    std::cerr << "In " << __FUNCTION__ << ", error reading string: '"
+    std::cerr << "In " << __func__ << ", error reading string: '"
               << coordinate << "'\n";
     return 0;
   }
@@ -831,7 +831,7 @@ Vector3 getSingleTransform(const std::string& transform, const Vector3& v)
 
   // This should be 3 in size. Something very bad happened if it is not.
   if (coordinates.size() != 3) {
-    std::cerr << "In " << __FUNCTION__ << ", error reading string: '"
+    std::cerr << "In " << __func__ << ", error reading string: '"
               << transform << "'\n";
     return ret;
   }
