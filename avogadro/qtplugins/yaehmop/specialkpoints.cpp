@@ -58,14 +58,14 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
   UnitCell* cell = mol.unitCell();
 
   if (!cell) {
-    qDebug() << "Error in " << __FUNCTION__ << ": cell is NULL!";
+    qDebug() << "Error in " << __func__ << ": cell is NULL!";
     specialKPoints = "";
     return;
   }
 
   // Ensure the space group number is valid
   if (spgNum == 0 || spgNum > 230) {
-    qDebug() << "Error in " << __FUNCTION__ << ": spg is invalid!";
+    qDebug() << "Error in " << __func__ << ": spg is invalid!";
     specialKPoints = "";
     return;
   }
@@ -90,7 +90,7 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
     case 67:
     case 68: {
       if (stringSplit.size() != 2) {
-        qDebug() << "Error in " << __FUNCTION__ << ": for spgNum "
+        qDebug() << "Error in " << __func__ << ": for spgNum "
                  << QString::number(spgNum) << ", size is not correct!";
         specialKPoints = "";
       } else {
@@ -111,7 +111,7 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
     case 69:
     case 70: {
       if (stringSplit.size() != 3) {
-        qDebug() << "Error in " << __FUNCTION__ << ": for spgNum "
+        qDebug() << "Error in " << __func__ << ": for spgNum "
                  << QString::number(spgNum) << ", size is not correct!";
         specialKPoints = "";
       } else {
@@ -140,7 +140,7 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
     case 73:
     case 74: {
       if (stringSplit.size() != 2) {
-        qDebug() << "Error in " << __FUNCTION__ << ": for spgNum "
+        qDebug() << "Error in " << __func__ << ": for spgNum "
                  << QString::number(spgNum) << ", size is not correct!";
         specialKPoints = "";
       } else {
@@ -177,7 +177,7 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
     case 141:
     case 142: {
       if (stringSplit.size() != 2) {
-        qDebug() << "Error in " << __FUNCTION__ << ": for spgNum "
+        qDebug() << "Error in " << __func__ << ": for spgNum "
                  << QString::number(spgNum) << ", size is not correct!";
         specialKPoints = "";
       } else {
@@ -199,7 +199,7 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
     case 166:
     case 167: {
       if (stringSplit.size() != 2) {
-        qDebug() << "Error in " << __FUNCTION__ << ": for spgNum "
+        qDebug() << "Error in " << __func__ << ": for spgNum "
                  << QString::number(spgNum) << ", size is not correct!";
         specialKPoints = "";
       } else {
@@ -214,7 +214,7 @@ void SpecialKPoints::processConditionKPoints(QString& specialKPoints,
     }
     // This shouldn't happen
     default: {
-      qDebug() << "Error in" << __FUNCTION__ << ": failed to process spg "
+      qDebug() << "Error in" << __func__ << ": failed to process spg "
                << QString::number(spgNum);
       specialKPoints = "";
       return;
