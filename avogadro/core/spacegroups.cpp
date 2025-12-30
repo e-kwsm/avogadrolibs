@@ -212,7 +212,7 @@ Real readTransformCoordinate(const std::string& coordinate, const Vector3& v)
       ret += (isNeg) ? -1.0 * v[2] : v[2];
       ++i;
     } else {
-      std::cerr << "In " << __FUNCTION__ << ", error reading string: '"
+      std::cerr << "In " << __func__ << ", error reading string: '"
                 << coordinate << "'\n";
       return 0;
     }
