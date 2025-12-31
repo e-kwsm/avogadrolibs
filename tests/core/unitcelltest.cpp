@@ -225,10 +225,11 @@ TEST(UnitCellTest, rotateToStandardOrientation_rightHanded)
     const auto& a = uc.aVector();
     EXPECT_EQ(a, Vector3(std::sqrt(2.0), 0.0, 0.0));
     const auto& b = uc.bVector();
-    EXPECT_TRUE(b.isApprox(Vector3(std::sqrt(0.5), std::sqrt(1.5), 0.0)));
+    EXPECT_TRUE(b.isApprox(Vector3(std::sqrt(0.5), std::sqrt(1.5), 0.0))) << b;
     const auto& c = uc.cVector();
     EXPECT_TRUE(c.isApprox(
-      Vector3(std::sqrt(0.5), std::sqrt(1.0 / 6.0), std::sqrt(4.0 / 3.0))));
+      Vector3(std::sqrt(0.5), std::sqrt(1.0 / 6.0), std::sqrt(4.0 / 3.0))))
+      << c;
   }
 }
 
