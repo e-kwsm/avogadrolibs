@@ -248,6 +248,12 @@ TEST(UnitCellTest, swapCellVectors)
     EXPECT_EQ(uc.cVector(), Vector3(6.0, 0.0, 0.0));
     const auto& hoge = mol.atomPosition3d(0);
     EXPECT_EQ(hoge, Vector3(2.0, 1.0, -3.0)) << hoge;
+
+    // the cell is now right-handed, so false is returned
+    EXPECT_FALSE(
+      CrystalTools::swapCellVectors(mol, 0, 1, CrystalTools::RightHanded));
+    // forcibly reverse the cell to left-handed
+    EXPECT_TRUE(CrystalTools::swapCellVectors(mol, 0, 1));
   }
 
   {
@@ -262,6 +268,12 @@ TEST(UnitCellTest, swapCellVectors)
     EXPECT_EQ(uc.cVector(), Vector3(6.0, 0.0, 0.0));
     const auto& hoge = mol.atomPosition3d(0);
     EXPECT_EQ(hoge, Vector3(2.0, 1.0, 3.0)) << hoge;
+
+    // the cell is now right-handed, so false is returned
+    EXPECT_FALSE(
+      CrystalTools::swapCellVectors(mol, 1, 0, CrystalTools::RightHanded));
+    // forcibly reverse the cell to left-handed
+    EXPECT_TRUE(CrystalTools::swapCellVectors(mol, 1, 0));
   }
 
   {
@@ -279,6 +291,12 @@ TEST(UnitCellTest, swapCellVectors)
     EXPECT_EQ(c, Vector3(4.0, 0.0, 4.0));
     const auto& hoge = mol.atomPosition3d(0);
     EXPECT_EQ(hoge, Vector3(1.0, 3.0, 2.0)) << hoge;
+
+    // the cell is now right-handed, so false is returned
+    EXPECT_FALSE(
+      CrystalTools::swapCellVectors(mol, 1, 2, CrystalTools::RightHanded));
+    // forcibly reverse the cell to left-handed
+    EXPECT_TRUE(CrystalTools::swapCellVectors(mol, 1, 2));
   }
 }
 
