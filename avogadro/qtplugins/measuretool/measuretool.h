@@ -20,6 +20,8 @@
 #include <QtCore/QPoint>
 #include <QtCore/QVector>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -39,7 +41,7 @@ public:
   QString name() const override { return tr("Measure tool"); }
   QString description() const override { return tr("Measure tool"); }
   unsigned char priority() const override { return 60; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
   void setIcon(bool darkTheme = false) override;
 
@@ -161,7 +163,7 @@ private:
                             QtGui::FragmentTools::CoordinateEditResult result,
                             const QVector<Index>& atomIndices) const;
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::Molecule* m_molecule;
   QtGui::RWMolecule* m_rwMolecule;
   Rendering::GLRenderer* m_renderer;
