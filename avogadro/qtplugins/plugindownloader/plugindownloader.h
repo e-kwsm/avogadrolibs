@@ -12,6 +12,8 @@
 
 #include <QtCore/QString>
 
+#include <memory>
+
 class QNetworkAccessManager;
 class QNetworkReply;
 class QProgressDialog;
@@ -51,7 +53,7 @@ private slots:
   void replyFinished(QNetworkReply*);
 
 private:
-  QAction* m_downloadAction;
+  std::unique_ptr<QAction> m_downloadAction;
 
   QtGui::Molecule* m_molecule;
   QNetworkAccessManager* m_network;

@@ -26,14 +26,14 @@ PluginDownloader::PluginDownloader(QObject* parent_)
   m_downloadAction->setEnabled(true);
   m_downloadAction->setText(tr("Download Plugins…"));
   m_downloadAction->setProperty("menu priority", 520);
-  connect(m_downloadAction, SIGNAL(triggered()), SLOT(showDialog()));
+  connect(m_downloadAction.get(), SIGNAL(triggered()), SLOT(showDialog()));
 }
 
 PluginDownloader::~PluginDownloader() = default;
 
 QList<QAction*> PluginDownloader::actions() const
 {
-  return QList<QAction*>() << m_downloadAction;
+  return QList<QAction*>() << m_downloadAction.get();
 }
 
 QStringList PluginDownloader::menuPath(QAction*) const
