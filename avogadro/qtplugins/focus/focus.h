@@ -10,6 +10,8 @@
 #include <avogadro/qtgui/extensionplugin.h>
 #include <avogadro/rendering/scene.h>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -50,8 +52,8 @@ private:
   Rendering::Camera* m_camera;
   Rendering::Scene* m_scene;
   QWidget* m_glWidget;
-  QAction* m_focusSelectionAction;
-  QAction* m_unfocusAction;
+  std::unique_ptr<QAction> m_focusSelectionAction;
+  std::unique_ptr<QAction> m_unfocusAction;
 
   void newFocus(Eigen::Vector3f point, float distance);
 };
