@@ -15,6 +15,8 @@
 #include <QtCore/Qt> // for Qt:: namespace
 #include <QtWidgets/QAbstractButton>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -36,7 +38,7 @@ public:
   QString name() const override { return tr("Manipulate tool"); }
   QString description() const override { return tr("Manipulate tool"); }
   unsigned char priority() const override { return 30; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
 
   void setIcon(bool darkTheme = false) override;
@@ -75,7 +77,7 @@ private:
   void axisRotate(Vector3 delta, Vector3 centroid, bool moveSelected = true);
   void tilt(Vector3 delta, Vector3 centroid);
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::RWMolecule* m_molecule;
   Rendering::GLRenderer* m_renderer;
   Rendering::Identifier m_object;
