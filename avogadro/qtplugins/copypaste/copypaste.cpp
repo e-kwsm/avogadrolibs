@@ -39,31 +39,31 @@ CopyPaste::CopyPaste(QObject* parent_)
   m_cutAction->setShortcut(QKeySequence::Cut);
   m_cutAction->setIcon(QIcon::fromTheme("edit-cut"));
   m_cutAction->setProperty("menu priority", 560);
-  connect(m_cutAction, SIGNAL(triggered()), SLOT(cut()));
+  connect(m_cutAction.get(), SIGNAL(triggered()), SLOT(cut()));
 
   m_copyAction->setShortcut(QKeySequence::Copy);
   m_copyAction->setIcon(QIcon::fromTheme("edit-copy"));
   m_copyAction->setProperty("menu priority", 550);
-  connect(m_copyAction, SIGNAL(triggered()), SLOT(copyCJSON()));
+  connect(m_copyAction.get(), SIGNAL(triggered()), SLOT(copyCJSON()));
 
   m_copySMILES->setProperty("menu priority", 540);
-  connect(m_copySMILES, SIGNAL(triggered()), SLOT(copySMILES()));
+  connect(m_copySMILES.get(), SIGNAL(triggered()), SLOT(copySMILES()));
 
   m_copyInChI->setProperty("menu priority", 530);
-  connect(m_copyInChI, SIGNAL(triggered()), SLOT(copyInChI()));
+  connect(m_copyInChI.get(), SIGNAL(triggered()), SLOT(copyInChI()));
 
   m_copyXYZ->setProperty("menu priority", 520);
-  connect(m_copyXYZ, SIGNAL(triggered()), SLOT(copyXYZ()));
+  connect(m_copyXYZ.get(), SIGNAL(triggered()), SLOT(copyXYZ()));
 
   m_pasteAction->setShortcut(QKeySequence::Paste);
   m_pasteAction->setIcon(QIcon::fromTheme("edit-paste"));
   m_pasteAction->setProperty("menu priority", 510);
-  connect(m_pasteAction, SIGNAL(triggered()), SLOT(paste()));
+  connect(m_pasteAction.get(), SIGNAL(triggered()), SLOT(paste()));
 
   m_clearAction->setShortcut(QKeySequence::Delete);
   m_clearAction->setIcon(QIcon::fromTheme("edit-delete"));
   m_clearAction->setProperty("menu priority", 500);
-  connect(m_clearAction, SIGNAL(triggered()), SLOT(clear()));
+  connect(m_clearAction.get(), SIGNAL(triggered()), SLOT(clear()));
 }
 
 CopyPaste::~CopyPaste()
@@ -74,8 +74,9 @@ CopyPaste::~CopyPaste()
 QList<QAction*> CopyPaste::actions() const
 {
   QList<QAction*> result;
-  return result << m_copyAction << m_copySMILES << m_copyInChI << m_copyXYZ
-                << m_cutAction << m_pasteAction << m_clearAction;
+  return result << m_copyAction.get() << m_copySMILES.get() << m_copyInChI.get()
+                << m_copyXYZ.get() << m_cutAction.get() << m_pasteAction.get()
+                << m_clearAction.get();
 }
 
 QStringList CopyPaste::menuPath(QAction* action) const
