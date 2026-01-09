@@ -10,6 +10,8 @@
 #include <avogadro/qtgui/rwmolecule.h>
 #include <avogadro/qtgui/toolplugin.h>
 
+#include <memory>
+
 namespace Avogadro::QtPlugins {
 
 class LabelEditor : public QtGui::ToolPlugin
@@ -22,7 +24,7 @@ public:
   QString name() const override { return tr("Label editor tool"); }
   QString description() const override { return tr("Label editor tool"); }
   unsigned char priority() const override { return 95; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   void setIcon(bool darkTheme = false) override;
 
   void setMolecule(QtGui::Molecule* mol) override
@@ -52,7 +54,7 @@ public:
 private:
   void save();
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::RWMolecule* m_molecule;
   QtOpenGL::GLWidget* m_glWidget;
   Rendering::GLRenderer* m_renderer;
