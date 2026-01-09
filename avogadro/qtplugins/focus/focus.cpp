@@ -23,8 +23,9 @@ Focus::Focus(QObject* parent_)
   m_focusSelectionAction->setProperty("menu priority", 200);
   m_unfocusAction->setProperty("menu priority", 200);
 
-  connect(m_focusSelectionAction, SIGNAL(triggered()), SLOT(focusSelection()));
-  connect(m_unfocusAction, SIGNAL(triggered()), SLOT(unfocus()));
+  connect(m_focusSelectionAction.get(), SIGNAL(triggered()),
+          SLOT(focusSelection()));
+  connect(m_unfocusAction.get(), SIGNAL(triggered()), SLOT(unfocus()));
 }
 
 Focus::~Focus() {}
@@ -32,7 +33,7 @@ Focus::~Focus() {}
 QList<QAction*> Focus::actions() const
 {
   QList<QAction*> result;
-  return result << m_focusSelectionAction << m_unfocusAction;
+  return result << m_focusSelectionAction.get() << m_unfocusAction.get();
 }
 
 QStringList Focus::menuPath(QAction*) const
