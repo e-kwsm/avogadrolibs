@@ -11,6 +11,8 @@
 
 #include <QtWidgets/QDialog>
 
+#include <memory>
+
 namespace Ui {
 class BondingDialog;
 }
@@ -60,11 +62,11 @@ private:
   double m_tolerance;
   double m_minDistance;
 
-  QAction* m_action;
-  QAction* m_orderAction;
-  QAction* m_clearAction;
-  QAction* m_configAction;
-  QAction* m_createBondsAction;
+  std::unique_ptr<QAction> m_action;
+  std::unique_ptr<QAction> m_orderAction;
+  std::unique_ptr<QAction> m_clearAction;
+  std::unique_ptr<QAction> m_configAction;
+  std::unique_ptr<QAction> m_createBondsAction;
 
   QDialog* m_dialog;
   Ui::BondingDialog* m_ui;
