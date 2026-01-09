@@ -11,6 +11,8 @@
 
 #include <QtGui/QIcon>
 
+#include <memory>
+
 namespace Avogadro {
 namespace Io {
 class FileFormat;
@@ -61,14 +63,14 @@ private:
 
   QtGui::Molecule* m_molecule;
 
-  QAction* m_copyAction;
-  QAction* m_copySMILES;
-  QAction* m_copyMappedSMILES;
-  QAction* m_copyInChI;
-  QAction* m_copyXYZ;
-  QAction* m_cutAction;
-  QAction* m_clearAction;
-  QAction* m_pasteAction;
+  std::unique_ptr<QAction> m_copyAction;
+  std::unique_ptr<QAction> m_copySMILES;
+  std::unique_ptr<QAction> m_copyMappedSMILES;
+  std::unique_ptr<QAction> m_copyInChI;
+  std::unique_ptr<QAction> m_copyXYZ;
+  std::unique_ptr<QAction> m_cutAction;
+  std::unique_ptr<QAction> m_clearAction;
+  std::unique_ptr<QAction> m_pasteAction;
 };
 
 } // namespace QtPlugins
