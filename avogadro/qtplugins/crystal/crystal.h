@@ -8,6 +8,8 @@
 
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 class UnitCellDialog;
@@ -54,14 +56,14 @@ private:
   QtGui::Molecule* m_molecule;
   UnitCellDialog* m_unitCellDialog;
 
-  QAction* m_importCrystalClipboardAction;
-  QAction* m_editUnitCellAction;
-  QAction* m_buildSupercellAction;
-  QAction* m_niggliReduceAction;
-  QAction* m_scaleVolumeAction;
-  QAction* m_standardOrientationAction;
-  QAction* m_toggleUnitCellAction;
-  QAction* m_wrapAtomsToCellAction;
+  std::unique_ptr<QAction> m_importCrystalClipboardAction;
+  std::unique_ptr<QAction> m_editUnitCellAction;
+  std::unique_ptr<QAction> m_buildSupercellAction;
+  std::unique_ptr<QAction> m_niggliReduceAction;
+  std::unique_ptr<QAction> m_scaleVolumeAction;
+  std::unique_ptr<QAction> m_standardOrientationAction;
+  std::unique_ptr<QAction> m_toggleUnitCellAction;
+  std::unique_ptr<QAction> m_wrapAtomsToCellAction;
 };
 
 inline QString Crystal::description() const
