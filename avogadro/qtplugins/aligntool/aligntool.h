@@ -11,6 +11,8 @@
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/rendering/primitive.h>
 
+#include <memory>
+
 namespace Avogadro::QtPlugins {
 
 /**
@@ -32,7 +34,7 @@ public:
     return tr("Align molecules to a Cartesian axis");
   }
   unsigned char priority() const override { return 90; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
 
   void setIcon(bool darkTheme = false) override;
@@ -77,7 +79,7 @@ public Q_SLOTS:
   void align();
 
 private:
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::RWMolecule* m_molecule;
   Rendering::GLRenderer* m_renderer;
   QVector<Rendering::Identifier> m_atoms;
