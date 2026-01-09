@@ -10,6 +10,8 @@
 
 #include <QtCore/QFutureWatcher>
 
+#include <memory>
+
 class QAction;
 class QDialog;
 class QProgressDialog;
@@ -141,7 +143,7 @@ private slots:
   void updateProgress(int current);
 
 private:
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
 
   QtGui::Molecule* m_molecule = nullptr;
   Core::BasisSet* m_basis = nullptr;
