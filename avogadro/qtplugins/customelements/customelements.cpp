@@ -18,7 +18,7 @@ CustomElements::CustomElements(QObject* parent_)
   : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
     m_reassignAction(new QAction(tr("Reassign &Custom Elements…"), this))
 {
-  connect(m_reassignAction, SIGNAL(triggered()), SLOT(reassign()));
+  connect(m_reassignAction.get(), SIGNAL(triggered()), SLOT(reassign()));
 
   updateReassignAction();
 }
@@ -32,7 +32,7 @@ QString CustomElements::description() const
 
 QList<QAction*> CustomElements::actions() const
 {
-  return QList<QAction*>() << m_reassignAction;
+  return QList<QAction*>() << m_reassignAction.get();
 }
 
 QStringList CustomElements::menuPath(QAction*) const
