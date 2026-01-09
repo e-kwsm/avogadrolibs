@@ -39,7 +39,7 @@ Symmetry::Symmetry(QObject* parent_)
 
   m_viewSymmetryAction->setText(tr("Symmetry…"));
   m_viewSymmetryAction->setProperty("menu priority", -50);
-  connect(m_viewSymmetryAction, &QAction::triggered, this,
+  connect(m_viewSymmetryAction.get(), &QAction::triggered, this,
           &Symmetry::viewSymmetry);
   m_actions.push_back(m_viewSymmetryAction);
 
