@@ -30,7 +30,7 @@ SVG::SVG(QObject* parent_)
     m_scene(nullptr), m_camera(nullptr),
     m_action(new QAction(tr("&SVG…"), this))
 {
-  connect(m_action, SIGNAL(triggered()), SLOT(render()));
+  connect(m_action.get(), SIGNAL(triggered()), SLOT(render()));
 }
 
 SVG::~SVG() {}
@@ -38,7 +38,7 @@ SVG::~SVG() {}
 QList<QAction*> SVG::actions() const
 {
   QList<QAction*> result;
-  return result << m_action;
+  return result << m_action.get();
 }
 
 QStringList SVG::menuPath(QAction*) const
