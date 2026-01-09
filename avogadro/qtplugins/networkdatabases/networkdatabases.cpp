@@ -24,14 +24,14 @@ NetworkDatabases::NetworkDatabases(QObject* parent_)
   m_action->setEnabled(true);
   m_action->setText("Download by &Name…");
   m_action->setProperty("menu priority", 190);
-  connect(m_action, SIGNAL(triggered()), SLOT(showDialog()));
+  connect(m_action.get(), SIGNAL(triggered()), SLOT(showDialog()));
 }
 
 NetworkDatabases::~NetworkDatabases() {}
 
 QList<QAction*> NetworkDatabases::actions() const
 {
-  return QList<QAction*>() << m_action;
+  return QList<QAction*>() << m_action.get();
 }
 
 QStringList NetworkDatabases::menuPath(QAction*) const
