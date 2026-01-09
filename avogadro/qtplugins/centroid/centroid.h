@@ -9,6 +9,8 @@
 #include <avogadro/core/avogadrocore.h>
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 namespace Avogadro::QtPlugins {
 
 /**
@@ -19,7 +21,7 @@ class Centroid : public QtGui::ExtensionPlugin
   Q_OBJECT
 public:
   explicit Centroid(QObject* parent_ = nullptr);
-  ~Centroid() override = default;
+  ~Centroid() override;
 
   QString name() const override { return tr("Centroid"); }
 
@@ -43,9 +45,9 @@ private slots:
 private:
   QtGui::Molecule* m_molecule;
 
-  QAction* m_centroidAction;
-  QAction* m_comAction;
-  QAction* m_normalAction;
+  std::unique_ptr<QAction> m_centroidAction;
+  std::unique_ptr<QAction> m_comAction;
+  std::unique_ptr<QAction> m_normalAction;
 };
 
 } // namespace Avogadro::QtPlugins
