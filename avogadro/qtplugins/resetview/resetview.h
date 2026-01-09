@@ -9,6 +9,8 @@
 #include <Eigen/Geometry>
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -51,8 +53,8 @@ private slots:
 private:
   QtGui::Molecule* m_molecule;
   Rendering::Camera* m_camera;
-  QAction* m_centerAction;
-  QAction* m_viewToAxesAction;
+  std::unique_ptr<QAction> m_centerAction;
+  std::unique_ptr<QAction> m_viewToAxesAction;
   QWidget* m_glWidget;
 
   static const float DELTA_TIME;
