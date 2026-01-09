@@ -47,18 +47,19 @@ Bonding::Bonding(QObject* parent_)
   m_clearAction->setShortcut(QKeySequence("Ctrl+Shift+B"));
   m_clearAction->setProperty("menu priority", 720);
 
-  connect(m_action, &QAction::triggered, this, &Bonding::bond);
-  connect(m_createBondsAction, &QAction::triggered, this, &Bonding::createBond);
-  connect(m_orderAction, &QAction::triggered, this, &Bonding::bondOrders);
-  connect(m_clearAction, &QAction::triggered, this, &Bonding::clearBonds);
-  connect(m_configAction, &QAction::triggered, this, &Bonding::configure);
+  connect(m_action.get(), &QAction::triggered, this, &Bonding::bond);
+  connect(m_createBondsAction.get(), &QAction::triggered, this, &Bonding::createBond);
+  connect(m_orderAction.get(), &QAction::triggered, this, &Bonding::bondOrders);
+  connect(m_clearAction.get(), &QAction::triggered, this, &Bonding::clearBonds);
+  connect(m_configAction.get(), &QAction::triggered, this, &Bonding::configure);
 }
 
 QList<QAction*> Bonding::actions() const
 {
   QList<QAction*> result;
-  return result << m_action << m_createBondsAction << m_orderAction
-                << m_clearAction << m_configAction;
+  return result << m_action.get() << m_createBondsAction.get()
+                << m_orderAction.get() << m_clearAction.get()
+                << m_configAction.get();
 }
 
 QStringList Bonding::menuPath(QAction*) const
