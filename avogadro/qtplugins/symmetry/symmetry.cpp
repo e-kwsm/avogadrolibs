@@ -38,8 +38,9 @@ Symmetry::Symmetry(QObject* parent_)
 
   m_viewSymmetryAction->setText(tr("Symmetry…"));
   m_viewSymmetryAction->setProperty("menu priority", -50);
-  connect(m_viewSymmetryAction, SIGNAL(triggered()), SLOT(viewSymmetry()));
-  m_actions.push_back(m_viewSymmetryAction);
+  connect(m_viewSymmetryAction.get(), SIGNAL(triggered()),
+          SLOT(viewSymmetry()));
+  m_actions.push_back(m_viewSymmetryAction.get());
 
   /*
   connect(m_symmetryWidget, SIGNAL(clicked()), this, SLOT(detectSymmetry()));
