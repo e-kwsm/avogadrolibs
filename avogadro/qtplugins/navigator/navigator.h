@@ -13,6 +13,8 @@
 #include <QtCore/QPoint>
 #include <QtCore/Qt> // for Qt:: namespace
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -31,7 +33,7 @@ public:
   QString name() const override { return tr("Navigate tool"); }
   QString description() const override { return tr("Navigate tool"); }
   unsigned char priority() const override { return 10; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
   void setIcon(bool darkTheme = false) override;
 
@@ -70,7 +72,7 @@ private:
   void translate(const Vector3f& ref, float x, float y);
   void translate(const Vector3f& ref, const Vector2f& from, const Vector2f& to);
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::Molecule* m_molecule;
   QtOpenGL::GLWidget* m_glWidget;
   mutable QWidget* m_toolWidget;
