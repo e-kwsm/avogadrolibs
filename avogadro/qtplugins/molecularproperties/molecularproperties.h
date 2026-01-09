@@ -8,6 +8,8 @@
 
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 class QDialog;
 class QNetworkAccessManager;
 class QNetworkReply;
@@ -47,7 +49,7 @@ private slots:
   void updateNameReady(QNetworkReply* reply);
 
 private:
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
   QtGui::Molecule* m_molecule;
   QDialog* m_dialog;
   QNetworkAccessManager* m_network;
