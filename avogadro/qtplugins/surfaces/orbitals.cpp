@@ -33,7 +33,7 @@ Orbitals::Orbitals(QObject* p)
 {
   m_action->setEnabled(false);
   m_action->setText(tr("Molecular Orbitals…"));
-  connect(m_action, SIGNAL(triggered()), SLOT(openDialog()));
+  connect(m_action.get(), SIGNAL(triggered()), SLOT(openDialog()));
 }
 
 Orbitals::~Orbitals()
@@ -53,7 +53,7 @@ Orbitals::~Orbitals()
 
 QList<QAction*> Orbitals::actions() const
 {
-  return QList<QAction*>() << m_action;
+  return QList<QAction*>() << m_action.get();
 }
 
 QStringList Orbitals::menuPath(QAction*) const
