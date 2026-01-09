@@ -12,6 +12,8 @@
 
 #include <QtCore/QTimer>
 
+#include <memory>
+
 class QLabel;
 class QSpinBox;
 class QCheckBox;
@@ -35,7 +37,7 @@ public:
   QString name() const override { return tr("Player tool"); }
   QString description() const override { return tr("Play back trajectories"); }
   unsigned char priority() const override { return 80; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
   void setIcon(bool darkTheme = false) override;
 
@@ -63,7 +65,7 @@ protected slots:
   void updateLimits();
 
 private:
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::Molecule* m_molecule;
   Rendering::GLRenderer* m_renderer;
   int m_currentFrame;
