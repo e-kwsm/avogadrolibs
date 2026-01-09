@@ -15,6 +15,8 @@
 #include <QtCore/QTimer>
 #include <QtWidgets/QAbstractButton>
 
+#include <memory>
+
 namespace Avogadro {
 
 namespace Calc {
@@ -45,7 +47,7 @@ public:
     return tr("Interactive optimization of molecular geometry");
   }
   unsigned char priority() const override { return 50; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
 
   void setIcon(bool darkTheme = false) override;
@@ -90,7 +92,7 @@ private:
   void axisRotate(Vector3 delta, Vector3 centroid, bool moveSelected = true);
   void tilt(Vector3 delta, Vector3 centroid);
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::RWMolecule* m_molecule;
   Rendering::GLRenderer* m_renderer;
   Rendering::Identifier m_object;
