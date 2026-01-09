@@ -38,47 +38,51 @@ Crystal::Crystal(QObject* parent_)
     m_wrapAtomsToCellAction(new QAction(this))
 {
   m_importCrystalClipboardAction->setText(tr("Import Crystal from Clipboard…"));
-  connect(m_importCrystalClipboardAction, SIGNAL(triggered()),
+  connect(m_importCrystalClipboardAction.get(), SIGNAL(triggered()),
           SLOT(importCrystalClipboard()));
-  m_actions.push_back(m_importCrystalClipboardAction);
+  m_actions.push_back(m_importCrystalClipboardAction.get());
   m_importCrystalClipboardAction->setProperty("menu priority", 220);
 
   // this will be changed when the molecule is set:
   m_toggleUnitCellAction->setText(tr("Toggle Unit Cell"));
-  connect(m_toggleUnitCellAction, SIGNAL(triggered()), SLOT(toggleUnitCell()));
-  m_actions.push_back(m_toggleUnitCellAction);
+  connect(m_toggleUnitCellAction.get(), SIGNAL(triggered()),
+          SLOT(toggleUnitCell()));
+  m_actions.push_back(m_toggleUnitCellAction.get());
   m_toggleUnitCellAction->setProperty("menu priority", 210);
 
   m_editUnitCellAction->setText(tr("Edit Unit Cell…"));
-  connect(m_editUnitCellAction, SIGNAL(triggered()), SLOT(editUnitCell()));
-  m_actions.push_back(m_editUnitCellAction);
+  connect(m_editUnitCellAction.get(), SIGNAL(triggered()),
+          SLOT(editUnitCell()));
+  m_actions.push_back(m_editUnitCellAction.get());
   m_editUnitCellAction->setProperty("menu priority", 190);
 
   m_wrapAtomsToCellAction->setText(tr("&Wrap Atoms to Unit Cell"));
-  connect(m_wrapAtomsToCellAction, SIGNAL(triggered()),
+  connect(m_wrapAtomsToCellAction.get(), SIGNAL(triggered()),
           SLOT(wrapAtomsToCell()));
-  m_actions.push_back(m_wrapAtomsToCellAction);
+  m_actions.push_back(m_wrapAtomsToCellAction.get());
   m_wrapAtomsToCellAction->setProperty("menu priority", 180);
 
   m_standardOrientationAction->setText(tr("Rotate to Standard &Orientation"));
-  connect(m_standardOrientationAction, SIGNAL(triggered()),
+  connect(m_standardOrientationAction.get(), SIGNAL(triggered()),
           SLOT(standardOrientation()));
-  m_actions.push_back(m_standardOrientationAction);
+  m_actions.push_back(m_standardOrientationAction.get());
   m_standardOrientationAction->setProperty("menu priority", 170);
 
   m_scaleVolumeAction->setText(tr("Scale Cell &Volume…"));
-  connect(m_scaleVolumeAction, SIGNAL(triggered()), SLOT(scaleVolume()));
-  m_actions.push_back(m_scaleVolumeAction);
+  connect(m_scaleVolumeAction.get(), SIGNAL(triggered()), SLOT(scaleVolume()));
+  m_actions.push_back(m_scaleVolumeAction.get());
   m_scaleVolumeAction->setProperty("menu priority", 160);
 
   m_buildSupercellAction->setText(tr("Build &Supercell…"));
-  connect(m_buildSupercellAction, SIGNAL(triggered()), SLOT(buildSupercell()));
-  m_actions.push_back(m_buildSupercellAction);
+  connect(m_buildSupercellAction.get(), SIGNAL(triggered()),
+          SLOT(buildSupercell()));
+  m_actions.push_back(m_buildSupercellAction.get());
   m_buildSupercellAction->setProperty("menu priority", 150);
 
   m_niggliReduceAction->setText(tr("Reduce Cell (&Niggli)"));
-  connect(m_niggliReduceAction, SIGNAL(triggered()), SLOT(niggliReduce()));
-  m_actions.push_back(m_niggliReduceAction);
+  connect(m_niggliReduceAction.get(), SIGNAL(triggered()),
+          SLOT(niggliReduce()));
+  m_actions.push_back(m_niggliReduceAction.get());
   m_niggliReduceAction->setProperty("menu priority", 140);
 
   updateActions();
