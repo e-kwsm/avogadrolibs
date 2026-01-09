@@ -8,6 +8,8 @@
 
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 namespace Avogadro {
 
 namespace Core {
@@ -39,7 +41,7 @@ private slots:
   void showDialog();
 
 private:
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
   QtGui::Molecule* m_molecule;
 };
 

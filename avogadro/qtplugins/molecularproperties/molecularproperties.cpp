@@ -27,7 +27,7 @@ MolecularProperties::MolecularProperties(QObject* parent_)
   m_action->setText(tr("&Molecular…"));
   m_action->setProperty("menu priority", 990);
 
-  connect(m_action, SIGNAL(triggered()), SLOT(showDialog()));
+  connect(m_action.get(), SIGNAL(triggered()), SLOT(showDialog()));
 }
 
 MolecularProperties::~MolecularProperties() {}
@@ -39,7 +39,7 @@ QString MolecularProperties::description() const
 
 QList<QAction*> MolecularProperties::actions() const
 {
-  return QList<QAction*>() << m_action;
+  return QList<QAction*>() << m_action.get();
 }
 
 QStringList MolecularProperties::menuPath(QAction*) const
