@@ -16,6 +16,8 @@
 #include <QtCore/QStringList>
 #include <QtCore/QTimer>
 
+#include <memory>
+
 class QComboBox;
 class QLabel;
 class QSpinBox;
@@ -40,7 +42,7 @@ public:
   QString name() const override { return tr("Player tool"); }
   QString description() const override { return tr("Play back trajectories"); }
   unsigned char priority() const override { return 80; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
   void setIcon(bool darkTheme = false) override;
 
@@ -156,7 +158,7 @@ private:
    *  success. */
   QVariantMap frameResult() const;
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::Molecule* m_molecule;
   Rendering::GLRenderer* m_renderer;
   /** The trajectory frame, tracking the molecule's active coordinate set. */
