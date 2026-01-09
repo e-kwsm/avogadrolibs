@@ -12,6 +12,7 @@
 #include <avogadro/qtgui/extensionplugin.h>
 #include <avogadro/qtgui/molecule.h>
 #include <map>
+#include <memory>
 #include <vector>
 
 namespace Avogadro {
@@ -60,7 +61,7 @@ private:
   Rendering::Scene* m_scene;
   Rendering::Camera* m_camera;
 
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
   int m_width, m_height;
   Eigen::Vector3f m_min, m_max;
   std::vector<SVGAtom> m_atoms;
