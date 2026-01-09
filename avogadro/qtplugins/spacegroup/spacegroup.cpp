@@ -48,43 +48,45 @@ SpaceGroup::SpaceGroup(QObject* parent_)
     m_setToleranceAction(new QAction(this))
 {
   m_perceiveSpaceGroupAction->setText(tr("Perceive Space Group…"));
-  connect(m_perceiveSpaceGroupAction, SIGNAL(triggered()),
+  connect(m_perceiveSpaceGroupAction.get(), SIGNAL(triggered()),
           SLOT(perceiveSpaceGroup()));
-  m_actions.push_back(m_perceiveSpaceGroupAction);
+  m_actions.push_back(m_perceiveSpaceGroupAction.get());
   m_perceiveSpaceGroupAction->setProperty("menu priority", 90);
 
   m_reduceToPrimitiveAction->setText(tr("Reduce to Primitive"));
-  connect(m_reduceToPrimitiveAction, SIGNAL(triggered()),
+  connect(m_reduceToPrimitiveAction.get(), SIGNAL(triggered()),
           SLOT(reduceToPrimitive()));
-  m_actions.push_back(m_reduceToPrimitiveAction);
+  m_actions.push_back(m_reduceToPrimitiveAction.get());
   m_reduceToPrimitiveAction->setProperty("menu priority", 80);
 
   m_conventionalizeCellAction->setText(tr("Conventionalize Cell"));
-  connect(m_conventionalizeCellAction, SIGNAL(triggered()),
+  connect(m_conventionalizeCellAction.get(), SIGNAL(triggered()),
           SLOT(conventionalizeCell()));
-  m_actions.push_back(m_conventionalizeCellAction);
+  m_actions.push_back(m_conventionalizeCellAction.get());
   m_conventionalizeCellAction->setProperty("menu priority", 70);
 
   m_symmetrizeAction->setText(tr("Symmetrize"));
-  connect(m_symmetrizeAction, SIGNAL(triggered()), SLOT(symmetrize()));
-  m_actions.push_back(m_symmetrizeAction);
+  connect(m_symmetrizeAction.get(), SIGNAL(triggered()), SLOT(symmetrize()));
+  m_actions.push_back(m_symmetrizeAction.get());
   m_symmetrizeAction->setProperty("menu priority", 60);
 
   m_fillUnitCellAction->setText(tr("Fill Unit Cell…"));
-  connect(m_fillUnitCellAction, SIGNAL(triggered()), SLOT(fillUnitCell()));
-  m_actions.push_back(m_fillUnitCellAction);
+  connect(m_fillUnitCellAction.get(), SIGNAL(triggered()),
+          SLOT(fillUnitCell()));
+  m_actions.push_back(m_fillUnitCellAction.get());
   // should fall next to the "Wrap Atoms to Unit Cell" action
   m_fillUnitCellAction->setProperty("menu priority", 185);
 
   m_reduceToAsymmetricUnitAction->setText(tr("Reduce to Asymmetric Unit"));
-  connect(m_reduceToAsymmetricUnitAction, SIGNAL(triggered()),
+  connect(m_reduceToAsymmetricUnitAction.get(), SIGNAL(triggered()),
           SLOT(reduceToAsymmetricUnit()));
-  m_actions.push_back(m_reduceToAsymmetricUnitAction);
+  m_actions.push_back(m_reduceToAsymmetricUnitAction.get());
   m_reduceToAsymmetricUnitAction->setProperty("menu priority", 40);
 
   m_setToleranceAction->setText(tr("Set Tolerance…"));
-  connect(m_setToleranceAction, SIGNAL(triggered()), SLOT(setTolerance()));
-  m_actions.push_back(m_setToleranceAction);
+  connect(m_setToleranceAction.get(), SIGNAL(triggered()),
+          SLOT(setTolerance()));
+  m_actions.push_back(m_setToleranceAction.get());
   m_setToleranceAction->setProperty("menu priority", 0);
 
   updateActions();
@@ -103,7 +105,7 @@ QList<QAction*> SpaceGroup::actions() const
 
 QStringList SpaceGroup::menuPath(QAction* action) const
 {
-  if (action == m_fillUnitCellAction)
+  if (action == m_fillUnitCellAction.get())
     return QStringList() << tr("&Crystal");
 
   return QStringList() << tr("&Crystal") << tr("Space Group");

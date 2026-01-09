@@ -8,6 +8,8 @@
 
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -56,13 +58,13 @@ private:
   QtGui::Molecule* m_molecule;
   double m_spgTol;
 
-  QAction* m_perceiveSpaceGroupAction;
-  QAction* m_reduceToPrimitiveAction;
-  QAction* m_conventionalizeCellAction;
-  QAction* m_symmetrizeAction;
-  QAction* m_fillUnitCellAction;
-  QAction* m_reduceToAsymmetricUnitAction;
-  QAction* m_setToleranceAction;
+  std::unique_ptr<QAction> m_perceiveSpaceGroupAction;
+  std::unique_ptr<QAction> m_reduceToPrimitiveAction;
+  std::unique_ptr<QAction> m_conventionalizeCellAction;
+  std::unique_ptr<QAction> m_symmetrizeAction;
+  std::unique_ptr<QAction> m_fillUnitCellAction;
+  std::unique_ptr<QAction> m_reduceToAsymmetricUnitAction;
+  std::unique_ptr<QAction> m_setToleranceAction;
 };
 
 inline QString SpaceGroup::description() const
