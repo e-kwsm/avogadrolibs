@@ -10,6 +10,8 @@
 
 #include "symmetrywidget.h"
 
+#include <memory>
+
 namespace msym {
 extern "C"
 {
@@ -55,7 +57,7 @@ private:
   QtGui::Molecule* m_molecule;
   SymmetryWidget* m_symmetryWidget;
 
-  QAction* m_viewSymmetryAction;
+  std::unique_ptr<QAction> m_viewSymmetryAction;
 
   msym::msym_context m_ctx;
 
