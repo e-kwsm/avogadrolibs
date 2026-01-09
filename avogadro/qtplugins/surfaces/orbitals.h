@@ -175,7 +175,7 @@ private:
   /// @return Whether the mesh generator is still writing a mesh.
   bool meshGeneratorBusy() const;
 
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
 
   QtGui::Molecule* m_molecule = nullptr;
   // Read-only: refreshed from const access, so that looking never detaches
