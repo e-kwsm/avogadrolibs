@@ -12,6 +12,8 @@
 
 #include <QtCore/QString>
 
+#include <memory>
+
 class QNetworkAccessManager;
 class QNetworkReply;
 class QProgressDialog;
@@ -67,7 +69,7 @@ private:
   /// answered ("cactus" or "pubchem"). No-op when not command-driven.
   void reportCommandSuccess(const QString& name, const QString& source);
 
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
   QtGui::Molecule* m_molecule;
   QNetworkAccessManager* m_network;
   QString m_moleculeName;
