@@ -17,6 +17,8 @@
 #include <QtCore/QPointer>
 #include <QtCore/QTimer>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 class EditorToolWidget;
@@ -36,7 +38,7 @@ public:
   QString name() const override { return tr("Editor tool"); }
   QString description() const override { return tr("Editor tool"); }
   unsigned char priority() const override { return 20; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
   void setIcon(bool darkTheme = false) override;
 
@@ -110,7 +112,7 @@ private:
 
   void atomLeftDrag(QMouseEvent* e);
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::RWMolecule* m_molecule;
   QtOpenGL::GLWidget* m_glWidget;
   Rendering::GLRenderer* m_renderer;
