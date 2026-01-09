@@ -8,6 +8,8 @@
 
 #include <avogadro/qtgui/extensionplugin.h>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 
@@ -35,7 +37,7 @@ private slots:
 
 private:
   QtGui::Molecule* m_molecule;
-  QAction* m_reassignAction;
+  std::unique_ptr<QAction> m_reassignAction;
 
   void updateReassignAction();
 };
