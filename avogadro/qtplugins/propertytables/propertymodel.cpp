@@ -140,8 +140,7 @@ int PropertyModel::columnCount(const QModelIndex& parent) const
     case ConformerType: {
       if (m_molecule->hasData("energies"))
         return ConformerColumns + 1;
-      else
-        return ConformerColumns;
+      return ConformerColumns;
     }
     default:
       return 0;
@@ -182,7 +181,7 @@ QString formatChargeType(QString type)
 {
   if (type == "gfn2")
     return "GFN2";
-  else if (type == "am1bcc")
+  if (type == "am1bcc")
     return "AM1BCC";
   if (type == "mmff94")
     return "MMFF94";
@@ -235,7 +234,8 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
   if (role == Qt::TextAlignmentRole) {
     if (m_type == ConformerType) {
       return toVariant(Qt::AlignRight | Qt::AlignVCenter); // energies
-    } else if (m_type == AtomType) {
+    }
+    if (m_type == AtomType) {
       if (index.column() == AtomDataColor)
         return toVariant(Qt::AlignRight | Qt::AlignVCenter);
       return toVariant(Qt::AlignHCenter | Qt::AlignVCenter);
@@ -272,8 +272,9 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       auto c = m_molecule->color(row);
       QColor color(c[0], c[1], c[2]);
       return color;
-    } else if (m_type == ResidueType && col == ResidueDataColor &&
-               row < static_cast<int>(m_molecule->residueCount())) {
+    }
+    if (m_type == ResidueType && col == ResidueDataColor &&
+        row < static_cast<int>(m_molecule->residueCount())) {
 
       auto c = m_molecule->residue(row).color();
       QColor color(c[0], c[1], c[2]);
@@ -347,8 +348,7 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
         int isotope = m_molecule->isotope(row);
         if (isotope > 0)
           return isotope;
-        else
-          return QVariant();
+        return QVariant();
       }
       case AtomDataColor:
       default:
@@ -556,8 +556,8 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
         if (role == Qt::UserRole)
           // Return the RMSD as a double for sorting
           return rmsd;
-        else // format fixed to 3 decimals
-          return QString("%L1 Å").arg(rmsd, 0, 'f', 3);
+        // format fixed to 3 decimals
+        return QString("%L1 Å").arg(rmsd, 0, 'f', 3);
       }
       case ConformerDataEnergy: {
         double energy = 0.0;
@@ -574,8 +574,8 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
         if (role == Qt::UserRole)
           // Return the energy as a double for sorting
           return energy;
-        else // format fixed to 4 decimals
-          return QString("%L1").arg(energy, 0, 'f', 4);
+        // format fixed to 4 decimals
+        return QString("%L1").arg(energy, 0, 'f', 4);
       }
     }
   }
@@ -850,7 +850,8 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
     emit dataChanged(index, index);
     m_molecule->emitChanged(Molecule::Atoms);
     return true;
-  } else if (m_type == BondType) {
+  }
+  if (m_type == BondType) {
     switch (static_cast<BondColumn>(index.column())) {
       case BondDataOrder: {
         bool ok;

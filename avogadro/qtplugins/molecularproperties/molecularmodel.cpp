@@ -139,7 +139,7 @@ QVariant MolecularModel::data(const QModelIndex& index, int role) const
     return QVariant::fromValue(m_molecule->residueCount());
   if (key == " 9totalCharge")
     return QVariant::fromValue(static_cast<int>(m_molecule->totalCharge()));
-  else if (key == " 9totalSpinMultiplicity")
+  if (key == " 9totalSpinMultiplicity")
     return QVariant::fromValue(
       static_cast<int>(m_molecule->totalSpinMultiplicity()));
   if (key == "pointgroup")
@@ -179,7 +179,7 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
       return tr("Molecule Name");
     if (it->first == " 2mass")
       return tr("Molecular Mass (g/mol)");
-    else if (it->first == " 2monoisotopicMass")
+    if (it->first == " 2monoisotopicMass")
       return tr("Monoisotopic Mass (g/mol)");
     else if (it->first == " 3formula")
       return tr("Chemical Formula");
