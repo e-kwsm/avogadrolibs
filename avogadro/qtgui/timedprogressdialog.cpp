@@ -85,19 +85,17 @@ QString TimedProgressDialog::formatTime(double seconds)
   if (seconds < 3600) {
     int minutes = static_cast<int>(seconds / 60);
     return tr("%n minute(s) remaining", "", minutes);
-  } else {
-    // hopefully we don't have anything this slow
-    int hours = static_cast<int>(seconds / 3600);
-    int minutes = static_cast<int>((static_cast<int>(seconds) % 3600) / 60);
-    if (hours == 1 && minutes > 0) {
-      // give a message for under 2 hours, e.g.
-      // "1 hour 10 minutes remaining"
-      return tr("1 hour %n minute(s) remaining", "", minutes);
-    } else {
-      // one hour or 2 hours, etc.
-      return tr("%n hour(s) remaining", "", hours);
-    }
   }
+  // hopefully we don't have anything this slow
+  int hours = static_cast<int>(seconds / 3600);
+  int minutes = static_cast<int>((static_cast<int>(seconds) % 3600) / 60);
+  if (hours == 1 && minutes > 0) {
+    // give a message for under 2 hours, e.g.
+    // "1 hour 10 minutes remaining"
+    return tr("1 hour %n minute(s) remaining", "", minutes);
+  }
+  // one hour or 2 hours, etc.
+  return tr("%n hour(s) remaining", "", hours);
 }
 
 } // namespace Avogadro::QtGui
