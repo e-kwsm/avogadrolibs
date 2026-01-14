@@ -77,10 +77,12 @@ QString TimedProgressDialog::formatTime(double seconds)
 
   if (seconds < 1) {
     return tr("Less than a second remaining");
-  } else if (seconds < 60) {
+  }
+  if (seconds < 60) {
     int sec = static_cast<int>(seconds);
     return tr("%n second(s) remaining", "", sec);
-  } else if (seconds < 3600) {
+  }
+  if (seconds < 3600) {
     int minutes = static_cast<int>(seconds / 60);
     return tr("%n minute(s) remaining", "", minutes);
   } else {
