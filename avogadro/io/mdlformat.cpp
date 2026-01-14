@@ -142,11 +142,10 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
       if (reader->read(in, mol)) {
         delete reader;
         return true;
-      } else {
-        in.clear();
-        in.seekg(currentPos);
-        // continue with normal parsing
       }
+      in.clear();
+      in.seekg(currentPos);
+      // continue with normal parsing
       delete reader;
     }
   }
