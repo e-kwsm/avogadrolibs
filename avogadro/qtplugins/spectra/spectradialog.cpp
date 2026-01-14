@@ -680,7 +680,7 @@ void SpectraDialog::changeCalculatedSpectraColor()
 void SpectraDialog::changeRawSpectraColor()
 {
   QSettings settings;
-  QColor current = settings.value("spectra/rawColor", red).value<QColor>();
+  auto current = settings.value("spectra/rawColor", red).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Raw Spectra Color"));
   if (color.isValid() && color != current) {
@@ -692,8 +692,7 @@ void SpectraDialog::changeRawSpectraColor()
 void SpectraDialog::changeImportedSpectraColor()
 {
   QSettings settings;
-  QColor current =
-    settings.value("spectra/importedColor", blue).value<QColor>();
+  auto current = settings.value("spectra/importedColor", blue).value<QColor>();
   QColor color =
     QColorDialog::getColor(current, this, tr("Select Imported Spectra Color"));
   if (color.isValid() && color != current) {
@@ -964,7 +963,7 @@ void SpectraDialog::updatePlot()
   };
   chart->addPlot(xData, yData, calculatedColor, xTitle, tr("Smoothed"));
   // todo add hide/show raw data series
-  QColor rawColor = settings.value("spectra/rawColor", red).value<QColor>();
+  auto rawColor = settings.value("spectra/rawColor", red).value<QColor>();
   QtGui::color4ub rawColor4ub = { static_cast<unsigned char>(rawColor.red()),
                                   static_cast<unsigned char>(rawColor.green()),
                                   static_cast<unsigned char>(rawColor.blue()),
@@ -973,7 +972,7 @@ void SpectraDialog::updatePlot()
   if (m_ui->cb_raw->isChecked())
     chart->addSeries(yStick, rawColor4ub, tr("Raw"));
 
-  QColor importedColor =
+  auto importedColor =
     settings.value("spectra/importedColor", blue).value<QColor>();
   QtGui::color4ub importedColor4ub = {
     static_cast<unsigned char>(importedColor.red()),
