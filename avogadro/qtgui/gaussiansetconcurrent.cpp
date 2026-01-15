@@ -8,7 +8,6 @@
 #include <avogadro/core/gaussianset.h>
 #include <avogadro/core/gaussiansettools.h>
 #include <avogadro/core/molecule.h>
-#include <avogadro/core/mutex.h>
 
 #include <avogadro/core/cube.h>
 
