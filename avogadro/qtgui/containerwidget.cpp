@@ -11,7 +11,6 @@
 #include <QtWidgets/QVBoxLayout>
 #include <qwidget.h>
 #include <qnamespace.h>
-#include <qstringliteral.h>
 #include <qobjectdefs.h>
 
 namespace Avogadro::QtGui {
