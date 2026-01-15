@@ -24,7 +24,6 @@
 
 #include <qobject.h>
 #include <qobjectdefs.h>
-#include <qtversionchecks.h>
 #include <qlist.h>
 #include <qcontainerfwd.h>
 #include <qwidget.h>
