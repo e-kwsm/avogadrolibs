@@ -293,7 +293,7 @@ void Graph::removeEdge(size_t a, size_t b)
             neighborsB.back());
   neighborsB.pop_back();
 
-  size_t edgeIndex;
+  size_t edgeIndex = 0;
   for (size_t i = 0; i < m_edgeMap[a].size(); i++) {
     edgeIndex = m_edgeMap[a][i];
     const std::pair<size_t, size_t>& pair = m_edgePairs[edgeIndex];

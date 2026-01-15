@@ -409,7 +409,7 @@ std::vector<std::vector<size_t>> perceiveRings(const Graph& graph)
       if (P(i, j).size() == 1 && Pt(i, j).size() == 0) {
         continue;
       } else {
-        size_t size;
+        size_t size = 0;
 
         if (P(i, j).size() > 1)
           size = 2 * D(i, j);

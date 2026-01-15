@@ -156,7 +156,7 @@ bool Cube::addData(const std::vector<float>& values)
 
 unsigned int Cube::closestIndex(const Vector3& pos) const
 {
-  int i, j, k;
+  int i = 0, j = 0, k = 0;
   // Calculate how many steps each coordinate is along its axis
   i = int((pos.x() - m_min.x()) / m_spacing.x());
   j = int((pos.y() - m_min.y()) / m_spacing.y());
@@ -167,7 +167,7 @@ unsigned int Cube::closestIndex(const Vector3& pos) const
 Vector3i Cube::indexVector(const Vector3& pos) const
 {
   // Calculate how many steps each coordinate is along its axis
-  int i, j, k;
+  int i = 0, j = 0, k = 0;
   i = int((pos.x() - m_min.x()) / m_spacing.x());
   j = int((pos.y() - m_min.y()) / m_spacing.y());
   k = int((pos.z() - m_min.z()) / m_spacing.z());
@@ -176,7 +176,7 @@ Vector3i Cube::indexVector(const Vector3& pos) const
 
 Vector3 Cube::position(unsigned int index) const
 {
-  int x, y, z;
+  int x = 0, y = 0, z = 0;
   x = int(index / (m_points.y() * m_points.z()));
   y = int((index - (x * m_points.y() * m_points.z())) / m_points.z());
   z = index % m_points.z();
