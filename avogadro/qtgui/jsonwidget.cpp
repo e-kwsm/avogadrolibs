@@ -37,7 +37,6 @@
 #include <utility>
 #include <qobject.h>
 #include <qobjectdefs.h>
-#include <qstringliteral.h>
 #include <qlatin1stringview.h>
 #include <qcontainerfwd.h>
 #include <qforeach.h>

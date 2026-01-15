@@ -11,7 +11,6 @@
 #include <avogadro/core/slatersettools.h>
 
 #include <avogadro/core/cube.h>
-#include <avogadro/core/mutex.h>
 
 #include <QtConcurrent/QtConcurrentMap>
 #include <qobject.h>

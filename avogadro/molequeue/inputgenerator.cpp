@@ -30,7 +30,6 @@
 #include <qnamespace.h>
 #include <qfont.h>
 #include <qlatin1stringview.h>
-#include <qstringliteral.h>
 
 namespace Avogadro::MoleQueue {
 

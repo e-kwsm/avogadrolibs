@@ -21,7 +21,6 @@
 #include <qmap.h>
 #include <string>
 #include <qcontainerfwd.h>
-#include <qstringliteral.h>
 #include <qforeach.h>
 #include <qnamespace.h>
 #include <vector>
