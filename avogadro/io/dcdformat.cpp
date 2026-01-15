@@ -63,15 +63,15 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   /** Variables to store various components from the binary data unpacked using
    * the struct library */
   char raw[84];
-  char* remarks;
-  double DELTA;
-  int magic;
-  int charmm;
-  int NAMNF;
-  int NTITLE;
-  int lenRemarks;
-  int NATOMS;
-  int blockSize;
+  char* remarks = nullptr;
+  double DELTA = NAN;
+  int magic = 0;
+  int charmm = 0;
+  int NAMNF = 0;
+  int NTITLE = 0;
+  int lenRemarks = 0;
+  int NATOMS = 0;
+  int blockSize = 0;
 
   // Determining size of file
   inStream.seekg(0, inStream.end);
@@ -118,7 +118,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   // DELTA (timestep) is stored as a double with X-PLOR but as a float with
   // CHARMM
   if (charmm & DCD_IS_CHARMM) {
-    float ftmp;
+    float ftmp = NAN;
     ftmp = *(reinterpret_cast<float*>(raw + 40));
 
     DELTA = static_cast<double>(ftmp);
@@ -147,7 +147,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     snprintf(fmt, sizeof(fmt), "%c1i", endian);
     inStream.read(buff, struct_calcsize(fmt));
-    int endSize;
+    int endSize = 0;
     struct_unpack(buff, fmt, &endSize);
   } else {
     appendError("Block size must be 4 plus a multiple of 80.");
@@ -156,7 +156,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   snprintf(fmt, sizeof(fmt), "%c1i", endian);
   inStream.read(buff, struct_calcsize(fmt));
-  int fourInput;
+  int fourInput = 0;
   struct_unpack(buff, fmt, &fourInput);
   if (fourInput != 4) {
     // Error
@@ -185,7 +185,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
     /* Read in index array size */
     snprintf(fmt, sizeof(fmt), "%c1i", endian);
     inStream.read(buff, struct_calcsize(fmt));
-    int arrSize;
+    int arrSize = 0;
     struct_unpack(buff, fmt, &arrSize);
 
     if (arrSize != (NATOMS - NAMNF) * 4) {
@@ -212,7 +212,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   if ((charmm & DCD_IS_CHARMM) && (charmm & DCD_HAS_EXTRA_BLOCK)) {
     snprintf(fmt, sizeof(fmt), "%c1i", endian);
     inStream.read(buff, struct_calcsize(fmt));
-    int leadingNum;
+    int leadingNum = 0;
     struct_unpack(buff, fmt, &leadingNum);
 
     if (leadingNum == 48) {
@@ -315,7 +315,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
   if ((charmm & DCD_IS_CHARMM) && (charmm & DCD_HAS_EXTRA_BLOCK)) {
     snprintf(fmt, sizeof(fmt), "%c1i", endian);
     inStream.read(buff, struct_calcsize(fmt));
-    int sizeToRead;
+    int sizeToRead = 0;
     struct_unpack(buff, fmt, &sizeToRead);
 
     inStream.read(buff, sizeToRead);
@@ -391,7 +391,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
     if ((charmm & DCD_IS_CHARMM) && (charmm & DCD_HAS_EXTRA_BLOCK)) {
       snprintf(fmt, sizeof(fmt), "%c1i", endian);
       inStream.read(buff, struct_calcsize(fmt));
-      int sizeToRead;
+      int sizeToRead = 0;
       struct_unpack(buff, fmt, &sizeToRead);
 
       inStream.read(buff, sizeToRead);
