@@ -9,6 +9,7 @@
 #include "unitcell.h"
 
 #include <algorithm>
+#include <cmath>
 #include <iostream>
 
 namespace Avogadro::Core {
@@ -78,7 +79,7 @@ bool CrystalTools::rotateToStandardOrientation(Molecule& molecule, Options opts)
 
   // Used for denominators, since we want to check that they are
   // sufficiently far from 0 to keep things reasonable:
-  Real denom;
+  Real denom = NAN;
   const Real DENOM_TOL = 1e-5;
 
   // Create target matrix, fill with zeros
@@ -270,7 +271,7 @@ bool CrystalTools::niggliReduce(Molecule& molecule, Options opts)
   using std::swap;
 
   // Perform iterative reduction:
-  unsigned int iter;
+  unsigned int iter = 0;
   for (iter = 0; iter < maxIterations; ++iter) {
     // Step 1:
     if (fuzzyGreaterThan(A, B, tol) ||
