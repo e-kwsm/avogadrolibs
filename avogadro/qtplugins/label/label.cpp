@@ -16,7 +16,6 @@
 #include "core/avogadrocore.h"
 #include "core/molecule.h"
 
-#include <cmath>
 #include <cstddef>
 #include <iomanip>
 #include <iostream>
