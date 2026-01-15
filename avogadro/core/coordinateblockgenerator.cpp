@@ -59,7 +59,7 @@ std::string CoordinateBlockGenerator::generateCoordinateBlock()
   // Variables for loops below
   const Index numAtoms = m_molecule->atomCount();
   Atom atom;
-  unsigned char atomicNumber;
+  unsigned char atomicNumber = 0;
   const char* symbol = "\0";
   const char* name = "\0";
   Vector3 pos3d;
