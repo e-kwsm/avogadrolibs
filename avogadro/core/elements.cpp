@@ -178,7 +178,7 @@ unsigned char Elements::guessAtomicNumber(const std::string& inputStr)
     return InvalidElement;
 
   // atomic number?
-  bool ok;
+  bool ok = false;
   int atomicNumberInt = lexicalCast<int>(str, ok);
   if (ok)
     return static_cast<unsigned char>(atomicNumberInt);
