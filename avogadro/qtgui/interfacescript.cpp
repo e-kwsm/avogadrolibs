@@ -26,7 +26,6 @@
 
 #include <QtWidgets/QMessageBox>
 #include <qobject.h>
-#include <qstringliteral.h>
 #include <qalgorithms.h>
 #include <qstringview.h>
 #include <qlogging.h>
