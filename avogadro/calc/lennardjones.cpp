@@ -9,6 +9,7 @@
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
+#include <cmath>
 
 namespace Avogadro::Calc {
 
@@ -45,7 +46,7 @@ void LennardJones::setMolecule(Core::Molecule* mol)
   for (Index i = 0; i < numAtoms; ++i) {
     Core::Atom atom1 = mol->atom(i);
     unsigned char number1 = atom1.atomicNumber();
-    double r1;
+    double r1 = NAN;
     if (m_vdw)
       r1 = Core::Elements::radiusVDW(number1);
     else
@@ -54,7 +55,7 @@ void LennardJones::setMolecule(Core::Molecule* mol)
     for (Index j = i + 1; j < numAtoms; ++j) {
       Core::Atom atom2 = mol->atom(j);
       unsigned char number2 = atom2.atomicNumber();
-      double r2;
+      double r2 = NAN;
       if (m_vdw)
         r2 = Core::Elements::radiusVDW(number2);
       else
