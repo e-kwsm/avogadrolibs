@@ -5,7 +5,6 @@
 
 #include "labeleditor.h"
 
-#include <avogadro/qtopengl/glwidget.h>
 #include <avogadro/rendering/geometrynode.h>
 #include <avogadro/rendering/primitive.h>
 #include <avogadro/rendering/textlabel3d.h>
