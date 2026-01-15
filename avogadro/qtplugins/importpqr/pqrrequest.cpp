@@ -15,7 +15,6 @@
 #include <qnetworkrequest.h>
 #include <qurl.h>
 #include <qobjectdefs.h>
-#include <qstringview.h>
 #include <string>
 #include <qnamespace.h>
 

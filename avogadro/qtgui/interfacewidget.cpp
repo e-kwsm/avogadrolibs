@@ -30,7 +30,6 @@
 #include <qboxlayout.h>
 #include <qsize.h>
 #include <qfontmetrics.h>
-#include <qstringliteral.h>
 
 namespace Avogadro::QtGui {
 
