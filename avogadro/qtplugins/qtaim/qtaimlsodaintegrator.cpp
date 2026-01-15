@@ -2676,10 +2676,9 @@ orderflag = 0  : no change in h or nq,
           yp1[i] = acor[i] * r;
         *orderflag = 2;
         return;
-      } else {
-        ialth = 3;
-        return;
       }
+      ialth = 3;
+      return;
     }
   }
   /*
