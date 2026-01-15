@@ -8,7 +8,6 @@
 #include "qttextrenderstrategy.h"
 
 #include <avogadro/qtgui/molecule.h>
-#include <avogadro/qtgui/rwmolecule.h>
 #include <avogadro/qtgui/sceneplugin.h>
 #include <avogadro/qtgui/scenepluginmodel.h>
 #include <avogadro/qtgui/toolplugin.h>

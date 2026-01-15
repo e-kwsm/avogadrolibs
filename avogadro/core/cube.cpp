@@ -8,7 +8,6 @@
 #include "core/avogadrocore.h"
 #include "core/vector.h"
 #include "molecule.h"
-#include "mutex.h"
 #include <vector>
 #include <array>
 #include <algorithm>
