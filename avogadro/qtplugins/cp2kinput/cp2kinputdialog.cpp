@@ -34,7 +34,6 @@
 #include <qwidget.h>
 #include <qnamespace.h>
 #include <qobjectdefs.h>
-#include <qstringliteral.h>
 #include <qtmetamacros.h>
 #include <vector>
 
