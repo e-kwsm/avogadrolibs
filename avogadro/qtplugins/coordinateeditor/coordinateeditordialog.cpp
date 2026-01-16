@@ -327,7 +327,7 @@ void CoordinateEditorDialog::validateInputWorker()
   QTextDocument* doc(m_ui->text->document());
   QString::const_iterator begin(spec.constBegin());
   QString::const_iterator end(spec.constEnd());
-  QString::const_iterator iter;
+  QString::const_iterator iter = nullptr;
 
   // Only do a few lines at a time, then return control to the event loop.
   int lineThisIteration = 0;
@@ -424,7 +424,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case '#': {
           // Validate integer:
-          bool isInt;
+          bool isInt = false;
           [[maybe_unused]] int index = tokenCursor.selectedText().toInt(&isInt);
           if (!isInt)
             m_ui->text->markInvalid(tokenCursor, tr("Invalid atomic index."));
@@ -435,7 +435,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case 'Z': {
           // Validate integer:
-          bool isInt;
+          bool isInt = false;
           atom.atomicNumber = static_cast<unsigned char>(
             tokenCursor.selectedText().toInt(&isInt));
           if (!isInt)
@@ -447,7 +447,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case 'x': {
           // Validate real:
-          bool isReal;
+          bool isReal = false;
           atom.pos.x() = tokenCursor.selectedText().toDouble(&isReal);
           if (!isReal)
             m_ui->text->markInvalid(tokenCursor, tr("Invalid coordinate."));
@@ -458,7 +458,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case 'y': {
           // Validate real:
-          bool isReal;
+          bool isReal = false;
           atom.pos.y() = tokenCursor.selectedText().toDouble(&isReal);
           if (!isReal)
             m_ui->text->markInvalid(tokenCursor, tr("Invalid coordinate."));
@@ -469,7 +469,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case 'z': {
           // Validate real:
-          bool isReal;
+          bool isReal = false;
           atom.pos.z() = tokenCursor.selectedText().toDouble(&isReal);
           if (!isReal)
             m_ui->text->markInvalid(tokenCursor, tr("Invalid coordinate."));
@@ -480,7 +480,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case 'a': {
           // Validate real:
-          bool isReal;
+          bool isReal = false;
           atom.pos.x() = tokenCursor.selectedText().toDouble(&isReal);
           if (!isReal)
             m_ui->text->markInvalid(tokenCursor, tr("Invalid coordinate."));
@@ -491,7 +491,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case 'b': {
           // Validate real:
-          bool isReal;
+          bool isReal = false;
           atom.pos.y() = tokenCursor.selectedText().toDouble(&isReal);
           if (!isReal)
             m_ui->text->markInvalid(tokenCursor, tr("Invalid coordinate."));
@@ -502,7 +502,7 @@ void CoordinateEditorDialog::validateInputWorker()
 
         case 'c': {
           // Validate real:
-          bool isReal;
+          bool isReal = false;
           atom.pos.z() = tokenCursor.selectedText().toDouble(&isReal);
           if (!isReal)
             m_ui->text->markInvalid(tokenCursor, tr("Invalid coordinate."));
