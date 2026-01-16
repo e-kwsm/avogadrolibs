@@ -168,7 +168,7 @@ void Texture2D::setMinFilter(Texture2D::FilterOption opt)
 Texture2D::FilterOption Texture2D::minFilter() const
 {
   Index old = pushTexture();
-  GLint result;
+  GLint result = 0;
   glGetTexParameteriv(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, &result);
   popTexture(old);
 
@@ -186,7 +186,7 @@ void Texture2D::setMagFilter(Texture2D::FilterOption opt)
 Texture2D::FilterOption Texture2D::magFilter() const
 {
   Index old = pushTexture();
-  GLint result;
+  GLint result = 0;
   glGetTexParameteriv(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, &result);
   popTexture(old);
 
@@ -204,7 +204,7 @@ void Texture2D::setWrappingS(Texture2D::WrappingOption opt)
 Texture2D::WrappingOption Texture2D::wrappingS() const
 {
   Index old = pushTexture();
-  GLint result;
+  GLint result = 0;
   glGetTexParameteriv(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, &result);
   popTexture(old);
 
@@ -222,7 +222,7 @@ void Texture2D::setWrappingT(Texture2D::WrappingOption opt)
 Texture2D::WrappingOption Texture2D::wrappingT() const
 {
   Index old = pushTexture();
-  GLint result;
+  GLint result = 0;
   glGetTexParameteriv(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, &result);
   popTexture(old);
 
@@ -257,7 +257,7 @@ bool Texture2D::uploadInternal(const void* buffer, const Vector2i& dims,
 
 Index Texture2D::pushTexture() const
 {
-  GLint currentHandle;
+  GLint currentHandle = 0;
   glGetIntegerv(GL_TEXTURE_BINDING_2D, &currentHandle);
 
   if (d->textureId == 0) {
