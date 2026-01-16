@@ -228,7 +228,7 @@ static bool checkPairVector(const Molecule& molecule, Index n,
   for (const Bond* b : bonds)
     bondVectors.emplace_back(
       molecule.atomPosition3d(b->getOtherAtom(n).index()) - pos);
-  float pairAngle;
+  float pairAngle = NAN;
   switch (hybridization) {
     case Core::SP3:
       switch (bondCount) {
