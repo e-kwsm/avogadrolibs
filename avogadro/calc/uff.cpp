@@ -14,6 +14,7 @@
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
+#include <cmath>
 
 namespace Avogadro::Calc {
 
@@ -439,7 +440,7 @@ public:
       } else if (symbol == "P_3+3" || symbol == "As3+3" || symbol == "Sb3+3" ||
                  symbol == "Bi3+3") {
 
-        Real phi;
+        Real phi = NAN;
         switch (atomicNumber) {
           case 15: // P
             phi = 84.4339 * DEG_TO_RAD;
@@ -801,7 +802,7 @@ public:
       Vector3 atom_i(x[3 * i], x[3 * i + 1], x[3 * i + 2]);
       Vector3 atom_j(x[3 * j], x[3 * j + 1], x[3 * j + 2]);
       // if the cell is nullptr, we can't do periodic boundary conditions
-      Real r2;
+      Real r2 = NAN;
       if (m_cell == nullptr) {
         r2 = (atom_i - atom_j).squaredNorm();
       } else {

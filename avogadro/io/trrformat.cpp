@@ -12,6 +12,7 @@
 #include <avogadro/core/utilities.h>
 #include <avogadro/core/vector.h>
 
+#include <cmath>
 #include <istream>
 #include <ostream>
 #include <string>
@@ -75,9 +76,9 @@ int isDouble(map<string, int>& header)
 
 bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
 {
-  bool doubleStatus;
+  bool doubleStatus = false;
   char endian = '>', buff[BUFSIZ], fmt[BUFSIZ], raw[1000];
-  int magic, natoms, slen0, slen1, headval[13];
+  int magic = 0, natoms = 0, slen0 = 0, slen1 = 0, headval[13];
   string subs, keyCheck[] = { "box_size", "vir_size", "pres_size" },
                keyCheck2[] = { "x_size", "v_size", "f_size" };
   map<string, int> header;
@@ -130,14 +131,14 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   // Reading timestep and lambda
   doubleStatus = isDouble(header);
   if (doubleStatus) {
-    double header0, header1;
+    double header0 = NAN, header1 = NAN;
     snprintf(fmt, sizeof(fmt), "%c2d", endian);
     inStream.read(buff, struct_calcsize(fmt));
     struct_unpack(buff, fmt, &header0, &header1);
     header.insert(pair<string, int>("time", header0));
     header.insert(pair<string, int>("lambda", header1));
   } else {
-    float header0, header1;
+    float header0 = NAN, header1 = NAN;
     snprintf(fmt, sizeof(fmt), "%c2f", endian);
     inStream.read(buff, struct_calcsize(fmt));
     struct_unpack(buff, fmt, &header0, &header1);
@@ -303,14 +304,14 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     // Reading timestep and lambda
     doubleStatus = isDouble(header);
     if (doubleStatus) {
-      double header0, header1;
+      double header0 = NAN, header1 = NAN;
       snprintf(fmt, sizeof(fmt), "%c2d", endian);
       inStream.read(buff, struct_calcsize(fmt));
       struct_unpack(buff, fmt, &header0, &header1);
       header.insert(pair<string, int>("time", header0));
       header.insert(pair<string, int>("lambda", header1));
     } else {
-      float header0, header1;
+      float header0 = NAN, header1 = NAN;
       snprintf(fmt, sizeof(fmt), "%c2f", endian);
       inStream.read(buff, struct_calcsize(fmt));
       struct_unpack(buff, fmt, &header0, &header1);
