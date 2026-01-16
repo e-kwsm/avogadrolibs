@@ -60,7 +60,7 @@ void Cartoon::appendCirclePoints(std::vector<ColorNormalVertex>& result,
 
 float arrowFunction(float t)
 {
-  float result;
+  float result = NAN;
   const float maxPoint = 0.7f;
   if (t < maxPoint) {
     // normalize t using max point and scale it so that adding will be between

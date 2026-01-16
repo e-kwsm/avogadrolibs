@@ -110,7 +110,7 @@ bool MMTFFormat::read(std::istream& file, Molecule& molecule)
     auto chainGroupCount =
       static_cast<Index>(structure.groupsPerChain[chainIndex]);
 
-    bool ok;
+    bool ok = false;
     std::string chainid_string = structure.chainIdList[chainIndex];
     char chainid = lexicalCast<char>(chainid_string.substr(0, 1), ok);
 
