@@ -589,7 +589,7 @@ void PropertyView::constrainSelectedRows()
       continue;
 
     // get the row number
-    bool ok;
+    bool ok = false;
     int rowNum = model()
                    ->headerData(index.row(), Qt::Vertical)
                    .toString()
@@ -663,7 +663,7 @@ void PropertyView::unconstrainSelectedRows()
       continue;
 
     // get the row number
-    bool ok;
+    bool ok = false;
     int rowNum = model()
                    ->headerData(index.row(), Qt::Vertical)
                    .toString()
@@ -733,7 +733,7 @@ void PropertyView::setFrozen(bool freeze)
       continue;
 
     // get the row number
-    bool ok;
+    bool ok = false;
     int rowNum = model()
                    ->headerData(index.row(), Qt::Vertical)
                    .toString()
@@ -783,7 +783,7 @@ void PropertyView::freezeAxis(int axis)
       continue;
 
     // get the row number
-    bool ok;
+    bool ok = false;
     int rowNum = model()
                    ->headerData(index.row(), Qt::Vertical)
                    .toString()
