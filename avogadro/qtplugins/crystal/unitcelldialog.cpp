@@ -368,7 +368,7 @@ Matrix3 UnitCellDialog::stringToMatrix(const QString& str)
   if (lines.size() != 3)
     return Matrix3::Zero();
 
-  bool ok;
+  bool ok = false;
   int row = 0;
   int col = 0;
   foreach (const QString& line, lines) {
