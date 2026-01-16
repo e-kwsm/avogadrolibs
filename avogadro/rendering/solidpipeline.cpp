@@ -29,7 +29,7 @@ public:
                    const GLchar* nameDepth, GLuint texDepth, int w, int h)
   {
     prog.bind();
-    GLuint programID;
+    GLuint programID = 0;
     glGetIntegerv(GL_CURRENT_PROGRAM, (GLint*)&programID);
 
     GLuint attrRGB = glGetUniformLocation(programID, nameRGB);

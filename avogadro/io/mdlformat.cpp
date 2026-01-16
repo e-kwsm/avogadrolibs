@@ -51,7 +51,7 @@ void handlePartialCharges(Core::Molecule& mol, std::string data,
   // then atom index  charge
   MatrixX charges(mol.atomCount(), 1);
   std::istringstream iss(data);
-  size_t numCharges;
+  size_t numCharges = 0;
   iss >> numCharges;
   if (numCharges == 0 || numCharges > mol.atomCount()) {
     return;
