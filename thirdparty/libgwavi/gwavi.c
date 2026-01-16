@@ -71,8 +71,8 @@ struct gwavi_t* gwavi_open(const char* filename, unsigned int width,
                            unsigned int height, const char* fourcc,
                            unsigned int fps, struct gwavi_audio_t* audio)
 {
-  struct gwavi_t* gwavi;
-  FILE* out;
+  struct gwavi_t* gwavi = NULL;
+  FILE* out = NULL;
 
   if (check_fourcc(fourcc) != 0)
     (void)fprintf(stderr,
@@ -218,8 +218,8 @@ write_chars_bin_failed:
 int gwavi_add_frame(struct gwavi_t* gwavi, const unsigned char* buffer,
                     size_t len)
 {
-  size_t maxi_pad; /* if your frame is raggin, give it some paddin' */
-  size_t t;
+  size_t maxi_pad = 0; /* if your frame is raggin, give it some paddin' */
+  size_t t = 0;
 
   if (!gwavi || !buffer) {
     (void)fputs("gwavi and/or buffer argument cannot be NULL", stderr);
@@ -282,8 +282,8 @@ int gwavi_add_frame(struct gwavi_t* gwavi, const unsigned char* buffer,
 int gwavi_add_audio(struct gwavi_t* gwavi, const unsigned char* buffer,
                     size_t len)
 {
-  size_t maxi_pad; /* in case audio bleeds over the 4 byte boundary  */
-  size_t t;
+  size_t maxi_pad = 0; /* in case audio bleeds over the 4 byte boundary  */
+  size_t t = 0;
 
   if (!gwavi || !buffer) {
     (void)fputs("gwavi and/or buffer argument cannot be NULL", stderr);
@@ -342,7 +342,7 @@ int gwavi_add_audio(struct gwavi_t* gwavi, const unsigned char* buffer,
  */
 int gwavi_close(struct gwavi_t* gwavi)
 {
-  long t;
+  long t = 0;
 
   if (!gwavi) {
     (void)fputs("gwavi argument cannot be NULL", stderr);
