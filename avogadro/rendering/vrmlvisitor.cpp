@@ -11,6 +11,7 @@
 #include "meshgeometry.h"
 #include "spheregeometry.h"
 
+#include <cmath>
 #include <iostream>
 #include <ostream>
 
@@ -99,7 +100,7 @@ void VRMLVisitor::visit(CylinderGeometry& geometry)
   ostringstream str;
   for (auto c : geometry.cylinders()) {
     // double scale = 1.0;
-    double x1, x2, y1, y2, z1, z2;
+    double x1 = NAN, x2 = NAN, y1 = NAN, y2 = NAN, z1 = NAN, z2 = NAN;
     x1 = c.end1[0];
     x2 = c.end2[0];
     y1 = c.end1[1];
@@ -120,7 +121,7 @@ void VRMLVisitor::visit(CylinderGeometry& geometry)
     dy = dy / length;
     dz = dz / length;
 
-    double ax, ay, az, angle;
+    double ax = NAN, ay = NAN, az = NAN, angle = NAN;
 
     if (dy > 0.999) {
       ax = 1.0;

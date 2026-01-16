@@ -21,6 +21,7 @@
 #include <pugixml.hpp>
 
 #include <bitset>
+#include <cmath>
 #include <fstream>
 #include <locale>
 #include <map>
@@ -533,23 +534,23 @@ public:
       // or read data from CML?
       else if (dataNodeName == "scalar") {
         if (dataType == "xsd:boolean") {
-          bool tmp;
+          bool tmp = false;
           dataStream >> tmp;
           variant.setValue(tmp);
         } else if (dataType == "xsd:int") {
-          int tmp;
+          int tmp = 0;
           dataStream >> tmp;
           variant.setValue(tmp);
         } else if (dataType == "xsd:long") {
-          long tmp;
+          long tmp = 0;
           dataStream >> tmp;
           variant.setValue(tmp);
         } else if (dataType == "xsd:float") {
-          float tmp;
+          float tmp = NAN;
           dataStream >> tmp;
           variant.setValue(tmp);
         } else if (dataType == "xsd:double") {
-          double tmp;
+          double tmp = NAN;
           dataStream >> tmp;
           variant.setValue(tmp);
         } else if (dataType == "xsd:string") {
