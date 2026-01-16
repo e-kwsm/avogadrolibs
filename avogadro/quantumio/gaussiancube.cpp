@@ -203,7 +203,7 @@ bool GaussianCube::read(std::istream& in, Core::Molecule& molecule)
   std::string line;
   std::vector<std::string_view> list; // views into line; use before getLine
 
-  int nAtoms;
+  int nAtoms = 0;
   Vector3 min;
   Vector3i dim;
   Matrix3 steps = Matrix3::Zero(); // voxel step vectors as columns (bohr)
