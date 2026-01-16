@@ -962,7 +962,7 @@ bool InterfaceScript::parseFormat(const QJsonObject& json,
       json.value(QStringLiteral("foreground")).isArray()) {
     QJsonArray foregroundArray(
       json.value(QStringLiteral("foreground")).toArray());
-    bool ok;
+    bool ok = false;
     format.setForeground(colorParser(foregroundArray, &ok));
     if (!ok)
       return false;
@@ -972,7 +972,7 @@ bool InterfaceScript::parseFormat(const QJsonObject& json,
       json.value(QStringLiteral("background")).isArray()) {
     QJsonArray backgroundArray(
       json.value(QStringLiteral("background")).toArray());
-    bool ok;
+    bool ok = false;
     format.setBackground(colorParser(backgroundArray, &ok));
     if (!ok)
       return false;
