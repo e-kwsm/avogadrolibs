@@ -53,7 +53,7 @@ void Cartoon::fillRingTemplate(std::vector<Vector3f>& ring, bool flat) const
 
 float arrowFunction(float t)
 {
-  float result;
+  float result = NAN;
   const float maxPoint = 0.7f;
   if (t < maxPoint) {
     // normalize t using max point and scale it so that adding will be between
