@@ -174,7 +174,7 @@ TEST(VariantTest, toDouble)
 
 TEST(VariantTest, toPointer)
 {
-  int value;
+  int value = 0;
   void* pointer = &value;
   Variant variant(pointer);
   EXPECT_EQ(variant.toPointer(), pointer);

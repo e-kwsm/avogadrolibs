@@ -109,7 +109,7 @@ bool GromacsFormat::read(std::istream& in, Molecule& molecule)
   // Atom count
   Core::getLine(in, buffer);
   buffer = trimmed(buffer);
-  bool ok;
+  bool ok = false;
   auto numAtoms = lexicalCast<size_t>(buffer, ok);
   if (buffer.empty() || !ok) {
     appendError("Number of atoms (line 2) invalid.");
