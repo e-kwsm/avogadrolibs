@@ -18,7 +18,7 @@ Array<Vector3> internalToCartesian(
   Vector3 bc(0.0, 0.0, 0.0);
 
   for (Index i = 0; i < molecule.atomCount(); ++i) {
-    Real sinTheta, cosTheta, sinPhi, cosPhi;
+    Real sinTheta = NAN, cosTheta = NAN, sinPhi = NAN, cosPhi = NAN;
     Real length = internalCoords[i].length;
     Real angle = internalCoords[i].angle;
     Real dihedral = internalCoords[i].dihedral;
