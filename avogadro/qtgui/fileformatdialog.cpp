@@ -341,7 +341,7 @@ const Io::FileFormat* FileFormatDialog::selectFileFormat(
   if (lastIdentIndex < 0)
     lastIdentIndex = 0;
 
-  bool ok;
+  bool ok = false;
   QString item = QInputDialog::getItem(parentWidget, caption, prompt, idents,
                                        lastIdentIndex, false, &ok);
   int index = idents.indexOf(item);
