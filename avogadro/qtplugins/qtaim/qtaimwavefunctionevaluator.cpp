@@ -122,7 +122,7 @@ qreal QTAIMWavefunctionEvaluator::molecularOrbital(
 qreal QTAIMWavefunctionEvaluator::electronDensity(const Matrix<qreal, 3, 1> xyz)
 {
 
-  qreal value;
+  qreal value = NAN;
 
   m_cdg000.setZero();
   for (qint64 p = 0; p < m_nprim; ++p) {
@@ -187,9 +187,9 @@ Matrix<qreal, 3, 1> QTAIMWavefunctionEvaluator::gradientOfElectronDensity(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -285,9 +285,9 @@ Matrix<qreal, 3, 3> QTAIMWavefunctionEvaluator::hessianOfElectronDensity(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -312,9 +312,9 @@ Matrix<qreal, 3, 3> QTAIMWavefunctionEvaluator::hessianOfElectronDensity(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
@@ -440,9 +440,9 @@ QTAIMWavefunctionEvaluator::gradientAndHessianOfElectronDensity(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -467,9 +467,9 @@ QTAIMWavefunctionEvaluator::gradientAndHessianOfElectronDensity(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
@@ -575,7 +575,7 @@ qreal QTAIMWavefunctionEvaluator::laplacianOfElectronDensity(
   const Matrix<qreal, 3, 1> xyz)
 {
 
-  qreal value;
+  qreal value = NAN;
 
   const qreal zero = 0.0;
   const qreal one = 1.0;
@@ -609,9 +609,9 @@ qreal QTAIMWavefunctionEvaluator::laplacianOfElectronDensity(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -636,9 +636,9 @@ qreal QTAIMWavefunctionEvaluator::laplacianOfElectronDensity(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
@@ -758,9 +758,9 @@ QTAIMWavefunctionEvaluator::gradientOfElectronDensityLaplacian(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -785,9 +785,9 @@ QTAIMWavefunctionEvaluator::gradientOfElectronDensityLaplacian(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
@@ -812,9 +812,9 @@ QTAIMWavefunctionEvaluator::gradientOfElectronDensityLaplacian(
         az2 = aaz2 * ipow(zz0, m_zamom(p) - 2);
       }
 
-      qreal ax3;
-      qreal ay3;
-      qreal az3;
+      qreal ax3 = NAN;
+      qreal ay3 = NAN;
+      qreal az3 = NAN;
       if (m_xamom(p) < 3) {
         ax3 = zero;
       } else if (m_xamom(p) == 3) {
@@ -1033,9 +1033,9 @@ QTAIMWavefunctionEvaluator::hessianOfElectronDensityLaplacian(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -1060,9 +1060,9 @@ QTAIMWavefunctionEvaluator::hessianOfElectronDensityLaplacian(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
@@ -1087,9 +1087,9 @@ QTAIMWavefunctionEvaluator::hessianOfElectronDensityLaplacian(
         az2 = aaz2 * ipow(zz0, m_zamom(p) - 2);
       }
 
-      qreal ax3;
-      qreal ay3;
-      qreal az3;
+      qreal ax3 = NAN;
+      qreal ay3 = NAN;
+      qreal az3 = NAN;
       if (m_xamom(p) < 3) {
         ax3 = zero;
       } else if (m_xamom(p) == 3) {
@@ -1114,9 +1114,9 @@ QTAIMWavefunctionEvaluator::hessianOfElectronDensityLaplacian(
         az3 = aaz3 * ipow(zz0, m_zamom(p) - 3);
       }
 
-      qreal ax4;
-      qreal ay4;
-      qreal az4;
+      qreal ax4 = NAN;
+      qreal ay4 = NAN;
+      qreal az4 = NAN;
       if (m_xamom(p) < 4) {
         ax4 = zero;
       } else if (m_xamom(p) == 4) {
@@ -1445,9 +1445,9 @@ QTAIMWavefunctionEvaluator::gradientAndHessianOfElectronDensityLaplacian(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -1472,9 +1472,9 @@ QTAIMWavefunctionEvaluator::gradientAndHessianOfElectronDensityLaplacian(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
@@ -1499,9 +1499,9 @@ QTAIMWavefunctionEvaluator::gradientAndHessianOfElectronDensityLaplacian(
         az2 = aaz2 * ipow(zz0, m_zamom(p) - 2);
       }
 
-      qreal ax3;
-      qreal ay3;
-      qreal az3;
+      qreal ax3 = NAN;
+      qreal ay3 = NAN;
+      qreal az3 = NAN;
       if (m_xamom(p) < 3) {
         ax3 = zero;
       } else if (m_xamom(p) == 3) {
@@ -1526,9 +1526,9 @@ QTAIMWavefunctionEvaluator::gradientAndHessianOfElectronDensityLaplacian(
         az3 = aaz3 * ipow(zz0, m_zamom(p) - 3);
       }
 
-      qreal ax4;
-      qreal ay4;
-      qreal az4;
+      qreal ax4 = NAN;
+      qreal ay4 = NAN;
+      qreal az4 = NAN;
       if (m_xamom(p) < 4) {
         ax4 = zero;
       } else if (m_xamom(p) == 4) {
@@ -1834,7 +1834,7 @@ QTAIMWavefunctionEvaluator::gradientAndHessianOfElectronDensityLaplacian(
 qreal QTAIMWavefunctionEvaluator::kineticEnergyDensityG(Matrix<qreal, 3, 1> xyz)
 {
 
-  qreal value;
+  qreal value = NAN;
 
   const qreal zero = 0.0;
   const qreal one = 1.0;
@@ -1862,9 +1862,9 @@ qreal QTAIMWavefunctionEvaluator::kineticEnergyDensityG(Matrix<qreal, 3, 1> xyz)
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -1923,7 +1923,7 @@ qreal QTAIMWavefunctionEvaluator::kineticEnergyDensityK(
   const Matrix<qreal, 3, 1> xyz)
 {
 
-  qreal value;
+  qreal value = NAN;
 
   const qreal zero = 0.0;
   const qreal one = 1.0;
@@ -1954,9 +1954,9 @@ qreal QTAIMWavefunctionEvaluator::kineticEnergyDensityK(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -1981,9 +1981,9 @@ qreal QTAIMWavefunctionEvaluator::kineticEnergyDensityK(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
@@ -2082,9 +2082,9 @@ Matrix<qreal, 3, 3> QTAIMWavefunctionEvaluator::quantumStressTensor(
       qreal ay0 = aay0 * ipow(yy0, m_yamom(p));
       qreal az0 = aaz0 * ipow(zz0, m_zamom(p));
 
-      qreal ax1;
-      qreal ay1;
-      qreal az1;
+      qreal ax1 = NAN;
+      qreal ay1 = NAN;
+      qreal az1 = NAN;
       if (m_xamom(p) < 1) {
         ax1 = zero;
       } else if (m_xamom(p) == 1) {
@@ -2109,9 +2109,9 @@ Matrix<qreal, 3, 3> QTAIMWavefunctionEvaluator::quantumStressTensor(
         az1 = aaz1 * ipow(zz0, m_zamom(p) - 1);
       }
 
-      qreal ax2;
-      qreal ay2;
-      qreal az2;
+      qreal ax2 = NAN;
+      qreal ay2 = NAN;
+      qreal az2 = NAN;
       if (m_xamom(p) < 2) {
         ax2 = zero;
       } else if (m_xamom(p) == 2) {
