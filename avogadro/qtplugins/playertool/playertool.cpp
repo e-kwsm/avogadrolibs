@@ -358,7 +358,7 @@ void PlayerTool::recordMovie()
     }
     GifEnd(&writer);
   } else if (selfFilter == tr("Movie (*.avi)")) {
-    gwavi_t* gwavi;
+    gwavi_t* gwavi = nullptr;
     gwavi = gwavi_open((baseName + ".avi").toLatin1().data(), EXPORT_WIDTH,
                        EXPORT_HEIGHT, "MJPG", m_animationFPS->value(), nullptr);
     for (int i = 0; i < m_molecule->coordinate3dCount(); ++i) {

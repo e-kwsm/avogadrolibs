@@ -1036,7 +1036,7 @@ void SpectraDialog::importData()
   QStringList testParts = firstLine.split(delimiter);
   bool hasHeader = false;
   if (testParts.size() >= 2) {
-    bool ok1, ok2;
+    bool ok1 = false, ok2 = false;
     testParts[0].trimmed().toDouble(&ok1);
     testParts[1].trimmed().toDouble(&ok2);
     hasHeader = !(ok1 && ok2);
@@ -1048,7 +1048,7 @@ void SpectraDialog::importData()
   while (!in.atEnd() && !firstLine.isEmpty()) {
     QStringList parts = firstLine.split(delimiter);
     if (parts.size() >= 2) {
-      bool ok1, ok2;
+      bool ok1 = false, ok2 = false;
       double x = parts[0].trimmed().toDouble(&ok1);
       double y = parts[1].trimmed().toDouble(&ok2);
 

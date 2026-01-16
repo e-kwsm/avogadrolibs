@@ -65,7 +65,7 @@ void NetworkDatabases::showDialog()
             SLOT(replyFinished(QNetworkReply*)));
   }
   // Prompt for a chemical structure name
-  bool ok;
+  bool ok = false;
   QString structureName = QInputDialog::getText(
     qobject_cast<QWidget*>(parent()), tr("Chemical Name"),
     tr("Chemical structure to download."), QLineEdit::Normal, "", &ok);
