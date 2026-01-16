@@ -14,6 +14,8 @@
 #include <avogadro/qtgui/chartdialog.h>
 #include <avogadro/qtgui/chartwidget.h>
 
+#include <cmath>
+
 #include "pdfoptionsdialog.h"
 #include "plotpdf.h"
 
@@ -152,7 +154,7 @@ bool PlotPdf::generatePdfPattern(QtGui::Molecule& mol, PdfData& results,
 {
   Array<Vector3> refAtomCoords = mol.atomPositions3d();
 
-  size_t i, j;
+  size_t i = 0, j = 0;
 
   UnitCell* uc = mol.unitCell();
   if (!uc) {
@@ -175,8 +177,8 @@ bool PlotPdf::generatePdfPattern(QtGui::Molecule& mol, PdfData& results,
   Array<Vector3> newAtomCoords = newMolecule.atomPositions3d();
 
   map<size_t, size_t> pdfCount;
-  double dist, rStep = step;
-  size_t k, binIdx;
+  double dist = NAN, rStep = step;
+  size_t k = 0, binIdx = 0;
 
   for (i = 0; i < refAtomCoords.size(); ++i) {
     for (j = 0; j < newAtomCoords.size(); ++j) {
