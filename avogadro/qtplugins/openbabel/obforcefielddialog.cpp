@@ -131,7 +131,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
         continue;
       }
 
-      bool ok;
+      bool ok = false;
       float econv = it->toFloat(&ok);
       if (!ok) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -188,7 +188,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
         continue;
       }
 
-      bool ok;
+      bool ok = false;
       int numSteps = it->toInt(&ok);
       if (!ok) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -216,7 +216,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
         continue;
       }
 
-      bool ok;
+      bool ok = false;
       double cutoff = it->toDouble(&ok);
       if (!ok) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -238,7 +238,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
         continue;
       }
 
-      bool ok;
+      bool ok = false;
       double cutoff = it->toDouble(&ok);
       if (!ok) {
         qWarning() << "OBForceFieldDialog::setOptions: "
@@ -260,7 +260,7 @@ void OBForceFieldDialog::setOptions(const QStringList& opts)
         continue;
       }
 
-      bool ok;
+      bool ok = false;
       int numSteps = it->toInt(&ok);
       if (!ok) {
         qWarning() << "OBForceFieldDialog::setOptions: "

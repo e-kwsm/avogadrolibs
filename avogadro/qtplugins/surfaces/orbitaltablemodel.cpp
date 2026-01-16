@@ -77,7 +77,7 @@ QVariant OrbitalTableModel::data(const QModelIndex& index, int role) const
   if (role != Qt::DisplayRole)
     return QVariant();
   QString symbol; // use subscripts
-  int subscriptStart;
+  int subscriptStart = 0;
 
   switch (Column(index.column())) {
     case C_Description:

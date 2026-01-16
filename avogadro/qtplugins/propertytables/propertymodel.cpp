@@ -1028,7 +1028,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
 
     switch (static_cast<AtomColumn>(index.column())) {
       case AtomDataFormalCharge: {
-        bool ok;
+        bool ok = false;
         int charge = value.toInt(&ok);
         if (ok) {
           undoMolecule->setFormalCharge(index.row(), charge);
@@ -1037,7 +1037,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
       }
       case AtomDataElement: { // atomic number
         // Try first as a number
-        bool ok;
+        bool ok = false;
         int atomicNumber = value.toInt(&ok);
         if (ok)
           undoMolecule->setAtomicNumber(index.row(), atomicNumber);
@@ -1054,7 +1054,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
         break;
       }
       case AtomDataX: {
-        bool ok;
+        bool ok = false;
         double x = value.toDouble(&ok);
         if (ok) {
           v[0] = x;
@@ -1062,7 +1062,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
         break;
       }
       case AtomDataY: {
-        bool ok;
+        bool ok = false;
         double y = value.toDouble(&ok);
         if (ok) {
           v[1] = y;
@@ -1070,7 +1070,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
         break;
       }
       case AtomDataZ: {
-        bool ok;
+        bool ok = false;
         double z = value.toDouble(&ok);
         if (ok) {
           v[2] = z;
@@ -1081,7 +1081,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
         undoMolecule->setAtomLabel(index.row(), value.toString().toStdString());
         break;
       case AtomDataIsotope: {
-        bool ok;
+        bool ok = false;
         int isotope = value.toInt(&ok);
         if (ok) {
           m_molecule->setIsotope(index.row(), isotope);
@@ -1115,7 +1115,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
   } else if (m_type == BondType) {
     switch (static_cast<BondColumn>(index.column())) {
       case BondDataOrder: {
-        bool ok;
+        bool ok = false;
         int order = value.toInt(&ok);
         if (ok && order > 0 && order <= 6) {
           undoMolecule->setBondOrder(index.row(), value.toInt());
@@ -1123,7 +1123,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
         break;
       }
       case BondDataLength: {
-        bool ok;
+        bool ok = false;
         double length = value.toDouble(&ok);
         if (ok) {
           if (!setBondLength(index.row(), length))
@@ -1166,7 +1166,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
     } // end editing residues
   } else if (m_type == AngleType) {
     if (index.column() == AngleDataValue) {
-      bool ok;
+      bool ok = false;
       double angle = value.toDouble(&ok);
       if (!ok)
         return false;
@@ -1178,7 +1178,7 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
     }
   } else if (m_type == TorsionType) {
     if (index.column() == TorsionDataValue) {
-      bool ok;
+      bool ok = false;
       double angle = value.toDouble(&ok);
       if (!ok)
         return false;
