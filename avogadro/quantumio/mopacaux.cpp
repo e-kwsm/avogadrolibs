@@ -344,7 +344,7 @@ vector<double> MopacAux::readArrayD(std::istream& in, unsigned int n)
 
 vector<int> MopacAux::readArraySym(std::istream& in, unsigned int n)
 {
-  int type;
+  int type = 0;
   vector<int> tmp;
   while (tmp.size() < n) {
     string line;
