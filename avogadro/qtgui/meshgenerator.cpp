@@ -111,7 +111,7 @@ void MeshGenerator::FlyingEdgesAlgorithmPass2()
 {
   for (int k = 0; k != m_dim.z() - 1; ++k) {
     for (int j = 0; j != m_dim.y() - 1; ++j) {
-      int xl, xr;
+      int xl = 0, xr = 0;
       calcTrimValues(xl, xr, j, k); // xl, xr set in this function
 
       gridEdge& ge0 = gridEdges[k * m_dim.y() + j];
@@ -185,7 +185,7 @@ void MeshGenerator::FlyingEdgesAlgorithmPass2()
 
 void MeshGenerator::FlyingEdgesAlgorithmPass3()
 {
-  int tmp;
+  int tmp = 0;
   int triAccum = 0;
   for (int k = 0; k != m_dim.z() - 1; ++k) {
     for (int j = 0; j != m_dim.y() - 1; ++j) {
@@ -227,7 +227,7 @@ void MeshGenerator::FlyingEdgesAlgorithmPass4()
   for (int k = 0; k != m_dim.z() - 1; ++k) {
     for (int j = 0; j != m_dim.y() - 1; ++j) {
       // find adjusted trim values
-      int xl, xr;
+      int xl = 0, xr = 0;
       calcTrimValues(xl, xr, j, k); // xl, xr set in this function
 
       if (xl == xr)
