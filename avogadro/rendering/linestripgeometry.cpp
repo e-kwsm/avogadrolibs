@@ -158,8 +158,8 @@ void LineStripGeometry::render(const Camera& camera)
   auto startIter = m_lineStarts.begin();
   auto startEnd = m_lineStarts.end();
   auto widthIter = m_lineWidths.begin();
-  unsigned int startIndex;
-  unsigned int endIndex;
+  unsigned int startIndex = 0;
+  unsigned int endIndex = 0;
   while (startIter + 1 != startEnd) {
     startIndex = *startIter;
     endIndex = *(startIter + 1);

@@ -229,7 +229,7 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
         return false;
       }
       --a;
-      size_t terCount;
+      size_t terCount = 0;
       for (terCount = 0; terCount < terList.size() && a > terList[terCount];
            ++terCount)
         ; // semicolon is intentional

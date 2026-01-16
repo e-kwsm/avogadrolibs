@@ -190,7 +190,7 @@ bool ShaderProgram::link()
     return false;
   }
 
-  GLint isCompiled;
+  GLint isCompiled = 0;
   glLinkProgram(static_cast<GLuint>(m_handle));
   glGetProgramiv(static_cast<GLuint>(m_handle), GL_LINK_STATUS, &isCompiled);
   if (isCompiled == 0) {
