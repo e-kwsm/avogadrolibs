@@ -24,10 +24,10 @@ ZipExtracter::~ZipExtracter() {}
 /*******  e529b3ce-4242-4d08-ab60-874f0aa6fefc  *******/
 int ZipExtracter::copyData(struct archive* ar, struct archive* aw)
 {
-  int r;
-  const void* buff;
-  size_t size;
-  la_int64_t offset;
+  int r = 0;
+  const void* buff = nullptr;
+  size_t size = 0;
+  la_int64_t offset = 0;
 
   for (;;) {
     r = archive_read_data_block(ar, &buff, &size, &offset);
@@ -52,9 +52,9 @@ char* ZipExtracter::convert(const std::string& str)
 
 QList<QString> ZipExtracter::listFiles(const std::string absolutepath)
 {
-  struct archive* a;
-  struct archive_entry* entry;
-  int r;
+  struct archive* a = nullptr;
+  struct archive_entry* entry = nullptr;
+  int r = 0;
 
   a = archive_read_new();
   archive_read_support_format_zip(a);
@@ -87,11 +87,11 @@ QList<QString> ZipExtracter::listFiles(const std::string absolutepath)
 QList<QString> ZipExtracter::extract(std::string extractdir,
                                      std::string absolutepath)
 {
-  struct archive* a;
-  struct archive* ext;
-  struct archive_entry* entry;
-  int flags;
-  int r;
+  struct archive* a = nullptr;
+  struct archive* ext = nullptr;
+  struct archive_entry* entry = nullptr;
+  int flags = 0;
+  int r = 0;
   QList<QString> toReturn;
   const std::string& extractdirectory = extractdir;
   std::string newFilename;
