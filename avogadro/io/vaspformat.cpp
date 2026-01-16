@@ -48,7 +48,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   inStream.seekg(0, std::ios::beg);
 
   // We'll use these throughout
-  bool ok;
+  bool ok = false;
   string line;
   std::vector<string> stringSplit;
 
@@ -168,7 +168,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
     return false;
   }
 
-  bool cart;
+  bool cart = false;
   // Check if we're using cartesian or fractional coordinates:
   if (line.at(0) == 'K' || line.at(0) == 'k' || line.at(0) == 'C' ||
       line.at(0) == 'c') {
