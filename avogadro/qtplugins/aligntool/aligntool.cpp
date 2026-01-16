@@ -34,6 +34,8 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 
+#include <cmath>
+
 using Avogadro::Core::contrastColor;
 using Avogadro::Core::Elements;
 using Avogadro::Rendering::GeometryNode;
@@ -164,8 +166,8 @@ void AlignTool::alignAtomToAxis(Index atomIndex, int axis)
   const Core::Array<Vector3>& coords = m_molecule->atomPositions3d();
   Core::Array<Vector3> newCoords(coords.size());
 
-  [[maybe_unused]] double alpha;
-  double beta, gamma;
+  [[maybe_unused]] double alpha = NAN;
+  double beta = NAN, gamma = NAN;
   alpha = beta = gamma = 0.0;
 
   Vector3 pos = m_molecule->atom(atomIndex).position3d();
