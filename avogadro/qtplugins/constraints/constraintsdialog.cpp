@@ -149,7 +149,7 @@ void ConstraintsDialog::updateConstraints()
 
   // Arrange selected atoms according to connectivity
   if (selectedAtoms.size() == 3) {
-    Index i1, i2, i3;
+    Index i1 = 0, i2 = 0, i3 = 0;
     bool assigned = false;
 
     for (Index i = 0; i < selectedAtoms.size(); ++i) {
@@ -174,7 +174,7 @@ void ConstraintsDialog::updateConstraints()
   }
 
   else if (selectedAtoms.size() == 4) {
-    Index i1, i2, i3, i4;
+    Index i1 = 0, i2 = 0, i3 = 0, i4 = 0;
     bool assigned = false;
 
     for (Index i = 0; i < selectedAtoms.size(); ++i) {
@@ -348,7 +348,7 @@ void ConstraintsDialog::addConstraint()
   int atomIdC = ui->editC->value();
   int atomIdD = ui->editD->value();
 
-  Index a, b, c, d;
+  Index a = 0, b = 0, c = 0, d = 0;
   if (atomIdA < 1 || atomIdA > m_molecule->atomCount())
     return;
   else
