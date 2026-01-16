@@ -11,6 +11,8 @@
 #include <QtCore/QTextStream>
 #include <QtCore/QVector>
 
+#include <cmath>
+
 namespace Avogadro::QtPlugins {
 
 using Core::Cube;
@@ -61,7 +63,7 @@ bool OpenDxReader::readFile(const QString& fileName)
     } else {
       // data line
       while (!stream.atEnd()) {
-        double value;
+        double value = NAN;
         stream >> value;
         values.push_back(value);
         stream.skipWhiteSpace();
