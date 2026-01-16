@@ -93,7 +93,7 @@ QString JsonWidget::lookupOptionType(const QString& name) const
 
   // if we have tabs, then userOptions is an array of objects
   // need to loop through to find the right one
-  unsigned int size;
+  unsigned int size = 0;
   bool isArray = m_options["userOptions"].isArray();
   QJsonArray options;
   if (isArray) {
@@ -162,7 +162,7 @@ void JsonWidget::buildOptionGui()
 
   // Create new widgets
   QJsonObject userOptions;
-  unsigned int size;
+  unsigned int size = 0;
   bool isArray = m_options["userOptions"].isArray();
   QJsonArray options;
   if (isArray) {
@@ -655,7 +655,7 @@ void JsonWidget::setOptionDefaults()
 
   // if we have tabs, then userOptions is an array of objects
   // need to loop through to find the right one
-  unsigned int size;
+  unsigned int size = 0;
   bool isArray = m_options["userOptions"].isArray();
   QJsonArray options;
   QJsonObject userOptions;
