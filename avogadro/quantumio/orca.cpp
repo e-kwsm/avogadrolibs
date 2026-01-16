@@ -10,6 +10,7 @@
 #include <avogadro/core/utilities.h>
 
 #include <algorithm>
+#include <cmath>
 #include <cstddef>
 #include <memory>
 #include <iostream>
@@ -481,7 +482,7 @@ void ORCAOutput::processLine(std::istream& in,
   } else {
 
     vector<vector<double>> columns;
-    unsigned int numColumns, numRows;
+    unsigned int numColumns = 0, numRows = 0;
     numColumns = 0;
     numRows = 0;
     // number of basis functions (rows) per MO block, learned from the first
@@ -895,7 +896,7 @@ void ORCAOutput::processLine(std::istream& in,
         if (key.empty())
           break;
         list = Core::split(key, ' ');
-        double wavenumbers;
+        double wavenumbers = NAN;
         while (!key.empty()) {
           // should have 8 columns
           if (list.size() < 8) {
@@ -997,7 +998,7 @@ void ORCAOutput::processLine(std::istream& in,
           break;
         nGTOs = 0;
         list = Core::split(key, ' ');
-        int nShells;
+        int nShells = 0;
         // init all vectors etc.
         m_basisAtomLabel.clear();
         m_orcaNumShells.resize(0);
@@ -1373,7 +1374,7 @@ void ORCAOutput::parseMCD()
 
   // read in line by line
   // frequency, mcd, absorption
-  Real frequency, mcd, absorption;
+  Real frequency = NAN, mcd = NAN, absorption = NAN;
   frequency = mcd = absorption = 0.0;
   while (in) {
     in >> frequency >> mcd >> absorption;
