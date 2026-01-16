@@ -67,7 +67,7 @@ bool FetchPDB::readMolecule(QtGui::Molecule& mol)
 void FetchPDB::showDialog()
 {
   // Prompt for a chemical structure name
-  bool ok;
+  bool ok = false;
   QString pdbCode = QInputDialog::getText(
     qobject_cast<QWidget*>(parent()), tr("PDB Code"),
     tr("Chemical structure to download."), QLineEdit::Normal, "", &ok);

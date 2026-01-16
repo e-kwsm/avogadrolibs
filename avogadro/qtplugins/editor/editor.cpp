@@ -41,6 +41,7 @@
 
 #include <QDebug>
 
+#include <cmath>
 #include <limits>
 
 namespace {
@@ -224,7 +225,7 @@ QUndoCommand* Editor::keyPressEvent(QKeyEvent* e)
   }
 
   bool ok = false;
-  int atomicNum;
+  int atomicNum = 0;
   int bondOrder = m_keyPressBuffer.toInt(&ok);
 
   if (ok && bondOrder > 0 && bondOrder <= 4) {
@@ -581,12 +582,12 @@ int expectedBondOrder(RWAtom atom1, RWAtom atom2)
 {
   Vector3 bondVector = atom1.position3d() - atom2.position3d();
   double bondDistance = bondVector.norm();
-  double radiiSum;
+  double radiiSum = NAN;
   radiiSum = Elements::radiusCovalent(atom1.atomicNumber()) +
              Elements::radiusCovalent(atom2.atomicNumber());
   double ratio = bondDistance / radiiSum;
 
-  int bondOrder;
+  int bondOrder = 0;
   if (ratio > 1.0)
     bondOrder = 1;
   else if (ratio > 0.91 && ratio < 1.0)
