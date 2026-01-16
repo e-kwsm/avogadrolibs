@@ -271,7 +271,7 @@ bool Symmetry::runSymmetryDetection(msym_thresholds_t* thresholds,
   };
 
   // initialize the c-style array of atom names and coordinates
-  msym_element_t* a;
+  msym_element_t* a = nullptr;
   a = (msym_element_t*)malloc(length * sizeof(msym_element_t));
   memset(a, 0, length * sizeof(msym_element_t));
 
