@@ -230,7 +230,7 @@ void GamessHighlighter::highlightBlock(const QString& text)
                                      QRegularExpression::CaseInsensitiveOption);
     QRegularExpressionMatch match = endExpression.match(text, startIndex);
     int endIndex = match.capturedStart();
-    int blockLength;
+    int blockLength = 0;
     if (endIndex == -1) {
       setCurrentBlockState(1);
       blockLength = text.length() - startIndex - keywordLength;
