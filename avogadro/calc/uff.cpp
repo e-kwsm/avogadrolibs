@@ -15,6 +15,7 @@
 #include <avogadro/core/elements.h>
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
+#include <cmath>
 
 namespace Avogadro::Calc {
 
@@ -442,7 +443,7 @@ public:
       } else if (symbol == "P_3+3" || symbol == "As3+3" || symbol == "Sb3+3" ||
                  symbol == "Bi3+3") {
 
-        Real phi;
+        Real phi = NAN;
         switch (atomicNumber) {
           case 15: // P
             phi = 84.4339 * DEG_TO_RAD;
