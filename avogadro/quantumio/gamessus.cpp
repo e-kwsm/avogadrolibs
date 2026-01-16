@@ -8,6 +8,7 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/utilities.h>
 
+#include <cmath>
 #include <iostream>
 
 using std::cout;
@@ -326,7 +327,8 @@ void GAMESSUSOutput::reorderMOs()
       // The angular momentum of the shell
       // determines the number of primitive GTOs.
       // GAMESS always prints the full cartesian set.
-      double yyy, zzz, xxy, xxz, yyx, yyz, zzx, zzy, xyz;
+      double yyy = NAN, zzz = NAN, xxy = NAN, xxz = NAN, yyx = NAN, yyz = NAN,
+             zzx = NAN, zzy = NAN, xyz = NAN;
       unsigned int nPrimGTOs = 0;
       switch (m_shellType) {
         case GaussianSet::S:
