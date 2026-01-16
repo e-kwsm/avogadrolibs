@@ -44,7 +44,7 @@ ApplyColors::ApplyColors(QObject* parent_)
   : Avogadro::QtGui::ExtensionPlugin(parent_), m_molecule(nullptr),
     m_dialog(nullptr)
 {
-  QAction* action;
+  QAction* action = nullptr;
 
   action = new QAction(tr("By Custom Color…"), this);
   action->setData(atomColors);
@@ -300,7 +300,7 @@ void ApplyColors::applyIndexColors()
   // check on colormap
   ColormapType type = ColormapType::Turbo;
   QStringList colormaps;
-  bool ok;
+  bool ok = false;
   colormaps << tr("Parula", "colormap") << tr("Magma", "colormap")
             << tr("Inferno", "colormap") << tr("Plasma", "colormap")
             << tr("Viridis", "colormap") << tr("Cividis", "colormap")
@@ -443,7 +443,7 @@ void ApplyColors::applyDistanceColors()
   // check on colormap
   ColormapType type = ColormapType::Turbo;
   QStringList colormaps;
-  bool ok;
+  bool ok = false;
   colormaps << tr("Parula", "colormap") << tr("Magma", "colormap")
             << tr("Inferno", "colormap") << tr("Plasma", "colormap")
             << tr("Viridis", "colormap") << tr("Cividis", "colormap")
