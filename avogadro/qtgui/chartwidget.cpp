@@ -305,7 +305,7 @@ void ChartWidget::setTickLabels(Axis a, const std::vector<float>& tickPositions,
   if (tickPositions.size() == 0)
     return;
 
-  JKQTPCoordinateAxis* axis;
+  JKQTPCoordinateAxis* axis = nullptr;
   if (a == Axis::x) {
     axis = m_impl->plot->getXAxis();
   } else {
