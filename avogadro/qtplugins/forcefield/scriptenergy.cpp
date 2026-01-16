@@ -788,7 +788,7 @@ void ScriptEnergy::processElementString(const QString& str)
         return;
 
       // get the two numbers
-      bool ok;
+      bool ok = false;
       int start = strList2[0].toInt(&ok);
       if (!ok || start < 1 || start > 119)
         return;
@@ -800,7 +800,7 @@ void ScriptEnergy::processElementString(const QString& str)
       continue;
     }
 
-    bool ok;
+    bool ok = false;
     int i = sstr.toInt(&ok);
     if (!ok || i < 1 || i > 119)
       return;
