@@ -70,7 +70,7 @@ bool Shader::compile()
 #endif
   glShaderSource(handle_, 1, &source_, nullptr);
   glCompileShader(handle_);
-  GLint isCompiled;
+  GLint isCompiled = 0;
   glGetShaderiv(handle_, GL_COMPILE_STATUS, &isCompiled);
 
   // Handle shader compilation failures.
