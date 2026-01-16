@@ -26,6 +26,8 @@
 #include <QtCore/QString>
 #include <QtCore/QTextStream>
 
+#include <cmath>
+
 namespace Avogadro::QtPlugins {
 
 LammpsInputDialog::LammpsInputDialog(QWidget* parent, Qt::WindowFlags flag)
@@ -802,8 +804,8 @@ QString LammpsInputDialog::getWaterPotential(waterPotential t)
     case SPC: {
       QString waterPotentialInput;
       QTextStream water(&waterPotentialInput);
-      int Hydrogen;
-      int Oxygen;
+      int Hydrogen = 0;
+      int Oxygen = 0;
       determineAtomTypesSPC(Hydrogen, Oxygen);
       water << "# The SPC water potential\n"
             << "pair_style      lj/cut/coul/cut 9.8 9.8\n"
@@ -824,8 +826,8 @@ QString LammpsInputDialog::getWaterPotential(waterPotential t)
     case SPCE: {
       QString waterPotentialInput;
       QTextStream water(&waterPotentialInput);
-      int Hydrogen;
-      int Oxygen;
+      int Hydrogen = 0;
+      int Oxygen = 0;
       determineAtomTypesSPC(Hydrogen, Oxygen);
       water << "# The SPC/E water potential\n"
             << "pair_style      lj/cut/coul/long 9.8 9.8\n"
@@ -949,7 +951,7 @@ void LammpsInputDialog::writeSettings(QSettings& settings) const
 
 void LammpsInputDialog::determineAtomTypesSPC(int& hyd, int& oxy)
 {
-  double ThisMass;
+  double ThisMass = NAN;
   QString ThisAtom;
 
   // QList<Core::Atom *> atoms = m_molecule->atoms();
