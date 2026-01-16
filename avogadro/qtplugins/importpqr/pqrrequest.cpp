@@ -201,7 +201,7 @@ float PQRRequest::getMolMass(QString formula)
   float totalMass = 0.0;
   int subscript = 1;
   std::string element;
-  unsigned char atomicNum;
+  unsigned char atomicNum = 0;
   for (size_t i = 0; i < str.length(); i++) {
     // each element will start with a capital letter
     if (isupper(str[i])) {
