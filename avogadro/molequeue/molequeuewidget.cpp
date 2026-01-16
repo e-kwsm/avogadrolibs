@@ -201,7 +201,7 @@ void MoleQueueWidget::showAndSelectProgramHandler()
 void MoleQueueWidget::onLookupJobReply(int reqId, const QJsonObject& result)
 {
   QVariant reqIdVariant(property("lookupJobRequestId"));
-  bool ok;
+  bool ok = false;
   int myReqId = reqIdVariant.toInt(&ok);
   if (ok && reqId == myReqId) {
     setProperty("lookupJobRequestId", QVariant());

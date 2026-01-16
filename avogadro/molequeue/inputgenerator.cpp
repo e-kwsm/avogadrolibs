@@ -632,7 +632,7 @@ bool InputGenerator::parseFormat(const QJsonObject& json,
 
   if (json.contains("foreground") && json.value("foreground").isArray()) {
     QJsonArray foregroundArray(json.value("foreground").toArray());
-    bool ok;
+    bool ok = false;
     format.setForeground(colorParser(foregroundArray, &ok));
     if (!ok)
       return false;
@@ -640,7 +640,7 @@ bool InputGenerator::parseFormat(const QJsonObject& json,
 
   if (json.contains("background") && json.value("background").isArray()) {
     QJsonArray backgroundArray(json.value("background").toArray());
-    bool ok;
+    bool ok = false;
     format.setBackground(colorParser(backgroundArray, &ok));
     if (!ok)
       return false;
