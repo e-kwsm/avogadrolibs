@@ -3,6 +3,7 @@
 
 #include <ctype.h>
 #include <errno.h>
+#include <math.h>
 #include <stdarg.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -42,11 +43,11 @@ static void struct_init(void)
 static unsigned long long pack_ieee754(long double f, unsigned int bits,
                                        unsigned int expbits)
 {
-  long double fnorm;
-  int shift;
-  long long sign;
-  long long exp;
-  long long significand;
+  long double fnorm = NAN;
+  int shift = 0;
+  long long sign = 0;
+  long long exp = 0;
+  long long significand = 0;
   unsigned int significandbits = bits - expbits - 1; // -1 for sign bit
 
   if (f == 0.0) {
@@ -88,9 +89,9 @@ static unsigned long long pack_ieee754(long double f, unsigned int bits,
 static long double unpack_ieee754(unsigned long long int i, unsigned int bits,
                                   unsigned int expbits)
 {
-  long double result;
-  long long shift;
-  unsigned int bias;
+  long double result = NAN;
+  long long shift = 0;
+  unsigned int bias = 0;
   unsigned int significandbits = bits - expbits - 1; // -1 for sign bit
 
   if (i == 0) {
@@ -183,7 +184,7 @@ static void pack_double(unsigned char** bp, double val, int endian)
 
 static void unpack_int16_t(const unsigned char** bp, int16_t* dst, int endian)
 {
-  uint16_t val;
+  uint16_t val = 0;
   if (endian == myendian) {
     val = *((*bp)++);
     val |= (uint16_t)(*((*bp)++)) << 8;
@@ -211,7 +212,7 @@ static void unpack_uint16_t(const unsigned char** bp, uint16_t* dst, int endian)
 
 static void unpack_int32_t(const unsigned char** bp, int32_t* dst, int endian)
 {
-  uint32_t val;
+  uint32_t val = 0;
   if (endian == myendian) {
     val = *((*bp)++);
     val |= (uint32_t)(*((*bp)++)) << 8;
@@ -247,7 +248,7 @@ static void unpack_uint32_t(const unsigned char** bp, uint32_t* dst, int endian)
 
 static void unpack_int64_t(const unsigned char** bp, int64_t* dst, int endian)
 {
-  uint64_t val;
+  uint64_t val = 0;
   if (endian == myendian) {
     val = *((*bp)++);
     val |= (uint64_t)(*((*bp)++)) << 8;
@@ -315,22 +316,22 @@ static int pack_va_list(unsigned char* buf, int offset, const char* fmt,
                         va_list args)
 {
   INIT_REPETITION();
-  const char* p;
-  unsigned char* bp;
+  const char* p = NULL;
+  unsigned char* bp = NULL;
   int* ep = &myendian;
-  int endian;
+  int endian = 0;
 
-  char b;
-  unsigned char B;
-  int16_t h;
-  uint16_t H;
-  int32_t l;
-  uint32_t L;
-  int64_t q;
-  uint64_t Q;
-  float f;
-  double d;
-  char* s;
+  char b = 0;
+  unsigned char B = 0;
+  int16_t h = 0;
+  uint16_t H = 0;
+  int32_t l = 0;
+  uint32_t L = 0;
+  int64_t q = 0;
+  uint64_t Q = 0;
+  float f = NAN;
+  double d = NAN;
+  char* s = NULL;
 
   if (STRUCT_ENDIAN_NOT_SET == myendian) {
     struct_init();
@@ -454,22 +455,22 @@ static int unpack_va_list(const unsigned char* buf, int offset, const char* fmt,
                           va_list args)
 {
   INIT_REPETITION();
-  const char* p;
-  const unsigned char* bp;
+  const char* p = NULL;
+  const unsigned char* bp = NULL;
   int* ep = &myendian;
-  int endian;
+  int endian = 0;
 
-  char* b;
-  unsigned char* B;
-  int16_t* h;
-  uint16_t* H;
-  int32_t* l;
-  uint32_t* L;
-  int64_t* q;
-  uint64_t* Q;
-  float* f;
-  double* d;
-  char* s;
+  char* b = NULL;
+  unsigned char* B = NULL;
+  int16_t* h = NULL;
+  uint16_t* H = NULL;
+  int32_t* l = NULL;
+  uint32_t* L = NULL;
+  int64_t* q = NULL;
+  uint64_t* Q = NULL;
+  float* f = NULL;
+  double* d = NULL;
+  char* s = NULL;
 
   if (STRUCT_ENDIAN_NOT_SET == myendian) {
     struct_init();
@@ -641,7 +642,7 @@ int struct_calcsize(const char* fmt)
 {
   INIT_REPETITION();
   int ret = 0;
-  const char* p;
+  const char* p = NULL;
 
   if (STRUCT_ENDIAN_NOT_SET == myendian) {
     struct_init();

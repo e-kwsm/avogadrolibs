@@ -73,7 +73,7 @@ int write_chars(FILE* out, char* s)
 
 int write_chars_bin(FILE* out, char* s, int count)
 {
-  int t;
+  int t = 0;
 
   for (t = 0; t < count; t++)
     if (fputc(s[t], out) == EOF)
