@@ -144,13 +144,13 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
 
   if (options.contains("resolution") &&
       options["resolution"].canConvert<float>()) {
-    bool ok;
+    bool ok = false;
     float res = options["resolution"].toFloat(&ok);
     if (ok)
       cubeResolution = res;
   }
   if (options.contains("isovalue") && options["isovalue"].canConvert<float>()) {
-    bool ok;
+    bool ok = false;
     float iso = options["isovalue"].toFloat(&ok);
     if (ok)
       isoValue = iso;
@@ -181,13 +181,13 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
       // modify HOMO / LUMO based on "+ number" or "- number"
       if (expression.contains('-')) {
         modifier = expression.remove('-');
-        bool ok1;
+        bool ok1 = false;
         int n = modifier.toInt(&ok1);
         if (ok1)
           index = index - n;
       } else if (expression.contains('+')) {
         modifier = expression.remove('+');
-        bool ok2;
+        bool ok2 = false;
         int n = modifier.toInt(&ok2);
         if (ok2)
           index = index + n;

@@ -577,7 +577,7 @@ void SpaceGroup::reduceToAsymmetricUnit()
 
 void SpaceGroup::setTolerance()
 {
-  bool ok;
+  bool ok = false;
   double tol = QInputDialog::getDouble(nullptr,
                                        tr("Avogadro2"),              // title
                                        tr("Select tolerance in Å:"), // label

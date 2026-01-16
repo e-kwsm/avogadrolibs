@@ -435,7 +435,7 @@ void Select::selectAtomIndex()
   if (m_molecule == nullptr || m_molecule->atomCount() == 0)
     return;
 
-  bool ok;
+  bool ok = false;
   QString text = QInputDialog::getText(
     qobject_cast<QWidget*>(parent()), tr("Select Atoms by Index"),
     tr("Atoms to Select:"), QLineEdit::Normal, QString(), &ok);
@@ -451,7 +451,7 @@ void Select::selectAtomIndex()
     if (item.contains('-')) {
       auto range = item.split('-');
       if (range.size() == 2) {
-        bool ok1, ok2;
+        bool ok1 = false, ok2 = false;
         int k = m_molecule->atomCount();
         int start = range.first().toInt(&ok1);
         int last = range.back().toInt(&ok2);
@@ -480,7 +480,7 @@ void Select::selectResidue()
   if (m_molecule == nullptr || m_molecule->atomCount() == 0)
     return;
 
-  bool ok;
+  bool ok = false;
   QString text = QInputDialog::getText(
     qobject_cast<QWidget*>(parent()), tr("Select Atoms by Residue"),
     tr("Residues to Select:"), QLineEdit::Normal, QString(), &ok);
