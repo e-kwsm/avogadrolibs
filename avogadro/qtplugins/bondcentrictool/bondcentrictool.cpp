@@ -1004,7 +1004,7 @@ void BondCentricTool::buildFragment(const QtGui::RWBond& bond,
     // in this case.
     m_fragment.clear();
   }
-  m_fragment.push_back(m_molecule->atomUniqueId(startAtom));
+  m_fragment.push_back(*m_molecule->atomUniqueId(startAtom));
 }
 
 bool BondCentricTool::buildFragmentRecurse(const QtGui::RWBond& bond,
@@ -1022,9 +1022,9 @@ bool BondCentricTool::buildFragmentRecurse(const QtGui::RWBond& bond,
       if (nextAtom != startAtom && nextAtom != bondedAtom) {
         // Skip atoms that have already been added. This prevents infinite
         // recursion on cycles in the fragments
-        int uid = m_molecule->atomUniqueId(nextAtom);
-        if (!fragmentHasAtom(uid)) {
-          m_fragment.push_back(uid);
+        auto uid = m_molecule->atomUniqueId(nextAtom);
+        if (uid.has_value() && !fragmentHasAtom(*uid)) {
+          m_fragment.push_back(*uid);
           if (!buildFragmentRecurse(it, startAtom, nextAtom))
             return false;
         }

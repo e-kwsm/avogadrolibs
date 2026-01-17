@@ -66,8 +66,8 @@ bool RWMolecule::removeAtom(Index atomId)
   if (atomId >= atomCount())
     return false;
 
-  Index uniqueId = findAtomUniqueId(atomId);
-  if (uniqueId == MaxIndex)
+  auto uniqueId = findAtomUniqueId(atomId);
+  if (!uniqueId.has_value())
     return false;
 
   // Lump all operations into a single undo command:
@@ -85,7 +85,7 @@ bool RWMolecule::removeAtom(Index atomId)
   }
 
   auto* comm = new RemoveAtomCommand(
-    *this, atomId, uniqueId, atomicNumber(atomId), atomPosition3d(atomId));
+    *this, atomId, *uniqueId, atomicNumber(atomId), atomPosition3d(atomId));
   comm->setText(tr("Remove Atom"));
 
   m_undoStack.push(comm);
@@ -123,9 +123,9 @@ void RWMolecule::adjustHydrogens(const Core::Array<Index>& atomIds)
   // (so the index will change)
   Core::Array<Index> uniqueIds;
   for (auto id : atomIds) {
-    Index uniqueId = findAtomUniqueId(id);
-    if (uniqueId != MaxIndex)
-      uniqueIds.push_back(uniqueId);
+    auto uniqueId = findAtomUniqueId(id);
+    if (uniqueId.has_value())
+      uniqueIds.push_back(*uniqueId);
   }
 
   for (auto uniqueId : uniqueIds) {
@@ -819,7 +819,7 @@ void RWMolecule::emitChanged(unsigned int change)
   m_molecule.emitChanged(change);
 }
 
-Index RWMolecule::findAtomUniqueId(Index atomId) const
+std::optional<Index> RWMolecule::findAtomUniqueId(Index atomId) const
 {
   return m_molecule.findAtomUniqueId(atomId);
 }
