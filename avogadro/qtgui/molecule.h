@@ -16,6 +16,7 @@
 
 #include <QtCore/QObject>
 #include <list>
+#include <optional>
 
 namespace Avogadro {
 
@@ -146,15 +147,15 @@ public:
    * @brief Get the unique ID of the atom, this will uniquely reference the atom
    * as long as it exists.
    * @param atom The atom to obtain the unique ID of.
-   * @return The unique identifier for the atom, MaxIndex if the atom is invalid
+   * @return The unique identifier for the atom, nullopt if the atom is invalid
    * or does not belong to this molecule.
    * @{
    */
-  Index atomUniqueId(const AtomType& atom) const;
-  Index atomUniqueId(Index atom) const;
+  std::optional<Index> atomUniqueId(const AtomType& atom) const;
+  std::optional<Index> atomUniqueId(Index atom) const;
   /** @} */
 
-  Core::Array<Index>& atomUniqueIds() { return m_atomUniqueIds; }
+  Core::Array<std::optional<Index>>& atomUniqueIds() { return m_atomUniqueIds; }
 
   /**
    * @brief Add a bond between the specified atoms.
@@ -251,7 +252,7 @@ public:
 
   Core::Array<Index>& bondUniqueIds() { return m_bondUniqueIds; }
 
-  Index findAtomUniqueId(Index index) const;
+  std::optional<Index> findAtomUniqueId(Index index) const;
   Index findBondUniqueId(Index index) const;
 
   RWMolecule* undoMolecule();
@@ -299,7 +300,7 @@ signals:
   void update() const;
 
 private:
-  Core::Array<Index> m_atomUniqueIds;
+  Core::Array<std::optional<Index>> m_atomUniqueIds;
   Core::Array<Index> m_bondUniqueIds;
 
   friend class RWMolecule;
