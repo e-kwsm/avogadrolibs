@@ -24,6 +24,8 @@
 
 #include <QUndoStack>
 
+#include <optional>
+
 namespace Avogadro::QtGui {
 
 /** Concrete atom/bond proxy classes for RWMolecule. @{ */
@@ -132,8 +134,8 @@ public:
    * @return The unique id of the atom.
    * @{
    */
-  Index atomUniqueId(Index atomId) const;
-  Index atomUniqueId(const AtomType& atom) const;
+  std::optional<Index> atomUniqueId(Index atomId) const;
+  std::optional<Index> atomUniqueId(const AtomType& atom) const;
   /** @} */
 
   /**
@@ -798,7 +800,7 @@ signals:
   void changed(unsigned int change);
 
 protected:
-  Index findAtomUniqueId(Index atomId) const;
+  std::optional<Index> findAtomUniqueId(Index atomId) const;
   Index findBondUniqueId(Index bondId) const;
 
   /**
@@ -836,18 +838,19 @@ inline RWMolecule::AtomType RWMolecule::atomByUniqueId(Index atomUId) const
 {
   return atomUId < m_molecule.m_atomUniqueIds.size()
            ? AtomType(const_cast<RWMolecule*>(this),
-                      m_molecule.m_atomUniqueIds[atomUId])
+                      *m_molecule.m_atomUniqueIds[atomUId])
            : AtomType();
 }
 
-inline Index RWMolecule::atomUniqueId(Index atomId) const
+inline std::optional<Index> RWMolecule::atomUniqueId(Index atomId) const
 {
   return findAtomUniqueId(atomId);
 }
 
-inline Index RWMolecule::atomUniqueId(const RWMolecule::AtomType& a) const
+inline std::optional<Index> RWMolecule::atomUniqueId(
+  const RWMolecule::AtomType& a) const
 {
-  return a.molecule() == this ? findAtomUniqueId(a.index()) : MaxIndex;
+  return a.molecule() == this ? findAtomUniqueId(a.index()) : std::nullopt;
 }
 
 inline Index RWMolecule::atomCount() const
