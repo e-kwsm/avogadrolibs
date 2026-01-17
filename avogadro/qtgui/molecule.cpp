@@ -88,7 +88,7 @@ Molecule::AtomType Molecule::addAtom(unsigned char number)
 Molecule::AtomType Molecule::addAtom(unsigned char number, Index uniqueId)
 {
   if (uniqueId >= static_cast<Index>(m_atomUniqueIds.size()) ||
-      m_atomUniqueIds[uniqueId] != MaxIndex) {
+      m_atomUniqueIds[uniqueId].has_value()) {
     return AtomType();
   }
   m_atomUniqueIds[uniqueId] = atomCount();
@@ -118,12 +118,12 @@ bool Molecule::removeAtom(Index index)
 {
   if (index >= atomCount())
     return false;
-  Index uniqueId = findAtomUniqueId(index);
-  if (uniqueId == MaxIndex)
+  auto uniqueId = findAtomUniqueId(index);
+  if (!uniqueId.has_value())
     return false;
 
   // Unique ID of an atom that was removed:
-  m_atomUniqueIds[uniqueId] = MaxIndex;
+  m_atomUniqueIds[*uniqueId].reset();
   auto newSize = static_cast<Index>(atomCount() - 1);
 
   // Before removing the atom we must first remove any bonds to it.
@@ -133,7 +133,7 @@ bool Molecule::removeAtom(Index index)
     // movedAtomUID
     uniqueId = findAtomUniqueId(newSize);
     assert(uniqueId != MaxIndex);
-    m_atomUniqueIds[uniqueId] = index;
+    m_atomUniqueIds[*uniqueId] = index;
   }
   return true;
 }
@@ -146,21 +146,21 @@ bool Molecule::removeAtom(const AtomType& atom_)
 Molecule::AtomType Molecule::atomByUniqueId(Index uniqueId)
 {
   if (uniqueId >= static_cast<Index>(m_atomUniqueIds.size()) ||
-      m_atomUniqueIds[uniqueId] == MaxIndex) {
+      !m_atomUniqueIds[uniqueId].has_value()) {
     return AtomType();
   } else {
-    return AtomType(this, m_atomUniqueIds[uniqueId]);
+    return AtomType(this, *m_atomUniqueIds[uniqueId]);
   }
 }
 
-Index Molecule::atomUniqueId(const AtomType& a) const
+std::optional<Index> Molecule::atomUniqueId(const AtomType& a) const
 {
   if (a.molecule() != this)
-    return MaxIndex;
+    return std::nullopt;
   return findAtomUniqueId(a.index());
 }
 
-Index Molecule::atomUniqueId(Index a) const
+std::optional<Index> Molecule::atomUniqueId(Index a) const
 {
   return findAtomUniqueId(a);
 }
@@ -207,10 +207,10 @@ void Molecule::swapAtom(Index a, Index b)
   if (a == b) {
     return;
   }
-  Index uniqueA = findAtomUniqueId(a);
-  Index uniqueB = findAtomUniqueId(b);
-  assert(uniqueA != MaxIndex && uniqueB != MaxIndex);
-  swap(m_atomUniqueIds[uniqueA], m_atomUniqueIds[uniqueB]);
+  auto uniqueA = findAtomUniqueId(a);
+  auto uniqueB = findAtomUniqueId(b);
+  assert(uniqueA.has_value() && uniqueB.has_value());
+  swap(m_atomUniqueIds[*uniqueA], m_atomUniqueIds[*uniqueB]);
   Core::Molecule::swapAtom(a, b);
 }
 
@@ -319,13 +319,13 @@ void Molecule::emitUpdate() const
   emit update();
 }
 
-Index Molecule::findAtomUniqueId(Index index) const
+std::optional<Index> Molecule::findAtomUniqueId(Index index) const
 {
   for (Index i = 0; i < static_cast<Index>(m_atomUniqueIds.size()); ++i) {
     if (m_atomUniqueIds[i] == index)
       return i;
   }
-  return MaxIndex;
+  return std::nullopt;
 }
 
 Index Molecule::findBondUniqueId(Index index) const
