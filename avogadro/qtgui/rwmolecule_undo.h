@@ -34,7 +34,10 @@ public:
 
 protected:
   Array<Vector3>& positions3d() { return m_molecule.atomPositions3d(); }
-  Array<Index>& atomUniqueIds() { return m_mol.m_molecule.atomUniqueIds(); }
+  Array<std::optional<Index>>& atomUniqueIds()
+  {
+    return m_mol.m_molecule.atomUniqueIds();
+  }
   Array<Index>& bondUniqueIds() { return m_mol.m_molecule.bondUniqueIds(); }
   // Selection has no public size accessor on Core::Molecule (unlike labels,
   // colors, etc., which expose their backing Array<T> directly): m_molecule
