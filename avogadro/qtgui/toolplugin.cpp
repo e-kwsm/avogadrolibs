@@ -48,11 +48,9 @@ QUndoCommand* ToolPlugin::keyReleaseEvent(QKeyEvent*)
 
 void ToolPlugin::draw(Rendering::GroupNode&) {}
 
-bool ToolPlugin::handleCommand(const QString& command,
-                               const QVariantMap& options)
+bool ToolPlugin::handleCommand([[maybe_unused]] const QString& command,
+                               [[maybe_unused]] const QVariantMap& options)
 {
-  Q_UNUSED(command);
-  Q_UNUSED(options);
   return false;
 }
 

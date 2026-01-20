@@ -96,10 +96,8 @@ PropertyModel::PropertyModel(PropertyType type, QObject* parent)
 {
 }
 
-int PropertyModel::rowCount(const QModelIndex& parent) const
+int PropertyModel::rowCount([[maybe_unused]] const QModelIndex& parent) const
 {
-  Q_UNUSED(parent);
-
   if (!m_validCache)
     updateCache();
 
@@ -123,9 +121,8 @@ int PropertyModel::rowCount(const QModelIndex& parent) const
   return 0;
 }
 
-int PropertyModel::columnCount(const QModelIndex& parent) const
+int PropertyModel::columnCount([[maybe_unused]] const QModelIndex& parent) const
 {
-  Q_UNUSED(parent);
   switch (m_type) {
     case AtomType:
       return AtomColumns; // see above

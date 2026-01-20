@@ -64,19 +64,17 @@ QString MolecularModel::name() const
   return tr("(pending)");
 }
 
-int MolecularModel::rowCount(const QModelIndex& parent) const
+int MolecularModel::rowCount([[maybe_unused]] const QModelIndex& parent) const
 {
-  Q_UNUSED(parent);
-
   if (!m_molecule)
     return 0;
 
   return m_propertiesCache.size();
 }
 
-int MolecularModel::columnCount(const QModelIndex& parent) const
+int MolecularModel::columnCount(
+  [[maybe_unused]] const QModelIndex& parent) const
 {
-  Q_UNUSED(parent);
   return 1; // values
 }
 
