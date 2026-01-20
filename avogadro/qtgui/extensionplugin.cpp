@@ -34,11 +34,9 @@ void ExtensionPlugin::setActiveWidget(QWidget* widget)
   setParent(widget);
 }
 
-bool ExtensionPlugin::handleCommand(const QString& command,
-                                    const QVariantMap& options)
+bool ExtensionPlugin::handleCommand([[maybe_unused]] const QString& command,
+                                    [[maybe_unused]] const QVariantMap& options)
 {
-  Q_UNUSED(command);
-  Q_UNUSED(options);
   return false;
 }
 
