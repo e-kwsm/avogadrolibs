@@ -220,10 +220,9 @@ void QtTextRenderStrategy::render(const std::string& string,
 namespace {
 
 template <int ByteOrder>
-inline void argbToRgbaWorker(quint32 in, quint32& out)
+inline void argbToRgbaWorker([[maybe_unused]] quint32 in,
+                             [[maybe_unused]] quint32& out)
 {
-  Q_UNUSED(in)
-  Q_UNUSED(out)
   qWarning("QtTextRenderStrategy::argbToRgba: Invalid byte order.");
 }
 
