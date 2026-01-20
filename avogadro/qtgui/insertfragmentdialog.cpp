@@ -170,10 +170,9 @@ QString InsertFragmentDialog::fileName()
   return selected.first().data(QFileSystemModel::FilePathRole).toString();
 }
 
-void InsertFragmentDialog::currentChanged(const QModelIndex& selected,
-                                          const QModelIndex& deselected)
+void InsertFragmentDialog::currentChanged(
+  const QModelIndex& selected, [[maybe_unused]] const QModelIndex& deselected)
 {
-  Q_UNUSED(deselected)
   if (m_implementation == nullptr || m_implementation->model == nullptr)
     return;
 
