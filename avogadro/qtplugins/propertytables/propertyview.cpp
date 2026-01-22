@@ -37,7 +37,7 @@ namespace Avogadro {
 using QtGui::Molecule;
 
 PropertyView::PropertyView(PropertyType type, QWidget* parent)
-  : QTableView(parent), m_type(type), m_molecule(nullptr), m_model(nullptr)
+  : QTableView(parent), m_type(type)
 {
   QString title;
   switch (type) {
