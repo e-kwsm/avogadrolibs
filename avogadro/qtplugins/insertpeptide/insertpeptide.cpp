@@ -50,7 +50,7 @@ public:
 };
 
 InsertPeptide::InsertPeptide(QObject* parent_)
-  : Avogadro::QtGui::ExtensionPlugin(parent_), m_dialog(nullptr)
+  : Avogadro::QtGui::ExtensionPlugin(parent_)
 {
   auto* action = new QAction(tr("Peptide…"), this);
   action->setProperty("menu priority", 880);
