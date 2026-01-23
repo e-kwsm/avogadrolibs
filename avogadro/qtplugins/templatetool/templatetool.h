@@ -87,9 +87,9 @@ private:
   void atomLeftDrag(QMouseEvent* e);
 
   QAction* m_activateAction;
-  QtGui::RWMolecule* m_molecule;
-  QtOpenGL::GLWidget* m_glWidget;
-  Rendering::GLRenderer* m_renderer;
+  QtGui::RWMolecule* m_molecule = nullptr;
+  QtOpenGL::GLWidget* m_glWidget = nullptr;
+  Rendering::GLRenderer* m_renderer = nullptr;
   TemplateToolWidget* m_toolWidget;
   Rendering::Identifier m_clickedObject;
   Rendering::Identifier m_newObject;
@@ -97,8 +97,8 @@ private:
   Qt::MouseButtons m_pressedButtons;
   QPoint m_clickPosition;
   unsigned char m_clickedAtomicNumber;
-  bool m_bondAdded;
-  bool m_fixValenceLater;
+  bool m_bondAdded = false;
+  bool m_fixValenceLater = false;
   QString m_keyPressBuffer;
 
   QtGui::PluginLayerManager m_layerManager;

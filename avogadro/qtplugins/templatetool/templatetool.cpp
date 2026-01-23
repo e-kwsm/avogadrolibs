@@ -72,11 +72,9 @@ using Avogadro::Rendering::TextProperties;
 
 TemplateTool::TemplateTool(QObject* parent_)
   : QtGui::ToolPlugin(parent_), m_activateAction(new QAction(this)),
-    m_molecule(nullptr), m_glWidget(nullptr), m_renderer(nullptr),
     m_toolWidget(new TemplateToolWidget(qobject_cast<QWidget*>(parent_))),
     m_pressedButtons(Qt::NoButton),
-    m_clickedAtomicNumber(INVALID_ATOMIC_NUMBER), m_bondAdded(false),
-    m_fixValenceLater(false), m_layerManager("Template")
+    m_clickedAtomicNumber(INVALID_ATOMIC_NUMBER), m_layerManager("Template")
 {
   QString shortcut = tr("Ctrl+3", "control-key 3");
   m_activateAction->setText(tr("Template"));
