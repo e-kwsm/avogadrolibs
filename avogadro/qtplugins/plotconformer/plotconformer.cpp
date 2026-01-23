@@ -33,7 +33,7 @@ using Core::Array;
 
 PlotConformer::PlotConformer(QObject* parent_)
   : Avogadro::QtGui::ExtensionPlugin(parent_), m_actions(QList<QAction*>()),
-    m_molecule(nullptr), m_displayDialogAction(new QAction(this))
+    m_displayDialogAction(new QAction(this))
 {
   m_displayDialogAction->setText(tr("Plot Conformer Data…"));
   connect(m_displayDialogAction, &QAction::triggered, this,
