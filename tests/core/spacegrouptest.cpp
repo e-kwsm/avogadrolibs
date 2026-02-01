@@ -416,6 +416,31 @@ TEST(SpaceGroupTest, fillUnitCell)
 
   // It should now have 30 atoms
   ASSERT_EQ(mol3.atomCount(), 30);
+
+  // TiO2 rutile
+  Molecule mol4;
+  Matrix3 mat4;
+
+  mat4.col(0) = Vector3(2.95812, 0.00000, 0.00000); // A
+  mat4.col(1) = Vector3(0.00000, 4.59373, 0.00000); // B
+  mat4.col(2) = Vector3(0.00000, 0.00000, 4.59373); // C
+
+  UnitCell* uc4 = new UnitCell(mat4);
+  mol4.setUnitCell(uc4);
+
+  mol4.addAtom(8).setPosition3d(uc4->toCartesian(Vector3(0.0, 0.3053, 0.3053)));
+  mol4.addAtom(8).setPosition3d(uc4->toCartesian(Vector3(0.0, 0.6947, 0.6947)));
+  mol4.addAtom(8).setPosition3d(uc4->toCartesian(Vector3(0.5, 0.1947, 0.8053)));
+  mol4.addAtom(8).setPosition3d(uc4->toCartesian(Vector3(0.5, 0.8053, 0.1947)));
+  mol4.addAtom(22).setPosition3d(uc4->toCartesian(Vector3(0.0, 0.0, 0.0)));
+  mol4.addAtom(22).setPosition3d(uc4->toCartesian(Vector3(0.5, 0.5, 0.5)));
+
+  SpaceGroups::fillUnitCell(mol4, 419, cartTol);
+
+  unsigned short hallNumber4 = AvoSpglib::getHallNumber(mol4, cartTol);
+  // ASSERT_EQ(hallNumber4, 2);
+
+  ASSERT_EQ(mol4.atomCount(), 6);
 }
 
 TEST(SpaceGroupTest, reduceToAsymmetricUnit)
