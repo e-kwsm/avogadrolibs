@@ -9782,11 +9782,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "Partial Charge"
 #~ msgstr "Delni naboj"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animacija"
-
 #~ msgid "Geometry"
 #~ msgstr "Geometrija"
 
