@@ -391,7 +391,7 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     } // isotope
 #ifndef NDEBUG
     else if (buffer.size() >= 6) {
-      std::cout << " prefix " << buffer.substr(0, 6) << std::endl;
+      std::cout << " prefix " << buffer.substr(0, 6) << '\n';
     }
 #endif
   }
@@ -757,7 +757,7 @@ bool MdlFormat::readV3000(std::istream& in, Core::Molecule& mol)
           }
         } else {
 #ifndef NDEBUG
-          std::cerr << "Unknown key: " << key << std::endl;
+          std::cerr << "Unknown key: " << key << '\n';
 #endif
         }
       } // end of key-value loop
