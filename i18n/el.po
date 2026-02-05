@@ -9474,11 +9474,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "Partial Charge"
 #~ msgstr "Μερικό φορτίου"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Κινούμενη απεικόνιση"
-
 #~ msgid "Geometry"
 #~ msgstr "Γεωμετρία"
 
