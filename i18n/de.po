@@ -9956,85 +9956,11 @@ msgstr ""
 #~ msgid "Checking for %1 scripts in path %2"
 #~ msgstr "Überprüfen von %1 Skripten im Pfad %2"
 
-#, qt-format
-#~ msgid "%1 ΔE = %L2 kJ/mol"
-#~ msgstr "%1 ΔE = %L2 kJ/mol"
-
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Winkel:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Abbrechen"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid " eV"
-#~ msgstr " eV"
-
-#, qt-format
-#~ msgid "%1 ΔE = %L2 kcal/mol"
-#~ msgstr "%1 ΔE = %L2 kcal/mol"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -10042,9 +9968,6 @@ msgstr ""
 
 #~ msgid "unknown molecule"
 #~ msgstr "unbekanntes Molekül"
-
-#~ msgid " & "
-#~ msgstr " & "
 
 #~ msgid "Meshes"
 #~ msgstr "Polygonnetze"
@@ -10056,42 +9979,12 @@ msgstr ""
 #~ msgid "Max 2*theta:"
 #~ msgstr "Max 2*theta:"
 
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "+1"
-#~ msgstr "+1"
-
-#~ msgid "+2"
-#~ msgstr "+2"
-
-#~ msgid "+3"
-#~ msgstr "+3"
-
-#~ msgid "+4"
-#~ msgstr "+4"
-
-#~ msgid "+5"
-#~ msgstr "+5"
-
-#~ msgid "+6"
-#~ msgstr "+6"
-
-#~ msgid "+7"
-#~ msgstr "+7"
-
 #~ msgid "Render polygon meshes."
 #~ msgstr "Polygonnetz darstellen."
 
 #, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analytisch"
-
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "…"
 
 #~ msgid "&Import..."
 #~ msgstr "&Importieren …"
@@ -10105,11 +9998,11 @@ msgstr ""
 #~ msgid "&Load data..."
 #~ msgstr "Daten &laden …"
 
-#~ msgid "eV)"
-#~ msgstr "eV)"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Partialladung"
+
+#~ msgid "Animation Tool"
+#~ msgstr "Animationswerkzeug"
 
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Einfache Darstellung von VdW-Sphären mit ambienter Verdeckung."
@@ -10151,17 +10044,6 @@ msgstr ""
 #~ msgid "TODO"
 #~ msgstr "TODO"
 
-#, fuzzy
-#~| msgid "Line width:"
-#~ msgid "Line Size:"
-#~ msgstr "Linienbreite:"
-
-#~ msgid "In."
-#~ msgstr "In."
-
-#~ msgid ", "
-#~ msgstr ", "
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS-Eingabe (*.in)"
 
@@ -10173,21 +10055,6 @@ msgstr ""
 
 #~ msgid "Functional Groups"
 #~ msgstr "funktionelle Gruppen"
-
-#~ msgid "Help..."
-#~ msgstr "Hilfe..."
-
-#~ msgid "Save File..."
-#~ msgstr "Datei speichern..."
-
-#~ msgid "Download Plugins..."
-#~ msgstr "Plugins herunterladen..."
-
-#~ msgid "Record Movie..."
-#~ msgstr "Video aufzeichnen …"
-
-#~ msgid "Other..."
-#~ msgstr "Anderes …"
 
 #~ msgid "Connection failed"
 #~ msgstr "Verbindung fehlgeschlagen"
@@ -10221,23 +10088,12 @@ msgstr ""
 #~ msgid "Formula"
 #~ msgstr "Formel"
 
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
-
 #~ msgid "YAeHMOP Band Structure"
 #~ msgstr "YAeHMOP Bandstruktur"
 
 #, fuzzy
 #~ msgid "&Hostname:"
 #~ msgstr "&Hostname:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigieren"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigieren"
 
 #~ msgid "File name:"
 #~ msgstr "Dateiname:"
@@ -10262,32 +10118,11 @@ msgstr ""
 #~ msgid "Error: %1 crashed!"
 #~ msgstr "Fehler: %1 ist abgestürzt!"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Rhomboedrisch"
-
 #~ msgid "Layer"
 #~ msgstr "Schicht"
 
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molekül einfügen..."
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Kein Molekülsatz"
-
-#~ msgid "Z Å)"
-#~ msgstr "Z (Å)"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK …"
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Kristall …"
 
 #~ msgid "SMILES..."
 #~ msgstr "SMILES …"
@@ -10308,10 +10143,6 @@ msgstr ""
 #~ msgid "Torsion Properties..."
 #~ msgstr "Torsionseigenschaften …"
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Moleküleigenschaften …"
-
 #~ msgid "Create Surfaces..."
 #~ msgstr "Oberflächen erstellen …"
 
@@ -10324,10 +10155,6 @@ msgstr ""
 
 #~ msgid "Theory:"
 #~ msgstr "Theorie:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Entfernung (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Rotierbar"
@@ -10398,22 +10225,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Optimize geometry"
 #~ msgstr "Geometrie &optimieren"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrie-Optimierung"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Wasserstoffatome hinzufügen"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Oberflächen"
 
 #~ msgid "Color by Index"
 #~ msgstr "Farbe nach Index"
