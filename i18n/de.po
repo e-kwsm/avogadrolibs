@@ -9584,6 +9584,9 @@ msgstr ""
 #~ msgid "Partial Charge"
 #~ msgstr "Partialladung"
 
+#~ msgid "Animation Tool"
+#~ msgstr "Animationswerkzeug"
+
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Einfache Darstellung von VdW-Sphären mit ambienter Verdeckung."
 
