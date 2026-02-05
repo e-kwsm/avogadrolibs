@@ -120,25 +120,25 @@ void MeshGeometry::update()
 
     ShaderProgram* program = d->program;
     if (!program->enableAttributeArray("vertex"))
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     if (!program->useAttributeArray("vertex", PackedVertex::vertexOffset(),
                                     sizeof(PackedVertex), FloatType, 3,
                                     ShaderProgram::NoNormalize)) {
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     }
     if (!program->enableAttributeArray("color"))
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     if (!program->useAttributeArray("color", PackedVertex::colorOffset(),
                                     sizeof(PackedVertex), UCharType, 4,
                                     ShaderProgram::Normalize)) {
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     }
     if (!program->enableAttributeArray("normal"))
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     if (!program->useAttributeArray("normal", PackedVertex::normalOffset(),
                                     sizeof(PackedVertex), FloatType, 3,
                                     ShaderProgram::NoNormalize)) {
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     }
 
     d->vao.release();

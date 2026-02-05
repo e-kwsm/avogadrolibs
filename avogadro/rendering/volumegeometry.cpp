@@ -146,7 +146,7 @@ void initializeFramebuffers(GLuint* outFBO, GLuint* texRGB, GLuint* texDepth,
   GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
   if (status != GL_FRAMEBUFFER_COMPLETE) {
     std::cerr << "Error: Framebuffer incomplete: 0x" << std::hex << status
-              << std::endl;
+              << '\n';
   } else {
 #ifndef NDEBUG
     std::cout << "Framebuffer complete.\n";
@@ -192,7 +192,7 @@ void initializePositionFramebuffer(GLuint* outFBO, GLuint* texRGB,
   GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
   if (status != GL_FRAMEBUFFER_COMPLETE) {
     std::cerr << "Error: Position framebuffer incomplete: 0x" << std::hex
-              << status << std::endl;
+              << status << '\n';
   }
 
   // Unbind the FBO:
@@ -475,7 +475,7 @@ void VolumeGeometry::initialize()
     d->fragmentShader = new Shader(Shader::Fragment);
     d->fragmentShader->setSource(volume_fs);
     if (!d->fragmentShader->compile())
-      std::cout << d->fragmentShader->error() << std::endl;
+      std::cout << d->fragmentShader->error() << '\n';
   }
 
   if (!d->program) {

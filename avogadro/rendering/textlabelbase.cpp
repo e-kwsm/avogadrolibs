@@ -174,7 +174,7 @@ void TextLabelBase::RenderImpl::render(const Camera& cam)
 
   // Bind VAO (captures all vertex attribute state)
   if (!vao.bind()) {
-    std::cerr << "Error while binding TextLabelBase VAO" << std::endl;
+    std::cerr << "Error while binding TextLabelBase VAO" << '\n';
     return;
   }
 
@@ -186,7 +186,7 @@ void TextLabelBase::RenderImpl::render(const Camera& cam)
       !shaderProgram->setUniformValue("radius", radius) ||
       !shaderProgram->setTextureSampler("u_texture", texture)) {
     std::cerr << "Error setting up TextLabelBase shader program: "
-              << shaderProgram->error() << std::endl;
+              << shaderProgram->error() << '\n';
     vao.release();
     shaderProgram->release();
     return;
@@ -244,7 +244,7 @@ void TextLabelBase::RenderImpl::compileShaders()
 void TextLabelBase::RenderImpl::uploadVbo()
 {
   if (!vbo.upload(vertices, BufferObject::ArrayBuffer)) {
-    std::cerr << "TextLabelBase VBO error: " << vbo.error() << std::endl;
+    std::cerr << "TextLabelBase VBO error: " << vbo.error() << '\n';
     return;
   }
 
@@ -261,7 +261,7 @@ void TextLabelBase::RenderImpl::uploadVbo()
         "texCoord", PackedVertex::tcoordOffset(), sizeof(PackedVertex),
         FloatType, 2, ShaderProgram::NoNormalize)) {
     std::cerr << "Error setting up TextLabelBase VAO: "
-              << shaderProgram->error() << std::endl;
+              << shaderProgram->error() << '\n';
   }
 
   vao.release();

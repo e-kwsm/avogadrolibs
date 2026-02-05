@@ -87,9 +87,9 @@ void SphereGeometry::update()
     d->fragmentShader->setType(Shader::Fragment);
     d->fragmentShader->setSource(spheres_fs);
     if (!d->vertexShader->compile())
-      cout << d->vertexShader->error() << endl;
+      cout << d->vertexShader->error() << '\n';
     if (!d->fragmentShader->compile())
-      cout << d->fragmentShader->error() << endl;
+      cout << d->fragmentShader->error() << '\n';
 
     if (d->program == nullptr)
       d->program = new ShaderProgram;
@@ -97,7 +97,7 @@ void SphereGeometry::update()
     d->program->attachShader(*d->vertexShader);
     d->program->attachShader(*d->fragmentShader);
     if (!d->program->link())
-      cout << d->program->error() << endl;
+      cout << d->program->error() << '\n';
   }
 
   // Check if the VBOs are ready, if not get them ready.
@@ -145,43 +145,43 @@ void SphereGeometry::update()
     // Check bind() return values - if binding fails (e.g., no GL context),
     // early-return without clearing m_dirty so geometry will be retried later.
     if (!d->vao.bind()) {
-      cout << "SphereGeometry: VAO bind failed" << endl;
+      cout << "SphereGeometry: VAO bind failed" << '\n';
       return;
     }
     if (!d->vbo.bind()) {
-      cout << "SphereGeometry: VBO bind failed" << endl;
+      cout << "SphereGeometry: VBO bind failed" << '\n';
       d->vao.release();
       return;
     }
     if (!d->ibo.bind()) {
-      cout << "SphereGeometry: IBO bind failed" << endl;
+      cout << "SphereGeometry: IBO bind failed" << '\n';
       d->vao.release();
       return;
     }
 
     ShaderProgram* program = d->program;
     if (!program->enableAttributeArray("vertex"))
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     if (!program->useAttributeArray("vertex",
                                     ColorTextureVertex::vertexOffset(),
                                     sizeof(ColorTextureVertex), FloatType, 3,
                                     ShaderProgram::NoNormalize)) {
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     }
     if (!program->enableAttributeArray("color"))
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     if (!program->useAttributeArray("color", ColorTextureVertex::colorOffset(),
                                     sizeof(ColorTextureVertex), UCharType, 3,
                                     ShaderProgram::Normalize)) {
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     }
     if (!program->enableAttributeArray("texCoordinate"))
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     if (!program->useAttributeArray("texCoordinate",
                                     ColorTextureVertex::textureCoordOffset(),
                                     sizeof(ColorTextureVertex), FloatType, 2,
                                     ShaderProgram::NoNormalize)) {
-      cout << program->error() << endl;
+      cout << program->error() << '\n';
     }
 
     d->vao.release();

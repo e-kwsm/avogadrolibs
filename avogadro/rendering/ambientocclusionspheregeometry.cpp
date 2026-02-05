@@ -1116,13 +1116,13 @@ void AmbientOcclusionSphereGeometry::update()
     d->fragmentShader.setType(Shader::Fragment);
     d->fragmentShader.setSource(sphere_ao_render_fs);
     if (!d->vertexShader.compile())
-      cout << d->vertexShader.error() << endl;
+      cout << d->vertexShader.error() << '\n';
     if (!d->fragmentShader.compile())
-      cout << d->fragmentShader.error() << endl;
+      cout << d->fragmentShader.error() << '\n';
     d->program.attachShader(d->vertexShader);
     d->program.attachShader(d->fragmentShader);
     if (!d->program.link())
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
   }
 
   // Check if the VBOs are ready, if not get them ready.
@@ -1200,35 +1200,35 @@ void AmbientOcclusionSphereGeometry::update()
     d->ibo.bind();
 
     if (!d->program.enableAttributeArray("a_pos"))
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     if (!d->program.useAttributeArray("a_pos",
                                       ColorTextureVertex::vertexOffset(),
                                       sizeof(ColorTextureVertex), FloatType, 3,
                                       ShaderProgram::NoNormalize)) {
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     }
     if (!d->program.enableAttributeArray("a_corner"))
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     if (!d->program.useAttributeArray("a_corner",
                                       ColorTextureVertex::textureCoordOffset(),
                                       sizeof(ColorTextureVertex), FloatType, 2,
                                       ShaderProgram::NoNormalize)) {
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     }
     if (!d->program.enableAttributeArray("a_tileOffset"))
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     if (!d->program.useAttributeArray("a_tileOffset",
                                       ColorTextureVertex::textureCoord2Offset(),
                                       sizeof(ColorTextureVertex), FloatType, 2,
                                       ShaderProgram::NoNormalize)) {
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     }
     if (!d->program.enableAttributeArray("a_color"))
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     if (!d->program.useAttributeArray(
           "a_color", ColorTextureVertex::colorOffset(),
           sizeof(ColorTextureVertex), UCharType, 3, ShaderProgram::Normalize)) {
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     }
 
     d->vao.release();
