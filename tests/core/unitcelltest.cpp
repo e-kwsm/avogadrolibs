@@ -518,7 +518,7 @@ TEST(UnitCellTest, MatrixConstructor)
 TEST(UnitCellTest, CopyConstructorAndAssignment)
 {
   UnitCell cell1(3.0, 4.0, 5.0, M_PI_2, M_PI_2, M_PI_2);
-  UnitCell cell2(cell1);
+  const UnitCell& cell2(cell1);
 
   EXPECT_FLOAT_EQ(cell1.a(), cell2.a());
   EXPECT_FLOAT_EQ(cell1.b(), cell2.b());
