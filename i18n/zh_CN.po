@@ -9435,11 +9435,6 @@ msgstr ""
 #~ msgid "Partial Charge"
 #~ msgstr "部分电荷"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "动画"
-
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "带环境光遮挡的 VdW 球的简化显示。"
 
