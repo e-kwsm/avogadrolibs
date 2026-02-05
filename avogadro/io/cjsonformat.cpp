@@ -1593,7 +1593,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
 
     // isotopes (if present)
     json isotopes;
-    const auto isotopeList = molecule.isotopes();
+    const auto& isotopeList = molecule.isotopes();
     if (isotopeList.size() == molecule.atomCount()) {
       for (Index i = 0; i < molecule.atomCount(); ++i) {
         isotopes.push_back(isotopeList[i]);
