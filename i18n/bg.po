@@ -9157,7 +9157,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Oптимизиране на геометрията"
+#~ msgstr "Геометрията"
 
 #, fuzzy
 #~ msgid "By Distance"
@@ -9194,21 +9194,9 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgstr "Свойства на връзката..."
 
 #, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Свойства на връзката"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Свойства на молекулата..."
-
-#, fuzzy
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "Ъгъл %1"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Неон"
 
 #, fuzzy
 #~ msgid "Import"
@@ -9219,15 +9207,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Oптимизиране на геометрията"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Геометрична оптимизация"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Повърхности"
+#~ msgstr "Oптимизиране на геометрията"
 
 #~ msgid "Color by Index (red, orange, yellow, green, blue, violet)."
 #~ msgstr "Цвят по индекс (червен, оранжев, жълт, зелен, син, лилав)."
