@@ -107,18 +107,18 @@ void DashedLineGeometry::update()
     d->vbo.bind();
 
     if (!d->program.enableAttributeArray("vertex"))
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     if (!d->program.useAttributeArray("vertex", PackedVertex::vertexOffset(),
                                       sizeof(PackedVertex), FloatType, 3,
                                       ShaderProgram::NoNormalize)) {
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     }
     if (!d->program.enableAttributeArray("color"))
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     if (!d->program.useAttributeArray("color", PackedVertex::colorOffset(),
                                       sizeof(PackedVertex), UCharType, 4,
                                       ShaderProgram::Normalize)) {
-      cout << d->program.error() << endl;
+      cout << d->program.error() << '\n';
     }
 
     d->vao.release();
