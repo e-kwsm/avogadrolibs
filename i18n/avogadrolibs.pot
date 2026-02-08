@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Avogadro 1.102.1\n"
+"Project-Id-Version: Avogadro 1.103.0\n"
 "Report-Msgid-Bugs-To: avogadro-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2026-01-31 02:11+0000\n"
+"POT-Creation-Date: 2026-02-08 04:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,7 +171,7 @@ msgstr ""
 #: molequeue/inputgeneratorwidget.cpp:164 qtgui/elementtranslator.cpp:372
 #: qtplugins/configurepython/configurepythondialog.cpp:188
 #: qtplugins/configurepython/configurepythondialog.cpp:191
-#: qtplugins/spacegroup/spacegroup.cpp:614
+#: qtplugins/spacegroup/spacegroup.cpp:616
 msgid "Unknown"
 msgstr ""
 
@@ -1750,7 +1750,7 @@ msgstr ""
 #: qtplugins/qtaim/qtaimwavefunction.h:48
 #: qtplugins/qtaim/qtaimwavefunction.h:81
 #: qtplugins/quantuminput/quantuminput.cpp:104
-#: qtplugins/spacegroup/spacegroup.cpp:659
+#: qtplugins/spacegroup/spacegroup.cpp:661
 msgid "Error"
 msgstr ""
 
@@ -1992,16 +1992,16 @@ msgstr ""
 msgid "ApplyColors"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.cpp:66
+#: qtplugins/autoopt/autoopt.cpp:68
 msgctxt "control-key 7"
 msgid "Ctrl+7"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.cpp:67
+#: qtplugins/autoopt/autoopt.cpp:69
 msgid "Auto Optimize"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.cpp:69
+#: qtplugins/autoopt/autoopt.cpp:71
 #, qt-format
 msgid ""
 "Auto Optimize Tool\t(%1)\n"
@@ -2017,37 +2017,85 @@ msgid ""
 "Right Mouse:\tClick and drag to rotate atoms."
 msgstr ""
 
+#: qtplugins/autoopt/autoopt.cpp:152
+msgid "Optimize"
+msgstr ""
+
+#: qtplugins/autoopt/autoopt.cpp:153
+msgid "Dynamics"
+msgstr ""
+
+#: qtplugins/autoopt/autoopt.cpp:157
+msgid "Task:"
+msgstr ""
+
 #. i18n: file: qtplugins/cp2kinput/cp2kinputdialog.ui:164
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: qtplugins/autoopt/autoopt.cpp:146 :370
+#: qtplugins/autoopt/autoopt.cpp:182 :370
 msgid "Method:"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.cpp:149 qtplugins/autoopt/autoopt.cpp:215
+#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:481
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, generationTemperatureSpin)
+#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:625
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, temperatureSpin)
+#: qtplugins/autoopt/autoopt.cpp:190 :1661 rc.cpp:1706
+msgid " K"
+msgstr ""
+
+#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:609
+#. i18n: ectx: property (text), widget (QLabel, label_temperature)
+#: qtplugins/autoopt/autoopt.cpp:194 :1703
+msgid "Temperature:"
+msgstr ""
+
+#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:553
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, stepSpin)
+#: qtplugins/autoopt/autoopt.cpp:202 :1691
+msgid " fs"
+msgstr ""
+
+#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:537
+#. i18n: ectx: property (text), widget (QLabel, label_timestep)
+#: qtplugins/autoopt/autoopt.cpp:206 :1685
+msgid "Timestep:"
+msgstr ""
+
+#: qtplugins/autoopt/autoopt.cpp:213 qtplugins/autoopt/autoopt.cpp:345
 msgid "Start"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.cpp:173
+#: qtplugins/autoopt/autoopt.cpp:271
 msgid "Stop"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.cpp:304 qtplugins/forcefield/forcefield.cpp:73
-#: qtplugins/forcefield/forcefield.cpp:418
-#: qtplugins/forcefield/forcefield.cpp:473 qtplugins/openbabel/openbabel.cpp:48
+#: qtplugins/autoopt/autoopt.cpp:411 qtplugins/forcefield/forcefield.cpp:73
+#: qtplugins/forcefield/forcefield.cpp:416
+#: qtplugins/forcefield/forcefield.cpp:455 qtplugins/openbabel/openbabel.cpp:48
 #: qtplugins/openbabel/openbabel.cpp:560
 msgid "Optimize Geometry"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.cpp:317
+#: qtplugins/autoopt/autoopt.cpp:564
+#: qtplugins/cp2kinput/cp2kinputdialog.cpp:261
+msgid "Molecular Dynamics"
+msgstr ""
+
+#: qtplugins/autoopt/autoopt.cpp:581
+#, qt-format
+msgid "%1 T = %L2 K"
+msgstr ""
+
+#: qtplugins/autoopt/autoopt.cpp:583
 #, qt-format
 msgid "%1 ΔE = %L2 kJ/mol"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.h:42
+#: qtplugins/autoopt/autoopt.h:43
 msgid "Auto Optimize tool"
 msgstr ""
 
-#: qtplugins/autoopt/autoopt.h:45
+#: qtplugins/autoopt/autoopt.h:46
 msgid "Interactive optimization of molecular geometry"
 msgstr ""
 
@@ -2388,13 +2436,13 @@ msgstr ""
 #: qtplugins/configurepython/configurepythondialog.cpp:215
 #: qtplugins/editor/editortoolwidget.cpp:130
 #: qtplugins/templatetool/templatetoolwidget.cpp:84
-#: qtplugins/templatetool/templatetoolwidget.cpp:352
-#: qtplugins/templatetool/templatetoolwidget.cpp:365
-#: qtplugins/templatetool/templatetoolwidget.cpp:373
-#: qtplugins/templatetool/templatetoolwidget.cpp:381
-#: qtplugins/templatetool/templatetoolwidget.cpp:389
-#: qtplugins/templatetool/templatetoolwidget.cpp:397
-#: qtplugins/templatetool/templatetoolwidget.cpp:460 :2325
+#: qtplugins/templatetool/templatetoolwidget.cpp:417
+#: qtplugins/templatetool/templatetoolwidget.cpp:430
+#: qtplugins/templatetool/templatetoolwidget.cpp:438
+#: qtplugins/templatetool/templatetoolwidget.cpp:446
+#: qtplugins/templatetool/templatetoolwidget.cpp:454
+#: qtplugins/templatetool/templatetoolwidget.cpp:462
+#: qtplugins/templatetool/templatetoolwidget.cpp:525 :2325
 msgid "Other…"
 msgstr ""
 
@@ -2765,10 +2813,6 @@ msgstr ""
 
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:258
 msgid "Energy and Forces"
-msgstr ""
-
-#: qtplugins/cp2kinput/cp2kinputdialog.cpp:261
-msgid "Molecular Dynamics"
 msgstr ""
 
 #: qtplugins/cp2kinput/cp2kinputdialog.cpp:264
@@ -3207,8 +3251,8 @@ msgid "Unfuse Selected Atoms"
 msgstr ""
 
 #: qtplugins/forcefield/forcefield.cpp:366
-#: qtplugins/forcefield/forcefield.cpp:517
-#: qtplugins/forcefield/forcefield.cpp:587
+#: qtplugins/forcefield/forcefield.cpp:495
+#: qtplugins/forcefield/forcefield.cpp:553
 #: qtplugins/playertool/playertool.cpp:391
 #: qtplugins/playertool/playertool.cpp:423 qtplugins/surfaces/surfaces.cpp:951
 #: qtplugins/surfaces/surfaces.cpp:995 qtplugins/surfaces/surfaces.cpp:1007
@@ -3220,18 +3264,18 @@ msgstr ""
 msgid "No atoms provided for optimization"
 msgstr ""
 
-#: qtplugins/forcefield/forcefield.cpp:435
+#: qtplugins/forcefield/forcefield.cpp:433
 #, qt-format
 msgctxt "force field energy"
 msgid "Energy: %L1"
 msgstr ""
 
-#: qtplugins/forcefield/forcefield.cpp:516
+#: qtplugins/forcefield/forcefield.cpp:494
 #, qt-format
 msgid "%1 Energy = %L2"
 msgstr ""
 
-#: qtplugins/forcefield/forcefield.cpp:586
+#: qtplugins/forcefield/forcefield.cpp:552
 #, qt-format
 msgid "%1 Force Norm = %L2"
 msgstr ""
@@ -3508,7 +3552,7 @@ msgstr ""
 msgid "Import Crystal"
 msgstr ""
 
-#: qtplugins/insertfragment/insertfragment.cpp:125
+#: qtplugins/insertfragment/insertfragment.cpp:133
 msgid "Insert Fragment"
 msgstr ""
 
@@ -5132,7 +5176,7 @@ msgid "Symmetrize"
 msgstr ""
 
 #: qtplugins/spacegroup/spacegroup.cpp:83
-#: qtplugins/spacegroup/spacegroup.cpp:560
+#: qtplugins/spacegroup/spacegroup.cpp:562
 msgid "Reduce to Asymmetric Unit"
 msgstr ""
 
@@ -5224,7 +5268,7 @@ msgid ""
 "Please check your crystal and try again with a different tolerance."
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:549
+#: qtplugins/spacegroup/spacegroup.cpp:551
 #, qt-format
 msgid ""
 "With a tolerance of %1  Å, the space group information was perceived to be "
@@ -5236,53 +5280,53 @@ msgid ""
 "Proceed with this space group?"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:580 qtplugins/yaehmop/yaehmop.cpp:208
+#: qtplugins/spacegroup/spacegroup.cpp:582 qtplugins/yaehmop/yaehmop.cpp:208
 #: qtplugins/yaehmop/yaehmop.cpp:298 qtplugins/yaehmop/yaehmop.cpp:310
 #: qtplugins/yaehmop/yaehmop.cpp:323 qtplugins/yaehmop/yaehmop.cpp:433
 msgid "Avogadro2"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:581
+#: qtplugins/spacegroup/spacegroup.cpp:583
 msgid "Select tolerance in Å:"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:598
+#: qtplugins/spacegroup/spacegroup.cpp:600
 msgid "Triclinic"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:600
+#: qtplugins/spacegroup/spacegroup.cpp:602
 msgid "Monoclinic"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:602
+#: qtplugins/spacegroup/spacegroup.cpp:604
 msgid "Orthorhombic"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:604
+#: qtplugins/spacegroup/spacegroup.cpp:606
 msgid "Tetragonal"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:606
+#: qtplugins/spacegroup/spacegroup.cpp:608
 msgid "Trigonal"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:608
+#: qtplugins/spacegroup/spacegroup.cpp:610
 msgid "Rhombohedral"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:610
+#: qtplugins/spacegroup/spacegroup.cpp:612
 msgid "Hexagonal"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:612
+#: qtplugins/spacegroup/spacegroup.cpp:614
 msgid "Cubic"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:644
+#: qtplugins/spacegroup/spacegroup.cpp:646
 msgid "Primitive Cell Detected"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:646
+#: qtplugins/spacegroup/spacegroup.cpp:648
 #, qt-format
 msgid ""
 "The current unit cell appears to be a primitive cell (non-90° angles), but "
@@ -5293,27 +5337,27 @@ msgid ""
 "Would you like to create a conventional cell first?"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:660
+#: qtplugins/spacegroup/spacegroup.cpp:662
 msgid "Failed to conventionalize the cell."
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:676
+#: qtplugins/spacegroup/spacegroup.cpp:678
 msgid "International"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:676
+#: qtplugins/spacegroup/spacegroup.cpp:678
 msgid "Hall"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:676
+#: qtplugins/spacegroup/spacegroup.cpp:678
 msgid "Hermann-Mauguin"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:677
+#: qtplugins/spacegroup/spacegroup.cpp:679
 msgid "Crystal System"
 msgstr ""
 
-#: qtplugins/spacegroup/spacegroup.cpp:709
+#: qtplugins/spacegroup/spacegroup.cpp:711
 msgid "Select Space Group"
 msgstr ""
 
@@ -5719,16 +5763,16 @@ msgstr ""
 msgid "%1 %2"
 msgstr ""
 
-#: qtplugins/templatetool/templatetool.cpp:81
+#: qtplugins/templatetool/templatetool.cpp:82
 msgctxt "control-key 3"
 msgid "Ctrl+3"
 msgstr ""
 
-#: qtplugins/templatetool/templatetool.cpp:82
+#: qtplugins/templatetool/templatetool.cpp:83
 msgid "Template"
 msgstr ""
 
-#: qtplugins/templatetool/templatetool.cpp:84
+#: qtplugins/templatetool/templatetool.cpp:85
 #, qt-format
 msgid ""
 "Template Tool\t(%1)\n"
@@ -5741,16 +5785,16 @@ msgid ""
 "it."
 msgstr ""
 
-#: qtplugins/templatetool/templatetool.cpp:406
-#: qtplugins/templatetool/templatetool.cpp:574
+#: qtplugins/templatetool/templatetool.cpp:418
+#: qtplugins/templatetool/templatetool.cpp:586
 msgid "Clipboard"
 msgstr ""
 
-#: qtplugins/templatetool/templatetool.cpp:494
+#: qtplugins/templatetool/templatetool.cpp:506
 msgid "Insert Template"
 msgstr ""
 
-#: qtplugins/templatetool/templatetool.cpp:792
+#: qtplugins/templatetool/templatetool.cpp:804
 msgid "Insert Ligand"
 msgstr ""
 
@@ -8196,13 +8240,6 @@ msgstr ""
 msgid "Generation Temp:"
 msgstr ""
 
-#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:481
-#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, generationTemperatureSpin)
-#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:625
-#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, temperatureSpin)
-msgid " K"
-msgstr ""
-
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:498
 #. i18n: ectx: property (text), widget (QLabel, label_integrator)
 msgid "Integrator:"
@@ -8233,16 +8270,6 @@ msgstr ""
 msgid "VariableVerlet"
 msgstr ""
 
-#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:537
-#. i18n: ectx: property (text), widget (QLabel, label_timestep)
-msgid "Timestep:"
-msgstr ""
-
-#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:553
-#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, stepSpin)
-msgid " fs"
-msgstr ""
-
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:560
 #. i18n: ectx: property (text), widget (QLabel, label_errorTol)
 msgid "Error tolerance:"
@@ -8256,11 +8283,6 @@ msgstr ""
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:602
 #. i18n: ectx: property (suffix), widget (QDoubleSpinBox, collisionRateSpin)
 msgid "/ps"
-msgstr ""
-
-#. i18n: file: qtplugins/openmminput/openmminputdialog.ui:609
-#. i18n: ectx: property (text), widget (QLabel, label_temperature)
-msgid "Temperature:"
 msgstr ""
 
 #. i18n: file: qtplugins/openmminput/openmminputdialog.ui:632
