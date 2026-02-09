@@ -53,14 +53,22 @@ body:
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
+      validations:
+        required: true
 
   - type: input
     attributes:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen.
+      validations:
+        required: true
 
-    **Screenshots**
-    If applicable, add screenshots to help explain your problem.
+  - type: input
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
 
-    **Additional context**
-    Add any other context about the problem here. **Please consider uploading or linking test files.**
+  - type: input
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here. **Please consider uploading or linking test files.**
