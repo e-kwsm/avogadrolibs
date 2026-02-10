@@ -31,7 +31,7 @@ Cp2kInput::Cp2kInput(QObject* parent_)
 {
   m_action->setEnabled(true);
   m_action->setText(tr("&CP2K…"));
-  connect(m_action, SIGNAL(triggered()), SLOT(menuActivated()));
+  connect(m_action.get(), SIGNAL(triggered()), SLOT(menuActivated()));
 }
 
 Cp2kInput::~Cp2kInput() {}
@@ -39,7 +39,7 @@ Cp2kInput::~Cp2kInput() {}
 QList<QAction*> Cp2kInput::actions() const
 {
   QList<QAction*> actions_;
-  actions_.append(m_action);
+  actions_.append(m_action.get());
   return actions_;
 }
 
