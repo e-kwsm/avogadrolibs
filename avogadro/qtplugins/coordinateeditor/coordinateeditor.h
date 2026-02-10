@@ -10,6 +10,8 @@
 
 #include <avogadro/core/avogadrocore.h>
 
+#include <memory>
+
 namespace Avogadro::QtPlugins {
 class CoordinateEditorDialog;
 
@@ -45,7 +47,7 @@ private slots:
 private:
   CoordinateEditorDialog* m_dialog;
   QtGui::Molecule* m_molecule;
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
 };
 
 } // namespace Avogadro::QtPlugins
