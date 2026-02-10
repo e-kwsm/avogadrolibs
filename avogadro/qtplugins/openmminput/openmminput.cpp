@@ -28,7 +28,7 @@ OpenMMInput::OpenMMInput(QObject* parent_)
 {
   m_action->setEnabled(true);
   m_action->setText(tr("&OpenMM Script…"));
-  connect(m_action, SIGNAL(triggered()), SLOT(menuActivated()));
+  connect(m_action.get(), SIGNAL(triggered()), SLOT(menuActivated()));
 }
 
 OpenMMInput::~OpenMMInput() {}
@@ -36,7 +36,7 @@ OpenMMInput::~OpenMMInput() {}
 QList<QAction*> OpenMMInput::actions() const
 {
   QList<QAction*> actions_;
-  actions_.append(m_action);
+  actions_.append(m_action.get());
   return actions_;
 }
 
