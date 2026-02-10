@@ -32,7 +32,8 @@ GamessInput::GamessInput(QObject* parent_)
 {
   m_action->setEnabled(true);
   m_action->setText(tr("&GAMESS…"));
-  connect(m_action, &QAction::triggered, this, &GamessInput::menuActivated);
+  connect(m_action.get(), &QAction::triggered, this,
+          &GamessInput::menuActivated);
 }
 
 GamessInput::~GamessInput() {}
@@ -40,7 +41,7 @@ GamessInput::~GamessInput() {}
 QList<QAction*> GamessInput::actions() const
 {
   QList<QAction*> actions_;
-  actions_.append(m_action);
+  actions_.append(m_action.get());
   return actions_;
 }
 
