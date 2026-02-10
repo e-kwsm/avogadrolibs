@@ -28,7 +28,7 @@ LammpsInput::LammpsInput(QObject* parent_)
 {
   m_action->setEnabled(true);
   m_action->setText(tr("&LAMMPS…"));
-  connect(m_action, SIGNAL(triggered()), SLOT(menuActivated()));
+  connect(m_action.get(), SIGNAL(triggered()), SLOT(menuActivated()));
 }
 
 LammpsInput::~LammpsInput() {}
@@ -36,7 +36,7 @@ LammpsInput::~LammpsInput() {}
 QList<QAction*> LammpsInput::actions() const
 {
   QList<QAction*> actions_;
-  actions_.append(m_action);
+  actions_.append(m_action.get());
   return actions_;
 }
 
