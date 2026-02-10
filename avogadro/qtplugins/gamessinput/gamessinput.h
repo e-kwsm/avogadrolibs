@@ -7,6 +7,7 @@
 #define AVOGADRO_QTPLUGINS_GAMESSINPUT_H
 
 #include <avogadro/qtgui/extensionplugin.h>
+#include <memory>
 
 class QAction;
 class QDialog;
@@ -56,7 +57,7 @@ private slots:
   void menuActivated();
 
 private:
-  QAction* m_action;
+  std::unique_ptr<QAction> m_action;
   QtGui::Molecule* m_molecule;
   GamessInputDialog* m_dialog;
   const Io::FileFormat* m_outputFormat;
