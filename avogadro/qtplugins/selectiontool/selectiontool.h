@@ -15,6 +15,8 @@
 
 #include <QtCore/QVector>
 
+#include <memory>
+
 namespace Avogadro {
 namespace QtPlugins {
 class SelectionToolWidget;
@@ -32,7 +34,7 @@ public:
   QString name() const override { return tr("Selection tool"); }
   QString description() const override { return tr("Selection tool"); }
   unsigned char priority() const override { return 25; }
-  QAction* activateAction() const override { return m_activateAction; }
+  QAction* activateAction() const override { return m_activateAction.get(); }
   QWidget* toolWidget() const override;
   void setIcon(bool darkTheme = false) override;
 
@@ -61,7 +63,7 @@ private:
   bool shouldClean(QMouseEvent* e);
   void selectLinkedMolecule(QMouseEvent* e, Index atom);
 
-  QAction* m_activateAction;
+  std::unique_ptr<QAction> m_activateAction;
   QtGui::Molecule* m_molecule;
   Rendering::GLRenderer* m_renderer;
   mutable SelectionToolWidget* m_toolWidget;
