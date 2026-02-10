@@ -17,14 +17,15 @@ CoordinateEditor::CoordinateEditor(QObject* parent_)
     m_action(new QAction(tr("Atomic &Coordinate Editor…"), this))
 {
   m_action->setProperty("menu priority", 950);
-  connect(m_action, &QAction::triggered, this, &CoordinateEditor::triggered);
+  connect(m_action.get(), &QAction::triggered, this,
+          &CoordinateEditor::triggered);
 }
 
 CoordinateEditor::~CoordinateEditor() {}
 
 QList<QAction*> CoordinateEditor::actions() const
 {
-  return QList<QAction*>() << m_action;
+  return QList<QAction*>() << m_action.get();
 }
 
 QStringList CoordinateEditor::menuPath(QAction*) const
