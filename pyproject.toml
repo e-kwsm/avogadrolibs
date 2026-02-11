@@ -16,6 +16,7 @@ authors = [
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
     "Intended Audience :: Education",
@@ -32,6 +33,7 @@ classifiers = [
 ]
 
 [project.urls]
+Homepage = "https://avogadro.cc"
 Documentation = "https://avogadro.cc"
 Funding = "https://github.com/sponsors/OpenChemistry"
 Source = "https://github.com/OpenChemistry/avogadrolibs"
