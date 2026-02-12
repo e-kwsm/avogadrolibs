@@ -5,6 +5,7 @@
 ******************************************************************************/
 """
 import json
+from os import PathLike
 
 
 class cjson:
@@ -24,18 +25,18 @@ class cjson:
     def __init__(self):
         pass
 
-    def __from_cjson(self, filePath):
+    def __from_cjson(self, filePath: str | PathLike) -> dict:
         """Use to read cjson formats by converting them to python dictionaries"""
         with open(filePath, "r") as cjsonFile:
             py_dict_data = json.load(cjsonFile)
             return py_dict_data
 
-    def __to_cjson(self, cjson_dict_file):
+    def __to_cjson(self, cjson_dict_file: dict) -> str:
         """It converts python dictionaries to cjson format"""
         cjsonData = json.dumps(cjson_dict_file, indent=4)
         return cjsonData
 
-    def get_atoms_coords(self, filePath):
+    def get_atoms_coords(self, filePath: str | PathLike) -> str:
         """
         It helps to get the co-ordinates of individual elements/atoms in the format
         [
@@ -55,7 +56,7 @@ class cjson:
         cjson_dict = {"element-coordinates": element_coords}
         return self.__to_cjson(cjson_dict)
 
-    def get_elements(self, filePath):
+    def get_elements(self, filePath: str | PathLike) -> list[int]:
         """
         returns all the elements present in cjson file
         """
@@ -63,7 +64,7 @@ class cjson:
         elements = data["atoms"]["elements"]["number"]
         return elements
 
-    def get_coordinates(self, filePath):
+    def get_coordinates(self, filePath: str | PathLike) -> list[float]:
         """
         returns the coordinate array
         """
@@ -71,7 +72,7 @@ class cjson:
         coords = data["atoms"]["coords"]["3d"]
         return coords
 
-    def set_atoms_coordinates(self, filePath, coords_array):
+    def set_atoms_coordinates(self, filePath: str | PathLike, coords_array: list[float]) -> str:
         """
         it updates the coordinates array in cjson file
         """
@@ -79,7 +80,7 @@ class cjson:
         data["atoms"]["coords"]["3d"] = coords_array
         return self.__to_cjson(data)
 
-    def set_elements(self, filePath, elements_array):
+    def set_elements(self, filePath: str | PathLike, elements_array: list[int]) -> str:
         """
         It sets all the elements present in the cjson file
         where elements are set/recognized by their atomic numbers
@@ -88,7 +89,7 @@ class cjson:
         data["atoms"]["elements"]["number"] = elements_array
         return self.__to_cjson(data)
 
-    def set_coordinates(self, filePath, coords_array):
+    def set_coordinates(self, filePath: str | PathLike, coords_array: list[float]) -> str:
         """
         It helps to set all coordinates of the
         cjson file where coordinates of all elements

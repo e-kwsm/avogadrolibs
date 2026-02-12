@@ -24,7 +24,7 @@ class connect:
     If it does not exist, Avogadro is not running.
     """
 
-    def __init__(self, name="avogadro"):
+    def __init__(self, name: str = "avogadro"):
         """
         Connect to the local named pipe
 
@@ -42,7 +42,7 @@ class connect:
             print("error while connecting: " + str(exception))
             print("Is Avogadro running?")
 
-    def __json(self, method, params={}):
+    def __json(self, method: str, params: dict = {}) -> dict | None:
         """
         Send a JSON-RPC request to the named pipe.
         :param method: The JSON-RPC request method.
@@ -79,7 +79,7 @@ class connect:
             else:
                 self.sock.send(packet)
 
-    def open_file(self, file):
+    def open_file(self, file) -> None:
         """Opens file"""
         # param: file is filename input by the user in string
         method = "openFile"
@@ -87,13 +87,13 @@ class connect:
         self.__json(method, params)
         self.__json("receive_message")
 
-    def save_graphic(self, file):
+    def save_graphic(self, file) -> None:
         """Save Graphic"""
         method = "saveGraphic"
         params = {"filename": file}
         self.__json(method, params)
         self.__json("receive_message")
 
-    def close(self):
+    def close(self) -> None:
         """Close the socket to the named pipe"""
         self.sock.close()
