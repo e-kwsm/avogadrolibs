@@ -74,7 +74,7 @@ class connect:
             avo.save_graphic("caffeine.png")
     """
 
-    def __init__(self, name=DEFAULT_SERVER, timeout=10.0):
+    def __init__(self, name: str = DEFAULT_SERVER, timeout: float = 10.0):
         """
         Connect to the local named pipe.
 
@@ -212,7 +212,7 @@ class connect:
             )
         return response
 
-    def command(self, name, /, wait=False, timeout=None, **params):
+    def command(self, name, /, wait: bool = False, timeout=None, **params):
         """
         Run a command registered by a tool or extension plugin.
 
