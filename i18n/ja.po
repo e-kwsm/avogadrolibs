@@ -9563,15 +9563,6 @@ msgstr ""
 #~ msgid "Fragment…"
 #~ msgstr "フラグメント…"
 
-#~ msgid "Help..."
-#~ msgstr "ヘルプ..."
-
-#~ msgid "Save File..."
-#~ msgstr "ファイルの保存"
-
-#~ msgid "Other..."
-#~ msgstr "その他..."
-
 #~ msgid "S&erver"
 #~ msgstr "サーバ (&E)"
 
