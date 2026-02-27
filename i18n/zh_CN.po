@@ -9648,11 +9648,6 @@ msgstr ""
 #~ msgid "TODO"
 #~ msgstr "TODO"
 
-#, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "跳转尺度:"
-
 #~ msgid "In."
 #~ msgstr "输入。"
 
