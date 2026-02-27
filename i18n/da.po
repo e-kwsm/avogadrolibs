@@ -9576,23 +9576,6 @@ msgstr ""
 #~ msgstr "Tilføj enhedscelle"
 
 #, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Atom nummer"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Afstand"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Atom nummer"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekyle"
-
-#, fuzzy
 #~| msgid "Fragment..."
 #~ msgid "Fragment…"
 #~ msgstr "Fragment..."
