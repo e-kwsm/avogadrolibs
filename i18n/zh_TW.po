@@ -9333,6 +9333,14 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgstr "鍵的數目:"
 
 #, fuzzy
+#~| msgid "Fragment..."
+#~ msgid "Fragment…"
+#~ msgstr "片斷..."
+
+#~ msgid "Other..."
+#~ msgstr "其他..."
+
+#, fuzzy
 #~ msgid "Filename"
 #~ msgstr "檔名"
 
