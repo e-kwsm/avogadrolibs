@@ -419,16 +419,16 @@ void GamessInputDialog::buildDispersionCorrectionOptions()
         text = tr("None");
         break;
       case DispersionD1:
-        text = tr("D1");
+        text = "D1";
         break;
       case DispersionD2:
-        text = tr("D2");
+        text = "D2";
         break;
       case DispersionD3:
-        text = tr("D3");
+        text = "D3";
         break;
       case DispersionD4:
-        text = tr("D4");
+        text = "D4";
         break;
       default:
         break;
