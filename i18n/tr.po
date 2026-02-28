@@ -2164,7 +2164,6 @@ msgstr ""
 
 #: qtplugins/autoopt/autoopt.cpp:215
 #, fuzzy
-#| msgid "Optimize Geometry"
 msgid "Optimize"
 msgstr "İyileştir"
 
