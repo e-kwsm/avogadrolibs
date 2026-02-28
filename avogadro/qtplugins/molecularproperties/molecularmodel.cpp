@@ -177,9 +177,9 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
     if (it->first == " 1name")
       return tr("Molecule Name");
     else if (it->first == " 2mass")
-      return tr("Molecular Mass (g/mol)");
+      return tr("Molecular Mass") + " (g/mol)";
     else if (it->first == " 2monoisotopicMass")
-      return tr("Monoisotopic Mass (g/mol)");
+      return tr("Monoisotopic Mass") + " (g/mol)";
     else if (it->first == " 3formula")
       return tr("Chemical Formula");
     else if (it->first == " 4atoms")
@@ -199,23 +199,23 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
     else if (it->first == "dipoleMoment")
       return tr("Dipole Moment (Debye)");
     else if (it->first == "homoEnergy")
-      return tr("HOMO Energy (eV)", "highest occupied molecular orbital");
+      return tr("HOMO Energy", "highest occupied molecular orbital") + " (eV)";
     else if (it->first == "lumoEnergy")
-      return tr("LUMO Energy (eV)", "lowest unoccupied molecular orbital");
+      return tr("LUMO Energy", "lowest unoccupied molecular orbital") + "( eV)";
     else if (it->first == "somoEnergy")
-      return tr("SOMO Energy (eV)", "singly-occupied molecular orbital");
+      return tr("SOMO Energy", "singly-occupied molecular orbital") + "( eV)";
     else if (it->first == "totalEnergy")
       return tr("Total Energy (Hartree)",
                 "total electronic energy in Hartrees");
     else if (it->first == "zpe")
-      return tr("Zero Point Energy (kcal/mol)",
-                "zero point vibrational energy");
+      return tr("Zero Point Energy", "zero point vibrational energy") +
+             " (kcal/mol)";
     else if (it->first == "enthalpy")
-      return tr("Enthalpy (kcal/mol)");
+      return tr("Enthalpy") + " (kcal/mol)";
     else if (it->first == "entropy")
-      return tr("Entropy (kcal/mol•K)");
+      return tr("Entropy") + " (kcal/mol•K)";
     else if (it->first == "gibbs")
-      return tr("Gibbs Free Energy (kcal/mol)");
+      return tr("Gibbs Free Energy") + " (kcal/mol)";
     else if (it->first == "pointgroup")
       return tr("Point Group", "point group symmetry");
     else if (it != map.end())
