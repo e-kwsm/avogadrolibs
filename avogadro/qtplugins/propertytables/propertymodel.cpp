@@ -641,11 +641,11 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
           return charge.arg(formatChargeType(type));
         }
         case AtomDataX:
-          return tr("X (Å)");
+          return tr("X") + " (Å)";
         case AtomDataY:
-          return tr("Y (Å)");
+          return tr("Y") + " (Å)";
         case AtomDataZ:
-          return tr("Z (Å)");
+          return tr("Z") + " (Å)";
         case AtomDataLabel:
           return tr("Label");
         case AtomDataIsotope:
@@ -671,7 +671,7 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
         case BondDataLabel:
           return tr("Label");
         default: // A bond length
-          return tr("Length (Å)", "in Angstrom");
+          return tr("Length", "in Angstrom") + " (Å)";
       }
     } else
       // Bond ordering starts at 0
@@ -742,10 +742,11 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
       unsigned int column = static_cast<ConformerColumn>(section);
       switch (column) {
         case ConformerDataRMSD:
-          return tr("RMSD (Å)", "root mean squared displacement in Angstrom");
+          return tr("RMSD", "root mean squared displacement in Angstrom") +
+                 " (Å)";
         case ConformerDataEnergy:
           // should only hit this if we have energies anyway
-          return hasEnergies ? tr("Energy (kcal/mol)") : tr("Property");
+          return hasEnergies ? (tr("Energy") + " (kcal/mol)") : tr("Property");
       }
     } else // row headers
       return QString("%L1").arg(section + 1);
