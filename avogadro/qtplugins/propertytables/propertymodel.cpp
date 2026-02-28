@@ -789,11 +789,11 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
           return charge.arg(formatChargeType(type));
         }
         case AtomDataX:
-          return tr("X (Å)");
+          return tr("X") + " (Å)";
         case AtomDataY:
-          return tr("Y (Å)");
+          return tr("Y") + " (Å)";
         case AtomDataZ:
-          return tr("Z (Å)");
+          return tr("Z") + " (Å)";
         case AtomDataLabel:
           return tr("Label");
         case AtomDataIsotope:
@@ -819,7 +819,7 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
         case BondDataLabel:
           return tr("Label");
         default: // A bond length
-          return tr("Length (Å)", "in Angstrom");
+          return tr("Length", "in Angstrom") + " (Å)";
       }
     } else
       // Bond ordering starts at 0
