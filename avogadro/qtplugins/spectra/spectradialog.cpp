@@ -772,15 +772,15 @@ void SpectraDialog::updatePlot()
   QString xTitle;
   QString yTitle;
   // TODO: switch units for electronic and CD
-  QString xWave = tr("Wavelength (nm)");
-  QString xFreq = tr("Frequency (Hz)");
+  QString xWave = tr("Wavelength") + " (nm)";
+  QString xFreq = tr("Frequency") + " (Hz)";
 
   bool transmission = false;
   // get the raw data from the spectra map
   switch (type) {
     case SpectraType::Infrared:
       windowName = tr("Vibrational Spectra");
-      xTitle = tr("Wavenumbers (cm⁻¹)");
+      xTitle = tr("Wavenumbers") + " (cm⁻¹)";
       yTitle = tr("Transmission");
       transmission = true;
 
@@ -794,7 +794,7 @@ void SpectraDialog::updatePlot()
       break;
     case SpectraType::Raman:
       windowName = tr("Raman Spectra");
-      xTitle = tr("Wavenumbers (cm⁻¹)");
+      xTitle = tr("Wavenumbers") + " (cm⁻¹)";
       yTitle = tr("Intensity");
       // save the plot settings
       settings.beginGroup("spectra/raman");
@@ -807,7 +807,7 @@ void SpectraDialog::updatePlot()
       break;
     case SpectraType::VibrationalCD:
       windowName = tr("Vibrational Circular Dichroism");
-      xTitle = tr("Wavenumbers (cm⁻¹)");
+      xTitle = tr("Wavenumbers") + " (cm⁻¹)";
       yTitle = tr("Intensity");
       // save the plot settings
       settings.beginGroup("spectra/vcd");
@@ -820,7 +820,7 @@ void SpectraDialog::updatePlot()
       break;
     case SpectraType::MagneticCD:
       windowName = tr("Magnetic Circular Dichroism");
-      xTitle = tr("Wavenumbers (cm⁻¹)");
+      xTitle = tr("Wavenumbers") + " (cm⁻¹)";
       yTitle = tr("Intensity");
       // save the plot settings
       settings.beginGroup("spectra/mcd");
