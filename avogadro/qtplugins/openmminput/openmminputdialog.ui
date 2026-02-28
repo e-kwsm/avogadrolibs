@@ -121,7 +121,7 @@
        </item>
        <item>
         <property name="text">
-         <string>AMBER10</string>
+         <string translate="0">AMBER10</string>
         </property>
        </item>
       </widget>
