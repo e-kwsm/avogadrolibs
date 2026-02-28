@@ -16,7 +16,7 @@
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/packagemanager.h>
 #include <avogadro/qtgui/pythonscript.h>
-#include <avogadro/qtgui/scriptloader.h>
+#include <avogadro/qtgui/tomlparse.h>
 #include <avogadro/qtgui/utilities.h>
 
 #include <QAction>
@@ -30,8 +30,8 @@
 #include <QtCore/QDebug>
 #include <QtCore/QDir>
 #include <QtCore/QFile>
-#include <QtCore/QJsonDocument>
 #include <QtCore/QJsonArray>
+#include <QtCore/QJsonDocument>
 #include <QtCore/QSettings>
 #include <QtCore/QStandardPaths>
 #include <QtCore/QStringList>
@@ -161,11 +161,7 @@ bool QuantumInput::readMolecule(QtGui::Molecule& mol)
   return success;
 }
 
-void QuantumInput::refreshGenerators()
-{
-  updateInputGeneratorScripts();
-  updateActions();
-}
+void QuantumInput::refreshGenerators() {}
 
 void QuantumInput::menuActivated()
 {
@@ -190,131 +186,102 @@ void QuantumInput::menuActivated()
       dlg->widget().inputGenerator().interpreter().setPackageInfo(
         pkgDir, pkgCmd, pkgId);
 
-      // Load user options from the JSON file declared in pyproject.toml
+      // The pyproject.toml [avogadro.X] table may declare a separate
+      // user-options file (JSON or TOML) that overrides the defaults baked
+      // into the input-generator script.  Load it now so the dialog starts
+      // with the right set of options.
+      QJsonObject opts;
+      // Inject the preferred input molecule format (e.g. "cjson") so the
+      // generator knows which format to request from Avogadro.
+      QString inputFormat =
+        theSender->property("packageInputFormat").toString();
+      if (!inputFormat.isEmpty())
+        opts.insert("inputMoleculeFormat", inputFormat);
+
       QString userOptionsRel =
         theSender->property("packageUserOptions").toString();
       if (!userOptionsRel.isEmpty()) {
         QString userOptionsPath = pkgDir + '/' + userOptionsRel;
-        QFile optFile(userOptionsPath);
-        if (optFile.open(QIODevice::ReadOnly)) {
-          QJsonDocument doc = QJsonDocument::fromJson(optFile.readAll());
-          if (doc.isObject()) {
-            QJsonObject opts = doc.object();
-            QString inputFormat =
-              theSender->property("packageInputFormat").toString();
-            if (!inputFormat.isEmpty())
-              opts.insert("inputMoleculeFormat", inputFormat);
-            QString highlightStylesRel =
-              theSender->property("packageHighlightStyles").toString();
-            if (!highlightStylesRel.isEmpty()) {
-              QFile stylesFile(pkgDir + '/' + highlightStylesRel);
-              if (stylesFile.open(QIODevice::ReadOnly)) {
-                QJsonDocument stylesDoc =
-                  QJsonDocument::fromJson(stylesFile.readAll());
-                // File may be a bare array or {"highlightStyles": [...]}
-                if (stylesDoc.isArray()) {
-                  opts.insert("highlightStyles", stylesDoc.array());
-                } else if (stylesDoc.isObject()) {
-                  QJsonValue v = stylesDoc.object().value("highlightStyles");
-                  if (v.isArray())
-                    opts.insert("highlightStyles", v.toArray());
-                }
-              }
-            }
-            dlg->widget().inputGenerator().setOptions(opts);
-          }
-        } else {
-          qWarning() << "QuantumInput: could not open user-options file:"
-                     << userOptionsPath;
-        }
+        QtGui::PackageManager::mergeOptionsFromFile(opts, userOptionsPath);
       }
 
-      dlg->widget().reloadOptions();
-
-      // check the title for …
-      QString title(theSender->text());
-      if (title.endsWith("..."))
-        title.chop(3);
-      else if (title.endsWith("…"))
-        title.chop(1);
-
-      dlg->setWindowTitle(tr("%1 Input Generator").arg(title));
-      connect(&dlg->widget(), &MoleQueue::InputGeneratorWidget::openJobOutput,
-              this, &QuantumInput::openJobOutput);
-      m_dialogs.insert(key, dlg);
+      // Optionally load syntax-highlight rules from a separate file.
+      // The file path is relative to the package directory and may be
+      // JSON or TOML.  The expected JSON shape fed to the widget is:
+      //   "highlightStyles": [ { "style": "<name>", "rules": [...] }, … ]
+      // This runs unconditionally so a package that only supplies highlight
+      // styles (with no other options) is not silently skipped.
+      QString highlightStylesRel =
+        theSender->property("packageHighlightStyles").toString();
+      if (!highlightStylesRel.isEmpty()) {
+        QFile stylesFile(pkgDir + '/' + highlightStylesRel);
+        if (stylesFile.open(QIODevice::ReadOnly)) {
+          QByteArray content = stylesFile.readAll();
+          if (highlightStylesRel.endsWith(QLatin1String(".toml"),
+                                          Qt::CaseInsensitive)) {
+            // TOML layout: each top-level key is a style name whose
+            // value has a "rules" array, e.g.:
+            //   [[default.rules]]
+            //     …
+            // Each entry is reshaped into {"style": key, "rules": […]}.
+            bool ok = false;
+            QJsonObject stylesObj = QtGui::parseTomlToJson(content, &ok);
+            if (!ok) {
+              qWarning() << "QuantumInput: failed to parse TOML highlight"
+                            " styles file:"
+                         << highlightStylesRel;
+            } else { // it was converted to JSON successfully
+              QJsonArray stylesArray;
+              for (auto it = stylesObj.constBegin(); it != stylesObj.constEnd();
+                   ++it) {
+                QJsonObject styleObj;
+                styleObj[QStringLiteral("style")] = it.key();
+                styleObj[QStringLiteral("rules")] =
+                  it.value()
+                    .toObject()
+                    .value(QStringLiteral("rules"))
+                    .toArray();
+                stylesArray.append(styleObj);
+              }
+              if (!stylesArray.isEmpty())
+                opts.insert("highlightStyles", stylesArray);
+            }
+          } else {
+            // JSON: accept either a bare array or an object that wraps
+            // the array under the "highlightStyles" key.
+            QJsonDocument stylesDoc = QJsonDocument::fromJson(content);
+            if (stylesDoc.isArray()) {
+              opts.insert("highlightStyles", stylesDoc.array());
+            } else if (stylesDoc.isObject()) {
+              QJsonValue v = stylesDoc.object().value("highlightStyles");
+              if (v.isArray())
+                opts.insert("highlightStyles", v.toArray());
+            }
+          }
+        }
+      }
+      if (!opts.isEmpty())
+        dlg->widget().inputGenerator().setOptions(opts);
     }
-  } else {
-    key = theSender->data().toString();
-    dlg = m_dialogs.value(key, nullptr);
-    if (!dlg) {
-      dlg = new InputGeneratorDialog(key, theParent);
-      connect(&dlg->widget(), &MoleQueue::InputGeneratorWidget::openJobOutput,
-              this, &QuantumInput::openJobOutput);
-      m_dialogs.insert(key, dlg);
-    }
+
+    dlg->widget().reloadOptions();
+
+    // check the title for …
+    QString title(theSender->text());
+    if (title.endsWith("..."))
+      title.chop(3);
+    else if (title.endsWith("…"))
+      title.chop(1);
+
+    dlg->setWindowTitle(tr("%1 Input Generator").arg(title));
+    connect(&dlg->widget(), &MoleQueue::InputGeneratorWidget::openJobOutput,
+            this, &QuantumInput::openJobOutput);
+    m_dialogs.insert(key, dlg);
   }
 
   dlg->setMolecule(m_molecule);
   dlg->show();
   dlg->raise();
-}
-
-void QuantumInput::updateInputGeneratorScripts()
-{
-  m_inputGeneratorScripts = QtGui::ScriptLoader::scriptList("inputGenerators");
-}
-
-void QuantumInput::updateActions()
-{
-  m_actions.clear();
-
-  foreach (const QString& programName, m_inputGeneratorScripts.uniqueKeys()) {
-    QStringList scripts = m_inputGeneratorScripts.values(programName);
-
-    QString label = programName;
-    // make sure it has the ellipsis for UI
-    if (label.endsWith("...")) {
-      label.chop(3);
-      label.append("…");
-    }
-    if (!label.endsWith("…"))
-      label.append("…");
-
-    if (scripts.size() == 1) {
-      addAction(label, scripts.first());
-    } else {
-      foreach (const QString& filePath, scripts) {
-        qWarning() << "Multiple generators for" << programName << filePath;
-      }
-      qWarning() << "Using generator: " << scripts.first();
-      addAction(label, scripts.first());
-    }
-  }
-}
-
-void QuantumInput::addAction(const QString& label,
-                             const QString& scriptFilePath)
-{
-  auto* action = new QAction(label, this);
-  action->setData(scriptFilePath);
-  action->setEnabled(true);
-  connect(action, SIGNAL(triggered()), SLOT(menuActivated()));
-  m_actions << action;
-}
-
-bool QuantumInput::queryProgramName(const QString& scriptFilePath,
-                                    QString& displayName)
-{
-  InputGenerator gen(scriptFilePath);
-  displayName = gen.displayName();
-  if (gen.hasErrors()) {
-    displayName.clear();
-    qWarning() << "QuantumInput::queryProgramName: Unable to retrieve program "
-                  "name for"
-               << scriptFilePath << ";" << gen.errorList().join("\n\n");
-    return false;
-  }
-  return true;
 }
 
 void QuantumInput::registerFeature(const QString& type,
@@ -356,10 +323,10 @@ void QuantumInput::registerFeature(const QString& type,
                       supportMeta.value("periodic", false).toBool());
   action->setEnabled(true);
   connect(action, SIGNAL(triggered()), SLOT(menuActivated()));
-  m_actions << action;
   m_packageActions.insert(
     QtGui::PackageManager::packageFeatureKey(packageDir, command, identifier),
     action);
+  emit actionsChanged();
 }
 
 void QuantumInput::unregisterFeature(const QString& type,
@@ -384,10 +351,9 @@ void QuantumInput::unregisterFeature(const QString& type,
     delete dlg;
   }
 
-  for (QAction* action : actions) {
-    m_actions.removeAll(action);
+  for (QAction* action : actions)
     action->deleteLater();
-  }
+  emit actionsChanged();
 }
 
 } // namespace Avogadro::QtPlugins

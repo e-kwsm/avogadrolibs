@@ -11,7 +11,6 @@
 #include <avogadro/calc/chargemodel.h>
 
 #include <avogadro/qtgui/packagemanager.h>
-#include <avogadro/qtgui/scriptloader.h>
 #include <avogadro/qtgui/utilities.h>
 
 #include <QtCore/QDebug>
@@ -28,6 +27,11 @@ ScriptCharges::ScriptCharges(QObject* p) : ExtensionPlugin(p)
           &ScriptCharges::registerFeature);
   connect(pm, &QtGui::PackageManager::featureRemoved, this,
           &ScriptCharges::unregisterFeature);
+
+  // If PackageManager already replayed cached features before this plugin was
+  // constructed, we would miss those registrations. Replay only
+  // electrostatic-models here to catch up.
+  pm->loadRegisteredPackages(QStringLiteral("electrostatic-models"));
 }
 
 ScriptCharges::~ScriptCharges() {}
@@ -49,15 +53,6 @@ void ScriptCharges::refreshModels()
   unregisterModels();
   m_models.clear();
   m_packageModels.clear();
-
-  QMultiMap<QString, QString> scriptPaths =
-    QtGui::ScriptLoader::scriptList("charges");
-  foreach (const QString& filePath, scriptPaths) {
-    auto model = std::make_shared<ScriptChargeModel>(filePath);
-    if (model->isValid())
-      m_models.push_back(std::move(model));
-  }
-
   registerModels();
 }
 
@@ -86,6 +81,14 @@ void ScriptCharges::registerFeature(const QString& type,
   if (type != QLatin1String("electrostatic-models"))
     return;
 
+  const QString featureKey =
+    QtGui::PackageManager::packageFeatureKey(packageDir, command, identifier);
+  // Ignore duplicate feature emissions for the same package feature key.
+  // This can happen when replaying cached registrations in addition to live
+  // registration events.
+  if (m_packageModels.contains(featureKey))
+    return;
+
   auto* model = new ScriptChargeModel();
   model->setPackageInfo(packageDir, command, identifier);
   model->readMetaData(metadata);
@@ -97,9 +100,7 @@ void ScriptCharges::registerFeature(const QString& type,
       delete model;
     } else {
       m_models.push_back(model);
-      m_packageModels.insert(QtGui::PackageManager::packageFeatureKey(
-                               packageDir, command, identifier),
-                             managerId);
+      m_packageModels.insert(featureKey, managerId);
     }
   } else {
     delete model;
