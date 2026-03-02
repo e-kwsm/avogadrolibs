@@ -9270,26 +9270,8 @@ msgstr ""
 #~ msgid " °"
 #~ msgstr " °"
 
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Cancel·la"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9302,34 +9284,10 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analític"
 
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Importa..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Estableix el color..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Exporta..."
-
-#~ msgid "&Load data..."
-#~ msgstr "Carrega &dades..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
-
 #, fuzzy
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "Carrega parcial"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animació"
 
 #, fuzzy
 #~ msgid "Geometry"
@@ -9340,29 +9298,8 @@ msgstr ""
 #~ msgstr "Omple la cel·la unitat"
 
 #, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Index d'àtoms"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Distància"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Index d'àtoms"
-
-#, fuzzy
-#~ msgid "&Copy"
-#~ msgstr "Copia-ho tot"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Nom de la molècula IUPAC:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
-#~ msgstr "Massa molecular (g/mol)"
+#~ msgstr "Massa molecular (g/mol):"
 
 #~ msgid "Chemical Formula:"
 #~ msgstr "Formula química:"
@@ -9377,104 +9314,15 @@ msgstr ""
 #~ msgstr "PER FER"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Mida del salt:"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Entrada:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Funció DFT:"
-
-#~ msgid "Other..."
-#~ msgstr "Altre..."
-
-#, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Nom de fitxer:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Estrcutura:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navega"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navega"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nom d'element"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Tots els fitxers"
-
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Diedre:"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molècula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "No està configurada la molècula"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Afig hidrògens per al pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Propietats dels àtoms..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Propietats dels enllaços..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Propietats d'Angle"
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Propietats de torsió…"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Propietats de la molècula..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Crea superfícies..."
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Insereix un fragment…"
+#~ msgstr "Nom de fitxer"
 
 #~ msgid "Theory:"
 #~ msgstr "Teoria:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Distància (1->2): %L1 %2"
+#~ msgstr "Distància: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Angular"
