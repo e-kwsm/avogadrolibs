@@ -9392,54 +9392,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmail.com,,,,a.brzns@gmail.com,elkosmas@gmail.com,,,,a.brzns@gmail.com,elkosmas@gmail.com,,,,a.brzns@gmail.com,elkosmas@gmail.com,,,,a.brzns@gmail.com,elkosmas@gmail.com,,,,a.brzns@gmail.com,elkosmas@gmail.com,,,,a.brzns@gmail.com,elkosmas@gmail.com,,,,angelosarn@hotmail.com,a.brzns@gmail.com,,elkosmas@gmail.com,,athmakrigiannis@gmail.com,,,angelosarn@hotmail.com,a.brzns@gmail.com,,elkosmas@gmail.com,,athmakrigiannis@gmail.com,,,angelosarn@hotmail.com,a.brzns@gmail.com,,elkosmas@gmail.com,,athmakrigiannis@gmail.com"
 
-#~ msgid " Å"
-#~ msgstr " Å"
-
 #, fuzzy
 #~ msgid "Angles:"
 #~ msgstr "Γωνία:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Άκυρο"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9452,25 +9410,6 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgid "&Analysis"
 #~ msgstr "Αναλυτική"
 
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Εισαγωγή..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Καθορισμός χρώματος..."
-
-#~ msgid "&Export..."
-#~ msgstr "Ε&ξαγωγή..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Φόρτωση δεδομένων..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Μερικό φορτίου"
 
@@ -9482,25 +9421,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgstr "Προσθήκη &μοναδιαίας κυψελίδας"
 
 #, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Δείκτες ατόμου"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Απόσταση"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Δείκτες ατόμου"
-
-#, fuzzy
 #~ msgid "&Copy"
 #~ msgstr "Αντιγραφή Όλων"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Όνομα μορίου κατά IUPAC:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9519,42 +9441,8 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 #~ msgstr "ΠΡΟΣ ΥΛΟΠΟΙΗΣΗ"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Μέγεθος άλματος:"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Σε:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Τμήμα..."
-
-#, fuzzy
-#~| msgid "DFT Functional:"
-#~ msgid "Functional Groups"
-#~ msgstr "Συναρτησιακό DFT:"
-
-#~ msgid "Other..."
-#~ msgstr "Άλλο..."
-
-#, fuzzy
 #~ msgid "Filename"
 #~ msgstr "Όνομα αρχείου:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Δομή"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Περιήγηση"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Περιήγηση"
 
 #, fuzzy
 #~ msgid "Element & Ordinal"
@@ -9562,70 +9450,14 @@ msgstr ",,a.brzns@gmail.com,elkosmas@gmail.com,,,a.brzns@gmail.com,elkosmas@gmai
 
 #, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Όλα τα αρχεία"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Ρομβοεδρικό"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Μόριο"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Δεν έχει οριστεί μόριο"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Κρύσταλλος..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Προσθήκη υδρογόνων για pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Ιδιότητες ατόμου..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Ιδιότητες δεσμού..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Ιδιότητες γωνίας..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Ιδιότητες στρέψης..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Ιδιότητες μορίου..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Δημιουργία επιφανειών..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Συμμετρία"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Εισαγωγή τμήματος..."
+#~ msgstr "Όλα τα αρχεία (*);;"
 
 #~ msgid "Theory:"
 #~ msgstr "Θεωρία:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Απόσταση (1->2): %L1 %2"
+#~ msgstr "Απόσταση: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Περιστρέψιμη"
