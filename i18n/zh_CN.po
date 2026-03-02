@@ -9334,42 +9334,12 @@ msgstr ""
 #~ msgid "Checking for %1 scripts in path %2"
 #~ msgstr "正在检查路径 %2 中的 %1 脚本"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #, fuzzy
 #~ msgid "Angles:"
 #~ msgstr "角度："
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "取消"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid " "
-#~ msgstr " "
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9378,10 +9348,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "unknown molecule"
 #~ msgstr "不明分子"
-
-#, fuzzy
-#~ msgid " & "
-#~ msgstr " & "
 
 #~ msgid "Reference Axes Overlay"
 #~ msgstr "参考轴叠加"
@@ -9411,9 +9377,6 @@ msgstr ""
 
 #~ msgid "∞"
 #~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "导入(&I)…"
@@ -9457,11 +9420,6 @@ msgstr ""
 #~ msgstr "复制(&C)"
 
 #, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "分子电荷:"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "分子量 (g/mol):"
 
@@ -9477,23 +9435,6 @@ msgstr ""
 #~ msgid "TODO"
 #~ msgstr "TODO"
 
-#, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "跳转尺度:"
-
-#~ msgid "In."
-#~ msgstr "输入。"
-
-#~ msgid "El."
-#~ msgstr "元素名"
-
-#~ msgid "El.&No."
-#~ msgstr "元素与编号"
-
-#~ msgid ", "
-#~ msgstr ", "
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "APBS 输入文件 (*.in)"
 
@@ -9504,92 +9445,15 @@ msgstr ""
 #~ "选择用以运行输入文件生成脚本的 Python 解释器。\n"
 #~ "更改将在 Avogadro 重启后生效。"
 
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "片段..."
-
 #~ msgid "Submit Calculation..."
 #~ msgstr "提交计算..."
-
-#~ msgid "Other..."
-#~ msgstr "其它..."
 
 #~ msgid "Filename"
 #~ msgstr "文件名"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "加载结构文件"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "导航"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "导航"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "元素名称。"
-
-#, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "所有文件 (*);;"
-
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "二面体："
-
-#, fuzzy
-#~| msgid "Insert Molecule..."
-#~ msgid "Insert Molecule..."
-#~ msgstr "插入分子..."
-
-#, fuzzy
-#~| msgid "Error Pasting Molecule"
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "错误粘贴分子"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "晶体..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "添加pH为...时的氢键"
-
-#~ msgid "Atom Properties..."
-#~ msgstr "原子属性..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "键属性..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "键角属性..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "扭转属性..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "分子属性..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "创建表面..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "对称"
 
 #~ msgid "&Exit"
 #~ msgstr "退出(&E)"
