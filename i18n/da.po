@@ -10233,9 +10233,6 @@ msgstr ""
 #~ msgid "Algorithm:"
 #~ msgstr "Algoritme:"
 
-#~ msgid "Molecular Dynamics (900K)"
-#~ msgstr "Molekylær dynamik (900K)"
-
 #~ msgid "Fixed atoms are movable"
 #~ msgstr "Fikserede atomer kan flyttes"
 
@@ -10298,22 +10295,6 @@ msgstr ""
 #~ msgctxt "%L1 is distance, %2 is Angstrom symbol"
 #~ msgid "Distance (3->4): %L1 %2"
 #~ msgstr "Afstand  (3->4): %L1 %2"
-
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
 
 #~ msgid "Distance(s):"
 #~ msgstr "Afstande:"
