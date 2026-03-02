@@ -9730,18 +9730,6 @@ msgstr ""
 "devel@lists.sourceforge.net,,,,,,pavelfric@seznam.cz,,,avogadro-"
 "devel@lists.sourceforge.net,,,,,,,pavelfric@seznam.cz"
 
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Nástroj pro úpravy\t(%1)\n"
-#~ "\n"
-#~ "Levé tlačítko myši:\tKlepněte a táhněte pro přesunutí atomů\n"
-#~ "Pravé tlačítko myši:\tKlepněte a táhněte pro otočení vybraných atomů."
-
 #~ msgid " Å"
 #~ msgstr " Å"
 
@@ -9749,47 +9737,8 @@ msgstr ""
 #~ msgid "Angles:"
 #~ msgstr "Úhel:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Zrušit"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9799,58 +9748,11 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analytická"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Importovat..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Nastavit barvu..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Export..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Nahrát data..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Částečný náboj"
 
 #~ msgid "Geometry"
 #~ msgstr "Uspořádání"
-
-#, fuzzy
-#~ msgid "Add Unit Cell"
-#~ msgstr "Přidat &jednotkovou buňku"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Atomové indexy"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Vzdálenost"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Atomové indexy"
-
-#, fuzzy
-#~ msgid "&Copy"
-#~ msgstr "Kopírovat vše"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Název molekuly IUPAC:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9869,116 +9771,19 @@ msgstr ""
 #~ msgstr "Seznam úkolů"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Velikost skoku:"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "V:"
-
-#, fuzzy
-#~| msgid "Fragments"
-#~ msgid "Fragment…"
-#~ msgstr "Fragmenty"
-
-#, fuzzy
-#~| msgid "DFT Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "DFT Funkcionál"
-
-#~ msgid "Other..."
-#~ msgstr "Ostatní:"
-
-#, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Název souboru:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Nahrát soubor"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Pohyb"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Pohyb"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Název prvku"
+#~ msgstr "Název souboru"
 
 #, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Všechny soubory"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Klencová"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Žádný soubor molekul"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Krystal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Přidat vodíkové atomy pro pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Vlastnosti atomu..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Vlastnosti vazby..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Vlastnosti úhlu..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Vlastnosti zkroucení..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Vlastnosti molekul..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Vytvořit povrchy..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Souměrnost"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Vložit fragment"
+#~ msgstr "Všechny soubory (*);;"
 
 #~ msgid "Theory:"
 #~ msgstr "Teorie:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Vzdálenost (1->2): %L1 %2"
+#~ msgstr "Vzdálenost: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Otočná"
@@ -10117,18 +9922,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Zvýraznit zvláštní vlastnosti, které odpovídají vzoru SMARTS."
 
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
-
 #~ msgid "Engines"
 #~ msgstr "Stroje"
 
@@ -10209,14 +10002,8 @@ msgstr ""
 #~ msgid "Open Trajectory File"
 #~ msgstr "Otevřít soubor s drahami"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Přidává se koncovka .avi"
-
-#~ msgid "Animation..."
-#~ msgstr "Animace..."
 
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Nelze rozpoznat typ souboru %1."
@@ -10255,9 +10042,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Pro molekulu nebyla stanovena žádná jednotková buňka -- nelze použít "
 #~ "souřadnice vyjádřené zlomkem."
-
-#~ msgid "Cartesian Editor..."
-#~ msgstr "Karteziánský editor..."
 
 #~ msgid "Cartesian editor"
 #~ msgstr "Kartézský editor"
@@ -10387,15 +10171,6 @@ msgstr ""
 
 #~ msgid "Rotate To Standard &Orientation"
 #~ msgstr "Otočit do obvyklého &natočení"
-
-#~ msgid "&Slab..."
-#~ msgstr "&Plátek..."
-
-#~ msgid "Perceive Space&group..."
-#~ msgstr "Vnímat prostorovou &skupinu..."
-
-#~ msgid "Set &Spacegroup..."
-#~ msgstr "Nastavit &prostorovou skupinu..."
 
 #~ msgid "&Fill Unit Cell"
 #~ msgstr "&Vyplnit jednotkovou buňku"
@@ -10528,9 +10303,6 @@ msgstr ""
 #~ msgid "Set Unit Cell Params"
 #~ msgstr "Nastavit parametry jednotkové buňky"
 
-#~ msgid "Working..."
-#~ msgstr "Pracuje se..."
-
 #~ msgid "Build"
 #~ msgstr "Sestavit"
 
@@ -10542,9 +10314,6 @@ msgstr ""
 
 #~ msgid "Please select one or more atoms."
 #~ msgstr "Vyberte, prosím, jeden nebo více atomů."
-
-#~ msgid "Trajectory..."
-#~ msgstr "Dráha..."
 
 #~ msgid "Open chemical file format"
 #~ msgstr "Otevřít chemický souborový formát"
@@ -10566,12 +10335,6 @@ msgstr ""
 
 #~ msgid "Calculate Energy"
 #~ msgstr "Vypočítat energii"
-
-#~ msgid "Conformer Search..."
-#~ msgstr "Hledání konformačního izomeru..."
-
-#~ msgid "Constraints..."
-#~ msgstr "Omezení..."
 
 #~ msgid ""
 #~ "Cannot set up the currently selected force field for this molecule. "
@@ -10611,9 +10374,6 @@ msgstr ""
 #~ msgid "Common vector image formats"
 #~ msgstr "Běžné formáty vektorového obrázku"
 
-#~ msgid "EPS"
-#~ msgstr "EPS"
-
 #~ msgid "Vector graphics export"
 #~ msgstr "Export vektorové grafiky"
 
@@ -10623,9 +10383,6 @@ msgstr ""
 #~ msgid "H to Methyl"
 #~ msgstr "H za Methyl"
 
-#~ msgid "H2Methyl"
-#~ msgstr "H2Methyl"
-
 #~ msgid "Transform hydrogens to methyl groups"
 #~ msgstr "Proměnit vodíkové atomy na methylové skupiny"
 
@@ -10634,9 +10391,6 @@ msgstr ""
 
 #~ msgid "Insert DNA/RNA chains"
 #~ msgstr "Vložit DNA/RNA řetězce"
-
-#~ msgid "Peptide..."
-#~ msgstr "Peptid..."
 
 #~ msgid "Insert oligopeptide sequences"
 #~ msgstr "Vložit oligopeptidovou posloupnost"
@@ -10723,12 +10477,6 @@ msgstr ""
 #~ msgid "Could not read file!"
 #~ msgstr "Nemohu načíst soubor!"
 
-#~ msgid "Analyse Orca Output..."
-#~ msgstr "Analyzovat Orca výstup..."
-
-#~ msgid "&Orca"
-#~ msgstr "&Orca"
-
 #~ msgid "Orca Test Example"
 #~ msgstr "Orca testovací příklad"
 
@@ -10746,9 +10494,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Obrázkové soubory (*.png, *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Nebyl zadán žádný název souboru."
@@ -10837,9 +10582,6 @@ msgstr ""
 #~ msgid "abinit did not start. Perhaps it is not installed correctly."
 #~ msgstr "Abinit se nespustil. Snad je to tím, že není nainstalován správně."
 
-#~ msgid "Running Abinit calculation..."
-#~ msgstr "Běží výpočet Abinit..."
-
 #~ msgid "Abinit did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr ""
 #~ "Abinit neběžel správně. Snad je to tím, že není nainstalován správně."
@@ -10857,15 +10599,6 @@ msgstr ""
 #~ msgid "QM Matches"
 #~ msgstr "QM shody"
 
-#~ msgctxt ""
-#~ "Selection to be used as an Effective Fragment Potential in calculations"
-#~ msgid "EFP Selection..."
-#~ msgstr "EFP výběr..."
-
-#~ msgctxt "Selection to be used for Quantum Mechanical calculations"
-#~ msgid "QM Selection..."
-#~ msgstr "QM výběr..."
-
 #~ msgid "You must make a selection!"
 #~ msgstr "Musíte provést výběr!"
 
@@ -10874,21 +10607,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES převod formátu není dostupný!"
-
-#~ msgid " ("
-#~ msgstr " ("
-
-#~ msgid "qm"
-#~ msgstr "qm"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
-#~ msgid "GAMESS"
-#~ msgstr "GAMESS"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Vytvořit vstupní soubory pro GAMESS balíček pro kvantovou chemii"
@@ -10962,45 +10680,12 @@ msgstr ""
 #~ msgid "Gaussian Not Installed."
 #~ msgstr "Gaussovský není zaveden."
 
-#~ msgid "The G03 executable, cannot be found."
-#~ msgstr "G03 spustitelný soubor nelze najít."
-
-#~ msgid "G03 did not start. Perhaps it is not installed correctly."
-#~ msgstr "G03 nebyl spuštěn. Snad není správně nainstalován."
-
 #~ msgid "Running Gaussian calculation..."
 #~ msgstr "Provádí se gaussovské výpočty..."
-
-#~ msgid "G03 Crashed."
-#~ msgstr "G03 havaroval."
 
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "Gaussovský neběžel správně. Snad není správně nainstalován."
-
-#~ msgid "&Abinit..."
-#~ msgstr "&Abinit..."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussův..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&PSI4..."
-#~ msgstr "&PSI4..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
-
-#~ msgid "&TeraChem..."
-#~ msgstr "&TeraChem..."
 
 #~ msgid "Lammps Input Deck Generator Warning"
 #~ msgstr "Upozornění nástrojem pro vytvoření vstupních souborů Lammps"
@@ -11203,20 +10888,8 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "Na&stavení infračerveného spektra"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "Na&stavení NMR spektra"
-
-#~ msgctxt "Density of States"
-#~ msgid "DOS"
-#~ msgstr "DOS"
-
-#~ msgctxt "Ultra-Violet spectrum"
-#~ msgid "UV"
-#~ msgstr "UV"
 
 #~ msgid "&UV Settings"
 #~ msgstr "&Nastavení UV"
@@ -11263,9 +10936,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Čárkou oddělené hodnoty"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Spectra Import"
 #~ msgstr "Importování spektra"
 
@@ -11301,27 +10971,6 @@ msgstr ""
 #~ msgid "Turbomole CD file is improperly formatted  : %1"
 #~ msgstr "Soubor CD Turbomole je naformátován nesprávně: %1"
 
-#~ msgid "Portable Network Graphics"
-#~ msgstr "PNG (Portable Network Graphics)"
-
-#~ msgid "jpeg"
-#~ msgstr "Jpeg"
-
-#~ msgid "Tagged Image File Format"
-#~ msgstr "TIFF (Tagged Image File Format)"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "BMP (Windows Bitmap)"
-
-#~ msgid "Portable Pixmap"
-#~ msgstr "Portable Pixmap"
-
-#~ msgid "X11 Bitmap"
-#~ msgstr "X11 Bitmapa"
-
-#~ msgid "X11 Pixmap"
-#~ msgstr "X11 Pixmapa"
-
 #~ msgid "Save Spectra Image"
 #~ msgstr "Uložit obraz spektra"
 
@@ -11334,14 +10983,8 @@ msgstr ""
 #~ msgid "&Advanced >>"
 #~ msgstr "&Pokročilé >>"
 
-#~ msgid "&Spectra..."
-#~ msgstr "&Spektra..."
-
 #~ msgid "Visualize spectral data from quantum chemistry calculations"
 #~ msgstr "Zviditelnit údaje o spektru z výpočtů kvantové chemie"
-
-#~ msgid "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
-#~ msgstr "<HTML>&epsilon; (cm<sup>2</sup>/mmol)</HTML>"
 
 #~ msgid "Vibrational Analysis"
 #~ msgstr "Rozbor vibrací"
@@ -11367,9 +11010,6 @@ msgstr ""
 
 #~ msgid "Build and display crystallographic super cells"
 #~ msgstr "Sestavit a zobrazit krystalografické superbuňky"
-
-#~ msgid "Molecular Orbitals..."
-#~ msgstr "Orbitaly molekul..."
 
 #~ msgid "Orbitals"
 #~ msgstr "Orbitaly"
@@ -11433,9 +11073,6 @@ msgstr ""
 #~ msgid "Construct single wall carbon nanotubes."
 #~ msgstr "Postavit zeď z uhlíkových nanotrubic."
 
-#~ msgid "Building..."
-#~ msgstr "Staví se..."
-
 #~ msgid "Display point group symmetry."
 #~ msgstr "Zobrazit bodovou grupu symetrie"
 
@@ -11473,9 +11110,6 @@ msgstr ""
 
 #~ msgid "Save VRML rendered files"
 #~ msgstr "Uložit renderované VRML soubory"
-
-#~ msgid "VRML..."
-#~ msgstr "VRML..."
 
 #~ msgid "Connect"
 #~ msgstr "Připojit"
@@ -11582,15 +11216,8 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molekula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Neznámý pythonovský stroj"
-
-#~ msgid "N/A"
-#~ msgstr "N/A"
 
 #~ msgid "PythonEngine: checking "
 #~ msgstr "PythonEngine: Zkouška "
