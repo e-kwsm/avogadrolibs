@@ -9395,54 +9395,12 @@ msgstr ""
 "devel@lists.sourceforge.net,,,,,,pavelfric@seznam.cz,,,avogadro-"
 "devel@lists.sourceforge.net,,,,,,,pavelfric@seznam.cz"
 
-#~ msgid " Å"
-#~ msgstr " Å"
-
 #, fuzzy
 #~ msgid "Angles:"
 #~ msgstr "Úhel:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Zrušit"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9455,58 +9413,11 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analytická"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Importovat..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Nastavit barvu..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Export..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Nahrát data..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Částečný náboj"
 
 #~ msgid "Geometry"
 #~ msgstr "Uspořádání"
-
-#, fuzzy
-#~ msgid "Add Unit Cell"
-#~ msgstr "Přidat &jednotkovou buňku"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Atomové indexy"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Vzdálenost"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Atomové indexy"
-
-#, fuzzy
-#~ msgid "&Copy"
-#~ msgstr "Kopírovat vše"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Název molekuly IUPAC:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9525,116 +9436,19 @@ msgstr ""
 #~ msgstr "Seznam úkolů"
 
 #, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Velikost skoku:"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "V:"
-
-#, fuzzy
-#~| msgid "Fragments"
-#~ msgid "Fragment…"
-#~ msgstr "Fragmenty"
-
-#, fuzzy
-#~| msgid "DFT Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "DFT Funkcionál"
-
-#~ msgid "Other..."
-#~ msgstr "Ostatní:"
-
-#, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Název souboru:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Nahrát soubor"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Pohyb"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Pohyb"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Název prvku"
+#~ msgstr "Název souboru"
 
 #, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Všechny soubory"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Klencová"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Žádný soubor molekul"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
-#~ msgid "Fragment..."
-#~ msgstr "Fragment..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Krystal..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Přidat vodíkové atomy pro pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Vlastnosti atomu..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Vlastnosti vazby..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Vlastnosti úhlu..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Vlastnosti zkroucení..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Vlastnosti molekul..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Vytvořit povrchy..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Souměrnost"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Vložit fragment"
+#~ msgstr "Všechny soubory (*);;"
 
 #~ msgid "Theory:"
 #~ msgstr "Teorie:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Vzdálenost (1->2): %L1 %2"
+#~ msgstr "Vzdálenost: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Otočná"
