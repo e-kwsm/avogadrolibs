@@ -9722,43 +9722,11 @@ msgstr ""
 "devel@lists.sourceforge.net,david.rodrigues@gmail.com,,,ivoxavier.8@gmail.com,manuel.n.silva@gmail.com,,,,,,danielagostinho@sapo.pt,,,,,avogadro-"
 "devel@lists.sourceforge.net,david.rodrigues@gmail.com,,,ivoxavier.8@gmail.com,manuel.n.silva@gmail.com,,,,,,danielagostinho@sapo.pt"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
 #~ msgid "Angles:"
 #~ msgstr "Ângulos:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
 #~ msgid "Cancel"
 #~ msgstr "Cancelar"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9790,31 +9758,8 @@ msgstr ""
 #~ "Janelas para visualizar as propriedades do átomo, ligação, ângulo e "
 #~ "torsão."
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Importar..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Definir Cor..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Exportar..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Carregar dados..."
-
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animação"
 
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Exibição simples de esferas VdW com oclusão ambiental."
@@ -9826,26 +9771,8 @@ msgstr ""
 #~ msgstr "Adicionar Célula Unitária"
 
 #, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Número Atômico."
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Distância:"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Número Atômico."
-
-#, fuzzy
-#~| msgid "Copy"
 #~ msgid "&Copy"
-#~ msgstr "Copiar"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Carga Molecular:"
+#~ msgstr "&Copiar"
 
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Massa Molecular (g/mol):"
@@ -9859,10 +9786,6 @@ msgstr ""
 #~ msgid "Number of Bonds:"
 #~ msgstr "Número de Ligações:"
 
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Em:"
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "Entrada ABPS (*.in)"
 
@@ -9873,36 +9796,6 @@ msgstr ""
 #~ "Selecionar o interpretador python usado para executar scripts de criador "
 #~ "de entrada.\n"
 #~ "O Avogadro deve ser reiniciado para que as alterações tenham efeito."
-
-#, fuzzy
-#~| msgid "Set Python Path..."
-#~ msgid "Set Python Path…"
-#~ msgstr "Definir Caminho Python..."
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragmento..."
-
-#, fuzzy
-#~| msgid "Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "Funcional"
-
-#~ msgid "Help..."
-#~ msgstr "Ajuda..."
-
-#~ msgid "Submit Calculation..."
-#~ msgstr "Submeter Cálculo..."
-
-#~ msgid "Save File..."
-#~ msgstr "Gravar Ficheiro..."
-
-#~ msgid "Record Movie..."
-#~ msgstr "Gravar Vídeo..."
-
-#~ msgid "Other..."
-#~ msgstr "Outro..."
 
 #~ msgid "Client server operations."
 #~ msgstr "Operações cliente-servidor."
@@ -9923,14 +9816,6 @@ msgstr ""
 #, qt-format
 #~ msgid "Connection failed with: %1"
 #~ msgstr "A conexão falhou com: %1"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
 
 #~ msgid "Client server"
 #~ msgstr "Servidor do cliente"
