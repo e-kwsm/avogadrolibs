@@ -9245,55 +9245,18 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analitika"
 
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Uvezi..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Postavi boju..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Izvezi..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Učitaj podatke..."
-
 #, fuzzy
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "djelomični naboj"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animacija"
-
-#, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Optimizacija Geometrije"
+#~ msgstr "Geometrije"
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
 #~ msgstr "Popuni jedinicu ćelije"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Indikacije atoma"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Rastojanje"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Indikacije atoma"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Naelektrisanje molekule:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9312,114 +9275,22 @@ msgstr ""
 #~ msgstr "ZADACI"
 
 #, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragment..."
-
-#~ msgid "Other..."
-#~ msgstr "Ostalo..."
-
-#, fuzzy
 #~ msgid "Filename"
-#~ msgstr "Ime datoteke:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Struktura:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigacija"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigacija"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Ime elementa"
-
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Diedarski:"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekul"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Nema postavljene molekule"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Dodaj vodike za pH"
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Postavke atoma..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Postavke spoja...."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Postavke ugla..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Postavke torzije..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Postavke molekule..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Kreiraj površine..."
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Umetni fragment..."
+#~ msgstr "Ime datoteke"
 
 #~ msgid "Theory:"
 #~ msgstr "Teorija:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Distanca (1->2): %L1 %2"
+#~ msgstr "Distanca: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "okretljiv"
 
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "Konformer %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "Konformer %1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "Ugao %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "Konformer %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
@@ -9427,37 +9298,17 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Torsion"
-#~ msgstr "Torzija %1"
+#~ msgstr "Torzija"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "Energija (kJ/mol):"
-
-#, fuzzy
-#~ msgid "Yes"
-#~ msgstr "Godine"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Neon"
-
-#, fuzzy
-#~ msgid "Input Generators"
-#~ msgstr "Generator umetanja"
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Uvoz"
+#~ msgstr "Energija (kJ/mol)"
 
 #~ msgid "Insert SMILES"
 #~ msgstr "Ubaci SMILES"
 
 #~ msgid "Insert SMILES fragment:"
 #~ msgstr "Ubaci SMILES fragmente:"
-
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "Ubaci fragment"
 
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr "Ubaci molekularne fragmente za pravljenje većih molekula"
@@ -9467,23 +9318,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimizacija Geometrije"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrijska optimizacija"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Dodaj vodik"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Zaustavi"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Površi"
+#~ msgstr "Optimizacija Geometrije"
 
 #~ msgid "Color by Index"
 #~ msgstr "Boja po indeksu"
@@ -9515,18 +9350,6 @@ msgstr ""
 
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Boja po ostatku (tip amino kiselina, hidrofobnost, ..."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrijum"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentijum"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptijum"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoktijum"
 
 #~ msgid "Engines"
 #~ msgstr "Mašine"
@@ -9588,9 +9411,6 @@ msgstr ""
 #~ msgid "Adding .avi extension"
 #~ msgstr "Dodajem .avi ekstenziju"
 
-#~ msgid "Animation..."
-#~ msgstr "Animacija..."
-
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Ne mogu čitati datotečni format datoteke %1."
 
@@ -9616,9 +9436,6 @@ msgstr ""
 
 #~ msgid "Animate trajectories, reactions, and vibrations."
 #~ msgstr "Animiraj putanje, reakcije i vibracije."
-
-#~ msgid "Cartesian Editor..."
-#~ msgstr "Kartezijev uređivač..."
 
 #~ msgid "Number of atoms: %1"
 #~ msgstr "Broj atoma: %1"
@@ -9651,9 +9468,6 @@ msgstr ""
 #~ "Vaša molekula mora sadržavati najmanje četiri atoma da bi dodali "
 #~ "trozijono ograničenje"
 
-#~ msgid "Trajectory..."
-#~ msgstr "Putanja..."
-
 #~ msgid "Open chemical file format"
 #~ msgstr "Otvori format hemijske datoteke"
 
@@ -9671,12 +9485,6 @@ msgstr ""
 
 #~ msgid "Calculate Energy"
 #~ msgstr "Izračunaj energiju"
-
-#~ msgid "Conformer Search..."
-#~ msgstr "Pretraga konformera..."
-
-#~ msgid "Constraints..."
-#~ msgstr "Ograničenja..."
 
 #~ msgid "Systematic Rotor Search"
 #~ msgstr "Sistematska kružna pretraga"
@@ -9712,17 +9520,11 @@ msgstr ""
 #~ msgid "Add or remove hydrogens"
 #~ msgstr "Dodaj ili izbaci vodike"
 
-#~ msgid "Peptide..."
-#~ msgstr "Peptid..."
-
 #~ msgid "Insert oligopeptide sequences"
 #~ msgstr "ubaci oligopeptidne sekvence"
 
 #~ msgid "Estimated Dipole Moment (D):"
 #~ msgstr "Procijenjeni moment dipola (D):"
-
-#~ msgid "Fetch from URL..."
-#~ msgstr "Donesi sa URL-a..."
 
 #~ msgid "PDB Entry"
 #~ msgstr "PDB ulaz"
@@ -9756,9 +9558,6 @@ msgstr ""
 
 #~ msgid "Image files (*.png *.pbm)"
 #~ msgstr "Datoteke slike(*.png *.pbm)"
-
-#~ msgid "POV-Ray..."
-#~ msgstr "POV-Ray..."
 
 #~ msgid "No valid filename was supplied."
 #~ msgstr "Nije predočeno validno ime datoteke."
@@ -9799,9 +9598,6 @@ msgstr ""
 #~ "Kreiraj datoteke POV-ray i renderiraj ih koristeći komandnu liniju POV-"
 #~ "ray programa."
 
-#~ msgid "Conformer Properties..."
-#~ msgstr "Postavke konformera..."
-
 #~ msgid "Python Terminal"
 #~ msgstr "Python Terminal"
 
@@ -9813,11 +9609,6 @@ msgstr ""
 
 #~ msgid "QM Matches"
 #~ msgstr "QM slagfanja"
-
-#~ msgctxt ""
-#~ "Selection to be used as an Effective Fragment Potential in calculations"
-#~ msgid "EFP Selection..."
-#~ msgstr "EFP Selekcija..."
 
 #~ msgctxt "Selection to be used for Quantum Mechanical calculations"
 #~ msgid "QM Selection..."
@@ -9831,12 +9622,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES konverzija formata nije dostupna!"
-
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Kreiraj ulazne datoteke za GAMESS paket za kvantnu hemiju"
@@ -9901,18 +9686,6 @@ msgstr ""
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "GaussiaN se nije izvršio korektno. Možda nije instaliran korektno"
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "Mopac Ulazno upozorenje"
