@@ -9507,28 +9507,8 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "Angles:"
 #~ msgstr "角度："
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "取消"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9547,32 +9527,8 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #~ msgid "&Analysis"
 #~ msgstr "分析"
 
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "匯入"
-
-#~ msgid "Set Color..."
-#~ msgstr "設定顏色..."
-
-#~ msgid "&Export..."
-#~ msgstr "匯出:"
-
-#~ msgid "&Load data..."
-#~ msgstr "載入資料"
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV)"
-
 #~ msgid "Partial Charge"
 #~ msgstr "部份電荷"
-
-#, fuzzy
-#~ msgctxt "ambient occlusion"
-#~ msgid "Van der Waals (AO)"
-#~ msgstr "凡得瓦"
 
 #, fuzzy
 #~ msgid "Geometry"
@@ -9580,15 +9536,7 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #, fuzzy
 #~ msgid "Add Unit Cell"
-#~ msgstr "加入單位晶格 (&U)"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "原子指數"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "距離"
+#~ msgstr "加入單位晶格"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9602,43 +9550,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 
 #~ msgid "Number of Bonds:"
 #~ msgstr "鍵的數目:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "片斷..."
-
-#~ msgid "Other..."
-#~ msgstr "其他..."
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "檔名"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES 文字化學式..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "配合 pH 加上氫"
-
-#~ msgid "Atom Properties..."
-#~ msgstr "原子的特性"
-
-#~ msgid "Bond Properties..."
-#~ msgstr "鍵的特性"
-
-#~ msgid "Angle Properties..."
-#~ msgstr "鍵角性質..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "扭轉的特性..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "產生外觀..."
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "插入片段..."
 
 #~ msgid "Theory:"
 #~ msgstr "理論:"
@@ -9660,12 +9571,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "能量 (kJ/mol)"
-
-#~ msgid "Yes"
-#~ msgstr "Yes"
-
-#~ msgid "No"
-#~ msgstr "No"
 
 #, fuzzy
 #~ msgid "Import"
@@ -9698,10 +9603,6 @@ msgstr ",,iychiang1809@gmail.com,,,iychiang1809@gmail.com,,,iychiang1809@gmail.c
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "停止"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "表面/曲面"
 
 #~ msgid "Color by Index"
 #~ msgstr "依照 index 上顏色"
