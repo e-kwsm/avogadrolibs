@@ -9372,77 +9372,11 @@ msgstr ""
 #~ msgid "Checking for %1 scripts in path %2"
 #~ msgstr "Provjeranje %1 skripta u stazi %2"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Kutovi:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Odustani"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9453,9 +9387,6 @@ msgstr ""
 
 #~ msgid "Status"
 #~ msgstr "Stanje"
-
-#~ msgid " & "
-#~ msgstr " i "
 
 #~ msgid "Reference Axes Overlay"
 #~ msgstr "Prikaz referentnih osi"
@@ -9480,30 +9411,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Tablice za prikaz i uređivanje svojstva atoma, veze, kuta i torzije."
 
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "+1"
-#~ msgstr "+1"
-
-#~ msgid "+2"
-#~ msgstr "+2"
-
-#~ msgid "+3"
-#~ msgstr "+3"
-
-#~ msgid "+4"
-#~ msgstr "+4"
-
-#~ msgid "+5"
-#~ msgstr "+5"
-
-#~ msgid "+6"
-#~ msgstr "+6"
-
-#~ msgid "+7"
-#~ msgstr "+7"
-
 #~ msgid "Render polygon meshes."
 #~ msgstr "Iscrtaj poligonalne mreže."
 
@@ -9512,24 +9419,6 @@ msgstr ""
 
 #~ msgid "∞"
 #~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "…"
-
-#~ msgid "&Import..."
-#~ msgstr "&Uvezi …"
-
-#~ msgid "Set Color..."
-#~ msgstr "Postavi boju …"
-
-#~ msgid "&Export..."
-#~ msgstr "&Izvezi …"
-
-#~ msgid "&Load data..."
-#~ msgstr "&Učitaj podatke …"
-
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Djelomični naboj"
