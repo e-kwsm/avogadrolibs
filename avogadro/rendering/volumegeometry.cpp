@@ -403,7 +403,7 @@ void VolumeGeometry::initialize()
   {
     std::vector<unsigned char> tfData(256 * 4);
     for (int i = 0; i < 256; ++i) {
-      float t = float(i) / 255.0f;
+      float t = static_cast<float>(i) / 255.0f;
       tfData[i * 4 + 0] = static_cast<unsigned char>(128.0f * t); // R
       tfData[i * 4 + 1] = static_cast<unsigned char>(128.0f);     // G
       tfData[i * 4 + 2] = static_cast<unsigned char>(0.0f);       // B
@@ -529,7 +529,8 @@ void VolumeGeometry::render(const Camera& camera)
     initialize();
   }
 
-  glGetIntegerv(GL_FRAMEBUFFER_BINDING, (GLint*)&d->defaultFBO);
+  glGetIntegerv(GL_FRAMEBUFFER_BINDING,
+                reinterpret_cast<GLint*>(&d->defaultFBO));
 
   // Get cube bounds in world space
   Eigen::Vector3f boxMin = m_cube->min().cast<float>();
@@ -664,8 +665,8 @@ void VolumeGeometry::render(const Camera& camera)
   Eigen::Vector3f negCol(m_negativeColor[0] / 255.0f,
                          m_negativeColor[1] / 255.0f,
                          m_negativeColor[2] / 255.0f);
-  d->program->setUniformValue("width", float(m_width));
-  d->program->setUniformValue("height", float(m_height));
+  d->program->setUniformValue("width", static_cast<float>(m_width));
+  d->program->setUniformValue("height", static_cast<float>(m_height));
   d->program->setUniformValue("numSteps", 150);
   d->program->setUniformValue("alphaScale", 0.6f);
   d->program->setUniformValue("positiveColor", posCol);
