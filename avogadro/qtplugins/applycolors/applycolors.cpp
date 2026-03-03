@@ -229,7 +229,8 @@ void ApplyColors::applyIndexColors()
     if (isSelection && !m_molecule->atomSelected(i))
       continue;
 
-    float indexFraction = float(i) / (float(numAtoms) - 1);
+    float indexFraction =
+      static_cast<float>(i) / (static_cast<float>(numAtoms) - 1);
 
     rwmol->setColor(i, rainbowGradient(indexFraction, type));
   }
