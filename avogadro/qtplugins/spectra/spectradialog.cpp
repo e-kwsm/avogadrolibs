@@ -754,9 +754,10 @@ void SpectraDialog::updatePlot()
       transmission = true;
 
       settings.beginGroup("spectra/ir");
-      settings.setValue("xmin", float(m_ui->xAxisMinimum->value()));
+      settings.setValue("xmin",
+                        static_cast<float>(m_ui->xAxisMinimum->value()));
       settings.setValue("xmax", m_ui->xAxisMaximum->value());
-      settings.setValue("fwhm", float(m_ui->peakWidth->value()));
+      settings.setValue("fwhm", static_cast<float>(m_ui->peakWidth->value()));
       settings.setValue("scale", m_ui->scaleSpinBox->value());
       settings.setValue("offset", m_ui->offsetSpinBox->value());
       settings.endGroup();
