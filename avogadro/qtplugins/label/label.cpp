@@ -229,12 +229,16 @@ struct LayerLabel : Core::LayerData
       residue->setObjectName("residue");
 
       // set up the various residue options
-      residue->addItem(QObject::tr("None"), int(LabelOptions::None));
-      residue->addItem(QObject::tr("ID"), int(LabelOptions::Index));
-      residue->addItem(QObject::tr("Name"), int(LabelOptions::Name));
+      residue->addItem(QObject::tr("None"),
+                       static_cast<int>(LabelOptions::None));
+      residue->addItem(QObject::tr("ID"),
+                       static_cast<int>(LabelOptions::Index));
+      residue->addItem(QObject::tr("Name"),
+                       static_cast<int>(LabelOptions::Name));
       residue->addItem(QObject::tr("Name & ID"),
-                       int(LabelOptions::Index + LabelOptions::Name));
-      residue->addItem(QObject::tr("Custom"), int(LabelOptions::Custom));
+                       (LabelOptions::Index + LabelOptions::Name));
+      residue->addItem(QObject::tr("Custom"),
+                       static_cast<int>(LabelOptions::Custom));
       QObject::connect(residue, SIGNAL(currentIndexChanged(int)), slot,
                        SLOT(residueLabelType(int)));
 
