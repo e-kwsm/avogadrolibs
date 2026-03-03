@@ -433,7 +433,7 @@ void VolumeGeometry::initialize()
                  GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat),
-                          (GLvoid*)0);
+                          static_cast<GLvoid*>(nullptr));
 
     glGenBuffers(1, &d->volumeBoxEbo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, d->volumeBoxEbo);
