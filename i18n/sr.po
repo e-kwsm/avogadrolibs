@@ -10250,46 +10250,15 @@ msgstr ""
 #~ msgid "Input Parameters:"
 #~ msgstr "Ulazni parametri:"
 
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Naziv elementa."
-
-#~ msgid "'c' coordinate."
-#~ msgstr "'c' koordinata."
-
 #~ msgid "All files (*);;"
 #~ msgstr "Sve datoteke (*);;"
 
 #~ msgid "Error: could not find yaehmop executable!"
 #~ msgstr "Greška: nije moguće pronaći izvršnu datoteku yaehmop-a!"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Ромбоедарска"
-
-#, fuzzy
-#~ msgid "Layer"
-#~ msgstr "Plejer"
-
-#, fuzzy
-#~| msgid "Insert Molecule..."
-#~ msgid "Insert Molecule..."
-#~ msgstr "Umetni molekul ..."
-
-#, fuzzy
-#~| msgid "Generating 3D molecule..."
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Generiše se 3D molekul ..."
-
 #, qt-format
 #~ msgid "%1: File exists and is not writable."
 #~ msgstr "%1: Datoteka postoji i nije za pisanje."
-
-#, fuzzy
-#~ msgid "Simple display of Cartoons family."
-#~ msgstr "Jednostavan prikaz VdW sfera."
 
 #~ msgid "Error interpreting obabel CML output."
 #~ msgstr "Greška pri tumačenju obabel CML izlaza."
@@ -10297,74 +10266,11 @@ msgstr ""
 #~ msgid "Error generating CML data."
 #~ msgstr "Greška pri generisanju CML podataka."
 
-#, fuzzy
-#~ msgid "Run APBS..."
-#~ msgstr "Pokrenite APBS"
-
-#, fuzzy
-#~ msgid "Open Output File..."
-#~ msgstr "Otvorite izlaznu datoteku"
-
-#~ msgid "Edit Unit Cell..."
-#~ msgstr "Izmeni ćeliju jedinice ..."
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&ГАМЕСС-УК..."
-
 #~ msgid "&Import From PQR"
 #~ msgstr "&Uvezi iz PQR -a"
 
-#~ msgid "Fragment..."
-#~ msgstr "Odlomak..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Кристал..."
-
-#, fuzzy
-#~ msgid "Write"
-#~ msgstr "piši"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#~ msgid "InChI..."
-#~ msgstr "InChI..."
-
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Dodaj vodonike za pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Својства атома..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Својства везе..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Својства угла..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Својства увијања..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Својства молекула..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Napravi Površine..."
-
-#~ msgid "Symmetry..."
-#~ msgstr "Simetričnost..."
-
 #~ msgid "&Exit"
 #~ msgstr "&Izlaz"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Ctrl+E"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Umetni odlomak..."
 
 #~ msgid "Option '%1' not found in userOptions."
 #~ msgstr "Opcija „%1“ nije pronađena u userOptions."
@@ -10390,9 +10296,6 @@ msgstr ""
 
 #~ msgid "Reset to Default Values"
 #~ msgstr "Vrati na podrazumevane vrednosti"
-
-#~ msgid "Write files to disk..."
-#~ msgstr "Zapišite datoteke na disk ..."
 
 #~ msgid "Rotatable"
 #~ msgstr "Заокретљив"
@@ -10435,12 +10338,6 @@ msgstr ""
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Енергија (kJ/mol)"
 
-#~ msgid "Yes"
-#~ msgstr "Да"
-
-#~ msgid "No"
-#~ msgstr "Не"
-
 #, fuzzy
 #~ msgid "Import"
 #~ msgstr "Увези"
@@ -10460,16 +10357,9 @@ msgstr ""
 #~ msgid "E&xtensions"
 #~ msgstr "П&роширења"
 
-#~ msgid "Symmetry Properties..."
-#~ msgstr "Својства симетрије..."
-
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Прилагоди геометрију"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Оптимизација геометрије"
+#~ msgstr "Прилагоди геометрију"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -10478,10 +10368,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Заустави"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Површине"
 
 #~ msgid "Color by Index"
 #~ msgstr "Обој према попису"
