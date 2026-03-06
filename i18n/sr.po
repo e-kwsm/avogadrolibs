@@ -10923,71 +10923,8 @@ msgstr ""
 #~ msgid "Isovalue"
 #~ msgstr "Isovalue"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#, fuzzy, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Uglovi:"
-
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -11019,28 +10956,6 @@ msgstr ""
 
 #~ msgid "&Analysis"
 #~ msgstr "&Analitički"
-
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Увези..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Подеси боју..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Извези..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Учитај податке..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr " eV"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Делимично наелектрисање"
