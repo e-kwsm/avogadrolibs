@@ -11632,21 +11632,6 @@ msgstr "E-mail-címek"
 #~ msgid "Point Group:"
 #~ msgstr "Pont csoport"
 
-#~ msgid "Minutes"
-#~ msgstr "Perc"
-
-#~ msgid "Hours"
-#~ msgstr "Óra"
-
-#~ msgid "Days"
-#~ msgstr "Nap"
-
-#~ msgid "Weeks"
-#~ msgstr "Hét"
-
-#~ msgid "Years"
-#~ msgstr "Év"
-
 #~ msgid "Millenia"
 #~ msgstr "Évezred"
 
@@ -11880,41 +11865,14 @@ msgstr "E-mail-címek"
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO bevitel"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "Kvartett"
 
 #~ msgid "Quintet"
 #~ msgstr "Kvintett"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem bevitel"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
 
 #~ msgid "LACVP"
 #~ msgstr "LACVP"
@@ -11955,15 +11913,6 @@ msgstr "E-mail-címek"
 #~ msgid "&Height"
 #~ msgstr "&Magasság"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "&Betűméret automatikus beállítása"
 
@@ -11976,17 +11925,11 @@ msgstr "E-mail-címek"
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y tengely egysége:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gauss-&szélesség:"
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Csúcsok cimkézése:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekularezgés:"
@@ -12027,9 +11970,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "New Display"
 #~ msgstr "Új megjelenítés"
-
-#~ msgid "Advanced..."
-#~ msgstr "Haladó..."
 
 #~ msgid "Python Settings"
 #~ msgstr "Python beállítások"
