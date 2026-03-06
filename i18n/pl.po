@@ -9560,14 +9560,6 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "Kąt %1"
 
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Neon"
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Importuj"
-
 #~ msgid "Insert SMILES"
 #~ msgstr "Wstaw ze SMILES"
 
@@ -9580,10 +9572,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "Dodaj wodory"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Powierzchnie"
 
 #~ msgid "Color by Index (red, orange, yellow, green, blue, violet)."
 #~ msgstr ""
@@ -9607,18 +9595,6 @@ msgstr ""
 
 #~ msgid "Highlight Color:"
 #~ msgstr "Kolor podświetlenia:"
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
 
 #~ msgid "Engines"
 #~ msgstr "Silniki"
@@ -9644,14 +9620,8 @@ msgstr ""
 #~ msgid "Stick"
 #~ msgstr "Pałeczki"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr "Dodawanie rozszerzenia .avi"
-
-#~ msgid "Animation..."
-#~ msgstr "Animacja..."
 
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Nie można odczytać formatu pliku %1."
@@ -9686,9 +9656,6 @@ msgstr ""
 #~ "Twoja molekuła musi zawierać co najmniej cztery atomy, aby dodać "
 #~ "ograniczenie skrętu"
 
-#~ msgid "Trajectory..."
-#~ msgstr "Trajektoria..."
-
 #~ msgid "Import trajectory files"
 #~ msgstr "Importuj pliki trajektorii"
 
@@ -9697,12 +9664,6 @@ msgstr ""
 
 #~ msgid "Add or remove hydrogens"
 #~ msgstr "Dodaj lub usuń wodory"
-
-#~ msgid "Peptide..."
-#~ msgstr "Peptydy..."
-
-#~ msgid "Fetch from URL..."
-#~ msgstr "Pobierz z adresu URL..."
 
 #~ msgid "URL"
 #~ msgstr "Adres URL"
@@ -9731,9 +9692,6 @@ msgstr ""
 
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "Konwersja do formatu SMILES jest niedostępna!"
-
-#~ msgid ")"
-#~ msgstr ")"
 
 #~ msgid "Advanced Settings Changed"
 #~ msgstr "Zmieniono ustawienia zaawansowane"
@@ -9827,9 +9785,6 @@ msgstr ""
 #~ msgid "Algorithm:"
 #~ msgstr "Algorytm:"
 
-#~ msgid "Molecular Dynamics (900K)"
-#~ msgstr "Dynamika cząsteczek (900K)"
-
 #~ msgid "Fixed atoms are movable"
 #~ msgstr "Można poruszać stałymi atomami"
 
@@ -9893,9 +9848,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animuj trajektorię"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Zapętlaj"
@@ -9929,9 +9881,6 @@ msgstr ""
 
 #~ msgid "Minutes"
 #~ msgstr "Minuty"
-
-#~ msgid "Days"
-#~ msgstr "Days"
 
 #~ msgid "Z Matrix Editor"
 #~ msgstr "Edytor macierzy Z"
