@@ -9417,9 +9417,6 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "&Analiza"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Djelomični naboj"
 
