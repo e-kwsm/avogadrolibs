@@ -9952,21 +9952,6 @@ msgstr ""
 #~ msgid "Isovalue"
 #~ msgstr "Isovalue"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, fuzzy, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Uglovi:"
 
@@ -10057,28 +10042,6 @@ msgstr ""
 
 #~ msgid "&Analysis"
 #~ msgstr "&Analitički"
-
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Увези..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Подеси боју..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Извези..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Учитај податке..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr " eV"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Делимично наелектрисање"
