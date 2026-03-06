@@ -9135,97 +9135,8 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgstr "okänd molekyl"
 
 #, fuzzy
-#~ msgid "&Import..."
-#~ msgstr "&Importera..."
-
-#, fuzzy
-#~ msgid "&Export..."
-#~ msgstr "&Exportera..."
-
-#, fuzzy
-#~ msgid "Partial Charge"
-#~ msgstr "Färg efter partiell laddning"
-
-#, fuzzy
-#~| msgid "Auto Rotation Tool"
-#~ msgid "Animation Tool"
-#~ msgstr "Automatiskt rotationsverktyg"
-
-#, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "&Optimera geometri"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Avstånd:"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Gundämne:"
-
-#, fuzzy
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekyldynamik (600 K)"
-
-#, fuzzy
-#~ msgid "Fragment…"
-#~ msgstr "Infoga fragment"
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "&Arkiv"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Renderar proteinets sekundära struktur"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Gundämne:"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Visa väte för pH..."
-
-#, fuzzy
-#~ msgid "Atom Properties..."
-#~ msgstr "Molekylegenskaper..."
-
-#, fuzzy
-#~ msgid "Bond Properties..."
-#~ msgstr "Molekylegenskaper..."
-
-#, fuzzy
-#~ msgid "Angle Properties..."
-#~ msgstr "Molekylegenskaper..."
-
-#, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Molekylegenskaper..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molekylegenskaper..."
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Avstånd:"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid "Angle %1"
-#~ msgstr " Visa vinklar"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Neon"
-
-#, fuzzy
-#~ msgid "Import"
-#~ msgstr "Importera"
+#~ msgstr "Geometri"
 
 #~ msgid "Insert SMILES"
 #~ msgstr "Infoga SMILES"
@@ -9233,16 +9144,12 @@ msgstr ",,darkangel_nr1@hotmail.com,,,darkangel_nr1@hotmail.com,,,darkangel_nr1@
 #~ msgid "Insert SMILES fragment:"
 #~ msgstr "Infoga SMILES-fragment:"
 
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "Infoga fragment"
-
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr "Infoga molekylfragment för att bygga större molekyler"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimera geometri"
+#~ msgstr "Optimera geometri"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
