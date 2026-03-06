@@ -2384,7 +2384,7 @@ msgstr "Delni naboj…"
 #: qtplugins/applycolors/applycolors.cpp:85
 #, fuzzy
 msgid "By Secondary Structure"
-msgstr "sekundarno strukturo"
+msgstr "Sekundarno Strukturo"
 
 #: qtplugins/applycolors/applycolors.cpp:90
 #, fuzzy
