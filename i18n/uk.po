@@ -9828,10 +9828,6 @@ msgstr "Ваші електронні листи"
 #~ msgstr "Геометрія"
 
 #, fuzzy
-#~ msgid "Add Unit Cell"
-#~ msgstr "Вилучити &елементарну комірку"
-
-#, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Молекулярна вага (г/моль):"
 
@@ -9933,11 +9929,7 @@ msgstr "Ваші електронні листи"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Оптимізувати геометричні параметри"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Оптимізація геометричних параметрів"
+#~ msgstr "Оптимізувати геометричні"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -9946,10 +9938,6 @@ msgstr "Ваші електронні листи"
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Зупинити"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Поверхні"
 
 #~ msgid "Color by Index"
 #~ msgstr "порядковими номерами атомів"
