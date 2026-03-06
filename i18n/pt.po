@@ -4270,7 +4270,7 @@ msgid "Navigate"
 msgstr "Navegar"
 
 #: qtplugins/navigator/navigator.cpp:47
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Navigation Tool\t(%1)\n"
 "\n"
@@ -4281,6 +4281,13 @@ msgid ""
 "Alt(Option)+Drag:\tRotate/zoom/pan from within any tool.\n"
 "Alt(Option)+Left:\tUses the virtual trackball."
 msgstr ""
+"Ferramenta de Navegação\t(%1)\n"
+"\n"
+"Mouse Esquerdo:\tClique e arraste para girar a visualização.\n"
+"Mouse do Meio:\tClique e arraste para ampliar ou reduzir.\n"
+"Mouse Direito:\tClique e arraste para mover a visualização.\n"
+"Alt(Option)+Drag:\tRotate/zoom/pan from within any tool.\n"
+"Alt(Option)+Left:\tUses the virtual trackball."
 
 #: qtplugins/navigator/navigator.cpp:70
 msgid "Rotate the scene along the x, y, or z axes."
