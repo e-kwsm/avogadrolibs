@@ -9209,87 +9209,12 @@ msgstr ""
 #~ msgstr "Anuluj"
 
 #, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~| msgid "&Import"
-#~ msgid "&Import..."
-#~ msgstr "&Importuj…"
-
-#, fuzzy
-#~ msgid "&Export..."
-#~ msgstr "&Eksportuj..."
-
-#, fuzzy
-#~ msgid "Partial Charge"
-#~ msgstr "Ładunek"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animacja"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Odległość"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Pierwiastek"
-
-#, fuzzy
-#~| msgid "Copy"
-#~ msgid "&Copy"
-#~ msgstr "Kopiuj"
-
-#, fuzzy
-#~ msgid "Molecule Name:"
-#~ msgstr "Dynamika cząsteczek (600K)"
-
-#, fuzzy
-#~ msgid "Fragment…"
-#~ msgstr "Wpisz fragment SMILES:"
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Nazwa pliku:"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nazwa pierwiastka"
-
-#, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Wszystkie pliki"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Dodaj wodory, aby uzyskać podane pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Włąściwości atomu..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Właściwości wiązania..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Właściwości kątów..."
-
-#, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Właściowści wiązań"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Właściwości molekuły..."
+#~ msgstr "Wszystkie pliki (*);;"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Odległość"
+#~ msgstr "Odległość: %L1 Å"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
