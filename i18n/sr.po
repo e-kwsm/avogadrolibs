@@ -3962,7 +3962,7 @@ msgid "Measure"
 msgstr "Izmeri"
 
 #: qtplugins/measuretool/measuretool.cpp:54
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Measure Tool\t(%1)\n"
 "\n"
@@ -3972,6 +3972,13 @@ msgid ""
 "\tDihedral is measured between 1-2-3-4\n"
 "Right Mouse:\tReset the measurements."
 msgstr ""
+"Притисните да измерите\t(%1)\n"
+"\n"
+"Леви тастер:\tИзаберите до три атома.\n"
+"\tРастојања се мере између 1-2 и 2-3\n"
+"\tУгао се мери између 1-3 а 2 заједничка тачка\n"
+"\t\n"
+"Двоструки:\tВраћа преглед."
 
 #: qtplugins/measuretool/measuretool.cpp:198
 #: qtplugins/measuretool/measuretool.cpp:208
@@ -9667,31 +9674,6 @@ msgstr ""
 
 #~ msgid "Partial Charge"
 #~ msgstr "Делимично наелектрисање"
-
-#, fuzzy
-#~| msgid ""
-#~| "Click to Measure (F12)\n"
-#~| "\n"
-#~| "Left Mouse: \tSelect up to three Atoms.\n"
-#~| "\tDistances are measured between 1-2 and 2-3\n"
-#~| "\tAngle is measured between 1-3 using 2 as the common point\n"
-#~| "Right Mouse: \tReset the measurements.Double-Click: \tReset the view."
-#~ msgid ""
-#~ "Measure Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tSelect up to four Atoms.\n"
-#~ "\tDistances are measured between 1-2 and 2-3\n"
-#~ "\tAngle is measured between 1-3 using 2 as the common point\n"
-#~ "\tDihedral is measured between 1-2-3-4\n"
-#~ "Right Mouse: \tReset the measurements."
-#~ msgstr ""
-#~ "Притисните да измерите (Ф12)\n"
-#~ "\n"
-#~ "Леви тастер: \tИзаберите до три атома.\n"
-#~ "\t\tРастојања се мере између 1-2 и 2-3\n"
-#~ "\t\tУгао се мери између 1-3 а 2 заједничка тачка\n"
-#~ "Десни тастер: \tВраћа мерења.\n"
-#~ "Двоструки: \tВраћа преглед."
 
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Jednostavan prikaz VdW sfera sa ambijentalnom okluzijom."
