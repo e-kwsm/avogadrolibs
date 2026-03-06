@@ -1356,7 +1356,7 @@ msgstr "Van der Vals"
 #, fuzzy
 msgctxt "ambient occlusion"
 msgid "Van der Waals (AO)"
-msgstr "Van der Vals"
+msgstr "Van der Vals (AO)"
 
 #: qtgui/layermodel.cpp:202
 msgctxt "volumetric clouds"
@@ -2001,12 +2001,12 @@ msgstr ""
 #: qtplugins/applycolors/applycolors.cpp:78
 #, fuzzy
 msgid "By Partial Charge…"
-msgstr "djelomični naboj…"
+msgstr "Djelomični Naboj…"
 
 #: qtplugins/applycolors/applycolors.cpp:83
 #, fuzzy
 msgid "By Secondary Structure"
-msgstr "sekundarnu strukturu"
+msgstr "Sekundarnu Strukturu"
 
 #: qtplugins/applycolors/applycolors.cpp:88
 #, fuzzy
