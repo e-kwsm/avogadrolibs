@@ -11284,13 +11284,6 @@ msgstr ""
 #~ msgid "Angle %1"
 #~ msgstr "Hoek %1"
 
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "Conformer %1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
 #~ msgstr "Torsie %1"
@@ -11298,12 +11291,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Energie (kJ/mol)"
-
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgid "No"
-#~ msgstr "Nee"
 
 #, fuzzy
 #~ msgid "Import"
@@ -11315,10 +11302,6 @@ msgstr ""
 #~ msgid "Insert SMILES fragment:"
 #~ msgstr "voeg SMILES fragment in:"
 
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "&Crystallography"
-
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr "voeg moleculaire fragmenten in om grotere moleculen te bouwen"
 
@@ -11327,11 +11310,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimaliseer geometrie"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrie Optimalisation"
+#~ msgstr "Optimaliseer geometrie"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -11340,10 +11319,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Oppervlaktes"
 
 #~ msgid "Color by Index"
 #~ msgstr "Kleur per index"
@@ -11388,20 +11363,6 @@ msgstr ""
 
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr "Markeer particuliere functies die aan een SMARTS patroon voldoen."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr ""
-#~ "Copy text \n"
-#~ "  Ununoctium"
 
 #~ msgid "Engines"
 #~ msgstr "Engines"
@@ -11475,9 +11436,6 @@ msgstr ""
 
 #~ msgid "DL-POLY HISTORY files"
 #~ msgstr "DL-POLY HISTORY bestanden"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi extensie aan het toevoegen"
