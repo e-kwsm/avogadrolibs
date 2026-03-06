@@ -9839,10 +9839,6 @@ msgstr ""
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interface com Servidor Mongo Chem."
 
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Estrutura:"
-
 #~ msgid "Server settings"
 #~ msgstr "Configurações de servidor"
 
@@ -9885,21 +9881,11 @@ msgstr ""
 #~ msgid "Input Parameters:"
 #~ msgstr "Parâmetros de Entrada:"
 
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nome do Elemento."
-
 #~ msgid "'c' coordinate."
 #~ msgstr "coordenada de rede 'c'."
 
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os ficheiros (*);;"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboédrico"
 
 #~ msgid "Insert Molecule..."
 #~ msgstr "Inserir Molécula..."
@@ -9936,30 +9922,11 @@ msgstr ""
 #~ msgid "Edit Unit Cell..."
 #~ msgstr "Editar Célula Unitária..."
 
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK..."
-
 #~ msgid "&Import From PQR"
 #~ msgstr "&Importar de PQR"
 
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Cristal..."
-
 #~ msgid "&LAMMPS Input"
 #~ msgstr "Entrada &LAMMPS"
-
-#, fuzzy
-#~ msgid "Write"
-#~ msgstr "escrever"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Adicionar Hidrogénios ao pH..."
 
 #~ msgid "Error interpreting obabel CML output."
 #~ msgstr "Erro ao interpretar a saída obabel CML."
@@ -9978,10 +9945,6 @@ msgstr ""
 
 #~ msgid "Torsion Properties..."
 #~ msgstr "Propriedades de torsão..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Propriedades da Molécula..."
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "Criar superfícies..."
@@ -10073,20 +10036,12 @@ msgstr ""
 #~ msgstr "&Optimizar Geometria"
 
 #, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Optimização da geometria"
-
-#, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "Adicionar Hidrogênios"
 
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Parar"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Superfícies"
 
 #~ msgid "Color by Index"
 #~ msgstr "Cor por índice"
@@ -10131,18 +10086,6 @@ msgstr ""
 #~ msgid "Highlight particular features which match a SMARTS pattern."
 #~ msgstr ""
 #~ "Realçar funcionalidades particulares que coincidem com o padrão SMARTS."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrio"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentio"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununséptio"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununóctio"
 
 #~ msgid "Engines"
 #~ msgstr "Motores"
