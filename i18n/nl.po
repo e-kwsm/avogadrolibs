@@ -9622,10 +9622,6 @@ msgstr ""
 #~ msgstr "°"
 
 #, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
 #~ msgid ""
 #~ "Tables for displaying and editng atom, bond, angle and torsion properties."
 #~ msgstr "Vensters om atoom, bindings, hoek en torsie eigenschappen te tonen."
@@ -9655,11 +9651,6 @@ msgstr ""
 #~ msgstr "gedeeltelijke verandering"
 
 #, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animatie"
-
-#, fuzzy
 #~ msgid "Geometry"
 #~ msgstr "Geometrie"
 
@@ -9671,11 +9662,6 @@ msgstr ""
 
 #~ msgid "By Distance"
 #~ msgstr "Op afstand"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molecule Lading:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9693,119 +9679,22 @@ msgstr ""
 #~ msgid "TODO"
 #~ msgstr "TODO"
 
-#, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Sprong grootte:"
-
-#~ msgid "In."
-#~ msgstr "In."
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragmenteer…"
-
-#~ msgid "Other..."
-#~ msgstr "Ande..."
-
 #~ msgid "Filename"
 #~ msgstr "Bestandsnaam"
 
 #, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Structuur:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigeren"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigeren"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Element naam"
-
-#, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Alle bestanden"
-
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Dihedrale hoek:"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molecule"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Geen molecule geset"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "&Crystallography"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Voeg Waterstof toe voor pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Atoom Eigenschappen..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Bindings Eigenschappen..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Hoek Eigenschappen..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Torsie Eigenschappen..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Molecule Eigenschappen..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Creëer Oppervlakten..."
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Voeg Fragment in..."
+#~ msgstr "Alle bestanden (*);;"
 
 #~ msgid "Theory:"
 #~ msgstr "Theorie:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Afstand (1->2): %L1 %2"
+#~ msgstr "Afstand: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Roteerbaar"
-
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "Conformer %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "Conformer %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
