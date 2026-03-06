@@ -9352,21 +9352,8 @@ msgstr ""
 "devel@lists.sourceforge.net,vilsongjeci@gmail.com"
 
 #, fuzzy
-#~ msgid "&Import..."
-#~ msgstr "&Importo..."
-
-#, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Animim..."
-
-#, fuzzy
 #~ msgid "Filename"
-#~ msgstr "&Skedari"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Neon"
+#~ msgstr "Skedari"
 
 #, fuzzy
 #~ msgid "Import"
