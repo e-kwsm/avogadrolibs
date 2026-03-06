@@ -9626,48 +9626,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org"
 
-#~ msgid " Å"
-#~ msgstr " Å"
-
 #, fuzzy
 #~ msgid "Angles:"
 #~ msgstr "Kot:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Prekliči"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr "eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9677,58 +9641,11 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "&Analysis"
 #~ msgstr "&Analitično"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Uvozi ..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Nastavi barvo ..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Izvozi ..."
-
-#~ msgid "&Load data..."
-#~ msgstr "&Naloži podatke ..."
-
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Delni naboj"
 
 #~ msgid "Geometry"
 #~ msgstr "Geometrija"
-
-#, fuzzy
-#~ msgid "Add Unit Cell"
-#~ msgstr "Dodaj &osnovno celico"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Atomski indeksi"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Razdalja"
-
-#, fuzzy
-#~ msgid "Select Water…"
-#~ msgstr "Atomski indeksi"
-
-#, fuzzy
-#~ msgid "&Copy"
-#~ msgstr "Kopiraj vse"
-
-#, fuzzy
-#~| msgid "IUPAC Molecule Name:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Ime po IUPAC-u:"
 
 #, fuzzy
 #~ msgid "Molecular Mass (g/mol):"
@@ -9746,114 +9663,12 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "TODO"
 #~ msgstr "CILJI"
 
-#, fuzzy
-#~| msgid "Jump Size:"
-#~ msgid "Line Size:"
-#~ msgstr "Velikost skoka:"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "V:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Molekulski delci ..."
-
-#, fuzzy
-#~| msgid "DFT Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "DFT Functional"
-
-#~ msgid "Other..."
-#~ msgstr "Drugo ..."
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Ime datoteke:"
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Naloži datoteko"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "KrmarjenjeSkok navzgor"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "KrmarjenjeSkok navzgor"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Ime elementa"
-
-#, fuzzy
-#~ msgid "All files (*);;"
-#~ msgstr "Vse datoteke"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboedrični"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Ni nastavljene molekule"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK ..."
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Kristal ..."
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES ..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Dodaj vodike do pH ..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Lastnosti atoma ..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Lastnosti vezi ..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Lastnosti kotov ..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Lastnosti torzije ..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Lastnosti molekule ..."
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Ustvari površine ..."
-
-#, fuzzy
-#~ msgid "Symmetry..."
-#~ msgstr "Simetrija"
-
-#~ msgid "Insert Fragment..."
-#~ msgstr "Vstavi molekulski delec  ..."
-
 #~ msgid "Theory:"
 #~ msgstr "Teorija:"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Razdalja (1->2): %L1 %2"
+#~ msgstr "Razdalja: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Vrtljivo"
@@ -9896,12 +9711,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Energija (kJ/mol)"
 
-#~ msgid "Yes"
-#~ msgstr "Da"
-
-#~ msgid "No"
-#~ msgstr "Ne"
-
 #, fuzzy
 #~ msgid "Import"
 #~ msgstr "Uvozi"
@@ -9926,11 +9735,7 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Prilagodi geometrijo"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Prilagajanje geometrije"
+#~ msgstr "Prilagodi geometrijo"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -9939,10 +9744,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Zaustavi"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Površine"
 
 #~ msgid "Color by Index"
 #~ msgstr "Barva po ordinalnem številu"
