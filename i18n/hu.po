@@ -9924,77 +9924,11 @@ msgstr "E-mail-címek"
 #~ msgid "Checking for %1 scripts in path %2"
 #~ msgstr "%1 parancsfájl keresése a(z) %2 elérési útban"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Szögek:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Mégsem"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#~ msgid " "
-#~ msgstr " , "
-
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -10024,56 +9958,11 @@ msgstr "E-mail-címek"
 #~ msgid "Max 2*theta:"
 #~ msgstr "Legnagyobb 2θ:"
 
-#~ msgid "0"
-#~ msgstr "0"
-
-#~ msgid "+1"
-#~ msgstr "+1"
-
-#~ msgid "+2"
-#~ msgstr "+2"
-
-#~ msgid "+3"
-#~ msgstr "+3"
-
-#~ msgid "+4"
-#~ msgstr "+4"
-
-#~ msgid "+5"
-#~ msgstr "+5"
-
-#~ msgid "+6"
-#~ msgstr "+6"
-
-#~ msgid "+7"
-#~ msgstr "+7"
-
 #~ msgid "Render polygon meshes."
 #~ msgstr "Sokszög hálók megjelenítése."
 
 #~ msgid "&Analysis"
 #~ msgstr "&Elemzés"
-
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
-
-#~ msgid "&Import..."
-#~ msgstr "&Importálás..."
-
-#~ msgid "Set Color..."
-#~ msgstr "Színbeállítás..."
-
-#~ msgid "&Export..."
-#~ msgstr "&Exportálás…"
-
-#~ msgid "&Load data..."
-#~ msgstr "&Adatok betöltése..."
-
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #~ msgid "Partial Charge"
 #~ msgstr "Részleges töltés"
@@ -10124,18 +10013,6 @@ msgstr "E-mail-címek"
 #~ msgid "Line Size:"
 #~ msgstr "Vonalméret:"
 
-#~ msgid "In."
-#~ msgstr "Ebben."
-
-#~ msgid "El."
-#~ msgstr "El."
-
-#~ msgid "El.&No."
-#~ msgstr "El.&Sz."
-
-#~ msgid ", "
-#~ msgstr ", "
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "ABPS bemeneti fájlok (*.in)"
 
@@ -10157,30 +10034,12 @@ msgstr "E-mail-címek"
 #~ msgid "Functional Groups"
 #~ msgstr "Függvényes csoportok"
 
-#~ msgid "Help..."
-#~ msgstr "Súgó…"
-
-#~ msgid "Submit Calculation..."
-#~ msgstr "Számítás elküldése…"
-
-#~ msgid "Save File..."
-#~ msgstr "Fájl mentése…"
-
-#~ msgid "Download Plugins..."
-#~ msgstr "Beépülő modulok letöltése…"
-
-#~ msgid "Record Movie..."
-#~ msgstr "Rajzfilmfájl felvétele…"
-
 #~ msgid ""
 #~ "The file name contains invalid characters. Please choose another file "
 #~ "name."
 #~ msgstr ""
 #~ "A fájlnév érvénytelen karaktereket tartalmaz. Kérjük, válasszon másik "
 #~ "fájlnevet."
-
-#~ msgid "Other..."
-#~ msgstr "Egyéb..."
 
 #~ msgid "Client server operations."
 #~ msgstr "Ügyfél/kiszolgáló műveletek."
@@ -10205,14 +10064,6 @@ msgstr "E-mail-címek"
 #, qt-format
 #~ msgid "clientServer/%1:%2/lastOpenDir"
 #~ msgstr "ügyfélKiszolgáló/%1:%2/utoljáraMegnyitottKönyvtár"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
 
 #~ msgid "Client server"
 #~ msgstr "Ügyfél/kiszolgáló"
@@ -10367,9 +10218,6 @@ msgstr "E-mail-címek"
 #~ msgid "Element & Ordinal"
 #~ msgstr "Elemnév és elemszáma"
 
-#~ msgid "'c' coordinate."
-#~ msgstr "c-hálókoordináta."
-
 #~ msgid "Error: could not find yaehmop executable!"
 #~ msgstr ""
 #~ "Hiba történt: nem található a YAeHMOP (Yet Another extended Huckel "
@@ -10396,9 +10244,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Generating 3D molecule..."
 #~ msgstr "3D molekula létrehozása…"
-
-#~ msgid "Z Å)"
-#~ msgstr "Z (Å)"
 
 #, qt-format
 #~ msgid "%1: File exists and is not writable."
@@ -10430,42 +10275,6 @@ msgstr "E-mail-címek"
 #~ msgid "&Import From PQR"
 #~ msgstr "PQR &importálása"
 
-#~ msgid "Crystal..."
-#~ msgstr "Kristály…"
-
-#~ msgid "Write"
-#~ msgstr "Mentés"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#~ msgid "InChI..."
-#~ msgstr "InChI…"
-
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Hidrogénatomok hozzáadása a pH szint értékhez…"
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Atom tulajdonságai..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Kötés tulajdonságai…"
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Szög tulajdonságai..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Csavarodás tulajdonságai…"
-
-#~ msgid "Residue Properties..."
-#~ msgstr "Maradék tulajdonságai…"
-
-#~ msgid "Create Surfaces..."
-#~ msgstr "Felületek létrehozása..."
-
-#~ msgid "Symmetry..."
-#~ msgstr "Szimmetria…"
-
 #~ msgid "&Exit"
 #~ msgstr "&Kilépés"
 
@@ -10480,35 +10289,14 @@ msgstr "E-mail-címek"
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Távolság (3->4): %L1 %2"
+#~ msgstr "Távolság: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Forgatható"
 
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "Konformer %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "Konformer %1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "Szög %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "Konformer %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
@@ -10516,17 +10304,11 @@ msgstr "E-mail-címek"
 
 #, fuzzy
 #~ msgid "Torsion"
-#~ msgstr "Torzió %1"
+#~ msgstr "Torzió"
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Energia (kJ/mol)"
-
-#~ msgid "Yes"
-#~ msgstr "Igen"
-
-#~ msgid "No"
-#~ msgstr "Nem"
 
 #, fuzzy
 #~ msgid "Import"
@@ -10538,35 +10320,11 @@ msgstr "E-mail-címek"
 #~ msgid "Insert SMILES fragment:"
 #~ msgstr "SMILES-töredék beillesztése"
 
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "Molekulatöredék beillesztése"
-
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr "Molekulatöredék beillesztése nagyobb molekulák létrehozásához."
 
 #~ msgid "E&xtensions"
 #~ msgstr "K&iterjesztések"
-
-#, fuzzy
-#~ msgid "Optimize geometry"
-#~ msgstr "&geometria optimalizáció"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometria optimalizálása"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Hidrogének hozzáadása"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Leállítás"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Felületek"
 
 #~ msgid "Color by Index"
 #~ msgstr "Szín index szerint"
@@ -10599,18 +10357,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Color by Residue (amino acid type, hydrophobicity, ..."
 #~ msgstr "Szín molekularész szerint (aminosav-típus, hidrofobicitás, ..."
-
-#~ msgid "Ununtrium"
-#~ msgstr "Ununtrium"
-
-#~ msgid "Ununpentium"
-#~ msgstr "Ununpentium"
-
-#~ msgid "Ununseptium"
-#~ msgstr "Ununseptium"
-
-#~ msgid "Ununoctium"
-#~ msgstr "Ununoctium"
 
 #~ msgid "Engines"
 #~ msgstr "Név"
@@ -10668,14 +10414,8 @@ msgstr "E-mail-címek"
 #~ "A kötéseket pálcikáknak mutatja, ez ideális nagyon nagy (bio)molekulák "
 #~ "esetén"
 
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgid "Adding .avi extension"
 #~ msgstr ".avi fájl kiterjesztés hozzáadása"
-
-#~ msgid "Animation..."
-#~ msgstr "Animáció"
 
 #~ msgid "Cannot read file format of file %1."
 #~ msgstr "Nem olvasható a fájlformátum a %1 fájlban"
@@ -10704,9 +10444,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Animate trajectories, reactions, and vibrations."
 #~ msgstr "Animált trajektóriák, reakciók és vibrációk."
-
-#~ msgid "Cartesian Editor..."
-#~ msgstr "Descartes-i szerkesztő"
 
 #~ msgid "Number of atoms: %1"
 #~ msgstr "Atomok száma: %1"
@@ -10739,9 +10476,6 @@ msgstr "E-mail-címek"
 #~ msgstr ""
 #~ "A molekulának legalább négy atomot kell tartalmaznia hogy térszög "
 #~ "megszorítást lehessen hozzáadni."
-
-#~ msgid "Trajectory..."
-#~ msgstr "Trajektória..."
 
 #~ msgid "Open chemical file format"
 #~ msgstr "Kémiai fájl formátum megnyitása"
@@ -10800,9 +10534,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Add or remove hydrogens"
 #~ msgstr "Hidrogének hozzáadása vagy eltávolítása"
-
-#~ msgid "Peptide..."
-#~ msgstr "Peptid..."
 
 #~ msgid "Insert oligopeptide sequences"
 #~ msgstr "Oligopeptid-szekvencia  beillesztése"
@@ -10982,18 +10713,6 @@ msgstr "E-mail-címek"
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
 #~ msgstr "Gaussian nem fut megfelelően,  talán nincs installálva megfelelően."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian"
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "Copy text   \t &NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC-bevitel figyelmeztetés"
@@ -12112,21 +11831,6 @@ msgstr "E-mail-címek"
 #~ msgid "Point Group:"
 #~ msgstr "Pont csoport"
 
-#~ msgid "Minutes"
-#~ msgstr "Perc"
-
-#~ msgid "Hours"
-#~ msgstr "Óra"
-
-#~ msgid "Days"
-#~ msgstr "Nap"
-
-#~ msgid "Weeks"
-#~ msgstr "Hét"
-
-#~ msgid "Years"
-#~ msgstr "Év"
-
 #~ msgid "Millenia"
 #~ msgstr "Évezred"
 
@@ -12360,41 +12064,14 @@ msgstr "E-mail-címek"
 #~ msgid "MOLPRO Input"
 #~ msgstr "MOLPRO bevitel"
 
-#~ msgid "6-31+G(d)"
-#~ msgstr "6-31+G(d)"
-
-#~ msgid "6-311G(d)"
-#~ msgstr "6-311G(d)"
-
-#~ msgid "AUG-cc-pVDZ"
-#~ msgstr "AUG-cc-pVDZ"
-
-#~ msgid "AUG-cc-pVTZ"
-#~ msgstr "AUG-cc-pVTZ"
-
 #~ msgid "Quartet"
 #~ msgstr "Kvartett"
 
 #~ msgid "Quintet"
 #~ msgstr "Kvintett"
 
-#~ msgid "MNDO-d"
-#~ msgstr "MNDO-d"
-
-#~ msgid "PM6"
-#~ msgstr "PM6"
-
-#~ msgid "RM1"
-#~ msgstr "RM1"
-
 #~ msgid "Q-Chem Input"
 #~ msgstr "Q-Chem bevitel"
-
-#~ msgid "B3LYP5"
-#~ msgstr "B3LYP5"
-
-#~ msgid "M06-2X"
-#~ msgstr "M06-2X"
 
 #~ msgid "LACVP"
 #~ msgstr "LACVP"
@@ -12435,15 +12112,6 @@ msgstr "E-mail-címek"
 #~ msgid "&Height"
 #~ msgstr "&Magasság"
 
-#~ msgid "cm"
-#~ msgstr "cm"
-
-#~ msgid "mm"
-#~ msgstr "mm"
-
-#~ msgid "in"
-#~ msgstr "in"
-
 #~ msgid "Auto-adjust F&ont Size"
 #~ msgstr "&Betűméret automatikus beállítása"
 
@@ -12456,17 +12124,11 @@ msgstr "E-mail-címek"
 #~ msgid "&Y Axis Units:"
 #~ msgstr "&Y tengely egysége:"
 
-#~ msgid "tab_NMR"
-#~ msgstr "tab_NMR"
-
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gauss-&szélesség:"
 
 #~ msgid "Label Peaks:"
 #~ msgstr "Csúcsok cimkézése:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "Molecular Vibrations"
 #~ msgstr "Molekularezgés:"
@@ -12507,9 +12169,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "New Display"
 #~ msgstr "Új megjelenítés"
-
-#~ msgid "Advanced..."
-#~ msgstr "Haladó..."
 
 #~ msgid "Python Settings"
 #~ msgstr "Python beállítások"
