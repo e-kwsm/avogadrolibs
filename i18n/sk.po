@@ -9221,129 +9221,12 @@ msgstr ""
 #~ msgid "Angles:"
 #~ msgstr "Uhol:"
 
-#, fuzzy
-#~ msgid " °"
-#~ msgstr " °"
-
 #~ msgid "Cancel"
 #~ msgstr "Zrušiť"
 
-#~ msgid "°"
-#~ msgstr "°"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid "&Analysis"
-#~ msgstr "&Analytický"
-
-#, fuzzy
-#~ msgid "&Import..."
-#~ msgstr "&Import..."
-
-#, fuzzy
-#~| msgid "Selected Colors"
-#~ msgid "Set Color..."
-#~ msgstr "Vybrané Farby..."
-
-#, fuzzy
-#~ msgid "&Export..."
-#~ msgstr "&Export..."
-
-#, fuzzy
-#~| msgid "Color by Partial Charge"
-#~ msgid "Partial Charge"
-#~ msgstr "Farba podľa čiastkového náboja"
-
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animácia"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Atómové číslo"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Vzdialenosť"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "V:"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Zlomok..."
-
-#, fuzzy
-#~| msgid "Other..."
-#~ msgid "Other..."
-#~ msgstr "Ďaľšie..."
-
-#, fuzzy
-#~ msgid "Filename"
-#~ msgstr "Nesprávny názov súboru"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigovať"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigovať"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Názov prvku"
-
 #, fuzzy
 #~ msgid "All files (*);;"
-#~ msgstr "Všetky súbory"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Insert Molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Molekula"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&HRY"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "Pridať vodíky pre pH..."
-
-#~ msgid "Atom Properties..."
-#~ msgstr "Vlastnosti atómu..."
-
-#~ msgid "Bond Properties..."
-#~ msgstr "Vlastnosti väzieb..."
-
-#~ msgid "Angle Properties..."
-#~ msgstr "Vlastnosti uhla..."
-
-#~ msgid "Torsion Properties..."
-#~ msgstr "Vlastnosti krútenia..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Vlastnosti molekuly..."
+#~ msgstr "Všetky súbory (*);;"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Vložiť Zlomok"
@@ -9353,7 +9236,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Vzdialenosť (1->2): %L1 %2"
+#~ msgstr "Vzdialenosť: %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Otočný"
@@ -9367,14 +9250,6 @@ msgstr ""
 #~ msgstr "Krútenie %1"
 
 #, fuzzy
-#~ msgid "Yes"
-#~ msgstr "Roky"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Neón"
-
-#, fuzzy
 #~ msgid "Import"
 #~ msgstr "Import"
 
@@ -9384,19 +9259,11 @@ msgstr ""
 #~ msgid "Insert SMILES fragment:"
 #~ msgstr "Vložiť zlomky SMILES..."
 
-#, fuzzy
-#~ msgid "Insert Crystal"
-#~ msgstr "Vložiť fragment"
-
 #~ msgid "Insert molecular fragments for building larger molecules"
 #~ msgstr "Vložiť fragmenty molekúl na stavbu väčších molekúl"
 
 #~ msgid "E&xtensions"
 #~ msgstr "R&ozšírenia"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrická optimalizácia"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
