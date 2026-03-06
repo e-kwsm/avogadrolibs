@@ -2370,10 +2370,9 @@ msgid "Ribbon"
 msgstr "Fita"
 
 #: qtplugins/cartoons/cartoons.cpp:96
-#, fuzzy
 msgctxt "protein rendering style"
 msgid "Simple Cartoon"
-msgstr "Desenho animado"
+msgstr ""
 
 #: qtplugins/cartoons/cartoons.cpp:97
 #, fuzzy
