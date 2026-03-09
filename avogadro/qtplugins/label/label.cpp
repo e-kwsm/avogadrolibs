@@ -126,8 +126,9 @@ struct LayerLabel : Core::LayerData
   {
     std::stringstream output;
     output << atomOptions << " " << residueOptions << " " << radiusScalar << " "
-           << (int)color[0] << " " << (int)color[1] << " " << (int)color[2]
-           << " " << bondOptions << " " << labelScale;
+           << static_cast<int>(color[0]) << " " << static_cast<int>(color[1])
+           << " " << static_cast<int>(color[2]) << " " << bondOptions << " "
+           << labelScale;
     return output.str();
   }
 
@@ -196,17 +197,21 @@ struct LayerLabel : Core::LayerData
       QStringList text;
 
       // first add the individual options
-      atom->addItem(QObject::tr("None"), int(LabelOptions::None));
-      atom->addItem(QObject::tr("Index"), int(LabelOptions::Index));
-      atom->addItem(QObject::tr("Unique ID"), int(LabelOptions::UniqueID));
-      atom->addItem(QObject::tr("Element"), int(LabelOptions::Name));
+      atom->addItem(QObject::tr("None"), static_cast<int>(LabelOptions::None));
+      atom->addItem(QObject::tr("Index"),
+                    static_cast<int>(LabelOptions::Index));
+      atom->addItem(QObject::tr("Unique ID"),
+                    static_cast<int>(LabelOptions::UniqueID));
+      atom->addItem(QObject::tr("Element"),
+                    static_cast<int>(LabelOptions::Name));
       atom->addItem(QObject::tr("Element & Number"),
-                    int(LabelOptions::Ordinal));
+                    static_cast<int>(LabelOptions::Ordinal));
       atom->addItem(QObject::tr("Element & ID"),
-                    int(LabelOptions::Name | LabelOptions::UniqueID));
+                    (LabelOptions::Name | LabelOptions::UniqueID));
       atom->addItem(QObject::tr("Partial Charge", "atomic partial charge"),
-                    int(LabelOptions::PartialCharge));
-      atom->addItem(QObject::tr("Custom"), int(LabelOptions::Custom));
+                    static_cast<int>(LabelOptions::PartialCharge));
+      atom->addItem(QObject::tr("Custom"),
+                    static_cast<int>(LabelOptions::Custom));
 
       // check for current option based on item data
       for (int i = 0; i < atom->count(); ++i) {
@@ -226,10 +231,13 @@ struct LayerLabel : Core::LayerData
       bond->setObjectName("bond");
 
       // set up the various bond options
-      bond->addItem(QObject::tr("None"), int(LabelOptions::None));
-      bond->addItem(QObject::tr("Length"), int(LabelOptions::Length));
-      bond->addItem(QObject::tr("Index"), int(LabelOptions::Index));
-      bond->addItem(QObject::tr("Custom"), int(LabelOptions::Custom));
+      bond->addItem(QObject::tr("None"), static_cast<int>(LabelOptions::None));
+      bond->addItem(QObject::tr("Length"),
+                    static_cast<int>(LabelOptions::Length));
+      bond->addItem(QObject::tr("Index"),
+                    static_cast<int>(LabelOptions::Index));
+      bond->addItem(QObject::tr("Custom"),
+                    static_cast<int>(LabelOptions::Custom));
 
       QObject::connect(bond, SIGNAL(currentIndexChanged(int)), slot,
                        SLOT(bondLabelType(int)));
@@ -508,10 +516,11 @@ void Label::setColor(const QColor& color)
 void Label::atomLabelType(int index)
 {
   auto* interface = m_layerManager.getSetting<LayerLabel>();
-  interface->atomOptions = char(setupWidget()
-                                  ->findChildren<QComboBox*>("atom")[0]
-                                  ->itemData(index)
-                                  .toInt());
+  interface->atomOptions =
+    static_cast<char>(setupWidget()
+                        ->findChildren<QComboBox*>("atom")[0]
+                        ->itemData(index)
+                        .toInt());
   emit drawablesChanged();
 
   QSettings settings;
@@ -521,10 +530,11 @@ void Label::atomLabelType(int index)
 void Label::bondLabelType(int index)
 {
   auto* interface = m_layerManager.getSetting<LayerLabel>();
-  interface->bondOptions = char(setupWidget()
-                                  ->findChildren<QComboBox*>("bond")[0]
-                                  ->itemData(index)
-                                  .toInt());
+  interface->bondOptions =
+    static_cast<char>(setupWidget()
+                        ->findChildren<QComboBox*>("bond")[0]
+                        ->itemData(index)
+                        .toInt());
   emit drawablesChanged();
 
   QSettings settings;
@@ -534,10 +544,11 @@ void Label::bondLabelType(int index)
 void Label::residueLabelType(int index)
 {
   auto* interface = m_layerManager.getSetting<LayerLabel>();
-  interface->residueOptions = char(setupWidget()
-                                     ->findChildren<QComboBox*>("residue")[0]
-                                     ->itemData(index)
-                                     .toInt());
+  interface->residueOptions =
+    static_cast<char>(setupWidget()
+                        ->findChildren<QComboBox*>("residue")[0]
+                        ->itemData(index)
+                        .toInt());
   emit drawablesChanged();
 
   QSettings settings;
@@ -547,7 +558,7 @@ void Label::residueLabelType(int index)
 void Label::setRadiusScalar(double radius)
 {
   auto* interface = m_layerManager.getSetting<LayerLabel>();
-  interface->radiusScalar = float(radius);
+  interface->radiusScalar = static_cast<float>(radius);
   emit drawablesChanged();
 
   QSettings settings;
@@ -557,7 +568,7 @@ void Label::setRadiusScalar(double radius)
 void Label::setLabelScale(double scale)
 {
   auto* interface = m_layerManager.getSetting<LayerLabel>();
-  interface->labelScale = float(scale);
+  interface->labelScale = static_cast<float>(scale);
   emit drawablesChanged();
 
   QSettings settings;
