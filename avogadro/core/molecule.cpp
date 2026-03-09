@@ -1687,7 +1687,7 @@ std::map<unsigned char, size_t> Molecule::composition() const
   // Convert to size_t by rounding to nearest integer
   std::map<unsigned char, size_t> composition;
   for (const auto& pair : compositionDouble) {
-    size_t roundedCount = static_cast<size_t>(std::round(pair.second));
+    auto roundedCount = static_cast<size_t>(std::round(pair.second));
     if (roundedCount > 0) {
       composition[pair.first] = roundedCount;
     }
@@ -1755,7 +1755,7 @@ std::map<std::string, size_t> Molecule::formulaComposition() const
   // Convert to size_t by rounding to nearest integer
   std::map<std::string, size_t> composition;
   for (const auto& pair : compositionDouble) {
-    size_t roundedCount = static_cast<size_t>(std::round(pair.second));
+    auto roundedCount = static_cast<size_t>(std::round(pair.second));
     if (roundedCount > 0) {
       composition[pair.first] = roundedCount;
     }

@@ -179,7 +179,7 @@ inline void GaussianSetTools::calculateValues(const Vector3& position,
                                               Eigen::VectorXd& values) const
 {
   // Note: initCalculation() is called once in the constructor
-  Index atomsSize = static_cast<Index>(m_atomPositionsBohr.cols());
+  auto atomsSize = static_cast<Index>(m_atomPositionsBohr.cols());
   size_t basisSize = m_basis->symmetry().size();
   const std::vector<int>& basis = m_basis->symmetry();
   const std::vector<unsigned int>& atomIndices = m_basis->atomIndices();
