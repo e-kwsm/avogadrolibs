@@ -19,50 +19,59 @@ runs:
       repository: openchemistry/openchemistry
       submodules: ${{ inputs.checkout-submodules }}
       path: openchemistry
+      persist-credentials: false
 
   - name: Checkout avogadroapp
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       repository: openchemistry/avogadroapp
       path: openchemistry/avogadroapp
+      persist-credentials: false
 
   - name: Checkout avogadrolibs
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       path: openchemistry/avogadrolibs
+      persist-credentials: false
 
   - name: Checkout i18n
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       repository: openchemistry/avogadro-i18n
       path: openchemistry/avogadro-i18n
+      persist-credentials: false
 
   - name: Checkout avogadrogenerators
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       repository: openchemistry/avogenerators
       path: openchemistry/avogenerators
+      persist-credentials: false
 
   - name: Checkout crystals
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       repository: openchemistry/crystals
       path: openchemistry/crystals
+      persist-credentials: false
 
   - name: Checkout fragments
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       repository: openchemistry/fragments
       path: openchemistry/fragments
+      persist-credentials: false
 
   - name: Checkout molecules
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       repository: openchemistry/molecules
       path: openchemistry/molecules
+      persist-credentials: false
 
   - name: Checkout data files
     uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
     with:
       repository: openchemistry/avogadrodata
       path: openchemistry/avogadrodata
+      persist-credentials: false

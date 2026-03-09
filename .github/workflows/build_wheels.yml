@@ -72,6 +72,7 @@ jobs:
           # Grab the whole history so that setuptools-scm can see the tags and
           # give it a correct version even on non-tag push.
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Install dependencies
         run: . ./scripts/github-actions/install.sh
@@ -96,6 +97,7 @@ jobs:
           # Grab the whole history so that setuptools-scm can see the tags and
           # give it a correct version even on non-tag push.
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Build sdist
         run: pipx run build --sdist
