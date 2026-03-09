@@ -94,7 +94,7 @@ std::string sanitizeUtf8(const std::string& s)
 {
   std::string result;
   result.reserve(s.size());
-  const unsigned char* bytes = reinterpret_cast<const unsigned char*>(s.data());
+  const auto* bytes = reinterpret_cast<const unsigned char*>(s.data());
   size_t len = s.size();
 
   for (size_t i = 0; i < len; ++i) {
