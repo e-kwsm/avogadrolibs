@@ -376,30 +376,30 @@ inline QString BatchJob::stateToString(BatchJob::JobState state)
 {
   switch (state) {
     case None:
-      return QString("None");
+      return "None";
     case Accepted:
-      return QString("Accepted");
+      return "Accepted";
     case Rejected:
-      return QString("Rejected");
+      return "Rejected";
     case QueuedLocal:
-      return QString("QueuedLocal");
+      return "QueuedLocal";
     case Submitted:
-      return QString("Submitted");
+      return "Submitted";
     case QueuedRemote:
-      return QString("QueuedRemote");
+      return "QueuedRemote";
     case RunningLocal:
-      return QString("RunningLocal");
+      return "RunningLocal";
     case RunningRemote:
-      return QString("RunningRemote");
+      return "RunningRemote";
     case Finished:
-      return QString("Finished");
+      return "Finished";
     case Canceled:
-      return QString("Canceled");
+      return "Canceled";
     case Error:
-      return QString("Error");
+      return "Error";
     default:
     case Unknown:
-      return QString("Unknown");
+      return "Unknown";
   }
 }
 
