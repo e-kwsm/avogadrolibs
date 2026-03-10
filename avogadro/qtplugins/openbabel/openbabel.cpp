@@ -118,7 +118,7 @@ QList<Io::FileFormat*> OpenBabel::fileFormats() const
   // Return empty list if not ready yet, and print a warning.
   if (m_readFormatsPending || m_writeFormatsPending) {
     qDebug() << tr("The Open Babel file formats are not ready to be added.");
-    return QList<Io::FileFormat*>();
+    return {};
   }
 
   QList<Io::FileFormat*> result;
@@ -191,7 +191,7 @@ QString OpenBabel::openBabelInfo() const
   OBProcess proc;
   QString version = proc.version();
   if (version.isEmpty())
-    return QString();
+    return {};
   return QString("%1: %2").arg(proc.obabelExecutable(), version);
 }
 
