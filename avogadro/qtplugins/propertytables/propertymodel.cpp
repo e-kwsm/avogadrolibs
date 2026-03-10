@@ -333,7 +333,7 @@ QString partialCharge(Molecule* molecule, int atom, const QString& overrideType)
 QVariant PropertyModel::data(const QModelIndex& index, int role) const
 {
   if (!index.isValid())
-    return QVariant();
+    return {};
 
   int row = index.row();
   int col = index.column();
@@ -396,7 +396,7 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
     return tr("Click to change color");
 
   if (role != Qt::UserRole && role != Qt::DisplayRole && role != Qt::EditRole)
-    return QVariant();
+    return {};
 
   // Custom property columns (per-entity)
   if (col >= baseColumnCount()) {
@@ -448,7 +448,7 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
 
     if (row >= static_cast<int>(m_molecule->atomCount()) ||
         column > AtomColumns) {
-      return QVariant(); // invalid index
+      return {}; // invalid index
     }
 
     QString format("%L1");
@@ -507,11 +507,11 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
         if (isotope > 0)
           return isotope;
         else
-          return QVariant();
+          return {};
       }
       case AtomDataColor:
       default:
-        return QVariant(); // nothing to show
+        return {}; // nothing to show
     }
 
   } else if (m_type == BondType) {
@@ -520,7 +520,7 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
 
     if (row >= static_cast<int>(m_molecule->bondCount()) ||
         column > BondColumns) {
-      return QVariant(); // invalid index
+      return {}; // invalid index
     }
 
     auto bond = m_molecule->bond(row);
@@ -568,7 +568,7 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
 
     if (row >= static_cast<int>(m_molecule->residueCount()) ||
         column > ResidueColumns) {
-      return QVariant(); // invalid index
+      return {}; // invalid index
     }
 
     auto residue = m_molecule->residue(row);
@@ -588,13 +588,13 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       case ResidueDataHeterogen:
         return QString(residue.isHeterogen() ? "X" : "");
       default:
-        return QVariant();
+        return {};
     }
   } else if (m_type == AngleType) {
 
     auto column = static_cast<AngleColumn>(index.column());
     if (row > static_cast<int>(m_angles.size()) || column > AngleColumns)
-      return QVariant(); // invalid index
+      return {}; // invalid index
 
     auto angle = m_angles[row];
     auto atomNumber1 = m_molecule->atomicNumber(std::get<0>(angle));
@@ -638,14 +638,14 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
           return formatted;
         }
       default:
-        return QVariant();
+        return {};
     }
 
   } else if (m_type == TorsionType) {
 
     auto column = static_cast<TorsionColumn>(index.column());
     if (row > static_cast<int>(m_torsions.size()) || column > TorsionColumns)
-      return QVariant(); // invalid index
+      return {}; // invalid index
 
     auto torsion = m_torsions[row];
     auto atomNumber1 = m_molecule->atomicNumber(std::get<0>(torsion));
@@ -696,13 +696,13 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
           return format;
         }
       default:
-        return QVariant();
+        return {};
     }
   } else if (m_type == ConformerType) {
     auto column = static_cast<ConformerColumn>(index.column());
     if (row >= static_cast<int>(m_molecule->coordinate3dCount()) ||
         column > ConformerColumns) {
-      return QVariant(); // invalid index
+      return {}; // invalid index
     }
 
     switch (column) {
@@ -739,7 +739,7 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
     }
   }
 
-  return QVariant();
+  return {};
 }
 
 QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
@@ -753,7 +753,7 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
   }
 
   if (role != Qt::DisplayRole)
-    return QVariant();
+    return {};
 
   // Custom property column headers (per-entity types only)
   if (orientation == Qt::Horizontal && !m_validCache)
@@ -895,7 +895,7 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
       return QString("%L1").arg(section + 1);
   }
 
-  return QVariant();
+  return {};
 }
 
 Qt::ItemFlags PropertyModel::flags(const QModelIndex& index) const
@@ -1407,7 +1407,7 @@ QString PropertyModel::secStructure(unsigned int type) const
     case SecondaryStructure::coil:
       return tr("Coil", "protein coil secondary structure");
     default:
-      return QString(); // implied unknown
+      return {}; // implied unknown
   }
 }
 
@@ -1492,7 +1492,7 @@ void PropertyModel::updateCache() const
 Core::Angle PropertyModel::getAngle(unsigned int angle) const
 {
   if (angle >= m_angles.size())
-    return Core::Angle();
+    return {};
 
   return m_angles[angle];
 }
@@ -1515,7 +1515,7 @@ Real PropertyModel::getAngleValue(unsigned int angle) const
 Core::Dihedral PropertyModel::getTorsion(unsigned int torsion) const
 {
   if (torsion >= m_torsions.size())
-    return Core::Dihedral();
+    return {};
 
   return m_torsions[torsion];
 }
