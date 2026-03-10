@@ -87,7 +87,7 @@ bool OBMMEnergy::acceptsRadicals() const
 QByteArray OBMMEnergy::writeAndRead(const QByteArray& input)
 {
   if (m_process == nullptr)
-    return QByteArray();
+    return {};
 
   QByteArray result, line;
   m_process->write(input + "\n");

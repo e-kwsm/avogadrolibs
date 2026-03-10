@@ -164,7 +164,7 @@ QString ScriptEnergy::scriptFilePath() const
 std::string ScriptEnergy::userOptions() const
 {
   if (m_userOptionsSchema.isEmpty())
-    return std::string();
+    return {};
 
   return QJsonDocument(m_userOptionsSchema)
     .toJson(QJsonDocument::Compact)
@@ -264,7 +264,7 @@ void ScriptEnergy::setMolecule(Core::Molecule* mol)
 QByteArray ScriptEnergy::writeCoordinatesText(const Eigen::VectorXd& x)
 {
   if (x.size() == 0 || (x.size() % 3) != 0)
-    return QByteArray();
+    return {};
 
   QByteArray input;
   input.reserve(static_cast<int>(x.size() / 3) * 80);
@@ -283,7 +283,7 @@ QByteArray ScriptEnergy::writeCoordinatesBinary(const Eigen::VectorXd& x,
                                                 bool requestGradient) const
 {
   if (x.size() == 0 || (x.size() % 3) != 0)
-    return QByteArray();
+    return {};
 
   const quint16 flags = requestGradient ? FLAG_REQUEST_GRADIENT : 0;
   const quint32 atomCount = static_cast<quint32>(x.size() / 3);
