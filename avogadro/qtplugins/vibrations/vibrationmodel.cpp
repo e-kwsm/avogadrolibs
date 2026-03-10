@@ -16,7 +16,7 @@ VibrationModel::VibrationModel(QObject* p)
 
 QModelIndex VibrationModel::parent(const QModelIndex&) const
 {
-  return QModelIndex();
+  return {};
 }
 
 int VibrationModel::rowCount(const QModelIndex& p) const
@@ -64,7 +64,7 @@ QVariant VibrationModel::headerData(int section, Qt::Orientation orientation,
       return QString::number(section + 1);
     }
   }
-  return QVariant();
+  return {};
 }
 
 bool VibrationModel::setData(const QModelIndex&, const QVariant&, int)
@@ -77,7 +77,7 @@ QVariant VibrationModel::data(const QModelIndex& idx, int role) const
   if (!idx.isValid() || idx.column() > 2 || !m_molecule ||
       static_cast<int>(m_molecule->vibrationFrequencies().size()) <=
         idx.row()) {
-    return QVariant();
+    return {};
   }
 
   if (role == Qt::DisplayRole) {
@@ -105,7 +105,7 @@ QVariant VibrationModel::data(const QModelIndex& idx, int role) const
     }
   }
 
-  return QVariant();
+  return {};
 }
 
 QModelIndex VibrationModel::index(int row, int column,
@@ -115,7 +115,7 @@ QModelIndex VibrationModel::index(int row, int column,
     if (row >= 0 && m_molecule &&
         row < static_cast<int>(m_molecule->vibrationFrequencies().size()))
       return createIndex(row, column);
-  return QModelIndex();
+  return {};
 }
 
 void VibrationModel::clear() {}
