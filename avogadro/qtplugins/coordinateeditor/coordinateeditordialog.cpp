@@ -662,7 +662,7 @@ void CoordinateEditorDialog::listenForTextEditChanges(bool enable)
 QString CoordinateEditorDialog::detectInputFormat() const
 {
   if (m_ui->text->document()->isEmpty())
-    return QString();
+    return {};
 
   if (!m_ui->spec->text().isEmpty())
     return m_ui->spec->text();

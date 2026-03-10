@@ -111,14 +111,14 @@ QVariant ConstraintsModel::data(const QModelIndex& index, int role) const
         break;
     }
 
-  return QVariant();
+  return {};
 }
 
 QVariant ConstraintsModel::headerData(int section, Qt::Orientation orientation,
                                       int role) const
 {
   if (role != Qt::DisplayRole)
-    return QVariant();
+    return {};
 
   if (orientation == Qt::Horizontal) {
     switch (section) {
@@ -176,7 +176,7 @@ void ConstraintsModel::deleteConstraint(int index)
 Core::Constraint ConstraintsModel::constraint(int index)
 {
   if (index < 0 || index >= m_constraints.size())
-    return Constraint(MaxIndex, MaxIndex, MaxIndex, MaxIndex, 0.0);
+    return { MaxIndex, MaxIndex, MaxIndex, MaxIndex, 0.0 };
   else
     return m_constraints[index];
 }
