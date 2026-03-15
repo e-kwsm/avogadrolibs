@@ -12032,27 +12032,6 @@ msgstr ""
 #~ msgid "Angles:"
 #~ msgstr "Углы:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
-
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
 #~ msgstr "(ожидается)"
@@ -12060,9 +12039,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "Аналитический"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "&Импорт..."
@@ -12261,10 +12237,6 @@ msgstr ""
 
 #~ msgid "Theory:"
 #~ msgstr "Теория:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Расстояние (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Вращение"
