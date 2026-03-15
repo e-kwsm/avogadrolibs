@@ -9704,81 +9704,11 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "phlostically@example.com"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, fuzzy, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Anguloj:"
 
-#, fuzzy
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~| msgid " eV"
-#~ msgid "eV"
-#~ msgstr " eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Nuligi"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgid "Reference Axes Overlay"
 #~ msgstr "Surmeto de Referencaj Aksoj"
@@ -9796,9 +9726,6 @@ msgstr "phlostically@example.com"
 #~ msgid "Generate and plot an RMSD curve."
 #~ msgstr "Generi kaj desegni RMSD-kurbon."
 
-#~ msgid "Max 2*theta:"
-#~ msgstr "Maksimuma 2θ:"
-
 #~ msgid ""
 #~ "Tables for displaying and editng atom, bond, angle and torsion properties."
 #~ msgstr ""
@@ -9808,68 +9735,18 @@ msgstr "phlostically@example.com"
 #~ msgid "&Analysis"
 #~ msgstr "&Analizo"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "…"
-
-#, fuzzy
-#~| msgid "&Import"
-#~ msgid "&Import..."
-#~ msgstr "&Importi..."
-
-#, fuzzy
-#~| msgid "&Export"
-#~ msgid "&Export..."
-#~ msgstr "&Eksporti..."
-
-#, fuzzy
-#~| msgid " eV"
-#~ msgid "eV)"
-#~ msgstr " eV"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Parta Ŝargo"
-
-#, fuzzy
-#~| msgid "Stop Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Haltigi Moviĝon"
 
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Simpla montrado de sferoj de Van der Waals per ĉirkaŭa lumbaro."
 
 #, fuzzy
-#~| msgid "Optimize Geometry"
 #~ msgid "Geometry"
-#~ msgstr "Optimumigi Geometrion"
+#~ msgstr "Geometrion"
 
 #~ msgid "Add Unit Cell"
 #~ msgstr "Aldoni Unitan Ĉelon"
-
-#, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Elekti laŭ Atoma Indico…"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Distanco:"
-
-#, fuzzy
-#~| msgid "Select by Atom Index..."
-#~ msgid "Select Water…"
-#~ msgstr "Elekti laŭ Atoma Indico…"
-
-#, fuzzy
-#~| msgid "Copy"
-#~ msgid "&Copy"
-#~ msgstr "Kopii"
-
-#, fuzzy
-#~| msgid "Molecule"
-#~ msgid "Molecule Name:"
-#~ msgstr "Molekulo"
 
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Molekulmaso (g/mol):"
@@ -9886,14 +9763,6 @@ msgstr "phlostically@example.com"
 #~ msgid "TODO"
 #~ msgstr "FAROTA"
 
-#, fuzzy
-#~ msgid "Line Size:"
-#~ msgstr "Larĝo de pinto:"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "En:"
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "APBS-Enigo (*.in)"
 
@@ -9908,16 +9777,6 @@ msgstr "phlostically@example.com"
 #~| msgid "Set Python Path..."
 #~ msgid "Set Python Path…"
 #~ msgstr "Agordi Dosierindikon al Python…"
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragmento…"
-
-#, fuzzy
-#~| msgid "Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "Funkcionalo"
 
 #~ msgid "Help..."
 #~ msgstr "Helpo…"
@@ -9934,11 +9793,6 @@ msgstr "phlostically@example.com"
 #~ msgid "Record Movie..."
 #~ msgstr "Registri Filmeton…"
 
-#, fuzzy
-#~| msgid "Other..."
-#~ msgid "Other..."
-#~ msgstr "Alia…"
-
 #~ msgid "Client server operations."
 #~ msgstr "Klientaj servilaj operacioj."
 
@@ -9948,28 +9802,8 @@ msgstr "phlostically@example.com"
 #~ msgid "Connection failed"
 #~ msgstr "Konekto malsukcesis"
 
-#, qt-format
-#~ msgid "The connection to %2:%3 failed: connection refused."
-#~ msgstr "Malsukcesis la konekto al %2:%3: konekto rifuzita."
-
 #~ msgid "Remote service error"
 #~ msgstr "Eraro pri fora servo"
-
-#, qt-format
-#~ msgid "Connection failed with: %1"
-#~ msgstr "Konekto malsukcesis pro jena eraro: %1"
-
-#, qt-format
-#~ msgid "clientServer/%1:%2/lastOpenDir"
-#~ msgstr "clientServer/%1:%2/lastOpenDir"
-
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
 
 #~ msgid "Client server"
 #~ msgstr "Klienta servilo"
@@ -9977,31 +9811,17 @@ msgstr "phlostically@example.com"
 #~ msgid "Connection refused"
 #~ msgstr "Konekto rifuzita"
 
-#, qt-format
-#~ msgid "Connection to %2:%3 succeeded!"
-#~ msgstr "Sukcesis konekto al %2:%3!"
-
 #~ msgid "Filename"
 #~ msgstr "Dosiernomo"
 
 #~ msgid "Formula"
 #~ msgstr "Formulo"
 
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
-
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
-
 #~ msgid "Mongo Chem Server"
 #~ msgstr "MongoChem-Servilo"
 
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interfaco al MongoChem-Servilo."
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Ŝargi Strukturan Dosieron"
 
 #~ msgid "&Hostname:"
 #~ msgstr "Servilonomo (&H):"
@@ -10123,16 +9943,8 @@ msgstr "phlostically@example.com"
 #~ msgid "Element & Ordinal"
 #~ msgstr "Nomo de elemento."
 
-#~ msgid "'c' coordinate."
-#~ msgstr "Krada koordinato 'c'."
-
 #~ msgid "Error: could not find yaehmop executable!"
 #~ msgstr "Eraro: ne troviĝis ruleblaĵo Yaehmop!"
-
-#, fuzzy
-#~| msgid "Dihedral:"
-#~ msgid "octahedral"
-#~ msgstr "Duedra:"
 
 #~ msgid "Layer"
 #~ msgstr "Tavolo"
@@ -10219,9 +10031,6 @@ msgstr "phlostically@example.com"
 
 #~ msgid "&Exit"
 #~ msgstr "&Eliri"
-
-#~ msgid "Ctrl+E"
-#~ msgstr "Stir+E"
 
 #~ msgid "Insert Fragment..."
 #~ msgstr "Enmeti Fragmenton…"
