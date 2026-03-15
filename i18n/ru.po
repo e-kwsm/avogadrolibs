@@ -9994,36 +9994,9 @@ msgstr ""
 #~ "Выберите лиганд или функциональную группу и щёлкните по атому водорода "
 #~ "для присоединения."
 
-#~ msgid " Å"
-#~ msgstr " Å"
-
 #, fuzzy
 #~ msgid "Angles:"
 #~ msgstr "Углы:"
-
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -10032,9 +10005,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "Аналитический"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "&Импорт..."
@@ -10233,10 +10203,6 @@ msgstr ""
 
 #~ msgid "Theory:"
 #~ msgstr "Теория:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Расстояние (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Вращение"
