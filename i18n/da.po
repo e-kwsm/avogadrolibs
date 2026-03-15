@@ -9556,35 +9556,14 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Distance: %L1 Å"
-#~ msgstr "Afstand: %L1 %2"
+#~ msgstr "Afstand: %L1 Å"
 
 #~ msgid "Rotatable"
 #~ msgstr "Roterbar"
 
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "Konformation %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "Konformation %1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "Vinkel %1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "Konformation %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
@@ -9949,9 +9928,6 @@ msgstr ""
 #~ msgid "PDB entry to download."
 #~ msgstr "PDB element der skal hentes."
 
-#~ msgid "URL"
-#~ msgstr "URL"
-
 #~ msgid "URL of molecule to download."
 #~ msgstr "URL til molekylerne som skal hentes."
 
@@ -10050,12 +10026,6 @@ msgstr ""
 #~ msgid "SMILES Format Conversion Not Available!"
 #~ msgstr "SMILES format konvertering ikke tilgængelig!"
 
-#~ msgid "efp"
-#~ msgstr "efp"
-
-#~ msgid ")"
-#~ msgstr ")"
-
 #~ msgid "Create input files for the GAMESS quantum chemistry package"
 #~ msgstr "Skab inputfil til GAMESS kvantekemipakken"
 
@@ -10117,21 +10087,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Gaussian blev ikke afviklet korrekt. Måske er programmet ikke installeret "
 #~ "korrekt."
-
-#~ msgid "&Dalton..."
-#~ msgstr "&Dalton..."
-
-#~ msgid "&Gaussian..."
-#~ msgstr "&Gaussian..."
-
-#~ msgid "&MOLPRO..."
-#~ msgstr "&MOLPRO..."
-
-#~ msgid "&NWChem..."
-#~ msgstr "&NWChem..."
-
-#~ msgid "&Q-Chem..."
-#~ msgstr "&Q-Chem..."
 
 #~ msgid "MOPAC Input Warning"
 #~ msgstr "MOPAC input advarsel"
@@ -10606,15 +10561,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Form"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Løkke"
 
@@ -10663,9 +10609,6 @@ msgstr ""
 #~ msgid "Show Atoms"
 #~ msgstr "Vis atomer"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Løkke"
@@ -10687,9 +10630,6 @@ msgstr ""
 
 #~ msgid "Gaussian &Width:"
 #~ msgstr "Gauss-&bredde:"
-
-#~ msgid "ppm"
-#~ msgstr "ppm"
 
 #~ msgid "higher frequency vibrations will show faster movement"
 #~ msgstr "højere frekvens vibrationer vil vise hurtigere bevægelser"
