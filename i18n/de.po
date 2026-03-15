@@ -9711,34 +9711,11 @@ msgstr ""
 #~ msgid "Checking for %1 scripts in path %2"
 #~ msgstr "Überprüfen von %1 Skripten im Pfad %2"
 
-#, qt-format
-#~ msgid "%1 ΔE = %L2 kJ/mol"
-#~ msgstr "%1 ΔE = %L2 kJ/mol"
-
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Winkel:"
 
 #~ msgid "Cancel"
 #~ msgstr "Abbrechen"
-
-#, qt-format
-#~ msgid "%1 ΔE = %L2 kcal/mol"
-#~ msgstr "%1 ΔE = %L2 kcal/mol"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9866,23 +9843,12 @@ msgstr ""
 #~ msgid "Formula"
 #~ msgstr "Formel"
 
-#~ msgid "InChIKey"
-#~ msgstr "InChIKey"
-
 #~ msgid "YAeHMOP Band Structure"
 #~ msgstr "YAeHMOP Bandstruktur"
 
 #, fuzzy
 #~ msgid "&Hostname:"
 #~ msgstr "&Hostname:"
-
-#, fuzzy
-#~ msgid "Navigate Back"
-#~ msgstr "Navigieren"
-
-#, fuzzy
-#~ msgid "Navigate Forward"
-#~ msgstr "Navigieren"
 
 #~ msgid "File name:"
 #~ msgstr "Dateiname:"
@@ -9907,32 +9873,11 @@ msgstr ""
 #~ msgid "Error: %1 crashed!"
 #~ msgstr "Fehler: %1 ist abgestürzt!"
 
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Rhomboedrisch"
-
 #~ msgid "Layer"
 #~ msgstr "Schicht"
 
 #~ msgid "Insert Molecule..."
 #~ msgstr "Molekül einfügen..."
-
-#, fuzzy
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "Kein Molekülsatz"
-
-#~ msgid "Z Å)"
-#~ msgstr "Z (Å)"
-
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS-UK …"
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "Kristall …"
 
 #~ msgid "SMILES..."
 #~ msgstr "SMILES …"
@@ -9953,10 +9898,6 @@ msgstr ""
 #~ msgid "Torsion Properties..."
 #~ msgstr "Torsionseigenschaften …"
 
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Moleküleigenschaften …"
-
 #~ msgid "Create Surfaces..."
 #~ msgstr "Oberflächen erstellen …"
 
@@ -9969,10 +9910,6 @@ msgstr ""
 
 #~ msgid "Theory:"
 #~ msgstr "Theorie:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Entfernung (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Rotierbar"
@@ -10043,22 +9980,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Optimize geometry"
 #~ msgstr "Geometrie &optimieren"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Geometrie-Optimierung"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Wasserstoffatome hinzufügen"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Oberflächen"
 
 #~ msgid "Color by Index"
 #~ msgstr "Farbe nach Index"
