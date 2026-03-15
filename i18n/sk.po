@@ -9503,10 +9503,6 @@ msgstr ""
 #~ msgid "Theory:"
 #~ msgstr "Teória:"
 
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Vzdialenosť: %L1 %2"
-
 #~ msgid "Rotatable"
 #~ msgstr "Otočný"
 
@@ -9533,18 +9529,6 @@ msgstr ""
 
 #~ msgid "E&xtensions"
 #~ msgstr "R&ozšírenia"
-
-#, fuzzy
-#~ msgid "Add hydrogens"
-#~ msgstr "Pridať vodíky"
-
-#, fuzzy
-#~ msgid "Stopped"
-#~ msgstr "Stop"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Povrchy"
 
 #~ msgid "Color by Index"
 #~ msgstr "Farba podľa indexu"
