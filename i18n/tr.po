@@ -9572,63 +9572,14 @@ msgstr ""
 #~ msgid "Checking for %1 scripts in path %2"
 #~ msgstr "%2 dizininde %1 komut dosyası olup olmadığı kontrol ediliyor"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Açılar:"
-
-#~ msgid " °"
-#~ msgstr " °"
 
 #~ msgid "Cancel"
 #~ msgstr "İptal"
 
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid " eV"
-#~ msgstr " eV"
-
-#, qt-format
-#~ msgid "%1 ΔE = %L2 kcal/mol"
-#~ msgstr "%1 ΔE = %L2 kcal/mol"
-
 #~ msgid "unknown molecule"
 #~ msgstr "bilinmeyen molekül"
-
-#~ msgid " & "
-#~ msgstr " & "
 
 #~ msgid "Reference Axes Overlay"
 #~ msgstr "Referans Eksen Kaplaması"
