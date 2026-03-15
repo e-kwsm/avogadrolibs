@@ -4196,7 +4196,7 @@ msgid "Measure"
 msgstr "Ukur"
 
 #: qtplugins/measuretool/measuretool.cpp:152
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Measure Tool\t(%1)\n"
 "\n"
@@ -4208,6 +4208,13 @@ msgid ""
 "\n"
 "Values can also be typed into the tool panel to move the atoms."
 msgstr ""
+"Measure Tool\t(%1)\n"
+"\n"
+"Butang Kiri Tetikus:\tPilih sehingga tiga Atom.\n"
+"\tJarak diukur diantara 1-2 dan 2-3\n"
+"\tSudut diukur diantara 1-3 menggunakan 2 sebagai titik umum\n"
+"\t\n"
+"Butang Kanan Tetikus:\tTetap semula pengukuran."
 
 #: qtplugins/measuretool/measuretool.cpp:426
 #: qtplugins/measuretool/measuretool.cpp:436
