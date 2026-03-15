@@ -9553,10 +9553,6 @@ msgstr ""
 #~ msgid "Theory:"
 #~ msgstr "Teorija:"
 
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Distanca: %L1 %2"
-
 #~ msgid "Rotatable"
 #~ msgstr "okretljiv"
 
@@ -9680,9 +9676,6 @@ msgstr ""
 #~ msgid "Renders bonds as wires (lines), ideal for very large (bio)molecules"
 #~ msgstr ""
 #~ "Renderira veze kao žice(linije), idealno za veoma velike (bio)molekule"
-
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgid "Adding .avi extension"
 #~ msgstr "Dodajem .avi ekstenziju"
@@ -9947,17 +9940,8 @@ msgstr ""
 #~ msgid "Gaussian Not Installed."
 #~ msgstr "Gaussian nije instaliran."
 
-#~ msgid "The G03 executable, cannot be found."
-#~ msgstr "G03 izvršna datoteka ne može biti pronađena"
-
-#~ msgid "G03 did not start. Perhaps it is not installed correctly."
-#~ msgstr "G03 se nije pokrenuo. Vjerovatno nije instaliran ispravno."
-
 #~ msgid "Running Gaussian calculation..."
 #~ msgstr "Izvršavam Gaussovo računanje"
-
-#~ msgid "G03 Crashed."
-#~ msgstr "G03 krahirao"
 
 #~ msgid ""
 #~ "Gaussian did not run correctly. Perhaps it is not installed correctly."
@@ -10093,10 +10077,6 @@ msgstr ""
 #~ msgid "&Infrared Spectra Settings"
 #~ msgstr "&Infracrveno, postavke spektra"
 
-#~ msgctxt "NMR spectra option"
-#~ msgid "NMR"
-#~ msgstr "NMR"
-
 #~ msgid "&NMR Spectra Settings"
 #~ msgstr "&NMR, postavke spektra"
 
@@ -10136,9 +10116,6 @@ msgstr ""
 #~ msgid "Comma Separated Values"
 #~ msgstr "Vrijednosti odvojene zarezom"
 
-#~ msgid "JCAMP-DX"
-#~ msgstr "JCAMP-DX"
-
 #~ msgid "Unknown extension: %1"
 #~ msgstr "Nepoznata ekstenzija: %1"
 
@@ -10163,14 +10140,8 @@ msgstr ""
 #~ msgid "Portable Network Graphics"
 #~ msgstr "Prijenosna Mrežna Grafika"
 
-#~ msgid "jpeg"
-#~ msgstr "jpeg"
-
 #~ msgid "Tagged Image File Format"
 #~ msgstr "Tagged Image format datoteke"
-
-#~ msgid "Windows Bitmap"
-#~ msgstr "Windows bitmapa"
 
 #~ msgid "Portable Pixmap"
 #~ msgstr "Portabilna Piksmapa"
@@ -10353,10 +10324,6 @@ msgstr ""
 #~ msgid "Molecule %1"
 #~ msgstr "Molekula %1"
 
-#~ msgctxt "Default license for all Avogadro plugins"
-#~ msgid "GPL2+"
-#~ msgstr "GPL2+"
-
 #~ msgid "Unknown Python Engine"
 #~ msgstr "Nepoznat Python pogon"
 
@@ -10483,22 +10450,6 @@ msgstr ""
 #~ msgid "Dihedral Angle: %1 °"
 #~ msgstr "Dihedralni ugao: %1 °"
 
-#~ msgctxt "*1 is a number. You most likely do not need to translate this"
-#~ msgid "*1"
-#~ msgstr "*1"
-
-#~ msgctxt "*2 is a number. You most likely do not need to translate this"
-#~ msgid "*2"
-#~ msgstr "*2"
-
-#~ msgctxt "*3 is a number. You most likely do not need to translate this"
-#~ msgid "*3"
-#~ msgstr "*3"
-
-#~ msgctxt "*4 is a number. You most likely do not need to translate this"
-#~ msgid "*4"
-#~ msgstr "*4"
-
 #~ msgid "Distance(s):"
 #~ msgstr "Razmak(ci):"
 
@@ -10571,15 +10522,6 @@ msgstr ""
 #~ msgid "Shape"
 #~ msgstr "Oblik"
 
-#~ msgid "a"
-#~ msgstr "a"
-
-#~ msgid "b"
-#~ msgstr "b"
-
-#~ msgid "c"
-#~ msgstr "c"
-
 #~ msgid "Loop"
 #~ msgstr "Petlja"
 
@@ -10646,9 +10588,6 @@ msgstr ""
 #~ msgid "Animate Trajectory"
 #~ msgstr "Animiraj putanju"
 
-#~ msgid "0/0"
-#~ msgstr "0/0"
-
 #~ msgctxt "Continually re-run the animation in a loop"
 #~ msgid "Loop"
 #~ msgstr "Petlja"
@@ -10710,53 +10649,11 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "Algoritam"
 
-#~ msgid "L"
-#~ msgstr "L"
-
-#~ msgid "NH₂"
-#~ msgstr "NH₂"
-
-#~ msgid "NH₃⁺"
-#~ msgstr "NH₃⁺"
-
-#~ msgid "CO₂H"
-#~ msgstr "CO₂H"
-
-#~ msgid "CO₂⁻"
-#~ msgstr "CO₂⁻"
-
-#~ msgid "Alpha Helix"
-#~ msgstr "Alfa helix"
-
-#~ msgid "Beta Sheet"
-#~ msgstr "Beta komad"
-
-#~ msgid "Phi:"
-#~ msgstr "Phi:"
-
-#~ msgid "E"
-#~ msgstr "E"
-
-#~ msgid "F"
-#~ msgstr "F"
-
 #~ msgid "Number of Residues:"
 #~ msgstr "Broj ostataka:"
 
 #~ msgid "Dipole Moment (D):"
 #~ msgstr "Dipolni moment (D):"
-
-#~ msgid "RHF"
-#~ msgstr "RHF"
-
-#~ msgid "DFT"
-#~ msgstr "DFT"
-
-#~ msgid "MP2"
-#~ msgstr "MP2"
-
-#~ msgid "CCSD"
-#~ msgstr "CCSD"
 
 #~ msgid "Advanced"
 #~ msgstr "Napredno"
