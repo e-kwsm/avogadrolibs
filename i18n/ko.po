@@ -9898,14 +9898,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "clientServer/%1:%2/lastOpenDir"
 #~ msgstr "clientServer/%1:%2/lastOpenDir"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "클라이언트 서버"
 
@@ -10116,65 +10108,20 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Theory:"
 #~ msgstr "이론:"
 
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "거리 (1->2): %L1 %2"
-
 #~ msgid "Rotatable"
 #~ msgstr "회전가능한"
-
-#, fuzzy
-#~| msgid "Conformer %1"
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "이형태체 %1"
-
-#, fuzzy
-#~| msgid "Conformer %1"
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "이형태체 %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "각 %1"
-
-#, fuzzy
-#~| msgid "Conformer %1"
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "이형태체 %1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
 #~ msgstr "비틀림 %1"
 
 #, fuzzy
-#~| msgctxt "Degree symbol"
-#~| msgid "Torsion %1"
-#~ msgid "Torsion"
-#~ msgstr "비틀림 %1"
-
-#, fuzzy
-#~| msgid "Energy (kJ/mol):"
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "에너지 (kJ/mol):"
-
-#, fuzzy
-#~| msgid "Years"
-#~ msgid "Yes"
-#~ msgstr "년"
-
-#, fuzzy
-#~| msgid "Neon"
-#~ msgid "No"
-#~ msgstr "네온"
+#~ msgstr "에너지 (kJ/mol)"
 
 #, fuzzy
 #~ msgid "Import"
@@ -10201,20 +10148,12 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgstr "&구조 최적화"
 
 #, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "구조 최적화"
-
-#, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "수소 추가"
 
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "중지"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "표면"
 
 #~ msgid "Color by Index"
 #~ msgstr "색인에 따라 채색"
