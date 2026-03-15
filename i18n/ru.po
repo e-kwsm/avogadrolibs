@@ -3927,13 +3927,17 @@ msgid "Manipulate"
 msgstr "Перемещение"
 
 #: qtplugins/manipulator/manipulator.cpp:52
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
 "Left Mouse:\tClick and drag to move atoms\n"
 "Right Mouse:\tClick and drag to rotate atoms."
 msgstr ""
+"Инструмент для манипуляций над структурой\t(%1)\n"
+"\n"
+"Зажмите левую кнопку мыши, чтобы передвинуть атом\n"
+"Зажмите правую кнопку мыши, чтобы вращать выбранный атом\n"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -9751,17 +9755,6 @@ msgstr ""
 #~| msgid "Animation"
 #~ msgid "Animation Tool"
 #~ msgstr "Анимация"
-
-#~ msgid ""
-#~ "Manipulation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to move atoms\n"
-#~ "Right Mouse: \tClick and drag to rotate selected atoms.\n"
-#~ msgstr ""
-#~ "Инструмент для манипуляций над структурой\n"
-#~ "\n"
-#~ "Зажмите левую кнопку мыши, чтобы передвинуть атом\n"
-#~ "Зажмите правую кнопку мыши, чтобы вращать выбранный атом\n"
 
 #~ msgid "Geometry"
 #~ msgstr "Геометрия"
