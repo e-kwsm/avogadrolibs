@@ -4158,7 +4158,7 @@ msgid "Navigate"
 msgstr "Навигация"
 
 #: qtplugins/navigator/navigator.cpp:42
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Navigation Tool\t(%1)\n"
 "\n"
@@ -4166,6 +4166,11 @@ msgid ""
 "Middle Mouse:\tClick and drag to zoom in or out.\n"
 "Right Mouse:\tClick and drag to move the view."
 msgstr ""
+"Инструмент изменения обзора\t(%1)\n"
+"\n"
+"Зажатием левой кнопки мыши вы можете вращать молекулу\n"
+"Прокруткой (или зажимая Shift) вы можете масштабировать молекулу\n"
+"Правой кнопкой мыши вы можете перемещать молекулу.\n"
 
 #: qtplugins/navigator/navigator.cpp:63
 msgid "Rotate the scene along the x, y, or z axes."
@@ -9737,19 +9742,6 @@ msgstr ""
 #~| msgid "Partial charge"
 #~ msgid "Partial Charge"
 #~ msgstr "Частичный заряд"
-
-#~ msgid ""
-#~ "Navigation Tool\n"
-#~ "\n"
-#~ "Left Mouse: \tClick and drag to rotate the view.\n"
-#~ "Middle Mouse: \tClick and drag to zoom in or out.\n"
-#~ "Right Mouse: \tClick and drag to move the view.\n"
-#~ msgstr ""
-#~ "Инструмент изменения обзора\n"
-#~ "\n"
-#~ "Зажатием левой кнопки мыши вы можете вращать молекулу\n"
-#~ "Прокруткой (или зажимая Shift) вы можете масштабировать молекулу\n"
-#~ "Правой кнопкой мыши вы можете перемещать молекулу.\n"
 
 #, fuzzy
 #~| msgid "Animation"
