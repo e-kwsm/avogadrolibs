@@ -9736,10 +9736,6 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgstr "Ъгъл:"
 
 #, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
 #~ msgid "&Import..."
 #~ msgstr "Внасяне"
 
@@ -9752,13 +9748,8 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgstr "Цвят по частичен заряд"
 
 #, fuzzy
-#~| msgid "Animation..."
-#~ msgid "Animation Tool"
-#~ msgstr "Анимация"
-
-#, fuzzy
 #~ msgid "Geometry"
-#~ msgstr "Oптимизиране на геометрията"
+#~ msgstr "Геометрията"
 
 #, fuzzy
 #~ msgid "By Distance"
@@ -9795,21 +9786,9 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 #~ msgstr "Свойства на връзката..."
 
 #, fuzzy
-#~ msgid "Torsion Properties..."
-#~ msgstr "Свойства на връзката"
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Свойства на молекулата..."
-
-#, fuzzy
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "Ъгъл %1"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "Неон"
 
 #, fuzzy
 #~ msgid "Import"
@@ -9820,11 +9799,7 @@ msgstr ",,svetlisashkov@yahoo.com,,,svetlisashkov@yahoo.com,,,svetlisashkov@yaho
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Oптимизиране на геометрията"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Геометрична оптимизация"
+#~ msgstr "Oптимизиране на геометрията"
 
 #, fuzzy
 #~ msgid "Surface Dialog"
