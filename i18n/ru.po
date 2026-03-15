@@ -9749,39 +9749,12 @@ msgstr ""
 "devel@lists.sourceforge.net,annulen@yandex.ru,roman_romul@mail.ru,parukhin@gmail.com,,hippi90ub@gmail.com,madcad@yandex.ru,,yuray@komyakino.ru,dn2010@km.ru,,,5097@mail.ru,avogadro-"
 "devel@lists.sourceforge.net,annulen@yandex.ru,roman_romul@mail.ru,parukhin@gmail.com,,hippi90ub@gmail.com,madcad@yandex.ru,,yuray@komyakino.ru,dn2010@km.ru"
 
-#~ msgid " Å"
-#~ msgstr " Å"
-
 #, fuzzy
 #~ msgid "Angles:"
 #~ msgstr "Углы:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Отменить"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9790,9 +9763,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "Аналитический"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "&Импорт..."
@@ -9967,10 +9937,6 @@ msgstr ""
 
 #~ msgid "Theory:"
 #~ msgstr "Теория:"
-
-#, fuzzy
-#~ msgid "Distance: %L1 Å"
-#~ msgstr "Расстояние (1->2): %L1 %2"
 
 #~ msgid "Rotatable"
 #~ msgstr "Вращение"
