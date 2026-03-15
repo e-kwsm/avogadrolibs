@@ -9768,58 +9768,11 @@ msgstr "Seus e-mails"
 #~ msgid "Checking for %1 scripts in path %2"
 #~ msgstr "Verificando %1 scripts no caminho %2"
 
-#, qt-format
-#~ msgid "%L1°"
-#~ msgstr "%L1°"
-
-#, qt-format
-#~ msgid "%L1 Å"
-#~ msgstr "%L1 Å"
-
-#~ msgid " Å"
-#~ msgstr " Å"
-
-#, fuzzy, qt-format
-#~ msgid "%1 %L2"
-#~ msgstr "%1 %L2"
-
 #~ msgid "Angles:"
 #~ msgstr "Ângulos:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
 #~ msgid "Cancel"
 #~ msgstr "Cancelar"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, qt-format
-#~ msgid "%1 ΔE = %L2 kcal/mol"
-#~ msgstr "%1 ΔE = %L2 kcal/mol"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9841,9 +9794,6 @@ msgstr "Seus e-mails"
 #~ msgid "Generate and plot an RMSD curve."
 #~ msgstr "Criar e desenhar uma curva RMSD."
 
-#~ msgid "Max 2*theta:"
-#~ msgstr "Máx 2*theta:"
-
 #, fuzzy
 #~ msgid ""
 #~ "Tables for displaying and editng atom, bond, angle and torsion properties."
@@ -9853,12 +9803,6 @@ msgstr "Seus e-mails"
 #, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analítica"
-
-#~ msgid "∞"
-#~ msgstr "∞"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "&Importar..."
@@ -9875,11 +9819,6 @@ msgstr "Seus e-mails"
 #~ msgid "Partial Charge"
 #~ msgstr "Carga Parcial"
 
-#, fuzzy
-#~| msgid "Animation"
-#~ msgid "Animation Tool"
-#~ msgstr "Animação"
-
 #~ msgid "Simple display of VdW spheres with ambient occlusion."
 #~ msgstr "Exibição simples de esferas VdW com oclusão ambiental."
 
@@ -9890,26 +9829,8 @@ msgstr "Seus e-mails"
 #~ msgstr "Adicionar Célula Unitária"
 
 #, fuzzy
-#~ msgid "By Atomic Index"
-#~ msgstr "Índices dos Átomos"
-
-#, fuzzy
-#~ msgid "By Distance"
-#~ msgstr "Distância:"
-
-#, fuzzy
 #~ msgid "Select Water…"
 #~ msgstr "Índices dos Átomos"
-
-#, fuzzy
-#~| msgid "Copy"
-#~ msgid "&Copy"
-#~ msgstr "Copiar"
-
-#, fuzzy
-#~| msgid "Molecule Charge:"
-#~ msgid "Molecule Name:"
-#~ msgstr "Carga da Molécula:"
 
 #~ msgid "Molecular Mass (g/mol):"
 #~ msgstr "Massa Molecular (g/mol):"
@@ -9923,14 +9844,6 @@ msgstr "Seus e-mails"
 #~ msgid "Number of Bonds:"
 #~ msgstr "Número de Ligações:"
 
-#, fuzzy
-#~ msgid "Line Size:"
-#~ msgstr "Largura do pico:"
-
-#, fuzzy
-#~ msgid "In."
-#~ msgstr "Em:"
-
 #~ msgid "ABPS Input (*.in)"
 #~ msgstr "Entrada ABPS (*.in)"
 
@@ -9941,21 +9854,6 @@ msgstr "Seus e-mails"
 #~ "Selecionar o interpretador python usado para executar scripts de criador "
 #~ "de entrada.\n"
 #~ "O Avogadro deve ser reiniciado para que as alterações tenham efeito."
-
-#, fuzzy
-#~| msgid "Set Python Path..."
-#~ msgid "Set Python Path…"
-#~ msgstr "Definir Caminho Python..."
-
-#, fuzzy
-#~| msgid "Fragment..."
-#~ msgid "Fragment…"
-#~ msgstr "Fragmento..."
-
-#, fuzzy
-#~| msgid "Functional"
-#~ msgid "Functional Groups"
-#~ msgstr "Funcional"
 
 #~ msgid "Help..."
 #~ msgstr "Ajuda..."
@@ -9981,10 +9879,6 @@ msgstr "Seus e-mails"
 #~ msgid "Connection failed"
 #~ msgstr "Falha na conexão"
 
-#, qt-format
-#~ msgid "The connection to %2:%3 failed: connection refused."
-#~ msgstr "A conexão com %2:%3 falhou: conexão recusada."
-
 #~ msgid "Remote service error"
 #~ msgstr "Erro no servidor remoto"
 
@@ -9992,23 +9886,11 @@ msgstr "Seus e-mails"
 #~ msgid "Connection failed with: %1"
 #~ msgstr "A conexão falhou com: %1"
 
-#, qt-format
-#~ msgid "%1 ("
-#~ msgstr "%1 ("
-
-#, qt-format
-#~ msgid "*.%1"
-#~ msgstr "*.%1"
-
 #~ msgid "Client server"
 #~ msgstr "Servidor cliente"
 
 #~ msgid "Connection refused"
 #~ msgstr "Conexão recusada"
-
-#, qt-format
-#~ msgid "Connection to %2:%3 succeeded!"
-#~ msgstr "Conexão a %2:%3 bem-sucedida!"
 
 #~ msgid "Filename"
 #~ msgstr "Nome do arquivo"
@@ -10016,18 +9898,11 @@ msgstr "Seus e-mails"
 #~ msgid "Formula"
 #~ msgstr "Fórmula"
 
-#~ msgid "&MongoChem"
-#~ msgstr "&MongoChem"
-
 #~ msgid "Mongo Chem Server"
 #~ msgstr "Servidor Mongo Chem"
 
 #~ msgid "Interface with Mongo Chem Server."
 #~ msgstr "Interface com Servidor Mongo Chem."
-
-#, fuzzy
-#~ msgid "YAeHMOP Band Structure"
-#~ msgstr "Carregar Arquivo de Estrutura"
 
 #~ msgid "Server settings"
 #~ msgstr "Configurações de servidor"
@@ -10071,21 +9946,8 @@ msgstr "Seus e-mails"
 #~ msgid "Input Parameters:"
 #~ msgstr "Parâmetros de Entrada:"
 
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "Nome do Elemento."
-
-#~ msgid "'c' coordinate."
-#~ msgstr "coordenada de rede 'c'."
-
 #~ msgid "All files (*);;"
 #~ msgstr "Todos os arquivos (*);;"
-
-#, fuzzy
-#~| msgctxt "Lattice type"
-#~| msgid "Rhombohedral"
-#~ msgid "octahedral"
-#~ msgstr "Romboédrico"
 
 #, fuzzy
 #~| msgid "Insert Molecule..."
@@ -10112,35 +9974,17 @@ msgstr "Seus e-mails"
 #~ msgstr "Erro ao criar dados CML."
 
 #, fuzzy
-#~ msgid "Run APBS..."
-#~ msgstr "Executar APBS"
-
-#, fuzzy
 #~ msgid "Open Output File..."
 #~ msgstr "Abrir Arquivo de Saída"
 
 #~ msgid "Edit Unit Cell..."
 #~ msgstr "Editar Célula Unitária..."
 
-#, fuzzy
-#~ msgid "&GAMESS..."
-#~ msgstr "&GAMESS"
-
 #~ msgid "&Import From PQR"
 #~ msgstr "&Importar de PQR"
 
 #~ msgid "Crystal..."
 #~ msgstr "Cristal..."
-
-#, fuzzy
-#~ msgid "Write"
-#~ msgstr "escrevem"
-
-#~ msgid "SMILES..."
-#~ msgstr "SMILES..."
-
-#~ msgid "InChI..."
-#~ msgstr "InChI..."
 
 #, fuzzy
 #~ msgid "Add Hydrogens for pH..."
@@ -10157,10 +10001,6 @@ msgstr "Seus e-mails"
 
 #~ msgid "Torsion Properties..."
 #~ msgstr "Propriedades das Torsões..."
-
-#, fuzzy
-#~ msgid "Residue Properties..."
-#~ msgstr "Propriedades da Molécula"
 
 #~ msgid "Create Surfaces..."
 #~ msgstr "Criar Superfícies..."
@@ -10240,12 +10080,6 @@ msgstr "Seus e-mails"
 #~ msgid "Energy (kJ/mol)"
 #~ msgstr "Energia (kJ/mol)"
 
-#~ msgid "Yes"
-#~ msgstr "Sim"
-
-#~ msgid "No"
-#~ msgstr "Não"
-
 #~ msgid "&Quantum"
 #~ msgstr "&Quantum"
 
@@ -10275,11 +10109,7 @@ msgstr "Seus e-mails"
 
 #, fuzzy
 #~ msgid "Optimize geometry"
-#~ msgstr "&Optimiza Geometria"
-
-#, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "Otimização Geométrica"
+#~ msgstr "Optimiza geometria"
 
 #, fuzzy
 #~ msgid "Add hydrogens"
@@ -10288,10 +10118,6 @@ msgstr "Seus e-mails"
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "Parar"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "Superfícies"
 
 #~ msgid "Color by Index"
 #~ msgstr "Colorir pelo índice"
