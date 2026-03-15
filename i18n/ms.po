@@ -9618,54 +9618,12 @@ msgstr ""
 ",,,,,avogadro-devel@lists.sourceforge.net,,,,avogadro-"
 "devel@lists.sourceforge.net,,,,,avogadro-devel@lists.sourceforge.net,,"
 
-#~ msgid " Å"
-#~ msgstr " Å"
-
 #, fuzzy
 #~ msgid "Angles:"
 #~ msgstr "Sudut:"
 
-#~ msgid " °"
-#~ msgstr " °"
-
-#, fuzzy
-#~ msgid "eV"
-#~ msgstr "eV"
-
 #~ msgid "Cancel"
 #~ msgstr "Batal"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#, fuzzy
-#~ msgid " "
-#~ msgstr " "
-
-#, fuzzy
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
@@ -9674,9 +9632,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "&Analysis"
 #~ msgstr "&Analitik"
-
-#~ msgid "..."
-#~ msgstr "..."
 
 #~ msgid "&Import..."
 #~ msgstr "&Import..."
@@ -9690,17 +9645,8 @@ msgstr ""
 #~ msgid "&Load data..."
 #~ msgstr "&Muat data..."
 
-#, fuzzy
-#~ msgid "eV)"
-#~ msgstr "eV"
-
 #~ msgid "Partial Charge"
 #~ msgstr "Cas Separa"
-
-#, fuzzy
-#~ msgctxt "ambient occlusion"
-#~ msgid "Van der Waals (AO)"
-#~ msgstr "Van der Waals"
 
 #~ msgid "Geometry"
 #~ msgstr "Geometri"
