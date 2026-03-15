@@ -9661,9 +9661,6 @@ msgstr ""
 #~ msgid "&Analysis"
 #~ msgstr "分析(&A)"
 
-#~ msgid "∞"
-#~ msgstr "∞"
-
 #~ msgid "&Import..."
 #~ msgstr "导入(&I)…"
 
@@ -9675,9 +9672,6 @@ msgstr ""
 
 #~ msgid "&Load data..."
 #~ msgstr "载入数据(&L)…"
-
-#~ msgid "eV)"
-#~ msgstr "eV)"
 
 #, fuzzy
 #~| msgid "Partial charge"
@@ -9757,30 +9751,9 @@ msgstr ""
 #~ msgid "Rotatable"
 #~ msgstr "可旋转的"
 
-#, fuzzy
-#~ msgctxt "in Angstrom"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Length %2"
-#~ msgstr "构象异构体%1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Angle %2"
-#~ msgstr "构象异构体%1"
-
 #~ msgctxt "Degree symbol"
 #~ msgid "Angle %1"
 #~ msgstr "角度%1"
-
-#, fuzzy
-#~ msgctxt "Degree symbol"
-#~ msgid ""
-#~ "Conformer %1\n"
-#~ "Torsion %2"
-#~ msgstr "构象异构体%1"
 
 #~ msgctxt "Degree symbol"
 #~ msgid "Torsion %1"
@@ -9791,15 +9764,7 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Energy (kJ/mol)"
-#~ msgstr "能量 (kJ/mol):"
-
-#, fuzzy
-#~ msgid "Yes"
-#~ msgstr "年"
-
-#, fuzzy
-#~ msgid "No"
-#~ msgstr "氖"
+#~ msgstr "能量 (kJ/mol)"
 
 #, fuzzy
 #~ msgid "&Quantum"
@@ -9829,20 +9794,12 @@ msgstr ""
 #~ msgstr "优化几何结构(&O)"
 
 #, fuzzy
-#~ msgid "Configure geometry optimization..."
-#~ msgstr "几何优化"
-
-#, fuzzy
 #~ msgid "Add hydrogens"
 #~ msgstr "添加氢原子"
 
 #, fuzzy
 #~ msgid "Stopped"
 #~ msgstr "停止"
-
-#, fuzzy
-#~ msgid "Surface Dialog"
-#~ msgstr "表面"
 
 #~ msgid "Color by Index"
 #~ msgstr "按索引着色"
