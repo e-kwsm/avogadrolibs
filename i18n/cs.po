@@ -2121,8 +2121,8 @@ msgstr ""
 "Pravé tlačítko myši:\tPosunout prostor\n"
 "Dvojité klepnutí:\tNastavit pohled znovu\n"
 "\n"
-"Při běhu:\n"
-"Levé tlačítko myši:\tKlepněte a táhněte atomy pro jejich přesun."
+"Levé tlačítko myši:\tKlepněte a táhněte atomy pro jejich přesun.\n"
+"Pravé tlačítko myši:\t"
 
 #: qtplugins/autoopt/autoopt.cpp:215
 #, fuzzy
