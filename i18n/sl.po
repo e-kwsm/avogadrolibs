@@ -4003,7 +4003,7 @@ msgstr ""
 "\tRazdalje se izmerijo med atomoma 1-2 in 2-3\n"
 "\tIzmerjeni kot določa kot med 1-3, pri čemer je drugi atom stičišče "
 "daljic\n"
-"\t\n"
+"\tmed 1-2-3-4\n"
 "Desni gumb miške:\tPočisti izmere."
 
 #: qtplugins/measuretool/measuretool.cpp:198
