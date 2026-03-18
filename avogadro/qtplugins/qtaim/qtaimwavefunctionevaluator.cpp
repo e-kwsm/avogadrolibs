@@ -1911,9 +1911,8 @@ qreal QTAIMWavefunctionEvaluator::kineticEnergyDensityG(Matrix<qreal, 3, 1> xyz)
 
   value = zero;
   for (qint64 m = 0; m < m_nmo; ++m) {
-    value +=
-      (0.5) * (m_occno(m) * (ipow(m_cdg100(m), 2) + ipow(m_cdg010(m), 2) +
-                             ipow(m_cdg001(m), 2)));
+    value += 0.5 * (m_occno(m) * (ipow(m_cdg100(m), 2) + ipow(m_cdg010(m), 2) +
+                                  ipow(m_cdg001(m), 2)));
   }
 
   return value;
@@ -2033,9 +2032,8 @@ qreal QTAIMWavefunctionEvaluator::kineticEnergyDensityK(
 
   value = 0.0;
   for (qint64 m = 0; m < m_nmo; ++m) {
-    value +=
-      (0.25) * (m_occno(m) *
-                (2 * m_cdg000(m) * (m_cdg200(m) + m_cdg020(m) + m_cdg002(m))));
+    value += 0.25 * (m_occno(m) * (2 * m_cdg000(m) *
+                                   (m_cdg200(m) + m_cdg020(m) + m_cdg002(m))));
   }
 
   return value;

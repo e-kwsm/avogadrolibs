@@ -142,10 +142,10 @@ QVector3D QTAIMODEIntegrator::integrate(QVector3D x0y0z0)
   for (i_step = 1; i_step <= n_step; i_step++) {
     t =
       ((qreal)(n_step - i_step + 1) * t_start + (qreal)(i_step - 1) * t_stop) /
-      (qreal)(n_step);
+      (qreal)n_step;
 
-    t_out = ((qreal)(n_step - i_step) * t_start + (qreal)(i_step)*t_stop) /
-            (qreal)(n_step);
+    t_out = ((qreal)(n_step - i_step) * t_start + (qreal)i_step * t_stop) /
+            (qreal)n_step;
 
     flag = QTAIMODEIntegrator::r8_rkf45(NEQN, y, yp, &t, t_out, &relerr, abserr,
                                         flag);

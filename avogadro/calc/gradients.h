@@ -148,7 +148,7 @@ inline Real dihedralGradient(const Vector3& i, const Vector3& j,
 
   Real fraction1 = (rij / rjk) * (-cosAngleIJK);
   Real fraction2 = (rkl / rjk) * (-cosAngleJKL);
-  jGrad = iGrad * (fraction1 - 1) - lGrad * (fraction2);
+  jGrad = iGrad * (fraction1 - 1) - lGrad * fraction2;
   kGrad = -(iGrad + lGrad + jGrad);
 
   return phi;
