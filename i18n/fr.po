@@ -10029,17 +10029,6 @@ msgstr ""
 #~ msgid "Generate and plot an RMSD curve."
 #~ msgstr "Générer et tracer une courbe RMSD."
 
-#, qt-format
-#~ msgid ""
-#~ "Atom Label Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick on Atoms to add Custom Labels"
-#~ msgstr ""
-#~ "Outil d’étiquetage Atom (%1)\n"
-#~ "\n"
-#~ "Souris gauche : cliquez sur Atomes pour ajouter des étiquettes "
-#~ "personnalisées"
-
 #~ msgid "Max 2*theta:"
 #~ msgstr "Max 2*thêta :"
 
