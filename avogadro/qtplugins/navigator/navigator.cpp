@@ -235,11 +235,11 @@ QUndoCommand* Navigator::keyPressEvent(QKeyEvent* e)
   Vector3f ref = m_renderer->camera().focus();
   // Alt modifier = bigger changes
   float scale = 1.0f;
-  if (e->modifiers() & (Qt::AltModifier))
+  if (e->modifiers() & Qt::AltModifier)
     scale = 6.0f;
 
   // Get modifiers without Alt for comparison
-  Qt::KeyboardModifiers mods = e->modifiers() & ~(Qt::AltModifier);
+  Qt::KeyboardModifiers mods = e->modifiers() & ~Qt::AltModifier;
 
   switch (e->key()) {
     case Qt::Key_Left:
