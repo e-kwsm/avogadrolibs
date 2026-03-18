@@ -34,11 +34,11 @@ int ZipExtractor::copyData(struct archive* ar, struct archive* aw)
     if (r == ARCHIVE_EOF)
       return (ARCHIVE_OK);
     if (r < ARCHIVE_OK)
-      return (r);
+      return r;
     r = archive_write_data_block(aw, buff, size, offset);
     if (r < ARCHIVE_OK) {
       qWarning() << archive_error_string(aw);
-      return (r);
+      return r;
     }
   }
 }
