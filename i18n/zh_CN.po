@@ -10134,34 +10134,9 @@ msgstr ""
 #~ msgid "Filename"
 #~ msgstr "文件名"
 
-#~ msgid "Cancel"
-#~ msgstr "取消"
-
-#, fuzzy
-#~ msgid "Element & Ordinal"
-#~ msgstr "元素名称。"
-
 #, fuzzy
 #~ msgid "All files (*);;"
 #~ msgstr "所有文件 (*);;"
-
-#, fuzzy
-#~| msgid "Insert Molecule..."
-#~ msgid "Insert Molecule..."
-#~ msgstr "插入分子..."
-
-#, fuzzy
-#~| msgid "Error Pasting Molecule"
-#~ msgid "Generating 3D molecule..."
-#~ msgstr "错误粘贴分子"
-
-#, fuzzy
-#~ msgid "Crystal..."
-#~ msgstr "晶体..."
-
-#, fuzzy
-#~ msgid "Add Hydrogens for pH..."
-#~ msgstr "添加pH为...时的氢键"
 
 #~ msgid "Atom Properties..."
 #~ msgstr "原子属性..."
@@ -11396,83 +11371,11 @@ msgstr ""
 #~ msgid "Algorithm"
 #~ msgstr "算法"
 
-#~ msgid "Arginine"
-#~ msgstr "精氨酸"
-
-#~ msgid "Asparagine"
-#~ msgstr "天冬酰胺"
-
-#~ msgid "Aspartic acid"
-#~ msgstr "天冬氨酸"
-
-#~ msgid "Cysteine"
-#~ msgstr "半胱氨酸"
-
-#~ msgid "Glutamic acid"
-#~ msgstr "谷氨酸"
-
-#~ msgid "Glutamine"
-#~ msgstr "谷氨酰胺"
-
-#~ msgid "Glycine"
-#~ msgstr "甘氨酸"
-
-#~ msgid "Histidine"
-#~ msgstr "组氨酸"
-
-#~ msgid "Isoleucine"
-#~ msgstr "异亮氨酸"
-
-#~ msgid "Tryptophan"
-#~ msgstr "色氨酸"
-
-#~ msgid "Threonine"
-#~ msgstr "苏氨酸"
-
-#~ msgid "Serine"
-#~ msgstr "丝氨酸"
-
-#~ msgid "Proline"
-#~ msgstr "脯氨酸"
-
-#~ msgid "Phenylalanine"
-#~ msgstr "苯丙氨酸"
-
-#~ msgid "Methionine"
-#~ msgstr "甲硫氨酸"
-
-#~ msgid "Lysine"
-#~ msgstr "赖氨酸"
-
-#~ msgid "Leucine"
-#~ msgstr "亮氨酸"
-
-#~ msgid "Sequence (N to C):"
-#~ msgstr "序列 (N to C):"
-
-#~ msgid "Stereochemistry:"
-#~ msgstr "立体化学:"
-
-#~ msgid "N Terminus:"
-#~ msgstr "N端:"
-
-#~ msgid "C Terminus:"
-#~ msgstr "C端:"
-
-#~ msgid "Straight Chain"
-#~ msgstr "直链"
-
 #~ msgid "Alpha Helix"
 #~ msgstr "Alpha螺旋"
 
 #~ msgid "Beta Sheet"
 #~ msgstr "Beta片层"
-
-#~ msgid "Chain Number:"
-#~ msgstr "链编号:"
-
-#~ msgid "The chain number for the new peptide"
-#~ msgstr "新多肽所用的链编号"
 
 #~ msgid "Number of Residues:"
 #~ msgstr "残基的数量:"
