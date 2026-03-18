@@ -34,7 +34,7 @@ bool QTAIMWavefunction::initializeWithWFNFile(const QString& fileName)
   QFile file(fileName);
   bool fileExists = file.exists();
 
-  if (!(fileExists)) {
+  if (!fileExists) {
     m_initializationSuccessful = false;
     m_fileDoesNotExist = true;
     return m_initializationSuccessful;
@@ -44,7 +44,7 @@ bool QTAIMWavefunction::initializeWithWFNFile(const QString& fileName)
 
   bool success = file.open(QIODevice::ReadOnly | QIODevice::Text);
 
-  if (!(success)) {
+  if (!success) {
     m_initializationSuccessful = false;
     m_ioError = true;
     return m_initializationSuccessful;

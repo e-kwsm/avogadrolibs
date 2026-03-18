@@ -123,7 +123,7 @@ bool DcdFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     DELTA = static_cast<double>(ftmp);
   } else {
-    (DELTA) = *(reinterpret_cast<double*>(raw + 40));
+    DELTA = *(reinterpret_cast<double*>(raw + 40));
   }
 
   snprintf(fmt, sizeof(fmt), "%c1i", endian);

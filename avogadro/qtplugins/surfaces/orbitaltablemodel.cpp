@@ -210,7 +210,7 @@ QString makeOrbitalDescription(unsigned int index, unsigned int homo,
   }
 
   QString desc = prefix;
-  desc += (leqHOMO) ? homoStr + num : lumoStr + num;
+  desc += leqHOMO ? homoStr + num : lumoStr + num;
   return desc;
 }
 
