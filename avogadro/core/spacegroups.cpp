@@ -200,18 +200,18 @@ Real readTransformCoordinate(const std::string& coordinate, const Vector3& v)
       Real numerator = coordinate[i] - '0';
       Real denominator = coordinate[i + 2] - '0';
       Real fraction = numerator / denominator;
-      fraction *= (isNeg) ? -1.0 : 1.0;
+      fraction *= isNeg ? -1.0 : 1.0;
 
       ret += fraction;
       i += 3;
     } else if (coordinate[i] == 'x') {
-      ret += (isNeg) ? -1.0 * v[0] : v[0];
+      ret += isNeg ? -1.0 * v[0] : v[0];
       ++i;
     } else if (coordinate[i] == 'y') {
-      ret += (isNeg) ? -1.0 * v[1] : v[1];
+      ret += isNeg ? -1.0 * v[1] : v[1];
       ++i;
     } else if (coordinate[i] == 'z') {
-      ret += (isNeg) ? -1.0 * v[2] : v[2];
+      ret += isNeg ? -1.0 * v[2] : v[2];
       ++i;
     } else {
       std::cerr << "In " << __FUNCTION__ << ", error reading string: '"
