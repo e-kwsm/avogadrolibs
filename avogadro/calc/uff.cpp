@@ -273,16 +273,17 @@ public:
         }
         if (resonant) {
           // set the resonant type
-          if (atomicNumber == 7 && symbolChar == '3')
+          if (atomicNumber == 7 && symbolChar == '3') {
             m_atomTypes[i] = m_atomTypes[i] + 1; // N_R after N_3
-          else if (atomicNumber == 8 && symbolChar == '3')
+          } else if (atomicNumber == 8 && symbolChar == '3') {
             m_atomTypes[i] = m_atomTypes[i] + 2; // O_R after O_3 and O_3_z
-          else if (atomicNumber == 16 && symbolChar == '3') {
+          } else if (atomicNumber == 16 && symbolChar == '3') {
             // loop until we find 'R' .. might be a few different S types
             while (uffparams[m_atomTypes[i]].label[2] != 'R')
               ++m_atomTypes[i];
-          } else
+          } else {
             m_atomTypes[i] = m_atomTypes[i] - 1; // C_R before C_2
+          }
         }
       }
     }

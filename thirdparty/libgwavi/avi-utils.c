@@ -447,9 +447,9 @@ int write_index(FILE* out, int count, unsigned int* offsets)
     goto write_int_failed;
 
   for (t = 0; t < count; t++) {
-    if ((offsets[t] & 0x80000000) == 0)
+    if ((offsets[t] & 0x80000000) == 0) {
       write_chars(out, "00dc");
-    else {
+    } else {
       write_chars(out, "01wb");
       offsets[t] &= 0x7fffffff;
     }
