@@ -143,8 +143,9 @@ QVariant OrbitalTableModel::headerData(int section, Qt::Orientation orientation,
       case COUNT:
         return QVariant();
     }
-  } else
+  } else {
     return QString::number(section + 1);
+  }
 }
 
 QModelIndex OrbitalTableModel::HOMO() const
