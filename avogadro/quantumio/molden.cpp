@@ -833,8 +833,8 @@ void MoldenFile::writeFrequencies(std::ostream& out,
 
   // Write frequencies
   out << "[FREQ]\n";
-  for (size_t i = 0; i < frequencies.size(); ++i) {
-    out << std::setw(18) << frequencies[i] << "\n";
+  for (double frequencie : frequencies) {
+    out << std::setw(18) << frequencie << "\n";
   }
 
   // Write coordinates for vibrations (in Bohr)
@@ -853,9 +853,9 @@ void MoldenFile::writeFrequencies(std::ostream& out,
   for (size_t mode = 0; mode < frequencies.size(); ++mode) {
     out << "vibration " << (mode + 1) << "\n";
     Core::Array<Vector3> lx = molecule.vibrationLx(static_cast<int>(mode));
-    for (size_t atom = 0; atom < lx.size(); ++atom) {
+    for (auto& atom : lx) {
       // Convert from Angstrom to Bohr for Molden format
-      Vector3 disp = lx[atom] * ANGSTROM_TO_BOHR_D;
+      Vector3 disp = atom * ANGSTROM_TO_BOHR_D;
       out << std::setw(18) << disp.x() << std::setw(18) << disp.y()
           << std::setw(18) << disp.z() << "\n";
     }
