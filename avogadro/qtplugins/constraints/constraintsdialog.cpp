@@ -375,9 +375,10 @@ void ConstraintsDialog::addConstraint()
   } else if (type == Constraint::AngleConstraint) {
     if (a == b || b == c)
       return;
-  } else if (type == Constraint::TorsionConstraint)
+  } else if (type == Constraint::TorsionConstraint) {
     if (a == b || a == c || a == d || b == c || b == d || c == d)
       return;
+  }
 
   // If these atoms are already constrained (in either direction), edit the
   // existing constraint rather than adding a conflicting duplicate

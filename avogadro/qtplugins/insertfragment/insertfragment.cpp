@@ -124,9 +124,9 @@ void InsertFragment::performInsert(const QString& fileName, bool crystal)
                                                tr("Import Crystal"));
     // set the name
     std::string name = newMol.data("name").toString();
-    if (!name.empty())
+    if (!name.empty()) {
       m_molecule->setData("name", name);
-    else {
+    } else {
       name = QFileInfo(fileName).baseName().toStdString();
       m_molecule->setData("name", name);
     }

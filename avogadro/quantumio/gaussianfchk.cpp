@@ -623,9 +623,9 @@ void GaussianFchk::load(GaussianSet* basis)
     if (m_spinDensity.rows())
       basis->setSpinDensityMatrix(m_spinDensity);
 
-    if (!m_orbitalEnergy.empty()) // restricted calculation
+    if (!m_orbitalEnergy.empty()) { // restricted calculation
       basis->setMolecularOrbitalEnergy(m_orbitalEnergy);
-    else {
+    } else {
       if (!m_alphaOrbitalEnergy.empty())
         basis->setMolecularOrbitalEnergy(m_alphaOrbitalEnergy, BasisSet::Alpha);
       if (!m_betaOrbitalEnergy.empty())

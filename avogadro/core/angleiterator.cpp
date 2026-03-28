@@ -88,8 +88,9 @@ Angle AngleIterator::operator++()
 
   if (valid) {
     m_current = std::make_tuple(aIndex, m_b, cIndex);
-  } else // no more valid angles
+  } else { // no more valid angles
     m_current = std::make_tuple(MaxIndex, MaxIndex, MaxIndex);
+  }
 
   return m_current;
 } // end ++ operator

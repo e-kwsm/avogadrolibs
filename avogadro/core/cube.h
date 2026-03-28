@@ -333,8 +333,9 @@ inline bool Cube::setValue(unsigned int i, float value_)
     if (value_ < m_minValue)
       m_minValue = value_;
     return true;
-  } else
+  } else {
     return false;
+  }
 }
 
 } // namespace Avogadro::Core
