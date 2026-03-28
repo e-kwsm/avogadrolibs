@@ -221,8 +221,9 @@ QVariant MolecularModel::headerData(int section, Qt::Orientation orientation,
 
     return QVariant();
 
-  } else // row headers
+  } else { // row headers
     return QVariant();
+  }
 
   return QVariant();
 }
