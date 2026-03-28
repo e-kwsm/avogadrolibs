@@ -303,9 +303,9 @@ void SpaceGroups::fillUnitCell(Molecule& mol, unsigned short hallNumber,
   }
 
   // Now we generate any copies on the unit boundary
-  if (allCopies)
+  if (allCopies) {
     fillTranslationalCopies(mol, cartTol);
-  else {
+  } else {
     // Remove atoms with fractional coordinates near 1.0 only if a
     // translational duplicate exists near 0.0 (same element, wrapped
     // fractional coords within tolerance). If no duplicate exists, wrap

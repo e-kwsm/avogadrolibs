@@ -51,8 +51,9 @@ ConfigurePythonDialog::ConfigurePythonDialog(QWidget* aParent)
     QStringList paths = findExecutablePaths(names);
     if (!paths.isEmpty()) {
       condaPath = paths.first();
-    } else
+    } else {
       return; // nothing more to do
+    }
   }
 
   // set the path to conda
@@ -118,8 +119,9 @@ void ConfigurePythonDialog::setupCondaEnvironment()
     QStringList paths = findExecutablePaths(names);
     if (!paths.isEmpty()) {
       condaPath = paths.first();
-    } else
+    } else {
       return; // nothing more to do
+    }
   }
 
   QStringList arguments;
