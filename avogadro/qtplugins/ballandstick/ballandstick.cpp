@@ -198,9 +198,10 @@ void BallAndStick::process(const QtGui::Molecule& molecule,
       translucentSpheres->addSphere(atom.position3d().cast<float>(), color,
                                     radius * scale, i);
       translucentSpheres->setOpacity(interface->opacity);
-    } else
+    } else {
       spheres->addSphere(atom.position3d().cast<float>(), color, radius * scale,
                          i);
+    }
 
     if (atom.selected()) {
       // add the selected indicator

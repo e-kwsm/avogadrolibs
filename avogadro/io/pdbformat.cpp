@@ -352,10 +352,9 @@ bool PdbFormat::read(std::istream& in, Core::Molecule& mol)
         // Check if buffer is long enough for this column
         if (static_cast<int>(buffer.length()) < bCoords[i] + 5)
           break;
-        if (trimmed(buffer.substr(bCoords[i], 5)).empty())
+        if (trimmed(buffer.substr(bCoords[i], 5)).empty()) {
           break;
-
-        else {
+        } else {
           int b = lexicalCast<int>(buffer.substr(bCoords[i], 5), ok) - 1;
           if (!ok) {
             appendError("Failed to parse bond connection b" +

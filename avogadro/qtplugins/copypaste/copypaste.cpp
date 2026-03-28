@@ -195,9 +195,9 @@ void CopyPaste::cut()
   if (!copyCJSON())
     return;
 
-  if (m_molecule->isSelectionEmpty())
+  if (m_molecule->isSelectionEmpty()) {
     m_molecule->undoMolecule()->clearAtoms();
-  else {
+  } else {
     // Remove atoms from the largest to the smallest index
     // (that way, the index doesn't change)
     for (Index i = m_molecule->atomCount(); i > 0; --i)
@@ -215,9 +215,9 @@ void CopyPaste::clear()
   if (m_molecule == nullptr || m_molecule->atomCount() == 0)
     return;
 
-  if (m_molecule->isSelectionEmpty())
+  if (m_molecule->isSelectionEmpty()) {
     m_molecule->undoMolecule()->clearAtoms();
-  else {
+  } else {
     // Remove atoms from the largest to the smallest index
     // (that way, the index doesn't change)
     for (Index i = m_molecule->atomCount(); i > 0; --i) {

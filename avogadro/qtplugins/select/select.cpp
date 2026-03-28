@@ -183,8 +183,9 @@ void Select::selectElement(int element)
     if (m_molecule->atomicNumber(i) == element) {
       m_molecule->undoMolecule()->setAtomSelected(i, evalSelect(true, i),
                                                   undoText);
-    } else
+    } else {
       m_molecule->undoMolecule()->setAtomSelected(i, false, undoText);
+    }
   }
 
   m_molecule->emitChanged(Molecule::Atoms);

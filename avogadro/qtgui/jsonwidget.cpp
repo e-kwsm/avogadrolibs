@@ -222,10 +222,10 @@ void JsonWidget::buildOptionGui()
                       options);
 
     // Other special cases: Charge / Multiplicity
-    if (options.contains(u"Charge"_s) && options.contains(u"Multiplicity"_s))
+    if (options.contains(u"Charge"_s) && options.contains(u"Multiplicity"_s)) {
       combinedOptionRow(u"Charge"_s, u"Multiplicity"_s, tr("Charge"),
                         tr("Multiplicity"), options, true); // both labels
-    else {
+    } else {
       if (options.contains(u"Charge"_s))
         addOptionRow(u"Charge"_s, tr("Charge"), options.take(u"Charge"_s));
       if (options.contains(u"Multiplicity"_s))
@@ -382,9 +382,9 @@ void JsonWidget::addOptionRow(const QString& key, const QString& name,
 
   // also check for "User Name" or "Password" for translation
   // with case-insensitive comparison
-  if (label.toLower() == u"user name"_s || label.toLower() == u"username"_s)
+  if (label.toLower() == u"user name"_s || label.toLower() == u"username"_s) {
     label = tr("User Name");
-  else if (label.toLower() == u"password"_s) {
+  } else if (label.toLower() == u"password"_s) {
     label = tr("Password");
     // make sure the widget has the right echo
     if (auto* lineEdit = qobject_cast<QLineEdit*>(widget)) {
@@ -462,8 +462,9 @@ QWidget* JsonWidget::createStringListWidget(const QJsonObject& obj)
         combo->insertSeparator(combo->count());
       else
         combo->addItem((*vit).toString());
-    } else
+    } else {
       qDebug() << "Cannot convert value to string for stringList:" << *vit;
+    }
   }
   connect(combo, SIGNAL(currentIndexChanged(int)), SLOT(updatePreviewText()));
 

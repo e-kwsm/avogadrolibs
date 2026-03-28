@@ -242,13 +242,13 @@ std::string sanitizeUtf8(const std::string& s)
     }
 
     size_t remaining = 0;
-    if ((bytes[i] & 0xE0) == 0xC0)
+    if ((bytes[i] & 0xE0) == 0xC0) {
       remaining = 1;
-    else if ((bytes[i] & 0xF0) == 0xE0)
+    } else if ((bytes[i] & 0xF0) == 0xE0) {
       remaining = 2;
-    else if ((bytes[i] & 0xF8) == 0xF0)
+    } else if ((bytes[i] & 0xF8) == 0xF0) {
       remaining = 3;
-    else {
+    } else {
       result.push_back('?'); // invalid lead byte
       continue;
     }
@@ -1060,9 +1060,9 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule,
                 const auto& value = jrow.at(col);
                 if (value.type() == json::value_t::number_float ||
                     value.type() == json::value_t::number_integer ||
-                    value.type() == json::value_t::number_unsigned)
+                    value.type() == json::value_t::number_unsigned) {
                   matrix(row, col) = value.get<double>();
-                else {
+                } else {
                   isNumeric = false;
                   break;
                 }
@@ -1275,17 +1275,17 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
       continue;
     }
 
-    if (element.second.type() == Variant::String)
+    if (element.second.type() == Variant::String) {
       properties[element.first] = element.second.toString().c_str();
-    else if (element.second.type() == Variant::Double)
+    } else if (element.second.type() == Variant::Double) {
       properties[element.first] = element.second.toDouble();
-    else if (element.second.type() == Variant::Float)
+    } else if (element.second.type() == Variant::Float) {
       properties[element.first] = element.second.toFloat();
-    else if (element.second.type() == Variant::Int)
+    } else if (element.second.type() == Variant::Int) {
       properties[element.first] = element.second.toInt();
-    else if (element.second.type() == Variant::Bool)
+    } else if (element.second.type() == Variant::Bool) {
       properties[element.first] = element.second.toBool();
-    else if (element.second.type() == Variant::Vector) {
+    } else if (element.second.type() == Variant::Vector) {
       // e.g. dipole moment
       Vector3 v = element.second.toVector3();
       json vector;
@@ -1473,8 +1473,9 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
         }
         root["orbitals"]["alphaEnergies"] = energyData;
         root["orbitals"]["betaEnergies"] = betaEnergyData;
-      } else
+      } else {
         root["orbitals"]["energies"] = energyData;
+      }
     }
     auto occ = gaussian->moOccupancy();
     if (occ.size() > 0) {
@@ -1489,8 +1490,9 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
           betaOccData.push_back(static_cast<int>(it));
         root["orbitals"]["alphaOccupations"] = occData;
         root["orbitals"]["betaOccupations"] = betaOccData;
-      } else
+      } else {
         root["orbitals"]["occupations"] = occData;
+      }
     }
     auto num = gaussian->moNumber();
     if (num.size() > 0) {
@@ -1922,7 +1924,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
   }
   root["layer"] = layer;
 
-  if (isJson)
+  if (isJson) {
 #ifndef NDEBUG
     // if debugging, pretty print
     file << std::setw(2) << root;
@@ -1930,7 +1932,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule,
     // release mode
     file << root;
 #endif
-  else { // write msgpack
+  } else { // write msgpack
     json::to_msgpack(root, file);
   }
 

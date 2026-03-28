@@ -464,10 +464,10 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       case AtomDataPartialCharge:
         return partialCharge(m_molecule, row, m_chargeType);
       case AtomDataX:
-        if (role == Qt::UserRole)
+        if (role == Qt::UserRole) {
           // Return the x coordinate as a double for sorting
           return m_molecule->atomPosition3d(row).x();
-        else // format fixed to 4 decimals
+        } else // format fixed to 4 decimals
         {
           auto formatted =
             QString("%L1").arg(m_molecule->atomPosition3d(row).x(), 0, 'f', 4);
@@ -477,10 +477,10 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
         }
 
       case AtomDataY:
-        if (role == Qt::UserRole)
+        if (role == Qt::UserRole) {
           // Return the y coordinate as a double for sorting
           return m_molecule->atomPosition3d(row).y();
-        else // format fixed to 4 decimals
+        } else // format fixed to 4 decimals
         {
           auto formatted =
             QString("%L1").arg(m_molecule->atomPosition3d(row).y(), 0, 'f', 4);
@@ -489,10 +489,10 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
           return formatted;
         }
       case AtomDataZ:
-        if (role == Qt::UserRole)
+        if (role == Qt::UserRole) {
           // Return the z coordinate as a double for sorting
           return m_molecule->atomPosition3d(row).z();
-        else // format fixed to 4 decimals
+        } else // format fixed to 4 decimals
         {
           auto formatted =
             QString("%L1").arg(m_molecule->atomPosition3d(row).z(), 0, 'f', 4);
@@ -551,10 +551,10 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       case BondDataLabel:
         return m_molecule->bondLabel(row).c_str();
       default: // length, rounded to 4 decimals
-        if (role == Qt::UserRole)
+        if (role == Qt::UserRole) {
           // Return the bond length as a double for sorting
           return distance(atom1.position3d(), atom2.position3d());
-        else {
+        } else {
           QString formatted = QString("%L1").arg(
             distance(atom1.position3d(), atom2.position3d()), 0, 'f', 3);
           if (isConstrained)
@@ -627,10 +627,10 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       case AngleDataAtom3:
         return QVariant::fromValue(std::get<2>(angle) + 1);
       case AngleDataValue:
-        if (role == Qt::UserRole)
+        if (role == Qt::UserRole) {
           // Return the angle as a double for sorting
           return calculateAngle(a1, a2, a3);
-        else { // format fixed to 3 decimals
+        } else { // format fixed to 3 decimals
           QString formatted =
             QString("%L1").arg(calculateAngle(a1, a2, a3), 0, 'f', 3);
           if (isConstrained)
@@ -685,10 +685,10 @@ QVariant PropertyModel::data(const QModelIndex& index, int role) const
       case TorsionDataAtom4:
         return QVariant::fromValue(std::get<3>(torsion) + 1);
       case TorsionDataValue:
-        if (role == Qt::UserRole)
+        if (role == Qt::UserRole) {
           // Return the dihedral angle as a double for sorting
           return calculateDihedral(a1, a2, a3, a4);
-        else { // format fixed to 3 decimals
+        } else { // format fixed to 3 decimals
           QString format =
             QString("%L1").arg(calculateDihedral(a1, a2, a3, a4), 0, 'f', 3);
           if (isConstrained)
@@ -797,8 +797,9 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
         case AtomDataColor:
           return tr("Color");
       }
-    } else
+    } else {
       return tr("Atom") + QString(" %1").arg(section + 1);
+    }
 
   } else if (m_type == BondType) {
     if (orientation == Qt::Horizontal) {
@@ -817,9 +818,10 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
         default: // A bond length
           return tr("Length (Å)", "in Angstrom");
       }
-    } else
+    } else {
       // Bond ordering starts at 0
       return tr("Bond") + QString(" %1").arg(section + 1);
+    }
   } else if (m_type == ResidueType) {
 
     if (orientation == Qt::Horizontal) {
@@ -840,8 +842,9 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
         case ResidueDataColor:
           return tr("Color");
       }
-    } else // row headers
+    } else { // row headers
       return QString("%L1").arg(section + 1);
+    }
   } else if (m_type == AngleType) {
 
     if (orientation == Qt::Horizontal) {
@@ -858,8 +861,9 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
         case AngleDataValue:
           return tr("Angle (°)");
       }
-    } else // row headers
+    } else { // row headers
       return QString("%L1").arg(section + 1);
+    }
   } else if (m_type == TorsionType) {
     if (orientation == Qt::Horizontal) {
       unsigned int column = static_cast<TorsionColumn>(section);
@@ -877,8 +881,9 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
         case TorsionDataValue:
           return tr("Angle (°)");
       }
-    } else // row headers
+    } else { // row headers
       return QString("%L1").arg(section + 1);
+    }
   } else if (m_type == ConformerType) {
     // check if we have energies
     bool hasEnergies = (m_molecule->hasData("energies"));
@@ -891,8 +896,9 @@ QVariant PropertyModel::headerData(int section, Qt::Orientation orientation,
           // should only hit this if we have energies anyway
           return hasEnergies ? tr("Energy (kcal/mol)") : tr("Property");
       }
-    } else // row headers
+    } else { // row headers
       return QString("%L1").arg(section + 1);
+    }
   }
 
   return QVariant();
@@ -1018,17 +1024,18 @@ bool PropertyModel::setData(const QModelIndex& index, const QVariant& value,
         // Try first as a number
         bool ok;
         int atomicNumber = value.toInt(&ok);
-        if (ok)
+        if (ok) {
           undoMolecule->setAtomicNumber(index.row(), atomicNumber);
-        else {
+        } else {
           // try a symbol
           atomicNumber = Core::Elements::atomicNumberFromSymbol(
             value.toString().toStdString());
 
           if (atomicNumber != Avogadro::InvalidElement) {
             undoMolecule->setAtomicNumber(index.row(), atomicNumber);
-          } else
+          } else {
             return false;
+          }
         } // not a number
         break;
       }

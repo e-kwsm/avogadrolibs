@@ -98,10 +98,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
     if (tokens[0] == "$coord") {
       // check if there's a conversion to be done
       Real coordConversion = BOHR_TO_ANGSTROM; // default is Bohr
-      if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end())
+      if (std::find(tokens.begin(), tokens.end(), "angs") != tokens.end()) {
         coordConversion = 1.0; // leave as Angstrom
-      else if (std::find(tokens.begin(), tokens.end(), "frac") !=
-               tokens.end()) {
+      } else if (std::find(tokens.begin(), tokens.end(), "frac") !=
+                 tokens.end()) {
         fractionalCoords = true;
         coordConversion = 1.0; // we may not know the lattice constants yet
       } else if (tokens.size() > 1u && tokens[1][0] != '#') {
@@ -124,9 +124,10 @@ bool TurbomoleFormat::read(std::istream& inStream, Core::Molecule& mol)
         if (isalpha(tokens[3][0])) {
           tokens[3][0] = toupper(tokens[3][0]);
           atomicNum = Elements::atomicNumberFromSymbol(tokens[3]);
-        } else
+        } else {
           atomicNum = static_cast<unsigned char>(
             lexicalCast<short int>(tokens[3]).value_or(0));
+        }
 
         Vector3 pos;
         if (auto tmp =

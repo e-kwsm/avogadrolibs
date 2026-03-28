@@ -211,9 +211,10 @@ bool XyzFormat::read(std::istream& inStream, Core::Molecule& mol)
         atomicNum = 1;
       else if (tokens[0] == "T")
         atomicNum = 1;
-    } else
+    } else {
       atomicNum = static_cast<unsigned char>(
         lexicalCast<short int>(tokens[0]).value_or(0));
+    }
 
     Vector3 pos;
     if (auto tmp =

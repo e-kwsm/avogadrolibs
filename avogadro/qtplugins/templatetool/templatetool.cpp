@@ -267,9 +267,9 @@ QUndoCommand* TemplateTool::keyPressEvent(QKeyEvent* e)
     int atomicNum =
       Core::Elements::atomicNumberFromSymbol(m_keyPressBuffer.toStdString());
 
-    if (atomicNum != Avogadro::InvalidElement)
+    if (atomicNum != Avogadro::InvalidElement) {
       m_toolWidget->setAtomicNumber(static_cast<unsigned char>(atomicNum));
-    else {
+    } else {
       // if it's a number, try a coordination number
       bool ok = false;
       int coordinationNumber = m_keyPressBuffer.toInt(&ok);

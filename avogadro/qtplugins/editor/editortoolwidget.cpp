@@ -167,9 +167,9 @@ void EditorToolWidget::elementSelectedFromTable(int element)
 void EditorToolWidget::selectElement(unsigned char element)
 {
   int curIndex = element > 0 ? m_ui->element->findData(element) : -1;
-  if (curIndex >= 0)
+  if (curIndex >= 0) {
     m_ui->element->setCurrentIndex(curIndex);
-  else {
+  } else {
     addUserElement(element);
     curIndex = m_ui->element->findData(element);
     if (curIndex >= 0)

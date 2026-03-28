@@ -178,9 +178,9 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     return false;
   }
   string mdlVersion(trimmed(buffer.substr(33)));
-  if (mdlVersion == "V3000")
+  if (mdlVersion == "V3000") {
     return readV3000(in, mol);
-  else if (mdlVersion != "V2000") {
+  } else if (mdlVersion != "V2000") {
     appendError("Unsupported MDL version: " + mdlVersion);
     return false;
   }

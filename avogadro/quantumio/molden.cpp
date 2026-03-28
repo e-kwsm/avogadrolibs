@@ -172,13 +172,13 @@ void MoldenFile::processLine(std::istream& in)
           shell = list[0];
           std::transform(shell.begin(), shell.end(), shell.begin(), tolower);
           shellType = GaussianSet::UU;
-          if (shell == "sp")
+          if (shell == "sp") {
             shellType = GaussianSet::SP;
-          else if (shell == "s")
+          } else if (shell == "s") {
             shellType = GaussianSet::S;
-          else if (shell == "p")
+          } else if (shell == "p") {
             shellType = GaussianSet::P;
-          else if (shell == "d") {
+          } else if (shell == "d") {
             if (m_cartesianD)
               shellType = GaussianSet::D;
             else
@@ -235,9 +235,9 @@ void MoldenFile::processLine(std::istream& in)
 
         // Parse the occupation, spin, energy, etc (Occup, Spin, Ene).
         while (!line.empty() && Core::contains(line, "=")) {
-          if (Core::contains(line, "Occup"))
+          if (Core::contains(line, "Occup")) {
             m_electrons += Core::lexicalCast<int>(list.back()).value_or(0);
-          else if (Core::contains(line, "Ene")) {
+          } else if (Core::contains(line, "Ene")) {
             pendingEnergy =
               Core::lexicalCast<double>(list.back()).value_or(0.0) *
               HARTREE_TO_EV_D;

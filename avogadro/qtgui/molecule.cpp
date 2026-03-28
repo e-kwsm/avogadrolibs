@@ -398,8 +398,9 @@ QString Molecule::formattedFormula() const
       formula += QString("<sup>%1</sup>").arg(digits);
       // take the substring from the digit to the end
       formula += iter->first.substr(digits.length());
-    } else
+    } else {
       formula += iter->first;
+    }
 
     if (iter->second > 1)
       formula += QString("<sub>%1</sub>").arg(iter->second);

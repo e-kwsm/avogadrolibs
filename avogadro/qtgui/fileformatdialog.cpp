@@ -305,8 +305,9 @@ const Io::FileFormat* FileFormatDialog::selectFileFormat(
   // If there is a format prefix, see if that can reduce the results down.
   QStringList preferred;
   foreach (const QString& id, idents)
-    if (id.startsWith(formatPrefix))
+    if (id.startsWith(formatPrefix)) {
       preferred << id;
+    }
   if (preferred.size() == 1)
     return ffs[idents.indexOf(preferred.first())];
 

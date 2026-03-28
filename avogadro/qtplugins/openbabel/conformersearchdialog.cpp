@@ -58,9 +58,9 @@ QStringList ConformerSearchDialog::options() const
   // in OB v3.2
   options << "--steps" << QString::number(ui.optimizationStepsSpinBox->value());
 
-  if (ui.systematicRadio->isChecked())
+  if (ui.systematicRadio->isChecked()) {
     options << "--systematic";
-  else if (ui.randomRadio->isChecked()) {
+  } else if (ui.randomRadio->isChecked()) {
     options << "--random";
     options << "--nconf" << QString::number(ui.numSpin->value());
   } else if (ui.weightedRadio->isChecked()) {

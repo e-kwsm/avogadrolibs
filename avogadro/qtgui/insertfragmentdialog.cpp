@@ -191,8 +191,9 @@ void InsertFragmentDialog::currentChanged(const QModelIndex& selected,
 
     m_ui->preview->setIcon(QIcon(imgName));
     m_ui->preview->show();
-  } else
+  } else {
     m_ui->preview->hide();
+  }
 }
 
 void InsertFragmentDialog::refresh()

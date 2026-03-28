@@ -79,9 +79,9 @@ void Orbitals::setMolecule(QtGui::Molecule* mol)
   if (basis == nullptr || basis->moMatrix().size() == 0)
     hasOrbitals = false;
 
-  if (hasOrbitals)
+  if (hasOrbitals) {
     m_action->setEnabled(true);
-  else {
+  } else {
     m_action->setEnabled(false);
     if (m_dialog)
       m_dialog->hide();
@@ -495,8 +495,9 @@ void Orbitals::meshComplete()
     m_nextMeshCalculation = -1;
     calculatePosMesh();
     return;
-  } else
+  } else {
     m_currentMeshCalculation = -1;
+  }
 }
 
 void Orbitals::calculationComplete()

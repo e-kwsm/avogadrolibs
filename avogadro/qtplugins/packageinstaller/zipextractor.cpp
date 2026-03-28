@@ -140,9 +140,9 @@ QList<QString> ZipExtractor::extract(const std::string& extractdir,
     std::string newFilename = extractPrefix + archive_entry_pathname(entry);
     archive_entry_set_pathname(entry, newFilename.c_str());
     r = archive_write_header(ext, entry);
-    if (r < ARCHIVE_OK)
+    if (r < ARCHIVE_OK) {
       qWarning() << archive_error_string(ext);
-    else if (archive_entry_size(entry) > 0) {
+    } else if (archive_entry_size(entry) > 0) {
       r = copyData(a, ext);
       if (r < ARCHIVE_OK)
         qWarning() << archive_error_string(ext);

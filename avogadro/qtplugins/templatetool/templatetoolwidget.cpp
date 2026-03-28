@@ -568,9 +568,9 @@ void TemplateToolWidget::elementSelectedFromTable(int element)
 void TemplateToolWidget::selectElement(unsigned char element)
 {
   int curIndex = element > 0 ? m_ui->elementComboBox->findData(element) : -1;
-  if (curIndex >= 0)
+  if (curIndex >= 0) {
     m_ui->elementComboBox->setCurrentIndex(curIndex);
-  else {
+  } else {
     addUserElement(element);
     curIndex = m_ui->elementComboBox->findData(element);
     if (curIndex >= 0)
