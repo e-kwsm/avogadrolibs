@@ -493,9 +493,9 @@ void OpenMMInputDialog::setInputCoordName()
   if (ext == tr("inpcrd") || ext == tr("gro")) {
     ui.forceFieldCombo->setEnabled(false);
     ui.inputTopEdit->setEnabled(true);
-    if (ext == tr("inpcrd"))
+    if (ext == tr("inpcrd")) {
       ui.inputTopEdit->setPlaceholderText(tr("input.prmtop"));
-    else if (ext == tr("gro")) {
+    } else if (ext == tr("gro")) {
       ui.inputTopEdit->setPlaceholderText(tr("input.top"));
     }
     updatePreviewText();
