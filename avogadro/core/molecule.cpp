@@ -166,9 +166,9 @@ Molecule::Molecule(Molecule&& other) noexcept
     m_layers(LayerManager::getMoleculeLayer(this))
 {
   // Copy the layers, only if they exist
-  if (other.m_layers.maxLayer() > 0)
+  if (other.m_layers.maxLayer() > 0) {
     m_layers = LayerManager::getMoleculeLayer(&other, this);
-  else {
+  } else {
     // make sure all the atoms are in the active layer
     for (Index i = 0; i < atomCount(); ++i)
       m_layers.addAtomToActiveLayer(i);
@@ -234,9 +234,9 @@ Molecule& Molecule::operator=(const Molecule& other)
     m_unitCell = other.m_unitCell ? new UnitCell(*other.m_unitCell) : nullptr;
 
     // Copy the layers, only if they exist
-    if (other.m_layers.maxLayer() > 0)
+    if (other.m_layers.maxLayer() > 0) {
       m_layers = LayerManager::getMoleculeLayer(&other, this);
-    else {
+    } else {
       // make sure all the atoms are in the active layer
       for (Index i = 0; i < atomCount(); ++i)
         m_layers.addAtomToActiveLayer(i);
@@ -296,9 +296,9 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
     m_unitCell = std::exchange(other.m_unitCell, nullptr);
 
     // Copy the layers, if they exist
-    if (other.m_layers.maxLayer() > 0)
+    if (other.m_layers.maxLayer() > 0) {
       m_layers = LayerManager::getMoleculeLayer(&other, this);
-    else {
+    } else {
       // make sure all the atoms are in the active layer
       for (Index i = 0; i < atomCount(); ++i)
         m_layers.addAtomToActiveLayer(i);
@@ -433,8 +433,9 @@ void Molecule::removeConstraint(Index a, Index b, Index c, Index d)
         it->dIndex() == d) {
       it = m_constraints.erase(it);
       return;
-    } else
+    } else {
       ++it;
+    }
   }
 }
 

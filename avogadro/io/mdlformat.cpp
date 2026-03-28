@@ -181,9 +181,9 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
     return false;
   }
   string mdlVersion(trimmed(buffer.substr(33)));
-  if (mdlVersion == "V3000")
+  if (mdlVersion == "V3000") {
     return readV3000(in, mol);
-  else if (mdlVersion != "V2000") {
+  } else if (mdlVersion != "V2000") {
     appendError("Unsupported MDL version: " + mdlVersion);
     return false;
   }
@@ -488,13 +488,13 @@ bool MdlFormat::read(std::istream& in, Core::Molecule& mol)
       // Use trimmed() to handle Windows CRLF line endings where \r remains
       if (trimmed(buffer).empty() && dataName.length() > 0) {
         // check for partial charges
-        if (dataName == "PUBCHEM_MMFF94_PARTIAL_CHARGES")
+        if (dataName == "PUBCHEM_MMFF94_PARTIAL_CHARGES") {
           handlePartialCharges(mol, dataValue);
-        else if (startsWith(dataName, "atom.dpos") &&
-                 endsWith(dataName, "CHARGES"))
+        } else if (startsWith(dataName, "atom.dpos") &&
+                   endsWith(dataName, "CHARGES")) {
           // remove the "CHARGES" from the end of the string
           handlePartialCharges(mol, dataValue, dataName);
-        else {
+        } else {
           if (isEnergyTag(dataName)) {
             if (auto e = lexicalCast<double>(trimmed(dataValue)))
               energies.push_back(*e);

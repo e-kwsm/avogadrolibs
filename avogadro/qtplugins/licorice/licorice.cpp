@@ -131,8 +131,9 @@ void Licorice::process(const Molecule& molecule, Rendering::GroupNode& node)
       translucentSpheres->addSphere(atom.position3d().cast<float>(), color,
                                     radius, i);
       translucentSpheres->setOpacity(opacity);
-    } else
+    } else {
       spheres->addSphere(atom.position3d().cast<float>(), color, radius, i);
+    }
 
     if (atom.selected()) {
       color = Vector3ub(0, 0, 255);

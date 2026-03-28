@@ -54,13 +54,13 @@ bool SmilesFormat::write(std::ostream& outStream,
   if (!stringOption("hydrogens", hydrogens))
     return false;
   if (!hydrogens.empty()) {
-    if (hydrogens == "implicit")
+    if (hydrogens == "implicit") {
       writer.setHydrogenMode(SmilesWriter::HydrogenMode::Implicit);
-    else if (hydrogens == "bracket")
+    } else if (hydrogens == "bracket") {
       writer.setHydrogenMode(SmilesWriter::HydrogenMode::Bracket);
-    else if (hydrogens == "explicit")
+    } else if (hydrogens == "explicit") {
       writer.setHydrogenMode(SmilesWriter::HydrogenMode::Explicit);
-    else {
+    } else {
       appendError("Unknown value for the \"hydrogens\" option: " + hydrogens);
       return false;
     }

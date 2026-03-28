@@ -215,9 +215,9 @@ void Bonding::clearBonds()
 {
   // remove any bonds connected to the selected atoms
   //  Array<BondType> bonds(Index a);
-  if (m_molecule->isSelectionEmpty())
+  if (m_molecule->isSelectionEmpty()) {
     m_molecule->clearBonds();
-  else {
+  } else {
     std::vector<size_t> bondIndices;
     for (Index i = 0; i < m_molecule->atomCount(); ++i) {
       if (!m_molecule->atomSelected(i))
