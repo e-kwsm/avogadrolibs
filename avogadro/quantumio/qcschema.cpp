@@ -385,10 +385,11 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
               // convert to eV, i.e. eV = 1239.8 / wavelength
               if (value != 0.0)
                 energies.push_back(1239.841984 / value);
-            } else if (units == "cm^-1")
+            } else if (units == "cm^-1") {
               energies.push_back(value / 8065.544);
-            else if (units == "eV")
+            } else if (units == "eV") {
               energies.push_back(value);
+            }
           }
         }
       }
