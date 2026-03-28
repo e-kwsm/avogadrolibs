@@ -310,8 +310,8 @@ QByteArray ScriptEnergy::writeCoordinatesBinary(const Eigen::VectorXd& x,
     input.append(reinterpret_cast<const char*>(x.data()),
                  static_cast<int>(payloadBytes));
   } else {
-    for (Eigen::Index i = 0; i < x.size(); ++i)
-      appendFloat64LE(input, x[i]);
+    for (double i : x)
+      appendFloat64LE(input, i);
   }
 
   return input;

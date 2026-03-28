@@ -195,11 +195,11 @@ void Orbitals::calculateOrbitalFromWidget(
 
   // check if the orbital is already in the queue (with same electron type)
   bool found = false;
-  for (int i = 0; i < m_queue.size(); i++) {
-    if (m_queue[i].orbital == orbital && m_queue[i].resolution == resolution &&
-        m_queue[i].electronType == electronType) {
+  for (auto& i : m_queue) {
+    if (i.orbital == orbital && i.resolution == resolution &&
+        i.electronType == electronType) {
       // change the priority to the highest
-      m_queue[i].priority = 0;
+      i.priority = 0;
       found = true;
       break;
     }

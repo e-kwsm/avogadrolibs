@@ -510,9 +510,9 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellCorner)
                          Vector3(10, 10, 0), Vector3(10, 0, 10),
                          Vector3(0, 10, 10), Vector3(10, 10, 10) };
 
-  for (int i = 0; i < 8; ++i) {
+  for (const auto& corner : corners) {
     Atom a = molecule.addAtom(11); // Sodium
-    a.setPosition3d(corners[i]);
+    a.setPosition3d(corner);
   }
 
   std::map<std::string, size_t> comp = molecule.formulaComposition();
@@ -537,9 +537,9 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellEdge)
     Vector3(5, 10, 10) // edge along x at y=1, z=1
   };
 
-  for (int i = 0; i < 4; ++i) {
+  for (const auto& edge : edges) {
     Atom a = molecule.addAtom(17); // Chlorine
-    a.setPosition3d(edges[i]);
+    a.setPosition3d(edge);
   }
 
   std::map<std::string, size_t> comp = molecule.formulaComposition();
@@ -562,9 +562,9 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellFace)
     Vector3(5, 5, 10) // face at z=1
   };
 
-  for (int i = 0; i < 2; ++i) {
+  for (const auto& face : faces) {
     Atom a = molecule.addAtom(35); // Bromine
-    a.setPosition3d(faces[i]);
+    a.setPosition3d(face);
   }
 
   std::map<std::string, size_t> comp = molecule.formulaComposition();
@@ -603,9 +603,9 @@ TEST_F(MoleculeTest, formulaCompositionUnitCellMixed)
                          Vector3(0, 10, 0),  Vector3(0, 0, 10),
                          Vector3(10, 10, 0), Vector3(10, 0, 10),
                          Vector3(0, 10, 10), Vector3(10, 10, 10) };
-  for (int i = 0; i < 8; ++i) {
+  for (const auto& corner : corners) {
     Atom a = molecule.addAtom(11); // Na
-    a.setPosition3d(corners[i]);
+    a.setPosition3d(corner);
   }
 
   // 6 Cl at face centers = 6 * 1/2 = 3 Cl... but we want 1 Cl
