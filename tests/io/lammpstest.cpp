@@ -115,8 +115,9 @@ TEST(LammpsTest, write)
   {
     LammpsDataFormat lmpdat;
     molecule.setData("name", "left-handed system [j, i, k]");
-    auto* const uc =
-      new UnitCell({ 0.0, 4.0, 0.0 }, { 5.0, 0.0, 0.0 }, { 0.0, 0.0, 6.0 });
+    const auto uc = std::make_shared<UnitCell>(Vector3{ 0.0, 4.0, 0.0 },
+                                               Vector3{ 5.0, 0.0, 0.0 },
+                                               Vector3{ 0.0, 0.0, 6.0 });
     molecule.setUnitCell(uc);
 
     std::string output;
@@ -150,8 +151,9 @@ Atoms
   {
     LammpsDataFormat lmpdat;
     molecule.setData("name", "right-handed silicon primitive cell");
-    auto* const uc =
-      new UnitCell({ 0.0, 2.0, 2.0 }, { 2.0, 0.0, 2.0 }, { 2.0, 2.0, 0.0 });
+    const auto uc = std::make_shared<UnitCell>(Vector3{ 0.0, 2.0, 2.0 },
+                                               Vector3{ 2.0, 0.0, 2.0 },
+                                               Vector3{ 2.0, 2.0, 0.0 });
     molecule.setUnitCell(uc);
 
     std::string output;
