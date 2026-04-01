@@ -228,8 +228,7 @@ Molecule& Molecule::operator=(Molecule&& other) noexcept
     // Free what this molecule owns; none of it goes to the source.
     clearMeshes();
     clearCubes();
-    delete m_basisSet;
-    m_basisSet = nullptr;
+    m_basisSet = std::exchange(other.m_basisSet, nullptr);
     delete m_unitCell;
     m_unitCell = nullptr;
 
