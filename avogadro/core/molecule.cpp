@@ -109,12 +109,12 @@ void Molecule::readProperties(const Molecule& other)
   m_conformerProperties = other.m_conformerProperties;
 
   // copy orbital information
-  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet.get());
+  auto slaterSet = std::dynamic_pointer_cast<SlaterSet>(other.m_basisSet);
   if (slaterSet != nullptr) {
     m_basisSet.reset(slaterSet->clone());
     m_basisSet->setMolecule(this);
   }
-  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet.get());
+  auto gaussianSet = std::dynamic_pointer_cast<GaussianSet>(other.m_basisSet);
   if (gaussianSet != nullptr) {
     m_basisSet.reset(gaussianSet->clone());
     m_basisSet->setMolecule(this);
