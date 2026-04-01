@@ -464,7 +464,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
           ax2Set = true;
           ax3 = axes[2];
           ax3Set = true;
-          auto* cell = new UnitCell(ax1, ax2, ax3);
+          auto cell = std::make_shared<UnitCell>(ax1, ax2, ax3);
           if (!cell->isRegular()) {
             appendError("cell vectors are not linear independent");
             return false;
