@@ -139,8 +139,8 @@ Real LennardJones::evaluate(const Eigen::VectorXd& x, Eigen::VectorXd* grad)
       x.size() != static_cast<Eigen::Index>(3 * m_molecule->atomCount()))
     return 0.0;
 
-  Real energy =
-    evaluateLennardJonesPairs(x, m_radii, m_cell, m_depth, m_exponent, grad);
+  Real energy = evaluateLennardJonesPairs(x, m_radii, m_cell.get(), m_depth,
+                                          m_exponent, grad);
   energy += constraintEnergies(x);
 
   if (grad != nullptr) {
