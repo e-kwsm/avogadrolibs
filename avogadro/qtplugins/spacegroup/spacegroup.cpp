@@ -762,7 +762,7 @@ bool SpaceGroup::checkPrimitiveCell(unsigned short hallNumber, bool mayPrompt,
         centering == 'B' || centering == 'C') {
       // Check if cell angles deviate significantly from 90 degrees
       // which would suggest a primitive cell basis
-      Core::UnitCell* uc = m_molecule->unitCell();
+      const auto& uc = m_molecule->unitCell();
       if (uc) {
         double alpha = uc->alpha() * 180.0 / M_PI;
         double beta = uc->beta() * 180.0 / M_PI;
@@ -865,7 +865,7 @@ unsigned short SpaceGroup::selectSpaceGroup(unsigned short internationalNumber)
   if (internationalNumber != 0) {
     searchBox->setText(QString::number(internationalNumber));
   } else if (m_molecule && m_molecule->unitCell()) {
-    Core::UnitCell* uc = m_molecule->unitCell();
+    const auto& uc = m_molecule->unitCell();
     double a = uc->a();
     double b = uc->b();
     double c = uc->c();
