@@ -135,7 +135,6 @@ bool XyzFormat::read(std::istream& inStream, Core::Molecule& mol)
                   << " " << cell->cVector() << std::endl;
         if (!cell->isRegular()) {
           appendError("Lattice vectors are not linear independent");
-          delete cell;
         } else {
           mol.setUnitCell(cell);
         }
