@@ -185,7 +185,8 @@ void NWChemLog::readLattice(std::istream& in, Core::Molecule& mol,
   a3[1] = Core::lexicalCast<double>(parts[2]).value_or(0.0);
   a3[2] = Core::lexicalCast<double>(parts[3]).value_or(0.0);
 
-  auto* cell = new Core::UnitCell(a1 * scale, a2 * scale, a3 * scale);
+  auto cell =
+    std::make_shared<Core::UnitCell>(a1 * scale, a2 * scale, a3 * scale);
   mol.setUnitCell(cell);
 }
 
