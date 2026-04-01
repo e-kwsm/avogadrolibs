@@ -265,8 +265,8 @@ TEST(MoldenTest, roundTripBasisSet)
     format.readFile(AVOGADRO_DATA "/data/molden/H2O.molden", molecule));
   ASSERT_EQ(format.error(), std::string());
 
-  const auto* originalBasis =
-    dynamic_cast<const GaussianSet*>(molecule.basisSet());
+  const auto originalBasis =
+    std::dynamic_pointer_cast<const GaussianSet>(molecule.basisSet());
   ASSERT_NE(originalBasis, nullptr);
 
   // Store original basis set info
@@ -283,7 +283,8 @@ TEST(MoldenTest, roundTripBasisSet)
   EXPECT_TRUE(format2.readString(output, molecule2));
   ASSERT_EQ(format2.error(), std::string());
 
-  const auto* newBasis = dynamic_cast<const GaussianSet*>(molecule2.basisSet());
+  const auto newBasis =
+    std::dynamic_pointer_cast<const GaussianSet>(molecule2.basisSet());
   ASSERT_NE(newBasis, nullptr);
 
   // Verify basis set structure
@@ -302,8 +303,8 @@ TEST(MoldenTest, roundTripMolecularOrbitals)
     format.readFile(AVOGADRO_DATA "/data/molden/H2O.molden", molecule));
   ASSERT_EQ(format.error(), std::string());
 
-  const auto* originalBasis =
-    dynamic_cast<const GaussianSet*>(molecule.basisSet());
+  const auto originalBasis =
+    std::dynamic_pointer_cast<const GaussianSet>(molecule.basisSet());
   ASSERT_NE(originalBasis, nullptr);
 
   // Store original MO data
@@ -320,7 +321,8 @@ TEST(MoldenTest, roundTripMolecularOrbitals)
   EXPECT_TRUE(format2.readString(output, molecule2));
   ASSERT_EQ(format2.error(), std::string());
 
-  const auto* newBasis = dynamic_cast<const GaussianSet*>(molecule2.basisSet());
+  const auto newBasis =
+    std::dynamic_pointer_cast<const GaussianSet>(molecule2.basisSet());
   ASSERT_NE(newBasis, nullptr);
 
   // Verify MO energies (converted through eV and back to Hartree)
