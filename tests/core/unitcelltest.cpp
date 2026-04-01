@@ -28,7 +28,7 @@ Molecule createCrystal(Real a, Real b, Real c, Real alpha, Real beta,
 Molecule createCrystal(const Vector3& a, const Vector3& b, const Vector3& c)
 {
   Molecule mol;
-  mol.setUnitCell(new UnitCell{ a, b, c });
+  mol.setUnitCell(std::make_shared<UnitCell>(a, b, c));
   return mol;
 }
 
