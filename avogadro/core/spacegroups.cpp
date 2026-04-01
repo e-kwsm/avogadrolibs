@@ -1306,7 +1306,7 @@ void SpaceGroups::fillTranslationalCopies(Molecule& mol, double cartTol)
 {
   if (!mol.unitCell())
     return;
-  UnitCell* uc = mol.unitCell();
+  const auto& uc = mol.unitCell();
 
   Array<unsigned char> atomicNumbers = mol.atomicNumbers();
   Array<unsigned short> isotopes = mol.isotopes(); // may be empty
@@ -1421,7 +1421,7 @@ Array<Index> SpaceGroups::translationalUniqueAtoms(const Molecule& mol,
   if (!mol.unitCell())
     return uniqueIndices;
 
-  const UnitCell* uc = mol.unitCell();
+  const auto& uc = mol.unitCell();
   Index numAtoms = mol.atomCount();
 
   // Store wrapped coordinates for atoms we've already accepted
