@@ -122,7 +122,6 @@ bool XyzFormat::read(std::istream& inStream, Core::Molecule& mol)
         auto cell = std::make_shared<Core::UnitCell>(v1, v2, v3);
         if (!cell->isRegular()) {
           appendError("Lattice vectors are not linear independent");
-          delete cell;
         } else {
           mol.setUnitCell(cell);
         }
