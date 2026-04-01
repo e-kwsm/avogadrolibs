@@ -188,7 +188,8 @@ void exportMolecule(py::module_& m)
 
     // --- Basis set ---
     .def_property_readonly(
-      "basis_set", [](Molecule& self) -> BasisSet* { return self.basisSet(); },
+      "basis_set",
+      [](Molecule& self) -> BasisSet* { return self.basisSet().get(); },
       py::return_value_policy::reference_internal,
       "The basis set, if available")
 
