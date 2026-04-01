@@ -76,7 +76,7 @@ bool MoldenFile::read(std::istream& in, Core::Molecule& molecule)
   molecule.perceiveBondOrders();
 
   auto basis = std::make_shared<GaussianSet>();
-  if (!load(basis, atomCount)) {
+  if (!load(basis.get(), atomCount)) {
     return false;
   }
 
@@ -613,7 +613,8 @@ bool MoldenFile::write(std::ostream& out, const Core::Molecule& molecule)
   out << "[Molden Format]\n";
 
   // Get the basis set if available
-  const auto* basis = dynamic_cast<const GaussianSet*>(molecule.basisSet());
+  const auto* basis =
+    dynamic_cast<const GaussianSet*>(molecule.basisSet().get());
 
   // Check for spherical basis functions and write appropriate flags
   if (basis != nullptr) {
