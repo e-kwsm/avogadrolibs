@@ -38,7 +38,7 @@ $coord
 $end
 )"s;
   EXPECT_TRUE(tmol.readString(str, molecule)) << str << '\n' << tmol.error();
-  const auto* const uc = molecule.unitCell();
+  const auto& uc = molecule.unitCell();
   EXPECT_EQ(uc, nullptr) << str << uc->cellMatrix();
   ASSERT_EQ(molecule.atomCount(), 2u) << str;
   {
@@ -123,7 +123,7 @@ TEST(TurbomoleTest, readCellParameters)
             // $periodic and $cell/$lattice match
             ASSERT_TRUE(tmol.readString(str, molecule)) << str << '\n'
                                                         << tmol.error();
-            const auto* const uc = molecule.unitCell();
+            const auto& uc = molecule.unitCell();
             ASSERT_NE(uc, nullptr);
             const double factor = len.empty() ? ANGSTROM_TO_BOHR : 1.0;
             const auto& a = uc->aVector();
