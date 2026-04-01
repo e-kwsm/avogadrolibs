@@ -808,7 +808,7 @@ bool SpaceGroup::checkPrimitiveCell(unsigned short hallNumber, bool mayPrompt,
   if (!hallSymbol.empty()) {
     // Centred lattices (F, I, A, B, C) expect a conventional cell. Whether
     // the angles look wrong depends on the crystal system.
-    Core::UnitCell* uc = m_molecule->unitCell();
+    const auto& uc = m_molecule->unitCell();
     if (uc) {
       const bool nonConventionalAngles =
         Core::SpaceGroups::cellLooksPrimitive(hallNumber, *uc);
@@ -903,7 +903,7 @@ unsigned short SpaceGroup::selectSpaceGroup(unsigned short internationalNumber)
   if (internationalNumber != 0) {
     searchBox->setText(QString::number(internationalNumber));
   } else if (m_molecule && m_molecule->unitCell()) {
-    Core::UnitCell* uc = m_molecule->unitCell();
+    const auto& uc = m_molecule->unitCell();
     double a = uc->a();
     double b = uc->b();
     double c = uc->c();
