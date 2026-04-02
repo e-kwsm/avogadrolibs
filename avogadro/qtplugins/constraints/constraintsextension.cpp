@@ -57,7 +57,8 @@ void ConstraintsExtension::openDialog()
   m_dialog->activateWindow();
 }
 
-void ConstraintsExtension::setMolecule(QtGui::Molecule* mol)
+void ConstraintsExtension::setMolecule(
+  const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (mol != m_molecule) {
     m_molecule = mol;

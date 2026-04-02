@@ -12,6 +12,8 @@
 
 #include <QtCore/QObject>
 
+#include <memory>
+
 class QAction;
 
 namespace Avogadro {
@@ -84,7 +86,7 @@ public slots:
   /**
    * Called when the current molecule changes.
    */
-  virtual void setMolecule(QtGui::Molecule* mol) = 0;
+  virtual void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) = 0;
 
   /**
    * Call this slot when the moleculeReady signal indicated that a molecule is
