@@ -54,14 +54,14 @@ void ThreeDMol::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 
   m_molecule = mol;
   if (m_dialog)
-    m_dialog->setMolecule(m_molecule);
+    m_dialog->setMolecule(m_molecule.get());
 }
 
 void ThreeDMol::showDialog()
 {
   if (!m_dialog) {
-    m_dialog =
-      new ThreeDMolDialog(m_molecule, qobject_cast<QWidget*>(this->parent()));
+    m_dialog = new ThreeDMolDialog(m_molecule.get(),
+                                   qobject_cast<QWidget*>(this->parent()));
   }
   m_dialog->show();
   m_dialog->raise();
