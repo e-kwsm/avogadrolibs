@@ -43,7 +43,7 @@ public:
 
   QStringList menuPath(QAction*) const override;
 
-  void setMolecule(QtGui::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) override;
 
   /// listConstraints/addConstraint/removeConstraint/clearConstraints, the
   /// scripting/RPC equivalents of the dialog, are described by the command
