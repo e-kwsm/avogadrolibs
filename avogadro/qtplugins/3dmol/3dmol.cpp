@@ -47,7 +47,7 @@ QStringList ThreeDMol::menuPath(QAction*) const
   return QStringList() << tr("&File") << tr("&Export");
 }
 
-void ThreeDMol::setMolecule(QtGui::Molecule* mol)
+void ThreeDMol::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (mol == m_molecule)
     return;
