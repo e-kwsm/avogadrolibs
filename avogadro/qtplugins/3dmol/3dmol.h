@@ -45,7 +45,7 @@ public:
   QStringList menuPath(QAction*) const override;
 
 public slots:
-  void setMolecule(QtGui::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) override;
 
 private slots:
   void showDialog();
@@ -53,7 +53,7 @@ private slots:
 private:
   QAction* m_action;
   ThreeDMolDialog* m_dialog;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
 };
 
 } // namespace QtPlugins
