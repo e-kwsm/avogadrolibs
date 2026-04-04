@@ -195,10 +195,10 @@ QString OpenBabel::openBabelInfo() const
   return QString("%1: %2").arg(proc.obabelExecutable(), version);
 }
 
-void OpenBabel::setMolecule(QtGui::Molecule* mol)
+void OpenBabel::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol != m_molecule)
-    m_molecule = mol;
+  if (mol.get() != m_molecule)
+    m_molecule = mol.get();
 }
 
 bool OpenBabel::readMolecule(QtGui::Molecule& mol)
