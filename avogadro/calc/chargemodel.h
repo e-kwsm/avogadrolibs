@@ -47,7 +47,10 @@ public:
    * Create a new instance of the model.
    * @{
    */
-  virtual std::shared_ptr<const ChargeModel> newInstance() const = 0;
+  virtual std::shared_ptr<const ChargeModel> newInstance() const
+  {
+    return shared_from_this();
+  }
 
   /**
    * @brief A unique identifier, used to retrieve models programmatically.
