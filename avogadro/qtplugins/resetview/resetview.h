@@ -37,7 +37,7 @@ public:
   void registerCommands() override;
 
 public slots:
-  void setMolecule(QtGui::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) override;
   void setCamera(Rendering::Camera* camera) override;
   void setActiveWidget(QWidget* widget) override;
 

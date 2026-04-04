@@ -77,9 +77,9 @@ QStringList ResetView::menuPath(QAction*) const
   return QStringList() << tr("&View");
 }
 
-void ResetView::setMolecule(QtGui::Molecule* mol)
+void ResetView::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void ResetView::setCamera(Rendering::Camera* camera)
