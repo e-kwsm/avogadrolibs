@@ -43,9 +43,9 @@ QStringList Vibrations::menuPath(QAction*) const
   return path;
 }
 
-void Vibrations::setMolecule(QtGui::Molecule* mol)
+void Vibrations::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol == nullptr)
+  if (mol.get() == nullptr)
     return;
 
   if (m_molecule != nullptr)
@@ -56,9 +56,9 @@ void Vibrations::setMolecule(QtGui::Molecule* mol)
     isVibrational = true;
 
   m_actions[0]->setEnabled(isVibrational);
-  m_molecule = mol;
+  m_molecule = mol.get();
   if (m_dialog)
-    m_dialog->setMolecule(mol);
+    m_dialog->setMolecule(mol.get());
 
   if (isVibrational)
     openDialog();
