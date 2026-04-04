@@ -127,9 +127,9 @@ QStringList Select::menuPath(QAction*) const
   return QStringList() << tr("&Select");
 }
 
-void Select::setMolecule(QtGui::Molecule* mol)
+void Select::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 bool Select::evalSelect(bool input, Index index) const
