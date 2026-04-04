@@ -46,7 +46,7 @@ QStringList ScriptCharges::menuPath(QAction*) const
   return QStringList();
 }
 
-void ScriptCharges::setMolecule(QtGui::Molecule*) {}
+void ScriptCharges::setMolecule(const std::shared_ptr<QtGui::Molecule>&) {}
 
 void ScriptCharges::refreshModels()
 {
