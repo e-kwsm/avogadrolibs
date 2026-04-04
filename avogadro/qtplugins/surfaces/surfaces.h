@@ -126,7 +126,7 @@ private:
   // Parented to parent() when that is a widget, which may delete it first.
   QPointer<QtGui::TimedProgressDialog> m_progressDialog;
 
-  QtGui::Molecule* m_molecule = nullptr;
+  std::shared_ptr<QtGui::Molecule> m_molecule = nullptr;
   Core::BasisSet* m_basis = nullptr;
 
   QtGui::GaussianSetConcurrent* m_gaussianConcurrent = nullptr;

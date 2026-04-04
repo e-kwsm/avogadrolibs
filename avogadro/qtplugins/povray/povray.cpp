@@ -46,7 +46,7 @@ QStringList POVRay::menuPath(QAction*) const
 
 void POVRay::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void POVRay::setScene(Rendering::Scene* scene)

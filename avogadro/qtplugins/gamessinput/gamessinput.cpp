@@ -55,7 +55,7 @@ void GamessInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
     m_dialog->setMolecule(mol.get());
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   bool isPeriodic = (m_molecule && m_molecule->unitCell() != nullptr);
 
@@ -107,7 +107,7 @@ void GamessInput::menuActivated()
     connect(m_dialog, SIGNAL(openJobOutput(Avogadro::MoleQueue::JobObject)),
             this, SLOT(openJobOutput(Avogadro::MoleQueue::JobObject)));
   }
-  m_dialog->setMolecule(m_molecule);
+  m_dialog->setMolecule(m_molecule.get());
   m_dialog->show();
   m_dialog->raise();
   m_dialog->activateWindow();

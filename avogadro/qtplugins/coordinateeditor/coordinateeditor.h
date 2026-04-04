@@ -45,7 +45,7 @@ private slots:
 
 private:
   CoordinateEditorDialog* m_dialog;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   QAction* m_action;
 };
 
