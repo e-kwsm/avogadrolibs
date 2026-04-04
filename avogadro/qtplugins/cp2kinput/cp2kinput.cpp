@@ -50,11 +50,11 @@ QStringList Cp2kInput::menuPath(QAction*) const
   return path;
 }
 
-void Cp2kInput::setMolecule(QtGui::Molecule* mol)
+void Cp2kInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
-    m_dialog->setMolecule(mol);
-  m_molecule = mol;
+    m_dialog->setMolecule(mol.get());
+  m_molecule = mol.get();
 }
 
 void Cp2kInput::openJobOutput(const JobObject& job)
