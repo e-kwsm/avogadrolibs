@@ -672,7 +672,7 @@ void Forcefield::showDialog()
   setupMethod();
 }
 
-void Forcefield::setMolecule(QtGui::Molecule* mol)
+void Forcefield::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_molecule == mol)
     return;
@@ -692,7 +692,7 @@ void Forcefield::setMolecule(QtGui::Molecule* mol)
     disconnect(m_molecule, &QtGui::Molecule::changed, this,
                &Forcefield::updateActions);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   // Refresh action enable-state (e.g. batch actions) when the molecule
   // changes - conformers may be added or removed.
