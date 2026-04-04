@@ -42,9 +42,9 @@ QStringList Alchemy::menuPath(QAction*) const
   return QStringList() << tr("&Build");
 }
 
-void Alchemy::setMolecule(QtGui::Molecule* mol)
+void Alchemy::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void Alchemy::changeElements()
