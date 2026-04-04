@@ -59,7 +59,7 @@ private:
   // Returns true if we should proceed with filling, false if user canceled.
   bool checkPrimitiveCell(unsigned short hallNumber);
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   double m_spgTol;
 
   QAction* m_perceiveSpaceGroupAction;

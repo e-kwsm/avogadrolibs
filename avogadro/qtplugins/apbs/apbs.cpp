@@ -52,8 +52,8 @@ QStringList Apbs::menuPath(QAction*) const
 
 void Apbs::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol.get() != m_molecule)
-    m_molecule = mol.get();
+  if (mol != m_molecule)
+    m_molecule = mol;
 }
 
 void Apbs::onOpenOutputFile()
@@ -95,7 +95,7 @@ void Apbs::onRunApbs()
   if (!m_dialog)
     m_dialog = new ApbsDialog(qobject_cast<QWidget*>(parent()));
 
-  m_dialog->setMolecule(m_molecule);
+  m_dialog->setMolecule(m_molecule.get());
   int code = m_dialog->exec();
   m_dialog->hide();
   if (code == QDialog::Accepted) {

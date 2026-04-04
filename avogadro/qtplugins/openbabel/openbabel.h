@@ -99,7 +99,7 @@ private:
   /// both the read and write format queries have finished.
   void formatQueryFinished();
 
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   OBProcess* m_process;
   QList<QAction*> m_actions;
   QList<QByteArray> m_moleculeQueue;

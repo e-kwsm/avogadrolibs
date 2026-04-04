@@ -49,7 +49,7 @@ private slots:
   void alignToAxes();
 
 private:
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   Rendering::Camera* m_camera;
   QAction* m_centerAction;
   QAction* m_viewToAxesAction;

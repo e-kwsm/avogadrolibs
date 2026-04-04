@@ -55,7 +55,7 @@ private slots:
 
 private:
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   PQRWidget* m_dialog;
   const Io::FileFormat* m_outputFormat;
   QString m_moleculeName;
