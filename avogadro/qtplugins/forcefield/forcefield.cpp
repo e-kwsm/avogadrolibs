@@ -290,12 +290,12 @@ void Forcefield::showDialog()
   setupMethod();
 }
 
-void Forcefield::setMolecule(QtGui::Molecule* mol)
+void Forcefield::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol == nullptr || m_molecule == mol)
+  if (mol == nullptr || m_molecule == mol.get())
     return;
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   // TODO: connect to molecule changes, e.g. selection
   // connect(m_molecule, SIGNAL(changed(uint)), SLOT(updateActions()));
