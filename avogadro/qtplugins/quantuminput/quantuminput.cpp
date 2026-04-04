@@ -81,23 +81,23 @@ QStringList QuantumInput::menuPath(QAction* action) const
   return path;
 }
 
-void QuantumInput::setMolecule(QtGui::Molecule* mol)
+void QuantumInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol)
+  if (m_molecule == mol.get())
     return;
 
   if (m_molecule)
     disconnect(m_molecule, &QtGui::Molecule::changed, this,
                &QuantumInput::moleculeChanged);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   if (m_molecule)
     connect(m_molecule, &QtGui::Molecule::changed, this,
             &QuantumInput::moleculeChanged);
 
   foreach (InputGeneratorDialog* dlg, m_dialogs.values())
-    dlg->setMolecule(mol);
+    dlg->setMolecule(mol.get());
 
   updateActionStates();
 }

@@ -133,23 +133,23 @@ QStringList Command::menuPath(QAction* action) const
   return translatedPath;
 }
 
-void Command::setMolecule(QtGui::Molecule* mol)
+void Command::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol)
+  if (m_molecule == mol.get())
     return;
 
   if (m_molecule)
     disconnect(m_molecule, &QtGui::Molecule::changed, this,
                &Command::moleculeChanged);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   if (m_molecule)
     connect(m_molecule, &QtGui::Molecule::changed, this,
             &Command::moleculeChanged);
 
   foreach (InterfaceWidget* dlg, m_dialogs.values())
-    dlg->setMolecule(mol);
+    dlg->setMolecule(mol.get());
 }
 
 void Command::moleculeChanged(unsigned int change)
