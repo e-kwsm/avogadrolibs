@@ -103,15 +103,15 @@ QStringList Crystal::menuPath(QAction*) const
   return QStringList() << tr("&Crystal");
 }
 
-void Crystal::setMolecule(QtGui::Molecule* mol)
+void Crystal::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol)
+  if (m_molecule == mol.get())
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
   if (m_unitCellDialog)
     m_unitCellDialog->setMolecule(m_molecule);
 
