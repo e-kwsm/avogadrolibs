@@ -62,7 +62,7 @@ QStringList Bonding::menuPath(QAction*) const
   return QStringList() << tr("&Build") << tr("Bond");
 }
 
-void Bonding::setMolecule(QtGui::Molecule* mol)
+void Bonding::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   m_molecule = mol;
 }

@@ -88,7 +88,7 @@ public:
 
   // This will check if the molecule is valid for this script
   // and then start the external process
-  void setMolecule(Core::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<Core::Molecule>& mol) override;
   // energy
   Real value(const Eigen::VectorXd& x) override;
   // gradient (which may be unsupported and fall back to numeric)
