@@ -42,9 +42,9 @@ QStringList NetworkDatabases::menuPath(QAction*) const
   return QStringList() << tr("&File") << tr("&Import");
 }
 
-void NetworkDatabases::setMolecule(QtGui::Molecule* mol)
+void NetworkDatabases::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 bool NetworkDatabases::readMolecule(QtGui::Molecule& mol)
