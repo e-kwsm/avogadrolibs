@@ -50,10 +50,10 @@ QStringList Apbs::menuPath(QAction*) const
   return QStringList() << tr("&Input") << tr("&APBS");
 }
 
-void Apbs::setMolecule(QtGui::Molecule* mol)
+void Apbs::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol != m_molecule)
-    m_molecule = mol;
+  if (mol.get() != m_molecule)
+    m_molecule = mol.get();
 }
 
 void Apbs::onOpenOutputFile()
