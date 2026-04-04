@@ -32,11 +32,11 @@ QStringList CoordinateEditor::menuPath(QAction*) const
   return QStringList() << tr("&Build");
 }
 
-void CoordinateEditor::setMolecule(QtGui::Molecule* mol)
+void CoordinateEditor::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
   if (m_dialog)
-    m_dialog->setMolecule(mol);
+    m_dialog->setMolecule(mol.get());
 }
 
 void CoordinateEditor::triggered()
