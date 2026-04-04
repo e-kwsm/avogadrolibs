@@ -46,9 +46,9 @@ QStringList SVG::menuPath(QAction*) const
   return QStringList() << tr("&File") << tr("&Export");
 }
 
-void SVG::setMolecule(QtGui::Molecule* mol)
+void SVG::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void SVG::setScene(Rendering::Scene* scene)
