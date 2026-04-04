@@ -25,7 +25,7 @@ public:
   QStringList menuPath(QAction* action) const override;
 
 public slots:
-  void setMolecule(QtGui::Molecule* molecule) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& molecule) override;
 
 private slots:
   void triggered();
