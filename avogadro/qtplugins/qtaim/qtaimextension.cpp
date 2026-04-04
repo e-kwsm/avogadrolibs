@@ -68,9 +68,10 @@ QStringList QTAIMExtension::menuPath(QAction*) const
   return QStringList() << tr("&Analyze") << tr("QTAIM");
 }
 
-void QTAIMExtension::setMolecule(QtGui::Molecule* molecule)
+void QTAIMExtension::setMolecule(
+  const std::shared_ptr<QtGui::Molecule>& molecule)
 {
-  m_molecule = molecule;
+  m_molecule = molecule.get();
 }
 
 void QTAIMExtension::triggered()
