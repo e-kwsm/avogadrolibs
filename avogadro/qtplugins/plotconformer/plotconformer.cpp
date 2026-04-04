@@ -65,16 +65,17 @@ QStringList PlotConformer::menuPath(QAction*) const
 
 void PlotConformer::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol.get())
+  if (m_molecule == mol)
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   if (m_molecule)
-    connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));
+    connect(m_molecule.get(), SIGNAL(changed(uint)),
+            SLOT(moleculeChanged(uint)));
 
   // Follow whichever conformer the new molecule is already showing.
   m_currentFrame = m_molecule ? m_molecule->coordinate3d() : 0;
@@ -93,7 +94,7 @@ void PlotConformer::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 
 void PlotConformer::moleculeChanged(unsigned int c)
 {
-  Q_ASSERT(m_molecule == qobject_cast<Molecule*>(sender()));
+  Q_ASSERT(m_molecule.get() == qobject_cast<Molecule*>(sender()));
 
   auto changes = static_cast<Molecule::MoleculeChanges>(c);
 

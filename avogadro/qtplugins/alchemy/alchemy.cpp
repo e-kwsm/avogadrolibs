@@ -44,7 +44,7 @@ QStringList Alchemy::menuPath(QAction*) const
 
 void Alchemy::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void Alchemy::changeElements()

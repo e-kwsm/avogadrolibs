@@ -121,7 +121,7 @@ private:
   void closeProgressDialog();
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   // The active view's camera, owned by the renderer; null until a view exists.
   Rendering::Camera* m_camera = nullptr;
   // Launch-time molecule for the async script; QPointer detects deletion.

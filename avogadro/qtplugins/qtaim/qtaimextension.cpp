@@ -71,7 +71,7 @@ QStringList QTAIMExtension::menuPath(QAction*) const
 void QTAIMExtension::setMolecule(
   const std::shared_ptr<QtGui::Molecule>& molecule)
 {
-  m_molecule = molecule.get();
+  m_molecule = molecule;
 }
 
 void QTAIMExtension::triggered()
@@ -101,7 +101,7 @@ void QTAIMExtension::triggered()
   bool success = false;
   QTAIMWavefunction wfn;
   if (wavefunctionAlreadyLoaded) {
-    success = wfn.initializeWithMoleculeProperties(m_molecule);
+    success = wfn.initializeWithMoleculeProperties(m_molecule.get());
   } else {
     success = wfn.initializeWithWFNFile(fileName);
   }

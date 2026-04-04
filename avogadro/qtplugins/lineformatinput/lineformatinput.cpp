@@ -64,7 +64,7 @@ QStringList LineFormatInput::menuPath(QAction*) const
 
 void LineFormatInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void LineFormatInput::showDialog()

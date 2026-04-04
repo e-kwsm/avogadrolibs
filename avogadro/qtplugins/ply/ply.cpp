@@ -46,7 +46,7 @@ QStringList PLY::menuPath(QAction*) const
 
 void PLY::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void PLY::setScene(Rendering::Scene* scene)

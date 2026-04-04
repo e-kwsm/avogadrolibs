@@ -41,7 +41,7 @@ private slots:
   void normal();
 
 private:
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
 
   QAction* m_centroidAction;
   QAction* m_comAction;

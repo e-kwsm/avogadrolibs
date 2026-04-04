@@ -54,7 +54,7 @@ private:
   AminoAcid readAminoAcid(const QString& threeLetterCode);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   InsertPeptideDialog* m_dialog;
   QString m_directory; // directory to amino acid fragments
 };
