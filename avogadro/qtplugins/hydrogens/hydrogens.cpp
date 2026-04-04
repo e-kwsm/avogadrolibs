@@ -57,9 +57,9 @@ QStringList Hydrogens::menuPath(QAction*) const
   return QStringList() << tr("&Build") << tr("&Hydrogens");
 }
 
-void Hydrogens::setMolecule(QtGui::Molecule* mol)
+void Hydrogens::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void Hydrogens::adjustHydrogens()
