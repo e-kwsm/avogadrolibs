@@ -71,9 +71,9 @@ QStringList InsertPeptide::menuPath(QAction* action) const
   return QStringList() << tr("&Build") << tr("&Insert");
 }
 
-void InsertPeptide::setMolecule(QtGui::Molecule* mol)
+void InsertPeptide::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void InsertPeptide::showDialog()
