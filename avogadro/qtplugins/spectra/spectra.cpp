@@ -50,7 +50,7 @@ void Spectra::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
     m_molecule->disconnect(this);
 
   // extract vibrational and other spectra
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   if (m_molecule == nullptr) {
     return;
@@ -67,7 +67,7 @@ void Spectra::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   foreach (auto action, m_actions)
     action->setEnabled(enableAction);
 
-  connect(m_molecule, SIGNAL(changed(unsigned int)),
+  connect(m_molecule.get(), SIGNAL(changed(unsigned int)),
           SLOT(moleculeChanged(unsigned int)));
 
   if (enableAction && m_dialog != nullptr) {

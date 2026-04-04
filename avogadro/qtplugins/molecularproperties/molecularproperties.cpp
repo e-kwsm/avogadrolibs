@@ -63,7 +63,7 @@ QStringList MolecularProperties::menuPath(QAction*) const
 void MolecularProperties::setMolecule(
   const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol.get() == m_molecule)
+  if (mol == m_molecule)
     return;
 
   // Cancel any pending network request to avoid applying the wrong name
@@ -75,17 +75,17 @@ void MolecularProperties::setMolecule(
 
   // Disconnect from the old molecule if set
   if (m_molecule) {
-    disconnect(m_molecule, &QtGui::Molecule::changed, this,
+    disconnect(m_molecule.get(), &QtGui::Molecule::changed, this,
                &MolecularProperties::updateName);
   }
 
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   if (m_molecule) {
     if (m_model)
-      m_model->setMolecule(m_molecule);
+      m_model->setMolecule(m_molecule.get());
 
-    connect(m_molecule, &QtGui::Molecule::changed, this,
+    connect(m_molecule.get(), &QtGui::Molecule::changed, this,
             &MolecularProperties::updateName);
     updateName();
   }
@@ -188,10 +188,10 @@ void MolecularProperties::showDialog()
     layout->setContentsMargins(0, 0, 0, 0);
 
     m_model = new MolecularModel(m_dialog);
-    m_model->setMolecule(m_molecule);
+    m_model->setMolecule(m_molecule.get());
     // view will delete itself & model using deleteLater()
     auto* view = new MolecularView(m_dialog);
-    view->setMolecule(m_molecule);
+    view->setMolecule(m_molecule.get());
     view->setSourceModel(m_model);
     view->setModel(m_model);
 

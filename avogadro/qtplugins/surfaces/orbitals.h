@@ -146,7 +146,7 @@ private slots:
 private:
   QAction* m_action;
 
-  QtGui::Molecule* m_molecule = nullptr;
+  std::shared_ptr<QtGui::Molecule> m_molecule = nullptr;
   Core::BasisSet* m_basis = nullptr;
 
   QList<calcInfo> m_queue;

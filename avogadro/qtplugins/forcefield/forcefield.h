@@ -216,7 +216,7 @@ private:
   void handleFreezeAxisCommand(const QVariantMap& options);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule = nullptr;
+  std::shared_ptr<QtGui::Molecule> m_molecule = nullptr;
   Calc::EnergyCalculator* m_method = nullptr;
   std::string m_methodName;
   bool m_autodetect;
