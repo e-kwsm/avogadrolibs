@@ -135,17 +135,17 @@ QStringList Command::menuPath(QAction* action) const
 
 void Command::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol.get())
+  if (m_molecule == mol)
     return;
 
   if (m_molecule)
-    disconnect(m_molecule, &QtGui::Molecule::changed, this,
+    disconnect(m_molecule.get(), &QtGui::Molecule::changed, this,
                &Command::moleculeChanged);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   if (m_molecule)
-    connect(m_molecule, &QtGui::Molecule::changed, this,
+    connect(m_molecule.get(), &QtGui::Molecule::changed, this,
             &Command::moleculeChanged);
 
   foreach (InterfaceWidget* dlg, m_dialogs.values())
@@ -265,7 +265,7 @@ void Command::menuActivated()
     }
   }
 
-  widget->setMolecule(m_molecule);
+  widget->setMolecule(m_molecule.get());
   m_currentInterface = widget;
   if (widget->isEmpty()) {
     run(); // no options, do it immediately
@@ -338,7 +338,7 @@ void Command::run()
     // Snapshot so processFinished() can detect if the molecule was closed
     // or swapped before the async script returned.
     m_runningMolecule = m_molecule;
-    m_currentScript->runCommand(options, m_molecule);
+    m_currentScript->runCommand(options, m_molecule.get());
   }
 }
 
@@ -353,12 +353,18 @@ void Command::processFinished()
     m_progress = nullptr;
   }
 
+<<<<<<< HEAD
   // Drop results if the launch-time molecule was destroyed, or if the user
   // has since swapped to a different molecule (its atom count/ordering may
   // no longer match what the script is about to write back).
   QtGui::Molecule* target = m_runningMolecule.data();
   if (target != nullptr && target == m_molecule) {
     m_currentScript->processCommand(target);
+||||||| parent of a1eeb4d38 (std::shared_ptr<QtGui::Molecule> m_molecule)
+  m_currentScript->processCommand(m_molecule);
+=======
+  m_currentScript->processCommand(m_molecule.get());
+>>>>>>> a1eeb4d38 (std::shared_ptr<QtGui::Molecule> m_molecule)
 
     // collect errors
     if (m_currentScript->hasErrors()) {

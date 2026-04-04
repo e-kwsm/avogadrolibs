@@ -116,7 +116,7 @@ private:
   QList<QAction*> m_actions;
   QtGui::TimedProgressDialog* m_progressDialog = nullptr;
 
-  QtGui::Molecule* m_molecule = nullptr;
+  std::shared_ptr<QtGui::Molecule> m_molecule = nullptr;
   Core::BasisSet* m_basis = nullptr;
 
   QtGui::GaussianSetConcurrent* m_gaussianConcurrent = nullptr;

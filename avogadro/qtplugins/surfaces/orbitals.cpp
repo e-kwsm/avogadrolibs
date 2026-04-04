@@ -71,7 +71,7 @@ void Orbitals::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   if (m_molecule != nullptr)
     m_molecule->disconnect(this);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
   // check if it has basis set data
   bool hasOrbitals = (m_molecule->basisSet() != nullptr);
   // sanity check if there are actually mo coefficients
@@ -87,7 +87,7 @@ void Orbitals::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
       m_dialog->hide();
   }
 
-  connect(m_molecule, SIGNAL(changed(unsigned int)),
+  connect(m_molecule.get(), SIGNAL(changed(unsigned int)),
           SLOT(moleculeChanged(unsigned int)));
 
   // Stuff we manage that will not be valid any longer
@@ -396,7 +396,7 @@ void Orbitals::calculateCube()
   if (!m_gaussianConcurrent) {
     m_gaussianConcurrent = new QtGui::GaussianSetConcurrent(this);
   }
-  m_gaussianConcurrent->setMolecule(m_molecule);
+  m_gaussianConcurrent->setMolecule(m_molecule.get());
 
   auto* watcher = &m_gaussianConcurrent->watcher();
   connect(watcher, SIGNAL(finished()), this, SLOT(calculateCubeDone()));

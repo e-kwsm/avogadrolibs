@@ -56,14 +56,14 @@ void Vibrations::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
     isVibrational = true;
 
   m_actions[0]->setEnabled(isVibrational);
-  m_molecule = mol.get();
+  m_molecule = mol;
   if (m_dialog)
     m_dialog->setMolecule(mol.get());
 
   if (isVibrational)
     openDialog();
 
-  connect(m_molecule, SIGNAL(changed(unsigned int)),
+  connect(m_molecule.get(), SIGNAL(changed(unsigned int)),
           SLOT(moleculeChanged(unsigned int)));
 }
 
@@ -78,7 +78,7 @@ void Vibrations::moleculeChanged([[maybe_unused]] unsigned int changes)
   if (currentVibrational != isVibrational) {
     m_actions[0]->setEnabled(isVibrational);
     if (m_dialog)
-      m_dialog->setMolecule(m_molecule); // update the dialog
+      m_dialog->setMolecule(m_molecule.get()); // update the dialog
     if (isVibrational)
       openDialog();
   }
@@ -237,7 +237,7 @@ void Vibrations::openDialog()
     connect(m_dialog, SIGNAL(stopAnimation()), SLOT(stopVibrationAnimation()));
   }
   if (m_molecule)
-    m_dialog->setMolecule(m_molecule);
+    m_dialog->setMolecule(m_molecule.get());
   m_dialog->show();
   m_dialog->raise();
   m_dialog->activateWindow();

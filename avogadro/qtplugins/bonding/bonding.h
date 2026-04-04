@@ -55,7 +55,7 @@ private slots:
   void setValues();
 
 private:
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
 
   double m_tolerance;
   double m_minDistance;

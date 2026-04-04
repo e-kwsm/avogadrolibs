@@ -197,8 +197,8 @@ QString OpenBabel::openBabelInfo() const
 
 void OpenBabel::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol.get() != m_molecule)
-    m_molecule = mol.get();
+  if (mol != m_molecule)
+    m_molecule = mol;
 }
 
 bool OpenBabel::readMolecule(QtGui::Molecule& mol)

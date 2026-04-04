@@ -237,7 +237,7 @@ void Surfaces::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   m_cube = nullptr;
   m_mesh1 = nullptr;
   m_mesh2 = nullptr;
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   if (mol->basisSet()) {
     m_basis = mol->basisSet();
@@ -250,7 +250,8 @@ void Surfaces::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   }
 
   if (m_molecule != nullptr) {
-    connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));
+    connect(m_molecule.get(), SIGNAL(changed(uint)),
+            SLOT(moleculeChanged(uint)));
   }
 }
 
@@ -595,13 +596,13 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
       m_gaussianConcurrent = new GaussianSetConcurrent(this);
       connectSlots = true;
     }
-    m_gaussianConcurrent->setMolecule(m_molecule);
+    m_gaussianConcurrent->setMolecule(m_molecule.get());
   } else {
     if (!m_slaterConcurrent) {
       m_slaterConcurrent = new SlaterSetConcurrent(this);
       connectSlots = true;
     }
-    m_slaterConcurrent->setMolecule(m_molecule);
+    m_slaterConcurrent->setMolecule(m_molecule.get());
   }
 
   // TODO: Check to see if this cube or surface has already been computed

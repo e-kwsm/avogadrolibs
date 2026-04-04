@@ -62,7 +62,7 @@ private slots:
 private:
   QList<QAction*> m_actions;
 
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
 
   VibrationDialog* m_dialog;
 

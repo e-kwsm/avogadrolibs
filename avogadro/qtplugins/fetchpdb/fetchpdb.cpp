@@ -43,7 +43,7 @@ QStringList FetchPDB::menuPath(QAction*) const
 
 void FetchPDB::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 bool FetchPDB::readMolecule(QtGui::Molecule& mol)

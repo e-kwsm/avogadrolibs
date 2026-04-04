@@ -57,7 +57,7 @@ private:
                                  double step = 0.1);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
 
   QScopedPointer<PdfOptionsDialog> m_pdfOptionsDialog;
   QScopedPointer<QAction> m_displayDialogAction;

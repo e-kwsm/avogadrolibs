@@ -58,7 +58,7 @@ private:
   QByteArray m_pastedData;
   Io::FileFormat* m_pastedFormat;
 
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
 
   QAction* m_copyAction;
   QAction* m_copySMILES;

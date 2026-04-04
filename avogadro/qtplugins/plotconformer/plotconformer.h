@@ -66,7 +66,7 @@ private:
   void generateVelocitiesCurve(DataSeries& x, DataSeries& y);
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
 
   QAction* m_displayDialogAction;
   std::unique_ptr<QDialog> m_dialog;

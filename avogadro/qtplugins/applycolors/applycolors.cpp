@@ -159,7 +159,7 @@ QStringList ApplyColors::menuPath(QAction* action) const
 
 void ApplyColors::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void ApplyColors::openColorDialog()

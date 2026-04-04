@@ -89,7 +89,7 @@ private slots:
 
 private:
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   // Launch-time molecule for the async script; QPointer detects deletion.
   QPointer<QtGui::Molecule> m_runningMolecule;
   // keyed on script file path or package feature key

@@ -46,7 +46,7 @@ QStringList VRML::menuPath(QAction*) const
 
 void VRML::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void VRML::setScene(Rendering::Scene* scene)
