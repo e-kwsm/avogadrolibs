@@ -105,25 +105,26 @@ QStringList Crystal::menuPath(QAction*) const
 
 void Crystal::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol.get())
+  if (m_molecule == mol)
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
   if (m_unitCellDialog)
-    m_unitCellDialog->setMolecule(m_molecule);
+    m_unitCellDialog->setMolecule(m_molecule.get());
 
   if (m_molecule)
-    connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));
+    connect(m_molecule.get(), SIGNAL(changed(uint)),
+            SLOT(moleculeChanged(uint)));
 
   updateActions();
 }
 
 void Crystal::moleculeChanged(unsigned int c)
 {
-  Q_ASSERT(m_molecule == qobject_cast<Molecule*>(sender()));
+  Q_ASSERT(m_molecule.get() == qobject_cast<Molecule*>(sender()));
 
   auto changes = static_cast<Molecule::MoleculeChanges>(c);
 
@@ -198,7 +199,7 @@ void Crystal::editUnitCell()
 {
   if (!m_unitCellDialog) {
     m_unitCellDialog = new UnitCellDialog(qobject_cast<QWidget*>(parent()));
-    m_unitCellDialog->setMolecule(m_molecule);
+    m_unitCellDialog->setMolecule(m_molecule.get());
   }
 
   m_unitCellDialog->show();

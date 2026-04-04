@@ -34,7 +34,7 @@ private slots:
   void reassign();
 
 private:
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   QAction* m_reassignAction;
 
   void updateReassignAction();

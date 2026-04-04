@@ -126,7 +126,7 @@ void Orbitals::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   if (m_molecule != nullptr)
     m_molecule->disconnect(this);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
   // Only look: a mutable basisSet() would detach a shared basis set.
   const Core::BasisSet* current = std::as_const(*m_molecule).basisSet();
   // check if it has basis set data
@@ -144,7 +144,7 @@ void Orbitals::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
       m_dialog->hide();
   }
 
-  connect(m_molecule, SIGNAL(changed(unsigned int)),
+  connect(m_molecule.get(), SIGNAL(changed(unsigned int)),
           SLOT(moleculeChanged(unsigned int)));
 
   // Stuff we manage that will not be valid any longer
@@ -477,7 +477,7 @@ void Orbitals::calculateCube()
   if (!m_gaussianConcurrent) {
     m_gaussianConcurrent = new QtGui::GaussianSetConcurrent(this);
   }
-  m_gaussianConcurrent->setMolecule(m_molecule);
+  m_gaussianConcurrent->setMolecule(m_molecule.get());
   // setMolecule() may have given the molecule a private copy of the basis set
   loadBasis();
 

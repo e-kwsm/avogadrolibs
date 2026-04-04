@@ -669,7 +669,7 @@ void Forcefield::showDialog()
 
 void Forcefield::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol == nullptr || m_molecule == mol.get())
+  if (mol == nullptr || m_molecule == mol)
     return;
 
   // Any running calculation belongs to the outgoing molecule. Cancel it and
@@ -687,7 +687,7 @@ void Forcefield::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
     disconnect(m_molecule, SIGNAL(changed(unsigned int)), this,
                SLOT(updateActions()));
 
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   // Refresh action enable-state (e.g. batch actions) when the molecule
   // changes - conformers may be added or removed.
@@ -759,7 +759,7 @@ void Forcefield::setupMethod()
         !m_method->setUserOptions(modelOptions.toStdString())) {
       qWarning() << "Failed to parse user options for force field" << methodId;
     }
-    m_method->setMolecule(m_molecule);
+    m_method->setMolecule(m_molecule.get());
   }
 }
 
@@ -776,7 +776,7 @@ void Forcefield::setupConstraints()
     // set the mask to all ones
     mask = Eigen::VectorXd::Ones(static_cast<Eigen::Index>(3 * n));
   }
-  m_method->setMolecule(m_molecule);
+  m_method->setMolecule(m_molecule.get());
   m_method->setMask(mask);
 
   // now set the constraints

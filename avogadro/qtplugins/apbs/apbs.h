@@ -50,7 +50,7 @@ private:
   bool loadOpenDxFile(const QString& fileName, QtGui::Molecule& molecule);
 
 private:
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   QList<QAction*> m_actions;
   QProgressDialog* m_progressDialog;
   ApbsDialog* m_dialog;

@@ -62,7 +62,7 @@ QStringList ImportPQR::menuPath(QAction*) const
 
 void ImportPQR::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 bool ImportPQR::readMolecule(QtGui::Molecule& mol)

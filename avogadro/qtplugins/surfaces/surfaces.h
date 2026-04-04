@@ -169,7 +169,7 @@ private:
   // Parented to parent() when that is a widget, which may delete it first.
   QPointer<QtGui::TimedProgressDialog> m_progressDialog;
 
-  QtGui::Molecule* m_molecule = nullptr;
+  std::shared_ptr<QtGui::Molecule> m_molecule = nullptr;
   // Read-only: refreshed from const access, so that looking never detaches
   // the molecule's shared basis set. Writes fetch m_molecule->basisSet().
   const Core::BasisSet* m_basis = nullptr;
