@@ -47,7 +47,7 @@ public:
   bool eventFilter(QObject* object, QEvent* event) override;
 
 public slots:
-  void setMolecule(QtGui::Molecule* mol) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) override;
 
   void moleculeChanged(unsigned int changes);
 
