@@ -182,7 +182,7 @@ QStringList CopyPaste::menuPath(QAction* action) const
 
 void CopyPaste::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 bool CopyPaste::copyCJSON()
@@ -265,7 +265,7 @@ bool CopyPaste::copy(Io::FileFormat* format)
     return false;
 
   std::string output;
-  const QtGui::Molecule* copy = m_molecule;
+  const QtGui::Molecule* copy = m_molecule.get();
   std::unique_ptr<QtGui::Molecule> selection; // owns the copy, if any
 
   if (!m_molecule->isSelectionEmpty()) {

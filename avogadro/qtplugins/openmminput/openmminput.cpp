@@ -51,7 +51,7 @@ void OpenMMInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
     m_dialog->setMolecule(mol.get());
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 bool OpenMMInput::readMolecule(QtGui::Molecule& mol)
@@ -76,7 +76,7 @@ void OpenMMInput::menuActivated()
   if (!m_dialog) {
     m_dialog = new OpenMMInputDialog(qobject_cast<QWidget*>(parent()));
   }
-  m_dialog->setMolecule(m_molecule);
+  m_dialog->setMolecule(m_molecule.get());
   m_dialog->show();
   m_dialog->raise();
   m_dialog->activateWindow();

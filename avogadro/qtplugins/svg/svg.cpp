@@ -48,7 +48,7 @@ QStringList SVG::menuPath(QAction*) const
 
 void SVG::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void SVG::setScene(Rendering::Scene* scene)

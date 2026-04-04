@@ -390,7 +390,8 @@ void Surfaces::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   }
 
   if (m_molecule != nullptr) {
-    connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));
+    connect(m_molecule.get(), SIGNAL(changed(uint)),
+            SLOT(moleculeChanged(uint)));
   }
 }
 
@@ -1003,13 +1004,13 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
       m_gaussianConcurrent = new GaussianSetConcurrent(this);
       connectSlots = true;
     }
-    m_gaussianConcurrent->setMolecule(m_molecule);
+    m_gaussianConcurrent->setMolecule(m_molecule.get());
   } else {
     if (!m_slaterConcurrent) {
       m_slaterConcurrent = new SlaterSetConcurrent(this);
       connectSlots = true;
     }
-    m_slaterConcurrent->setMolecule(m_molecule);
+    m_slaterConcurrent->setMolecule(m_molecule.get());
   }
   // setMolecule() may have given the molecule a private copy of the basis set
   m_basis = std::as_const(*m_molecule).basisSet();

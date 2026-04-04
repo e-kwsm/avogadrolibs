@@ -51,7 +51,7 @@ void LammpsInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
     m_dialog->setMolecule(mol.get());
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 bool LammpsInput::readMolecule(QtGui::Molecule& mol)
@@ -76,7 +76,7 @@ void LammpsInput::menuActivated()
   if (!m_dialog) {
     m_dialog = new LammpsInputDialog(qobject_cast<QWidget*>(parent()));
   }
-  m_dialog->setMolecule(m_molecule);
+  m_dialog->setMolecule(m_molecule.get());
   m_dialog->show();
   m_dialog->raise();
   m_dialog->activateWindow();

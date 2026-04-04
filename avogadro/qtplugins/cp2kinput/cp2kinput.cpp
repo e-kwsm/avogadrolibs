@@ -54,7 +54,7 @@ void Cp2kInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
     m_dialog->setMolecule(mol.get());
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void Cp2kInput::openJobOutput(const JobObject& job)
@@ -101,7 +101,7 @@ void Cp2kInput::menuActivated()
     connect(m_dialog, SIGNAL(openJobOutput(Avogadro::MoleQueue::JobObject)),
             this, SLOT(openJobOutput(Avogadro::MoleQueue::JobObject)));
   }
-  m_dialog->setMolecule(m_molecule);
+  m_dialog->setMolecule(m_molecule.get());
   m_dialog->show();
   m_dialog->raise();
   m_dialog->activateWindow();

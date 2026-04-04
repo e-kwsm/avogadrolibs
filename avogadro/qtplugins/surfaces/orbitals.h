@@ -177,7 +177,7 @@ private:
 
   QAction* m_action;
 
-  QtGui::Molecule* m_molecule = nullptr;
+  std::shared_ptr<QtGui::Molecule> m_molecule = nullptr;
   // Read-only: refreshed from const access, so that looking never detaches
   // the molecule's shared basis set. Owning, so it outlives the molecule
   // dropping or replacing it.
