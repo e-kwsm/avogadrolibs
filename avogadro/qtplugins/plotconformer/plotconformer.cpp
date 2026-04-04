@@ -56,15 +56,15 @@ QStringList PlotConformer::menuPath(QAction*) const
   return QStringList() << tr("&Analyze");
 }
 
-void PlotConformer::setMolecule(QtGui::Molecule* mol)
+void PlotConformer::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol)
+  if (m_molecule == mol.get())
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   if (m_molecule)
     connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));

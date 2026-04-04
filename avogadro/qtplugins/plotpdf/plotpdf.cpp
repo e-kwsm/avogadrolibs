@@ -54,15 +54,15 @@ QStringList PlotPdf::menuPath(QAction*) const
   return QStringList() << tr("&Crystal");
 }
 
-void PlotPdf::setMolecule(QtGui::Molecule* mol)
+void PlotPdf::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol)
+  if (m_molecule == mol.get())
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   if (m_molecule)
     connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));
