@@ -44,9 +44,9 @@ QStringList PLY::menuPath(QAction*) const
   return QStringList() << tr("&File") << tr("&Export");
 }
 
-void PLY::setMolecule(QtGui::Molecule* mol)
+void PLY::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void PLY::setScene(Rendering::Scene* scene)
