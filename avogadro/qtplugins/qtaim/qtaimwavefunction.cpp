@@ -343,7 +343,7 @@ bool QTAIMWavefunction::initializeWithWFNFile(const QString& fileName)
   return m_initializationSuccessful;
 }
 
-bool QTAIMWavefunction::initializeWithMoleculeProperties(QtGui::Molecule*& mol)
+bool QTAIMWavefunction::initializeWithMoleculeProperties(QtGui::Molecule* mol)
 {
 
   if (mol->property("QTAIMNumberOfMolecularOrbitals").isValid()) {
