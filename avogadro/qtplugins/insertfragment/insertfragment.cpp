@@ -60,9 +60,9 @@ QStringList InsertFragment::menuPath(QAction* action) const
     return QStringList() << tr("&Build") << tr("&Insert");
 }
 
-void InsertFragment::setMolecule(QtGui::Molecule* mol)
+void InsertFragment::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void InsertFragment::showDialog()
