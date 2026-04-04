@@ -134,7 +134,7 @@ QStringList Select::menuPath(QAction*) const
 
 void Select::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 bool Select::evalSelect(bool input, Index index) const
@@ -570,7 +570,8 @@ void Select::createLayerFromSelection()
   Molecule::MoleculeChanges changes =
     Molecule::Atoms | Molecule::Layers | Molecule::Modified;
 
-  auto& layerInfo = Core::LayerManager::getMoleculeInfo(m_molecule)->layer;
+  auto& layerInfo =
+    Core::LayerManager::getMoleculeInfo(m_molecule.get())->layer;
   QtGui::RWLayerManager rwLayerManager;
   // addLayer() makes m_molecule the active molecule if it is not already, so
   // the layer lands on the molecule whose atoms are moved into it below.

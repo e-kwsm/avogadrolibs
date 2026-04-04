@@ -62,7 +62,7 @@ private:
   void addBonds(const std::vector<std::pair<Index, Index>>& newBonds,
                 const QString& undoText);
 
-  QtGui::Molecule* m_molecule = nullptr;
+  std::shared_ptr<QtGui::Molecule> m_molecule = nullptr;
 
   double m_tolerance;
   double m_minDistance;
