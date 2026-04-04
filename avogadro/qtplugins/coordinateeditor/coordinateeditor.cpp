@@ -34,7 +34,7 @@ QStringList CoordinateEditor::menuPath(QAction*) const
 
 void CoordinateEditor::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
   if (m_dialog)
     m_dialog->setMolecule(mol.get());
 }
@@ -43,7 +43,7 @@ void CoordinateEditor::triggered()
 {
   if (!m_dialog) {
     m_dialog = new CoordinateEditorDialog(qobject_cast<QWidget*>(parent()));
-    m_dialog->setMolecule(m_molecule);
+    m_dialog->setMolecule(m_molecule.get());
     connect(m_dialog, SIGNAL(pastedMolecule()), SLOT(pastedMolecule()));
   }
 
