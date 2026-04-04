@@ -44,9 +44,9 @@ QStringList POVRay::menuPath(QAction*) const
   return QStringList() << tr("&File") << tr("&Export");
 }
 
-void POVRay::setMolecule(QtGui::Molecule* mol)
+void POVRay::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void POVRay::setScene(Rendering::Scene* scene)
