@@ -155,7 +155,7 @@ public slots:
   /**
    * Called when the current molecule changes.
    */
-  virtual void setMolecule(const std::shared_ptr<QtGui::Molecule>& mol) = 0;
+  virtual void setMolecule(QtGui::Molecule* mol) = 0;
   virtual void setEditMolecule(QtGui::RWMolecule*) {}
 
   /**
