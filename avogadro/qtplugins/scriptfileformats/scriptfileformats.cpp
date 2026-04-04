@@ -39,7 +39,7 @@ QStringList ScriptFileFormats::menuPath(QAction*) const
   return QStringList();
 }
 
-void ScriptFileFormats::setMolecule(QtGui::Molecule*) {}
+void ScriptFileFormats::setMolecule(const std::shared_ptr<QtGui::Molecule>&) {}
 
 void ScriptFileFormats::refreshFileFormats()
 {
