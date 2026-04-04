@@ -308,7 +308,7 @@ bool Surfaces::handleCommand(const QString& command, const QVariantMap& options)
   return false;
 }
 
-void Surfaces::setMolecule(QtGui::Molecule* mol)
+void Surfaces::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_molecule != nullptr) {
     m_molecule->disconnect(this);
@@ -317,7 +317,7 @@ void Surfaces::setMolecule(QtGui::Molecule* mol)
   m_cube = nullptr;
   m_mesh1 = nullptr;
   m_mesh2 = nullptr;
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   if (mol == nullptr) {
     m_basis = nullptr;
