@@ -147,8 +147,7 @@ QString ScriptChargeModel::scriptFilePath() const
 std::shared_ptr<const Avogadro::Calc::ChargeModel>
 ScriptChargeModel::newInstance() const
 {
-  std::shared_ptr<Avogadro::Calc::ChargeModel> copy =
-    std::make_shared<ScriptChargeModel>();
+  auto copy = std::make_shared<ScriptChargeModel>();
   copy->m_interpreter->setPackageInfo(m_interpreter->packageDir(),
                                       m_interpreter->packageCommand(),
                                       m_interpreter->packageIdentifier());
