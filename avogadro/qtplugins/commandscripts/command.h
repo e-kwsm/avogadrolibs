@@ -156,7 +156,7 @@ private:
   void releaseSceneFile();
 
   QList<QAction*> m_actions;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   // The active view's camera, owned by the renderer; null until a view exists.
   Rendering::Camera* m_camera = nullptr;
   // The active view's scene, owned by its renderer; null until a view exists.

@@ -56,7 +56,7 @@ private:
       radius = (bonds <= 0 ? 1 : bonds);
     }
   };
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   Rendering::Scene* m_scene;
   Rendering::Camera* m_camera;
 

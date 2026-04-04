@@ -84,18 +84,18 @@ QStringList Symmetry::menuPath(QAction*) const
 
 void Symmetry::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol.get())
+  if (m_molecule == mol)
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
   if (m_symmetryWidget)
-    m_symmetryWidget->setMolecule(m_molecule);
+    m_symmetryWidget->setMolecule(m_molecule.get());
 
   if (m_molecule)
-    connect(m_molecule, &QtGui::Molecule::changed, this,
+    connect(m_molecule.get(), &QtGui::Molecule::changed, this,
             &Symmetry::moleculeChanged);
 
   updateActions();
@@ -104,7 +104,7 @@ void Symmetry::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 
 void Symmetry::moleculeChanged(unsigned int c)
 {
-  Q_ASSERT(m_molecule == qobject_cast<Molecule*>(sender()));
+  Q_ASSERT(m_molecule.get() == qobject_cast<Molecule*>(sender()));
 
   auto changes = static_cast<Molecule::MoleculeChanges>(c);
 
@@ -154,7 +154,7 @@ void Symmetry::viewSymmetry()
 {
   if (!m_symmetryWidget) {
     m_symmetryWidget = new SymmetryWidget(qobject_cast<QWidget*>(parent()));
-    m_symmetryWidget->setMolecule(m_molecule);
+    m_symmetryWidget->setMolecule(m_molecule.get());
     connect(m_symmetryWidget, &SymmetryWidget::detectSymmetry, this,
             &Symmetry::detectSymmetry);
     connect(m_symmetryWidget, &SymmetryWidget::symmetrizeMolecule, this,

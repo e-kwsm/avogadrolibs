@@ -50,7 +50,7 @@ QStringList Centroid::menuPath(QAction*) const
 
 void Centroid::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void Centroid::addCentroid()

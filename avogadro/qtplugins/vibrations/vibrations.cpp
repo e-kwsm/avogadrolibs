@@ -63,7 +63,7 @@ void Vibrations::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   m_modeConformer = -1; // force the modes to be re-read for the new molecule
   refreshModes();
 
-  connect(m_molecule, &QtGui::Molecule::changed, this,
+  connect(m_molecule.get(), &QtGui::Molecule::changed, this,
           &Vibrations::moleculeChanged);
   connect(m_molecule, &QtGui::Molecule::animationPlaybackClaimed, this,
           &Vibrations::animationPlaybackClaimed);
