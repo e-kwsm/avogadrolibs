@@ -48,7 +48,7 @@ QStringList Vibrations::menuPath(QAction*) const
   return path;
 }
 
-void Vibrations::setMolecule(QtGui::Molecule* mol)
+void Vibrations::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (mol == nullptr)
     return;
@@ -59,7 +59,7 @@ void Vibrations::setMolecule(QtGui::Molecule* mol)
     m_molecule->disconnect(this);
   }
 
-  m_molecule = mol;
+  m_molecule = mol.get();
   m_modeConformer = -1; // force the modes to be re-read for the new molecule
   refreshModes();
 
