@@ -42,14 +42,15 @@ QStringList CustomElements::menuPath(QAction*) const
 
 void CustomElements::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule != mol.get()) {
+  if (m_molecule != mol) {
     if (m_molecule)
       m_molecule->disconnect(this);
 
-    m_molecule = mol.get();
+    m_molecule = mol;
 
     if (m_molecule)
-      connect(m_molecule, SIGNAL(changed(uint)), SLOT(moleculeChanged(uint)));
+      connect(m_molecule.get(), SIGNAL(changed(uint)),
+              SLOT(moleculeChanged(uint)));
 
     updateReassignAction();
   }

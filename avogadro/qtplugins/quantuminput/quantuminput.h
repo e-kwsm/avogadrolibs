@@ -86,7 +86,7 @@ private slots:
 private:
   void updateActionStates();
 
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   // keyed on package feature key
   QMap<QString, MoleQueue::InputGeneratorDialog*> m_dialogs;
   QMultiHash<QString, QAction*> m_packageActions;

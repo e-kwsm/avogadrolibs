@@ -48,7 +48,7 @@ private slots:
 
 private:
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   QDialog* m_dialog;
   QNetworkAccessManager* m_network;
   QNetworkReply* m_pendingReply = nullptr;

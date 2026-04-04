@@ -67,7 +67,7 @@ void Vibrations::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
   if (isVibrational)
     openDialog();
 
-  connect(m_molecule, SIGNAL(changed(unsigned int)),
+  connect(m_molecule.get(), SIGNAL(changed(unsigned int)),
           SLOT(moleculeChanged(unsigned int)));
 }
 

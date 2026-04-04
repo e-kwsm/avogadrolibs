@@ -55,7 +55,7 @@ private:
   static bool sdfHasThreeDCoordinates(const QByteArray& data);
 
   QAction* m_action;
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   QNetworkAccessManager* m_network;
   QString m_moleculeName;
   QByteArray m_moleculeData;

@@ -46,7 +46,7 @@ private slots:
   void unfocus();
 
 private:
-  QtGui::Molecule* m_molecule;
+  std::shared_ptr<QtGui::Molecule> m_molecule;
   Rendering::Camera* m_camera;
   Rendering::Scene* m_scene;
   QWidget* m_glWidget;

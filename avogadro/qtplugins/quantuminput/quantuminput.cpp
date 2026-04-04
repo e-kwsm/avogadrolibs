@@ -83,17 +83,17 @@ QStringList QuantumInput::menuPath(QAction* action) const
 
 void QuantumInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol.get())
+  if (m_molecule == mol)
     return;
 
   if (m_molecule)
-    disconnect(m_molecule, &QtGui::Molecule::changed, this,
+    disconnect(m_molecule.get(), &QtGui::Molecule::changed, this,
                &QuantumInput::moleculeChanged);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   if (m_molecule)
-    connect(m_molecule, &QtGui::Molecule::changed, this,
+    connect(m_molecule.get(), &QtGui::Molecule::changed, this,
             &QuantumInput::moleculeChanged);
 
   foreach (InputGeneratorDialog* dlg, m_dialogs.values())
@@ -282,7 +282,7 @@ void QuantumInput::menuActivated()
     m_dialogs.insert(key, dlg);
   }
 
-  dlg->setMolecule(m_molecule);
+  dlg->setMolecule(m_molecule.get());
   dlg->show();
   dlg->raise();
   dlg->activateWindow();
