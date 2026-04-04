@@ -47,11 +47,11 @@ QStringList LammpsInput::menuPath(QAction*) const
   return path;
 }
 
-void LammpsInput::setMolecule(QtGui::Molecule* mol)
+void LammpsInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
-    m_dialog->setMolecule(mol);
-  m_molecule = mol;
+    m_dialog->setMolecule(mol.get());
+  m_molecule = mol.get();
 }
 
 bool LammpsInput::readMolecule(QtGui::Molecule& mol)
