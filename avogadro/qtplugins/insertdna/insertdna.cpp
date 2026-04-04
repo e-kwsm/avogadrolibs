@@ -64,7 +64,7 @@ QStringList InsertDna::menuPath(QAction*) const
 
 void InsertDna::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void InsertDna::showDialog()

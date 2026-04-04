@@ -88,19 +88,20 @@ QStringList PropertyTables::menuPath(QAction*) const
 
 void PropertyTables::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol.get() == m_molecule)
+  if (mol == m_molecule)
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol.get();
+  m_molecule = mol;
 
   updateActions();
 
   // update if the molecule changes
   if (m_molecule)
-    connect(m_molecule, SIGNAL(changed(unsigned int)), SLOT(updateActions()));
+    connect(m_molecule.get(), SIGNAL(changed(unsigned int)),
+            SLOT(updateActions()));
 }
 
 void PropertyTables::updateActions()
@@ -142,7 +143,7 @@ void PropertyTables::showDialog()
 
   PropertyType i = static_cast<PropertyType>(action->data().toInt());
   auto* model = new PropertyModel(i);
-  model->setMolecule(m_molecule);
+  model->setMolecule(m_molecule.get());
   // view will delete itself & model in PropertiesView::hideEvent using
   // deleteLater().
   auto* view = new PropertyView(i, dialog);
@@ -154,7 +155,7 @@ void PropertyTables::showDialog()
   // this role will received direct floating-point numbers from the model
   proxyModel->setSortRole(Qt::UserRole);
 
-  view->setMolecule(m_molecule);
+  view->setMolecule(m_molecule.get());
   view->setModel(proxyModel);
   view->setSourceModel(model);
   // Start on whichever conformer is currently displayed, not always the first.

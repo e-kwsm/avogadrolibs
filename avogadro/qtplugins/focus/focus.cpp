@@ -42,7 +42,7 @@ QStringList Focus::menuPath(QAction*) const
 
 void Focus::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol.get();
+  m_molecule = mol;
 }
 
 void Focus::setCamera(Rendering::Camera* camera)
