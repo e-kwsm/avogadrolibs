@@ -86,12 +86,12 @@ QStringList PropertyTables::menuPath(QAction*) const
   return QStringList() << tr("&Analyze") << tr("&Properties");
 }
 
-void PropertyTables::setMolecule(QtGui::Molecule* mol)
+void PropertyTables::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol == m_molecule)
+  if (mol.get() == m_molecule)
     return;
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   updateActions();
 
