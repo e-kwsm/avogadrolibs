@@ -62,9 +62,9 @@ QStringList LineFormatInput::menuPath(QAction*) const
   return QStringList() << tr("&Build") << tr("&Insert");
 }
 
-void LineFormatInput::setMolecule(QtGui::Molecule* mol)
+void LineFormatInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void LineFormatInput::showDialog()
