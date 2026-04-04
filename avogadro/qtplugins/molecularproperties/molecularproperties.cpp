@@ -60,9 +60,10 @@ QStringList MolecularProperties::menuPath(QAction*) const
   return QStringList() << tr("&Analyze") << tr("&Properties");
 }
 
-void MolecularProperties::setMolecule(QtGui::Molecule* mol)
+void MolecularProperties::setMolecule(
+  const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol == m_molecule)
+  if (mol.get() == m_molecule)
     return;
 
   // Cancel any pending network request to avoid applying the wrong name
@@ -78,7 +79,7 @@ void MolecularProperties::setMolecule(QtGui::Molecule* mol)
                &MolecularProperties::updateName);
   }
 
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   if (m_molecule) {
     if (m_model)
