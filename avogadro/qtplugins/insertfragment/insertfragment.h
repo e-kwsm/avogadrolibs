@@ -38,7 +38,7 @@ public:
   QStringList menuPath(QAction*) const override;
 
 public slots:
-  void setMolecule(QtGui::Molecule*) override;
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>&) override;
 
 private slots:
   void showDialog();
