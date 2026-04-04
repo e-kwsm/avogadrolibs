@@ -298,7 +298,7 @@ QImage GLWidget::grabFramebuffer()
 }
 #endif
 
-void GLWidget::setMolecule(QtGui::Molecule* mol)
+void GLWidget::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   clearScene();
   d->invalidateTree();
@@ -309,9 +309,9 @@ void GLWidget::setMolecule(QtGui::Molecule* mol)
     disconnect(m_molecule, &QtGui::Molecule::changed, this,
                &GLWidget::moleculeChanged);
   }
-  m_molecule = mol;
+  m_molecule = mol.get();
   foreach (QtGui::ToolPlugin* tool, m_tools)
-    tool->setMolecule(m_molecule);
+    tool->setMolecule(m_molecule.get());
 
   if (m_molecule != nullptr) {
     // update properties like dipole rendering
