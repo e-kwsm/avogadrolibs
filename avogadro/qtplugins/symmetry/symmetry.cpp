@@ -80,15 +80,15 @@ QStringList Symmetry::menuPath(QAction*) const
   return QStringList() << tr("&Analyze") << tr("&Properties");
 }
 
-void Symmetry::setMolecule(QtGui::Molecule* mol)
+void Symmetry::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (m_molecule == mol)
+  if (m_molecule == mol.get())
     return;
 
   if (m_molecule)
     m_molecule->disconnect(this);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
   if (m_symmetryWidget)
     m_symmetryWidget->setMolecule(m_molecule);
 
