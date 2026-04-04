@@ -63,7 +63,8 @@ public:
 
   bool isValid() const { return m_valid; }
 
-  ChargeModel* newInstance() const override;
+  std::shared_ptr<const Avogadro::Calc::ChargeModel> newInstance()
+    const override;
 
   std::string identifier() const override { return m_identifier; }
 
