@@ -41,9 +41,9 @@ QStringList FetchPDB::menuPath(QAction*) const
   return QStringList() << tr("&File") << tr("&Import");
 }
 
-void FetchPDB::setMolecule(QtGui::Molecule* mol)
+void FetchPDB::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 bool FetchPDB::readMolecule(QtGui::Molecule& mol)
