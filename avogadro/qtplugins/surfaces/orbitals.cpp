@@ -118,15 +118,15 @@ QStringList Orbitals::menuPath(QAction*) const
   return path;
 }
 
-void Orbitals::setMolecule(QtGui::Molecule* mol)
+void Orbitals::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  if (mol == nullptr)
+  if (mol.get() == nullptr)
     return;
 
   if (m_molecule != nullptr)
     m_molecule->disconnect(this);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
   // Only look: a mutable basisSet() would detach a shared basis set.
   const Core::BasisSet* current = std::as_const(*m_molecule).basisSet();
   // check if it has basis set data
