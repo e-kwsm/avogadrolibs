@@ -39,14 +39,14 @@ GLWidget::GLWidget(QWidget* p)
 
 GLWidget::~GLWidget() {}
 
-void GLWidget::setMolecule(QtGui::Molecule* mol)
+void GLWidget::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   clearScene();
   if (m_molecule)
     disconnect(m_molecule, nullptr, nullptr, nullptr);
-  m_molecule = mol;
+  m_molecule = mol.get();
   foreach (QtGui::ToolPlugin* tool, m_tools)
-    tool->setMolecule(m_molecule);
+    tool->setMolecule(m_molecule.get());
 
   if (m_molecule != nullptr) {
     // update properties like dipole rendering

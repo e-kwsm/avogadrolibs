@@ -55,7 +55,7 @@ public:
   ~GLWidget() override;
 
   /** Set the molecule the widget will render. */
-  void setMolecule(QtGui::Molecule* molecule);
+  void setMolecule(const std::shared_ptr<QtGui::Molecule>& molecule);
 
   /**
    * Get the molecule being rendered by the widget.
