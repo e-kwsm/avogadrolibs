@@ -108,7 +108,7 @@ public:
 
   bool initializeWithWFNFile(const QString& fileName);
   //    bool initializeWithMoleculeProperties( Molecule &mol );
-  bool initializeWithMoleculeProperties(QtGui::Molecule*& mol);
+  bool initializeWithMoleculeProperties(QtGui::Molecule* mol);
   // TODO initialize with Avogadro general wavefunction
 
   qint64 numberOfMolecularOrbitals() const
