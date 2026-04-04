@@ -47,11 +47,11 @@ QStringList OpenMMInput::menuPath(QAction*) const
   return path;
 }
 
-void OpenMMInput::setMolecule(QtGui::Molecule* mol)
+void OpenMMInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
-    m_dialog->setMolecule(mol);
-  m_molecule = mol;
+    m_dialog->setMolecule(mol.get());
+  m_molecule = mol.get();
 }
 
 bool OpenMMInput::readMolecule(QtGui::Molecule& mol)
