@@ -87,9 +87,9 @@ QStringList CopyPaste::menuPath(QAction* action) const
     return QStringList() << tr("&Edit") << tr("Copy As");
 }
 
-void CopyPaste::setMolecule(QtGui::Molecule* mol)
+void CopyPaste::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 bool CopyPaste::copyCJSON()
