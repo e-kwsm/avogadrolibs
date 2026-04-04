@@ -44,13 +44,13 @@ QStringList Spectra::menuPath(QAction*) const
   return path;
 }
 
-void Spectra::setMolecule(QtGui::Molecule* mol)
+void Spectra::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_molecule != nullptr)
     m_molecule->disconnect(this);
 
   // extract vibrational and other spectra
-  m_molecule = mol;
+  m_molecule = mol.get();
 
   if (m_molecule == nullptr) {
     return;
