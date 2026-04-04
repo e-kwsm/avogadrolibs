@@ -44,9 +44,9 @@ QStringList VRML::menuPath(QAction*) const
   return QStringList() << tr("&File") << tr("&Export");
 }
 
-void VRML::setMolecule(QtGui::Molecule* mol)
+void VRML::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
-  m_molecule = mol;
+  m_molecule = mol.get();
 }
 
 void VRML::setScene(Rendering::Scene* scene)

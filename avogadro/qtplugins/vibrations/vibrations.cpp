@@ -45,7 +45,7 @@ QStringList Vibrations::menuPath(QAction*) const
   return path;
 }
 
-void Vibrations::setMolecule(QtGui::Molecule* mol)
+void Vibrations::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (mol == nullptr)
     return;
@@ -53,7 +53,7 @@ void Vibrations::setMolecule(QtGui::Molecule* mol)
   if (m_molecule != nullptr)
     m_molecule->disconnect(this);
 
-  m_molecule = mol;
+  m_molecule = mol.get();
   // Frames belong to the molecule they were built from.
   resetAnimation();
   m_dialogConformer = -1; // force the table to rebuild for the new molecule
