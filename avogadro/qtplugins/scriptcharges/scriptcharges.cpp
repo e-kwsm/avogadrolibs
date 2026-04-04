@@ -89,7 +89,7 @@ void ScriptCharges::registerFeature(const QString& type,
   if (m_packageModels.contains(featureKey))
     return;
 
-  auto* model = new ScriptChargeModel();
+  auto model = std::make_shared<ScriptChargeModel>();
   model->setPackageInfo(packageDir, command, identifier);
   model->readMetaData(metadata);
   if (model->isValid()) {
@@ -97,13 +97,10 @@ void ScriptCharges::registerFeature(const QString& type,
     if (!Calc::ChargeManager::registerModel(model->newInstance())) {
       qDebug() << "Could not register charge model" << identifier
                << "due to name conflict.";
-      delete model;
     } else {
       m_models.push_back(model);
       m_packageModels.insert(featureKey, managerId);
     }
-  } else {
-    delete model;
   }
 }
 
@@ -126,7 +123,7 @@ void ScriptCharges::unregisterFeature(const QString& type,
     Calc::ChargeManager::unregisterModel(managerId.toStdString());
     for (int i = m_models.size() - 1; i >= 0; --i) {
       if (QString::fromStdString(m_models[i]->identifier()) == managerId)
-        delete m_models.takeAt(i);
+        m_models.takeAt(i).reset();
     }
   }
 }
