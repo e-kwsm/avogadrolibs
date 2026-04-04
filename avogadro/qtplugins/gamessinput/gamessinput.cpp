@@ -51,11 +51,11 @@ QStringList GamessInput::menuPath(QAction*) const
   return path;
 }
 
-void GamessInput::setMolecule(QtGui::Molecule* mol)
+void GamessInput::setMolecule(const std::shared_ptr<QtGui::Molecule>& mol)
 {
   if (m_dialog)
-    m_dialog->setMolecule(mol);
-  m_molecule = mol;
+    m_dialog->setMolecule(mol.get());
+  m_molecule = mol.get();
 
   bool isPeriodic = (m_molecule && m_molecule->unitCell() != nullptr);
 
