@@ -172,6 +172,8 @@ bool Mesh::clear()
 
 Mesh& Mesh::operator=(const Mesh& other)
 {
+  if (this == &other)
+    return *this;
   m_vertices = other.m_vertices;
   m_normals = other.m_normals;
   m_colors = other.m_colors;
