@@ -49,6 +49,8 @@ Molecule::Molecule(const Core::Molecule& other)
 
 Molecule& Molecule::operator=(const Molecule& other)
 {
+  if (this == &other)
+    return *this;
   // Call the base classes assignment operator
   Core::Molecule::operator=(other);
 
