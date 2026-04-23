@@ -225,7 +225,7 @@ BenchmarkResult benchmarkFile(const fs::path& moleculePath,
     return result;
   }
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   if (!basis) {
     result.error = "No Gaussian basis set found";
     return result;
