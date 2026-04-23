@@ -38,7 +38,7 @@ bool loadFchk(const std::string& path, Molecule& molecule)
   GaussianFchk format;
   if (!format.readFile(path, molecule))
     return false;
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   if (!basis)
     return false;
   basis->initCalculation();
@@ -122,7 +122,7 @@ TEST(GaussianSetToolsTest, waterMolecularOrbital)
   GaussianSetTools tools(&molecule);
   auto points = generateTestPoints(molecule);
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   unsigned int nMOs = basis->molecularOrbitalCount();
   ASSERT_GT(nMOs, 0u);
@@ -193,7 +193,7 @@ TEST(GaussianSetToolsTest, waterCubeConsistency)
 
   GaussianSetTools tools(&molecule);
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   int homo = static_cast<int>(basis->electronCount(BasisSet::Paired)) / 2 - 1;
 
@@ -233,7 +233,7 @@ TEST(GaussianSetToolsTest, waterUnrestrictedAlphaBeta)
   ASSERT_TRUE(
     loadFchk(AVOGADRO_DATA "/data/fchk/h2o-unrestricted.fchk", molecule));
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   ASSERT_GT(basis->molecularOrbitalCount(BasisSet::Alpha), 0u);
   ASSERT_GT(basis->molecularOrbitalCount(BasisSet::Beta), 0u);
@@ -288,7 +288,7 @@ TEST(GaussianSetToolsTest, benzeneMolecularOrbital)
 
   GaussianSetTools tools(&molecule);
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   int homo = static_cast<int>(basis->electronCount(BasisSet::Paired)) / 2 - 1;
   ASSERT_GE(homo, 0);
@@ -333,7 +333,7 @@ TEST(GaussianSetToolsTest, no2CartesianD)
   Molecule molecule;
   ASSERT_TRUE(loadFchk(AVOGADRO_DATA "/data/fchk/no2.fchk", molecule));
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   // Verify D shells are present
@@ -374,7 +374,7 @@ TEST(GaussianSetToolsTest, pureD5Shells)
   Molecule molecule;
   ASSERT_TRUE(loadFchk(AVOGADRO_DATA "/data/fchk/d-only.fchk", molecule));
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   // Verify D5 shells are present
