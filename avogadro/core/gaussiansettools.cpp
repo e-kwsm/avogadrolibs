@@ -545,7 +545,7 @@ namespace Avogadro::Core {
 GaussianSetTools::GaussianSetTools(Molecule* mol) : m_molecule(mol)
 {
   if (m_molecule) {
-    m_basis = dynamic_cast<GaussianSet*>(m_molecule->basisSet());
+    m_basis = std::dynamic_pointer_cast<GaussianSet>(m_molecule->basisSet());
 
     // Initialize the basis set calculation once (normalizes coefficients, etc.)
     // Then build pre-packed shell data for fast evaluation
@@ -1112,7 +1112,7 @@ bool GaussianSetTools::isValid() const
 {
   // Only look: the mutable basisSet() would detach a shared basis set.
   return m_valid && (m_molecule != nullptr) &&
-         (dynamic_cast<const GaussianSet*>(
+         (std::dynamic_pointer_cast<const GaussianSet>(
             std::as_const(*m_molecule).basisSet()) != nullptr);
 }
 
