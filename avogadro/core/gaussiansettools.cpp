@@ -516,7 +516,7 @@ namespace Avogadro::Core {
 GaussianSetTools::GaussianSetTools(Molecule* mol) : m_molecule(mol)
 {
   if (m_molecule) {
-    m_basis = dynamic_cast<GaussianSet*>(m_molecule->basisSet());
+    m_basis = std::dynamic_pointer_cast<GaussianSet>(m_molecule->basisSet());
 
     // Initialize the basis set calculation once (normalizes coefficients, etc.)
     // Then build pre-packed shell data for fast evaluation
@@ -980,8 +980,8 @@ double GaussianSetTools::calculateSpinDensity(const Vector3& position) const
 
 bool GaussianSetTools::isValid() const
 {
-  return (m_molecule != nullptr) &&
-         (dynamic_cast<GaussianSet*>(m_molecule->basisSet()) != nullptr);
+  return (m_molecule != nullptr) && (std::dynamic_pointer_cast<GaussianSet>(
+                                       m_molecule->basisSet()) != nullptr);
 }
 
 inline void GaussianSetTools::calculateValues(const Vector3& position,
