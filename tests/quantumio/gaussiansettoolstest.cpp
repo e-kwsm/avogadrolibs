@@ -406,7 +406,7 @@ TEST(GaussianSetToolsTest, pureF7Shells)
   Molecule molecule;
   ASSERT_TRUE(loadFchk(AVOGADRO_DATA "/data/fchk/f-only.fchk", molecule));
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   // Verify F7 shells are present
@@ -443,7 +443,7 @@ TEST(GaussianSetToolsTest, coHighAngularMomentumLoad)
   Molecule molecule;
   ASSERT_TRUE(loadFchk(AVOGADRO_DATA "/data/fchk/CO-cc-6Z.fchk", molecule));
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   // Check which shell types are present
@@ -493,7 +493,7 @@ TEST(GaussianSetToolsTest, waterMOOrthogonality)
 
   GaussianSetTools tools(&molecule);
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   unsigned int nMOs = basis->molecularOrbitalCount();
   ASSERT_GE(nMOs, 2u);
@@ -551,7 +551,7 @@ TEST(GaussianSetToolsTest, waterDensityIntegration)
 
   GaussianSetTools tools(&molecule);
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   unsigned int nElectrons = basis->electronCount(BasisSet::Paired);
   ASSERT_GT(nElectrons, 0u);
@@ -627,7 +627,7 @@ TEST(GaussianSetToolsTest, differentMOsGiveDifferentValues)
 
   GaussianSetTools tools(&molecule);
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   unsigned int nMOs = basis->molecularOrbitalCount();
   ASSERT_GE(nMOs, 3u);
@@ -659,7 +659,7 @@ TEST(GaussianSetToolsTest, c60SmokeTest)
   GaussianSetTools tools(&molecule);
   EXPECT_TRUE(tools.isValid());
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   int homo = static_cast<int>(basis->electronCount(BasisSet::Paired)) / 2 - 1;
@@ -690,7 +690,7 @@ TEST(GaussianSetToolsTest, methanePolarization)
 
   GaussianSetTools tools(&molecule);
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   auto points = generateTestPoints(molecule);
@@ -721,7 +721,7 @@ TEST(GaussianSetToolsTest, coDiatomic)
   ASSERT_EQ(molecule.atomCount(), 2u);
 
   GaussianSetTools tools(&molecule);
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   int homo = static_cast<int>(basis->electronCount(BasisSet::Paired)) / 2 - 1;
