@@ -34,6 +34,9 @@ public:
    */
   BasisSet() = default;
 
+  BasisSet(const BasisSet&) = default;
+  BasisSet& operator=(const BasisSet&) = default;
+
   /**
    * Destructor.
    */

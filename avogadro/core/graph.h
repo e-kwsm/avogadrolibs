@@ -32,6 +32,9 @@ public:
   /** Creates a new graph containing size @p n vertices. */
   explicit Graph(size_t n);
 
+  Graph(const Graph&) = default;
+  Graph& operator=(const Graph&) = default;
+
   /** Destroys the graph. */
   ~Graph() = default;
 

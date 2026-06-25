@@ -25,6 +25,7 @@ class AVOGADROQTGUI_EXPORT PluginLayerManager : protected Core::LayerManager
 {
 public:
   PluginLayerManager(const std::string& name = "undef");
+  PluginLayerManager& operator=(const PluginLayerManager&) = default;
 
   ~PluginLayerManager();
 
