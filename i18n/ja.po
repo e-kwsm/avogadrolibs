@@ -4028,7 +4028,7 @@ msgid "Manipulate"
 msgstr "操作"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4040,6 +4040,14 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"操作ツール\t(%1)\n"
+"\n"
+"左ボタン:\tクリック＆ドラッグして原子を動かす\n"
+"右ボタン:\tクリック＆ドラッグして原子を回転させる"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -10036,18 +10044,6 @@ msgstr ""
 #~ "元素と座標を選択し、クリックしてフラグメントを挿入\n"
 #~ "\n"
 #~ "リガンドまたは官能基を選択して、付加する水素をクリック"
-
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "操作ツール\t(%1)\n"
-#~ "\n"
-#~ "左ボタン:\tクリック＆ドラッグして原子を動かす\n"
-#~ "右ボタン:\tクリック＆ドラッグして原子を回転させる"
 
 #, fuzzy
 #~ msgid "Check the box next to a plugin to install or update it."
