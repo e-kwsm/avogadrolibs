@@ -4046,7 +4046,7 @@ msgid "Manipulate"
 msgstr "Керування"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4058,6 +4058,15 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"Інструмент маніпулювання (%1)\n"
+"\n"
+"Ліва кнопка миші: Натисніть і перетягніть, щоб перемістити атоми\n"
+"Права кнопка миші: Натисніть і перетягніть, щоб повернути атоми\n"
+"\n"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -10013,18 +10022,6 @@ msgstr "Ваші електронні листи"
 #~ "\n"
 #~ "Виберіть ліганд або функціональну групу та клацніть на атомі водню, щоб "
 #~ "приєднати його."
-
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Інструмент маніпулювання (%1)\n"
-#~ "\n"
-#~ "Ліва кнопка миші: Натисніть і перетягніть, щоб перемістити атоми\n"
-#~ "Права кнопка миші: Натисніть і перетягніть, щоб повернути атоми."
 
 #~ msgid "Update"
 #~ msgstr "Оновлення"
