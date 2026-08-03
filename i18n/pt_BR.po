@@ -10957,18 +10957,6 @@ msgstr "Seus e-mails"
 #~ msgid "Forces (N)"
 #~ msgstr "Forças (N)"
 
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Ferramenta de Manipulação\t(%1)\n"
-#~ "\n"
-#~ "Botão Esquerdo do Mouse:\tClique & arraste para mover átomos\n"
-#~ "Botão Direito:\tClique & arraste para rotacionar átomos."
-
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr "Marque a caixa ao lado de um plugin para instalá-lo ou atualizá-lo."
 
