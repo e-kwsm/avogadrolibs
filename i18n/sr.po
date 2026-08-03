@@ -4063,7 +4063,7 @@ msgid "Manipulate"
 msgstr "Upravljaj"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4075,6 +4075,15 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"Алат управљања\t(%1)\n"
+"\n"
+"Леви тастер:\tПритисните и превуците да преместите атоме\n"
+"Десни тастер:\tПритисните и превуците да заокренете изабране атоме\n"
+"\n"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -9976,18 +9985,6 @@ msgstr ""
 
 #~ msgid "XYZ"
 #~ msgstr "XYZ"
-
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Алат управљања\t(%1)\n"
-#~ "\n"
-#~ "Леви тастер:\tПритисните и превуците да преместите атоме\n"
-#~ "Десни тастер:\tПритисните и превуците да заокренете изабране атоме."
 
 #~ msgid "Update"
 #~ msgstr "Ažuriraj"
