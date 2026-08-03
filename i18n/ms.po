@@ -4000,7 +4000,7 @@ msgid "Manipulate"
 msgstr "Manipulasi"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4012,6 +4012,15 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"Alat Manipulasi\t(%1)\n"
+"\n"
+"Butang Kiri Tetikus:\tKlik dan seret untuk alih atom\n"
+"Butang Kanan Tetikus:\tKlik dan seret untuk putar atom terpilih\n"
+"\n"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
