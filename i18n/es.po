@@ -10107,18 +10107,6 @@ msgstr ""
 #~ "Seleccione un ligando o grupo funcional y presione sobe un átomo de "
 #~ "hidrógeno para unirlo."
 
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Herramienta de Manipulación\t(%1)\n"
-#~ "\n"
-#~ "Botón izquierdo del ratón:\tPulse y arrastre para mover átomos\n"
-#~ "Botón derecho del ratón:\tPulse y arrastre para rotar átomos."
-
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr ""
 #~ "Marque la casilla contigua a la extensión para instalarla o actualizarla."
