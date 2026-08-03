@@ -9991,24 +9991,10 @@ msgstr "உங்கள் மின்னஞ்சல்கள்"
 #~ msgid "Package mode requires pixi but it was not found."
 #~ msgstr "தொகுப்பு பயன்முறைக்கு pixi தேவை ஆனால் அது கிடைக்கவில்லை."
 
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
-
 #~ msgid "Forces (N)"
 #~ msgstr "படைகள் (N)"
 
 #, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "கையாளுதல் கருவி (% 1) \n"
-#~ "\n"
-#~ "இடது சுட்டி: அணுக்களை நகர்த்த சொடுக்கு செய்து இழுக்கவும் \n"
-#~ "வலது சுட்டி: அணுக்களை சுழற்ற சொடுக்கு செய்து இழுக்கவும்."
-
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr "செருகுநிரலுக்கு அடுத்துள்ள பெட்டியை நிறுவ அல்லது புதுப்பிக்கவும்."
 
