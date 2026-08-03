@@ -4036,7 +4036,7 @@ msgid "Manipulate"
 msgstr "Upravljaj"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4048,6 +4048,15 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"Alat za upravljanje \t(%1)\n"
+"\n"
+"Lijeva tipka miša: \tKlikni i povuci za pomicanje atoma\n"
+"Desna tipka miša: \tKlikni i povuci za oretanje atoma\n"
+"\n"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -10023,18 +10032,6 @@ msgstr ""
 #~ "fragmenta.\n"
 #~ "\n"
 #~ "Odaberi ligand ili funkcionalnu grupu i klikni na atom vodika za spajanje."
-
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Alat za upravljanje \t(%1)\n"
-#~ "\n"
-#~ "Lijeva tipka miša: \tKlikni i povuci za pomicanje atoma\n"
-#~ "Desna tipka miša: \tKlikni i povuci za oretanje atoma."
 
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr ""
