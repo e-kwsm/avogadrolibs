@@ -4022,7 +4022,7 @@ msgid "Manipulate"
 msgstr "Manipulálás"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4034,6 +4034,15 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"Művelőeszköz\t(%1)\n"
+"\n"
+"Bal egérgomb:\tKattintson és húzza az atomok mozgatásához.\n"
+"Jobb egérgomb:\tKattintson és húzza a kijelölt atomok elforgatásához\n"
+"\n"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -9883,18 +9892,6 @@ msgstr "E-mail-címek"
 
 #~ msgid "Forces (N)"
 #~ msgstr "Erők (N)"
-
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Művelőeszköz\t(%1)\n"
-#~ "\n"
-#~ "Bal egérgomb:\tKattintson és húzza az atomok mozgatásához.\n"
-#~ "Jobb egérgomb:\tKattintson és húzza a kijelölt atomok elforgatásához."
 
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr ""
