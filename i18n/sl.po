@@ -4030,7 +4030,7 @@ msgid "Manipulate"
 msgstr "Premeščanje in spreminjanje"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4042,6 +4042,15 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"Orodje za premeščanje in spreminjanje\t(%1)\n"
+"\n"
+"Levi gumb miške:\tS klikom in vlečenjem je mogoče premikati atome\n"
+"Desni gumb miške:\tS klikom in vlečenjem je mogoče vrteti izbrane atome\n"
+"\n"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -9925,18 +9934,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 
 #~ msgid "XYZ"
 #~ msgstr "XYZ"
-
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Orodje za premeščanje in spreminjanje\t(%1)\n"
-#~ "\n"
-#~ "Levi gumb miške:\tS klikom in vlečenjem je mogoče premikati atome\n"
-#~ "Desni gumb miške:\tS klikom in vlečenjem je mogoče vrteti izbrane atome."
 
 #~ msgid " Å"
 #~ msgstr " Å"
