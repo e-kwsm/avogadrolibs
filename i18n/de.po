@@ -4049,7 +4049,7 @@ msgid "Manipulate"
 msgstr "Bearbeiten"
 
 #: qtplugins/manipulator/manipulator.cpp:55
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Manipulation Tool\t(%1)\n"
 "\n"
@@ -4061,6 +4061,15 @@ msgid ""
 "Ctrl+Left/Right:\tRotate around Z axis\n"
 "Alt+<key>:\tLarger steps"
 msgstr ""
+"Manipulationswerkzeug\t(%1)\n"
+"\n"
+"Linke Maustaste:\tKlicken und ziehen, um Atome zu bewegen\n"
+"Rechte Maustaste:\tKlicken und ziehen um ausgewählte Atome zu rotieren."
+"\n"
+"Arrow Keys:\tTranslate atoms\n"
+"Shift+Arrows:\tRotate around X/Y axes\n"
+"Ctrl+Left/Right:\tRotate around Z axis\n"
+"Alt+<key>:\tLarger steps"
 
 #: qtplugins/manipulator/manipulator.h:36
 #: qtplugins/manipulator/manipulator.h:37
@@ -9922,18 +9931,6 @@ msgstr ""
 
 #~ msgid "Forces (N)"
 #~ msgstr "Kräfte (N)"
-
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Manipulationswerkzeug\t(%1)\n"
-#~ "\n"
-#~ "Linke Maustaste:\tKlicken und ziehen, um Atome zu bewegen\n"
-#~ "Rechte Maustaste:\tKlicken und ziehen um ausgewählte Atome zu rotieren."
 
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr ""
