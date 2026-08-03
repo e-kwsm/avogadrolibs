@@ -9970,18 +9970,6 @@ msgstr "remusgabriel.chelu@disroot.org, 2023, 2024, 2025, 2026"
 #~ "Selectați un ligand sau un grup funcțional și faceți clic pe un atom de "
 #~ "hidrogen pentru a-l atașa."
 
-#, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "Instrument de manipulare\t(%1)\n"
-#~ "\n"
-#~ "Butonul stâng al mouse-ului:\tApăsați-l și trageți pentru a muta atomii\n"
-#~ "Butonul drept al mouse-ului:\tApăsați-l și trageți pentru a roti atomii."
-
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr "Bifați caseta de lângă un modul pentru a-l instala sau actualiza."
 
