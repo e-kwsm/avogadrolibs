@@ -9938,18 +9938,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ "\n"
 #~ "리간드 또는 기능성 그룹을 선택하고 수소 원자를 누르고 이를 부착하세요."
 
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Manipulation Tool\t(%1)\n"
-#~ "\n"
-#~ "Left Mouse:\tClick and drag to move atoms\n"
-#~ "Right Mouse:\tClick and drag to rotate atoms."
-#~ msgstr ""
-#~ "조작 도구\t(%1)\n"
-#~ "\n"
-#~ "왼쪽 마우스:\t클릭과 드래그로 원자 이동\n"
-#~ "오른쪽 마무스:\t클릭과 드래그로 선택한 원자 회전합니다."
-
 #~ msgid "Update"
 #~ msgstr "업데이트"
 
