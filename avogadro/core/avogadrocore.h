@@ -83,8 +83,8 @@ constexpr auto RAD_TO_DEG_D = RAD_TO_DEG<double>;
 constexpr auto RAD_TO_DEG_F = RAD_TO_DEG<float>;
 
 // from NIST
-template<typename T=Real>
-constexpr T BOHR_TO_ANGSTROM = static_cast<T>(0.529177210544);
+template<typename T = Real>
+constexpr auto BOHR_TO_ANGSTROM = static_cast<T>(0.529177210544);
 constexpr auto BOHR_TO_ANGSTROM_D = BOHR_TO_ANGSTROM<double>;
 constexpr auto BOHR_TO_ANGSTROM_F = BOHR_TO_ANGSTROM<float>;
 
@@ -99,10 +99,10 @@ constexpr auto HARTREE_TO_EV_D = HARTREE_TO_EV<double>;
 constexpr auto HARTREE_TO_EV_F = HARTREE_TO_EV<float>;
 
 // thermochemical calorie
-template<typename T=Real>
-constexpr T KCAL_TO_KJ = static_cast<T>(4.184);
-constexpr auto KCAL_TO_KJ_D = T KCAL_TO_KJ<double>;
-constexpr auto KCAL_TO_KJ_F = static_cast<float>;
+template<typename T = Real>
+constexpr auto KCAL_TO_KJ = static_cast<T>(4.184);
+constexpr auto KCAL_TO_KJ_D = KCAL_TO_KJ<double>;
+constexpr auto KCAL_TO_KJ_F = KCAL_TO_KJ<float>;
 
 // one electron volt per particle in kJ/mol, i.e. e * N_A / 1000, exact
 // since the 2019 SI redefinition
