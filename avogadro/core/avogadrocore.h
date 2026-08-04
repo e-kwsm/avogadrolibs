@@ -83,7 +83,7 @@ constexpr auto RAD_TO_DEG_D = RAD_TO_DEG<double>;
 constexpr auto RAD_TO_DEG_F = RAD_TO_DEG<float>;
 
 // from NIST
-template<typename T=Real>
+template <typename T = Real>
 constexpr Real BOHR_TO_ANGSTROM = static_cast<T>(0.529177210544);
 constexpr auto BOHR_TO_ANGSTROM_D = BOHR_TO_ANGSTROM<double>;
 constexpr auto BOHR_TO_ANGSTROM_F = BOHR_TO_ANGSTROM<float>;
@@ -97,7 +97,7 @@ constexpr float HARTREE_TO_EV_F = static_cast<float>(HARTREE_TO_EV_D);
 constexpr Real HARTREE_TO_EV = static_cast<Real>(HARTREE_TO_EV_D);
 
 // thermochemical calorie
-template<typename T=Real>
+template <typename T = Real>
 constexpr Real KCAL_TO_KJ = static_cast<T>(4.184);
 constexpr double KCAL_TO_KJ_D = KCAL_TO_KJ<double>;
 constexpr float KCAL_TO_KJ_F = KCAL_TO_KJ<float>;
