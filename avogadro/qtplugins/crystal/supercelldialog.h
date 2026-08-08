@@ -34,6 +34,9 @@ public:
   SupercellDialog(QWidget* p = nullptr);
   ~SupercellDialog() override;
 
+  SupercellDialog(const SupercellDialog&) = delete;
+  SupercellDialog& operator=(const SupercellDialog&) = delete;
+
   bool buildSupercell(Avogadro::QtGui::Molecule& mol);
 
   void displayInvalidFormatMessage();
@@ -46,9 +49,6 @@ private slots:
   void rangeChanged();
 
 private:
-  SupercellDialog(const SupercellDialog&);
-  SupercellDialog& operator=(const SupercellDialog&);
-
   Ui::SupercellDialog* m_ui;
 
   /** Atom count of the molecule being expanded, used to size the request. */
