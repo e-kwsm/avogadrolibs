@@ -6378,7 +6378,16 @@ msgid "Template"
 msgstr "テンプレート"
 
 #: qtplugins/templatetool/templatetool.cpp:89
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Template Tool\t(%1)\n"
+#| "\n"
+#| "Insert fragments, including metal centers.\n"
+#| "Select an element and coordination geometry, then click to insert a "
+#| "fragment.\n"
+#| "\n"
+#| "Select a ligand or functional group and click on a hydrogen atom to "
+#| "attach it."
 msgid ""
 "Template Tool\t(%1)\n"
 "\n"
@@ -6391,6 +6400,12 @@ msgid ""
 "Select a ligand or functional group and click on a hydrogen atom to attach "
 "it."
 msgstr ""
+"テンプレートツール\t(%1)\n"
+"\n"
+"金属中心を含むフラグメントを挿入\n"
+"元素と座標を選択し、クリックしてフラグメントを挿入\n"
+"\n"
+"リガンドまたは官能基を選択して、付加する水素をクリック"
 
 #: qtplugins/templatetool/templatetool.cpp:489
 #: qtplugins/templatetool/templatetool.cpp:682
@@ -10026,24 +10041,6 @@ msgstr ""
 
 #~ msgid "Forces (N)"
 #~ msgstr "力 (N)"
-
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Template Tool\t(%1)\n"
-#~ "\n"
-#~ "Insert fragments, including metal centers.\n"
-#~ "Select an element and coordination geometry, then click to insert a "
-#~ "fragment.\n"
-#~ "\n"
-#~ "Select a ligand or functional group and click on a hydrogen atom to "
-#~ "attach it."
-#~ msgstr ""
-#~ "テンプレートツール\t(%1)\n"
-#~ "\n"
-#~ "金属中心を含むフラグメントを挿入\n"
-#~ "元素と座標を選択し、クリックしてフラグメントを挿入\n"
-#~ "\n"
-#~ "リガンドまたは官能基を選択して、付加する水素をクリック"
 
 #, fuzzy
 #~ msgid "Check the box next to a plugin to install or update it."
