@@ -6358,7 +6358,16 @@ msgid "Template"
 msgstr "Predložak"
 
 #: qtplugins/templatetool/templatetool.cpp:89
-#, qt-format
+#, fuzzy, qt-format
+#| msgid ""
+#| "Template Tool\t(%1)\n"
+#| "\n"
+#| "Insert fragments, including metal centers.\n"
+#| "Select an element and coordination geometry, then click to insert a "
+#| "fragment.\n"
+#| "\n"
+#| "Select a ligand or functional group and click on a hydrogen atom to "
+#| "attach it."
 msgid ""
 "Template Tool\t(%1)\n"
 "\n"
@@ -6371,6 +6380,13 @@ msgid ""
 "Select a ligand or functional group and click on a hydrogen atom to attach "
 "it."
 msgstr ""
+"Alat za predloške (%1)\n"
+"\n"
+"Umetni fragmente, uključujući središta metala.\n"
+"Odaberi element i geometriju koordinacije, zatim klikni za umetanje "
+"fragmenta.\n"
+"\n"
+"Odaberi ligand ili funkcionalnu grupu i klikni na atom vodika za spajanje."
 
 #: qtplugins/templatetool/templatetool.cpp:489
 #: qtplugins/templatetool/templatetool.cpp:682
@@ -10013,25 +10029,6 @@ msgstr ""
 
 #~ msgid "Forces (N)"
 #~ msgstr "Sile (N)"
-
-#, qt-format
-#~ msgid ""
-#~ "Template Tool\t(%1)\n"
-#~ "\n"
-#~ "Insert fragments, including metal centers.\n"
-#~ "Select an element and coordination geometry, then click to insert a "
-#~ "fragment.\n"
-#~ "\n"
-#~ "Select a ligand or functional group and click on a hydrogen atom to "
-#~ "attach it."
-#~ msgstr ""
-#~ "Alat za predloške (%1)\n"
-#~ "\n"
-#~ "Umetni fragmente, uključujući središta metala.\n"
-#~ "Odaberi element i geometriju koordinacije, zatim klikni za umetanje "
-#~ "fragmenta.\n"
-#~ "\n"
-#~ "Odaberi ligand ili funkcionalnu grupu i klikni na atom vodika za spajanje."
 
 #~ msgid "Check the box next to a plugin to install or update it."
 #~ msgstr ""
