@@ -6277,7 +6277,15 @@ msgid "Template"
 msgstr "템플레이트"
 
 #: qtplugins/templatetool/templatetool.cpp:89
-#, qt-format
+#, fuzzy, qt-format
+#| "Template Tool\t(%1)\n"
+#| "\n"
+#| "Insert fragments, including metal centers.\n"
+#| "Select an element and coordination geometry, then click to insert a "
+#| "fragment.\n"
+#| "\n"
+#| "Select a ligand or functional group and click on a hydrogen atom to "
+#| "attach it."
 msgid ""
 "Template Tool\t(%1)\n"
 "\n"
@@ -6290,6 +6298,12 @@ msgid ""
 "Select a ligand or functional group and click on a hydrogen atom to attach "
 "it."
 msgstr ""
+"템플릿 도구\t(%1)\n"
+"\n"
+"금속 중심을 포함하여 조각을 넣으세요.\n"
+"원소와 조정 기하학을 선택하고, 그 다음 눌러 조각을 넣으세요.\n"
+"\n"
+"리간드 또는 기능성 그룹을 선택하고 수소 원자를 누르고 이를 부착하세요."
 
 #: qtplugins/templatetool/templatetool.cpp:489
 #: qtplugins/templatetool/templatetool.cpp:682
@@ -9917,27 +9931,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 #~ msgid "Package mode requires pixi but it was not found."
 #~ msgstr "패키지 모드를 사용하려면 pixi가 필요하지만 찾을 수 없습니다."
 
-#~ msgid "XYZ"
-#~ msgstr "XYZ"
-
-#, fuzzy, qt-format
-#~ msgid ""
-#~ "Template Tool\t(%1)\n"
-#~ "\n"
-#~ "Insert fragments, including metal centers.\n"
-#~ "Select an element and coordination geometry, then click to insert a "
-#~ "fragment.\n"
-#~ "\n"
-#~ "Select a ligand or functional group and click on a hydrogen atom to "
-#~ "attach it."
-#~ msgstr ""
-#~ "템플릿 도구\t(%1)\n"
-#~ "\n"
-#~ "금속 중심을 포함하여 조각을 넣으세요.\n"
-#~ "원소와 조정 기하학을 선택하고, 그 다음 눌러 조각을 넣으세요.\n"
-#~ "\n"
-#~ "리간드 또는 기능성 그룹을 선택하고 수소 원자를 누르고 이를 부착하세요."
-
 #~ msgid "Update"
 #~ msgstr "업데이트"
 
@@ -10058,57 +10051,6 @@ msgstr "loniedavid@gmail.com, an6207@gmail.com, simmon@nplob.com"
 
 #~ msgid "Angles:"
 #~ msgstr "각도:"
-
-#~ msgid " °"
-#~ msgstr " °"
-
-#~ msgid "eV"
-#~ msgstr "eV"
-
-#~ msgid "Å"
-#~ msgstr "Å"
-
-#~ msgid "°"
-#~ msgstr "°"
-
-#~ msgid "p"
-#~ msgstr "p"
-
-#~ msgid "s"
-#~ msgstr "s"
-
-#~ msgid "f"
-#~ msgstr "f"
-
-#~ msgid "m"
-#~ msgstr "m"
-
-#~ msgid "fs"
-#~ msgstr "fs"
-
-#~ msgid "fm"
-#~ msgstr "fm"
-
-#~ msgid " nm"
-#~ msgstr " nm"
-
-#~ msgid " K"
-#~ msgstr " K"
-
-#~ msgid " fs"
-#~ msgstr " fs"
-
-#~ msgid "/ps"
-#~ msgstr "/ps"
-
-#~ msgid " atm"
-#~ msgstr " atm"
-
-#~ msgid " "
-#~ msgstr " "
-
-#~ msgid " eV"
-#~ msgstr " eV"
 
 #~ msgctxt "asking server for molecule name"
 #~ msgid "(pending)"
