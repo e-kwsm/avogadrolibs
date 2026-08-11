@@ -2149,7 +2149,7 @@ msgid "Auto Optimize"
 msgstr "自動最適化"
 
 #: qtplugins/autoopt/autoopt.cpp:70
-#, qt-format
+#, fuzzy, qt-format
 msgid ""
 "Auto Optimize Tool\t(%1)\n"
 "\n"
