@@ -9,6 +9,7 @@
 #ifndef AVOGADRO_QTPLUGINS_CSVRTHERMOSTAT_H
 #define AVOGADRO_QTPLUGINS_CSVRTHERMOSTAT_H
 
+#include <algorithm>
 #include <cmath>
 #include <random>
 #include <iostream>
@@ -183,8 +184,7 @@ public:
     if (auto_dof) {
       int n_atoms = masses.size() / 3;
       n_dof = 3 * n_atoms - 3; // Remove 3 DOF for COM translation
-      if (n_dof < 1)
-        n_dof = 1;
+      n_dof = std::max(n_dof, 1u);
     }
 
     // Current kinetic energy in Joules
@@ -277,8 +277,7 @@ public:
     // Update DOF if automatic mode is enabled
     if (auto_dof) {
       n_dof = 3 * n_atoms - 3;
-      if (n_dof < 1)
-        n_dof = 1;
+      n_dof = std::max(n_dof, 1u);
     }
 
     constexpr double kB_SI = 1.380649e-23;    // J/K

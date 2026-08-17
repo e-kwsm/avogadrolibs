@@ -196,10 +196,8 @@ size_t adaptChunkIterations(size_t currentChunk, double measuredMs,
                             double targetMs, double smoothing, size_t minChunk,
                             size_t maxChunk)
 {
-  if (minChunk < 1)
-    minChunk = 1;
-  if (maxChunk < minChunk)
-    maxChunk = minChunk;
+  minChunk = std::max(minChunk, 1ul);
+  maxChunk = std::max(maxChunk, minChunk);
 
   const size_t fallback =
     (currentChunk < minChunk)
@@ -217,8 +215,7 @@ size_t adaptChunkIterations(size_t currentChunk, double measuredMs,
   const double hi = static_cast<double>(maxChunk);
   if (!(proposed > lo))
     proposed = lo;
-  if (proposed > hi)
-    proposed = hi;
+  proposed = std::min(proposed, hi);
   return static_cast<size_t>(std::lround(proposed));
 }
 

@@ -748,8 +748,7 @@ void PropertyView::changeChargeType()
       break;
     }
   }
-  if (currentIndex < 0)
-    currentIndex = 0;
+  currentIndex = std::max(currentIndex, 0);
 
   bool ok = false;
   QString selected = QInputDialog::getItem(

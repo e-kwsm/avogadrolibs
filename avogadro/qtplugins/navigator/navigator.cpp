@@ -403,8 +403,7 @@ inline void Navigator::zoom(const Vector3f& ref, float d)
   float distance = transformedCenter.norm();
   float t = d * ZOOM_SPEED;
   float u = 2.0f / distance - 1.0f;
-  if (t < u)
-    t = u;
+  t = std::max(t, u);
   if (m_renderer->camera().projectionType() == Rendering::Perspective)
     m_renderer->camera().preTranslate(transformedCenter * t);
   else

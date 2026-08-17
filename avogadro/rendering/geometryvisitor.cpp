@@ -11,6 +11,8 @@
 #include "spheregeometry.h"
 #include "widelinegeometry.h"
 
+#include <algorithm>
+
 namespace Avogadro::Rendering {
 
 GeometryVisitor::GeometryVisitor()
@@ -42,8 +44,7 @@ void GeometryVisitor::visit(SphereGeometry& geometry)
   if (spheres.size() > 1) {
     for (it = spheres.begin(); it != spheres.end(); ++it) {
       float distance = (it->center - tmpCenter).squaredNorm();
-      if (distance > tmpRadius)
-        tmpRadius = distance;
+      tmpRadius = std::max(tmpRadius, distance);
     }
   }
   tmpRadius = std::sqrt(tmpRadius);
@@ -71,8 +72,7 @@ void GeometryVisitor::visit(AmbientOcclusionSphereGeometry& geometry)
   if (spheres.size() > 1) {
     for (it = spheres.begin(); it != spheres.end(); ++it) {
       float distance = (it->center - tmpCenter).squaredNorm();
-      if (distance > tmpRadius)
-        tmpRadius = distance;
+      tmpRadius = std::max(tmpRadius, distance);
     }
   }
   tmpRadius = std::sqrt(tmpRadius);
@@ -101,8 +101,7 @@ void GeometryVisitor::visit(CurveGeometry& cg)
   for (const auto& line : lines) {
     for (const auto& point : line->points) {
       float distance = (point.pos - tmpCenter).squaredNorm();
-      if (distance > tmpRadius)
-        tmpRadius = distance;
+      tmpRadius = std::max(tmpRadius, distance);
     }
   }
   m_centers.push_back(tmpCenter);
@@ -127,8 +126,7 @@ void GeometryVisitor::visit(LineStripGeometry& lsg)
   float tmpRadius(0.f);
   for (const auto& vert : verts) {
     float distance = (vert.vertex - tmpCenter).squaredNorm();
-    if (distance > tmpRadius)
-      tmpRadius = distance;
+    tmpRadius = std::max(tmpRadius, distance);
   }
 
   m_centers.push_back(tmpCenter);
@@ -157,10 +155,7 @@ void GeometryVisitor::visit(WideLineGeometry& wlg)
   for (size_t i = 0; i < verts.size(); i += 4) {
     float d1 = (verts[i].position - tmpCenter).squaredNorm();
     float d2 = (verts[i + 2].position - tmpCenter).squaredNorm();
-    if (d1 > tmpRadius)
-      tmpRadius = d1;
-    if (d2 > tmpRadius)
-      tmpRadius = d2;
+    tmpRadius = std::max({ tmpRadius, d1, d2 });
   }
 
   m_centers.push_back(tmpCenter);
@@ -210,8 +205,7 @@ void GeometryVisitor::average()
     for (cit = m_centers.begin(), rit = m_radii.begin();
          cit != m_centers.end() && rit != m_radii.end(); ++cit, ++rit) {
       float distance = (m_center - (*cit)).norm() + (*rit);
-      if (distance > m_radius)
-        m_radius = distance;
+      m_radius = std::max(m_radius, distance);
     }
   }
 }

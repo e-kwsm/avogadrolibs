@@ -517,6 +517,7 @@ const float ao_points[] = {
 
 #include "avogadrogl.h"
 
+#include <algorithm>
 #include <iostream>
 
 using std::cout;
@@ -1153,8 +1154,7 @@ void AmbientOcclusionSphereGeometry::update()
     // calculate radius
     float radius = 0.0f;
     for (auto& m_sphere : m_spheres)
-      if ((m_sphere.center - center).norm() > radius)
-        radius = (m_sphere.center - center).norm();
+      radius = std::max(radius, (m_sphere.center - center).norm());
 
     for (unsigned int i = 0;
          itIndex != m_indices.end() && itSphere != m_spheres.end();
