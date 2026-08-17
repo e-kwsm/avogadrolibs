@@ -11,6 +11,8 @@
 
 #include <QAction>
 
+#include <algorithm>
+
 namespace Avogadro::QtPlugins {
 
 using Avogadro::QtGui::ExtensionPlugin;
@@ -103,8 +105,7 @@ void Focus::focusSelection()
   for (Index i : selection) {
     Eigen::Vector3f pos = m_molecule->atomPosition3d(i).cast<float>();
     float distance = (pos - selectionCenter).norm();
-    if (distance > selectionRadius)
-      selectionRadius = distance;
+    selectionRadius = std::max(selectionRadius, distance);
   }
 
   newFocus(selectionCenter, selectionRadius + 10.0f);

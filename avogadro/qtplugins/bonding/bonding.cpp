@@ -12,6 +12,7 @@
 #include <QDialog>
 #include <QSettings>
 
+#include <algorithm>
 #include <vector>
 
 #include "ui_bondingdialog.h"
@@ -167,8 +168,7 @@ void Bonding::bond()
   std::vector<double> radii(m_molecule->atomCount());
   for (size_t i = 0; i < radii.size(); i++) {
     radii[i] = Elements::radiusCovalent(m_molecule->atomicNumbers()[i]);
-    if (radii[i] <= 0.0)
-      radii[i] = 0.0;
+    radii[i] = std::max(radii[i], 0.0);
   }
 
   bool emptySelection = m_molecule->isSelectionEmpty();
