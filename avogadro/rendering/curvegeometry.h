@@ -43,8 +43,6 @@ struct Line
   {
   }
 
-  ~Line()
-
   void add(const Point& point)
   {
     points.push_back(point);
