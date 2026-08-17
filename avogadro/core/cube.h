@@ -11,6 +11,7 @@
 #include "matrix.h"
 #include "vector.h"
 
+#include <algorithm>
 #include <array>
 #include <vector>
 
@@ -412,10 +413,8 @@ inline bool Cube::setValue(unsigned int i, float value_)
 {
   if (i < m_data.size()) {
     m_data[i] = value_;
-    if (value_ > m_maxValue)
-      m_maxValue = value_;
-    if (value_ < m_minValue)
-      m_minValue = value_;
+    m_maxValue = std::max(m_maxValue, value_);
+    m_minValue = std::min(m_minValue, value_);
     return true;
   } else
     return false;
