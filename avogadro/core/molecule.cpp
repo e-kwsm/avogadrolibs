@@ -584,7 +584,7 @@ signed char Molecule::totalCharge() const
   if (m_data.hasValue("totalCharge")) {
     charge = m_data.value("totalCharge").toInt();
   } else if (m_formalCharges.size() > 0) {
-    for (signed char m_formalCharge : m_formalCharges)
+    for (auto m_formalCharge : m_formalCharges)
       charge += m_formalCharge;
     return charge;
   }
@@ -601,7 +601,7 @@ char Molecule::totalSpinMultiplicity() const
   } else {
     // add up the electrons
     unsigned long electrons = 0;
-    for (unsigned char m_atomicNumber : m_atomicNumbers)
+    for (auto m_atomicNumber : m_atomicNumbers)
       electrons += m_atomicNumber;
 
     // adjust by the total charge

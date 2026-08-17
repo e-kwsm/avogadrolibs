@@ -708,7 +708,7 @@ void TemplateTool::atomLeftClick(QMouseEvent*)
       }
 
       // Estimate and try to realize bond distances
-      for (unsigned long templateLigandIndice : templateLigandIndices) {
+      for (auto templateLigandIndice : templateLigandIndices) {
         unsigned char ligandAtomicNumber =
           templateMolecule.atomicNumber(templateLigandIndice);
         ligandAtomicNumber = (ligandAtomicNumber == 0) ? 6 : ligandAtomicNumber;
