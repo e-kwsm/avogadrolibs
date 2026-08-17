@@ -377,8 +377,8 @@ class SetResidueColorCommand : public RWMolecule::UndoCommand
 public:
   SetResidueColorCommand(RWMolecule& m, Index residueId, Vector3ub oldColor,
                          Vector3ub newColor)
-    : UndoCommand(m), m_residueId(residueId), m_oldColor(oldColor),
-      m_newColor(newColor)
+    : UndoCommand(m), m_residueId(residueId), m_oldColor(std::move(oldColor)),
+      m_newColor(std::move(newColor))
   {
   }
 
