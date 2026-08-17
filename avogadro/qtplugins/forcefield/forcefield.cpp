@@ -35,6 +35,7 @@
 #include <avogadro/calc/energyoptimizer.h>
 #include <avogadro/calc/lennardjones.h>
 
+#include <algorithm>
 #include <cmath>
 
 namespace Avogadro {
@@ -651,8 +652,7 @@ void Forcefield::onOptimizeChunkDone(Eigen::VectorXd positions,
     size_t next = Calc::adaptChunkIterations(chunkRan, elapsedMs, kTargetMs,
                                              kSmoothing, kMinChunk, kMaxChunk);
     const unsigned int remaining = m_maxSteps - m_iterationsDone;
-    if (next > remaining)
-      next = remaining;
+    next = std::min<size_t>(next, remaining);
     m_optOptions.chunkIterations = next;
 
     // Request next chunk

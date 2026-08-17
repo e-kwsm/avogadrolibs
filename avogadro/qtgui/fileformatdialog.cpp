@@ -14,6 +14,7 @@
 
 #include <QtCore/QSettings>
 
+#include <algorithm>
 #include <vector>
 
 using Avogadro::Io::FileFormat;
@@ -338,8 +339,7 @@ const Io::FileFormat* FileFormatDialog::selectFileFormat(
 
   // we're going to show the dialog - if there wasn't a choice
   // the default should be the first one
-  if (lastIdentIndex < 0)
-    lastIdentIndex = 0;
+  lastIdentIndex = std::max(lastIdentIndex, 0);
 
   bool ok;
   QString item = QInputDialog::getItem(parentWidget, caption, prompt, idents,

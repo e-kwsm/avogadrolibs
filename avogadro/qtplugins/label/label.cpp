@@ -5,6 +5,7 @@
 
 #include "label.h"
 
+#include <algorithm>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
@@ -308,9 +309,7 @@ void Label::processResidue(const Core::Molecule& molecule,
       unsigned char atomicNumber = atom.atomicNumber();
       auto auxR = static_cast<float>(Elements::radiusVDW(atomicNumber));
       auxR += (atom.position3d().cast<float>() - pos).norm();
-      if (auxR > radius) {
-        auxR = radius;
-      }
+      auxR = std::min(auxR, radius);
     }
 
     auto* interface = m_layerManager.getSetting<LayerLabel>(layer);

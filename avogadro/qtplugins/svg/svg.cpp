@@ -13,6 +13,7 @@
 #include <avogadro/qtopengl/glwidget.h>
 #include <avogadro/rendering/camera.h>
 #include <avogadro/rendering/scene.h>
+#include <algorithm>
 #include <iostream>
 #include <string>
 
@@ -155,10 +156,8 @@ void SVG::getPositions()
     m_atoms.push_back(atom);
     if (frustrumCulling(atom)) {
       for (unsigned int j = 0; j < 3; ++j) {
-        if (m_min[j] > pos[j])
-          m_min[j] = pos[j];
-        if (m_max[j] < pos[j])
-          m_max[j] = pos[j];
+        m_min[j] = std::min(m_min[j], pos[j]);
+        m_max[j] = std::max(m_max[j], pos[j]);
       }
     }
   }

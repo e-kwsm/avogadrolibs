@@ -80,8 +80,7 @@ QWidget* PlayerTool::toolWidget() const
     controls->addWidget(leftButton);
 
     int maxFrame = m_molecule->coordinate3dCount();
-    if (maxFrame < 1)
-      maxFrame = 1;
+    maxFrame = std::max(maxFrame, 1);
 
     auto* frameLabel = new QLabel(tr("Frame:"));
     controls->addWidget(frameLabel);

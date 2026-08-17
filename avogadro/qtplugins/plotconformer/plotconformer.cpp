@@ -21,6 +21,8 @@
 #include <avogadro/qtgui/chartdialog.h>
 #include <avogadro/qtgui/chartwidget.h>
 
+#include <algorithm>
+
 using Avogadro::QtGui::Molecule;
 
 namespace Avogadro::QtPlugins {
@@ -106,8 +108,7 @@ void PlotConformer::clicked(float x, float y, Qt::KeyboardModifiers modifiers)
 {
   // switch to the closest conformer to x
   int conformer = static_cast<int>(x);
-  if (conformer < 0)
-    conformer = 0;
+  conformer = std::max(conformer, 0);
   if (conformer >= m_molecule->coordinate3dCount())
     conformer = m_molecule->coordinate3dCount() - 1;
   m_currentFrame = conformer;

@@ -1543,8 +1543,7 @@ void Molecule::perceiveBondsSimple(const double tolerance, const double min)
     radii[i] = Elements::radiusCovalent(atomicNumber(i));
     if (radii[i] <= 0.0)
       radii[i] = 2.0;
-    if (radii[i] > max_radius)
-      max_radius = radii[i];
+    max_radius = std::max(max_radius, radii[i]);
   }
 
   float maxDistance = 2.0 * max_radius + tolerance;

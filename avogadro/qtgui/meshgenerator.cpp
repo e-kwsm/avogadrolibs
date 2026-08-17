@@ -11,6 +11,7 @@
 
 #include <QDebug>
 #include <QReadWriteLock>
+#include <algorithm>
 
 namespace Avogadro::QtGui {
 
@@ -637,8 +638,7 @@ void MeshGenerator::calcTrimValues(int& xl, int& xr, int const& j,
   xl = std::min({ ge0.xl, ge1.xl, ge2.xl, ge3.xl });
   xr = std::max({ ge0.xr, ge1.xr, ge2.xr, ge3.xr });
 
-  if (xl > xr)
-    xl = xr;
+  xl = std::min(xl, xr);
 }
 
 inline std::array<float, 3> MeshGenerator::interpolateOnCube(
