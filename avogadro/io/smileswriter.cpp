@@ -595,8 +595,8 @@ void Serializer::assignChirality(const std::vector<Index>& classes)
     // substituents hanging off separate branches -- the hydrogens of a CH2,
     // the methyls of an isopropyl -- are interchangeable and mean nothing.
     bool tiedThroughRing = true;
-    for (int end = 0; end < 2; ++end) {
-      const Core::Bond bond = m_mol.bond(atom, neighbors[tiedIndex[end]]);
+    for (int end : tiedIndex) {
+      const Core::Bond bond = m_mol.bond(atom, neighbors[end]);
       if (!bond.isValid() || !m_bondInRing[bond.index()])
         tiedThroughRing = false;
     }

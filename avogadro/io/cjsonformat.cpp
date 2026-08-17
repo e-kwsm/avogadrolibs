@@ -144,12 +144,12 @@ void deserializeProperties(const json& obj, PropertyMap& props,
     // Detect type from array elements
     bool allString = true;
     bool hasFloat = false;
-    for (size_t i = 0; i < value.size(); ++i) {
-      if (value[i].is_number()) {
+    for (const auto& v : value) {
+      if (v.is_number()) {
         allString = false;
-        if (value[i].is_number_float())
+        if (v.is_number_float())
           hasFloat = true;
-      } else if (!value[i].is_string()) {
+      } else if (!v.is_string()) {
         allString = false;
       }
     }
@@ -158,22 +158,20 @@ void deserializeProperties(const json& obj, PropertyMap& props,
     if (allString) {
       Array<std::string> values;
       values.reserve(value.size());
-      for (size_t i = 0; i < value.size(); ++i)
-        values.push_back(value[i].is_string() ? value[i].get<std::string>()
-                                              : std::string());
+      for (const auto& v : value)
+        values.push_back(v.is_string() ? v.get<std::string>() : std::string());
       props.setStrings(key, values);
     } else if (hasFloat) {
       Array<double> values;
       values.reserve(value.size());
-      for (size_t i = 0; i < value.size(); ++i)
-        values.push_back(value[i].is_number() ? value[i].get<double>() : 0.0);
+      for (const auto& v : value)
+        values.push_back(v.is_number() ? v.get<double>() : 0.0);
       props.setDoubles(key, values);
     } else {
       Array<int> values;
       values.reserve(value.size());
-      for (size_t i = 0; i < value.size(); ++i)
-        values.push_back(value[i].is_number_integer() ? value[i].get<int>()
-                                                      : 0);
+      for (const auto& v : value)
+        values.push_back(v.is_number_integer() ? v.get<int>() : 0);
       props.setInts(key, values);
     }
   }
@@ -186,22 +184,22 @@ json serializeProperties(const PropertyMap& props)
   for (const auto& name : props.doubleNames()) {
     json arr;
     const auto& values = props.doubles(name);
-    for (Index i = 0; i < values.size(); ++i)
-      arr.push_back(values[i]);
+    for (double value : values)
+      arr.push_back(value);
     result[name] = arr;
   }
   for (const auto& name : props.intNames()) {
     json arr;
     const auto& values = props.ints(name);
-    for (Index i = 0; i < values.size(); ++i)
-      arr.push_back(values[i]);
+    for (int value : values)
+      arr.push_back(value);
     result[name] = arr;
   }
   for (const auto& name : props.stringNames()) {
     json arr;
     const auto& values = props.strings(name);
-    for (Index i = 0; i < values.size(); ++i)
-      arr.push_back(values[i]);
+    for (const auto& value : values)
+      arr.push_back(value);
     result[name] = arr;
   }
   for (const auto& name : props.matrixNames()) {
