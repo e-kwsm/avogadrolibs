@@ -795,12 +795,12 @@ Molecule cyclohexaneMolecule()
 {
   Molecule mol;
   Index ring[6];
-  for (int i = 0; i < 6; ++i)
-    ring[i] = mol.addAtom(6).index();
+  for (auto& i : ring)
+    i = mol.addAtom(6).index();
   for (int i = 0; i < 6; ++i)
     mol.addBond(ring[i], ring[(i + 1) % 6], 1);
-  for (int i = 0; i < 6; ++i)
-    addHydrogens(mol, ring[i], 2);
+  for (auto i : ring)
+    addHydrogens(mol, i, 2);
   return mol;
 }
 
@@ -808,8 +808,8 @@ Molecule kekuleNaphthaleneMolecule()
 {
   Molecule mol;
   Index ring[10];
-  for (int i = 0; i < 10; ++i)
-    ring[i] = mol.addAtom(6).index();
+  for (auto& i : ring)
+    i = mol.addAtom(6).index();
   // Alternating bond orders around the perimeter, plus the single bond
   // shared by the two fused rings (4a-8a in naphthalene's own numbering).
   for (int i = 0; i < 10; ++i) {
