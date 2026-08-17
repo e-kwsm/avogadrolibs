@@ -360,8 +360,8 @@ static bool isSafeScriptName(const QString& name)
 {
   for (const QChar ch : name) {
     const ushort u = ch.unicode();
-    if (!((u >= 'a' && u <= 'z') || (u >= 'A' && u <= 'Z') ||
-          (u >= '0' && u <= '9') || u == '-' || u == '_'))
+    if ((u < 'a' || u > 'z') && (u < 'A' || u > 'Z') && (u < '0' || u > '9') &&
+        u != '-' && u != '_')
       return false;
   }
   return !name.isEmpty();
