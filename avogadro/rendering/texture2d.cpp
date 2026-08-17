@@ -135,7 +135,7 @@ GLenum convertTypeToGL(Type type)
 class Texture2D::Private
 {
 public:
-  Private() {}
+  Private() = default;
   ~Private()
   {
     if (textureId > 0)

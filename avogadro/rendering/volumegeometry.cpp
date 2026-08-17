@@ -204,7 +204,7 @@ void initializePositionFramebuffer(GLuint* outFBO, GLuint* texRGB,
 class VolumeGeometry::Private
 {
 public:
-  Private() {}
+  Private() = default;
 
   // GL resources
   Shader* vertexShader = nullptr;
