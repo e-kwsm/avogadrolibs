@@ -11,8 +11,12 @@ Checks: >
   -*,
   bugprone-*,
   -bugprone-easily-swappable-parameters,
+  -bugprone-implicit-widening-of-multiplication-result,
+  -bugprone-integer-division,
   -bugprone-narrowing-conversions,
+  -bugprone-reserved-identifier,
   -bugprone-signed-bitwise,
+  -bugprone-switch-missing-default-case
   -bugprone-switch-missing-default-case,
   -bugprone-throwing-static-initialization,
   -bugprone-unhandled-code-paths,
