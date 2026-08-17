@@ -13,6 +13,7 @@
 
 #include "benchmark_common.h"
 
+#include <algorithm>
 #include <chrono>
 #include <cmath>
 #include <filesystem>
@@ -260,8 +261,7 @@ RunResult runOptimizer(UFF& uff, const Eigen::VectorXd& initialPositions,
     // Cap the last chunk so we don't overshoot the iteration budget --
     // matters more in adaptive mode where chunks can grow large.
     const std::size_t remaining = options.maxSteps - result.iterations;
-    if (opts.chunkIterations > remaining)
-      opts.chunkIterations = remaining;
+    opts.chunkIterations = std::min(opts.chunkIterations, remaining);
 
     const auto chunkStart = Clock::now();
     if (!optimizeSteps(counter, positions, opts, &state)) {

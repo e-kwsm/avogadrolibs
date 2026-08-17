@@ -251,8 +251,7 @@ void TemplateToolWidget::useCustomLigand(const QString& fileName)
   // The file decides how many placeholders have to be picked, whichever type
   // it was inserted under.
   int denticity = templateDenticity(fileName);
-  if (denticity < 1)
-    denticity = 1;
+  denticity = std::max(denticity, 1);
 
   // Show the type the template actually is. This repopulates the ligand list,
   // so "Other..." has to be re-selected afterwards.
