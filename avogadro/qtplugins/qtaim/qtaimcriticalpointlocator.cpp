@@ -37,6 +37,8 @@
 #include <QFutureWatcher>
 #include <QProgressDialog>
 
+#include <algorithm>
+
 using namespace Eigen;
 
 #define HUGE_REAL_NUMBER 1.e20
@@ -582,34 +584,22 @@ void QTAIMCriticalPointLocator::locateElectronDensitySources()
   xmin = xNuclearCoordinates.first();
   xmax = xNuclearCoordinates.first();
   for (qint64 i = 1; i < m_wfn->numberOfNuclei(); ++i) {
-    if (xNuclearCoordinates.at(i) < xmin) {
-      xmin = xNuclearCoordinates.at(i);
-    }
-    if (xNuclearCoordinates.at(i) > xmax) {
-      xmax = xNuclearCoordinates.at(i);
-    }
+    xmin = std::min(xmin, xNuclearCoordinates.at(i));
+    xmax = std::max(xmax, xNuclearCoordinates.at(i));
   }
 
   ymin = yNuclearCoordinates.first();
   ymax = yNuclearCoordinates.first();
   for (qint64 i = 1; i < yNuclearCoordinates.count(); ++i) {
-    if (yNuclearCoordinates.at(i) < ymin) {
-      ymin = yNuclearCoordinates.at(i);
-    }
-    if (yNuclearCoordinates.at(i) > ymax) {
-      ymax = yNuclearCoordinates.at(i);
-    }
+    ymin = std::min(ymin, yNuclearCoordinates.at(i));
+    ymax = std::max(ymax, yNuclearCoordinates.at(i));
   }
 
   zmin = zNuclearCoordinates.first();
   zmax = zNuclearCoordinates.first();
   for (qint64 i = 1; i < zNuclearCoordinates.count(); ++i) {
-    if (zNuclearCoordinates.at(i) < zmin) {
-      zmin = zNuclearCoordinates.at(i);
-    }
-    if (zNuclearCoordinates.at(i) > zmax) {
-      zmax = zNuclearCoordinates.at(i);
-    }
+    zmin = std::min(zmin, zNuclearCoordinates.at(i));
+    zmax = std::max(zmax, zNuclearCoordinates.at(i));
   }
 
   xmin = -2.0 + xmin;
@@ -688,9 +678,7 @@ void QTAIMCriticalPointLocator::locateElectronDensitySources()
 
           qreal distance = QTAIMMathUtilities::distance(a, b);
 
-          if (distance < smallestDistance) {
-            smallestDistance = distance;
-          }
+          smallestDistance = std::min(smallestDistance, distance);
         }
 
         if (smallestDistance > 1.e-2) {
@@ -727,34 +715,22 @@ void QTAIMCriticalPointLocator::locateElectronDensitySinks()
   xmin = xNuclearCoordinates.first();
   xmax = xNuclearCoordinates.first();
   for (qint64 i = 1; i < m_wfn->numberOfNuclei(); ++i) {
-    if (xNuclearCoordinates.at(i) < xmin) {
-      xmin = xNuclearCoordinates.at(i);
-    }
-    if (xNuclearCoordinates.at(i) > xmax) {
-      xmax = xNuclearCoordinates.at(i);
-    }
+    xmin = std::min(xmin, xNuclearCoordinates.at(i));
+    xmax = std::max(xmax, xNuclearCoordinates.at(i));
   }
 
   ymin = yNuclearCoordinates.first();
   ymax = yNuclearCoordinates.first();
   for (qint64 i = 1; i < yNuclearCoordinates.count(); ++i) {
-    if (yNuclearCoordinates.at(i) < ymin) {
-      ymin = yNuclearCoordinates.at(i);
-    }
-    if (yNuclearCoordinates.at(i) > ymax) {
-      ymax = yNuclearCoordinates.at(i);
-    }
+    ymin = std::min(ymin, yNuclearCoordinates.at(i));
+    ymax = std::max(ymax, yNuclearCoordinates.at(i));
   }
 
   zmin = zNuclearCoordinates.first();
   zmax = zNuclearCoordinates.first();
   for (qint64 i = 1; i < zNuclearCoordinates.count(); ++i) {
-    if (zNuclearCoordinates.at(i) < zmin) {
-      zmin = zNuclearCoordinates.at(i);
-    }
-    if (zNuclearCoordinates.at(i) > zmax) {
-      zmax = zNuclearCoordinates.at(i);
-    }
+    zmin = std::min(zmin, zNuclearCoordinates.at(i));
+    zmax = std::max(zmax, zNuclearCoordinates.at(i));
   }
 
   xmin = -2.0 + xmin;
@@ -833,9 +809,7 @@ void QTAIMCriticalPointLocator::locateElectronDensitySinks()
 
           qreal distance = QTAIMMathUtilities::distance(a, b);
 
-          if (distance < smallestDistance) {
-            smallestDistance = distance;
-          }
+          smallestDistance = std::min(smallestDistance, distance);
         }
 
         if (smallestDistance > 1.e-2) {

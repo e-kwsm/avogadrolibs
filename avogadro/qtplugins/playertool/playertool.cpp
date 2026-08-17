@@ -97,8 +97,7 @@ QWidget* PlayerTool::toolWidget() const
 
     int maxFrame =
       m_molecule ? static_cast<int>(m_molecule->coordinate3dCount()) : 0;
-    if (maxFrame < 1)
-      maxFrame = 1;
+    maxFrame = std::max(maxFrame, 1);
     const int frame = std::clamp(m_currentFrame, 0, maxFrame - 1);
 
     auto* frameLabel = new QLabel(tr("Frame:"));

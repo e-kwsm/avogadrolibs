@@ -11,6 +11,8 @@
 
 #include <avogadro/qtgui/jsonwidget.h>
 
+#include <algorithm>
+
 using namespace Avogadro::QtGui;
 
 namespace {
@@ -51,8 +53,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
   ensureApp();
 
   // Cap input size
-  if (Size > kMaxJsonLen)
-    Size = kMaxJsonLen;
+  Size = std::min(Size, kMaxJsonLen);
 
   // Try to parse as JSON
   QJsonParseError error;
