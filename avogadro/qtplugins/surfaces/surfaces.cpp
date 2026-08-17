@@ -586,8 +586,7 @@ void Surfaces::calculateEDT(Type type, float defaultResolution)
       auto radius =
         Core::Elements::radiusVDW(m_molecule->atomicNumber(i)) + probeRadius;
       atoms.emplace_back(atomPositions[i], radius);
-      if (radius > max_radius)
-        max_radius = radius;
+      max_radius = std::max(max_radius, radius);
     }
 
     double padding = max_radius + probeRadius + 0.2;
