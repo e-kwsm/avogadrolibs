@@ -249,8 +249,7 @@ BenchmarkResult benchmarkFile(const fs::path& moleculePath,
 
   // Pick the HOMO for MO benchmarking
   int homo = basis->homo();
-  if (homo < 0)
-    homo = 0;
+  homo = std::max(homo, 0);
 
   std::cout << "  " << result.label << ": " << result.atoms << " atoms, "
             << result.basisFunctions << " BFs, " << result.gridPoints

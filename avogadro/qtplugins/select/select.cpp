@@ -20,6 +20,8 @@
 
 #include <QtCore/QStringList>
 
+#include <algorithm>
+
 using Avogadro::QtGui::Molecule;
 
 namespace Avogadro::QtPlugins {
@@ -367,8 +369,7 @@ void Select::enlargeSelection()
       // we'll use the squaredNorm to save a bunch of square roots
       Vector3 displacement = m_molecule->atomPosition3d(i) - center;
       Real distance = displacement.squaredNorm();
-      if (distance > maxDistance)
-        maxDistance = distance;
+      maxDistance = std::max(maxDistance, distance);
     }
   }
   maxDistance = sqrt(maxDistance) + 2.5;
@@ -404,13 +405,11 @@ void Select::shrinkSelection()
       // we'll use the squaredNorm to save a bunch of square roots
       Vector3 displacement = m_molecule->atomPosition3d(i) - center;
       Real distance = displacement.squaredNorm();
-      if (distance > maxDistance)
-        maxDistance = distance;
+      maxDistance = std::max(maxDistance, distance);
     }
   }
   maxDistance = sqrt(maxDistance) - 2.5;
-  if (maxDistance < 0.0)
-    maxDistance = 0.0;
+  maxDistance = std::max(maxDistance, 0.0);
   maxDistance *= maxDistance; // square to compare with .squaredNorm() values
 
   QString undoText = tr("Shrink Selection");

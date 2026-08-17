@@ -22,6 +22,8 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/qtgui/chartwidget.h>
 
+#include <algorithm>
+
 using Avogadro::Core::Molecule;
 using Avogadro::QtGui::ChartWidget;
 
@@ -556,8 +558,7 @@ void SpectraDialog::changeSpectra()
     item = new QTableWidgetItem(QString::number(m_intensities[i], 'f', 4));
     m_ui->dataTable->setItem(i, 1, item);
 
-    if (m_intensities[i] > maxIntensity)
-      maxIntensity = m_intensities[i];
+    maxIntensity = std::max(maxIntensity, m_intensities[i]);
   }
 
   // update the spin boxes
@@ -891,16 +892,14 @@ void SpectraDialog::updatePlot()
 
   double maxIntensity = 0.0f;
   for (auto intensity : m_intensities) {
-    if (intensity > maxIntensity)
-      maxIntensity = intensity;
+    maxIntensity = std::max(maxIntensity, intensity);
   }
 
   // if transmission for IR, set the max intensity to 100
   if (type == SpectraType::Infrared)
     maxIntensity = 100.0;
 
-  if (maxIntensity < 1.0)
-    maxIntensity = 1.0;
+  maxIntensity = std::max(maxIntensity, 1.0);
 
   // now compose the plot data
   float scale = m_ui->scaleSpinBox->value();
