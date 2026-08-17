@@ -44,6 +44,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 1:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -65,6 +67,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 2:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -86,6 +90,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 3:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -107,6 +113,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 4:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -128,6 +136,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 5:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -149,6 +159,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 6:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -180,6 +192,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 2:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -211,6 +225,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 3:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -242,6 +258,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 4:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -273,6 +291,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 5:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -304,6 +324,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 2;
         case 6:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -333,6 +355,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 2:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -362,6 +386,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 3:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -391,6 +417,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 4:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -420,6 +448,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 5:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -449,6 +479,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 6:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -480,6 +512,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 2:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -512,6 +546,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 3:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -544,6 +580,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 4:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -576,6 +614,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 5:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -608,6 +648,8 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           return 3;
         case 6:
           return 1;
+        default:
+          throw;
       }
       break;
 
@@ -639,8 +681,12 @@ static unsigned int atomValence(const unsigned char atomicNumber,
           if (numBonds <= 1)
             return 1;
           return 3;
+        default:
+          throw;
       }
       break;
+    default:
+      throw;
   }
   return numBonds;
 }
