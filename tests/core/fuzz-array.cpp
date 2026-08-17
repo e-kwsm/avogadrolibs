@@ -130,8 +130,8 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
       }
       case 15: { // iterate (const)
         int sum = 0;
-        for (auto it = arr.begin(); it != arr.end(); ++it)
-          sum += *it;
+        for (int it : arr)
+          sum += it;
         (void)sum;
         break;
       }
