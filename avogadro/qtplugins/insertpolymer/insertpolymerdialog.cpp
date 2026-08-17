@@ -30,6 +30,7 @@
 #include <QTreeView>
 #include <QVBoxLayout>
 
+#include <algorithm>
 #include <cmath>
 
 namespace Avogadro::QtPlugins {
@@ -493,8 +494,7 @@ QString InsertPolymerDialog::assemblePolymerSmiles() const
     if (statisticalPolymer) {
       double cPercent =
         1.0 - aPercent - bPercent; // remainder, may include disabled slots
-      if (cPercent < 0.0)
-        cPercent = 0.0;
+      cPercent = std::max(cPercent, 0.0);
       avgMass = aPercent * m_massA + bPercent * m_massB + cPercent * m_massC;
     } else {
       int totalBlock = aRepeats + bRepeats + cRepeats;
@@ -505,8 +505,7 @@ QString InsertPolymerDialog::assemblePolymerSmiles() const
     }
     if (avgMass > 0.0) {
       totalRepeats = static_cast<int>(std::round(totalRepeats / avgMass));
-      if (totalRepeats < 1)
-        totalRepeats = 1;
+      totalRepeats = std::max(totalRepeats, 1);
     }
   }
 

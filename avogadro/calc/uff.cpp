@@ -16,6 +16,7 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
 
+#include <algorithm>
 #include <cstdint>
 #include <unordered_set>
 
@@ -313,8 +314,7 @@ public:
     Bond bond = m_molecule->bond(atom1, atom2);
     Real order = static_cast<Real>(bond.order());
     // order 0 would give log(0) = -inf in the bond-order correction
-    if (order < 1.0)
-      order = 1.0;
+    order = std::max(order, 1.0);
     // check if it's a resonant / aromatic bond
     auto symbol1 = uffparams[m_atomTypes[atom1]].label;
     auto symbol2 = uffparams[m_atomTypes[atom2]].label;

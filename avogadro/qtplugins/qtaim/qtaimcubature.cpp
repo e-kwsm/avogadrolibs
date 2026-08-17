@@ -73,6 +73,7 @@
 #include <QVariant>
 #include <QtConcurrent/QtConcurrentMap>
 
+#include <algorithm>
 #include <cfloat>
 #include <climits>
 #include <cmath>
@@ -174,8 +175,7 @@ static double errMax(unsigned int fdim, const esterr* ee)
   double errmax = 0;
   unsigned int k;
   for (k = 0; k < fdim; ++k)
-    if (ee[k].err > errmax)
-      errmax = ee[k].err;
+    errmax = std::max(errmax, ee[k].err);
   return errmax;
 }
 
@@ -816,8 +816,7 @@ static int rule15gauss_evalError(rule* r, unsigned int fdim, integrand_v f,
       }
       if (result_abs > DBL_MIN / (50 * DBL_EPSILON)) {
         double min_err = 50 * DBL_EPSILON * result_abs;
-        if (min_err > err)
-          err = min_err;
+        err = std::max(err, min_err);
       }
       R[iR].ee[k].err = err;
 

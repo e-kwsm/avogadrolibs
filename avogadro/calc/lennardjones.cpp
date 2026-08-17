@@ -10,6 +10,7 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/unitcell.h>
 
+#include <algorithm>
 #include <cmath>
 
 namespace Avogadro::Calc {
@@ -40,8 +41,7 @@ Real evaluateLennardJonesPairs(const Eigen::VectorXd& x,
         r = cell->distance(ipos, jpos);
       }
 
-      if (r < 0.1)
-        r = 0.1; // ensure we don't divide by zero
+      r = std::max(r, 0.1); // ensure we don't divide by zero
 
       const Real ratio = std::pow(radii(i, j) / r, exponent);
       energy += depth * (ratio * ratio - 2.0 * ratio);
