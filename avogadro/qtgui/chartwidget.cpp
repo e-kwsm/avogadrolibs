@@ -18,11 +18,7 @@ namespace Avogadro::QtGui {
 class ChartWidget::ChartWidgetImpl
 {
 public:
-  ChartWidgetImpl()
-  {
-    plot = new JKQTPlotter;
-    updateAxisColorsForTheme();
-  }
+  ChartWidgetImpl() : plot(new JKQTPlotter) { updateAxisColorsForTheme(); }
   ~ChartWidgetImpl() { delete plot; }
 
   ChartWidgetImpl(const ChartWidgetImpl&) = delete;
