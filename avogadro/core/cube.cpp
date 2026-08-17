@@ -8,6 +8,8 @@
 #include "molecule.h"
 #include "mutex.h"
 
+#include <algorithm>
+
 namespace Avogadro::Core {
 
 Cube::Cube()
@@ -81,18 +83,12 @@ bool Cube::setLimits(const Molecule& mol, float spacing_, float padding)
     Vector3 curPos = min_ = max_ = mol.atomPositions3d()[0];
     for (Index i = 1; i < numAtoms; ++i) {
       curPos = mol.atomPositions3d()[i];
-      if (curPos.x() < min_.x())
-        min_.x() = curPos.x();
-      if (curPos.x() > max_.x())
-        max_.x() = curPos.x();
-      if (curPos.y() < min_.y())
-        min_.y() = curPos.y();
-      if (curPos.y() > max_.y())
-        max_.y() = curPos.y();
-      if (curPos.z() < min_.z())
-        min_.z() = curPos.z();
-      if (curPos.z() > max_.z())
-        max_.z() = curPos.z();
+      min_.x() = std::min(min_.x(), curPos.x());
+      max_.x() = std::max(max_.x(), curPos.x());
+      min_.y() = std::min(min_.y(), curPos.y());
+      max_.y() = std::max(max_.y(), curPos.y());
+      min_.z() = std::min(min_.z(), curPos.z());
+      max_.z() = std::max(max_.z(), curPos.z());
     }
   } else {
     min_ = max_ = Vector3::Zero();

@@ -8,6 +8,7 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/utilities.h>
 
+#include <algorithm>
 #include <iostream>
 
 using std::cout;
@@ -419,8 +420,7 @@ void GAMESSUSOutput::outputAll()
   for (int iMO = 0; iMO < 10 && iMO < m_nMOs && nGTOs > 0; ++iMO) {
     const size_t start = static_cast<size_t>(iMO) * static_cast<size_t>(nGTOs);
     size_t end = start + 10;
-    if (end > m_MOcoeffs.size())
-      end = m_MOcoeffs.size();
+    end = std::min(end, m_MOcoeffs.size());
     for (size_t i = start; i < end; ++i)
       cout << m_MOcoeffs[i] << "\t";
     cout << "\n";
