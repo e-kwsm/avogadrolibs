@@ -11,7 +11,8 @@
 
 namespace Avogadro {
 
-ConformerSearchDialog::ConformerSearchDialog(QWidget* parent) : QDialog(parent)
+ConformerSearchDialog::ConformerSearchDialog(QWidget* parent)
+  : QDialog(parent), m_method(1) /* systematic */, m_numConformers(100)
 {
   ui.setupUi(this);
 
@@ -31,9 +32,6 @@ ConformerSearchDialog::ConformerSearchDialog(QWidget* parent) : QDialog(parent)
   // (and translated) item text.
   ui.scoringComboBox->setItemData(0, QStringLiteral("rmsd"));
   ui.scoringComboBox->setItemData(1, QStringLiteral("energy"));
-
-  m_method = 1; // systematic
-  m_numConformers = 100;
 
   ui.numSpin->setValue(0);
   ui.systematicRadio->setChecked(true);
