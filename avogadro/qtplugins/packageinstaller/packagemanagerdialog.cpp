@@ -50,17 +50,16 @@ static void setRawHeaders(QNetworkRequest* request)
 // ---------------------------------------------------------------------------
 
 PackageManagerDialog::PackageManagerDialog(QWidget* parent)
-  : QDialog(parent), m_ui(new Ui::PackageManagerDialog)
+  : QDialog(parent), m_ui(new Ui::PackageManagerDialog),
+    m_network(new QNetworkAccessManager(this)), m_model(new PackageModel(this)),
+    m_proxyModel(new QSortFilterProxyModel(this))
 {
   m_filePath =
     QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation) +
     QStringLiteral("/plugins");
 
   m_ui->setupUi(this);
-  m_network = new QNetworkAccessManager(this);
 
-  m_model = new PackageModel(this);
-  m_proxyModel = new QSortFilterProxyModel(this);
   m_proxyModel->setSourceModel(m_model);
   m_proxyModel->setFilterCaseSensitivity(Qt::CaseInsensitive);
   m_proxyModel->setFilterKeyColumn(-1); // search all columns
