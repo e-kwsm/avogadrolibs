@@ -351,9 +351,8 @@ QList<QVariant> QTAIMLocateElectronDensitySource(QList<QVariant> input)
 }
 
 QTAIMCriticalPointLocator::QTAIMCriticalPointLocator(QTAIMWavefunction& wfn)
+  : m_wfn(&wfn)
 {
-  m_wfn = &wfn;
-
   m_nuclearCriticalPoints.clear();
   m_bondCriticalPoints.clear();
   m_ringCriticalPoints.clear();
