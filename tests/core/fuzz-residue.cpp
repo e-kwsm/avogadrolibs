@@ -147,7 +147,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
         break;
       }
       case 8: { // copy constructor
-        Residue copy(res);
+        const Residue& copy(res);
         (void)copy.residueName();
         (void)copy.residueId();
         (void)copy.chainId();
@@ -159,7 +159,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
       case 9: { // assignment
         if (resCount > 1) {
           size_t other = fdp.ConsumeIntegral<uint8_t>() % resCount;
-          Residue copy = mol.residue(other);
+          const Residue& copy = mol.residue(other);
           (void)copy.residueName();
         }
         break;

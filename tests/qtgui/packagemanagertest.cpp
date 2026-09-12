@@ -191,7 +191,7 @@ TEST_F(PackageManagerTest, registerPackageEmitsCorrectSignals)
   // Collect all emitted (type, identifier) pairs
   QMap<QString, QStringList> featuresByType;
   for (int i = 0; i < spy.count(); ++i) {
-    QList<QVariant> args = spy.at(i);
+    const QList<QVariant>& args = spy.at(i);
     QString type = args.at(0).toString();
     QString identifier = args.at(3).toString();
     featuresByType[type].append(identifier);
@@ -223,7 +223,7 @@ TEST_F(PackageManagerTest, signalCarriesCorrectMetadata)
 
   // Find the "do-something" menu-command signal
   for (int i = 0; i < spy.count(); ++i) {
-    QList<QVariant> args = spy.at(i);
+    const QList<QVariant>& args = spy.at(i);
     if (args.at(3).toString() == "do-something") {
       EXPECT_EQ(args.at(0).toString(), "menu-commands");
       EXPECT_EQ(args.at(1).toString(), QDir(m_packageDir).absolutePath());
@@ -254,7 +254,7 @@ TEST_F(PackageManagerTest, signalCarriesArrayMetadata)
 
   // Find the "tst" file-format signal
   for (int i = 0; i < spy.count(); ++i) {
-    QList<QVariant> args = spy.at(i);
+    const QList<QVariant>& args = spy.at(i);
     if (args.at(3).toString() == "tst") {
       QVariantMap meta = args.at(4).toMap();
       QVariantList exts = meta["file-extensions"].toList();
@@ -319,7 +319,7 @@ TEST_F(PackageManagerTest, loadRegisteredPackagesTypeFilterReplaysOnlyMatches)
   pm->loadRegisteredPackages(QStringLiteral("electrostatic-models"));
 
   ASSERT_EQ(spy.count(), 1);
-  const QList<QVariant> args = spy.at(0);
+  const QList<QVariant>& args = spy.at(0);
   ASSERT_EQ(args.size(), 5);
   EXPECT_EQ(args.at(0).toString(), QStringLiteral("electrostatic-models"));
   EXPECT_EQ(args.at(3).toString(), QStringLiteral("test_charges"));
@@ -337,7 +337,7 @@ TEST_F(PackageManagerTest, unregisterPackage)
   // Should have emitted featureRemoved for all 6 features
   EXPECT_EQ(removedSpy.count(), 6);
   for (int i = 0; i < removedSpy.count(); ++i) {
-    const QList<QVariant> args = removedSpy.at(i);
+    const QList<QVariant>& args = removedSpy.at(i);
     ASSERT_EQ(args.size(), 4);
     EXPECT_FALSE(args.at(0).toString().isEmpty()); // type
     EXPECT_EQ(args.at(1).toString(), QDir(m_packageDir).absolutePath());
