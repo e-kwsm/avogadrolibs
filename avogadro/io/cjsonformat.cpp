@@ -530,7 +530,7 @@ bool CjsonFormat::deserialize(std::istream& file, Molecule& molecule)
       if (coordSets.is_array() && coordSets.size()) {
         for (unsigned int i = 0; i < coordSets.size(); ++i) {
           Array<Vector3> setArray;
-          json set = coordSets[i];
+          const json& set = coordSets[i];
           if (isNumericArray(set)) {
             for (unsigned int j = 0; j < set.size() / 3; ++j) {
               setArray.push_back(
