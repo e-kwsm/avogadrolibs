@@ -893,8 +893,8 @@ bool CrystalTools::buildSupercell(Molecule& molecule, const Vector3& rangeMin,
   std::array<long, 3> tMin, tMax;
   for (int i = 0; i < 3; ++i) {
     if (isSupercell) {
-      tMin[i] = static_cast<long>(std::lround(rangeMin[i]));
-      tMax[i] = static_cast<long>(std::lround(rangeMax[i])) - 1;
+      tMin[i] = std::lround(rangeMin[i]);
+      tMax[i] = std::lround(rangeMax[i]) - 1;
     } else {
       // An atom's fractional coordinate is f + n, and f may itself lie outside
       // [0, 1), so widen the translation window by the span of f.

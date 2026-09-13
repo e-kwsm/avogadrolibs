@@ -919,8 +919,7 @@ void TemplateTool::atomLeftClickCenter(QMouseEvent* e)
     return;
 
   unsigned char newAtomic = m_toolWidget->atomicNumber();
-  signed char newCharge =
-    static_cast<signed char>(m_toolWidget->formalCharge());
+  signed char newCharge = m_toolWidget->formalCharge();
   unsigned char selectedAtomic = m_molecule->atomicNumber(selectedIndex);
 
   // Non-hydrogen: swap element and formal charge in place, keep bonds.
