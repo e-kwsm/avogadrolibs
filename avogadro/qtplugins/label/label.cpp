@@ -8,7 +8,6 @@
 #include <iomanip>
 #include <iostream>
 #include <sstream>
-#include <utility>
 
 // for partial charges
 #include <avogadro/calc/chargemanager.h>
@@ -130,7 +129,7 @@ struct LayerLabel : Core::LayerData
   LayerLabel(std::string settings)
   {
     widget = nullptr;
-    deserialize(std::move(settings));
+    deserialize(settings);
   }
 
   LayerData* clone() final { return new LayerLabel(serialize()); }
