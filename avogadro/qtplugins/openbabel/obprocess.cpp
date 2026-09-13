@@ -407,7 +407,7 @@ void OBProcess::chargesPrepareOutput()
 
 bool OBProcess::optimizeGeometry(const QByteArray& mol,
                                  const QStringList& options,
-                                 const std::string& format)
+                                 const std::string format)
 {
   if (!tryLockProcess()) {
     qWarning() << "OBProcess::optimizeGeometry(): process already in use.";
@@ -441,7 +441,7 @@ bool OBProcess::optimizeGeometry(const QByteArray& mol,
 
 bool OBProcess::generateConformers(const QByteArray& mol,
                                    const QStringList& options,
-                                   const std::string& format)
+                                   const std::string format)
 {
   if (!tryLockProcess()) {
     qWarning() << "OBProcess::generateConformers(): process already in use.";

@@ -57,7 +57,7 @@ private:
   QAction* m_focusSelectionAction;
   QAction* m_unfocusAction;
 
-  void newFocus(const Eigen::Vector3f& point, float distance);
+  void newFocus(Eigen::Vector3f point, float distance);
 };
 
 } // namespace Avogadro::QtPlugins
