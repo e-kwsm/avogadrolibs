@@ -161,12 +161,8 @@ void FileFormat::close()
   }
   m_decompressor = nullptr;
   m_compressor = nullptr;
-  if (m_in) {
-    m_in.reset();
-  }
-  if (m_out) {
-    m_out.reset();
-  }
+  m_in.reset();
+  m_out.reset();
   m_mode = None;
 }
 
