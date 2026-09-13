@@ -51,20 +51,20 @@ public:
    * @brief Sends a network request to search for molecules from PQR;
    * @param url The url to query
    */
-  void sendRequest(const QString&);
+  void sendRequest(QString);
 
   /**
    * @brief Sends a network request to download a file from PQR
    * @param url The url to send the request to
    * @param mol2 The mol2 representation of the molecule to download
    */
-  void sendRequest(const QString&, const QString&);
+  void sendRequest(QString, QString);
 
   /**
    * @brief Sends a network request to download a png form PQR
    * @param url The url to send the request to
    */
-  void sendPNGRequest(const QString& url);
+  void sendPNGRequest(QString url);
 
   /**
    * @brief Called when a molecule is selected to display information about the
@@ -136,14 +136,14 @@ private:
    * @brief Takes a formula string and returns a QString with subscript tags
    * @param formula The formula string
    */
-  QString parseSubscripts(const QString&);
+  QString parseSubscripts(QString);
 
   /**
    * @brief Takes a formula string and returns the molecular mass of the
    * molecule
    * @param formula The formula string
    */
-  float getMolMass(const QString&);
+  float getMolMass(QString);
 };
 } // namespace QtPlugins
 } // namespace Avogadro
