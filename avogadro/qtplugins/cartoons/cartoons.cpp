@@ -187,7 +187,7 @@ struct LayerCartoon : Core::LayerData
   LayerCartoon(std::string settings)
   {
     widget = nullptr;
-    deserialize(std::move(settings));
+    deserialize(settings);
   }
 
   ~LayerCartoon() override
@@ -202,7 +202,7 @@ struct LayerCartoon : Core::LayerData
 struct BackboneResidue
 {
   BackboneResidue() = default;
-  BackboneResidue(const Vector3f& p, const Vector3ub& c1, const Vector3ub& c2,
+  BackboneResidue(const Vector3f p, const Vector3ub& c1, const Vector3ub& c2,
                   const size_t& g, size_t id, bool sel,
                   Residue::SecondaryStructure sec)
     : pos(p), color1(c1), color2(c2), group(g), residueID(id), selected(sel),
