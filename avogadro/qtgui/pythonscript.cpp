@@ -548,7 +548,7 @@ void PythonScript::asyncTerminate()
   }
 }
 
-QByteArray PythonScript::asyncWriteAndResponse(const QByteArray& input)
+QByteArray PythonScript::asyncWriteAndResponse(QByteArray input)
 {
   if (m_process == nullptr)
     return QByteArray();
