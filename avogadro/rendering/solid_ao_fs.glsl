@@ -58,24 +58,15 @@ const int AO_TILE = 4;
 // One kernel rotation per pixel of the tile.
 const int AO_SAMPLES = AO_TILE * AO_TILE;
 
-const vec2 SSAOkernel[16] = vec2[16](
-        vec2(0.072170, 0.081556),
-        vec2(-0.035126, 0.056701),
-        vec2(-0.034186, -0.083598),
-        vec2(-0.056102, -0.009235),
-        vec2(0.017487, -0.099822),
-        vec2(0.071065, 0.015921),
-        vec2(0.040950, 0.079834),
-        vec2(-0.087751, 0.065326),
-        vec2(0.061108, -0.025829),
-        vec2(0.081262, -0.025854),
-        vec2(-0.063816, 0.083857),
-        vec2(0.043747, -0.068586),
-        vec2(-0.089848, 0.049046),
-        vec2(-0.065370, 0.058761),
-        vec2(0.099581, -0.089322),
-        vec2(-0.032077, -0.042826)
-    );
+const vec2 SSAOkernel[16] =
+  vec2[16](vec2(0.072170, 0.081556), vec2(-0.035126, 0.056701),
+           vec2(-0.034186, -0.083598), vec2(-0.056102, -0.009235),
+           vec2(0.017487, -0.099822), vec2(0.071065, 0.015921),
+           vec2(0.040950, 0.079834), vec2(-0.087751, 0.065326),
+           vec2(0.061108, -0.025829), vec2(0.081262, -0.025854),
+           vec2(-0.063816, 0.083857), vec2(0.043747, -0.068586),
+           vec2(-0.089848, 0.049046), vec2(-0.065370, 0.058761),
+           vec2(0.099581, -0.089322), vec2(-0.032077, -0.042826));
 
 float computeSSAOLuminosity(vec3 normal, float depth)
 {
@@ -88,10 +79,7 @@ float computeSSAOLuminosity(vec3 normal, float depth)
             float(AO_SAMPLES);
   float S = sin(A);
   float C = cos(A);
-  mat2 rotation = mat2(
-    C, -S,
-    S, C
-  );
+  mat2 rotation = mat2(C, -S, S, C);
   for (int i = 0; i < AO_SAMPLES; i++) {
     vec2 samplePoint = rotation * SSAOkernel[i];
     float occluderDepth = texture(inDepthTex, UV + samplePoint).x;
@@ -104,7 +92,8 @@ float computeSSAOLuminosity(vec3 normal, float depth)
   return max(0.0, 1.2 - inAoStrength * totalOcclusion);
 }
 
-void main() {
+void main()
+{
   float depth = texture(inDepthTex, UV).x;
   // Can exceed 1.0: the term brightens as well as darkens, so the buffer this
   // is written to has to be a float format rather than a normalized one.
