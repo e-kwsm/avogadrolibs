@@ -47,9 +47,7 @@ public:
 
   /** Creates a variant to store @p value. */
   template <typename T>
-  Variant(const T& value);
-  template <typename T>
-  Variant(T* value);
+  Variant(T value);
 
   /** Creates a new copy of @p variant. */
   inline Variant(const Variant& variant);
@@ -68,9 +66,7 @@ public:
 
   /** Sets the value of the variant to @p value. */
   template <typename T>
-  bool setValue(const T& value);
-  template <typename T>
-  bool setValue(T* value);
+  bool setValue(T value);
 
   /** Sets the value of the variant to a 3D vector */
   bool setValue(double x, double y, double z);
