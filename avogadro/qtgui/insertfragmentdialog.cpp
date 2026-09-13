@@ -41,8 +41,7 @@ public:
   }
 };
 
-InsertFragmentDialog::InsertFragmentDialog(QWidget* aParent,
-                                           const QString& directory)
+InsertFragmentDialog::InsertFragmentDialog(QWidget* aParent, QString directory)
   : QDialog(aParent), m_ui(new Ui::InsertFragmentDialog),
     m_implementation(new Private)
 {
