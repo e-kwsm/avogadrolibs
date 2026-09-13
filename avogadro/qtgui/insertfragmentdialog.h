@@ -26,7 +26,7 @@ class AVOGADROQTGUI_EXPORT InsertFragmentDialog : public QDialog
 
 public:
   explicit InsertFragmentDialog(QWidget* parent = nullptr,
-                                const QString& directory = "molecules");
+                                QString directory = "molecules");
   ~InsertFragmentDialog() override;
 
   QString fileName();
