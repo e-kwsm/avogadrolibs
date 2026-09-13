@@ -44,7 +44,7 @@ public:
    * spread. Points with non-finite coordinates are ignored: they are never
    * returned as neighbors, and do not affect the other points.
    */
-  NeighborPerceiver(const Array<Vector3>& points, float maxDistance);
+  NeighborPerceiver(const Array<Vector3> points, float maxDistance);
 
   /**
    * Returns a list of neighboring points. Linear time to number of neighbors.

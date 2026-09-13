@@ -353,7 +353,7 @@ QUndoCommand* Manipulator::mouseMoveEvent(QMouseEvent* e)
   return nullptr;
 }
 
-void Manipulator::translate(const Vector3& delta, bool moveSelected)
+void Manipulator::translate(Vector3 delta, bool moveSelected)
 {
   for (Index i = 0; i < m_molecule->atomCount(); ++i) {
     if (moveSelected && !m_molecule->atomSelected(i))
@@ -366,8 +366,7 @@ void Manipulator::translate(const Vector3& delta, bool moveSelected)
   }
 }
 
-void Manipulator::rotate(Vector3 delta, const Vector3& centroid,
-                         bool moveSelected)
+void Manipulator::rotate(Vector3 delta, Vector3 centroid, bool moveSelected)
 {
   // Rotate the selected atoms about the center
   // rotate only selected primitives
@@ -398,8 +397,7 @@ void Manipulator::rotate(Vector3 delta, const Vector3& centroid,
   }
 }
 
-void Manipulator::axisRotate(Vector3 delta, const Vector3& centroid,
-                             bool moveSelected)
+void Manipulator::axisRotate(Vector3 delta, Vector3 centroid, bool moveSelected)
 {
   // rotate by the x, y, z axes by delta[0], delta[1], delta[2]
   // (in radians)
@@ -430,7 +428,7 @@ void Manipulator::axisRotate(Vector3 delta, const Vector3& centroid,
   }
 }
 
-void Manipulator::tilt(Vector3 delta, const Vector3& centroid)
+void Manipulator::tilt(Vector3 delta, Vector3 centroid)
 {
   // Rotate the selected atoms about the center
   // rotate only selected primitives
