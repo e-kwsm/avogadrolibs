@@ -37,7 +37,7 @@ public:
   ~DashedLineGeometry() override;
 
   DashedLineGeometry& operator=(DashedLineGeometry);
-  friend void swap(DashedLineGeometry& lhs, DashedLineGeometry& rhs) noexcept;
+  friend void swap(DashedLineGeometry& lhs, DashedLineGeometry& rhs);
 
   /**
    * Accept a visit from our friendly visitor.
@@ -128,7 +128,7 @@ inline DashedLineGeometry& DashedLineGeometry::operator=(
   return *this;
 }
 
-inline void swap(DashedLineGeometry& lhs, DashedLineGeometry& rhs) noexcept
+inline void swap(DashedLineGeometry& lhs, DashedLineGeometry& rhs)
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
