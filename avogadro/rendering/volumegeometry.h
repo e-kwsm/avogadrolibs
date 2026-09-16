@@ -24,7 +24,7 @@ public:
   ~VolumeGeometry() override;
 
   VolumeGeometry& operator=(VolumeGeometry);
-  friend void swap(VolumeGeometry& lhs, VolumeGeometry& rhs) noexcept;
+  friend void swap(VolumeGeometry& lhs, VolumeGeometry& rhs);
 
   /**
    * Accept a visit from our friendly visitor.
