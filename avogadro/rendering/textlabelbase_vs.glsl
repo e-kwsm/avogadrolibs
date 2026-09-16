@@ -55,7 +55,7 @@ void main(void)
   float MIN_DEPTH = 1.0e-06;
   if (proj[3][3] != 0.0) {
     eyeAnchor.z += radius;
-  } else if(-eyeAnchor.z > MIN_DEPTH) {
+  } else if (-eyeAnchor.z > MIN_DEPTH) {
     float scale = 1.0 + radius / eyeAnchor.z;
     eyeAnchor *= vec4(scale, scale, scale, 1.0);
   }
