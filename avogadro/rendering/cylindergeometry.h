@@ -44,7 +44,7 @@ public:
   ~CylinderGeometry() override;
 
   CylinderGeometry& operator=(CylinderGeometry);
-  friend void swap(CylinderGeometry& lhs, CylinderGeometry& rhs) noexcept;
+  friend void swap(CylinderGeometry& lhs, CylinderGeometry& rhs);
 
   /**
    * Accept a visit from our friendly visitor.
@@ -182,7 +182,7 @@ inline CylinderGeometry& CylinderGeometry::operator=(CylinderGeometry other)
   return *this;
 }
 
-inline void swap(CylinderGeometry& lhs, CylinderGeometry& rhs) noexcept
+inline void swap(CylinderGeometry& lhs, CylinderGeometry& rhs)
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
