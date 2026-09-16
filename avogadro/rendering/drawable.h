@@ -41,7 +41,7 @@ public:
   virtual ~Drawable();
 
   Drawable& operator=(Drawable);
-  friend void swap(Drawable& lhs, Drawable& rhs) noexcept;
+  friend void swap(Drawable& lhs, Drawable& rhs);
 
   /**
    * Accept a visit from our friendly visitor.
@@ -134,7 +134,7 @@ inline Drawable& Drawable::operator=(Drawable rhs)
   return *this;
 }
 
-inline void swap(Drawable& lhs, Drawable& rhs) noexcept
+inline void swap(Drawable& lhs, Drawable& rhs)
 {
   using std::swap;
   swap(lhs.m_parent, rhs.m_parent);

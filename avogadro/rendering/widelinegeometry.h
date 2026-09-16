@@ -70,7 +70,7 @@ public:
   ~WideLineGeometry() override;
 
   WideLineGeometry& operator=(WideLineGeometry);
-  friend void swap(WideLineGeometry& lhs, WideLineGeometry& rhs) noexcept;
+  friend void swap(WideLineGeometry& lhs, WideLineGeometry& rhs);
 
   /**
    * Accept a visit from our friendly visitor.
@@ -186,7 +186,7 @@ inline WideLineGeometry& WideLineGeometry::operator=(WideLineGeometry other)
   return *this;
 }
 
-inline void swap(WideLineGeometry& lhs, WideLineGeometry& rhs) noexcept
+inline void swap(WideLineGeometry& lhs, WideLineGeometry& rhs)
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
