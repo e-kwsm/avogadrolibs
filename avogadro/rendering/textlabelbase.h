@@ -32,7 +32,7 @@ public:
   ~TextLabelBase() override;
 
   TextLabelBase& operator=(TextLabelBase other);
-  friend void swap(TextLabelBase& lhs, TextLabelBase& rhs);
+  friend void swap(TextLabelBase& lhs, TextLabelBase& rhs) noexcept;
 
   void render(const Camera& camera) override;
 
@@ -92,7 +92,7 @@ inline TextLabelBase& TextLabelBase::operator=(TextLabelBase other)
   return *this;
 }
 
-inline void swap(TextLabelBase& lhs, TextLabelBase& rhs)
+inline void swap(TextLabelBase& lhs, TextLabelBase& rhs) noexcept
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
