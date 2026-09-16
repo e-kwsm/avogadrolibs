@@ -45,12 +45,12 @@ void main(void)
   // eyeAnchor.z is negative for items in front of the camera
   // The scaling factor is:
   // S = eyeAnchor.z'/eyeAnchor.z
-  //   = (eyeAnchor.z + radius)/eyeAnchor.z 
+  //   = (eyeAnchor.z + radius)/eyeAnchor.z
   //   = 1 + radius/eyeAnchor.z
-  
+
   float MIN_DEPTH = 1.0e-06;
-  if(-eyeAnchor.z > MIN_DEPTH) {
-    float scale = 1.0 + radius / eyeAnchor.z; 
+  if (-eyeAnchor.z > MIN_DEPTH) {
+    float scale = 1.0 + radius / eyeAnchor.z;
     eyeAnchor *= vec4(scale, scale, scale, 1.0);
   }
 
