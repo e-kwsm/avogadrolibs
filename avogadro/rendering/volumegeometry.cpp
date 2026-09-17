@@ -234,7 +234,7 @@ VolumeGeometry& VolumeGeometry::operator=(VolumeGeometry other)
   return *this;
 }
 
-void swap(VolumeGeometry& lhs, VolumeGeometry& rhs)
+void swap(VolumeGeometry& lhs, VolumeGeometry& rhs) noexcept
 {
   using std::swap;
   swap(lhs.m_cube, rhs.m_cube);
