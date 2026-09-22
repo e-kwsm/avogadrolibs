@@ -10,6 +10,7 @@
 #include "molecule.h"
 
 #include <algorithm>
+#include <array>
 #include <cmath>
 #include <iostream>
 #include <utility>
@@ -127,7 +128,7 @@ void gridD(const Avogadro::Core::ShellInfo& shell, int mo,
            int kmax, int ny, int nz, int iStart, double* output)
 {
   // 6 cartesian D components: xx, yy, zz, xy, xz, yz
-  double mo_c[6];
+  std::array<double, 6> mo_c;
   bool allZero = true;
   for (int c = 0; c < 6; ++c) {
     mo_c[c] = moMat(shell.moIndex + c, mo);
@@ -144,7 +145,7 @@ void gridD(const Avogadro::Core::ShellInfo& shell, int mo,
   for (unsigned int p = shell.gtoStart; p < shell.gtoEnd; ++p) {
     double alpha = gtoA[p];
     unsigned int cOff = shell.cStart + 6 * (p - shell.gtoStart);
-    double c[6];
+    std::array<double, 6> c;
     for (int n = 0; n < 6; ++n)
       c[n] = gtoCN[cOff + n] * mo_c[n];
 
@@ -188,7 +189,7 @@ void gridD5(const Avogadro::Core::ShellInfo& shell, int mo,
   // splits into a k-independent -(xx + yy)/2 part and a zz part that has to
   // be evaluated inside the k loop. It was previously -(xx + yy) with no z
   // term, which is not a d function at all (see pointD5).
-  double mo_c[5];
+  std::array<double, 5> mo_c;
   bool allZero = true;
   for (int c = 0; c < 5; ++c) {
     mo_c[c] = moMat(shell.moIndex + c, mo);
@@ -205,7 +206,7 @@ void gridD5(const Avogadro::Core::ShellInfo& shell, int mo,
   for (unsigned int p = shell.gtoStart; p < shell.gtoEnd; ++p) {
     double alpha = gtoA[p];
     unsigned int cOff = shell.cStart + 5 * (p - shell.gtoStart);
-    double c[5];
+    std::array<double, 5> c;
     for (int n = 0; n < 5; ++n)
       c[n] = gtoCN[cOff + n] * mo_c[n];
 
@@ -248,7 +249,7 @@ void gridF(const Avogadro::Core::ShellInfo& shell, int mo,
            int kmax, int ny, int nz, int iStart, double* output)
 {
   // 10 cartesian F: xxx,yyy,zzz,xyy,xxy,xxz,xzz,yzz,yyz,xyz (Molden order)
-  double mo_c[10];
+  std::array<double, 10> mo_c;
   bool allZero = true;
   for (int c = 0; c < 10; ++c) {
     mo_c[c] = moMat(shell.moIndex + c, mo);
@@ -265,7 +266,7 @@ void gridF(const Avogadro::Core::ShellInfo& shell, int mo,
   for (unsigned int p = shell.gtoStart; p < shell.gtoEnd; ++p) {
     double alpha = gtoA[p];
     unsigned int cOff = shell.cStart + 10 * (p - shell.gtoStart);
-    double c[10];
+    std::array<double, 10> c;
     for (int n = 0; n < 10; ++n)
       c[n] = gtoCN[cOff + n] * mo_c[n];
 
@@ -307,7 +308,7 @@ void gridF7(const Avogadro::Core::ShellInfo& shell, int mo,
             int kmax, int ny, int nz, int iStart, double* output)
 {
   // 7 spherical F components
-  double mo_c[7];
+  std::array<double, 7> mo_c;
   bool allZero = true;
   for (int n = 0; n < 7; ++n) {
     mo_c[n] = moMat(shell.moIndex + n, mo);
@@ -328,7 +329,7 @@ void gridF7(const Avogadro::Core::ShellInfo& shell, int mo,
   for (unsigned int p = shell.gtoStart; p < shell.gtoEnd; ++p) {
     double alpha = gtoA[p];
     unsigned int cOff = shell.cStart + 7 * (p - shell.gtoStart);
-    double c[7];
+    std::array<double, 7> c;
     for (int n = 0; n < 7; ++n)
       c[n] = gtoCN[cOff + n] * mo_c[n];
 
@@ -383,7 +384,7 @@ void gridG(const Avogadro::Core::ShellInfo& shell, int mo,
 {
   // 15 cartesian G: Molden order
   // xxxx,yyyy,zzzz,xxxy,xxxz,yyyx,yyyz,zzzx,zzzy,xxyy,xxzz,yyzz,xxyz,yyxz,zzxy
-  double mo_c[15];
+  std::array<double, 15> mo_c;
   bool allZero = true;
   for (int n = 0; n < 15; ++n) {
     mo_c[n] = moMat(shell.moIndex + n, mo);
@@ -400,7 +401,7 @@ void gridG(const Avogadro::Core::ShellInfo& shell, int mo,
   for (unsigned int p = shell.gtoStart; p < shell.gtoEnd; ++p) {
     double alpha = gtoA[p];
     unsigned int cOff = shell.cStart + 15 * (p - shell.gtoStart);
-    double c[15];
+    std::array<double, 15> c;
     for (int n = 0; n < 15; ++n)
       c[n] = gtoCN[cOff + n] * mo_c[n];
 
@@ -451,7 +452,7 @@ void gridG9(const Avogadro::Core::ShellInfo& shell, int mo,
             int kmax, int ny, int nz, int iStart, double* output)
 {
   // 9 spherical G components
-  double mo_c[9];
+  std::array<double, 9> mo_c;
   bool allZero = true;
   for (int n = 0; n < 9; ++n) {
     mo_c[n] = moMat(shell.moIndex + n, mo);
@@ -472,7 +473,7 @@ void gridG9(const Avogadro::Core::ShellInfo& shell, int mo,
   for (unsigned int p = shell.gtoStart; p < shell.gtoEnd; ++p) {
     double alpha = gtoA[p];
     unsigned int cOff = shell.cStart + 9 * (p - shell.gtoStart);
-    double c[9];
+    std::array<double, 9> c;
     for (int n = 0; n < 9; ++n)
       c[n] = gtoCN[cOff + n] * mo_c[n];
 
@@ -1235,11 +1236,11 @@ inline void GaussianSetTools::pointD5(const ShellInfo& shell,
   // not a d function -- it had a non-zero overlap with an s function on the
   // same centre and a norm of sqrt(8/3) rather than 1. The other four
   // components were and remain correct.
-  std::array<double, 5> = { (3.0 * zz - dr2) / 2.0, // 0
-                            xz,                     // 1p
-                            yz,                     // 1n
-                            xx - yy,                // 2p
-                            xy };                   // 2n
+  std::array<double, 5> componentsD = { (3.0 * zz - dr2) / 2.0, // 0
+                                        xz,                     // 1p
+                                        yz,                     // 1n
+                                        xx - yy,                // 2p
+                                        xy };                   // 2n
 
   for (int i = 0; i < 5; ++i)
     values[shell.moIndex + i] += componentsD[i] * components[i];
