@@ -37,7 +37,7 @@ struct ShellInfo
   unsigned int cStart;    //! First index into normalized coefficient array
   int nComponents;        //! Number of basis functions in this shell
   double cutoffSquared;   //! Precomputed cutoff distance squared
-  double centerBohr[3];   //! Shell center in Bohr (precomputed)
+  std::array<double, 3> centerBohr; //! Shell center in Bohr (precomputed)
 };
 
 /**
