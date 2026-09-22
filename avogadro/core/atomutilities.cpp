@@ -261,7 +261,7 @@ constexpr unsigned int bondKey(unsigned char atomicNumber1,
  *
  * Sorted by (atomicNumber1, atomicNumber2, order); keep it that way.
  */
-const IdealBondLength ideal_bond_lengths[] = {
+const std::vector<IdealBondLength> ideal_bond_lengths = {
   { 1, 1, 1, 0.741 },  // H-H   H2 (radii: 0.640)
   { 1, 5, 1, 1.190 },  // H-B   B2H6 terminal (radii: 1.170)
   { 1, 6, 1, 1.090 },  // H-C   CH4 / CSD sp3 (radii: 1.070)
@@ -390,9 +390,9 @@ Real AtomUtilities::idealBondLength(unsigned char atomicNumber1,
 
   const unsigned int key = bondKey(lighter, heavier, bondOrder);
 
-  const IdealBondLength* begin = std::begin(ideal_bond_lengths);
-  const IdealBondLength* end = std::end(ideal_bond_lengths);
-  const IdealBondLength* match = std::lower_bound(
+  auto begin = ideal_bond_lengths.cbegin();
+  auto end = ideal_bond_lengths.cend();
+  auto match = std::lower_bound(
     begin, end, key, [](const IdealBondLength& bond, unsigned int value) {
       return bondKey(bond.atomicNumber1, bond.atomicNumber2, bond.order) <
              value;
