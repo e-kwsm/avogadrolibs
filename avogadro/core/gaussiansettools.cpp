@@ -1162,7 +1162,8 @@ inline void GaussianSetTools::pointF(const ShellInfo& shell,
   double zzz = delta.z() * delta.z() * delta.z();
 
   // Molden order
-  double componentsF[10] = { xxx, yyy, zzz, xyy, xxy, xxz, xzz, yzz, yyz, xyz };
+  std::array<double, 10> componentsF = { xxx, yyy, zzz, xyy, xxy,
+                                         xxz, xzz, yzz, yyz, xyz };
 
   for (int i = 0; i < 10; ++i)
     values[shell.moIndex + i] += components[i] * componentsF[i];
