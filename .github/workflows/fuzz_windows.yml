@@ -63,7 +63,7 @@ jobs:
       uses: ./.github/actions/checkout-repositories
 
     - name: Install Qt
-      uses: jurplel/install-qt-action@bcb88e3bed2e992f5f9e24c0f9e364a231d278eb # v4.4.0
+      uses: jurplel/install-qt-action@a9c63c7c123f3069cff414e7e482d95dfa9d8125 # v4.4.1
       with:
         cache: true
         version: ${{ env.QT_VERSION }}
@@ -79,6 +79,12 @@ jobs:
       id: vcpkg_version
       uses: ./.github/actions/update-vcpkg
 
+    # This job installs glew, which no other Windows job wants. A cache key
+    # shared with build_windows.yml let that job restore this cache and pick
+    # up vcpkg's GLEW, which its CMake config-mode lookup then preferred over
+    # the superbuild's own GLEW. Keep this job's key/restore-keys on their
+    # own "vcpkg-fuzz-" prefix so build_windows.yml's restore-keys can never
+    # match a cache saved here again.
     - name: Restore vcpkg cache
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
@@ -86,9 +92,9 @@ jobs:
           C:\vcpkg\installed
           C:\vcpkg\packages
           C:\vcpkg\downloads
-        key: vcpkg-${{ runner.os }}-${{ runner.arch }}-${{ steps.vcpkg_version.outputs.sha || 'no-vcpkgjson' }}
+        key: vcpkg-fuzz-${{ runner.os }}-${{ runner.arch }}-${{ steps.vcpkg_version.outputs.sha || 'no-vcpkgjson' }}
         restore-keys: |
-          vcpkg-${{ runner.os }}-${{ runner.arch }}-
+          vcpkg-fuzz-${{ runner.os }}-${{ runner.arch }}-
       env:
         VCPKG_ROOT: C:\vcpkg
 
@@ -354,11 +360,11 @@ jobs:
         # executables have to be the ones that move.
         #
         # What that costs, and why each piece is safe:
-        #   - Qt is /MD and cannot follow, so USE_QT=OFF and the four qtgui
+        #   - Qt is /MD and cannot follow, so USE_QT=OFF and the five qtgui
         #     targets do not build on Windows. Keeping them would mean Qt
         #     allocating on one CRT heap and our code freeing on the other,
         #     which is heap corruption reported as an ASan finding -- noise
-        #     indistinguishable from the bugs being hunted. The 29 core, io
+        #     indistinguishable from the bugs being hunted. The 30 core, io
         #     and quantumio targets are the ones that matter here anyway.
         #   - spglib, libmsym and the vcpkg libraries stay /MD, reached
         #     through import libraries, which carry no CRT directive. Their
@@ -531,7 +537,7 @@ jobs:
         suites=(
           "io|fuzz_||cjson cml sdf pdb xyz tmol=turbomole POSCAR=vasp OUTCAR=vasp smiles decompress=compressed compress-roundtrip=compressed"
           "quantumio|fuzz_||cube fchk molden orca qcjson=qcschema"
-          "core|fuzz_core_|core|array bond coordinateblockgenerator crystal graph molecule neighbor residue ring secondarystructure utilities variant variantmap"
+          "core|fuzz_core_|core|array bond coordinateblockgenerator crystal graph layer molecule neighbor residue ring secondarystructure utilities variant variantmap"
         )
 
         # Targets with known, pre-existing failures. They still run and still
