@@ -15,6 +15,7 @@
 #include <memory>
 #include <set>
 #include <string>
+#include <utility>
 #include <vector>
 
 namespace Avogadro::Core {
@@ -25,14 +26,14 @@ namespace Avogadro::Core {
  */
 struct LayerData
 {
-  LayerData(std::string save = "") { deserialize(save); }
+  LayerData(std::string save = "") { deserialize(std::move(save)); }
 
   /** save custom data, base save should never be called */
   virtual std::string serialize() { return ""; }
 
   /** load the saved @p save data and wait to know the class type to recreate it
    */
-  virtual void deserialize(std::string save) { m_save = save; }
+  virtual void deserialize(std::string save) { m_save = std::move(save); }
 
   virtual ~LayerData() = default;
 
@@ -43,7 +44,7 @@ struct LayerData
 
 protected:
   std::string boolToString(bool b) { return b ? "true" : "false"; }
-  bool stringToBool(std::string b) { return b == "true"; }
+  bool stringToBool(const std::string& b) { return b == "true"; }
   std::string m_save;
 };
 
