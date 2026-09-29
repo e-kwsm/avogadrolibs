@@ -2326,8 +2326,7 @@ bool CjsonFormat::serialize(std::ostream& file, const Molecule& molecule)
     // only needed when the flat block alone cannot reproduce the molecule.
     if (vibrationConformers.size() > 1 || flatConformer != active) {
       json perConformer = json::object();
-      for (size_t i = 0; i < vibrationConformers.size(); ++i) {
-        const size_t conformer = vibrationConformers[i];
+      for (auto conformer : vibrationConformers) {
         // The flat block already holds this one; reuse it rather than
         // rebuilding every eigenvector.
         perConformer[std::to_string(conformer)] =
