@@ -1642,7 +1642,7 @@ msgstr "Lega gli atomi alla cellula"
 #: qtgui/rwmolecule.cpp:696
 #, fuzzy
 msgid "Scale Cell Volume"
-msgstr "Scala il volume della cellula di unità"
+msgstr "Scala il volume della cellula"
 
 #: qtgui/rwmolecule.cpp:717 qtgui/rwmolecule.cpp:742
 #, fuzzy
