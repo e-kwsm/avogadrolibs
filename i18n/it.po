@@ -2719,7 +2719,6 @@ msgstr ""
 
 #: qtplugins/autoopt/autoopt.cpp:307
 #, fuzzy
-#| msgid "Optimization"
 msgid "Optimize"
 msgstr "Ottimizza"
 
