@@ -2435,7 +2435,6 @@ msgstr ""
 
 #: qtplugins/autoopt/autoopt.cpp:268
 #, fuzzy
-#| msgid "Optimization"
 msgid "Optimize"
 msgstr "Ottimizza"
 
