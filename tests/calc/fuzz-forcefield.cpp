@@ -163,8 +163,8 @@ void exerciseCalculator(EnergyCalculator& calc, Molecule& mol,
       abort(); // SIGABRT: libFuzzer's default handler catches it; ARM64
                // __builtin_trap()/SIGTRAP is not caught, so a real crash
                // here would otherwise vanish silently.
-    for (Eigen::Index i = 0; i < grad.size(); ++i) {
-      if (!std::isfinite(grad[i]))
+    for (auto i : grad) {
+      if (!std::isfinite(i))
         abort();
     }
   }
@@ -196,8 +196,8 @@ void exerciseCalculator(EnergyCalculator& calc, Molecule& mol,
   optimizeSteps(calc, optX, options, &state);
 
   if (requireFinite) {
-    for (Eigen::Index i = 0; i < optX.size(); ++i) {
-      if (!std::isfinite(optX[i]))
+    for (auto i : optX) {
+      if (!std::isfinite(i))
         abort();
     }
   }

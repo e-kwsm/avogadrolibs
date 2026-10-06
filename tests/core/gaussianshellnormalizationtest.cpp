@@ -135,8 +135,8 @@ protected:
 
     auto* basis = new GaussianSet;
     basis->setMolecule(&m_molecule);
-    for (int i = 0; i < PROBE_COUNT; ++i) {
-      unsigned int s = basis->addBasis(0, PROBES[i].type);
+    for (auto i : PROBES) {
+      unsigned int s = basis->addBasis(0, i.type);
       basis->addGto(s, 1.0, ALPHA);
     }
     unsigned int s = basis->addBasis(0, shell.type);
