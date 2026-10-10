@@ -301,7 +301,10 @@ public:
                     const QString& undoText = tr("Change Bond Label"));
 
   /**
-   * Set whether the specified atom is selected or not.
+   * Set whether the specified atom is selected or not. Nothing is pushed
+   * onto the undo stack if the atom is already in the requested state (or
+   * @p atomId is out of range). Consecutive selection changes merge into a
+   * single undo step.
    */
   void setAtomSelected(Index atomId, bool selected,
                        const QString& undoText = tr("Change Selection"));
@@ -586,6 +589,14 @@ public:
     const QString& undoText = QStringLiteral("Modify Molecule"));
 
   /**
+   * Stop every background calculation (orbitals, surfaces) and wait for it
+   * to finish. These calculations read and write a molecule's basis set,
+   * cubes and meshes, so call this before copying the current molecule to
+   * pass to modifyMolecule(), which calls it before replacing the molecule.
+   */
+  static void cancelBackgroundCalculations();
+
+  /**
    * Generic edit that adds @a newMolecule to the current molecule.
    * Also sets the text for the undo command to be @a undoText. Changes are
    * emitted.
@@ -759,13 +770,14 @@ public:
   const Core::Array<Vector3>& forceVectors() const;
 
   /**
-   * Replace the current array of force vectors.
-   * @param pos The new force vector array. Must be of length atomCount().
+   * Set the force vector on a single atom.
+   * @param atomId The index of the atom.
+   * @param force The new force vector for the atom.
    * @param undoText The undo text to be displayed for undo commands.
    * @return True on success, false otherwise.
    */
   bool setForceVector(
-    Index atomId, const Vector3& pos,
+    Index atomId, const Vector3& force,
     const QString& undoText = QStringLiteral("Change Force Vectors"));
 
 public slots:

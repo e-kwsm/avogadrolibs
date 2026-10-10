@@ -23,6 +23,7 @@
 #include <avogadro/core/molecule.h>
 #include <avogadro/core/propertymap.h>
 #include <avogadro/core/residue.h>
+#include <avogadro/core/spacegroups.h>
 #include <avogadro/core/unitcell.h>
 #include <avogadro/core/vector.h>
 
@@ -41,6 +42,33 @@ using Avogadro::Core::PropertyMap;
 using Avogadro::Core::UnitCell;
 using Avogadro::Core::Variant;
 using Avogadro::Core::VariantMap;
+
+namespace {
+
+// Counts live instances so a test can see a basis set being leaked.
+class CountingBasisSet : public Avogadro::Core::BasisSet
+{
+public:
+  static int liveCount;
+
+  CountingBasisSet() { ++liveCount; }
+  CountingBasisSet(const CountingBasisSet& other) : BasisSet(other)
+  {
+    ++liveCount;
+  }
+  ~CountingBasisSet() override { --liveCount; }
+
+  BasisSet* clone() const override { return new CountingBasisSet(*this); }
+  unsigned int molecularOrbitalCount(ElectronType = Paired) const override
+  {
+    return 0;
+  }
+  bool isValid() override { return true; }
+};
+
+int CountingBasisSet::liveCount = 0;
+
+} // namespace
 
 class MoleculeTest : public testing::Test
 {
@@ -309,6 +337,54 @@ TEST_F(MoleculeTest, perceiveBondsSimple)
   EXPECT_TRUE(molecule.bond(o1, h2).isValid());
   EXPECT_TRUE(molecule.bond(o1, h3).isValid());
   EXPECT_FALSE(molecule.bond(h2, h3).isValid());
+}
+
+namespace {
+
+// Adds an H2O with its oxygen at @a origin.
+void addWater(Molecule& molecule, const Vector3& origin)
+{
+  Atom o = molecule.addAtom(8);
+  Atom h1 = molecule.addAtom(1);
+  Atom h2 = molecule.addAtom(1);
+  o.setPosition3d(origin);
+  h1.setPosition3d(origin + Vector3(0.6, -0.5, 0.0));
+  h2.setPosition3d(origin + Vector3(-0.6, -0.5, 0.0));
+}
+
+} // namespace
+
+// A molecule spanning more than 1000 bond-search distances used to lose the
+// bonds past the 1000th bin of the neighbor grid.
+TEST_F(MoleculeTest, perceiveBondsSimpleLongChain)
+{
+  const int waters = 1500;
+  Molecule molecule;
+  for (int i = 0; i < waters; ++i)
+    addWater(molecule, Vector3(6.0 * i, 0.0, 0.0));
+  ASSERT_EQ(molecule.atomCount(), static_cast<Index>(3 * waters));
+
+  molecule.perceiveBondsSimple();
+  EXPECT_EQ(molecule.bondCount(), static_cast<Index>(2 * waters));
+  // the far end in particular
+  const Index last = 3 * (waters - 1);
+  EXPECT_TRUE(molecule.bond(last, last + 1).isValid());
+  EXPECT_TRUE(molecule.bond(last, last + 2).isValid());
+}
+
+// A sparse box too big for one neighbor bin per search distance (a solvated
+// system) used to get no bonds at all.
+TEST_F(MoleculeTest, perceiveBondsSimpleLargeBox)
+{
+  Molecule molecule;
+  for (int corner = 0; corner < 8; ++corner) {
+    addWater(molecule,
+             Vector3((corner & 1) ? 1000.0 : 0.0, (corner & 2) ? 1000.0 : 0.0,
+                     (corner & 4) ? 1000.0 : 0.0));
+  }
+
+  molecule.perceiveBondsSimple();
+  EXPECT_EQ(molecule.bondCount(), static_cast<Index>(16));
 }
 
 TEST_F(MoleculeTest, copy)
@@ -615,6 +691,109 @@ TEST_F(MoleculeTest, copyRepointsResidueAtomsAndBasisSet)
 
   // The original's own residue atoms still refer to it.
   expectOwnPointers(original);
+}
+
+TEST_F(MoleculeTest, setBasisSetFreesTheOldBasisSet)
+{
+  ASSERT_EQ(CountingBasisSet::liveCount, 0);
+  {
+    Molecule m;
+    auto* a = new CountingBasisSet;
+    a->setMolecule(&m);
+    m.setBasisSet(a);
+    auto* b = new CountingBasisSet;
+    b->setMolecule(&m);
+    m.setBasisSet(b);
+    EXPECT_EQ(CountingBasisSet::liveCount, 1);
+    EXPECT_EQ(m.basisSet(), b);
+  }
+  EXPECT_EQ(CountingBasisSet::liveCount, 0);
+}
+
+TEST_F(MoleculeTest, setBasisSetWithTheSameBasisSetKeepsIt)
+{
+  ASSERT_EQ(CountingBasisSet::liveCount, 0);
+  {
+    Molecule m;
+    auto* a = new CountingBasisSet;
+    a->setMolecule(&m);
+    m.setBasisSet(a);
+    m.setBasisSet(a);
+    EXPECT_EQ(CountingBasisSet::liveCount, 1);
+    EXPECT_EQ(m.basisSet(), a);
+  }
+  EXPECT_EQ(CountingBasisSet::liveCount, 0);
+}
+
+TEST_F(MoleculeTest, setBasisSetNullptrFreesIt)
+{
+  ASSERT_EQ(CountingBasisSet::liveCount, 0);
+  Molecule m;
+  auto* a = new CountingBasisSet;
+  a->setMolecule(&m);
+  m.setBasisSet(a);
+  m.setBasisSet(nullptr);
+  EXPECT_EQ(CountingBasisSet::liveCount, 0);
+  EXPECT_EQ(m.basisSet(), nullptr);
+}
+
+TEST_F(MoleculeTest, readPropertiesFreesTheOldBasisSet)
+{
+  ASSERT_EQ(CountingBasisSet::liveCount, 0);
+  {
+    Molecule target;
+    auto* a = new CountingBasisSet;
+    a->setMolecule(&target);
+    target.setBasisSet(a);
+
+    Molecule source;
+    auto* b = new CountingBasisSet;
+    b->setMolecule(&source);
+    source.setBasisSet(b);
+
+    target.readProperties(source);
+
+    EXPECT_EQ(CountingBasisSet::liveCount, 2);
+    ASSERT_NE(target.basisSet(), nullptr);
+    EXPECT_NE(target.basisSet(), source.basisSet());
+    EXPECT_EQ(target.basisSet()->molecule(), &target);
+  }
+  EXPECT_EQ(CountingBasisSet::liveCount, 0);
+}
+
+TEST_F(MoleculeTest, readPropertiesWithoutBasisSetKeepsOurs)
+{
+  ASSERT_EQ(CountingBasisSet::liveCount, 0);
+  {
+    Molecule target;
+    auto* a = new CountingBasisSet;
+    a->setMolecule(&target);
+    target.setBasisSet(a);
+
+    Molecule source;
+    target.readProperties(source);
+
+    EXPECT_EQ(CountingBasisSet::liveCount, 1);
+    EXPECT_EQ(target.basisSet(), a);
+  }
+  EXPECT_EQ(CountingBasisSet::liveCount, 0);
+}
+
+TEST_F(MoleculeTest, readPropertiesFromItself)
+{
+  ASSERT_EQ(CountingBasisSet::liveCount, 0);
+  {
+    Molecule m;
+    auto* a = new CountingBasisSet;
+    a->setMolecule(&m);
+    m.setBasisSet(a);
+
+    m.readProperties(m);
+
+    EXPECT_EQ(CountingBasisSet::liveCount, 1);
+    EXPECT_NE(m.basisSet(), nullptr);
+  }
+  EXPECT_EQ(CountingBasisSet::liveCount, 0);
 }
 
 // Fill as many members as practical, so a member the moves forget shows up.
@@ -3291,4 +3470,28 @@ TEST_F(MoleculeTest, AtomPositionAndForceDefaultToZero)
   EXPECT_EQ(molecule.atomPosition3d(1), Vector3::Zero());
   EXPECT_EQ(molecule.atomPosition2d(1), Vector2::Zero());
   EXPECT_EQ(molecule.forceVector(1), Vector3::Zero());
+}
+
+TEST_F(MoleculeTest, hallNumberSupersedesInternationalNumber)
+{
+  const char* key = Avogadro::Core::SpaceGroups::internationalNumberKey();
+  Molecule molecule;
+  molecule.setData("name", std::string("keep me"));
+  molecule.setData(key, 74);
+  ASSERT_TRUE(molecule.hasData(key));
+
+  // 0 means "no space group": the number that a reader kept stays
+  molecule.setHallNumber(0);
+  EXPECT_TRUE(molecule.hasData(key));
+  EXPECT_EQ(molecule.hallNumber(), 0);
+
+  // a Hall number makes it obsolete, and only it is removed
+  molecule.setHallNumber(5);
+  EXPECT_FALSE(molecule.hasData(key));
+  EXPECT_EQ(molecule.hallNumber(), 5);
+  EXPECT_TRUE(molecule.hasData("name"));
+
+  // nothing to remove the second time
+  molecule.setHallNumber(6);
+  EXPECT_EQ(molecule.hallNumber(), 6);
 }

@@ -29,7 +29,7 @@ set(AvogadroLibs_VERSION
 find_package(Git)
 determine_version(${AvogadroLibs_SOURCE_DIR} ${GIT_EXECUTABLE} "AvogadroLibs")
 
-# path for data / fragment files which could be overriden by package maintainers
+# path for data / fragment files which could be overridden by package maintainers
 # by default we assume we're using the openchemistry superbuild layout
 # .. this is used by the fragment library, molecules, crystals, etc.
 set(AvogadroLibs_SOURCEDATA_DIR "${AvogadroLibs_SOURCE_DIR}/..")
@@ -65,6 +65,7 @@ option(USE_SPGLIB "Enable optional features using spglib" ON)
 option(USE_PLOTTER "Enable JKQTPlotter for charts and spectra" ON)
 option(USE_MMTF "Enable optional features using mmtf" OFF) # MMTF is no longer maintained
 option(USE_PYTHON "Use Python to wrap some of our API" OFF)
+option(USE_EXTERNAL_FASTFLOAT "Use an externally-provided version of the fast_float library" OFF)
 option(USE_EXTERNAL_NLOHMANN "Use an externally-provided version of the nlohmann JSON library" OFF)
 option(USE_EXTERNAL_PUGIXML "Use an externally-provided version of pugixml" OFF)
 option(USE_EXTERNAL_STRUCT "Use an externally-provided version of the struct binary data formatting library" OFF)

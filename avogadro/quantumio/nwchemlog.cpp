@@ -110,7 +110,7 @@ void NWChemLog::processLine(std::istream& in, Core::Molecule& mol)
 {
   // First truncate the line, remove trailing white space and check
   string line;
-  if (!getline(in, line) || Core::trimmed(line).empty())
+  if (!Core::getLine(in, line) || Core::trimmed(line).empty())
     return;
 
   string key = Core::trimmed(line);
@@ -157,7 +157,7 @@ void NWChemLog::readAtoms(std::istream& in, Core::Molecule& mol)
   string line;
   // Skip the next three lines, headers, blanks...
   for (int i = 0; i < 3; ++i)
-    if (!getline(in, line))
+    if (!Core::getLine(in, line))
       return;
 
   // if m_coordinateScale is 1.0 NWChem output Bohr and we need to convert
@@ -166,7 +166,7 @@ void NWChemLog::readAtoms(std::istream& in, Core::Molecule& mol)
     scale = BOHR_TO_ANGSTROM;
 
   while (true) {
-    if (!getline(in, line))
+    if (!Core::getLine(in, line))
       return;
     vector<string> parts = Core::split(line, ' ');
     // Keep going until the expected number of components is not seen.
@@ -205,11 +205,11 @@ void NWChemLog::readLattice(std::istream& in, Core::Molecule& mol,
     scale = BOHR_TO_ANGSTROM;
 
   string line;
-  if (!getline(in, line))
+  if (!Core::getLine(in, line))
     return;
 
   // next 3 lines should be a1, a2, a3
-  getline(in, line);
+  Core::getLine(in, line);
   vector<string> parts = Core::split(line, ' ');
   if (parts.size() != 5)
     return;
@@ -218,7 +218,7 @@ void NWChemLog::readLattice(std::istream& in, Core::Molecule& mol,
   a1[1] = Core::lexicalCast<double>(parts[2]).value_or(0.0);
   a1[2] = Core::lexicalCast<double>(parts[3]).value_or(0.0);
 
-  getline(in, line);
+  Core::getLine(in, line);
   parts = Core::split(line, ' ');
   if (parts.size() != 5)
     return;
@@ -227,7 +227,7 @@ void NWChemLog::readLattice(std::istream& in, Core::Molecule& mol,
   a2[1] = Core::lexicalCast<double>(parts[2]).value_or(0.0);
   a2[2] = Core::lexicalCast<double>(parts[3]).value_or(0.0);
 
-  getline(in, line);
+  Core::getLine(in, line);
   parts = Core::split(line, ' ');
   if (parts.size() != 5)
     return;
@@ -251,27 +251,29 @@ void NWChemLog::readFrequencies(const std::string& firstLine, std::istream& in,
 
   vector<double> frequencies;
 
-  for (size_t i = 1; i < parts.size(); ++i)
+  for (size_t i = 1; i < parts.size(); ++i) {
     frequencies.push_back(Core::lexicalCast<double>(parts[i], ok));
-  if (!ok) {
-    appendError("Error reading frequencies: " + firstLine);
-    return;
+    if (!ok) {
+      appendError("Error reading frequencies: " + firstLine);
+      return;
+    }
   }
 
   // Skip the blank line after the frequencies.
-  if (!getline(in, line))
+  if (!Core::getLine(in, line))
     return;
-  if (!getline(in, line))
+  if (!Core::getLine(in, line))
     return;
   parts = Core::split(line, ' ');
-  if (parts.size() < 2)
+  // Each row is an index followed by one value per frequency.
+  if (parts.size() != frequencies.size() + 1)
     return;
 
   vector<vector<double>> cols;
-  cols.resize(parts.size() - 1);
+  cols.resize(frequencies.size());
 
   // Main block of numbers.
-  while (parts.size() >= 2) {
+  while (parts.size() == frequencies.size() + 1) {
     for (size_t i = 1; i < parts.size(); ++i) {
       cols[i - 1].push_back(Core::lexicalCast<double>(parts[i], ok));
       if (!ok) {
@@ -279,14 +281,23 @@ void NWChemLog::readFrequencies(const std::string& firstLine, std::istream& in,
         return;
       }
     }
-    if (!getline(in, line))
+    if (!Core::getLine(in, line))
       return;
     parts = Core::split(line, ' ');
   }
+
+  // Every mode needs three Cartesian components per atom.
+  size_t rows = cols.empty() ? 0 : cols[0].size();
+  if (rows == 0 || rows % 3 != 0) {
+    appendError("Normal mode block has " + std::to_string(rows) +
+                " rows, not a multiple of 3.");
+    return;
+  }
+
   for (size_t i = 0; i < frequencies.size(); ++i) {
     m_frequencies.push_back(frequencies[i]);
     Core::Array<Vector3> Lx;
-    for (size_t j = 0; j < cols[i].size(); j += 3) {
+    for (size_t j = 0; j + 2 < rows; j += 3) {
       Lx.push_back(Vector3(cols[i][j + 0], cols[i][j + 1], cols[i][j + 2]));
     }
     m_Lx.push_back(Lx);
@@ -299,11 +310,11 @@ void NWChemLog::readIntensities(std::istream& in, Core::Molecule&)
   bool ok = false;
   // Skip the next two lines, headers, blanks...
   for (int i = 0; i < 2; ++i)
-    if (!getline(in, line))
+    if (!Core::getLine(in, line))
       return;
 
   while (true) {
-    if (!getline(in, line))
+    if (!Core::getLine(in, line))
       return;
     vector<string> parts = Core::split(line, ' ');
     // Keep going until the expected number of components is not seen.

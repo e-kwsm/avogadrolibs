@@ -8,13 +8,12 @@
 #include "basisset.h"
 #include "cube.h"
 #include "elements.h"
-#include "gaussianset.h"
 #include "layermanager.h"
 #include "mdlvalence_p.h"
 #include "mesh.h"
 #include "neighborperceiver.h"
 #include "residue.h"
-#include "slaterset.h"
+#include "spacegroups.h"
 #include "unitcell.h"
 
 #include <algorithm>
@@ -113,15 +112,9 @@ void Molecule::readProperties(const Molecule& other)
   m_residueProperties = other.m_residueProperties;
   m_conformerProperties = other.m_conformerProperties;
 
-  // copy orbital information
-  SlaterSet* slaterSet = dynamic_cast<SlaterSet*>(other.m_basisSet);
-  if (slaterSet != nullptr) {
-    m_basisSet = slaterSet->clone();
-    m_basisSet->setMolecule(this);
-  }
-  GaussianSet* gaussianSet = dynamic_cast<GaussianSet*>(other.m_basisSet);
-  if (gaussianSet != nullptr) {
-    m_basisSet = gaussianSet->clone();
+  // copy orbital information, replacing (and freeing) any we already had
+  if (other.m_basisSet != nullptr) {
+    setBasisSet(other.m_basisSet->clone());
     m_basisSet->setMolecule(this);
   }
 
@@ -221,6 +214,33 @@ Molecule& Molecule::operator=(const Molecule& other)
   }
 
   return *this;
+}
+
+void Molecule::copyDisplayStateFrom(const Molecule& other)
+{
+  if (this == &other)
+    return;
+
+  // Go through a copy so the settings are cloned rather than shared.
+  const MoleculeInfo source(other.ensureLayerInfo());
+  MoleculeInfo& info = ensureLayerInfo();
+  info.enable = source.enable;
+  info.settings = source.settings;
+  info.loaded = source.loaded;
+
+  const size_t layers = info.layer.layerCount();
+  for (auto& entry : info.enable) {
+    auto& flags = entry.second;
+    if (!flags.empty() && flags.size() < layers)
+      flags.resize(layers, flags.front());
+    else if (flags.size() > layers)
+      flags.resize(layers);
+  }
+  // The plugins create missing settings on demand, so only trim.
+  for (auto& entry : info.settings) {
+    if (entry.second.size() > layers)
+      entry.second.resize(layers);
+  }
 }
 
 Molecule& Molecule::operator=(Molecule&& other) noexcept
@@ -650,6 +670,13 @@ void Molecule::setFrozenAtomAxis(Index atomId, int axis, bool frozen)
   }
 }
 
+void Molecule::setHallNumber(unsigned short hallNumber)
+{
+  m_hallNumber = hallNumber;
+  if (hallNumber != 0)
+    m_data.remove(SpaceGroups::internationalNumberKey());
+}
+
 void Molecule::setData(const std::string& name, const Variant& value)
 {
   m_data.setValue(name, value);
@@ -717,7 +744,7 @@ signed char Molecule::totalCharge() const
   // check the data map first
   if (m_data.hasValue("totalCharge")) {
     charge = m_data.value("totalCharge").toInt();
-  } else if (m_formalCharges.size() > 0) {
+  } else if (!m_formalCharges.empty()) {
     for (Index i = 0; i < m_formalCharges.size(); ++i)
       charge += m_formalCharges[i];
     return charge;
@@ -1678,6 +1705,14 @@ std::string Molecule::formula(const std::string& delimiter, int over) const
   return result.str();
 }
 
+void Molecule::setBasisSet(BasisSet* basis)
+{
+  if (basis == m_basisSet)
+    return;
+  delete m_basisSet;
+  m_basisSet = basis;
+}
+
 void Molecule::setUnitCell(UnitCell* uc)
 {
   if (uc != m_unitCell) {
@@ -2084,40 +2119,46 @@ void Molecule::perceiveBondsSimple(const double tolerance, const double min)
   // check for bonds
   // O(n) average-case, O(n^2) worst-case
   // note that the "worst case" here would need to be an invalid molecule
+  //
+  // The neighborhood relation and the bond criteria are both symmetric, so
+  // each pair only needs to be considered once, at min(i, j).
+  const Array<Vector3>& positions = m_positions3d; // avoid copy-on-write checks
   Array<Index> neighbors;
   for (Index i = 0; i < atomCount(); i++) {
-    Vector3 ipos = m_positions3d[i];
+    // Don't automatically bond nobel gases to anything
+    const unsigned char iNumber = atomicNumber(i);
+    switch (iNumber) {
+      case 2:  // He
+      case 10: // Ne
+      case 18: // Ar
+      case 36: // Kr
+        continue;
+      default:
+        break;
+    }
+
+    const Vector3 ipos = positions[i];
     neighborPerceiver.getNeighborsInclusiveInPlace(neighbors, ipos);
     for (unsigned long j : neighbors) {
+      if (j <= i)
+        continue;
+
+      const unsigned char jNumber = atomicNumber(j);
+      switch (jNumber) {
+        case 2:  // He
+        case 10: // Ne
+        case 18: // Ar
+        case 36: // Kr
+          continue;
+        default:
+          break;
+      }
+
       double cutoff = radii[i] + radii[j] + tolerance;
-      Vector3 jpos = m_positions3d[j];
-      Vector3 diff = jpos - ipos;
-
-      // Don't automatically bond nobel gases to anything
-      switch (atomicNumber(i)) {
-        case 2:  // He
-        case 10: // Ne
-        case 18: // Ar
-        case 36: // Kr
-          continue;
-        default:
-          break;
-      }
-
-      // now for the other atom
-      switch (atomicNumber(j)) {
-        case 2:  // He
-        case 10: // Ne
-        case 18: // Ar
-        case 36: // Kr
-          continue;
-        default:
-          break;
-      }
+      Vector3 diff = positions[j] - ipos;
 
       if (std::fabs(diff[0]) > cutoff || std::fabs(diff[1]) > cutoff ||
-          std::fabs(diff[2]) > cutoff ||
-          (atomicNumber(i) == 1 && atomicNumber(j) == 1))
+          std::fabs(diff[2]) > cutoff || (iNumber == 1 && jNumber == 1))
         continue;
 
       // check radius and add bond if needed
@@ -2443,7 +2484,7 @@ std::string Molecule::residueLabel(Index residueId) const
 
 bool Molecule::setResidueLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == residueCount() || labels.size() == 0) {
+  if (labels.size() == residueCount() || labels.empty()) {
     m_residueLabels = labels;
     return true;
   }
@@ -2712,7 +2753,7 @@ bool Molecule::removeBonds(Index atom)
 
   while (true) {
     const std::vector<size_t>& bondList = m_graph.edges(atom);
-    if (!bondList.size())
+    if (bondList.empty())
       break;
     size_t bond = bondList[0];
     // removeBond() returns false without removing anything when the index is

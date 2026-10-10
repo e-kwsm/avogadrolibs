@@ -53,9 +53,6 @@ bool hasMinimumRemainingBytes(std::istream& in, size_t minBytes)
 }
 } // namespace
 
-// https://physics.nist.gov/cgi-bin/cuu/Value?hrev
-const double hartreeToEV = 27.211386245981;
-
 GaussianFchk::GaussianFchk() : m_scftype(Rhf) {}
 
 GaussianFchk::~GaussianFchk() {}
@@ -103,13 +100,13 @@ bool GaussianFchk::read(std::istream& in, Core::Molecule& molecule)
                             m_aPos[offset + 2] * BOHR_TO_ANGSTROM));
   }
 
-  if (m_frequencies.size() > 0 &&
+  if (!m_frequencies.empty() &&
       m_frequencies.size() == m_vibDisplacements.size() &&
       m_frequencies.size() == m_IRintensities.size()) {
     molecule.setVibrationFrequencies(m_frequencies);
     molecule.setVibrationIRIntensities(m_IRintensities);
     molecule.setVibrationLx(m_vibDisplacements);
-    if (m_RamanIntensities.size())
+    if (!m_RamanIntensities.empty())
       molecule.setVibrationRamanIntensities(m_RamanIntensities);
   }
 
@@ -222,10 +219,10 @@ void GaussianFchk::processLine(std::istream& in)
              list.size() > 2) {
     if (m_scftype == Rhf) {
       m_orbitalEnergy = readArrayD(
-        in, Core::lexicalCast<int>(list[2]).value_or(0), 16, hartreeToEV);
+        in, Core::lexicalCast<int>(list[2]).value_or(0), 16, HARTREE_TO_EV_D);
     } else if (m_scftype == Uhf) {
       m_alphaOrbitalEnergy = readArrayD(
-        in, Core::lexicalCast<int>(list[2]).value_or(0), 16, hartreeToEV);
+        in, Core::lexicalCast<int>(list[2]).value_or(0), 16, HARTREE_TO_EV_D);
     }
   } else if (key == "Beta Orbital Energies" && list.size() > 2) {
     if (m_scftype != Uhf) {
@@ -238,7 +235,7 @@ void GaussianFchk::processLine(std::istream& in)
     }
 
     m_betaOrbitalEnergy = readArrayD(
-      in, Core::lexicalCast<int>(list[2]).value_or(0), 16, hartreeToEV);
+      in, Core::lexicalCast<int>(list[2]).value_or(0), 16, HARTREE_TO_EV_D);
   } else if ((key == "Alpha MO coefficients" || key == "MO coefficients (C)") &&
              list.size() > 2) {
     if (m_scftype == Rhf) {
@@ -364,6 +361,10 @@ const int cartesianGFromFchk[15] = { 14, 4,  0, 13, 12, 8, 3, 5,
 // negative is spherical, -1 is the SP special case, positive is Cartesian.
 int shellComponentCount(int shellType)
 {
+  // Shell types come straight from the file; a huge one would overflow the
+  // arithmetic below, and load() rejects anything past i shells anyway.
+  if (shellType > 6 || shellType < -6)
+    return 0;
   if (shellType == -1)
     return 4;
   if (shellType < 0)
@@ -466,6 +467,12 @@ void GaussianFchk::load(GaussianSet* basis)
     const int atomIndex = m_shelltoAtom[i];
     if (atomIndex <= 0 || atomIndex > m_numAtoms) {
       cout << "GaussianFchk: invalid shell-to-atom map.\n";
+      return;
+    }
+    // Only the types handled by the switch below (s through i, with -1 for
+    // SP) are supported; skipping the rest would misalign the AO offsets.
+    if (m_shellTypes[i] < -6 || m_shellTypes[i] > 6) {
+      cout << "GaussianFchk: unsupported shell type.\n";
       return;
     }
     const size_t shellNumU = static_cast<size_t>(shellNum);
@@ -616,12 +623,12 @@ void GaussianFchk::load(GaussianSet* basis)
     if (m_spinDensity.rows())
       basis->setSpinDensityMatrix(m_spinDensity);
 
-    if (m_orbitalEnergy.size()) // restricted calculation
+    if (!m_orbitalEnergy.empty()) // restricted calculation
       basis->setMolecularOrbitalEnergy(m_orbitalEnergy);
     else {
-      if (m_alphaOrbitalEnergy.size())
+      if (!m_alphaOrbitalEnergy.empty())
         basis->setMolecularOrbitalEnergy(m_alphaOrbitalEnergy, BasisSet::Alpha);
-      if (m_betaOrbitalEnergy.size())
+      if (!m_betaOrbitalEnergy.empty())
         basis->setMolecularOrbitalEnergy(m_betaOrbitalEnergy, BasisSet::Beta);
     }
   } else {
@@ -1012,19 +1019,19 @@ void GaussianFchk::outputAll()
     cout << i << " : type = " << m_shellTypes.at(i)
          << ", number = " << m_shellNums.at(i)
          << ", atom = " << m_shelltoAtom.at(i) << endl;
-  if (m_MOcoeffs.size()) {
+  if (!m_MOcoeffs.empty()) {
     cout << "MO coefficients:\n";
     for (double m_MOcoeff : m_MOcoeffs)
       cout << m_MOcoeff << "\t";
     cout << endl << endl;
   }
-  if (m_alphaMOcoeffs.size()) {
+  if (!m_alphaMOcoeffs.empty()) {
     cout << "Alpha MO coefficients:\n";
     for (double m_alphaMOcoeff : m_alphaMOcoeffs)
       cout << m_alphaMOcoeff << "\t";
     cout << endl << endl;
   }
-  if (m_betaMOcoeffs.size()) {
+  if (!m_betaMOcoeffs.empty()) {
     cout << "Beta MO coefficients:\n";
     for (double m_betaMOcoeff : m_betaMOcoeffs)
       cout << m_betaMOcoeff << "\t";

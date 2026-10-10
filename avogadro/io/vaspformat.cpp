@@ -19,7 +19,6 @@
 
 namespace Avogadro::Io {
 
-using std::getline;
 using std::map;
 using std::string;
 
@@ -55,14 +54,14 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   std::vector<string> stringSplit;
 
   // First line is comment line
-  getline(inStream, line);
+  Core::getLine(inStream, line);
   line = trimmed(line);
   string title = " ";
   if (!line.empty())
     title = line;
 
   // Next line is scaling factor
-  getline(inStream, line);
+  Core::getLine(inStream, line);
   const auto scalingFactor = lexicalCast<double>(line);
 
   if (!scalingFactor) {
@@ -74,7 +73,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   // Next comes the matrix
   for (size_t i = 0; i < 3; ++i) {
-    getline(inStream, line);
+    Core::getLine(inStream, line);
     stringSplit = split(line, ' ');
     // If this is not three, then there is some kind of error in the line
     if (stringSplit.size() != 3) {
@@ -94,7 +93,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // Sometimes, atomic symbols go here.
-  getline(inStream, line);
+  Core::getLine(inStream, line);
   stringSplit = split(line, ' ');
 
   if (stringSplit.empty()) {
@@ -114,13 +113,13 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
     for (auto& i : symbolsList)
       atomicNumbers.push_back(Elements::atomicNumberFromSymbol(trimmed(i)));
     // This next one should be atom types
-    getline(inStream, line);
+    Core::getLine(inStream, line);
   }
   // If the atomic symbols aren't here, try to find them in the title
   // In Vasp 4.x, symbols are in the title like so: " O4H2 <restOfTitle>"
   else {
     stringSplit = split(title, ' ');
-    if (stringSplit.size() != 0) {
+    if (!stringSplit.empty()) {
       string trimmedFormula = trimmed(stringSplit.at(0));
       // Let's replace all numbers with spaces
       for (char& i : trimmedFormula) {
@@ -146,7 +145,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   // If we never filled up the atomic numbers, fill them up
   // now with "1, 2, 3…"
-  if (atomicNumbers.size() == 0)
+  if (atomicNumbers.empty())
     for (size_t i = 1; i <= atomCounts.size(); ++i)
       atomicNumbers.push_back(i);
 
@@ -157,12 +156,12 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
 
   // Starts with either [Ss]elective dynamics, [KkCc]artesian, or
   // other for fractional coords.
-  getline(inStream, line);
+  Core::getLine(inStream, line);
   line = trimmed(line);
 
   // If selective dynamics, get the next line
   if (line.empty() || line.at(0) == 'S' || line.at(0) == 's')
-    getline(inStream, line);
+    Core::getLine(inStream, line);
 
   line = trimmed(line);
   if (line.empty()) {
@@ -250,7 +249,7 @@ bool PoscarFormat::read(std::istream& inStream, Core::Molecule& mol)
 bool PoscarFormat::write(std::ostream& outStream, const Core::Molecule& mol)
 {
   // Title
-  if (mol.data("name").toString().length())
+  if (!mol.data("name").toString().empty())
     outStream << mol.data("name").toString() << std::endl;
   else
     outStream << "POSCAR" << std::endl;
@@ -366,7 +365,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
   AtomTypeMap atomTypes;
   unsigned char customElementCounter = CustomElementMin;
 
-  while (getline(inStream, buffer)) {
+  while (Core::getLine(inStream, buffer)) {
     // Parse VRHFIN lines to get element symbols (e.g., "   VRHFIN =C: s2p2")
     if (buffer.substr(0, vrhfinStr.size()) == vrhfinStr) {
       // Extract element symbol between '=' and ':'
@@ -401,9 +400,9 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
       // only the first occurrence denotes the true lattice vectors, and the
       // ones following these are vectors of the primitive cell.
       if (!(ax1Set && ax2Set && ax3Set)) {
-        getline(inStream, buffer);
+        Core::getLine(inStream, buffer);
         for (int i = 0; i < 3; ++i) {
-          getline(inStream, buffer);
+          Core::getLine(inStream, buffer);
           stringSplit = split(buffer, ' ');
 
           // A lattice vector reads "A1 = ( x, y, z)", so six tokens with the
@@ -446,6 +445,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
           auto* cell = new UnitCell(ax1, ax2, ax3);
           if (!cell->isRegular()) {
             appendError("cell vectors are not linear independent");
+            delete cell;
             return false;
           }
           mol.setUnitCell(cell);
@@ -461,7 +461,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
         Vector3 axes[3];
         bool parseOk = true;
         for (int i = 0; i < 3 && parseOk; ++i) {
-          getline(inStream, buffer);
+          Core::getLine(inStream, buffer);
           if (buffer.size() >= 42) { // Need at least 3 + 13*3 = 42 characters
             auto x = lexicalCast<double>(trimmed(buffer.substr(3, 13)));
             auto y = lexicalCast<double>(trimmed(buffer.substr(16, 13)));
@@ -485,6 +485,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
           auto* cell = new UnitCell(ax1, ax2, ax3);
           if (!cell->isRegular()) {
             appendError("cell vectors are not linear independent");
+            delete cell;
             return false;
           }
           mol.setUnitCell(cell);
@@ -494,7 +495,7 @@ bool OutcarFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     // Checks whether the buffer object contains the POSITION keyword
     else if (buffer.substr(0, positionStr.size()) == positionStr) {
-      getline(inStream, buffer);
+      Core::getLine(inStream, buffer);
       // Double checks whether the succeeding line is a sequence of dashes
       if (buffer.substr(0, dashedStr.size()) == dashedStr) {
         // natoms is not known, so the loop proceeds till the bottom dashed line

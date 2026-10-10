@@ -198,7 +198,7 @@ void CoordinateEditorDialog::moleculeChanged(uint change)
 void CoordinateEditorDialog::presetChanged(int ind)
 {
   QVariant itemData(m_ui->presets->itemData(ind));
-  bool isCustom(itemData.type() != QVariant::String);
+  bool isCustom(itemData.typeId() != QMetaType::QString);
 
   // Changing the spec text will update the editor text.
   m_ui->spec->setText(isCustom ? m_defaultSpec : itemData.toString());
@@ -523,7 +523,7 @@ void CoordinateEditorDialog::validateInputWorker()
     }
   }
 
-  // Reenable validation.
+  // Re-enable validation.
   listenForTextEditChanges(true);
 
   // If we're not at the end, post this method back into the event loop.
@@ -593,6 +593,7 @@ void CoordinateEditorDialog::applyFinish(bool valid)
   bool hadBonds(m_molecule->bondCount() > 0);
 
   // Create a new molecule so we can eventually store both in the undo command
+  QtGui::RWMolecule::cancelBackgroundCalculations();
   Molecule newMolecule = *m_molecule;
   newMolecule.clearAtoms();
   foreach (const AtomStruct& atom, atoms)

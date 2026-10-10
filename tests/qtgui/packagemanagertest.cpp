@@ -9,9 +9,11 @@
 #include <avogadro/qtgui/utilities.h>
 
 #include <QtCore/QCoreApplication>
+#include <QtCore/QCryptographicHash>
 #include <QtCore/QDir>
 #include <QtCore/QFile>
 #include <QtCore/QFileInfo>
+#include <QtCore/QProcessEnvironment>
 #include <QtCore/QSettings>
 #include <QtCore/QTemporaryDir>
 #include <QtCore/QVersionNumber>
@@ -76,6 +78,7 @@ protected:
     settings.beginGroup("plugins");
     settings.remove("test-plugin");
     settings.endGroup();
+    settings.remove("pluginInstallFailures");
     settings.sync();
   }
 
@@ -86,6 +89,7 @@ protected:
     settings.beginGroup("plugins");
     settings.remove("test-plugin");
     settings.endGroup();
+    settings.remove("pluginInstallFailures");
     settings.sync();
   }
 
@@ -1125,6 +1129,124 @@ TEST_F(PackageManagerTest, scanDirectoryKeepsVenvPackageThatCannotUsePixi)
 }
 
 // ---------------------------------------------------------------------------
+// Remembered install failures
+//
+// An install that fails for a given pyproject.toml fails again for the same
+// one, so scanDirectory() must not offer it on every launch (#3124).
+// ---------------------------------------------------------------------------
+
+namespace {
+
+QByteArray sha256Hex(const QByteArray& data)
+{
+  return QCryptographicHash::hash(data, QCryptographicHash::Sha256).toHex();
+}
+
+// The hash of the manifest as written: Text mode turns "\n" into "\r\n" on
+// Windows, so hashing the in-memory bytes would not match what
+// scanDirectory() reads.
+QByteArray fileSha256Hex(const QString& path)
+{
+  QFile file(path);
+  if (!file.open(QIODevice::ReadOnly))
+    return {};
+  return sha256Hex(file.readAll());
+}
+
+// What installPackages() records; the key is the package directory's name.
+void recordFailure(const QString& key, const QString& name,
+                   const QByteArray& hash)
+{
+  QSettings settings;
+  settings.setValue("pluginInstallFailures/" + key + "/" + name, hash);
+  settings.sync();
+}
+
+} // namespace
+
+TEST_F(PackageManagerTest, scanDirectorySkipsPackageWithRecordedFailure)
+{
+  const QString scanDir = m_packageDir + "/scan";
+  const QString pkgDir = createScannablePackage(scanDir, sampleToml());
+  ASSERT_FALSE(pkgDir.isEmpty());
+  auto* pm = PackageManager::instance();
+
+  recordFailure("test-plugin", "installFailedHash",
+                fileSha256Hex(pkgDir + "/pyproject.toml"));
+
+  EXPECT_FALSE(pm->scanDirectory(scanDir).contains(pkgDir));
+  // A failed package is not a registered one.
+  EXPECT_FALSE(pm->registeredPackages().contains("test-plugin"));
+}
+
+TEST_F(PackageManagerTest, scanDirectoryOffersFailedPackageAgainOnceTomlChanges)
+{
+  const QString scanDir = m_packageDir + "/scan";
+  const QString pkgDir = createScannablePackage(scanDir, sampleToml());
+  ASSERT_FALSE(pkgDir.isEmpty());
+  auto* pm = PackageManager::instance();
+
+  recordFailure("test-plugin", "installFailedHash",
+                fileSha256Hex(pkgDir + "/pyproject.toml"));
+  ASSERT_FALSE(pm->scanDirectory(scanDir).contains(pkgDir));
+
+  ASSERT_FALSE(
+    writeTextFile(pkgDir + "/pyproject.toml", sampleToml() + "\n# changed\n")
+      .isEmpty());
+  EXPECT_TRUE(pm->scanDirectory(scanDir).contains(pkgDir));
+}
+
+TEST_F(PackageManagerTest, clearInstallFailureOffersPackageAgain)
+{
+  const QString scanDir = m_packageDir + "/scan";
+  const QString pkgDir = createScannablePackage(scanDir, sampleToml());
+  ASSERT_FALSE(pkgDir.isEmpty());
+  auto* pm = PackageManager::instance();
+
+  recordFailure("test-plugin", "installFailedHash",
+                fileSha256Hex(pkgDir + "/pyproject.toml"));
+  ASSERT_FALSE(pm->scanDirectory(scanDir).contains(pkgDir));
+
+  PackageManager::clearInstallFailure(pkgDir);
+  EXPECT_TRUE(pm->scanDirectory(scanDir).contains(pkgDir));
+}
+
+TEST_F(PackageManagerTest, unregisterPackageClearsInstallFailure)
+{
+  const QString scanDir = m_packageDir + "/scan";
+  const QString pkgDir = createScannablePackage(scanDir, sampleToml());
+  ASSERT_FALSE(pkgDir.isEmpty());
+  auto* pm = PackageManager::instance();
+
+  ASSERT_TRUE(pm->registerPackage(pkgDir));
+  recordFailure("test-plugin", "installFailedHash",
+                fileSha256Hex(pkgDir + "/pyproject.toml"));
+  ASSERT_TRUE(pm->unregisterPackage("test-plugin"));
+
+  EXPECT_TRUE(pm->scanDirectory(scanDir).contains(pkgDir));
+}
+
+TEST_F(PackageManagerTest, scanDirectoryKeepsVenvPackageWherePixiFailed)
+{
+  const QString scanDir = m_packageDir + "/scan";
+  // Declares a pixi workspace, so only the recorded failure keeps it quiet.
+  const QByteArray toml = sampleToml() + "\n[tool.pixi.workspace]\n"
+                                         "channels = [\"conda-forge\"]\n";
+  const QString pkgDir = createScannablePackage(scanDir, toml);
+  ASSERT_FALSE(pkgDir.isEmpty());
+  auto* pm = PackageManager::instance();
+
+  ASSERT_TRUE(pm->registerPackage(pkgDir));
+  ASSERT_TRUE(
+    createConsoleScript(pkgDir + venvBinDir(), "avogadro-test-plugin"));
+  recordFailure("test-plugin", "pixiFailedHash",
+                fileSha256Hex(pkgDir + "/pyproject.toml"));
+
+  // pip got it working after pixi failed: don't try pixi on every launch.
+  EXPECT_FALSE(pm->scanDirectory(scanDir).contains(pkgDir));
+}
+
+// ---------------------------------------------------------------------------
 // removeSupersededVenv()
 //
 // Deleting the pip-installed tree is the one destructive step in a migration,
@@ -1228,6 +1350,70 @@ TEST_F(PackageManagerTest, resolveCommandLineFallsBackToVenvScript)
   EXPECT_EQ(commandLine.program,
             PackageManager::venvScriptPath(m_packageDir, "avo-cmd"));
   EXPECT_TRUE(commandLine.prefixArgs.isEmpty());
+}
+
+// The pixi executable is passed in explicitly below, so these do not depend
+// on whether pixi happens to be installed (or discoverable, e.g. in
+// /opt/homebrew/bin on macOS) on the machine running the tests.
+TEST_F(PackageManagerTest, resolveCommandLineRunsPixiScriptWhenPixiMissing)
+{
+  ASSERT_TRUE(createConsoleScript(m_packageDir + pixiBinDir(), "avo-cmd"));
+  ASSERT_TRUE(createConsoleScript(m_packageDir + venvBinDir(), "avo-cmd"));
+
+  const auto commandLine =
+    PackageManager::resolveCommandLine(m_packageDir, "avo-cmd", QString());
+
+  // The pixi environment wins over the venv, and is run without pixi.
+  EXPECT_EQ(commandLine.program,
+            PackageManager::pixiScriptPath(m_packageDir, "avo-cmd"));
+  EXPECT_TRUE(commandLine.prefixArgs.isEmpty());
+  EXPECT_EQ(commandLine.environmentBinDir,
+            QFileInfo(commandLine.program).absolutePath());
+  EXPECT_EQ(commandLine.environmentPrefix,
+            m_packageDir + "/.pixi/envs/default");
+
+  // Nothing activated the environment, so it is applied by hand.
+  QProcessEnvironment environment;
+  environment.insert("PATH", "/somewhere/else");
+  EXPECT_TRUE(commandLine.applyEnvironment(environment));
+  EXPECT_TRUE(
+    environment.value("PATH").startsWith(commandLine.environmentBinDir));
+  EXPECT_TRUE(environment.value("PATH").endsWith("/somewhere/else"));
+  EXPECT_EQ(environment.value("CONDA_PREFIX"), commandLine.environmentPrefix);
+}
+
+TEST_F(PackageManagerTest, resolveCommandLineUsesPixiWhenFound)
+{
+  ASSERT_TRUE(createConsoleScript(m_packageDir + pixiBinDir(), "avo-cmd"));
+
+  const auto commandLine = PackageManager::resolveCommandLine(
+    m_packageDir, "avo-cmd", "/fake/bin/pixi");
+
+  // pixi activates the environment itself.
+  EXPECT_EQ(commandLine.program, QString("/fake/bin/pixi"));
+  EXPECT_EQ(commandLine.prefixArgs,
+            QStringList({ "run", "--as-is", "avo-cmd" }));
+  EXPECT_TRUE(commandLine.environmentBinDir.isEmpty());
+  EXPECT_TRUE(commandLine.environmentPrefix.isEmpty());
+
+  QProcessEnvironment environment;
+  EXPECT_FALSE(commandLine.applyEnvironment(environment));
+}
+
+TEST_F(PackageManagerTest, resolveCommandLineVenvFallbackSetsBinDir)
+{
+  ASSERT_TRUE(createConsoleScript(m_packageDir + venvBinDir(), "avo-cmd"));
+
+  // With or without pixi: no pixi environment, so the venv is run directly.
+  for (const QString pixi : { QString(), QString("/fake/bin/pixi") }) {
+    const auto commandLine =
+      PackageManager::resolveCommandLine(m_packageDir, "avo-cmd", pixi);
+    EXPECT_EQ(commandLine.program,
+              PackageManager::venvScriptPath(m_packageDir, "avo-cmd"));
+    EXPECT_EQ(commandLine.environmentBinDir,
+              QFileInfo(commandLine.program).absolutePath());
+    EXPECT_TRUE(commandLine.environmentPrefix.isEmpty());
+  }
 }
 
 TEST_F(PackageManagerTest, resolveCommandLineEmptyWithoutAnyEnvironment)

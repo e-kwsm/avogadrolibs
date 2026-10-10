@@ -5,21 +5,23 @@
 
 #include "energyunits.h"
 
+#include <avogadro/core/avogadrocore.h>
 #include <avogadro/core/conformerquantity.h>
 #include <avogadro/core/molecule.h>
 
 #include <QtCore/QSettings>
+#include <QtCore/QSignalBlocker>
+#include <QtWidgets/QComboBox>
 
 namespace Avogadro::QtGui {
 
 namespace {
 
-// Everything converts through kcal/mol rather than by a table of every pair.
-// 1 Hartree = 627.5094740631 kcal/mol (CODATA); 1 eV = 96.48533212 kJ/mol over
-// 4.184 kJ/kcal; the kilocalorie is 4.184 kJ by definition.
-constexpr double HartreeToKcal = 627.5094740631;
-constexpr double ElectronVoltToKcal = 23.060547830619026;
-constexpr double KjToKcal = 1.0 / 4.184;
+// Everything converts through kcal/mol rather than by a table of every pair,
+// and every factor derives from the core constants.
+constexpr double KjToKcal = 1.0 / KCAL_TO_KJ_D;
+constexpr double ElectronVoltToKcal = EV_TO_KJ_PER_MOL_D * KjToKcal;
+constexpr double HartreeToKcal = HARTREE_TO_EV_D * ElectronVoltToKcal;
 
 const char* const SourceUnitKey = "energy/sourceUnit";
 const char* const DisplayUnitKey = "energy/displayUnit";
@@ -128,6 +130,38 @@ EnergyUnits::Unit EnergyUnits::fromSymbol(const QString& symbol, bool* ok)
   if (ok != nullptr)
     *ok = false;
   return Unit::Hartree;
+}
+
+void EnergyUnits::fillCombo(QComboBox* combo, Unit current)
+{
+  if (combo == nullptr)
+    return;
+
+  QSignalBlocker blocker(combo);
+  combo->clear();
+  for (Unit unit : units()) {
+    combo->addItem(symbol(unit), static_cast<int>(unit));
+    if (unit == current)
+      combo->setCurrentIndex(combo->count() - 1);
+  }
+}
+
+EnergyUnits::Unit EnergyUnits::unitFromCombo(const QComboBox* combo,
+                                             Unit fallback)
+{
+  if (combo == nullptr)
+    return fallback;
+
+  bool ok = false;
+  const int value = combo->currentData().toInt(&ok);
+  if (!ok)
+    return fallback;
+
+  for (Unit unit : units()) {
+    if (static_cast<int>(unit) == value)
+      return unit;
+  }
+  return fallback;
 }
 
 bool EnergyUnits::declaresUnit(const Core::Molecule& molecule)

@@ -36,7 +36,7 @@ using Core::Elements;
 
 bool isNumericArray(json& j)
 {
-  if (j.is_array() && j.size() > 0) {
+  if (j.is_array() && !j.empty()) {
     for (const auto& v : j) {
       if (!v.is_number()) {
         return false;
@@ -49,7 +49,7 @@ bool isNumericArray(json& j)
 
 bool isBooleanArray(json& j)
 {
-  if (j.is_array() && j.size() > 0) {
+  if (j.is_array() && !j.empty()) {
     for (const auto& v : j) {
       if (!v.is_boolean()) {
         return false;
@@ -85,13 +85,6 @@ bool isThermochemistry(const std::string& key)
          key == "zero_point_energy";
 }
 
-std::string toLower(std::string text)
-{
-  std::transform(text.begin(), text.end(), text.begin(),
-                 [](unsigned char c) { return std::tolower(c); });
-  return text;
-}
-
 /**
  * WebMO writes the electronic energy under a key named for the method it ran
  * -- "uhf_energy", "pm6_energy", "rb3lyp_energy" -- rather than the
@@ -106,7 +99,7 @@ json findMethodEnergy(const json& properties)
   std::string method;
   const auto name = properties.find("method_energy_name");
   if (name != properties.end() && name->is_string())
-    method = toLower(name->get<std::string>()) + "_energy";
+    method = Core::toLower(name->get<std::string>()) + "_energy";
 
   json fallback;
   for (const auto& item : properties.items()) {
@@ -117,7 +110,7 @@ json findMethodEnergy(const json& properties)
         item.value().find("value") == item.value().end())
       continue;
 
-    if (!method.empty() && toLower(key) == method)
+    if (!method.empty() && Core::toLower(key) == method)
       return item.value();
     if (fallback.is_null())
       fallback = item.value();
@@ -341,7 +334,8 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
       }
 
       json coordSets = properties["geometry_sequence"]["geometries"];
-      if (coordSets.is_array() && coordSets.size()) {
+      if (coordSets.is_array() && !coordSets.empty()) {
+        int lastStep = -1;
         for (unsigned int i = 0; i < coordSets.size(); ++i) {
           Array<Vector3> setArray;
           json set = coordSets[i];
@@ -352,10 +346,15 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
                 Vector3(set[3 * j], set[3 * j + 1], set[3 * j + 2]));
             }
             molecule.setCoordinate3d(setArray, i);
+            lastStep = static_cast<int>(i);
           }
         }
-        // Make sure the first step is active once we are done loading the sets.
-        molecule.setCoordinate3d(0);
+        // Open on the final step: for an optimization it is the converged
+        // geometry (the top-level "geometry" matches it), and any vibrations
+        // below were computed there. They are written to the active
+        // conformer, so this also keeps them off the starting geometry.
+        if (lastStep >= 0)
+          molecule.setCoordinate3d(lastStep);
       }
     }
 

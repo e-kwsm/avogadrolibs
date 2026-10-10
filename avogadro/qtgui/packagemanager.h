@@ -15,6 +15,8 @@
 #include <QtCore/QStringList>
 #include <QtCore/QVariantMap>
 
+class QProcessEnvironment;
+
 namespace Avogadro {
 namespace QtGui {
 
@@ -123,28 +125,59 @@ public:
                                 const QString& command);
 
   /** How to launch a package command. */
-  struct CommandLine
+  struct AVOGADROQTGUI_EXPORT CommandLine
   {
     QString program;        ///< empty if no environment can run the command
     QStringList prefixArgs; ///< arguments preceding the command's own
+
+    /// Bin directory to prepend to PATH, empty when the launcher activates
+    /// the environment itself (@c "pixi run"). Set when the command's script
+    /// is run directly, so that a plugin shelling out to another program
+    /// installed in its environment still finds it.
+    QString environmentBinDir;
+    /// Root of a conda-style environment, exported as @c CONDA_PREFIX. Empty
+    /// unless the script is run directly from a pixi environment.
+    QString environmentPrefix;
+
+    /**
+     * Apply @c environmentBinDir and @c environmentPrefix to @p environment.
+     * @return true if @p environment was modified.
+     */
+    bool applyEnvironment(QProcessEnvironment& environment) const;
   };
 
   /**
    * Resolve how to run @p command from @p packageDir, so that every caller
    * applies the same backend policy.
    *
-   * Prefers the package's pixi environment and falls back to the console
-   * script pip installed into @c .venv. Having the pixi executable is not on
-   * its own enough to choose pixi, because @c "pixi run --as-is" is shorthand
-   * for @c --no-install @c --frozen and will not create a missing
-   * environment: a package installed before pixi was available has to keep
-   * running from @c .venv until it is installed again.
+   * In order of preference:
+   *  -# @c "pixi run --as-is" when the pixi executable is found and the pixi
+   *     environment provides @p command;
+   *  -# the pixi environment's own script, run directly, when pixi cannot be
+   *     found (for example an application launched from the Finder or Dock
+   *     has no Homebrew directory on its PATH) -- the script works without
+   *     pixi, but skips activation, hence CommandLine::environmentBinDir;
+   *  -# the console script pip installed into @c .venv.
+   *
+   * Having the pixi executable is not on its own enough to choose pixi,
+   * because @c "pixi run --as-is" is shorthand for @c --no-install
+   * @c --frozen and will not create a missing environment: a package
+   * installed before pixi was available has to keep running from @c .venv
+   * until it is installed again.
    *
    * @return a CommandLine whose @c program is empty when neither environment
    *         provides @p command.
    */
   static CommandLine resolveCommandLine(const QString& packageDir,
                                         const QString& command);
+
+  /**
+   * As above, but with the pixi executable supplied by the caller rather than
+   * searched for. @p pixiExecutable may be empty, meaning "pixi not found".
+   */
+  static CommandLine resolveCommandLine(const QString& packageDir,
+                                        const QString& command,
+                                        const QString& pixiExecutable);
 
   /**
    * Run the package script with @c --user-options and parse the JSON output.
@@ -178,8 +211,12 @@ public:
 
   /**
    * Asynchronously run pixi (preferred) or pip install in each directory,
-   * then call registerPackage() for each.
-   * Emits packagesInstalled() when the background thread finishes.
+   * then call registerPackage() for each package that installed.
+   * Emits packageInstalled() or packageInstallFailed() for each package, then
+   * packagesInstalled() when the background thread finishes. A failure is
+   * remembered (see scanDirectory()) and the package is not registered; a
+   * previously registered package is kept only while one of its environments
+   * can still run its command.
    * Safe to call from the main thread.
    */
   void installPackages(const QStringList& packageDirs);
@@ -199,6 +236,12 @@ public:
    */
   static bool removeSupersededVenv(const QString& packageDir,
                                    const QString& command);
+
+  /**
+   * Forget recorded install failures for @p packageDir, so that
+   * scanDirectory() offers it again.
+   */
+  static void clearInstallFailure(const QString& packageDir);
 
   // --- Registration ---
 
@@ -232,6 +275,9 @@ public:
    * pyproject.toml; new or modified packages are returned as a list of
    * absolute directory paths. The caller is responsible for calling
    * registerPackage() on any directories it wants to install.
+   * A package whose install already failed for the current pyproject.toml is
+   * not returned again until that file changes; likewise pixi is not retried
+   * for a package that pip-installed after pixi failed.
    * @return list of package directories that are new or have been modified.
    */
   QStringList scanDirectory(const QString& directoryPath);
@@ -249,10 +295,20 @@ public:
 
 signals:
   /**
-   * Emitted after installPackages() finishes installing and registering
-   * all requested packages.
+   * Emitted after installPackages() finishes with all requested packages,
+   * whether or not each succeeded. See packageInstalled() and
+   * packageInstallFailed() for the outcome of each.
    */
   void packagesInstalled();
+
+  /** Emitted for each package installPackages() installed and registered. */
+  void packageInstalled(const QString& packageDir);
+
+  /**
+   * Emitted for each package installPackages() could not install.
+   * @param message  Which backend(s) failed and the tail of their stderr.
+   */
+  void packageInstallFailed(const QString& packageDir, const QString& message);
 
   /**
    * Emitted for each feature found in a package.
@@ -281,6 +337,15 @@ signals:
 
 private:
   explicit PackageManager(QObject* parent = nullptr);
+
+  /** Result of installing one package, produced on the install thread. */
+  struct InstallOutcome
+  {
+    QString packageDir;
+    bool installed = false;
+    bool pixiFailed = false; ///< pixi was tried and did not install it
+    QString message;         ///< why it failed, empty on success
+  };
 
   /** Internal representation of a single feature entry. */
   struct FeatureEntry

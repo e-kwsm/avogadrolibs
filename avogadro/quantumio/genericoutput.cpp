@@ -5,6 +5,7 @@
 
 #include "genericoutput.h"
 
+#include <avogadro/core/utilities.h>
 #include <avogadro/io/fileformat.h>
 #include <avogadro/io/fileformatmanager.h>
 #include <avogadro/io/xyzformat.h>
@@ -14,21 +15,16 @@
 #include "nwchemlog.h"
 #include "orca.h"
 
-#include <algorithm>
-#include <cctype>
 #include <sstream>
+#include <utility>
+#include <vector>
 
 namespace Avogadro::QuantumIO {
 
 namespace {
 
+using Core::startsWith;
 using Io::FileFormat;
-
-bool startsWith(const std::string& text, const std::string& prefix)
-{
-  return text.size() >= prefix.size() &&
-         text.compare(0, prefix.size(), prefix) == 0;
-}
 
 /**
  * The lower-cased extension of @a fileName, without the dot, or an empty
@@ -51,12 +47,7 @@ std::string lowerExtension(const std::string& fileName)
   if (dot == std::string::npos || dot < start || dot + 1 >= fileName.size())
     return std::string();
 
-  std::string extension = fileName.substr(dot + 1);
-  std::transform(extension.begin(), extension.end(), extension.begin(),
-                 [](unsigned char character) {
-                   return static_cast<char>(std::tolower(character));
-                 });
-  return extension;
+  return Core::toLower(fileName.substr(dot + 1));
 }
 
 } // namespace
@@ -92,8 +83,26 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
   // How the reader was chosen, so the error message can say what actually ran.
   std::string detected;
 
+  // Registered readers (usually script plugins) that declare content patterns,
+  // flattened to (pattern, format) pairs once so the per-line check is just a
+  // few substring searches. Registration order is preserved, so when several
+  // plugins match the same line the first one registered wins.
+  std::vector<std::pair<std::string, const FileFormat*>> pluginPatterns;
+  for (const FileFormat* candidate :
+       Io::FileFormatManager::instance().fileFormats(FileFormat::File |
+                                                     FileFormat::Read)) {
+    // Never delegate to ourselves. (identifier() is no use here: it reports
+    // the last delegate chosen, not this class.)
+    if (dynamic_cast<const GenericOutput*>(candidate) != nullptr)
+      continue;
+    for (const std::string& pattern : candidate->contentPatterns()) {
+      if (!pattern.empty())
+        pluginPatterns.emplace_back(pattern, candidate);
+    }
+  }
+
   std::string line;
-  while (std::getline(in, line)) {
+  while (Core::getLine(in, line)) {
     if (line.find("Northwest Computational Chemistry Package") !=
         std::string::npos) {
       // NWChem
@@ -119,6 +128,22 @@ bool GenericOutput::read(std::istream& in, Core::Molecule& molecule)
       // xtb reader
       reader = new Io::XyzFormat;
       detected = "xtb";
+      break;
+    }
+
+    // The built-in banners above are checked first on every line, so the
+    // earliest matching line in the file wins, and a built-in reader beats a
+    // plugin on the same line.
+    const FileFormat* match = nullptr;
+    for (const auto& entry : pluginPatterns) {
+      if (line.find(entry.first) != std::string::npos) {
+        match = entry.second;
+        break;
+      }
+    }
+    if (match != nullptr) {
+      reader = match->newInstance();
+      detected = match->name() + " plugin (content match)";
       break;
     }
   }

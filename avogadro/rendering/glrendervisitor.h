@@ -55,6 +55,9 @@ public:
   void visit(TextLabel3D& geometry) override;
   void visit(LineStripGeometry& geometry) override;
   void visit(WideLineGeometry& geometry) override;
+  void visit(DashedLineGeometry& geometry) override;
+  void visit(ArrowGeometry& geometry) override;
+  void visit(VolumeGeometry& geometry) override;
 
   void setCamera(const Camera& camera_) { m_camera = camera_; }
   Camera camera() const { return m_camera; }
@@ -74,10 +77,20 @@ public:
   }
   /** @} */
 
+  /**
+   * The ratio of device pixels to logical pixels. Text labels are rasterized
+   * at this scale so they stay sharp on high-DPI displays.
+   * @{
+   */
+  void setPixelRatio(float ratio) { m_pixelRatio = ratio; }
+  float pixelRatio() const { return m_pixelRatio; }
+  /** @} */
+
 private:
   Camera m_camera;
   const TextRenderStrategy* m_textRenderStrategy;
   RenderPass m_renderPass;
+  float m_pixelRatio = 1.0f;
 };
 
 } // End namespace Rendering

@@ -3,6 +3,7 @@ set(tests
   cube
   densitycube
   fchk
+  gamessus
   gaussiansettools
   genericoutput
   molden
@@ -11,7 +12,6 @@ set(tests
   orca
   qcschema
   # TODO
-  # GAMESS US
   # GAMESS UK
   # NWChem JSON
 )
@@ -19,12 +19,7 @@ set(tests
 include_directories("${CMAKE_CURRENT_BINARY_DIR}"
 	"${AvogadroLibs_BINARY_DIR}/avogadro/quantumio")
 
-if(AVOGADRO_DATA_ROOT)
-  set(AVOGADRO_DATA ${AVOGADRO_DATA_ROOT})
-else()
-  message("No data root found, please set to run the tests.")
-  return()
-endif()
+set(AVOGADRO_DATA ${AVOGADRO_DATA_ROOT})
 
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/quantumiotests.h.in"
   "${CMAKE_CURRENT_BINARY_DIR}/quantumiotests.h" @ONLY)
@@ -58,6 +53,9 @@ foreach(TestName ${tests})
   elseif(TestName STREQUAL "fchk")
     add_test(NAME "QuantumIo-fchk"
       COMMAND AvogadroQuantumIOTests "--gtest_filter=GaussianFchkTest.*")
+  elseif(TestName STREQUAL "gamessus")
+    add_test(NAME "QuantumIo-gamessus"
+      COMMAND AvogadroQuantumIOTests "--gtest_filter=GAMESSUSTest.*")
   elseif(TestName STREQUAL "gaussiansettools")
     add_test(NAME "QuantumIo-gaussiansettools"
       COMMAND AvogadroQuantumIOTests "--gtest_filter=GaussianSetToolsTest.*")
@@ -100,6 +98,7 @@ if(ENABLE_FUZZ OR DEFINED ENV{LIB_FUZZING_ENGINE})
     cube
     fchk
     molden
+    nwchem
     orca
     qcjson
   )

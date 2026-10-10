@@ -8,6 +8,7 @@
 #include <avogadro/core/elements.h>
 #include <avogadro/core/gaussianset.h>
 #include <avogadro/core/residue.h>
+#include <avogadro/core/spacegroups.h>
 #include <avogadro/qtgui/molecule.h>
 
 #include <QtCore/QDebug>
@@ -20,10 +21,6 @@ using Avogadro::Core::BasisSet;
 using Avogadro::Core::GaussianSet;
 using Avogadro::QtGui::Molecule;
 using QtGui::Molecule;
-
-// CODATA 2022
-// https://physics.nist.gov/cgi-bin/cuu/Value?hrev
-#define AU_TO_EV 27.211386245981
 
 MolecularModel::MolecularModel(QObject* parent)
   : QAbstractTableModel(parent), m_molecule(nullptr)
@@ -354,16 +351,19 @@ void MolecularModel::updateTable(unsigned int flags)
     unsigned int lumo = gaussianSet->lumo();
     const auto moEnergies = gaussianSet->moEnergy();
     if (moEnergies.size() > homo) {
-      m_propertiesCache.setValue("homoEnergy", moEnergies[homo] * AU_TO_EV);
+      m_propertiesCache.setValue("homoEnergy",
+                                 moEnergies[homo] * HARTREE_TO_EV_D);
     }
     // look for the lumo if there's a degenerate HOMO
-    const double threshold = 0.01 / AU_TO_EV; // 0.01 eV minimal separation
+    // 0.01 eV minimal separation
+    const double threshold = 0.01 / HARTREE_TO_EV_D;
     while (moEnergies.size() > lumo &&
            std::abs(moEnergies[lumo] - moEnergies[homo]) < threshold) {
       lumo += 1;
     }
     if (moEnergies.size() > lumo)
-      m_propertiesCache.setValue("lumoEnergy", moEnergies[lumo] * AU_TO_EV);
+      m_propertiesCache.setValue("lumoEnergy",
+                                 moEnergies[lumo] * HARTREE_TO_EV_D);
   }
   // m_propertiesCache.setValue("somoEnergy", energy);
 
@@ -372,7 +372,8 @@ void MolecularModel::updateTable(unsigned int flags)
   for (const auto& key : properties.names()) {
     if (key == "formula" || key == "name" || key == "fileName" ||
         key == "energies" || key == "markup_name" || key == "totalCharge" ||
-        key == "totalSpinMultiplicity")
+        key == "totalSpinMultiplicity" ||
+        key == Core::SpaceGroups::internationalNumberKey())
       continue; // skip these
 
     if (properties.value(key).toString().empty())

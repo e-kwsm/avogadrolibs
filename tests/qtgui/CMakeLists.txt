@@ -9,9 +9,7 @@ find_package(Qt${QT_VERSION} COMPONENTS Widgets Network Test REQUIRED)
 find_package(Python3 COMPONENTS Interpreter)
 
 # Setup config file with data location
-if(AVOGADRO_DATA_ROOT)
-  set(AVOGADRO_DATA ${AVOGADRO_DATA_ROOT})
-endif()
+set(AVOGADRO_DATA ${AVOGADRO_DATA_ROOT})
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/qtguitests.h.in"
   "${CMAKE_CURRENT_BINARY_DIR}/qtguitests.h" @ONLY)
 
@@ -40,6 +38,12 @@ set(tests
   UndoMergeTracker
   Utilities
 )
+
+# GLWidget lives in QtOpenGL, which is only built with USE_OPENGL.
+if(TARGET Avogadro::QtOpenGL)
+  list(APPEND tests GLWidgetMolecule)
+  set(QtOpenGLLink Avogadro::QtOpenGL)
+endif()
 
 if(Python3_EXECUTABLE)
   list(APPEND tests
@@ -79,7 +83,8 @@ endforeach()
 
 # Add a single executable for all of our tests.
 add_executable(AvogadroQtGuiTests ${testSrcs})
-target_link_libraries(AvogadroQtGuiTests Avogadro::QtGui ${MoleQueueLink}
+target_link_libraries(AvogadroQtGuiTests Avogadro::QtGui ${QtOpenGLLink}
+ ${MoleQueueLink}
  ${GTEST_BOTH_LIBRARIES} ${EXTRA_LINK_LIB}
  Qt${QT_VERSION}::Widgets Qt${QT_VERSION}::Test)
 

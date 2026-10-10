@@ -402,16 +402,36 @@ public:
 
   void redo() override
   {
-    for (size_t i = 0; i < m_atomIds.size(); ++i)
-      positions3d()[m_atomIds[i]] = m_newPosition3ds[i];
+    growPositions();
+    write(m_newPosition3ds);
   }
 
   void undo() override
   {
-    for (size_t i = 0; i < m_atomIds.size(); ++i)
-      positions3d()[m_atomIds[i]] = m_oldPosition3ds[i];
+    growPositions();
+    write(m_oldPosition3ds);
   }
 
+private:
+  // RWMolecule::setAtomPosition3d() grows the position array to atomCount()
+  // before pushing this command, outside the undo history. Redoing after an
+  // undone position-less AddAtomCommand must repeat that growth, or the
+  // array is shorter than the atom ids (found by fuzzing).
+  void growPositions()
+  {
+    if (positions3d().size() < m_molecule.atomCount())
+      positions3d().resize(m_molecule.atomCount(), Vector3::Zero());
+  }
+
+  void write(const Array<Vector3>& values)
+  {
+    for (size_t i = 0; i < m_atomIds.size(); ++i) {
+      if (m_atomIds[i] < positions3d().size())
+        positions3d()[m_atomIds[i]] = values[i];
+    }
+  }
+
+public:
   bool mergeWith(const QUndoCommand* o) override
   {
     const SetPosition3dCommand* other =
@@ -788,13 +808,35 @@ class ModifyMoleculeCommand : public RWMolecule::UndoCommand
 public:
   ModifyMoleculeCommand(RWMolecule& m, const Molecule& oldMolecule,
                         const Molecule& newMolecule)
-    : UndoCommand(m), m_oldMolecule(oldMolecule), m_newMolecule(newMolecule)
+    : UndoCommand(m), m_newMolecule(newMolecule)
   {
+    // The old molecule is the live one, and the undo commands pushed before
+    // this one refer to its atoms and bonds by unique id. Molecule's copy
+    // constructor renumbers the ids 0..n-1, which would make those commands
+    // hit the wrong atom (or an id already taken) once deletions have left
+    // holes in the tables. operator= copies the tables, so use it.
+    m_oldMolecule = oldMolecule;
+
+    // The new molecule is deliberately built with the copy constructor: it is
+    // an edited copy, and Core-level edits (CrystalTools re-perceiving bonds,
+    // building a supercell) change its atoms and bonds without touching the
+    // QtGui id tables, so those may be stale. The renumbering makes them
+    // consistent with its actual atom and bond counts.
   }
 
-  void redo() override { m_mol.molecule() = m_newMolecule; }
+  // Assigning a molecule frees the basis set and cubes it replaces, which an
+  // orbital or surface calculation may still be reading or writing.
+  void redo() override
+  {
+    RWMolecule::cancelBackgroundCalculations();
+    m_mol.molecule() = m_newMolecule;
+  }
 
-  void undo() override { m_mol.molecule() = m_oldMolecule; }
+  void undo() override
+  {
+    RWMolecule::cancelBackgroundCalculations();
+    m_mol.molecule() = m_oldMolecule;
+  }
 };
 } // namespace
 

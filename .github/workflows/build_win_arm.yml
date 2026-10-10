@@ -7,7 +7,18 @@ name: Windows ARM Build
 # .. since SignPath requires only a Windows build in the action
 # .. to successfully sign
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    # Bot branches get built by their pull_request event; building the push
+    # too just doubles the jobs. The tags line is required: with only a
+    # branch filter, tag pushes (release builds) would stop triggering.
+    branches-ignore:
+      - 'dependabot/**'
+      - 'update-i18n-templates'
+    tags:
+      - '**'
+  pull_request:
+  workflow_dispatch:
 
 env:
   # Not pinned to the 6.8.3 the x86_64 build uses: that pin exists because
@@ -16,9 +27,15 @@ env:
   QT_VERSION: 6.10.1
   FEATURES: -DBUILD_GPL_PLUGINS=ON -DWITH_COORDGEN=OFF -DQT_VERSION=6 -DUSE_3DCONNEXION=OFF -DBUILD_MOLEQUEUE=OFF
 
+# Never cancel a master run: a cancelled run never saves its compiler cache,
+# and the slowest jobs, which gain the most from the cache, are exactly the
+# ones a following merge would cancel. The group still allows only one running
+# and one pending master run, so master runs queue one after another instead
+# of stacking up, and release-asset uploads never overlap. PRs and other
+# branches keep cancelling superseded runs.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
   build:
@@ -27,34 +44,28 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        # sccache: true turns on the compiler cache for an entry. It is only on
+        # for the MSVC Release build, which passes no /Zi. The RelWithDebInfo
+        # entry (the Sentry diagnostic build below) is left out on purpose:
+        # /Zi writes every object's debug information into one shared PDB,
+        # which sccache cannot cache, so those compiles would all miss.
+        # Enabling it needs /Z7 (debug information embedded in each object),
+        # for example with CMP0141 NEW and
+        # CMAKE_MSVC_DEBUG_INFORMATION_FORMAT=Embedded.
         config:
         - {
             name: "Windows Qt6 ARM", artifact: "Win-ARM.exe",
             os: windows-11-arm,
             cc: "cl", cxx: "cl",
             build_type: "Release",
+            sccache: true,
             cmake_flags: "-G Ninja -DCMAKE_TOOLCHAIN_FILE=/c/vcpkg/scripts/buildsystems/vcpkg.cmake -DUSE_SYSTEM_EIGEN=ON -DUSE_SYSTEM_LIBARCHIVE=ON -DUSE_SYSTEM_LIBXML2=ON -DUSE_SYSTEM_ZLIB=ON",
             build_flags: "--parallel",
             package: "Avogadro2",
             sentry: false,
           }
-        # Diagnostic build with Sentry crash reporting compiled in. Ships as a
-        # separate installer that installs beside a release install; the
-        # release build above gets no crash reporting.
-        # RelWithDebInfo rather than Release: MSVC Release passes no /Zi, so it
-        # emits no PDBs and every frame would come back as a raw address.
-        - {
-            name: "Windows Qt6 ARM (Sentry)", artifact: "Win-ARM-diagnostic.exe",
-            os: windows-11-arm,
-            cc: "cl", cxx: "cl",
-            build_type: "RelWithDebInfo",
-            cmake_flags: "-G Ninja -DCMAKE_TOOLCHAIN_FILE=/c/vcpkg/scripts/buildsystems/vcpkg.cmake -DUSE_SYSTEM_EIGEN=ON -DUSE_SYSTEM_LIBARCHIVE=ON -DUSE_SYSTEM_LIBXML2=ON -DUSE_SYSTEM_ZLIB=ON",
-            build_flags: "--parallel",
-            package: "Avogadro2-Diagnostic",
-            sentry: true,
-          }
 
-    steps:
+    steps: &build-steps
     - name: Checkout workflow repository
       uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
@@ -76,35 +87,27 @@ jobs:
       with:
         arch: arm64
 
-    # Update + re-bootstrap vcpkg, and emit a vcpkg_version output
-    - name: Ensure vcpkg is up to date
+    - name: Install vcpkg packages
       if: runner.os == 'Windows'
-      id: vcpkg_version
-      uses: ./.github/actions/update-vcpkg
-
-    # Restore vcpkg cache (use manifest lock if available)
-    - name: Restore vcpkg cache
-      if: runner.os == 'Windows'
-      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      uses: ./.github/actions/vcpkg-install
       with:
-        path: |
-          C:\vcpkg\installed
-          C:\vcpkg\packages
-          C:\vcpkg\downloads
-        # We don't use a vcpkg manifest so we'll use the vcpkg git SHA as the cache key
-        # Fallback to vcpkg git SHA so cache is somewhat stable across runs.
-        key: vcpkg-${{ runner.os }}-${{ runner.arch }}-${{ steps.vcpkg_version.outputs.sha || 'no-vcpkgjson' }}
-        restore-keys: |
-          vcpkg-${{ runner.os }}-${{ runner.arch }}-
-      env:
-        VCPKG_ROOT: C:\vcpkg
+        packages: libarchive eigen3 libxml2 zlib
 
     - name: Install Dependencies (Windows)
       if: runner.os == 'Windows'
       run: |
         choco install nsis ninja
-        vcpkg install libarchive eigen3 libxml2 zlib
       shell: bash
+
+    # Must run before Configure: it exports the compiler-launcher variables
+    # that the superbuild's subprojects read when they configure.
+    - name: Restore compiler cache
+      if: matrix.config.sccache
+      uses: ./.github/actions/compiler-cache
+      with:
+        mode: restore
+        name: ${{ matrix.config.name }}
+        size: ${{ matrix.config.sccache_size || '600M' }}
 
     - name: Configure
       run: |
@@ -116,7 +119,7 @@ jobs:
           # as unavailable at runtime rather than failing to configure.
           SENTRY_ARGS="-DUSE_SENTRY=ON -DSENTRY_DSN=${SENTRY_DSN} -DSENTRY_ENVIRONMENT=nightly"
         fi
-        CC=${{matrix.config.cc}} CXX=${{matrix.config.cxx}} cmake $GITHUB_WORKSPACE/openchemistry ${{env.FEATURES}} -DCMAKE_BUILD_TYPE=${{matrix.config.build_type}} ${{matrix.config.cmake_flags}} $SENTRY_ARGS
+        CC=${{matrix.config.cc}} CXX=${{matrix.config.cxx}} cmake $GITHUB_WORKSPACE/openchemistry ${{env.FEATURES}} ${{ startsWith(github.ref, 'refs/tags/') && '-DAVOGADRO_RELEASE_BUILD=ON' || '' }} -DCMAKE_BUILD_TYPE=${{matrix.config.build_type}} ${{matrix.config.cmake_flags}} $SENTRY_ARGS
       shell: bash
       env:
         USE_SENTRY: ${{ matrix.config.sentry }}
@@ -124,7 +127,8 @@ jobs:
 
     # Cache thirdparty builds (OpenBabel, etc.)
     - name: Cache thirdparty
-      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      id: thirdparty-cache
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: |
           ${{ runner.workspace }}/build/Downloads
@@ -135,6 +139,28 @@ jobs:
         CC=${{matrix.config.cc}} CXX=${{matrix.config.cxx}} cmake --build . --config ${{matrix.config.build_type}} ${{matrix.config.build_flags}}
       shell: bash
       working-directory: ${{ runner.workspace }}/build
+
+    # Saved from master only, for the reason given in the vcpkg-install action.
+    - name: Save thirdparty cache
+      if: steps.thirdparty-cache.outputs.cache-hit != 'true' && github.ref == 'refs/heads/master'
+      uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          ${{ runner.workspace }}/build/Downloads
+        key: ${{ steps.thirdparty-cache.outputs.cache-primary-key }}
+
+    # This job has no test step, so the cache is saved right after the build.
+    # !cancelled() lets the action run after a failed build. The action prints
+    # its statistics on every run and saves only on master, failures
+    # included: sccache entries are content-addressed, so a partial cache is
+    # still correct.
+    - name: Save compiler cache
+      if: matrix.config.sccache && !cancelled()
+      uses: ./.github/actions/compiler-cache
+      with:
+        mode: save
+        name: ${{ matrix.config.name }}
+        size: ${{ matrix.config.sccache_size || '600M' }}
 
     # The crashpad binaries reach the prefix through crashpad's own install
     # rules, which sentry-native does not drive directly when building shared.
@@ -234,7 +260,7 @@ jobs:
         name: ${{ matrix.config.artifact }}
 
     - name: Upload release assets
-      if: github.event_name == 'push' && (startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master')
+      if: matrix.config.artifact != 0 && github.event_name == 'push' && (startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/master')
       uses: ./.github/actions/upload-release
       env:
         GH_TOKEN: ${{ github.token }}
@@ -278,3 +304,37 @@ jobs:
       if: failure()
       uses: mxschmitt/action-tmate@35b54afac29c97fb54faba5b513f8fbd1882f113 # v3.24
       timeout-minutes: 60
+
+  # Diagnostic (Sentry) builds skip PRs to save runners: they only run on
+  # pushes, releases and manual dispatches, or on a PR that has been labeled
+  # full-ci. Label a PR full-ci and push to it to include this job; fork push
+  # builds still run it, since a fork push is not a pull_request event here.
+  # The steps are shared with "build" through the &build-steps/*build-steps
+  # YAML anchor, so edit them there, not here.
+  diagnostic:
+    name: ${{ matrix.config.name }}
+    runs-on: ${{ matrix.config.os }}
+    if: github.event_name != 'pull_request' || contains(github.event.pull_request.labels.*.name, 'full-ci')
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+        # No sccache here: RelWithDebInfo compiles with /Zi (see the note on
+        # the build job's matrix).
+        # Diagnostic build with Sentry crash reporting compiled in. Ships as a
+        # separate installer that installs beside a release install; the
+        # release build above gets no crash reporting.
+        # RelWithDebInfo rather than Release: MSVC Release passes no /Zi, so it
+        # emits no PDBs and every frame would come back as a raw address.
+        - {
+            name: "Windows Qt6 ARM (Sentry)", artifact: "Win-ARM-diagnostic.exe",
+            os: windows-11-arm,
+            cc: "cl", cxx: "cl",
+            build_type: "RelWithDebInfo",
+            cmake_flags: "-G Ninja -DCMAKE_TOOLCHAIN_FILE=/c/vcpkg/scripts/buildsystems/vcpkg.cmake -DUSE_SYSTEM_EIGEN=ON -DUSE_SYSTEM_LIBARCHIVE=ON -DUSE_SYSTEM_LIBXML2=ON -DUSE_SYSTEM_ZLIB=ON",
+            build_flags: "--parallel",
+            package: "Avogadro2-Diagnostic",
+            sentry: true,
+          }
+
+    steps: *build-steps

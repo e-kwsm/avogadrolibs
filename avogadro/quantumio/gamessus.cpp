@@ -46,7 +46,7 @@ bool GAMESSUSOutput::read(std::istream& in, Core::Molecule& molecule)
   // Read the log file line by line, most sections are terminated by an empty
   // line, so they should be retained.
   string buffer;
-  while (getline(in, buffer)) {
+  while (Core::getLine(in, buffer)) {
     if (Core::contains(buffer, "COORDINATES (BOHR)")) {
       readAtomBlock(in, molecule, false);
     } else if (Core::contains(buffer, "COORDINATES OF ALL ATOMS ARE (ANGS)")) {
@@ -80,17 +80,22 @@ bool GAMESSUSOutput::read(std::istream& in, Core::Molecule& molecule)
       cout << "Found SCF type\n";
     }*/
     else if (Core::contains(buffer, "EIGENVECTORS")) {
-      readEigenvectors(in);
+      if (!readEigenvectors(in))
+        return false;
     }
   }
 
   // f functions and beyond need to be reordered
-  reorderMOs();
+  if (!reorderMOs())
+    return false;
 
   molecule.perceiveBondsSimple();
   molecule.perceiveBondOrders();
   auto* basis = new GaussianSet;
-  load(basis);
+  if (!load(basis, molecule.atomCount())) {
+    delete basis;
+    return false;
+  }
   molecule.setBasisSet(basis);
   basis->setMolecule(&molecule);
 
@@ -109,10 +114,10 @@ void GAMESSUSOutput::readAtomBlock(std::istream& in, Core::Molecule& molecule,
   bool atomsExist = molecule.atomCount() > 0;
   Index index = 0;
   //@TODO - store all the coordinates
-  while (getline(in, buffer)) {
+  while (Core::getLine(in, buffer)) {
     if (Core::contains(buffer, "CHARGE") || Core::contains(buffer, "------"))
       continue;
-    else if (buffer.length() == 0 || buffer == "\n") // Our work here is done.
+    else if (buffer.empty() || buffer == "\n") // Our work here is done.
       return;
     vector<string> parts = Core::split(buffer, ' ');
     if (parts.size() != 5) {
@@ -154,7 +159,7 @@ void GAMESSUSOutput::readBasisSet(std::istream& in)
   string buffer;
   int currentAtom(0);
   bool header(true);
-  while (getline(in, buffer)) {
+  while (Core::getLine(in, buffer)) {
     if (header) { // Skip the header lines until we hit the last header line.
       if (Core::contains(buffer, "SHELL"))
         header = false;
@@ -205,7 +210,7 @@ void GAMESSUSOutput::readBasisSet(std::istream& in)
         m_c.push_back(Core::lexicalCast<double>(parts[4]).value_or(0.0));
         if (shellType == GaussianSet::SP && parts.size() == 6)
           m_csp.push_back(Core::lexicalCast<double>(parts[5]).value_or(0.0));
-        if (!getline(in, buffer))
+        if (!Core::getLine(in, buffer))
           break;
         parts = Core::split(buffer, ' ');
       }
@@ -217,30 +222,87 @@ void GAMESSUSOutput::readBasisSet(std::istream& in)
   }
 }
 
-void GAMESSUSOutput::readEigenvectors(std::istream& in)
+bool GAMESSUSOutput::readEigenvectors(std::istream& in)
 {
   string buffer;
-  getline(in, buffer);
-  getline(in, buffer);
-  getline(in, buffer);
+  Core::getLine(in, buffer);
+  Core::getLine(in, buffer);
+  Core::getLine(in, buffer);
   vector<string> parts = Core::split(buffer, ' ');
   vector<vector<double>> eigenvectors;
   bool ok(false);
   size_t numberOfMos(0);
   bool newBlock(true);
+
+  // Each MO has one coefficient per basis function. GAMESS always prints the
+  // full cartesian set, so count them from the shells read so far. If a shell
+  // type is not known, require every MO to match the first one instead.
+  size_t numBasisFunctions(0);
+  for (auto shellType : m_shellTypes) {
+    size_t count(0);
+    switch (shellType) {
+      case GaussianSet::S:
+        count = 1;
+        break;
+      case GaussianSet::SP:
+        count = 4;
+        break;
+      case GaussianSet::P:
+        count = 3;
+        break;
+      case GaussianSet::D:
+        count = 6;
+        break;
+      case GaussianSet::F:
+        count = 10;
+        break;
+      default:
+        break;
+    }
+    if (count == 0) {
+      numBasisFunctions = 0;
+      break;
+    }
+    numBasisFunctions += count;
+  }
+
+  // Check that every MO in a block is complete before keeping it.
+  auto appendBlock = [&]() {
+    for (auto& eigenvector : eigenvectors) {
+      if (numBasisFunctions == 0)
+        numBasisFunctions = eigenvector.size();
+      if (eigenvector.size() != numBasisFunctions) {
+        appendError("Incomplete eigenvector: expected " +
+                    std::to_string(numBasisFunctions) + " coefficients, read " +
+                    std::to_string(eigenvector.size()) + ".");
+        return false;
+      }
+    }
+    for (auto& eigenvector : eigenvectors)
+      for (double j : eigenvector)
+        m_MOcoeffs.push_back(j);
+    eigenvectors.clear();
+    return true;
+  };
+
   while (!Core::contains(buffer, "END OF") ||
          Core::contains(buffer, "--------")) {
     // Any line with actual information in it will contain >= 5 parts.
     if (parts.size() > 5 && buffer.substr(0, 16) != "                ") {
       if (newBlock) {
         // Reorder the columns/rows, add them and then prepare
-        for (auto& eigenvector : eigenvectors)
-          for (double j : eigenvector)
-            m_MOcoeffs.push_back(j);
-        eigenvectors.clear();
+        if (!appendBlock())
+          return false;
         eigenvectors.resize(parts.size() - 4);
         numberOfMos += eigenvectors.size();
         newBlock = false;
+      }
+      // Every row in a block has one column per MO in the block.
+      if (parts.size() - 4 != eigenvectors.size()) {
+        appendError("Eigenvector row does not match the columns of its "
+                    "block: " +
+                    buffer);
+        return false;
       }
       for (size_t i = 0; i < parts.size() - 4; ++i) {
         eigenvectors[i].push_back(Core::lexicalCast<double>(parts[i + 4], ok));
@@ -251,24 +313,16 @@ void GAMESSUSOutput::readEigenvectors(std::istream& in)
       // Note that we are either ending or entering a new block of orbitals.
       newBlock = true;
     }
-    if (!getline(in, buffer))
+    if (!Core::getLine(in, buffer))
       break;
     parts = Core::split(buffer, ' ');
   }
   m_nMOs = numberOfMos;
-  for (auto& eigenvector : eigenvectors)
-    for (double j : eigenvector)
-      m_MOcoeffs.push_back(j);
-
-  // Now we just need to transpose the matrix, as GAMESS uses a different order.
-  // We know the number of columns (MOs), and the number of rows (primitives).
-  if (eigenvectors.size() != numberOfMos * m_a.size()) {
-    appendError("Incorrect number of eigenvectors loaded.");
-    return;
-  }
+  // The final block is checked the same way as the others.
+  return appendBlock();
 }
 
-void GAMESSUSOutput::load(GaussianSet* basis)
+bool GAMESSUSOutput::load(GaussianSet* basis, Index atomCount)
 {
   // Now load up our basis set
   basis->setElectronCount(m_electrons);
@@ -276,26 +330,50 @@ void GAMESSUSOutput::load(GaussianSet* basis)
   // Set up the GTO primitive counter, go through the shells and add them
   int nGTO = 0;
   int nSP = 0; // number of SP shells
+  // readBasisSet() fills these three in step, one entry per shell.
+  if (m_shellNums.size() != m_shellTypes.size() ||
+      m_shelltoAtom.size() != m_shellTypes.size()) {
+    appendError("Inconsistent basis set shell data.");
+    return false;
+  }
   for (unsigned int i = 0; i < m_shellTypes.size(); ++i) {
+    // Shell atoms are numbered from one, in the order of the coordinates.
+    if (m_shelltoAtom[i] < 1 ||
+        static_cast<Index>(m_shelltoAtom[i]) > atomCount) {
+      appendError("Basis set shell on an atom that was not read: " +
+                  std::to_string(m_shelltoAtom[i]));
+      return false;
+    }
+    const auto numGTOs = static_cast<size_t>(m_shellNums[i]);
+    const auto firstGTO = static_cast<size_t>(nGTO);
+    if (firstGTO + numGTOs > m_a.size() || firstGTO + numGTOs > m_c.size()) {
+      appendError("Too few basis set primitives read.");
+      return false;
+    }
     // Handle the SP case separately - this should possibly be a distinct type
-    if (m_shellTypes.at(i) == GaussianSet::SP) {
+    if (m_shellTypes[i] == GaussianSet::SP) {
+      // Every SP primitive row also carries a P coefficient.
+      if (static_cast<size_t>(nSP) + numGTOs > m_csp.size()) {
+        appendError("SP shell is missing P contraction coefficients.");
+        return false;
+      }
       // SP orbital type - currently have to unroll into two shells
       int tmpGTO = nGTO;
-      int s = basis->addBasis(m_shelltoAtom.at(i) - 1, GaussianSet::S);
-      for (int j = 0; j < m_shellNums.at(i); ++j) {
-        basis->addGto(s, m_c.at(nGTO), m_a.at(nGTO));
+      int s = basis->addBasis(m_shelltoAtom[i] - 1, GaussianSet::S);
+      for (int j = 0; j < m_shellNums[i]; ++j) {
+        basis->addGto(s, m_c[nGTO], m_a[nGTO]);
         ++nGTO;
       }
-      int p = basis->addBasis(m_shelltoAtom.at(i) - 1, GaussianSet::P);
-      for (int j = 0; j < m_shellNums.at(i); ++j) {
-        basis->addGto(p, m_csp.at(nSP), m_a.at(tmpGTO));
+      int p = basis->addBasis(m_shelltoAtom[i] - 1, GaussianSet::P);
+      for (int j = 0; j < m_shellNums[i]; ++j) {
+        basis->addGto(p, m_csp[nSP], m_a[tmpGTO]);
         ++tmpGTO;
         ++nSP;
       }
     } else {
-      int b = basis->addBasis(m_shelltoAtom.at(i) - 1, m_shellTypes.at(i));
-      for (int j = 0; j < m_shellNums.at(i); ++j) {
-        basis->addGto(b, m_c.at(nGTO), m_a.at(nGTO));
+      int b = basis->addBasis(m_shelltoAtom[i] - 1, m_shellTypes[i]);
+      for (int j = 0; j < m_shellNums[i]; ++j) {
+        basis->addGto(b, m_c[nGTO], m_a[nGTO]);
         ++nGTO;
       }
     }
@@ -303,11 +381,11 @@ void GAMESSUSOutput::load(GaussianSet* basis)
   //    qDebug() << " loading MOs " << m_MOcoeffs.size();
 
   // Now to load in the MO coefficients
-  if (m_MOcoeffs.size())
+  if (!m_MOcoeffs.empty())
     basis->setMolecularOrbitals(m_MOcoeffs);
-  if (m_alphaMOcoeffs.size())
+  if (!m_alphaMOcoeffs.empty())
     basis->setMolecularOrbitals(m_alphaMOcoeffs, BasisSet::Alpha);
-  if (m_betaMOcoeffs.size())
+  if (!m_betaMOcoeffs.empty())
     basis->setMolecularOrbitals(m_betaMOcoeffs, BasisSet::Beta);
 
   // generateDensity();
@@ -315,9 +393,10 @@ void GAMESSUSOutput::load(GaussianSet* basis)
   // basis->setDensityMatrix(m_density);
 
   basis->setScfType(m_scftype);
+  return true;
 }
 
-void GAMESSUSOutput::reorderMOs()
+bool GAMESSUSOutput::reorderMOs()
 {
   unsigned int GTOcounter = 0;
   for (int iMO = 0; iMO < m_nMOs; iMO++) {
@@ -344,27 +423,31 @@ void GAMESSUSOutput::reorderMOs()
           break;
         case GaussianSet::F:
           nPrimGTOs = 10;
+          if (GTOcounter + nPrimGTOs > m_MOcoeffs.size()) {
+            appendError("Too few MO coefficients for the basis set.");
+            return false;
+          }
           // f functions are the first set to be reordered.
-          // double xxx = m_MOcoeffs.at(GTOcounter);
-          yyy = m_MOcoeffs.at(GTOcounter + 1);
-          zzz = m_MOcoeffs.at(GTOcounter + 2);
-          xxy = m_MOcoeffs.at(GTOcounter + 3);
-          xxz = m_MOcoeffs.at(GTOcounter + 4);
-          yyx = m_MOcoeffs.at(GTOcounter + 5);
-          yyz = m_MOcoeffs.at(GTOcounter + 6);
-          zzx = m_MOcoeffs.at(GTOcounter + 7);
-          zzy = m_MOcoeffs.at(GTOcounter + 8);
-          xyz = m_MOcoeffs.at(GTOcounter + 9);
+          // double xxx = m_MOcoeffs[GTOcounter];
+          yyy = m_MOcoeffs[GTOcounter + 1];
+          zzz = m_MOcoeffs[GTOcounter + 2];
+          xxy = m_MOcoeffs[GTOcounter + 3];
+          xxz = m_MOcoeffs[GTOcounter + 4];
+          yyx = m_MOcoeffs[GTOcounter + 5];
+          yyz = m_MOcoeffs[GTOcounter + 6];
+          zzx = m_MOcoeffs[GTOcounter + 7];
+          zzy = m_MOcoeffs[GTOcounter + 8];
+          xyz = m_MOcoeffs[GTOcounter + 9];
           // xxx is unchanged
-          m_MOcoeffs.at(GTOcounter + 1) = xxy; // xxy
-          m_MOcoeffs.at(GTOcounter + 2) = xxz; // xxz
-          m_MOcoeffs.at(GTOcounter + 3) = yyx; // xyy
-          m_MOcoeffs.at(GTOcounter + 4) = xyz; // xyz
-          m_MOcoeffs.at(GTOcounter + 5) = zzx; // xzz
-          m_MOcoeffs.at(GTOcounter + 6) = yyy; // yyy
-          m_MOcoeffs.at(GTOcounter + 7) = yyz; // yyz
-          m_MOcoeffs.at(GTOcounter + 8) = zzy; // yzz
-          m_MOcoeffs.at(GTOcounter + 9) = zzz; // zzz
+          m_MOcoeffs[GTOcounter + 1] = xxy; // xxy
+          m_MOcoeffs[GTOcounter + 2] = xxz; // xxz
+          m_MOcoeffs[GTOcounter + 3] = yyx; // xyy
+          m_MOcoeffs[GTOcounter + 4] = xyz; // xyz
+          m_MOcoeffs[GTOcounter + 5] = zzx; // xzz
+          m_MOcoeffs[GTOcounter + 6] = yyy; // yyy
+          m_MOcoeffs[GTOcounter + 7] = yyz; // yyz
+          m_MOcoeffs[GTOcounter + 8] = zzy; // yzz
+          m_MOcoeffs[GTOcounter + 9] = zzz; // zzz
 
           GTOcounter += nPrimGTOs;
           break;
@@ -385,6 +468,7 @@ void GAMESSUSOutput::reorderMOs()
       }
     }
   }
+  return true;
 }
 
 void GAMESSUSOutput::outputAll()
@@ -404,12 +488,12 @@ void GAMESSUSOutput::outputAll()
   }
   cout << "Shell mappings\n";
   for (unsigned int i = 0; i < m_shellTypes.size(); ++i) {
-    cout << i << ": type = " << m_shellTypes.at(i)
-         << ", number = " << m_shellNums.at(i)
-         << ", atom = " << m_shelltoAtom.at(i) << endl;
+    cout << i << ": type = " << m_shellTypes[i]
+         << ", number = " << m_shellNums[i] << ", atom = " << m_shelltoAtom[i]
+         << endl;
   }
   int nGTOs = 0;
-  if (m_MOcoeffs.size() && m_nMOs > 0) {
+  if (!m_MOcoeffs.empty() && m_nMOs > 0) {
     nGTOs = m_MOcoeffs.size() / m_nMOs;
     cout << m_nMOs << " MOs, " << nGTOs << " GTOs" << endl;
   }
@@ -426,11 +510,11 @@ void GAMESSUSOutput::outputAll()
     cout << "\n";
   }
 
-  if (m_alphaMOcoeffs.size())
+  if (!m_alphaMOcoeffs.empty())
     cout << "Alpha MO coefficients.\n";
   for (double m_alphaMOcoeff : m_alphaMOcoeffs)
     cout << m_alphaMOcoeff;
-  if (m_betaMOcoeffs.size())
+  if (!m_betaMOcoeffs.empty())
     cout << "Beta MO coefficients.\n";
   for (double m_betaMOcoeff : m_betaMOcoeffs)
     cout << m_betaMOcoeff;

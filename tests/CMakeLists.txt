@@ -58,6 +58,16 @@ find_path(AVOGADRO_DATA_ROOT .avogadro.data
   )
 mark_as_advanced(AVOGADRO_DATA_ROOT)
 
+# Fatal, or the data-dependent test directories silently drop their tests.
+if(NOT AVOGADRO_DATA_ROOT OR NOT EXISTS "${AVOGADRO_DATA_ROOT}/.avogadro.data")
+  message(FATAL_ERROR "ENABLE_TESTING is ON but the avogadrodata test data "
+    "was not found. Set AVOGADRO_DATA_ROOT (CMake variable or environment "
+    "variable) to an avogadrodata checkout "
+    "(https://github.com/OpenChemistry/avogadrodata), or turn ENABLE_TESTING "
+    "off. Without it the calc, io, quantumio and qtopengl tests would not be "
+    "registered.")
+endif()
+
 # Add the tests for each module.
 
 add_subdirectory(calc)
@@ -67,6 +77,14 @@ add_subdirectory(io)
 add_subdirectory(quantumio)
 if(USE_QT)
   add_subdirectory(qtgui)
+  # The command-boundary tests link plugin targets directly, which only works
+  # when they are static libraries built in this tree.
+  if(BUILD_STATIC_PLUGINS AND NOT PROJECT_IS_TOP_LEVEL)
+    add_subdirectory(qtplugins)
+  else()
+    message(STATUS "Skipping qtplugins tests: they need in-tree static plugins"
+      " (BUILD_STATIC_PLUGINS=ON).")
+  endif()
 endif()
 if(USE_OPENGL)
   add_subdirectory(rendering)

@@ -1130,6 +1130,107 @@ TEST(RWMoleculeTest, setAtomSelectedIgnoresOutOfRangeIndices)
     expectAtomIs(mol, i, i);
 }
 
+namespace {
+std::vector<bool> selectionOf(const RWMolecule& mol)
+{
+  std::vector<bool> sel;
+  for (Index i = 0; i < mol.atomCount(); ++i)
+    sel.push_back(mol.atomSelected(i));
+  return sel;
+}
+} // namespace
+
+// A selection change that changes nothing must not leave an undo step behind:
+// "select all" on an all-selected molecule, or a select-by-element that
+// matches no atom, used to push one command per atom visited.
+TEST(RWMoleculeTest, setAtomSelectedNoOpPushesNothing)
+{
+  Molecule m;
+  RWMolecule mol(m);
+  buildDistinctAtoms(mol, 4);
+  const int count = mol.undoStack().count();
+  const int index = mol.undoStack().index();
+
+  // Deselecting atoms that are not selected.
+  for (Index i = 0; i < mol.atomCount(); ++i)
+    mol.setAtomSelected(i, false);
+
+  EXPECT_EQ(count, mol.undoStack().count());
+  EXPECT_EQ(index, mol.undoStack().index());
+  EXPECT_EQ(std::vector<bool>(4, false), selectionOf(mol));
+
+  // Selecting an atom, then a non-selection edit (which ends merging), then
+  // selecting the same atom again: the second select is a no-op.
+  mol.setAtomSelected(2, true);
+  mol.setAtomicNumber(0, 8);
+  const int afterEdit = mol.undoStack().count();
+  mol.setAtomSelected(2, true);
+  EXPECT_EQ(afterEdit, mol.undoStack().count());
+  EXPECT_EQ(afterEdit, mol.undoStack().index());
+}
+
+// A real change is still exactly one undoable step, which undo and redo
+// reverse and replay.
+TEST(RWMoleculeTest, setAtomSelectedRealChangeUndoRedo)
+{
+  Molecule m;
+  RWMolecule mol(m);
+  buildDistinctAtoms(mol, 3);
+  const int count = mol.undoStack().count();
+
+  mol.setAtomSelected(1, true);
+  EXPECT_EQ(count + 1, mol.undoStack().count());
+  EXPECT_EQ((std::vector<bool>{ false, true, false }), selectionOf(mol));
+
+  mol.undoStack().undo();
+  EXPECT_EQ(std::vector<bool>(3, false), selectionOf(mol));
+  EXPECT_EQ(count, mol.undoStack().index());
+  // The atom itself was not touched by undoing the selection.
+  for (Index i = 0; i < 3; ++i)
+    expectAtomIs(mol, i, i);
+
+  mol.undoStack().redo();
+  EXPECT_EQ((std::vector<bool>{ false, true, false }), selectionOf(mol));
+  EXPECT_EQ(count + 1, mol.undoStack().index());
+}
+
+// A batch mixing real changes and no-ops (e.g. "select all" with some atoms
+// already selected) is one merged step that restores the exact prior
+// selection on undo; repeating the batch adds nothing.
+TEST(RWMoleculeTest, setAtomSelectedMixedBatchIsOneStep)
+{
+  Molecule m;
+  RWMolecule mol(m);
+  buildDistinctAtoms(mol, 5);
+  mol.setAtomSelected(1, true);
+  mol.setAtomSelected(3, true);
+  // End the merge chain so the batch below starts a step of its own.
+  mol.setAtomicNumber(0, 8);
+  const int count = mol.undoStack().count();
+  const std::vector<bool> before{ false, true, false, true, false };
+  ASSERT_EQ(before, selectionOf(mol));
+
+  for (Index i = 0; i < mol.atomCount(); ++i)
+    mol.setAtomSelected(i, true);
+  EXPECT_EQ(count + 1, mol.undoStack().count());
+  EXPECT_EQ(std::vector<bool>(5, true), selectionOf(mol));
+
+  // Selecting everything again is a pure no-op.
+  mol.setAtomicNumber(0, 6);
+  const int afterEdit = mol.undoStack().count();
+  for (Index i = 0; i < mol.atomCount(); ++i)
+    mol.setAtomSelected(i, true);
+  EXPECT_EQ(afterEdit, mol.undoStack().count());
+
+  mol.undoStack().undo(); // atomic number back to 8
+  mol.undoStack().undo(); // the select-all batch
+  EXPECT_EQ(before, selectionOf(mol));
+  EXPECT_EQ(8, mol.atomicNumber(0));
+
+  mol.undoStack().redo();
+  EXPECT_EQ(std::vector<bool>(5, true), selectionOf(mol));
+}
+
 // Renumbering swaps atoms that are bonded to each other, which used to leave
 // Graph's adjacency list naming those vertices as their own neighbours. The
 // edge between them could then no longer be found, so removeEdge() returned
@@ -1996,4 +2097,324 @@ TEST(RWMoleculeTest, changedSignalReorderAtomsInitialCallEmitsOnce)
                                 Molecule::Modified | Molecule::Reordered;
   ASSERT_EQ(static_cast<size_t>(1), changes.size());
   EXPECT_EQ(expected, changes[0]);
+}
+
+// Regression test for a fuzzer-found out-of-bounds write: setAtomPosition3d()
+// grows the position array before pushing its command, so redoing that command
+// after the position-less AddAtomCommand was undone and redone wrote past the
+// end of the array.
+TEST(RWMoleculeTest, redoPositionAfterPositionlessAddAtom)
+{
+  Molecule m;
+  RWMolecule mol(m);
+  mol.addAtom(6, false);
+
+  const Vector3 p(1.0, 2.0, 3.0);
+  EXPECT_TRUE(mol.setAtomPosition3d(0, p));
+
+  mol.undoStack().undo(); // position
+  mol.undoStack().undo(); // atom
+  EXPECT_EQ(static_cast<Index>(0), mol.atomCount());
+
+  mol.undoStack().redo(); // atom, without a position
+  mol.undoStack().redo(); // position
+  ASSERT_EQ(static_cast<Index>(1), mol.atomCount());
+  EXPECT_EQ(static_cast<size_t>(1), mol.atomPositions3d().size());
+  EXPECT_EQ(p, mol.atomPosition3d(0));
+
+  mol.undoStack().undo();
+  EXPECT_EQ(Vector3::Zero(), mol.atomPosition3d(0));
+}
+
+TEST(RWMoleculeTest, redoPositionAfterPositionlessAddAtomSecondAtom)
+{
+  Molecule m;
+  RWMolecule mol(m);
+  mol.addAtom(6, false);
+  mol.addAtom(8, false);
+
+  const Vector3 p(1.0, 2.0, 3.0);
+  EXPECT_TRUE(mol.setAtomPosition3d(1, p));
+
+  mol.undoStack().undo(); // position
+  mol.undoStack().undo(); // second atom
+  mol.undoStack().undo(); // first atom
+  mol.undoStack().redo();
+  mol.undoStack().redo();
+  mol.undoStack().redo(); // position
+  ASSERT_EQ(static_cast<Index>(2), mol.atomCount());
+  EXPECT_EQ(static_cast<size_t>(2), mol.atomPositions3d().size());
+  EXPECT_EQ(p, mol.atomPosition3d(1));
+  EXPECT_EQ(Vector3::Zero(), mol.atomPosition3d(0));
+}
+
+TEST(RWMoleculeTest, undoSetForceVectorRestoresOldForce)
+{
+  Molecule m;
+  RWMolecule mol(m);
+  mol.addAtom(6, Vector3(1.0, 2.0, 3.0));
+
+  const Vector3 f(0.5, -0.5, 0.25);
+  EXPECT_TRUE(mol.setForceVector(0, f));
+  EXPECT_EQ(f, m.forceVector(0));
+
+  mol.undoStack().undo();
+  EXPECT_EQ(Vector3::Zero(), m.forceVector(0));
+  EXPECT_EQ(Vector3(1.0, 2.0, 3.0), mol.atomPosition3d(0));
+
+  mol.undoStack().redo();
+  EXPECT_EQ(f, m.forceVector(0));
+}
+
+namespace {
+// Two atoms with one vibrational mode, as a command plugin or file reader
+// would hand back.
+void addVibrations(Molecule& mol)
+{
+  mol.addAtom(1).setPosition3d(Vector3(0.0, 0.0, 0.0));
+  mol.addAtom(1).setPosition3d(Vector3(0.0, 0.0, 0.74));
+  Array<Array<Vector3>> lx(1, Array<Vector3>(2, Vector3(0.0, 0.0, 0.5)));
+  mol.setVibrationFrequencies(Array<double>(1, 4400.0));
+  mol.setVibrationIRIntensities(Array<double>(1, 1.0));
+  mol.setVibrationLx(lx);
+}
+
+const Molecule::MoleculeChanges replaceChanges =
+  Molecule::Atoms | Molecule::Bonds | Molecule::Added | Molecule::Removed;
+} // namespace
+
+// What arrived with a replacement must survive the changed() it triggers.
+TEST(RWMoleculeTest, modifyMoleculeKeepsReplacementVibrations)
+{
+  Molecule target;
+  target.addAtom(8);
+
+  Molecule source;
+  addVibrations(source);
+  ASSERT_TRUE(source.hasVibrations());
+
+  target.undoMolecule()->modifyMolecule(
+    source, replaceChanges | Molecule::Replaced, "Replace");
+  EXPECT_EQ(target.atomCount(), 2u);
+  EXPECT_TRUE(target.hasVibrations());
+  EXPECT_EQ(target.vibrationFrequencies().size(), 1u);
+
+  // cached pointers into the old data are still stale
+  EXPECT_TRUE(
+    Molecule::invalidatesDerivedData(replaceChanges | Molecule::Replaced));
+}
+
+// An in-place edit is not a replacement: the modes no longer match.
+TEST(RWMoleculeTest, editWithoutReplacedClearsVibrations)
+{
+  Molecule mol;
+  addVibrations(mol);
+  ASSERT_TRUE(mol.hasVibrations());
+
+  mol.emitChanged(Molecule::Atoms | Molecule::Added);
+  EXPECT_FALSE(mol.hasVibrations());
+}
+
+// Callers that do not say Replaced (e.g. the coordinate editor, which edits a
+// copy of the old molecule) still lose stale vibrations.
+TEST(RWMoleculeTest, modifyMoleculeWithoutReplacedClearsVibrations)
+{
+  Molecule target;
+  Molecule source;
+  addVibrations(source);
+
+  target.undoMolecule()->modifyMolecule(source, replaceChanges, "Edit");
+  EXPECT_FALSE(target.hasVibrations());
+}
+
+// A freshly read replacement has no display state, and would otherwise turn
+// every display type off.
+TEST(RWMoleculeTest, modifyMoleculeKeepsDisplayState)
+{
+  Molecule target;
+  target.addAtom(8);
+  auto info = target.layerInfo();
+  info->enable["Ball and Stick"] = { true };
+  info->loaded.insert("Ball and Stick");
+
+  Molecule source;
+  addVibrations(source);
+  ASSERT_TRUE(source.layerInfo()->enable.empty());
+
+  target.undoMolecule()->modifyMolecule(source, replaceChanges, "Replace");
+  auto after = target.layerInfo();
+  ASSERT_EQ(after->enable.count("Ball and Stick"), 1u);
+  EXPECT_EQ(after->enable["Ball and Stick"], std::vector<bool>({ true }));
+  EXPECT_EQ(after->loaded.count("Ball and Stick"), 1u);
+  // the source is not changed
+  EXPECT_TRUE(source.layerInfo()->enable.empty());
+
+  // undo restores the old molecule, display state included
+  target.undoMolecule()->undoStack().undo();
+  EXPECT_EQ(target.atomCount(), 1u);
+  EXPECT_EQ(target.layerInfo()->enable["Ball and Stick"],
+            std::vector<bool>({ true }));
+
+  // and redo restores the replacement with the carried-over state
+  target.undoMolecule()->undoStack().redo();
+  EXPECT_EQ(target.atomCount(), 2u);
+  EXPECT_EQ(target.layerInfo()->enable["Ball and Stick"],
+            std::vector<bool>({ true }));
+}
+
+TEST(RWMoleculeTest, modifyMoleculeKeepsReplacementsOwnDisplayState)
+{
+  Molecule target;
+  target.addAtom(8);
+  target.layerInfo()->enable["Ball and Stick"] = { true };
+
+  Molecule source;
+  addVibrations(source);
+  source.layerInfo()->enable["Wireframe"] = { true };
+
+  target.undoMolecule()->modifyMolecule(source, replaceChanges, "Replace");
+  auto after = target.layerInfo();
+  EXPECT_EQ(after->enable.count("Wireframe"), 1u);
+  EXPECT_EQ(after->enable.count("Ball and Stick"), 0u);
+}
+
+namespace {
+
+// Four carbons in a chain with bonds 0-1, 1-2, 2-3 (unique ids 0, 1, 2).
+void buildChain(Molecule& mol)
+{
+  for (int i = 0; i < 4; ++i)
+    mol.addAtom(6).setPosition3d(Vector3(1.5 * i, 0.0, 0.0));
+  mol.addBond(0, 1, 1);
+  mol.addBond(1, 2, 1);
+  mol.addBond(2, 3, 1);
+}
+
+// Bonds as sorted (uniqueId, atomUid1, atomUid2) so the comparison does not
+// depend on storage order.
+std::vector<std::tuple<Index, Index, Index>> bondsByUniqueId(Molecule& mol)
+{
+  std::vector<std::tuple<Index, Index, Index>> result;
+  RWMolecule* rw = mol.undoMolecule();
+  for (Index i = 0; i < mol.bondCount(); ++i) {
+    auto pair = mol.bondPair(i);
+    Index a = rw->atomUniqueId(pair.first);
+    Index b = rw->atomUniqueId(pair.second);
+    result.emplace_back(rw->bondUniqueId(i), std::min(a, b), std::max(a, b));
+  }
+  std::sort(result.begin(), result.end());
+  return result;
+}
+
+// Every unique id must round-trip through its index, and no index may be out
+// of range.
+void expectIdsConsistent(Molecule& mol)
+{
+  RWMolecule* rw = mol.undoMolecule();
+  for (Index i = 0; i < mol.atomCount(); ++i) {
+    Index uid = rw->atomUniqueId(i);
+    ASSERT_NE(uid, Avogadro::MaxIndex) << "atom " << i;
+    auto atom = rw->atomByUniqueId(uid);
+    ASSERT_TRUE(atom.isValid()) << "atom uid " << uid;
+    EXPECT_EQ(atom.index(), i);
+  }
+  for (Index i = 0; i < mol.bondCount(); ++i) {
+    Index uid = rw->bondUniqueId(i);
+    ASSERT_NE(uid, Avogadro::MaxIndex) << "bond " << i;
+    auto bond = rw->bondByUniqueId(uid);
+    ASSERT_TRUE(bond.isValid()) << "bond uid " << uid;
+    EXPECT_EQ(bond.index(), i);
+    EXPECT_LT(mol.bondPair(i).first, mol.atomCount());
+    EXPECT_LT(mol.bondPair(i).second, mol.atomCount());
+  }
+}
+
+} // namespace
+
+// modifyMolecule() stores the live molecule for undo. Its copy constructor
+// used to renumber the unique ids, so undoing past it with a hole in the
+// bond table left earlier commands pointing at the wrong bond.
+TEST(RWMoleculeTest, modifyMoleculeUndoKeepsBondUniqueIds)
+{
+  Molecule mol;
+  buildChain(mol);
+  RWMolecule* rw = mol.undoMolecule();
+  const auto original = bondsByUniqueId(mol);
+  ASSERT_EQ(original.size(), 3u);
+
+  // Remove the first bond, leaving a hole at unique id 0
+  Index firstUid = rw->bondUniqueId(0);
+  ASSERT_TRUE(rw->removeBond(static_cast<Index>(0)));
+  ASSERT_EQ(mol.bondCount(), 2u);
+  const auto afterRemove = bondsByUniqueId(mol);
+
+  Molecule edited = mol;
+  edited.setAtomPosition3d(3, Vector3(9.0, 9.0, 9.0));
+  rw->modifyMolecule(edited, Molecule::Atoms | Molecule::Modified, "Edit");
+  const auto afterModify = bondsByUniqueId(mol);
+  EXPECT_EQ(mol.atomPosition3d(3), Vector3(9.0, 9.0, 9.0));
+
+  rw->undoStack().undo(); // the modification
+  EXPECT_EQ(bondsByUniqueId(mol), afterRemove);
+  EXPECT_EQ(mol.atomPosition3d(3), Vector3(4.5, 0.0, 0.0));
+  expectIdsConsistent(mol);
+
+  rw->undoStack().undo(); // the bond removal
+  ASSERT_EQ(mol.bondCount(), 3u);
+  EXPECT_EQ(bondsByUniqueId(mol), original);
+  EXPECT_TRUE(rw->bondByUniqueId(firstUid).isValid());
+  expectIdsConsistent(mol);
+
+  rw->undoStack().redo();
+  EXPECT_EQ(bondsByUniqueId(mol), afterRemove);
+  rw->undoStack().redo();
+  EXPECT_EQ(bondsByUniqueId(mol), afterModify);
+  EXPECT_EQ(mol.atomPosition3d(3), Vector3(9.0, 9.0, 9.0));
+  expectIdsConsistent(mol);
+}
+
+// The atom version: the crash-class path, since atom undo commands re-add the
+// atom at its unique id.
+TEST(RWMoleculeTest, modifyMoleculeUndoKeepsAtomUniqueIds)
+{
+  Molecule mol;
+  buildChain(mol);
+  RWMolecule* rw = mol.undoMolecule();
+  const Index removedUid = rw->atomUniqueId(static_cast<Index>(1));
+  ASSERT_EQ(removedUid, 1u);
+
+  // Removes atom 1 and its two bonds, leaving holes in both tables
+  ASSERT_TRUE(rw->removeAtom(static_cast<Index>(1)));
+  ASSERT_EQ(mol.atomCount(), 3u);
+  ASSERT_EQ(mol.bondCount(), 1u);
+  const auto afterRemove = bondsByUniqueId(mol);
+
+  Molecule edited = mol;
+  edited.setAtomPosition3d(0, Vector3(-5.0, 0.0, 0.0));
+  rw->modifyMolecule(edited, Molecule::Atoms | Molecule::Modified, "Edit");
+
+  rw->undoStack().undo(); // the modification
+  EXPECT_EQ(mol.atomCount(), 3u);
+  EXPECT_EQ(bondsByUniqueId(mol), afterRemove);
+  expectIdsConsistent(mol);
+
+  rw->undoStack().undo(); // the atom removal
+  ASSERT_EQ(mol.atomCount(), 4u);
+  ASSERT_EQ(mol.bondCount(), 3u);
+  auto restored = rw->atomByUniqueId(removedUid);
+  ASSERT_TRUE(restored.isValid());
+  EXPECT_EQ(restored.atomicNumber(), 6);
+  EXPECT_EQ(restored.position3d(), Vector3(1.5, 0.0, 0.0));
+  expectIdsConsistent(mol);
+  std::vector<std::tuple<Index, Index, Index>> bonds = bondsByUniqueId(mol);
+  EXPECT_EQ(bonds, (std::vector<std::tuple<Index, Index, Index>>{
+                     { 0, 0, 1 }, { 1, 1, 2 }, { 2, 2, 3 } }));
+  EXPECT_EQ(mol.atomPosition3d(0), Vector3(0.0, 0.0, 0.0));
+
+  rw->undoStack().redo();
+  rw->undoStack().redo();
+  EXPECT_EQ(mol.atomCount(), 3u);
+  EXPECT_EQ(mol.bondCount(), 1u);
+  EXPECT_EQ(mol.atomPosition3d(0), Vector3(-5.0, 0.0, 0.0));
+  expectIdsConsistent(mol);
 }

@@ -194,16 +194,36 @@ bool PlotPdf::generatePdfPattern(QtGui::Molecule& mol, PdfData& results,
 
   for (k = 0; k < static_cast<size_t>(maxRadius / rStep); k++) {
     if (pdfCount.find(k) == pdfCount.end()) {
-      results.push_back(std::make_pair(k * rStep, 0.0));
+      results.emplace_back(k * rStep, 0.0);
     } else {
-      results.push_back(std::make_pair(
-        k * rStep, pdfCount[k] * newMolecule.unitCell()->volume() /
-                     (4 * M_PI * pow(k * rStep, 2) * rStep *
-                      refAtomCoords.size() * newAtomCoords.size())));
+      results.emplace_back(k * rStep,
+                           pdfCount[k] * newMolecule.unitCell()->volume() /
+                             (4 * M_PI * pow(k * rStep, 2) * rStep *
+                              refAtomCoords.size() * newAtomCoords.size()));
     }
   }
 
   return true;
+}
+
+void PlotPdf::registerCommands()
+{
+  emit registerCommand("showPdfPlot", tr("Show PDF plot."));
+}
+
+bool PlotPdf::handleCommand(const QString& command,
+                            [[maybe_unused]] const QVariantMap& options)
+{
+  if (m_molecule == nullptr || m_molecule->unitCell() == nullptr)
+    return false; // reject if null OR if it lacks a crystal unit cell
+
+  // Wraps displayDialog
+  if (command == "showPdfPlot") {
+    displayDialog();
+    return true;
+  }
+
+  return false;
 }
 
 } // namespace Avogadro::QtPlugins

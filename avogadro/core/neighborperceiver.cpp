@@ -5,91 +5,92 @@
 
 #include "neighborperceiver.h"
 
+#include <algorithm>
 #include <cmath>
 
 namespace Avogadro::Core {
 
 NeighborPerceiver::NeighborPerceiver(const Array<Vector3> points,
                                      float maxDistance)
-  : m_maxDistance(maxDistance), m_binCount({ 0, 0, 0 }), m_cachedArray(nullptr)
+  : m_maxDistance(maxDistance), m_binSize(maxDistance)
 {
-  if (!points.size())
+  if (points.empty())
     return;
 
   if (m_maxDistance <= 0 || !std::isfinite(m_maxDistance))
     return;
 
-  // find bounding box
-  m_minPos = points[0];
-  m_maxPos = points[0];
-  for (Index i = 1; i < points.size(); i++) {
-    Vector3 ipos = points[i];
+  // find the bounding box of the finite points; non-finite points (malformed
+  // input) are never binned
+  bool found = false;
+  for (Index i = 0; i < points.size(); i++) {
+    const Vector3& ipos = points[i];
+    if (!ipos.allFinite())
+      continue;
+    if (!found) {
+      m_minPos = ipos;
+      m_maxPos = ipos;
+      found = true;
+      continue;
+    }
     for (size_t c = 0; c < 3; c++) {
       m_minPos(c) = std::min(ipos(c), m_minPos(c));
       m_maxPos(c) = std::max(ipos(c), m_maxPos(c));
     }
   }
-
-  // Validate bounding box (NaN/Inf from malformed input)
-  for (size_t c = 0; c < 3; c++) {
-    if (!std::isfinite(m_minPos(c)) || !std::isfinite(m_maxPos(c)))
-      return;
-  }
-
-  // group points into cubic bins so that each point is only checked against
-  // other points inside bins within a 3-dimensional Moore neighborhood
-  for (size_t c = 0; c < 3; c++) {
-    double count =
-      std::floor((m_maxPos(c) + 0.1 - m_minPos(c)) / m_maxDistance) + 1;
-    if (!std::isfinite(count) || count < 1)
-      m_binCount[c] = 1;
-    else if (count > 1000)
-      m_binCount[c] = 1000;
-    else
-      m_binCount[c] = static_cast<int>(count);
-  }
-  const long long totalBins = static_cast<long long>(m_binCount[0])
-                            * m_binCount[1] * m_binCount[2];
-  if (totalBins > 10'000'000) // ~240 MB of vector overhead
+  if (!found)
     return;
 
-  std::vector<std::vector<std::vector<std::vector<Index>>>> bins(
-    m_binCount[0], std::vector<std::vector<std::vector<Index>>>(
-                     m_binCount[1], std::vector<std::vector<Index>>(
-                                      m_binCount[2], std::vector<Index>())));
-  m_bins = bins;
-  for (Index i = 0; i < points.size(); i++) {
-    std::array<int, 3> bin_index = getBinIndex(points[i]);
-    if (bin_index[0] >= 0 && bin_index[0] < m_binCount[0] &&
-        bin_index[1] >= 0 && bin_index[1] < m_binCount[1] &&
-        bin_index[2] >= 0 && bin_index[2] < m_binCount[2]) {
-      m_bins[bin_index[0]][bin_index[1]][bin_index[2]].push_back(i);
+  // Group points into cubic bins so that each point is only checked against
+  // other points inside bins within a 3-dimensional Moore neighborhood.
+  //
+  // The bin edge is always maxDistance, so that neighborhood holds every point
+  // within maxDistance of the query. Only occupied bins are stored, so widely
+  // spread points (a single stray atom far from a molecule) cost nothing.
+  //
+  // Bins are anchored at the bounding box minimum, which keeps the bins of
+  // ordinary molecules stable. If the extent spans so many bins that
+  // (p - min) would lose the precision to tell nearby points apart, anchor at
+  // the origin instead, where the spacing of doubles is finest.
+  constexpr double maxAnchoredBins = 1099511627776.0; // 2^40
+  m_anchor = m_minPos;
+  for (size_t c = 0; c < 3; c++) {
+    const double extent = m_maxPos(c) - m_minPos(c);
+    if (!std::isfinite(extent) || extent / m_binSize > maxAnchoredBins) {
+      m_anchor = Vector3::Zero();
+      break;
     }
+  }
+
+  m_bins.reserve(points.size());
+  for (Index i = 0; i < points.size(); i++) {
+    BinKey key;
+    if (getBinIndex(points[i], key))
+      m_bins[key].push_back(i);
   }
 }
 
 void NeighborPerceiver::getNeighborsInclusiveInPlace(Array<Index>& out,
                                                      const Vector3& point) const
 {
-  if (m_bins.empty()) {
-    out.clear();
-    return;
-  }
-
-  const std::array<int, 3> bin_index = getBinIndex(point);
-  if (&out == m_cachedArray && bin_index == m_cachedIndex)
-    return;
-
-  m_cachedIndex = bin_index;
   out.clear();
-  for (int xi = std::max(int(1), bin_index[0]) - 1;
-       xi < std::min(m_binCount[0], bin_index[0] + 2); xi++) {
-    for (int yi = std::max(int(1), bin_index[1]) - 1;
-         yi < std::min(m_binCount[1], bin_index[1] + 2); yi++) {
-      for (int zi = std::max(int(1), bin_index[2]) - 1;
-           zi < std::min(m_binCount[2], bin_index[2] + 2); zi++) {
-        const std::vector<Index>& bin = m_bins[xi][yi][zi];
-        out.insert(out.end(), bin.begin(), bin.end());
+  if (m_bins.empty())
+    return;
+
+  BinKey center;
+  if (!getBinIndex(point, center))
+    return;
+
+  BinKey key;
+  for (int64_t dx = -1; dx <= 1; dx++) {
+    key[0] = center[0] + dx;
+    for (int64_t dy = -1; dy <= 1; dy++) {
+      key[1] = center[1] + dy;
+      for (int64_t dz = -1; dz <= 1; dz++) {
+        key[2] = center[2] + dz;
+        const auto it = m_bins.find(key);
+        if (it != m_bins.end())
+          out.insert(out.end(), it->second.begin(), it->second.end());
       }
     }
   }
@@ -103,13 +104,22 @@ Array<Index> NeighborPerceiver::getNeighborsInclusive(
   return r;
 }
 
-std::array<int, 3> NeighborPerceiver::getBinIndex(const Vector3& point) const
+bool NeighborPerceiver::getBinIndex(const Vector3& point, BinKey& key) const
 {
-  std::array<int, 3> r = {};
+  if (!point.allFinite())
+    return false;
+
+  // Clamping in double before the cast keeps huge coordinates well defined and
+  // leaves room for cell +/- 1. Clamping is 1-Lipschitz, so two points within
+  // maxDistance still land in bins at most one apart.
+  constexpr double limit = 1.0e15;
   for (size_t c = 0; c < 3; c++) {
-    r[c] = std::floor((point(c) - m_minPos(c)) / m_maxDistance);
+    const double v = std::floor((point(c) - m_anchor(c)) / m_binSize);
+    if (std::isnan(v))
+      return false;
+    key[c] = static_cast<int64_t>(std::clamp(v, -limit, limit));
   }
-  return r;
+  return true;
 }
 
 } // namespace Avogadro::Core

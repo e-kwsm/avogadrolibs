@@ -693,35 +693,35 @@ void MeasureTool::registerCommands()
     "measureDistance",
     tr("Measure the distance in Å between two atoms, given as "
        "zero-based indices: {\"atoms\": [i, j]}. Returns {\"distance\": "
-       "..., \"atoms\": [i, j]}."));
+       "…, \"atoms\": [i, j]}."));
   emit registerCommand(
     "measureAngle",
     tr("Measure the angle in degrees at the middle of three atoms, given "
        "as zero-based indices: {\"atoms\": [i, j, k]}. Returns {\"angle\": "
-       "..., \"atoms\": [i, j, k]}."));
+       "…, \"atoms\": [i, j, k]}."));
   emit registerCommand(
     "measureDihedral",
     tr("Measure the dihedral angle in degrees (-180 to 180) of four "
        "atoms, given as zero-based indices: {\"atoms\": [i, j, k, l]}. "
-       "Returns {\"dihedral\": ..., \"atoms\": [i, j, k, l]}."));
+       "Returns {\"dihedral\": …, \"atoms\": [i, j, k, l]}."));
   emit registerCommand(
     "editDistance",
     tr("Set the distance in Å between two atoms, given as zero-based "
-       "indices: {\"atoms\": [i, j], \"value\": ...}; the second atom and "
+       "indices: {\"atoms\": [i, j], \"value\": …}; the second atom and "
        "everything bonded to it on that side move. Returns the new "
-       "{\"distance\": ..., \"atoms\": [i, j]}."));
+       "{\"distance\": …, \"atoms\": [i, j]}."));
   emit registerCommand(
     "editAngle",
     tr("Set the angle in degrees at the middle of three atoms, given as "
-       "zero-based indices: {\"atoms\": [i, j, k], \"value\": ...}; the "
+       "zero-based indices: {\"atoms\": [i, j, k], \"value\": …}; the "
        "last atom and everything bonded to it on that side move. Returns "
-       "the new {\"angle\": ..., \"atoms\": [i, j, k]}."));
+       "the new {\"angle\": …, \"atoms\": [i, j, k]}."));
   emit registerCommand(
     "editDihedral",
     tr("Set the dihedral angle in degrees of four atoms, given as "
-       "zero-based indices: {\"atoms\": [i, j, k, l], \"value\": ...}; "
+       "zero-based indices: {\"atoms\": [i, j, k, l], \"value\": …}; "
        "the last atom and everything bonded to it on that side move. "
-       "Returns the new {\"dihedral\": ..., \"atoms\": [i, j, k, l]}."));
+       "Returns the new {\"dihedral\": …, \"atoms\": [i, j, k, l]}."));
 }
 
 bool MeasureTool::handleCommand(const QString& command,
@@ -761,7 +761,7 @@ bool MeasureTool::handleCommand(const QString& command,
   // edits specifically need the undo stack that only setMolecule() (not
   // setEditMolecule()) provides -- see the comment in setEditMolecule().
   if (!m_molecule) {
-    emit commandFailed(tr("There is no molecule to measure."));
+    emit commandFailed(tr("No molecule"));
     return true;
   }
 
@@ -783,12 +783,17 @@ bool MeasureTool::handleCommand(const QString& command,
     return true;
   }
 
-  // Match the panel's spin box ranges. A zero distance would stack two atoms
-  // on top of each other, and an angle outside 0-180 degrees lands on the
-  // supplement, so the caller would get back a value it never asked for.
-  // Dihedrals wrap, so any value is meaningful.
-  if (requiredCount == 2 && !(value > 0.0)) {
-    emit commandFailed(tr("value must be a distance greater than 0 Å."));
+  // Match the panel's spin box ranges. A distance outside the supported
+  // range would stack atoms or fling them out of the universe (the fuzzer
+  // found values that overflowed to infinity), and an angle outside 0-180
+  // degrees lands on the supplement, so the caller would get back a value it
+  // never asked for. Dihedrals wrap, so any value is meaningful.
+  if (requiredCount == 2 &&
+      !(value >= QtGui::FragmentTools::minimumChainDistance &&
+        value <= QtGui::FragmentTools::maximumChainDistance)) {
+    emit commandFailed(tr("value must be a distance from %1 to %2 Å.")
+                         .arg(QtGui::FragmentTools::minimumChainDistance)
+                         .arg(QtGui::FragmentTools::maximumChainDistance));
     return true;
   }
   if (requiredCount == 3 && !(value >= 0.0 && value <= 180.0)) {

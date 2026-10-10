@@ -178,7 +178,7 @@ void MolecularProperties::showDialog()
 {
   if (m_dialog == nullptr) {
     // create it
-    // copied from the propeties dialog
+    // copied from the properties dialog
     m_dialog = new QDialog(qobject_cast<QWidget*>(parent()));
     auto* layout = new QVBoxLayout(m_dialog);
     m_dialog->setLayout(layout);
@@ -220,4 +220,23 @@ void MolecularProperties::showDialog()
   m_dialog->activateWindow();
 }
 
+void MolecularProperties::registerCommands()
+{
+  emit registerCommand("showMolecularProperties",
+                       tr("Show molecular properties."));
+}
+
+bool MolecularProperties::handleCommand(
+  const QString& command, [[maybe_unused]] const QVariantMap& options)
+{
+  if (m_molecule == nullptr)
+    return false; // No molecule to handle the command
+
+  if (command == "showMolecularProperties") {
+    showDialog();
+    return true;
+  }
+
+  return false;
+}
 } // namespace Avogadro::QtPlugins

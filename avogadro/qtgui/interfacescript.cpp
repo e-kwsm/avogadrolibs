@@ -11,10 +11,12 @@
 #include <avogadro/io/fileformat.h>
 #include <avogadro/io/fileformatmanager.h>
 
+#include <avogadro/qtgui/gaussiansetconcurrent.h>
 #include <avogadro/qtgui/generichighlighter.h>
 #include <avogadro/qtgui/molecule.h>
 #include <avogadro/qtgui/pythonscript.h>
 #include <avogadro/qtgui/rwmolecule.h>
+#include <avogadro/qtgui/slatersetconcurrent.h>
 
 #include <QtCore/QDebug>
 #include <QtCore/QFile>
@@ -380,6 +382,12 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
 
       // how do we handle this result?
       if (obj["readProperties"].toBool()) {
+        // readProperties() frees the basis set it replaces, which a
+        // background orbital or surface calculation may still be reading.
+        if (newMol.basisSet() != nullptr) {
+          GaussianSetConcurrent::cancelAllCalculations();
+          SlaterSetConcurrent::cancelAllCalculations();
+        }
         guiMol->readProperties(newMol);
         guiMol->emitChanged(Molecule::Properties | Molecule::Added);
       } else if (obj["append"].toBool()) {
@@ -387,7 +395,7 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
       } else { // replace the whole molecule
         Molecule::MoleculeChanges changes =
           (Molecule::Atoms | Molecule::Bonds | Molecule::Added |
-           Molecule::Removed);
+           Molecule::Removed | Molecule::Replaced);
         guiMol->undoMolecule()->modifyMolecule(newMol, changes, m_displayName);
       }
     }
@@ -402,7 +410,9 @@ bool InterfaceScript::processCommand(Core::Molecule* mol)
             guiMol->undoMolecule()->setAtomSelected(index, true);
         }
       }
-      guiMol->emitChanged(Molecule::Atoms);
+      // Only the selection changed. Atoms alone would count as a structural
+      // edit and discard the vibrations or orbitals the script just returned.
+      guiMol->emitChanged(Molecule::Selection);
     }
 
     // check if there are messages for the user

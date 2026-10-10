@@ -19,7 +19,6 @@
 #include <sstream>
 #include <string>
 
-using std::getline;
 using std::map;
 using std::string;
 using std::to_string;
@@ -51,25 +50,28 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   AVO_UNUSED(id_idx);
 
   string buffer;
-  getline(inStream, buffer); // Finish the first line
+  Core::getLine(inStream, buffer); // Finish the first line
   buffer = trimmed(buffer);
   if (buffer != "ITEM: TIMESTEP") {
     appendError("No timestep item found.");
     return false;
   }
-  getline(inStream, buffer);
+  Core::getLine(inStream, buffer);
   if (!buffer.empty()) {
     timestep = lexicalCast<size_t>(buffer).value_or(0);
     mol.setTimeStep(timestep, 0);
   }
 
-  getline(inStream, buffer);
+  Core::getLine(inStream, buffer);
   buffer = trimmed(buffer);
   if (buffer != "ITEM: NUMBER OF ATOMS") {
     appendError("No number of atoms item found.");
     return false;
   }
-  getline(inStream, buffer);
+  if (!Core::getLine(inStream, buffer)) {
+    appendError("Unexpected end of file reading number of atoms.");
+    return false;
+  }
   if (!buffer.empty()) {
     if (auto n = lexicalCast<size_t>(buffer)) {
       numAtoms = *n;
@@ -80,26 +82,47 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   // If unit cell is triclinic, tilt factors are needed to define the supercell
-  getline(inStream, buffer);
+  Core::getLine(inStream, buffer);
   if (buffer.find("ITEM: BOX BOUNDS xy xz yz") == 0) {
     // Read x_min, x_max, tiltfactor_xy
-    getline(inStream, buffer);
+    if (!Core::getLine(inStream, buffer)) {
+      appendError("Unexpected end of file reading box bounds.");
+      return false;
+    }
     std::vector<string> box_bounds_x(split(buffer, ' '));
-    x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-    x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
-    tilt_xy = lexicalCast<double>(box_bounds_x.at(2)).value_or(0.0);
+    if (box_bounds_x.size() < 3) {
+      appendError("Invalid box bounds: " + buffer);
+      return false;
+    }
+    x_min = lexicalCast<double>(box_bounds_x[0]).value_or(0.0);
+    x_max = lexicalCast<double>(box_bounds_x[1]).value_or(0.0);
+    tilt_xy = lexicalCast<double>(box_bounds_x[2]).value_or(0.0);
     // Read y_min, y_max, tiltfactor_xz
-    getline(inStream, buffer);
+    if (!Core::getLine(inStream, buffer)) {
+      appendError("Unexpected end of file reading box bounds.");
+      return false;
+    }
     std::vector<string> box_bounds_y(split(buffer, ' '));
-    y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-    y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
-    tilt_xz = lexicalCast<double>(box_bounds_y.at(2)).value_or(0.0);
-    getline(inStream, buffer);
+    if (box_bounds_y.size() < 3) {
+      appendError("Invalid box bounds: " + buffer);
+      return false;
+    }
+    y_min = lexicalCast<double>(box_bounds_y[0]).value_or(0.0);
+    y_max = lexicalCast<double>(box_bounds_y[1]).value_or(0.0);
+    tilt_xz = lexicalCast<double>(box_bounds_y[2]).value_or(0.0);
+    if (!Core::getLine(inStream, buffer)) {
+      appendError("Unexpected end of file reading box bounds.");
+      return false;
+    }
     // Read z_min, z_max, tiltfactor_yz
     std::vector<string> box_bounds_z(split(buffer, ' '));
-    z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-    z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
-    tilt_yz = lexicalCast<double>(box_bounds_z.at(2)).value_or(0.0);
+    if (box_bounds_z.size() < 3) {
+      appendError("Invalid box bounds: " + buffer);
+      return false;
+    }
+    z_min = lexicalCast<double>(box_bounds_z[0]).value_or(0.0);
+    z_max = lexicalCast<double>(box_bounds_z[1]).value_or(0.0);
+    tilt_yz = lexicalCast<double>(box_bounds_z[2]).value_or(0.0);
 
     x_min -= std::min({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
     x_max -= std::max({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
@@ -110,20 +133,41 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   // Else if unit cell is orthogonal, tilt factors are zero
   else if (buffer.find("ITEM: BOX BOUNDS") == 0) {
     // Read x_min, x_max
-    getline(inStream, buffer);
+    if (!Core::getLine(inStream, buffer)) {
+      appendError("Unexpected end of file reading box bounds.");
+      return false;
+    }
     std::vector<string> box_bounds_x(split(buffer, ' '));
-    x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-    x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
+    if (box_bounds_x.size() < 2) {
+      appendError("Invalid box bounds: " + buffer);
+      return false;
+    }
+    x_min = lexicalCast<double>(box_bounds_x[0]).value_or(0.0);
+    x_max = lexicalCast<double>(box_bounds_x[1]).value_or(0.0);
     // Read y_min, y_max
-    getline(inStream, buffer);
+    if (!Core::getLine(inStream, buffer)) {
+      appendError("Unexpected end of file reading box bounds.");
+      return false;
+    }
     std::vector<string> box_bounds_y(split(buffer, ' '));
-    y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-    y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
+    if (box_bounds_y.size() < 2) {
+      appendError("Invalid box bounds: " + buffer);
+      return false;
+    }
+    y_min = lexicalCast<double>(box_bounds_y[0]).value_or(0.0);
+    y_max = lexicalCast<double>(box_bounds_y[1]).value_or(0.0);
     // Read z_min, z_max
-    getline(inStream, buffer);
+    if (!Core::getLine(inStream, buffer)) {
+      appendError("Unexpected end of file reading box bounds.");
+      return false;
+    }
     std::vector<string> box_bounds_z(split(buffer, ' '));
-    z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-    z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
+    if (box_bounds_z.size() < 2) {
+      appendError("Invalid box bounds: " + buffer);
+      return false;
+    }
+    z_min = lexicalCast<double>(box_bounds_z[0]).value_or(0.0);
+    z_max = lexicalCast<double>(box_bounds_z[1]).value_or(0.0);
   }
 
   typedef map<string, unsigned char> AtomTypeMap;
@@ -134,8 +178,15 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   // s stands for scaled coordinates
   // u stands for unwrapped coordinates
   // scale_x = 0. if coordinates are cartesian and 1 if fractional (scaled)
-  getline(inStream, buffer);
+  Core::getLine(inStream, buffer);
   std::vector<string> labels(split(buffer, ' '));
+  // The column indices below are positions in this header line, and atom
+  // rows lack its two leading "ITEM:" "ATOMS" words -- hence the "- 2" when
+  // indexing a row. Without that prefix the subtraction would underflow.
+  if (labels.size() < 2 || labels[0] != "ITEM:" || labels[1] != "ATOMS") {
+    appendError("No 'ITEM: ATOMS' header found: " + buffer);
+    return false;
+  }
   for (size_t i = 0; i < labels.size(); i++) {
     if (labels[i] == "x" || labels[i] == "xu") {
       x_idx = i;
@@ -163,7 +214,8 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   }
 
   if (x_idx == SIZE_MAX || y_idx == SIZE_MAX || z_idx == SIZE_MAX ||
-      type_idx == SIZE_MAX) {
+      type_idx == SIZE_MAX || x_idx < 2 || y_idx < 2 || z_idx < 2 ||
+      type_idx < 2) {
     appendError("Failed to parse attributes: " + buffer);
     return false;
   }
@@ -249,9 +301,10 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
   mol.setUnitCell(uc);
 
   // Do we have an animation?
-  size_t numAtoms2;
+  size_t numAtoms2 = 0;
   int coordSet = 1;
-  while (getline(inStream, buffer) && trimmed(buffer) == "ITEM: TIMESTEP") {
+  while (Core::getLine(inStream, buffer) &&
+         trimmed(buffer) == "ITEM: TIMESTEP") {
     x_idx = SIZE_MAX;
     y_idx = SIZE_MAX;
     z_idx = SIZE_MAX;
@@ -270,19 +323,22 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     scale_y = 0.;
     scale_z = 0.;
 
-    getline(inStream, buffer);
+    Core::getLine(inStream, buffer);
     if (!buffer.empty()) {
       timestep = lexicalCast<size_t>(buffer).value_or(0);
       mol.setTimeStep(timestep, coordSet);
     }
 
-    getline(inStream, buffer);
+    Core::getLine(inStream, buffer);
     buffer = trimmed(buffer);
     if (buffer != "ITEM: NUMBER OF ATOMS") {
       appendError("No number of atoms item found.");
       return false;
     }
-    getline(inStream, buffer);
+    if (!Core::getLine(inStream, buffer)) {
+      appendError("Unexpected end of file reading number of atoms.");
+      return false;
+    }
     if (!buffer.empty())
       numAtoms2 = lexicalCast<size_t>(buffer).value_or(0);
 
@@ -292,26 +348,47 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
 
     // If unit cell is triclinic, tilt factors are needed to define the
     // supercell
-    getline(inStream, buffer);
+    Core::getLine(inStream, buffer);
     if (buffer.find("ITEM: BOX BOUNDS xy xz yz") == 0) {
       // Read x_min, x_max, tiltfactor_xy
-      getline(inStream, buffer);
+      if (!Core::getLine(inStream, buffer)) {
+        appendError("Unexpected end of file reading box bounds.");
+        return false;
+      }
       std::vector<string> box_bounds_x(split(buffer, ' '));
-      x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-      x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
-      tilt_xy = lexicalCast<double>(box_bounds_x.at(2)).value_or(0.0);
+      if (box_bounds_x.size() < 3) {
+        appendError("Invalid box bounds: " + buffer);
+        return false;
+      }
+      x_min = lexicalCast<double>(box_bounds_x[0]).value_or(0.0);
+      x_max = lexicalCast<double>(box_bounds_x[1]).value_or(0.0);
+      tilt_xy = lexicalCast<double>(box_bounds_x[2]).value_or(0.0);
       // Read y_min, y_max, tiltfactor_xz
-      getline(inStream, buffer);
+      if (!Core::getLine(inStream, buffer)) {
+        appendError("Unexpected end of file reading box bounds.");
+        return false;
+      }
       std::vector<string> box_bounds_y(split(buffer, ' '));
-      y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-      y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
-      tilt_xz = lexicalCast<double>(box_bounds_y.at(2)).value_or(0.0);
-      getline(inStream, buffer);
+      if (box_bounds_y.size() < 3) {
+        appendError("Invalid box bounds: " + buffer);
+        return false;
+      }
+      y_min = lexicalCast<double>(box_bounds_y[0]).value_or(0.0);
+      y_max = lexicalCast<double>(box_bounds_y[1]).value_or(0.0);
+      tilt_xz = lexicalCast<double>(box_bounds_y[2]).value_or(0.0);
+      if (!Core::getLine(inStream, buffer)) {
+        appendError("Unexpected end of file reading box bounds.");
+        return false;
+      }
       // Read z_min, z_max, tiltfactor_yz
       std::vector<string> box_bounds_z(split(buffer, ' '));
-      z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-      z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
-      tilt_yz = lexicalCast<double>(box_bounds_z.at(2)).value_or(0.0);
+      if (box_bounds_z.size() < 3) {
+        appendError("Invalid box bounds: " + buffer);
+        return false;
+      }
+      z_min = lexicalCast<double>(box_bounds_z[0]).value_or(0.0);
+      z_max = lexicalCast<double>(box_bounds_z[1]).value_or(0.0);
+      tilt_yz = lexicalCast<double>(box_bounds_z[2]).value_or(0.0);
 
       x_min -= std::min({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
       x_max -= std::max({ tilt_xy, tilt_xz, tilt_xy + tilt_xz, 0.0 });
@@ -322,28 +399,54 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     // Else if unit cell is orthogonal, tilt factors are zero
     else if (buffer.find("ITEM: BOX BOUNDS") == 0) {
       // Read x_min, x_max
-      getline(inStream, buffer);
+      if (!Core::getLine(inStream, buffer)) {
+        appendError("Unexpected end of file reading box bounds.");
+        return false;
+      }
       std::vector<string> box_bounds_x(split(buffer, ' '));
-      x_min = lexicalCast<double>(box_bounds_x.at(0)).value_or(0.0);
-      x_max = lexicalCast<double>(box_bounds_x.at(1)).value_or(0.0);
+      if (box_bounds_x.size() < 2) {
+        appendError("Invalid box bounds: " + buffer);
+        return false;
+      }
+      x_min = lexicalCast<double>(box_bounds_x[0]).value_or(0.0);
+      x_max = lexicalCast<double>(box_bounds_x[1]).value_or(0.0);
       // Read y_min, y_max
-      getline(inStream, buffer);
+      if (!Core::getLine(inStream, buffer)) {
+        appendError("Unexpected end of file reading box bounds.");
+        return false;
+      }
       std::vector<string> box_bounds_y(split(buffer, ' '));
-      y_min = lexicalCast<double>(box_bounds_y.at(0)).value_or(0.0);
-      y_max = lexicalCast<double>(box_bounds_y.at(1)).value_or(0.0);
+      if (box_bounds_y.size() < 2) {
+        appendError("Invalid box bounds: " + buffer);
+        return false;
+      }
+      y_min = lexicalCast<double>(box_bounds_y[0]).value_or(0.0);
+      y_max = lexicalCast<double>(box_bounds_y[1]).value_or(0.0);
       // Read z_min, z_max
-      getline(inStream, buffer);
+      if (!Core::getLine(inStream, buffer)) {
+        appendError("Unexpected end of file reading box bounds.");
+        return false;
+      }
       std::vector<string> box_bounds_z(split(buffer, ' '));
-      z_min = lexicalCast<double>(box_bounds_z.at(0)).value_or(0.0);
-      z_max = lexicalCast<double>(box_bounds_z.at(1)).value_or(0.0);
+      if (box_bounds_z.size() < 2) {
+        appendError("Invalid box bounds: " + buffer);
+        return false;
+      }
+      z_min = lexicalCast<double>(box_bounds_z[0]).value_or(0.0);
+      z_max = lexicalCast<double>(box_bounds_z[1]).value_or(0.0);
     }
 
     // x,y,z stand for the coordinate axes
     // s stands for scaled coordinates
     // u stands for unwrapped coordinates
     // scale_x = 0. if coordinates are cartesian and 1 if fractional (scaled)
-    getline(inStream, buffer);
+    Core::getLine(inStream, buffer);
     labels = std::vector<string>(split(buffer, ' '));
+    // See the first frame: row indices are header indices minus two.
+    if (labels.size() < 2 || labels[0] != "ITEM:" || labels[1] != "ATOMS") {
+      appendError("No 'ITEM: ATOMS' header found: " + buffer);
+      return false;
+    }
     for (size_t i = 0; i < labels.size(); ++i) {
       if (labels[i] == "x" || labels[i] == "xu") {
         x_idx = i;
@@ -371,7 +474,8 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     }
 
     if (x_idx == SIZE_MAX || y_idx == SIZE_MAX || z_idx == SIZE_MAX ||
-        type_idx == SIZE_MAX) {
+        type_idx == SIZE_MAX || x_idx < 2 || y_idx < 2 || z_idx < 2 ||
+        type_idx < 2) {
       appendError("Failed to parse attributes: " + buffer);
       return false;
     }
@@ -386,7 +490,9 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
         return false;
       }
       std::vector<string> tokens(split(buffer, ' '));
-      if (tokens.size() < 5) {
+      // Every column the header declares, not a fixed five: x_idx etc. can
+      // point past the fifth token.
+      if (tokens.size() < labels.size() - 2) {
         appendError("Not enough tokens in this line: " + buffer);
         return false;
       }
@@ -415,6 +521,7 @@ bool LammpsTrajectoryFormat::read(std::istream& inStream, Core::Molecule& mol)
     if (!uc->isRegular()) {
       appendError(
         "'ITEM: BOX BOUNDS' does not give linear-independent lattive vectors");
+      delete uc;
       return false;
     }
     mol.setUnitCell(uc);
@@ -457,7 +564,7 @@ bool LammpsDataFormat::write(std::ostream& outStream, const Core::Molecule& mol)
                                                     CrystalTools::RightHanded);
 
   // Title
-  if (mol2.data("name").toString().length())
+  if (!mol2.data("name").toString().empty())
     outStream << mol2.data("name").toString() << std::endl;
   else
     outStream << "LAMMPS data file generated by Avogadro" << std::endl;

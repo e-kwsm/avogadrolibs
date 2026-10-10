@@ -226,8 +226,7 @@ bool PlotXrd::generateXrdPattern(const QtGui::Molecule& mol, XrdData& results,
           qDebug() << lineTmp;
         return false;
       }
-      results.push_back(
-        std::make_pair(rowData[0].toDouble(), rowData[1].toDouble()));
+      results.emplace_back(rowData[0].toDouble(), rowData[1].toDouble());
     }
   }
 
@@ -306,6 +305,25 @@ bool PlotXrd::executeGenXrdPattern(const QStringList& args,
 
   // We did it!
   return true;
+}
+
+void PlotXrd::registerCommands()
+{
+  emit registerCommand("showXrdPlot", tr("Show XRD plot."));
+}
+
+bool PlotXrd::handleCommand(const QString& command,
+                            [[maybe_unused]] const QVariantMap& options)
+{
+  if (m_molecule == nullptr || m_molecule->unitCell() == nullptr)
+    return false; // reject if null OR if it lacks a crystal unit cell
+
+  if (command == "showXrdPlot") {
+    displayDialog();
+    return true;
+  }
+
+  return false;
 }
 
 } // namespace Avogadro::QtPlugins

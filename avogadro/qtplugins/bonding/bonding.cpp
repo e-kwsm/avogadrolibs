@@ -7,11 +7,15 @@
 
 #include <avogadro/core/elements.h>
 #include <avogadro/qtgui/molecule.h>
+#include <avogadro/qtgui/rwmolecule.h>
 
 #include <QAction>
 #include <QDialog>
 #include <QSettings>
 
+#include <cmath>
+#include <set>
+#include <utility>
 #include <vector>
 
 #include "ui_bondingdialog.h"
@@ -43,11 +47,11 @@ Bonding::Bonding(QObject* parent_)
   m_clearAction->setShortcut(QKeySequence("Ctrl+Shift+B"));
   m_clearAction->setProperty("menu priority", 720);
 
-  connect(m_action, SIGNAL(triggered()), SLOT(bond()));
-  connect(m_createBondsAction, SIGNAL(triggered()), SLOT(createBond()));
-  connect(m_orderAction, SIGNAL(triggered()), SLOT(bondOrders()));
-  connect(m_clearAction, SIGNAL(triggered()), SLOT(clearBonds()));
-  connect(m_configAction, SIGNAL(triggered()), SLOT(configure()));
+  connect(m_action, &QAction::triggered, this, &Bonding::bond);
+  connect(m_createBondsAction, &QAction::triggered, this, &Bonding::createBond);
+  connect(m_orderAction, &QAction::triggered, this, &Bonding::bondOrders);
+  connect(m_clearAction, &QAction::triggered, this, &Bonding::clearBonds);
+  connect(m_configAction, &QAction::triggered, this, &Bonding::configure);
 }
 
 QList<QAction*> Bonding::actions() const
@@ -105,8 +109,10 @@ void Bonding::configure()
     m_ui->toleranceSpinBox->setValue(m_tolerance);
     m_ui->minimumSpinBox->setValue(m_minDistance);
 
-    connect(m_ui->buttonBox, SIGNAL(accepted()), this, SLOT(setValues()));
-    connect(m_ui->buttonBox, SIGNAL(rejected()), m_dialog, SLOT(close()));
+    connect(m_ui->buttonBox, &QDialogButtonBox::accepted, this,
+            &Bonding::setValues);
+    connect(m_ui->buttonBox, &QDialogButtonBox::rejected, m_dialog,
+            &QDialog::close);
   }
 
   m_dialog->show();
@@ -137,6 +143,9 @@ void Bonding::createBond()
   if (m_molecule->isSelectionEmpty())
     return;
 
+  // Only new bonds: adding a bond to an already-bonded pair would reset its
+  // order (e.g. a perceived double bond) to 1.
+  std::vector<std::pair<Index, Index>> newBonds;
   for (Index i = 0; i < m_molecule->atomCount(); ++i) {
     if (!m_molecule->atomSelected(i))
       continue;
@@ -145,10 +154,28 @@ void Bonding::createBond()
       if (!m_molecule->atomSelected(j))
         continue;
 
-      m_molecule->addBond(i, j, 1);
+      if (!m_molecule->bond(i, j).isValid())
+        newBonds.emplace_back(i, j);
     }
   }
 
+  addBonds(newBonds, tr("Bond Selected Atoms"));
+}
+
+void Bonding::addBonds(const std::vector<std::pair<Index, Index>>& newBonds,
+                       const QString& undoText)
+{
+  // No change, no undo entry
+  if (newBonds.empty())
+    return;
+
+  QtGui::RWMolecule* rw = m_molecule->undoMolecule();
+  rw->beginMergeMode(undoText);
+  for (const auto& pair : newBonds)
+    rw->addBond(pair.first, pair.second, 1);
+  rw->endMergeMode();
+
+  // The undo commands do not signal bond changes themselves
   m_molecule->emitChanged(QtGui::Molecule::Bonds);
 }
 
@@ -173,6 +200,7 @@ void Bonding::bond()
 
   bool emptySelection = m_molecule->isSelectionEmpty();
   double minSq = m_minDistance * m_minDistance;
+  std::vector<std::pair<Index, Index>> newBonds;
 
   // Main bond perception loop based on a simple distance metric.
   for (Index i = 0; i < m_molecule->atomCount(); ++i) {
@@ -195,47 +223,75 @@ void Bonding::bond()
         continue;
       }
 
-      // check radius and add bond if needed
+      // check radius and add bond if needed, leaving existing bonds (and
+      // their orders) alone
       double cutoffSq = cutoff * cutoff;
       double diffsq = diff.squaredNorm();
-      if (diffsq < cutoffSq && diffsq > minSq)
-        m_molecule->addBond(m_molecule->atom(i), m_molecule->atom(j), 1);
+      if (diffsq < cutoffSq && diffsq > minSq &&
+          !m_molecule->bond(i, j).isValid())
+        newBonds.emplace_back(i, j);
     }
   }
-  m_molecule->emitChanged(QtGui::Molecule::Bonds);
+
+  addBonds(newBonds, tr("Bond Atoms"));
 }
 
 void Bonding::bondOrders()
 {
-  m_molecule->perceiveBondOrders();
+  if (!m_molecule)
+    return;
+
+  // RWMolecule can't perceive bond orders, so do it on a copy and apply the
+  // result as a single undoable change.
+  Core::Molecule copy = static_cast<const Core::Molecule&>(*m_molecule);
+  copy.perceiveBondOrders();
+
+  // Perception only changes orders; refuse anything else
+  if (copy.bondCount() != m_molecule->bondCount() ||
+      copy.bondOrders() == m_molecule->bondOrders())
+    return;
+
+  QtGui::RWMolecule* rw = m_molecule->undoMolecule();
+  rw->beginMergeMode(tr("Perceive Bond Orders"));
+  rw->setBondOrders(copy.bondOrders());
+  rw->endMergeMode();
+
   m_molecule->emitChanged(QtGui::Molecule::Bonds);
 }
 
 void Bonding::clearBonds()
 {
-  // remove any bonds connected to the selected atoms
-  //  Array<BondType> bonds(Index a);
-  if (m_molecule->isSelectionEmpty())
-    m_molecule->clearBonds();
-  else {
-    std::vector<size_t> bondIndices;
-    for (Index i = 0; i < m_molecule->atomCount(); ++i) {
-      if (!m_molecule->atomSelected(i))
-        continue;
+  if (!m_molecule)
+    return;
 
-      // OK, the atom is selected, get the bonds to delete
-      const NeighborListType bonds = m_molecule->bonds(i);
-      for (auto bond : bonds) {
-        bondIndices.push_back(bond.index());
-      }
-    } // end looping through atoms
+  // remove any bonds connected to the selected atoms, or all of them
+  const bool all = m_molecule->isSelectionEmpty();
 
-    // now delete the bonds
-    for (auto it = bondIndices.rbegin(), itEnd = bondIndices.rend();
-         it != itEnd; ++it) {
-      m_molecule->removeBond(*it);
-    }
-  } // end else(selected atoms)
+  // A bond between two selected atoms is listed once per atom, so collect
+  // into a set. Removing a bond swaps the last bond into its slot, so remove
+  // from the highest index down.
+  std::set<Index> bondIndices;
+  for (Index i = 0; i < m_molecule->atomCount(); ++i) {
+    if (!all && !m_molecule->atomSelected(i))
+      continue;
+
+    const NeighborListType bonds = m_molecule->bonds(i);
+    for (const auto& bond : bonds)
+      bondIndices.insert(bond.index());
+  }
+
+  // No change, no undo entry
+  if (bondIndices.empty())
+    return;
+
+  QtGui::RWMolecule* rw = m_molecule->undoMolecule();
+  rw->beginMergeMode(tr("Remove Bonds"));
+  for (auto it = bondIndices.rbegin(), itEnd = bondIndices.rend(); it != itEnd;
+       ++it) {
+    rw->removeBond(*it);
+  }
+  rw->endMergeMode();
+
   m_molecule->emitChanged(QtGui::Molecule::Bonds);
 }
 

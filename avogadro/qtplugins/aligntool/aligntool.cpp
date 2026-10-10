@@ -82,7 +82,7 @@ QWidget* AlignTool::toolWidget() const
     labelAxis->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
     labelAxis->setMaximumHeight(15);
 
-    // Combo box to select desired aixs to align to
+    // Combo box to select desired axis to align to
     auto* comboAxis = new QComboBox(m_toolWidget);
     comboAxis->addItem("x");
     comboAxis->addItem("y");
@@ -135,7 +135,7 @@ void AlignTool::alignChanged(int align)
 
 void AlignTool::align()
 {
-  if (m_atoms.size() == 0)
+  if (m_molecule == nullptr || m_atoms.size() == 0)
     return;
 
   if (m_atoms.size() >= 1)
@@ -146,6 +146,9 @@ void AlignTool::align()
 
 void AlignTool::shiftAtomToOrigin(Index atomIndex)
 {
+  if (m_molecule == nullptr)
+    return;
+
   // Shift the atom to the origin
   Vector3 shift = m_molecule->atom(atomIndex).position3d();
   const Core::Array<Vector3>& coords = m_molecule->atomPositions3d();
@@ -159,6 +162,9 @@ void AlignTool::shiftAtomToOrigin(Index atomIndex)
 
 void AlignTool::alignAtomToAxis(Index atomIndex, int axis)
 {
+  if (m_molecule == nullptr)
+    return;
+
   // Align the atom to the specified axis
   [[maybe_unused]] Vector3 align = m_molecule->atom(atomIndex).position3d();
   const Core::Array<Vector3>& coords = m_molecule->atomPositions3d();
@@ -169,6 +175,9 @@ void AlignTool::alignAtomToAxis(Index atomIndex, int axis)
   alpha = beta = gamma = 0.0;
 
   Vector3 pos = m_molecule->atom(atomIndex).position3d();
+  // an atom at the origin has no direction to align
+  if (pos.norm() < 1e-8)
+    return;
   pos.normalize();
   Vector3 axisVector;
 
@@ -178,17 +187,17 @@ void AlignTool::alignAtomToAxis(Index atomIndex, int axis)
     axisVector = Vector3(0., 1., 0.);
   else if (axis == 2) // z-axis
     axisVector = Vector3(0., 0., 1.);
+  else
+    return;
 
-  // Calculate the angle of the atom from the axis
-  double angle = acos(axisVector.dot(pos));
-
-  // Get the vector for the rotation
-  axisVector = axisVector.cross(pos);
-  axisVector.normalize();
+  // Rotate the atom's direction onto the axis; FromTwoVectors also handles
+  // an atom on the negative axis, where the cross product vanishes
+  const Eigen::Quaterniond rotation =
+    Eigen::Quaterniond::FromTwoVectors(pos, axisVector);
 
   // Now to rotate the fragment
   for (Index i = 0; i < coords.size(); ++i)
-    newCoords[i] = Eigen::AngleAxisd(-angle, axisVector) * coords[i];
+    newCoords[i] = rotation * coords[i];
 
   m_molecule->setAtomPositions3d(newCoords, tr("Align to Axis"));
   m_molecule->emitChanged(QtGui::Molecule::Atoms);
@@ -245,7 +254,7 @@ bool AlignTool::toggleAtom(const Rendering::Identifier& atom)
 
 void AlignTool::draw(Rendering::GroupNode& node)
 {
-  if (m_atoms.size() == 0)
+  if (m_molecule == nullptr || m_atoms.size() == 0)
     return;
 
   // check to make sure we have atoms for all of these
@@ -319,17 +328,23 @@ bool AlignTool::handleCommand(const QString& command,
     return false;
   } else if (command == "alignAtom") {
     int axis = -1;
-    if (options.contains("axis") && options["axis"].type() == QVariant::Int) {
-      axis = options["axis"].toInt();
-    } else if (options.contains("axis") &&
-               options["axis"].type() == QVariant::String) {
-      QString axisString = options["axis"].toString();
-      if (axisString == "x")
-        axis = 0;
-      else if (axisString == "y")
-        axis = 1;
-      else if (axisString == "z")
-        axis = 2;
+    if (options.contains("axis")) {
+      QVariant axisData = options["axis"];
+      if (axisData.typeId() == QMetaType::QString) {
+        QString axisString = axisData.toString();
+        if (axisString == "x")
+          axis = 0;
+        else if (axisString == "y")
+          axis = 1;
+        else if (axisString == "z")
+          axis = 2;
+      } else {
+        // JSON numbers arrive as qlonglong or double, never Int
+        bool ok = false;
+        axis = axisData.toInt(&ok);
+        if (!ok)
+          axis = -1;
+      }
     }
 
     if (axis >= 0 && axis < 3) {

@@ -45,9 +45,6 @@ void ORCAOutput::clearBasisFunctions()
   m_basisFunctions.clear();
 }
 
-constexpr double BOHR_TO_ANGSTROM = 0.529177210544;
-constexpr double HARTREE_TO_EV = 27.211386245981;
-
 namespace {
 // ORCA prints MO coefficients as fixed-width columns of the form
 // [-]dd.dddddd. Adjacent (negative) values can run together with no
@@ -243,7 +240,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
     }
   }
 
-  if (m_electronicTransitions.size() > 0 &&
+  if (!m_electronicTransitions.empty() &&
       m_electronicTransitions.size() == m_electronicIntensities.size()) {
     MatrixX electronicData(m_electronicTransitions.size(), 2);
     for (size_t i = 0; i < m_electronicTransitions.size(); ++i) {
@@ -262,7 +259,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
     }
   }
 
-  if (m_magneticTransitions.size() > 0 &&
+  if (!m_magneticTransitions.empty() &&
       m_magneticTransitions.size() == m_magneticCD.size()) {
     MatrixX magneticData(m_magneticTransitions.size(), 2);
     for (size_t i = 0; i < m_magneticTransitions.size(); ++i) {
@@ -272,7 +269,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
     molecule.setSpectra("MagneticCD", magneticData);
   }
 
-  if (m_nmrShifts.size() > 0) {
+  if (!m_nmrShifts.empty()) {
     MatrixX nmrData(m_nmrShifts.size(), 2);
     // nmr_shifts has an entry for every atom even if not computed
     for (size_t i = 0; i < m_nmrShifts.size(); ++i) {
@@ -283,7 +280,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
   }
 
   // check bonds from calculated bond orders
-  if (m_bondOrders.size() > 0) {
+  if (!m_bondOrders.empty()) {
     for (unsigned int i = 0; i < m_bondOrders.size(); i++) {
       // m_bondOrders[i][0] is the first atom
       // m_bondOrders[i][1] is the second atom
@@ -300,13 +297,13 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
 
   molecule.setBasisSet(basis.release());
   molecule.basisSet()->setMolecule(&molecule);
-  load(static_cast<GaussianSet*>(molecule.basisSet()));
+  load(static_cast<GaussianSet*>(molecule.basisSet()), molecule.atomCount());
 
   // we have to do a few things *after* any modifications to bonds / atoms
   // because those automatically clear partial charges and data
 
   // add the partial charges
-  if (m_partialCharges.size() > 0) {
+  if (!m_partialCharges.empty()) {
     for (auto it = m_partialCharges.begin(); it != m_partialCharges.end();
          ++it) {
       molecule.setPartialCharges(it->first, it->second);
@@ -343,7 +340,7 @@ void ORCAOutput::processLine(std::istream& in,
     m_coordFactor = 1.; // leave the coords in BOHR ....
     m_currentMode = Atoms;
     // if there are any current coordinates, push them back
-    if (m_atomPos.size() > 0) {
+    if (!m_atomPos.empty()) {
       m_coordSets.push_back(m_atomPos);
     }
     m_atomPos.clear();
@@ -506,7 +503,7 @@ void ORCAOutput::processLine(std::istream& in,
     list = Core::split(key, ' ');
     if (list.size() > 6)
       vibScaling = Core::lexicalCast<float>(list[5]).value_or(0);
-    Core::getLine(in, key); // skip blank line or "Point grup" line
+    Core::getLine(in, key); // skip blank line or "Point group" line
   } else if (Core::contains(key, "NORMAL MODES")) {
     m_currentMode = VibrationalModes;
 
@@ -761,7 +758,7 @@ void ORCAOutput::processLine(std::istream& in,
         if (key.empty())
           break;
         list = Core::split(key, ' ');
-        // If symmetry is enabled, a line wih "Irrep" label comes
+        // If symmetry is enabled, a line with "Irrep" label comes
         std::size_t extraColumns = 0;
         if (!list.empty() && list[0] == "Irrep") {
           // Job with symmetry
@@ -1122,8 +1119,10 @@ void ORCAOutput::processLine(std::istream& in,
               break;
             shellTypes.push_back(orbitalIdx(Core::trimmed(list[0])));
             shellFunctions.push_back(nFunc);
-            m_basisFunctions.at(nGTOs)->push_back(
-              new std::vector<Eigen::Vector2d>(nFunc));
+            // m_basisFunctions gained this element's entry (index nGTOs)
+            // above, and this shell's (index nShells) just below.
+            m_basisFunctions[nGTOs]->push_back(
+              new std::vector<Eigen::Vector2d>(nFunc, Eigen::Vector2d::Zero()));
 
             for (int i = 0; i < nFunc; i++) {
               Core::getLine(in, key);
@@ -1133,9 +1132,9 @@ void ORCAOutput::processLine(std::istream& in,
               // "<index> <exponent> <coefficient>"
               if (list.size() < 3)
                 break;
-              m_basisFunctions.at(nGTOs)->at(nShells)->at(i).x() =
+              (*(*m_basisFunctions[nGTOs])[nShells])[i].x() =
                 Core::lexicalCast<double>(list[1]).value_or(0.0); // exponent
-              m_basisFunctions.at(nGTOs)->at(nShells)->at(i).y() =
+              (*(*m_basisFunctions[nGTOs])[nShells])[i].y() =
                 Core::lexicalCast<double>(list[2]).value_or(0.0); // coeff
             }
 
@@ -1145,11 +1144,10 @@ void ORCAOutput::processLine(std::istream& in,
 
             list = Core::split(key, ' ');
           }
-          m_orcaShellTypes.push_back(
-            std::vector<GaussianSet::orbital>(shellTypes.size()));
-          m_orcaShellTypes.at(nGTOs) = shellTypes;
-          m_orcaNumShells.push_back(std::vector<int>(shellFunctions.size()));
-          m_orcaNumShells.at(nGTOs) = shellFunctions;
+          m_orcaShellTypes.emplace_back(shellTypes.size());
+          m_orcaShellTypes[nGTOs] = shellTypes;
+          m_orcaNumShells.emplace_back(shellFunctions.size());
+          m_orcaNumShells[nGTOs] = shellFunctions;
           nGTOs++;
 
           Core::getLine(in, key);
@@ -1158,7 +1156,7 @@ void ORCAOutput::processLine(std::istream& in,
           key = Core::trimmed(key);
 
           list = Core::split(key, ' ');
-          if (list.size() == 0)
+          if (list.empty())
             break; // unexpected structure - suppose no more NewGTOs
         }
 
@@ -1169,14 +1167,18 @@ void ORCAOutput::processLine(std::istream& in,
         for (int i = 0; i < nAtoms; i++) {
           m_currentAtom++;
           for (int j = 0; j < nBasis; j++) {
-            if (m_atomLabel.at(i) == m_basisAtomLabel.at(j)) {
-              for (unsigned int k = 0; k < m_orcaNumShells.at(j).size(); k++) {
-                for (int l = 0; l < m_orcaNumShells.at(j).at(k); l++) {
-                  m_a.push_back(m_basisFunctions.at(j)->at(k)->at(l).x());
-                  m_c.push_back(m_basisFunctions.at(j)->at(k)->at(l).y());
+            // m_basisAtomLabel, m_basisFunctions, m_orcaNumShells and
+            // m_orcaShellTypes all gained one entry per NewGTO above, and a
+            // shell's primitive count is the size of its primitive vector.
+            if (m_atomLabel[i] == m_basisAtomLabel[j]) {
+              const auto& shells = *m_basisFunctions[j];
+              for (unsigned int k = 0; k < m_orcaNumShells[j].size(); k++) {
+                for (int l = 0; l < m_orcaNumShells[j][k]; l++) {
+                  m_a.push_back((*shells[k])[l].x());
+                  m_c.push_back((*shells[k])[l].y());
                 }
-                m_shellNums.push_back(m_orcaNumShells.at(j).at(k));
-                m_shellTypes.push_back(m_orcaShellTypes.at(j).at(k));
+                m_shellNums.push_back(m_orcaNumShells[j][k]);
+                m_shellTypes.push_back(m_orcaShellTypes[j][k]);
                 m_shelltoAtom.push_back(m_currentAtom);
               }
               break;
@@ -1200,7 +1202,8 @@ void ORCAOutput::processLine(std::istream& in,
           for (unsigned int i = 0; i < list.size(); i++) {
             // convert from Hartree to eV
             m_orbitalEnergy.push_back(
-              Core::lexicalCast<double>(list[i]).value_or(0.0) * HARTREE_TO_EV);
+              Core::lexicalCast<double>(list[i]).value_or(0.0) *
+              HARTREE_TO_EV_D);
           }
 
           Core::getLine(in, key); // occupations
@@ -1223,7 +1226,7 @@ void ORCAOutput::processLine(std::istream& in,
             m_MOcoeffs.reserve(static_cast<std::size_t>(expectedRows) *
                                expectedRows);
           }
-          while (list.size() > 0) {
+          while (!list.empty()) {
             // get the '2s' or '1dx2y2' piece from the line (the orbital label)
             // so we can re-order the orbitals later
             orcaOrbitals.push_back(nthSpaceToken(key, 1));
@@ -1244,17 +1247,17 @@ void ORCAOutput::processLine(std::istream& in,
           // to expected Avogadro (px,py,pz)
           std::size_t idx = 0;
           while (idx < orcaOrbitals.size()) {
-            if (Core::contains(orcaOrbitals.at(idx), "pz")) {
+            if (Core::contains(orcaOrbitals[idx], "pz")) {
               for (unsigned int i = 0; i < numColumns; i++) {
                 if (idx + 1 >= columns[i].size())
                   break;
-                std::swap(columns[i].at(idx), columns[i].at(idx + 1));
+                std::swap(columns[i][idx], columns[i][idx + 1]);
               }
               idx++;
               for (unsigned int i = 0; i < numColumns; i++) {
                 if (idx + 1 >= columns[i].size())
                   break;
-                std::swap(columns[i].at(idx), columns[i].at(idx + 1));
+                std::swap(columns[i][idx], columns[i][idx + 1]);
               }
               idx++;
               idx++;
@@ -1295,7 +1298,7 @@ void ORCAOutput::processLine(std::istream& in,
               // convert from Hartree to eV
               m_betaOrbitalEnergy.push_back(
                 Core::lexicalCast<double>(list[i]).value_or(0.0) *
-                HARTREE_TO_EV);
+                HARTREE_TO_EV_D);
             }
 
             Core::getLine(in, key); // symmetries
@@ -1313,7 +1316,7 @@ void ORCAOutput::processLine(std::istream& in,
               m_BetaMOcoeffs.reserve(static_cast<std::size_t>(expectedRows) *
                                      expectedRows);
             }
-            while (list.size() > 0) {
+            while (!list.empty()) {
               // get the '2s' or '1dx2y2' piece from the line (orbital label)
               // so we can re-order the orbitals later
               orcaOrbitals.push_back(nthSpaceToken(key, 1));
@@ -1335,17 +1338,17 @@ void ORCAOutput::processLine(std::istream& in,
 
             std::size_t idx = 0;
             while (idx < orcaOrbitals.size()) {
-              if (Core::contains(orcaOrbitals.at(idx), "pz")) {
+              if (Core::contains(orcaOrbitals[idx], "pz")) {
                 for (unsigned int i = 0; i < numColumns; i++) {
                   if (idx + 1 >= columns[i].size())
                     break;
-                  std::swap(columns[i].at(idx), columns[i].at(idx + 1));
+                  std::swap(columns[i][idx], columns[i][idx + 1]);
                 }
                 idx++;
                 for (unsigned int i = 0; i < numColumns; i++) {
                   if (idx + 1 >= columns[i].size())
                     break;
-                  std::swap(columns[i].at(idx), columns[i].at(idx + 1));
+                  std::swap(columns[i][idx], columns[i][idx + 1]);
                 }
                 idx++;
                 idx++;
@@ -1383,50 +1386,74 @@ void ORCAOutput::processLine(std::istream& in,
   }   // end if (mode)
 }
 
-void ORCAOutput::load(GaussianSet* basis)
+void ORCAOutput::load(GaussianSet* basis, Index atomCount)
 {
   // Now load up our basis set
   basis->setElectronCount(m_electrons);
   if (m_openShell)
     basis->setScfType(Core::Uhf);
 
+  // Check the shells before adding any. A malformed basis set is skipped
+  // whole, which also leaves the MO coefficients below unloaded (they need
+  // the basis functions), but keeps everything else read from the file.
+  bool shellsValid = m_shellNums.size() == m_shellTypes.size() &&
+                     m_shelltoAtom.size() == m_shellTypes.size();
+  size_t numPrimitives = 0;
+  size_t numSPPrimitives = 0;
+  for (size_t i = 0; shellsValid && i < m_shellTypes.size(); ++i) {
+    // Shell atoms are numbered from one, in the order of the coordinates.
+    if (m_shelltoAtom[i] < 1 ||
+        static_cast<Index>(m_shelltoAtom[i]) > atomCount || m_shellNums[i] < 0)
+      shellsValid = false;
+    numPrimitives += static_cast<size_t>(m_shellNums[i]);
+    // SP shells also need a P coefficient for every primitive.
+    if (m_shellTypes[i] == GaussianSet::SP)
+      numSPPrimitives += static_cast<size_t>(m_shellNums[i]);
+  }
+  if (numPrimitives > m_a.size() || numPrimitives > m_c.size() ||
+      numSPPrimitives > m_csp.size())
+    shellsValid = false;
+  if (!shellsValid)
+    appendError("Inconsistent basis set information; skipping the basis set "
+                "and molecular orbitals.");
+
   // Set up the GTO primitive counter, go through the shells and add them
   int nGTO = 0;
   int nSP = 0; // number of SP shells
-  for (unsigned int i = 0; i < m_shellTypes.size(); ++i) {
+  for (unsigned int i = 0; shellsValid && i < m_shellTypes.size(); ++i) {
     // Handle the SP case separately - this should possibly be a distinct type
-    if (m_shellTypes.at(i) == GaussianSet::SP) {
+    if (m_shellTypes[i] == GaussianSet::SP) {
       // SP orbital type - currently have to unroll into two shells
       int tmpGTO = nGTO;
-      int s = basis->addBasis(m_shelltoAtom.at(i) - 1, GaussianSet::S);
-      for (int j = 0; j < m_shellNums.at(i); ++j) {
-        basis->addGto(s, m_c.at(nGTO), m_a.at(nGTO));
+      int s = basis->addBasis(m_shelltoAtom[i] - 1, GaussianSet::S);
+      for (int j = 0; j < m_shellNums[i]; ++j) {
+        basis->addGto(s, m_c[nGTO], m_a[nGTO]);
         ++nGTO;
       }
-      int p = basis->addBasis(m_shelltoAtom.at(i) - 1, GaussianSet::P);
-      for (int j = 0; j < m_shellNums.at(i); ++j) {
-        basis->addGto(p, m_csp.at(nSP), m_a.at(tmpGTO));
+      int p = basis->addBasis(m_shelltoAtom[i] - 1, GaussianSet::P);
+      for (int j = 0; j < m_shellNums[i]; ++j) {
+        basis->addGto(p, m_csp[nSP], m_a[tmpGTO]);
         ++tmpGTO;
         ++nSP;
       }
     } else {
-      int b = basis->addBasis(m_shelltoAtom.at(i) - 1, m_shellTypes.at(i));
-      for (int j = 0; j < m_shellNums.at(i); ++j) {
-        basis->addGto(b, m_c.at(nGTO), m_a.at(nGTO));
+      int b = basis->addBasis(m_shelltoAtom[i] - 1, m_shellTypes[i]);
+      for (int j = 0; j < m_shellNums[i]; ++j) {
+        basis->addGto(b, m_c[nGTO], m_a[nGTO]);
         ++nGTO;
       }
     }
   }
 
   // Now to load in the MO coefficients
-  if (m_MOcoeffs.size())
+  if (shellsValid && !m_MOcoeffs.empty())
     basis->setMolecularOrbitals(m_MOcoeffs);
-  if (m_BetaMOcoeffs.size())
+  if (shellsValid && !m_BetaMOcoeffs.empty())
     basis->setMolecularOrbitals(m_BetaMOcoeffs, Core::BasisSet::Beta);
 
-  if (m_orbitalEnergy.size())
+  if (!m_orbitalEnergy.empty())
     basis->setMolecularOrbitalEnergy(m_orbitalEnergy);
-  if (m_betaOrbitalEnergy.size())
+  if (!m_betaOrbitalEnergy.empty())
     basis->setMolecularOrbitalEnergy(m_betaOrbitalEnergy, Core::BasisSet::Beta);
 
   // TODO: set orbital symmetries
@@ -1466,7 +1493,7 @@ void ORCAOutput::parseMCD()
 
     // if frequency goes down, we are done
     // (or we hit the end of the file)
-    if (m_magneticTransitions.size() > 0 &&
+    if (!m_magneticTransitions.empty() &&
         frequency < m_magneticTransitions.back())
       break;
 
