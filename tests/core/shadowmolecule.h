@@ -444,7 +444,7 @@ public:
     if (index == frameCount) {
       ++frameCount;
       for (auto& a : atoms)
-        a.frames.push_back(Vector3::Zero());
+        a.frames.emplace_back(Vector3::Zero());
     }
     for (size_t i = 0; i < atoms.size(); ++i)
       atoms[i].frames[index] = i < coords.size() ? coords[i] : Vector3::Zero();
@@ -461,7 +461,7 @@ public:
     if (index == velocitySetCount) {
       ++velocitySetCount;
       for (auto& a : atoms)
-        a.velocities.push_back(Vector3::Zero());
+        a.velocities.emplace_back(Vector3::Zero());
     }
     for (size_t i = 0; i < atoms.size(); ++i)
       atoms[i].velocities[index] =

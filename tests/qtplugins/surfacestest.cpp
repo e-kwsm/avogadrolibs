@@ -445,7 +445,7 @@ TEST_F(SurfacesCommandTest, solventExcludedMatchesSerialReference)
     for (int y = 0; y < size(1); y++)
       for (int z = 0; z < size(2); z++)
         if (ref.at(x, y, z) <= 0.0f && hasInsideNeighbor(x, y, z))
-          outsideVoxels.push_back(Vector3(x, y, z).cwiseProduct(spacing));
+          outsideVoxels.emplace_back(Vector3(x, y, z).cwiseProduct(spacing));
   EXPECT_FALSE(outsideVoxels.empty());
 
   size_t negativeInside = 0;
