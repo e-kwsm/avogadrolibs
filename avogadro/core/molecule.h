@@ -653,9 +653,14 @@ public:
   /**
    * The space group for this molecule. It is updated after every
    * space group operation.
+   *
+   * Setting a Hall number other than 0 removes the entry that file readers
+   * keep in the data map when they only know the international table number
+   * of the space group (SpaceGroups::internationalNumberKey()): it is
+   * superseded. Setting 0 leaves the data map alone.
    * @{
    */
-  void setHallNumber(unsigned short hallNumber) { m_hallNumber = hallNumber; }
+  void setHallNumber(unsigned short hallNumber);
   unsigned short hallNumber() const { return m_hallNumber; }
   /** @} */
 
@@ -1146,9 +1151,9 @@ public:
   void addBonds(const Array<std::pair<Index, Index>>& bonds,
                 const Array<unsigned char>& orders);
 
-  // chenge the bond index position
+  // change the bond index position
   void swapBond(Index a, Index b);
-  // channge the Atom index position
+  // change the Atom index position
   void swapAtom(Index a, Index b);
 
   /**
@@ -1193,7 +1198,7 @@ public:
   }
 
   /**
-   * Calculte and return bounding box of the whole molecule or selected atoms
+   * Calculate and return bounding box of the whole molecule or selected atoms
    * only.
    * @param boxMin [out] the minimum corner (first end of the box diagonal)
    * @param boxMax [out] the maximum corner (second end of the box diagonal)
@@ -1476,7 +1481,7 @@ inline Vector2 Molecule::atomPosition2d(Index atomId) const
 
 inline bool Molecule::setAtomPositions2d(const Core::Array<Vector2>& pos)
 {
-  if (pos.size() == atomCount() || pos.size() == 0) {
+  if (pos.size() == atomCount() || pos.empty()) {
     m_positions2d = pos;
     return true;
   }
@@ -1502,7 +1507,7 @@ inline Vector3 Molecule::atomPosition3d(Index atomId) const
 
 inline bool Molecule::setAtomPositions3d(const Core::Array<Vector3>& pos)
 {
-  if (pos.size() == atomCount() || pos.size() == 0) {
+  if (pos.size() == atomCount() || pos.empty()) {
     m_positions3d = pos;
     return true;
   }
@@ -1527,7 +1532,7 @@ inline std::string Molecule::atomLabel(Index atomId) const
 
 inline bool Molecule::setAtomLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == atomCount() || labels.size() == 0) {
+  if (labels.size() == atomCount() || labels.empty()) {
     m_atomLabels = labels;
     return true;
   }
@@ -1576,7 +1581,7 @@ inline Vector3 Molecule::forceVector(Index atomId) const
 
 inline bool Molecule::setForceVectors(const Core::Array<Vector3>& forces)
 {
-  if (forces.size() == atomCount() || forces.size() == 0) {
+  if (forces.size() == atomCount() || forces.empty()) {
     m_forceVectors = forces;
     return true;
   }
@@ -1625,7 +1630,7 @@ inline std::string Molecule::bondLabel(Index bondId) const
 
 inline bool Molecule::setBondLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == bondCount() || labels.size() == 0) {
+  if (labels.size() == bondCount() || labels.empty()) {
     m_bondLabels = labels;
     return true;
   }

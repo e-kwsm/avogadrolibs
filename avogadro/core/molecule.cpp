@@ -13,6 +13,7 @@
 #include "mesh.h"
 #include "neighborperceiver.h"
 #include "residue.h"
+#include "spacegroups.h"
 #include "unitcell.h"
 
 #include <algorithm>
@@ -669,6 +670,13 @@ void Molecule::setFrozenAtomAxis(Index atomId, int axis, bool frozen)
   }
 }
 
+void Molecule::setHallNumber(unsigned short hallNumber)
+{
+  m_hallNumber = hallNumber;
+  if (hallNumber != 0)
+    m_data.remove(SpaceGroups::internationalNumberKey());
+}
+
 void Molecule::setData(const std::string& name, const Variant& value)
 {
   m_data.setValue(name, value);
@@ -736,7 +744,7 @@ signed char Molecule::totalCharge() const
   // check the data map first
   if (m_data.hasValue("totalCharge")) {
     charge = m_data.value("totalCharge").toInt();
-  } else if (m_formalCharges.size() > 0) {
+  } else if (!m_formalCharges.empty()) {
     for (Index i = 0; i < m_formalCharges.size(); ++i)
       charge += m_formalCharges[i];
     return charge;
@@ -2476,7 +2484,7 @@ std::string Molecule::residueLabel(Index residueId) const
 
 bool Molecule::setResidueLabels(const Core::Array<std::string>& labels)
 {
-  if (labels.size() == residueCount() || labels.size() == 0) {
+  if (labels.size() == residueCount() || labels.empty()) {
     m_residueLabels = labels;
     return true;
   }
@@ -2745,7 +2753,7 @@ bool Molecule::removeBonds(Index atom)
 
   while (true) {
     const std::vector<size_t>& bondList = m_graph.edges(atom);
-    if (!bondList.size())
+    if (bondList.empty())
       break;
     size_t bond = bondList[0];
     // removeBond() returns false without removing anything when the index is

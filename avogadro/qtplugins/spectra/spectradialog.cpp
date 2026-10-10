@@ -348,7 +348,7 @@ void SpectraDialog::changeSpectra()
 
   // only show for NMR
   m_ui->elementCombo->hide();
-  // todo: some spectra might want to swtich units
+  // todo: some spectra might want to switch units
 
   m_transitions.clear();
   m_intensities.clear();
@@ -1090,7 +1090,7 @@ void SpectraDialog::importData()
       double y = parts[1].trimmed().toDouble(&ok2);
 
       if (ok1 && ok2) {
-        tempData.push_back({ x, y });
+        tempData.emplace_back(x, y);
       }
     }
     firstLine = in.readLine();

@@ -13,7 +13,10 @@
 #include <avogadro/core/utilities.h>
 #include <avogadro/core/vector.h>
 
+#include <cstddef>
+#include <cstdint>
 #include <istream>
+#include <memory>
 #include <ostream>
 #include <string>
 #include <vector>
@@ -41,8 +44,18 @@ string HEADITEMS[] = { "ir_size",   "e_size",   "box_size", "vir_size",
 
 int swapInteger(int inp)
 {
-  return (((inp << 24) & 0xff000000) | ((inp << 8) & 0x00ff0000) |
-          ((inp >> 8) & 0x0000ff00) | ((inp >> 24) & 0x000000ff));
+  // Swap as unsigned: shifting a negative int left is undefined, and the
+  // magic number read in the wrong byte order is often negative.
+  const auto u = static_cast<uint32_t>(inp);
+  return static_cast<int>(((u << 24) & 0xff000000U) | ((u << 8) & 0x00ff0000U) |
+                          ((u >> 8) & 0x0000ff00U) | ((u >> 24) & 0x000000ffU));
+}
+
+// The ByteOrder for the '>'/'<' char used in struct format strings.
+Core::ByteOrder byteOrderOf(char endian)
+{
+  return endian == '>' ? Core::ByteOrder::BigEndian
+                       : Core::ByteOrder::LittleEndian;
 }
 
 char swapEndian(char endian)
@@ -51,6 +64,49 @@ char swapEndian(char endian)
     return '<';
   else
     return '>';
+}
+
+/**
+ * Read @a count floats or doubles (the file's precision) in the file's byte
+ * order and multiply each by NM_TO_ANGSTROM. A failed read leaves the buffer
+ * zeroed, so @a out then holds zeros. Decoding goes through the Core
+ * utilities, which keep -0.0, denormals, inf and NaN exact.
+ */
+void readScaled(std::istream& in, std::vector<char>& buff,
+                std::streamsize fileLen, char endian, bool isDoubleData,
+                int count, double* out)
+{
+  const std::size_t size = isDoubleData ? sizeof(double) : sizeof(float);
+  readBlock(in, buff, static_cast<std::streamsize>(size * count), fileLen);
+  for (int k = 0; k < count; ++k) {
+    const char* data = buff.data() + k * size;
+    if (isDoubleData)
+      out[k] = Core::unpackDouble(data, byteOrderOf(endian)) * NM_TO_ANGSTROM;
+    else
+      out[k] = static_cast<double>(
+        Core::unpackFloat(data, byteOrderOf(endian)) * NM_TO_ANGSTROM);
+  }
+}
+
+/**
+ * Read the box, virial or pressure matrix (DIM x DIM, scaled to Angstrom).
+ * For a box, set the unit cell; returns false if the cell is singular.
+ */
+bool readMatrix(std::istream& in, std::vector<char>& buff,
+                std::streamsize fileLen, char endian, bool isDoubleData,
+                bool isBox, Molecule& mol)
+{
+  double mat[DIM * DIM];
+  readScaled(in, buff, fileLen, endian, isDoubleData, DIM * DIM, mat);
+  if (isBox) {
+    auto uc = std::make_unique<UnitCell>(Vector3(mat[0], mat[1], mat[2]),
+                                         Vector3(mat[3], mat[4], mat[5]),
+                                         Vector3(mat[6], mat[7], mat[8]));
+    if (!uc->isRegular())
+      return false;
+    mol.setUnitCell(uc.release());
+  }
+  return true;
 }
 
 /* Checks whether the data stored in the binary file is of float or double type
@@ -64,14 +120,16 @@ int isDouble(map<string, int>& header)
   for (auto& headerKey : headerKeys) {
     if (header[headerKey] != 0) {
       if (headerKey == "box_size") {
-        size = (int)(header[headerKey] / DIM * DIM);
+        size = (int)(header[headerKey] / (DIM * DIM));
         break;
       } else {
         // natoms is read from the file, and this is integer division: a
         // declared count of zero used to raise SIGFPE right here.
         if (header["natoms"] <= 0)
           return 0;
-        size = (int)(header[headerKey] / (header["natoms"] * DIM));
+        // 64-bit, since natoms * DIM overflows int for a huge declared count
+        size = static_cast<int>(header[headerKey] /
+                                (static_cast<int64_t>(header["natoms"]) * DIM));
         break;
       }
     }
@@ -139,73 +197,22 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                 &headval[8], &headval[9], &headval[10], &headval[11],
                 &headval[12]);
   for (int i = 0; i < 13; ++i) {
-    header.insert(pair<string, int>(HEADITEMS[i], headval[i]));
+    header[HEADITEMS[i]] = headval[i];
   }
 
-  // Reading timestep and lambda
+  // Skip the timestep and lambda. Nothing uses them, and converting a
+  // NaN or out-of-range value from the file to int is undefined.
   doubleStatus = isDouble(header);
-  if (doubleStatus) {
-    double header0, header1;
-    snprintf(fmt, sizeof(fmt), "%c2d", endian);
-    readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-    struct_unpack(buff.data(), fmt, &header0, &header1);
-    header.insert(pair<string, int>("time", header0));
-    header.insert(pair<string, int>("lambda", header1));
-  } else {
-    float header0, header1;
-    snprintf(fmt, sizeof(fmt), "%c2f", endian);
-    readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-    struct_unpack(buff.data(), fmt, &header0, &header1);
-    header.insert(pair<string, int>("time", header0));
-    header.insert(pair<string, int>("lambda", header1));
-  }
+  snprintf(fmt, sizeof(fmt), "%c2%c", endian, doubleStatus ? 'd' : 'f');
+  readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
 
   // Reading matrices corresponding to "box_size", "vir_size", "pres_size"
   for (auto& _kid : keyCheck) {
     if (header[_kid] != 0) {
-      if (doubleStatus) {
-        snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM * DIM);
-        double mat[DIM][DIM];
-        readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-        struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
-                      &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
-                      &mat[2][1], &mat[2][2]);
-        if (_kid == "box_size") {
-          auto* uc = new UnitCell(
-            Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
-                    mat[0][2] * NM_TO_ANGSTROM),
-            Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
-                    mat[1][2] * NM_TO_ANGSTROM),
-            Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
-                    mat[2][2] * NM_TO_ANGSTROM));
-          if (!uc->isRegular()) {
-            appendError("lattice vectors are not linear independent");
-            delete uc;
-            return false;
-          }
-          mol.setUnitCell(uc);
-        }
-      } else {
-        snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM * DIM);
-        float mat[DIM][DIM];
-        readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-        struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
-                      &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
-                      &mat[2][1], &mat[2][2]);
-        if (_kid == "box_size") {
-          auto* uc = new UnitCell(
-            Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
-                    mat[0][2] * NM_TO_ANGSTROM),
-            Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
-                    mat[1][2] * NM_TO_ANGSTROM),
-            Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
-                    mat[2][2] * NM_TO_ANGSTROM));
-          if (!uc->isRegular()) {
-            appendError("lattice vectors are not linear independent");
-            return false;
-          }
-          mol.setUnitCell(uc);
-        }
+      if (!readMatrix(inStream, buff, fileLen, endian, doubleStatus,
+                      _kid == "box_size", mol)) {
+        appendError("lattice vectors are not linear independent");
+        return false;
       }
     }
   }
@@ -224,31 +231,13 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
   // Reading the coordinates of positions, velocities and forces
   for (auto& _kid : keyCheck2) {
     natoms = header["natoms"];
-    double coordsDouble[DIM];
-    float coordsFloat[DIM];
+    double coords[DIM];
     for (int i = 0; i < natoms; ++i) {
       if (header[_kid] != 0) {
-        memset(coordsDouble, 0, sizeof(coordsDouble));
-        memset(coordsFloat, 0, sizeof(coordsFloat));
-        if (doubleStatus) {
-          snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM);
-          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-          struct_unpack(buff.data(), fmt, &coordsDouble[0], &coordsDouble[1],
-                        &coordsDouble[2]);
-        } else {
-          snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM);
-          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-          struct_unpack(buff.data(), fmt, &coordsFloat[0], &coordsFloat[1],
-                        &coordsFloat[2]);
-        }
+        readScaled(inStream, buff, fileLen, endian, doubleStatus, DIM, coords);
 
         if (_kid == "x_size") {
-          // If parsed coordinates are fractional, the corresponding unscaling
-          // is done. Else the positions are assigned as parsed.
-          Vector3 pos(
-            coordsDouble[0] * NM_TO_ANGSTROM + coordsFloat[0] * NM_TO_ANGSTROM,
-            coordsDouble[1] * NM_TO_ANGSTROM + coordsFloat[1] * NM_TO_ANGSTROM,
-            coordsDouble[2] * NM_TO_ANGSTROM + coordsFloat[2] * NM_TO_ANGSTROM);
+          Vector3 pos(coords[0], coords[1], coords[2]);
 
           AtomTypeMap::const_iterator it;
           // if (it == atomTypes.end()) {
@@ -276,6 +265,7 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     }
   }
   mol.setCoordinate3d(mol.atomPositions3d(), 0);
+  const int firstFrameAtoms = header["natoms"];
 
   // Do we have an animation?
   // tellg() returns -1 once the stream is exhausted, which never equals
@@ -301,7 +291,11 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
     readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
     struct_unpack(buff.data(), fmt, &slen0, &slen1);
 
-    // Reading trajectory version string
+    // Reading trajectory version string, bounded as for the first frame.
+    if (slen0 < 1 || slen0 > static_cast<int>(sizeof(raw))) {
+      appendError("TRR file declares an implausible version string length.");
+      return false;
+    }
     snprintf(fmt, sizeof(fmt), "%c%ds", endian, slen0 - 1);
     readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
     struct_unpack(buff.data(), fmt, raw);
@@ -321,118 +315,55 @@ bool TrrFormat::read(std::istream& inStream, Core::Molecule& mol)
                   &headval[7], &headval[8], &headval[9], &headval[10],
                   &headval[11], &headval[12]);
     for (int i = 0; i < 13; ++i) {
-      header.insert(pair<string, int>(HEADITEMS[i], headval[i]));
+      header[HEADITEMS[i]] = headval[i];
     }
 
-    // Reading timestep and lambda
+    // Skip the timestep and lambda. Nothing uses them, and converting a
+    // NaN or out-of-range value from the file to int is undefined.
     doubleStatus = isDouble(header);
-    if (doubleStatus) {
-      double header0, header1;
-      snprintf(fmt, sizeof(fmt), "%c2d", endian);
-      readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-      struct_unpack(buff.data(), fmt, &header0, &header1);
-      header.insert(pair<string, int>("time", header0));
-      header.insert(pair<string, int>("lambda", header1));
-    } else {
-      float header0, header1;
-      snprintf(fmt, sizeof(fmt), "%c2f", endian);
-      readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-      struct_unpack(buff.data(), fmt, &header0, &header1);
-      header.insert(pair<string, int>("time", header0));
-      header.insert(pair<string, int>("lambda", header1));
-    }
+    snprintf(fmt, sizeof(fmt), "%c2%c", endian, doubleStatus ? 'd' : 'f');
+    readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
 
     // Reading matrices corresponding to "box_size", "vir_size", "pres_size"
     for (auto& _kid : keyCheck) {
       if (header[_kid] != 0) {
         natoms = header["natoms"];
-        if (doubleStatus) {
-          snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM * DIM);
-          double mat[DIM][DIM];
-          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-          struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
-                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
-                        &mat[2][1], &mat[2][2]);
-          if (_kid == "box_size") {
-            auto* uc = new UnitCell(
-              Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
-                      mat[0][2] * NM_TO_ANGSTROM),
-              Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
-                      mat[1][2] * NM_TO_ANGSTROM),
-              Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
-                      mat[2][2] * NM_TO_ANGSTROM));
-            if (!uc->isRegular()) {
-              appendError("lattice vectors are not linear independent");
-              delete uc;
-              return false;
-            }
-            mol.setUnitCell(uc);
-          }
-        } else {
-          snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM * DIM);
-          float mat[DIM][DIM];
-          readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-          struct_unpack(buff.data(), fmt, &mat[0][0], &mat[0][1], &mat[0][2],
-                        &mat[1][0], &mat[1][1], &mat[1][2], &mat[2][0],
-                        &mat[2][1], &mat[2][2]);
-          if (_kid == "box_size") {
-            auto* uc = new UnitCell(
-              Vector3(mat[0][0] * NM_TO_ANGSTROM, mat[0][1] * NM_TO_ANGSTROM,
-                      mat[0][2] * NM_TO_ANGSTROM),
-              Vector3(mat[1][0] * NM_TO_ANGSTROM, mat[1][1] * NM_TO_ANGSTROM,
-                      mat[1][2] * NM_TO_ANGSTROM),
-              Vector3(mat[2][0] * NM_TO_ANGSTROM, mat[2][1] * NM_TO_ANGSTROM,
-                      mat[2][2] * NM_TO_ANGSTROM));
-            if (!uc->isRegular()) {
-              appendError("lattice vectors are not linear independent");
-              delete uc;
-              return false;
-            }
-            mol.setUnitCell(uc);
-          }
+        if (!readMatrix(inStream, buff, fileLen, endian, doubleStatus,
+                        _kid == "box_size", mol)) {
+          appendError("lattice vectors are not linear independent");
+          return false;
         }
       }
     }
 
+    // Every frame describes the atoms of the first one.
+    if (header["natoms"] != firstFrameAtoms) {
+      appendError("TRR frame atom count differs from the first frame.");
+      return false;
+    }
     natoms = header["natoms"];
     Array<Vector3> positions;
     positions.reserve(natoms);
 
     // Reading the coordinates of positions, velocities and forces
     for (auto& _kid : keyCheck2) {
-      double coordsDouble[DIM];
-      float coordsFloat[DIM];
+      double coords[DIM];
       for (int i = 0; i < natoms; ++i) {
         if (header[_kid] != 0) {
-          memset(coordsDouble, 0, sizeof(coordsDouble));
-          memset(coordsFloat, 0, sizeof(coordsFloat));
-          if (doubleStatus) {
-            snprintf(fmt, sizeof(fmt), "%c%dd", endian, DIM);
-            readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-            struct_unpack(buff.data(), fmt, &coordsDouble[0], &coordsDouble[1],
-                          &coordsDouble[2]);
-          } else {
-            snprintf(fmt, sizeof(fmt), "%c%df", endian, DIM);
-            readBlock(inStream, buff, struct_calcsize(fmt), fileLen);
-            struct_unpack(buff.data(), fmt, &coordsFloat[0], &coordsFloat[1],
-                          &coordsFloat[2]);
-          }
+          readScaled(inStream, buff, fileLen, endian, doubleStatus, DIM,
+                     coords);
 
           if (_kid == "x_size") {
-            // If parsed coordinates are fractional, the corresponding unscaling
-            // is done. Else the positions are assigned as parsed.
-            Vector3 pos(coordsDouble[0] * NM_TO_ANGSTROM +
-                          coordsFloat[0] * NM_TO_ANGSTROM,
-                        coordsDouble[1] * NM_TO_ANGSTROM +
-                          coordsFloat[1] * NM_TO_ANGSTROM,
-                        coordsDouble[2] * NM_TO_ANGSTROM +
-                          coordsFloat[2] * NM_TO_ANGSTROM);
+            Vector3 pos(coords[0], coords[1], coords[2]);
             positions.push_back(pos);
           }
         }
       }
     }
-    mol.setCoordinate3d(positions, coordSet++);
+    // Frames may carry only velocities or forces (nstvout, nstfout), and
+    // those are no coordinate set.
+    if (header["x_size"] != 0)
+      mol.setCoordinate3d(positions, coordSet++);
     positions.clear();
   }
   return true;

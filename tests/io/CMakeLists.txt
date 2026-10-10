@@ -1,5 +1,6 @@
 # Specify the name of each test (the Test will be appended where needed).
 set(tests
+  CifSymmetry
   Cjson
   Cml
   Compression
@@ -73,6 +74,9 @@ if(ENABLE_FUZZ OR DEFINED ENV{LIB_FUZZING_ENGINE})
     POSCAR
     OUTCAR
     dump
+    gro
+    trr
+    dcd
   )
   foreach(fuzzName ${fuzz})
     add_executable(fuzz_${fuzzName} fuzztest.cpp)

@@ -9,13 +9,19 @@
 
 #include <clocale>
 #include <cmath>
+#include <cstdint>
+#include <cstring>
 #include <limits>
+#include <string>
+#include <vector>
 
+using Avogadro::Core::caseInsensitiveEquals;
 using Avogadro::Core::contains;
 using Avogadro::Core::lexicalCast;
 using Avogadro::Core::parseDouble;
 using Avogadro::Core::parseFloat;
 using Avogadro::Core::split;
+using Avogadro::Core::splitWhitespace;
 using Avogadro::Core::startsWith;
 using Avogadro::Core::toLower;
 using Avogadro::Core::trimmed;
@@ -74,6 +80,30 @@ TEST(UtilitiesTest, splitEmpty)
 {
   string test(" trim white space    ");
   EXPECT_EQ(split(test, ' ', false).size(), 7);
+}
+
+TEST(UtilitiesTest, splitWhitespace)
+{
+  using Tokens = std::vector<string>;
+
+  EXPECT_EQ(splitWhitespace(""), Tokens());
+  EXPECT_EQ(splitWhitespace(" \t\r\n  \n"), Tokens());
+
+  EXPECT_EQ(splitWhitespace("token"), Tokens({ "token" }));
+  EXPECT_EQ(splitWhitespace("  lead"), Tokens({ "lead" }));
+  EXPECT_EQ(splitWhitespace("trail  "), Tokens({ "trail" }));
+  EXPECT_EQ(splitWhitespace("  a   b  c  "), Tokens({ "a", "b", "c" }));
+
+  EXPECT_EQ(splitWhitespace("a\tb"), Tokens({ "a", "b" }));
+  EXPECT_EQ(splitWhitespace("a\r\nb\n"), Tokens({ "a", "b" }));
+  EXPECT_EQ(splitWhitespace("\t a \t\r\n b \n\n"), Tokens({ "a", "b" }));
+
+  // A Hall symbol as it might come from a file.
+  EXPECT_EQ(splitWhitespace("  -P   2yn \n"), Tokens({ "-P", "2yn" }));
+
+  // split() takes a single delimiter, so tabs stay inside the tokens.
+  EXPECT_EQ(split("a\tb c", ' '), Tokens({ "a\tb", "c" }));
+  EXPECT_EQ(splitWhitespace("a\tb c"), Tokens({ "a", "b", "c" }));
 }
 
 TEST(UtilitiesTest, trimmed)
@@ -402,4 +432,128 @@ TEST(UtilitiesTest, toLower)
   // Bytes above 127, including UTF-8 sequences, are left alone: only ASCII
   // 'T' lower-cases, the two-byte 'É' (0xC3 0x89) passes through untouched.
   EXPECT_EQ(toLower("\xC3\x89T"), "\xC3\x89t");
+}
+
+TEST(UtilitiesTest, caseInsensitiveEquals)
+{
+  EXPECT_TRUE(caseInsensitiveEquals("cif", "cif"));
+  EXPECT_TRUE(caseInsensitiveEquals("cif", "CIF"));
+  EXPECT_TRUE(caseInsensitiveEquals("CiF", "cIf"));
+  EXPECT_FALSE(caseInsensitiveEquals("cif", "cim"));
+  // Different lengths, including a prefix of the other string.
+  EXPECT_FALSE(caseInsensitiveEquals("cif", "cifs"));
+  EXPECT_FALSE(caseInsensitiveEquals("CIFS", "cif"));
+  // Empty strings.
+  EXPECT_TRUE(caseInsensitiveEquals("", ""));
+  EXPECT_FALSE(caseInsensitiveEquals("", "a"));
+  EXPECT_FALSE(caseInsensitiveEquals("a", ""));
+  // Digits and punctuation compare exactly; the characters just outside the
+  // letter ranges ('@' and '[' around 'A'-'Z', '`' and '{' around 'a'-'z')
+  // are not folded into one another.
+  EXPECT_TRUE(caseInsensitiveEquals("H2O-1.5", "h2o-1.5"));
+  EXPECT_FALSE(caseInsensitiveEquals("H2O", "H3O"));
+  EXPECT_FALSE(caseInsensitiveEquals("a-b", "a_b"));
+  EXPECT_FALSE(caseInsensitiveEquals("@", "`"));
+  EXPECT_FALSE(caseInsensitiveEquals("[", "{"));
+  // Bytes above 127 are left as they are: "Ä" (0xC3 0x84) and "ä" (0xC3 0xA4)
+  // differ, while the ASCII letters around them still fold.
+  EXPECT_FALSE(caseInsensitiveEquals("\xC3\x84", "\xC3\xA4"));
+  EXPECT_TRUE(caseInsensitiveEquals("\xC3\x84T", "\xC3\x84t"));
+}
+
+namespace {
+
+// The bytes of a 32- or 64-bit pattern in the requested byte order.
+template <typename Bits>
+std::string bytesOf(Bits bits, Avogadro::Core::ByteOrder endian)
+{
+  std::string out(sizeof(Bits), '\0');
+  for (std::size_t i = 0; i < sizeof(Bits); ++i) {
+    const std::size_t shift =
+      endian == Avogadro::Core::ByteOrder::BigEndian ? sizeof(Bits) - 1 - i : i;
+    out[i] = static_cast<char>((bits >> (8 * shift)) & 0xff);
+  }
+  return out;
+}
+
+float decodeFloat(uint32_t bits, Avogadro::Core::ByteOrder endian)
+{
+  return Avogadro::Core::unpackFloat(bytesOf(bits, endian).data(), endian);
+}
+
+double decodeDouble(uint64_t bits, Avogadro::Core::ByteOrder endian)
+{
+  return Avogadro::Core::unpackDouble(bytesOf(bits, endian).data(), endian);
+}
+
+} // namespace
+
+TEST(UtilitiesTest, unpackInt32)
+{
+  using Avogadro::Core::unpackInt32;
+  const char big[] = { 0x00, 0x00, 0x07, static_cast<char>(0xc9) };
+  EXPECT_EQ(unpackInt32(big, Avogadro::Core::ByteOrder::BigEndian), 1993);
+  EXPECT_EQ(unpackInt32(big, Avogadro::Core::ByteOrder::LittleEndian),
+            static_cast<int32_t>(0xc9070000u));
+  const char neg[] = { static_cast<char>(0xff), static_cast<char>(0xff),
+                       static_cast<char>(0xff), static_cast<char>(0xfe) };
+  EXPECT_EQ(unpackInt32(neg, Avogadro::Core::ByteOrder::BigEndian), -2);
+  const char negLittle[] = { static_cast<char>(0xfe), static_cast<char>(0xff),
+                             static_cast<char>(0xff), static_cast<char>(0xff) };
+  EXPECT_EQ(unpackInt32(negLittle, Avogadro::Core::ByteOrder::LittleEndian),
+            -2);
+  const char minInt[] = { static_cast<char>(0x80), 0, 0, 0 };
+  EXPECT_EQ(unpackInt32(minInt, Avogadro::Core::ByteOrder::BigEndian),
+            std::numeric_limits<int32_t>::min());
+}
+
+TEST(UtilitiesTest, unpackFloat)
+{
+  for (auto endian : { Avogadro::Core::ByteOrder::BigEndian,
+                       Avogadro::Core::ByteOrder::LittleEndian }) {
+    EXPECT_EQ(decodeFloat(0x3fc00000u, endian), 1.5f);
+    EXPECT_EQ(decodeFloat(0xc2f6e979u, endian), -123.456f);
+
+    const float negZero = decodeFloat(0x80000000u, endian);
+    EXPECT_EQ(negZero, 0.0f);
+    EXPECT_TRUE(std::signbit(negZero));
+    const float posZero = decodeFloat(0x00000000u, endian);
+    EXPECT_EQ(posZero, 0.0f);
+    EXPECT_FALSE(std::signbit(posZero));
+
+    EXPECT_EQ(decodeFloat(0x00000001u, endian),
+              std::numeric_limits<float>::denorm_min());
+    EXPECT_EQ(decodeFloat(0x00800000u, endian),
+              std::numeric_limits<float>::min());
+    EXPECT_EQ(decodeFloat(0x007fffffu, endian),
+              std::nextafter(std::numeric_limits<float>::min(), 0.0f));
+    EXPECT_EQ(decodeFloat(0x7f800000u, endian),
+              std::numeric_limits<float>::infinity());
+    EXPECT_EQ(decodeFloat(0xff800000u, endian),
+              -std::numeric_limits<float>::infinity());
+    EXPECT_TRUE(std::isnan(decodeFloat(0x7fc00000u, endian)));
+  }
+}
+
+TEST(UtilitiesTest, unpackDouble)
+{
+  for (auto endian : { Avogadro::Core::ByteOrder::BigEndian,
+                       Avogadro::Core::ByteOrder::LittleEndian }) {
+    EXPECT_EQ(decodeDouble(0x3ff8000000000000ull, endian), 1.5);
+    EXPECT_EQ(decodeDouble(0xc05edd2f1a9fbe77ull, endian), -123.456);
+
+    const double negZero = decodeDouble(0x8000000000000000ull, endian);
+    EXPECT_EQ(negZero, 0.0);
+    EXPECT_TRUE(std::signbit(negZero));
+
+    EXPECT_EQ(decodeDouble(0x0000000000000001ull, endian),
+              std::numeric_limits<double>::denorm_min());
+    EXPECT_EQ(decodeDouble(0x0010000000000000ull, endian),
+              std::numeric_limits<double>::min());
+    EXPECT_EQ(decodeDouble(0x7ff0000000000000ull, endian),
+              std::numeric_limits<double>::infinity());
+    EXPECT_EQ(decodeDouble(0xfff0000000000000ull, endian),
+              -std::numeric_limits<double>::infinity());
+    EXPECT_TRUE(std::isnan(decodeDouble(0x7ff8000000000000ull, endian)));
+  }
 }
