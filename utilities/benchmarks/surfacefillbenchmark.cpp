@@ -162,7 +162,7 @@ bool parseArguments(int argc, char** argv, Options& options)
       const char* v = value();
       if (v == nullptr)
         return false;
-      options.molecules.push_back(v);
+      options.molecules.emplace_back(v);
     } else if (arg == "--csv") {
       const char* v = value();
       if (v == nullptr)

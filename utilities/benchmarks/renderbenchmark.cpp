@@ -834,14 +834,14 @@ int main(int argc, char** argv)
   }
   const bool wantSurface = !options.surface.empty();
   if (options.styles.empty() && !wantSurface)
-    options.styles.push_back("Ball and Stick");
+    options.styles.emplace_back("Ball and Stick");
   // The mesh is drawn by the "Surfaces" display type; add it to any other
   // styles asked for, or use it alone.
   if (wantSurface && std::none_of(options.styles.begin(), options.styles.end(),
                                   [](const std::string& n) {
                                     return toLower(n) == "surfaces";
                                   }))
-    options.styles.push_back("Surfaces");
+    options.styles.emplace_back("Surfaces");
 
   std::vector<ScenePlugin*> plugins;
   for (const std::string& wanted : options.styles) {

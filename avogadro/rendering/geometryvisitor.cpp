@@ -65,7 +65,7 @@ void GeometryVisitor::visit(MeshGeometry& mesh)
     return;
 
   m_dirty = true;
-  m_centers.push_back(0.5f * (minimum + maximum));
+  m_centers.emplace_back(0.5f * (minimum + maximum));
   m_radii.push_back(0.5f * (maximum - minimum).norm());
 }
 

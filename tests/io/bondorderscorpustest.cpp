@@ -420,7 +420,7 @@ void runCorpus(const std::string& subdirectory, const std::string& extension,
       << relative << ": " << probeError;
     std::vector<std::pair<std::string, bool>> modes = { { "charged", false } };
     if (bothChargeModes && hasFormalCharges(probe))
-      modes.push_back({ "neutral", true });
+      modes.emplace_back("neutral", true);
 
     for (const auto& mode : modes) {
       const Evaluation eval = evaluate((dir / file).string(), mode.second);

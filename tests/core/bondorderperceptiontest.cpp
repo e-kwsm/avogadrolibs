@@ -575,8 +575,8 @@ Molecule graphene(bool vacancy, std::size_t& carbons)
   std::vector<Vector3> positions;
   for (int i = 0; i < cells; ++i) {
     for (int j = 0; j < cells; ++j) {
-      positions.push_back(i * a1 + j * a2);
-      positions.push_back(i * a1 + j * a2 + offset);
+      positions.emplace_back(i * a1 + j * a2);
+      positions.emplace_back(i * a1 + j * a2 + offset);
     }
   }
   // Drop atoms that would hang off the flake by one bond, until none do.
@@ -896,9 +896,9 @@ TEST(BondOrderPerceptionTest, bentChainKeepsAlternatingDoubleBonds)
   const Vector3 step(1.4, 0.0, 0.0);
   const Vector3 up(0.7, 1.2124, 0.0);
   std::vector<Vector3> positions = { Vector3(0.0, 0.0, 0.0) };
-  positions.push_back(positions.back() + step);
-  positions.push_back(positions.back() + up);
-  positions.push_back(positions.back() + step);
+  positions.emplace_back(positions.back() + step);
+  positions.emplace_back(positions.back() + up);
+  positions.emplace_back(positions.back() + step);
   Molecule mol = bareCarbons(positions, { { 0, 1 }, { 1, 2 }, { 2, 3 } });
 
   const BondOrderResult result = mol.perceiveBondOrders(BondOrderOptions());
