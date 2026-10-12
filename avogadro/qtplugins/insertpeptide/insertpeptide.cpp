@@ -269,7 +269,7 @@ AminoAcid InsertPeptide::readAminoAcid(const QString& threeLetterCode)
   return aa;
 }
 
-void AddTerminus(unsigned char element, QString atomID, Index a,
+void AddTerminus(unsigned char element, const QString& atomID, Index a,
                  double distance, Index b, double angle, Index c,
                  double dihedral, Molecule& molecule,
                  Array<InternalCoordinate>& coords)
