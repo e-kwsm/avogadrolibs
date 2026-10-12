@@ -14,6 +14,8 @@
 #include <avogadro/core/variantmap.h>
 #include <avogadro/core/vector.h>
 
+#include <utility>
+
 namespace Avogadro {
 namespace Core {
 class Molecule;
@@ -199,7 +201,7 @@ public:
   /**
    * Called to update the "frozen" mask (e.g., during editing)
    */
-  void setMask(Eigen::VectorXd mask) { m_mask = mask; }
+  void setMask(Eigen::VectorXd mask) { m_mask = std::move(mask); }
 
   /**
    * @return the frozen atoms mask
