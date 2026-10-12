@@ -82,8 +82,9 @@ public slots:
   void optimizeStep();
   void dynamicsStep();
 
-  void onOptimizeStepDone(Eigen::VectorXd positions, Eigen::VectorXd gradient,
-                          double energy, bool converged);
+  void onOptimizeStepDone(const Eigen::VectorXd& positions,
+                          Eigen::VectorXd gradient, double energy,
+                          bool converged);
   void onGradientDone(Eigen::VectorXd gradient, double energy);
   void onWorkerReady();
 
