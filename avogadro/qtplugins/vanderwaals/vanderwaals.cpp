@@ -19,6 +19,7 @@
 #include <algorithm>
 #include <locale>
 #include <sstream>
+#include <utility>
 
 namespace Avogadro::QtPlugins {
 
@@ -54,7 +55,7 @@ struct LayerVdW : Core::LayerData
   LayerVdW(std::string settings)
   {
     widget = nullptr;
-    deserialize(settings);
+    deserialize(std::move(settings));
   }
 
   LayerData* clone() final { return new LayerVdW(*this); }

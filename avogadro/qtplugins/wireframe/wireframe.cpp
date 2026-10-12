@@ -26,6 +26,7 @@
 #include <cmath>
 #include <locale>
 #include <sstream>
+#include <utility>
 
 namespace Avogadro::QtPlugins {
 
@@ -67,7 +68,7 @@ struct LayerWireframe : Core::LayerData
   LayerWireframe(std::string settings)
   {
     widget = nullptr;
-    deserialize(settings);
+    deserialize(std::move(settings));
   }
 
   LayerData* clone() final { return new LayerWireframe(*this); }
