@@ -564,7 +564,7 @@ void AutoOpt::optimizeStep()
     Q_ARG(Avogadro::Calc::OptimizationOptions, m_optOptions));
 }
 
-void AutoOpt::onOptimizeStepDone(Eigen::VectorXd positions,
+void AutoOpt::onOptimizeStepDone(const Eigen::VectorXd& positions,
                                  Eigen::VectorXd gradient, double energy,
                                  bool converged)
 {
