@@ -36,6 +36,7 @@
 #include <QFuture>
 #include <QFutureWatcher>
 #include <QProgressDialog>
+#include <utility>
 
 using namespace Eigen;
 
