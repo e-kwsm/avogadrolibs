@@ -123,11 +123,12 @@ private slots:
   void updateActions();
 
   // worker thread callbacks
-  void onOptimizeChunkDone(Eigen::VectorXd positions, Eigen::VectorXd gradient,
-                           double energy, bool converged);
-  void onEnergyDone(Eigen::VectorXd gradient, double energy);
-  void onForcesDone(Eigen::VectorXd gradient, double energy);
-  void onBatchDone(std::vector<double> energies,
+  void onOptimizeChunkDone(const Eigen::VectorXd& positions,
+                           const Eigen::VectorXd& gradient, double energy,
+                           bool converged);
+  void onEnergyDone(const Eigen::VectorXd& gradient, double energy);
+  void onForcesDone(const Eigen::VectorXd& gradient, double energy);
+  void onBatchDone(const std::vector<double>& energies,
                    std::vector<Eigen::VectorXd> gradients);
   void onWorkerReady();
 

@@ -1032,9 +1032,9 @@ void Forcefield::onWorkerReady()
     Q_ARG(Avogadro::Calc::OptimizationOptions, m_optOptions));
 }
 
-void Forcefield::onOptimizeChunkDone(Eigen::VectorXd positions,
-                                     Eigen::VectorXd gradient, double energy,
-                                     bool converged)
+void Forcefield::onOptimizeChunkDone(const Eigen::VectorXd& positions,
+                                     const Eigen::VectorXd& gradient,
+                                     double energy, bool converged)
 {
   if (sender() != m_worker || !m_optimizing || m_molecule == nullptr)
     return;
@@ -1262,7 +1262,7 @@ void Forcefield::startEnergyCalculation(const std::string& methodId,
   sendInitCalculator();
 }
 
-void Forcefield::onEnergyDone(Eigen::VectorXd gradient, double energy)
+void Forcefield::onEnergyDone(const Eigen::VectorXd& gradient, double energy)
 {
   Q_UNUSED(gradient);
   if (sender() != m_worker)
@@ -1350,7 +1350,7 @@ void Forcefield::startForcesCalculation(const std::string& methodId,
   sendInitCalculator();
 }
 
-void Forcefield::onForcesDone(Eigen::VectorXd gradient, double energy)
+void Forcefield::onForcesDone(const Eigen::VectorXd& gradient, double energy)
 {
   if (sender() != m_worker)
     return;
@@ -1539,7 +1539,7 @@ void Forcefield::runBatch(bool computeGradient)
   sendInitCalculator();
 }
 
-void Forcefield::onBatchDone(std::vector<double> energies,
+void Forcefield::onBatchDone(const std::vector<double>& energies,
                              std::vector<Eigen::VectorXd> gradients)
 {
   if (sender() != m_worker)
