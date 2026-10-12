@@ -145,7 +145,7 @@ QString openBabelLibraryDirectory()
 #endif
 }
 
-QString findExecutablePath(QString program)
+QString findExecutablePath(const QString& program)
 {
   const QStringList paths = executableSearchPaths();
 
@@ -161,7 +161,7 @@ QString findExecutablePath(QString program)
   return QString();
 }
 
-QStringList findExecutablePaths(QStringList programs)
+QStringList findExecutablePaths(const QStringList& programs)
 {
   QStringList result;
 
