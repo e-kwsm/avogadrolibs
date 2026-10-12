@@ -302,7 +302,7 @@ void SymmetryWidget::setCenterOfMass(double cm[3])
   m_cm = QVector3D(cm[0], cm[1], cm[2]);
 }
 
-void SymmetryWidget::setPointGroupSymbol(QString pg)
+void SymmetryWidget::setPointGroupSymbol(const QString& pg)
 {
   m_ui->pointGroupLabel->setText(pg);
   m_molecule->setData("pointgroup", pg.toStdString());

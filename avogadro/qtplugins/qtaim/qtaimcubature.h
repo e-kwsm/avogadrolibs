@@ -115,7 +115,8 @@ public:
   explicit QTAIMCubature(QTAIMWavefunction& wfn);
   ~QTAIMCubature();
 
-  QList<QPair<qreal, qreal>> integrate(qint64 mode, QList<qint64> basins);
+  QList<QPair<qreal, qreal>> integrate(qint64 mode,
+                                       const QList<qint64>& basins);
 
   void setMode(qint64 mode);
 
