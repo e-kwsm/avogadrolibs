@@ -44,7 +44,7 @@ struct LayerData
 
 protected:
   std::string boolToString(bool b) { return b ? "true" : "false"; }
-  bool stringToBool(std::string b) { return b == "true"; }
+  bool stringToBool(const std::string& b) { return b == "true"; }
   std::string m_save;
 };
 
