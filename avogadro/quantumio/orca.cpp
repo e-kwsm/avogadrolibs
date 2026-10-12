@@ -1504,7 +1504,7 @@ void ORCAOutput::parseMCD()
   in.close();
 }
 
-GaussianSet::orbital ORCAOutput::orbitalIdx(std::string txt)
+GaussianSet::orbital ORCAOutput::orbitalIdx(const std::string& txt)
 {
   if (txt == "S")
     return GaussianSet::S;
