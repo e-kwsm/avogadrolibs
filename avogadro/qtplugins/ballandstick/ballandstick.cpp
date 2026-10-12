@@ -28,6 +28,7 @@
 #include <iostream>
 #include <locale>
 #include <sstream>
+#include <utility>
 
 namespace Avogadro::QtPlugins {
 
@@ -73,7 +74,7 @@ struct LayerBallAndStick : Core::LayerData
   LayerBallAndStick(std::string settings)
   {
     widget = nullptr;
-    deserialize(settings);
+    deserialize(std::move(settings));
   }
 
   ~LayerBallAndStick() override
