@@ -43,6 +43,7 @@
 #include <QtGui/QWheelEvent>
 
 #include <QDebug>
+#include <utility>
 
 #include <memory>
 
@@ -181,13 +182,14 @@ void AutoOpt::startWorker()
                                          double energy, bool converged) {
     if (generation != m_workerGeneration)
       return;
-    onOptimizeStepDone(positions, gradient, energy, converged);
+    onOptimizeStepDone(std::move(positions), std::move(gradient), energy,
+                       converged);
   };
   auto gradientDone = [this, generation](Eigen::VectorXd gradient,
                                          double energy) {
     if (generation != m_workerGeneration)
       return;
-    onGradientDone(gradient, energy);
+    onGradientDone(std::move(gradient), energy);
   };
 
   if (m_task == 0) {
