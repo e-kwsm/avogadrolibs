@@ -21,6 +21,7 @@
 #include <algorithm>
 #include <locale>
 #include <sstream>
+#include <utility>
 
 namespace Avogadro::QtPlugins {
 
@@ -58,7 +59,7 @@ struct LayerLicorice : Core::LayerData
   LayerLicorice(std::string settings)
   {
     widget = nullptr;
-    deserialize(settings);
+    deserialize(std::move(settings));
   }
 
   LayerData* clone() final
