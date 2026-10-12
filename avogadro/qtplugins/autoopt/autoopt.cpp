@@ -172,7 +172,7 @@ void AutoOpt::startWorker()
   // Connect signals based on task. For dynamics we also connect the optimize
   // signal so the pre-relax phase can drive optimization chunks through the
   // same worker before MD begins.
-  auto optimizeDone = [this, generation](Eigen::VectorXd positions,
+  auto optimizeDone = [this, generation](const Eigen::VectorXd& positions,
                                          Eigen::VectorXd gradient,
                                          double energy, bool converged) {
     if (generation != m_workerGeneration)
