@@ -120,10 +120,10 @@ public slots:
    *
    * Takes ownership of @p calculator.
    */
-  void initCalculator(Avogadro::Calc::EnergyCalculator* calculator,
-                      Avogadro::Core::Molecule molSnapshot,
-                      Eigen::VectorXd mask,
-                      std::vector<Avogadro::Core::Constraint> constraints);
+  void initCalculator(
+    Avogadro::Calc::EnergyCalculator* calculator,
+    Avogadro::Core::Molecule molSnapshot, Eigen::VectorXd mask,
+    const std::vector<Avogadro::Core::Constraint>& constraints);
 
   /**
    * Run a chunk of optimization iterations.
@@ -134,12 +134,12 @@ public slots:
   /**
    * Run a one-shot energy and optionally gradient evaluation.
    */
-  void runEvaluate(Eigen::VectorXd positions, bool computeGradient);
+  void runEvaluate(const Eigen::VectorXd& positions, bool computeGradient);
 
   /**
    * Run a one-shot gradient evaluation.
    */
-  void runGradient(Eigen::VectorXd positions);
+  void runGradient(const Eigen::VectorXd& positions);
 
   /**
    * Evaluate energy (and optionally gradient) for many coordinate sets.
