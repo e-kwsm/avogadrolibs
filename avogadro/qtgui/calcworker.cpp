@@ -31,10 +31,9 @@ CalcWorker::CalcWorker(QObject* parent) : QObject(parent)
 
 CalcWorker::~CalcWorker() = default;
 
-void CalcWorker::initCalculator(Calc::EnergyCalculator* calculator,
-                                Core::Molecule molSnapshot,
-                                Eigen::VectorXd mask,
-                                std::vector<Core::Constraint> constraints)
+void CalcWorker::initCalculator(
+  Calc::EnergyCalculator* calculator, Core::Molecule molSnapshot,
+  Eigen::VectorXd mask, const std::vector<Core::Constraint>& constraints)
 {
   m_cancelled = false;
   m_calc.reset(calculator);
@@ -83,7 +82,8 @@ void CalcWorker::runOptimizeChunk(Eigen::VectorXd positions,
   emit optimizeFinished(positions, gradient, energy, !ok);
 }
 
-void CalcWorker::runEvaluate(Eigen::VectorXd positions, bool computeGradient)
+void CalcWorker::runEvaluate(const Eigen::VectorXd& positions,
+                             bool computeGradient)
 {
   if (!m_calc || m_cancelled) {
     emit evaluateFinished(Eigen::VectorXd(), 0.0);
@@ -102,7 +102,7 @@ void CalcWorker::runEvaluate(Eigen::VectorXd positions, bool computeGradient)
   emit evaluateFinished(gradient, energy);
 }
 
-void CalcWorker::runGradient(Eigen::VectorXd positions)
+void CalcWorker::runGradient(const Eigen::VectorXd& positions)
 {
   if (!m_calc || m_cancelled) {
     emit evaluateFinished(Eigen::VectorXd(), 0.0);
