@@ -1183,7 +1183,7 @@ int adapt_integrate(unsigned int fdim, integrand f, void* fdata,
 }
 
 // TODO: Consider QVariantList. For now, mimic what is known to work.
-QList<QVariant> QTAIMEvaluateProperty(QList<QVariant> variantList)
+QList<QVariant> QTAIMEvaluateProperty(const QList<QVariant>& variantList)
 {
   /*
      Order of variantList:
@@ -1443,7 +1443,7 @@ void property_v(unsigned int /* ndim */, unsigned int npts, const double* xyz,
 // TODO: Consider QVariantList. For now, mimic what is known to work.
 // This version performs integration in Spherical Polar Coordinates.
 // Note that the basin limits are not explicitly determined.
-QList<QVariant> QTAIMEvaluatePropertyRTP(QList<QVariant> variantList)
+QList<QVariant> QTAIMEvaluatePropertyRTP(const QList<QVariant>& variantList)
 {
   /*
      Order of variantList:
@@ -2218,7 +2218,7 @@ QTAIMCubature::QTAIMCubature(QTAIMWavefunction& wfn)
 }
 
 QList<QPair<qreal, qreal>> QTAIMCubature::integrate(qint64 mode,
-                                                    QList<qint64> basins)
+                                                    const QList<qint64>& basins)
 {
 
   QList<QPair<qreal, qreal>> value;
