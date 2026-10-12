@@ -28,6 +28,7 @@
 
 #include <cmath>
 #include <cstdio>
+#include <utility>
 
 namespace Avogadro::QtPlugins {
 
@@ -58,7 +59,7 @@ public:
 
   void setBetaSpheres(QList<QPair<QVector3D, qreal>> betaSpheres)
   {
-    m_betaSpheres = betaSpheres;
+    m_betaSpheres = std::move(betaSpheres);
   }
   qint64 associatedSphere() const { return m_associatedSphere; }
 
