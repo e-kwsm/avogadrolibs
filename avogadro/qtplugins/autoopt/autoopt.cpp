@@ -43,6 +43,7 @@
 #include <QtGui/QWheelEvent>
 
 #include <QDebug>
+
 #include <utility>
 
 using Avogadro::QtGui::Molecule;
