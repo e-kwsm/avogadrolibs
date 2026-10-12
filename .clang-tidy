@@ -28,3 +28,4 @@ Checks: 'bugprone*,
         -portability-restrict-system-includes,
         -modernize-use-trailing-return-type'
 FormatStyle:     file
+ExcludeHeaderFilterRegex: 'variant\.h|variant-inline\.h'
