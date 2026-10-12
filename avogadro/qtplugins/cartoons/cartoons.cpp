@@ -221,7 +221,7 @@ struct LayerCartoon : Core::LayerData
   LayerCartoon(std::string settings)
   {
     widget = nullptr;
-    deserialize(settings);
+    deserialize(std::move(settings));
   }
 
   ~LayerCartoon() override
