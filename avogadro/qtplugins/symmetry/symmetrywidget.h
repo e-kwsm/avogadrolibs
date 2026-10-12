@@ -74,7 +74,7 @@ signals:
 public slots:
   void moleculeChanged(unsigned int changes);
 
-  void setPointGroupSymbol(QString pg);
+  void setPointGroupSymbol(const QString& pg);
   void setEquivalenceSets(int mesl, const msym::msym_equivalence_set_t* es);
   void setSymmetryOperations(int sopsl,
                              const msym::msym_symmetry_operation_t* sops);
