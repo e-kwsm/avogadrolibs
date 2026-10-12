@@ -330,7 +330,7 @@ QList<QVariant> QTAIMLocateElectronDensitySink(QList<QVariant> input)
 
     At the time of writing this value is -3.
   */
-  return helper::QTAIMLocateElectronDensityHelper<-3>(input);
+  return helper::QTAIMLocateElectronDensityHelper<-3>(std::move(input));
 }
 
 QList<QVariant> QTAIMLocateElectronDensitySource(QList<QVariant> input)
@@ -347,7 +347,7 @@ QList<QVariant> QTAIMLocateElectronDensitySource(QList<QVariant> input)
 
     At the time of writing this value is 3.
   */
-  return helper::QTAIMLocateElectronDensityHelper<3>(input);
+  return helper::QTAIMLocateElectronDensityHelper<3>(std::move(input));
 }
 
 QTAIMCriticalPointLocator::QTAIMCriticalPointLocator(QTAIMWavefunction& wfn)
