@@ -58,7 +58,7 @@ private:
 
   // OrcaStuff
   void orcaWarningMessage(const std::string& m);
-  Core::GaussianSet::orbital orbitalIdx(std::string txt);
+  Core::GaussianSet::orbital orbitalIdx(const std::string& txt);
   bool m_orcaSuccess = true;
 
   std::vector<std::string> m_atomLabel;
