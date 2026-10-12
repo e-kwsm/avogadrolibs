@@ -47,7 +47,7 @@ namespace Avogadro::QtPlugins {
 
 namespace helper {
 template <qint64 ExpectedSignatureV>
-QList<QVariant> QTAIMLocateElectronDensityHelper(QList<QVariant> input)
+QList<QVariant> QTAIMLocateElectronDensityHelper(const QList<QVariant>& input)
 {
   qint64 counter = 0;
   const QString fileName = input.at(counter).toString();
@@ -111,7 +111,7 @@ QList<QVariant> QTAIMLocateElectronDensityHelper(QList<QVariant> input)
 
 } // namespace helper
 
-QList<QVariant> QTAIMLocateNuclearCriticalPoint(QList<QVariant> input)
+QList<QVariant> QTAIMLocateNuclearCriticalPoint(const QList<QVariant>& input)
 {
   const QString fileName = input.at(0).toString();
   const qint64 nucleus = input.at(1).toInt();
@@ -144,7 +144,7 @@ QList<QVariant> QTAIMLocateNuclearCriticalPoint(QList<QVariant> input)
   return { false };
 }
 
-QList<QVariant> QTAIMLocateBondCriticalPoint(QList<QVariant> input)
+QList<QVariant> QTAIMLocateBondCriticalPoint(const QList<QVariant>& input)
 {
   const QString wfnFileName = input.at(0).toString();
   const QString nuclearCriticalPointsFileName = input.at(1).toString();
