@@ -66,7 +66,7 @@ void exportCube(py::module_& m)
             static_cast<Py_ssize_t>(sizeof(float)) },
           vec->data(), py::cast(self));
       },
-      [](Cube& self, py::array_t<float, py::array::c_style> arr) {
+      [](Cube& self, const py::array_t<float, py::array::c_style>& arr) {
         auto buf = arr.request();
         auto* ptr = static_cast<float*>(buf.ptr);
         self.setData(std::vector<float>(ptr, ptr + buf.size));

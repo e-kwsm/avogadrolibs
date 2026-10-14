@@ -87,7 +87,7 @@ void exportMolecule(py::module_& m)
             static_cast<Py_ssize_t>(sizeof(double)) },
           reinterpret_cast<const double*>(pos.constData()), py::cast(self));
       },
-      [](Molecule& self, py::array_t<double, py::array::c_style> arr) {
+      [](Molecule& self, const py::array_t<double, py::array::c_style>& arr) {
         auto buf = arr.request();
         if (buf.ndim != 2 || buf.shape[1] != 3)
           throw py::value_error("Expected shape (N, 3)");
@@ -108,7 +108,7 @@ void exportMolecule(py::module_& m)
           { static_cast<Py_ssize_t>(sizeof(uint8_t)) },
           reinterpret_cast<const uint8_t*>(nums.constData()), py::cast(self));
       },
-      [](Molecule& self, py::array_t<uint8_t, py::array::c_style> arr) {
+      [](Molecule& self, const py::array_t<uint8_t, py::array::c_style>& arr) {
         auto buf = arr.request();
         Core::Array<unsigned char> nums(buf.shape[0]);
         std::memcpy(nums.data(), buf.ptr, buf.shape[0]);
@@ -126,7 +126,7 @@ void exportMolecule(py::module_& m)
           { static_cast<Py_ssize_t>(sizeof(int8_t)) },
           reinterpret_cast<const int8_t*>(charges.constData()), py::cast(self));
       },
-      [](Molecule& self, py::array_t<int8_t, py::array::c_style> arr) {
+      [](Molecule& self, const py::array_t<int8_t, py::array::c_style>& arr) {
         auto buf = arr.request();
         Core::Array<signed char> charges(buf.shape[0]);
         std::memcpy(charges.data(), buf.ptr, buf.shape[0]);

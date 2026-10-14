@@ -317,7 +317,7 @@ QList<QVariant> QTAIMLocateBondCriticalPoint(const QList<QVariant>& input)
   return value;
 }
 
-QList<QVariant> QTAIMLocateElectronDensitySink(QList<QVariant> input)
+QList<QVariant> QTAIMLocateElectronDensitySink(const QList<QVariant>& input)
 {
   /**
     This function acts as a wrapper to consolidate code
@@ -334,7 +334,7 @@ QList<QVariant> QTAIMLocateElectronDensitySink(QList<QVariant> input)
   return helper::QTAIMLocateElectronDensityHelper<-3>(std::move(input));
 }
 
-QList<QVariant> QTAIMLocateElectronDensitySource(QList<QVariant> input)
+QList<QVariant> QTAIMLocateElectronDensitySource(const QList<QVariant>& input)
 {
   /**
     This function acts as a wrapper to consolidate code
