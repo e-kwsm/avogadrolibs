@@ -516,7 +516,7 @@ namespace {
 
 // Write a symbol the way Open Babel and many CIFs do: screw axes without the
 // underscore ("P 6_3/m m c" -> "P 63/m m c").
-std::string withoutUnderscores(std::string symbol)
+std::string withoutUnderscores(const std::string& symbol)
 {
   std::string result;
   for (char c : symbol) {
