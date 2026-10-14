@@ -159,7 +159,7 @@ void exportMolecule(py::module_& m)
         const auto& pos = self.atomPositions3d();
         return copyToArray<double>(pos.constData(), pos.size(), 3);
       },
-      [](Molecule& self, py::array_t<double, py::array::c_style> arr) {
+      [](Molecule& self, const py::array_t<double, py::array::c_style>& arr) {
         auto buf = arr.request();
         if (buf.ndim != 2 || buf.shape[1] != 3)
           throw py::value_error("Expected shape (N, 3)");
@@ -179,7 +179,7 @@ void exportMolecule(py::module_& m)
         const auto& nums = self.atomicNumbers();
         return copyToArray<uint8_t>(nums.constData(), nums.size());
       },
-      [](Molecule& self, py::array_t<uint8_t, py::array::c_style> arr) {
+      [](Molecule& self, const py::array_t<uint8_t, py::array::c_style>& arr) {
         auto buf = arr.request();
         if (buf.ndim != 1)
           throw py::value_error("Expected a 1-D array of atomic numbers");
@@ -198,7 +198,7 @@ void exportMolecule(py::module_& m)
         const auto& charges = self.formalCharges();
         return copyToArray<int8_t>(charges.constData(), charges.size());
       },
-      [](Molecule& self, py::array_t<int8_t, py::array::c_style> arr) {
+      [](Molecule& self, const py::array_t<int8_t, py::array::c_style>& arr) {
         auto buf = arr.request();
         if (buf.ndim != 1)
           throw py::value_error("Expected a 1-D array of formal charges");
