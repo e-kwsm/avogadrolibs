@@ -21,6 +21,8 @@
 
 #include <nlohmann/json.hpp>
 
+#include <utility>
+
 using Avogadro::Index;
 using Avogadro::MatrixX;
 using Avogadro::PI_F;
@@ -788,7 +790,10 @@ namespace {
 // real content -- so the round trip needs a subclass to carry anything.
 struct TestLayerData : Avogadro::Core::LayerData
 {
-  explicit TestLayerData(std::string save = "") { deserialize(save); }
+  explicit TestLayerData(std::string save = "")
+  {
+    deserialize(std::move(save));
+  }
   std::string serialize() override { return m_save; }
   LayerData* clone() override { return new TestLayerData(m_save); }
 };
