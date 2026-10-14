@@ -74,7 +74,7 @@ void exportCube(py::module_& m)
         view.attr("setflags")(py::arg("write") = false);
         return view;
       },
-      [](Cube& self, py::array_t<float, py::array::c_style> arr) {
+      [](Cube& self, const py::array_t<float, py::array::c_style>& arr) {
         auto buf = arr.request();
         // Cube::setData() accepts only exactly nx*ny*nz values, so this is
         // also false for an empty array and when no limits have been set
