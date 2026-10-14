@@ -310,10 +310,11 @@ void CommandTestHarness::attach(PluginType* plugin)
   m_handlers.push_back(std::move(handler));
 
   QObject* ctx = m_context.get();
-  QObject::connect(plugin, &PluginType::registerCommand, ctx,
-                   [this, index](QString command, QString description) {
-                     onRegistered(index, command, description);
-                   });
+  QObject::connect(
+    plugin, &PluginType::registerCommand, ctx,
+    [this, index](const QString& command, const QString& description) {
+      onRegistered(index, command, description);
+    });
   QObject::connect(plugin, &PluginType::commandStarted, ctx,
                    [this]() { onStarted(); });
   QObject::connect(plugin, &PluginType::commandFinished, ctx,
