@@ -633,7 +633,7 @@ public:
    * current one.
    */
   [[deprecated]] void setBasisSet(BasisSet* basis);
-  void setBasisSet(std::shared_ptr<BasisSet> basis);
+  void setBasisSet(const std::shared_ptr<BasisSet>& basis);
 
   /**
    * @return the basis set (if present) for the molecule.
