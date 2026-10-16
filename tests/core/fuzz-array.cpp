@@ -131,8 +131,8 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t* Data, size_t Size)
       case 15: { // iterate (const)
         // Unsigned, so that wraparound on arbitrary fuzz data is defined.
         unsigned int sum = 0;
-        for (auto i : arr)
-          sum += static_cast<unsigned int>(i);
+        for (int& it : arr)
+          sum += static_cast<unsigned int>(it);
         (void)sum;
         break;
       }

@@ -281,7 +281,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
 
   // check bonds from calculated bond orders
   if (!m_bondOrders.empty()) {
-    for (const auto& m_bondOrder : m_bondOrders) {
+    for (auto& m_bondOrder : m_bondOrders) {
       // m_bondOrders[i][0] is the first atom
       // m_bondOrders[i][1] is the second atom
       // m_bondOrders[i][2] is the bond order
@@ -304,7 +304,7 @@ bool ORCAOutput::read(std::istream& in, Core::Molecule& molecule)
 
   // add the partial charges
   if (!m_partialCharges.empty()) {
-    for (const auto& m_partialCharge : m_partialCharges) {
+    for (auto& m_partialCharge : m_partialCharges) {
       molecule.setPartialCharges(m_partialCharge.first, m_partialCharge.second);
     }
   }

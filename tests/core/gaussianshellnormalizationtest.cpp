@@ -165,11 +165,11 @@ protected:
   {
     const double scale = std::sqrt(2.0 * ALPHA);
     double sum = 0.0;
-    for (const auto& a : HERMITE) {
+    for (auto a : HERMITE) {
       const double x = a.node / scale;
-      for (const auto& b : HERMITE) {
+      for (auto b : HERMITE) {
         const double y = b.node / scale;
-        for (const auto& c : HERMITE) {
+        for (auto c : HERMITE) {
           const double z = c.node / scale;
           const Vector3 position(x * BOHR_TO_ANGSTROM, y * BOHR_TO_ANGSTROM,
                                  z * BOHR_TO_ANGSTROM);
@@ -245,7 +245,7 @@ TEST_P(GaussianShellNormalizationTest,
     GTEST_SKIP() << "Cartesian shells legitimately contain lower-l parts";
 
   int probeAo = 0;
-  for (const auto& p : PROBES) {
+  for (auto p : PROBES) {
     if (p.l >= shell.l) {
       probeAo += p.components;
       continue;
