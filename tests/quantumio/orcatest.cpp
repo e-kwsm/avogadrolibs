@@ -363,7 +363,7 @@ TEST(OrcaTest, inlineBasisSet)
   ASSERT_TRUE(readsCleanly(kOrcaTwoHydrogens + orcaBasis(kOrcaSPShells),
                            molecule, format));
   ASSERT_EQ(molecule.atomCount(), 2);
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   ASSERT_EQ(basis->symmetry().size(), 4);
   EXPECT_EQ(basis->symmetry()[0], GaussianSet::S);
@@ -387,7 +387,7 @@ TEST(OrcaTest, spShellSkipsBasisSet)
       orcaBasis(" SP 1 \n   1       0.8000000000      1.0000000000\n"),
     molecule, format));
   EXPECT_EQ(molecule.atomCount(), 2);
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   EXPECT_TRUE(basis->symmetry().empty());
   EXPECT_NE(format.error().find("basis set"), std::string::npos);
@@ -408,7 +408,7 @@ TEST(OrcaTest, basisOnMissingAtomSkipsBasisSet)
       "\n",
     molecule, format));
   EXPECT_EQ(molecule.atomCount(), 1);
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   EXPECT_TRUE(basis->symmetry().empty());
 }

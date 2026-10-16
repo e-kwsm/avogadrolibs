@@ -74,7 +74,7 @@ TEST(GAMESSUSTest, readDataFiles)
     ASSERT_TRUE(
       format.readFile(AVOGADRO_DATA "/data/gamess/d-only.gamess", molecule));
     EXPECT_EQ(molecule.atomCount(), 5);
-    auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+    auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
     ASSERT_NE(basis, nullptr);
     EXPECT_EQ(basis->symmetry().size(), 21);
   }
@@ -84,7 +84,7 @@ TEST(GAMESSUSTest, readDataFiles)
     ASSERT_TRUE(
       format.readFile(AVOGADRO_DATA "/data/gamess/f-only.gamess", molecule));
     EXPECT_EQ(molecule.atomCount(), 5);
-    auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+    auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
     ASSERT_NE(basis, nullptr);
     EXPECT_EQ(basis->symmetry().size(), 21);
   }
@@ -113,7 +113,7 @@ TEST(GAMESSUSTest, spShellMissingPCoefficientFails)
   Molecule molecule;
   ASSERT_TRUE(format.readString(
     kCoordinates + kBasisHeader + " C\n\n" + complete + kBasisEnd, molecule));
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
   ASSERT_EQ(basis->symmetry().size(), 2);
   EXPECT_EQ(basis->symmetry()[0], GaussianSet::S);
@@ -183,7 +183,7 @@ TEST(GAMESSUSTest, eigenvectorsMatchBasisFunctionCount)
                            "    3  C  1 Y     0.000036   0.300000\n"
                            "    4  C  1 Z     0.000036   0.400000\n"),
       molecule));
-    auto* gaussian = dynamic_cast<GaussianSet*>(molecule.basisSet());
+    auto gaussian = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
     ASSERT_NE(gaussian, nullptr);
     EXPECT_EQ(gaussian->molecularOrbitalCount(), 2u);
   }
