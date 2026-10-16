@@ -152,8 +152,8 @@ TEST(GaussianFchkTest, unsupportedShellTypeRejected)
     GaussianFchk format;
     Molecule molecule;
     EXPECT_TRUE(format.readString(build(0), molecule));
-    auto* basis =
-      dynamic_cast<Avogadro::Core::GaussianSet*>(molecule.basisSet());
+    auto basis = std::dynamic_pointer_cast<Avogadro::Core::GaussianSet>(
+      molecule.basisSet());
     ASSERT_NE(basis, nullptr);
     EXPECT_EQ(basis->atomIndices().size(), 1u);
   }
@@ -163,8 +163,8 @@ TEST(GaussianFchkTest, unsupportedShellTypeRejected)
     GaussianFchk format;
     Molecule molecule;
     format.readString(build(bad), molecule);
-    auto* basis =
-      dynamic_cast<Avogadro::Core::GaussianSet*>(molecule.basisSet());
+    auto basis = std::dynamic_pointer_cast<Avogadro::Core::GaussianSet>(
+      molecule.basisSet());
     ASSERT_NE(basis, nullptr) << bad;
     EXPECT_TRUE(basis->atomIndices().empty()) << bad;
   }
