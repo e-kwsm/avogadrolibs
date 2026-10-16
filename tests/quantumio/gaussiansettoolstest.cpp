@@ -753,7 +753,7 @@ TEST(GaussianSetToolsTest, coSixZetaWithHAndIShells)
   Molecule molecule;
   ASSERT_TRUE(loadFchk(AVOGADRO_DATA "/data/fchk/CO-cc-6Z.fchk", molecule));
 
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   bool hasH = false;
@@ -1007,8 +1007,9 @@ TEST(GaussianSetToolsTest, rejectsOrbitalNumberOutOfRange)
 
   Cube cube;
   cube.setLimits(molecule, 0.5f, 2.0f);
-  const int count = static_cast<int>(
-    dynamic_cast<GaussianSet*>(molecule.basisSet())->molecularOrbitalCount());
+  const int count =
+    static_cast<int>(std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet())
+                       ->molecularOrbitalCount());
   EXPECT_FALSE(tools.calculateMolecularOrbital(cube, count));
   EXPECT_FALSE(tools.calculateMolecularOrbital(cube, -1));
   EXPECT_EQ(tools.calculateMolecularOrbital(Vector3(0.1, 0.2, 0.3), count),
