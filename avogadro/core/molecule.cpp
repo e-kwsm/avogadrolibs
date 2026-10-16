@@ -1745,9 +1745,10 @@ void Molecule::setBasisSet(BasisSet* basis)
   m_basisSet.reset(basis);
 }
 
-void Molecule::setBasisSet(std::shared_ptr<BasisSet> basis)
+void Molecule::setBasisSet(const std::shared_ptr<BasisSet>& basis)
 {
-  m_basisSet = basis;
+  if (basis != m_basisSet)
+    m_basisSet = basis;
 }
 
 void Molecule::setUnitCell(UnitCell* uc)
