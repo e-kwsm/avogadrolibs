@@ -1801,6 +1801,11 @@ BasisSet* Molecule::basisSet()
   return m_basisSet.get();
 }
 
+void Molecule::setBasisSet(std::shared_ptr<BasisSet> basis)
+{
+  m_basisSet = basis;
+}
+
 std::shared_ptr<const BasisSet> Molecule::sharedBasisSet() const
 {
   return m_basisSet;
