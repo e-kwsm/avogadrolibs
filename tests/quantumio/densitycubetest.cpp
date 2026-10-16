@@ -113,7 +113,7 @@ TEST_P(DensityCubeTest, densityMatchesGaussian)
   ASSERT_TRUE(
     fchkReader.readFile(dataPath(testCase.stem, ".fchk.gz"), molecule))
     << fchkReader.error();
-  auto* basis = dynamic_cast<GaussianSet*>(molecule.basisSet());
+  auto basis = std::dynamic_pointer_cast<GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr) << "fchk did not yield a GaussianSet";
 
   const Vector3i dim = reference->dimensions();
