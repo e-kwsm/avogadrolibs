@@ -271,7 +271,8 @@ Occup=  0.0000
   EXPECT_TRUE(format.readString(paddedMolden, molecule));
   ASSERT_EQ(format.error(), std::string());
 
-  const auto* basis = dynamic_cast<const GaussianSet*>(molecule.basisSet());
+  auto basis =
+    std::dynamic_pointer_cast<const GaussianSet>(molecule.basisSet());
   ASSERT_NE(basis, nullptr);
 
   const auto moMatrix = basis->moMatrix();
