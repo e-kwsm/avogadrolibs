@@ -1093,8 +1093,9 @@ double GaussianSetTools::calculateSpinDensity(const Vector3& position) const
 
 bool GaussianSetTools::isValid() const
 {
-  return m_valid && (m_molecule != nullptr) && (std::dynamic_pointer_cast<GaussianSet>(
-                                       m_molecule->basisSet()) != nullptr);
+  return m_valid && (m_molecule != nullptr) &&
+         (std::dynamic_pointer_cast<GaussianSet>(m_molecule->basisSet()) !=
+          nullptr);
 }
 
 bool GaussianSetTools::moMatrixFits(const MatrixX& moMat) const
