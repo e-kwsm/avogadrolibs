@@ -1704,10 +1704,9 @@ std::string Molecule::formula(const std::string& delimiter, int over) const
 
 void Molecule::setBasisSet(BasisSet* basis)
 {
-  if (basis == m_basisSet)
+  if (basis == m_basisSet.get())
     return;
-  delete m_basisSet;
-  m_basisSet = basis;
+  m_basisSet.reset(basis);
 }
 
 void Molecule::setUnitCell(UnitCell* uc)
