@@ -361,8 +361,7 @@ void Molecule::emitChanged(unsigned int change)
       MeshGenerator::cancelAllCalculations();
       clearCubes();
       clearMeshes();
-      delete m_basisSet;
-      m_basisSet = nullptr;
+      m_basisSet.reset();
       m_spectra.clear();
       clearVibrations();
     }
