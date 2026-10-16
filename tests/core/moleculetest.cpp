@@ -712,7 +712,7 @@ TEST_F(MoleculeTest, setBasisSetFreesTheOldBasisSet)
     b->setMolecule(&m);
     m.setBasisSet(b);
     EXPECT_EQ(CountingBasisSet::liveCount, 1);
-    EXPECT_EQ(m.basisSet(), b);
+    EXPECT_EQ(m.basisSet().get(), b);
   }
   EXPECT_EQ(CountingBasisSet::liveCount, 0);
 }
@@ -727,7 +727,7 @@ TEST_F(MoleculeTest, setBasisSetWithTheSameBasisSetKeepsIt)
     m.setBasisSet(a);
     m.setBasisSet(a);
     EXPECT_EQ(CountingBasisSet::liveCount, 1);
-    EXPECT_EQ(m.basisSet(), a);
+    EXPECT_EQ(m.basisSet().get(), a);
   }
   EXPECT_EQ(CountingBasisSet::liveCount, 0);
 }
@@ -788,7 +788,7 @@ TEST_F(MoleculeTest, readPropertiesWithoutBasisSetKeepsOurs)
     target.readProperties(source);
 
     EXPECT_EQ(CountingBasisSet::liveCount, 1);
-    EXPECT_EQ(target.basisSet(), a);
+    EXPECT_EQ(target.basisSet().get(), a);
   }
   EXPECT_EQ(CountingBasisSet::liveCount, 0);
 }
