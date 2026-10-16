@@ -186,7 +186,7 @@ void Orbitals::moleculeChanged([[maybe_unused]] unsigned int changes)
       loadOrbitals(); // orbitals appeared: fill the table and show the dialog
     } else if (derivedDataDropped && m_dialog && m_dialog->isVisible()) {
       // Refill in place; the dialog was already open, so do not raise it.
-      m_dialog->fillTable(m_basis);
+      m_dialog->fillTable(m_basis.get());
     }
   } else if (m_dialog) {
     m_dialog->hide();
