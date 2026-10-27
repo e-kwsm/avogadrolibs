@@ -41,7 +41,7 @@ public:
   /** Default force constant for angular restraints, in kJ/mol/radian^2 */
   static constexpr Real DefaultAngularK = 10000.0;
 
-  enum Type
+  enum class Type
   {
     None = 0,
     DistanceConstraint,
@@ -89,7 +89,7 @@ public:
     // now -- leaving it would keep, e.g., a distance force constant on what
     // is now a torsion. A type set explicitly via setType() is kept.
     if (!m_typeExplicit)
-      m_type = None;
+      m_type = Type::None;
   }
 
   /**
@@ -131,7 +131,8 @@ public:
     if (m_kSet)
       return m_k;
 
-    return (type() == DistanceConstraint) ? DefaultDistanceK : DefaultAngularK;
+    return (type() == Type::DistanceConstraint) ? DefaultDistanceK
+                                                : DefaultAngularK;
   }
 
   void setK(Real k)
@@ -145,17 +146,17 @@ public:
    */
   Constraint::Type type() const
   {
-    if (m_type != None)
+    if (m_type != Type::None)
       return m_type;
 
     if (m_cIndex == MaxIndex && m_dIndex == MaxIndex)
-      m_type = DistanceConstraint;
+      m_type = Type::DistanceConstraint;
     else if (m_dIndex == MaxIndex)
-      m_type = AngleConstraint;
+      m_type = Type::AngleConstraint;
     else if (m_dIndex != MaxIndex)
-      m_type = TorsionConstraint;
+      m_type = Type::TorsionConstraint;
     else
-      m_type = UnknownConstraint;
+      m_type = Type::UnknownConstraint;
 
     return m_type;
   }
@@ -183,7 +184,7 @@ public:
     if (m_aIndex == a && m_bIndex == b && m_cIndex == c && m_dIndex == d)
       return true;
 
-    if (type() == OutOfPlaneConstraint)
+    if (type() == Type::OutOfPlaneConstraint)
       return false;
 
     // The unused trailing indices stay at the end rather than leading the
@@ -209,15 +210,15 @@ public:
   bool isValid(Index atomCount) const
   {
     switch (type()) {
-      case TorsionConstraint:
+      case Type::TorsionConstraint:
         if (m_dIndex >= atomCount)
           return false;
         [[fallthrough]];
-      case AngleConstraint:
+      case Type::AngleConstraint:
         if (m_cIndex >= atomCount)
           return false;
         [[fallthrough]];
-      case DistanceConstraint:
+      case Type::DistanceConstraint:
         return m_aIndex < atomCount && m_bIndex < atomCount;
       default:
         return false;
@@ -243,13 +244,13 @@ public:
     const Vector3& b = positions[m_bIndex];
 
     switch (type()) {
-      case DistanceConstraint:
+      case Type::DistanceConstraint:
         value = (a - b).norm();
         return true;
-      case AngleConstraint:
+      case Type::AngleConstraint:
         value = calculateAngle(a, b, positions[m_cIndex]);
         return true;
-      case TorsionConstraint:
+      case Type::TorsionConstraint:
         value =
           calculateDihedral(a, b, positions[m_cIndex], positions[m_dIndex]);
         return true;
@@ -268,7 +269,7 @@ public:
   void setType(Constraint::Type type) const
   {
     m_type = type;
-    m_typeExplicit = (type != None);
+    m_typeExplicit = (type != Type::None);
   }
 
 protected:
@@ -279,7 +280,8 @@ protected:
   Real m_value = 0.0;
   Real m_k = DefaultDistanceK;            // units depend on the constraint type
   bool m_kSet = false;                    // true once setK() has been called
-  mutable Constraint::Type m_type = None; // cached type, initialized to None
+  mutable Constraint::Type m_type =
+    Type::None;                           // cached type, initialized to None
   mutable bool m_typeExplicit = false;    // true once setType() has been called
 };
 
