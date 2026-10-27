@@ -17,6 +17,8 @@
 #include <avogadro/rendering/groupnode.h>
 #include <avogadro/rendering/scene.h>
 
+#include <algorithm>
+
 #include <gtest/gtest.h>
 
 using Avogadro::QtOpenGL::GLWidget;
@@ -43,8 +45,7 @@ public:
   {
     ++calls;
     ++depth;
-    if (depth > maxDepth)
-      maxDepth = depth;
+    maxDepth = std::max(maxDepth, depth);
     node.addChild(new GeometryNode);
     if (calls == 1) {
       // what a nested event loop delivering a molecule change would do
