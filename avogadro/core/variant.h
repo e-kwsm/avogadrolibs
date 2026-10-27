@@ -28,7 +28,7 @@ class AVOGADROCORE_EXPORT Variant
 {
 public:
   // enumerations
-  enum Type
+  enum class Type
   {
     Null,
     Bool,
