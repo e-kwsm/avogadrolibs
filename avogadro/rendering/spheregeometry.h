@@ -46,7 +46,7 @@ public:
   ~SphereGeometry() override;
 
   SphereGeometry& operator=(SphereGeometry);
-  friend void swap(SphereGeometry& lhs, SphereGeometry& rhs);
+  friend void swap(SphereGeometry& lhs, SphereGeometry& rhs) noexcept;
 
   /**
    * Accept a visit from our friendly visitor.
@@ -142,7 +142,7 @@ inline SphereGeometry& SphereGeometry::operator=(SphereGeometry other)
   return *this;
 }
 
-inline void swap(SphereGeometry& lhs, SphereGeometry& rhs)
+inline void swap(SphereGeometry& lhs, SphereGeometry& rhs) noexcept
 {
   using std::swap;
   swap(static_cast<Drawable&>(lhs), static_cast<Drawable&>(rhs));
