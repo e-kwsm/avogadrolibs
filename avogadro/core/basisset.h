@@ -49,7 +49,7 @@ public:
    * retrieved. If Paired, then Alpha and Beta cannot be set, if Alpha or Beta
    * then both must be set.
    */
-  enum ElectronType
+  enum class ElectronType
   {
     Paired,
     Alpha,
@@ -61,13 +61,14 @@ public:
    * @param n The number of electrons in the BasisSet.
    * @param type The type of the electrons (Alpha, Beta, or Paired).
    */
-  virtual void setElectronCount(unsigned int n, ElectronType type = Paired);
+  virtual void setElectronCount(unsigned int n,
+                                ElectronType type = ElectronType::Paired);
 
   /**
    * @param type The type of the electrons (Alpha, Beta, or Paired).
    * @return The number of electrons in the molecule.
    */
-  unsigned int electronCount(ElectronType type = Paired) const;
+  unsigned int electronCount(ElectronType type = ElectronType::Paired) const;
 
   /**
    * Set the molecule for the basis set.
@@ -104,17 +105,20 @@ public:
    * @return The number of molecular orbitals in the BasisSet.
    */
   virtual unsigned int molecularOrbitalCount(
-    ElectronType type = Paired) const = 0;
+    ElectronType type = ElectronType::Paired) const = 0;
 
   /**
    * @return The molecular orbital number corresponding to the HOMO orbital.
    */
-  unsigned int homo(ElectronType type = Paired) const { return lumo(type) - 1; }
+  unsigned int homo(ElectronType type = ElectronType::Paired) const
+  {
+    return lumo(type) - 1;
+  }
 
   /**
    * @return The molecular orbital number corresponding to the LUMO orbital.
    */
-  unsigned int lumo(ElectronType type = Paired) const;
+  unsigned int lumo(ElectronType type = ElectronType::Paired) const;
 
   /**
    * @return True of the basis set is valid, false otherwise.
@@ -136,9 +140,10 @@ public:
   /**
    * @return the orbital symmetry labels (if they exist) for the MOs
    */
-  std::vector<std::string> symmetryLabels(ElectronType type = Paired) const
+  std::vector<std::string> symmetryLabels(
+    ElectronType type = ElectronType::Paired) const
   {
-    if (type == Paired || type == Alpha)
+    if (type == ElectronType::Paired || type == ElectronType::Alpha)
       return m_symmetryLabels[0];
     else
       return m_symmetryLabels[1];
@@ -149,7 +154,7 @@ public:
    * orbitals
    */
   void setSymmetryLabels(const std::vector<std::string>& labels,
-                         ElectronType type = Paired);
+                         ElectronType type = ElectronType::Paired);
 
   /**
    * @brief Set the molecular orbital energies, expected in Hartrees.
@@ -157,7 +162,7 @@ public:
    * @param type The type of the electrons being set.
    */
   void setMolecularOrbitalEnergy(const std::vector<double>& energies,
-                                 ElectronType type = Paired);
+                                 ElectronType type = ElectronType::Paired);
 
   /**
    * @brief Set the molecular orbital occupancies.
@@ -165,35 +170,37 @@ public:
    * @param type The type of the electrons being set.
    */
   void setMolecularOrbitalOccupancy(const std::vector<unsigned char>& occ,
-                                    ElectronType type = Paired);
+                                    ElectronType type = ElectronType::Paired);
 
-  std::vector<double>& moEnergy(ElectronType type = Paired)
+  std::vector<double>& moEnergy(ElectronType type = ElectronType::Paired)
   {
-    if (type == Paired || type == Alpha)
+    if (type == ElectronType::Paired || type == ElectronType::Alpha)
       return m_moEnergy[0];
     else
       return m_moEnergy[1];
   }
 
-  std::vector<double> moEnergy(ElectronType type = Paired) const
+  std::vector<double> moEnergy(ElectronType type = ElectronType::Paired) const
   {
-    if (type == Paired || type == Alpha)
+    if (type == ElectronType::Paired || type == ElectronType::Alpha)
       return m_moEnergy[0];
     else
       return m_moEnergy[1];
   }
 
-  std::vector<unsigned char>& moOccupancy(ElectronType type = Paired)
+  std::vector<unsigned char>& moOccupancy(
+    ElectronType type = ElectronType::Paired)
   {
-    if (type == Paired || type == Alpha)
+    if (type == ElectronType::Paired || type == ElectronType::Alpha)
       return m_moOccupancy[0];
     else
       return m_moOccupancy[1];
   }
 
-  std::vector<unsigned char> moOccupancy(ElectronType type = Paired) const
+  std::vector<unsigned char> moOccupancy(
+    ElectronType type = ElectronType::Paired) const
   {
-    if (type == Paired || type == Alpha)
+    if (type == ElectronType::Paired || type == ElectronType::Alpha)
       return m_moOccupancy[0];
     else
       return m_moOccupancy[1];
@@ -244,7 +251,7 @@ protected:
 
 inline unsigned int BasisSet::lumo(ElectronType type) const
 {
-  if (type == Beta) {
+  if (type == ElectronType::Beta) {
     // check if we have occupancy data
     if (!m_moOccupancy[1].empty()) {
       for (unsigned int i = 0; i < m_moOccupancy[1].size(); ++i) {
@@ -264,7 +271,7 @@ inline unsigned int BasisSet::lumo(ElectronType type) const
   }
   // fall back to electron count
   // (supports odd number of electrons))
-  if (type == Beta) {
+  if (type == ElectronType::Beta) {
     return m_electrons[0] / 2 + 1;
   } else {
     return m_electrons[0] / 2 + (m_electrons[0] % 2) + 1;
@@ -274,14 +281,14 @@ inline unsigned int BasisSet::lumo(ElectronType type) const
 inline void BasisSet::setElectronCount(unsigned int n, ElectronType type)
 {
   switch (type) {
-    case Paired:
+    case ElectronType::Paired:
       m_electrons[0] = n;
       m_electrons[1] = 0;
       break;
-    case Alpha:
+    case ElectronType::Alpha:
       m_electrons[0] = n;
       break;
-    case Beta:
+    case ElectronType::Beta:
       m_electrons[1] = n;
       break;
     default:
@@ -293,10 +300,10 @@ inline void BasisSet::setElectronCount(unsigned int n, ElectronType type)
 inline unsigned int BasisSet::electronCount(ElectronType type) const
 {
   switch (type) {
-    case Paired:
-    case Alpha:
+    case ElectronType::Paired:
+    case ElectronType::Alpha:
       return m_electrons[0];
-    case Beta:
+    case ElectronType::Beta:
       return m_electrons[1];
     default:
       // Shouldn't hit this condition.
@@ -307,7 +314,7 @@ inline unsigned int BasisSet::electronCount(ElectronType type) const
 inline void BasisSet::setSymmetryLabels(const std::vector<std::string>& labels,
                                         ElectronType type)
 {
-  if (type == Paired || type == Alpha)
+  if (type == ElectronType::Paired || type == ElectronType::Alpha)
     m_symmetryLabels[0] = labels;
   else
     m_symmetryLabels[1] = labels;
@@ -316,7 +323,7 @@ inline void BasisSet::setSymmetryLabels(const std::vector<std::string>& labels,
 inline void BasisSet::setMolecularOrbitalEnergy(
   const std::vector<double>& energies, ElectronType type)
 {
-  if (type == Beta)
+  if (type == ElectronType::Beta)
     m_moEnergy[1] = energies;
   else
     m_moEnergy[0] = energies;
@@ -325,7 +332,7 @@ inline void BasisSet::setMolecularOrbitalEnergy(
 inline void BasisSet::setMolecularOrbitalOccupancy(
   const std::vector<unsigned char>& occ, ElectronType type)
 {
-  if (type == Beta)
+  if (type == ElectronType::Beta)
     m_moOccupancy[1] = occ;
   else
     m_moOccupancy[0] = occ;
