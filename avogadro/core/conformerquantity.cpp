@@ -202,10 +202,10 @@ std::string ConformerQuantity::unit() const
       return "K";
     case Type::Coordinate:
       switch (m_coordinate.type()) {
-        case Constraint::DistanceConstraint:
+        case Constraint::Type::DistanceConstraint:
           return "Å";
-        case Constraint::AngleConstraint:
-        case Constraint::TorsionConstraint:
+        case Constraint::Type::AngleConstraint:
+        case Constraint::Type::TorsionConstraint:
           return "°";
         default:
           return std::string();
