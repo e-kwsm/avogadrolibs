@@ -560,7 +560,7 @@ public:
    * @param mesh The mesh to add; the molecule takes ownership.
    * @return The mesh added, or nullptr (molecule unchanged) if @p mesh is null.
    */
-  Mesh* addMesh(std::unique_ptr<Mesh> mesh);
+  Mesh* addMesh(std::shared_ptr<Mesh> mesh);
 
   /**
    * @brief Replace the mesh at @p index with one the caller already built.
@@ -572,7 +572,7 @@ public:
    * @return False, leaving the molecule unchanged, if @p index is out of range
    * or @p mesh is null; true otherwise.
    */
-  bool setMesh(Index index, std::unique_ptr<Mesh> mesh);
+  bool setMesh(Index index, std::shared_ptr<Mesh> mesh);
 
   /**
    * @brief Get a mutable mesh of the molecule.
