@@ -1576,19 +1576,19 @@ Mesh* Molecule::addMesh()
   return m_meshes.back().get();
 }
 
-Mesh* Molecule::addMesh(std::unique_ptr<Mesh> mesh)
+Mesh* Molecule::addMesh(std::shared_ptr<Mesh> mesh)
 {
   if (!mesh)
     return nullptr;
-  m_meshes.push_back(std::shared_ptr<Mesh>(std::move(mesh)));
+  m_meshes.emplace_back(std::move(mesh));
   return m_meshes.back().get();
 }
 
-bool Molecule::setMesh(Index index, std::unique_ptr<Mesh> mesh)
+bool Molecule::setMesh(Index index, std::shared_ptr<Mesh> mesh)
 {
   if (!mesh || index >= static_cast<Index>(m_meshes.size()))
     return false;
-  m_meshes[index] = std::shared_ptr<Mesh>(std::move(mesh));
+  m_meshes[index] = std::move(mesh);
   return true;
 }
 
