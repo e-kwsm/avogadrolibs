@@ -1197,7 +1197,7 @@ void Surfaces::displayMesh()
   // the molecule's own list meanwhile. The meshes are ours until published.
   m_meshCube = cube;
   m_meshJobStale = false;
-  m_pendingMesh1 = std::make_unique<Core::Mesh>();
+  m_pendingMesh1 = std::make_shared<Core::Mesh>();
   m_pendingMesh2.reset();
 
   if (!m_meshGenerator1) {
@@ -1215,7 +1215,7 @@ void Surfaces::displayMesh()
   }
 
   if (isMO) {
-    m_pendingMesh2 = std::make_unique<Core::Mesh>();
+    m_pendingMesh2 = std::make_shared<Core::Mesh>();
     if (!m_meshGenerator2) {
       m_meshGenerator2 = new QtGui::MeshGenerator;
       connect(m_meshGenerator2, SIGNAL(finished()), SLOT(meshFinished()));
@@ -1321,7 +1321,7 @@ void Surfaces::colorMesh(Core::Mesh& mesh)
   }
 }
 
-void Surfaces::publishMesh(int& index, std::unique_ptr<Core::Mesh> mesh)
+void Surfaces::publishMesh(int& index, std::shared_ptr<Core::Mesh> mesh)
 {
   // setMesh takes ownership even when it refuses, so only call it in range.
   if (index >= 0 && static_cast<Index>(index) < m_molecule->meshCount() &&
@@ -1344,8 +1344,8 @@ void Surfaces::meshFinished()
       m_meshGenerator2->isRunning())
     return;
 
-  std::unique_ptr<Core::Mesh> mesh1 = std::move(m_pendingMesh1);
-  std::unique_ptr<Core::Mesh> mesh2 = std::move(m_pendingMesh2);
+  auto mesh1 = std::move(m_pendingMesh1);
+  auto mesh2 = std::move(m_pendingMesh2);
   m_meshCube.reset();
   const bool stale = m_meshJobStale;
   m_meshJobStale = false;

@@ -142,7 +142,7 @@ private:
 
   /// Publish @p mesh at @p index, or append it and update @p index when
   /// that slot no longer exists.
-  void publishMesh(int& index, std::unique_ptr<Core::Mesh> mesh);
+  void publishMesh(int& index, std::shared_ptr<Core::Mesh> mesh);
 
   /// A calculation stopped before its surface was published: re-enable the
   /// dialog, stop a movie, and fail a waiting command.
@@ -203,8 +203,8 @@ private:
   /// Keeps the generators' input cube alive for the length of the job.
   std::shared_ptr<const Core::Cube> m_meshCube;
   /// The meshes being generated, published together by meshFinished().
-  std::unique_ptr<Core::Mesh> m_pendingMesh1;
-  std::unique_ptr<Core::Mesh> m_pendingMesh2;
+  std::shared_ptr<Core::Mesh> m_pendingMesh1;
+  std::shared_ptr<Core::Mesh> m_pendingMesh2;
   bool m_meshJobStale = false;
   /// Indices of the published meshes, -1 for none.
   int m_mesh1Index = -1;

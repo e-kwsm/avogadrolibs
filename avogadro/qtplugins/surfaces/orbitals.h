@@ -202,8 +202,8 @@ private:
   std::shared_ptr<Core::Cube> m_pendingCube;
   /// Keeps the mesh generator's input alive for the length of the job.
   std::shared_ptr<const Core::Cube> m_meshCube;
-  std::unique_ptr<Core::Mesh> m_pendingPosMesh;
-  std::unique_ptr<Core::Mesh> m_pendingNegMesh;
+  std::shared_ptr<Core::Mesh> m_pendingPosMesh;
+  std::shared_ptr<Core::Mesh> m_pendingNegMesh;
   MeshPhase m_meshPhase = MeshPhase::Idle;
 
   int m_smoothingPasses = 1;
