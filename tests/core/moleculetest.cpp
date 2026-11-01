@@ -4759,10 +4759,10 @@ TEST_F(MoleculeTest, setCubeReplaces)
 TEST_F(MoleculeTest, addMeshTakesOwnership)
 {
   Molecule m;
-  EXPECT_EQ(m.addMesh(std::unique_ptr<Mesh>()), nullptr);
+  EXPECT_EQ(m.addMesh(std::shared_ptr<Mesh>()), nullptr);
   EXPECT_EQ(m.meshCount(), 0u);
 
-  auto mesh = std::make_unique<Mesh>();
+  auto mesh = std::make_shared<Mesh>();
   Mesh* raw = mesh.get();
   EXPECT_EQ(m.addMesh(std::move(mesh)), raw);
   EXPECT_EQ(m.meshCount(), 1u);
@@ -4774,15 +4774,15 @@ TEST_F(MoleculeTest, setMeshReplaces)
   Molecule m;
   Mesh* first = m.addMesh();
 
-  auto mesh = std::make_unique<Mesh>();
+  auto mesh = std::make_shared<Mesh>();
   Mesh* raw = mesh.get();
   EXPECT_TRUE(m.setMesh(0, std::move(mesh)));
   EXPECT_EQ(m.mesh(0), raw);
   EXPECT_NE(m.mesh(0), first);
   EXPECT_EQ(m.meshCount(), 1u);
 
-  EXPECT_FALSE(m.setMesh(1, std::make_unique<Mesh>()));
-  EXPECT_FALSE(m.setMesh(0, std::unique_ptr<Mesh>()));
+  EXPECT_FALSE(m.setMesh(1, std::make_shared<Mesh>()));
+  EXPECT_FALSE(m.setMesh(0, std::shared_ptr<Mesh>()));
   EXPECT_EQ(m.mesh(0), raw);
   EXPECT_EQ(m.meshCount(), 1u);
 }
@@ -4861,7 +4861,7 @@ TEST_F(MoleculeTest, sharedMeshSurvivesClearAndReplace)
   EXPECT_EQ(m.sharedMesh(2), nullptr);
   EXPECT_EQ(m.sharedMesh(Avogadro::MaxIndex), nullptr);
 
-  EXPECT_TRUE(m.setMesh(1, std::make_unique<Mesh>()));
+  EXPECT_TRUE(m.setMesh(1, std::make_shared<Mesh>()));
   EXPECT_NE(m.mesh(1), raw);
   EXPECT_EQ(handle->numVertices(), 4u);
 
