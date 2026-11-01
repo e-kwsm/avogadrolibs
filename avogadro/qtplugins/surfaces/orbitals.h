@@ -199,7 +199,7 @@ private:
   // when complete, so the renderer and any copy of the molecule never see a
   // half-filled cube or one mesh of a pair.
   /// The cube being calculated, until calculateCubeDone() publishes it.
-  std::unique_ptr<Core::Cube> m_pendingCube;
+  std::shared_ptr<Core::Cube> m_pendingCube;
   /// Keeps the mesh generator's input alive for the length of the job.
   std::shared_ptr<const Core::Cube> m_meshCube;
   std::unique_ptr<Core::Mesh> m_pendingPosMesh;
