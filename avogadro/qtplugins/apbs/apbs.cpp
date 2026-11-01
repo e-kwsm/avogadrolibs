@@ -159,7 +159,7 @@ bool Apbs::loadOpenDxFile(const QString& fileName, QtGui::Molecule& molecule)
       // The progress slot spins the event loop while a mesh is generated, so
       // a copy of the molecule (an undo snapshot) could be taken mid-way.
       // Fill meshes we own and hand each over once it is complete.
-      auto mesh = std::make_unique<Mesh>();
+      auto mesh = std::make_shared<Mesh>();
       auto* meshGenerator = new QtGui::MeshGenerator(cube, mesh.get(), 0.1f);
       connect(meshGenerator, SIGNAL(finished()), this,
               SLOT(meshGeneratorFinished()));
@@ -174,7 +174,7 @@ bool Apbs::loadOpenDxFile(const QString& fileName, QtGui::Molecule& molecule)
       m_progressDialog->setValue(1);
       qApp->processEvents();
 
-      mesh = std::make_unique<Mesh>();
+      mesh = std::make_shared<Mesh>();
       meshGenerator = new QtGui::MeshGenerator(cube, mesh.get(), -0.1f);
       connect(meshGenerator, SIGNAL(finished()), this,
               SLOT(meshGeneratorFinished()));

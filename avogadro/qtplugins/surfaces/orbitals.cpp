@@ -564,7 +564,7 @@ void Orbitals::calculatePosMesh()
   // the molecule's own list meanwhile.
   m_meshCube =
     m_molecule->sharedCube(static_cast<Index>(cubeIndex(info->cube)));
-  m_pendingPosMesh = std::make_unique<Core::Mesh>();
+  m_pendingPosMesh = std::make_shared<Core::Mesh>();
 
   if (!m_meshGenerator) {
     m_meshGenerator = new QtGui::MeshGenerator;
@@ -592,7 +592,7 @@ void Orbitals::calculateNegMesh()
 
   calcInfo* info = &m_queue[m_currentMeshCalculation];
 
-  m_pendingNegMesh = std::make_unique<Core::Mesh>();
+  m_pendingNegMesh = std::make_shared<Core::Mesh>();
 
   if (!m_meshGenerator) {
     // shouldn't happen, but better to be careful
@@ -616,8 +616,8 @@ void Orbitals::calculateNegMeshDone()
 
   // Replace the previous orbital's pair with both new meshes at once, so the
   // renderer never shows half of an orbital.
-  std::unique_ptr<Core::Mesh> posMesh = std::move(m_pendingPosMesh);
-  std::unique_ptr<Core::Mesh> negMesh = std::move(m_pendingNegMesh);
+  auto posMesh = std::move(m_pendingPosMesh);
+  auto negMesh = std::move(m_pendingNegMesh);
   m_meshCube.reset();
   m_molecule->clearMeshes();
   m_molecule->addMesh(std::move(posMesh));
