@@ -4725,10 +4725,10 @@ TEST_F(MoleculeTest, heldHandleMakesNextMutableAccessDetach)
 TEST_F(MoleculeTest, addCubeTakesOwnership)
 {
   Molecule m;
-  EXPECT_EQ(m.addCube(std::unique_ptr<Cube>()), nullptr);
+  EXPECT_EQ(m.addCube(std::shared_ptr<Cube>()), nullptr);
   EXPECT_EQ(m.cubeCount(), 0u);
 
-  auto cube = std::make_unique<Cube>();
+  auto cube = std::make_shared<Cube>();
   Cube* raw = cube.get();
   EXPECT_EQ(m.addCube(std::move(cube)), raw);
   EXPECT_EQ(m.cubeCount(), 1u);
@@ -4742,7 +4742,7 @@ TEST_F(MoleculeTest, setCubeReplaces)
   m.addCube();
   m.setActiveCubeIndex(1);
 
-  auto cube = std::make_unique<Cube>();
+  auto cube = std::make_shared<Cube>();
   Cube* raw = cube.get();
   EXPECT_TRUE(m.setCube(0, std::move(cube)));
   EXPECT_EQ(m.cube(0), raw);
@@ -4750,8 +4750,8 @@ TEST_F(MoleculeTest, setCubeReplaces)
   EXPECT_EQ(m.cubeCount(), 2u);
   EXPECT_EQ(m.activeCubeIndex(), 1u);
 
-  EXPECT_FALSE(m.setCube(2, std::make_unique<Cube>()));
-  EXPECT_FALSE(m.setCube(0, std::unique_ptr<Cube>()));
+  EXPECT_FALSE(m.setCube(2, std::make_shared<Cube>()));
+  EXPECT_FALSE(m.setCube(0, std::shared_ptr<Cube>()));
   EXPECT_EQ(m.cube(0), raw);
   EXPECT_EQ(m.cubeCount(), 2u);
 }
@@ -4836,7 +4836,7 @@ TEST_F(MoleculeTest, sharedCubeSurvivesClearAndReplace)
   EXPECT_EQ(m.sharedCube(Avogadro::MaxIndex), nullptr);
 
   // Replaced in place: the handle still holds the old cube and its data.
-  EXPECT_TRUE(m.setCube(1, std::make_unique<Cube>()));
+  EXPECT_TRUE(m.setCube(1, std::make_shared<Cube>()));
   EXPECT_NE(m.cube(1), raw);
   EXPECT_EQ(handle->dimensions(), Vector3i(3, 2, 2));
   EXPECT_EQ(handle->data()->front(), 2.0f);

@@ -728,7 +728,7 @@ void Surfaces::calculateEDT(Type type, float defaultResolution)
   m_isoValue = 0.0f;
 
   // Filled here, and published to the molecule by publishCube() once done.
-  m_pendingCube = std::make_unique<Cube>();
+  m_pendingCube = std::make_shared<Cube>();
   m_cubeProducer = CubeProducer::EDT;
   m_cubeJobStale = false;
   Cube* cube = m_pendingCube.get();
@@ -803,7 +803,7 @@ void Surfaces::qmFinished()
 
 void Surfaces::publishCube(bool canceled)
 {
-  std::unique_ptr<Cube> cube = std::move(m_pendingCube);
+  auto cube = std::move(m_pendingCube);
   const bool stale = m_cubeJobStale;
   m_cubeProducer = CubeProducer::None;
   m_cubeJobStale = false;
@@ -888,7 +888,7 @@ void Surfaces::calculateQM(Type type, int index, bool beta, float isoValue,
   }
 
   // Filled here, and published to the molecule by publishCube() once done.
-  m_pendingCube = std::make_unique<Cube>();
+  m_pendingCube = std::make_shared<Cube>();
   m_cubeJobStale = false;
   Cube* cube = m_pendingCube.get();
   const bool gaussian = dynamic_cast<const GaussianSet*>(m_basis) != nullptr;
