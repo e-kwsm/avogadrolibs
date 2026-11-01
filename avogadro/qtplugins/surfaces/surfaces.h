@@ -203,7 +203,7 @@ private:
   std::vector<int> m_fileCubeRows; // molecule cube index of each dialog row
 
   /// The cube being calculated, until publishCube() hands it over.
-  std::unique_ptr<Core::Cube> m_pendingCube;
+  std::shared_ptr<Core::Cube> m_pendingCube;
   CubeProducer m_cubeProducer = CubeProducer::None;
   bool m_cubeJobStale = false;
 

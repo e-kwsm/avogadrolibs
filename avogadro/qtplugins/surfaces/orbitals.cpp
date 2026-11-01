@@ -468,7 +468,7 @@ void Orbitals::calculateCube()
   }
 
   // Create new cube, filled off the molecule and published when done.
-  m_pendingCube = std::make_unique<Core::Cube>();
+  m_pendingCube = std::make_shared<Core::Cube>();
   Core::Cube* cube = m_pendingCube.get();
   cube->setLimits(*m_molecule, info->resolution, cubePadding);
   cube->setName("Molecular Orbital " + std::to_string(info->orbital + 1));
@@ -504,7 +504,7 @@ void Orbitals::calculateCubeDone()
   auto* watcher = &m_gaussianConcurrent->watcher();
   watcher->disconnect(this);
 
-  std::unique_ptr<Core::Cube> cube = std::move(m_pendingCube);
+  auto cube = std::move(m_pendingCube);
   if (m_currentRunningCalculation == -1 || !cube)
     return;
 
