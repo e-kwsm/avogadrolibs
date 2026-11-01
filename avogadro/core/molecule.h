@@ -622,7 +622,7 @@ public:
    * @param cube The cube to add; the molecule takes ownership.
    * @return The cube added, or nullptr (molecule unchanged) if @p cube is null.
    */
-  Cube* addCube(std::unique_ptr<Cube> cube);
+  Cube* addCube(std::shared_ptr<Cube> cube);
 
   /**
    * @brief Replace the cube at @p index with one the caller already built.
@@ -634,7 +634,7 @@ public:
    * @return False, leaving the molecule unchanged, if @p index is out of range
    * or @p cube is null; true otherwise.
    */
-  bool setCube(Index index, std::unique_ptr<Cube> cube);
+  bool setCube(Index index, std::shared_ptr<Cube> cube);
 
   /**
    * @brief Get a mutable cube of the molecule.

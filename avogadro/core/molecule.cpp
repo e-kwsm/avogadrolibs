@@ -1643,19 +1643,19 @@ Cube* Molecule::addCube()
   return m_cubes.back().get();
 }
 
-Cube* Molecule::addCube(std::unique_ptr<Cube> cube)
+Cube* Molecule::addCube(std::shared_ptr<Cube> cube)
 {
   if (!cube)
     return nullptr;
-  m_cubes.push_back(std::shared_ptr<Cube>(std::move(cube)));
+  m_cubes.emplace_back(std::move(cube));
   return m_cubes.back().get();
 }
 
-bool Molecule::setCube(Index index, std::unique_ptr<Cube> cube)
+bool Molecule::setCube(Index index, std::shared_ptr<Cube> cube)
 {
   if (!cube || index >= static_cast<Index>(m_cubes.size()))
     return false;
-  m_cubes[index] = std::shared_ptr<Cube>(std::move(cube));
+  m_cubes[index] = std::move(cube);
   return true;
 }
 
