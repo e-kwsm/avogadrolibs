@@ -298,8 +298,9 @@ TEST_F(ToolInteractionTest, manipulatorDragMovesOnlyThatAtom)
 
   const MoleculeSnapshot after = h.commands().snapshot();
   for (Index i = 0; i < after.positions.size(); ++i) {
-    if (i != 1)
+    if (i != 1) {
       EXPECT_EQ(after.positions[i], before.positions[i]) << "atom " << i;
+    }
   }
   expectClean();
   expectUndoneTo(before);
