@@ -1168,7 +1168,7 @@ TEST_F(MoleculeTest, atomLabelsFollowTheirAtoms)
   // are added next.
   molecule.clearAtoms();
   molecule.addAtom(6);
-  EXPECT_EQ(molecule.atomLabel(0), "");
+  EXPECT_TRUE(molecule.atomLabel(0).empty());
 }
 
 TEST_F(MoleculeTest, forceVectorsFollowTheirAtoms)
@@ -3079,7 +3079,7 @@ TEST_F(MoleculeTest, AddAtomAfterRemovalGetsDefaultsNotStaleData)
   // removed atom happened to leave in that slot. Position and force are
   // covered separately, by AtomPositionAndForceDefaultToZero: their default
   // is Vector::Zero(), not whatever an uninitialized Eigen vector holds.
-  EXPECT_EQ(molecule.atomLabel(fresh.index()), "");
+  EXPECT_TRUE(molecule.atomLabel(fresh.index()).empty());
   EXPECT_EQ(molecule.formalCharge(fresh.index()), 0);
   EXPECT_EQ(molecule.isotope(fresh.index()), static_cast<unsigned short>(0));
   EXPECT_FALSE(molecule.atomSelected(fresh.index()));
@@ -3954,7 +3954,7 @@ TEST_F(MoleculeTest, RemoveAtomInRaggedOptionalArrayClearsStaleEntry)
 
   // Atom 3 (never labelled) swapped into slot 1; the stale "one" must be
   // gone, not left behind from the atom that used to be there.
-  EXPECT_EQ(molecule.atomLabel(1), "");
+  EXPECT_TRUE(molecule.atomLabel(1).empty());
 }
 
 // Invariant: the "reset a stale entry" and "grow to cover a new atom" cases
@@ -4014,7 +4014,7 @@ TEST_F(MoleculeTest, SwapAtomInRaggedOptionalArrayMovesLabelToNewIndex)
   EXPECT_EQ(molecule.atomLabel(2), "one");
   // ... and the atom swapped into index 1 (never labelled) reads back
   // unlabelled, not still showing "one".
-  EXPECT_EQ(molecule.atomLabel(1), "");
+  EXPECT_TRUE(molecule.atomLabel(1).empty());
 }
 
 // Invariant: the counterpart to
