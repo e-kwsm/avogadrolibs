@@ -283,7 +283,7 @@ TEST_F(JsonWidgetTest, SelectableTableCollectsSelectedRow)
   ASSERT_NE(view, nullptr);
 
   ASSERT_TRUE(widget.collectOptions().contains(QStringLiteral("Job")));
-  EXPECT_EQ(collectedJob(widget), "")
+  EXPECT_TRUE(collectedJob(widget).empty())
     << "an unselected picker must not claim a row";
 
   view->selectRow(1);
@@ -562,8 +562,10 @@ TEST_F(JsonWidgetTest, PasswordsAreNeverSaved)
   const QJsonObject collected = second.collectOptions();
   EXPECT_EQ(collected.value(QStringLiteral("Secret")).toString().toStdString(),
             "");
-  EXPECT_EQ(
-    collected.value(QStringLiteral("Password")).toString().toStdString(), "");
+  EXPECT_EQ(collected.value(QStringLiteral("Password"))
+              .toString()
+              .toStdString()
+              .empty());
   // The rest of the form is still remembered.
   EXPECT_EQ(collected.value(QStringLiteral("Server")).toString().toStdString(),
             "webmo.example");
@@ -626,7 +628,7 @@ TEST_F(JsonWidgetTest, TablesAreNotRemembered)
   EXPECT_EQ(view->rowCount(), 1);
   ASSERT_NE(view->item(0, 0), nullptr);
   EXPECT_EQ(view->item(0, 0)->text().toStdString(), "42");
-  EXPECT_EQ(collectedJob(second), "") << "a stale row came back selected";
+  EXPECT_TRUE(collectedJob(second).empty()) << "a stale row came back selected";
 }
 
 // A remembered combo entry the script no longer offers leaves the default

@@ -508,7 +508,7 @@ unicode = "café ☕"
   QVariantMap meta = findFeatureMetadata(spy, "str-test");
   ASSERT_FALSE(meta.isEmpty());
   EXPECT_EQ(meta["simple"].toString(), "hello world");
-  EXPECT_EQ(meta["empty"].toString(), "");
+  EXPECT_TRUE(meta["empty"].toString().empty());
   EXPECT_EQ(meta["unicode"].toString(), QString::fromUtf8("café ☕"));
 
   pm->unregisterPackage("parse-test");

@@ -207,7 +207,7 @@ TEST(CompressionTest, ExtensionRoundTrip)
   EXPECT_EQ(compressionExtension(Compression::Bzip2), "bz2");
   EXPECT_EQ(compressionExtension(Compression::Xz), "xz");
   EXPECT_EQ(compressionExtension(Compression::Zstd), "zst");
-  EXPECT_EQ(compressionExtension(Compression::None), "");
+  EXPECT_TRUE(compressionExtension(Compression::None).empty());
 
   for (Compression type : { Compression::Gzip, Compression::Bzip2,
                             Compression::Xz, Compression::Zstd }) {
@@ -219,7 +219,7 @@ TEST(CompressionTest, ExtensionRoundTrip)
   EXPECT_EQ(compressionName(Compression::Bzip2), "bzip2");
   EXPECT_EQ(compressionName(Compression::Xz), "xz");
   EXPECT_EQ(compressionName(Compression::Zstd), "zstd");
-  EXPECT_EQ(compressionName(Compression::None), "");
+  EXPECT_TRUE(compressionName(Compression::None).empty());
 }
 
 TEST(CompressionTest, CompressionExtensionsList)

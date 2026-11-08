@@ -49,7 +49,7 @@ TEST(ChargeModelTest, DefaultModelIdentifierAndName)
 TEST(ChargeModelTest, DefaultModelDefaultConstructorIsEmptyIdentifier)
 {
   DefaultModel model;
-  EXPECT_EQ(model.identifier(), "");
+  EXPECT_TRUE(model.identifier().empty());
 }
 
 TEST(ChargeModelTest, DefaultModelElementsCoversEverything)

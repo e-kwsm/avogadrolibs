@@ -274,7 +274,7 @@ TEST(SmilesTest, atomsWithoutAnElementSymbol)
 TEST(SmilesTest, emptyMolecule)
 {
   Molecule mol;
-  EXPECT_EQ(writeMapped(mol), "");
+  EXPECT_TRUE(writeMapped(mol).empty());
 }
 
 TEST(SmilesTest, atomMapsImplyExplicitHydrogens)

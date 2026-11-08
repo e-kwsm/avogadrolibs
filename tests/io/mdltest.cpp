@@ -217,7 +217,7 @@ TEST(MdlTest, readV2000Valence)
   bool success = mdl.readFile(
     std::string(AVOGADRO_DATA) + "/data/sdf/carbene_v2000.mol", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(27));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(29));
 
@@ -246,7 +246,7 @@ TEST(MdlTest, readV3000Valence)
   bool success = mdl.readFile(
     std::string(AVOGADRO_DATA) + "/data/sdf/carbene_v3000.mol", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(mdl.error(), "");
+  EXPECT_TRUE(mdl.error().empty());
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(27));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(29));
 

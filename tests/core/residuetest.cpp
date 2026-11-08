@@ -18,7 +18,7 @@ using Avogadro::Core::Residue;
 TEST(ResidueTest, defaultConstructor)
 {
   Residue r;
-  EXPECT_EQ(r.residueName(), "");
+  EXPECT_TRUE(r.residueName().empty());
   EXPECT_EQ(r.chainId(), 'A');
   EXPECT_FALSE(r.isHeterogen());
   EXPECT_EQ(r.secondaryStructure(), Residue::undefined);
