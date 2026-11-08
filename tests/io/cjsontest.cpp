@@ -289,7 +289,7 @@ TEST(CjsonTest, partialCharges)
   bool success = cjson.readFile(
     std::string(AVOGADRO_DATA) + "/data/cjson/formaldehyde.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(molecule.atomCount(), static_cast<size_t>(4));
   EXPECT_EQ(molecule.bondCount(), static_cast<size_t>(3));
   EXPECT_EQ(molecule.coordinate3dCount(), static_cast<size_t>(7));
@@ -315,12 +315,12 @@ TEST(CjsonTest, partialCharges)
   // okay now save it and make sure we still have the same number
   success = cjson.writeFile("formaldehysetmp.cjson", molecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
 
   Molecule otherMolecule;
   success = cjson.readFile("formaldehysetmp.cjson", otherMolecule);
   EXPECT_TRUE(success);
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   EXPECT_EQ(otherMolecule.atomCount(), static_cast<size_t>(4));
   EXPECT_EQ(otherMolecule.bondCount(), static_cast<size_t>(3));
   EXPECT_EQ(otherMolecule.coordinate3dCount(), static_cast<size_t>(7));
@@ -1454,7 +1454,7 @@ TEST(CjsonTest, asIsBasisRoundTrip)
 
   Molecule reread;
   ASSERT_TRUE(cjson.readString(output, reread)) << cjson.error();
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   auto* copy = dynamic_cast<GaussianSet*>(reread.basisSet());
   ASSERT_NE(copy, nullptr);
   EXPECT_EQ(copy->primitiveNormalization(), Normalization::AsIs);
@@ -1484,7 +1484,7 @@ TEST(CjsonTest, radialIncludedBasisRoundTrip)
 
   Molecule reread;
   ASSERT_TRUE(cjson.readString(output, reread)) << cjson.error();
-  EXPECT_EQ(cjson.error(), "");
+  EXPECT_TRUE(cjson.error().empty());
   auto* copy = dynamic_cast<GaussianSet*>(reread.basisSet());
   ASSERT_NE(copy, nullptr);
   EXPECT_EQ(copy->primitiveNormalization(), Normalization::RadialIncluded);
@@ -1545,7 +1545,7 @@ TEST(CjsonTest, primitiveNormalizationReading)
     if (c.warns)
       EXPECT_NE(cjson.error().find("Warning"), std::string::npos) << input;
     else
-      EXPECT_EQ(cjson.error(), "") << input;
+      EXPECT_TRUE(cjson.error().empty()) << input;
   }
 }
 
