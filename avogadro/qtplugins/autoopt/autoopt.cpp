@@ -44,8 +44,6 @@
 
 #include <QDebug>
 
-#include <utility>
-
 #include <memory>
 
 using Avogadro::QtGui::Molecule;
@@ -178,19 +176,18 @@ void AutoOpt::startWorker()
   // Connect signals based on task. For dynamics we also connect the optimize
   // signal so the pre-relax phase can drive optimization chunks through the
   // same worker before MD begins.
-  auto optimizeDone = [this, generation](const Eigen::VectorXd& positions,
+  auto optimizeDone = [this, generation](Eigen::VectorXd positions,
                                          Eigen::VectorXd gradient,
                                          double energy, bool converged) {
     if (generation != m_workerGeneration)
       return;
-    onOptimizeStepDone(std::move(positions), std::move(gradient), energy,
-                       converged);
+    onOptimizeStepDone(positions, gradient, energy, converged);
   };
   auto gradientDone = [this, generation](Eigen::VectorXd gradient,
                                          double energy) {
     if (generation != m_workerGeneration)
       return;
-    onGradientDone(std::move(gradient), energy);
+    onGradientDone(gradient, energy);
   };
 
   if (m_task == 0) {
@@ -564,7 +561,7 @@ void AutoOpt::optimizeStep()
     Q_ARG(Avogadro::Calc::OptimizationOptions, m_optOptions));
 }
 
-void AutoOpt::onOptimizeStepDone(const Eigen::VectorXd& positions,
+void AutoOpt::onOptimizeStepDone(Eigen::VectorXd positions,
                                  Eigen::VectorXd gradient, double energy,
                                  bool converged)
 {

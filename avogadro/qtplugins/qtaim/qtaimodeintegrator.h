@@ -25,7 +25,6 @@
 #include <QVector3D>
 
 #include <Eigen/Core>
-#include <utility>
 
 namespace Avogadro::QtPlugins {
 
@@ -56,7 +55,7 @@ public:
 
   void setBetaSpheres(QList<QPair<QVector3D, qreal>> betaSpheres)
   {
-    m_betaSpheres = std::move(betaSpheres);
+    m_betaSpheres = betaSpheres;
   }
   qint64 associatedSphere() const { return m_associatedSphere; }
 
