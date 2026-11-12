@@ -36,7 +36,6 @@
 #include <QFuture>
 #include <QFutureWatcher>
 #include <QProgressDialog>
-#include <utility>
 
 using namespace Eigen;
 
@@ -47,7 +46,7 @@ namespace Avogadro::QtPlugins {
 
 namespace helper {
 template <qint64 ExpectedSignatureV>
-QList<QVariant> QTAIMLocateElectronDensityHelper(const QList<QVariant>& input)
+QList<QVariant> QTAIMLocateElectronDensityHelper(QList<QVariant> input)
 {
   qint64 counter = 0;
   const QString fileName = input.at(counter).toString();
@@ -111,7 +110,7 @@ QList<QVariant> QTAIMLocateElectronDensityHelper(const QList<QVariant>& input)
 
 } // namespace helper
 
-QList<QVariant> QTAIMLocateNuclearCriticalPoint(const QList<QVariant>& input)
+QList<QVariant> QTAIMLocateNuclearCriticalPoint(QList<QVariant> input)
 {
   const QString fileName = input.at(0).toString();
   const qint64 nucleus = input.at(1).toInt();
@@ -144,7 +143,7 @@ QList<QVariant> QTAIMLocateNuclearCriticalPoint(const QList<QVariant>& input)
   return { false };
 }
 
-QList<QVariant> QTAIMLocateBondCriticalPoint(const QList<QVariant>& input)
+QList<QVariant> QTAIMLocateBondCriticalPoint(QList<QVariant> input)
 {
   const QString wfnFileName = input.at(0).toString();
   const QString nuclearCriticalPointsFileName = input.at(1).toString();
@@ -317,7 +316,7 @@ QList<QVariant> QTAIMLocateBondCriticalPoint(const QList<QVariant>& input)
   return value;
 }
 
-QList<QVariant> QTAIMLocateElectronDensitySink(const QList<QVariant>& input)
+QList<QVariant> QTAIMLocateElectronDensitySink(QList<QVariant> input)
 {
   /**
     This function acts as a wrapper to consolidate code
@@ -331,10 +330,10 @@ QList<QVariant> QTAIMLocateElectronDensitySink(const QList<QVariant>& input)
 
     At the time of writing this value is -3.
   */
-  return helper::QTAIMLocateElectronDensityHelper<-3>(std::move(input));
+  return helper::QTAIMLocateElectronDensityHelper<-3>(input);
 }
 
-QList<QVariant> QTAIMLocateElectronDensitySource(const QList<QVariant>& input)
+QList<QVariant> QTAIMLocateElectronDensitySource(QList<QVariant> input)
 {
   /**
     This function acts as a wrapper to consolidate code
@@ -348,7 +347,7 @@ QList<QVariant> QTAIMLocateElectronDensitySource(const QList<QVariant>& input)
 
     At the time of writing this value is 3.
   */
-  return helper::QTAIMLocateElectronDensityHelper<3>(std::move(input));
+  return helper::QTAIMLocateElectronDensityHelper<3>(input);
 }
 
 QTAIMCriticalPointLocator::QTAIMCriticalPointLocator(QTAIMWavefunction& wfn)
