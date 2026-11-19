@@ -447,7 +447,7 @@ bool QCSchema::read(std::istream& in, Core::Molecule& molecule)
         json transition_energies = excitedStates["transition_energies"];
         if (isNumericArray(transition_energies)) {
           for (auto& i : transition_energies) {
-            double value = static_cast<double>(i);
+            auto value = static_cast<double>(i);
             if (units == "nm") {
               // convert to eV, i.e. eV = 1239.8 / wavelength
               if (value != 0.0)

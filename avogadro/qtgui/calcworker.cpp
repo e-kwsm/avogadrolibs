@@ -138,7 +138,7 @@ void CalcWorker::runEvaluateBatch(std::vector<Eigen::VectorXd> coordsList,
   if (chunkSize <= 0) {
     constexpr std::size_t byteBudget = 32 * 1024 * 1024; // ~32 MB
     constexpr std::size_t maxFramesCap = 256;
-    const std::size_t frameDoubles =
+    const auto frameDoubles =
       static_cast<std::size_t>(coordsList.front().size());
     const std::size_t frameBytes =
       std::max<std::size_t>(1, frameDoubles * sizeof(double));
