@@ -337,7 +337,7 @@ TEST_F(LayerTest, CopiedSettingsAreReleasedIndependently)
     buildMultiLayer(original);
     original.layerInfo()->settings["TestPlugin"].push_back(makeSetting("x"));
     {
-      Molecule copy(original);
+      Molecule copy(original); // NOLINT
       EXPECT_EQ(g_liveSettings, before + 2) << "the copy did not clone";
     }
     EXPECT_EQ(g_liveSettings, before + 1) << "the copy's clone leaked";
