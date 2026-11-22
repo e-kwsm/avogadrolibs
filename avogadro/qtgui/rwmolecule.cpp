@@ -638,8 +638,7 @@ bool RWMolecule::setBondPairs(const Array<std::pair<Index, Index>>& pairs)
   using BondPair = std::pair<Index, Index>;
   Array<BondPair> p(pairs);
   std::set<BondPair> seen;
-  for (size_t i = 0; i < p.size(); ++i) {
-    BondPair& pair = p[i];
+  for (auto& pair : p) {
     if (pair.first > pair.second)
       swap(pair.first, pair.second);
     if (pair.second >= m_molecule.atomCount() || pair.first == pair.second ||

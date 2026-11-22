@@ -1885,8 +1885,8 @@ inline bool Molecule::atomSelected(Index atomId) const
 inline bool Molecule::isSelectionEmpty() const
 {
   const auto& flags = m_atomState.selection.array();
-  for (Index i = 0; i < flags.size(); ++i) {
-    if (flags[i] != 0)
+  for (auto flag : flags) {
+    if (flag != 0)
       return false;
   }
   return true;

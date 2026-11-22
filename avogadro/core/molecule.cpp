@@ -95,9 +95,8 @@ void Molecule::readProperties(const Molecule& other)
     m_data.setValue(it->first, it->second);
   }
   // merge partial charge maps
-  for (auto it = other.m_partialCharges.cbegin();
-       it != other.m_partialCharges.cend(); ++it) {
-    m_partialCharges[it->first] = it->second;
+  for (const auto& c : other.m_partialCharges) {
+    m_partialCharges[c.first] = c.second;
   }
 
   // copy spectra
@@ -710,8 +709,8 @@ signed char Molecule::totalCharge() const
     charge = m_data.value("totalCharge").toInt();
   } else if (!m_atomState.formalCharges.empty()) {
     const auto& charges = m_atomState.formalCharges.array();
-    for (Index i = 0; i < charges.size(); ++i)
-      charge += charges[i];
+    for (auto i : charges)
+      charge += i;
     return charge;
   }
   return charge; // should be zero
@@ -727,8 +726,8 @@ char Molecule::totalSpinMultiplicity() const
   } else {
     // add up the electrons
     unsigned long electrons = 0;
-    for (Index i = 0; i < m_atomicNumbers.size(); ++i)
-      electrons += m_atomicNumbers[i];
+    for (auto m_atomicNumber : m_atomicNumbers)
+      electrons += m_atomicNumber;
 
     // adjust by the total charge
     electrons -= totalCharge();

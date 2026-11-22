@@ -508,8 +508,7 @@ bool Graph::editEdgesInPlace(const Array<std::pair<size_t, size_t>>& pairs)
   // Validate the final set as a whole; intermediate states do not matter.
   Array<std::pair<size_t, size_t>> normalized(pairs);
   std::set<std::pair<size_t, size_t>> seen;
-  for (size_t i = 0; i < normalized.size(); ++i) {
-    std::pair<size_t, size_t>& pair = normalized[i];
+  for (auto& pair : normalized) {
     if (pair.first >= size() || pair.second >= size() ||
         pair.first == pair.second)
       return false;
