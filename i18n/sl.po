@@ -14186,17 +14186,6 @@ msgstr ",,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,,,,mateju@svn.gnome.org,
 #~ msgid "Saddle Point"
 #~ msgstr "Sedlo"
 
-#~ msgid "Trudge"
-#~ msgstr "Trudge"
-
-=======
-#~ msgid "Gradient"
-#~ msgstr "Prelivanje"
-
->>>>>>> dc1a35fd0c (i18n	[skip ci])
-#~ msgid "Saddle Point"
-#~ msgstr "Sedlo"
-
 #~ msgid "Radiative Transition mom."
 #~ msgstr "Prehodi s sevanjem"
 
