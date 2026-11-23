@@ -3656,8 +3656,8 @@ private:
   {
     if (!check(*m_mol, m_model, what))
       return false;
-    for (size_t i = 0; i < m_witnesses.size(); ++i) {
-      if (!check(*m_witnesses[i].first, m_witnesses[i].second,
+    for (const auto& m_witnesse : m_witnesses) {
+      if (!check(*m_witnesse.first, m_witnesse.second,
                  "earlier copy, which must not have changed"))
         return false;
     }

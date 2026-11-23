@@ -825,10 +825,10 @@ TEST(BondOrderPerceptionTest, linearAtomKeepsTwoDoubleBonds)
   mol.addBond(1, 2, 1);
   const double sign[2] = { -1.0, 1.0 };
   for (int end = 0; end < 2; ++end) {
-    for (int h = 0; h < 2; ++h) {
+    for (auto s : sign) {
       auto hydrogen = mol.addAtom(1);
       hydrogen.setPosition3d(Vector3(sign[end] * 1.88, 0.0, 0.0) +
-                             Vector3(0.0, 0.94 * sign[h], 0.0));
+                             Vector3(0.0, 0.94 * s, 0.0));
       mol.addBond(end == 0 ? 0 : 2, hydrogen.index(), 1);
     }
   }
