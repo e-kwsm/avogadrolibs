@@ -73,8 +73,8 @@ inline Real dihedralAngle(const Vector3& b0, const Vector3& b1,
 inline Real calculateAngle(const Vector3& v1, const Vector3& v2,
                            const Vector3& v3)
 {
-  Vector3 v12 = v1 - v2;
-  Vector3 v23 = v2 - v3;
+  const Vector3 v12 = v1 - v2;
+  const Vector3 v23 = v2 - v3;
   return bondAngle(v12, v23);
 }
 
@@ -89,9 +89,9 @@ inline Real calculateAngle(const Vector3& v1, const Vector3& v2,
 inline Real calculateDihedral(const Vector3& v1, const Vector3& v2,
                               const Vector3& v3, const Vector3& v4)
 {
-  Vector3 v12 = v2 - v1;
-  Vector3 v23 = v3 - v2;
-  Vector3 v34 = v4 - v3;
+  const Vector3 v12 = v2 - v1;
+  const Vector3 v23 = v3 - v2;
+  const Vector3 v34 = v4 - v3;
   return dihedralAngle(v12, v23, v34);
 }
 
@@ -128,7 +128,7 @@ inline Real outOfPlaneAngle(const Vector3& point, const Vector3& b,
   if (sinTheta < 1e-10)
     return 0.0;
 
-  Real sinChi = std::clamp(n.dot(u3) / sinTheta, -1.0, 1.0);
+  const Real sinChi = std::clamp(n.dot(u3) / sinTheta, -1.0, 1.0);
   return std::asin(sinChi) * RAD_TO_DEG_D;
 }
 

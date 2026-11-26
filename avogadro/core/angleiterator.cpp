@@ -27,7 +27,7 @@ Angle AngleIterator::operator++()
     return std::make_tuple(MaxIndex, MaxIndex, MaxIndex);
 
   const Graph& graph = m_mol->graph();
-  Index count = m_mol->atomCount();
+  const Index count = m_mol->atomCount();
 
   // true if we have a valid current state
   // (i.e. false at the start since a == b == c)
